@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "name": "Domestic Abuse Crime",
+      "url_path": "domestic-abuse-crime",
+      "description": "Domestic Abuse Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Domestic Abuse Crime collection"
+    },
+    {
+      "name": "Female Revenge Sprees",
+      "url_path": "female-revenge-sprees",
+      "description": "Female Revenge Sprees collection",
+      "category": "crime",
+      "connectionReason": "Part of Female Revenge Sprees collection"
+    }
+  ],
+  "totalLists": 2
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Deadly Game Thrillers",
+      "url_path": "deadly-game-thrillers",
+      "description": "Deadly Game Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Deadly Game Thrillers collection"
+    },
+    {
+      "name": "Modern Terror Attack Films",
+      "url_path": "modern-terror-attack-films",
+      "description": "Modern Terror Attack Films collection",
+      "category": "thriller",
+      "connectionReason": "Part of Modern Terror Attack Films collection"
+    },
+    {
+      "name": "Psychological Captivity Films (Part 2)",
+      "url_path": "psychological-captivity-films-part-2-",
+      "description": "Psychological Captivity Films (Part 2) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Psychological Captivity Films (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

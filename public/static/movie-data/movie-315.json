@@ -1,0 +1,133 @@
+{
+  "movieId": "e116e018-4218-4b25-b1ea-634b5c0d442c",
+  "tmdbId": 315,
+  "title": "Faster, Pussycat! Kill! Kill!",
+  "year": 1965,
+  "analysis": {
+    "keyElements": {
+      "director": "Russ Meyer",
+      "writers": [
+        "Russ Meyer",
+        "Jack Moran"
+      ],
+      "stars": [
+        "Tura Satana",
+        "Haji",
+        "Lori Williams"
+      ],
+      "genre": "Action Exploitation",
+      "releaseYear": 1965,
+      "cinematographer": "Walter Schenk",
+      "composer": "Paul Sawtell",
+      "studio": "Eve Productions"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking female-led action that subverted 1960s gender norms",
+        "Influential visual style that inspired directors from Tarantino to Rodriguez",
+        "Perfectly balances camp entertainment with genuine cinematic innovation"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Death Proof",
+        "year": 2007,
+        "description": "Tarantino's direct homage to Meyer's style and themes"
+      },
+      {
+        "title": "Kill Bill Vol. 1",
+        "year": 2003,
+        "description": "Carries forward the tradition of powerful female revenge narratives"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Exploitation Cinema Evolution",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Gender Representation in 1960s Cinema",
+        "category": "Cultural Studies",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Russ Meyer",
+      "personId": 32693,
+      "slug": "/person/32693",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Russ Meyer",
+        "personId": 32693,
+        "slug": "/person/32693",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jack Moran",
+        "personId": 15413,
+        "slug": "/person/15413",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Tura Satana",
+        "personId": 37141,
+        "slug": "/person/37141",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Haji",
+        "personId": 13455,
+        "slug": "/person/13455",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Lori Williams",
+        "personId": 22882,
+        "slug": "/person/22882",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Walter Schenk",
+      "personId": 38074,
+      "slug": "/person/38074",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Paul Sawtell",
+      "personId": 28977,
+      "slug": "/person/28977",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:24.043Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

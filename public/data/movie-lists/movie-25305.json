@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Competitive Spirit Stories",
+      "url_path": "competitive-spirit-stories",
+      "description": "Competitive Spirit Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Competitive Spirit Stories collection"
+    },
+    {
+      "name": "Car Chase Capers",
+      "url_path": "car-chase-capers",
+      "description": "Car Chase Capers collection",
+      "category": "comedy",
+      "connectionReason": "Part of Car Chase Capers collection"
+    },
+    {
+      "name": "Cross-Country Adventure",
+      "url_path": "cross-country-adventure",
+      "description": "Cross-Country Adventure collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Country Adventure collection"
+    }
+  ],
+  "totalLists": 3
+}

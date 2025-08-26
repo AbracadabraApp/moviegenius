@@ -1,0 +1,141 @@
+{
+  "movieId": "5c732564-3292-4e40-adb1-7d2486a9230e",
+  "tmdbId": 308,
+  "title": "Broken Flowers",
+  "year": 2005,
+  "analysis": {
+    "keyElements": {
+      "director": "Jim Jarmusch",
+      "writers": [
+        "Jim Jarmusch"
+      ],
+      "stars": [
+        "Bill Murray",
+        "Jeffrey Wright",
+        "Sharon Stone",
+        "Jessica Lange",
+        "Tilda Swinton"
+      ],
+      "genre": "Comedy-Drama",
+      "releaseYear": 2005,
+      "cinematographer": "Frederick Elmes",
+      "composer": "Mulatu Astatke",
+      "studio": "Focus Features"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Bill Murray's masterfully understated performance captures existential loneliness",
+        "Jarmusch's precise direction creates a perfect blend of melancholy and dry humor",
+        "The mystery plot serves as an engaging framework for deeper themes about aging and regret"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Lost in Translation",
+        "year": 2003,
+        "description": "Similar exploration of isolation and connection through understated performance"
+      },
+      {
+        "title": "Paris, Texas",
+        "year": 1984,
+        "description": "Influential road movie examining past relationships and redemption"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Minimalist Storytelling",
+        "category": "Narrative Technique",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Character-Driven Cinema",
+        "category": "Film Analysis",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Jim Jarmusch",
+      "personId": 17421,
+      "slug": "/person/17421",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Jim Jarmusch",
+        "personId": 17421,
+        "slug": "/person/17421",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Bill Murray",
+        "personId": 3780,
+        "slug": "/person/3780",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jeffrey Wright",
+        "personId": 16900,
+        "slug": "/person/16900",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sharon Stone",
+        "personId": 33818,
+        "slug": "/person/33818",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jessica Lange",
+        "personId": 17290,
+        "slug": "/person/17290",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Tilda Swinton",
+        "personId": 36229,
+        "slug": "/person/36229",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Frederick Elmes",
+      "personId": 11609,
+      "slug": "/person/11609",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Mulatu Astatke",
+      "personId": 26862,
+      "slug": "/person/26862",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:22.655Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Disney Channel Christmas Movies",
+      "url_path": "disney-channel-christmas-movies",
+      "description": "Disney Channel Christmas Movies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Disney Channel Christmas Movies collection"
+    },
+    {
+      "name": "Family Tech Comedy",
+      "url_path": "family-tech-comedy",
+      "description": "Family Tech Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Family Tech Comedy collection"
+    },
+    {
+      "name": "Modern Santa Stories",
+      "url_path": "modern-santa-stories",
+      "description": "Modern Santa Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Modern Santa Stories collection"
+    }
+  ],
+  "totalLists": 3
+}

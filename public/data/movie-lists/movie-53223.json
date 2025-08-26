@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Science Education Films",
+      "url_path": "science-education-films",
+      "description": "Science Education Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Science Education Films collection"
+    },
+    {
+      "name": "Visual Nature Symphonies (Part 3)",
+      "url_path": "visual-nature-symphonies-part-3-",
+      "description": "Visual Nature Symphonies (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Visual Nature Symphonies (Part 3) collection"
+    },
+    {
+      "name": "Global Cultural Meditations (Part 5)",
+      "url_path": "global-cultural-meditations-part-5-",
+      "description": "Global Cultural Meditations (Part 5) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Cultural Meditations (Part 5) collection"
+    }
+  ],
+  "totalLists": 3
+}

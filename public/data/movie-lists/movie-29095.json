@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Classic Monster Comedies",
+      "url_path": "classic-monster-comedies",
+      "description": "Classic Monster Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Monster Comedies collection"
+    },
+    {
+      "name": "Museum Adventure Comedy",
+      "url_path": "museum-adventure-comedy",
+      "description": "Museum Adventure Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Museum Adventure Comedy collection"
+    },
+    {
+      "name": "Horror Movie Parodies (Part 5)",
+      "url_path": "horror-movie-parodies-part-5-",
+      "description": "Horror Movie Parodies (Part 5) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Horror Movie Parodies (Part 5) collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 7)",
+      "url_path": "confined-space-thrillers-part-7-",
+      "description": "Confined Space Thrillers (Part 7) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 7) collection"
+    },
+    {
+      "name": "Meta Horror Films (Part 3)",
+      "url_path": "meta-horror-films-part-3-",
+      "description": "Meta Horror Films (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Meta Horror Films (Part 3) collection"
+    },
+    {
+      "name": "Classic Monster Comedy (Part 5)",
+      "url_path": "classic-monster-comedy-part-5-",
+      "description": "Classic Monster Comedy (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Monster Comedy (Part 5) collection"
+    }
+  ],
+  "totalLists": 6
+}

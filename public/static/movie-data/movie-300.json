@@ -1,0 +1,125 @@
+{
+  "movieId": "5d462775-0481-44bb-b0b1-b05ca2d97bcc",
+  "tmdbId": 300,
+  "title": "The Science of Sleep",
+  "year": 2006,
+  "analysis": {
+    "keyElements": {
+      "director": "Michel Gondry",
+      "writers": [
+        "Michel Gondry"
+      ],
+      "stars": [
+        "Gael García Bernal",
+        "Charlotte Gainsbourg",
+        "Alain Chabat"
+      ],
+      "genre": "Fantasy/Romance",
+      "releaseYear": 2006,
+      "cinematographer": "Jean-Louis Bompoint",
+      "composer": "Jean-Michel Bernard",
+      "studio": "Gaumont"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Unique blend of handcrafted practical effects and surreal dream sequences",
+        "Heartfelt exploration of creativity, love, and the boundary between dreams and reality",
+        "Michel Gondry's imaginative visual storytelling at its most personal and inventive"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Eternal Sunshine of the Spotless Mind",
+        "year": 2004,
+        "description": "Gondry's earlier masterpiece exploring memory and romance through surreal imagery"
+      },
+      {
+        "title": "Amélie",
+        "year": 2001,
+        "description": "Similarly whimsical French film celebrating imagination and romance in Paris"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Practical Effects in Dream Sequences",
+        "category": "Production",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Surrealism in Contemporary Cinema",
+        "category": "Theory",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Michel Gondry",
+      "personId": 26088,
+      "slug": "/person/26088",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Michel Gondry",
+        "personId": 26088,
+        "slug": "/person/26088",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Gael García Bernal",
+        "personId": 11860,
+        "slug": "/person/11860",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Charlotte Gainsbourg",
+        "personId": 5648,
+        "slug": "/person/5648",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Alain Chabat",
+        "personId": 509,
+        "slug": "/person/509",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Jean-Louis Bompoint",
+      "personId": 16589,
+      "slug": "/person/16589",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Jean-Michel Bernard",
+      "personId": 16636,
+      "slug": "/person/16636",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:21.923Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

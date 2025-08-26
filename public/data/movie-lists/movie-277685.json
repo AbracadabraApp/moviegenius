@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Social Media Horror",
+      "url_path": "social-media-horror",
+      "description": "Social Media Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Social Media Horror collection"
+    },
+    {
+      "name": "Teen Digital Nightmare",
+      "url_path": "teen-digital-nightmare",
+      "description": "Teen Digital Nightmare collection",
+      "category": "horror",
+      "connectionReason": "Part of Teen Digital Nightmare collection"
+    },
+    {
+      "name": "Cursed Technology Horror",
+      "url_path": "cursed-technology-horror",
+      "description": "Cursed Technology Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Cursed Technology Horror collection"
+    }
+  ],
+  "totalLists": 3
+}

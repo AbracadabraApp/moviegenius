@@ -1,0 +1,125 @@
+{
+  "movieId": "41b57c01-a8d5-493f-9ab0-50d873c8ce36",
+  "tmdbId": 440,
+  "title": "Aliens vs. Predator: Requiem",
+  "year": 2007,
+  "analysis": {
+    "keyElements": {
+      "director": "Colin Strause, Greg Strause",
+      "writers": [
+        "Shane Salerno"
+      ],
+      "stars": [
+        "Steven Pasquale",
+        "Reiko Aylesworth",
+        "John Ortiz"
+      ],
+      "genre": "Science Fiction Horror",
+      "releaseYear": 2007,
+      "cinematographer": "Daniel Pearl",
+      "composer": "Brian Tyler",
+      "studio": "20th Century Fox"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "NO",
+      "reasons": [
+        "Poor lighting makes action sequences nearly incomprehensible",
+        "Fails to capture the tension and horror of either franchise",
+        "Watch **Aliens** (1986) or **Predator** (1987) instead for superior sci-fi horror"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Aliens",
+        "year": 1986,
+        "description": "The gold standard for sci-fi horror sequels that this film fails to match"
+      },
+      {
+        "title": "Predator",
+        "year": 1987,
+        "description": "The original hunter-prey classic that established the Predator mythology"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Franchise Crossovers",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Practical vs CGI Effects",
+        "category": "Production",
+        "difficulty": "beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Colin Strause, Greg Strause",
+      "personId": 6692,
+      "slug": "/person/6692",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Shane Salerno",
+        "personId": 33764,
+        "slug": "/person/33764",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Steven Pasquale",
+        "personId": 35015,
+        "slug": "/person/35015",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Reiko Aylesworth",
+        "personId": 30672,
+        "slug": "/person/30672",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "John Ortiz",
+        "personId": 18574,
+        "slug": "/person/18574",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Daniel Pearl",
+      "personId": 7326,
+      "slug": "/person/7326",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Brian Tyler",
+      "personId": 4441,
+      "slug": "/person/4441",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:38.087Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

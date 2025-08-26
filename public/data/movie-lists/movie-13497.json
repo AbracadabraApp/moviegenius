@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Music Competition Shows",
+      "url_path": "music-competition-shows",
+      "description": "Music Competition Shows collection",
+      "category": "music",
+      "connectionReason": "Part of Music Competition Shows collection"
+    },
+    {
+      "name": "Musical Prodigy Stories",
+      "url_path": "musical-prodigy-stories",
+      "description": "Musical Prodigy Stories collection",
+      "category": "music",
+      "connectionReason": "Part of Musical Prodigy Stories collection"
+    },
+    {
+      "name": "Rock & Pop Evolution",
+      "url_path": "rock-pop-evolution",
+      "description": "Rock & Pop Evolution collection",
+      "category": "music",
+      "connectionReason": "Part of Rock & Pop Evolution collection"
+    },
+    {
+      "name": "Urban Music Stories [OVERSIZED]",
+      "url_path": "urban-music-stories-oversized-",
+      "description": "Urban Music Stories [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Urban Music Stories [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Family Comedy Adventures",
+      "url_path": "family-comedy-adventures",
+      "description": "Family Comedy Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Family Comedy Adventures collection"
+    },
+    {
+      "name": "Personal Growth Stand-Up",
+      "url_path": "personal-growth-stand-up",
+      "description": "Personal Growth Stand-Up collection",
+      "category": "comedy",
+      "connectionReason": "Part of Personal Growth Stand-Up collection"
+    },
+    {
+      "name": "Found Family Comedies (Part 6)",
+      "url_path": "found-family-comedies-part-6-",
+      "description": "Found Family Comedies (Part 6) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Found Family Comedies (Part 6) collection"
+    },
+    {
+      "name": "Slasher Genre Subversion",
+      "url_path": "slasher-genre-subversion",
+      "description": "Slasher Genre Subversion collection",
+      "category": "horror",
+      "connectionReason": "Part of Slasher Genre Subversion collection"
+    },
+    {
+      "name": "Classic Monster Comedy (Part 3)",
+      "url_path": "classic-monster-comedy-part-3-",
+      "description": "Classic Monster Comedy (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Monster Comedy (Part 3) collection"
+    },
+    {
+      "name": "Modernized Classic Monsters (Part 2)",
+      "url_path": "modernized-classic-monsters-part-2-",
+      "description": "Modernized Classic Monsters (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Modernized Classic Monsters (Part 2) collection"
+    }
+  ],
+  "totalLists": 6
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Monster & Creature Features",
+      "url_path": "monster-creature-features",
+      "description": "Monster & Creature Features collection",
+      "category": "horror",
+      "connectionReason": "Part of Monster & Creature Features collection"
+    },
+    {
+      "name": "Werewolf Transformation Horror",
+      "url_path": "werewolf-transformation-horror",
+      "description": "Werewolf Transformation Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Werewolf Transformation Horror collection"
+    },
+    {
+      "name": "Historical Horror Mashup (Part 1)",
+      "url_path": "historical-horror-mashup-part-1-",
+      "description": "Historical Horror Mashup (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Historical Horror Mashup (Part 1) collection"
+    },
+    {
+      "name": "Gothic Family Curse (Part 1)",
+      "url_path": "gothic-family-curse-part-1-",
+      "description": "Gothic Family Curse (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Gothic Family Curse (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

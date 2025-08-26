@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Live-Action Animal Adventures",
+      "url_path": "live-action-animal-adventures",
+      "description": "Live-Action Animal Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Live-Action Animal Adventures collection"
+    },
+    {
+      "name": "Military Training Comedy",
+      "url_path": "military-training-comedy",
+      "description": "Military Training Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Military Training Comedy collection"
+    },
+    {
+      "name": "Fish-Out-Of-Water Comedy (Part 1)",
+      "url_path": "fish-out-of-water-comedy-part-1-",
+      "description": "Fish-Out-Of-Water Comedy (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Fish-Out-Of-Water Comedy (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

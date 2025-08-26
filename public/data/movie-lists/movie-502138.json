@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Solo Living Documentaries",
+      "url_path": "solo-living-documentaries",
+      "description": "Solo Living Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Solo Living Documentaries collection"
+    },
+    {
+      "name": "Urban Architecture Transformation",
+      "url_path": "urban-architecture-transformation",
+      "description": "Urban Architecture Transformation collection",
+      "category": "documentary",
+      "connectionReason": "Part of Urban Architecture Transformation collection"
+    },
+    {
+      "name": "Urban Life Studies",
+      "url_path": "urban-life-studies",
+      "description": "Urban Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Urban Life Studies collection"
+    },
+    {
+      "name": "Personal Monologue Documentaries (Part 8)",
+      "url_path": "personal-monologue-documentaries-part-8-",
+      "description": "Personal Monologue Documentaries (Part 8) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Personal Monologue Documentaries (Part 8) collection"
+    }
+  ],
+  "totalLists": 4
+}

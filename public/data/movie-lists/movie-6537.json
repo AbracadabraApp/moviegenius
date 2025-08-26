@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Spanish Horror Cinema",
+      "url_path": "spanish-horror-cinema",
+      "description": "Spanish Horror Cinema collection",
+      "category": "horror",
+      "connectionReason": "Part of Spanish Horror Cinema collection"
+    },
+    {
+      "name": "Classic Haunted House (Part 2)",
+      "url_path": "classic-haunted-house-part-2-",
+      "description": "Classic Haunted House (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Haunted House (Part 2) collection"
+    },
+    {
+      "name": "Supernatural Family Drama (Part 5)",
+      "url_path": "supernatural-family-drama-part-5-",
+      "description": "Supernatural Family Drama (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Supernatural Family Drama (Part 5) collection"
+    },
+    {
+      "name": "Ghost Story Horror (Part 3)",
+      "url_path": "ghost-story-horror-part-3-",
+      "description": "Ghost Story Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Ghost Story Horror (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,125 @@
+{
+  "movieId": "d7eded95-4895-45ca-be2e-1412f2d36114",
+  "tmdbId": 213,
+  "title": "North by Northwest",
+  "year": 1959,
+  "analysis": {
+    "keyElements": {
+      "director": "Alfred Hitchcock",
+      "writers": [
+        "Ernest Lehman"
+      ],
+      "stars": [
+        "Cary Grant",
+        "Eva Marie Saint",
+        "James Mason"
+      ],
+      "genre": "Thriller",
+      "releaseYear": 1959,
+      "cinematographer": "Robert Burks",
+      "composer": "Bernard Herrmann",
+      "studio": "MGM"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Defines the spy-thriller genre with perfect blend of suspense, romance, and humor",
+        "Features Cary Grant's most iconic performance in a Hitchcock masterpiece",
+        "Contains multiple legendary sequences that influenced action cinema for decades"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Vertigo",
+        "year": 1958,
+        "description": "Hitchcock's other masterpiece from the same era, showing his obsession with identity and perception"
+      },
+      {
+        "title": "The 39 Steps",
+        "year": 1935,
+        "description": "Earlier Hitchcock wrong-man thriller that laid groundwork for North by Northwest"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Cold War in Cinema",
+        "category": "Historical Context",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Hitchcock's Wrong Man Theme",
+        "category": "Auteur Theory",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Alfred Hitchcock",
+      "personId": 1111,
+      "slug": "/person/1111",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Ernest Lehman",
+        "personId": 10550,
+        "slug": "/person/10550",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Cary Grant",
+        "personId": 5154,
+        "slug": "/person/5154",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Eva Marie Saint",
+        "personId": 10762,
+        "slug": "/person/10762",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "James Mason",
+        "personId": 15875,
+        "slug": "/person/15875",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Robert Burks",
+      "personId": 31484,
+      "slug": "/person/31484",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Bernard Herrmann",
+      "personId": 3474,
+      "slug": "/person/3474",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:07.933Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

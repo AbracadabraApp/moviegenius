@@ -1,0 +1,133 @@
+{
+  "movieId": "f8fc74a4-17d0-44c9-868c-f84259acf417",
+  "tmdbId": 404,
+  "title": "The Straight Story",
+  "year": 1999,
+  "analysis": {
+    "keyElements": {
+      "director": "David Lynch",
+      "writers": [
+        "John Roach",
+        "Mary Sweeney"
+      ],
+      "stars": [
+        "Richard Farnsworth",
+        "Sissy Spacek",
+        "Harry Dean Stanton"
+      ],
+      "genre": "Drama/Road Movie",
+      "releaseYear": 1999,
+      "cinematographer": "Freddie Francis",
+      "composer": "Angelo Badalamenti",
+      "studio": "Walt Disney Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Richard Farnsworth's deeply moving, Oscar-nominated final performance",
+        "A uniquely gentle and heartfelt film from David Lynch that proves his range as a filmmaker",
+        "A profound meditation on aging, family reconciliation, and the beauty of simple human connection"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Paris, Texas",
+        "year": 1984,
+        "description": "Another meditative road movie about family reconciliation"
+      },
+      {
+        "title": "Nebraska",
+        "year": 2013,
+        "description": "Similar themes of elderly dignity and family relationships"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "American Road Movies",
+        "category": "Genre Studies",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Directing Against Type",
+        "category": "Auteur Theory",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "David Lynch",
+      "personId": 7980,
+      "slug": "/person/7980",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "John Roach",
+        "personId": 18639,
+        "slug": "/person/18639",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Mary Sweeney",
+        "personId": 24750,
+        "slug": "/person/24750",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Richard Farnsworth",
+        "personId": 30985,
+        "slug": "/person/30985",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sissy Spacek",
+        "personId": 34321,
+        "slug": "/person/34321",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Harry Dean Stanton",
+        "personId": 13766,
+        "slug": "/person/13766",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Freddie Francis",
+      "personId": 11579,
+      "slug": "/person/11579",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Angelo Badalamenti",
+      "personId": 1927,
+      "slug": "/person/1927",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:33.660Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

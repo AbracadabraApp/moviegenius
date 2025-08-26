@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Space Horror",
+      "url_path": "space-horror",
+      "description": "Space Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Space Horror collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 6)",
+      "url_path": "confined-space-thrillers-part-6-",
+      "description": "Confined Space Thrillers (Part 6) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 6) collection"
+    },
+    {
+      "name": "Religious Horror Thrillers (Part 4)",
+      "url_path": "religious-horror-thrillers-part-4-",
+      "description": "Religious Horror Thrillers (Part 4) collection",
+      "category": "horror",
+      "connectionReason": "Part of Religious Horror Thrillers (Part 4) collection"
+    },
+    {
+      "name": "Space Horror Survival",
+      "url_path": "space-horror-survival",
+      "description": "Space Horror Survival collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Horror Survival collection"
+    },
+    {
+      "name": "Religious Horror SciFi",
+      "url_path": "religious-horror-scifi",
+      "description": "Religious Horror SciFi collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Religious Horror SciFi collection"
+    },
+    {
+      "name": "Psychological Space Isolation (Part 2)",
+      "url_path": "psychological-space-isolation-part-2-",
+      "description": "Psychological Space Isolation (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Psychological Space Isolation (Part 2) collection"
+    }
+  ],
+  "totalLists": 6
+}

@@ -1,0 +1,149 @@
+{
+  "movieId": "c22b0efa-b701-4630-9ef3-421a948a3fb4",
+  "tmdbId": 38,
+  "title": "Eternal Sunshine of the Spotless Mind",
+  "year": 2004,
+  "analysis": {
+    "keyElements": {
+      "director": "Michel Gondry",
+      "writers": [
+        "Charlie Kaufman",
+        "Michel Gondry",
+        "Pierre Bismuth"
+      ],
+      "stars": [
+        "Jim Carrey",
+        "Kate Winslet",
+        "Kirsten Dunst",
+        "Mark Ruffalo"
+      ],
+      "genre": "Romantic Science Fiction Drama",
+      "releaseYear": 2004,
+      "cinematographer": "Ellen Kuras",
+      "composer": "Jon Brion",
+      "studio": "Focus Features"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Innovative storytelling that perfectly blends emotional depth with high-concept science fiction",
+        "Career-defining dramatic performances from Jim Carrey and Kate Winslet",
+        "A profound exploration of memory, love, and human connection that remains timeless"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Being John Malkovich",
+        "year": 1999,
+        "description": "Another Charlie Kaufman masterpiece exploring identity and consciousness"
+      },
+      {
+        "title": "Inception",
+        "year": 2010,
+        "description": "Similarly explores memory and consciousness through innovative narrative structure"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Non-linear Narrative Structure",
+        "category": "Screenwriting",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Practical Effects in Digital Age",
+        "category": "Production",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Michel Gondry",
+      "personId": 26088,
+      "slug": "/person/26088",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Charlie Kaufman",
+        "personId": 5614,
+        "slug": "/person/5614",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Michel Gondry",
+        "personId": 26088,
+        "slug": "/person/26088",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Pierre Bismuth",
+        "personId": 29869,
+        "slug": "/person/29869",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Jim Carrey",
+        "personId": 17385,
+        "slug": "/person/17385",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Kate Winslet",
+        "personId": 20243,
+        "slug": "/person/20243",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Kirsten Dunst",
+        "personId": 21181,
+        "slug": "/person/21181",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Mark Ruffalo",
+        "personId": 24422,
+        "slug": "/person/24422",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Ellen Kuras",
+      "personId": 10055,
+      "slug": "/person/10055",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Jon Brion",
+      "personId": 18950,
+      "slug": "/person/18950",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:04:57.782Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

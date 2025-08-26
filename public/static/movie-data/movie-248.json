@@ -1,0 +1,149 @@
+{
+  "movieId": "04e8cecf-41d7-41e2-b3c7-de116c8cc15f",
+  "tmdbId": 248,
+  "title": "Pocketful of Miracles",
+  "year": 1961,
+  "analysis": {
+    "keyElements": {
+      "director": "Frank Capra",
+      "writers": [
+        "Hal Kanter",
+        "Harry Tugend",
+        "Robert Riskin"
+      ],
+      "stars": [
+        "Glenn Ford",
+        "Bette Davis",
+        "Hope Lange",
+        "Peter Falk"
+      ],
+      "genre": "Comedy Drama",
+      "releaseYear": 1961,
+      "cinematographer": "Robert Bronner",
+      "composer": "Walter Scharf",
+      "studio": "United Artists"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Bette Davis delivers a remarkable dual performance as both Apple Annie and Mrs. E. Worthington Manville",
+        "Frank Capra's final film showcases his masterful blend of comedy, heart, and social commentary",
+        "The film offers a touching exploration of class, identity, and the power of collective kindness"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Lady for a Day",
+        "year": 1933,
+        "description": "Original version of the story, also directed by Capra"
+      },
+      {
+        "title": "It's a Wonderful Life",
+        "year": 1946,
+        "description": "Capra's most famous exploration of community and kindness"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Capra's Social Commentary",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Golden Age Hollywood Transformation",
+        "category": "Film Style",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Frank Capra",
+      "personId": 11356,
+      "slug": "/person/11356",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Hal Kanter",
+        "personId": 13487,
+        "slug": "/person/13487",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Harry Tugend",
+        "personId": 13834,
+        "slug": "/person/13834",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Robert Riskin",
+        "personId": 31846,
+        "slug": "/person/31846",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Glenn Ford",
+        "personId": 12891,
+        "slug": "/person/12891",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Bette Davis",
+        "personId": 3599,
+        "slug": "/person/3599",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Hope Lange",
+        "personId": 14520,
+        "slug": "/person/14520",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Peter Falk",
+        "personId": 29290,
+        "slug": "/person/29290",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Robert Bronner",
+      "personId": 31479,
+      "slug": "/person/31479",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Walter Scharf",
+      "personId": 38073,
+      "slug": "/person/38073",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:14.145Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

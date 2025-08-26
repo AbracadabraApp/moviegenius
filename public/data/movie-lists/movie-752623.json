@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Books Come Alive",
+      "url_path": "books-come-alive",
+      "description": "Books Come Alive collection",
+      "category": "adventure",
+      "connectionReason": "Part of Books Come Alive collection"
+    },
+    {
+      "name": "Lost Treasure Recovery",
+      "url_path": "lost-treasure-recovery",
+      "description": "Lost Treasure Recovery collection",
+      "category": "adventure",
+      "connectionReason": "Part of Lost Treasure Recovery collection"
+    },
+    {
+      "name": "Ancient Civilization Fantasy [OVERSIZED]",
+      "url_path": "ancient-civilization-fantasy-oversized-",
+      "description": "Ancient Civilization Fantasy [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Ancient Civilization Fantasy [OVERSIZED] collection"
+    },
+    {
+      "name": "Global Adventure Comedies",
+      "url_path": "global-adventure-comedies",
+      "description": "Global Adventure Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Global Adventure Comedies collection"
+    },
+    {
+      "name": "Treasure Hunt Adventures",
+      "url_path": "treasure-hunt-adventures",
+      "description": "Treasure Hunt Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Treasure Hunt Adventures collection"
+    },
+    {
+      "name": "Publishing Industry Satires",
+      "url_path": "publishing-industry-satires",
+      "description": "Publishing Industry Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Publishing Industry Satires collection"
+    }
+  ],
+  "totalLists": 6
+}

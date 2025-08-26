@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Cross-Cultural Comedy",
+      "url_path": "cross-cultural-comedy",
+      "description": "Cross-Cultural Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Cultural Comedy collection"
+    },
+    {
+      "name": "Language Barrier Comedies",
+      "url_path": "language-barrier-comedies",
+      "description": "Language Barrier Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Language Barrier Comedies collection"
+    },
+    {
+      "name": "Canadian Culture Clash",
+      "url_path": "canadian-culture-clash",
+      "description": "Canadian Culture Clash collection",
+      "category": "comedy",
+      "connectionReason": "Part of Canadian Culture Clash collection"
+    },
+    {
+      "name": "Buddy Cop Comedies (Part 1)",
+      "url_path": "buddy-cop-comedies-part-1-",
+      "description": "Buddy Cop Comedies (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Buddy Cop Comedies (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

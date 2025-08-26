@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Space Horror",
+      "url_path": "space-horror",
+      "description": "Space Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Space Horror collection"
+    },
+    {
+      "name": "Military Base Horror",
+      "url_path": "military-base-horror",
+      "description": "Military Base Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Military Base Horror collection"
+    },
+    {
+      "name": "Body Possession Horror (Part 2)",
+      "url_path": "body-possession-horror-part-2-",
+      "description": "Body Possession Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Body Possession Horror (Part 2) collection"
+    },
+    {
+      "name": "Space Horror Survival",
+      "url_path": "space-horror-survival",
+      "description": "Space Horror Survival collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Horror Survival collection"
+    },
+    {
+      "name": "Space Colony Disasters",
+      "url_path": "space-colony-disasters",
+      "description": "Space Colony Disasters collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Colony Disasters collection"
+    },
+    {
+      "name": "Ancient Monsters Awakened",
+      "url_path": "ancient-monsters-awakened",
+      "description": "Ancient Monsters Awakened collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Ancient Monsters Awakened collection"
+    },
+    {
+      "name": "Military Containment Horror (Part 2)",
+      "url_path": "military-containment-horror-part-2-",
+      "description": "Military Containment Horror (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Military Containment Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 7
+}

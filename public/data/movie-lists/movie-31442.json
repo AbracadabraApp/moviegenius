@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Child Soldiers Stories",
+      "url_path": "child-soldiers-stories",
+      "description": "Child Soldiers Stories collection",
+      "category": "war",
+      "connectionReason": "Part of Child Soldiers Stories collection"
+    },
+    {
+      "name": "Experimental War Films",
+      "url_path": "experimental-war-films",
+      "description": "Experimental War Films collection",
+      "category": "war",
+      "connectionReason": "Part of Experimental War Films collection"
+    },
+    {
+      "name": "Wartime Coming-of-Age",
+      "url_path": "wartime-coming-of-age",
+      "description": "Wartime Coming-of-Age collection",
+      "category": "war",
+      "connectionReason": "Part of Wartime Coming-of-Age collection"
+    },
+    {
+      "name": "European War Drama [OVERSIZED]",
+      "url_path": "european-war-drama-oversized-",
+      "description": "European War Drama [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of European War Drama [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

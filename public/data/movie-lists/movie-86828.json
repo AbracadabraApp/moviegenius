@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Magical Coming-of-Age Stories",
+      "url_path": "magical-coming-of-age-stories",
+      "description": "Magical Coming-of-Age Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Magical Coming-of-Age Stories collection"
+    },
+    {
+      "name": "Education System Satires (Part 1)",
+      "url_path": "education-system-satires-part-1-",
+      "description": "Education System Satires (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Education System Satires (Part 1) collection"
+    },
+    {
+      "name": "Dark Comedy Accidents (Part 1)",
+      "url_path": "dark-comedy-accidents-part-1-",
+      "description": "Dark Comedy Accidents (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Dark Comedy Accidents (Part 1) collection"
+    },
+    {
+      "name": "Friendly Alien Encounters",
+      "url_path": "friendly-alien-encounters",
+      "description": "Friendly Alien Encounters collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Friendly Alien Encounters collection"
+    },
+    {
+      "name": "Behavioral Control SciFi",
+      "url_path": "behavioral-control-scifi",
+      "description": "Behavioral Control SciFi collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Behavioral Control SciFi collection"
+    }
+  ],
+  "totalLists": 5
+}

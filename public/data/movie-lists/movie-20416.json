@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Underwater World Exploration",
+      "url_path": "underwater-world-exploration",
+      "description": "Underwater World Exploration collection",
+      "category": "adventure",
+      "connectionReason": "Part of Underwater World Exploration collection"
+    },
+    {
+      "name": "Lost Treasure Recovery",
+      "url_path": "lost-treasure-recovery",
+      "description": "Lost Treasure Recovery collection",
+      "category": "adventure",
+      "connectionReason": "Part of Lost Treasure Recovery collection"
+    },
+    {
+      "name": "Underwater Danger Thrillers",
+      "url_path": "underwater-danger-thrillers",
+      "description": "Underwater Danger Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Underwater Danger Thrillers collection"
+    },
+    {
+      "name": "Maritime Hostage Thrillers",
+      "url_path": "maritime-hostage-thrillers",
+      "description": "Maritime Hostage Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Maritime Hostage Thrillers collection"
+    }
+  ],
+  "totalLists": 4
+}

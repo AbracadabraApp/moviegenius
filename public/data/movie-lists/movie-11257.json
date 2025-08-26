@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Merchant Ivory Classics",
+      "url_path": "merchant-ivory-classics",
+      "description": "Merchant Ivory Classics collection",
+      "category": "period",
+      "connectionReason": "Part of Merchant Ivory Classics collection"
+    },
+    {
+      "name": "British Literary Adaptations",
+      "url_path": "british-literary-adaptations",
+      "description": "British Literary Adaptations collection",
+      "category": "period",
+      "connectionReason": "Part of British Literary Adaptations collection"
+    },
+    {
+      "name": "Romance and Relationships",
+      "url_path": "romance-and-relationships",
+      "description": "Romance and Relationships collection",
+      "category": "period",
+      "connectionReason": "Part of Romance and Relationships collection"
+    },
+    {
+      "name": "Romantic Self-Discovery Journeys (Part 1)",
+      "url_path": "romantic-self-discovery-journeys-part-1-",
+      "description": "Romantic Self-Discovery Journeys (Part 1) collection",
+      "category": "romance",
+      "connectionReason": "Part of Romantic Self-Discovery Journeys (Part 1) collection"
+    },
+    {
+      "name": "Class-Crossing Period Romance (Part 1)",
+      "url_path": "class-crossing-period-romance-part-1-",
+      "description": "Class-Crossing Period Romance (Part 1) collection",
+      "category": "romance",
+      "connectionReason": "Part of Class-Crossing Period Romance (Part 1) collection"
+    }
+  ],
+  "totalLists": 5
+}

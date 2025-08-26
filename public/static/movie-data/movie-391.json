@@ -1,0 +1,141 @@
+{
+  "movieId": "1d148492-daf1-4757-8398-dd2bd58dbc95",
+  "tmdbId": 391,
+  "title": "A Fistful of Dollars",
+  "year": 1964,
+  "analysis": {
+    "keyElements": {
+      "director": "Sergio Leone",
+      "writers": [
+        "Sergio Leone",
+        "Víctor Andrés Catena",
+        "Jaime Comas Gil"
+      ],
+      "stars": [
+        "Clint Eastwood",
+        "Gian Maria Volonté",
+        "Marianne Koch"
+      ],
+      "genre": "Western",
+      "releaseYear": 1964,
+      "cinematographer": "Massimo Dallamano",
+      "composer": "Ennio Morricone",
+      "studio": "United Artists"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Revolutionized the Western genre with its gritty style and morally ambiguous protagonist",
+        "Launched both Sergio Leone's and Clint Eastwood's legendary careers in a single masterpiece",
+        "Features Ennio Morricone's groundbreaking score that redefined Western film music"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Yojimbo",
+        "year": 1961,
+        "description": "The direct inspiration for A Fistful of Dollars, showing how Leone adapted samurai cinema into Western mythology"
+      },
+      {
+        "title": "The Good, the Bad and the Ugly",
+        "year": 1966,
+        "description": "The culmination of Leone's style and themes established in A Fistful of Dollars"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Spaghetti Western Aesthetics",
+        "category": "Film_Style",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Genre Reinvention",
+        "category": "Film_History",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Sergio Leone",
+      "personId": 33676,
+      "slug": "/person/33676",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Sergio Leone",
+        "personId": 33676,
+        "slug": "/person/33676",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Víctor Andrés Catena",
+        "personId": 37572,
+        "slug": "/person/37572",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jaime Comas Gil",
+        "personId": 15608,
+        "slug": "/person/15608",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Clint Eastwood",
+        "personId": 6608,
+        "slug": "/person/6608",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Marianne Koch",
+        "personId": 24001,
+        "slug": "/person/24001",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Gian Maria Volontè",
+        "personId": 12646,
+        "slug": "/person/12646",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Massimo Dallamano",
+      "personId": 24848,
+      "slug": "/person/24848",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Ennio Morricone",
+      "personId": 10282,
+      "slug": "/person/10282",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:31.511Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

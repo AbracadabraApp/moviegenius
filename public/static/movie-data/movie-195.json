@@ -1,0 +1,133 @@
+{
+  "movieId": "047065a4-f0b2-48ae-a7aa-a1e590050f48",
+  "tmdbId": 195,
+  "title": "Trouble in Paradise",
+  "year": 1932,
+  "analysis": {
+    "keyElements": {
+      "director": "Ernst Lubitsch",
+      "writers": [
+        "Samson Raphaelson",
+        "Grover Jones"
+      ],
+      "stars": [
+        "Miriam Hopkins",
+        "Kay Francis",
+        "Herbert Marshall"
+      ],
+      "genre": "Romantic Comedy",
+      "releaseYear": 1932,
+      "cinematographer": "Victor Milner",
+      "composer": "W. Franke Harling",
+      "studio": "Paramount Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Perfect example of the legendary 'Lubitsch touch' - sophisticated wit and innuendo",
+        "Masterclass in pre-Code Hollywood sophistication and adult themes",
+        "Arguably the greatest romantic comedy of the 1930s with enduring influence"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Design for Living",
+        "year": 1933,
+        "description": "Another Lubitsch pre-Code masterpiece exploring unconventional relationships"
+      },
+      {
+        "title": "The Shop Around the Corner",
+        "year": 1940,
+        "description": "Later Lubitsch romantic comedy showing evolution of his style"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Pre-Code Hollywood",
+        "category": "Film History",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "The Lubitsch Touch",
+        "category": "Directing Technique",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Ernst Lubitsch",
+      "personId": 10593,
+      "slug": "/person/10593",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Samson Raphaelson",
+        "personId": 33067,
+        "slug": "/person/33067",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Grover Jones",
+        "personId": 13250,
+        "slug": "/person/13250",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Miriam Hopkins",
+        "personId": 26538,
+        "slug": "/person/26538",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Kay Francis",
+        "personId": 20385,
+        "slug": "/person/20385",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Herbert Marshall",
+        "personId": 14230,
+        "slug": "/person/14230",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Victor Milner",
+      "personId": 37627,
+      "slug": "/person/37627",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "W. Franke Harling",
+      "personId": 38279,
+      "slug": "/person/38279",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:05.012Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

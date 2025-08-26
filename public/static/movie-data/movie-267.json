@@ -1,0 +1,142 @@
+{
+  "movieId": "7d7589b8-ae2f-48e3-a1f6-21d64f2ce192",
+  "tmdbId": 267,
+  "title": "Live Flesh",
+  "year": 1997,
+  "analysis": {
+    "keyElements": {
+      "director": "Pedro Almodóvar",
+      "writers": [
+        "Pedro Almodóvar",
+        "Ruth Rendell"
+      ],
+      "stars": [
+        "Javier Bardem",
+        "Francesca Neri",
+        "Liberto Rabal"
+      ],
+      "genre": "Romantic Drama Thriller",
+      "releaseYear": 1997,
+      "cinematographer": "Affonso Beato",
+      "composer": "Alberto Iglesias",
+      "studio": "El Deseo"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of noir tension and passionate melodrama in Almodóvar's unique style",
+        "Complex character study exploring desire, redemption, and political transformation",
+        "Javier Bardem's powerful performance as a conflicted ex-cop confined to a wheelchair"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "All About My Mother",
+        "year": 1999,
+        "description": "Almodóvar's follow-up that further developed his mature dramatic style"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Spanish Cinema Post-Franco",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Political Metaphor in Cinema",
+        "category": "Film Theory",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Pedro Almodóvar",
+      "personId": 29079,
+      "slug": "/person/29079",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Pedro Almodóvar",
+        "personId": 29079,
+        "slug": "/person/29079",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ruth Rendell",
+        "personId": 32726,
+        "slug": "/person/32726",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jorge Guerricaechevarría",
+        "personId": 19065,
+        "slug": "/person/19065",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Javier Bardem",
+        "personId": 16360,
+        "slug": "/person/16360",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Francesca Neri",
+        "personId": 11191,
+        "slug": "/person/11191",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Liberto Rabal",
+        "personId": 22485,
+        "slug": "/person/22485",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Angela Molina",
+        "personId": 1904,
+        "slug": "/person/1904",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Affonso Beato",
+      "personId": 321,
+      "slug": "/person/321",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Alberto Iglesias",
+      "personId": 715,
+      "slug": "/person/715",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:17.537Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

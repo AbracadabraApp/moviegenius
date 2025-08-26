@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Agricultural Life Studies",
+      "url_path": "agricultural-life-studies",
+      "description": "Agricultural Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Agricultural Life Studies collection"
+    },
+    {
+      "name": "Rural Life Studies",
+      "url_path": "rural-life-studies",
+      "description": "Rural Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Rural Life Studies collection"
+    },
+    {
+      "name": "Traditional Herding Culture",
+      "url_path": "traditional-herding-culture",
+      "description": "Traditional Herding Culture collection",
+      "category": "documentary",
+      "connectionReason": "Part of Traditional Herding Culture collection"
+    },
+    {
+      "name": "Visual Nature Symphonies (Part 3)",
+      "url_path": "visual-nature-symphonies-part-3-",
+      "description": "Visual Nature Symphonies (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Visual Nature Symphonies (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

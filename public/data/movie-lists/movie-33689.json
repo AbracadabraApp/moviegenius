@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Summer Camp Comedies",
+      "url_path": "summer-camp-comedies",
+      "description": "Summer Camp Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Summer Camp Comedies collection"
+    },
+    {
+      "name": "Twin Switch Comedies",
+      "url_path": "twin-switch-comedies",
+      "description": "Twin Switch Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Twin Switch Comedies collection"
+    },
+    {
+      "name": "Found Family Comedies (Part 5)",
+      "url_path": "found-family-comedies-part-5-",
+      "description": "Found Family Comedies (Part 5) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Found Family Comedies (Part 5) collection"
+    },
+    {
+      "name": "Cross-Cultural Class Comedies (Part 1)",
+      "url_path": "cross-cultural-class-comedies-part-1-",
+      "description": "Cross-Cultural Class Comedies (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Cultural Class Comedies (Part 1) collection"
+    },
+    {
+      "name": "Quirky Matchmaker Romance",
+      "url_path": "quirky-matchmaker-romance",
+      "description": "Quirky Matchmaker Romance collection",
+      "category": "romance",
+      "connectionReason": "Part of Quirky Matchmaker Romance collection"
+    },
+    {
+      "name": "Mistaken Identity Romance",
+      "url_path": "mistaken-identity-romance",
+      "description": "Mistaken Identity Romance collection",
+      "category": "romance",
+      "connectionReason": "Part of Mistaken Identity Romance collection"
+    },
+    {
+      "name": "Single Parent Romance",
+      "url_path": "single-parent-romance",
+      "description": "Single Parent Romance collection",
+      "category": "romance",
+      "connectionReason": "Part of Single Parent Romance collection"
+    }
+  ],
+  "totalLists": 7
+}

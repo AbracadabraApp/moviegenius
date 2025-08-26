@@ -1,0 +1,141 @@
+{
+  "movieId": "4f576474-d5b1-4e51-85f1-0ec703fb241f",
+  "tmdbId": 292,
+  "title": "Dave Chappelle's Block Party",
+  "year": 2005,
+  "analysis": {
+    "keyElements": {
+      "director": "Michel Gondry",
+      "writers": [
+        "Dave Chappelle"
+      ],
+      "stars": [
+        "Dave Chappelle",
+        "Erykah Badu",
+        "Kanye West",
+        "The Roots",
+        "Mos Def"
+      ],
+      "genre": "Documentary/Concert Film",
+      "releaseYear": 2005,
+      "cinematographer": "Ellen Kuras",
+      "composer": "Various Artists",
+      "studio": "Rogue Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Captures a magical moment in hip-hop and comedy history with unprecedented authenticity",
+        "Features career-defining performances from artists at their creative peaks",
+        "Demonstrates the power of community and music to bring people together across social divides"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Summer of Soul",
+        "year": 2021,
+        "description": "Similar celebration of Black music and community"
+      },
+      {
+        "title": "Wattstax",
+        "year": 1973,
+        "description": "Influential Black music festival documentary"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Concert Film Evolution",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "2000s Hip-Hop Culture",
+        "category": "Cultural Studies",
+        "difficulty": "beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Michel Gondry",
+      "personId": 26088,
+      "slug": "/person/26088",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Dave Chappelle",
+        "personId": 7582,
+        "slug": "/person/7582",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Dave Chappelle",
+        "personId": 7582,
+        "slug": "/person/7582",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Erykah Badu",
+        "personId": 10621,
+        "slug": "/person/10621",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Mos Def",
+        "personId": 26813,
+        "slug": "/person/26813",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Kanye West",
+        "personId": 20018,
+        "slug": "/person/20018",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "The Roots",
+        "personId": 36035,
+        "slug": "/person/36035",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Ellen Kuras",
+      "personId": 10055,
+      "slug": "/person/10055",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Various Artists",
+      "personId": 37403,
+      "slug": "/person/37403",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:20.547Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

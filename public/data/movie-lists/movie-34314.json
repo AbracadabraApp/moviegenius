@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Holiday Horror Thrillers",
+      "url_path": "holiday-horror-thrillers",
+      "description": "Holiday Horror Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Holiday Horror Thrillers collection"
+    },
+    {
+      "name": "Transportation Disaster Thrillers",
+      "url_path": "transportation-disaster-thrillers",
+      "description": "Transportation Disaster Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Transportation Disaster Thrillers collection"
+    },
+    {
+      "name": "One Night Thrillers (Part 4)",
+      "url_path": "one-night-thrillers-part-4-",
+      "description": "One Night Thrillers (Part 4) collection",
+      "category": "thriller",
+      "connectionReason": "Part of One Night Thrillers (Part 4) collection"
+    },
+    {
+      "name": "Single Location Survival (Part 6)",
+      "url_path": "single-location-survival-part-6-",
+      "description": "Single Location Survival (Part 6) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Single Location Survival (Part 6) collection"
+    }
+  ],
+  "totalLists": 4
+}

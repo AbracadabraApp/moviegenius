@@ -1,0 +1,133 @@
+{
+  "movieId": "65b127b9-50c1-4535-bb09-2b53a874d4ef",
+  "tmdbId": 204,
+  "title": "The Wages of Fear",
+  "year": 1953,
+  "analysis": {
+    "keyElements": {
+      "director": "Henri-Georges Clouzot",
+      "writers": [
+        "Henri-Georges Clouzot",
+        "Georges Arnaud"
+      ],
+      "stars": [
+        "Yves Montand",
+        "Charles Vanel",
+        "Peter van Eyck"
+      ],
+      "genre": "Thriller",
+      "releaseYear": 1953,
+      "cinematographer": "Armand Thirard",
+      "composer": "Georges Auric",
+      "studio": "Criterion"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterclass in sustained tension and psychological thriller crafting",
+        "Revolutionary influence on action-thriller genre with practical effects",
+        "Powerful critique of corporate exploitation and human desperation"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Sorcerer",
+        "year": 1977,
+        "description": "Direct remake that transplants the story to South America with Roy Scheider"
+      },
+      {
+        "title": "Diabolique",
+        "year": 1955,
+        "description": "Clouzot's following thriller showing his mastery of suspense"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "French Thriller Tradition",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Practical Effects vs CGI",
+        "category": "Technical",
+        "difficulty": "beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Henri-Georges Clouzot",
+      "personId": 14104,
+      "slug": "/person/14104",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Henri-Georges Clouzot",
+        "personId": 14104,
+        "slug": "/person/14104",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Georges Arnaud",
+        "personId": 12372,
+        "slug": "/person/12372",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Yves Montand",
+        "personId": 39381,
+        "slug": "/person/39381",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Charles Vanel",
+        "personId": 5577,
+        "slug": "/person/5577",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Peter van Eyck",
+        "personId": 29549,
+        "slug": "/person/29549",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Armand Thirard",
+      "personId": 2535,
+      "slug": "/person/2535",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Georges Auric",
+      "personId": 12374,
+      "slug": "/person/12374",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:06.697Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

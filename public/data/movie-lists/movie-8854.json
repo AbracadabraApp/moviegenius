@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Classic Comic Heroes",
+      "url_path": "classic-comic-heroes",
+      "description": "Classic Comic Heroes collection",
+      "category": "superhero",
+      "connectionReason": "Part of Classic Comic Heroes collection"
+    },
+    {
+      "name": "Science Hero Origins",
+      "url_path": "science-hero-origins",
+      "description": "Science Hero Origins collection",
+      "category": "superhero",
+      "connectionReason": "Part of Science Hero Origins collection"
+    },
+    {
+      "name": "Urban Crime Vigilantes",
+      "url_path": "urban-crime-vigilantes",
+      "description": "Urban Crime Vigilantes collection",
+      "category": "superhero",
+      "connectionReason": "Part of Urban Crime Vigilantes collection"
+    }
+  ],
+  "totalLists": 3
+}

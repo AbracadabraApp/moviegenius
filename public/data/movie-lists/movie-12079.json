@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Drug Trade & Trafficking",
+      "url_path": "drug-trade-trafficking",
+      "description": "Drug Trade & Trafficking collection",
+      "category": "crime",
+      "connectionReason": "Part of Drug Trade & Trafficking collection"
+    },
+    {
+      "name": "Professional Driver Crime",
+      "url_path": "professional-driver-crime",
+      "description": "Professional Driver Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Professional Driver Crime collection"
+    },
+    {
+      "name": "Mental Breakdown Violence",
+      "url_path": "mental-breakdown-violence",
+      "description": "Mental Breakdown Violence collection",
+      "category": "crime",
+      "connectionReason": "Part of Mental Breakdown Violence collection"
+    },
+    {
+      "name": "Urban Drug Trade (Part 3)",
+      "url_path": "urban-drug-trade-part-3-",
+      "description": "Urban Drug Trade (Part 3) collection",
+      "category": "crime",
+      "connectionReason": "Part of Urban Drug Trade (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

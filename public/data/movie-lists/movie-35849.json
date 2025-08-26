@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Victorian Detective Mysteries",
+      "url_path": "victorian-detective-mysteries",
+      "description": "Victorian Detective Mysteries collection",
+      "category": "thriller",
+      "connectionReason": "Part of Victorian Detective Mysteries collection"
+    },
+    {
+      "name": "Memory Loss Mysteries",
+      "url_path": "memory-loss-mysteries",
+      "description": "Memory Loss Mysteries collection",
+      "category": "thriller",
+      "connectionReason": "Part of Memory Loss Mysteries collection"
+    },
+    {
+      "name": "Creative Process Madness",
+      "url_path": "creative-process-madness",
+      "description": "Creative Process Madness collection",
+      "category": "thriller",
+      "connectionReason": "Part of Creative Process Madness collection"
+    }
+  ],
+  "totalLists": 3
+}

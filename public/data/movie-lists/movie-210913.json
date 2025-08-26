@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Arctic Horror Films",
+      "url_path": "arctic-horror-films",
+      "description": "Arctic Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Arctic Horror Films collection"
+    },
+    {
+      "name": "Mutant Creature Features (Part 2)",
+      "url_path": "mutant-creature-features-part-2-",
+      "description": "Mutant Creature Features (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Mutant Creature Features (Part 2) collection"
+    },
+    {
+      "name": "Scientific Expedition Horror (Part 1)",
+      "url_path": "scientific-expedition-horror-part-1-",
+      "description": "Scientific Expedition Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Scientific Expedition Horror (Part 1) collection"
+    },
+    {
+      "name": "Climate Disaster Films",
+      "url_path": "climate-disaster-films",
+      "description": "Climate Disaster Films collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Climate Disaster Films collection"
+    },
+    {
+      "name": "European Catastrophe Settings",
+      "url_path": "european-catastrophe-settings",
+      "description": "European Catastrophe Settings collection",
+      "category": "science fiction",
+      "connectionReason": "Part of European Catastrophe Settings collection"
+    },
+    {
+      "name": "Mutant Creature Features (Part 1)",
+      "url_path": "mutant-creature-features-part-1-",
+      "description": "Mutant Creature Features (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Mutant Creature Features (Part 1) collection"
+    },
+    {
+      "name": "Survival Against Nature (Part 1)",
+      "url_path": "survival-against-nature-part-1-",
+      "description": "Survival Against Nature (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Survival Against Nature (Part 1) collection"
+    }
+  ],
+  "totalLists": 7
+}

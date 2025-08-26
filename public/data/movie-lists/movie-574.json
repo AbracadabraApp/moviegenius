@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "International Hostage Crisis",
+      "url_path": "international-hostage-crisis",
+      "description": "International Hostage Crisis collection",
+      "category": "thriller",
+      "connectionReason": "Part of International Hostage Crisis collection"
+    },
+    {
+      "name": "Civilian Vigilante Justice",
+      "url_path": "civilian-vigilante-justice",
+      "description": "Civilian Vigilante Justice collection",
+      "category": "thriller",
+      "connectionReason": "Part of Civilian Vigilante Justice collection"
+    },
+    {
+      "name": "Political Assassination Plots",
+      "url_path": "political-assassination-plots",
+      "description": "Political Assassination Plots collection",
+      "category": "thriller",
+      "connectionReason": "Part of Political Assassination Plots collection"
+    }
+  ],
+  "totalLists": 3
+}

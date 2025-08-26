@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Religious Artifact Quests",
+      "url_path": "religious-artifact-quests",
+      "description": "Religious Artifact Quests collection",
+      "category": "adventure",
+      "connectionReason": "Part of Religious Artifact Quests collection"
+    },
+    {
+      "name": "Egyptian Mythology Adventures",
+      "url_path": "egyptian-mythology-adventures",
+      "description": "Egyptian Mythology Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Egyptian Mythology Adventures collection"
+    },
+    {
+      "name": "Historical Conspiracy Adventures",
+      "url_path": "historical-conspiracy-adventures",
+      "description": "Historical Conspiracy Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Historical Conspiracy Adventures collection"
+    }
+  ],
+  "totalLists": 3
+}

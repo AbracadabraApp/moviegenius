@@ -1,0 +1,104 @@
+{
+  "movieId": "19d473cd-856e-4295-9d85-2434097f11a4",
+  "tmdbId": 160,
+  "title": "Arrival of a Train at La Ciotat",
+  "year": 1896,
+  "analysis": {
+    "keyElements": {
+      "director": "Auguste Lumière and Louis Lumière",
+      "writers": [
+        "N/A"
+      ],
+      "stars": [
+        "Unidentified passengers and bystanders"
+      ],
+      "genre": "Documentary/Actuality",
+      "releaseYear": 1896,
+      "cinematographer": "Louis Lumière",
+      "composer": "N/A",
+      "studio": "Lumière"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Foundational moment in cinema history that sparked mass audience reactions",
+        "Demonstrates the revolutionary power of moving images in their purest form",
+        "Perfect example of early cinematography's ability to capture everyday life"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Workers Leaving the Lumière Factory",
+        "year": 1895,
+        "description": "Another groundbreaking Lumière brothers film showing workers exiting their factory"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Early Cinema Technology",
+        "category": "Technical History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Documentary Film Origins",
+        "category": "Film History",
+        "difficulty": "beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Auguste Lumière and Louis Lumière",
+      "personId": 2838,
+      "slug": "/person/2838",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "No writer - documentary footage",
+        "personId": 27964,
+        "slug": "/person/27964",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Anonymous train passengers",
+        "personId": 2207,
+        "slug": "/person/2207",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Louis Lumière",
+      "personId": 22999,
+      "slug": "/person/22999",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "None",
+      "personId": 27810,
+      "slug": "/person/27810",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:10.188Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

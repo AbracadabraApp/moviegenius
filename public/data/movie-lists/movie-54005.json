@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Sports Fan Adventures",
+      "url_path": "sports-fan-adventures",
+      "description": "Sports Fan Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Sports Fan Adventures collection"
+    },
+    {
+      "name": "Twin Switch Comedies",
+      "url_path": "twin-switch-comedies",
+      "description": "Twin Switch Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Twin Switch Comedies collection"
+    },
+    {
+      "name": "Vacation Adventure Mishaps (Part 1)",
+      "url_path": "vacation-adventure-mishaps-part-1-",
+      "description": "Vacation Adventure Mishaps (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Vacation Adventure Mishaps (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

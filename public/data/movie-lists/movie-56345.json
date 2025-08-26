@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Solo Living Documentaries",
+      "url_path": "solo-living-documentaries",
+      "description": "Solo Living Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Solo Living Documentaries collection"
+    },
+    {
+      "name": "Human-Animal Relationships",
+      "url_path": "human-animal-relationships",
+      "description": "Human-Animal Relationships collection",
+      "category": "documentary",
+      "connectionReason": "Part of Human-Animal Relationships collection"
+    },
+    {
+      "name": "Personal Monologue Documentaries (Part 1)",
+      "url_path": "personal-monologue-documentaries-part-1-",
+      "description": "Personal Monologue Documentaries (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Personal Monologue Documentaries (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

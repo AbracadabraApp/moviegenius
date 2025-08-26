@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Migration Romance Stories",
+      "url_path": "migration-romance-stories",
+      "description": "Migration Romance Stories collection",
+      "category": "romance",
+      "connectionReason": "Part of Migration Romance Stories collection"
+    },
+    {
+      "name": "Urban Romance Stories",
+      "url_path": "urban-romance-stories",
+      "description": "Urban Romance Stories collection",
+      "category": "romance",
+      "connectionReason": "Part of Urban Romance Stories collection"
+    },
+    {
+      "name": "Nonlinear Romance Stories (Part 1)",
+      "url_path": "nonlinear-romance-stories-part-1-",
+      "description": "Nonlinear Romance Stories (Part 1) collection",
+      "category": "romance",
+      "connectionReason": "Part of Nonlinear Romance Stories (Part 1) collection"
+    },
+    {
+      "name": "Cross-Cultural Romance Conflicts (Part 2)",
+      "url_path": "cross-cultural-romance-conflicts-part-2-",
+      "description": "Cross-Cultural Romance Conflicts (Part 2) collection",
+      "category": "romance",
+      "connectionReason": "Part of Cross-Cultural Romance Conflicts (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Media Theory Films",
+      "url_path": "media-theory-films",
+      "description": "Media Theory Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Media Theory Films collection"
+    },
+    {
+      "name": "Political Movement Documentaries (Part 3)",
+      "url_path": "political-movement-documentaries-part-3-",
+      "description": "Political Movement Documentaries (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Political Movement Documentaries (Part 3) collection"
+    },
+    {
+      "name": "Documentary Ethics Explorations (Part 1)",
+      "url_path": "documentary-ethics-explorations-part-1-",
+      "description": "Documentary Ethics Explorations (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Documentary Ethics Explorations (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

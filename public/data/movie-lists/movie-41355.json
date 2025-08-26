@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "WWII Archival Documentaries",
+      "url_path": "wwii-archival-documentaries",
+      "description": "WWII Archival Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of WWII Archival Documentaries collection"
+    },
+    {
+      "name": "Military Reality Exposés",
+      "url_path": "military-reality-expos-s",
+      "description": "Military Reality Exposés collection",
+      "category": "documentary",
+      "connectionReason": "Part of Military Reality Exposés collection"
+    },
+    {
+      "name": "Military History Collections",
+      "url_path": "military-history-collections",
+      "description": "Military History Collections collection",
+      "category": "documentary",
+      "connectionReason": "Part of Military History Collections collection"
+    },
+    {
+      "name": "Perseverance Against Odds (Part 4)",
+      "url_path": "perseverance-against-odds-part-4-",
+      "description": "Perseverance Against Odds (Part 4) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Perseverance Against Odds (Part 4) collection"
+    }
+  ],
+  "totalLists": 4
+}

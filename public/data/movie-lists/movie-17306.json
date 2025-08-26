@@ -1,0 +1,61 @@
+{
+  "lists": [
+    {
+      "name": "Arctic Horror Films",
+      "url_path": "arctic-horror-films",
+      "description": "Arctic Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Arctic Horror Films collection"
+    },
+    {
+      "name": "Military Base Horror",
+      "url_path": "military-base-horror",
+      "description": "Military Base Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Military Base Horror collection"
+    },
+    {
+      "name": "Mutant Creature Features (Part 3)",
+      "url_path": "mutant-creature-features-part-3-",
+      "description": "Mutant Creature Features (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Mutant Creature Features (Part 3) collection"
+    },
+    {
+      "name": "Scientific Experiment Horror (Part 4)",
+      "url_path": "scientific-experiment-horror-part-4-",
+      "description": "Scientific Experiment Horror (Part 4) collection",
+      "category": "horror",
+      "connectionReason": "Part of Scientific Experiment Horror (Part 4) collection"
+    },
+    {
+      "name": "Low Budget Disaster (Part 3)",
+      "url_path": "low-budget-disaster-part-3-",
+      "description": "Low Budget Disaster (Part 3) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Low Budget Disaster (Part 3) collection"
+    },
+    {
+      "name": "Mutant Creature Features (Part 3)",
+      "url_path": "mutant-creature-features-part-3-",
+      "description": "Mutant Creature Features (Part 3) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Mutant Creature Features (Part 3) collection"
+    },
+    {
+      "name": "Military Containment Horror (Part 2)",
+      "url_path": "military-containment-horror-part-2-",
+      "description": "Military Containment Horror (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Military Containment Horror (Part 2) collection"
+    },
+    {
+      "name": "Survival Against Nature (Part 2)",
+      "url_path": "survival-against-nature-part-2-",
+      "description": "Survival Against Nature (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Survival Against Nature (Part 2) collection"
+    }
+  ],
+  "totalLists": 8
+}

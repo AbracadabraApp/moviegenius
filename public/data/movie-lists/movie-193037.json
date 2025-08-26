@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "French Bandit Romances",
+      "url_path": "french-bandit-romances",
+      "description": "French Bandit Romances collection",
+      "category": "adventure",
+      "connectionReason": "Part of French Bandit Romances collection"
+    },
+    {
+      "name": "European Castle Heists",
+      "url_path": "european-castle-heists",
+      "description": "European Castle Heists collection",
+      "category": "adventure",
+      "connectionReason": "Part of European Castle Heists collection"
+    },
+    {
+      "name": "Golden Age Sea Adventures [OVERSIZED]",
+      "url_path": "golden-age-sea-adventures-oversized-",
+      "description": "Golden Age Sea Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Golden Age Sea Adventures [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 3
+}

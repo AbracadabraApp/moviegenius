@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Time Travel Adventures",
+      "url_path": "time-travel-adventures",
+      "description": "Time Travel Adventures collection",
+      "category": "animation",
+      "connectionReason": "Part of Time Travel Adventures collection"
+    },
+    {
+      "name": "Stop Motion Classics",
+      "url_path": "stop-motion-classics",
+      "description": "Stop Motion Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Stop Motion Classics collection"
+    },
+    {
+      "name": "Holiday Special Animations",
+      "url_path": "holiday-special-animations",
+      "description": "Holiday Special Animations collection",
+      "category": "animation",
+      "connectionReason": "Part of Holiday Special Animations collection"
+    },
+    {
+      "name": "Mythological Time Travel",
+      "url_path": "mythological-time-travel",
+      "description": "Mythological Time Travel collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Mythological Time Travel collection"
+    },
+    {
+      "name": "Outsider Transformation Stories",
+      "url_path": "outsider-transformation-stories",
+      "description": "Outsider Transformation Stories collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Outsider Transformation Stories collection"
+    },
+    {
+      "name": "Holiday Magic Adventures",
+      "url_path": "holiday-magic-adventures",
+      "description": "Holiday Magic Adventures collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Holiday Magic Adventures collection"
+    }
+  ],
+  "totalLists": 6
+}

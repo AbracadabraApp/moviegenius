@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Black Art History",
+      "url_path": "black-art-history",
+      "description": "Black Art History collection",
+      "category": "documentary",
+      "connectionReason": "Part of Black Art History collection"
+    },
+    {
+      "name": "Urban Subculture Studies (Part 2)",
+      "url_path": "urban-subculture-studies-part-2-",
+      "description": "Urban Subculture Studies (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Urban Subculture Studies (Part 2) collection"
+    },
+    {
+      "name": "Cultural Icon Biographies (Part 3)",
+      "url_path": "cultural-icon-biographies-part-3-",
+      "description": "Cultural Icon Biographies (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cultural Icon Biographies (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

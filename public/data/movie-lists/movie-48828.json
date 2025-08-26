@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Friendly Alien Encounters",
+      "url_path": "friendly-alien-encounters",
+      "description": "Friendly Alien Encounters collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Friendly Alien Encounters collection"
+    },
+    {
+      "name": "Alien Integration Stories",
+      "url_path": "alien-integration-stories",
+      "description": "Alien Integration Stories collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Alien Integration Stories collection"
+    },
+    {
+      "name": "Kids vs Aliens",
+      "url_path": "kids-vs-aliens",
+      "description": "Kids vs Aliens collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Kids vs Aliens collection"
+    }
+  ],
+  "totalLists": 3
+}

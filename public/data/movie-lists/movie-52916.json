@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Late Sixties Action Westerns",
+      "url_path": "late-sixties-action-westerns",
+      "description": "Late Sixties Action Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Late Sixties Action Westerns collection"
+    },
+    {
+      "name": "Spaghetti Western Classics",
+      "url_path": "spaghetti-western-classics",
+      "description": "Spaghetti Western Classics collection",
+      "category": "western",
+      "connectionReason": "Part of Spaghetti Western Classics collection"
+    },
+    {
+      "name": "Bank Heist Westerns",
+      "url_path": "bank-heist-westerns",
+      "description": "Bank Heist Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Bank Heist Westerns collection"
+    }
+  ],
+  "totalLists": 3
+}

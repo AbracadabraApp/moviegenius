@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "WWII Propaganda Films",
+      "url_path": "wwii-propaganda-films",
+      "description": "WWII Propaganda Films collection",
+      "category": "war",
+      "connectionReason": "Part of WWII Propaganda Films collection"
+    },
+    {
+      "name": "Civilian Survival Stories",
+      "url_path": "civilian-survival-stories",
+      "description": "Civilian Survival Stories collection",
+      "category": "war",
+      "connectionReason": "Part of Civilian Survival Stories collection"
+    },
+    {
+      "name": "Wartime Resistance Films [OVERSIZED]",
+      "url_path": "wartime-resistance-films-oversized-",
+      "description": "Wartime Resistance Films [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of Wartime Resistance Films [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 3
+}

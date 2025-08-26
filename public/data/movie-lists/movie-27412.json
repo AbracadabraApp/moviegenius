@@ -1,0 +1,61 @@
+{
+  "lists": [
+    {
+      "name": "Splatter Comedy Films",
+      "url_path": "splatter-comedy-films",
+      "description": "Splatter Comedy Films collection",
+      "category": "comedy",
+      "connectionReason": "Part of Splatter Comedy Films collection"
+    },
+    {
+      "name": "Exploitation Film Satires",
+      "url_path": "exploitation-film-satires",
+      "description": "Exploitation Film Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Exploitation Film Satires collection"
+    },
+    {
+      "name": "Los Angeles Lifestyle Films (Part 2)",
+      "url_path": "los-angeles-lifestyle-films-part-2-",
+      "description": "Los Angeles Lifestyle Films (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Los Angeles Lifestyle Films (Part 2) collection"
+    },
+    {
+      "name": "Horror Movie Parodies (Part 2)",
+      "url_path": "horror-movie-parodies-part-2-",
+      "description": "Horror Movie Parodies (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Horror Movie Parodies (Part 2) collection"
+    },
+    {
+      "name": "Exploitation Cinema Homage",
+      "url_path": "exploitation-cinema-homage",
+      "description": "Exploitation Cinema Homage collection",
+      "category": "horror",
+      "connectionReason": "Part of Exploitation Cinema Homage collection"
+    },
+    {
+      "name": "Occult Ritual Horror (Part 2)",
+      "url_path": "occult-ritual-horror-part-2-",
+      "description": "Occult Ritual Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Occult Ritual Horror (Part 2) collection"
+    },
+    {
+      "name": "Classic Monster Comedy (Part 2)",
+      "url_path": "classic-monster-comedy-part-2-",
+      "description": "Classic Monster Comedy (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Monster Comedy (Part 2) collection"
+    },
+    {
+      "name": "Noir Detective Horror (Part 1)",
+      "url_path": "noir-detective-horror-part-1-",
+      "description": "Noir Detective Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Noir Detective Horror (Part 1) collection"
+    }
+  ],
+  "totalLists": 8
+}

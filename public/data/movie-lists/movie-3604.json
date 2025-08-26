@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Retro Science Fiction",
+      "url_path": "retro-science-fiction",
+      "description": "Retro Science Fiction collection",
+      "category": "adventure",
+      "connectionReason": "Part of Retro Science Fiction collection"
+    },
+    {
+      "name": "Pulp Hero Adventures",
+      "url_path": "pulp-hero-adventures",
+      "description": "Pulp Hero Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Pulp Hero Adventures collection"
+    },
+    {
+      "name": "CGI Spectacle Adventures [OVERSIZED]",
+      "url_path": "cgi-spectacle-adventures-oversized-",
+      "description": "CGI Spectacle Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of CGI Spectacle Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Historical Genre Mashup",
+      "url_path": "historical-genre-mashup",
+      "description": "Historical Genre Mashup collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Historical Genre Mashup collection"
+    },
+    {
+      "name": "Literary Sci-Fi Adaptations (Part 2)",
+      "url_path": "literary-sci-fi-adaptations-part-2-",
+      "description": "Literary Sci-Fi Adaptations (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Literary Sci-Fi Adaptations (Part 2) collection"
+    },
+    {
+      "name": "Retro Space Adventure (Part 1)",
+      "url_path": "retro-space-adventure-part-1-",
+      "description": "Retro Space Adventure (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro Space Adventure (Part 1) collection"
+    }
+  ],
+  "totalLists": 6
+}

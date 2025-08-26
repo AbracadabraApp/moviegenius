@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Arctic Horror Films",
+      "url_path": "arctic-horror-films",
+      "description": "Arctic Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Arctic Horror Films collection"
+    },
+    {
+      "name": "Environmental Disaster Horror",
+      "url_path": "environmental-disaster-horror",
+      "description": "Environmental Disaster Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Environmental Disaster Horror collection"
+    },
+    {
+      "name": "Scientific Expedition Horror (Part 2)",
+      "url_path": "scientific-expedition-horror-part-2-",
+      "description": "Scientific Expedition Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Scientific Expedition Horror (Part 2) collection"
+    },
+    {
+      "name": "Climate Disaster Films",
+      "url_path": "climate-disaster-films",
+      "description": "Climate Disaster Films collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Climate Disaster Films collection"
+    },
+    {
+      "name": "Parasitic Transformation Horror",
+      "url_path": "parasitic-transformation-horror",
+      "description": "Parasitic Transformation Horror collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Parasitic Transformation Horror collection"
+    },
+    {
+      "name": "Environmental Catastrophe Films (Part 2)",
+      "url_path": "environmental-catastrophe-films-part-2-",
+      "description": "Environmental Catastrophe Films (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Environmental Catastrophe Films (Part 2) collection"
+    }
+  ],
+  "totalLists": 6
+}

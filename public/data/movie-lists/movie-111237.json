@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Supernatural War Films",
+      "url_path": "supernatural-war-films",
+      "description": "Supernatural War Films collection",
+      "category": "war",
+      "connectionReason": "Part of Supernatural War Films collection"
+    },
+    {
+      "name": "Tank Warfare Films",
+      "url_path": "tank-warfare-films",
+      "description": "Tank Warfare Films collection",
+      "category": "war",
+      "connectionReason": "Part of Tank Warfare Films collection"
+    },
+    {
+      "name": "Tank Crew Perspective",
+      "url_path": "tank-crew-perspective",
+      "description": "Tank Crew Perspective collection",
+      "category": "war",
+      "connectionReason": "Part of Tank Crew Perspective collection"
+    },
+    {
+      "name": "Enemy Perspective Wars",
+      "url_path": "enemy-perspective-wars",
+      "description": "Enemy Perspective Wars collection",
+      "category": "war",
+      "connectionReason": "Part of Enemy Perspective Wars collection"
+    }
+  ],
+  "totalLists": 4
+}

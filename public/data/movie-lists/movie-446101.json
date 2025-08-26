@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Social Media Horror",
+      "url_path": "social-media-horror",
+      "description": "Social Media Horror collection",
+      "category": "thriller",
+      "connectionReason": "Part of Social Media Horror collection"
+    },
+    {
+      "name": "Digital Age Slashers",
+      "url_path": "digital-age-slashers",
+      "description": "Digital Age Slashers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Digital Age Slashers collection"
+    },
+    {
+      "name": "Media Exploitation Thrillers",
+      "url_path": "media-exploitation-thrillers",
+      "description": "Media Exploitation Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Media Exploitation Thrillers collection"
+    },
+    {
+      "name": "Small Town Dark Nights (Part 1)",
+      "url_path": "small-town-dark-nights-part-1-",
+      "description": "Small Town Dark Nights (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Small Town Dark Nights (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

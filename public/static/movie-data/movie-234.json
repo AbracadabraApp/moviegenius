@@ -1,0 +1,140 @@
+{
+  "movieId": "a4520f37-b03f-43fd-bf79-6819439eeb74",
+  "tmdbId": 234,
+  "title": "The Cabinet of Dr. Caligari",
+  "year": 1920,
+  "analysis": {
+    "keyElements": {
+      "director": "Robert Wiene",
+      "writers": [
+        "Hans Janowitz",
+        "Carl Mayer"
+      ],
+      "stars": [
+        "Werner Krauss",
+        "Conrad Veidt",
+        "Friedrich Feher"
+      ],
+      "genre": "Horror/German Expressionism",
+      "releaseYear": 1920,
+      "cinematographer": "Willy Hameister",
+      "composer": "Giuseppe Becce",
+      "studio": "Decla-Bioscop AG"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking visual style that revolutionized cinema and influenced horror, film noir, and gothic aesthetics",
+        "Masterful psychological storytelling that remains haunting and relevant a century later",
+        "Essential viewing for understanding the roots of horror cinema and artistic film expression"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Nosferatu",
+        "year": 1922,
+        "description": "Direct German Expressionist successor sharing similar visual techniques"
+      },
+      {
+        "title": "Metropolis",
+        "year": 1927,
+        "description": "Built upon Caligari's expressionist foundation in science fiction context"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "German Expressionism",
+        "category": "Film Movement",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Unreliable Narrator",
+        "category": "Narrative Technique",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Robert Wiene",
+      "personId": 31942,
+      "slug": "/person/31942",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Hans Janowitz",
+        "personId": 13594,
+        "slug": "/person/13594",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Carl Mayer",
+        "personId": 4944,
+        "slug": "/person/4944",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Werner Krauss",
+        "personId": 38256,
+        "slug": "/person/38256",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Conrad Veidt",
+        "personId": 6742,
+        "slug": "/person/6742",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Friedrich Feher",
+        "personId": 11738,
+        "slug": "/person/11738",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Lil Dagover",
+        "personId": 22509,
+        "slug": "/person/22509",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Willy Hameister",
+      "personId": 38705,
+      "slug": "/person/38705",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Giuseppe Becce",
+      "personId": 12829,
+      "slug": "/person/12829",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:11.719Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

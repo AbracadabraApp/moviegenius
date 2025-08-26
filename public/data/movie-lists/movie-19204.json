@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Classic Italian Gothic",
+      "url_path": "classic-italian-gothic",
+      "description": "Classic Italian Gothic collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Italian Gothic collection"
+    },
+    {
+      "name": "Hell Dimension Horror",
+      "url_path": "hell-dimension-horror",
+      "description": "Hell Dimension Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Hell Dimension Horror collection"
+    },
+    {
+      "name": "Extreme Gore Horror (Part 3)",
+      "url_path": "extreme-gore-horror-part-3-",
+      "description": "Extreme Gore Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Extreme Gore Horror (Part 3) collection"
+    },
+    {
+      "name": "Cursed Building Horror (Part 1)",
+      "url_path": "cursed-building-horror-part-1-",
+      "description": "Cursed Building Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Cursed Building Horror (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Paris Music Scene",
+      "url_path": "paris-music-scene",
+      "description": "Paris Music Scene collection",
+      "category": "music",
+      "connectionReason": "Part of Paris Music Scene collection"
+    },
+    {
+      "name": "Electronic Music Culture",
+      "url_path": "electronic-music-culture",
+      "description": "Electronic Music Culture collection",
+      "category": "music",
+      "connectionReason": "Part of Electronic Music Culture collection"
+    },
+    {
+      "name": "Music Industry Rise-Fall [OVERSIZED]",
+      "url_path": "music-industry-rise-fall-oversized-",
+      "description": "Music Industry Rise-Fall [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Music Industry Rise-Fall [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 3
+}

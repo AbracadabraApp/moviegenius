@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Deadly Game Thrillers",
+      "url_path": "deadly-game-thrillers",
+      "description": "Deadly Game Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Deadly Game Thrillers collection"
+    },
+    {
+      "name": "Single Location Survival (Part 2)",
+      "url_path": "single-location-survival-part-2-",
+      "description": "Single Location Survival (Part 2) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Single Location Survival (Part 2) collection"
+    },
+    {
+      "name": "Criminal Society Rules (Part 1)",
+      "url_path": "criminal-society-rules-part-1-",
+      "description": "Criminal Society Rules (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Criminal Society Rules (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

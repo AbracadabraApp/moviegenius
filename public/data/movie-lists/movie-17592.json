@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Nature & Wildlife Films",
+      "url_path": "nature-wildlife-films",
+      "description": "Nature & Wildlife Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Nature & Wildlife Films collection"
+    },
+    {
+      "name": "Solo Living Documentaries",
+      "url_path": "solo-living-documentaries",
+      "description": "Solo Living Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Solo Living Documentaries collection"
+    },
+    {
+      "name": "Human-Animal Relationships",
+      "url_path": "human-animal-relationships",
+      "description": "Human-Animal Relationships collection",
+      "category": "documentary",
+      "connectionReason": "Part of Human-Animal Relationships collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,140 @@
+{
+  "movieId": "dcbec1cf-f76c-48c4-85f2-177c4ab4bd0d",
+  "tmdbId": 400,
+  "title": "Things to Do in Denver When You're Dead",
+  "year": 1995,
+  "analysis": {
+    "keyElements": {
+      "director": "Gary Fleder",
+      "writers": [
+        "Scott Rosenberg"
+      ],
+      "stars": [
+        "Andy Garcia",
+        "Christopher Lloyd",
+        "Christopher Walken",
+        "Steve Buscemi"
+      ],
+      "genre": "Crime Drama",
+      "releaseYear": 1995,
+      "cinematographer": "Elliot Davis",
+      "composer": "Michael Convertino",
+      "studio": "Miramax Films"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Stellar ensemble cast delivering memorable character performances",
+        "Sharp, quotable dialogue that blends noir sensibilities with modern wit",
+        "Unique blend of crime genre conventions with philosophical undertones"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Pulp Fiction",
+        "year": 1994,
+        "description": "Contemporary crime classic that helped establish the template for stylized criminal dialogue"
+      },
+      {
+        "title": "The Usual Suspects",
+        "year": 1995,
+        "description": "Fellow 90s crime drama exploring criminal mythology and fatalistic themes"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Neo-Noir Conventions",
+        "category": "Film Style",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "90s Crime Film Renaissance",
+        "category": "Film History",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Gary Fleder",
+      "personId": 11952,
+      "slug": "/person/11952",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Scott Rosenberg",
+        "personId": 33411,
+        "slug": "/person/33411",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Andy Garcia",
+        "personId": 1851,
+        "slug": "/person/1851",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Christopher Lloyd",
+        "personId": 6245,
+        "slug": "/person/6245",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Steve Buscemi",
+        "personId": 34895,
+        "slug": "/person/34895",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Christopher Walken",
+        "personId": 6298,
+        "slug": "/person/6298",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Treat Williams",
+        "personId": 37010,
+        "slug": "/person/37010",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Elliot Davis",
+      "personId": 10071,
+      "slug": "/person/10071",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Michael Convertino",
+      "personId": 25583,
+      "slug": "/person/25583",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:32.554Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

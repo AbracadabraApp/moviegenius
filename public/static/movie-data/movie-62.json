@@ -1,0 +1,133 @@
+{
+  "movieId": "5bbca272-3373-43ee-bbbb-9f30af439513",
+  "tmdbId": 62,
+  "title": "2001: A Space Odyssey",
+  "year": 1968,
+  "analysis": {
+    "keyElements": {
+      "director": "Stanley Kubrick",
+      "writers": [
+        "Stanley Kubrick",
+        "Arthur C. Clarke"
+      ],
+      "stars": [
+        "Keir Dullea",
+        "Gary Lockwood",
+        "Douglas Rain"
+      ],
+      "genre": "Science Fiction",
+      "releaseYear": 1968,
+      "cinematographer": "Geoffrey Unsworth",
+      "composer": "Various Classical Pieces",
+      "studio": "MGM"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Revolutionary visual effects that still impress today",
+        "Profound exploration of human evolution and consciousness",
+        "Masterclass in atmospheric storytelling and visual narrative"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "2001: A Space Odyssey",
+        "year": 1968,
+        "description": "Groundbreaking science fiction epic that revolutionized the genre and visual effects in cinema"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Special Effects Evolution",
+        "category": "Technical",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "AI in Science Fiction",
+        "category": "Thematic",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Visual Storytelling",
+        "category": "Narrative",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Stanley Kubrick",
+      "personId": 34599,
+      "slug": "/person/34599",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Stanley Kubrick",
+        "personId": 34599,
+        "slug": "/person/34599",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Arthur C. Clarke",
+        "personId": 2613,
+        "slug": "/person/2613",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Keir Dullea",
+        "personId": 20504,
+        "slug": "/person/20504",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Gary Lockwood",
+        "personId": 11978,
+        "slug": "/person/11978",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Douglas Rain",
+        "personId": 9223,
+        "slug": "/person/9223",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Geoffrey Unsworth",
+      "personId": 12186,
+      "slug": "/person/12186",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Various Classical Pieces",
+      "personId": 37415,
+      "slug": "/person/37415",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:04:58.424Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

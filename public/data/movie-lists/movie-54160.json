@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Historical Genre Mashup",
+      "url_path": "historical-genre-mashup",
+      "description": "Historical Genre Mashup collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Historical Genre Mashup collection"
+    },
+    {
+      "name": "Fantasy SciFi Hybrids",
+      "url_path": "fantasy-scifi-hybrids",
+      "description": "Fantasy SciFi Hybrids collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Fantasy SciFi Hybrids collection"
+    },
+    {
+      "name": "Retro Space Adventure (Part 2)",
+      "url_path": "retro-space-adventure-part-2-",
+      "description": "Retro Space Adventure (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro Space Adventure (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

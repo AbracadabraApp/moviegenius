@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Alien Contact Stories",
+      "url_path": "alien-contact-stories",
+      "description": "Alien Contact Stories collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Alien Contact Stories collection"
+    },
+    {
+      "name": "Near-Future Tech Consequences",
+      "url_path": "near-future-tech-consequences",
+      "description": "Near-Future Tech Consequences collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Near-Future Tech Consequences collection"
+    },
+    {
+      "name": "Violent Sport Dystopias",
+      "url_path": "violent-sport-dystopias",
+      "description": "Violent Sport Dystopias collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Violent Sport Dystopias collection"
+    }
+  ],
+  "totalLists": 3
+}

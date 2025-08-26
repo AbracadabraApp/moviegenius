@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Political Animation Films",
+      "url_path": "political-animation-films",
+      "description": "Political Animation Films collection",
+      "category": "animation",
+      "connectionReason": "Part of Political Animation Films collection"
+    },
+    {
+      "name": "Documentary Animation",
+      "url_path": "documentary-animation",
+      "description": "Documentary Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Documentary Animation collection"
+    },
+    {
+      "name": "Military Action Animation",
+      "url_path": "military-action-animation",
+      "description": "Military Action Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Military Action Animation collection"
+    },
+    {
+      "name": "WWII Archival Documentaries",
+      "url_path": "wwii-archival-documentaries",
+      "description": "WWII Archival Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of WWII Archival Documentaries collection"
+    },
+    {
+      "name": "Military History Collections",
+      "url_path": "military-history-collections",
+      "description": "Military History Collections collection",
+      "category": "documentary",
+      "connectionReason": "Part of Military History Collections collection"
+    },
+    {
+      "name": "Animation Documentary Innovation",
+      "url_path": "animation-documentary-innovation",
+      "description": "Animation Documentary Innovation collection",
+      "category": "documentary",
+      "connectionReason": "Part of Animation Documentary Innovation collection"
+    }
+  ],
+  "totalLists": 6
+}

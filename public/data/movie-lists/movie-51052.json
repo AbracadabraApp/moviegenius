@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Found Family Stories",
+      "url_path": "found-family-stories",
+      "description": "Found Family Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Found Family Stories collection"
+    },
+    {
+      "name": "Unlikely Hero Stories",
+      "url_path": "unlikely-hero-stories",
+      "description": "Unlikely Hero Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Unlikely Hero Stories collection"
+    },
+    {
+      "name": "Holiday Special Animations",
+      "url_path": "holiday-special-animations",
+      "description": "Holiday Special Animations collection",
+      "category": "animation",
+      "connectionReason": "Part of Holiday Special Animations collection"
+    },
+    {
+      "name": "Family Tech Comedy",
+      "url_path": "family-tech-comedy",
+      "description": "Family Tech Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Family Tech Comedy collection"
+    },
+    {
+      "name": "Modern Santa Stories",
+      "url_path": "modern-santa-stories",
+      "description": "Modern Santa Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Modern Santa Stories collection"
+    },
+    {
+      "name": "Modern Christmas Classics (Part 1)",
+      "url_path": "modern-christmas-classics-part-1-",
+      "description": "Modern Christmas Classics (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Modern Christmas Classics (Part 1) collection"
+    }
+  ],
+  "totalLists": 6
+}

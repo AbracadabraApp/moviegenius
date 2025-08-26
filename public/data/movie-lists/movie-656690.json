@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Global Technology Meditations",
+      "url_path": "global-technology-meditations",
+      "description": "Global Technology Meditations collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Technology Meditations collection"
+    },
+    {
+      "name": "Media Theory Films",
+      "url_path": "media-theory-films",
+      "description": "Media Theory Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Media Theory Films collection"
+    },
+    {
+      "name": "Corporate Fraud Exposés",
+      "url_path": "corporate-fraud-expos-s",
+      "description": "Corporate Fraud Exposés collection",
+      "category": "documentary",
+      "connectionReason": "Part of Corporate Fraud Exposés collection"
+    },
+    {
+      "name": "Digital Identity Studies",
+      "url_path": "digital-identity-studies",
+      "description": "Digital Identity Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Digital Identity Studies collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Political & Social Issues",
+      "url_path": "political-social-issues",
+      "description": "Political & Social Issues collection",
+      "category": "documentary",
+      "connectionReason": "Part of Political & Social Issues collection"
+    },
+    {
+      "name": "Higher Education Chronicles",
+      "url_path": "higher-education-chronicles",
+      "description": "Higher Education Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Higher Education Chronicles collection"
+    },
+    {
+      "name": "1970s Cultural Retrospectives (Part 1)",
+      "url_path": "1970s-cultural-retrospectives-part-1-",
+      "description": "1970s Cultural Retrospectives (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of 1970s Cultural Retrospectives (Part 1) collection"
+    },
+    {
+      "name": "Political Movement Documentaries (Part 1)",
+      "url_path": "political-movement-documentaries-part-1-",
+      "description": "Political Movement Documentaries (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Political Movement Documentaries (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

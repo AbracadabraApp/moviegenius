@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "name": "Radio Show Nostalgia",
+      "url_path": "radio-show-nostalgia",
+      "description": "Radio Show Nostalgia collection",
+      "category": "comedy",
+      "connectionReason": "Part of Radio Show Nostalgia collection"
+    },
+    {
+      "name": "Eccentric Detective Stories",
+      "url_path": "eccentric-detective-stories",
+      "description": "Eccentric Detective Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Eccentric Detective Stories collection"
+    }
+  ],
+  "totalLists": 2
+}

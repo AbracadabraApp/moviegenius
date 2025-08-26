@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Medieval Dragon Tales",
+      "url_path": "medieval-dragon-tales",
+      "description": "Medieval Dragon Tales collection",
+      "category": "adventure",
+      "connectionReason": "Part of Medieval Dragon Tales collection"
+    },
+    {
+      "name": "Fantasy Heist Adventures",
+      "url_path": "fantasy-heist-adventures",
+      "description": "Fantasy Heist Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Fantasy Heist Adventures collection"
+    },
+    {
+      "name": "Magical Coming-of-Age Stories [OVERSIZED]",
+      "url_path": "magical-coming-of-age-stories-oversized-",
+      "description": "Magical Coming-of-Age Stories [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Magical Coming-of-Age Stories [OVERSIZED] collection"
+    },
+    {
+      "name": "Outsider Transformation Stories",
+      "url_path": "outsider-transformation-stories",
+      "description": "Outsider Transformation Stories collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Outsider Transformation Stories collection"
+    },
+    {
+      "name": "Coming-of-Age Fantasy [OVERSIZED]",
+      "url_path": "coming-of-age-fantasy-oversized-",
+      "description": "Coming-of-Age Fantasy [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Coming-of-Age Fantasy [OVERSIZED] collection"
+    },
+    {
+      "name": "Magical Creature Protection [OVERSIZED]",
+      "url_path": "magical-creature-protection-oversized-",
+      "description": "Magical Creature Protection [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Magical Creature Protection [OVERSIZED] collection"
+    },
+    {
+      "name": "Medieval Monster Quests [OVERSIZED]",
+      "url_path": "medieval-monster-quests-oversized-",
+      "description": "Medieval Monster Quests [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Medieval Monster Quests [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 7
+}

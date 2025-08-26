@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Global Healthcare Innovation",
+      "url_path": "global-healthcare-innovation",
+      "description": "Global Healthcare Innovation collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Healthcare Innovation collection"
+    },
+    {
+      "name": "Public Institution Studies",
+      "url_path": "public-institution-studies",
+      "description": "Public Institution Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Public Institution Studies collection"
+    },
+    {
+      "name": "Public Health Crisis Films",
+      "url_path": "public-health-crisis-films",
+      "description": "Public Health Crisis Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Public Health Crisis Films collection"
+    }
+  ],
+  "totalLists": 3
+}

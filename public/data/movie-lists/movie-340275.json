@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Shakespeare Modern Adaptations",
+      "url_path": "shakespeare-modern-adaptations",
+      "description": "Shakespeare Modern Adaptations collection",
+      "category": "comedy",
+      "connectionReason": "Part of Shakespeare Modern Adaptations collection"
+    },
+    {
+      "name": "Experimental Musical Comedies",
+      "url_path": "experimental-musical-comedies",
+      "description": "Experimental Musical Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Experimental Musical Comedies collection"
+    },
+    {
+      "name": "Political Activism Comedies",
+      "url_path": "political-activism-comedies",
+      "description": "Political Activism Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Political Activism Comedies collection"
+    },
+    {
+      "name": "Cross-Cultural Social Commentary (Part 2)",
+      "url_path": "cross-cultural-social-commentary-part-2-",
+      "description": "Cross-Cultural Social Commentary (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Cultural Social Commentary (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

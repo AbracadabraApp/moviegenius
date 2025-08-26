@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Museum Mystery Adventures",
+      "url_path": "museum-mystery-adventures",
+      "description": "Museum Mystery Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Museum Mystery Adventures collection"
+    },
+    {
+      "name": "Books Come Alive",
+      "url_path": "books-come-alive",
+      "description": "Books Come Alive collection",
+      "category": "adventure",
+      "connectionReason": "Part of Books Come Alive collection"
+    },
+    {
+      "name": "City Scavenger Hunts",
+      "url_path": "city-scavenger-hunts",
+      "description": "City Scavenger Hunts collection",
+      "category": "adventure",
+      "connectionReason": "Part of City Scavenger Hunts collection"
+    }
+  ],
+  "totalLists": 3
+}

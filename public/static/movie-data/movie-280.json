@@ -1,0 +1,151 @@
+{
+  "movieId": "6c15ded9-1baa-47dd-abfe-105f42421faf",
+  "tmdbId": 280,
+  "title": "Terminator 2: Judgment Day",
+  "year": 1991,
+  "analysis": {
+    "keyElements": {
+      "director": "James Cameron",
+      "writers": [
+        "James Cameron",
+        "William Wisher Jr."
+      ],
+      "stars": [
+        "Arnold Schwarzenegger",
+        "Linda Hamilton",
+        "Robert Patrick",
+        "Edward Furlong"
+      ],
+      "genre": "Science Fiction/Action",
+      "releaseYear": 1991,
+      "cinematographer": "Adam Greenberg",
+      "composer": "Brad Fiedel",
+      "studio": "TriStar Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking special effects that still hold up today, particularly the revolutionary liquid metal T-1000",
+        "Perfect balance of intense action, emotional depth, and compelling character development",
+        "Rare sequel that surpasses the original while expanding its themes and scope"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Terminator",
+        "year": 1984,
+        "description": "The original film that established the core mythology"
+      },
+      {
+        "title": "Aliens",
+        "year": 1986,
+        "description": "Cameron's previous sci-fi action masterpiece with strong female lead"
+      },
+      {
+        "title": "RoboCop",
+        "year": 1987,
+        "description": "Contemporary sci-fi examining humanity and machine integration"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Practical vs CGI Effects",
+        "category": "Technical",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Character Arc Development",
+        "category": "Narrative",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Sci-Fi Social Commentary",
+        "category": "Themes",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "James Cameron",
+      "personId": 15711,
+      "slug": "/person/15711",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "James Cameron",
+        "personId": 15711,
+        "slug": "/person/15711",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "William Wisher Jr.",
+        "personId": 38665,
+        "slug": "/person/38665",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Arnold Schwarzenegger",
+        "personId": 2572,
+        "slug": "/person/2572",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Linda Hamilton",
+        "personId": 22571,
+        "slug": "/person/22571",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Robert Patrick",
+        "personId": 31817,
+        "slug": "/person/31817",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Edward Furlong",
+        "personId": 9688,
+        "slug": "/person/9688",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Adam Greenberg",
+      "personId": 164,
+      "slug": "/person/164",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Brad Fiedel",
+      "personId": 4165,
+      "slug": "/person/4165",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:18.696Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

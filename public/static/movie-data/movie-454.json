@@ -1,0 +1,141 @@
+{
+  "movieId": "d8a1a985-9c04-46ba-a991-30edb39cd9bd",
+  "tmdbId": 454,
+  "title": "Romeo + Juliet",
+  "year": 1996,
+  "analysis": {
+    "keyElements": {
+      "director": "Baz Luhrmann",
+      "writers": [
+        "William Shakespeare",
+        "Craig Pearce",
+        "Baz Luhrmann"
+      ],
+      "stars": [
+        "Leonardo DiCaprio",
+        "Claire Danes",
+        "John Leguizamo"
+      ],
+      "genre": "Romance/Drama",
+      "releaseYear": 1996,
+      "cinematographer": "Donald McAlpine",
+      "composer": "Craig Armstrong",
+      "studio": "20th Century Fox"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Revolutionary modernization of Shakespeare that actually works",
+        "Career-defining performances from young DiCaprio and Danes",
+        "Visually stunning blend of classical text with MTV-era aesthetics"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "West Side Story",
+        "year": 1961,
+        "description": "Earlier successful modernization of Romeo and Juliet"
+      },
+      {
+        "title": "Moulin Rouge!",
+        "year": 2001,
+        "description": "Luhrmann's next major reinvention of a classic love story"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Shakespeare Adaptations",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Postmodern Cinema",
+        "category": "Film Theory",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Baz Luhrmann",
+      "personId": 3200,
+      "slug": "/person/3200",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "William Shakespeare",
+        "personId": 38626,
+        "slug": "/person/38626",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Craig Pearce",
+        "personId": 6872,
+        "slug": "/person/6872",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Baz Luhrmann",
+        "personId": 3200,
+        "slug": "/person/3200",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Leonardo DiCaprio",
+        "personId": 22231,
+        "slug": "/person/22231",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Claire Danes",
+        "personId": 6396,
+        "slug": "/person/6396",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "John Leguizamo",
+        "personId": 18391,
+        "slug": "/person/18391",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Donald McAlpine",
+      "personId": 8918,
+      "slug": "/person/8918",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Nellee Hooper",
+      "personId": 27339,
+      "slug": "/person/27339",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:39.315Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

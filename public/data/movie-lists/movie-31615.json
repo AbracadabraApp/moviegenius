@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Holiday Musical Specials",
+      "url_path": "holiday-musical-specials",
+      "description": "Holiday Musical Specials collection",
+      "category": "music",
+      "connectionReason": "Part of Holiday Musical Specials collection"
+    },
+    {
+      "name": "Youth Cast Musicals [OVERSIZED]",
+      "url_path": "youth-cast-musicals-oversized-",
+      "description": "Youth Cast Musicals [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Youth Cast Musicals [OVERSIZED] collection"
+    },
+    {
+      "name": "Animal Kingdom Musicals",
+      "url_path": "animal-kingdom-musicals",
+      "description": "Animal Kingdom Musicals collection",
+      "category": "musical",
+      "connectionReason": "Part of Animal Kingdom Musicals collection"
+    },
+    {
+      "name": "Children's Literature Adaptations",
+      "url_path": "children-s-literature-adaptations",
+      "description": "Children's Literature Adaptations collection",
+      "category": "musical",
+      "connectionReason": "Part of Children's Literature Adaptations collection"
+    },
+    {
+      "name": "Puppet Musical Productions",
+      "url_path": "puppet-musical-productions",
+      "description": "Puppet Musical Productions collection",
+      "category": "musical",
+      "connectionReason": "Part of Puppet Musical Productions collection"
+    }
+  ],
+  "totalLists": 5
+}

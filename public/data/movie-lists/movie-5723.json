@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Studio Recording Chronicles",
+      "url_path": "studio-recording-chronicles",
+      "description": "Studio Recording Chronicles collection",
+      "category": "music",
+      "connectionReason": "Part of Studio Recording Chronicles collection"
+    },
+    {
+      "name": "Folk Music Portraits",
+      "url_path": "folk-music-portraits",
+      "description": "Folk Music Portraits collection",
+      "category": "music",
+      "connectionReason": "Part of Folk Music Portraits collection"
+    },
+    {
+      "name": "Indie Musical Originals",
+      "url_path": "indie-musical-originals",
+      "description": "Indie Musical Originals collection",
+      "category": "music",
+      "connectionReason": "Part of Indie Musical Originals collection"
+    },
+    {
+      "name": "Working Class Musical Stories",
+      "url_path": "working-class-musical-stories",
+      "description": "Working Class Musical Stories collection",
+      "category": "musical",
+      "connectionReason": "Part of Working Class Musical Stories collection"
+    }
+  ],
+  "totalLists": 4
+}

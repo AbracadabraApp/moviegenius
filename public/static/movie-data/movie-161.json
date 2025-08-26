@@ -1,0 +1,147 @@
+{
+  "movieId": "6b46d8a7-3db4-49cb-9bc8-b2a763461eb9",
+  "tmdbId": 161,
+  "title": "Ocean's Eleven",
+  "year": 2001,
+  "analysis": {
+    "keyElements": {
+      "director": "Steven Soderbergh",
+      "writers": [
+        "Ted Griffin"
+      ],
+      "stars": [
+        "George Clooney",
+        "Brad Pitt",
+        "Julia Roberts",
+        "Matt Damon"
+      ],
+      "genre": "Heist Comedy",
+      "releaseYear": 2001,
+      "cinematographer": "Steven Soderbergh",
+      "composer": "David Holmes",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Perfect ensemble chemistry and witty dialogue make every scene crackle with charm",
+        "Masterfully crafted heist plot that's both intricate and accessible",
+        "Stylish direction and soundtrack create an irresistibly cool Vegas atmosphere"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Italian Job",
+        "year": 1969,
+        "description": "Classic heist film that influenced Ocean's Eleven's blend of humor and tension"
+      },
+      {
+        "title": "Heat",
+        "year": 1995,
+        "description": "Set new standards for technical heist sequences that Ocean's Eleven built upon"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Heist Film Evolution",
+        "category": "Genre Studies",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Ensemble Cast Dynamics",
+        "category": "Performance",
+        "difficulty": "beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Steven Soderbergh",
+      "personId": 35035,
+      "slug": "/person/35035",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "George Clayton Johnson",
+        "personId": 12225,
+        "slug": "/person/12225",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jack Golden Russell",
+        "personId": 15341,
+        "slug": "/person/15341",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ted Griffin",
+        "personId": 35737,
+        "slug": "/person/35737",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "George Clooney",
+        "personId": 12227,
+        "slug": "/person/12227",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Brad Pitt",
+        "personId": 4195,
+        "slug": "/person/4195",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Julia Roberts",
+        "personId": 19682,
+        "slug": "/person/19682",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Matt Damon",
+        "personId": 24915,
+        "slug": "/person/24915",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Steven Soderbergh",
+      "personId": 35035,
+      "slug": "/person/35035",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "David Holmes",
+      "personId": 7880,
+      "slug": "/person/7880",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:04:59.230Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

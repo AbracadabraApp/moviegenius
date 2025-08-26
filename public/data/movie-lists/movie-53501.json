@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Underwater Danger Thrillers",
+      "url_path": "underwater-danger-thrillers",
+      "description": "Underwater Danger Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Underwater Danger Thrillers collection"
+    },
+    {
+      "name": "Deadly Animal Survival",
+      "url_path": "deadly-animal-survival",
+      "description": "Deadly Animal Survival collection",
+      "category": "thriller",
+      "connectionReason": "Part of Deadly Animal Survival collection"
+    },
+    {
+      "name": "Revenge Violence Descent",
+      "url_path": "revenge-violence-descent",
+      "description": "Revenge Violence Descent collection",
+      "category": "thriller",
+      "connectionReason": "Part of Revenge Violence Descent collection"
+    }
+  ],
+  "totalLists": 3
+}

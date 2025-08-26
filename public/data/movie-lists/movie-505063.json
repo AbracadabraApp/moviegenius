@@ -1,0 +1,61 @@
+{
+  "lists": [
+    {
+      "name": "Holiday Horror Films",
+      "url_path": "holiday-horror-films",
+      "description": "Holiday Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Holiday Horror Films collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 2)",
+      "url_path": "confined-space-thrillers-part-2-",
+      "description": "Confined Space Thrillers (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 2) collection"
+    },
+    {
+      "name": "Modern Suburban Horror (Part 1)",
+      "url_path": "modern-suburban-horror-part-1-",
+      "description": "Modern Suburban Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Modern Suburban Horror (Part 1) collection"
+    },
+    {
+      "name": "Supernatural Family Drama (Part 1)",
+      "url_path": "supernatural-family-drama-part-1-",
+      "description": "Supernatural Family Drama (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Supernatural Family Drama (Part 1) collection"
+    },
+    {
+      "name": "Behavioral Control SciFi",
+      "url_path": "behavioral-control-scifi",
+      "description": "Behavioral Control SciFi collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Behavioral Control SciFi collection"
+    },
+    {
+      "name": "Media Control Horror",
+      "url_path": "media-control-horror",
+      "description": "Media Control Horror collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Media Control Horror collection"
+    },
+    {
+      "name": "Corporate Science Horror (Part 1)",
+      "url_path": "corporate-science-horror-part-1-",
+      "description": "Corporate Science Horror (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Corporate Science Horror (Part 1) collection"
+    },
+    {
+      "name": "Military Containment Horror (Part 1)",
+      "url_path": "military-containment-horror-part-1-",
+      "description": "Military Containment Horror (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Military Containment Horror (Part 1) collection"
+    }
+  ],
+  "totalLists": 8
+}

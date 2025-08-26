@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Holocaust Memory Films",
+      "url_path": "holocaust-memory-films",
+      "description": "Holocaust Memory Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Holocaust Memory Films collection"
+    },
+    {
+      "name": "War Crimes Justice",
+      "url_path": "war-crimes-justice",
+      "description": "War Crimes Justice collection",
+      "category": "documentary",
+      "connectionReason": "Part of War Crimes Justice collection"
+    },
+    {
+      "name": "Historical Trauma Testimonies (Part 2)",
+      "url_path": "historical-trauma-testimonies-part-2-",
+      "description": "Historical Trauma Testimonies (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Historical Trauma Testimonies (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

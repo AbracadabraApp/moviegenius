@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Eccentric Detective Stories",
+      "url_path": "eccentric-detective-stories",
+      "description": "Eccentric Detective Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Eccentric Detective Stories collection"
+    },
+    {
+      "name": "Detective Series Parodies",
+      "url_path": "detective-series-parodies",
+      "description": "Detective Series Parodies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Detective Series Parodies collection"
+    },
+    {
+      "name": "Music Industry Satires (Part 3)",
+      "url_path": "music-industry-satires-part-3-",
+      "description": "Music Industry Satires (Part 3) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Music Industry Satires (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

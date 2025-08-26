@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Stop Motion Classics",
+      "url_path": "stop-motion-classics",
+      "description": "Stop Motion Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Stop Motion Classics collection"
+    },
+    {
+      "name": "Absurdist Comedy Animation",
+      "url_path": "absurdist-comedy-animation",
+      "description": "Absurdist Comedy Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Absurdist Comedy Animation collection"
+    },
+    {
+      "name": "Social Satire Animation",
+      "url_path": "social-satire-animation",
+      "description": "Social Satire Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Social Satire Animation collection"
+    },
+    {
+      "name": "Stop-Motion Comedy Adventures",
+      "url_path": "stop-motion-comedy-adventures",
+      "description": "Stop-Motion Comedy Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Stop-Motion Comedy Adventures collection"
+    },
+    {
+      "name": "Absurdist Social Vignettes (Part 2)",
+      "url_path": "absurdist-social-vignettes-part-2-",
+      "description": "Absurdist Social Vignettes (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Absurdist Social Vignettes (Part 2) collection"
+    },
+    {
+      "name": "Cross-Cultural Social Commentary (Part 3)",
+      "url_path": "cross-cultural-social-commentary-part-3-",
+      "description": "Cross-Cultural Social Commentary (Part 3) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Cultural Social Commentary (Part 3) collection"
+    }
+  ],
+  "totalLists": 6
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Music Industry Crime",
+      "url_path": "music-industry-crime",
+      "description": "Music Industry Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Music Industry Crime collection"
+    },
+    {
+      "name": "Nightclub Underworld Crime",
+      "url_path": "nightclub-underworld-crime",
+      "description": "Nightclub Underworld Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Nightclub Underworld Crime collection"
+    },
+    {
+      "name": "LA Crime Stories (Part 2)",
+      "url_path": "la-crime-stories-part-2-",
+      "description": "LA Crime Stories (Part 2) collection",
+      "category": "crime",
+      "connectionReason": "Part of LA Crime Stories (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

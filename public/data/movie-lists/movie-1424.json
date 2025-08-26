@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Nonlinear Time Thrillers",
+      "url_path": "nonlinear-time-thrillers",
+      "description": "Nonlinear Time Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Nonlinear Time Thrillers collection"
+    },
+    {
+      "name": "Dream Reality Thrillers",
+      "url_path": "dream-reality-thrillers",
+      "description": "Dream Reality Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Dream Reality Thrillers collection"
+    },
+    {
+      "name": "Memory Loss Mysteries",
+      "url_path": "memory-loss-mysteries",
+      "description": "Memory Loss Mysteries collection",
+      "category": "thriller",
+      "connectionReason": "Part of Memory Loss Mysteries collection"
+    }
+  ],
+  "totalLists": 3
+}

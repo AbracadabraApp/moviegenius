@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Secret Society Horror",
+      "url_path": "secret-society-horror",
+      "description": "Secret Society Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Secret Society Horror collection"
+    },
+    {
+      "name": "Egyptian Curse Horror",
+      "url_path": "egyptian-curse-horror",
+      "description": "Egyptian Curse Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Egyptian Curse Horror collection"
+    },
+    {
+      "name": "Body Possession Horror (Part 5)",
+      "url_path": "body-possession-horror-part-5-",
+      "description": "Body Possession Horror (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Body Possession Horror (Part 5) collection"
+    },
+    {
+      "name": "Modernized Classic Monsters (Part 3)",
+      "url_path": "modernized-classic-monsters-part-3-",
+      "description": "Modernized Classic Monsters (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Modernized Classic Monsters (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

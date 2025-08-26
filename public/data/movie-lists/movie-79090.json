@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "WWII Archival Documentaries",
+      "url_path": "wwii-archival-documentaries",
+      "description": "WWII Archival Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of WWII Archival Documentaries collection"
+    },
+    {
+      "name": "Propaganda Cinema History",
+      "url_path": "propaganda-cinema-history",
+      "description": "Propaganda Cinema History collection",
+      "category": "documentary",
+      "connectionReason": "Part of Propaganda Cinema History collection"
+    },
+    {
+      "name": "Military History Collections",
+      "url_path": "military-history-collections",
+      "description": "Military History Collections collection",
+      "category": "documentary",
+      "connectionReason": "Part of Military History Collections collection"
+    }
+  ],
+  "totalLists": 3
+}

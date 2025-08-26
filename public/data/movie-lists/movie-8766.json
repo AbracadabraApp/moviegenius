@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Space Horror",
+      "url_path": "space-horror",
+      "description": "Space Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Space Horror collection"
+    },
+    {
+      "name": "Cursed Object Horror",
+      "url_path": "cursed-object-horror",
+      "description": "Cursed Object Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Cursed Object Horror collection"
+    },
+    {
+      "name": "Historical Horror Mashup (Part 2)",
+      "url_path": "historical-horror-mashup-part-2-",
+      "description": "Historical Horror Mashup (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Historical Horror Mashup (Part 2) collection"
+    },
+    {
+      "name": "Religious Horror Thrillers (Part 2)",
+      "url_path": "religious-horror-thrillers-part-2-",
+      "description": "Religious Horror Thrillers (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Religious Horror Thrillers (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

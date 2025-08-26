@@ -1,0 +1,153 @@
+{
+  "movieId": "448d4e59-b6a2-4acd-ad55-f32a12a10b3c",
+  "tmdbId": 439,
+  "title": "La Dolce Vita",
+  "year": 1960,
+  "analysis": {
+    "keyElements": {
+      "director": "Federico Fellini",
+      "writers": [
+        "Federico Fellini",
+        "Ennio Flaiano",
+        "Tullio Pinelli"
+      ],
+      "stars": [
+        "Marcello Mastroianni",
+        "Anita Ekberg",
+        "Anouk Aimée"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1960,
+      "cinematographer": "Otello Martelli",
+      "composer": "Nino Rota",
+      "studio": "Riama Film"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful exploration of celebrity culture and spiritual emptiness that feels startlingly modern",
+        "Marcello Mastroianni's career-defining performance as the jaded journalist",
+        "Iconic sequences that have influenced countless films and remain visually stunning"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "8½",
+        "year": 1963,
+        "description": "Fellini's next masterpiece, expanding on similar themes of artistic crisis and modern life"
+      },
+      {
+        "title": "The Great Beauty",
+        "year": 2013,
+        "description": "Modern spiritual successor exploring similar themes in contemporary Rome"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Italian Cinema History",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Post-War European Society",
+        "category": "Cultural Studies",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "Celebrity Culture Analysis",
+        "category": "Media Studies",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Federico Fellini",
+      "personId": 10950,
+      "slug": "/person/10950",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Federico Fellini",
+        "personId": 10950,
+        "slug": "/person/10950",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ennio Flaiano",
+        "personId": 10280,
+        "slug": "/person/10280",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Tullio Pinelli",
+        "personId": 37132,
+        "slug": "/person/37132",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Brunello Rondi",
+        "personId": 4615,
+        "slug": "/person/4615",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Marcello Mastroianni",
+        "personId": 23734,
+        "slug": "/person/23734",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Anita Ekberg",
+        "personId": 1970,
+        "slug": "/person/1970",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Anouk Aimée",
+        "personId": 2208,
+        "slug": "/person/2208",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Otello Martelli",
+      "personId": 28248,
+      "slug": "/person/28248",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Nino Rota",
+      "personId": 27714,
+      "slug": "/person/27714",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:37.942Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

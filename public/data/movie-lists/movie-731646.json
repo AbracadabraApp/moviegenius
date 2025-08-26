@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Album Creation Stories",
+      "url_path": "album-creation-stories",
+      "description": "Album Creation Stories collection",
+      "category": "documentary",
+      "connectionReason": "Part of Album Creation Stories collection"
+    },
+    {
+      "name": "Music Documentary Collages (Part 3)",
+      "url_path": "music-documentary-collages-part-3-",
+      "description": "Music Documentary Collages (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Music Documentary Collages (Part 3) collection"
+    },
+    {
+      "name": "Experimental Music Films",
+      "url_path": "experimental-music-films",
+      "description": "Experimental Music Films collection",
+      "category": "music",
+      "connectionReason": "Part of Experimental Music Films collection"
+    }
+  ],
+  "totalLists": 3
+}

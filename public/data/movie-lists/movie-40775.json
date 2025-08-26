@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Female Pioneer Stories",
+      "url_path": "female-pioneer-stories",
+      "description": "Female Pioneer Stories collection",
+      "category": "period",
+      "connectionReason": "Part of Female Pioneer Stories collection"
+    },
+    {
+      "name": "Merchant Ivory Classics",
+      "url_path": "merchant-ivory-classics",
+      "description": "Merchant Ivory Classics collection",
+      "category": "period",
+      "connectionReason": "Part of Merchant Ivory Classics collection"
+    },
+    {
+      "name": "British Literary Adaptations",
+      "url_path": "british-literary-adaptations",
+      "description": "British Literary Adaptations collection",
+      "category": "period",
+      "connectionReason": "Part of British Literary Adaptations collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Environmental Sports Documentaries",
+      "url_path": "environmental-sports-documentaries",
+      "description": "Environmental Sports Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Environmental Sports Documentaries collection"
+    },
+    {
+      "name": "Indigenous Rights Documentaries",
+      "url_path": "indigenous-rights-documentaries",
+      "description": "Indigenous Rights Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Indigenous Rights Documentaries collection"
+    },
+    {
+      "name": "Political Movement Documentaries (Part 1)",
+      "url_path": "political-movement-documentaries-part-1-",
+      "description": "Political Movement Documentaries (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Political Movement Documentaries (Part 1) collection"
+    },
+    {
+      "name": "Global Industry Transitions (Part 1)",
+      "url_path": "global-industry-transitions-part-1-",
+      "description": "Global Industry Transitions (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Industry Transitions (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

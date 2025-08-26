@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Grief and Loss Stories",
+      "url_path": "grief-and-loss-stories",
+      "description": "Grief and Loss Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Grief and Loss Stories collection"
+    },
+    {
+      "name": "Holiday Special Animations",
+      "url_path": "holiday-special-animations",
+      "description": "Holiday Special Animations collection",
+      "category": "animation",
+      "connectionReason": "Part of Holiday Special Animations collection"
+    },
+    {
+      "name": "Literary Adaptations",
+      "url_path": "literary-adaptations",
+      "description": "Literary Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Literary Adaptations collection"
+    }
+  ],
+  "totalLists": 3
+}

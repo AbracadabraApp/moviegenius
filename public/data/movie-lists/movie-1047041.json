@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Unlikely Hero Stories",
+      "url_path": "unlikely-hero-stories",
+      "description": "Unlikely Hero Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Unlikely Hero Stories collection"
+    },
+    {
+      "name": "Psychological Thriller Animation",
+      "url_path": "psychological-thriller-animation",
+      "description": "Psychological Thriller Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Psychological Thriller Animation collection"
+    },
+    {
+      "name": "Mystery Detective Animation",
+      "url_path": "mystery-detective-animation",
+      "description": "Mystery Detective Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Mystery Detective Animation collection"
+    }
+  ],
+  "totalLists": 3
+}

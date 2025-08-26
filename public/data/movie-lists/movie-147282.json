@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Black Art History",
+      "url_path": "black-art-history",
+      "description": "Black Art History collection",
+      "category": "documentary",
+      "connectionReason": "Part of Black Art History collection"
+    },
+    {
+      "name": "Music Documentary Collages (Part 3)",
+      "url_path": "music-documentary-collages-part-3-",
+      "description": "Music Documentary Collages (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Music Documentary Collages (Part 3) collection"
+    },
+    {
+      "name": "Early Cinema Pioneers (Part 2)",
+      "url_path": "early-cinema-pioneers-part-2-",
+      "description": "Early Cinema Pioneers (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Early Cinema Pioneers (Part 2) collection"
+    },
+    {
+      "name": "Jazz Musician Dramas",
+      "url_path": "jazz-musician-dramas",
+      "description": "Jazz Musician Dramas collection",
+      "category": "music",
+      "connectionReason": "Part of Jazz Musician Dramas collection"
+    },
+    {
+      "name": "Experimental Music Films",
+      "url_path": "experimental-music-films",
+      "description": "Experimental Music Films collection",
+      "category": "music",
+      "connectionReason": "Part of Experimental Music Films collection"
+    },
+    {
+      "name": "Studio Recording Chronicles",
+      "url_path": "studio-recording-chronicles",
+      "description": "Studio Recording Chronicles collection",
+      "category": "music",
+      "connectionReason": "Part of Studio Recording Chronicles collection"
+    }
+  ],
+  "totalLists": 6
+}

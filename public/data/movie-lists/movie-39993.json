@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Secret Society Horror",
+      "url_path": "secret-society-horror",
+      "description": "Secret Society Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Secret Society Horror collection"
+    },
+    {
+      "name": "Giallo Murder Mystery",
+      "url_path": "giallo-murder-mystery",
+      "description": "Giallo Murder Mystery collection",
+      "category": "horror",
+      "connectionReason": "Part of Giallo Murder Mystery collection"
+    },
+    {
+      "name": "Body Horror (Part 4)",
+      "url_path": "body-horror-part-4-",
+      "description": "Body Horror (Part 4) collection",
+      "category": "horror",
+      "connectionReason": "Part of Body Horror (Part 4) collection"
+    },
+    {
+      "name": "Psychological Horror (Part 3)",
+      "url_path": "psychological-horror-part-3-",
+      "description": "Psychological Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Psychological Horror (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

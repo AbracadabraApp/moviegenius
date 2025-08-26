@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Motion Capture Animation",
+      "url_path": "motion-capture-animation",
+      "description": "Motion Capture Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Motion Capture Animation collection"
+    },
+    {
+      "name": "Video Game Adaptations",
+      "url_path": "video-game-adaptations",
+      "description": "Video Game Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Video Game Adaptations collection"
+    },
+    {
+      "name": "Martial Arts Mastery",
+      "url_path": "martial-arts-mastery",
+      "description": "Martial Arts Mastery collection",
+      "category": "animation",
+      "connectionReason": "Part of Martial Arts Mastery collection"
+    }
+  ],
+  "totalLists": 3
+}

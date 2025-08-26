@@ -1,0 +1,133 @@
+{
+  "movieId": "92a7c620-341b-49f1-ada5-a8041587affe",
+  "tmdbId": 387,
+  "title": "Das Boot",
+  "year": 1981,
+  "analysis": {
+    "keyElements": {
+      "director": "Wolfgang Petersen",
+      "writers": [
+        "Wolfgang Petersen",
+        "Lothar G. Buchheim"
+      ],
+      "stars": [
+        "Jürgen Prochnow",
+        "Herbert Grönemeyer",
+        "Klaus Wennemann"
+      ],
+      "genre": "War Drama",
+      "releaseYear": 1981,
+      "cinematographer": "Jost Vacano",
+      "composer": "Klaus Doldinger",
+      "studio": "Bavaria Film"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Unparalleled submarine warfare authenticity and claustrophobic tension",
+        "Masterful portrayal of psychological warfare and human endurance",
+        "Revolutionary technical achievements in confined space cinematography"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Das Boot",
+        "year": 1981,
+        "description": "Groundbreaking submarine warfare drama that redefined the genre and war film authenticity"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Submarine Warfare in WWII",
+        "category": "Historical",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Confined Space Cinematography",
+        "category": "Technical",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Anti-War Cinema",
+        "category": "Thematic",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Wolfgang Petersen",
+      "personId": 38790,
+      "slug": "/person/38790",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Wolfgang Petersen",
+        "personId": 38790,
+        "slug": "/person/38790",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Lothar G. Buchheim",
+        "personId": 22901,
+        "slug": "/person/22901",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Jürgen Prochnow",
+        "personId": 19855,
+        "slug": "/person/19855",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Herbert Grönemeyer",
+        "personId": 14222,
+        "slug": "/person/14222",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Klaus Wennemann",
+        "personId": 21238,
+        "slug": "/person/21238",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Jost Vacano",
+      "personId": 19438,
+      "slug": "/person/19438",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Klaus Doldinger",
+      "personId": 21224,
+      "slug": "/person/21224",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:30.403Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

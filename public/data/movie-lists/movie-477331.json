@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "True Crime Hybrid Films",
+      "url_path": "true-crime-hybrid-films",
+      "description": "True Crime Hybrid Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of True Crime Hybrid Films collection"
+    },
+    {
+      "name": "TV Production Chronicles",
+      "url_path": "tv-production-chronicles",
+      "description": "TV Production Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of TV Production Chronicles collection"
+    },
+    {
+      "name": "Wrongful Conviction Cases",
+      "url_path": "wrongful-conviction-cases",
+      "description": "Wrongful Conviction Cases collection",
+      "category": "documentary",
+      "connectionReason": "Part of Wrongful Conviction Cases collection"
+    }
+  ],
+  "totalLists": 3
+}

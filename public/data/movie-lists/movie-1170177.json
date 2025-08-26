@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Climate Change Cinema",
+      "url_path": "climate-change-cinema",
+      "description": "Climate Change Cinema collection",
+      "category": "documentary",
+      "connectionReason": "Part of Climate Change Cinema collection"
+    },
+    {
+      "name": "Science Education Films",
+      "url_path": "science-education-films",
+      "description": "Science Education Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Science Education Films collection"
+    },
+    {
+      "name": "Visual Nature Symphonies (Part 1)",
+      "url_path": "visual-nature-symphonies-part-1-",
+      "description": "Visual Nature Symphonies (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Visual Nature Symphonies (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

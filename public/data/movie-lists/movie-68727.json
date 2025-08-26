@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Art Heist Films",
+      "url_path": "art-heist-films",
+      "description": "Art Heist Films collection",
+      "category": "crime",
+      "connectionReason": "Part of Art Heist Films collection"
+    },
+    {
+      "name": "Professional Criminal Crews (Part 3)",
+      "url_path": "professional-criminal-crews-part-3-",
+      "description": "Professional Criminal Crews (Part 3) collection",
+      "category": "crime",
+      "connectionReason": "Part of Professional Criminal Crews (Part 3) collection"
+    },
+    {
+      "name": "Memory Loss Mysteries",
+      "url_path": "memory-loss-mysteries",
+      "description": "Memory Loss Mysteries collection",
+      "category": "thriller",
+      "connectionReason": "Part of Memory Loss Mysteries collection"
+    },
+    {
+      "name": "Genre-Twist Endings (Part 3)",
+      "url_path": "genre-twist-endings-part-3-",
+      "description": "Genre-Twist Endings (Part 3) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Genre-Twist Endings (Part 3) collection"
+    },
+    {
+      "name": "Psychological Manipulation Thrillers (Part 9)",
+      "url_path": "psychological-manipulation-thrillers-part-9-",
+      "description": "Psychological Manipulation Thrillers (Part 9) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Psychological Manipulation Thrillers (Part 9) collection"
+    }
+  ],
+  "totalLists": 5
+}

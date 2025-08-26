@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Music Industry Documentaries",
+      "url_path": "music-industry-documentaries",
+      "description": "Music Industry Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Music Industry Documentaries collection"
+    },
+    {
+      "name": "Album Creation Stories",
+      "url_path": "album-creation-stories",
+      "description": "Album Creation Stories collection",
+      "category": "documentary",
+      "connectionReason": "Part of Album Creation Stories collection"
+    },
+    {
+      "name": "Music Documentary Collages (Part 2)",
+      "url_path": "music-documentary-collages-part-2-",
+      "description": "Music Documentary Collages (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Music Documentary Collages (Part 2) collection"
+    },
+    {
+      "name": "Gospel Music Documentation",
+      "url_path": "gospel-music-documentation",
+      "description": "Gospel Music Documentation collection",
+      "category": "music",
+      "connectionReason": "Part of Gospel Music Documentation collection"
+    }
+  ],
+  "totalLists": 4
+}

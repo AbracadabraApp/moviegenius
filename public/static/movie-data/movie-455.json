@@ -1,0 +1,141 @@
+{
+  "movieId": "cc483f27-0b7d-42fa-9d13-20200a3f8d8c",
+  "tmdbId": 455,
+  "title": "Bend It Like Beckham",
+  "year": 2002,
+  "analysis": {
+    "keyElements": {
+      "director": "Gurinder Chadha",
+      "writers": [
+        "Gurinder Chadha",
+        "Paul Mayeda Berges",
+        "Guljit Bindra"
+      ],
+      "stars": [
+        "Parminder Nagra",
+        "Keira Knightley",
+        "Jonathan Rhys Meyers"
+      ],
+      "genre": "Comedy-Drama",
+      "releaseYear": 2002,
+      "cinematographer": "Jong Lin",
+      "composer": "Craig Pruess",
+      "studio": "Fox Searchlight Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking representation of British-Asian culture and female athletes",
+        "Perfect balance of cultural commentary and feel-good entertainment",
+        "Strong performances that launched several major careers including Keira Knightley"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "East Is East",
+        "year": 1999,
+        "description": "Similar exploration of British-Asian family dynamics"
+      },
+      {
+        "title": "Billy Elliot",
+        "year": 2000,
+        "description": "Parallel themes of pursuing passion against social expectations"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "British Asian Cinema",
+        "category": "Cultural Studies",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Women in Sports Films",
+        "category": "Genre Studies",
+        "difficulty": "Beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Gurinder Chadha",
+      "personId": 13326,
+      "slug": "/person/13326",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Gurinder Chadha",
+        "personId": 13326,
+        "slug": "/person/13326",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Paul Mayeda Berges",
+        "personId": 28912,
+        "slug": "/person/28912",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Guljit Bindra",
+        "personId": 13305,
+        "slug": "/person/13305",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Parminder Nagra",
+        "personId": 28439,
+        "slug": "/person/28439",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Keira Knightley",
+        "personId": 20503,
+        "slug": "/person/20503",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jonathan Rhys Meyers",
+        "personId": 18915,
+        "slug": "/person/18915",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Jong Lin",
+      "personId": 18968,
+      "slug": "/person/18968",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Craig Pruess",
+      "personId": 6873,
+      "slug": "/person/6873",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:39.463Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

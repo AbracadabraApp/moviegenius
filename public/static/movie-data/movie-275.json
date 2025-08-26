@@ -1,0 +1,140 @@
+{
+  "movieId": "ff47a413-eea6-4fba-b941-d42f2f67950c",
+  "tmdbId": 275,
+  "title": "Fargo",
+  "year": 1996,
+  "analysis": {
+    "keyElements": {
+      "director": "Joel and Ethan Coen",
+      "writers": [
+        "Joel Coen",
+        "Ethan Coen"
+      ],
+      "stars": [
+        "Frances McDormand",
+        "William H. Macy",
+        "Steve Buscemi"
+      ],
+      "genre": "Crime Drama/Black Comedy",
+      "releaseYear": 1996,
+      "cinematographer": "Roger Deakins",
+      "composer": "Carter Burwell",
+      "studio": "PolyGram Filmed Entertainment"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Frances McDormand's Oscar-winning performance as Marge Gunderson defines authentic character work",
+        "Perfect balance of dark humor and genuine tension in a uniquely Midwestern crime story",
+        "Masterful screenplay that subverts crime genre expectations while creating memorable dialogue"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Blood Simple",
+        "year": 1984,
+        "description": "The Coen Brothers' debut film establishing their noir-influenced style"
+      },
+      {
+        "title": "No Country for Old Men",
+        "year": 2007,
+        "description": "Similarly bleak crime drama showing the Coens' evolution"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Neo-Noir in American Cinema",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Regional Dialects in Film",
+        "category": "Sound Design",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Joel Coen, Ethan Coen",
+      "personId": 17788,
+      "slug": "/person/17788",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Joel Coen",
+        "personId": 17787,
+        "slug": "/person/17787",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ethan Coen",
+        "personId": 10667,
+        "slug": "/person/10667",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Frances McDormand",
+        "personId": 11213,
+        "slug": "/person/11213",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "William H. Macy",
+        "personId": 38489,
+        "slug": "/person/38489",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Steve Buscemi",
+        "personId": 34895,
+        "slug": "/person/34895",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Peter Stormare",
+        "personId": 29525,
+        "slug": "/person/29525",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Roger Deakins",
+      "personId": 32139,
+      "slug": "/person/32139",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Carter Burwell",
+      "personId": 5145,
+      "slug": "/person/5145",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:18.256Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

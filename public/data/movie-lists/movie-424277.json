@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Experimental Music Films",
+      "url_path": "experimental-music-films",
+      "description": "Experimental Music Films collection",
+      "category": "music",
+      "connectionReason": "Part of Experimental Music Films collection"
+    },
+    {
+      "name": "Fame and Tragedy Musicals",
+      "url_path": "fame-and-tragedy-musicals",
+      "description": "Fame and Tragedy Musicals collection",
+      "category": "music",
+      "connectionReason": "Part of Fame and Tragedy Musicals collection"
+    },
+    {
+      "name": "Surrealist Musical Productions",
+      "url_path": "surrealist-musical-productions",
+      "description": "Surrealist Musical Productions collection",
+      "category": "musical",
+      "connectionReason": "Part of Surrealist Musical Productions collection"
+    },
+    {
+      "name": "Fame's Dark Side Cautionary Tales",
+      "url_path": "fame-s-dark-side-cautionary-tales",
+      "description": "Fame's Dark Side Cautionary Tales collection",
+      "category": "musical",
+      "connectionReason": "Part of Fame's Dark Side Cautionary Tales collection"
+    },
+    {
+      "name": "Dark Comedy Musicals",
+      "url_path": "dark-comedy-musicals",
+      "description": "Dark Comedy Musicals collection",
+      "category": "musical",
+      "connectionReason": "Part of Dark Comedy Musicals collection"
+    },
+    {
+      "name": "Art House Music Films",
+      "url_path": "art-house-music-films",
+      "description": "Art House Music Films collection",
+      "category": "musical",
+      "connectionReason": "Part of Art House Music Films collection"
+    }
+  ],
+  "totalLists": 6
+}

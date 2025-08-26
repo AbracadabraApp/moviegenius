@@ -1,0 +1,143 @@
+{
+  "movieId": "98ee2996-6484-4a53-ade7-9a94ecc99945",
+  "tmdbId": 192,
+  "title": "The Name of the Rose",
+  "year": 1986,
+  "analysis": {
+    "keyElements": {
+      "director": "Jean-Jacques Annaud",
+      "writers": [
+        "Umberto Eco",
+        "Andrew Birkin",
+        "Gérard Brach"
+      ],
+      "stars": [
+        "Sean Connery",
+        "Christian Slater",
+        "F. Murray Abraham"
+      ],
+      "genre": "Mystery/Drama",
+      "releaseYear": 1986,
+      "cinematographer": "Tonino Delli Colli",
+      "composer": "James Horner",
+      "studio": "Constantin Film"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Sean Connery's masterful performance as the intellectual detective-monk William of Baskerville",
+        "Stunning recreation of medieval monastery life with intricate historical detail",
+        "Complex murder mystery that weaves philosophy, religion, and politics into a compelling narrative"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Seventh Seal",
+        "year": 1957,
+        "description": "Medieval philosophical drama that established many conventions for serious historical films"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Medieval Church Politics",
+        "category": "Historical",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Detective Story Structure",
+        "category": "Narrative",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Jean-Jacques Annaud",
+      "personId": 16567,
+      "slug": "/person/16567",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Umberto Eco",
+        "personId": 37225,
+        "slug": "/person/37225",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Andrew Birkin",
+        "personId": 1698,
+        "slug": "/person/1698",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Gérard Brach",
+        "personId": 12538,
+        "slug": "/person/12538",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Howard Franklin",
+        "personId": 14572,
+        "slug": "/person/14572",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Sean Connery",
+        "personId": 33461,
+        "slug": "/person/33461",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Christian Slater",
+        "personId": 6095,
+        "slug": "/person/6095",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "F. Murray Abraham",
+        "personId": 11158,
+        "slug": "/person/11158",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Tonino Delli Colli",
+      "personId": 36748,
+      "slug": "/person/36748",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "James Horner",
+      "personId": 15819,
+      "slug": "/person/15819",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:04.572Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "movieId": "56b4cbba-818d-46d3-9a28-104e500cdf1a",
+  "tmdbId": 453,
+  "title": "A Beautiful Mind",
+  "year": 2001,
+  "analysis": {
+    "keyElements": {
+      "director": "Ron Howard",
+      "writers": [
+        "Akiva Goldsman",
+        "Sylvia Nasar"
+      ],
+      "stars": [
+        "Russell Crowe",
+        "Jennifer Connelly",
+        "Ed Harris"
+      ],
+      "genre": "Biographical Drama",
+      "releaseYear": 2001,
+      "cinematographer": "Roger Deakins",
+      "composer": "James Horner",
+      "studio": "Universal Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Russell Crowe's transformative performance as John Nash captures both genius and mental illness with stunning authenticity",
+        "The film's innovative narrative structure puts viewers inside Nash's mind, blurring reality and delusion",
+        "A powerful love story that shows how human connection can triumph over severe mental illness"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Good Will Hunting",
+        "year": 1997,
+        "description": "Another powerful exploration of mathematical genius and mental health"
+      },
+      {
+        "title": "The Theory of Everything",
+        "year": 2014,
+        "description": "Biographical drama about another revolutionary scientific mind facing personal challenges"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Game Theory",
+        "category": "Mathematics",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Schizophrenia in Cinema",
+        "category": "Film Studies",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Cold War Paranoia",
+        "category": "Historical Context",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Ron Howard",
+      "personId": 32362,
+      "slug": "/person/32362",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Akiva Goldsman",
+        "personId": 493,
+        "slug": "/person/493",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sylvia Nasar",
+        "personId": 35405,
+        "slug": "/person/35405",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Russell Crowe",
+        "personId": 32669,
+        "slug": "/person/32669",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jennifer Connelly",
+        "personId": 16968,
+        "slug": "/person/16968",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ed Harris",
+        "personId": 9529,
+        "slug": "/person/9529",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Paul Bettany",
+        "personId": 28717,
+        "slug": "/person/28717",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Roger Deakins",
+      "personId": 32139,
+      "slug": "/person/32139",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "James Horner",
+      "personId": 15819,
+      "slug": "/person/15819",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:38.668Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

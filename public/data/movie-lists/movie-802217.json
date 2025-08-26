@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Family Tech Comedy",
+      "url_path": "family-tech-comedy",
+      "description": "Family Tech Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Family Tech Comedy collection"
+    },
+    {
+      "name": "Modern Santa Stories",
+      "url_path": "modern-santa-stories",
+      "description": "Modern Santa Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Modern Santa Stories collection"
+    },
+    {
+      "name": "1980s Nostalgia Films",
+      "url_path": "1980s-nostalgia-films",
+      "description": "1980s Nostalgia Films collection",
+      "category": "comedy",
+      "connectionReason": "Part of 1980s Nostalgia Films collection"
+    },
+    {
+      "name": "Nonlinear Romance Stories (Part 1)",
+      "url_path": "nonlinear-romance-stories-part-1-",
+      "description": "Nonlinear Romance Stories (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Nonlinear Romance Stories (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

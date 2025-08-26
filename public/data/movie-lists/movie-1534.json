@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Native American Immersion",
+      "url_path": "native-american-immersion",
+      "description": "Native American Immersion collection",
+      "category": "adventure",
+      "connectionReason": "Part of Native American Immersion collection"
+    },
+    {
+      "name": "Indigenous Wilderness Guides",
+      "url_path": "indigenous-wilderness-guides",
+      "description": "Indigenous Wilderness Guides collection",
+      "category": "adventure",
+      "connectionReason": "Part of Indigenous Wilderness Guides collection"
+    },
+    {
+      "name": "Viking Warrior Quests",
+      "url_path": "viking-warrior-quests",
+      "description": "Viking Warrior Quests collection",
+      "category": "adventure",
+      "connectionReason": "Part of Viking Warrior Quests collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Art World Satires",
+      "url_path": "art-world-satires",
+      "description": "Art World Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Art World Satires collection"
+    },
+    {
+      "name": "Artistic Career Struggles",
+      "url_path": "artistic-career-struggles",
+      "description": "Artistic Career Struggles collection",
+      "category": "comedy",
+      "connectionReason": "Part of Artistic Career Struggles collection"
+    },
+    {
+      "name": "British Culture Comedy",
+      "url_path": "british-culture-comedy",
+      "description": "British Culture Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of British Culture Comedy collection"
+    }
+  ],
+  "totalLists": 3
+}

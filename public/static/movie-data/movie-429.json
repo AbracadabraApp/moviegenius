@@ -1,0 +1,152 @@
+{
+  "movieId": "dc735c77-effa-4c9e-a805-1b2706e9d902",
+  "tmdbId": 429,
+  "title": "The Good, the Bad and the Ugly",
+  "year": 1966,
+  "analysis": {
+    "keyElements": {
+      "director": "Sergio Leone",
+      "writers": [
+        "Luciano Vincenzoni",
+        "Sergio Leone"
+      ],
+      "stars": [
+        "Clint Eastwood",
+        "Eli Wallach",
+        "Lee Van Cleef"
+      ],
+      "genre": "Western",
+      "releaseYear": 1966,
+      "cinematographer": "Tonino Delli Colli",
+      "composer": "Ennio Morricone",
+      "studio": "United Artists"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Defines the Spaghetti Western genre with unmatched style and scope",
+        "Features Ennio Morricone's most iconic and influential score",
+        "Contains the greatest Mexican standoff in cinema history"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "A Fistful of Dollars",
+        "year": 1964,
+        "description": "The first collaboration between Leone and Eastwood that established the Spaghetti Western style"
+      },
+      {
+        "title": "Once Upon a Time in the West",
+        "year": 1968,
+        "description": "Leone's follow-up masterpiece that further evolved the genre's conventions"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Spaghetti Western Conventions",
+        "category": "Genre Studies",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Leone's Visual Style",
+        "category": "Directing",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "Morricone's Musical Innovation",
+        "category": "Film Scoring",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Sergio Leone",
+      "personId": 33676,
+      "slug": "/person/33676",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Luciano Vincenzoni",
+        "personId": 23096,
+        "slug": "/person/23096",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sergio Leone",
+        "personId": 33676,
+        "slug": "/person/33676",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Agenore Incrocci",
+        "personId": 332,
+        "slug": "/person/332",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Furio Scarpelli",
+        "personId": 11785,
+        "slug": "/person/11785",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Clint Eastwood",
+        "personId": 6608,
+        "slug": "/person/6608",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Eli Wallach",
+        "personId": 9973,
+        "slug": "/person/9973",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Lee Van Cleef",
+        "personId": 22106,
+        "slug": "/person/22106",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Tonino Delli Colli",
+      "personId": 36748,
+      "slug": "/person/36748",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Ennio Morricone",
+      "personId": 10282,
+      "slug": "/person/10282",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:36.542Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

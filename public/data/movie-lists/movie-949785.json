@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Female Outlaw Westerns",
+      "url_path": "female-outlaw-westerns",
+      "description": "Female Outlaw Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Female Outlaw Westerns collection"
+    },
+    {
+      "name": "Modern Era Westerns",
+      "url_path": "modern-era-westerns",
+      "description": "Modern Era Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Modern Era Westerns collection"
+    },
+    {
+      "name": "Gender Role Subversions",
+      "url_path": "gender-role-subversions",
+      "description": "Gender Role Subversions collection",
+      "category": "western",
+      "connectionReason": "Part of Gender Role Subversions collection"
+    },
+    {
+      "name": "Mentor-Student Westerns",
+      "url_path": "mentor-student-westerns",
+      "description": "Mentor-Student Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Mentor-Student Westerns collection"
+    },
+    {
+      "name": "Classic Frontier Towns",
+      "url_path": "classic-frontier-towns",
+      "description": "Classic Frontier Towns collection",
+      "category": "western",
+      "connectionReason": "Part of Classic Frontier Towns collection"
+    }
+  ],
+  "totalLists": 5
+}

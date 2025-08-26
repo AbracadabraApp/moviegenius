@@ -1,0 +1,112 @@
+{
+  "movieId": "d98752c2-c156-44ae-842d-2f3c68730091",
+  "tmdbId": 27,
+  "title": "9 Songs",
+  "year": 2004,
+  "analysis": {
+    "keyElements": {
+      "director": "Michael Winterbottom",
+      "writers": [
+        "Michael Winterbottom"
+      ],
+      "stars": [
+        "Kieran O'Brien",
+        "Margo Stilley"
+      ],
+      "genre": "Drama/Romance",
+      "releaseYear": 2004,
+      "cinematographer": "Marcel Zyskind",
+      "composer": "Various Artists",
+      "studio": "Revolution Films"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "NO",
+      "reasons": [
+        "The explicit sexual content overshadows any meaningful narrative development",
+        "The experimental structure fails to create emotional investment in the characters",
+        "Watch **Last Tango in Paris** (1972) instead for a more compelling exploration of sexuality and relationships"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Last Tango in Paris",
+        "year": 1972,
+        "description": "A more nuanced exploration of sexuality and emotional isolation"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Censorship in Cinema",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Sex in European Art Films",
+        "category": "Film Theory",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Michael Winterbottom",
+      "personId": 26016,
+      "slug": "/person/26016",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Michael Winterbottom",
+        "personId": 26016,
+        "slug": "/person/26016",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Kieran O'Brien",
+        "personId": 20977,
+        "slug": "/person/20977",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Margo Stilley",
+        "personId": 23938,
+        "slug": "/person/23938",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Marcel Zyskind",
+      "personId": 23755,
+      "slug": "/person/23755",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Various Artists",
+      "personId": 37403,
+      "slug": "/person/37403",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:04:57.177Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

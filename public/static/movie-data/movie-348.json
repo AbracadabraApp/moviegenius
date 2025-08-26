@@ -1,0 +1,141 @@
+{
+  "movieId": "d9f7121f-e993-4eb8-9af8-e85a3f633899",
+  "tmdbId": 348,
+  "title": "Alien",
+  "year": 1979,
+  "analysis": {
+    "keyElements": {
+      "director": "Ridley Scott",
+      "writers": [
+        "Dan O'Bannon",
+        "Ronald Shusett"
+      ],
+      "stars": [
+        "Sigourney Weaver",
+        "Tom Skerritt",
+        "John Hurt",
+        "Ian Holm"
+      ],
+      "genre": "Science Fiction Horror",
+      "releaseYear": 1979,
+      "cinematographer": "Derek Vanlint",
+      "composer": "Jerry Goldsmith",
+      "studio": "20th Century Fox"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of science fiction and horror that revolutionized both genres",
+        "Sigourney Weaver's groundbreaking performance as Ellen Ripley defines the modern action heroine",
+        "H.R. Giger's iconic creature design and industrial aesthetics remain influential decades later"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Aliens",
+        "year": 1986,
+        "description": "James Cameron's action-packed sequel that expanded the universe"
+      },
+      {
+        "title": "The Thing",
+        "year": 1982,
+        "description": "Similarly influential sci-fi horror focusing on isolation and paranoia"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Practical Effects in Horror",
+        "category": "filmmaking",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Gender Roles in Science Fiction",
+        "category": "analysis",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Ridley Scott",
+      "personId": 31299,
+      "slug": "/person/31299",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Dan O'Bannon",
+        "personId": 7455,
+        "slug": "/person/7455",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ronald Shusett",
+        "personId": 32316,
+        "slug": "/person/32316",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Sigourney Weaver",
+        "personId": 34197,
+        "slug": "/person/34197",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Tom Skerritt",
+        "personId": 36710,
+        "slug": "/person/36710",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "John Hurt",
+        "personId": 18322,
+        "slug": "/person/18322",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ian Holm",
+        "personId": 14818,
+        "slug": "/person/14818",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Derek Vanlint",
+      "personId": 8544,
+      "slug": "/person/8544",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Jerry Goldsmith",
+      "personId": 17176,
+      "slug": "/person/17176",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:28.411Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

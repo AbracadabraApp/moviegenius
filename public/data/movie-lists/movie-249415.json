@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Climate Disaster Films",
+      "url_path": "climate-disaster-films",
+      "description": "Climate Disaster Films collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Climate Disaster Films collection"
+    },
+    {
+      "name": "Space Colony Disasters",
+      "url_path": "space-colony-disasters",
+      "description": "Space Colony Disasters collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Colony Disasters collection"
+    },
+    {
+      "name": "Planetary Scale Threats",
+      "url_path": "planetary-scale-threats",
+      "description": "Planetary Scale Threats collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Planetary Scale Threats collection"
+    },
+    {
+      "name": "Early Space Pioneers (Part 1)",
+      "url_path": "early-space-pioneers-part-1-",
+      "description": "Early Space Pioneers (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Early Space Pioneers (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

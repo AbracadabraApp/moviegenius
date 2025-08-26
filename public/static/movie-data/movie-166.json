@@ -1,0 +1,76 @@
+{
+  "movieId": "3b2356d4-b86e-4b86-9105-d3fdcaa0e769",
+  "tmdbId": 166,
+  "title": "The Party",
+  "year": 1980,
+  "analysis": {
+    "keyElements": {
+      "director": "Blake Edwards",
+      "writers": [
+        "Blake Edwards"
+      ],
+      "stars": [
+        "Peter Sellers",
+        "Claudine Longet",
+        "Steve Franken"
+      ],
+      "genre": "Comedy",
+      "releaseYear": 1980,
+      "cinematographer": "Lucien Ballard",
+      "composer": "Henry Mancini",
+      "studio": "United Artists"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Peter Sellers delivers one of his most memorable physical comedy performances",
+        "The escalating chaos and masterful comedic timing create genuine laugh-out-loud moments",
+        "Innovative use of long takes and set pieces that influenced modern comedy filmmaking"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Dr. Strangelove",
+        "year": 1964,
+        "description": "Another Sellers tour-de-force with multiple characters"
+      },
+      {
+        "title": "The Pink Panther",
+        "year": 1963,
+        "description": "Earlier Edwards-Sellers collaboration establishing their comedic partnership"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Physical Comedy Techniques",
+        "category": "Performance",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Long Take Comedy Staging",
+        "category": "Direction",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": null,
+    "writers": [],
+    "stars": [],
+    "cinematographer": null,
+    "composer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:00.037Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "analysis_fallback",
+    "moreIdeas": null
+  }
+}

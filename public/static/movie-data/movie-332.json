@@ -1,0 +1,128 @@
+{
+  "movieId": "0b60be81-3cbc-4220-b92e-431ce5d739b0",
+  "tmdbId": 332,
+  "title": "Inspector Gadget",
+  "year": 1999,
+  "analysis": {
+    "keyElements": {
+      "director": "David Kellogg",
+      "writers": [
+        "Kerry Ehrin",
+        "Zak Penn"
+      ],
+      "stars": [
+        "Matthew Broderick",
+        "Rupert Everett",
+        "Joely Fisher"
+      ],
+      "genre": "Family Comedy/Action",
+      "releaseYear": 1999,
+      "cinematographer": "Adam Greenberg",
+      "composer": "John Debney",
+      "studio": "Walt Disney Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "NO",
+      "reasons": [
+        "Poor adaptation that fails to capture the charm of the original animated series",
+        "Dated CGI effects and awkward live-action translation",
+        "Watch **Who Framed Roger Rabbit** (1988) instead for superior live-action/animation hybrid entertainment"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Who Framed Roger Rabbit",
+        "year": 1988,
+        "description": "Superior blend of animation and live-action with genuine wit and innovation"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Cartoon-to-Live-Action Adaptation",
+        "category": "Film Production",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Special Effects Evolution",
+        "category": "Technical",
+        "difficulty": "beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "David Kellogg",
+      "personId": 7922,
+      "slug": "/person/7922",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Kerry Ehrin",
+        "personId": 20826,
+        "slug": "/person/20826",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Zak Penn",
+        "personId": 39446,
+        "slug": "/person/39446",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Matthew Broderick",
+        "personId": 24943,
+        "slug": "/person/24943",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Rupert Everett",
+        "personId": 32643,
+        "slug": "/person/32643",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Joely Fisher",
+        "personId": 17827,
+        "slug": "/person/17827",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Adam Greenberg",
+      "personId": 164,
+      "slug": "/person/164",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "John Debney",
+      "personId": 18134,
+      "slug": "/person/18134",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:25.855Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

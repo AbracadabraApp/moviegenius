@@ -1,0 +1,125 @@
+{
+  "movieId": "c6a9af2e-a8b6-4a09-bfbf-34bd1c178127",
+  "tmdbId": 55,
+  "title": "Amores Perros",
+  "year": 2000,
+  "analysis": {
+    "keyElements": {
+      "director": "Alejandro González Iñárritu",
+      "writers": [
+        "Guillermo Arriaga"
+      ],
+      "stars": [
+        "Gael García Bernal",
+        "Emilio Echevarría",
+        "Vanessa Bauche"
+      ],
+      "genre": "Drama/Thriller",
+      "releaseYear": 2000,
+      "cinematographer": "Rodrigo Prieto",
+      "composer": "Gustavo Santaolalla",
+      "studio": "Altavista Films"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Revolutionary impact on Mexican cinema and global storytelling",
+        "Raw, unflinching portrayal of interconnected lives in Mexico City",
+        "Masterful debut from Iñárritu that launched multiple careers"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Y Tu Mamá También",
+        "year": 2001,
+        "description": "Another landmark of Mexican New Wave cinema that emerged in this period"
+      },
+      {
+        "title": "Babel",
+        "year": 2006,
+        "description": "Iñárritu's later work expanding on multi-narrative global storytelling"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Mexican New Wave Cinema",
+        "category": "Film Movement",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Non-Linear Narrative Structure",
+        "category": "Storytelling",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Alejandro González Iñárritu",
+      "personId": 783,
+      "slug": "/person/783",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Guillermo Arriaga",
+        "personId": 13290,
+        "slug": "/person/13290",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Gael García Bernal",
+        "personId": 11860,
+        "slug": "/person/11860",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Emilio Echevarría",
+        "personId": 10169,
+        "slug": "/person/10169",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Vanessa Bauche",
+        "personId": 37366,
+        "slug": "/person/37366",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Rodrigo Prieto",
+      "personId": 32107,
+      "slug": "/person/32107",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Gustavo Santaolalla",
+      "personId": 13350,
+      "slug": "/person/13350",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:04:57.937Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

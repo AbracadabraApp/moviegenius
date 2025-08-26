@@ -1,0 +1,143 @@
+{
+  "movieId": "2f3bf125-f274-45d2-a332-81f63f0964a6",
+  "tmdbId": 199,
+  "title": "Star Trek: First Contact",
+  "year": 1996,
+  "analysis": {
+    "keyElements": {
+      "director": "Jonathan Frakes",
+      "writers": [
+        "Rick Berman",
+        "Brannon Braga",
+        "Ronald D. Moore"
+      ],
+      "stars": [
+        "Patrick Stewart",
+        "Brent Spiner",
+        "Alice Krige"
+      ],
+      "genre": "Science Fiction",
+      "releaseYear": 1996,
+      "cinematographer": "Matthew F. Leonetti",
+      "composer": "Jerry Goldsmith",
+      "studio": "Paramount Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Best Star Trek film since **The Wrath of Khan** (1982) with perfect balance of action and philosophy",
+        "Patrick Stewart delivers career-defining performance exploring Picard's trauma",
+        "Masterfully combines time travel, first contact narrative, and horror elements"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Star Trek II: The Wrath of Khan",
+        "year": 1982,
+        "description": "The gold standard of Trek films that First Contact most closely matches in quality and themes"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Post-Atomic Horror",
+        "category": "Historical Context",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Character-Driven Science Fiction",
+        "category": "Genre Studies",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Jonathan Frakes",
+      "personId": 18863,
+      "slug": "/person/18863",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Rick Berman",
+        "personId": 31230,
+        "slug": "/person/31230",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Brannon Braga",
+        "personId": 4241,
+        "slug": "/person/4241",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ronald D. Moore",
+        "personId": 32295,
+        "slug": "/person/32295",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Patrick Stewart",
+        "personId": 28648,
+        "slug": "/person/28648",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jonathan Frakes",
+        "personId": 18863,
+        "slug": "/person/18863",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Brent Spiner",
+        "personId": 4304,
+        "slug": "/person/4304",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Alice Krige",
+        "personId": 1161,
+        "slug": "/person/1161",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Matthew F. Leonetti",
+      "personId": 24957,
+      "slug": "/person/24957",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Jerry Goldsmith",
+      "personId": 17176,
+      "slug": "/person/17176",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:06.100Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

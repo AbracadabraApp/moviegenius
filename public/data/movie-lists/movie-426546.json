@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Science & Technology",
+      "url_path": "science-technology",
+      "description": "Science & Technology collection",
+      "category": "documentary",
+      "connectionReason": "Part of Science & Technology collection"
+    },
+    {
+      "name": "Science Education Films",
+      "url_path": "science-education-films",
+      "description": "Science Education Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Science Education Films collection"
+    },
+    {
+      "name": "Food Industry Exposés",
+      "url_path": "food-industry-expos-s",
+      "description": "Food Industry Exposés collection",
+      "category": "documentary",
+      "connectionReason": "Part of Food Industry Exposés collection"
+    },
+    {
+      "name": "Agricultural Science Debates",
+      "url_path": "agricultural-science-debates",
+      "description": "Agricultural Science Debates collection",
+      "category": "documentary",
+      "connectionReason": "Part of Agricultural Science Debates collection"
+    }
+  ],
+  "totalLists": 4
+}

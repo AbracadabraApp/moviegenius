@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "French Bourgeois Thrillers",
+      "url_path": "french-bourgeois-thrillers",
+      "description": "French Bourgeois Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of French Bourgeois Thrillers collection"
+    },
+    {
+      "name": "Memory Loss Mysteries",
+      "url_path": "memory-loss-mysteries",
+      "description": "Memory Loss Mysteries collection",
+      "category": "thriller",
+      "connectionReason": "Part of Memory Loss Mysteries collection"
+    },
+    {
+      "name": "Corporate Conspiracy Thrillers",
+      "url_path": "corporate-conspiracy-thrillers",
+      "description": "Corporate Conspiracy Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Corporate Conspiracy Thrillers collection"
+    }
+  ],
+  "totalLists": 3
+}

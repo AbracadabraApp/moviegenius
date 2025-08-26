@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Police Detective Stories",
+      "url_path": "police-detective-stories",
+      "description": "Police Detective Stories collection",
+      "category": "crime",
+      "connectionReason": "Part of Police Detective Stories collection"
+    },
+    {
+      "name": "LA Crime Stories (Part 1)",
+      "url_path": "la-crime-stories-part-1-",
+      "description": "LA Crime Stories (Part 1) collection",
+      "category": "crime",
+      "connectionReason": "Part of LA Crime Stories (Part 1) collection"
+    },
+    {
+      "name": "Police Corruption Dramas (Part 1)",
+      "url_path": "police-corruption-dramas-part-1-",
+      "description": "Police Corruption Dramas (Part 1) collection",
+      "category": "crime",
+      "connectionReason": "Part of Police Corruption Dramas (Part 1) collection"
+    },
+    {
+      "name": "Social Inequality Crime (Part 1)",
+      "url_path": "social-inequality-crime-part-1-",
+      "description": "Social Inequality Crime (Part 1) collection",
+      "category": "crime",
+      "connectionReason": "Part of Social Inequality Crime (Part 1) collection"
+    },
+    {
+      "name": "Friendly Alien Encounters",
+      "url_path": "friendly-alien-encounters",
+      "description": "Friendly Alien Encounters collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Friendly Alien Encounters collection"
+    },
+    {
+      "name": "Alien Integration Stories",
+      "url_path": "alien-integration-stories",
+      "description": "Alien Integration Stories collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Alien Integration Stories collection"
+    },
+    {
+      "name": "Urban Fantasy SciFi (Part 1)",
+      "url_path": "urban-fantasy-scifi-part-1-",
+      "description": "Urban Fantasy SciFi (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Urban Fantasy SciFi (Part 1) collection"
+    }
+  ],
+  "totalLists": 7
+}

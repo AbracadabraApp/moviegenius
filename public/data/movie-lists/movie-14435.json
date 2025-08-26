@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Holiday Horror Films",
+      "url_path": "holiday-horror-films",
+      "description": "Holiday Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Holiday Horror Films collection"
+    },
+    {
+      "name": "Teen Slasher Horror (Part 2)",
+      "url_path": "teen-slasher-horror-part-2-",
+      "description": "Teen Slasher Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Teen Slasher Horror (Part 2) collection"
+    },
+    {
+      "name": "Modernized Classic Monsters (Part 2)",
+      "url_path": "modernized-classic-monsters-part-2-",
+      "description": "Modernized Classic Monsters (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Modernized Classic Monsters (Part 2) collection"
+    },
+    {
+      "name": "Small Town Conspiracy (Part 1)",
+      "url_path": "small-town-conspiracy-part-1-",
+      "description": "Small Town Conspiracy (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Small Town Conspiracy (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

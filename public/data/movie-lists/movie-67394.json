@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Pacific Islands Romance",
+      "url_path": "pacific-islands-romance",
+      "description": "Pacific Islands Romance collection",
+      "category": "adventure",
+      "connectionReason": "Part of Pacific Islands Romance collection"
+    },
+    {
+      "name": "Lost Treasure Recovery",
+      "url_path": "lost-treasure-recovery",
+      "description": "Lost Treasure Recovery collection",
+      "category": "adventure",
+      "connectionReason": "Part of Lost Treasure Recovery collection"
+    },
+    {
+      "name": "American Gilded Age & Industry",
+      "url_path": "american-gilded-age-industry",
+      "description": "American Gilded Age & Industry collection",
+      "category": "adventure",
+      "connectionReason": "Part of American Gilded Age & Industry collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,169 @@
+{
+  "movieId": "e6b9aa36-f86f-4b97-ae6c-bb68ff490f36",
+  "tmdbId": 311,
+  "title": "Once Upon a Time in America",
+  "year": 1984,
+  "analysis": {
+    "keyElements": {
+      "director": "Sergio Leone",
+      "writers": [
+        "Sergio Leone",
+        "Leonardo Benvenuti",
+        "Franco Arcalli"
+      ],
+      "stars": [
+        "Robert De Niro",
+        "James Woods",
+        "Elizabeth McGovern"
+      ],
+      "genre": "Crime Drama",
+      "releaseYear": 1984,
+      "cinematographer": "Tonino Delli Colli",
+      "composer": "Ennio Morricone",
+      "studio": "The Ladd Company"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful nonlinear storytelling spanning five decades of American history",
+        "Career-defining performances from De Niro and Woods in a complex tale of friendship and betrayal",
+        "Ennio Morricone's haunting score combined with Leone's operatic direction creates an unforgettable epic"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Godfather",
+        "year": 1972,
+        "description": "Fellow epic exploring American crime and corruption through family dynamics"
+      },
+      {
+        "title": "Goodfellas",
+        "year": 1990,
+        "description": "Similarly spans decades of American crime history with complex character development"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Nonlinear Narrative Structure",
+        "category": "Storytelling",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Immigration in American Cinema",
+        "category": "Social History",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Sergio Leone",
+      "personId": 33676,
+      "slug": "/person/33676",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Sergio Leone",
+        "personId": 33676,
+        "slug": "/person/33676",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Leonardo Benvenuti",
+        "personId": 22229,
+        "slug": "/person/22229",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Piero De Bernardi",
+        "personId": 29849,
+        "slug": "/person/29849",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Enrico Medioli",
+        "personId": 10286,
+        "slug": "/person/10286",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Franco Arcalli",
+        "personId": 11275,
+        "slug": "/person/11275",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Franco Ferrini",
+        "personId": 11283,
+        "slug": "/person/11283",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Robert De Niro",
+        "personId": 31532,
+        "slug": "/person/31532",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "James Woods",
+        "personId": 16001,
+        "slug": "/person/16001",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Elizabeth McGovern",
+        "personId": 10005,
+        "slug": "/person/10005",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Joe Pesci",
+        "personId": 17851,
+        "slug": "/person/17851",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Tonino Delli Colli",
+      "personId": 36748,
+      "slug": "/person/36748",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Ennio Morricone",
+      "personId": 10282,
+      "slug": "/person/10282",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:23.603Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

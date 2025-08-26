@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Artistic Obsession Horror",
+      "url_path": "artistic-obsession-horror",
+      "description": "Artistic Obsession Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Artistic Obsession Horror collection"
+    },
+    {
+      "name": "Paranoid Delusion Horror",
+      "url_path": "paranoid-delusion-horror",
+      "description": "Paranoid Delusion Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Paranoid Delusion Horror collection"
+    },
+    {
+      "name": "Art House Horror (Part 2)",
+      "url_path": "art-house-horror-part-2-",
+      "description": "Art House Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Art House Horror (Part 2) collection"
+    },
+    {
+      "name": "Psychological Horror (Part 2)",
+      "url_path": "psychological-horror-part-2-",
+      "description": "Psychological Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Psychological Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

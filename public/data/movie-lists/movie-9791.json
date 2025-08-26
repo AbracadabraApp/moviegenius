@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Prison Reform Dramas",
+      "url_path": "prison-reform-dramas",
+      "description": "Prison Reform Dramas collection",
+      "category": "crime",
+      "connectionReason": "Part of Prison Reform Dramas collection"
+    },
+    {
+      "name": "Mob Mentorship Stories",
+      "url_path": "mob-mentorship-stories",
+      "description": "Mob Mentorship Stories collection",
+      "category": "crime",
+      "connectionReason": "Part of Mob Mentorship Stories collection"
+    },
+    {
+      "name": "Prison Crime Education",
+      "url_path": "prison-crime-education",
+      "description": "Prison Crime Education collection",
+      "category": "crime",
+      "connectionReason": "Part of Prison Crime Education collection"
+    }
+  ],
+  "totalLists": 3
+}

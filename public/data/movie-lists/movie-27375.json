@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Cinéma Vérité Classics",
+      "url_path": "cin-ma-v-rit-classics",
+      "description": "Cinéma Vérité Classics collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cinéma Vérité Classics collection"
+    },
+    {
+      "name": "Global Cultural Meditations (Part 5)",
+      "url_path": "global-cultural-meditations-part-5-",
+      "description": "Global Cultural Meditations (Part 5) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Cultural Meditations (Part 5) collection"
+    },
+    {
+      "name": "Industrial Work Documentation (Part 2)",
+      "url_path": "industrial-work-documentation-part-2-",
+      "description": "Industrial Work Documentation (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Industrial Work Documentation (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

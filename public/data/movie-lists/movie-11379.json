@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Urban Alien Invasion",
+      "url_path": "urban-alien-invasion",
+      "description": "Urban Alien Invasion collection",
+      "category": "comedy",
+      "connectionReason": "Part of Urban Alien Invasion collection"
+    },
+    {
+      "name": "Sci-Fi Movie Parodies",
+      "url_path": "sci-fi-movie-parodies",
+      "description": "Sci-Fi Movie Parodies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Sci-Fi Movie Parodies collection"
+    },
+    {
+      "name": "Scientific Facility Mayhem (Part 3)",
+      "url_path": "scientific-facility-mayhem-part-3-",
+      "description": "Scientific Facility Mayhem (Part 3) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Scientific Facility Mayhem (Part 3) collection"
+    },
+    {
+      "name": "Dimensional Horror SciFi",
+      "url_path": "dimensional-horror-scifi",
+      "description": "Dimensional Horror SciFi collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Dimensional Horror SciFi collection"
+    },
+    {
+      "name": "Retro SciFi Comedy (Part 2)",
+      "url_path": "retro-scifi-comedy-part-2-",
+      "description": "Retro SciFi Comedy (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro SciFi Comedy (Part 2) collection"
+    }
+  ],
+  "totalLists": 5
+}

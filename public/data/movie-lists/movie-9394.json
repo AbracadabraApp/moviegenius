@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Western Comedy Capers",
+      "url_path": "western-comedy-capers",
+      "description": "Western Comedy Capers collection",
+      "category": "comedy",
+      "connectionReason": "Part of Western Comedy Capers collection"
+    },
+    {
+      "name": "Religious Faith Comedies",
+      "url_path": "religious-faith-comedies",
+      "description": "Religious Faith Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Religious Faith Comedies collection"
+    },
+    {
+      "name": "Cross-Cultural Family Comedies (Part 3)",
+      "url_path": "cross-cultural-family-comedies-part-3-",
+      "description": "Cross-Cultural Family Comedies (Part 3) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Cultural Family Comedies (Part 3) collection"
+    },
+    {
+      "name": "Comedy Western Capers",
+      "url_path": "comedy-western-capers",
+      "description": "Comedy Western Capers collection",
+      "category": "western",
+      "connectionReason": "Part of Comedy Western Capers collection"
+    },
+    {
+      "name": "Spaghetti Western Classics",
+      "url_path": "spaghetti-western-classics",
+      "description": "Spaghetti Western Classics collection",
+      "category": "western",
+      "connectionReason": "Part of Spaghetti Western Classics collection"
+    },
+    {
+      "name": "Outlaw Buddy Stories",
+      "url_path": "outlaw-buddy-stories",
+      "description": "Outlaw Buddy Stories collection",
+      "category": "western",
+      "connectionReason": "Part of Outlaw Buddy Stories collection"
+    }
+  ],
+  "totalLists": 6
+}

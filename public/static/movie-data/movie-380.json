@@ -1,0 +1,133 @@
+{
+  "movieId": "0b559263-fabb-4cf9-8e8b-21cc468b4031",
+  "tmdbId": 380,
+  "title": "Rain Man",
+  "year": 1988,
+  "analysis": {
+    "keyElements": {
+      "director": "Barry Levinson",
+      "writers": [
+        "Barry Morrow",
+        "Ronald Bass"
+      ],
+      "stars": [
+        "Dustin Hoffman",
+        "Tom Cruise",
+        "Valeria Golino"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1988,
+      "cinematographer": "John Seale",
+      "composer": "Hans Zimmer",
+      "studio": "United Artists"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Dustin Hoffman's transformative performance as Raymond Babbitt remains a masterclass in character acting",
+        "The complex brother relationship evolves naturally from selfishness to genuine connection",
+        "Its portrayal of autism, while dated, helped change public perception and sparked important conversations"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "What's Eating Gilbert Grape",
+        "year": 1993,
+        "description": "Similarly thoughtful exploration of family responsibility and developmental disabilities"
+      },
+      {
+        "title": "The Other Sister",
+        "year": 1999,
+        "description": "Continues the conversation about autonomy and dignity for people with developmental differences"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Representation of Disability in Cinema",
+        "category": "Film Studies",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Character Development in Road Movies",
+        "category": "Screenwriting",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Barry Levinson",
+      "personId": 3127,
+      "slug": "/person/3127",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Barry Morrow",
+        "personId": 3138,
+        "slug": "/person/3138",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ronald Bass",
+        "personId": 32287,
+        "slug": "/person/32287",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Dustin Hoffman",
+        "personId": 9350,
+        "slug": "/person/9350",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Tom Cruise",
+        "personId": 36534,
+        "slug": "/person/36534",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Valeria Golino",
+        "personId": 37327,
+        "slug": "/person/37327",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "John Seale",
+      "personId": 18675,
+      "slug": "/person/18675",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Hans Zimmer",
+      "personId": 13632,
+      "slug": "/person/13632",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:29.955Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Giallo Murder Mystery",
+      "url_path": "giallo-murder-mystery",
+      "description": "Giallo Murder Mystery collection",
+      "category": "horror",
+      "connectionReason": "Part of Giallo Murder Mystery collection"
+    },
+    {
+      "name": "Academic Pressure Horror",
+      "url_path": "academic-pressure-horror",
+      "description": "Academic Pressure Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Academic Pressure Horror collection"
+    },
+    {
+      "name": "Teen Slasher Horror (Part 2)",
+      "url_path": "teen-slasher-horror-part-2-",
+      "description": "Teen Slasher Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Teen Slasher Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

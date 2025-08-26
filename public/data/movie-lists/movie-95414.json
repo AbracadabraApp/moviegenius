@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Graphic Novel Adaptations",
+      "url_path": "graphic-novel-adaptations",
+      "description": "Graphic Novel Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Graphic Novel Adaptations collection"
+    },
+    {
+      "name": "Americana Nostalgia Films",
+      "url_path": "americana-nostalgia-films",
+      "description": "Americana Nostalgia Films collection",
+      "category": "animation",
+      "connectionReason": "Part of Americana Nostalgia Films collection"
+    },
+    {
+      "name": "Animation Pioneering Classics",
+      "url_path": "animation-pioneering-classics",
+      "description": "Animation Pioneering Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Animation Pioneering Classics collection"
+    }
+  ],
+  "totalLists": 3
+}

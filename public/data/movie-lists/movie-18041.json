@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Revenge & Payback Stories",
+      "url_path": "revenge-payback-stories",
+      "description": "Revenge & Payback Stories collection",
+      "category": "thriller",
+      "connectionReason": "Part of Revenge & Payback Stories collection"
+    },
+    {
+      "name": "Media Exploitation Thrillers",
+      "url_path": "media-exploitation-thrillers",
+      "description": "Media Exploitation Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Media Exploitation Thrillers collection"
+    },
+    {
+      "name": "Youth Violence Commentary",
+      "url_path": "youth-violence-commentary",
+      "description": "Youth Violence Commentary collection",
+      "category": "thriller",
+      "connectionReason": "Part of Youth Violence Commentary collection"
+    }
+  ],
+  "totalLists": 3
+}

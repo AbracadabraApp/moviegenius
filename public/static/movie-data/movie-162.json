@@ -1,0 +1,133 @@
+{
+  "movieId": "a9e44979-a755-4385-91f9-6a9b7653a33f",
+  "tmdbId": 162,
+  "title": "Edward Scissorhands",
+  "year": 1990,
+  "analysis": {
+    "keyElements": {
+      "director": "Tim Burton",
+      "writers": [
+        "Caroline Thompson"
+      ],
+      "stars": [
+        "Johnny Depp",
+        "Winona Ryder",
+        "Dianne Wiest",
+        "Vincent Price"
+      ],
+      "genre": "Fantasy Drama",
+      "releaseYear": 1990,
+      "cinematographer": "Stefan Czapsky",
+      "composer": "Danny Elfman",
+      "studio": "20th Century Fox"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Burton's most personal and emotionally resonant fairy tale",
+        "Johnny Depp's breakthrough performance combines vulnerability with physical comedy",
+        "Perfect blend of Gothic aesthetics with suburban satire"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Frankenstein",
+        "year": 1931,
+        "description": "Classic monster movie that influenced Edward's character conception"
+      },
+      {
+        "title": "Beauty and the Beast",
+        "year": 1991,
+        "description": "Contemporary fairy tale exploring similar themes of otherness and acceptance"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Gothic Romance in Modern Cinema",
+        "category": "Genre Studies",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Suburban Satire in American Film",
+        "category": "Social Commentary",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Tim Burton",
+      "personId": 36247,
+      "slug": "/person/36247",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Caroline Thompson",
+        "personId": 5097,
+        "slug": "/person/5097",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Johnny Depp",
+        "personId": 18527,
+        "slug": "/person/18527",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Winona Ryder",
+        "personId": 38743,
+        "slug": "/person/38743",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Dianne Wiest",
+        "personId": 8667,
+        "slug": "/person/8667",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Vincent Price",
+        "personId": 37754,
+        "slug": "/person/37754",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Stefan Czapsky",
+      "personId": 34632,
+      "slug": "/person/34632",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Danny Elfman",
+      "personId": 7425,
+      "slug": "/person/7425",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:04:59.381Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

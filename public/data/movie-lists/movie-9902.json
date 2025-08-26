@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Survival Horror",
+      "url_path": "survival-horror",
+      "description": "Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Survival Horror collection"
+    },
+    {
+      "name": "Teen Horror Films",
+      "url_path": "teen-horror-films",
+      "description": "Teen Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Teen Horror Films collection"
+    },
+    {
+      "name": "Rural Isolation Horror",
+      "url_path": "rural-isolation-horror",
+      "description": "Rural Isolation Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Rural Isolation Horror collection"
+    }
+  ],
+  "totalLists": 3
+}

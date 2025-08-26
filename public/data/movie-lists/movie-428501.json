@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Underground Journalism Stories",
+      "url_path": "underground-journalism-stories",
+      "description": "Underground Journalism Stories collection",
+      "category": "documentary",
+      "connectionReason": "Part of Underground Journalism Stories collection"
+    },
+    {
+      "name": "War Zone Journalism",
+      "url_path": "war-zone-journalism",
+      "description": "War Zone Journalism collection",
+      "category": "documentary",
+      "connectionReason": "Part of War Zone Journalism collection"
+    },
+    {
+      "name": "Political Movement Documentaries (Part 2)",
+      "url_path": "political-movement-documentaries-part-2-",
+      "description": "Political Movement Documentaries (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Political Movement Documentaries (Part 2) collection"
+    },
+    {
+      "name": "Perseverance Against Odds (Part 1)",
+      "url_path": "perseverance-against-odds-part-1-",
+      "description": "Perseverance Against Odds (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Perseverance Against Odds (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

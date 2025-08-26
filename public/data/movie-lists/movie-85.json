@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Pulp Hero Adventures",
+      "url_path": "pulp-hero-adventures",
+      "description": "Pulp Hero Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Pulp Hero Adventures collection"
+    },
+    {
+      "name": "Religious Artifact Quests",
+      "url_path": "religious-artifact-quests",
+      "description": "Religious Artifact Quests collection",
+      "category": "adventure",
+      "connectionReason": "Part of Religious Artifact Quests collection"
+    },
+    {
+      "name": "Lost Treasure Recovery",
+      "url_path": "lost-treasure-recovery",
+      "description": "Lost Treasure Recovery collection",
+      "category": "adventure",
+      "connectionReason": "Part of Lost Treasure Recovery collection"
+    },
+    {
+      "name": "Historical Conspiracy Adventures",
+      "url_path": "historical-conspiracy-adventures",
+      "description": "Historical Conspiracy Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Historical Conspiracy Adventures collection"
+    }
+  ],
+  "totalLists": 4
+}

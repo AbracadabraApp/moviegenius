@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Post-Apocalyptic Survival Horror",
+      "url_path": "post-apocalyptic-survival-horror",
+      "description": "Post-Apocalyptic Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Post-Apocalyptic Survival Horror collection"
+    },
+    {
+      "name": "Survival Horror",
+      "url_path": "survival-horror",
+      "description": "Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Survival Horror collection"
+    },
+    {
+      "name": "Small Town Conspiracy (Part 3)",
+      "url_path": "small-town-conspiracy-part-3-",
+      "description": "Small Town Conspiracy (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Small Town Conspiracy (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Survival Against Nature",
+      "url_path": "survival-against-nature",
+      "description": "Survival Against Nature collection",
+      "category": "western",
+      "connectionReason": "Part of Survival Against Nature collection"
+    },
+    {
+      "name": "Gold Rush Adventures",
+      "url_path": "gold-rush-adventures",
+      "description": "Gold Rush Adventures collection",
+      "category": "western",
+      "connectionReason": "Part of Gold Rush Adventures collection"
+    },
+    {
+      "name": "Family Ranch Sagas",
+      "url_path": "family-ranch-sagas",
+      "description": "Family Ranch Sagas collection",
+      "category": "western",
+      "connectionReason": "Part of Family Ranch Sagas collection"
+    }
+  ],
+  "totalLists": 3
+}

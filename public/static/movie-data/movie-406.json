@@ -1,0 +1,125 @@
+{
+  "movieId": "bc9dd80d-3c10-4814-af00-dc622cde2d3b",
+  "tmdbId": 406,
+  "title": "La Haine",
+  "year": 1995,
+  "analysis": {
+    "keyElements": {
+      "director": "Mathieu Kassovitz",
+      "writers": [
+        "Mathieu Kassovitz"
+      ],
+      "stars": [
+        "Vincent Cassel",
+        "Hubert Koundé",
+        "Saïd Taghmaoui"
+      ],
+      "genre": "Crime Drama",
+      "releaseYear": 1995,
+      "cinematographer": "Pierre Aïm",
+      "composer": "Various Artists",
+      "studio": "Canal+"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking portrayal of French urban youth culture and social tensions that remains painfully relevant",
+        "Stunning black-and-white cinematography that creates a documentary-like immediacy",
+        "Vincent Cassel's explosive breakthrough performance as Vinz"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Do the Right Thing",
+        "year": 1989,
+        "description": "Similar exploration of urban tensions and racial conflict building to a explosive climax"
+      },
+      {
+        "title": "Les Misérables",
+        "year": 2019,
+        "description": "Modern French film examining similar themes of police brutality and suburban unrest"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "French New Realism",
+        "category": "Film Movement",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Social Issue Cinema",
+        "category": "Genre Study",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Mathieu Kassovitz",
+      "personId": 24884,
+      "slug": "/person/24884",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Mathieu Kassovitz",
+        "personId": 24884,
+        "slug": "/person/24884",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Vincent Cassel",
+        "personId": 37722,
+        "slug": "/person/37722",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Hubert Koundé",
+        "personId": 14664,
+        "slug": "/person/14664",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Saïd Taghmaoui",
+        "personId": 32890,
+        "slug": "/person/32890",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Pierre Aïm",
+      "personId": 29859,
+      "slug": "/person/29859",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Assassin",
+      "personId": 2781,
+      "slug": "/person/2781",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:33.960Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "DIY Filmmaking Adventures",
+      "url_path": "diy-filmmaking-adventures",
+      "description": "DIY Filmmaking Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of DIY Filmmaking Adventures collection"
+    },
+    {
+      "name": "Horror Movie Parodies (Part 3)",
+      "url_path": "horror-movie-parodies-part-3-",
+      "description": "Horror Movie Parodies (Part 3) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Horror Movie Parodies (Part 3) collection"
+    },
+    {
+      "name": "Meta Screenwriting Stories (Part 2)",
+      "url_path": "meta-screenwriting-stories-part-2-",
+      "description": "Meta Screenwriting Stories (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Meta Screenwriting Stories (Part 2) collection"
+    },
+    {
+      "name": "Slasher Genre Subversion",
+      "url_path": "slasher-genre-subversion",
+      "description": "Slasher Genre Subversion collection",
+      "category": "horror",
+      "connectionReason": "Part of Slasher Genre Subversion collection"
+    },
+    {
+      "name": "Meta Horror Films (Part 2)",
+      "url_path": "meta-horror-films-part-2-",
+      "description": "Meta Horror Films (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Meta Horror Films (Part 2) collection"
+    }
+  ],
+  "totalLists": 5
+}

@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Lost Treasure Recovery",
+      "url_path": "lost-treasure-recovery",
+      "description": "Lost Treasure Recovery collection",
+      "category": "adventure",
+      "connectionReason": "Part of Lost Treasure Recovery collection"
+    },
+    {
+      "name": "City Scavenger Hunts",
+      "url_path": "city-scavenger-hunts",
+      "description": "City Scavenger Hunts collection",
+      "category": "adventure",
+      "connectionReason": "Part of City Scavenger Hunts collection"
+    },
+    {
+      "name": "Cross-Border Quest Films [OVERSIZED]",
+      "url_path": "cross-border-quest-films-oversized-",
+      "description": "Cross-Border Quest Films [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Cross-Border Quest Films [OVERSIZED] collection"
+    },
+    {
+      "name": "Global Adventure Comedies",
+      "url_path": "global-adventure-comedies",
+      "description": "Global Adventure Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Global Adventure Comedies collection"
+    },
+    {
+      "name": "Treasure Hunt Adventures",
+      "url_path": "treasure-hunt-adventures",
+      "description": "Treasure Hunt Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Treasure Hunt Adventures collection"
+    },
+    {
+      "name": "Cross-Country Adventure",
+      "url_path": "cross-country-adventure",
+      "description": "Cross-Country Adventure collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Country Adventure collection"
+    }
+  ],
+  "totalLists": 6
+}

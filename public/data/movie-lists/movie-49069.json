@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Dystopian Music Films",
+      "url_path": "dystopian-music-films",
+      "description": "Dystopian Music Films collection",
+      "category": "music",
+      "connectionReason": "Part of Dystopian Music Films collection"
+    },
+    {
+      "name": "Social Critique Musicals",
+      "url_path": "social-critique-musicals",
+      "description": "Social Critique Musicals collection",
+      "category": "musical",
+      "connectionReason": "Part of Social Critique Musicals collection"
+    },
+    {
+      "name": "Surrealist Musical Productions",
+      "url_path": "surrealist-musical-productions",
+      "description": "Surrealist Musical Productions collection",
+      "category": "musical",
+      "connectionReason": "Part of Surrealist Musical Productions collection"
+    },
+    {
+      "name": "Moral Allegory Musicals",
+      "url_path": "moral-allegory-musicals",
+      "description": "Moral Allegory Musicals collection",
+      "category": "musical",
+      "connectionReason": "Part of Moral Allegory Musicals collection"
+    },
+    {
+      "name": "Dystopian Society Control",
+      "url_path": "dystopian-society-control",
+      "description": "Dystopian Society Control collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Dystopian Society Control collection"
+    },
+    {
+      "name": "Media Control Horror",
+      "url_path": "media-control-horror",
+      "description": "Media Control Horror collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Media Control Horror collection"
+    },
+    {
+      "name": "Totalitarian Warning Films (Part 2)",
+      "url_path": "totalitarian-warning-films-part-2-",
+      "description": "Totalitarian Warning Films (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Totalitarian Warning Films (Part 2) collection"
+    }
+  ],
+  "totalLists": 7
+}

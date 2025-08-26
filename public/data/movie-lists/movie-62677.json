@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Musical Rediscovery Stories",
+      "url_path": "musical-rediscovery-stories",
+      "description": "Musical Rediscovery Stories collection",
+      "category": "music",
+      "connectionReason": "Part of Musical Rediscovery Stories collection"
+    },
+    {
+      "name": "Folk Music Portraits",
+      "url_path": "folk-music-portraits",
+      "description": "Folk Music Portraits collection",
+      "category": "music",
+      "connectionReason": "Part of Folk Music Portraits collection"
+    },
+    {
+      "name": "World Music Cultures",
+      "url_path": "world-music-cultures",
+      "description": "World Music Cultures collection",
+      "category": "music",
+      "connectionReason": "Part of World Music Cultures collection"
+    }
+  ],
+  "totalLists": 3
+}

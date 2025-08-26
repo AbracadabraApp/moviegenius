@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Retro Science Fiction",
+      "url_path": "retro-science-fiction",
+      "description": "Retro Science Fiction collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro Science Fiction collection"
+    },
+    {
+      "name": "UFO Investigation Thrillers",
+      "url_path": "ufo-investigation-thrillers",
+      "description": "UFO Investigation Thrillers collection",
+      "category": "science fiction",
+      "connectionReason": "Part of UFO Investigation Thrillers collection"
+    },
+    {
+      "name": "Small Town Horror SciFi",
+      "url_path": "small-town-horror-scifi",
+      "description": "Small Town Horror SciFi collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Small Town Horror SciFi collection"
+    }
+  ],
+  "totalLists": 3
+}

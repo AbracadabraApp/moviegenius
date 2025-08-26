@@ -1,0 +1,141 @@
+{
+  "movieId": "541eb34e-ad3a-4425-a740-93c13d1733c6",
+  "tmdbId": 289,
+  "title": "Casablanca",
+  "year": 1943,
+  "analysis": {
+    "keyElements": {
+      "director": "Michael Curtiz",
+      "writers": [
+        "Julius J. Epstein",
+        "Philip G. Epstein",
+        "Howard Koch"
+      ],
+      "stars": [
+        "Humphrey Bogart",
+        "Ingrid Bergman",
+        "Paul Henreid"
+      ],
+      "genre": "Romance/Drama",
+      "releaseYear": 1943,
+      "cinematographer": "Arthur Edeson",
+      "composer": "Max Steiner",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Perfect blend of romance, politics, and moral complexity that remains captivating",
+        "Career-defining performances from Bogart and Bergman with unmatched chemistry",
+        "Masterclass in screenplay structure with endlessly quotable dialogue"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "To Have and Have Not",
+        "year": 1944,
+        "description": "Direct spiritual successor featuring Bogart in similar role"
+      },
+      {
+        "title": "The Third Man",
+        "year": 1949,
+        "description": "Noir thriller influenced by Casablanca's visual style"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Wartime Propaganda in Cinema",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Classical Hollywood Narrative Structure",
+        "category": "Screenwriting",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Michael Curtiz",
+      "personId": 25596,
+      "slug": "/person/25596",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Julius J. Epstein",
+        "personId": 19771,
+        "slug": "/person/19771",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Philip G. Epstein",
+        "personId": 29664,
+        "slug": "/person/29664",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Howard Koch",
+        "personId": 14592,
+        "slug": "/person/14592",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Humphrey Bogart",
+        "personId": 14741,
+        "slug": "/person/14741",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ingrid Bergman",
+        "personId": 14992,
+        "slug": "/person/14992",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Paul Henreid",
+        "personId": 28839,
+        "slug": "/person/28839",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Arthur Edeson",
+      "personId": 2621,
+      "slug": "/person/2621",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Max Steiner",
+      "personId": 25214,
+      "slug": "/person/25214",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:20.111Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

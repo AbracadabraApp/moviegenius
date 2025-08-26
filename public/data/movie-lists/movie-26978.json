@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Retro Science Fiction",
+      "url_path": "retro-science-fiction",
+      "description": "Retro Science Fiction collection",
+      "category": "adventure",
+      "connectionReason": "Part of Retro Science Fiction collection"
+    },
+    {
+      "name": "Post-Apocalyptic Fantasy Adventures",
+      "url_path": "post-apocalyptic-fantasy-adventures",
+      "description": "Post-Apocalyptic Fantasy Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Post-Apocalyptic Fantasy Adventures collection"
+    },
+    {
+      "name": "Cross-Border Quest Films [OVERSIZED]",
+      "url_path": "cross-border-quest-films-oversized-",
+      "description": "Cross-Border Quest Films [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Cross-Border Quest Films [OVERSIZED] collection"
+    },
+    {
+      "name": "Space Mercenary Adventures",
+      "url_path": "space-mercenary-adventures",
+      "description": "Space Mercenary Adventures collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Mercenary Adventures collection"
+    },
+    {
+      "name": "Low Budget Disaster (Part 5)",
+      "url_path": "low-budget-disaster-part-5-",
+      "description": "Low Budget Disaster (Part 5) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Low Budget Disaster (Part 5) collection"
+    },
+    {
+      "name": "Retro Space Adventure (Part 3)",
+      "url_path": "retro-space-adventure-part-3-",
+      "description": "Retro Space Adventure (Part 3) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro Space Adventure (Part 3) collection"
+    }
+  ],
+  "totalLists": 6
+}

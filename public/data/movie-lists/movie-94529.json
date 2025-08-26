@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Victorian Gothic Romance",
+      "url_path": "victorian-gothic-romance",
+      "description": "Victorian Gothic Romance collection",
+      "category": "romance",
+      "connectionReason": "Part of Victorian Gothic Romance collection"
+    },
+    {
+      "name": "Gothic Obsession Romance",
+      "url_path": "gothic-obsession-romance",
+      "description": "Gothic Obsession Romance collection",
+      "category": "romance",
+      "connectionReason": "Part of Gothic Obsession Romance collection"
+    },
+    {
+      "name": "Destructive Obsession Romance",
+      "url_path": "destructive-obsession-romance",
+      "description": "Destructive Obsession Romance collection",
+      "category": "romance",
+      "connectionReason": "Part of Destructive Obsession Romance collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Wilderness Survival Horror",
+      "url_path": "wilderness-survival-horror",
+      "description": "Wilderness Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Wilderness Survival Horror collection"
+    },
+    {
+      "name": "Killer Vehicle Horror",
+      "url_path": "killer-vehicle-horror",
+      "description": "Killer Vehicle Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Killer Vehicle Horror collection"
+    },
+    {
+      "name": "Supernatural Family Drama (Part 4)",
+      "url_path": "supernatural-family-drama-part-4-",
+      "description": "Supernatural Family Drama (Part 4) collection",
+      "category": "horror",
+      "connectionReason": "Part of Supernatural Family Drama (Part 4) collection"
+    },
+    {
+      "name": "Highway Pursuit Thrillers",
+      "url_path": "highway-pursuit-thrillers",
+      "description": "Highway Pursuit Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Highway Pursuit Thrillers collection"
+    },
+    {
+      "name": "Australian Outback Horror",
+      "url_path": "australian-outback-horror",
+      "description": "Australian Outback Horror collection",
+      "category": "thriller",
+      "connectionReason": "Part of Australian Outback Horror collection"
+    }
+  ],
+  "totalLists": 5
+}

@@ -1,0 +1,125 @@
+{
+  "movieId": "5503ba95-35fc-4e46-b455-784ae2a316af",
+  "tmdbId": 250,
+  "title": "In China They Eat Dogs",
+  "year": 1999,
+  "analysis": {
+    "keyElements": {
+      "director": "Lasse Spang Olsen",
+      "writers": [
+        "Anders Thomas Jensen"
+      ],
+      "stars": [
+        "Kim Bodnia",
+        "Dejan Cukic",
+        "Nikolaj Lie Kaas"
+      ],
+      "genre": "Crime Comedy",
+      "releaseYear": 1999,
+      "cinematographer": "Lars Reinholdt",
+      "composer": "Jeppe Kaas",
+      "studio": "M&M Productions"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of dark humor and moral complexity that rivals early Tarantino",
+        "Perfectly balanced performances that maintain comedic timing while exploring serious themes",
+        "Unique perspective on morality and good intentions gone wrong that feels fresh even today"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Pusher",
+        "year": 1996,
+        "description": "Similar tone and moral complexity in Danish crime cinema"
+      },
+      {
+        "title": "The Green Butchers",
+        "year": 2003,
+        "description": "Continuation of Danish dark comedy tradition"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Scandinavian Crime Cinema",
+        "category": "Film History",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Dark Comedy in European Film",
+        "category": "Genre Studies",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Lasse Spang Olsen",
+      "personId": 21756,
+      "slug": "/person/21756",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Anders Thomas Jensen",
+        "personId": 1552,
+        "slug": "/person/1552",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Kim Bodnia",
+        "personId": 21015,
+        "slug": "/person/21015",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Dejan Cukic",
+        "personId": 8375,
+        "slug": "/person/8375",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Nikolaj Lie Kaas",
+        "personId": 27668,
+        "slug": "/person/27668",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Lars Reinholdt",
+      "personId": 21748,
+      "slug": "/person/21748",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Jeppe Kaas",
+      "personId": 17066,
+      "slug": "/person/17066",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:14.439Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

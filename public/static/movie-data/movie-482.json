@@ -1,0 +1,132 @@
+{
+  "movieId": "46bdd5ec-1b86-4373-8f29-903f22cf44a1",
+  "tmdbId": 482,
+  "title": "Shaft",
+  "year": 1971,
+  "analysis": {
+    "keyElements": {
+      "director": "Gordon Parks",
+      "writers": [
+        "Ernest Tidyman"
+      ],
+      "stars": [
+        "Richard Roundtree",
+        "Moses Gunn",
+        "Charles Cioffi"
+      ],
+      "genre": "Action Crime Thriller",
+      "releaseYear": 1971,
+      "cinematographer": "Urs Furrer",
+      "composer": "Isaac Hayes",
+      "studio": "Metro-Goldwyn-Mayer"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Pioneering representation in mainstream action cinema with a confident Black hero",
+        "Isaac Hayes' Oscar-winning soundtrack that defined an era",
+        "Influential style and attitude that shaped action movies for decades"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Sweet Sweetback's Baadasssss Song",
+        "year": 1971,
+        "description": "Released the same year, helped establish the Blaxploitation genre"
+      },
+      {
+        "title": "Cotton Comes to Harlem",
+        "year": 1970,
+        "description": "Immediate predecessor in Black action cinema"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Blaxploitation Cinema",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "1970s Urban Cinema",
+        "category": "Film Context",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Gordon Parks",
+      "personId": 13007,
+      "slug": "/person/13007",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Ernest Tidyman",
+        "personId": 10574,
+        "slug": "/person/10574",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "John D.F. Black",
+        "personId": 18141,
+        "slug": "/person/18141",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Richard Roundtree",
+        "personId": 31154,
+        "slug": "/person/31154",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Moses Gunn",
+        "personId": 26818,
+        "slug": "/person/26818",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Charles Cioffi",
+        "personId": 5420,
+        "slug": "/person/5420",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Urs Furrer",
+      "personId": 37257,
+      "slug": "/person/37257",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Isaac Hayes",
+      "personId": 15112,
+      "slug": "/person/15112",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:41.931Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

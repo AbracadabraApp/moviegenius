@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Slasher Film Collection",
+      "url_path": "slasher-film-collection",
+      "description": "Slasher Film Collection collection",
+      "category": "horror",
+      "connectionReason": "Part of Slasher Film Collection collection"
+    },
+    {
+      "name": "Giallo Murder Mystery",
+      "url_path": "giallo-murder-mystery",
+      "description": "Giallo Murder Mystery collection",
+      "category": "horror",
+      "connectionReason": "Part of Giallo Murder Mystery collection"
+    },
+    {
+      "name": "Slasher Genre Subversion",
+      "url_path": "slasher-genre-subversion",
+      "description": "Slasher Genre Subversion collection",
+      "category": "horror",
+      "connectionReason": "Part of Slasher Genre Subversion collection"
+    },
+    {
+      "name": "Art House Horror (Part 2)",
+      "url_path": "art-house-horror-part-2-",
+      "description": "Art House Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Art House Horror (Part 2) collection"
+    },
+    {
+      "name": "Meta-Cinema Thrillers",
+      "url_path": "meta-cinema-thrillers",
+      "description": "Meta-Cinema Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Meta-Cinema Thrillers collection"
+    },
+    {
+      "name": "Artistic Murder Thrillers",
+      "url_path": "artistic-murder-thrillers",
+      "description": "Artistic Murder Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Artistic Murder Thrillers collection"
+    },
+    {
+      "name": "LGBTQ Noir Thrillers",
+      "url_path": "lgbtq-noir-thrillers",
+      "description": "LGBTQ Noir Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of LGBTQ Noir Thrillers collection"
+    }
+  ],
+  "totalLists": 7
+}

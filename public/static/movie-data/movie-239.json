@@ -1,0 +1,133 @@
+{
+  "movieId": "f92435a5-3701-410c-b7df-39a7b4e70d4e",
+  "tmdbId": 239,
+  "title": "Some Like It Hot",
+  "year": 1959,
+  "analysis": {
+    "keyElements": {
+      "director": "Billy Wilder",
+      "writers": [
+        "Billy Wilder",
+        "I.A.L. Diamond"
+      ],
+      "stars": [
+        "Marilyn Monroe",
+        "Tony Curtis",
+        "Jack Lemmon"
+      ],
+      "genre": "Comedy",
+      "releaseYear": 1959,
+      "cinematographer": "Charles Lang",
+      "composer": "Adolph Deutsch",
+      "studio": "United Artists"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Perfect comic timing and endlessly quotable dialogue that influenced generations of comedies",
+        "Revolutionary approach to gender roles and identity that remains surprisingly progressive",
+        "Career-defining performances from all three leads, especially Marilyn Monroe's vulnerable yet magnetic Sugar Kane"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Tootsie",
+        "year": 1982,
+        "description": "Most direct spiritual successor, sharing themes of gender identity and show business"
+      },
+      {
+        "title": "The Apartment",
+        "year": 1960,
+        "description": "Wilder's follow-up film, sharing similar themes of identity and romance"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Comedy Timing",
+        "category": "Performance",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Gender in Classic Hollywood",
+        "category": "Cultural Studies",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Billy Wilder",
+      "personId": 3866,
+      "slug": "/person/3866",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Billy Wilder",
+        "personId": 3866,
+        "slug": "/person/3866",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "I.A.L. Diamond",
+        "personId": 14798,
+        "slug": "/person/14798",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Marilyn Monroe",
+        "personId": 24100,
+        "slug": "/person/24100",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Tony Curtis",
+        "personId": 36785,
+        "slug": "/person/36785",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jack Lemmon",
+        "personId": 15392,
+        "slug": "/person/15392",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Charles Lang",
+      "personId": 5504,
+      "slug": "/person/5504",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Adolph Deutsch",
+      "personId": 267,
+      "slug": "/person/267",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:12.319Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

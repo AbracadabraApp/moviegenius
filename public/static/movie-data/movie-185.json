@@ -1,0 +1,138 @@
+{
+  "movieId": "dfd472d1-394a-47e7-b953-5892a3442d83",
+  "tmdbId": 185,
+  "title": "A Clockwork Orange",
+  "year": 1971,
+  "analysis": {
+    "keyElements": {
+      "director": "Stanley Kubrick",
+      "writers": [
+        "Stanley Kubrick",
+        "Anthony Burgess"
+      ],
+      "stars": [
+        "Malcolm McDowell",
+        "Patrick Magee",
+        "Michael Bates"
+      ],
+      "genre": "Crime Drama/Science Fiction",
+      "releaseYear": 1971,
+      "cinematographer": "John Alcott",
+      "composer": "Wendy Carlos",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking visual style and dystopian worldbuilding that influenced decades of cinema",
+        "Malcolm McDowell's career-defining performance as Alex DeLarge",
+        "Profound examination of free will, morality, and state control that remains relevant"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "2001: A Space Odyssey",
+        "year": 1968,
+        "description": "Kubrick's previous masterpiece, sharing similar themes of humanity and technology"
+      },
+      {
+        "title": "Blade Runner",
+        "year": 1982,
+        "description": "Dystopian successor influenced by Clockwork's visual style"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Nadsat Language",
+        "category": "Linguistics",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Behavioral Conditioning",
+        "category": "Psychology",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Dystopian Cinema",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Stanley Kubrick",
+      "personId": 34599,
+      "slug": "/person/34599",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Stanley Kubrick",
+        "personId": 34599,
+        "slug": "/person/34599",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Anthony Burgess",
+        "personId": 2229,
+        "slug": "/person/2229",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Malcolm McDowell",
+        "personId": 23554,
+        "slug": "/person/23554",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Patrick Magee",
+        "personId": 28614,
+        "slug": "/person/28614",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Michael Bates",
+        "personId": 25499,
+        "slug": "/person/25499",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "John Alcott",
+      "personId": 17963,
+      "slug": "/person/17963",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Wendy Carlos",
+      "personId": 38226,
+      "slug": "/person/38226",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:03.746Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

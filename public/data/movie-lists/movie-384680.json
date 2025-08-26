@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Moral Redemption Westerns",
+      "url_path": "moral-redemption-westerns",
+      "description": "Moral Redemption Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Moral Redemption Westerns collection"
+    },
+    {
+      "name": "Native Cultural Immersion",
+      "url_path": "native-cultural-immersion",
+      "description": "Native Cultural Immersion collection",
+      "category": "western",
+      "connectionReason": "Part of Native Cultural Immersion collection"
+    },
+    {
+      "name": "Military Frontier Duty",
+      "url_path": "military-frontier-duty",
+      "description": "Military Frontier Duty collection",
+      "category": "western",
+      "connectionReason": "Part of Military Frontier Duty collection"
+    },
+    {
+      "name": "Modern Era Westerns",
+      "url_path": "modern-era-westerns",
+      "description": "Modern Era Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Modern Era Westerns collection"
+    }
+  ],
+  "totalLists": 4
+}

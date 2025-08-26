@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Prehistoric Adventure Epics",
+      "url_path": "prehistoric-adventure-epics",
+      "description": "Prehistoric Adventure Epics collection",
+      "category": "adventure",
+      "connectionReason": "Part of Prehistoric Adventure Epics collection"
+    },
+    {
+      "name": "Arctic Survival Stories",
+      "url_path": "arctic-survival-stories",
+      "description": "Arctic Survival Stories collection",
+      "category": "adventure",
+      "connectionReason": "Part of Arctic Survival Stories collection"
+    },
+    {
+      "name": "Underground World Exploration",
+      "url_path": "underground-world-exploration",
+      "description": "Underground World Exploration collection",
+      "category": "adventure",
+      "connectionReason": "Part of Underground World Exploration collection"
+    },
+    {
+      "name": "Prehistoric SciFi Adventure",
+      "url_path": "prehistoric-scifi-adventure",
+      "description": "Prehistoric SciFi Adventure collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Prehistoric SciFi Adventure collection"
+    },
+    {
+      "name": "Underground Lost Worlds",
+      "url_path": "underground-lost-worlds",
+      "description": "Underground Lost Worlds collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Underground Lost Worlds collection"
+    },
+    {
+      "name": "Survival Against Nature (Part 3)",
+      "url_path": "survival-against-nature-part-3-",
+      "description": "Survival Against Nature (Part 3) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Survival Against Nature (Part 3) collection"
+    },
+    {
+      "name": "Retro Space Adventure (Part 4)",
+      "url_path": "retro-space-adventure-part-4-",
+      "description": "Retro Space Adventure (Part 4) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro Space Adventure (Part 4) collection"
+    }
+  ],
+  "totalLists": 7
+}

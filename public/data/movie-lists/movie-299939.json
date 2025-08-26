@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Space Horror",
+      "url_path": "space-horror",
+      "description": "Space Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Space Horror collection"
+    },
+    {
+      "name": "AI Horror",
+      "url_path": "ai-horror",
+      "description": "AI Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of AI Horror collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 3)",
+      "url_path": "confined-space-thrillers-part-3-",
+      "description": "Confined Space Thrillers (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 3) collection"
+    },
+    {
+      "name": "Space Horror Survival",
+      "url_path": "space-horror-survival",
+      "description": "Space Horror Survival collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Horror Survival collection"
+    },
+    {
+      "name": "Psychological Space Isolation (Part 1)",
+      "url_path": "psychological-space-isolation-part-1-",
+      "description": "Psychological Space Isolation (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Psychological Space Isolation (Part 1) collection"
+    },
+    {
+      "name": "Artificial Life Evolution (Part 2)",
+      "url_path": "artificial-life-evolution-part-2-",
+      "description": "Artificial Life Evolution (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Artificial Life Evolution (Part 2) collection"
+    }
+  ],
+  "totalLists": 6
+}

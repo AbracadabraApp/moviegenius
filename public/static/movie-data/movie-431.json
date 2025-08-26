@@ -1,0 +1,151 @@
+{
+  "movieId": "a91a4e98-80dd-4747-a67c-9a07b5573a27",
+  "tmdbId": 431,
+  "title": "Cube",
+  "year": 1998,
+  "analysis": {
+    "keyElements": {
+      "director": "Vincenzo Natali",
+      "writers": [
+        "André Bijelic",
+        "Vincenzo Natali",
+        "Graeme Manson"
+      ],
+      "stars": [
+        "Nicole de Boer",
+        "Maurice Dean Wint",
+        "David Hewlett"
+      ],
+      "genre": "Science Fiction Horror",
+      "releaseYear": 1998,
+      "cinematographer": "Derek Rogers",
+      "composer": "Mark Korven",
+      "studio": "Cube Libre"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterclass in creating tension with minimal resources",
+        "Ingenious puzzle-box concept that influenced modern escape room horror",
+        "Sharp social commentary on bureaucracy and human nature under pressure"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Saw",
+        "year": 2004,
+        "description": "Similarly uses elaborate traps and confined spaces to explore human nature"
+      },
+      {
+        "title": "Pi",
+        "year": 1998,
+        "description": "Shares themes of mathematical obsession and paranoid isolation"
+      },
+      {
+        "title": "The Platform",
+        "year": 2019,
+        "description": "Modern spiritual successor exploring similar themes of systemic inequality"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Minimalist Set Design",
+        "category": "Production",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Mathematical Horror",
+        "category": "Genre Studies",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Social Allegory in Horror",
+        "category": "Theme Analysis",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Vincenzo Natali",
+      "personId": 37773,
+      "slug": "/person/37773",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "André Bijelic",
+        "personId": 1614,
+        "slug": "/person/1614",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Vincenzo Natali",
+        "personId": 37773,
+        "slug": "/person/37773",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Graeme Manson",
+        "personId": 13071,
+        "slug": "/person/13071",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Nicole de Boer",
+        "personId": 27584,
+        "slug": "/person/27584",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Maurice Dean Wint",
+        "personId": 25094,
+        "slug": "/person/25094",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "David Hewlett",
+        "personId": 7866,
+        "slug": "/person/7866",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Derek Rogers",
+      "personId": 8542,
+      "slug": "/person/8542",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Mark Korven",
+      "personId": 24339,
+      "slug": "/person/24339",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:37.348Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

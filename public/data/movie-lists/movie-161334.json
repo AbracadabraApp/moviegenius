@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Cross-Cultural Comedy",
+      "url_path": "cross-cultural-comedy",
+      "description": "Cross-Cultural Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Cultural Comedy collection"
+    },
+    {
+      "name": "Sci-Fi Movie Parodies",
+      "url_path": "sci-fi-movie-parodies",
+      "description": "Sci-Fi Movie Parodies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Sci-Fi Movie Parodies collection"
+    },
+    {
+      "name": "Fish-Out-Of-Water Comedy (Part 4)",
+      "url_path": "fish-out-of-water-comedy-part-4-",
+      "description": "Fish-Out-Of-Water Comedy (Part 4) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Fish-Out-Of-Water Comedy (Part 4) collection"
+    },
+    {
+      "name": "Retro Space Adventure (Part 4)",
+      "url_path": "retro-space-adventure-part-4-",
+      "description": "Retro Space Adventure (Part 4) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro Space Adventure (Part 4) collection"
+    },
+    {
+      "name": "Retro SciFi Comedy (Part 2)",
+      "url_path": "retro-scifi-comedy-part-2-",
+      "description": "Retro SciFi Comedy (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro SciFi Comedy (Part 2) collection"
+    }
+  ],
+  "totalLists": 5
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Legal System Comedies",
+      "url_path": "legal-system-comedies",
+      "description": "Legal System Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Legal System Comedies collection"
+    },
+    {
+      "name": "Political Activism Comedies",
+      "url_path": "political-activism-comedies",
+      "description": "Political Activism Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Political Activism Comedies collection"
+    },
+    {
+      "name": "Fish-Out-Of-Water Comedy (Part 2)",
+      "url_path": "fish-out-of-water-comedy-part-2-",
+      "description": "Fish-Out-Of-Water Comedy (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Fish-Out-Of-Water Comedy (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

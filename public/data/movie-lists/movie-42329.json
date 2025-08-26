@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Prehistoric SciFi Adventure",
+      "url_path": "prehistoric-scifi-adventure",
+      "description": "Prehistoric SciFi Adventure collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Prehistoric SciFi Adventure collection"
+    },
+    {
+      "name": "Ancient Monsters Awakened",
+      "url_path": "ancient-monsters-awakened",
+      "description": "Ancient Monsters Awakened collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Ancient Monsters Awakened collection"
+    },
+    {
+      "name": "Western SciFi Hybrids",
+      "url_path": "western-scifi-hybrids",
+      "description": "Western SciFi Hybrids collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Western SciFi Hybrids collection"
+    },
+    {
+      "name": "Horror-Western Crossovers",
+      "url_path": "horror-western-crossovers",
+      "description": "Horror-Western Crossovers collection",
+      "category": "western",
+      "connectionReason": "Part of Horror-Western Crossovers collection"
+    },
+    {
+      "name": "Show Business Westerns",
+      "url_path": "show-business-westerns",
+      "description": "Show Business Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Show Business Westerns collection"
+    }
+  ],
+  "totalLists": 5
+}

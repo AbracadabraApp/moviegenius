@@ -1,0 +1,125 @@
+{
+  "movieId": "f1fe348d-8b36-4f23-8ba5-9f1ef37948f6",
+  "tmdbId": 389,
+  "title": "12 Angry Men",
+  "year": 1957,
+  "analysis": {
+    "keyElements": {
+      "director": "Sidney Lumet",
+      "writers": [
+        "Reginald Rose"
+      ],
+      "stars": [
+        "Henry Fonda",
+        "Lee J. Cobb",
+        "Martin Balsam"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1957,
+      "cinematographer": "Boris Kaufman",
+      "composer": "Kenyon Hopkins",
+      "studio": "United Artists"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterclass in building tension through dialogue and confined spaces",
+        "Timeless examination of justice, prejudice, and human nature",
+        "Revolutionary minimalist storytelling that influenced countless courtroom dramas"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Verdict",
+        "year": 1982,
+        "description": "Similarly explores themes of justice and personal redemption through intimate character study"
+      },
+      {
+        "title": "Glengarry Glen Ross",
+        "year": 1992,
+        "description": "Shares confined setting and intense character dynamics with stellar ensemble cast"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Camera Movement in Confined Spaces",
+        "category": "cinematography",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Character Development Through Dialogue",
+        "category": "screenwriting",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Sidney Lumet",
+      "personId": 34168,
+      "slug": "/person/34168",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Reginald Rose",
+        "personId": 30651,
+        "slug": "/person/30651",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Henry Fonda",
+        "personId": 14158,
+        "slug": "/person/14158",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Lee J. Cobb",
+        "personId": 22044,
+        "slug": "/person/22044",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Martin Balsam",
+        "personId": 24552,
+        "slug": "/person/24552",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Boris Kaufman",
+      "personId": 4124,
+      "slug": "/person/4124",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Kenyon Hopkins",
+      "personId": 20812,
+      "slug": "/person/20812",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:30.699Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

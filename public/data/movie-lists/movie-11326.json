@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "British Music Evolution",
+      "url_path": "british-music-evolution",
+      "description": "British Music Evolution collection",
+      "category": "music",
+      "connectionReason": "Part of British Music Evolution collection"
+    },
+    {
+      "name": "Surrealist Musical Theater",
+      "url_path": "surrealist-musical-theater",
+      "description": "Surrealist Musical Theater collection",
+      "category": "music",
+      "connectionReason": "Part of Surrealist Musical Theater collection"
+    },
+    {
+      "name": "Surrealist Musical Productions",
+      "url_path": "surrealist-musical-productions",
+      "description": "Surrealist Musical Productions collection",
+      "category": "musical",
+      "connectionReason": "Part of Surrealist Musical Productions collection"
+    },
+    {
+      "name": "Psychedelic Era Musicals",
+      "url_path": "psychedelic-era-musicals",
+      "description": "Psychedelic Era Musicals collection",
+      "category": "musical",
+      "connectionReason": "Part of Psychedelic Era Musicals collection"
+    }
+  ],
+  "totalLists": 4
+}

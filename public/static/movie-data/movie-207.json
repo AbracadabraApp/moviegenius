@@ -1,0 +1,125 @@
+{
+  "movieId": "bcd0ef59-6cd2-4a4d-a5d3-ce8ce0a16049",
+  "tmdbId": 207,
+  "title": "Dead Poets Society",
+  "year": 1989,
+  "analysis": {
+    "keyElements": {
+      "director": "Peter Weir",
+      "writers": [
+        "Tom Schulman"
+      ],
+      "stars": [
+        "Robin Williams",
+        "Robert Sean Leonard",
+        "Ethan Hawke"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1989,
+      "cinematographer": "John Seale",
+      "composer": "Maurice Jarre",
+      "studio": "Touchstone Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Robin Williams delivers one of his most nuanced and powerful dramatic performances",
+        "The film's message about individualism and artistic expression remains deeply relevant",
+        "Masterful blend of coming-of-age storytelling with profound philosophical themes"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Good Will Hunting",
+        "year": 1997,
+        "description": "Similar themes of mentorship and breaking free from predetermined paths"
+      },
+      {
+        "title": "The Prime of Miss Jean Brodie",
+        "year": 1969,
+        "description": "Earlier exploration of a teacher's profound influence on students"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Transcendentalism in American Literature",
+        "category": "Philosophy",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Coming of Age in Cinema",
+        "category": "Film Studies",
+        "difficulty": "beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Peter Weir",
+      "personId": 29557,
+      "slug": "/person/29557",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Tom Schulman",
+        "personId": 36701,
+        "slug": "/person/36701",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Robin Williams",
+        "personId": 32006,
+        "slug": "/person/32006",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Robert Sean Leonard",
+        "personId": 31877,
+        "slug": "/person/31877",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ethan Hawke",
+        "personId": 10669,
+        "slug": "/person/10669",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "John Seale",
+      "personId": 18675,
+      "slug": "/person/18675",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Maurice Jarre",
+      "personId": 25101,
+      "slug": "/person/25101",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:06.989Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

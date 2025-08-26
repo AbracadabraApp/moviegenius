@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Comedy Western Capers",
+      "url_path": "comedy-western-capers",
+      "description": "Comedy Western Capers collection",
+      "category": "western",
+      "connectionReason": "Part of Comedy Western Capers collection"
+    },
+    {
+      "name": "Spaghetti Western Classics",
+      "url_path": "spaghetti-western-classics",
+      "description": "Spaghetti Western Classics collection",
+      "category": "western",
+      "connectionReason": "Part of Spaghetti Western Classics collection"
+    },
+    {
+      "name": "Western Genre Parodies",
+      "url_path": "western-genre-parodies",
+      "description": "Western Genre Parodies collection",
+      "category": "western",
+      "connectionReason": "Part of Western Genre Parodies collection"
+    },
+    {
+      "name": "Mentor-Student Westerns",
+      "url_path": "mentor-student-westerns",
+      "description": "Mentor-Student Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Mentor-Student Westerns collection"
+    }
+  ],
+  "totalLists": 4
+}

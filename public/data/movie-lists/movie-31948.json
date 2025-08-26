@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Underwater Danger Thrillers",
+      "url_path": "underwater-danger-thrillers",
+      "description": "Underwater Danger Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Underwater Danger Thrillers collection"
+    },
+    {
+      "name": "Transportation Disaster Thrillers",
+      "url_path": "transportation-disaster-thrillers",
+      "description": "Transportation Disaster Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Transportation Disaster Thrillers collection"
+    },
+    {
+      "name": "Single Location Survival (Part 1)",
+      "url_path": "single-location-survival-part-1-",
+      "description": "Single Location Survival (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Single Location Survival (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

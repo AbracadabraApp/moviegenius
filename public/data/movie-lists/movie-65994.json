@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Medieval Dragon Tales",
+      "url_path": "medieval-dragon-tales",
+      "description": "Medieval Dragon Tales collection",
+      "category": "adventure",
+      "connectionReason": "Part of Medieval Dragon Tales collection"
+    },
+    {
+      "name": "Viking Warrior Quests",
+      "url_path": "viking-warrior-quests",
+      "description": "Viking Warrior Quests collection",
+      "category": "adventure",
+      "connectionReason": "Part of Viking Warrior Quests collection"
+    },
+    {
+      "name": "Classic Literary Adventures [OVERSIZED]",
+      "url_path": "classic-literary-adventures-oversized-",
+      "description": "Classic Literary Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Classic Literary Adventures [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 3
+}

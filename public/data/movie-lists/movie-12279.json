@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Virtual Reality Mysteries",
+      "url_path": "virtual-reality-mysteries",
+      "description": "Virtual Reality Mysteries collection",
+      "category": "adventure",
+      "connectionReason": "Part of Virtual Reality Mysteries collection"
+    },
+    {
+      "name": "Child Spy Thrillers",
+      "url_path": "child-spy-thrillers",
+      "description": "Child Spy Thrillers collection",
+      "category": "adventure",
+      "connectionReason": "Part of Child Spy Thrillers collection"
+    },
+    {
+      "name": "Video Game Adaptations",
+      "url_path": "video-game-adaptations",
+      "description": "Video Game Adaptations collection",
+      "category": "adventure",
+      "connectionReason": "Part of Video Game Adaptations collection"
+    },
+    {
+      "name": "CGI Spectacle Adventures [OVERSIZED]",
+      "url_path": "cgi-spectacle-adventures-oversized-",
+      "description": "CGI Spectacle Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of CGI Spectacle Adventures [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

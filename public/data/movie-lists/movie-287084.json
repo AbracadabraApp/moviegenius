@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "True Crime Horror",
+      "url_path": "true-crime-horror",
+      "description": "True Crime Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of True Crime Horror collection"
+    },
+    {
+      "name": "Masked Killer Horror",
+      "url_path": "masked-killer-horror",
+      "description": "Masked Killer Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Masked Killer Horror collection"
+    },
+    {
+      "name": "Meta Horror Films (Part 3)",
+      "url_path": "meta-horror-films-part-3-",
+      "description": "Meta Horror Films (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Meta Horror Films (Part 3) collection"
+    },
+    {
+      "name": "Small Town Conspiracy (Part 3)",
+      "url_path": "small-town-conspiracy-part-3-",
+      "description": "Small Town Conspiracy (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Small Town Conspiracy (Part 3) collection"
+    },
+    {
+      "name": "Murder Mystery Investigation",
+      "url_path": "murder-mystery-investigation",
+      "description": "Murder Mystery Investigation collection",
+      "category": "thriller",
+      "connectionReason": "Part of Murder Mystery Investigation collection"
+    },
+    {
+      "name": "Meta-Cinema Thrillers",
+      "url_path": "meta-cinema-thrillers",
+      "description": "Meta-Cinema Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Meta-Cinema Thrillers collection"
+    },
+    {
+      "name": "Small Town Dark Nights (Part 3)",
+      "url_path": "small-town-dark-nights-part-3-",
+      "description": "Small Town Dark Nights (Part 3) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Small Town Dark Nights (Part 3) collection"
+    }
+  ],
+  "totalLists": 7
+}

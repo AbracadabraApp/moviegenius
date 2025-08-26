@@ -1,0 +1,124 @@
+{
+  "movieId": "cbb6ca66-6ed4-4b4d-8662-ac1eca60a6b6",
+  "tmdbId": 224,
+  "title": "Man of Marble",
+  "year": 1977,
+  "analysis": {
+    "keyElements": {
+      "director": "Andrzej Wajda",
+      "writers": [
+        "Aleksander Scibor-Rylski"
+      ],
+      "stars": [
+        "Krystyna Janda",
+        "Jerzy Radziwilowicz"
+      ],
+      "genre": "Political Drama",
+      "releaseYear": 1977,
+      "cinematographer": "Edward Klosinski",
+      "composer": "Andrzej Korzynski",
+      "studio": "Film Polski"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful political commentary through innovative narrative structure",
+        "Krystyna Janda's breakthrough performance as a determined filmmaker",
+        "Brilliant examination of how history and propaganda intersect"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Man of Iron",
+        "year": 1981,
+        "description": "Wajda's sequel following the Solidarity movement"
+      },
+      {
+        "title": "Citizen Kane",
+        "year": 1941,
+        "description": "Similar investigative narrative structure"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Polish Cinema History",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Political Filmmaking",
+        "category": "Film Theory",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Andrzej Wajda",
+      "personId": 1832,
+      "slug": "/person/1832",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Aleksander Scibor-Rylski",
+        "personId": 811,
+        "slug": "/person/811",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Krystyna Janda",
+        "personId": 21433,
+        "slug": "/person/21433",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jerzy Radziwilowicz",
+        "personId": 17226,
+        "slug": "/person/17226",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Tadeusz Lomnicki",
+        "personId": 35445,
+        "slug": "/person/35445",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Edward Klosinski",
+      "personId": 9707,
+      "slug": "/person/9707",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Andrzej Korzynski",
+      "personId": 1824,
+      "slug": "/person/1824",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:09.745Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

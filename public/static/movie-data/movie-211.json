@@ -1,0 +1,115 @@
+{
+  "movieId": "36246788-1d89-4d40-b169-6465f54b0862",
+  "tmdbId": 211,
+  "title": "Berlin is in Germany",
+  "year": 2001,
+  "analysis": {
+    "keyElements": {
+      "director": "Hannes Stöhr",
+      "writers": [
+        "Hannes Stöhr"
+      ],
+      "stars": [
+        "Wolfgang Becker",
+        "Julia Jäger",
+        "Valentin Platareanu"
+      ],
+      "genre": "Drama",
+      "releaseYear": 2001,
+      "cinematographer": "Florian Hoffmeister",
+      "composer": "Florian Appl",
+      "studio": "Luna Film"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Powerful portrayal of post-reunification Germany through personal story",
+        "Authentic exploration of East-West cultural divisions and identity",
+        "Strong lead performance capturing displacement and hope"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Good Bye, Lenin!",
+        "year": 2003,
+        "description": "Another key film examining post-reunification German identity through personal story"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "German Reunification Cinema",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Hannes Stöhr",
+      "personId": 13555,
+      "slug": "/person/13555",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Hannes Stöhr",
+        "personId": 13555,
+        "slug": "/person/13555",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Jörg Schüttauf",
+        "personId": 19097,
+        "slug": "/person/19097",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Julia Jäger",
+        "personId": 19625,
+        "slug": "/person/19625",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Robin Becker",
+        "personId": 31971,
+        "slug": "/person/31971",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Florian Hoffmeister",
+      "personId": 11143,
+      "slug": "/person/11143",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Florian Appl",
+      "personId": 11138,
+      "slug": "/person/11138",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:07.635Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

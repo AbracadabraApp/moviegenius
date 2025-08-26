@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Climate Disaster Films",
+      "url_path": "climate-disaster-films",
+      "description": "Climate Disaster Films collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Climate Disaster Films collection"
+    },
+    {
+      "name": "Corporate Science Horror (Part 1)",
+      "url_path": "corporate-science-horror-part-1-",
+      "description": "Corporate Science Horror (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Corporate Science Horror (Part 1) collection"
+    },
+    {
+      "name": "Totalitarian Warning Films (Part 1)",
+      "url_path": "totalitarian-warning-films-part-1-",
+      "description": "Totalitarian Warning Films (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Totalitarian Warning Films (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

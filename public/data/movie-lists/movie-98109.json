@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Deadly Creature Features",
+      "url_path": "deadly-creature-features",
+      "description": "Deadly Creature Features collection",
+      "category": "adventure",
+      "connectionReason": "Part of Deadly Creature Features collection"
+    },
+    {
+      "name": "Underwater World Exploration",
+      "url_path": "underwater-world-exploration",
+      "description": "Underwater World Exploration collection",
+      "category": "adventure",
+      "connectionReason": "Part of Underwater World Exploration collection"
+    },
+    {
+      "name": "Lost Treasure Recovery",
+      "url_path": "lost-treasure-recovery",
+      "description": "Lost Treasure Recovery collection",
+      "category": "adventure",
+      "connectionReason": "Part of Lost Treasure Recovery collection"
+    }
+  ],
+  "totalLists": 3
+}

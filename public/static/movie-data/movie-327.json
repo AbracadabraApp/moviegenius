@@ -1,0 +1,125 @@
+{
+  "movieId": "ea3e6f90-03e3-4839-9eaa-e541ee397d74",
+  "tmdbId": 327,
+  "title": "Brother",
+  "year": 2000,
+  "analysis": {
+    "keyElements": {
+      "director": "Takeshi Kitano",
+      "writers": [
+        "Takeshi Kitano"
+      ],
+      "stars": [
+        "Takeshi Kitano",
+        "Omar Epps",
+        "Claude Maki"
+      ],
+      "genre": "Crime Drama",
+      "releaseYear": 2000,
+      "cinematographer": "Katsumi Yanagishima",
+      "composer": "Joe Hisaishi",
+      "studio": "Office Kitano"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of Japanese and American gangster film traditions",
+        "Kitano's unique directorial style combining brutal violence with meditative moments",
+        "Complex exploration of cultural clash and brotherhood across racial lines"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Sonatine",
+        "year": 1993,
+        "description": "Kitano's earlier yakuza masterpiece that established his unique style"
+      },
+      {
+        "title": "Ghost Dog: The Way of the Samurai",
+        "year": 1999,
+        "description": "Another east-meets-west crime film exploring cultural fusion"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Yakuza Film Traditions",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Cross-Cultural Filmmaking",
+        "category": "Film Theory",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Takeshi Kitano",
+      "personId": 35532,
+      "slug": "/person/35532",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Takeshi Kitano",
+        "personId": 35532,
+        "slug": "/person/35532",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Takeshi Kitano",
+        "personId": 35532,
+        "slug": "/person/35532",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Omar Epps",
+        "personId": 28131,
+        "slug": "/person/28131",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Claude Maki",
+        "personId": 6499,
+        "slug": "/person/6499",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Katsumi Yanagishima",
+      "personId": 20358,
+      "slug": "/person/20358",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Joe Hisaishi",
+      "personId": 17771,
+      "slug": "/person/17771",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:25.419Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

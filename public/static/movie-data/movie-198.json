@@ -1,0 +1,138 @@
+{
+  "movieId": "b980183f-24a6-4b65-9037-61b6750d4422",
+  "tmdbId": 198,
+  "title": "To Be or Not to Be",
+  "year": 1942,
+  "analysis": {
+    "keyElements": {
+      "director": "Ernst Lubitsch",
+      "writers": [
+        "Edwin Justus Mayer",
+        "Melchior Lengyel"
+      ],
+      "stars": [
+        "Carole Lombard",
+        "Jack Benny",
+        "Robert Stack"
+      ],
+      "genre": "Comedy/War",
+      "releaseYear": 1942,
+      "cinematographer": "Rudolph Maté",
+      "composer": "Werner R. Heymann",
+      "studio": "United Artists"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of comedy and wartime drama that remains both hilarious and poignant",
+        "Showcases the legendary 'Lubitsch touch' at its finest with perfect timing and sophisticated wit",
+        "Carole Lombard's brilliant final performance and Jack Benny's career-best work"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Great Dictator",
+        "year": 1940,
+        "description": "Contemporary wartime satire that shares similar themes and courage in mocking Nazi Germany"
+      },
+      {
+        "title": "Life Is Beautiful",
+        "year": 1997,
+        "description": "Similarly uses humor to address the Holocaust while maintaining emotional depth"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "The Lubitsch Touch",
+        "category": "Directing_Style",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Wartime Comedy",
+        "category": "Genre_Study",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "Political Satire",
+        "category": "Theme_Analysis",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Ernst Lubitsch",
+      "personId": 10593,
+      "slug": "/person/10593",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Edwin Justus Mayer",
+        "personId": 9761,
+        "slug": "/person/9761",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Melchior Lengyel",
+        "personId": 25326,
+        "slug": "/person/25326",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Carole Lombard",
+        "personId": 5071,
+        "slug": "/person/5071",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jack Benny",
+        "personId": 15293,
+        "slug": "/person/15293",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Robert Stack",
+        "personId": 31896,
+        "slug": "/person/31896",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Rudolph Maté",
+      "personId": 32605,
+      "slug": "/person/32605",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Werner R. Heymann",
+      "personId": 38257,
+      "slug": "/person/38257",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:05.955Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

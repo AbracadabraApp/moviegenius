@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Teen Life Chronicles",
+      "url_path": "teen-life-chronicles",
+      "description": "Teen Life Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Teen Life Chronicles collection"
+    },
+    {
+      "name": "Maritime Industry Chronicles",
+      "url_path": "maritime-industry-chronicles",
+      "description": "Maritime Industry Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Maritime Industry Chronicles collection"
+    },
+    {
+      "name": "Rural Life Studies",
+      "url_path": "rural-life-studies",
+      "description": "Rural Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Rural Life Studies collection"
+    }
+  ],
+  "totalLists": 3
+}

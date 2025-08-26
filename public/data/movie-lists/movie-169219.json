@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Arctic Horror Films",
+      "url_path": "arctic-horror-films",
+      "description": "Arctic Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Arctic Horror Films collection"
+    },
+    {
+      "name": "Underground Tunnel Horror",
+      "url_path": "underground-tunnel-horror",
+      "description": "Underground Tunnel Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Underground Tunnel Horror collection"
+    },
+    {
+      "name": "Found Footage Horror (Part 1)",
+      "url_path": "found-footage-horror-part-1-",
+      "description": "Found Footage Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Found Footage Horror (Part 1) collection"
+    },
+    {
+      "name": "Scientific Expedition Horror (Part 1)",
+      "url_path": "scientific-expedition-horror-part-1-",
+      "description": "Scientific Expedition Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Scientific Expedition Horror (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

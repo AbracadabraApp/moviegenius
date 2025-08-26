@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Classic Psychological Westerns",
+      "url_path": "classic-psychological-westerns",
+      "description": "Classic Psychological Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Classic Psychological Westerns collection"
+    },
+    {
+      "name": "Revenge Mission Westerns",
+      "url_path": "revenge-mission-westerns",
+      "description": "Revenge Mission Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Revenge Mission Westerns collection"
+    },
+    {
+      "name": "Bank Heist Westerns",
+      "url_path": "bank-heist-westerns",
+      "description": "Bank Heist Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Bank Heist Westerns collection"
+    },
+    {
+      "name": "Moral Choice Dramas [OVERSIZED]",
+      "url_path": "moral-choice-dramas-oversized-",
+      "description": "Moral Choice Dramas [OVERSIZED] collection",
+      "category": "western",
+      "connectionReason": "Part of Moral Choice Dramas [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

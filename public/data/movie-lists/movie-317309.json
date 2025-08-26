@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Teen Life Chronicles",
+      "url_path": "teen-life-chronicles",
+      "description": "Teen Life Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Teen Life Chronicles collection"
+    },
+    {
+      "name": "Science Education Films",
+      "url_path": "science-education-films",
+      "description": "Science Education Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Science Education Films collection"
+    },
+    {
+      "name": "Nuclear Industry Communities",
+      "url_path": "nuclear-industry-communities",
+      "description": "Nuclear Industry Communities collection",
+      "category": "documentary",
+      "connectionReason": "Part of Nuclear Industry Communities collection"
+    },
+    {
+      "name": "Science Ethics Investigations",
+      "url_path": "science-ethics-investigations",
+      "description": "Science Ethics Investigations collection",
+      "category": "documentary",
+      "connectionReason": "Part of Science Ethics Investigations collection"
+    }
+  ],
+  "totalLists": 4
+}

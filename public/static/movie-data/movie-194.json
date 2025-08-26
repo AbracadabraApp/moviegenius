@@ -1,0 +1,133 @@
+{
+  "movieId": "36d4b1b2-85f5-40ce-beb5-9a4dada4edf4",
+  "tmdbId": 194,
+  "title": "Amélie",
+  "year": 2001,
+  "analysis": {
+    "keyElements": {
+      "director": "Jean-Pierre Jeunet",
+      "writers": [
+        "Jean-Pierre Jeunet",
+        "Guillaume Laurant"
+      ],
+      "stars": [
+        "Audrey Tautou",
+        "Mathieu Kassovitz",
+        "Rufus"
+      ],
+      "genre": "Romantic Comedy-Drama",
+      "releaseYear": 2001,
+      "cinematographer": "Bruno Delbonnel",
+      "composer": "Yann Tiersen",
+      "studio": "Miramax Films"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Magical realism at its finest, creating an enchanting vision of Paris that feels both fantastical and deeply human",
+        "Audrey Tautou's career-defining performance captures innocence and mischief perfectly",
+        "Visual storytelling that proves feel-good cinema can be both artistic and profound"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Delicatessen",
+        "year": 1991,
+        "description": "Jeunet's earlier work showing his distinctive visual style"
+      },
+      {
+        "title": "500 Days of Summer",
+        "year": 2009,
+        "description": "Modern romantic comedy clearly influenced by Amélie's style"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Magical Realism in Cinema",
+        "category": "Film Theory",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "French Cinema Renaissance",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Jean-Pierre Jeunet",
+      "personId": 16698,
+      "slug": "/person/16698",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Jean-Pierre Jeunet",
+        "personId": 16698,
+        "slug": "/person/16698",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Guillaume Laurant",
+        "personId": 13283,
+        "slug": "/person/13283",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Audrey Tautou",
+        "personId": 2831,
+        "slug": "/person/2831",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Mathieu Kassovitz",
+        "personId": 24884,
+        "slug": "/person/24884",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Rufus",
+        "personId": 32618,
+        "slug": "/person/32618",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Bruno Delbonnel",
+      "personId": 4625,
+      "slug": "/person/4625",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Yann Tiersen",
+      "personId": 38952,
+      "slug": "/person/38952",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:04.864Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

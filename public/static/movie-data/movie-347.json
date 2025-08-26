@@ -1,0 +1,148 @@
+{
+  "movieId": "c9e55326-74ee-4da1-b6ce-a922be3e5ee2",
+  "tmdbId": 347,
+  "title": "Menschen am Sonntag",
+  "year": 1930,
+  "analysis": {
+    "keyElements": {
+      "director": "Robert Siodmak, Edgar G. Ulmer",
+      "writers": [
+        "Billy Wilder",
+        "Robert Siodmak",
+        "Curt Siodmak"
+      ],
+      "stars": [
+        "Erwin Splettstößer",
+        "Brigitte Borchert",
+        "Wolfgang von Waltershausen"
+      ],
+      "genre": "Documentary Drama",
+      "releaseYear": 1930,
+      "cinematographer": "Eugen Schüfftan",
+      "composer": "Otto Stenzeel",
+      "studio": "Filmstudio 1929"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking blend of documentary and narrative storytelling that influenced Italian Neorealism",
+        "Fascinating time capsule of Weimar-era Berlin before the rise of Nazi Germany",
+        "Early work of several filmmakers who became Hollywood legends, including Billy Wilder"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Bicycle Thieves",
+        "year": 1948,
+        "description": "Shares similar neorealist approach and focus on ordinary people"
+      },
+      {
+        "title": "La Haine",
+        "year": 1995,
+        "description": "Continues tradition of mixing documentary style with narrative storytelling"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Weimar Cinema",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Documentary-Fiction Hybrid",
+        "category": "Film Theory",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Robert Siodmak, Edgar G. Ulmer",
+      "personId": 31890,
+      "slug": "/person/31890",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Billy Wilder",
+        "personId": 3866,
+        "slug": "/person/3866",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Robert Siodmak",
+        "personId": 31889,
+        "slug": "/person/31889",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Curt Siodmak",
+        "personId": 6966,
+        "slug": "/person/6966",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Erwin Splettstößer",
+        "personId": 10619,
+        "slug": "/person/10619",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Brigitte Borchert",
+        "personId": 4469,
+        "slug": "/person/4469",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Wolfgang von Waltershausen",
+        "personId": 38804,
+        "slug": "/person/38804",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Christl Ehlers",
+        "personId": 6148,
+        "slug": "/person/6148",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Eugen Schüfftan",
+      "personId": 10738,
+      "slug": "/person/10738",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Otto Stenzeel",
+      "personId": 28265,
+      "slug": "/person/28265",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:28.265Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

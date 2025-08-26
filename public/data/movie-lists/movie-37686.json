@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Kids vs Aliens",
+      "url_path": "kids-vs-aliens",
+      "description": "Kids vs Aliens collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Kids vs Aliens collection"
+    },
+    {
+      "name": "Films About Filmmaking",
+      "url_path": "films-about-filmmaking",
+      "description": "Films About Filmmaking collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Films About Filmmaking collection"
+    },
+    {
+      "name": "Domestic Alien Invasion",
+      "url_path": "domestic-alien-invasion",
+      "description": "Domestic Alien Invasion collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Domestic Alien Invasion collection"
+    },
+    {
+      "name": "Coming of Age SciFi",
+      "url_path": "coming-of-age-scifi",
+      "description": "Coming of Age SciFi collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Coming of Age SciFi collection"
+    }
+  ],
+  "totalLists": 4
+}

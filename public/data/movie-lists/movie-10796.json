@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Parallel Reality Drama",
+      "url_path": "parallel-reality-drama",
+      "description": "Parallel Reality Drama collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Parallel Reality Drama collection"
+    },
+    {
+      "name": "Cyberpunk Martial Arts",
+      "url_path": "cyberpunk-martial-arts",
+      "description": "Cyberpunk Martial Arts collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Cyberpunk Martial Arts collection"
+    },
+    {
+      "name": "Dimensional Horror SciFi",
+      "url_path": "dimensional-horror-scifi",
+      "description": "Dimensional Horror SciFi collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Dimensional Horror SciFi collection"
+    }
+  ],
+  "totalLists": 3
+}

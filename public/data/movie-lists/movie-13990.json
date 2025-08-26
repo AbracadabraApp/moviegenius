@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Therapy Session Comedies",
+      "url_path": "therapy-session-comedies",
+      "description": "Therapy Session Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Therapy Session Comedies collection"
+    },
+    {
+      "name": "Post-Graduate Uncertainty",
+      "url_path": "post-graduate-uncertainty",
+      "description": "Post-Graduate Uncertainty collection",
+      "category": "comedy",
+      "connectionReason": "Part of Post-Graduate Uncertainty collection"
+    },
+    {
+      "name": "Summer Romance Stories",
+      "url_path": "summer-romance-stories",
+      "description": "Summer Romance Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Summer Romance Stories collection"
+    }
+  ],
+  "totalLists": 3
+}

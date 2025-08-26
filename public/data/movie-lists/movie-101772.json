@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "POW Escape Films",
+      "url_path": "pow-escape-films",
+      "description": "POW Escape Films collection",
+      "category": "war",
+      "connectionReason": "Part of POW Escape Films collection"
+    },
+    {
+      "name": "Wartime Journey Films",
+      "url_path": "wartime-journey-films",
+      "description": "Wartime Journey Films collection",
+      "category": "war",
+      "connectionReason": "Part of Wartime Journey Films collection"
+    },
+    {
+      "name": "Wartime Resistance Films [OVERSIZED]",
+      "url_path": "wartime-resistance-films-oversized-",
+      "description": "Wartime Resistance Films [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of Wartime Resistance Films [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 3
+}

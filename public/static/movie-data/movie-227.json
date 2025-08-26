@@ -1,0 +1,157 @@
+{
+  "movieId": "548d568f-2f5e-4381-b01a-dbcef051b416",
+  "tmdbId": 227,
+  "title": "The Outsiders",
+  "year": 1983,
+  "analysis": {
+    "keyElements": {
+      "director": "Francis Ford Coppola",
+      "writers": [
+        "Kathleen Rowell",
+        "S.E. Hinton"
+      ],
+      "stars": [
+        "C. Thomas Howell",
+        "Matt Dillon",
+        "Ralph Macchio",
+        "Patrick Swayze",
+        "Rob Lowe",
+        "Tom Cruise"
+      ],
+      "genre": "Coming-of-age Drama",
+      "releaseYear": 1983,
+      "cinematographer": "Stephen H. Burum",
+      "composer": "Carmine Coppola",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Remarkable ensemble cast of future stars in their earliest roles",
+        "Powerful adaptation of a beloved coming-of-age novel that maintains its emotional resonance",
+        "Masterful direction by Coppola bringing raw authenticity to teenage class warfare"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Rumble Fish",
+        "year": 1983,
+        "description": "Coppola's companion piece to The Outsiders, featuring a more experimental take on youth rebellion"
+      },
+      {
+        "title": "Stand By Me",
+        "year": 1986,
+        "description": "Similar coming-of-age themes and period setting, based on Stephen King novella"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "1960s Class Division",
+        "category": "social_history",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Coming-of-Age in American Cinema",
+        "category": "film_history",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Francis Ford Coppola",
+      "personId": 11242,
+      "slug": "/person/11242",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Kathleen Rowell",
+        "personId": 20287,
+        "slug": "/person/20287",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "S.E. Hinton",
+        "personId": 33552,
+        "slug": "/person/33552",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "C. Thomas Howell",
+        "personId": 6941,
+        "slug": "/person/6941",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Matt Dillon",
+        "personId": 24917,
+        "slug": "/person/24917",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ralph Macchio",
+        "personId": 30304,
+        "slug": "/person/30304",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Patrick Swayze",
+        "personId": 28649,
+        "slug": "/person/28649",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Rob Lowe",
+        "personId": 32019,
+        "slug": "/person/32019",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Tom Cruise",
+        "personId": 36534,
+        "slug": "/person/36534",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Stephen H. Burum",
+      "personId": 34758,
+      "slug": "/person/34758",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Carmine Coppola",
+      "personId": 5053,
+      "slug": "/person/5053",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:10.336Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

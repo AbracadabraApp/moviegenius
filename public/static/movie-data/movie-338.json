@@ -1,0 +1,138 @@
+{
+  "movieId": "4515380b-e547-4683-9ccb-d6be0afdf423",
+  "tmdbId": 338,
+  "title": "Good Bye, Lenin!",
+  "year": 2003,
+  "analysis": {
+    "keyElements": {
+      "director": "Wolfgang Becker",
+      "writers": [
+        "Wolfgang Becker",
+        "Bernd Lichtenberg"
+      ],
+      "stars": [
+        "Daniel Brühl",
+        "Katrin Sass",
+        "Chulpan Khamatova"
+      ],
+      "genre": "Comedy-Drama",
+      "releaseYear": 2003,
+      "cinematographer": "Martin Kukula",
+      "composer": "Yann Tiersen",
+      "studio": "X-Filme Creative Pool"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of historical drama and intimate family storytelling",
+        "Brilliant performance by Daniel Brühl as a son going to extraordinary lengths to protect his mother",
+        "Unique perspective on German reunification through a deeply personal lens"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Lives of Others",
+        "year": 2006,
+        "description": "Another masterful German film examining life in East Germany, though from a more dramatic perspective"
+      },
+      {
+        "title": "Barbara",
+        "year": 2012,
+        "description": "Continues the tradition of nuanced portrayals of East German life"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "German Reunification",
+        "category": "Historical Context",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Ostalgie in Cinema",
+        "category": "Cultural Studies",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Comedy in Historical Drama",
+        "category": "Film Theory",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Wolfgang Becker",
+      "personId": 38780,
+      "slug": "/person/38780",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Wolfgang Becker",
+        "personId": 38780,
+        "slug": "/person/38780",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Bernd Lichtenberg",
+        "personId": 3512,
+        "slug": "/person/3512",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Daniel Brühl",
+        "personId": 7203,
+        "slug": "/person/7203",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Katrin Sass",
+        "personId": 20348,
+        "slug": "/person/20348",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Chulpan Khamatova",
+        "personId": 6352,
+        "slug": "/person/6352",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Martin Kukula",
+      "personId": 24595,
+      "slug": "/person/24595",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Yann Tiersen",
+      "personId": 38952,
+      "slug": "/person/38952",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:26.733Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

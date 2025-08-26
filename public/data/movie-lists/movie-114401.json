@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Agricultural Life Studies",
+      "url_path": "agricultural-life-studies",
+      "description": "Agricultural Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Agricultural Life Studies collection"
+    },
+    {
+      "name": "Food Industry Exposés",
+      "url_path": "food-industry-expos-s",
+      "description": "Food Industry Exposés collection",
+      "category": "documentary",
+      "connectionReason": "Part of Food Industry Exposés collection"
+    },
+    {
+      "name": "Industrial Work Documentation (Part 1)",
+      "url_path": "industrial-work-documentation-part-1-",
+      "description": "Industrial Work Documentation (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Industrial Work Documentation (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

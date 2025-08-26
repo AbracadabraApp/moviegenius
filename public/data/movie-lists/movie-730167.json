@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Survival Horror",
+      "url_path": "survival-horror",
+      "description": "Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Survival Horror collection"
+    },
+    {
+      "name": "Aquatic Monster Horror (Part 3)",
+      "url_path": "aquatic-monster-horror-part-3-",
+      "description": "Aquatic Monster Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Aquatic Monster Horror (Part 3) collection"
+    },
+    {
+      "name": "Nature Revenge Horror (Part 4)",
+      "url_path": "nature-revenge-horror-part-4-",
+      "description": "Nature Revenge Horror (Part 4) collection",
+      "category": "horror",
+      "connectionReason": "Part of Nature Revenge Horror (Part 4) collection"
+    },
+    {
+      "name": "Underwater Danger Thrillers",
+      "url_path": "underwater-danger-thrillers",
+      "description": "Underwater Danger Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Underwater Danger Thrillers collection"
+    },
+    {
+      "name": "Deadly Animal Survival",
+      "url_path": "deadly-animal-survival",
+      "description": "Deadly Animal Survival collection",
+      "category": "thriller",
+      "connectionReason": "Part of Deadly Animal Survival collection"
+    },
+    {
+      "name": "Single Location Survival (Part 6)",
+      "url_path": "single-location-survival-part-6-",
+      "description": "Single Location Survival (Part 6) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Single Location Survival (Part 6) collection"
+    }
+  ],
+  "totalLists": 6
+}

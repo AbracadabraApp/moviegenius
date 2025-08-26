@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Post-Apocalyptic Survival Horror",
+      "url_path": "post-apocalyptic-survival-horror",
+      "description": "Post-Apocalyptic Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Post-Apocalyptic Survival Horror collection"
+    },
+    {
+      "name": "Island Isolation Horror",
+      "url_path": "island-isolation-horror",
+      "description": "Island Isolation Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Island Isolation Horror collection"
+    },
+    {
+      "name": "Social Commentary Horror (Part 2)",
+      "url_path": "social-commentary-horror-part-2-",
+      "description": "Social Commentary Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Social Commentary Horror (Part 2) collection"
+    },
+    {
+      "name": "Toxic Family Horror (Part 1)",
+      "url_path": "toxic-family-horror-part-1-",
+      "description": "Toxic Family Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Toxic Family Horror (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,141 @@
+{
+  "movieId": "7267e8e6-0c60-4775-a604-c9464e5be00d",
+  "tmdbId": 176,
+  "title": "Saw",
+  "year": 2004,
+  "analysis": {
+    "keyElements": {
+      "director": "James Wan",
+      "writers": [
+        "James Wan",
+        "Leigh Whannell"
+      ],
+      "stars": [
+        "Cary Elwes",
+        "Leigh Whannell",
+        "Danny Glover",
+        "Monica Potter"
+      ],
+      "genre": "Horror/Thriller",
+      "releaseYear": 2004,
+      "cinematographer": "David A. Armstrong",
+      "composer": "Charlie Clouser",
+      "studio": "Lionsgate Films"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking psychological horror that redefined the genre",
+        "Ingeniously crafted plot with one of horror's most memorable twist endings",
+        "Created a new subgenre of morality-focused horror that influenced countless films"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Se7en",
+        "year": 1995,
+        "description": "Key influence on Saw's visual style and moral framework"
+      },
+      {
+        "title": "Hostel",
+        "year": 2005,
+        "description": "Contemporary horror film influenced by Saw's success"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Moral Philosophy in Horror",
+        "category": "Theme Analysis",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Low Budget Filmmaking Techniques",
+        "category": "Production",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "James Wan",
+      "personId": 15982,
+      "slug": "/person/15982",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "James Wan",
+        "personId": 15982,
+        "slug": "/person/15982",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Leigh Whannell",
+        "personId": 22130,
+        "slug": "/person/22130",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Cary Elwes",
+        "personId": 5152,
+        "slug": "/person/5152",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Leigh Whannell",
+        "personId": 22130,
+        "slug": "/person/22130",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Danny Glover",
+        "personId": 7427,
+        "slug": "/person/7427",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Monica Potter",
+        "personId": 26720,
+        "slug": "/person/26720",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "David A. Armstrong",
+      "personId": 7627,
+      "slug": "/person/7627",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Charlie Clouser",
+      "personId": 5605,
+      "slug": "/person/5605",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:01.753Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

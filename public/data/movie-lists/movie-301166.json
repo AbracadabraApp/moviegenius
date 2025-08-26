@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Urban Architecture Transformation",
+      "url_path": "urban-architecture-transformation",
+      "description": "Urban Architecture Transformation collection",
+      "category": "documentary",
+      "connectionReason": "Part of Urban Architecture Transformation collection"
+    },
+    {
+      "name": "Museum Design Chronicles",
+      "url_path": "museum-design-chronicles",
+      "description": "Museum Design Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Museum Design Chronicles collection"
+    },
+    {
+      "name": "Art Preservation History",
+      "url_path": "art-preservation-history",
+      "description": "Art Preservation History collection",
+      "category": "documentary",
+      "connectionReason": "Part of Art Preservation History collection"
+    }
+  ],
+  "totalLists": 3
+}

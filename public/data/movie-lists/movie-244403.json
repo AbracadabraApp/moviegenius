@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Musical Rediscovery Stories",
+      "url_path": "musical-rediscovery-stories",
+      "description": "Musical Rediscovery Stories collection",
+      "category": "music",
+      "connectionReason": "Part of Musical Rediscovery Stories collection"
+    },
+    {
+      "name": "Fame and Tragedy Musicals",
+      "url_path": "fame-and-tragedy-musicals",
+      "description": "Fame and Tragedy Musicals collection",
+      "category": "music",
+      "connectionReason": "Part of Fame and Tragedy Musicals collection"
+    },
+    {
+      "name": "Indie Musical Originals",
+      "url_path": "indie-musical-originals",
+      "description": "Indie Musical Originals collection",
+      "category": "music",
+      "connectionReason": "Part of Indie Musical Originals collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Family Tech Comedy",
+      "url_path": "family-tech-comedy",
+      "description": "Family Tech Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Family Tech Comedy collection"
+    },
+    {
+      "name": "Suburban Life Satires",
+      "url_path": "suburban-life-satires",
+      "description": "Suburban Life Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Suburban Life Satires collection"
+    },
+    {
+      "name": "Scientific Facility Mayhem (Part 1)",
+      "url_path": "scientific-facility-mayhem-part-1-",
+      "description": "Scientific Facility Mayhem (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Scientific Facility Mayhem (Part 1) collection"
+    },
+    {
+      "name": "Size Alteration Society",
+      "url_path": "size-alteration-society",
+      "description": "Size Alteration Society collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Size Alteration Society collection"
+    },
+    {
+      "name": "Low Budget Disaster (Part 3)",
+      "url_path": "low-budget-disaster-part-3-",
+      "description": "Low Budget Disaster (Part 3) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Low Budget Disaster (Part 3) collection"
+    },
+    {
+      "name": "Tech Society Consequences (Part 2)",
+      "url_path": "tech-society-consequences-part-2-",
+      "description": "Tech Society Consequences (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Tech Society Consequences (Part 2) collection"
+    },
+    {
+      "name": "Retro SciFi Comedy (Part 1)",
+      "url_path": "retro-scifi-comedy-part-1-",
+      "description": "Retro SciFi Comedy (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro SciFi Comedy (Part 1) collection"
+    }
+  ],
+  "totalLists": 7
+}

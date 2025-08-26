@@ -1,0 +1,125 @@
+{
+  "movieId": "a36ce6d0-4d5b-47af-94b7-d304d23d957a",
+  "tmdbId": 397,
+  "title": "French Kiss",
+  "year": 1995,
+  "analysis": {
+    "keyElements": {
+      "director": "Lawrence Kasdan",
+      "writers": [
+        "Adam Brooks"
+      ],
+      "stars": [
+        "Meg Ryan",
+        "Kevin Kline",
+        "Timothy Hutton"
+      ],
+      "genre": "Romantic Comedy",
+      "releaseYear": 1995,
+      "cinematographer": "Owen Roizman",
+      "composer": "James Newton Howard",
+      "studio": "20th Century Fox"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Kevin Kline and Meg Ryan's electric chemistry and comedic timing",
+        "Beautiful French locations and charming fish-out-of-water story",
+        "Perfect blend of romance and comedy with genuine character growth"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "When Harry Met Sally",
+        "year": 1989,
+        "description": "Earlier Meg Ryan romantic comedy that established her as genre queen"
+      },
+      {
+        "title": "Charade",
+        "year": 1963,
+        "description": "Classic romantic comedy-thriller set in Paris"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "1990s Romantic Comedy Evolution",
+        "category": "Genre Studies",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Cross-Cultural Romance in Cinema",
+        "category": "Themes",
+        "difficulty": "beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Lawrence Kasdan",
+      "personId": 21929,
+      "slug": "/person/21929",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Adam Brooks",
+        "personId": 138,
+        "slug": "/person/138",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Meg Ryan",
+        "personId": 25286,
+        "slug": "/person/25286",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Kevin Kline",
+        "personId": 20889,
+        "slug": "/person/20889",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Timothy Hutton",
+        "personId": 36309,
+        "slug": "/person/36309",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Owen Roizman",
+      "personId": 28288,
+      "slug": "/person/28288",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "James Newton Howard",
+      "personId": 15902,
+      "slug": "/person/15902",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:32.257Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

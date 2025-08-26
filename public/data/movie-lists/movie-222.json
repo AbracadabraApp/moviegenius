@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "City Symphony Films",
+      "url_path": "city-symphony-films",
+      "description": "City Symphony Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of City Symphony Films collection"
+    },
+    {
+      "name": "Urban Subculture Studies (Part 1)",
+      "url_path": "urban-subculture-studies-part-1-",
+      "description": "Urban Subculture Studies (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Urban Subculture Studies (Part 1) collection"
+    },
+    {
+      "name": "Early Cinema Pioneers (Part 1)",
+      "url_path": "early-cinema-pioneers-part-1-",
+      "description": "Early Cinema Pioneers (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Early Cinema Pioneers (Part 1) collection"
+    },
+    {
+      "name": "Visual Nature Symphonies (Part 1)",
+      "url_path": "visual-nature-symphonies-part-1-",
+      "description": "Visual Nature Symphonies (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Visual Nature Symphonies (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

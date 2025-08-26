@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Holiday Special Animations",
+      "url_path": "holiday-special-animations",
+      "description": "Holiday Special Animations collection",
+      "category": "animation",
+      "connectionReason": "Part of Holiday Special Animations collection"
+    },
+    {
+      "name": "Inanimate Object Adventures",
+      "url_path": "inanimate-object-adventures",
+      "description": "Inanimate Object Adventures collection",
+      "category": "animation",
+      "connectionReason": "Part of Inanimate Object Adventures collection"
+    },
+    {
+      "name": "Magical Worlds and Powers",
+      "url_path": "magical-worlds-and-powers",
+      "description": "Magical Worlds and Powers collection",
+      "category": "animation",
+      "connectionReason": "Part of Magical Worlds and Powers collection"
+    }
+  ],
+  "totalLists": 3
+}

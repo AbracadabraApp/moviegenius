@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Nuclear Crisis Thrillers",
+      "url_path": "nuclear-crisis-thrillers",
+      "description": "Nuclear Crisis Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Nuclear Crisis Thrillers collection"
+    },
+    {
+      "name": "Submarine Command Thrillers",
+      "url_path": "submarine-command-thrillers",
+      "description": "Submarine Command Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Submarine Command Thrillers collection"
+    },
+    {
+      "name": "Historical Survival Thrillers (Part 2)",
+      "url_path": "historical-survival-thrillers-part-2-",
+      "description": "Historical Survival Thrillers (Part 2) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Historical Survival Thrillers (Part 2) collection"
+    },
+    {
+      "name": "Cold War Double Agents (Part 2)",
+      "url_path": "cold-war-double-agents-part-2-",
+      "description": "Cold War Double Agents (Part 2) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Cold War Double Agents (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

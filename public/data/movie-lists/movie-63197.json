@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Social Media Horror",
+      "url_path": "social-media-horror",
+      "description": "Social Media Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Social Media Horror collection"
+    },
+    {
+      "name": "Teen Digital Nightmare",
+      "url_path": "teen-digital-nightmare",
+      "description": "Teen Digital Nightmare collection",
+      "category": "horror",
+      "connectionReason": "Part of Teen Digital Nightmare collection"
+    },
+    {
+      "name": "True Crime Horror",
+      "url_path": "true-crime-horror",
+      "description": "True Crime Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of True Crime Horror collection"
+    },
+    {
+      "name": "Found Footage Horror (Part 2)",
+      "url_path": "found-footage-horror-part-2-",
+      "description": "Found Footage Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Found Footage Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

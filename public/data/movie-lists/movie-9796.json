@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Underground Tunnel Horror",
+      "url_path": "underground-tunnel-horror",
+      "description": "Underground Tunnel Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Underground Tunnel Horror collection"
+    },
+    {
+      "name": "Survival Horror",
+      "url_path": "survival-horror",
+      "description": "Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Survival Horror collection"
+    },
+    {
+      "name": "Tourist Attraction Danger",
+      "url_path": "tourist-attraction-danger",
+      "description": "Tourist Attraction Danger collection",
+      "category": "thriller",
+      "connectionReason": "Part of Tourist Attraction Danger collection"
+    }
+  ],
+  "totalLists": 3
+}

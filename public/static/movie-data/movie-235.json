@@ -1,0 +1,149 @@
+{
+  "movieId": "2bf5641c-c003-46b6-a14e-68c322588ddb",
+  "tmdbId": 235,
+  "title": "Stand by Me",
+  "year": 1986,
+  "analysis": {
+    "keyElements": {
+      "director": "Rob Reiner",
+      "writers": [
+        "Stephen King",
+        "Raynold Gideon",
+        "Bruce A. Evans"
+      ],
+      "stars": [
+        "Wil Wheaton",
+        "River Phoenix",
+        "Corey Feldman",
+        "Jerry O'Connell"
+      ],
+      "genre": "Coming-of-age Drama",
+      "releaseYear": 1986,
+      "cinematographer": "Thomas Del Ruth",
+      "composer": "Jack Nitzsche",
+      "studio": "Columbia Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful portrayal of childhood friendship and innocence lost",
+        "Exceptional performances from its young cast, especially River Phoenix",
+        "Perfect balance of humor, drama, and genuine emotional depth"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Goonies",
+        "year": 1985,
+        "description": "Similar childhood adventure narrative with deeper emotional undertones"
+      },
+      {
+        "title": "Dead Poets Society",
+        "year": 1989,
+        "description": "Comparable exploration of youth facing adult realities"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Coming of Age in American Cinema",
+        "category": "Film History",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Stephen King Adaptations",
+        "category": "Literary Analysis",
+        "difficulty": "Beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Rob Reiner",
+      "personId": 32029,
+      "slug": "/person/32029",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Stephen King",
+        "personId": 34779,
+        "slug": "/person/34779",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Raynold Gideon",
+        "personId": 30564,
+        "slug": "/person/30564",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Bruce A. Evans",
+        "personId": 4529,
+        "slug": "/person/4529",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Wil Wheaton",
+        "personId": 38728,
+        "slug": "/person/38728",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "River Phoenix",
+        "personId": 31366,
+        "slug": "/person/31366",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Corey Feldman",
+        "personId": 6779,
+        "slug": "/person/6779",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jerry O'Connell",
+        "personId": 17192,
+        "slug": "/person/17192",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Thomas Del Ruth",
+      "personId": 36089,
+      "slug": "/person/36089",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Jack Nitzsche",
+      "personId": 15421,
+      "slug": "/person/15421",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:11.873Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

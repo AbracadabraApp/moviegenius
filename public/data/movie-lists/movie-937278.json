@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Senior Life Comedies",
+      "url_path": "senior-life-comedies",
+      "description": "Senior Life Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Senior Life Comedies collection"
+    },
+    {
+      "name": "Grief Recovery Stories",
+      "url_path": "grief-recovery-stories",
+      "description": "Grief Recovery Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Grief Recovery Stories collection"
+    },
+    {
+      "name": "Midlife Crisis Comedies (Part 1)",
+      "url_path": "midlife-crisis-comedies-part-1-",
+      "description": "Midlife Crisis Comedies (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Midlife Crisis Comedies (Part 1) collection"
+    },
+    {
+      "name": "Cross-Cultural Family Comedies (Part 1)",
+      "url_path": "cross-cultural-family-comedies-part-1-",
+      "description": "Cross-Cultural Family Comedies (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Cultural Family Comedies (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

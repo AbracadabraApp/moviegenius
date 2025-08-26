@@ -1,0 +1,138 @@
+{
+  "movieId": "dee4747e-43ac-4621-9230-fee7605381ef",
+  "tmdbId": 220,
+  "title": "East of Eden",
+  "year": 1955,
+  "analysis": {
+    "keyElements": {
+      "director": "Elia Kazan",
+      "writers": [
+        "Paul Osborn",
+        "John Steinbeck"
+      ],
+      "stars": [
+        "James Dean",
+        "Julie Harris",
+        "Raymond Massey"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1955,
+      "cinematographer": "Ted McCord",
+      "composer": "Leonard Rosenman",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "James Dean's explosive debut performance that redefined method acting for a generation",
+        "Kazan's masterful direction translating Steinbeck's complex moral themes to screen",
+        "Revolutionary portrayal of intergenerational conflict that still resonates today"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Rebel Without a Cause",
+        "year": 1955,
+        "description": "Dean's other masterpiece of youth rebellion and parental conflict"
+      },
+      {
+        "title": "On the Waterfront",
+        "year": 1954,
+        "description": "Kazan's previous exploration of moral complexity and family loyalty"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Method Acting Revolution",
+        "category": "Performance",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Biblical Allegory in Cinema",
+        "category": "Themes",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "1950s Social Commentary",
+        "category": "Historical",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Elia Kazan",
+      "personId": 9917,
+      "slug": "/person/9917",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Paul Osborn",
+        "personId": 28949,
+        "slug": "/person/28949",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "John Steinbeck",
+        "personId": 18708,
+        "slug": "/person/18708",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "James Dean",
+        "personId": 15741,
+        "slug": "/person/15741",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Julie Harris",
+        "personId": 19709,
+        "slug": "/person/19709",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Raymond Massey",
+        "personId": 30544,
+        "slug": "/person/30544",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Ted McCord",
+      "personId": 35745,
+      "slug": "/person/35745",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Leonard Rosenman",
+      "personId": 22243,
+      "slug": "/person/22243",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:08.660Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

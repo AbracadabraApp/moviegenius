@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Live-Action Animal Adventures",
+      "url_path": "live-action-animal-adventures",
+      "description": "Live-Action Animal Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Live-Action Animal Adventures collection"
+    },
+    {
+      "name": "Cross-Cultural Comedy",
+      "url_path": "cross-cultural-comedy",
+      "description": "Cross-Cultural Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Cultural Comedy collection"
+    },
+    {
+      "name": "Los Angeles Lifestyle Films (Part 1)",
+      "url_path": "los-angeles-lifestyle-films-part-1-",
+      "description": "Los Angeles Lifestyle Films (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Los Angeles Lifestyle Films (Part 1) collection"
+    },
+    {
+      "name": "Pet Adventure Comedies (Part 1)",
+      "url_path": "pet-adventure-comedies-part-1-",
+      "description": "Pet Adventure Comedies (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Pet Adventure Comedies (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

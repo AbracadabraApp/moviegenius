@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Casino Heist Films",
+      "url_path": "casino-heist-films",
+      "description": "Casino Heist Films collection",
+      "category": "crime",
+      "connectionReason": "Part of Casino Heist Films collection"
+    },
+    {
+      "name": "Mob Mentorship Stories",
+      "url_path": "mob-mentorship-stories",
+      "description": "Mob Mentorship Stories collection",
+      "category": "crime",
+      "connectionReason": "Part of Mob Mentorship Stories collection"
+    },
+    {
+      "name": "Post-Prison Gangster Entanglement",
+      "url_path": "post-prison-gangster-entanglement",
+      "description": "Post-Prison Gangster Entanglement collection",
+      "category": "crime",
+      "connectionReason": "Part of Post-Prison Gangster Entanglement collection"
+    }
+  ],
+  "totalLists": 3
+}

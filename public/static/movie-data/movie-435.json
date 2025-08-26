@@ -1,0 +1,133 @@
+{
+  "movieId": "da8b03f6-1e18-40df-8685-b67fd70dd83b",
+  "tmdbId": 435,
+  "title": "The Day After Tomorrow",
+  "year": 2004,
+  "analysis": {
+    "keyElements": {
+      "director": "Roland Emmerich",
+      "writers": [
+        "Roland Emmerich",
+        "Jeffrey Nachmanoff"
+      ],
+      "stars": [
+        "Dennis Quaid",
+        "Jake Gyllenhaal",
+        "Emmy Rossum"
+      ],
+      "genre": "Disaster/Science Fiction",
+      "releaseYear": 2004,
+      "cinematographer": "Ueli Steiger",
+      "composer": "Harald Kloser",
+      "studio": "20th Century Fox"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking disaster visual effects that still hold up today",
+        "Compelling father-son emotional core amidst global catastrophe",
+        "Prescient climate change message that's even more relevant now"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Independence Day",
+        "year": 1996,
+        "description": "Emmerich's earlier disaster epic showing his mastery of the genre"
+      },
+      {
+        "title": "Deep Impact",
+        "year": 1998,
+        "description": "Similar blend of science and human drama in disaster context"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Climate Science in Cinema",
+        "category": "Science",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Disaster Film Evolution",
+        "category": "Film History",
+        "difficulty": "Beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Roland Emmerich",
+      "personId": 32215,
+      "slug": "/person/32215",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Roland Emmerich",
+        "personId": 32215,
+        "slug": "/person/32215",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jeffrey Nachmanoff",
+        "personId": 16888,
+        "slug": "/person/16888",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Dennis Quaid",
+        "personId": 8495,
+        "slug": "/person/8495",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jake Gyllenhaal",
+        "personId": 15622,
+        "slug": "/person/15622",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Emmy Rossum",
+        "personId": 10260,
+        "slug": "/person/10260",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Ueli Steiger",
+      "personId": 37186,
+      "slug": "/person/37186",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Harald Kloser",
+      "personId": 13647,
+      "slug": "/person/13647",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:37.645Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

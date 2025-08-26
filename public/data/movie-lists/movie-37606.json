@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Royal Court Dramas",
+      "url_path": "royal-court-dramas",
+      "description": "Royal Court Dramas collection",
+      "category": "period",
+      "connectionReason": "Part of Royal Court Dramas collection"
+    },
+    {
+      "name": "French Society Scandals",
+      "url_path": "french-society-scandals",
+      "description": "French Society Scandals collection",
+      "category": "period",
+      "connectionReason": "Part of French Society Scandals collection"
+    },
+    {
+      "name": "Social Climber Tragedies",
+      "url_path": "social-climber-tragedies",
+      "description": "Social Climber Tragedies collection",
+      "category": "period",
+      "connectionReason": "Part of Social Climber Tragedies collection"
+    },
+    {
+      "name": "Forbidden Love Stories",
+      "url_path": "forbidden-love-stories",
+      "description": "Forbidden Love Stories collection",
+      "category": "period",
+      "connectionReason": "Part of Forbidden Love Stories collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Time Travel Adventures",
+      "url_path": "time-travel-adventures",
+      "description": "Time Travel Adventures collection",
+      "category": "animation",
+      "connectionReason": "Part of Time Travel Adventures collection"
+    },
+    {
+      "name": "European-Set Animations",
+      "url_path": "european-set-animations",
+      "description": "European-Set Animations collection",
+      "category": "animation",
+      "connectionReason": "Part of European-Set Animations collection"
+    },
+    {
+      "name": "Surrealist Animation Classics",
+      "url_path": "surrealist-animation-classics",
+      "description": "Surrealist Animation Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Surrealist Animation Classics collection"
+    },
+    {
+      "name": "Space Evolution Philosophy",
+      "url_path": "space-evolution-philosophy",
+      "description": "Space Evolution Philosophy collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Evolution Philosophy collection"
+    },
+    {
+      "name": "Animated SciFi Anthology",
+      "url_path": "animated-scifi-anthology",
+      "description": "Animated SciFi Anthology collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Animated SciFi Anthology collection"
+    },
+    {
+      "name": "Memory and Time (Part 3)",
+      "url_path": "memory-and-time-part-3-",
+      "description": "Memory and Time (Part 3) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Memory and Time (Part 3) collection"
+    }
+  ],
+  "totalLists": 6
+}

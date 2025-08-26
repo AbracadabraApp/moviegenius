@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "War Correspondent Stories",
+      "url_path": "war-correspondent-stories",
+      "description": "War Correspondent Stories collection",
+      "category": "documentary",
+      "connectionReason": "Part of War Correspondent Stories collection"
+    },
+    {
+      "name": "Photography Artist Portraits",
+      "url_path": "photography-artist-portraits",
+      "description": "Photography Artist Portraits collection",
+      "category": "documentary",
+      "connectionReason": "Part of Photography Artist Portraits collection"
+    },
+    {
+      "name": "War Zone Journalism",
+      "url_path": "war-zone-journalism",
+      "description": "War Zone Journalism collection",
+      "category": "documentary",
+      "connectionReason": "Part of War Zone Journalism collection"
+    },
+    {
+      "name": "Photography War Analysis",
+      "url_path": "photography-war-analysis",
+      "description": "Photography War Analysis collection",
+      "category": "documentary",
+      "connectionReason": "Part of Photography War Analysis collection"
+    }
+  ],
+  "totalLists": 4
+}

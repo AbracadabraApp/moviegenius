@@ -1,0 +1,125 @@
+{
+  "movieId": "6284d85b-f40b-4acf-93b3-af512a8a1b0c",
+  "tmdbId": 279,
+  "title": "Amadeus",
+  "year": 1984,
+  "analysis": {
+    "keyElements": {
+      "director": "Milos Forman",
+      "writers": [
+        "Peter Shaffer"
+      ],
+      "stars": [
+        "F. Murray Abraham",
+        "Tom Hulce",
+        "Elizabeth Berridge"
+      ],
+      "genre": "Biography/Drama/Music",
+      "releaseYear": 1984,
+      "cinematographer": "Miroslav Ondříček",
+      "composer": "Wolfgang Amadeus Mozart, Neville Marriner",
+      "studio": "Orion Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful portrayal of genius, jealousy, and artistic rivalry through F. Murray Abraham's Oscar-winning performance",
+        "Stunning period recreation of 18th century Vienna with exceptional attention to musical authenticity",
+        "Universal themes of mediocrity versus genius that resonate beyond classical music"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Immortal Beloved",
+        "year": 1994,
+        "description": "Similar exploration of a classical composer's troubled genius"
+      },
+      {
+        "title": "The Last Emperor",
+        "year": 1987,
+        "description": "Comparable historical epic with psychological depth"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Classical Music in Cinema",
+        "category": "Music",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Historical Drama Adaptation",
+        "category": "Film Studies",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Milos Forman",
+      "personId": 26447,
+      "slug": "/person/26447",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Peter Shaffer",
+        "personId": 29506,
+        "slug": "/person/29506",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "F. Murray Abraham",
+        "personId": 11158,
+        "slug": "/person/11158",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Tom Hulce",
+        "personId": 36577,
+        "slug": "/person/36577",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Elizabeth Berridge",
+        "personId": 9981,
+        "slug": "/person/9981",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Miroslav Ondříček",
+      "personId": 26554,
+      "slug": "/person/26554",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Wolfgang Amadeus Mozart, Antonio Salieri",
+      "personId": 38778,
+      "slug": "/person/38778",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:18.548Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

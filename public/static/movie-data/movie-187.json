@@ -1,0 +1,140 @@
+{
+  "movieId": "77a1e3f4-2ad9-46b9-9efd-88f2e4198c84",
+  "tmdbId": 187,
+  "title": "Sin City",
+  "year": 2005,
+  "analysis": {
+    "keyElements": {
+      "director": "Robert Rodriguez, Frank Miller",
+      "writers": [
+        "Frank Miller"
+      ],
+      "stars": [
+        "Bruce Willis",
+        "Mickey Rourke",
+        "Jessica Alba",
+        "Clive Owen"
+      ],
+      "genre": "Neo-noir Crime Thriller",
+      "releaseYear": 2005,
+      "cinematographer": "Robert Rodriguez",
+      "composer": "Robert Rodriguez, John Debney, Graeme Revell",
+      "studio": "Dimension Films"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking visual style that perfectly translates comic noir to screen",
+        "Multiple compelling noir storylines with memorable performances",
+        "Revolutionary approach to digital filmmaking that influenced countless films"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Dark City",
+        "year": 1998,
+        "description": "Similar noir-meets-fantasy visual aesthetic"
+      },
+      {
+        "title": "Double Indemnity",
+        "year": 1944,
+        "description": "Classic noir influence on Sin City's tone"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Digital Backlot Filmmaking",
+        "category": "technical",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Comic Panel to Film Translation",
+        "category": "adaptation",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Robert Rodriguez, Frank Miller, Quentin Tarantino (special guest director)",
+      "personId": 31852,
+      "slug": "/person/31852",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Frank Miller",
+        "personId": 11453,
+        "slug": "/person/11453",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Robert Rodriguez",
+        "personId": 31849,
+        "slug": "/person/31849",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Bruce Willis",
+        "personId": 4612,
+        "slug": "/person/4612",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Mickey Rourke",
+        "personId": 26182,
+        "slug": "/person/26182",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jessica Alba",
+        "personId": 17275,
+        "slug": "/person/17275",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Clive Owen",
+        "personId": 6627,
+        "slug": "/person/6627",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Robert Rodriguez",
+      "personId": 31849,
+      "slug": "/person/31849",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Robert Rodriguez, John Debney, Graeme Revell",
+      "personId": 31854,
+      "slug": "/person/31854",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:04.139Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

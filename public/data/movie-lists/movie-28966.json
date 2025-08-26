@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "WWI Combat Films",
+      "url_path": "wwi-combat-films",
+      "description": "WWI Combat Films collection",
+      "category": "war",
+      "connectionReason": "Part of WWI Combat Films collection"
+    },
+    {
+      "name": "Pacifist to Warrior",
+      "url_path": "pacifist-to-warrior",
+      "description": "Pacifist to Warrior collection",
+      "category": "war",
+      "connectionReason": "Part of Pacifist to Warrior collection"
+    },
+    {
+      "name": "Early Aviation Combat",
+      "url_path": "early-aviation-combat",
+      "description": "Early Aviation Combat collection",
+      "category": "war",
+      "connectionReason": "Part of Early Aviation Combat collection"
+    },
+    {
+      "name": "Wartime Romance Films [OVERSIZED]",
+      "url_path": "wartime-romance-films-oversized-",
+      "description": "Wartime Romance Films [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of Wartime Romance Films [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

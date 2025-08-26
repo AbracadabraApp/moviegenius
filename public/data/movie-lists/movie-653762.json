@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Human-Animal Relationships",
+      "url_path": "human-animal-relationships",
+      "description": "Human-Animal Relationships collection",
+      "category": "documentary",
+      "connectionReason": "Part of Human-Animal Relationships collection"
+    },
+    {
+      "name": "Rural Life Studies",
+      "url_path": "rural-life-studies",
+      "description": "Rural Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Rural Life Studies collection"
+    },
+    {
+      "name": "Food Culture Chronicles",
+      "url_path": "food-culture-chronicles",
+      "description": "Food Culture Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Food Culture Chronicles collection"
+    },
+    {
+      "name": "Traditional Herding Culture",
+      "url_path": "traditional-herding-culture",
+      "description": "Traditional Herding Culture collection",
+      "category": "documentary",
+      "connectionReason": "Part of Traditional Herding Culture collection"
+    }
+  ],
+  "totalLists": 4
+}

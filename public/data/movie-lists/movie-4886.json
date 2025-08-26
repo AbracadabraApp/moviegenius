@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Deadly Game Thrillers",
+      "url_path": "deadly-game-thrillers",
+      "description": "Deadly Game Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Deadly Game Thrillers collection"
+    },
+    {
+      "name": "Isolated Manor Mysteries",
+      "url_path": "isolated-manor-mysteries",
+      "description": "Isolated Manor Mysteries collection",
+      "category": "thriller",
+      "connectionReason": "Part of Isolated Manor Mysteries collection"
+    },
+    {
+      "name": "One Night Thrillers (Part 1)",
+      "url_path": "one-night-thrillers-part-1-",
+      "description": "One Night Thrillers (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of One Night Thrillers (Part 1) collection"
+    },
+    {
+      "name": "Hidden Identity Thrillers (Part 1)",
+      "url_path": "hidden-identity-thrillers-part-1-",
+      "description": "Hidden Identity Thrillers (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Hidden Identity Thrillers (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

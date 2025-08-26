@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Solo Living Documentaries",
+      "url_path": "solo-living-documentaries",
+      "description": "Solo Living Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Solo Living Documentaries collection"
+    },
+    {
+      "name": "Extreme Sports Documentaries (Part 3)",
+      "url_path": "extreme-sports-documentaries-part-3-",
+      "description": "Extreme Sports Documentaries (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Extreme Sports Documentaries (Part 3) collection"
+    },
+    {
+      "name": "Perseverance Against Odds (Part 4)",
+      "url_path": "perseverance-against-odds-part-4-",
+      "description": "Perseverance Against Odds (Part 4) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Perseverance Against Odds (Part 4) collection"
+    }
+  ],
+  "totalLists": 3
+}

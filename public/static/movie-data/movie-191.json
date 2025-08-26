@@ -1,0 +1,133 @@
+{
+  "movieId": "3c0d278d-2556-411a-9fb0-afc002ab84bc",
+  "tmdbId": 191,
+  "title": "The State I Am In",
+  "year": 2000,
+  "analysis": {
+    "keyElements": {
+      "director": "Christian Petzold",
+      "writers": [
+        "Christian Petzold",
+        "Harun Farocki"
+      ],
+      "stars": [
+        "Julia Hummer",
+        "Barbara Auer",
+        "Richy Müller"
+      ],
+      "genre": "Drama",
+      "releaseYear": 2000,
+      "cinematographer": "Hans Fromm",
+      "composer": "Stefan Will",
+      "studio": "Schramm Film"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful exploration of family dynamics under extreme political pressure",
+        "Breakthrough film that launched Christian Petzold's acclaimed career",
+        "Compelling coming-of-age story within a taut political thriller framework"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Running on Empty",
+        "year": 1988,
+        "description": "Similar theme of militant parents and affected children"
+      },
+      {
+        "title": "Phoenix",
+        "year": 2014,
+        "description": "Petzold's later masterwork showing his evolved style"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "German New Wave Cinema",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Political Activism in Cinema",
+        "category": "Theme Analysis",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Christian Petzold",
+      "personId": 6088,
+      "slug": "/person/6088",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Christian Petzold",
+        "personId": 6088,
+        "slug": "/person/6088",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Harun Farocki",
+        "personId": 13855,
+        "slug": "/person/13855",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Julia Hummer",
+        "personId": 19624,
+        "slug": "/person/19624",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Barbara Auer",
+        "personId": 3007,
+        "slug": "/person/3007",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Richy Müller",
+        "personId": 31228,
+        "slug": "/person/31228",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Hans Fromm",
+      "personId": 13582,
+      "slug": "/person/13582",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Stefan Will",
+      "personId": 34654,
+      "slug": "/person/34654",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:04.428Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

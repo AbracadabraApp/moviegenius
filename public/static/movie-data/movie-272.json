@@ -1,0 +1,151 @@
+{
+  "movieId": "7493cd9f-4cdc-470e-bf22-d87e9aef5ad3",
+  "tmdbId": 272,
+  "title": "Batman Begins",
+  "year": 2005,
+  "analysis": {
+    "keyElements": {
+      "director": "Christopher Nolan",
+      "writers": [
+        "Christopher Nolan",
+        "David S. Goyer"
+      ],
+      "stars": [
+        "Christian Bale",
+        "Michael Caine",
+        "Liam Neeson",
+        "Katie Holmes"
+      ],
+      "genre": "Action/Drama/Superhero",
+      "releaseYear": 2005,
+      "cinematographer": "Wally Pfister",
+      "composer": "Hans Zimmer",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Revolutionized superhero origin stories with psychological depth and realism",
+        "Christian Bale's definitive portrayal of both Bruce Wayne and Batman",
+        "Masterful world-building that grounds fantasy in believable reality"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Dark Knight",
+        "year": 2008,
+        "description": "Direct sequel that builds on the realistic foundation established in Batman Begins"
+      },
+      {
+        "title": "Batman",
+        "year": 1989,
+        "description": "Previous definitive Batman film that Batman Begins deliberately contrasted against"
+      },
+      {
+        "title": "Iron Man",
+        "year": 2008,
+        "description": "Superhero origin story heavily influenced by Batman Begins' realistic approach"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Hero's Journey in Modern Cinema",
+        "category": "Narrative Structure",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Practical vs CGI Effects in Superhero Films",
+        "category": "Production",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "Post-9/11 Themes in Superhero Cinema",
+        "category": "Cultural Analysis",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Christopher Nolan",
+      "personId": 6269,
+      "slug": "/person/6269",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Christopher Nolan",
+        "personId": 6269,
+        "slug": "/person/6269",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "David S. Goyer",
+        "personId": 8140,
+        "slug": "/person/8140",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Christian Bale",
+        "personId": 6033,
+        "slug": "/person/6033",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Michael Caine",
+        "personId": 25543,
+        "slug": "/person/25543",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Liam Neeson",
+        "personId": 22468,
+        "slug": "/person/22468",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Katie Holmes",
+        "personId": 20331,
+        "slug": "/person/20331",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Wally Pfister",
+      "personId": 38007,
+      "slug": "/person/38007",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Hans Zimmer",
+      "personId": 13632,
+      "slug": "/person/13632",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:17.970Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

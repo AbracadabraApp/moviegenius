@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Modern Bunker Thrillers",
+      "url_path": "modern-bunker-thrillers",
+      "description": "Modern Bunker Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Modern Bunker Thrillers collection"
+    },
+    {
+      "name": "Medical Crisis Thrillers",
+      "url_path": "medical-crisis-thrillers",
+      "description": "Medical Crisis Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Medical Crisis Thrillers collection"
+    },
+    {
+      "name": "Experimental Treatment Horror",
+      "url_path": "experimental-treatment-horror",
+      "description": "Experimental Treatment Horror collection",
+      "category": "thriller",
+      "connectionReason": "Part of Experimental Treatment Horror collection"
+    }
+  ],
+  "totalLists": 3
+}

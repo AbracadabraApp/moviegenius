@@ -1,0 +1,147 @@
+{
+  "movieId": "78a7a264-e9f3-435f-8cd4-ac552dbaa13c",
+  "tmdbId": 229,
+  "title": "Bride of Frankenstein",
+  "year": 1935,
+  "analysis": {
+    "keyElements": {
+      "director": "James Whale",
+      "writers": [
+        "William Hurlbut",
+        "John L. Balderston"
+      ],
+      "stars": [
+        "Boris Karloff",
+        "Elsa Lanchester",
+        "Colin Clive"
+      ],
+      "genre": "Horror",
+      "releaseYear": 1935,
+      "cinematographer": "John J. Mescall",
+      "composer": "Franz Waxman",
+      "studio": "Universal Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Surpasses the original with deeper themes and dark humor",
+        "Features iconic performances from Karloff and Lanchester",
+        "Masterful blend of horror, pathos, and gothic atmosphere"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Frankenstein",
+        "year": 1931,
+        "description": "The groundbreaking predecessor that established the foundation"
+      },
+      {
+        "title": "Gods and Monsters",
+        "year": 1998,
+        "description": "Biographical drama about director James Whale"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Universal Horror Cycle",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Gothic Horror Aesthetics",
+        "category": "Visual Style",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "James Whale",
+      "personId": 15988,
+      "slug": "/person/15988",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "William Hurlbut",
+        "personId": 38502,
+        "slug": "/person/38502",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "John L. Balderston",
+        "personId": 18384,
+        "slug": "/person/18384",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Mary Shelley",
+        "personId": 24745,
+        "slug": "/person/24745",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Boris Karloff",
+        "personId": 4123,
+        "slug": "/person/4123",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Elsa Lanchester",
+        "personId": 10107,
+        "slug": "/person/10107",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Colin Clive",
+        "personId": 6675,
+        "slug": "/person/6675",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ernest Thesiger",
+        "personId": 10572,
+        "slug": "/person/10572",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "John J. Mescall",
+      "personId": 18337,
+      "slug": "/person/18337",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Franz Waxman",
+      "personId": 11552,
+      "slug": "/person/11552",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:10.629Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

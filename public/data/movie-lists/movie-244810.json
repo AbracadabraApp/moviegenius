@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "WWII Archival Documentaries",
+      "url_path": "wwii-archival-documentaries",
+      "description": "WWII Archival Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of WWII Archival Documentaries collection"
+    },
+    {
+      "name": "Mining Industry History",
+      "url_path": "mining-industry-history",
+      "description": "Mining Industry History collection",
+      "category": "documentary",
+      "connectionReason": "Part of Mining Industry History collection"
+    },
+    {
+      "name": "Propaganda Cinema History",
+      "url_path": "propaganda-cinema-history",
+      "description": "Propaganda Cinema History collection",
+      "category": "documentary",
+      "connectionReason": "Part of Propaganda Cinema History collection"
+    },
+    {
+      "name": "Historical Trauma Testimonies (Part 4)",
+      "url_path": "historical-trauma-testimonies-part-4-",
+      "description": "Historical Trauma Testimonies (Part 4) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Historical Trauma Testimonies (Part 4) collection"
+    }
+  ],
+  "totalLists": 4
+}

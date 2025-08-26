@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Child Soldiers Stories",
+      "url_path": "child-soldiers-stories",
+      "description": "Child Soldiers Stories collection",
+      "category": "war",
+      "connectionReason": "Part of Child Soldiers Stories collection"
+    },
+    {
+      "name": "African Mercenary Wars",
+      "url_path": "african-mercenary-wars",
+      "description": "African Mercenary Wars collection",
+      "category": "war",
+      "connectionReason": "Part of African Mercenary Wars collection"
+    },
+    {
+      "name": "Civilian Survival Stories",
+      "url_path": "civilian-survival-stories",
+      "description": "Civilian Survival Stories collection",
+      "category": "war",
+      "connectionReason": "Part of Civilian Survival Stories collection"
+    }
+  ],
+  "totalLists": 3
+}

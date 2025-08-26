@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Holiday Horror Films",
+      "url_path": "holiday-horror-films",
+      "description": "Holiday Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Holiday Horror Films collection"
+    },
+    {
+      "name": "Stalker Horror",
+      "url_path": "stalker-horror",
+      "description": "Stalker Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Stalker Horror collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 5)",
+      "url_path": "confined-space-thrillers-part-5-",
+      "description": "Confined Space Thrillers (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 5) collection"
+    },
+    {
+      "name": "Holiday Horror Thrillers",
+      "url_path": "holiday-horror-thrillers",
+      "description": "Holiday Horror Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Holiday Horror Thrillers collection"
+    },
+    {
+      "name": "One Night Thrillers (Part 3)",
+      "url_path": "one-night-thrillers-part-3-",
+      "description": "One Night Thrillers (Part 3) collection",
+      "category": "thriller",
+      "connectionReason": "Part of One Night Thrillers (Part 3) collection"
+    },
+    {
+      "name": "Psychological Captivity Films (Part 6)",
+      "url_path": "psychological-captivity-films-part-6-",
+      "description": "Psychological Captivity Films (Part 6) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Psychological Captivity Films (Part 6) collection"
+    },
+    {
+      "name": "Single Location Survival (Part 3)",
+      "url_path": "single-location-survival-part-3-",
+      "description": "Single Location Survival (Part 3) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Single Location Survival (Part 3) collection"
+    }
+  ],
+  "totalLists": 7
+}

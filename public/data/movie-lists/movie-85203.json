@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Summer Camp Horror",
+      "url_path": "summer-camp-horror",
+      "description": "Summer Camp Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Summer Camp Horror collection"
+    },
+    {
+      "name": "Revenge Horror Films",
+      "url_path": "revenge-horror-films",
+      "description": "Revenge Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Revenge Horror Films collection"
+    },
+    {
+      "name": "Teen Slasher Horror (Part 3)",
+      "url_path": "teen-slasher-horror-part-3-",
+      "description": "Teen Slasher Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Teen Slasher Horror (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

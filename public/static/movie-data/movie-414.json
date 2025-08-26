@@ -1,0 +1,149 @@
+{
+  "movieId": "abc56057-41cf-433e-8e9d-46dc49b30ed2",
+  "tmdbId": 414,
+  "title": "Batman Forever",
+  "year": 1995,
+  "analysis": {
+    "keyElements": {
+      "director": "Joel Schumacher",
+      "writers": [
+        "Lee Batchler",
+        "Janet Scott Batchler",
+        "Akiva Goldsman"
+      ],
+      "stars": [
+        "Val Kilmer",
+        "Jim Carrey",
+        "Tommy Lee Jones",
+        "Nicole Kidman"
+      ],
+      "genre": "Action, Fantasy",
+      "releaseYear": 1995,
+      "cinematographer": "Stephen Goldblatt",
+      "composer": "Elliot Goldenthal",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "NO",
+      "reasons": [
+        "The campy tone severely undermines the dark complexity established in previous Batman films",
+        "Over-the-top performances from villains create an uneven theatrical experience",
+        "Watch **Batman Returns** (1992) instead for a more compelling Batman story"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Batman Returns",
+        "year": 1992,
+        "description": "Tim Burton's darker, more complex predecessor"
+      },
+      {
+        "title": "Batman Begins",
+        "year": 2005,
+        "description": "The grounded reboot that learned from Forever's mistakes"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Franchise Evolution",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Studio Interference",
+        "category": "Industry",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Joel Schumacher",
+      "personId": 17821,
+      "slug": "/person/17821",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Lee Batchler",
+        "personId": 21986,
+        "slug": "/person/21986",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Janet Scott Batchler",
+        "personId": 16142,
+        "slug": "/person/16142",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Akiva Goldsman",
+        "personId": 493,
+        "slug": "/person/493",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Val Kilmer",
+        "personId": 37355,
+        "slug": "/person/37355",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Tommy Lee Jones",
+        "personId": 36632,
+        "slug": "/person/36632",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jim Carrey",
+        "personId": 17385,
+        "slug": "/person/17385",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Nicole Kidman",
+        "personId": 27590,
+        "slug": "/person/27590",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Stephen Goldblatt",
+      "personId": 34750,
+      "slug": "/person/34750",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Elliot Goldenthal",
+      "personId": 10072,
+      "slug": "/person/10072",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:35.349Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

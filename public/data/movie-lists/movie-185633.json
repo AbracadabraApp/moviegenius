@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Civil War Narratives",
+      "url_path": "civil-war-narratives",
+      "description": "Civil War Narratives collection",
+      "category": "war",
+      "connectionReason": "Part of Civil War Narratives collection"
+    },
+    {
+      "name": "Divided Loyalties Wars",
+      "url_path": "divided-loyalties-wars",
+      "description": "Divided Loyalties Wars collection",
+      "category": "war",
+      "connectionReason": "Part of Divided Loyalties Wars collection"
+    },
+    {
+      "name": "WWII Propaganda Films",
+      "url_path": "wwii-propaganda-films",
+      "description": "WWII Propaganda Films collection",
+      "category": "war",
+      "connectionReason": "Part of WWII Propaganda Films collection"
+    }
+  ],
+  "totalLists": 3
+}

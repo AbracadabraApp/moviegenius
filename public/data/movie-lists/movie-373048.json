@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Holiday Horror Films",
+      "url_path": "holiday-horror-films",
+      "description": "Holiday Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Holiday Horror Films collection"
+    },
+    {
+      "name": "Modern Suburban Horror (Part 1)",
+      "url_path": "modern-suburban-horror-part-1-",
+      "description": "Modern Suburban Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Modern Suburban Horror (Part 1) collection"
+    },
+    {
+      "name": "Teen Slasher Horror (Part 1)",
+      "url_path": "teen-slasher-horror-part-1-",
+      "description": "Teen Slasher Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Teen Slasher Horror (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

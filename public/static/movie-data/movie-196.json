@@ -1,0 +1,133 @@
+{
+  "movieId": "b2ee7826-4aad-430c-8aac-2c0a18cf0acf",
+  "tmdbId": 196,
+  "title": "Back to the Future Part III",
+  "year": 1990,
+  "analysis": {
+    "keyElements": {
+      "director": "Robert Zemeckis",
+      "writers": [
+        "Bob Gale",
+        "Robert Zemeckis"
+      ],
+      "stars": [
+        "Michael J. Fox",
+        "Christopher Lloyd",
+        "Mary Steenburgen"
+      ],
+      "genre": "Science Fiction/Western",
+      "releaseYear": 1990,
+      "cinematographer": "Dean Cundey",
+      "composer": "Alan Silvestri",
+      "studio": "Universal Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of Western and sci-fi genres that pays homage to classic Western films while maintaining the series' charm",
+        "Emotionally satisfying conclusion to the trilogy with genuine character development for Doc Brown",
+        "Perfect balance of humor, action, and heart with excellent chemistry between Fox and Lloyd"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Back to the Future",
+        "year": 1985,
+        "description": "The original that established the series' core elements and relationships"
+      },
+      {
+        "title": "Unforgiven",
+        "year": 1992,
+        "description": "Another film that successfully deconstructs Western mythology"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Genre Hybridization",
+        "category": "Film Theory",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Western Film Conventions",
+        "category": "Genre Studies",
+        "difficulty": "beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Robert Zemeckis",
+      "personId": 31958,
+      "slug": "/person/31958",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Robert Zemeckis",
+        "personId": 31958,
+        "slug": "/person/31958",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Bob Gale",
+        "personId": 4008,
+        "slug": "/person/4008",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Michael J. Fox",
+        "personId": 25736,
+        "slug": "/person/25736",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Christopher Lloyd",
+        "personId": 6245,
+        "slug": "/person/6245",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Mary Steenburgen",
+        "personId": 24747,
+        "slug": "/person/24747",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Dean Cundey",
+      "personId": 8269,
+      "slug": "/person/8269",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Alan Silvestri",
+      "personId": 634,
+      "slug": "/person/634",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:05.663Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

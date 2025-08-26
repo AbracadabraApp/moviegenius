@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Time Travel Adventures",
+      "url_path": "time-travel-adventures",
+      "description": "Time Travel Adventures collection",
+      "category": "animation",
+      "connectionReason": "Part of Time Travel Adventures collection"
+    },
+    {
+      "name": "Educational Science Animation",
+      "url_path": "educational-science-animation",
+      "description": "Educational Science Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Educational Science Animation collection"
+    },
+    {
+      "name": "Holiday Special Animations",
+      "url_path": "holiday-special-animations",
+      "description": "Holiday Special Animations collection",
+      "category": "animation",
+      "connectionReason": "Part of Holiday Special Animations collection"
+    }
+  ],
+  "totalLists": 3
+}

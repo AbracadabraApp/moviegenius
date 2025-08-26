@@ -1,0 +1,132 @@
+{
+  "movieId": "d08953df-7863-46fa-ad02-12ce14f9f3fe",
+  "tmdbId": 381,
+  "title": "To Catch a Thief",
+  "year": 1955,
+  "analysis": {
+    "keyElements": {
+      "director": "Alfred Hitchcock",
+      "writers": [
+        "John Michael Hayes",
+        "David Dodge"
+      ],
+      "stars": [
+        "Cary Grant",
+        "Grace Kelly"
+      ],
+      "genre": "Romantic Thriller",
+      "releaseYear": 1955,
+      "cinematographer": "Robert Burks",
+      "composer": "Lyn Murray",
+      "studio": "Paramount Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of romance and suspense with crackling chemistry between Grant and Kelly",
+        "Stunning French Riviera cinematography in vibrant VistaVision",
+        "Classic Hitchcock wit and style at its most sophisticated and playful"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "North by Northwest",
+        "year": 1959,
+        "description": "Another Hitchcock-Grant collaboration showing similar sophisticated suspense"
+      },
+      {
+        "title": "Charade",
+        "year": 1963,
+        "description": "Directly influenced by To Catch a Thief's romantic thriller style"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Hitchcock's Use of Visual Metaphor",
+        "category": "Film_Technique",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "1950s Hollywood Glamour",
+        "category": "Film_History",
+        "difficulty": "beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Alfred Hitchcock",
+      "personId": 1111,
+      "slug": "/person/1111",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "John Michael Hayes",
+        "personId": 18479,
+        "slug": "/person/18479",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "David Dodge",
+        "personId": 7757,
+        "slug": "/person/7757",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Cary Grant",
+        "personId": 5154,
+        "slug": "/person/5154",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Grace Kelly",
+        "personId": 13056,
+        "slug": "/person/13056",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jessie Royce Landis",
+        "personId": 17318,
+        "slug": "/person/17318",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Robert Burks",
+      "personId": 31484,
+      "slug": "/person/31484",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Lyn Murray",
+      "personId": 23320,
+      "slug": "/person/23320",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:30.114Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

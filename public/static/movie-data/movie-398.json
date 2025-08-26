@@ -1,0 +1,120 @@
+{
+  "movieId": "353ded50-1c50-467f-ad2d-c4f8c124cf9c",
+  "tmdbId": 398,
+  "title": "Capote",
+  "year": 2005,
+  "analysis": {
+    "keyElements": {
+      "director": "Bennett Miller",
+      "writers": [
+        "Dan Futterman"
+      ],
+      "stars": [
+        "Philip Seymour Hoffman",
+        "Catherine Keener",
+        "Clifton Collins Jr."
+      ],
+      "genre": "Biographical Drama",
+      "releaseYear": 2005,
+      "cinematographer": "Adam Kimmel",
+      "composer": "Mychael Danna",
+      "studio": "Sony Pictures Classics"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Philip Seymour Hoffman's Oscar-winning transformation into Truman Capote is a masterclass in biographical performance",
+        "The film expertly explores the moral complexities of journalistic ethics and artistic ambition",
+        "It's a haunting meditation on the relationship between artist and subject that resonates beyond its historical context"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "In Cold Blood",
+        "year": 1967,
+        "description": "The film adaptation of Capote's groundbreaking book, providing fascinating comparison"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "True Crime Genre Evolution",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Biographical Performance Techniques",
+        "category": "Acting",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Bennett Miller",
+      "personId": 3373,
+      "slug": "/person/3373",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Dan Futterman",
+        "personId": 7150,
+        "slug": "/person/7150",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Philip Seymour Hoffman",
+        "personId": 29753,
+        "slug": "/person/29753",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Catherine Keener",
+        "personId": 5211,
+        "slug": "/person/5211",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Clifton Collins Jr.",
+        "personId": 6603,
+        "slug": "/person/6603",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Adam Kimmel",
+      "personId": 179,
+      "slug": "/person/179",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Mychael Danna",
+      "personId": 26938,
+      "slug": "/person/26938",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:32.406Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

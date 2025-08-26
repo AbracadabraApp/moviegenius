@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Mountain Wilderness Thrillers",
+      "url_path": "mountain-wilderness-thrillers",
+      "description": "Mountain Wilderness Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Mountain Wilderness Thrillers collection"
+    },
+    {
+      "name": "Border Crossing Thrillers",
+      "url_path": "border-crossing-thrillers",
+      "description": "Border Crossing Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Border Crossing Thrillers collection"
+    },
+    {
+      "name": "Law Enforcement Pursuit",
+      "url_path": "law-enforcement-pursuit",
+      "description": "Law Enforcement Pursuit collection",
+      "category": "thriller",
+      "connectionReason": "Part of Law Enforcement Pursuit collection"
+    }
+  ],
+  "totalLists": 3
+}

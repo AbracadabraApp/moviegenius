@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "name": "Classic Psychological Westerns",
+      "url_path": "classic-psychological-westerns",
+      "description": "Classic Psychological Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Classic Psychological Westerns collection"
+    },
+    {
+      "name": "Spiritual Journey Westerns",
+      "url_path": "spiritual-journey-westerns",
+      "description": "Spiritual Journey Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Spiritual Journey Westerns collection"
+    }
+  ],
+  "totalLists": 2
+}

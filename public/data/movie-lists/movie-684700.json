@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "True Crime Hybrid Films",
+      "url_path": "true-crime-hybrid-films",
+      "description": "True Crime Hybrid Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of True Crime Hybrid Films collection"
+    },
+    {
+      "name": "Sports Institution Investigations",
+      "url_path": "sports-institution-investigations",
+      "description": "Sports Institution Investigations collection",
+      "category": "documentary",
+      "connectionReason": "Part of Sports Institution Investigations collection"
+    },
+    {
+      "name": "Rise and Fall Stories (Part 2)",
+      "url_path": "rise-and-fall-stories-part-2-",
+      "description": "Rise and Fall Stories (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Rise and Fall Stories (Part 2) collection"
+    },
+    {
+      "name": "Personal Monologue Documentaries (Part 2)",
+      "url_path": "personal-monologue-documentaries-part-2-",
+      "description": "Personal Monologue Documentaries (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Personal Monologue Documentaries (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

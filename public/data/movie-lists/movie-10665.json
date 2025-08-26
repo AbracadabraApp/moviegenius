@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Home Invasion Horror",
+      "url_path": "home-invasion-horror",
+      "description": "Home Invasion Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Home Invasion Horror collection"
+    },
+    {
+      "name": "Masked Killer Horror",
+      "url_path": "masked-killer-horror",
+      "description": "Masked Killer Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Masked Killer Horror collection"
+    },
+    {
+      "name": "Rural Isolation Horror",
+      "url_path": "rural-isolation-horror",
+      "description": "Rural Isolation Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Rural Isolation Horror collection"
+    },
+    {
+      "name": "Psychological Horror (Part 5)",
+      "url_path": "psychological-horror-part-5-",
+      "description": "Psychological Horror (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Psychological Horror (Part 5) collection"
+    }
+  ],
+  "totalLists": 4
+}

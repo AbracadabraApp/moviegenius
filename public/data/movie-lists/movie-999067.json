@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Space Exploration History",
+      "url_path": "space-exploration-history",
+      "description": "Space Exploration History collection",
+      "category": "documentary",
+      "connectionReason": "Part of Space Exploration History collection"
+    },
+    {
+      "name": "Science Education Films",
+      "url_path": "science-education-films",
+      "description": "Science Education Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Science Education Films collection"
+    },
+    {
+      "name": "Visual Nature Symphonies (Part 3)",
+      "url_path": "visual-nature-symphonies-part-3-",
+      "description": "Visual Nature Symphonies (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Visual Nature Symphonies (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

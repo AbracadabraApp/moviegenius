@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Modern Combat Experience",
+      "url_path": "modern-combat-experience",
+      "description": "Modern Combat Experience collection",
+      "category": "documentary",
+      "connectionReason": "Part of Modern Combat Experience collection"
+    },
+    {
+      "name": "Military Training Chronicles",
+      "url_path": "military-training-chronicles",
+      "description": "Military Training Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Military Training Chronicles collection"
+    },
+    {
+      "name": "Underground Journalism Stories",
+      "url_path": "underground-journalism-stories",
+      "description": "Underground Journalism Stories collection",
+      "category": "documentary",
+      "connectionReason": "Part of Underground Journalism Stories collection"
+    },
+    {
+      "name": "Military Reality Exposés",
+      "url_path": "military-reality-expos-s",
+      "description": "Military Reality Exposés collection",
+      "category": "documentary",
+      "connectionReason": "Part of Military Reality Exposés collection"
+    }
+  ],
+  "totalLists": 4
+}

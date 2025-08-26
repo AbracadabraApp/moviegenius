@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Absurdist Comedy Animation",
+      "url_path": "absurdist-comedy-animation",
+      "description": "Absurdist Comedy Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Absurdist Comedy Animation collection"
+    },
+    {
+      "name": "Surrealist Animation Classics",
+      "url_path": "surrealist-animation-classics",
+      "description": "Surrealist Animation Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Surrealist Animation Classics collection"
+    },
+    {
+      "name": "Social Satire Animation",
+      "url_path": "social-satire-animation",
+      "description": "Social Satire Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Social Satire Animation collection"
+    }
+  ],
+  "totalLists": 3
+}

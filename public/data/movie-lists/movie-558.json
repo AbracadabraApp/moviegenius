@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Classic Comic Heroes",
+      "url_path": "classic-comic-heroes",
+      "description": "Classic Comic Heroes collection",
+      "category": "superhero",
+      "connectionReason": "Part of Classic Comic Heroes collection"
+    },
+    {
+      "name": "Comic Adaptation Masterworks",
+      "url_path": "comic-adaptation-masterworks",
+      "description": "Comic Adaptation Masterworks collection",
+      "category": "superhero",
+      "connectionReason": "Part of Comic Adaptation Masterworks collection"
+    },
+    {
+      "name": "Philosophical Superhero Stories",
+      "url_path": "philosophical-superhero-stories",
+      "description": "Philosophical Superhero Stories collection",
+      "category": "superhero",
+      "connectionReason": "Part of Philosophical Superhero Stories collection"
+    },
+    {
+      "name": "Science Hero Origins",
+      "url_path": "science-hero-origins",
+      "description": "Science Hero Origins collection",
+      "category": "superhero",
+      "connectionReason": "Part of Science Hero Origins collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "French Cinema Pioneers",
+      "url_path": "french-cinema-pioneers",
+      "description": "French Cinema Pioneers collection",
+      "category": "documentary",
+      "connectionReason": "Part of French Cinema Pioneers collection"
+    },
+    {
+      "name": "Social Experiment Documentaries",
+      "url_path": "social-experiment-documentaries",
+      "description": "Social Experiment Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Social Experiment Documentaries collection"
+    },
+    {
+      "name": "Cinéma Vérité Classics",
+      "url_path": "cin-ma-v-rit-classics",
+      "description": "Cinéma Vérité Classics collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cinéma Vérité Classics collection"
+    },
+    {
+      "name": "Personal Monologue Documentaries (Part 3)",
+      "url_path": "personal-monologue-documentaries-part-3-",
+      "description": "Personal Monologue Documentaries (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Personal Monologue Documentaries (Part 3) collection"
+    },
+    {
+      "name": "Early Cinema Pioneers (Part 1)",
+      "url_path": "early-cinema-pioneers-part-1-",
+      "description": "Early Cinema Pioneers (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Early Cinema Pioneers (Part 1) collection"
+    }
+  ],
+  "totalLists": 5
+}

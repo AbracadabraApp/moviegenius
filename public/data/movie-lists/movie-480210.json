@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Social Media Horror",
+      "url_path": "social-media-horror",
+      "description": "Social Media Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Social Media Horror collection"
+    },
+    {
+      "name": "Deadly Game Horror",
+      "url_path": "deadly-game-horror",
+      "description": "Deadly Game Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Deadly Game Horror collection"
+    },
+    {
+      "name": "Teen Horror Films",
+      "url_path": "teen-horror-films",
+      "description": "Teen Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Teen Horror Films collection"
+    },
+    {
+      "name": "Deadly Game Thrillers",
+      "url_path": "deadly-game-thrillers",
+      "description": "Deadly Game Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Deadly Game Thrillers collection"
+    },
+    {
+      "name": "Youth Violence Commentary",
+      "url_path": "youth-violence-commentary",
+      "description": "Youth Violence Commentary collection",
+      "category": "thriller",
+      "connectionReason": "Part of Youth Violence Commentary collection"
+    },
+    {
+      "name": "Single Location Survival (Part 6)",
+      "url_path": "single-location-survival-part-6-",
+      "description": "Single Location Survival (Part 6) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Single Location Survival (Part 6) collection"
+    }
+  ],
+  "totalLists": 6
+}

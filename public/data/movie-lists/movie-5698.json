@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Criminal Transport Stories",
+      "url_path": "criminal-transport-stories",
+      "description": "Criminal Transport Stories collection",
+      "category": "western",
+      "connectionReason": "Part of Criminal Transport Stories collection"
+    },
+    {
+      "name": "Railroad Expansion Conflicts",
+      "url_path": "railroad-expansion-conflicts",
+      "description": "Railroad Expansion Conflicts collection",
+      "category": "western",
+      "connectionReason": "Part of Railroad Expansion Conflicts collection"
+    },
+    {
+      "name": "Bank Heist Westerns",
+      "url_path": "bank-heist-westerns",
+      "description": "Bank Heist Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Bank Heist Westerns collection"
+    }
+  ],
+  "totalLists": 3
+}

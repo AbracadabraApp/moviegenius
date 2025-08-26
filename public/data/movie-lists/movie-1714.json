@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Media Control Horror",
+      "url_path": "media-control-horror",
+      "description": "Media Control Horror collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Media Control Horror collection"
+    },
+    {
+      "name": "Literary Sci-Fi Adaptations (Part 2)",
+      "url_path": "literary-sci-fi-adaptations-part-2-",
+      "description": "Literary Sci-Fi Adaptations (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Literary Sci-Fi Adaptations (Part 2) collection"
+    },
+    {
+      "name": "Totalitarian Warning Films (Part 2)",
+      "url_path": "totalitarian-warning-films-part-2-",
+      "description": "Totalitarian Warning Films (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Totalitarian Warning Films (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

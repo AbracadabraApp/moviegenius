@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Twin Horror Films",
+      "url_path": "twin-horror-films",
+      "description": "Twin Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Twin Horror Films collection"
+    },
+    {
+      "name": "Romantic Vampire Films",
+      "url_path": "romantic-vampire-films",
+      "description": "Romantic Vampire Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Romantic Vampire Films collection"
+    },
+    {
+      "name": "Gothic Family Curse (Part 1)",
+      "url_path": "gothic-family-curse-part-1-",
+      "description": "Gothic Family Curse (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Gothic Family Curse (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

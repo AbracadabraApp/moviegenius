@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Solo Living Documentaries",
+      "url_path": "solo-living-documentaries",
+      "description": "Solo Living Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Solo Living Documentaries collection"
+    },
+    {
+      "name": "Nature Living Chronicles",
+      "url_path": "nature-living-chronicles",
+      "description": "Nature Living Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Nature Living Chronicles collection"
+    },
+    {
+      "name": "Maritime Industry Chronicles",
+      "url_path": "maritime-industry-chronicles",
+      "description": "Maritime Industry Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Maritime Industry Chronicles collection"
+    },
+    {
+      "name": "Personal Monologue Documentaries (Part 2)",
+      "url_path": "personal-monologue-documentaries-part-2-",
+      "description": "Personal Monologue Documentaries (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Personal Monologue Documentaries (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

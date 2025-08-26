@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "RAF Bomber Command",
+      "url_path": "raf-bomber-command",
+      "description": "RAF Bomber Command collection",
+      "category": "war",
+      "connectionReason": "Part of RAF Bomber Command collection"
+    },
+    {
+      "name": "European War Drama [OVERSIZED]",
+      "url_path": "european-war-drama-oversized-",
+      "description": "European War Drama [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of European War Drama [OVERSIZED] collection"
+    },
+    {
+      "name": "Survival Mission Films [OVERSIZED]",
+      "url_path": "survival-mission-films-oversized-",
+      "description": "Survival Mission Films [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of Survival Mission Films [OVERSIZED] collection"
+    },
+    {
+      "name": "Wartime Resistance Films [OVERSIZED]",
+      "url_path": "wartime-resistance-films-oversized-",
+      "description": "Wartime Resistance Films [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of Wartime Resistance Films [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

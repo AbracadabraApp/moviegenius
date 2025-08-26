@@ -1,0 +1,61 @@
+{
+  "lists": [
+    {
+      "name": "Books Come Alive",
+      "url_path": "books-come-alive",
+      "description": "Books Come Alive collection",
+      "category": "adventure",
+      "connectionReason": "Part of Books Come Alive collection"
+    },
+    {
+      "name": "CGI Spectacle Adventures [OVERSIZED]",
+      "url_path": "cgi-spectacle-adventures-oversized-",
+      "description": "CGI Spectacle Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of CGI Spectacle Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Classic Literary Adventures [OVERSIZED]",
+      "url_path": "classic-literary-adventures-oversized-",
+      "description": "Classic Literary Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Classic Literary Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Legacy Hero Inheritance [OVERSIZED]",
+      "url_path": "legacy-hero-inheritance-oversized-",
+      "description": "Legacy Hero Inheritance [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Legacy Hero Inheritance [OVERSIZED] collection"
+    },
+    {
+      "name": "Dark Fantasy Animation",
+      "url_path": "dark-fantasy-animation",
+      "description": "Dark Fantasy Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Dark Fantasy Animation collection"
+    },
+    {
+      "name": "Mortality and Legacy",
+      "url_path": "mortality-and-legacy",
+      "description": "Mortality and Legacy collection",
+      "category": "animation",
+      "connectionReason": "Part of Mortality and Legacy collection"
+    },
+    {
+      "name": "Fairy Tale Deconstructions",
+      "url_path": "fairy-tale-deconstructions",
+      "description": "Fairy Tale Deconstructions collection",
+      "category": "animation",
+      "connectionReason": "Part of Fairy Tale Deconstructions collection"
+    },
+    {
+      "name": "Moral Choice Stories",
+      "url_path": "moral-choice-stories",
+      "description": "Moral Choice Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Moral Choice Stories collection"
+    }
+  ],
+  "totalLists": 8
+}

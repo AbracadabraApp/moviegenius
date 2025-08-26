@@ -1,0 +1,141 @@
+{
+  "movieId": "a29420e7-f1ff-424e-a092-598016b36d0c",
+  "tmdbId": 179,
+  "title": "The Interpreter",
+  "year": 2005,
+  "analysis": {
+    "keyElements": {
+      "director": "Sydney Pollack",
+      "writers": [
+        "Charles Randolph",
+        "Scott Frank",
+        "Steven Zaillian"
+      ],
+      "stars": [
+        "Nicole Kidman",
+        "Sean Penn",
+        "Catherine Keener"
+      ],
+      "genre": "Political Thriller",
+      "releaseYear": 2005,
+      "cinematographer": "Darius Khondji",
+      "composer": "James Newton Howard",
+      "studio": "Universal Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful tension-building in a sophisticated political thriller",
+        "Historic filming access inside actual UN headquarters",
+        "Complex performances from Kidman and Penn exploring grief and truth"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Three Days of the Condor",
+        "year": 1975,
+        "description": "Similar sophisticated political thriller from the same director"
+      },
+      {
+        "title": "Munich",
+        "year": 2005,
+        "description": "Contemporary political thriller dealing with international intrigue"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "UN in Cinema",
+        "category": "Political History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Political Thriller Evolution",
+        "category": "Film History",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Sydney Pollack",
+      "personId": 35389,
+      "slug": "/person/35389",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Charles Randolph",
+        "personId": 5549,
+        "slug": "/person/5549",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Scott Frank",
+        "personId": 33371,
+        "slug": "/person/33371",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Steven Zaillian",
+        "personId": 35050,
+        "slug": "/person/35050",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Nicole Kidman",
+        "personId": 27590,
+        "slug": "/person/27590",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sean Penn",
+        "personId": 33497,
+        "slug": "/person/33497",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Catherine Keener",
+        "personId": 5211,
+        "slug": "/person/5211",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Darius Khondji",
+      "personId": 7524,
+      "slug": "/person/7524",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "James Newton Howard",
+      "personId": 15902,
+      "slug": "/person/15902",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:02.052Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

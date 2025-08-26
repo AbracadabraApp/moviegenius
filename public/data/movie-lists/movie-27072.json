@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Post-Apocalyptic Survival",
+      "url_path": "post-apocalyptic-survival",
+      "description": "Post-Apocalyptic Survival collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Post-Apocalyptic Survival collection"
+    },
+    {
+      "name": "Space Evolution Philosophy",
+      "url_path": "space-evolution-philosophy",
+      "description": "Space Evolution Philosophy collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Evolution Philosophy collection"
+    },
+    {
+      "name": "Space Colony Disasters",
+      "url_path": "space-colony-disasters",
+      "description": "Space Colony Disasters collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Colony Disasters collection"
+    },
+    {
+      "name": "Religious Horror SciFi",
+      "url_path": "religious-horror-scifi",
+      "description": "Religious Horror SciFi collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Religious Horror SciFi collection"
+    }
+  ],
+  "totalLists": 4
+}

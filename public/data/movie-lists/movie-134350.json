@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "name": "Splatter Comedy Films",
+      "url_path": "splatter-comedy-films",
+      "description": "Splatter Comedy Films collection",
+      "category": "comedy",
+      "connectionReason": "Part of Splatter Comedy Films collection"
+    },
+    {
+      "name": "DIY Filmmaking Adventures",
+      "url_path": "diy-filmmaking-adventures",
+      "description": "DIY Filmmaking Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of DIY Filmmaking Adventures collection"
+    }
+  ],
+  "totalLists": 2
+}

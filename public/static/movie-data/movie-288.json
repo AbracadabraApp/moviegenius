@@ -1,0 +1,132 @@
+{
+  "movieId": "972f440c-a545-438b-bec4-a00e10ab85cc",
+  "tmdbId": 288,
+  "title": "High Noon",
+  "year": 1952,
+  "analysis": {
+    "keyElements": {
+      "director": "Fred Zinnemann",
+      "writers": [
+        "Carl Foreman"
+      ],
+      "stars": [
+        "Gary Cooper",
+        "Grace Kelly",
+        "Lloyd Bridges"
+      ],
+      "genre": "Western",
+      "releaseYear": 1952,
+      "cinematographer": "Floyd Crosby",
+      "composer": "Dimitri Tiomkin",
+      "studio": "United Artists"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful real-time tension building that revolutionized action pacing",
+        "Gary Cooper's career-defining performance as the morally resolute Marshal Kane",
+        "Profound allegory about standing up to evil that transcends its genre"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Searchers",
+        "year": 1956,
+        "description": "Another Western that challenged genre conventions and explored moral complexity"
+      },
+      {
+        "title": "12 Angry Men",
+        "year": 1957,
+        "description": "Shares High Noon's real-time tension and moral stand against groupthink"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "McCarthyism in Hollywood",
+        "category": "historical_context",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Real-time Narrative Techniques",
+        "category": "film_craft",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Fred Zinnemann",
+      "personId": 11720,
+      "slug": "/person/11720",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Carl Foreman",
+        "personId": 4917,
+        "slug": "/person/4917",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Gary Cooper",
+        "personId": 11941,
+        "slug": "/person/11941",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Grace Kelly",
+        "personId": 13056,
+        "slug": "/person/13056",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Lloyd Bridges",
+        "personId": 22771,
+        "slug": "/person/22771",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Katy Jurado",
+        "personId": 20374,
+        "slug": "/person/20374",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Floyd Crosby",
+      "personId": 11153,
+      "slug": "/person/11153",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Dimitri Tiomkin",
+      "personId": 8745,
+      "slug": "/person/8745",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:19.964Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

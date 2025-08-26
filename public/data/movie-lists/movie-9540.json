@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Medical Crisis Thrillers",
+      "url_path": "medical-crisis-thrillers",
+      "description": "Medical Crisis Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Medical Crisis Thrillers collection"
+    },
+    {
+      "name": "Gothic Medical Horror",
+      "url_path": "gothic-medical-horror",
+      "description": "Gothic Medical Horror collection",
+      "category": "thriller",
+      "connectionReason": "Part of Gothic Medical Horror collection"
+    },
+    {
+      "name": "Twin Relationship Thrillers",
+      "url_path": "twin-relationship-thrillers",
+      "description": "Twin Relationship Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Twin Relationship Thrillers collection"
+    },
+    {
+      "name": "Creative Process Madness",
+      "url_path": "creative-process-madness",
+      "description": "Creative Process Madness collection",
+      "category": "thriller",
+      "connectionReason": "Part of Creative Process Madness collection"
+    }
+  ],
+  "totalLists": 4
+}

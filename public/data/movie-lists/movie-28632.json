@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Japanese Period Dramas",
+      "url_path": "japanese-period-dramas",
+      "description": "Japanese Period Dramas collection",
+      "category": "period",
+      "connectionReason": "Part of Japanese Period Dramas collection"
+    },
+    {
+      "name": "Character-Driven Stories",
+      "url_path": "character-driven-stories",
+      "description": "Character-Driven Stories collection",
+      "category": "period",
+      "connectionReason": "Part of Character-Driven Stories collection"
+    },
+    {
+      "name": "Religious & Moral Conflicts",
+      "url_path": "religious-moral-conflicts",
+      "description": "Religious & Moral Conflicts collection",
+      "category": "period",
+      "connectionReason": "Part of Religious & Moral Conflicts collection"
+    }
+  ],
+  "totalLists": 3
+}

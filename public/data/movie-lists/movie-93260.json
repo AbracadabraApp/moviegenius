@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Political & Social Issues",
+      "url_path": "political-social-issues",
+      "description": "Political & Social Issues collection",
+      "category": "documentary",
+      "connectionReason": "Part of Political & Social Issues collection"
+    },
+    {
+      "name": "Modern Combat Experience",
+      "url_path": "modern-combat-experience",
+      "description": "Modern Combat Experience collection",
+      "category": "documentary",
+      "connectionReason": "Part of Modern Combat Experience collection"
+    },
+    {
+      "name": "Political Movement Documentaries (Part 1)",
+      "url_path": "political-movement-documentaries-part-1-",
+      "description": "Political Movement Documentaries (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Political Movement Documentaries (Part 1) collection"
+    },
+    {
+      "name": "Personal Monologue Documentaries (Part 3)",
+      "url_path": "personal-monologue-documentaries-part-3-",
+      "description": "Personal Monologue Documentaries (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Personal Monologue Documentaries (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

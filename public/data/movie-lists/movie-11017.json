@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Romantic Comedy Collection",
+      "url_path": "romantic-comedy-collection",
+      "description": "Romantic Comedy Collection collection",
+      "category": "comedy",
+      "connectionReason": "Part of Romantic Comedy Collection collection"
+    },
+    {
+      "name": "Academic Pressure Comedies",
+      "url_path": "academic-pressure-comedies",
+      "description": "Academic Pressure Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Academic Pressure Comedies collection"
+    },
+    {
+      "name": "Education System Satires (Part 1)",
+      "url_path": "education-system-satires-part-1-",
+      "description": "Education System Satires (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Education System Satires (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

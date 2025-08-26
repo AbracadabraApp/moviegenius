@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Classic Italian Gothic",
+      "url_path": "classic-italian-gothic",
+      "description": "Classic Italian Gothic collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Italian Gothic collection"
+    },
+    {
+      "name": "European Vampire Deconstruction",
+      "url_path": "european-vampire-deconstruction",
+      "description": "European Vampire Deconstruction collection",
+      "category": "horror",
+      "connectionReason": "Part of European Vampire Deconstruction collection"
+    },
+    {
+      "name": "Gothic Family Curse (Part 3)",
+      "url_path": "gothic-family-curse-part-3-",
+      "description": "Gothic Family Curse (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Gothic Family Curse (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

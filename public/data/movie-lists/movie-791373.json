@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Philosophical Superhero Stories",
+      "url_path": "philosophical-superhero-stories",
+      "description": "Philosophical Superhero Stories collection",
+      "category": "superhero",
+      "connectionReason": "Part of Philosophical Superhero Stories collection"
+    },
+    {
+      "name": "Cosmic Scale Conflicts",
+      "url_path": "cosmic-scale-conflicts",
+      "description": "Cosmic Scale Conflicts collection",
+      "category": "superhero",
+      "connectionReason": "Part of Cosmic Scale Conflicts collection"
+    },
+    {
+      "name": "Legacy and Succession",
+      "url_path": "legacy-and-succession",
+      "description": "Legacy and Succession collection",
+      "category": "superhero",
+      "connectionReason": "Part of Legacy and Succession collection"
+    },
+    {
+      "name": "Found Family Heroes",
+      "url_path": "found-family-heroes",
+      "description": "Found Family Heroes collection",
+      "category": "superhero",
+      "connectionReason": "Part of Found Family Heroes collection"
+    }
+  ],
+  "totalLists": 4
+}

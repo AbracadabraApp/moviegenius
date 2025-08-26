@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Fantasy Martial Arts Comedy",
+      "url_path": "fantasy-martial-arts-comedy",
+      "description": "Fantasy Martial Arts Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Fantasy Martial Arts Comedy collection"
+    },
+    {
+      "name": "Martial Arts Comedy",
+      "url_path": "martial-arts-comedy",
+      "description": "Martial Arts Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Martial Arts Comedy collection"
+    },
+    {
+      "name": "Mentorship Gone Wrong",
+      "url_path": "mentorship-gone-wrong",
+      "description": "Mentorship Gone Wrong collection",
+      "category": "comedy",
+      "connectionReason": "Part of Mentorship Gone Wrong collection"
+    }
+  ],
+  "totalLists": 3
+}

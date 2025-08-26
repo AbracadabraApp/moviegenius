@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Urban Decay Horror",
+      "url_path": "urban-decay-horror",
+      "description": "Urban Decay Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Urban Decay Horror collection"
+    },
+    {
+      "name": "Experimental Visual Horror",
+      "url_path": "experimental-visual-horror",
+      "description": "Experimental Visual Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Experimental Visual Horror collection"
+    },
+    {
+      "name": "Art House Horror (Part 5)",
+      "url_path": "art-house-horror-part-5-",
+      "description": "Art House Horror (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Art House Horror (Part 5) collection"
+    }
+  ],
+  "totalLists": 3
+}

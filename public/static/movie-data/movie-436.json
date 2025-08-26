@@ -1,0 +1,125 @@
+{
+  "movieId": "87ae641a-59bb-4867-9eff-4cf1637d91ab",
+  "tmdbId": 436,
+  "title": "Maria Full of Grace",
+  "year": 2004,
+  "analysis": {
+    "keyElements": {
+      "director": "Joshua Marston",
+      "writers": [
+        "Joshua Marston"
+      ],
+      "stars": [
+        "Catalina Sandino Moreno",
+        "Yenny Paola Vega",
+        "Guilied Lopez"
+      ],
+      "genre": "Drama",
+      "releaseYear": 2004,
+      "cinematographer": "Jim Denault",
+      "composer": "Jacobo Lieberman",
+      "studio": "Fine Line Features"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Catalina Sandino Moreno's powerful Oscar-nominated debut performance",
+        "Raw, unflinching portrayal of drug trafficking from a human perspective",
+        "Masterful blend of social realism and intimate character study"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Traffic",
+        "year": 2000,
+        "description": "Multi-layered examination of the drug trade from various perspectives"
+      },
+      {
+        "title": "Sin Nombre",
+        "year": 2009,
+        "description": "Similar themes of migration and survival"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Social Realism in Cinema",
+        "category": "Film Style",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Latin American New Wave",
+        "category": "Film Movement",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Joshua Marston",
+      "personId": 19418,
+      "slug": "/person/19418",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Joshua Marston",
+        "personId": 19418,
+        "slug": "/person/19418",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Catalina Sandino Moreno",
+        "personId": 5185,
+        "slug": "/person/5185",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Yenny Paola Vega",
+        "personId": 39020,
+        "slug": "/person/39020",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Guilied Lopez",
+        "personId": 13275,
+        "slug": "/person/13275",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Jim Denault",
+      "personId": 17398,
+      "slug": "/person/17398",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Leonardo Heiblum",
+      "personId": 22232,
+      "slug": "/person/22232",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:37.794Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

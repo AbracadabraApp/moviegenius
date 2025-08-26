@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Teen Life Chronicles",
+      "url_path": "teen-life-chronicles",
+      "description": "Teen Life Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Teen Life Chronicles collection"
+    },
+    {
+      "name": "Dance Creation Process",
+      "url_path": "dance-creation-process",
+      "description": "Dance Creation Process collection",
+      "category": "documentary",
+      "connectionReason": "Part of Dance Creation Process collection"
+    },
+    {
+      "name": "Perseverance Against Odds (Part 3)",
+      "url_path": "perseverance-against-odds-part-3-",
+      "description": "Perseverance Against Odds (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Perseverance Against Odds (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

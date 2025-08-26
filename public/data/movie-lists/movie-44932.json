@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Survival Horror",
+      "url_path": "survival-horror",
+      "description": "Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Survival Horror collection"
+    },
+    {
+      "name": "Alien Invasion Horror",
+      "url_path": "alien-invasion-horror",
+      "description": "Alien Invasion Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Alien Invasion Horror collection"
+    },
+    {
+      "name": "Rural Isolation Horror",
+      "url_path": "rural-isolation-horror",
+      "description": "Rural Isolation Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Rural Isolation Horror collection"
+    },
+    {
+      "name": "Small Town Horror SciFi",
+      "url_path": "small-town-horror-scifi",
+      "description": "Small Town Horror SciFi collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Small Town Horror SciFi collection"
+    },
+    {
+      "name": "First Contact Wars (Part 3)",
+      "url_path": "first-contact-wars-part-3-",
+      "description": "First Contact Wars (Part 3) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of First Contact Wars (Part 3) collection"
+    }
+  ],
+  "totalLists": 5
+}

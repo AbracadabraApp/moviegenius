@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Western Comedy Capers",
+      "url_path": "western-comedy-capers",
+      "description": "Western Comedy Capers collection",
+      "category": "comedy",
+      "connectionReason": "Part of Western Comedy Capers collection"
+    },
+    {
+      "name": "Late Sixties Action Westerns",
+      "url_path": "late-sixties-action-westerns",
+      "description": "Late Sixties Action Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Late Sixties Action Westerns collection"
+    },
+    {
+      "name": "Criminal Transport Stories",
+      "url_path": "criminal-transport-stories",
+      "description": "Criminal Transport Stories collection",
+      "category": "western",
+      "connectionReason": "Part of Criminal Transport Stories collection"
+    },
+    {
+      "name": "Comedy Western Capers",
+      "url_path": "comedy-western-capers",
+      "description": "Comedy Western Capers collection",
+      "category": "western",
+      "connectionReason": "Part of Comedy Western Capers collection"
+    }
+  ],
+  "totalLists": 4
+}

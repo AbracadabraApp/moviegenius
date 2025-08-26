@@ -1,0 +1,133 @@
+{
+  "movieId": "f00700d4-3206-497e-bb4f-13678396541d",
+  "tmdbId": 340,
+  "title": "Everything is Illuminated",
+  "year": 2005,
+  "analysis": {
+    "keyElements": {
+      "director": "Liev Schreiber",
+      "writers": [
+        "Jonathan Safran Foer",
+        "Liev Schreiber"
+      ],
+      "stars": [
+        "Elijah Wood",
+        "Eugene Hutz",
+        "Boris Leskin"
+      ],
+      "genre": "Comedy-Drama",
+      "releaseYear": 2005,
+      "cinematographer": "Matthew Libatique",
+      "composer": "Paul Cantelon",
+      "studio": "Warner Independent Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Unique blend of quirky humor and profound emotional depth",
+        "Outstanding chemistry between Wood and Hutz creates an unforgettable odd-couple dynamic",
+        "Masterful handling of Holocaust themes through a contemporary lens"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Life is Beautiful",
+        "year": 1997,
+        "description": "Similar approach to balancing humor with Holocaust themes"
+      },
+      {
+        "title": "Ida",
+        "year": 2013,
+        "description": "Exploration of Jewish identity and historical reconciliation"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Holocaust in Contemporary Cinema",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Comedy-Drama Balance",
+        "category": "Screenwriting",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Liev Schreiber",
+      "personId": 22498,
+      "slug": "/person/22498",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Jonathan Safran Foer",
+        "personId": 18918,
+        "slug": "/person/18918",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Liev Schreiber",
+        "personId": 22498,
+        "slug": "/person/22498",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Elijah Wood",
+        "personId": 9928,
+        "slug": "/person/9928",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Eugene Hutz",
+        "personId": 10708,
+        "slug": "/person/10708",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Boris Leskin",
+        "personId": 4129,
+        "slug": "/person/4129",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Matthew Libatique",
+      "personId": 24978,
+      "slug": "/person/24978",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Paul Cantelon",
+      "personId": 28739,
+      "slug": "/person/28739",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:27.536Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

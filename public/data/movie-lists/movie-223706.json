@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Coming-of-Age Animation",
+      "url_path": "coming-of-age-animation",
+      "description": "Coming-of-Age Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Coming-of-Age Animation collection"
+    },
+    {
+      "name": "Political Animation Films",
+      "url_path": "political-animation-films",
+      "description": "Political Animation Films collection",
+      "category": "animation",
+      "connectionReason": "Part of Political Animation Films collection"
+    },
+    {
+      "name": "Environmental Conservation Animation",
+      "url_path": "environmental-conservation-animation",
+      "description": "Environmental Conservation Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Environmental Conservation Animation collection"
+    },
+    {
+      "name": "Surrealist Animation Classics",
+      "url_path": "surrealist-animation-classics",
+      "description": "Surrealist Animation Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Surrealist Animation Classics collection"
+    }
+  ],
+  "totalLists": 4
+}

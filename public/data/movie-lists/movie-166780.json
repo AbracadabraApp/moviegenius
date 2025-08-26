@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Scientific Discovery Thrillers",
+      "url_path": "scientific-discovery-thrillers",
+      "description": "Scientific Discovery Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Scientific Discovery Thrillers collection"
+    },
+    {
+      "name": "Government Cover-up Thrillers",
+      "url_path": "government-cover-up-thrillers",
+      "description": "Government Cover-up Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Government Cover-up Thrillers collection"
+    },
+    {
+      "name": "Tech Industry Conspiracy (Part 2)",
+      "url_path": "tech-industry-conspiracy-part-2-",
+      "description": "Tech Industry Conspiracy (Part 2) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Tech Industry Conspiracy (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

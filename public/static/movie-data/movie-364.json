@@ -1,0 +1,151 @@
+{
+  "movieId": "cd8a46e5-d3a0-490a-b4a8-281f0bfce855",
+  "tmdbId": 364,
+  "title": "Batman Returns",
+  "year": 1992,
+  "analysis": {
+    "keyElements": {
+      "director": "Tim Burton",
+      "writers": [
+        "Daniel Waters",
+        "Sam Hamm"
+      ],
+      "stars": [
+        "Michael Keaton",
+        "Michelle Pfeiffer",
+        "Danny DeVito",
+        "Christopher Walken"
+      ],
+      "genre": "Superhero/Gothic Fantasy",
+      "releaseYear": 1992,
+      "cinematographer": "Stefan Czapsky",
+      "composer": "Danny Elfman",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Burton's darkly gothic vision creates a uniquely twisted Christmas superhero tale",
+        "Michelle Pfeiffer delivers an iconic performance as Catwoman that redefined the character",
+        "The film pushes superhero cinema into bold psychological territory rarely seen before or since"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Batman",
+        "year": 1989,
+        "description": "Burton's first Batman film established the gothic tone"
+      },
+      {
+        "title": "The Dark Knight",
+        "year": 2008,
+        "description": "Similarly psychological take on Batman mythology"
+      },
+      {
+        "title": "Edward Scissorhands",
+        "year": 1990,
+        "description": "Burton's other exploration of outcasts and society"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "German Expressionism in Superhero Cinema",
+        "category": "Film Style",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "Character Psychology in Comic Book Films",
+        "category": "Narrative",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Practical Effects vs CGI",
+        "category": "Production",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Tim Burton",
+      "personId": 36247,
+      "slug": "/person/36247",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Daniel Waters",
+        "personId": 7372,
+        "slug": "/person/7372",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sam Hamm",
+        "personId": 33007,
+        "slug": "/person/33007",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Michael Keaton",
+        "personId": 25754,
+        "slug": "/person/25754",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Michelle Pfeiffer",
+        "personId": 26121,
+        "slug": "/person/26121",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Danny DeVito",
+        "personId": 7422,
+        "slug": "/person/7422",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Christopher Walken",
+        "personId": 6298,
+        "slug": "/person/6298",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Stefan Czapsky",
+      "personId": 34632,
+      "slug": "/person/34632",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Danny Elfman",
+      "personId": 7425,
+      "slug": "/person/7425",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:29.374Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Revenge Romance Horror",
+      "url_path": "revenge-romance-horror",
+      "description": "Revenge Romance Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Revenge Romance Horror collection"
+    },
+    {
+      "name": "Circus Murder Mystery",
+      "url_path": "circus-murder-mystery",
+      "description": "Circus Murder Mystery collection",
+      "category": "horror",
+      "connectionReason": "Part of Circus Murder Mystery collection"
+    },
+    {
+      "name": "Art House Horror (Part 2)",
+      "url_path": "art-house-horror-part-2-",
+      "description": "Art House Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Art House Horror (Part 2) collection"
+    },
+    {
+      "name": "Body Transformation Horror (Part 1)",
+      "url_path": "body-transformation-horror-part-1-",
+      "description": "Body Transformation Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Body Transformation Horror (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Asian Horror Anthology",
+      "url_path": "asian-horror-anthology",
+      "description": "Asian Horror Anthology collection",
+      "category": "horror",
+      "connectionReason": "Part of Asian Horror Anthology collection"
+    },
+    {
+      "name": "Horror Anthology Collections",
+      "url_path": "horror-anthology-collections",
+      "description": "Horror Anthology Collections collection",
+      "category": "horror",
+      "connectionReason": "Part of Horror Anthology Collections collection"
+    },
+    {
+      "name": "Urban Ghost Revenge",
+      "url_path": "urban-ghost-revenge",
+      "description": "Urban Ghost Revenge collection",
+      "category": "horror",
+      "connectionReason": "Part of Urban Ghost Revenge collection"
+    },
+    {
+      "name": "Ghost Story Horror (Part 2)",
+      "url_path": "ghost-story-horror-part-2-",
+      "description": "Ghost Story Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Ghost Story Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

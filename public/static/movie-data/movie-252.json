@@ -1,0 +1,138 @@
+{
+  "movieId": "2b7e9213-3742-4df5-a3bf-91f079ea4549",
+  "tmdbId": 252,
+  "title": "Willy Wonka & the Chocolate Factory",
+  "year": 1971,
+  "analysis": {
+    "keyElements": {
+      "director": "Mel Stuart",
+      "writers": [
+        "Roald Dahl",
+        "David Seltzer"
+      ],
+      "stars": [
+        "Gene Wilder",
+        "Peter Ostrum",
+        "Jack Albertson"
+      ],
+      "genre": "Family Fantasy Musical",
+      "releaseYear": 1971,
+      "cinematographer": "Arthur Ibbetson",
+      "composer": "Leslie Bricusse, Anthony Newley",
+      "studio": "Paramount Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Gene Wilder's masterfully enigmatic performance as Wonka defines the perfect balance between whimsy and menace",
+        "The practical effects and set designs create a timeless fantasy world that CGI can't replicate",
+        "The film's darker undertones and moral lessons remain uniquely relevant for both children and adults"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Charlie and the Chocolate Factory",
+        "year": 2005,
+        "description": "Tim Burton's reimagining emphasizes visual spectacle and deeper Wonka backstory"
+      },
+      {
+        "title": "Mary Poppins",
+        "year": 1964,
+        "description": "Similar blend of music, magic, and moral lessons in family entertainment"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Practical Effects vs CGI",
+        "category": "Production",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Adapting Children's Literature",
+        "category": "Screenwriting",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Musical Integration in Film",
+        "category": "Sound",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Mel Stuart",
+      "personId": 25372,
+      "slug": "/person/25372",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Roald Dahl",
+        "personId": 31378,
+        "slug": "/person/31378",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "David Seltzer",
+        "personId": 8139,
+        "slug": "/person/8139",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Gene Wilder",
+        "personId": 12140,
+        "slug": "/person/12140",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Peter Ostrum",
+        "personId": 29463,
+        "slug": "/person/29463",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jack Albertson",
+        "personId": 15282,
+        "slug": "/person/15282",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Arthur Ibbetson",
+      "personId": 2640,
+      "slug": "/person/2640",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Leslie Bricusse, Anthony Newley",
+      "personId": 22342,
+      "slug": "/person/22342",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:14.728Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

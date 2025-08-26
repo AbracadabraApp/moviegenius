@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "WWII Archival Documentaries",
+      "url_path": "wwii-archival-documentaries",
+      "description": "WWII Archival Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of WWII Archival Documentaries collection"
+    },
+    {
+      "name": "Holocaust Survivor Stories",
+      "url_path": "holocaust-survivor-stories",
+      "description": "Holocaust Survivor Stories collection",
+      "category": "documentary",
+      "connectionReason": "Part of Holocaust Survivor Stories collection"
+    },
+    {
+      "name": "Historical Trauma Testimonies (Part 3)",
+      "url_path": "historical-trauma-testimonies-part-3-",
+      "description": "Historical Trauma Testimonies (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Historical Trauma Testimonies (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

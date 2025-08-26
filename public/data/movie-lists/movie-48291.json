@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Space Horror",
+      "url_path": "space-horror",
+      "description": "Space Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Space Horror collection"
+    },
+    {
+      "name": "Mutant Creature Features (Part 2)",
+      "url_path": "mutant-creature-features-part-2-",
+      "description": "Mutant Creature Features (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Mutant Creature Features (Part 2) collection"
+    },
+    {
+      "name": "Scientific Experiment Horror (Part 2)",
+      "url_path": "scientific-experiment-horror-part-2-",
+      "description": "Scientific Experiment Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Scientific Experiment Horror (Part 2) collection"
+    },
+    {
+      "name": "Space Horror Survival",
+      "url_path": "space-horror-survival",
+      "description": "Space Horror Survival collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Horror Survival collection"
+    },
+    {
+      "name": "Low Budget Disaster (Part 2)",
+      "url_path": "low-budget-disaster-part-2-",
+      "description": "Low Budget Disaster (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Low Budget Disaster (Part 2) collection"
+    },
+    {
+      "name": "Corporate Science Horror (Part 2)",
+      "url_path": "corporate-science-horror-part-2-",
+      "description": "Corporate Science Horror (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Corporate Science Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 6
+}

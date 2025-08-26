@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Family Comedy Adventures",
+      "url_path": "family-comedy-adventures",
+      "description": "Family Comedy Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Family Comedy Adventures collection"
+    },
+    {
+      "name": "Modern Santa Stories",
+      "url_path": "modern-santa-stories",
+      "description": "Modern Santa Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Modern Santa Stories collection"
+    },
+    {
+      "name": "Multi-Generational Holiday Comedy",
+      "url_path": "multi-generational-holiday-comedy",
+      "description": "Multi-Generational Holiday Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Multi-Generational Holiday Comedy collection"
+    }
+  ],
+  "totalLists": 3
+}

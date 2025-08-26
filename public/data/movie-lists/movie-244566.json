@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Family Comedy Adventures",
+      "url_path": "family-comedy-adventures",
+      "description": "Family Comedy Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Family Comedy Adventures collection"
+    },
+    {
+      "name": "Grief Recovery Stories",
+      "url_path": "grief-recovery-stories",
+      "description": "Grief Recovery Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Grief Recovery Stories collection"
+    },
+    {
+      "name": "Body Horror Comedy (Part 2)",
+      "url_path": "body-horror-comedy-part-2-",
+      "description": "Body Horror Comedy (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Body Horror Comedy (Part 2) collection"
+    },
+    {
+      "name": "Slasher Genre Subversion",
+      "url_path": "slasher-genre-subversion",
+      "description": "Slasher Genre Subversion collection",
+      "category": "horror",
+      "connectionReason": "Part of Slasher Genre Subversion collection"
+    },
+    {
+      "name": "Classic Monster Comedy (Part 3)",
+      "url_path": "classic-monster-comedy-part-3-",
+      "description": "Classic Monster Comedy (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Monster Comedy (Part 3) collection"
+    },
+    {
+      "name": "Modernized Classic Monsters (Part 2)",
+      "url_path": "modernized-classic-monsters-part-2-",
+      "description": "Modernized Classic Monsters (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Modernized Classic Monsters (Part 2) collection"
+    }
+  ],
+  "totalLists": 6
+}

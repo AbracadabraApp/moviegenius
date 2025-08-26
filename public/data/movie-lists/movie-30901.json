@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Psychedelic Horror Films",
+      "url_path": "psychedelic-horror-films",
+      "description": "Psychedelic Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Psychedelic Horror Films collection"
+    },
+    {
+      "name": "Dream-Based Horror",
+      "url_path": "dream-based-horror",
+      "description": "Dream-Based Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Dream-Based Horror collection"
+    },
+    {
+      "name": "Occult Ritual Horror (Part 1)",
+      "url_path": "occult-ritual-horror-part-1-",
+      "description": "Occult Ritual Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Occult Ritual Horror (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

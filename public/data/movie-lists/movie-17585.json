@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Deadly Game Thrillers",
+      "url_path": "deadly-game-thrillers",
+      "description": "Deadly Game Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Deadly Game Thrillers collection"
+    },
+    {
+      "name": "Wealthy Family Murders",
+      "url_path": "wealthy-family-murders",
+      "description": "Wealthy Family Murders collection",
+      "category": "thriller",
+      "connectionReason": "Part of Wealthy Family Murders collection"
+    },
+    {
+      "name": "Mountain Wilderness Thrillers",
+      "url_path": "mountain-wilderness-thrillers",
+      "description": "Mountain Wilderness Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Mountain Wilderness Thrillers collection"
+    }
+  ],
+  "totalLists": 3
+}

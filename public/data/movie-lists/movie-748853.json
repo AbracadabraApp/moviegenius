@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Psychedelic Horror Films",
+      "url_path": "psychedelic-horror-films",
+      "description": "Psychedelic Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Psychedelic Horror Films collection"
+    },
+    {
+      "name": "Forest Folklore Horror",
+      "url_path": "forest-folklore-horror",
+      "description": "Forest Folklore Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Forest Folklore Horror collection"
+    },
+    {
+      "name": "Scientific Expedition Horror (Part 1)",
+      "url_path": "scientific-expedition-horror-part-1-",
+      "description": "Scientific Expedition Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Scientific Expedition Horror (Part 1) collection"
+    },
+    {
+      "name": "Folk Religion Horror (Part 2)",
+      "url_path": "folk-religion-horror-part-2-",
+      "description": "Folk Religion Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Folk Religion Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

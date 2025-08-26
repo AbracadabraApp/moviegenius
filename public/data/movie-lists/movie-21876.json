@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Prison Break Adventures",
+      "url_path": "prison-break-adventures",
+      "description": "Prison Break Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Prison Break Adventures collection"
+    },
+    {
+      "name": "WWII Escape Adventures",
+      "url_path": "wwii-escape-adventures",
+      "description": "WWII Escape Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of WWII Escape Adventures collection"
+    },
+    {
+      "name": "POW Escape Films",
+      "url_path": "pow-escape-films",
+      "description": "POW Escape Films collection",
+      "category": "war",
+      "connectionReason": "Part of POW Escape Films collection"
+    },
+    {
+      "name": "Survival Mission Films [OVERSIZED]",
+      "url_path": "survival-mission-films-oversized-",
+      "description": "Survival Mission Films [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of Survival Mission Films [OVERSIZED] collection"
+    },
+    {
+      "name": "Military Leadership [OVERSIZED]",
+      "url_path": "military-leadership-oversized-",
+      "description": "Military Leadership [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of Military Leadership [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 5
+}

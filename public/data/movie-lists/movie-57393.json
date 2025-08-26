@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Environmental Travel Films",
+      "url_path": "environmental-travel-films",
+      "description": "Environmental Travel Films collection",
+      "category": "adventure",
+      "connectionReason": "Part of Environmental Travel Films collection"
+    },
+    {
+      "name": "African Wilderness Survival",
+      "url_path": "african-wilderness-survival",
+      "description": "African Wilderness Survival collection",
+      "category": "adventure",
+      "connectionReason": "Part of African Wilderness Survival collection"
+    },
+    {
+      "name": "Youth Sports Odyssey",
+      "url_path": "youth-sports-odyssey",
+      "description": "Youth Sports Odyssey collection",
+      "category": "adventure",
+      "connectionReason": "Part of Youth Sports Odyssey collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Arctic Horror Films",
+      "url_path": "arctic-horror-films",
+      "description": "Arctic Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Arctic Horror Films collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 4)",
+      "url_path": "confined-space-thrillers-part-4-",
+      "description": "Confined Space Thrillers (Part 4) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 4) collection"
+    },
+    {
+      "name": "Nature Revenge Horror (Part 2)",
+      "url_path": "nature-revenge-horror-part-2-",
+      "description": "Nature Revenge Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Nature Revenge Horror (Part 2) collection"
+    },
+    {
+      "name": "Mountain Wilderness Thrillers",
+      "url_path": "mountain-wilderness-thrillers",
+      "description": "Mountain Wilderness Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Mountain Wilderness Thrillers collection"
+    },
+    {
+      "name": "Single Location Survival (Part 1)",
+      "url_path": "single-location-survival-part-1-",
+      "description": "Single Location Survival (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Single Location Survival (Part 1) collection"
+    }
+  ],
+  "totalLists": 5
+}

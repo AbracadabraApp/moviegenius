@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Musical Rediscovery Stories",
+      "url_path": "musical-rediscovery-stories",
+      "description": "Musical Rediscovery Stories collection",
+      "category": "music",
+      "connectionReason": "Part of Musical Rediscovery Stories collection"
+    },
+    {
+      "name": "Opera Performance Films",
+      "url_path": "opera-performance-films",
+      "description": "Opera Performance Films collection",
+      "category": "music",
+      "connectionReason": "Part of Opera Performance Films collection"
+    },
+    {
+      "name": "Classical Performance Biopics",
+      "url_path": "classical-performance-biopics",
+      "description": "Classical Performance Biopics collection",
+      "category": "music",
+      "connectionReason": "Part of Classical Performance Biopics collection"
+    },
+    {
+      "name": "Performance Redemption Stories",
+      "url_path": "performance-redemption-stories",
+      "description": "Performance Redemption Stories collection",
+      "category": "musical",
+      "connectionReason": "Part of Performance Redemption Stories collection"
+    }
+  ],
+  "totalLists": 4
+}

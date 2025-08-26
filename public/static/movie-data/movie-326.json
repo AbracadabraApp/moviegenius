@@ -1,0 +1,133 @@
+{
+  "movieId": "200f15cf-0542-4dcb-a288-ac2ef2e50939",
+  "tmdbId": 326,
+  "title": "Snakes on a Plane",
+  "year": 2006,
+  "analysis": {
+    "keyElements": {
+      "director": "David R. Ellis",
+      "writers": [
+        "John Heffernan",
+        "Sebastian Gutierrez"
+      ],
+      "stars": [
+        "Samuel L. Jackson",
+        "Julianna Margulies",
+        "Nathan Phillips"
+      ],
+      "genre": "Action-Horror",
+      "releaseYear": 2006,
+      "cinematographer": "Adam Greenberg",
+      "composer": "Trevor Rabin",
+      "studio": "New Line Cinema"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Perfect example of self-aware B-movie entertainment that knows exactly what it is",
+        "Samuel L. Jackson's iconic performance and quotable dialogue",
+        "Represents a unique moment in internet-driven movie marketing and audience participation"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Deep Blue Sea",
+        "year": 1999,
+        "description": "Similar blend of serious actors in an intentionally outrageous premise"
+      },
+      {
+        "title": "Cabin in the Woods",
+        "year": 2012,
+        "description": "Self-aware genre deconstruction that followed in its footsteps"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Viral Marketing in Film",
+        "category": "marketing",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Internet Culture's Impact on Hollywood",
+        "category": "media_studies",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "David R. Ellis",
+      "personId": 8104,
+      "slug": "/person/8104",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "John Heffernan",
+        "personId": 18287,
+        "slug": "/person/18287",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sebastian Gutierrez",
+        "personId": 33522,
+        "slug": "/person/33522",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Samuel L. Jackson",
+        "personId": 33088,
+        "slug": "/person/33088",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Julianna Margulies",
+        "personId": 19663,
+        "slug": "/person/19663",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Nathan Phillips",
+        "personId": 27218,
+        "slug": "/person/27218",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Adam Greenberg",
+      "personId": 164,
+      "slug": "/person/164",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Trevor Rabin",
+      "personId": 37037,
+      "slug": "/person/37037",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:24.770Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

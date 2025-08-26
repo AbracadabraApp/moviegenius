@@ -1,0 +1,125 @@
+{
+  "movieId": "ded4616d-8299-4441-9e9c-0e69872b4c97",
+  "tmdbId": 313,
+  "title": "Snow Cake",
+  "year": 2006,
+  "analysis": {
+    "keyElements": {
+      "director": "Marc Evans",
+      "writers": [
+        "Angela Pell"
+      ],
+      "stars": [
+        "Alan Rickman",
+        "Sigourney Weaver",
+        "Carrie-Anne Moss"
+      ],
+      "genre": "Drama",
+      "releaseYear": 2006,
+      "cinematographer": "Steve Cosens",
+      "composer": "Broken Social Scene",
+      "studio": "Revolution Films"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Sigourney Weaver's remarkable portrayal of an autistic adult woman",
+        "Alan Rickman's nuanced performance as a man dealing with grief",
+        "Sensitive handling of neurodiversity without stereotyping"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Rain Man",
+        "year": 1988,
+        "description": "Early influential portrayal of autism in mainstream cinema"
+      },
+      {
+        "title": "Mary and Max",
+        "year": 2009,
+        "description": "Animation exploring neurodiversity and friendship"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Autism Representation in Cinema",
+        "category": "Social Issues",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Character-Driven Narrative",
+        "category": "Storytelling",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Marc Evans",
+      "personId": 23756,
+      "slug": "/person/23756",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Angela Pell",
+        "personId": 1907,
+        "slug": "/person/1907",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Alan Rickman",
+        "personId": 621,
+        "slug": "/person/621",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sigourney Weaver",
+        "personId": 34197,
+        "slug": "/person/34197",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Carrie-Anne Moss",
+        "personId": 5124,
+        "slug": "/person/5124",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Steve Cosens",
+      "personId": 34906,
+      "slug": "/person/34906",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Broken Social Scene",
+      "personId": 4505,
+      "slug": "/person/4505",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:23.751Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

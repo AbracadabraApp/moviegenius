@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Classic Monster Comedies",
+      "url_path": "classic-monster-comedies",
+      "description": "Classic Monster Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Monster Comedies collection"
+    },
+    {
+      "name": "Victorian Society Satires",
+      "url_path": "victorian-society-satires",
+      "description": "Victorian Society Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Victorian Society Satires collection"
+    },
+    {
+      "name": "Horror Movie Parodies (Part 2)",
+      "url_path": "horror-movie-parodies-part-2-",
+      "description": "Horror Movie Parodies (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Horror Movie Parodies (Part 2) collection"
+    },
+    {
+      "name": "Classic Monster Comedy (Part 2)",
+      "url_path": "classic-monster-comedy-part-2-",
+      "description": "Classic Monster Comedy (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Monster Comedy (Part 2) collection"
+    },
+    {
+      "name": "Literary Horror Adaptations (Part 1)",
+      "url_path": "literary-horror-adaptations-part-1-",
+      "description": "Literary Horror Adaptations (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Literary Horror Adaptations (Part 1) collection"
+    },
+    {
+      "name": "Modernized Classic Monsters (Part 1)",
+      "url_path": "modernized-classic-monsters-part-1-",
+      "description": "Modernized Classic Monsters (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Modernized Classic Monsters (Part 1) collection"
+    }
+  ],
+  "totalLists": 6
+}

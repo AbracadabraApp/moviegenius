@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Korean War Films",
+      "url_path": "korean-war-films",
+      "description": "Korean War Films collection",
+      "category": "war",
+      "connectionReason": "Part of Korean War Films collection"
+    },
+    {
+      "name": "Last Stand Battles",
+      "url_path": "last-stand-battles",
+      "description": "Last Stand Battles collection",
+      "category": "war",
+      "connectionReason": "Part of Last Stand Battles collection"
+    },
+    {
+      "name": "True Military Stories [OVERSIZED]",
+      "url_path": "true-military-stories-oversized-",
+      "description": "True Military Stories [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of True Military Stories [OVERSIZED] collection"
+    },
+    {
+      "name": "War Disillusionment Films [OVERSIZED]",
+      "url_path": "war-disillusionment-films-oversized-",
+      "description": "War Disillusionment Films [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of War Disillusionment Films [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

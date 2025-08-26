@@ -1,0 +1,154 @@
+{
+  "movieId": "837c5331-4df9-4d8c-8ad6-3f1f6cc50be1",
+  "tmdbId": 163,
+  "title": "Ocean's Twelve",
+  "year": 2004,
+  "analysis": {
+    "keyElements": {
+      "director": "Steven Soderbergh",
+      "writers": [
+        "George Nolfi"
+      ],
+      "stars": [
+        "George Clooney",
+        "Brad Pitt",
+        "Julia Roberts",
+        "Catherine Zeta-Jones"
+      ],
+      "genre": "Heist Comedy",
+      "releaseYear": 2004,
+      "cinematographer": "Steven Soderbergh",
+      "composer": "David Holmes",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "NO",
+      "reasons": [
+        "Overly convoluted plot that sacrifices coherence for style",
+        "Self-indulgent meta-moments that distract from the core heist narrative",
+        "Watch **Ocean's Eleven** (2001) instead for a tighter, more entertaining heist experience"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Ocean's Eleven",
+        "year": 2001,
+        "description": "The superior predecessor that perfectly balanced style, substance, and heist mechanics"
+      },
+      {
+        "title": "The Italian Job",
+        "year": 1969,
+        "description": "Classic heist film that established many conventions Ocean's Twelve attempts to subvert"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Meta-Narrative in Cinema",
+        "category": "Film Theory",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Sequel Expectations",
+        "category": "Film Business",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Steven Soderbergh",
+      "personId": 35035,
+      "slug": "/person/35035",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "George Nolfi",
+        "personId": 12346,
+        "slug": "/person/12346",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "George Clayton Johnson",
+        "personId": 12225,
+        "slug": "/person/12225",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jack Golden Russell",
+        "personId": 15341,
+        "slug": "/person/15341",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Brad Pitt",
+        "personId": 4195,
+        "slug": "/person/4195",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "George Clooney",
+        "personId": 12227,
+        "slug": "/person/12227",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Julia Roberts",
+        "personId": 19682,
+        "slug": "/person/19682",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Catherine Zeta-Jones",
+        "personId": 5233,
+        "slug": "/person/5233",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Matt Damon",
+        "personId": 24915,
+        "slug": "/person/24915",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Steven Soderbergh",
+      "personId": 35035,
+      "slug": "/person/35035",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "David Holmes",
+      "personId": 7880,
+      "slug": "/person/7880",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:04:59.530Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

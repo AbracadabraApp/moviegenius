@@ -1,0 +1,125 @@
+{
+  "movieId": "26b73e23-c2ba-4bbe-98db-86308f3e48ff",
+  "tmdbId": 462,
+  "title": "Erin Brockovich",
+  "year": 2000,
+  "analysis": {
+    "keyElements": {
+      "director": "Steven Soderbergh",
+      "writers": [
+        "Susannah Grant"
+      ],
+      "stars": [
+        "Julia Roberts",
+        "Albert Finney",
+        "Aaron Eckhart"
+      ],
+      "genre": "Biographical Drama",
+      "releaseYear": 2000,
+      "cinematographer": "Ed Lachman",
+      "composer": "Thomas Newman",
+      "studio": "Universal Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Julia Roberts delivers her career-best performance, earning a well-deserved Oscar",
+        "Compelling true story of corporate accountability and individual determination",
+        "Perfect balance of serious subject matter with engaging personality and humor"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Norma Rae",
+        "year": 1979,
+        "description": "Similar working-class female protagonist fighting corporate power"
+      },
+      {
+        "title": "Dark Waters",
+        "year": 2019,
+        "description": "Modern environmental legal drama influenced by Erin Brockovich"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Environmental Justice in Cinema",
+        "category": "Social Issues",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Female-Led Legal Dramas",
+        "category": "Genre Studies",
+        "difficulty": "beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Steven Soderbergh",
+      "personId": 35035,
+      "slug": "/person/35035",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Susannah Grant",
+        "personId": 35277,
+        "slug": "/person/35277",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Julia Roberts",
+        "personId": 19682,
+        "slug": "/person/19682",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Albert Finney",
+        "personId": 684,
+        "slug": "/person/684",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Aaron Eckhart",
+        "personId": 22,
+        "slug": "/person/22",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Ed Lachman",
+      "personId": 9556,
+      "slug": "/person/9556",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Thomas Newman",
+      "personId": 36154,
+      "slug": "/person/36154",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:39.763Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

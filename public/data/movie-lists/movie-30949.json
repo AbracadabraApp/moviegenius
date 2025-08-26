@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "90s Neo-Noir Crime",
+      "url_path": "90s-neo-noir-crime",
+      "description": "90s Neo-Noir Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of 90s Neo-Noir Crime collection"
+    },
+    {
+      "name": "Blackmail Crime Thrillers",
+      "url_path": "blackmail-crime-thrillers",
+      "description": "Blackmail Crime Thrillers collection",
+      "category": "crime",
+      "connectionReason": "Part of Blackmail Crime Thrillers collection"
+    },
+    {
+      "name": "Post-Prison Gangster Entanglement",
+      "url_path": "post-prison-gangster-entanglement",
+      "description": "Post-Prison Gangster Entanglement collection",
+      "category": "crime",
+      "connectionReason": "Part of Post-Prison Gangster Entanglement collection"
+    },
+    {
+      "name": "Insurance Fraud Thrillers",
+      "url_path": "insurance-fraud-thrillers",
+      "description": "Insurance Fraud Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Insurance Fraud Thrillers collection"
+    },
+    {
+      "name": "Sexual Power Dynamics",
+      "url_path": "sexual-power-dynamics",
+      "description": "Sexual Power Dynamics collection",
+      "category": "thriller",
+      "connectionReason": "Part of Sexual Power Dynamics collection"
+    }
+  ],
+  "totalLists": 5
+}

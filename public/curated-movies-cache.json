@@ -1,0 +1,1697 @@
+{
+  "metadata": {
+    "created": "2025-08-26T01:59:34.513Z",
+    "totalMovies": 211,
+    "sourceList": "curated-film-ids.json"
+  },
+  "movies": [
+    {
+      "tmdbId": 78,
+      "title": "Blade Runner",
+      "year": 1982,
+      "poster": "https://image.tmdb.org/t/p/w500/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg",
+      "genre": "Science Fiction",
+      "runtime": 118
+    },
+    {
+      "tmdbId": 85,
+      "title": "Raiders of the Lost Ark",
+      "year": 1981,
+      "poster": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
+      "genre": "Adventure",
+      "runtime": 115
+    },
+    {
+      "tmdbId": 147,
+      "title": "The 400 Blows",
+      "year": 1959,
+      "poster": "https://image.tmdb.org/t/p/w500/12PuU23kkDLvTd0nb8hMlE3oShB.jpg",
+      "genre": "Drama",
+      "runtime": 99
+    },
+    {
+      "tmdbId": 213,
+      "title": "North by Northwest",
+      "year": 1959,
+      "poster": "https://image.tmdb.org/t/p/w500/kNOFPQrel9YFCVzI0DF8FnCEpCw.jpg",
+      "genre": "Thriller",
+      "runtime": 136
+    },
+    {
+      "tmdbId": 247,
+      "title": "The Killing",
+      "year": 1956,
+      "poster": "https://image.tmdb.org/t/p/w500/A6VzUPcADZGYdGHlVdWvpMNDF5d.jpg",
+      "genre": "Crime",
+      "runtime": 85
+    },
+    {
+      "tmdbId": 256,
+      "title": "Antoine and Colette",
+      "year": 1962,
+      "poster": "https://image.tmdb.org/t/p/w500/nfP8J7pv75KOAliIM3RG7h6Zos5.jpg",
+      "genre": "Romance",
+      "runtime": 30
+    },
+    {
+      "tmdbId": 269,
+      "title": "Breathless",
+      "year": 1960,
+      "poster": "https://image.tmdb.org/t/p/w500/9Wx0Wdn2EOqeCZU4SP6tlS3LOml.jpg",
+      "genre": "Drama",
+      "runtime": 90
+    },
+    {
+      "tmdbId": 346,
+      "title": "Seven Samurai",
+      "year": 1954,
+      "poster": "https://image.tmdb.org/t/p/w500/lOMGc8bnSwQhS4XyE1S99uH8NXf.jpg",
+      "genre": "Action",
+      "runtime": 207
+    },
+    {
+      "tmdbId": 378,
+      "title": "Raising Arizona",
+      "year": 1987,
+      "poster": "https://image.tmdb.org/t/p/w500/tPX13Qpq1SjqPzzMIaFtL8G4lYA.jpg",
+      "genre": "Comedy",
+      "runtime": 94
+    },
+    {
+      "tmdbId": 405,
+      "title": "La Strada",
+      "year": 1954,
+      "poster": "https://image.tmdb.org/t/p/w500/rwjbT0zlsUDMztaCcWjlWuxaEL1.jpg",
+      "genre": "Drama",
+      "runtime": 115
+    },
+    {
+      "tmdbId": 422,
+      "title": "8½",
+      "year": 1963,
+      "poster": "https://image.tmdb.org/t/p/w500/ja0uRnwFwnVFJlNMYL10orpjWtq.jpg",
+      "genre": "Drama",
+      "runtime": 139
+    },
+    {
+      "tmdbId": 426,
+      "title": "Vertigo",
+      "year": 1958,
+      "poster": "https://image.tmdb.org/t/p/w500/15uOEfqBNTVtDUT7hGBVCka0rZz.jpg",
+      "genre": "Mystery",
+      "runtime": 128
+    },
+    {
+      "tmdbId": 439,
+      "title": "La Dolce Vita",
+      "year": 1960,
+      "poster": "https://image.tmdb.org/t/p/w500/2KU52apQyvyZuPsqEGMcWb4BKu2.jpg",
+      "genre": "Comedy",
+      "runtime": 176
+    },
+    {
+      "tmdbId": 475,
+      "title": "Bonnie and Clyde",
+      "year": 1967,
+      "poster": "https://image.tmdb.org/t/p/w500/sCSQFK9kMsprT4jgWqgw82dT6WI.jpg",
+      "genre": "Crime",
+      "runtime": 111
+    },
+    {
+      "tmdbId": 490,
+      "title": "The Seventh Seal",
+      "year": 1957,
+      "poster": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg",
+      "genre": "Fantasy",
+      "runtime": 96
+    },
+    {
+      "tmdbId": 506,
+      "title": "Marnie",
+      "year": 1964,
+      "poster": "https://image.tmdb.org/t/p/w500/nRRy4VO2A3Py7wiZBPz11PAlogp.jpg",
+      "genre": "Thriller",
+      "runtime": 130
+    },
+    {
+      "tmdbId": 548,
+      "title": "Rashomon",
+      "year": 1950,
+      "poster": "https://image.tmdb.org/t/p/w500/vL7Xw04nFMHwnvXRFCmYYAzMUvY.jpg",
+      "genre": "Crime",
+      "runtime": 88
+    },
+    {
+      "tmdbId": 562,
+      "title": "Die Hard",
+      "year": 1988,
+      "poster": "https://image.tmdb.org/t/p/w500/aJCpHDC6RoGz7d1Fzayl019xnxX.jpg",
+      "genre": "Action",
+      "runtime": 132
+    },
+    {
+      "tmdbId": 567,
+      "title": "Rear Window",
+      "year": 1954,
+      "poster": "https://image.tmdb.org/t/p/w500/ILVF0eJxHMddjxeQhswFtpMtqx.jpg",
+      "genre": "Thriller",
+      "runtime": 112
+    },
+    {
+      "tmdbId": 583,
+      "title": "Life of Brian",
+      "year": 1979,
+      "poster": "https://image.tmdb.org/t/p/w500/lSSA64WF0M0BXnjwr2quMh6shCl.jpg",
+      "genre": "Comedy",
+      "runtime": 94
+    },
+    {
+      "tmdbId": 599,
+      "title": "Sunset Boulevard",
+      "year": 1950,
+      "poster": "https://image.tmdb.org/t/p/w500/sC4Dpmn87oz9AuxZ15Lmip0Ftgr.jpg",
+      "genre": "Drama",
+      "runtime": 110
+    },
+    {
+      "tmdbId": 614,
+      "title": "Wild Strawberries",
+      "year": 1957,
+      "poster": "https://image.tmdb.org/t/p/w500/iyTD2QnySNMPUPE3IedZQipSWfz.jpg",
+      "genre": "Drama",
+      "runtime": 91
+    },
+    {
+      "tmdbId": 620,
+      "title": "Ghostbusters",
+      "year": 1984,
+      "poster": "https://image.tmdb.org/t/p/w500/7E8nLijS9AwwUEPu2oFYOVKhdFA.jpg",
+      "genre": "Comedy",
+      "runtime": 107
+    },
+    {
+      "tmdbId": 679,
+      "title": "Aliens",
+      "year": 1986,
+      "poster": "https://image.tmdb.org/t/p/w500/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg",
+      "genre": "Action",
+      "runtime": 137
+    },
+    {
+      "tmdbId": 705,
+      "title": "All About Eve",
+      "year": 1950,
+      "poster": "https://image.tmdb.org/t/p/w500/blBzZaatPWVuWpXEnPscMA4Xp6m.jpg",
+      "genre": "Drama",
+      "runtime": 139
+    },
+    {
+      "tmdbId": 744,
+      "title": "Top Gun",
+      "year": 1986,
+      "poster": "https://image.tmdb.org/t/p/w500/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg",
+      "genre": "Action",
+      "runtime": 110
+    },
+    {
+      "tmdbId": 797,
+      "title": "Persona",
+      "year": 1966,
+      "poster": "https://image.tmdb.org/t/p/w500/v2KsLNChpT6vLf0YFhkJmAtGkNq.jpg",
+      "genre": "Drama",
+      "runtime": 84
+    },
+    {
+      "tmdbId": 833,
+      "title": "Umberto D.",
+      "year": 1952,
+      "poster": "https://image.tmdb.org/t/p/w500/5I7SYsNQmZRZpQ2MAarIQYU9vaX.jpg",
+      "genre": "Drama",
+      "runtime": 91
+    },
+    {
+      "tmdbId": 837,
+      "title": "Videodrome",
+      "year": 1983,
+      "poster": "https://image.tmdb.org/t/p/w500/qqqkiZSU9EBGZ1KiDmfn07S7qvv.jpg",
+      "genre": "Horror",
+      "runtime": 88
+    },
+    {
+      "tmdbId": 872,
+      "title": "Singin' in the Rain",
+      "year": 1952,
+      "poster": "https://image.tmdb.org/t/p/w500/w03EiJVHP8Un77boQeE7hg9DVdU.jpg",
+      "genre": "Comedy",
+      "runtime": 103
+    },
+    {
+      "tmdbId": 895,
+      "title": "Andrei Rublev",
+      "year": 1966,
+      "poster": "https://image.tmdb.org/t/p/w500/910xRIUmNJrWH2hkQifBJtoPp5R.jpg",
+      "genre": "Drama",
+      "runtime": 183
+    },
+    {
+      "tmdbId": 925,
+      "title": "Do the Right Thing",
+      "year": 1989,
+      "poster": "https://image.tmdb.org/t/p/w500/63rmSDPahrH7C1gEFYzRuIBAN9W.jpg",
+      "genre": "Drama",
+      "runtime": 120
+    },
+    {
+      "tmdbId": 935,
+      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+      "year": 1964,
+      "poster": "https://image.tmdb.org/t/p/w500/7SixLzxcqezkZEYU8pcHZgbkmjp.jpg",
+      "genre": "Comedy",
+      "runtime": 95
+    },
+    {
+      "tmdbId": 976,
+      "title": "Sweet Smell of Success",
+      "year": 1957,
+      "poster": "https://image.tmdb.org/t/p/w500/akzvV8JasNrgEl5iAP9K6zPHGJe.jpg",
+      "genre": "Drama",
+      "runtime": 97
+    },
+    {
+      "tmdbId": 1059,
+      "title": "The Hidden Fortress",
+      "year": 1958,
+      "poster": "https://image.tmdb.org/t/p/w500/1RTp3EZrKg7xj1HJK2x4Rqknnnu.jpg",
+      "genre": "Drama",
+      "runtime": 139
+    },
+    {
+      "tmdbId": 1394,
+      "title": "Nostalgia",
+      "year": 1983,
+      "poster": "https://image.tmdb.org/t/p/w500/fCYSidPXp3LpDa9wlLNv0gZvjyF.jpg",
+      "genre": "Drama",
+      "runtime": 124
+    },
+    {
+      "tmdbId": 1398,
+      "title": "Stalker",
+      "year": 1979,
+      "poster": "https://image.tmdb.org/t/p/w500/1qhOyf5C4s9ZdvY8d5JDx9DFMeT.jpg",
+      "genre": "Science Fiction",
+      "runtime": 162
+    },
+    {
+      "tmdbId": 1412,
+      "title": "sex, lies, and videotape",
+      "year": 1989,
+      "poster": "https://image.tmdb.org/t/p/w500/pj1uKm07svgXZDHbYE8AzRfNHcu.jpg",
+      "genre": "Drama",
+      "runtime": 101
+    },
+    {
+      "tmdbId": 1626,
+      "title": "Vivre Sa Vie",
+      "year": 1962,
+      "poster": "https://image.tmdb.org/t/p/w500/A0BjScjASfMFgyGI5sU0CwfKh3l.jpg",
+      "genre": "Drama",
+      "runtime": 84
+    },
+    {
+      "tmdbId": 1628,
+      "title": "Jules and Jim",
+      "year": 1962,
+      "poster": "https://image.tmdb.org/t/p/w500/kuFjZlcZhQFDtIjuI3GQJjsQG03.jpg",
+      "genre": "Drama",
+      "runtime": 106
+    },
+    {
+      "tmdbId": 1629,
+      "title": "La Chinoise",
+      "year": 1967,
+      "poster": "https://image.tmdb.org/t/p/w500/hfGzYErvwi8hB38kCsSNy6OjdPv.jpg",
+      "genre": "Drama",
+      "runtime": 96
+    },
+    {
+      "tmdbId": 1714,
+      "title": "Fahrenheit 451",
+      "year": 1966,
+      "poster": "https://image.tmdb.org/t/p/w500/k2CTpexoS9MO9lKVFfnzwVdJuM.jpg",
+      "genre": "Drama",
+      "runtime": 113
+    },
+    {
+      "tmdbId": 1716,
+      "title": "The Last Metro",
+      "year": 1980,
+      "poster": "https://image.tmdb.org/t/p/w500/yJbA6jjuj9h8x2tZSgTkzpQ8PzS.jpg",
+      "genre": "Drama",
+      "runtime": 131
+    },
+    {
+      "tmdbId": 1719,
+      "title": "The Soft Skin",
+      "year": 1964,
+      "poster": "https://image.tmdb.org/t/p/w500/nYo083NgJCAQQByHzYrayxQ5xBV.jpg",
+      "genre": "Drama",
+      "runtime": 119
+    },
+    {
+      "tmdbId": 1779,
+      "title": "Roger & Me",
+      "year": 1989,
+      "poster": "https://image.tmdb.org/t/p/w500/nsLrWqKnyOKgtBMD6OYLk6fAyTG.jpg",
+      "genre": "Documentary",
+      "runtime": 91
+    },
+    {
+      "tmdbId": 1818,
+      "title": "Shoot the Piano Player",
+      "year": 1960,
+      "poster": "https://image.tmdb.org/t/p/w500/6UhMIZaaoe2HUU7sEIwYpuYgugh.jpg",
+      "genre": "Drama",
+      "runtime": 85
+    },
+    {
+      "tmdbId": 2262,
+      "title": "Veronika Voss",
+      "year": 1982,
+      "poster": "https://image.tmdb.org/t/p/w500/A09gh5oWVfincs6BbRz91HL4Rgc.jpg",
+      "genre": "Drama",
+      "runtime": 105
+    },
+    {
+      "tmdbId": 2493,
+      "title": "The Princess Bride",
+      "year": 1987,
+      "poster": "https://image.tmdb.org/t/p/w500/dvjqlp2sAhUeFjUOfQDgqwpphHj.jpg",
+      "genre": "Adventure",
+      "runtime": 99
+    },
+    {
+      "tmdbId": 2769,
+      "title": "An American in Paris",
+      "year": 1951,
+      "poster": "https://image.tmdb.org/t/p/w500/lyDXkvG53ldz6Cf7dbjJl7TaoP5.jpg",
+      "genre": "Music",
+      "runtime": 113
+    },
+    {
+      "tmdbId": 2786,
+      "title": "Pierrot le Fou",
+      "year": 1965,
+      "poster": "https://image.tmdb.org/t/p/w500/i124H6iQB4CawrgFW9aZaZs7OBO.jpg",
+      "genre": "Drama",
+      "runtime": 110
+    },
+    {
+      "tmdbId": 3777,
+      "title": "Throne of Blood",
+      "year": 1957,
+      "poster": "https://image.tmdb.org/t/p/w500/zaZFMNxJST0TtPd68yF7fNt1he8.jpg",
+      "genre": "Drama",
+      "runtime": 108
+    },
+    {
+      "tmdbId": 3780,
+      "title": "Red Beard",
+      "year": 1965,
+      "poster": "https://image.tmdb.org/t/p/w500/iYNH3Re0JSypoYaWvZtERUnNaJL.jpg",
+      "genre": "Drama",
+      "runtime": 185
+    },
+    {
+      "tmdbId": 4105,
+      "title": "Black Rain",
+      "year": 1989,
+      "poster": "https://image.tmdb.org/t/p/w500/funhGWt9ee3Uwb6Ar8SGCCvbJdV.jpg",
+      "genre": "Drama",
+      "runtime": 125
+    },
+    {
+      "tmdbId": 4173,
+      "title": "Stromboli",
+      "year": 1950,
+      "poster": "https://image.tmdb.org/t/p/w500/tsyyzGSspKsawHocchfokskwbeM.jpg",
+      "genre": "Drama",
+      "runtime": 107
+    },
+    {
+      "tmdbId": 5165,
+      "title": "L'Avventura",
+      "year": 1960,
+      "poster": "https://image.tmdb.org/t/p/w500/7kUXAS8K7Ihw1T1mhARjnLuMVk3.jpg",
+      "genre": "Drama",
+      "runtime": 144
+    },
+    {
+      "tmdbId": 5622,
+      "title": "And the Ship Sails On",
+      "year": 1983,
+      "poster": "https://image.tmdb.org/t/p/w500/kAJEaXgZ5sO0tBaB9By260JZUQg.jpg",
+      "genre": "Comedy",
+      "runtime": 128
+    },
+    {
+      "tmdbId": 5961,
+      "title": "Fanny and Alexander",
+      "year": 1982,
+      "poster": "https://image.tmdb.org/t/p/w500/q8jlA3Wc1Z987hNKRFA44g5OugC.jpg",
+      "genre": "Fantasy",
+      "runtime": 188
+    },
+    {
+      "tmdbId": 8073,
+      "title": "Band of Outsiders",
+      "year": 1964,
+      "poster": "https://image.tmdb.org/t/p/w500/9oqyj79xmcypxLajJdefOtrYx64.jpg",
+      "genre": "Crime",
+      "runtime": 97
+    },
+    {
+      "tmdbId": 9426,
+      "title": "The Fly",
+      "year": 1986,
+      "poster": "https://image.tmdb.org/t/p/w500/8gZWMhJHRvaXdXsNhERtqNHYpH3.jpg",
+      "genre": "Horror",
+      "runtime": 96
+    },
+    {
+      "tmdbId": 9538,
+      "title": "Scanners",
+      "year": 1981,
+      "poster": "https://image.tmdb.org/t/p/w500/VTqLdveNXxGsIAZL5I4RliTTt7.jpg",
+      "genre": "Science Fiction",
+      "runtime": 103
+    },
+    {
+      "tmdbId": 9540,
+      "title": "Dead Ringers",
+      "year": 1988,
+      "poster": "https://image.tmdb.org/t/p/w500/ofXwDfM8uYAaftD7cBPcIWdCpMn.jpg",
+      "genre": "Thriller",
+      "runtime": 115
+    },
+    {
+      "tmdbId": 10910,
+      "title": "Moulin Rouge",
+      "year": 1952,
+      "poster": "https://image.tmdb.org/t/p/w500/eNly1s5DXQUTyjvfmopJPwwPiMH.jpg",
+      "genre": "Drama",
+      "runtime": 119
+    },
+    {
+      "tmdbId": 11235,
+      "title": "Local Hero",
+      "year": 1983,
+      "poster": "https://image.tmdb.org/t/p/w500/jqxD0H9a1rg5bXftsm6gsNOjt4n.jpg",
+      "genre": "Comedy",
+      "runtime": 111
+    },
+    {
+      "tmdbId": 11368,
+      "title": "Blood Simple",
+      "year": 1984,
+      "poster": "https://image.tmdb.org/t/p/w500/svU6pu4lfHn0T5BVZchVxL58HB5.jpg",
+      "genre": "Crime",
+      "runtime": 97
+    },
+    {
+      "tmdbId": 11602,
+      "title": "Through a Glass Darkly",
+      "year": 1961,
+      "poster": "https://image.tmdb.org/t/p/w500/rYD30Fm4vAcBqk1kTsxHw1s8P29.jpg",
+      "genre": "Drama",
+      "runtime": 91
+    },
+    {
+      "tmdbId": 11645,
+      "title": "Ran",
+      "year": 1985,
+      "poster": "https://image.tmdb.org/t/p/w500/jQnUtWaHYfqnXPOIf77K7Ycqk4M.jpg",
+      "genre": "Action",
+      "runtime": 160
+    },
+    {
+      "tmdbId": 11656,
+      "title": "The Virgin Spring",
+      "year": 1960,
+      "poster": "https://image.tmdb.org/t/p/w500/z70YM3Y4pNYZATMhFMKonngaeMC.jpg",
+      "genre": "Drama",
+      "runtime": 90
+    },
+    {
+      "tmdbId": 11878,
+      "title": "Yojimbo",
+      "year": 1961,
+      "poster": "https://image.tmdb.org/t/p/w500/tN7kYPjRhDolpui9sc9Eq9n5b2O.jpg",
+      "genre": "Drama",
+      "runtime": 110
+    },
+    {
+      "tmdbId": 11879,
+      "title": "Near Dark",
+      "year": 1987,
+      "poster": "https://image.tmdb.org/t/p/w500/hVhFNn3IQxxARvnpLIKMx8ZfTtG.jpg",
+      "genre": "Horror",
+      "runtime": 94
+    },
+    {
+      "tmdbId": 11953,
+      "title": "Kagemusha",
+      "year": 1980,
+      "poster": "https://image.tmdb.org/t/p/w500/fJgqj9s8HNZz9zwX6femVJn8HEB.jpg",
+      "genre": "Action",
+      "runtime": 180
+    },
+    {
+      "tmdbId": 12493,
+      "title": "High and Low",
+      "year": 1963,
+      "poster": "https://image.tmdb.org/t/p/w500/tgNjemQPG96uIezpiUiXFcer5ga.jpg",
+      "genre": "Drama",
+      "runtime": 142
+    },
+    {
+      "tmdbId": 12548,
+      "title": "I Vitelloni",
+      "year": 1953,
+      "poster": "https://image.tmdb.org/t/p/w500/boqcM6bhQICnNue4pkgmauj9JN3.jpg",
+      "genre": "Comedy",
+      "runtime": 103
+    },
+    {
+      "tmdbId": 13446,
+      "title": "Withnail & I",
+      "year": 1987,
+      "poster": "https://image.tmdb.org/t/p/w500/i18cIp8A10A2JgByrfA9oIC9299.jpg",
+      "genre": "Comedy",
+      "runtime": 108
+    },
+    {
+      "tmdbId": 14285,
+      "title": "The Thin Blue Line",
+      "year": 1988,
+      "poster": "https://image.tmdb.org/t/p/w500/4w4BJk3l8y9gYwPPLRs6uPHOmGL.jpg",
+      "genre": "Crime",
+      "runtime": 103
+    },
+    {
+      "tmdbId": 14412,
+      "title": "Body Heat",
+      "year": 1981,
+      "poster": "https://image.tmdb.org/t/p/w500/5LipPcaW1J9IjAP7TOTesw8OcMS.jpg",
+      "genre": "Thriller",
+      "runtime": 113
+    },
+    {
+      "tmdbId": 16103,
+      "title": "The Loneliness of the Long Distance Runner",
+      "year": 1962,
+      "poster": "https://image.tmdb.org/t/p/w500/ePhZKUNyFGc8lzx0E0LiCcKs4y4.jpg",
+      "genre": "Drama",
+      "runtime": 104
+    },
+    {
+      "tmdbId": 16672,
+      "title": "Woman in the Dunes",
+      "year": 1964,
+      "poster": "https://image.tmdb.org/t/p/w500/f0JpsMQ9oEjKBD66Ky3qK3z7LGT.jpg",
+      "genre": "Drama",
+      "runtime": 147
+    },
+    {
+      "tmdbId": 16958,
+      "title": "The Asphalt Jungle",
+      "year": 1950,
+      "poster": "https://image.tmdb.org/t/p/w500/8xsUnT0P2fJWQv9jGDhs3i9Zx2l.jpg",
+      "genre": "Crime",
+      "runtime": 112
+    },
+    {
+      "tmdbId": 17057,
+      "title": "In a Lonely Place",
+      "year": 1950,
+      "poster": "https://image.tmdb.org/t/p/w500/vbdgtwzLOpE6MppZlyYChMagvQq.jpg",
+      "genre": "Drama",
+      "runtime": 93
+    },
+    {
+      "tmdbId": 17221,
+      "title": "Where the Sidewalk Ends",
+      "year": 1950,
+      "poster": "https://image.tmdb.org/t/p/w500/27Q0i6ZjmRnjfvegksunixnLxuG.jpg",
+      "genre": "Crime",
+      "runtime": 95
+    },
+    {
+      "tmdbId": 18030,
+      "title": "Kiss Me Deadly",
+      "year": 1955,
+      "poster": "https://image.tmdb.org/t/p/w500/z7me91nrpWLHY1mZOB2v20cK0zY.jpg",
+      "genre": "Mystery",
+      "runtime": 106
+    },
+    {
+      "tmdbId": 18148,
+      "title": "Tokyo Story",
+      "year": 1953,
+      "poster": "https://image.tmdb.org/t/p/w500/g2YbTYKpY7N2yDSk7BfXZ18I5QV.jpg",
+      "genre": "Drama",
+      "runtime": 137
+    },
+    {
+      "tmdbId": 18671,
+      "title": "Gun Crazy",
+      "year": 1950,
+      "poster": "https://image.tmdb.org/t/p/w500/kC1IIitCJTZLwZyuQnKw4zaOaXc.jpg",
+      "genre": "Crime",
+      "runtime": 87
+    },
+    {
+      "tmdbId": 18774,
+      "title": "This Sporting Life",
+      "year": 1963,
+      "poster": "https://image.tmdb.org/t/p/w500/rbFg8zGDxTFM1baG6DLFPym3td3.jpg",
+      "genre": "Drama",
+      "runtime": 134
+    },
+    {
+      "tmdbId": 18929,
+      "title": "The Entertainer",
+      "year": 1960,
+      "poster": "https://image.tmdb.org/t/p/w500/s549IYn0XDUlFHJpOLIrWE1uYXv.jpg",
+      "genre": "Drama",
+      "runtime": 104
+    },
+    {
+      "tmdbId": 18995,
+      "title": "D.O.A.",
+      "year": 1949,
+      "poster": "https://image.tmdb.org/t/p/w500/m7wZXWOt9XQKJT8r9pbAFo7jB46.jpg",
+      "genre": "Mystery",
+      "runtime": 83
+    },
+    {
+      "tmdbId": 19119,
+      "title": "Night and the City",
+      "year": 1950,
+      "poster": "https://image.tmdb.org/t/p/w500/2NBmzm8z5fd283eWeECkPrkwta8.jpg",
+      "genre": "Drama",
+      "runtime": 95
+    },
+    {
+      "tmdbId": 19120,
+      "title": "Juliet of the Spirits",
+      "year": 1965,
+      "poster": "https://image.tmdb.org/t/p/w500/durUhLVqmYlgXsA064A6P5sM4Lc.jpg",
+      "genre": "Comedy",
+      "runtime": 148
+    },
+    {
+      "tmdbId": 22342,
+      "title": "The Big Combo",
+      "year": 1955,
+      "poster": "https://image.tmdb.org/t/p/w500/fltH7VmdZQeCRMwionxfYKOZoPg.jpg",
+      "genre": "Drama",
+      "runtime": 88
+    },
+    {
+      "tmdbId": 24163,
+      "title": "As Tears Go By",
+      "year": 1988,
+      "poster": "https://image.tmdb.org/t/p/w500/2ePFbsguw4d9UZ3hA61vCUQOBhh.jpg",
+      "genre": "Drama",
+      "runtime": 98
+    },
+    {
+      "tmdbId": 24657,
+      "title": "The Sacrifice",
+      "year": 1986,
+      "poster": "https://image.tmdb.org/t/p/w500/8JMh27z075ZHbFE85XYkdXF2QkK.jpg",
+      "genre": "Drama",
+      "runtime": 149
+    },
+    {
+      "tmdbId": 25062,
+      "title": "A Taste of Honey",
+      "year": 1961,
+      "poster": "https://image.tmdb.org/t/p/w500/5psrZNVZ9E6Eck7OtpO47A8zTbQ.jpg",
+      "genre": "Drama",
+      "runtime": 100
+    },
+    {
+      "tmdbId": 25905,
+      "title": "The Shop on Main Street",
+      "year": 1965,
+      "poster": "https://image.tmdb.org/t/p/w500/pOjsOzPzYrCFsMsatKxAwYzIeCg.jpg",
+      "genre": "Drama",
+      "runtime": 128
+    },
+    {
+      "tmdbId": 25955,
+      "title": "Pickup on South Street",
+      "year": 1953,
+      "poster": "https://image.tmdb.org/t/p/w500/et4fY4BxLyAPwxvUFUbzCUrGsjR.jpg",
+      "genre": "Thriller",
+      "runtime": 80
+    },
+    {
+      "tmdbId": 26535,
+      "title": "Billy Liar",
+      "year": 1963,
+      "poster": "https://image.tmdb.org/t/p/w500/8YUzVyN3HdedaK7oGVf2nVrsf4R.jpg",
+      "genre": "Comedy",
+      "runtime": 98
+    },
+    {
+      "tmdbId": 28041,
+      "title": "The Girl Who Knew Too Much",
+      "year": 1963,
+      "poster": "https://image.tmdb.org/t/p/w500/14z6WFMEoFdVEKhEGJQuGk9vU8q.jpg",
+      "genre": "Horror",
+      "runtime": 86
+    },
+    {
+      "tmdbId": 29369,
+      "title": "Made in U.S.A",
+      "year": 1967,
+      "poster": "https://image.tmdb.org/t/p/w500/gStAcnmSNzBtbEru3avvjKu54zg.jpg",
+      "genre": "Crime",
+      "runtime": 85
+    },
+    {
+      "tmdbId": 29455,
+      "title": "Winter Light",
+      "year": 1963,
+      "poster": "https://image.tmdb.org/t/p/w500/wDxrEssdjFWYwIZLbr06RQNcg1q.jpg",
+      "genre": "Drama",
+      "runtime": 80
+    },
+    {
+      "tmdbId": 30014,
+      "title": "House by the River",
+      "year": 1950,
+      "poster": "https://image.tmdb.org/t/p/w500/a3p8tk8rCvMD7Hp2kUXkXrY59vP.jpg",
+      "genre": "Thriller",
+      "runtime": 88
+    },
+    {
+      "tmdbId": 30142,
+      "title": "Vernon, Florida",
+      "year": 1981,
+      "poster": "https://image.tmdb.org/t/p/w500/dqcUISuve7pUcGT75Kwa0E8Sz6H.jpg",
+      "genre": "Documentary",
+      "runtime": 55
+    },
+    {
+      "tmdbId": 31104,
+      "title": "Pigs and Battleships",
+      "year": 1961,
+      "poster": "https://image.tmdb.org/t/p/w500/9WfCDU8hF3zgFGf9IXdyL0j7Rot.jpg",
+      "genre": "Crime",
+      "runtime": 108
+    },
+    {
+      "tmdbId": 31152,
+      "title": "On Dangerous Ground",
+      "year": 1951,
+      "poster": "https://image.tmdb.org/t/p/w500/dJiSzEf5uGV0l9bQbaCyk7ob2YP.jpg",
+      "genre": "Drama",
+      "runtime": 82
+    },
+    {
+      "tmdbId": 31589,
+      "title": "The Bad Sleep Well",
+      "year": 1960,
+      "poster": "https://image.tmdb.org/t/p/w500/z0LhZ121uaqa31RUeu1mOnaFb5w.jpg",
+      "genre": "Crime",
+      "runtime": 150
+    },
+    {
+      "tmdbId": 32110,
+      "title": "Carry On Sergeant",
+      "year": 1958,
+      "poster": "https://image.tmdb.org/t/p/w500/5nb596JUBIugTkBFugD9Ek6TKJl.jpg",
+      "genre": "Comedy",
+      "runtime": 84
+    },
+    {
+      "tmdbId": 32568,
+      "title": "The Man in the White Suit",
+      "year": 1951,
+      "poster": "https://image.tmdb.org/t/p/w500/laTLoNZB7Ar3ZDoQmspBDVa5mbC.jpg",
+      "genre": "Comedy",
+      "runtime": 85
+    },
+    {
+      "tmdbId": 32961,
+      "title": "The Lavender Hill Mob",
+      "year": 1951,
+      "poster": "https://image.tmdb.org/t/p/w500/u4mZyim3CwXHu0zVhXjfK8fqoN7.jpg",
+      "genre": "Comedy",
+      "runtime": 78
+    },
+    {
+      "tmdbId": 33765,
+      "title": "A Kind of Loving",
+      "year": 1962,
+      "poster": "https://image.tmdb.org/t/p/w500/ArE4ox7MWPIJcGZYonvRpOYPlTT.jpg",
+      "genre": "Drama",
+      "runtime": 112
+    },
+    {
+      "tmdbId": 36786,
+      "title": "While the City Sleeps",
+      "year": 1956,
+      "poster": "https://image.tmdb.org/t/p/w500/yxcHaWVdHXf6FbI0TYa43nnQeVo.jpg",
+      "genre": "Thriller",
+      "runtime": 100
+    },
+    {
+      "tmdbId": 36819,
+      "title": "Time Bandits",
+      "year": 1981,
+      "poster": "https://image.tmdb.org/t/p/w500/4VZtpwdhHQSa4LUkvujyGAHb1hG.jpg",
+      "genre": "Family",
+      "runtime": 116
+    },
+    {
+      "tmdbId": 37230,
+      "title": "Saturday Night and Sunday Morning",
+      "year": 1960,
+      "poster": "https://image.tmdb.org/t/p/w500/fHHKxB71EzVzny3ZakxZRGe5Evw.jpg",
+      "genre": "Drama",
+      "runtime": 90
+    },
+    {
+      "tmdbId": 37247,
+      "title": "The Graduate",
+      "year": 1967,
+      "poster": "https://image.tmdb.org/t/p/w500/z1Z1tZMR66RxcNeHbwoEhYeqOlP.jpg",
+      "genre": "Drama",
+      "runtime": 106
+    },
+    {
+      "tmdbId": 38311,
+      "title": "The Steamroller and the Violin",
+      "year": 1961,
+      "poster": "https://image.tmdb.org/t/p/w500/rQILTYttUhFTy715d41SG50Xpfi.jpg",
+      "genre": "Drama",
+      "runtime": 46
+    },
+    {
+      "tmdbId": 38442,
+      "title": "The Firemen's Ball",
+      "year": 1967,
+      "poster": "https://image.tmdb.org/t/p/w500/yylEjPttmTDar0o92StlrO5ghmw.jpg",
+      "genre": "Comedy",
+      "runtime": 73
+    },
+    {
+      "tmdbId": 38606,
+      "title": "The Trouble with Angels",
+      "year": 1966,
+      "poster": "https://image.tmdb.org/t/p/w500/bv0yTpB2so7mtjG7VIbZyfuJaO1.jpg",
+      "genre": "Comedy",
+      "runtime": 112
+    },
+    {
+      "tmdbId": 39387,
+      "title": "Loves of a Blonde",
+      "year": 1965,
+      "poster": "https://image.tmdb.org/t/p/w500/fyRg6Qh4oN1KRfkx8Q3DFzA642P.jpg",
+      "genre": "Comedy",
+      "runtime": 81
+    },
+    {
+      "tmdbId": 41212,
+      "title": "Titicut Follies",
+      "year": 1967,
+      "poster": "https://image.tmdb.org/t/p/w500/hAJOSqWB4FeVV7yi0fRSYFoCwvM.jpg",
+      "genre": "Documentary",
+      "runtime": 84
+    },
+    {
+      "tmdbId": 41462,
+      "title": "The Hitch-Hiker",
+      "year": 1953,
+      "poster": "https://image.tmdb.org/t/p/w500/9ORvQWC2o0FwIEl6zYU1jw9qH0X.jpg",
+      "genre": "Thriller",
+      "runtime": 71
+    },
+    {
+      "tmdbId": 42113,
+      "title": "The Ballad of Narayama",
+      "year": 1983,
+      "poster": "https://image.tmdb.org/t/p/w500/h3iNimtw6HsFTtAvEDF3XYZ4Y5T.jpg",
+      "genre": "Drama",
+      "runtime": 130
+    },
+    {
+      "tmdbId": 42720,
+      "title": "Violence at Noon",
+      "year": 1966,
+      "poster": "https://image.tmdb.org/t/p/w500/4c2JVOW4rsumhXhRS8CIbSzAU1M.jpg",
+      "genre": "Drama",
+      "runtime": 99
+    },
+    {
+      "tmdbId": 42984,
+      "title": "The Insect Woman",
+      "year": 1963,
+      "poster": "https://image.tmdb.org/t/p/w500/tIY9Phiuk1rQOSpXLe4d4j0Msd0.jpg",
+      "genre": "Drama",
+      "runtime": 123
+    },
+    {
+      "tmdbId": 43103,
+      "title": "Room at the Top",
+      "year": 1958,
+      "poster": "https://image.tmdb.org/t/p/w500/uuyruoqh7oBtjwN1mJyOF04CPjO.jpg",
+      "genre": "Drama",
+      "runtime": 115
+    },
+    {
+      "tmdbId": 43191,
+      "title": "Beware, My Lovely",
+      "year": 1952,
+      "poster": "https://image.tmdb.org/t/p/w500/eAbmuXqrmNxF8OG3yQaiBnt6Y0s.jpg",
+      "genre": "Drama",
+      "runtime": 77
+    },
+    {
+      "tmdbId": 43316,
+      "title": "All That Heaven Allows",
+      "year": 1955,
+      "poster": "https://image.tmdb.org/t/p/w500/wlSmIk6iQ8yQhBG795UOOBUs4gF.jpg",
+      "genre": "Drama",
+      "runtime": 89
+    },
+    {
+      "tmdbId": 46918,
+      "title": "Floating Weeds",
+      "year": 1959,
+      "poster": "https://image.tmdb.org/t/p/w500/nLepKtb48XSnPQNsuS4svbtNBY7.jpg",
+      "genre": "Drama",
+      "runtime": 115
+    },
+    {
+      "tmdbId": 47715,
+      "title": "Intervista",
+      "year": 1987,
+      "poster": "https://image.tmdb.org/t/p/w500/3vqKvIEUE4vpxEjgMSdIlcD1WHR.jpg",
+      "genre": "Drama",
+      "runtime": 107
+    },
+    {
+      "tmdbId": 47735,
+      "title": "Summer with Monika",
+      "year": 1953,
+      "poster": "https://image.tmdb.org/t/p/w500/82hLsn67V9TjgrLOZCFL7247pJd.jpg",
+      "genre": "Drama",
+      "runtime": 98
+    },
+    {
+      "tmdbId": 50011,
+      "title": "Look Back in Anger",
+      "year": 1959,
+      "poster": "https://image.tmdb.org/t/p/w500/TCukFyvrXbIVp9KSt5Yr2HFy77.jpg",
+      "genre": "Drama",
+      "runtime": 98
+    },
+    {
+      "tmdbId": 65015,
+      "title": "Sweetie",
+      "year": 1989,
+      "poster": "https://image.tmdb.org/t/p/w500/25lpQtxNWXzOimnXmbwF0Y0GYej.jpg",
+      "genre": "Drama",
+      "runtime": 100
+    },
+    {
+      "tmdbId": 93540,
+      "title": "Near Death",
+      "year": 1989,
+      "poster": "https://image.tmdb.org/t/p/w500/cB9opY30Wx9hiTptPPqrlhIva7F.jpg",
+      "genre": "Documentary",
+      "runtime": 358
+    },
+    {
+      "tmdbId": 11,
+      "title": "Star Wars",
+      "year": 1977,
+      "poster": "https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+      "genre": "Adventure",
+      "runtime": 121
+    },
+    {
+      "tmdbId": 62,
+      "title": "2001: A Space Odyssey",
+      "year": 1968,
+      "poster": "https://image.tmdb.org/t/p/w500/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
+      "genre": "Science Fiction",
+      "runtime": 149
+    },
+    {
+      "tmdbId": 216,
+      "title": "Ali: Fear Eats the Soul",
+      "year": 1974,
+      "poster": "https://image.tmdb.org/t/p/w500/5Oru4v8tRUN90JUuM6BNDJoetLt.jpg",
+      "genre": "Romance",
+      "runtime": 93
+    },
+    {
+      "tmdbId": 573,
+      "title": "Frenzy",
+      "year": 1972,
+      "poster": "https://image.tmdb.org/t/p/w500/zDUR4PY5kyp2hpvbTvWSGiXVmgg.jpg",
+      "genre": "Crime",
+      "runtime": 116
+    },
+    {
+      "tmdbId": 593,
+      "title": "Solaris",
+      "year": 1972,
+      "poster": "https://image.tmdb.org/t/p/w500/uER8n2iitx8Tek6v0wXeF5lMGXp.jpg",
+      "genre": "Drama",
+      "runtime": 167
+    },
+    {
+      "tmdbId": 661,
+      "title": "The Marriage of Maria Braun",
+      "year": 1979,
+      "poster": "https://image.tmdb.org/t/p/w500/tXjZEzlf4WQwZ4Dt53gXeJVuO7p.jpg",
+      "genre": "Drama",
+      "runtime": 120
+    },
+    {
+      "tmdbId": 829,
+      "title": "Chinatown",
+      "year": 1974,
+      "poster": "https://image.tmdb.org/t/p/w500/kZRSP3FmOcq0xnBulqpUQngJUXY.jpg",
+      "genre": "Crime",
+      "runtime": 130
+    },
+    {
+      "tmdbId": 968,
+      "title": "Dog Day Afternoon",
+      "year": 1975,
+      "poster": "https://image.tmdb.org/t/p/w500/mavrhr0ig2aCRR8d48yaxtD5aMQ.jpg",
+      "genre": "Crime",
+      "runtime": 125
+    },
+    {
+      "tmdbId": 1675,
+      "title": "Day for Night",
+      "year": 1973,
+      "poster": "https://image.tmdb.org/t/p/w500/e5xDrSx6zDEUlMe2dWKGhv88PDZ.jpg",
+      "genre": "Comedy",
+      "runtime": 116
+    },
+    {
+      "tmdbId": 1847,
+      "title": "The Long Goodbye",
+      "year": 1973,
+      "poster": "https://image.tmdb.org/t/p/w500/oBhUK54yBJ0aH6u9zCzSV5iV7OP.jpg",
+      "genre": "Mystery",
+      "runtime": 112
+    },
+    {
+      "tmdbId": 2000,
+      "title": "Aguirre, the Wrath of God",
+      "year": 1972,
+      "poster": "https://image.tmdb.org/t/p/w500/qMk93yMo82svW27FEjudgueBMUL.jpg",
+      "genre": "History",
+      "runtime": 95
+    },
+    {
+      "tmdbId": 5854,
+      "title": "Family Plot",
+      "year": 1976,
+      "poster": "https://image.tmdb.org/t/p/w500/mOg42HWC5ew8D0uCjHUna2ISpeD.jpg",
+      "genre": "Comedy",
+      "runtime": 120
+    },
+    {
+      "tmdbId": 5879,
+      "title": "In the Realm of the Senses",
+      "year": 1976,
+      "poster": "https://image.tmdb.org/t/p/w500/AiFQbgjgSXWPfbi9iIYT39iXWMW.jpg",
+      "genre": "Drama",
+      "runtime": 105
+    },
+    {
+      "tmdbId": 7857,
+      "title": "Amarcord",
+      "year": 1973,
+      "poster": "https://image.tmdb.org/t/p/w500/g3UKJ5LgVpycOxeusBI6IXa40kY.jpg",
+      "genre": "Comedy",
+      "runtime": 123
+    },
+    {
+      "tmdbId": 10238,
+      "title": "Cries and Whispers",
+      "year": 1972,
+      "poster": "https://image.tmdb.org/t/p/w500/a1bMgB09YDvvRN9SitCclUYragr.jpg",
+      "genre": "Drama",
+      "runtime": 95
+    },
+    {
+      "tmdbId": 10310,
+      "title": "The Bitter Tears of Petra von Kant",
+      "year": 1972,
+      "poster": "https://image.tmdb.org/t/p/w500/jeK2Lw0EpM5HVGcqLumU51sQ3Fz.jpg",
+      "genre": "Drama",
+      "runtime": 124
+    },
+    {
+      "tmdbId": 10774,
+      "title": "Network",
+      "year": 1976,
+      "poster": "https://image.tmdb.org/t/p/w500/gZ8hhuVEQ78CLND09trZJ45Eiy8.jpg",
+      "genre": "Drama",
+      "runtime": 122
+    },
+    {
+      "tmdbId": 11035,
+      "title": "Roma",
+      "year": 1972,
+      "poster": "https://image.tmdb.org/t/p/w500/rqK75R3tTz2iWU0AQ6tLz3KMOU1.jpg",
+      "genre": "Comedy",
+      "runtime": 120
+    },
+    {
+      "tmdbId": 11163,
+      "title": "Satyricon",
+      "year": 1969,
+      "poster": "https://image.tmdb.org/t/p/w500/83urUMl04GtwuuGIFpezqzi7n6m.jpg",
+      "genre": "Drama",
+      "runtime": 129
+    },
+    {
+      "tmdbId": 11698,
+      "title": "Stroszek",
+      "year": 1977,
+      "poster": "https://image.tmdb.org/t/p/w500/wDq9ytRxoVpICRcx1BvagmXhd4t.jpg",
+      "genre": "Drama",
+      "runtime": 107
+    },
+    {
+      "tmdbId": 11710,
+      "title": "The Enigma of Kaspar Hauser",
+      "year": 1974,
+      "poster": "https://image.tmdb.org/t/p/w500/z1rBBE8NWociDQClr8y6Onv1X62.jpg",
+      "genre": "Drama",
+      "runtime": 109
+    },
+    {
+      "tmdbId": 11906,
+      "title": "Suspiria",
+      "year": 1977,
+      "poster": "https://image.tmdb.org/t/p/w500/5ya8jTbNZTrCFUx9OwpNBjCivXY.jpg",
+      "genre": "Horror",
+      "runtime": 99
+    },
+    {
+      "tmdbId": 12761,
+      "title": "Autumn Sonata",
+      "year": 1978,
+      "poster": "https://image.tmdb.org/t/p/w500/6beNbtCXv3GkzHkxkGYf38ib7v8.jpg",
+      "genre": "Drama",
+      "runtime": 93
+    },
+    {
+      "tmdbId": 13384,
+      "title": "Kes",
+      "year": 1970,
+      "poster": "https://image.tmdb.org/t/p/w500/r1FMq75irhsQBVGjXhPU4xA9SDo.jpg",
+      "genre": "Drama",
+      "runtime": 111
+    },
+    {
+      "tmdbId": 24998,
+      "title": "Gates of Heaven",
+      "year": 1978,
+      "poster": "https://image.tmdb.org/t/p/w500/2VGQsyCvd2XJKpKZXHF4AWsADoA.jpg",
+      "genre": "Documentary",
+      "runtime": 83
+    },
+    {
+      "tmdbId": 26617,
+      "title": "Five Easy Pieces",
+      "year": 1970,
+      "poster": "https://image.tmdb.org/t/p/w500/xGLkuMWigSPLBvWiENSMlVq56iE.jpg",
+      "genre": "Drama",
+      "runtime": 98
+    },
+    {
+      "tmdbId": 27378,
+      "title": "Heart of Glass",
+      "year": 1976,
+      "poster": "https://image.tmdb.org/t/p/w500/yaYs87zLoXTK1pPKSMfJQRnwxgL.jpg",
+      "genre": "Drama",
+      "runtime": 94
+    },
+    {
+      "tmdbId": 30903,
+      "title": "The Strange Vice of Mrs Wardh",
+      "year": 1971,
+      "poster": "https://image.tmdb.org/t/p/w500/pCReMcdDQh9LD7vA13psgQ8mwDm.jpg",
+      "genre": "Mystery",
+      "runtime": 100
+    },
+    {
+      "tmdbId": 32042,
+      "title": "Night Moves",
+      "year": 1975,
+      "poster": "https://image.tmdb.org/t/p/w500/j3zMCyvhGlpw31BAWLVMEZNPfOX.jpg",
+      "genre": "Crime",
+      "runtime": 100
+    },
+    {
+      "tmdbId": 42206,
+      "title": "In a Year with 13 Moons",
+      "year": 1978,
+      "poster": "https://image.tmdb.org/t/p/w500/kauXmH1RQRNbFBiAKA1EpQZILP3.jpg",
+      "genre": "Drama",
+      "runtime": 124
+    },
+    {
+      "tmdbId": 44012,
+      "title": "Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles",
+      "year": 1976,
+      "poster": "https://image.tmdb.org/t/p/w500/yeL8c24oBUQSdms8f7GmRvx3DIZ.jpg",
+      "genre": "Drama",
+      "runtime": 202
+    },
+    {
+      "tmdbId": 46315,
+      "title": "Valerie and Her Week of Wonders",
+      "year": 1970,
+      "poster": "https://image.tmdb.org/t/p/w500/x9fZJORCZS0DshbxLSdnzyvU94V.jpg",
+      "genre": "Fantasy",
+      "runtime": 73
+    },
+    {
+      "tmdbId": 47850,
+      "title": "Orchestra Rehearsal",
+      "year": 1979,
+      "poster": "https://image.tmdb.org/t/p/w500/rtspkCHNKoDJxJnozzfoPY1qAct.jpg",
+      "genre": "Comedy",
+      "runtime": 72
+    },
+    {
+      "tmdbId": 49361,
+      "title": "Don't Torture a Duckling",
+      "year": 1972,
+      "poster": "https://image.tmdb.org/t/p/w500/ehH1xFUdcLyEeJMBfW5FVeT0Flf.jpg",
+      "genre": "Horror",
+      "runtime": 105
+    },
+    {
+      "tmdbId": 60315,
+      "title": "High School",
+      "year": 1969,
+      "poster": "https://image.tmdb.org/t/p/w500/d3R2ELJJJtsdC722O63BVLmcxSe.jpg",
+      "genre": "Documentary",
+      "runtime": 75
+    },
+    {
+      "tmdbId": 63025,
+      "title": "A Lizard in a Woman's Skin",
+      "year": 1971,
+      "poster": "https://image.tmdb.org/t/p/w500/nxDBBrdybGVJojFXvZysKteY05k.jpg",
+      "genre": "Horror",
+      "runtime": 104
+    },
+    {
+      "tmdbId": 63215,
+      "title": "Toute une nuit",
+      "year": 1982,
+      "poster": "https://image.tmdb.org/t/p/w500/ruXSiqpZCWeq1KBNxAWPC0OrnAt.jpg",
+      "genre": "Drama",
+      "runtime": 90
+    },
+    {
+      "tmdbId": 86814,
+      "title": "News from Home",
+      "year": 1977,
+      "poster": "https://image.tmdb.org/t/p/w500/ze5eUkYzKAKAZlXnoqlAZ0R1XUS.jpg",
+      "genre": "Documentary",
+      "runtime": 89
+    },
+    {
+      "tmdbId": 93669,
+      "title": "The Meetings of Anna",
+      "year": 1978,
+      "poster": "https://image.tmdb.org/t/p/w500/ftiGDxhxmmAQr3FHPBybWlikFQB.jpg",
+      "genre": "Drama",
+      "runtime": 128
+    },
+    {
+      "tmdbId": 90511,
+      "title": "Welfare",
+      "year": 1975,
+      "poster": "https://image.tmdb.org/t/p/w500/1eFgNI93rRSOFZZ9cajF3tMmGPc.jpg",
+      "genre": "Documentary",
+      "runtime": 167
+    },
+    {
+      "tmdbId": 93934,
+      "title": "Je Tu Il Elle",
+      "year": 1974,
+      "poster": "https://image.tmdb.org/t/p/w500/4arnTs41WSLWsnENWdljFKo0pu1.jpg",
+      "genre": "Drama",
+      "runtime": 86
+    },
+    {
+      "tmdbId": 98193,
+      "title": "Death by Hanging",
+      "year": 1968,
+      "poster": "https://image.tmdb.org/t/p/w500/tszrnBe8XACsDxLJjt1rKfFHfHi.jpg",
+      "genre": "Comedy",
+      "runtime": 118
+    },
+    {
+      "tmdbId": 104343,
+      "title": "The Man Who Left His Will on Film",
+      "year": 1970,
+      "poster": "https://image.tmdb.org/t/p/w500/2kCrkdG9r8kXTUotItRPLGzDACf.jpg",
+      "genre": "Drama",
+      "runtime": 94
+    },
+    {
+      "tmdbId": 114116,
+      "title": "Law and Order",
+      "year": 1969,
+      "poster": "https://image.tmdb.org/t/p/w500/t0l8Yyb5H2U3NCeoCjnpVCX8dEd.jpg",
+      "genre": "Documentary",
+      "runtime": 81
+    },
+    {
+      "tmdbId": 114390,
+      "title": "Hospital",
+      "year": 1970,
+      "poster": "https://image.tmdb.org/t/p/w500/9zJVyNQCmJIly2Pet1XOQMpGNzN.jpg",
+      "genre": "Documentary",
+      "runtime": 84
+    },
+    {
+      "tmdbId": 123067,
+      "title": "Two Friends",
+      "year": 1986,
+      "poster": "https://image.tmdb.org/t/p/w500/AuXOXyg6uYFkvQoTB617mq7sQPg.jpg",
+      "genre": "Drama",
+      "runtime": 78
+    },
+    {
+      "tmdbId": 157031,
+      "title": "Spring and Port Wine",
+      "year": 1970,
+      "poster": "https://image.tmdb.org/t/p/w500/kO1McmrXypeixIwXCtjDjIhiIpU.jpg",
+      "genre": "Drama",
+      "runtime": 101
+    },
+    {
+      "tmdbId": 477122,
+      "title": "Notes on the Making of 'Berlin Alexanderplatz'",
+      "year": 1980,
+      "poster": "https://image.tmdb.org/t/p/w500/uHKDaMfW0vXRDMjRDfWHldNwSok.jpg",
+      "genre": "Documentary",
+      "runtime": 44
+    },
+    {
+      "tmdbId": 941152,
+      "title": "Boy",
+      "year": 1969,
+      "poster": "https://image.tmdb.org/t/p/w500/jX7x55A1DAsiigkytvNaztRzch6.jpg",
+      "genre": "Drama",
+      "runtime": 8
+    },
+    {
+      "tmdbId": 43361,
+      "title": "The White Sheik",
+      "year": 1952,
+      "poster": "https://image.tmdb.org/t/p/w500/kyO9tTwiD4zsQKqMicP2AVxglww.jpg",
+      "genre": "Comedy",
+      "runtime": 83
+    },
+    {
+      "tmdbId": 44334,
+      "title": "The Tales of Hoffmann",
+      "year": 1951,
+      "poster": "https://image.tmdb.org/t/p/w500/3rqMnYSLjFa9OYwoLhXLVacwhQ7.jpg",
+      "genre": "Music",
+      "runtime": 127
+    },
+    {
+      "tmdbId": 45218,
+      "title": "The River",
+      "year": 1951,
+      "poster": "https://image.tmdb.org/t/p/w500/rC1k4xkffb5sdQlktiP2TyiBxT2.jpg",
+      "genre": "Drama",
+      "runtime": 99
+    },
+    {
+      "tmdbId": 46919,
+      "title": "Daisies",
+      "year": 1966,
+      "poster": "https://image.tmdb.org/t/p/w500/8sxMhdn3i1Pn8OlGCBBjr9rjP1y.jpg",
+      "genre": "Comedy",
+      "runtime": 76
+    },
+    {
+      "tmdbId": 47069,
+      "title": "Up the Junction",
+      "year": 1968,
+      "poster": "https://image.tmdb.org/t/p/w500/fOQqU0xdqx1zWRrsGwcLzcxCKi3.jpg",
+      "genre": "Drama",
+      "runtime": 119
+    },
+    {
+      "tmdbId": 50030,
+      "title": "La Ronde",
+      "year": 1950,
+      "poster": "https://image.tmdb.org/t/p/w500/jMcF0XAD66n1abW1ZZhtrD0AsKN.jpg",
+      "genre": "Romance",
+      "runtime": 95
+    },
+    {
+      "tmdbId": 67217,
+      "title": "Signs of Life",
+      "year": 1968,
+      "poster": "https://image.tmdb.org/t/p/w500/kPxzosD2y4duUZMwtPOkJuYYdB6.jpg",
+      "genre": "Drama",
+      "runtime": 91
+    },
+    {
+      "tmdbId": 73492,
+      "title": "Outrage",
+      "year": 1950,
+      "poster": "https://image.tmdb.org/t/p/w500/2zGupaPiJBU3iR9WgY1kMpYalY2.jpg",
+      "genre": "Drama",
+      "runtime": 75
+    },
+    {
+      "tmdbId": 74122,
+      "title": "The Bigamist",
+      "year": 1953,
+      "poster": "https://image.tmdb.org/t/p/w500/iht6xFLrObIoQvvuC3XOmnocc9u.jpg",
+      "genre": "Drama",
+      "runtime": 80
+    },
+    {
+      "tmdbId": 76000,
+      "title": "The L-Shaped Room",
+      "year": 1962,
+      "poster": "https://image.tmdb.org/t/p/w500/ie8EArW3CjO2gLMYtJEMLU4CAQN.jpg",
+      "genre": "Drama",
+      "runtime": 126
+    },
+    {
+      "tmdbId": 76072,
+      "title": "Poor Cow",
+      "year": 1967,
+      "poster": "https://image.tmdb.org/t/p/w500/w7ANsKsrbphsx21hGVRGZl1tydj.jpg",
+      "genre": "Drama",
+      "runtime": 101
+    },
+    {
+      "tmdbId": 83670,
+      "title": "Hard, Fast and Beautiful",
+      "year": 1951,
+      "poster": "https://image.tmdb.org/t/p/w500/cQwbEqCiluAyS61CBZDqw23FP3M.jpg",
+      "genre": "Drama",
+      "runtime": 78
+    },
+    {
+      "tmdbId": 105348,
+      "title": "The Party and the Guests",
+      "year": 1966,
+      "poster": "https://image.tmdb.org/t/p/w500/8mYG2PpBwI1fkTC2x81VpCFYtSj.jpg",
+      "genre": "Drama",
+      "runtime": 70
+    },
+    {
+      "tmdbId": 106124,
+      "title": "Pearls of the Deep",
+      "year": 1966,
+      "poster": "https://image.tmdb.org/t/p/w500/spwskcYw4Uid4y2TyyN7CCPgn3F.jpg",
+      "genre": "Comedy",
+      "runtime": 107
+    },
+    {
+      "tmdbId": 109276,
+      "title": "Night and Fog in Japan",
+      "year": 1960,
+      "poster": "https://image.tmdb.org/t/p/w500/aISevPUvqMcElqyL4nilpkxusSg.jpg",
+      "genre": "Drama",
+      "runtime": 107
+    },
+    {
+      "tmdbId": 16093,
+      "title": "Carnival of Souls",
+      "year": 1962,
+      "poster": "https://image.tmdb.org/t/p/w500/9ddPGH7kMe81xznwIKCt17VFUPi.jpg",
+      "genre": "Horror",
+      "runtime": 78
+    },
+    {
+      "tmdbId": 15401,
+      "title": "Captain Kidd",
+      "year": 1945,
+      "poster": "https://image.tmdb.org/t/p/w500/o6Ag6fl5wRX1lwVXq5fP6lHYpsN.jpg",
+      "genre": "Action",
+      "runtime": 89
+    },
+    {
+      "tmdbId": 18700,
+      "title": "Till the Clouds Roll By",
+      "year": 1946,
+      "poster": "https://image.tmdb.org/t/p/w500/bHy3xEV2wmeRQWVE8Ko3HdWxt97.jpg",
+      "genre": "Music",
+      "runtime": 136
+    },
+    {
+      "tmdbId": 19236,
+      "title": "Santa Sangre",
+      "year": 1989,
+      "poster": "https://image.tmdb.org/t/p/w500/6VTra0NR4ygRnq3bD922I4rU0Mq.jpg",
+      "genre": "Thriller",
+      "runtime": 122
+    },
+    {
+      "tmdbId": 398978,
+      "title": "The Irishman",
+      "year": 2019,
+      "poster": "https://image.tmdb.org/t/p/w500/mbm8k3GFhXS0ROd9AD1gqYbIFbM.jpg",
+      "genre": "Crime",
+      "runtime": 209
+    },
+    {
+      "tmdbId": 396535,
+      "title": "Train to Busan",
+      "year": 2016,
+      "poster": "https://image.tmdb.org/t/p/w500/vNVFt6dtcqnI7hqa6LFBUibuFiw.jpg",
+      "genre": "Horror",
+      "runtime": 118
+    },
+    {
+      "tmdbId": 666277,
+      "title": "Past Lives",
+      "year": 2023,
+      "poster": "https://image.tmdb.org/t/p/w500/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+      "genre": "Drama",
+      "runtime": 106
+    },
+    {
+      "tmdbId": 308084,
+      "title": "Tangerine",
+      "year": 2015,
+      "poster": "https://image.tmdb.org/t/p/w500/EKLR5c61XQzBTeMokFrmS3kdt8.jpg",
+      "genre": "Comedy",
+      "runtime": 87
+    },
+    {
+      "tmdbId": 496243,
+      "title": "Parasite",
+      "year": 2019,
+      "poster": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "genre": "Comedy",
+      "runtime": 133
+    },
+    {
+      "tmdbId": 838,
+      "title": "American Graffiti",
+      "year": 1973,
+      "poster": "https://image.tmdb.org/t/p/w500/1tjLivPad2PX8FAzWko7FPIb8d2.jpg",
+      "genre": "Comedy",
+      "runtime": 110
+    },
+    {
+      "tmdbId": 9571,
+      "title": "Dazed and Confused",
+      "year": 1993,
+      "poster": "https://image.tmdb.org/t/p/w500/msG9awbLhVZwv1Eh9Ge7SofMexW.jpg",
+      "genre": "Comedy",
+      "runtime": 102
+    },
+    {
+      "tmdbId": 600583,
+      "title": "The Power of the Dog",
+      "year": 2021,
+      "poster": "https://image.tmdb.org/t/p/w500/kEy48iCzGnp0ao1cZbNeWR6yIhC.jpg",
+      "genre": "Drama",
+      "runtime": 127
+    },
+    {
+      "tmdbId": 458723,
+      "title": "Us",
+      "year": 2019,
+      "poster": "https://image.tmdb.org/t/p/w500/ux2dU1jQ2ACIMShzB3yP93Udpzc.jpg",
+      "genre": "Horror",
+      "runtime": 116
+    },
+    {
+      "tmdbId": 581859,
+      "title": "Da 5 Bloods",
+      "year": 2020,
+      "poster": "https://image.tmdb.org/t/p/w500/yx4cp1ljJMDSFeEex0Zjv45b55E.jpg",
+      "genre": "War",
+      "runtime": 155
+    },
+    {
+      "tmdbId": 283587,
+      "title": "Beasts of No Nation",
+      "year": 2015,
+      "poster": "https://image.tmdb.org/t/p/w500/1D4vcJmJc58WXarpRtwgd2do9Rg.jpg",
+      "genre": "Drama",
+      "runtime": 137
+    },
+    {
+      "tmdbId": 49046,
+      "title": "All Quiet on the Western Front",
+      "year": 2022,
+      "poster": "https://image.tmdb.org/t/p/w500/2IRjbi9cADuDMKmHdLK7LaqQDKA.jpg",
+      "genre": "War",
+      "runtime": 147
+    },
+    {
+      "tmdbId": 332562,
+      "title": "A Star Is Born",
+      "year": 2018,
+      "poster": "https://image.tmdb.org/t/p/w500/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg",
+      "genre": "Music",
+      "runtime": 136
+    },
+    {
+      "tmdbId": 537996,
+      "title": "The Ballad of Buster Scruggs",
+      "year": 2018,
+      "poster": "https://image.tmdb.org/t/p/w500/voxl654m7p36y8FLu8oQD7dfwwK.jpg",
+      "genre": "Western",
+      "runtime": 132
+    }
+  ]
+}

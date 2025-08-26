@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Action Chase Thrillers",
+      "url_path": "action-chase-thrillers",
+      "description": "Action Chase Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Action Chase Thrillers collection"
+    },
+    {
+      "name": "Historical Survival Thrillers (Part 1)",
+      "url_path": "historical-survival-thrillers-part-1-",
+      "description": "Historical Survival Thrillers (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Historical Survival Thrillers (Part 1) collection"
+    },
+    {
+      "name": "Cold War Double Agents (Part 1)",
+      "url_path": "cold-war-double-agents-part-1-",
+      "description": "Cold War Double Agents (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Cold War Double Agents (Part 1) collection"
+    },
+    {
+      "name": "Hidden Identity Thrillers (Part 2)",
+      "url_path": "hidden-identity-thrillers-part-2-",
+      "description": "Hidden Identity Thrillers (Part 2) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Hidden Identity Thrillers (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

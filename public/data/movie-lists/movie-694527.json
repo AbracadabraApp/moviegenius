@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Global Healthcare Innovation",
+      "url_path": "global-healthcare-innovation",
+      "description": "Global Healthcare Innovation collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Healthcare Innovation collection"
+    },
+    {
+      "name": "Public Health Crisis Films",
+      "url_path": "public-health-crisis-films",
+      "description": "Public Health Crisis Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Public Health Crisis Films collection"
+    },
+    {
+      "name": "Concert Preparation Chronicles (Part 2)",
+      "url_path": "concert-preparation-chronicles-part-2-",
+      "description": "Concert Preparation Chronicles (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Concert Preparation Chronicles (Part 2) collection"
+    },
+    {
+      "name": "Tour Documentary Films",
+      "url_path": "tour-documentary-films",
+      "description": "Tour Documentary Films collection",
+      "category": "music",
+      "connectionReason": "Part of Tour Documentary Films collection"
+    },
+    {
+      "name": "Festival Concert Films",
+      "url_path": "festival-concert-films",
+      "description": "Festival Concert Films collection",
+      "category": "music",
+      "connectionReason": "Part of Festival Concert Films collection"
+    }
+  ],
+  "totalLists": 5
+}

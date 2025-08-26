@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Twin Horror Films",
+      "url_path": "twin-horror-films",
+      "description": "Twin Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Twin Horror Films collection"
+    },
+    {
+      "name": "Identity Horror",
+      "url_path": "identity-horror",
+      "description": "Identity Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Identity Horror collection"
+    },
+    {
+      "name": "Gothic Family Curse (Part 3)",
+      "url_path": "gothic-family-curse-part-3-",
+      "description": "Gothic Family Curse (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Gothic Family Curse (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

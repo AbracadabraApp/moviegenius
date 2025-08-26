@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Live-Action Animal Adventures",
+      "url_path": "live-action-animal-adventures",
+      "description": "Live-Action Animal Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Live-Action Animal Adventures collection"
+    },
+    {
+      "name": "Action Comedy Sequels",
+      "url_path": "action-comedy-sequels",
+      "description": "Action Comedy Sequels collection",
+      "category": "comedy",
+      "connectionReason": "Part of Action Comedy Sequels collection"
+    },
+    {
+      "name": "Pet Adventure Comedies (Part 1)",
+      "url_path": "pet-adventure-comedies-part-1-",
+      "description": "Pet Adventure Comedies (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Pet Adventure Comedies (Part 1) collection"
+    },
+    {
+      "name": "Spy Movie Parodies (Part 1)",
+      "url_path": "spy-movie-parodies-part-1-",
+      "description": "Spy Movie Parodies (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Spy Movie Parodies (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

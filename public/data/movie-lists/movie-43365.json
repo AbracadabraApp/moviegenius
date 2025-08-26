@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "American Identity Musicals",
+      "url_path": "american-identity-musicals",
+      "description": "American Identity Musicals collection",
+      "category": "music",
+      "connectionReason": "Part of American Identity Musicals collection"
+    },
+    {
+      "name": "Classical Composer Biopics",
+      "url_path": "classical-composer-biopics",
+      "description": "Classical Composer Biopics collection",
+      "category": "music",
+      "connectionReason": "Part of Classical Composer Biopics collection"
+    },
+    {
+      "name": "Military Musical Romances",
+      "url_path": "military-musical-romances",
+      "description": "Military Musical Romances collection",
+      "category": "music",
+      "connectionReason": "Part of Military Musical Romances collection"
+    },
+    {
+      "name": "Historical Period Musicals [OVERSIZED]",
+      "url_path": "historical-period-musicals-oversized-",
+      "description": "Historical Period Musicals [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Historical Period Musicals [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

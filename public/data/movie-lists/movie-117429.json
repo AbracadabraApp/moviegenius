@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "True Crime Horror",
+      "url_path": "true-crime-horror",
+      "description": "True Crime Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of True Crime Horror collection"
+    },
+    {
+      "name": "Historical Horror Mashup (Part 2)",
+      "url_path": "historical-horror-mashup-part-2-",
+      "description": "Historical Horror Mashup (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Historical Horror Mashup (Part 2) collection"
+    },
+    {
+      "name": "Noir Detective Horror (Part 1)",
+      "url_path": "noir-detective-horror-part-1-",
+      "description": "Noir Detective Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Noir Detective Horror (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

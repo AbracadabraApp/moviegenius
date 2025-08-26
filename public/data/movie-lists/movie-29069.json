@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Dream-Based Horror",
+      "url_path": "dream-based-horror",
+      "description": "Dream-Based Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Dream-Based Horror collection"
+    },
+    {
+      "name": "Romantic Vampire Films",
+      "url_path": "romantic-vampire-films",
+      "description": "Romantic Vampire Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Romantic Vampire Films collection"
+    },
+    {
+      "name": "Rural Isolation Horror",
+      "url_path": "rural-isolation-horror",
+      "description": "Rural Isolation Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Rural Isolation Horror collection"
+    }
+  ],
+  "totalLists": 3
+}

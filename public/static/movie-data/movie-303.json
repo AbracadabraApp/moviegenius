@@ -1,0 +1,125 @@
+{
+  "movieId": "f604937d-4da8-47b3-a69a-6f446dfdd59c",
+  "tmdbId": 303,
+  "title": "Notorious",
+  "year": 1946,
+  "analysis": {
+    "keyElements": {
+      "director": "Alfred Hitchcock",
+      "writers": [
+        "Ben Hecht"
+      ],
+      "stars": [
+        "Ingrid Bergman",
+        "Cary Grant",
+        "Claude Rains"
+      ],
+      "genre": "Romantic Thriller",
+      "releaseYear": 1946,
+      "cinematographer": "Ted Tetzlaff",
+      "composer": "Roy Webb",
+      "studio": "RKO Radio Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of romance and espionage with career-best performances from Bergman and Grant",
+        "Hitchcock at his most sophisticated, delivering both emotional depth and nail-biting suspense",
+        "Revolutionary cinematography and staging that influenced decades of thriller filmmaking"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Casablanca",
+        "year": 1942,
+        "description": "Similar themes of love versus duty in wartime setting"
+      },
+      {
+        "title": "North by Northwest",
+        "year": 1959,
+        "description": "Hitchcock's later masterpiece of romantic espionage"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Post-WWII Cinema",
+        "category": "Historical Context",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Hitchcock's Visual Techniques",
+        "category": "Filmmaking",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Alfred Hitchcock",
+      "personId": 1111,
+      "slug": "/person/1111",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Ben Hecht",
+        "personId": 3307,
+        "slug": "/person/3307",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Ingrid Bergman",
+        "personId": 14992,
+        "slug": "/person/14992",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Cary Grant",
+        "personId": 5154,
+        "slug": "/person/5154",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Claude Rains",
+        "personId": 6508,
+        "slug": "/person/6508",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Ted Tetzlaff",
+      "personId": 35761,
+      "slug": "/person/35761",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Roy Webb",
+      "personId": 32565,
+      "slug": "/person/32565",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:22.359Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

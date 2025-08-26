@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Environmental Travel Films",
+      "url_path": "environmental-travel-films",
+      "description": "Environmental Travel Films collection",
+      "category": "adventure",
+      "connectionReason": "Part of Environmental Travel Films collection"
+    },
+    {
+      "name": "African Wilderness Survival",
+      "url_path": "african-wilderness-survival",
+      "description": "African Wilderness Survival collection",
+      "category": "adventure",
+      "connectionReason": "Part of African Wilderness Survival collection"
+    },
+    {
+      "name": "Lost Treasure Recovery",
+      "url_path": "lost-treasure-recovery",
+      "description": "Lost Treasure Recovery collection",
+      "category": "adventure",
+      "connectionReason": "Part of Lost Treasure Recovery collection"
+    },
+    {
+      "name": "Historical Conspiracy Adventures",
+      "url_path": "historical-conspiracy-adventures",
+      "description": "Historical Conspiracy Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Historical Conspiracy Adventures collection"
+    }
+  ],
+  "totalLists": 4
+}

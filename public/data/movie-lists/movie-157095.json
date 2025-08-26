@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Environmental Travel Films",
+      "url_path": "environmental-travel-films",
+      "description": "Environmental Travel Films collection",
+      "category": "adventure",
+      "connectionReason": "Part of Environmental Travel Films collection"
+    },
+    {
+      "name": "Pacific Islands Romance",
+      "url_path": "pacific-islands-romance",
+      "description": "Pacific Islands Romance collection",
+      "category": "adventure",
+      "connectionReason": "Part of Pacific Islands Romance collection"
+    },
+    {
+      "name": "Action and Adventure",
+      "url_path": "action-and-adventure",
+      "description": "Action and Adventure collection",
+      "category": "adventure",
+      "connectionReason": "Part of Action and Adventure collection"
+    },
+    {
+      "name": "Indigenous Cultural Documentation",
+      "url_path": "indigenous-cultural-documentation",
+      "description": "Indigenous Cultural Documentation collection",
+      "category": "documentary",
+      "connectionReason": "Part of Indigenous Cultural Documentation collection"
+    },
+    {
+      "name": "Visual Nature Symphonies (Part 3)",
+      "url_path": "visual-nature-symphonies-part-3-",
+      "description": "Visual Nature Symphonies (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Visual Nature Symphonies (Part 3) collection"
+    },
+    {
+      "name": "Global Cultural Meditations (Part 6)",
+      "url_path": "global-cultural-meditations-part-6-",
+      "description": "Global Cultural Meditations (Part 6) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Cultural Meditations (Part 6) collection"
+    }
+  ],
+  "totalLists": 6
+}

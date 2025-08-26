@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "WWII Espionage Thrillers",
+      "url_path": "wwii-espionage-thrillers",
+      "description": "WWII Espionage Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of WWII Espionage Thrillers collection"
+    },
+    {
+      "name": "Historical Assassination Plots",
+      "url_path": "historical-assassination-plots",
+      "description": "Historical Assassination Plots collection",
+      "category": "thriller",
+      "connectionReason": "Part of Historical Assassination Plots collection"
+    },
+    {
+      "name": "Military Justice Conspiracy",
+      "url_path": "military-justice-conspiracy",
+      "description": "Military Justice Conspiracy collection",
+      "category": "thriller",
+      "connectionReason": "Part of Military Justice Conspiracy collection"
+    }
+  ],
+  "totalLists": 3
+}

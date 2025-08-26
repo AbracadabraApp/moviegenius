@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Veteran PTSD Crime",
+      "url_path": "veteran-ptsd-crime",
+      "description": "Veteran PTSD Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Veteran PTSD Crime collection"
+    },
+    {
+      "name": "Moral Vigilante Descents",
+      "url_path": "moral-vigilante-descents",
+      "description": "Moral Vigilante Descents collection",
+      "category": "crime",
+      "connectionReason": "Part of Moral Vigilante Descents collection"
+    },
+    {
+      "name": "British Crime Films (Part 2)",
+      "url_path": "british-crime-films-part-2-",
+      "description": "British Crime Films (Part 2) collection",
+      "category": "crime",
+      "connectionReason": "Part of British Crime Films (Part 2) collection"
+    },
+    {
+      "name": "Urban Crime Thrillers (Part 1)",
+      "url_path": "urban-crime-thrillers-part-1-",
+      "description": "Urban Crime Thrillers (Part 1) collection",
+      "category": "crime",
+      "connectionReason": "Part of Urban Crime Thrillers (Part 1) collection"
+    },
+    {
+      "name": "Urban Decay Horror",
+      "url_path": "urban-decay-horror",
+      "description": "Urban Decay Horror collection",
+      "category": "thriller",
+      "connectionReason": "Part of Urban Decay Horror collection"
+    },
+    {
+      "name": "Civilian Vigilante Justice",
+      "url_path": "civilian-vigilante-justice",
+      "description": "Civilian Vigilante Justice collection",
+      "category": "thriller",
+      "connectionReason": "Part of Civilian Vigilante Justice collection"
+    },
+    {
+      "name": "British Gangland Violence",
+      "url_path": "british-gangland-violence",
+      "description": "British Gangland Violence collection",
+      "category": "thriller",
+      "connectionReason": "Part of British Gangland Violence collection"
+    }
+  ],
+  "totalLists": 7
+}

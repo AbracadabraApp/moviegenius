@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "War Comedy Films",
+      "url_path": "war-comedy-films",
+      "description": "War Comedy Films collection",
+      "category": "war",
+      "connectionReason": "Part of War Comedy Films collection"
+    },
+    {
+      "name": "POW Escape Films",
+      "url_path": "pow-escape-films",
+      "description": "POW Escape Films collection",
+      "category": "war",
+      "connectionReason": "Part of POW Escape Films collection"
+    },
+    {
+      "name": "True Military Stories [OVERSIZED]",
+      "url_path": "true-military-stories-oversized-",
+      "description": "True Military Stories [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of True Military Stories [OVERSIZED] collection"
+    },
+    {
+      "name": "Military Deception Operations [OVERSIZED]",
+      "url_path": "military-deception-operations-oversized-",
+      "description": "Military Deception Operations [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of Military Deception Operations [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

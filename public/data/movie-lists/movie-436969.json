@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Action Comedy Sequels",
+      "url_path": "action-comedy-sequels",
+      "description": "Action Comedy Sequels collection",
+      "category": "comedy",
+      "connectionReason": "Part of Action Comedy Sequels collection"
+    },
+    {
+      "name": "Comic Industry Adaptations",
+      "url_path": "comic-industry-adaptations",
+      "description": "Comic Industry Adaptations collection",
+      "category": "comedy",
+      "connectionReason": "Part of Comic Industry Adaptations collection"
+    },
+    {
+      "name": "Superhero Movie Parodies",
+      "url_path": "superhero-movie-parodies",
+      "description": "Superhero Movie Parodies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Superhero Movie Parodies collection"
+    },
+    {
+      "name": "Comedy-Forward Superhero Films",
+      "url_path": "comedy-forward-superhero-films",
+      "description": "Comedy-Forward Superhero Films collection",
+      "category": "superhero",
+      "connectionReason": "Part of Comedy-Forward Superhero Films collection"
+    },
+    {
+      "name": "Anti-Hero Protagonists",
+      "url_path": "anti-hero-protagonists",
+      "description": "Anti-Hero Protagonists collection",
+      "category": "superhero",
+      "connectionReason": "Part of Anti-Hero Protagonists collection"
+    },
+    {
+      "name": "Redemption Arc Heroes",
+      "url_path": "redemption-arc-heroes",
+      "description": "Redemption Arc Heroes collection",
+      "category": "superhero",
+      "connectionReason": "Part of Redemption Arc Heroes collection"
+    },
+    {
+      "name": "Found Family Heroes",
+      "url_path": "found-family-heroes",
+      "description": "Found Family Heroes collection",
+      "category": "superhero",
+      "connectionReason": "Part of Found Family Heroes collection"
+    }
+  ],
+  "totalLists": 7
+}

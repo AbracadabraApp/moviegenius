@@ -1,0 +1,161 @@
+{
+  "movieId": "90720bee-bbcc-4e0c-9d63-d0e7d40c6312",
+  "tmdbId": 299,
+  "title": "Ocean's Eleven",
+  "year": 1960,
+  "analysis": {
+    "keyElements": {
+      "director": "Lewis Milestone",
+      "writers": [
+        "Harry Brown",
+        "Charles Lederer"
+      ],
+      "stars": [
+        "Frank Sinatra",
+        "Dean Martin",
+        "Sammy Davis Jr.",
+        "Peter Lawford",
+        "Angie Dickinson"
+      ],
+      "genre": "Crime Comedy",
+      "releaseYear": 1960,
+      "cinematographer": "William H. Daniels",
+      "composer": "Nelson Riddle",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Quintessential Rat Pack showcase that captures the cool swagger of 1960s Las Vegas",
+        "Influential heist film template that spawned countless imitators and the successful 2001 remake",
+        "Historical snapshot of Vegas casino culture during its golden age"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Italian Job",
+        "year": 1969,
+        "description": "Similarly stylish heist film that captured its era's spirit"
+      },
+      {
+        "title": "Ocean's Eleven",
+        "year": 2001,
+        "description": "Successful remake that updated the concept for modern audiences"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "The Rat Pack Era",
+        "category": "cultural_history",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Evolution of the Heist Film",
+        "category": "film_history",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "1960s Las Vegas",
+        "category": "historical_context",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Lewis Milestone",
+      "personId": 22436,
+      "slug": "/person/22436",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Harry Brown",
+        "personId": 13756,
+        "slug": "/person/13756",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Charles Lederer",
+        "personId": 5510,
+        "slug": "/person/5510",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "George Clayton Johnson",
+        "personId": 12225,
+        "slug": "/person/12225",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Frank Sinatra",
+        "personId": 11491,
+        "slug": "/person/11491",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Dean Martin",
+        "personId": 8288,
+        "slug": "/person/8288",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sammy Davis Jr.",
+        "personId": 33044,
+        "slug": "/person/33044",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Peter Lawford",
+        "personId": 29391,
+        "slug": "/person/29391",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Angie Dickinson",
+        "personId": 1939,
+        "slug": "/person/1939",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "William H. Daniels",
+      "personId": 38485,
+      "slug": "/person/38485",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Nelson Riddle",
+      "personId": 27357,
+      "slug": "/person/27357",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:21.775Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "movieId": "7d759c59-121b-4325-9390-9bf57677650f",
+  "tmdbId": 98,
+  "title": "Gladiator",
+  "year": 2000,
+  "analysis": {
+    "keyElements": {
+      "director": "Ridley Scott",
+      "writers": [
+        "David Franzoni",
+        "John Logan",
+        "William Nicholson"
+      ],
+      "stars": [
+        "Russell Crowe",
+        "Joaquin Phoenix",
+        "Connie Nielsen",
+        "Oliver Reed"
+      ],
+      "genre": "Historical Epic",
+      "releaseYear": 2000,
+      "cinematographer": "John Mathieson",
+      "composer": "Hans Zimmer",
+      "studio": "DreamWorks Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of personal revenge story with epic historical scale",
+        "Career-defining performance from Russell Crowe as Maximus",
+        "Revitalized the sword-and-sandal epic genre for modern audiences"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Spartacus",
+        "year": 1960,
+        "description": "The definitive classical slave revolt epic that influenced Gladiator's themes of freedom and rebellion"
+      },
+      {
+        "title": "Braveheart",
+        "year": 1995,
+        "description": "Similar themes of personal revenge against corrupt authority in historical setting"
+      },
+      {
+        "title": "Kingdom of Heaven",
+        "year": 2005,
+        "description": "Ridley Scott's spiritual successor exploring honor and faith in historical context"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Roman Politics and Power",
+        "category": "Historical Context",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Visual Effects in Historical Epics",
+        "category": "Film Technology",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "Character Development in Action Films",
+        "category": "Narrative",
+        "difficulty": "beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Ridley Scott",
+      "personId": 31299,
+      "slug": "/person/31299",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "David Franzoni",
+        "personId": 7800,
+        "slug": "/person/7800",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "John Logan",
+        "personId": 18406,
+        "slug": "/person/18406",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "William Nicholson",
+        "personId": 38571,
+        "slug": "/person/38571",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Russell Crowe",
+        "personId": 32669,
+        "slug": "/person/32669",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Joaquin Phoenix",
+        "personId": 17682,
+        "slug": "/person/17682",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Connie Nielsen",
+        "personId": 6729,
+        "slug": "/person/6729",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Oliver Reed",
+        "personId": 28074,
+        "slug": "/person/28074",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "John Mathieson",
+      "personId": 18446,
+      "slug": "/person/18446",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Hans Zimmer",
+      "personId": 13632,
+      "slug": "/person/13632",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:04:59.075Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

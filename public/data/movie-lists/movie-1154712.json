@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "City Symphony Films",
+      "url_path": "city-symphony-films",
+      "description": "City Symphony Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of City Symphony Films collection"
+    },
+    {
+      "name": "Urban Life Studies",
+      "url_path": "urban-life-studies",
+      "description": "Urban Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Urban Life Studies collection"
+    },
+    {
+      "name": "Visual Nature Symphonies (Part 3)",
+      "url_path": "visual-nature-symphonies-part-3-",
+      "description": "Visual Nature Symphonies (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Visual Nature Symphonies (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

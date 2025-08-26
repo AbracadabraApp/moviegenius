@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Educational Science Animation",
+      "url_path": "educational-science-animation",
+      "description": "Educational Science Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Educational Science Animation collection"
+    },
+    {
+      "name": "Fairy Tale Deconstructions",
+      "url_path": "fairy-tale-deconstructions",
+      "description": "Fairy Tale Deconstructions collection",
+      "category": "animation",
+      "connectionReason": "Part of Fairy Tale Deconstructions collection"
+    },
+    {
+      "name": "Literary Adaptations",
+      "url_path": "literary-adaptations",
+      "description": "Literary Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Literary Adaptations collection"
+    }
+  ],
+  "totalLists": 3
+}

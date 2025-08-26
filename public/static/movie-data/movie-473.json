@@ -1,0 +1,135 @@
+{
+  "movieId": "c750e661-0b0c-46c5-8eca-c142d40de1f9",
+  "tmdbId": 473,
+  "title": "Pi",
+  "year": 1998,
+  "analysis": {
+    "keyElements": {
+      "director": "Darren Aronofsky",
+      "writers": [
+        "Darren Aronofsky",
+        "Sean Gullette"
+      ],
+      "stars": [
+        "Sean Gullette",
+        "Mark Margolis",
+        "Ben Shenkman"
+      ],
+      "genre": "Psychological Thriller",
+      "releaseYear": 1998,
+      "cinematographer": "Matthew Libatique",
+      "composer": "Clint Mansell",
+      "studio": "Artisan Entertainment"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking debut that established Aronofsky's distinctive visual style",
+        "Masterful exploration of obsession and mathematical paranoia",
+        "Innovative low-budget filmmaking that proves creativity trumps resources"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Requiem for a Dream",
+        "year": 2000,
+        "description": "Aronofsky's follow-up film, expanding on themes of obsession and psychological deterioration"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Mathematics in Film",
+        "category": "Theme Analysis",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Low-Budget Filmmaking",
+        "category": "Production",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Darren Aronofsky",
+      "personId": 7543,
+      "slug": "/person/7543",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Darren Aronofsky",
+        "personId": 7543,
+        "slug": "/person/7543",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sean Gullette",
+        "personId": 33468,
+        "slug": "/person/33468",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Eric Watson",
+        "personId": 10474,
+        "slug": "/person/10474",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Sean Gullette",
+        "personId": 33468,
+        "slug": "/person/33468",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Mark Margolis",
+        "personId": 24367,
+        "slug": "/person/24367",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ben Shenkman",
+        "personId": 3425,
+        "slug": "/person/3425",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Matthew Libatique",
+      "personId": 24978,
+      "slug": "/person/24978",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Clint Mansell",
+      "personId": 6611,
+      "slug": "/person/6611",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:40.690Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

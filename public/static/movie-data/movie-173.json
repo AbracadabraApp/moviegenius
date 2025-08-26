@@ -1,0 +1,141 @@
+{
+  "movieId": "50680bb3-3af7-4f10-9a7a-ca92824731ed",
+  "tmdbId": 173,
+  "title": "20,000 Leagues Under the Sea",
+  "year": 1954,
+  "analysis": {
+    "keyElements": {
+      "director": "Richard Fleischer",
+      "writers": [
+        "Earl Felton",
+        "Jules Verne"
+      ],
+      "stars": [
+        "Kirk Douglas",
+        "James Mason",
+        "Paul Lukas",
+        "Peter Lorre"
+      ],
+      "genre": "Adventure",
+      "releaseYear": 1954,
+      "cinematographer": "Franz Planer",
+      "composer": "Paul Smith",
+      "studio": "Walt Disney Productions"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "James Mason's commanding performance as Captain Nemo sets the standard for complex antiheroes",
+        "Groundbreaking underwater cinematography that still impresses today",
+        "Masterful blend of adventure, science fiction, and social commentary that influenced generations of filmmakers"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Abyss",
+        "year": 1989,
+        "description": "Spiritual successor in underwater filmmaking innovation"
+      },
+      {
+        "title": "Jaws",
+        "year": 1975,
+        "description": "Influenced by its practical underwater effects and creature design"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Practical Effects in Underwater Filming",
+        "category": "Technical",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Cold War Science Fiction",
+        "category": "Historical",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Richard Fleischer",
+      "personId": 30993,
+      "slug": "/person/30993",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Earl Felton",
+        "personId": 9411,
+        "slug": "/person/9411",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jules Verne",
+        "personId": 19612,
+        "slug": "/person/19612",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Kirk Douglas",
+        "personId": 21172,
+        "slug": "/person/21172",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "James Mason",
+        "personId": 15875,
+        "slug": "/person/15875",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Paul Lukas",
+        "personId": 28903,
+        "slug": "/person/28903",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Peter Lorre",
+        "personId": 29401,
+        "slug": "/person/29401",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Franz Planer",
+      "personId": 11548,
+      "slug": "/person/11548",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Paul Smith",
+      "personId": 28992,
+      "slug": "/person/28992",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:01.457Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

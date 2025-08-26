@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Nuclear Crisis Thrillers",
+      "url_path": "nuclear-crisis-thrillers",
+      "description": "Nuclear Crisis Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Nuclear Crisis Thrillers collection"
+    },
+    {
+      "name": "International Terrorism Thrillers",
+      "url_path": "international-terrorism-thrillers",
+      "description": "International Terrorism Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of International Terrorism Thrillers collection"
+    },
+    {
+      "name": "Government Conspiracy Thrillers",
+      "url_path": "government-conspiracy-thrillers",
+      "description": "Government Conspiracy Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Government Conspiracy Thrillers collection"
+    }
+  ],
+  "totalLists": 3
+}

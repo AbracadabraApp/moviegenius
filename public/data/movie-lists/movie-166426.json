@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Supernatural Animal Tales",
+      "url_path": "supernatural-animal-tales",
+      "description": "Supernatural Animal Tales collection",
+      "category": "adventure",
+      "connectionReason": "Part of Supernatural Animal Tales collection"
+    },
+    {
+      "name": "Religious Artifact Quests",
+      "url_path": "religious-artifact-quests",
+      "description": "Religious Artifact Quests collection",
+      "category": "adventure",
+      "connectionReason": "Part of Religious Artifact Quests collection"
+    },
+    {
+      "name": "CGI Spectacle Adventures [OVERSIZED]",
+      "url_path": "cgi-spectacle-adventures-oversized-",
+      "description": "CGI Spectacle Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of CGI Spectacle Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Golden Age Sea Adventures [OVERSIZED]",
+      "url_path": "golden-age-sea-adventures-oversized-",
+      "description": "Golden Age Sea Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Golden Age Sea Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Supernatural Love Stories",
+      "url_path": "supernatural-love-stories",
+      "description": "Supernatural Love Stories collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Supernatural Love Stories collection"
+    },
+    {
+      "name": "Cursed Artifact Horror",
+      "url_path": "cursed-artifact-horror",
+      "description": "Cursed Artifact Horror collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Cursed Artifact Horror collection"
+    },
+    {
+      "name": "Demonic Bargain Tales",
+      "url_path": "demonic-bargain-tales",
+      "description": "Demonic Bargain Tales collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Demonic Bargain Tales collection"
+    }
+  ],
+  "totalLists": 7
+}

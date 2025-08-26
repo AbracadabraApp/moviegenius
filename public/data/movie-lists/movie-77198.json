@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Sports Fan Adventures",
+      "url_path": "sports-fan-adventures",
+      "description": "Sports Fan Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Sports Fan Adventures collection"
+    },
+    {
+      "name": "Classic Screwball Capers (Part 2)",
+      "url_path": "classic-screwball-capers-part-2-",
+      "description": "Classic Screwball Capers (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Screwball Capers (Part 2) collection"
+    },
+    {
+      "name": "Nonconformist Family Stories (Part 2)",
+      "url_path": "nonconformist-family-stories-part-2-",
+      "description": "Nonconformist Family Stories (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Nonconformist Family Stories (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

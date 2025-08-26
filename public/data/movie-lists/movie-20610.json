@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Educational Science Animation",
+      "url_path": "educational-science-animation",
+      "description": "Educational Science Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Educational Science Animation collection"
+    },
+    {
+      "name": "Musical Education Animation",
+      "url_path": "musical-education-animation",
+      "description": "Musical Education Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Musical Education Animation collection"
+    },
+    {
+      "name": "Brand Mascot Adventures",
+      "url_path": "brand-mascot-adventures",
+      "description": "Brand Mascot Adventures collection",
+      "category": "animation",
+      "connectionReason": "Part of Brand Mascot Adventures collection"
+    }
+  ],
+  "totalLists": 3
+}

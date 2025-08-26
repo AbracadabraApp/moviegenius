@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Surrealist Animation Classics",
+      "url_path": "surrealist-animation-classics",
+      "description": "Surrealist Animation Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Surrealist Animation Classics collection"
+    },
+    {
+      "name": "Social Satire Animation",
+      "url_path": "social-satire-animation",
+      "description": "Social Satire Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Social Satire Animation collection"
+    },
+    {
+      "name": "Pop Culture Parodies",
+      "url_path": "pop-culture-parodies",
+      "description": "Pop Culture Parodies collection",
+      "category": "animation",
+      "connectionReason": "Part of Pop Culture Parodies collection"
+    },
+    {
+      "name": "Corporate Culture Critique",
+      "url_path": "corporate-culture-critique",
+      "description": "Corporate Culture Critique collection",
+      "category": "animation",
+      "connectionReason": "Part of Corporate Culture Critique collection"
+    }
+  ],
+  "totalLists": 4
+}

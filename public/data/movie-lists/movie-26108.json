@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Royal Court Dramas",
+      "url_path": "royal-court-dramas",
+      "description": "Royal Court Dramas collection",
+      "category": "period",
+      "connectionReason": "Part of Royal Court Dramas collection"
+    },
+    {
+      "name": "Social Climber Tragedies",
+      "url_path": "social-climber-tragedies",
+      "description": "Social Climber Tragedies collection",
+      "category": "period",
+      "connectionReason": "Part of Social Climber Tragedies collection"
+    },
+    {
+      "name": "Colonial & Cultural Identity",
+      "url_path": "colonial-cultural-identity",
+      "description": "Colonial & Cultural Identity collection",
+      "category": "period",
+      "connectionReason": "Part of Colonial & Cultural Identity collection"
+    },
+    {
+      "name": "Arts & Cultural Movements",
+      "url_path": "arts-cultural-movements",
+      "description": "Arts & Cultural Movements collection",
+      "category": "period",
+      "connectionReason": "Part of Arts & Cultural Movements collection"
+    }
+  ],
+  "totalLists": 4
+}

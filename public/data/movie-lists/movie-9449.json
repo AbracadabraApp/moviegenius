@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Urban Night Adventures",
+      "url_path": "urban-night-adventures",
+      "description": "Urban Night Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Urban Night Adventures collection"
+    },
+    {
+      "name": "Miniature World Adventures",
+      "url_path": "miniature-world-adventures",
+      "description": "Miniature World Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Miniature World Adventures collection"
+    },
+    {
+      "name": "Books Come Alive",
+      "url_path": "books-come-alive",
+      "description": "Books Come Alive collection",
+      "category": "adventure",
+      "connectionReason": "Part of Books Come Alive collection"
+    },
+    {
+      "name": "Classic Literary Adventures [OVERSIZED]",
+      "url_path": "classic-literary-adventures-oversized-",
+      "description": "Classic Literary Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Classic Literary Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Outsider Transformation Stories",
+      "url_path": "outsider-transformation-stories",
+      "description": "Outsider Transformation Stories collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Outsider Transformation Stories collection"
+    },
+    {
+      "name": "Modern Magical Realism [OVERSIZED]",
+      "url_path": "modern-magical-realism-oversized-",
+      "description": "Modern Magical Realism [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Modern Magical Realism [OVERSIZED] collection"
+    },
+    {
+      "name": "Magical Creature Protection [OVERSIZED]",
+      "url_path": "magical-creature-protection-oversized-",
+      "description": "Magical Creature Protection [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Magical Creature Protection [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 7
+}

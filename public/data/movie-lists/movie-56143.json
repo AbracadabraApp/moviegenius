@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "WWII Archival Documentaries",
+      "url_path": "wwii-archival-documentaries",
+      "description": "WWII Archival Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of WWII Archival Documentaries collection"
+    },
+    {
+      "name": "War Zone Journalism",
+      "url_path": "war-zone-journalism",
+      "description": "War Zone Journalism collection",
+      "category": "documentary",
+      "connectionReason": "Part of War Zone Journalism collection"
+    },
+    {
+      "name": "Military Reality Exposés",
+      "url_path": "military-reality-expos-s",
+      "description": "Military Reality Exposés collection",
+      "category": "documentary",
+      "connectionReason": "Part of Military Reality Exposés collection"
+    },
+    {
+      "name": "Combat Documentary Style",
+      "url_path": "combat-documentary-style",
+      "description": "Combat Documentary Style collection",
+      "category": "war",
+      "connectionReason": "Part of Combat Documentary Style collection"
+    },
+    {
+      "name": "Naval Aviation Films",
+      "url_path": "naval-aviation-films",
+      "description": "Naval Aviation Films collection",
+      "category": "war",
+      "connectionReason": "Part of Naval Aviation Films collection"
+    },
+    {
+      "name": "True Military Stories [OVERSIZED]",
+      "url_path": "true-military-stories-oversized-",
+      "description": "True Military Stories [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of True Military Stories [OVERSIZED] collection"
+    },
+    {
+      "name": "Pacific Theater Naval [OVERSIZED]",
+      "url_path": "pacific-theater-naval-oversized-",
+      "description": "Pacific Theater Naval [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of Pacific Theater Naval [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 7
+}

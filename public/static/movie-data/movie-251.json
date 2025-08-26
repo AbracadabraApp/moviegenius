@@ -1,0 +1,125 @@
+{
+  "movieId": "42fe1fce-6adb-4626-b665-f816fa3ea8f5",
+  "tmdbId": 251,
+  "title": "Ghost",
+  "year": 1990,
+  "analysis": {
+    "keyElements": {
+      "director": "Jerry Zucker",
+      "writers": [
+        "Bruce Joel Rubin"
+      ],
+      "stars": [
+        "Patrick Swayze",
+        "Demi Moore",
+        "Whoopi Goldberg"
+      ],
+      "genre": "Romantic Fantasy Drama",
+      "releaseYear": 1990,
+      "cinematographer": "Adam Greenberg",
+      "composer": "Maurice Jarre",
+      "studio": "Paramount Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of romance, supernatural thriller, and comedy that created a new hybrid genre template",
+        "Career-defining performances from all three leads, especially Whoopi Goldberg's Oscar-winning turn",
+        "Emotionally resonant exploration of love, loss, and grief that remains powerful decades later"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Heaven Can Wait",
+        "year": 1978,
+        "description": "Earlier supernatural romance that helped establish the genre"
+      },
+      {
+        "title": "The Sixth Sense",
+        "year": 1999,
+        "description": "Supernatural drama influenced by Ghost's success"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Genre Hybridization",
+        "category": "Film Theory",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Visual Effects Evolution",
+        "category": "Technical",
+        "difficulty": "beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Jerry Zucker",
+      "personId": 17214,
+      "slug": "/person/17214",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Bruce Joel Rubin",
+        "personId": 4570,
+        "slug": "/person/4570",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Patrick Swayze",
+        "personId": 28649,
+        "slug": "/person/28649",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Demi Moore",
+        "personId": 8404,
+        "slug": "/person/8404",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Whoopi Goldberg",
+        "personId": 38297,
+        "slug": "/person/38297",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Adam Greenberg",
+      "personId": 164,
+      "slug": "/person/164",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Maurice Jarre",
+      "personId": 25101,
+      "slug": "/person/25101",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:14.582Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

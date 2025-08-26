@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Classical Youth Ensembles",
+      "url_path": "classical-youth-ensembles",
+      "description": "Classical Youth Ensembles collection",
+      "category": "music",
+      "connectionReason": "Part of Classical Youth Ensembles collection"
+    },
+    {
+      "name": "Musical Prodigy Stories",
+      "url_path": "musical-prodigy-stories",
+      "description": "Musical Prodigy Stories collection",
+      "category": "music",
+      "connectionReason": "Part of Musical Prodigy Stories collection"
+    },
+    {
+      "name": "Depression Era Theater Struggles",
+      "url_path": "depression-era-theater-struggles",
+      "description": "Depression Era Theater Struggles collection",
+      "category": "musical",
+      "connectionReason": "Part of Depression Era Theater Struggles collection"
+    },
+    {
+      "name": "Depression Era Social Commentary Musicals",
+      "url_path": "depression-era-social-commentary-musicals",
+      "description": "Depression Era Social Commentary Musicals collection",
+      "category": "musical",
+      "connectionReason": "Part of Depression Era Social Commentary Musicals collection"
+    }
+  ],
+  "totalLists": 4
+}

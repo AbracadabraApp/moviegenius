@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Space Exploration History",
+      "url_path": "space-exploration-history",
+      "description": "Space Exploration History collection",
+      "category": "documentary",
+      "connectionReason": "Part of Space Exploration History collection"
+    },
+    {
+      "name": "Public Institution Studies",
+      "url_path": "public-institution-studies",
+      "description": "Public Institution Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Public Institution Studies collection"
+    },
+    {
+      "name": "Perseverance Against Odds (Part 3)",
+      "url_path": "perseverance-against-odds-part-3-",
+      "description": "Perseverance Against Odds (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Perseverance Against Odds (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

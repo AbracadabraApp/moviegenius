@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "TV Show Meta-Commentary",
+      "url_path": "tv-show-meta-commentary",
+      "description": "TV Show Meta-Commentary collection",
+      "category": "science fiction",
+      "connectionReason": "Part of TV Show Meta-Commentary collection"
+    },
+    {
+      "name": "Conspiracy Theory SciFi",
+      "url_path": "conspiracy-theory-scifi",
+      "description": "Conspiracy Theory SciFi collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Conspiracy Theory SciFi collection"
+    },
+    {
+      "name": "UFO Investigation Thrillers",
+      "url_path": "ufo-investigation-thrillers",
+      "description": "UFO Investigation Thrillers collection",
+      "category": "science fiction",
+      "connectionReason": "Part of UFO Investigation Thrillers collection"
+    },
+    {
+      "name": "Scientific Discovery Thrillers",
+      "url_path": "scientific-discovery-thrillers",
+      "description": "Scientific Discovery Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Scientific Discovery Thrillers collection"
+    },
+    {
+      "name": "Government Conspiracy Thrillers",
+      "url_path": "government-conspiracy-thrillers",
+      "description": "Government Conspiracy Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Government Conspiracy Thrillers collection"
+    }
+  ],
+  "totalLists": 5
+}

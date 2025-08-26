@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Gothic Adventure Horror",
+      "url_path": "gothic-adventure-horror",
+      "description": "Gothic Adventure Horror collection",
+      "category": "adventure",
+      "connectionReason": "Part of Gothic Adventure Horror collection"
+    },
+    {
+      "name": "Religious Artifact Quests",
+      "url_path": "religious-artifact-quests",
+      "description": "Religious Artifact Quests collection",
+      "category": "adventure",
+      "connectionReason": "Part of Religious Artifact Quests collection"
+    },
+    {
+      "name": "Historical Conspiracy Adventures",
+      "url_path": "historical-conspiracy-adventures",
+      "description": "Historical Conspiracy Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Historical Conspiracy Adventures collection"
+    },
+    {
+      "name": "Cursed Artifact Horror",
+      "url_path": "cursed-artifact-horror",
+      "description": "Cursed Artifact Horror collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Cursed Artifact Horror collection"
+    },
+    {
+      "name": "Religious Underworld Journeys",
+      "url_path": "religious-underworld-journeys",
+      "description": "Religious Underworld Journeys collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Religious Underworld Journeys collection"
+    },
+    {
+      "name": "Modern Magical Realism [OVERSIZED]",
+      "url_path": "modern-magical-realism-oversized-",
+      "description": "Modern Magical Realism [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Modern Magical Realism [OVERSIZED] collection"
+    },
+    {
+      "name": "Magical Creature Protection [OVERSIZED]",
+      "url_path": "magical-creature-protection-oversized-",
+      "description": "Magical Creature Protection [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Magical Creature Protection [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 7
+}

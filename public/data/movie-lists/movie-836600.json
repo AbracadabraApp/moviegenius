@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Graphic Novel Adaptations",
+      "url_path": "graphic-novel-adaptations",
+      "description": "Graphic Novel Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Graphic Novel Adaptations collection"
+    },
+    {
+      "name": "Video Game Adaptations",
+      "url_path": "video-game-adaptations",
+      "description": "Video Game Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Video Game Adaptations collection"
+    },
+    {
+      "name": "Military Action Animation",
+      "url_path": "military-action-animation",
+      "description": "Military Action Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Military Action Animation collection"
+    }
+  ],
+  "totalLists": 3
+}

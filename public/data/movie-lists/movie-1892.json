@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Retro Science Fiction",
+      "url_path": "retro-science-fiction",
+      "description": "Retro Science Fiction collection",
+      "category": "adventure",
+      "connectionReason": "Part of Retro Science Fiction collection"
+    },
+    {
+      "name": "Colonial & Cultural Identity",
+      "url_path": "colonial-cultural-identity",
+      "description": "Colonial & Cultural Identity collection",
+      "category": "adventure",
+      "connectionReason": "Part of Colonial & Cultural Identity collection"
+    },
+    {
+      "name": "CGI Spectacle Adventures [OVERSIZED]",
+      "url_path": "cgi-spectacle-adventures-oversized-",
+      "description": "CGI Spectacle Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of CGI Spectacle Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Tech-Colonial Resistance Films",
+      "url_path": "tech-colonial-resistance-films",
+      "description": "Tech-Colonial Resistance Films collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Tech-Colonial Resistance Films collection"
+    },
+    {
+      "name": "Space Fantasy Camp",
+      "url_path": "space-fantasy-camp",
+      "description": "Space Fantasy Camp collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Fantasy Camp collection"
+    },
+    {
+      "name": "Retro Space Adventure (Part 2)",
+      "url_path": "retro-space-adventure-part-2-",
+      "description": "Retro Space Adventure (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro Space Adventure (Part 2) collection"
+    }
+  ],
+  "totalLists": 6
+}

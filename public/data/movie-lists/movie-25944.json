@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Classic Monster Comedies",
+      "url_path": "classic-monster-comedies",
+      "description": "Classic Monster Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Monster Comedies collection"
+    },
+    {
+      "name": "Sexual Liberation Satires (Part 1)",
+      "url_path": "sexual-liberation-satires-part-1-",
+      "description": "Sexual Liberation Satires (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Sexual Liberation Satires (Part 1) collection"
+    },
+    {
+      "name": "Body Horror Comedy (Part 1)",
+      "url_path": "body-horror-comedy-part-1-",
+      "description": "Body Horror Comedy (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Body Horror Comedy (Part 1) collection"
+    },
+    {
+      "name": "Romantic Vampire Films",
+      "url_path": "romantic-vampire-films",
+      "description": "Romantic Vampire Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Romantic Vampire Films collection"
+    },
+    {
+      "name": "European Vampire Deconstruction",
+      "url_path": "european-vampire-deconstruction",
+      "description": "European Vampire Deconstruction collection",
+      "category": "horror",
+      "connectionReason": "Part of European Vampire Deconstruction collection"
+    },
+    {
+      "name": "Historical Horror Mashup (Part 1)",
+      "url_path": "historical-horror-mashup-part-1-",
+      "description": "Historical Horror Mashup (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Historical Horror Mashup (Part 1) collection"
+    },
+    {
+      "name": "Art House Horror (Part 1)",
+      "url_path": "art-house-horror-part-1-",
+      "description": "Art House Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Art House Horror (Part 1) collection"
+    }
+  ],
+  "totalLists": 7
+}

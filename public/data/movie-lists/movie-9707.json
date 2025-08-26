@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Senior Life Comedies",
+      "url_path": "senior-life-comedies",
+      "description": "Senior Life Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Senior Life Comedies collection"
+    },
+    {
+      "name": "Identity Swap Existentialism",
+      "url_path": "identity-swap-existentialism",
+      "description": "Identity Swap Existentialism collection",
+      "category": "comedy",
+      "connectionReason": "Part of Identity Swap Existentialism collection"
+    },
+    {
+      "name": "Horror Movie Parodies (Part 1)",
+      "url_path": "horror-movie-parodies-part-1-",
+      "description": "Horror Movie Parodies (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Horror Movie Parodies (Part 1) collection"
+    },
+    {
+      "name": "Ancient Temple Horror",
+      "url_path": "ancient-temple-horror",
+      "description": "Ancient Temple Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Ancient Temple Horror collection"
+    },
+    {
+      "name": "Medical Facility Horror (Part 1)",
+      "url_path": "medical-facility-horror-part-1-",
+      "description": "Medical Facility Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Medical Facility Horror (Part 1) collection"
+    },
+    {
+      "name": "Classic Monster Comedy (Part 1)",
+      "url_path": "classic-monster-comedy-part-1-",
+      "description": "Classic Monster Comedy (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Monster Comedy (Part 1) collection"
+    }
+  ],
+  "totalLists": 6
+}

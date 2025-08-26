@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Shakespeare Modern Adaptations",
+      "url_path": "shakespeare-modern-adaptations",
+      "description": "Shakespeare Modern Adaptations collection",
+      "category": "comedy",
+      "connectionReason": "Part of Shakespeare Modern Adaptations collection"
+    },
+    {
+      "name": "Gender Role Reversal Comedy",
+      "url_path": "gender-role-reversal-comedy",
+      "description": "Gender Role Reversal Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Gender Role Reversal Comedy collection"
+    },
+    {
+      "name": "Identity Swap Comedies",
+      "url_path": "identity-swap-comedies",
+      "description": "Identity Swap Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Identity Swap Comedies collection"
+    },
+    {
+      "name": "Modern Shakespeare Adaptations",
+      "url_path": "modern-shakespeare-adaptations",
+      "description": "Modern Shakespeare Adaptations collection",
+      "category": "romance",
+      "connectionReason": "Part of Modern Shakespeare Adaptations collection"
+    },
+    {
+      "name": "Mistaken Identity Romance",
+      "url_path": "mistaken-identity-romance",
+      "description": "Mistaken Identity Romance collection",
+      "category": "romance",
+      "connectionReason": "Part of Mistaken Identity Romance collection"
+    },
+    {
+      "name": "Identity Deception Romance (Part 2)",
+      "url_path": "identity-deception-romance-part-2-",
+      "description": "Identity Deception Romance (Part 2) collection",
+      "category": "romance",
+      "connectionReason": "Part of Identity Deception Romance (Part 2) collection"
+    }
+  ],
+  "totalLists": 6
+}

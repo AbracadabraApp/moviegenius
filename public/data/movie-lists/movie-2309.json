@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Fantasy Heist Adventures",
+      "url_path": "fantasy-heist-adventures",
+      "description": "Fantasy Heist Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Fantasy Heist Adventures collection"
+    },
+    {
+      "name": "Books Come Alive",
+      "url_path": "books-come-alive",
+      "description": "Books Come Alive collection",
+      "category": "adventure",
+      "connectionReason": "Part of Books Come Alive collection"
+    },
+    {
+      "name": "Classic Literary Adventures [OVERSIZED]",
+      "url_path": "classic-literary-adventures-oversized-",
+      "description": "Classic Literary Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Classic Literary Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Fiction Becomes Reality",
+      "url_path": "fiction-becomes-reality",
+      "description": "Fiction Becomes Reality collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Fiction Becomes Reality collection"
+    },
+    {
+      "name": "Magical Powers & Abilities",
+      "url_path": "magical-powers-abilities",
+      "description": "Magical Powers & Abilities collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Magical Powers & Abilities collection"
+    },
+    {
+      "name": "Modern Magical Realism [OVERSIZED]",
+      "url_path": "modern-magical-realism-oversized-",
+      "description": "Modern Magical Realism [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Modern Magical Realism [OVERSIZED] collection"
+    },
+    {
+      "name": "Parallel Worlds Collide [OVERSIZED]",
+      "url_path": "parallel-worlds-collide-oversized-",
+      "description": "Parallel Worlds Collide [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Parallel Worlds Collide [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 7
+}

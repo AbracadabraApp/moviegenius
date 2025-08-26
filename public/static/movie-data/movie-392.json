@@ -1,0 +1,140 @@
+{
+  "movieId": "2238df54-a2f1-4eaf-8c10-c749a93a07e3",
+  "tmdbId": 392,
+  "title": "Chocolat",
+  "year": 2000,
+  "analysis": {
+    "keyElements": {
+      "director": "Lasse Hallström",
+      "writers": [
+        "Joanne Harris",
+        "Robert Nelson Jacobs"
+      ],
+      "stars": [
+        "Juliette Binoche",
+        "Johnny Depp",
+        "Judi Dench"
+      ],
+      "genre": "Romance/Drama",
+      "releaseYear": 2000,
+      "cinematographer": "Roger Pratt",
+      "composer": "Rachel Portman",
+      "studio": "Miramax Films"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of magical realism and social commentary",
+        "Outstanding ensemble cast led by Juliette Binoche's charming performance",
+        "Rich visual storytelling that makes food a character itself"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Like Water for Chocolate",
+        "year": 1992,
+        "description": "Another masterpiece of magical realism and culinary metaphor"
+      },
+      {
+        "title": "Babette's Feast",
+        "year": 1987,
+        "description": "Spiritual predecessor in food-centered transformation"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Magical Realism in Cinema",
+        "category": "Film Theory",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Food as Metaphor",
+        "category": "Film Analysis",
+        "difficulty": "Beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Lasse Hallström",
+      "personId": 21755,
+      "slug": "/person/21755",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Robert Nelson Jacobs",
+        "personId": 31779,
+        "slug": "/person/31779",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Joanne Harris",
+        "personId": 17635,
+        "slug": "/person/17635",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Juliette Binoche",
+        "personId": 19747,
+        "slug": "/person/19747",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Johnny Depp",
+        "personId": 18527,
+        "slug": "/person/18527",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Judi Dench",
+        "personId": 19545,
+        "slug": "/person/19545",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Alfred Molina",
+        "personId": 1116,
+        "slug": "/person/1116",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Roger Pratt",
+      "personId": 32175,
+      "slug": "/person/32175",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Rachel Portman",
+      "personId": 30169,
+      "slug": "/person/30169",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:31.660Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

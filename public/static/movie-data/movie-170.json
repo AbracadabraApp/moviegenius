@@ -1,0 +1,132 @@
+{
+  "movieId": "fc8d655a-729c-4979-9a14-3249d388fe1c",
+  "tmdbId": 170,
+  "title": "28 Days Later",
+  "year": 2002,
+  "analysis": {
+    "keyElements": {
+      "director": "Danny Boyle",
+      "writers": [
+        "Alex Garland"
+      ],
+      "stars": [
+        "Cillian Murphy",
+        "Naomie Harris",
+        "Christopher Eccleston"
+      ],
+      "genre": "Horror/Science Fiction",
+      "releaseYear": 2002,
+      "cinematographer": "Anthony Dod Mantle",
+      "composer": "John Murphy",
+      "studio": "Fox Searchlight Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Revolutionized zombie cinema with fast-moving infected and realistic pandemic scenario",
+        "Masterful blend of horror and human drama with outstanding performances",
+        "Groundbreaking digital cinematography that influenced modern horror aesthetics"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Night of the Living Dead",
+        "year": 1968,
+        "description": "Essential predecessor establishing zombie cinema's social commentary"
+      },
+      {
+        "title": "Children of Men",
+        "year": 2006,
+        "description": "Similar approach to grounded near-future British dystopia"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Digital Revolution in Cinema",
+        "category": "Technical Innovation",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Post-9/11 Horror",
+        "category": "Film History",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Danny Boyle",
+      "personId": 7415,
+      "slug": "/person/7415",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Alex Garland",
+        "personId": 1008,
+        "slug": "/person/1008",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Cillian Murphy",
+        "personId": 6375,
+        "slug": "/person/6375",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Naomie Harris",
+        "personId": 27090,
+        "slug": "/person/27090",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Christopher Eccleston",
+        "personId": 6206,
+        "slug": "/person/6206",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Brendan Gleeson",
+        "personId": 4275,
+        "slug": "/person/4275",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Anthony Dod Mantle",
+      "personId": 2241,
+      "slug": "/person/2241",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "John Murphy",
+      "personId": 18497,
+      "slug": "/person/18497",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:01.148Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Found Family Stories",
+      "url_path": "found-family-stories",
+      "description": "Found Family Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Found Family Stories collection"
+    },
+    {
+      "name": "Unlikely Hero Stories",
+      "url_path": "unlikely-hero-stories",
+      "description": "Unlikely Hero Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Unlikely Hero Stories collection"
+    },
+    {
+      "name": "Superhero Genre Subversions",
+      "url_path": "superhero-genre-subversions",
+      "description": "Superhero Genre Subversions collection",
+      "category": "animation",
+      "connectionReason": "Part of Superhero Genre Subversions collection"
+    },
+    {
+      "name": "Classic Comic Heroes",
+      "url_path": "classic-comic-heroes",
+      "description": "Classic Comic Heroes collection",
+      "category": "superhero",
+      "connectionReason": "Part of Classic Comic Heroes collection"
+    },
+    {
+      "name": "DC Animated Features",
+      "url_path": "dc-animated-features",
+      "description": "DC Animated Features collection",
+      "category": "superhero",
+      "connectionReason": "Part of DC Animated Features collection"
+    },
+    {
+      "name": "Science Hero Origins",
+      "url_path": "science-hero-origins",
+      "description": "Science Hero Origins collection",
+      "category": "superhero",
+      "connectionReason": "Part of Science Hero Origins collection"
+    }
+  ],
+  "totalLists": 6
+}

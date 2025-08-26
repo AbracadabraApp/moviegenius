@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Splatter Comedy Films",
+      "url_path": "splatter-comedy-films",
+      "description": "Splatter Comedy Films collection",
+      "category": "comedy",
+      "connectionReason": "Part of Splatter Comedy Films collection"
+    },
+    {
+      "name": "Animal Attack Parodies",
+      "url_path": "animal-attack-parodies",
+      "description": "Animal Attack Parodies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Animal Attack Parodies collection"
+    },
+    {
+      "name": "Horror Movie Parodies (Part 4)",
+      "url_path": "horror-movie-parodies-part-4-",
+      "description": "Horror Movie Parodies (Part 4) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Horror Movie Parodies (Part 4) collection"
+    },
+    {
+      "name": "Body Horror Comedy (Part 2)",
+      "url_path": "body-horror-comedy-part-2-",
+      "description": "Body Horror Comedy (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Body Horror Comedy (Part 2) collection"
+    },
+    {
+      "name": "Exploitation Cinema Homage",
+      "url_path": "exploitation-cinema-homage",
+      "description": "Exploitation Cinema Homage collection",
+      "category": "horror",
+      "connectionReason": "Part of Exploitation Cinema Homage collection"
+    },
+    {
+      "name": "Aquatic Monster Horror (Part 2)",
+      "url_path": "aquatic-monster-horror-part-2-",
+      "description": "Aquatic Monster Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Aquatic Monster Horror (Part 2) collection"
+    },
+    {
+      "name": "Mutant Creature Features (Part 4)",
+      "url_path": "mutant-creature-features-part-4-",
+      "description": "Mutant Creature Features (Part 4) collection",
+      "category": "horror",
+      "connectionReason": "Part of Mutant Creature Features (Part 4) collection"
+    }
+  ],
+  "totalLists": 7
+}

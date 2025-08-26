@@ -1,0 +1,133 @@
+{
+  "movieId": "b0e0f0d7-522b-4bba-a1ba-7cd3c02c57a7",
+  "tmdbId": 249,
+  "title": "The War of the Roses",
+  "year": 1989,
+  "analysis": {
+    "keyElements": {
+      "director": "Danny DeVito",
+      "writers": [
+        "Michael Leeson",
+        "Warren Adler"
+      ],
+      "stars": [
+        "Michael Douglas",
+        "Kathleen Turner",
+        "Danny DeVito"
+      ],
+      "genre": "Dark Comedy",
+      "releaseYear": 1989,
+      "cinematographer": "Stephen H. Burum",
+      "composer": "David Newman",
+      "studio": "20th Century Fox"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of dark comedy and relationship drama with escalating tension",
+        "Electric chemistry between Douglas and Turner at their career peaks",
+        "Brilliant direction by DeVito that perfectly balances humor and horror"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Romancing the Stone",
+        "year": 1984,
+        "description": "Previous collaboration showing Douglas and Turner's romantic chemistry"
+      },
+      {
+        "title": "Fatal Attraction",
+        "year": 1987,
+        "description": "Similar exploration of relationship darkness with Michael Douglas"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Dark Comedy Direction",
+        "category": "Filmmaking",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Marriage in Cinema",
+        "category": "Themes",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Danny DeVito",
+      "personId": 7422,
+      "slug": "/person/7422",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Warren Adler",
+        "personId": 38145,
+        "slug": "/person/38145",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Michael Leeson",
+        "personId": 25771,
+        "slug": "/person/25771",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Michael Douglas",
+        "personId": 25614,
+        "slug": "/person/25614",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Kathleen Turner",
+        "personId": 20290,
+        "slug": "/person/20290",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Danny DeVito",
+        "personId": 7422,
+        "slug": "/person/7422",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Stephen H. Burum",
+      "personId": 34758,
+      "slug": "/person/34758",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "David Newman",
+      "personId": 8043,
+      "slug": "/person/8043",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:14.291Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

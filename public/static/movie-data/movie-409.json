@@ -1,0 +1,141 @@
+{
+  "movieId": "48b559ed-d392-4b28-af73-095eb4eb5ba4",
+  "tmdbId": 409,
+  "title": "The English Patient",
+  "year": 1996,
+  "analysis": {
+    "keyElements": {
+      "director": "Anthony Minghella",
+      "writers": [
+        "Michael Ondaatje",
+        "Anthony Minghella"
+      ],
+      "stars": [
+        "Ralph Fiennes",
+        "Juliette Binoche",
+        "Kristin Scott Thomas",
+        "Willem Dafoe"
+      ],
+      "genre": "Romance/Drama",
+      "releaseYear": 1996,
+      "cinematographer": "John Seale",
+      "composer": "Gabriel Yared",
+      "studio": "Miramax Films"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful storytelling that weaves multiple timelines into an epic romance",
+        "Stunning cinematography that captures both intimate moments and sweeping desert landscapes",
+        "Career-defining performances from the entire ensemble cast"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Casablanca",
+        "year": 1942,
+        "description": "The gold standard for wartime romance that The English Patient consciously echoes"
+      },
+      {
+        "title": "Lawrence of Arabia",
+        "year": 1962,
+        "description": "Similar desert epic scope and exploration of identity"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Non-linear Narrative Structure",
+        "category": "Screenwriting",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Historical Romance in Cinema",
+        "category": "Genre Studies",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Anthony Minghella",
+      "personId": 2275,
+      "slug": "/person/2275",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Michael Ondaatje (novel)",
+        "personId": 25849,
+        "slug": "/person/25849",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Anthony Minghella (screenplay)",
+        "personId": 2276,
+        "slug": "/person/2276",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Ralph Fiennes",
+        "personId": 30294,
+        "slug": "/person/30294",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Juliette Binoche",
+        "personId": 19747,
+        "slug": "/person/19747",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Kristin Scott Thomas",
+        "personId": 21415,
+        "slug": "/person/21415",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Willem Dafoe",
+        "personId": 38346,
+        "slug": "/person/38346",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "John Seale",
+      "personId": 18675,
+      "slug": "/person/18675",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Gabriel Yared",
+      "personId": 11855,
+      "slug": "/person/11855",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:34.399Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

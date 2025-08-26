@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Alien Integration Stories",
+      "url_path": "alien-integration-stories",
+      "description": "Alien Integration Stories collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Alien Integration Stories collection"
+    },
+    {
+      "name": "Space Colony Disasters",
+      "url_path": "space-colony-disasters",
+      "description": "Space Colony Disasters collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Colony Disasters collection"
+    },
+    {
+      "name": "Political Space Drama",
+      "url_path": "political-space-drama",
+      "description": "Political Space Drama collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Political Space Drama collection"
+    },
+    {
+      "name": "Space Diplomacy Thrillers",
+      "url_path": "space-diplomacy-thrillers",
+      "description": "Space Diplomacy Thrillers collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Diplomacy Thrillers collection"
+    }
+  ],
+  "totalLists": 4
+}

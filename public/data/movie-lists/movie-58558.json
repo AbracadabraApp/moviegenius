@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Musical Prodigy Stories",
+      "url_path": "musical-prodigy-stories",
+      "description": "Musical Prodigy Stories collection",
+      "category": "music",
+      "connectionReason": "Part of Musical Prodigy Stories collection"
+    },
+    {
+      "name": "Opera Performance Films",
+      "url_path": "opera-performance-films",
+      "description": "Opera Performance Films collection",
+      "category": "music",
+      "connectionReason": "Part of Opera Performance Films collection"
+    },
+    {
+      "name": "Classical Performance Biopics",
+      "url_path": "classical-performance-biopics",
+      "description": "Classical Performance Biopics collection",
+      "category": "music",
+      "connectionReason": "Part of Classical Performance Biopics collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,133 @@
+{
+  "movieId": "078bc44f-1afb-4937-b059-eab3e808cceb",
+  "tmdbId": 274,
+  "title": "The Silence of the Lambs",
+  "year": 1991,
+  "analysis": {
+    "keyElements": {
+      "director": "Jonathan Demme",
+      "writers": [
+        "Ted Tally",
+        "Thomas Harris"
+      ],
+      "stars": [
+        "Jodie Foster",
+        "Anthony Hopkins",
+        "Scott Glenn"
+      ],
+      "genre": "Psychological Thriller",
+      "releaseYear": 1991,
+      "cinematographer": "Tak Fujimoto",
+      "composer": "Howard Shore",
+      "studio": "Orion Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Hopkins and Foster deliver career-defining performances that set new standards for psychological thrillers",
+        "Masterful tension building and psychological complexity that influenced decades of thriller filmmaking",
+        "Groundbreaking portrayal of a female FBI agent that challenged gender roles in action-thrillers"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Manhunter",
+        "year": 1986,
+        "description": "First Hannibal Lecter film, showing the character's earlier screen interpretation"
+      },
+      {
+        "title": "Se7en",
+        "year": 1995,
+        "description": "Directly influenced psychological thriller following similar procedural structure"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "FBI Behavioral Science",
+        "category": "Criminal Psychology",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Gender in Law Enforcement",
+        "category": "Social Analysis",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Jonathan Demme",
+      "personId": 18856,
+      "slug": "/person/18856",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Ted Tally",
+        "personId": 35760,
+        "slug": "/person/35760",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Thomas Harris",
+        "personId": 36110,
+        "slug": "/person/36110",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Jodie Foster",
+        "personId": 17702,
+        "slug": "/person/17702",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Anthony Hopkins",
+        "personId": 2261,
+        "slug": "/person/2261",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Scott Glenn",
+        "personId": 33374,
+        "slug": "/person/33374",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Tak Fujimoto",
+      "personId": 35540,
+      "slug": "/person/35540",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Howard Shore",
+      "personId": 14607,
+      "slug": "/person/14607",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:18.113Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

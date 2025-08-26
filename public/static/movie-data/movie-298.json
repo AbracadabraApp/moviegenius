@@ -1,0 +1,151 @@
+{
+  "movieId": "f02ad0e0-07f7-435e-b2c3-69d8a3853c76",
+  "tmdbId": 298,
+  "title": "Ocean's Thirteen",
+  "year": 2007,
+  "analysis": {
+    "keyElements": {
+      "director": "Steven Soderbergh",
+      "writers": [
+        "Brian Koppelman",
+        "David Levien"
+      ],
+      "stars": [
+        "George Clooney",
+        "Brad Pitt",
+        "Matt Damon",
+        "Al Pacino"
+      ],
+      "genre": "Heist Comedy",
+      "releaseYear": 2007,
+      "cinematographer": "Peter Andrews",
+      "composer": "David Holmes",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Perfect ensemble chemistry with the entire original cast plus Al Pacino",
+        "Intricate heist plotting with satisfying emotional stakes",
+        "Masterful blend of comedy and suspense with stylish direction"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Ocean's Eleven",
+        "year": 2001,
+        "description": "The stylish remake that launched the modern trilogy"
+      },
+      {
+        "title": "The Sting",
+        "year": 1973,
+        "description": "Classic con artist film that influenced the Ocean's series"
+      },
+      {
+        "title": "Heat",
+        "year": 1995,
+        "description": "Modern heist classic that revitalized the genre"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Heist Film Evolution",
+        "category": "Genre Studies",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Ensemble Cast Dynamics",
+        "category": "Performance",
+        "difficulty": "beginner"
+      },
+      {
+        "topic": "Casino Culture in Film",
+        "category": "Cultural Studies",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Steven Soderbergh",
+      "personId": 35035,
+      "slug": "/person/35035",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Brian Koppelman",
+        "personId": 4393,
+        "slug": "/person/4393",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "David Levien",
+        "personId": 7961,
+        "slug": "/person/7961",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "George Clooney",
+        "personId": 12227,
+        "slug": "/person/12227",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Brad Pitt",
+        "personId": 4195,
+        "slug": "/person/4195",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Matt Damon",
+        "personId": 24915,
+        "slug": "/person/24915",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Al Pacino",
+        "personId": 1326,
+        "slug": "/person/1326",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Peter Andrews",
+      "personId": 29209,
+      "slug": "/person/29209",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "David Holmes",
+      "personId": 7880,
+      "slug": "/person/7880",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:21.632Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

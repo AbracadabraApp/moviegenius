@@ -1,0 +1,148 @@
+{
+  "movieId": "1ddebaea-ca50-41e8-8638-df62e624f6b8",
+  "tmdbId": 28,
+  "title": "Apocalypse Now",
+  "year": 1979,
+  "analysis": {
+    "keyElements": {
+      "director": "Francis Ford Coppola",
+      "writers": [
+        "John Milius",
+        "Francis Ford Coppola"
+      ],
+      "stars": [
+        "Martin Sheen",
+        "Marlon Brando",
+        "Robert Duvall",
+        "Dennis Hopper"
+      ],
+      "genre": "War/Drama",
+      "releaseYear": 1979,
+      "cinematographer": "Vittorio Storaro",
+      "composer": "Carmine Coppola",
+      "studio": "United Artists"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful adaptation of Conrad's Heart of Darkness that creates a haunting Vietnam War metaphor",
+        "Contains some of cinema's most iconic sequences and performances, particularly Robert Duvall's Colonel Kilgore",
+        "Represents the pinnacle of 1970s filmmaking ambition with its immersive psychological journey"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Heart of Darkness",
+        "year": 1993,
+        "description": "Documentary about the troubled making of Apocalypse Now"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Vietnam War in Cinema",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Literary Adaptation",
+        "category": "Screenwriting",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Auteur Theory",
+        "category": "Film Theory",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Francis Ford Coppola",
+      "personId": 11242,
+      "slug": "/person/11242",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "John Milius",
+        "personId": 18483,
+        "slug": "/person/18483",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Francis Ford Coppola",
+        "personId": 11242,
+        "slug": "/person/11242",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Michael Herr",
+        "personId": 25700,
+        "slug": "/person/25700",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Martin Sheen",
+        "personId": 24626,
+        "slug": "/person/24626",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Marlon Brando",
+        "personId": 24485,
+        "slug": "/person/24485",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Robert Duvall",
+        "personId": 31548,
+        "slug": "/person/31548",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Dennis Hopper",
+        "personId": 8471,
+        "slug": "/person/8471",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Vittorio Storaro",
+      "personId": 37862,
+      "slug": "/person/37862",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Carmine Coppola",
+      "personId": 5053,
+      "slug": "/person/5053",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:04:57.322Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

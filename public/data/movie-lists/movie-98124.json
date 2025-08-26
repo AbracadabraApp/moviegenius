@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Historical Genre Mashup",
+      "url_path": "historical-genre-mashup",
+      "description": "Historical Genre Mashup collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Historical Genre Mashup collection"
+    },
+    {
+      "name": "Retro Science Fiction",
+      "url_path": "retro-science-fiction",
+      "description": "Retro Science Fiction collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro Science Fiction collection"
+    },
+    {
+      "name": "Urban Fantasy SciFi (Part 3)",
+      "url_path": "urban-fantasy-scifi-part-3-",
+      "description": "Urban Fantasy SciFi (Part 3) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Urban Fantasy SciFi (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

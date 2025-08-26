@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Crime & Investigation",
+      "url_path": "crime-investigation",
+      "description": "Crime & Investigation collection",
+      "category": "documentary",
+      "connectionReason": "Part of Crime & Investigation collection"
+    },
+    {
+      "name": "Underground Journalism Stories",
+      "url_path": "underground-journalism-stories",
+      "description": "Underground Journalism Stories collection",
+      "category": "documentary",
+      "connectionReason": "Part of Underground Journalism Stories collection"
+    },
+    {
+      "name": "Urban Subculture Studies (Part 3)",
+      "url_path": "urban-subculture-studies-part-3-",
+      "description": "Urban Subculture Studies (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Urban Subculture Studies (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

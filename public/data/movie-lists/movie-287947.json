@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Magical Coming-of-Age Stories",
+      "url_path": "magical-coming-of-age-stories",
+      "description": "Magical Coming-of-Age Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Magical Coming-of-Age Stories collection"
+    },
+    {
+      "name": "Superhero Movie Parodies",
+      "url_path": "superhero-movie-parodies",
+      "description": "Superhero Movie Parodies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Superhero Movie Parodies collection"
+    },
+    {
+      "name": "Found Family Comedies (Part 7)",
+      "url_path": "found-family-comedies-part-7-",
+      "description": "Found Family Comedies (Part 7) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Found Family Comedies (Part 7) collection"
+    },
+    {
+      "name": "Superhero Coming-of-Age",
+      "url_path": "superhero-coming-of-age",
+      "description": "Superhero Coming-of-Age collection",
+      "category": "superhero",
+      "connectionReason": "Part of Superhero Coming-of-Age collection"
+    },
+    {
+      "name": "Comedy-Forward Superhero Films",
+      "url_path": "comedy-forward-superhero-films",
+      "description": "Comedy-Forward Superhero Films collection",
+      "category": "superhero",
+      "connectionReason": "Part of Comedy-Forward Superhero Films collection"
+    },
+    {
+      "name": "Found Family Heroes",
+      "url_path": "found-family-heroes",
+      "description": "Found Family Heroes collection",
+      "category": "superhero",
+      "connectionReason": "Part of Found Family Heroes collection"
+    }
+  ],
+  "totalLists": 6
+}

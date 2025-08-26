@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Blaxploitation Horror Films",
+      "url_path": "blaxploitation-horror-films",
+      "description": "Blaxploitation Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Blaxploitation Horror Films collection"
+    },
+    {
+      "name": "Romantic Vampire Films",
+      "url_path": "romantic-vampire-films",
+      "description": "Romantic Vampire Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Romantic Vampire Films collection"
+    },
+    {
+      "name": "Religious Horror Thrillers (Part 1)",
+      "url_path": "religious-horror-thrillers-part-1-",
+      "description": "Religious Horror Thrillers (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Religious Horror Thrillers (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Pulp Hero Adventures",
+      "url_path": "pulp-hero-adventures",
+      "description": "Pulp Hero Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Pulp Hero Adventures collection"
+    },
+    {
+      "name": "Fiction Becomes Reality",
+      "url_path": "fiction-becomes-reality",
+      "description": "Fiction Becomes Reality collection",
+      "category": "adventure",
+      "connectionReason": "Part of Fiction Becomes Reality collection"
+    },
+    {
+      "name": "Classic Literary Adventures [OVERSIZED]",
+      "url_path": "classic-literary-adventures-oversized-",
+      "description": "Classic Literary Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Classic Literary Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Cross-Border Quest Films [OVERSIZED]",
+      "url_path": "cross-border-quest-films-oversized-",
+      "description": "Cross-Border Quest Films [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Cross-Border Quest Films [OVERSIZED] collection"
+    },
+    {
+      "name": "Global Adventure Comedies",
+      "url_path": "global-adventure-comedies",
+      "description": "Global Adventure Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Global Adventure Comedies collection"
+    },
+    {
+      "name": "Literary Fandom Comedies",
+      "url_path": "literary-fandom-comedies",
+      "description": "Literary Fandom Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Literary Fandom Comedies collection"
+    },
+    {
+      "name": "Meta Screenwriting Stories (Part 2)",
+      "url_path": "meta-screenwriting-stories-part-2-",
+      "description": "Meta Screenwriting Stories (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Meta Screenwriting Stories (Part 2) collection"
+    }
+  ],
+  "totalLists": 7
+}

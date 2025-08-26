@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Wilderness Survival Stories",
+      "url_path": "wilderness-survival-stories",
+      "description": "Wilderness Survival Stories collection",
+      "category": "documentary",
+      "connectionReason": "Part of Wilderness Survival Stories collection"
+    },
+    {
+      "name": "Extreme Environment Communities",
+      "url_path": "extreme-environment-communities",
+      "description": "Extreme Environment Communities collection",
+      "category": "documentary",
+      "connectionReason": "Part of Extreme Environment Communities collection"
+    },
+    {
+      "name": "Historic Mountain Expeditions",
+      "url_path": "historic-mountain-expeditions",
+      "description": "Historic Mountain Expeditions collection",
+      "category": "documentary",
+      "connectionReason": "Part of Historic Mountain Expeditions collection"
+    }
+  ],
+  "totalLists": 3
+}

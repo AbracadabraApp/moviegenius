@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Historic Mountain Expeditions",
+      "url_path": "historic-mountain-expeditions",
+      "description": "Historic Mountain Expeditions collection",
+      "category": "adventure",
+      "connectionReason": "Part of Historic Mountain Expeditions collection"
+    },
+    {
+      "name": "Mountain Rescue Thrillers",
+      "url_path": "mountain-rescue-thrillers",
+      "description": "Mountain Rescue Thrillers collection",
+      "category": "adventure",
+      "connectionReason": "Part of Mountain Rescue Thrillers collection"
+    },
+    {
+      "name": "Obsessive Dream Quests",
+      "url_path": "obsessive-dream-quests",
+      "description": "Obsessive Dream Quests collection",
+      "category": "adventure",
+      "connectionReason": "Part of Obsessive Dream Quests collection"
+    }
+  ],
+  "totalLists": 3
+}

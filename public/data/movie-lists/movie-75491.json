@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Supernatural Animal Tales",
+      "url_path": "supernatural-animal-tales",
+      "description": "Supernatural Animal Tales collection",
+      "category": "adventure",
+      "connectionReason": "Part of Supernatural Animal Tales collection"
+    },
+    {
+      "name": "Religious Artifact Quests",
+      "url_path": "religious-artifact-quests",
+      "description": "Religious Artifact Quests collection",
+      "category": "adventure",
+      "connectionReason": "Part of Religious Artifact Quests collection"
+    },
+    {
+      "name": "Cross-Border Quest Films [OVERSIZED]",
+      "url_path": "cross-border-quest-films-oversized-",
+      "description": "Cross-Border Quest Films [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Cross-Border Quest Films [OVERSIZED] collection"
+    },
+    {
+      "name": "Cultural Bridge Stories",
+      "url_path": "cultural-bridge-stories",
+      "description": "Cultural Bridge Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Cultural Bridge Stories collection"
+    },
+    {
+      "name": "Literary Adaptations",
+      "url_path": "literary-adaptations",
+      "description": "Literary Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Literary Adaptations collection"
+    }
+  ],
+  "totalLists": 5
+}

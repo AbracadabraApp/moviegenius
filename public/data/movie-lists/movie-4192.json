@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Murder Mystery & Investigation",
+      "url_path": "murder-mystery-investigation",
+      "description": "Murder Mystery & Investigation collection",
+      "category": "crime",
+      "connectionReason": "Part of Murder Mystery & Investigation collection"
+    },
+    {
+      "name": "Wealthy Family Murders",
+      "url_path": "wealthy-family-murders",
+      "description": "Wealthy Family Murders collection",
+      "category": "crime",
+      "connectionReason": "Part of Wealthy Family Murders collection"
+    },
+    {
+      "name": "Luxury Lifestyle Crime",
+      "url_path": "luxury-lifestyle-crime",
+      "description": "Luxury Lifestyle Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Luxury Lifestyle Crime collection"
+    },
+    {
+      "name": "European Crime Films (Part 1)",
+      "url_path": "european-crime-films-part-1-",
+      "description": "European Crime Films (Part 1) collection",
+      "category": "crime",
+      "connectionReason": "Part of European Crime Films (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

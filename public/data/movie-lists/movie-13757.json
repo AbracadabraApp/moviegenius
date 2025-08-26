@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Americana Nostalgia Films",
+      "url_path": "americana-nostalgia-films",
+      "description": "Americana Nostalgia Films collection",
+      "category": "animation",
+      "connectionReason": "Part of Americana Nostalgia Films collection"
+    },
+    {
+      "name": "Musical Education Animation",
+      "url_path": "musical-education-animation",
+      "description": "Musical Education Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Musical Education Animation collection"
+    },
+    {
+      "name": "Folk Poetry Adaptations",
+      "url_path": "folk-poetry-adaptations",
+      "description": "Folk Poetry Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Folk Poetry Adaptations collection"
+    },
+    {
+      "name": "American Identity Musicals",
+      "url_path": "american-identity-musicals",
+      "description": "American Identity Musicals collection",
+      "category": "music",
+      "connectionReason": "Part of American Identity Musicals collection"
+    },
+    {
+      "name": "Animated Music Visualizations",
+      "url_path": "animated-music-visualizations",
+      "description": "Animated Music Visualizations collection",
+      "category": "music",
+      "connectionReason": "Part of Animated Music Visualizations collection"
+    },
+    {
+      "name": "Folk Music Portraits",
+      "url_path": "folk-music-portraits",
+      "description": "Folk Music Portraits collection",
+      "category": "music",
+      "connectionReason": "Part of Folk Music Portraits collection"
+    }
+  ],
+  "totalLists": 6
+}

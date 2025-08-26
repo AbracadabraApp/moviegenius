@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "WWII Archival Documentaries",
+      "url_path": "wwii-archival-documentaries",
+      "description": "WWII Archival Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of WWII Archival Documentaries collection"
+    },
+    {
+      "name": "Museum Design Chronicles",
+      "url_path": "museum-design-chronicles",
+      "description": "Museum Design Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Museum Design Chronicles collection"
+    },
+    {
+      "name": "Art Preservation History",
+      "url_path": "art-preservation-history",
+      "description": "Art Preservation History collection",
+      "category": "documentary",
+      "connectionReason": "Part of Art Preservation History collection"
+    },
+    {
+      "name": "Global Cultural Meditations (Part 2)",
+      "url_path": "global-cultural-meditations-part-2-",
+      "description": "Global Cultural Meditations (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Cultural Meditations (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

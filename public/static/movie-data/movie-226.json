@@ -1,0 +1,133 @@
+{
+  "movieId": "91532cae-54a9-4b30-8b41-0f5c221f5429",
+  "tmdbId": 226,
+  "title": "Boys Don't Cry",
+  "year": 1999,
+  "analysis": {
+    "keyElements": {
+      "director": "Kimberly Peirce",
+      "writers": [
+        "Kimberly Peirce",
+        "Andy Bienen"
+      ],
+      "stars": [
+        "Hilary Swank",
+        "Chloë Sevigny",
+        "Peter Sarsgaard"
+      ],
+      "genre": "Biographical Drama",
+      "releaseYear": 1999,
+      "cinematographer": "Jim Denault",
+      "composer": "Nathan Larson",
+      "studio": "Fox Searchlight Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Hilary Swank's transformative, Oscar-winning performance as Brandon Teena",
+        "Groundbreaking portrayal of transgender identity in mainstream cinema",
+        "Powerful examination of prejudice, identity, and rural American life"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Monster",
+        "year": 2003,
+        "description": "Similar biographical drama featuring an transformative lead performance"
+      },
+      {
+        "title": "Moonlight",
+        "year": 2016,
+        "description": "Groundbreaking LGBTQ+ cinema examining identity and masculinity"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Transgender Representation in Cinema",
+        "category": "Social Issues",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Method Acting Techniques",
+        "category": "Performance",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Kimberly Peirce",
+      "personId": 21010,
+      "slug": "/person/21010",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Kimberly Peirce",
+        "personId": 21010,
+        "slug": "/person/21010",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Andy Bienen",
+        "personId": 1836,
+        "slug": "/person/1836",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Hilary Swank",
+        "personId": 14343,
+        "slug": "/person/14343",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Chloë Sevigny",
+        "personId": 5846,
+        "slug": "/person/5846",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Peter Sarsgaard",
+        "personId": 29490,
+        "slug": "/person/29490",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Jim Denault",
+      "personId": 17398,
+      "slug": "/person/17398",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Nathan Larson",
+      "personId": 27212,
+      "slug": "/person/27212",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:10.044Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

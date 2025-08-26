@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Musical Prodigy Stories",
+      "url_path": "musical-prodigy-stories",
+      "description": "Musical Prodigy Stories collection",
+      "category": "music",
+      "connectionReason": "Part of Musical Prodigy Stories collection"
+    },
+    {
+      "name": "Classical Performance Biopics",
+      "url_path": "classical-performance-biopics",
+      "description": "Classical Performance Biopics collection",
+      "category": "music",
+      "connectionReason": "Part of Classical Performance Biopics collection"
+    },
+    {
+      "name": "Musical Romance Films [OVERSIZED]",
+      "url_path": "musical-romance-films-oversized-",
+      "description": "Musical Romance Films [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Musical Romance Films [OVERSIZED] collection"
+    },
+    {
+      "name": "Tragic Artist Romance Stories",
+      "url_path": "tragic-artist-romance-stories",
+      "description": "Tragic Artist Romance Stories collection",
+      "category": "musical",
+      "connectionReason": "Part of Tragic Artist Romance Stories collection"
+    }
+  ],
+  "totalLists": 4
+}

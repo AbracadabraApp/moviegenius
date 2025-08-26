@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Absurdist Comedy Animation",
+      "url_path": "absurdist-comedy-animation",
+      "description": "Absurdist Comedy Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Absurdist Comedy Animation collection"
+    },
+    {
+      "name": "Musical Education Animation",
+      "url_path": "musical-education-animation",
+      "description": "Musical Education Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Musical Education Animation collection"
+    },
+    {
+      "name": "Classical Music Animation",
+      "url_path": "classical-music-animation",
+      "description": "Classical Music Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Classical Music Animation collection"
+    }
+  ],
+  "totalLists": 3
+}

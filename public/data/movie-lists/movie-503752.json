@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Survival Horror",
+      "url_path": "survival-horror",
+      "description": "Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Survival Horror collection"
+    },
+    {
+      "name": "Rural Isolation Horror",
+      "url_path": "rural-isolation-horror",
+      "description": "Rural Isolation Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Rural Isolation Horror collection"
+    },
+    {
+      "name": "Psychological Horror (Part 6)",
+      "url_path": "psychological-horror-part-6-",
+      "description": "Psychological Horror (Part 6) collection",
+      "category": "horror",
+      "connectionReason": "Part of Psychological Horror (Part 6) collection"
+    },
+    {
+      "name": "Mountain Wilderness Thrillers",
+      "url_path": "mountain-wilderness-thrillers",
+      "description": "Mountain Wilderness Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Mountain Wilderness Thrillers collection"
+    },
+    {
+      "name": "LGBTQ Noir Thrillers",
+      "url_path": "lgbtq-noir-thrillers",
+      "description": "LGBTQ Noir Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of LGBTQ Noir Thrillers collection"
+    },
+    {
+      "name": "Hidden Identity Thrillers (Part 14)",
+      "url_path": "hidden-identity-thrillers-part-14-",
+      "description": "Hidden Identity Thrillers (Part 14) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Hidden Identity Thrillers (Part 14) collection"
+    }
+  ],
+  "totalLists": 6
+}

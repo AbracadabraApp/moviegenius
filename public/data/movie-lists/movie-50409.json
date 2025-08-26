@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Inheritance Challenge Comedies",
+      "url_path": "inheritance-challenge-comedies",
+      "description": "Inheritance Challenge Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Inheritance Challenge Comedies collection"
+    },
+    {
+      "name": "Haunted Inn Comedies",
+      "url_path": "haunted-inn-comedies",
+      "description": "Haunted Inn Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Haunted Inn Comedies collection"
+    },
+    {
+      "name": "Classic Screwball Capers (Part 6)",
+      "url_path": "classic-screwball-capers-part-6-",
+      "description": "Classic Screwball Capers (Part 6) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Screwball Capers (Part 6) collection"
+    },
+    {
+      "name": "Dark Comedy Accidents (Part 11)",
+      "url_path": "dark-comedy-accidents-part-11-",
+      "description": "Dark Comedy Accidents (Part 11) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Dark Comedy Accidents (Part 11) collection"
+    },
+    {
+      "name": "Classic Haunted House (Part 2)",
+      "url_path": "classic-haunted-house-part-2-",
+      "description": "Classic Haunted House (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Haunted House (Part 2) collection"
+    },
+    {
+      "name": "Classic Monster Comedy (Part 5)",
+      "url_path": "classic-monster-comedy-part-5-",
+      "description": "Classic Monster Comedy (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Monster Comedy (Part 5) collection"
+    }
+  ],
+  "totalLists": 6
+}

@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Art Heist Films",
+      "url_path": "art-heist-films",
+      "description": "Art Heist Films collection",
+      "category": "crime",
+      "connectionReason": "Part of Art Heist Films collection"
+    },
+    {
+      "name": "Luxury Lifestyle Crime",
+      "url_path": "luxury-lifestyle-crime",
+      "description": "Luxury Lifestyle Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Luxury Lifestyle Crime collection"
+    },
+    {
+      "name": "Con Artist Romance",
+      "url_path": "con-artist-romance",
+      "description": "Con Artist Romance collection",
+      "category": "crime",
+      "connectionReason": "Part of Con Artist Romance collection"
+    },
+    {
+      "name": "Financial Crisis Thrillers",
+      "url_path": "financial-crisis-thrillers",
+      "description": "Financial Crisis Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Financial Crisis Thrillers collection"
+    },
+    {
+      "name": "Hidden Identity Thrillers (Part 6)",
+      "url_path": "hidden-identity-thrillers-part-6-",
+      "description": "Hidden Identity Thrillers (Part 6) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Hidden Identity Thrillers (Part 6) collection"
+    },
+    {
+      "name": "Tech Industry Conspiracy (Part 2)",
+      "url_path": "tech-industry-conspiracy-part-2-",
+      "description": "Tech Industry Conspiracy (Part 2) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Tech Industry Conspiracy (Part 2) collection"
+    }
+  ],
+  "totalLists": 6
+}

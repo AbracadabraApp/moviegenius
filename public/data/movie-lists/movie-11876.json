@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "French Bandit Romances",
+      "url_path": "french-bandit-romances",
+      "description": "French Bandit Romances collection",
+      "category": "adventure",
+      "connectionReason": "Part of French Bandit Romances collection"
+    },
+    {
+      "name": "True Survival Stories [OVERSIZED]",
+      "url_path": "true-survival-stories-oversized-",
+      "description": "True Survival Stories [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of True Survival Stories [OVERSIZED] collection"
+    },
+    {
+      "name": "Cross-Border Quest Films [OVERSIZED]",
+      "url_path": "cross-border-quest-films-oversized-",
+      "description": "Cross-Border Quest Films [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Cross-Border Quest Films [OVERSIZED] collection"
+    },
+    {
+      "name": "French Society Scandals",
+      "url_path": "french-society-scandals",
+      "description": "French Society Scandals collection",
+      "category": "period",
+      "connectionReason": "Part of French Society Scandals collection"
+    },
+    {
+      "name": "Colonial & Cultural Identity",
+      "url_path": "colonial-cultural-identity",
+      "description": "Colonial & Cultural Identity collection",
+      "category": "period",
+      "connectionReason": "Part of Colonial & Cultural Identity collection"
+    }
+  ],
+  "totalLists": 5
+}

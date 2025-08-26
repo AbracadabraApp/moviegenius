@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Religious Faith Comedies",
+      "url_path": "religious-faith-comedies",
+      "description": "Religious Faith Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Religious Faith Comedies collection"
+    },
+    {
+      "name": "Victorian Society Satires",
+      "url_path": "victorian-society-satires",
+      "description": "Victorian Society Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Victorian Society Satires collection"
+    },
+    {
+      "name": "British Culture Comedy",
+      "url_path": "british-culture-comedy",
+      "description": "British Culture Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of British Culture Comedy collection"
+    }
+  ],
+  "totalLists": 3
+}

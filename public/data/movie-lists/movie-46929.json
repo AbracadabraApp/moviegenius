@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Americana Nostalgia Films",
+      "url_path": "americana-nostalgia-films",
+      "description": "Americana Nostalgia Films collection",
+      "category": "animation",
+      "connectionReason": "Part of Americana Nostalgia Films collection"
+    },
+    {
+      "name": "Musical Education Animation",
+      "url_path": "musical-education-animation",
+      "description": "Musical Education Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Musical Education Animation collection"
+    },
+    {
+      "name": "Reality-Animation Crossover",
+      "url_path": "reality-animation-crossover",
+      "description": "Reality-Animation Crossover collection",
+      "category": "animation",
+      "connectionReason": "Part of Reality-Animation Crossover collection"
+    }
+  ],
+  "totalLists": 3
+}

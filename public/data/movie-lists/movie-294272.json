@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Supernatural Animal Tales",
+      "url_path": "supernatural-animal-tales",
+      "description": "Supernatural Animal Tales collection",
+      "category": "adventure",
+      "connectionReason": "Part of Supernatural Animal Tales collection"
+    },
+    {
+      "name": "Magical Creature Conservation",
+      "url_path": "magical-creature-conservation",
+      "description": "Magical Creature Conservation collection",
+      "category": "adventure",
+      "connectionReason": "Part of Magical Creature Conservation collection"
+    },
+    {
+      "name": "Foster Family Adventures",
+      "url_path": "foster-family-adventures",
+      "description": "Foster Family Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Foster Family Adventures collection"
+    },
+    {
+      "name": "Animal Communication Fantasy",
+      "url_path": "animal-communication-fantasy",
+      "description": "Animal Communication Fantasy collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Animal Communication Fantasy collection"
+    },
+    {
+      "name": "Coming-of-Age Fantasy [OVERSIZED]",
+      "url_path": "coming-of-age-fantasy-oversized-",
+      "description": "Coming-of-Age Fantasy [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Coming-of-Age Fantasy [OVERSIZED] collection"
+    },
+    {
+      "name": "Modern Magical Realism [OVERSIZED]",
+      "url_path": "modern-magical-realism-oversized-",
+      "description": "Modern Magical Realism [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Modern Magical Realism [OVERSIZED] collection"
+    },
+    {
+      "name": "Magical Creature Protection [OVERSIZED]",
+      "url_path": "magical-creature-protection-oversized-",
+      "description": "Magical Creature Protection [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Magical Creature Protection [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 7
+}

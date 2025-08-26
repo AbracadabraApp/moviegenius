@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Spanish Horror Cinema",
+      "url_path": "spanish-horror-cinema",
+      "description": "Spanish Horror Cinema collection",
+      "category": "horror",
+      "connectionReason": "Part of Spanish Horror Cinema collection"
+    },
+    {
+      "name": "Feminist Vampire Cinema",
+      "url_path": "feminist-vampire-cinema",
+      "description": "Feminist Vampire Cinema collection",
+      "category": "horror",
+      "connectionReason": "Part of Feminist Vampire Cinema collection"
+    },
+    {
+      "name": "European Vampire Deconstruction",
+      "url_path": "european-vampire-deconstruction",
+      "description": "European Vampire Deconstruction collection",
+      "category": "horror",
+      "connectionReason": "Part of European Vampire Deconstruction collection"
+    },
+    {
+      "name": "Literary Horror Adaptations (Part 4)",
+      "url_path": "literary-horror-adaptations-part-4-",
+      "description": "Literary Horror Adaptations (Part 4) collection",
+      "category": "horror",
+      "connectionReason": "Part of Literary Horror Adaptations (Part 4) collection"
+    }
+  ],
+  "totalLists": 4
+}

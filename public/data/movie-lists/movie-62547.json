@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "French Bandit Romances",
+      "url_path": "french-bandit-romances",
+      "description": "French Bandit Romances collection",
+      "category": "adventure",
+      "connectionReason": "Part of French Bandit Romances collection"
+    },
+    {
+      "name": "Classic Literary Adventures [OVERSIZED]",
+      "url_path": "classic-literary-adventures-oversized-",
+      "description": "Classic Literary Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Classic Literary Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Military Training Comedy",
+      "url_path": "military-training-comedy",
+      "description": "Military Training Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Military Training Comedy collection"
+    },
+    {
+      "name": "Classic Screwball Capers (Part 3)",
+      "url_path": "classic-screwball-capers-part-3-",
+      "description": "Classic Screwball Capers (Part 3) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Screwball Capers (Part 3) collection"
+    },
+    {
+      "name": "Post-War Social Satire (Part 2)",
+      "url_path": "post-war-social-satire-part-2-",
+      "description": "Post-War Social Satire (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Post-War Social Satire (Part 2) collection"
+    }
+  ],
+  "totalLists": 5
+}

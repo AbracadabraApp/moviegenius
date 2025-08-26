@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "City Symphony Films",
+      "url_path": "city-symphony-films",
+      "description": "City Symphony Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of City Symphony Films collection"
+    },
+    {
+      "name": "Visual Nature Symphonies (Part 1)",
+      "url_path": "visual-nature-symphonies-part-1-",
+      "description": "Visual Nature Symphonies (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Visual Nature Symphonies (Part 1) collection"
+    },
+    {
+      "name": "Global Cultural Meditations (Part 1)",
+      "url_path": "global-cultural-meditations-part-1-",
+      "description": "Global Cultural Meditations (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Cultural Meditations (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

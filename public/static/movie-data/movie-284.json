@@ -1,0 +1,133 @@
+{
+  "movieId": "e31560e5-70ea-41e6-9c38-b27c15ae3bb6",
+  "tmdbId": 284,
+  "title": "The Apartment",
+  "year": 1960,
+  "analysis": {
+    "keyElements": {
+      "director": "Billy Wilder",
+      "writers": [
+        "Billy Wilder",
+        "I.A.L. Diamond"
+      ],
+      "stars": [
+        "Jack Lemmon",
+        "Shirley MacLaine",
+        "Fred MacMurray"
+      ],
+      "genre": "Comedy-Drama",
+      "releaseYear": 1960,
+      "cinematographer": "Joseph LaShelle",
+      "composer": "Adolph Deutsch",
+      "studio": "United Artists"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of comedy and drama that tackles workplace exploitation and loneliness with remarkable nuance",
+        "Career-defining performances from Jack Lemmon and Shirley MacLaine that perfectly balance humor and pathos",
+        "Billy Wilder's sharp direction and screenplay create a timeless commentary on corporate culture and human dignity"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Some Like It Hot",
+        "year": 1959,
+        "description": "Another Billy Wilder masterpiece that combines comedy with social commentary"
+      },
+      {
+        "title": "Brief Encounter",
+        "year": 1945,
+        "description": "Earlier exploration of forbidden love and moral choices"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Corporate Culture in Cinema",
+        "category": "Social Commentary",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Comedy-Drama Hybrid Genre",
+        "category": "Film Theory",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Billy Wilder",
+      "personId": 3866,
+      "slug": "/person/3866",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Billy Wilder",
+        "personId": 3866,
+        "slug": "/person/3866",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "I.A.L. Diamond",
+        "personId": 14798,
+        "slug": "/person/14798",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Jack Lemmon",
+        "personId": 15392,
+        "slug": "/person/15392",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Shirley MacLaine",
+        "personId": 34035,
+        "slug": "/person/34035",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Fred MacMurray",
+        "personId": 11672,
+        "slug": "/person/11672",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Joseph LaShelle",
+      "personId": 19271,
+      "slug": "/person/19271",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Adolph Deutsch",
+      "personId": 267,
+      "slug": "/person/267",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:19.503Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

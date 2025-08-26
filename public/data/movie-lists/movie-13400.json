@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Stop Motion Classics",
+      "url_path": "stop-motion-classics",
+      "description": "Stop Motion Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Stop Motion Classics collection"
+    },
+    {
+      "name": "Holiday Special Animations",
+      "url_path": "holiday-special-animations",
+      "description": "Holiday Special Animations collection",
+      "category": "animation",
+      "connectionReason": "Part of Holiday Special Animations collection"
+    },
+    {
+      "name": "Cultural Heritage Celebrations",
+      "url_path": "cultural-heritage-celebrations",
+      "description": "Cultural Heritage Celebrations collection",
+      "category": "animation",
+      "connectionReason": "Part of Cultural Heritage Celebrations collection"
+    },
+    {
+      "name": "Literary Origin Stories",
+      "url_path": "literary-origin-stories",
+      "description": "Literary Origin Stories collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Literary Origin Stories collection"
+    },
+    {
+      "name": "Magical Career Beginnings",
+      "url_path": "magical-career-beginnings",
+      "description": "Magical Career Beginnings collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Magical Career Beginnings collection"
+    },
+    {
+      "name": "Holiday Magic Adventures",
+      "url_path": "holiday-magic-adventures",
+      "description": "Holiday Magic Adventures collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Holiday Magic Adventures collection"
+    }
+  ],
+  "totalLists": 6
+}

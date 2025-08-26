@@ -1,0 +1,143 @@
+{
+  "movieId": "1223812c-2c61-4a89-be6b-38b2e151404f",
+  "tmdbId": 201,
+  "title": "Star Trek: Nemesis",
+  "year": 2002,
+  "analysis": {
+    "keyElements": {
+      "director": "Stuart Baird",
+      "writers": [
+        "John Logan",
+        "Rick Berman",
+        "Brent Spiner"
+      ],
+      "stars": [
+        "Patrick Stewart",
+        "Brent Spiner",
+        "Tom Hardy"
+      ],
+      "genre": "Science Fiction",
+      "releaseYear": 2002,
+      "cinematographer": "Jeffrey L. Kimball",
+      "composer": "Jerry Goldsmith",
+      "studio": "Paramount Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "NO",
+      "reasons": [
+        "Fails to provide a satisfying conclusion to The Next Generation crew's journey",
+        "Underdeveloped villain despite Tom Hardy's strong performance",
+        "Watch **Star Trek: First Contact** (1996) instead for a superior TNG film experience"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Star Trek II: The Wrath of Khan",
+        "year": 1982,
+        "description": "The gold standard for Trek films, demonstrating how to balance action with character development"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Nature vs. Nurture in Science Fiction",
+        "category": "Theme Analysis",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Franchise Finale Challenges",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Stuart Baird",
+      "personId": 35118,
+      "slug": "/person/35118",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "John Logan",
+        "personId": 18406,
+        "slug": "/person/18406",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Rick Berman",
+        "personId": 31230,
+        "slug": "/person/31230",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Brent Spiner",
+        "personId": 4304,
+        "slug": "/person/4304",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Patrick Stewart",
+        "personId": 28648,
+        "slug": "/person/28648",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jonathan Frakes",
+        "personId": 18863,
+        "slug": "/person/18863",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Brent Spiner",
+        "personId": 4304,
+        "slug": "/person/4304",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Tom Hardy",
+        "personId": 36564,
+        "slug": "/person/36564",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Jeffrey L. Kimball",
+      "personId": 16884,
+      "slug": "/person/16884",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Jerry Goldsmith",
+      "personId": 17176,
+      "slug": "/person/17176",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:06.402Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

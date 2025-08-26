@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Classic Italian Gothic",
+      "url_path": "classic-italian-gothic",
+      "description": "Classic Italian Gothic collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Italian Gothic collection"
+    },
+    {
+      "name": "Religious Horror Thrillers (Part 2)",
+      "url_path": "religious-horror-thrillers-part-2-",
+      "description": "Religious Horror Thrillers (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Religious Horror Thrillers (Part 2) collection"
+    },
+    {
+      "name": "Extreme Gore Horror (Part 1)",
+      "url_path": "extreme-gore-horror-part-1-",
+      "description": "Extreme Gore Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Extreme Gore Horror (Part 1) collection"
+    },
+    {
+      "name": "Small Town Conspiracy (Part 1)",
+      "url_path": "small-town-conspiracy-part-1-",
+      "description": "Small Town Conspiracy (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Small Town Conspiracy (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

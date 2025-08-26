@@ -1,0 +1,134 @@
+{
+  "movieId": "fcbebb9b-182d-4139-a631-5ecaf3a2eade",
+  "tmdbId": 260,
+  "title": "The 39 Steps",
+  "year": 1935,
+  "analysis": {
+    "keyElements": {
+      "director": "Alfred Hitchcock",
+      "writers": [
+        "Charles Bennett",
+        "John Buchan"
+      ],
+      "stars": [
+        "Robert Donat",
+        "Madeleine Carroll"
+      ],
+      "genre": "Thriller",
+      "releaseYear": 1935,
+      "cinematographer": "Bernard Knowles",
+      "composer": "Louis Levy",
+      "studio": "Gaumont British Picture Corporation"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful early example of Hitchcock's signature wrong-man thriller format",
+        "Perfect blend of suspense, romance, and wit that influenced countless later films",
+        "Showcases innovative chase sequences and plot twists that still feel fresh today"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "North by Northwest",
+        "year": 1959,
+        "description": "Hitchcock's later masterpiece that perfected the wrong-man thriller format established in The 39 Steps"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "MacGuffin Plot Device",
+        "category": "narrative_technique",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "British Thriller Evolution",
+        "category": "film_history",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Alfred Hitchcock",
+      "personId": 1111,
+      "slug": "/person/1111",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "John Buchan",
+        "personId": 18047,
+        "slug": "/person/18047",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Charles Bennett",
+        "personId": 5396,
+        "slug": "/person/5396",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ian Hay",
+        "personId": 14816,
+        "slug": "/person/14816",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Robert Donat",
+        "personId": 31535,
+        "slug": "/person/31535",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Madeleine Carroll",
+        "personId": 23392,
+        "slug": "/person/23392",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Lucie Mannheim",
+        "personId": 23103,
+        "slug": "/person/23103",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Bernard Knowles",
+      "personId": 3484,
+      "slug": "/person/3484",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Louis Levy",
+      "personId": 22998,
+      "slug": "/person/22998",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:16.444Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

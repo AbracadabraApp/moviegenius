@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Musical Prodigy Stories",
+      "url_path": "musical-prodigy-stories",
+      "description": "Musical Prodigy Stories collection",
+      "category": "music",
+      "connectionReason": "Part of Musical Prodigy Stories collection"
+    },
+    {
+      "name": "Classical Performance Biopics",
+      "url_path": "classical-performance-biopics",
+      "description": "Classical Performance Biopics collection",
+      "category": "music",
+      "connectionReason": "Part of Classical Performance Biopics collection"
+    },
+    {
+      "name": "Family Business Musicals",
+      "url_path": "family-business-musicals",
+      "description": "Family Business Musicals collection",
+      "category": "music",
+      "connectionReason": "Part of Family Business Musicals collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,133 @@
+{
+  "movieId": "03d8980f-eb33-4ea4-98d5-3706d9f44bae",
+  "tmdbId": 218,
+  "title": "The Terminator",
+  "year": 1984,
+  "analysis": {
+    "keyElements": {
+      "director": "James Cameron",
+      "writers": [
+        "James Cameron",
+        "Gale Anne Hurd"
+      ],
+      "stars": [
+        "Arnold Schwarzenegger",
+        "Linda Hamilton",
+        "Michael Biehn"
+      ],
+      "genre": "Science Fiction/Action",
+      "releaseYear": 1984,
+      "cinematographer": "Adam Greenberg",
+      "composer": "Brad Fiedel",
+      "studio": "Orion Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking blend of horror, action, and sci-fi that launched a franchise and defined modern action cinema",
+        "Arnold Schwarzenegger's iconic performance as the ruthless cyborg created one of cinema's greatest villains",
+        "Masterful pacing and practical effects that still hold up today, proving less can be more in action filmmaking"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Terminator",
+        "year": 1984,
+        "description": "A landmark sci-fi action film that launched James Cameron's career and established Arnold Schwarzenegger as a leading action star"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Practical Effects in 1980s Sci-Fi",
+        "category": "Technical",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Time Travel Paradoxes in Cinema",
+        "category": "Narrative",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Evolution of AI in Science Fiction",
+        "category": "Thematic",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "James Cameron",
+      "personId": 15711,
+      "slug": "/person/15711",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "James Cameron",
+        "personId": 15711,
+        "slug": "/person/15711",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Gale Anne Hurd",
+        "personId": 11874,
+        "slug": "/person/11874",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Arnold Schwarzenegger",
+        "personId": 2572,
+        "slug": "/person/2572",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Linda Hamilton",
+        "personId": 22571,
+        "slug": "/person/22571",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Michael Biehn",
+        "personId": 25513,
+        "slug": "/person/25513",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Adam Greenberg",
+      "personId": 164,
+      "slug": "/person/164",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Brad Fiedel",
+      "personId": 4165,
+      "slug": "/person/4165",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:08.372Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Celebrity & Biography",
+      "url_path": "celebrity-biography",
+      "description": "Celebrity & Biography collection",
+      "category": "documentary",
+      "connectionReason": "Part of Celebrity & Biography collection"
+    },
+    {
+      "name": "Human-Animal Relationships",
+      "url_path": "human-animal-relationships",
+      "description": "Human-Animal Relationships collection",
+      "category": "documentary",
+      "connectionReason": "Part of Human-Animal Relationships collection"
+    },
+    {
+      "name": "Visual Nature Symphonies (Part 1)",
+      "url_path": "visual-nature-symphonies-part-1-",
+      "description": "Visual Nature Symphonies (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Visual Nature Symphonies (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,140 @@
+{
+  "movieId": "11e3cf0b-307f-4dbf-bfc7-7616486c3ebc",
+  "tmdbId": 231,
+  "title": "Syriana",
+  "year": 2005,
+  "analysis": {
+    "keyElements": {
+      "director": "Stephen Gaghan",
+      "writers": [
+        "Stephen Gaghan"
+      ],
+      "stars": [
+        "George Clooney",
+        "Matt Damon",
+        "Jeffrey Wright",
+        "Christopher Plummer"
+      ],
+      "genre": "Political Thriller",
+      "releaseYear": 2005,
+      "cinematographer": "Robert Elswit",
+      "composer": "Alexandre Desplat",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful interweaving of complex global political narratives that remain relevant today",
+        "George Clooney's Oscar-winning performance as Bob Barnes shows the human cost of geopolitical machinations",
+        "Sophisticated examination of oil politics and Middle Eastern relations that predicted many current issues"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Traffic",
+        "year": 2000,
+        "description": "Similar multi-narrative approach to complex global issues"
+      },
+      {
+        "title": "Michael Clayton",
+        "year": 2007,
+        "description": "Corporate thriller with similar themes of corruption and moral compromise"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Global Oil Politics",
+        "category": "Political Economy",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Multi-Narrative Storytelling",
+        "category": "Film Structure",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Stephen Gaghan",
+      "personId": 34743,
+      "slug": "/person/34743",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Stephen Gaghan",
+        "personId": 34743,
+        "slug": "/person/34743",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Robert Baer (book)",
+        "personId": 31448,
+        "slug": "/person/31448",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "George Clooney",
+        "personId": 12227,
+        "slug": "/person/12227",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Matt Damon",
+        "personId": 24915,
+        "slug": "/person/24915",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jeffrey Wright",
+        "personId": 16900,
+        "slug": "/person/16900",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Christopher Plummer",
+        "personId": 6273,
+        "slug": "/person/6273",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Robert Elswit",
+      "personId": 31567,
+      "slug": "/person/31567",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Alexandre Desplat",
+      "personId": 972,
+      "slug": "/person/972",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:10.772Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

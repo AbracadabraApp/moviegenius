@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Community Against Developers",
+      "url_path": "community-against-developers",
+      "description": "Community Against Developers collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Community Against Developers collection"
+    },
+    {
+      "name": "Alien Integration Stories",
+      "url_path": "alien-integration-stories",
+      "description": "Alien Integration Stories collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Alien Integration Stories collection"
+    },
+    {
+      "name": "Underground Lost Worlds",
+      "url_path": "underground-lost-worlds",
+      "description": "Underground Lost Worlds collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Underground Lost Worlds collection"
+    }
+  ],
+  "totalLists": 3
+}

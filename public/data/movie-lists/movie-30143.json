@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "European Castle Heists",
+      "url_path": "european-castle-heists",
+      "description": "European Castle Heists collection",
+      "category": "adventure",
+      "connectionReason": "Part of European Castle Heists collection"
+    },
+    {
+      "name": "Pulp Hero Adventures",
+      "url_path": "pulp-hero-adventures",
+      "description": "Pulp Hero Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Pulp Hero Adventures collection"
+    },
+    {
+      "name": "International Thief Capers",
+      "url_path": "international-thief-capers",
+      "description": "International Thief Capers collection",
+      "category": "adventure",
+      "connectionReason": "Part of International Thief Capers collection"
+    },
+    {
+      "name": "Cross-Border Quest Films [OVERSIZED]",
+      "url_path": "cross-border-quest-films-oversized-",
+      "description": "Cross-Border Quest Films [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Cross-Border Quest Films [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "name": "Environmental Travel Films",
+      "url_path": "environmental-travel-films",
+      "description": "Environmental Travel Films collection",
+      "category": "adventure",
+      "connectionReason": "Part of Environmental Travel Films collection"
+    },
+    {
+      "name": "Action and Adventure",
+      "url_path": "action-and-adventure",
+      "description": "Action and Adventure collection",
+      "category": "adventure",
+      "connectionReason": "Part of Action and Adventure collection"
+    }
+  ],
+  "totalLists": 2
+}

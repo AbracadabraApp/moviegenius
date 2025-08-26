@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Environmental Sports Documentaries",
+      "url_path": "environmental-sports-documentaries",
+      "description": "Environmental Sports Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Environmental Sports Documentaries collection"
+    },
+    {
+      "name": "Climate Change Cinema",
+      "url_path": "climate-change-cinema",
+      "description": "Climate Change Cinema collection",
+      "category": "documentary",
+      "connectionReason": "Part of Climate Change Cinema collection"
+    },
+    {
+      "name": "Political Media Debates",
+      "url_path": "political-media-debates",
+      "description": "Political Media Debates collection",
+      "category": "documentary",
+      "connectionReason": "Part of Political Media Debates collection"
+    }
+  ],
+  "totalLists": 3
+}

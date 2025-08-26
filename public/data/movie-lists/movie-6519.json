@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Car Chase Capers",
+      "url_path": "car-chase-capers",
+      "description": "Car Chase Capers collection",
+      "category": "comedy",
+      "connectionReason": "Part of Car Chase Capers collection"
+    },
+    {
+      "name": "Cross-Country Adventure",
+      "url_path": "cross-country-adventure",
+      "description": "Cross-Country Adventure collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Country Adventure collection"
+    },
+    {
+      "name": "TV Show Adaptations",
+      "url_path": "tv-show-adaptations",
+      "description": "TV Show Adaptations collection",
+      "category": "comedy",
+      "connectionReason": "Part of TV Show Adaptations collection"
+    }
+  ],
+  "totalLists": 3
+}

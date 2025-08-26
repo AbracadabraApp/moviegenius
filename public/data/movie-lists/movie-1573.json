@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Holiday Horror Thrillers",
+      "url_path": "holiday-horror-thrillers",
+      "description": "Holiday Horror Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Holiday Horror Thrillers collection"
+    },
+    {
+      "name": "Transportation Disaster Thrillers",
+      "url_path": "transportation-disaster-thrillers",
+      "description": "Transportation Disaster Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Transportation Disaster Thrillers collection"
+    },
+    {
+      "name": "One Night Thrillers (Part 2)",
+      "url_path": "one-night-thrillers-part-2-",
+      "description": "One Night Thrillers (Part 2) collection",
+      "category": "thriller",
+      "connectionReason": "Part of One Night Thrillers (Part 2) collection"
+    },
+    {
+      "name": "Real-Time Action Thrillers (Part 1)",
+      "url_path": "real-time-action-thrillers-part-1-",
+      "description": "Real-Time Action Thrillers (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Real-Time Action Thrillers (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Cultural Exploration",
+      "url_path": "cultural-exploration",
+      "description": "Cultural Exploration collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cultural Exploration collection"
+    },
+    {
+      "name": "Labor Movement Chronicles",
+      "url_path": "labor-movement-chronicles",
+      "description": "Labor Movement Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Labor Movement Chronicles collection"
+    },
+    {
+      "name": "Economic Crisis Impact",
+      "url_path": "economic-crisis-impact",
+      "description": "Economic Crisis Impact collection",
+      "category": "documentary",
+      "connectionReason": "Part of Economic Crisis Impact collection"
+    }
+  ],
+  "totalLists": 3
+}

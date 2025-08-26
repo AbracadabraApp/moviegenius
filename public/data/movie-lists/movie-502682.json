@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Senior Life Comedies",
+      "url_path": "senior-life-comedies",
+      "description": "Senior Life Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Senior Life Comedies collection"
+    },
+    {
+      "name": "Female Ensemble Mysteries",
+      "url_path": "female-ensemble-mysteries",
+      "description": "Female Ensemble Mysteries collection",
+      "category": "comedy",
+      "connectionReason": "Part of Female Ensemble Mysteries collection"
+    },
+    {
+      "name": "Literary Fandom Comedies",
+      "url_path": "literary-fandom-comedies",
+      "description": "Literary Fandom Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Literary Fandom Comedies collection"
+    },
+    {
+      "name": "Modern Urban Romance (Part 3)",
+      "url_path": "modern-urban-romance-part-3-",
+      "description": "Modern Urban Romance (Part 3) collection",
+      "category": "romance",
+      "connectionReason": "Part of Modern Urban Romance (Part 3) collection"
+    },
+    {
+      "name": "Midlife Romance Stories (Part 1)",
+      "url_path": "midlife-romance-stories-part-1-",
+      "description": "Midlife Romance Stories (Part 1) collection",
+      "category": "romance",
+      "connectionReason": "Part of Midlife Romance Stories (Part 1) collection"
+    },
+    {
+      "name": "Ensemble Romance Stories (Part 1)",
+      "url_path": "ensemble-romance-stories-part-1-",
+      "description": "Ensemble Romance Stories (Part 1) collection",
+      "category": "romance",
+      "connectionReason": "Part of Ensemble Romance Stories (Part 1) collection"
+    }
+  ],
+  "totalLists": 6
+}

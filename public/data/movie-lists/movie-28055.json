@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Beauty Industry Horror",
+      "url_path": "beauty-industry-horror",
+      "description": "Beauty Industry Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Beauty Industry Horror collection"
+    },
+    {
+      "name": "Classic Italian Gothic",
+      "url_path": "classic-italian-gothic",
+      "description": "Classic Italian Gothic collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Italian Gothic collection"
+    },
+    {
+      "name": "Giallo Murder Mystery",
+      "url_path": "giallo-murder-mystery",
+      "description": "Giallo Murder Mystery collection",
+      "category": "horror",
+      "connectionReason": "Part of Giallo Murder Mystery collection"
+    },
+    {
+      "name": "Art House Horror (Part 1)",
+      "url_path": "art-house-horror-part-1-",
+      "description": "Art House Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Art House Horror (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

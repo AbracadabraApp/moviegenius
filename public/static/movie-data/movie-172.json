@@ -1,0 +1,136 @@
+{
+  "movieId": "1cb2c996-bfc7-4418-b3b5-28afc1df1a41",
+  "tmdbId": 172,
+  "title": "Star Trek V: The Final Frontier",
+  "year": 1989,
+  "analysis": {
+    "keyElements": {
+      "director": "William Shatner",
+      "writers": [
+        "David Loughery",
+        "William Shatner",
+        "Harve Bennett"
+      ],
+      "stars": [
+        "William Shatner",
+        "Leonard Nimoy",
+        "DeForest Kelley"
+      ],
+      "genre": "Science Fiction",
+      "releaseYear": 1989,
+      "cinematographer": "Andrew Laszlo",
+      "composer": "Jerry Goldsmith",
+      "studio": "Paramount Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "NO",
+      "reasons": [
+        "Poorly executed story that fails to deliver on its philosophical ambitions",
+        "Subpar special effects that don't meet Star Trek standards",
+        "Watch **Star Trek II: The Wrath of Khan** (1982) instead for superior Trek storytelling"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Star Trek II: The Wrath of Khan",
+        "year": 1982,
+        "description": "The gold standard of Star Trek films, demonstrating how to balance action, character, and philosophy"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Religious Themes in Science Fiction",
+        "category": "Theme Analysis",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Franchise Directorial Challenges",
+        "category": "Film Production",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "William Shatner",
+      "personId": 38631,
+      "slug": "/person/38631",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "David Loughery",
+        "personId": 7974,
+        "slug": "/person/7974",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "William Shatner",
+        "personId": 38631,
+        "slug": "/person/38631",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Harve Bennett",
+        "personId": 13860,
+        "slug": "/person/13860",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "William Shatner",
+        "personId": 38631,
+        "slug": "/person/38631",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Leonard Nimoy",
+        "personId": 22227,
+        "slug": "/person/22227",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "DeForest Kelley",
+        "personId": 8374,
+        "slug": "/person/8374",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Andrew Laszlo",
+      "personId": 1761,
+      "slug": "/person/1761",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Jerry Goldsmith",
+      "personId": 17176,
+      "slug": "/person/17176",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:01.308Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

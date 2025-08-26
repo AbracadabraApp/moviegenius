@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Cinéma Vérité Classics",
+      "url_path": "cin-ma-v-rit-classics",
+      "description": "Cinéma Vérité Classics collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cinéma Vérité Classics collection"
+    },
+    {
+      "name": "Public Institution Studies",
+      "url_path": "public-institution-studies",
+      "description": "Public Institution Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Public Institution Studies collection"
+    },
+    {
+      "name": "Urban Subculture Studies (Part 2)",
+      "url_path": "urban-subculture-studies-part-2-",
+      "description": "Urban Subculture Studies (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Urban Subculture Studies (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

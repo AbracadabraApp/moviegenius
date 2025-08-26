@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "TV Production Chronicles",
+      "url_path": "tv-production-chronicles",
+      "description": "TV Production Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of TV Production Chronicles collection"
+    },
+    {
+      "name": "Controversial Film Production",
+      "url_path": "controversial-film-production",
+      "description": "Controversial Film Production collection",
+      "category": "documentary",
+      "connectionReason": "Part of Controversial Film Production collection"
+    },
+    {
+      "name": "Global Industry Transitions (Part 2)",
+      "url_path": "global-industry-transitions-part-2-",
+      "description": "Global Industry Transitions (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Industry Transitions (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

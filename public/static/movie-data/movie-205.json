@@ -1,0 +1,138 @@
+{
+  "movieId": "b6624790-3091-4271-8e68-c21696322c01",
+  "tmdbId": 205,
+  "title": "Hotel Rwanda",
+  "year": 2004,
+  "analysis": {
+    "keyElements": {
+      "director": "Terry George",
+      "writers": [
+        "Keir Pearson",
+        "Terry George"
+      ],
+      "stars": [
+        "Don Cheadle",
+        "Sophie Okonedo",
+        "Nick Nolte"
+      ],
+      "genre": "Biography/Drama/History",
+      "releaseYear": 2004,
+      "cinematographer": "Robert Fraisse",
+      "composer": "Andrea Guerra",
+      "studio": "United Artists"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Don Cheadle's powerful, Oscar-nominated performance as Paul Rusesabagina brings humanity to an unimaginable crisis",
+        "The film masterfully balances personal drama with historical significance while maintaining dignity",
+        "Essential viewing for understanding modern genocide and the power of individual moral courage"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Schindler's List",
+        "year": 1993,
+        "description": "Similar theme of individual heroism during genocide"
+      },
+      {
+        "title": "The Killing Fields",
+        "year": 1984,
+        "description": "Personal narrative of genocide and survival"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Rwandan Genocide",
+        "category": "Historical Context",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Humanitarian Intervention",
+        "category": "Political Science",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Media Representation of African Conflicts",
+        "category": "Media Studies",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Terry George",
+      "personId": 35872,
+      "slug": "/person/35872",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Keir Pearson",
+        "personId": 20506,
+        "slug": "/person/20506",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Terry George",
+        "personId": 35872,
+        "slug": "/person/35872",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Don Cheadle",
+        "personId": 8969,
+        "slug": "/person/8969",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sophie Okonedo",
+        "personId": 34482,
+        "slug": "/person/34482",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Joaquin Phoenix",
+        "personId": 17682,
+        "slug": "/person/17682",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Robert Fraisse",
+      "personId": 31598,
+      "slug": "/person/31598",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Andrea Guerra",
+      "personId": 1579,
+      "slug": "/person/1579",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:06.844Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

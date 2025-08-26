@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "AI Horror",
+      "url_path": "ai-horror",
+      "description": "AI Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of AI Horror collection"
+    },
+    {
+      "name": "Scientific Creation Horror",
+      "url_path": "scientific-creation-horror",
+      "description": "Scientific Creation Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Scientific Creation Horror collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 3)",
+      "url_path": "confined-space-thrillers-part-3-",
+      "description": "Confined Space Thrillers (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 3) collection"
+    },
+    {
+      "name": "Industrial Power Corruption",
+      "url_path": "industrial-power-corruption",
+      "description": "Industrial Power Corruption collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Industrial Power Corruption collection"
+    },
+    {
+      "name": "Corporate Science Horror (Part 2)",
+      "url_path": "corporate-science-horror-part-2-",
+      "description": "Corporate Science Horror (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Corporate Science Horror (Part 2) collection"
+    },
+    {
+      "name": "Military Enhancement Programs (Part 1)",
+      "url_path": "military-enhancement-programs-part-1-",
+      "description": "Military Enhancement Programs (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Military Enhancement Programs (Part 1) collection"
+    }
+  ],
+  "totalLists": 6
+}

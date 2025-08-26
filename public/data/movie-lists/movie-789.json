@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Coming-of-Age Adventures",
+      "url_path": "coming-of-age-adventures",
+      "description": "Coming-of-Age Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Coming-of-Age Adventures collection"
+    },
+    {
+      "name": "Post-War Social Satire (Part 2)",
+      "url_path": "post-war-social-satire-part-2-",
+      "description": "Post-War Social Satire (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Post-War Social Satire (Part 2) collection"
+    },
+    {
+      "name": "Sexual Liberation Satires (Part 1)",
+      "url_path": "sexual-liberation-satires-part-1-",
+      "description": "Sexual Liberation Satires (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Sexual Liberation Satires (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

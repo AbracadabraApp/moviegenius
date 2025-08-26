@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Teen Life Chronicles",
+      "url_path": "teen-life-chronicles",
+      "description": "Teen Life Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Teen Life Chronicles collection"
+    },
+    {
+      "name": "Economic Crisis Impact",
+      "url_path": "economic-crisis-impact",
+      "description": "Economic Crisis Impact collection",
+      "category": "documentary",
+      "connectionReason": "Part of Economic Crisis Impact collection"
+    },
+    {
+      "name": "Youth Sports Industry",
+      "url_path": "youth-sports-industry",
+      "description": "Youth Sports Industry collection",
+      "category": "documentary",
+      "connectionReason": "Part of Youth Sports Industry collection"
+    },
+    {
+      "name": "Perseverance Against Odds (Part 1)",
+      "url_path": "perseverance-against-odds-part-1-",
+      "description": "Perseverance Against Odds (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Perseverance Against Odds (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

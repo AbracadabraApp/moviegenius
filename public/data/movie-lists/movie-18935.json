@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Summer Camp Comedies",
+      "url_path": "summer-camp-comedies",
+      "description": "Summer Camp Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Summer Camp Comedies collection"
+    },
+    {
+      "name": "Environmental Rights Comedy",
+      "url_path": "environmental-rights-comedy",
+      "description": "Environmental Rights Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Environmental Rights Comedy collection"
+    },
+    {
+      "name": "Found Family Comedies (Part 3)",
+      "url_path": "found-family-comedies-part-3-",
+      "description": "Found Family Comedies (Part 3) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Found Family Comedies (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

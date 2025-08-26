@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Social Climber Tragedies",
+      "url_path": "social-climber-tragedies",
+      "description": "Social Climber Tragedies collection",
+      "category": "period",
+      "connectionReason": "Part of Social Climber Tragedies collection"
+    },
+    {
+      "name": "Colonial & Cultural Identity",
+      "url_path": "colonial-cultural-identity",
+      "description": "Colonial & Cultural Identity collection",
+      "category": "period",
+      "connectionReason": "Part of Colonial & Cultural Identity collection"
+    },
+    {
+      "name": "European Society & Politics",
+      "url_path": "european-society-politics",
+      "description": "European Society & Politics collection",
+      "category": "period",
+      "connectionReason": "Part of European Society & Politics collection"
+    }
+  ],
+  "totalLists": 3
+}

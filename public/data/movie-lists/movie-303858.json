@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Media Exploitation Thrillers",
+      "url_path": "media-exploitation-thrillers",
+      "description": "Media Exploitation Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Media Exploitation Thrillers collection"
+    },
+    {
+      "name": "Financial Crisis Thrillers",
+      "url_path": "financial-crisis-thrillers",
+      "description": "Financial Crisis Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Financial Crisis Thrillers collection"
+    },
+    {
+      "name": "Real-Time Action Thrillers (Part 2)",
+      "url_path": "real-time-action-thrillers-part-2-",
+      "description": "Real-Time Action Thrillers (Part 2) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Real-Time Action Thrillers (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

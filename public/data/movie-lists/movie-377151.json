@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Border Region Documentaries",
+      "url_path": "border-region-documentaries",
+      "description": "Border Region Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Border Region Documentaries collection"
+    },
+    {
+      "name": "Maritime Industry Chronicles",
+      "url_path": "maritime-industry-chronicles",
+      "description": "Maritime Industry Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Maritime Industry Chronicles collection"
+    },
+    {
+      "name": "Global Cultural Meditations (Part 2)",
+      "url_path": "global-cultural-meditations-part-2-",
+      "description": "Global Cultural Meditations (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Cultural Meditations (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

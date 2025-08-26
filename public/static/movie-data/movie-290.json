@@ -1,0 +1,133 @@
+{
+  "movieId": "e67d0f96-cacb-4051-a185-86f9d12be61d",
+  "tmdbId": 290,
+  "title": "Barton Fink",
+  "year": 1991,
+  "analysis": {
+    "keyElements": {
+      "director": "Joel & Ethan Coen",
+      "writers": [
+        "Joel Coen",
+        "Ethan Coen"
+      ],
+      "stars": [
+        "John Turturro",
+        "John Goodman",
+        "Judy Davis"
+      ],
+      "genre": "Psychological Drama",
+      "releaseYear": 1991,
+      "cinematographer": "Roger Deakins",
+      "composer": "Carter Burwell",
+      "studio": "20th Century Fox"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of surrealism and Hollywood satire that rewards multiple viewings",
+        "Career-defining performances from both Turturro and Goodman",
+        "Unique exploration of creative struggle and artistic integrity"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Sunset Boulevard",
+        "year": 1950,
+        "description": "Similar Hollywood noir examining the dark side of the film industry"
+      },
+      {
+        "title": "Adaptation",
+        "year": 2002,
+        "description": "Comparable meta-exploration of writer's block and creative struggle"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Surrealism in American Cinema",
+        "category": "Film Theory",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Hollywood's Golden Age",
+        "category": "Film History",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Joel Coen, Ethan Coen",
+      "personId": 17788,
+      "slug": "/person/17788",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Joel Coen",
+        "personId": 17787,
+        "slug": "/person/17787",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ethan Coen",
+        "personId": 10667,
+        "slug": "/person/10667",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "John Turturro",
+        "personId": 18753,
+        "slug": "/person/18753",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "John Goodman",
+        "personId": 18244,
+        "slug": "/person/18244",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Judy Davis",
+        "personId": 19574,
+        "slug": "/person/19574",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Roger Deakins",
+      "personId": 32139,
+      "slug": "/person/32139",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Carter Burwell",
+      "personId": 5145,
+      "slug": "/person/5145",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:20.255Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

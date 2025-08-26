@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Police Reform Documentaries",
+      "url_path": "police-reform-documentaries",
+      "description": "Police Reform Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Police Reform Documentaries collection"
+    },
+    {
+      "name": "Public Institution Studies",
+      "url_path": "public-institution-studies",
+      "description": "Public Institution Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Public Institution Studies collection"
+    },
+    {
+      "name": "Urban Life Studies",
+      "url_path": "urban-life-studies",
+      "description": "Urban Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Urban Life Studies collection"
+    }
+  ],
+  "totalLists": 3
+}

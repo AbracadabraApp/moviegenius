@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Veteran PTSD Crime",
+      "url_path": "veteran-ptsd-crime",
+      "description": "Veteran PTSD Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Veteran PTSD Crime collection"
+    },
+    {
+      "name": "Professional Driver Crime",
+      "url_path": "professional-driver-crime",
+      "description": "Professional Driver Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Professional Driver Crime collection"
+    },
+    {
+      "name": "Rural Crime Thrillers (Part 3)",
+      "url_path": "rural-crime-thrillers-part-3-",
+      "description": "Rural Crime Thrillers (Part 3) collection",
+      "category": "crime",
+      "connectionReason": "Part of Rural Crime Thrillers (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

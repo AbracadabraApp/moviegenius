@@ -1,0 +1,149 @@
+{
+  "movieId": "27367585-22ab-4272-9f8a-bc4d63a88e4a",
+  "tmdbId": 59,
+  "title": "A History of Violence",
+  "year": 2005,
+  "analysis": {
+    "keyElements": {
+      "director": "David Cronenberg",
+      "writers": [
+        "Josh Olson",
+        "John Wagner",
+        "Vince Locke"
+      ],
+      "stars": [
+        "Viggo Mortensen",
+        "Maria Bello",
+        "Ed Harris",
+        "William Hurt"
+      ],
+      "genre": "Crime Drama/Thriller",
+      "releaseYear": 2005,
+      "cinematographer": "Peter Suschitzky",
+      "composer": "Howard Shore",
+      "studio": "New Line Cinema"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful exploration of identity and violence in American society",
+        "Viggo Mortensen's transformative performance as Tom/Joey",
+        "Cronenberg's precise direction balancing domestic drama with explosive violence"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Eastern Promises",
+        "year": 2007,
+        "description": "Cronenberg's spiritual successor exploring similar themes of violence and identity"
+      },
+      {
+        "title": "Blue Velvet",
+        "year": 1986,
+        "description": "Similar exploration of violence beneath small-town American facade"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Violence in Cinema",
+        "category": "Film Theory",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "American Identity in Film",
+        "category": "Cultural Studies",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "David Cronenberg",
+      "personId": 7739,
+      "slug": "/person/7739",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Josh Olson",
+        "personId": 19390,
+        "slug": "/person/19390",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "John Wagner",
+        "personId": 18769,
+        "slug": "/person/18769",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Vince Locke",
+        "personId": 37716,
+        "slug": "/person/37716",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Viggo Mortensen",
+        "personId": 37659,
+        "slug": "/person/37659",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Maria Bello",
+        "personId": 23954,
+        "slug": "/person/23954",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ed Harris",
+        "personId": 9529,
+        "slug": "/person/9529",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "William Hurt",
+        "personId": 38503,
+        "slug": "/person/38503",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Peter Suschitzky",
+      "personId": 29531,
+      "slug": "/person/29531",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Howard Shore",
+      "personId": 14607,
+      "slug": "/person/14607",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:04:58.278Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

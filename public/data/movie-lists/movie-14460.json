@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Space Exploration Missions",
+      "url_path": "space-exploration-missions",
+      "description": "Space Exploration Missions collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Exploration Missions collection"
+    },
+    {
+      "name": "Community Against Developers",
+      "url_path": "community-against-developers",
+      "description": "Community Against Developers collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Community Against Developers collection"
+    },
+    {
+      "name": "Tech-Colonial Resistance Films",
+      "url_path": "tech-colonial-resistance-films",
+      "description": "Tech-Colonial Resistance Films collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Tech-Colonial Resistance Films collection"
+    },
+    {
+      "name": "Low Budget Disaster (Part 1)",
+      "url_path": "low-budget-disaster-part-1-",
+      "description": "Low Budget Disaster (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Low Budget Disaster (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

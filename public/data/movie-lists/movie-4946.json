@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Mediterranean Vacation Thrillers",
+      "url_path": "mediterranean-vacation-thrillers",
+      "description": "Mediterranean Vacation Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Mediterranean Vacation Thrillers collection"
+    },
+    {
+      "name": "French Bourgeois Thrillers",
+      "url_path": "french-bourgeois-thrillers",
+      "description": "French Bourgeois Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of French Bourgeois Thrillers collection"
+    },
+    {
+      "name": "Sexual Power Dynamics",
+      "url_path": "sexual-power-dynamics",
+      "description": "Sexual Power Dynamics collection",
+      "category": "thriller",
+      "connectionReason": "Part of Sexual Power Dynamics collection"
+    }
+  ],
+  "totalLists": 3
+}

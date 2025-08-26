@@ -1,0 +1,145 @@
+{
+  "movieId": "5d241a64-2e03-4cb0-9874-a4c624fdc616",
+  "tmdbId": 247,
+  "title": "The Killing",
+  "year": 1956,
+  "analysis": {
+    "keyElements": {
+      "director": "Stanley Kubrick",
+      "writers": [
+        "Stanley Kubrick",
+        "Jim Thompson"
+      ],
+      "stars": [
+        "Sterling Hayden",
+        "Coleen Gray",
+        "Vince Edwards"
+      ],
+      "genre": "Film Noir",
+      "releaseYear": 1956,
+      "cinematographer": "Lucien Ballard",
+      "composer": "Gerald Fried",
+      "studio": "United Artists"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful non-linear storytelling that influenced countless heist films",
+        "Early glimpse of Kubrick's perfectionist style and innovative camera work",
+        "Tight, tense narrative that revolutionized the crime genre"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Reservoir Dogs",
+        "year": 1992,
+        "description": "Directly influenced by The Killing's narrative structure and heist aftermath focus"
+      },
+      {
+        "title": "The Asphalt Jungle",
+        "year": 1950,
+        "description": "Key noir heist film that influenced The Killing's approach to character development"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Non-linear Narrative Structure",
+        "category": "Screenwriting",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Film Noir Conventions",
+        "category": "Genre Studies",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Heist Film Evolution",
+        "category": "Film History",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Stanley Kubrick",
+      "personId": 34599,
+      "slug": "/person/34599",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Stanley Kubrick",
+        "personId": 34599,
+        "slug": "/person/34599",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jim Thompson",
+        "personId": 17513,
+        "slug": "/person/17513",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Sterling Hayden",
+        "personId": 34862,
+        "slug": "/person/34862",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Coleen Gray",
+        "personId": 6659,
+        "slug": "/person/6659",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Vince Edwards",
+        "personId": 37711,
+        "slug": "/person/37711",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Marie Windsor",
+        "personId": 24076,
+        "slug": "/person/24076",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Lucien Ballard",
+      "personId": 23105,
+      "slug": "/person/23105",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Gerald Fried",
+      "personId": 12501,
+      "slug": "/person/12501",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:14.000Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

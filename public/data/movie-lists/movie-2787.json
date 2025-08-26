@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Space Horror",
+      "url_path": "space-horror",
+      "description": "Space Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Space Horror collection"
+    },
+    {
+      "name": "Survival Horror",
+      "url_path": "survival-horror",
+      "description": "Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Survival Horror collection"
+    },
+    {
+      "name": "Mutant Creature Features (Part 4)",
+      "url_path": "mutant-creature-features-part-4-",
+      "description": "Mutant Creature Features (Part 4) collection",
+      "category": "horror",
+      "connectionReason": "Part of Mutant Creature Features (Part 4) collection"
+    },
+    {
+      "name": "Scientific Expedition Horror (Part 2)",
+      "url_path": "scientific-expedition-horror-part-2-",
+      "description": "Scientific Expedition Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Scientific Expedition Horror (Part 2) collection"
+    },
+    {
+      "name": "Space Horror Survival",
+      "url_path": "space-horror-survival",
+      "description": "Space Horror Survival collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Horror Survival collection"
+    },
+    {
+      "name": "Planetary Scale Threats",
+      "url_path": "planetary-scale-threats",
+      "description": "Planetary Scale Threats collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Planetary Scale Threats collection"
+    },
+    {
+      "name": "Survival Against Nature (Part 2)",
+      "url_path": "survival-against-nature-part-2-",
+      "description": "Survival Against Nature (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Survival Against Nature (Part 2) collection"
+    }
+  ],
+  "totalLists": 7
+}

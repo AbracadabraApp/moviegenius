@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Inheritance Challenge Comedies",
+      "url_path": "inheritance-challenge-comedies",
+      "description": "Inheritance Challenge Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Inheritance Challenge Comedies collection"
+    },
+    {
+      "name": "Horror Movie Parodies (Part 5)",
+      "url_path": "horror-movie-parodies-part-5-",
+      "description": "Horror Movie Parodies (Part 5) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Horror Movie Parodies (Part 5) collection"
+    },
+    {
+      "name": "European Vampire Deconstruction",
+      "url_path": "european-vampire-deconstruction",
+      "description": "European Vampire Deconstruction collection",
+      "category": "horror",
+      "connectionReason": "Part of European Vampire Deconstruction collection"
+    },
+    {
+      "name": "Exploitation Cinema Homage",
+      "url_path": "exploitation-cinema-homage",
+      "description": "Exploitation Cinema Homage collection",
+      "category": "horror",
+      "connectionReason": "Part of Exploitation Cinema Homage collection"
+    },
+    {
+      "name": "Classic Monster Comedy (Part 5)",
+      "url_path": "classic-monster-comedy-part-5-",
+      "description": "Classic Monster Comedy (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Monster Comedy (Part 5) collection"
+    }
+  ],
+  "totalLists": 5
+}

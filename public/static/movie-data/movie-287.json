@@ -1,0 +1,125 @@
+{
+  "movieId": "b9252d59-5847-498b-9d56-1af777a7e0c3",
+  "tmdbId": 287,
+  "title": "Bull Durham",
+  "year": 1988,
+  "analysis": {
+    "keyElements": {
+      "director": "Ron Shelton",
+      "writers": [
+        "Ron Shelton"
+      ],
+      "stars": [
+        "Kevin Costner",
+        "Susan Sarandon",
+        "Tim Robbins"
+      ],
+      "genre": "Comedy-Drama, Sports, Romance",
+      "releaseYear": 1988,
+      "cinematographer": "Bobby Byrne",
+      "composer": "Michael Convertino",
+      "studio": "Orion Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "The most authentic baseball movie ever made, written by former minor leaguer Ron Shelton",
+        "Perfect blend of romantic comedy, sports drama, and philosophical meditation on life",
+        "Career-defining performances from Costner, Sarandon, and Robbins in a perfect character triangle"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Field of Dreams",
+        "year": 1989,
+        "description": "Another Costner baseball classic focusing on the mythical aspects of the game"
+      },
+      {
+        "title": "Moneyball",
+        "year": 2011,
+        "description": "Modern examination of baseball's business and human elements"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Baseball in American Cinema",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Sports Film Romance Subgenre",
+        "category": "Genre Studies",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Ron Shelton",
+      "personId": 32408,
+      "slug": "/person/32408",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Ron Shelton",
+        "personId": 32408,
+        "slug": "/person/32408",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Kevin Costner",
+        "personId": 20863,
+        "slug": "/person/20863",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Susan Sarandon",
+        "personId": 35294,
+        "slug": "/person/35294",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Tim Robbins",
+        "personId": 36328,
+        "slug": "/person/36328",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Bobby Byrne",
+      "personId": 3959,
+      "slug": "/person/3959",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Michael Convertino",
+      "personId": 25583,
+      "slug": "/person/25583",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:19.814Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Teen Life Chronicles",
+      "url_path": "teen-life-chronicles",
+      "description": "Teen Life Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Teen Life Chronicles collection"
+    },
+    {
+      "name": "Social Experiment Documentaries",
+      "url_path": "social-experiment-documentaries",
+      "description": "Social Experiment Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Social Experiment Documentaries collection"
+    },
+    {
+      "name": "Personal Monologue Documentaries (Part 4)",
+      "url_path": "personal-monologue-documentaries-part-4-",
+      "description": "Personal Monologue Documentaries (Part 4) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Personal Monologue Documentaries (Part 4) collection"
+    }
+  ],
+  "totalLists": 3
+}

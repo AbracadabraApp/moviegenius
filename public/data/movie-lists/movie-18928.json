@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Mexican Revolution Westerns",
+      "url_path": "mexican-revolution-westerns",
+      "description": "Mexican Revolution Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Mexican Revolution Westerns collection"
+    },
+    {
+      "name": "Political Revolution Westerns",
+      "url_path": "political-revolution-westerns",
+      "description": "Political Revolution Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Political Revolution Westerns collection"
+    },
+    {
+      "name": "Spaghetti Western Classics",
+      "url_path": "spaghetti-western-classics",
+      "description": "Spaghetti Western Classics collection",
+      "category": "western",
+      "connectionReason": "Part of Spaghetti Western Classics collection"
+    },
+    {
+      "name": "Gold Rush Adventures",
+      "url_path": "gold-rush-adventures",
+      "description": "Gold Rush Adventures collection",
+      "category": "western",
+      "connectionReason": "Part of Gold Rush Adventures collection"
+    }
+  ],
+  "totalLists": 4
+}

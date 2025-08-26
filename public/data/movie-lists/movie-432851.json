@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "WWII Archival Documentaries",
+      "url_path": "wwii-archival-documentaries",
+      "description": "WWII Archival Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of WWII Archival Documentaries collection"
+    },
+    {
+      "name": "Military Training Chronicles",
+      "url_path": "military-training-chronicles",
+      "description": "Military Training Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Military Training Chronicles collection"
+    },
+    {
+      "name": "Civil Rights Movement",
+      "url_path": "civil-rights-movement",
+      "description": "Civil Rights Movement collection",
+      "category": "documentary",
+      "connectionReason": "Part of Civil Rights Movement collection"
+    },
+    {
+      "name": "Perseverance Against Odds (Part 1)",
+      "url_path": "perseverance-against-odds-part-1-",
+      "description": "Perseverance Against Odds (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Perseverance Against Odds (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

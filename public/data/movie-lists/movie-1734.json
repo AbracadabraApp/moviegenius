@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Religious Artifact Quests",
+      "url_path": "religious-artifact-quests",
+      "description": "Religious Artifact Quests collection",
+      "category": "adventure",
+      "connectionReason": "Part of Religious Artifact Quests collection"
+    },
+    {
+      "name": "Egyptian Mythology Adventures",
+      "url_path": "egyptian-mythology-adventures",
+      "description": "Egyptian Mythology Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Egyptian Mythology Adventures collection"
+    },
+    {
+      "name": "Ancient Civilization Fantasy [OVERSIZED]",
+      "url_path": "ancient-civilization-fantasy-oversized-",
+      "description": "Ancient Civilization Fantasy [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Ancient Civilization Fantasy [OVERSIZED] collection"
+    },
+    {
+      "name": "CGI Spectacle Adventures [OVERSIZED]",
+      "url_path": "cgi-spectacle-adventures-oversized-",
+      "description": "CGI Spectacle Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of CGI Spectacle Adventures [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

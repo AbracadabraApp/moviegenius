@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Museum Mystery Adventures",
+      "url_path": "museum-mystery-adventures",
+      "description": "Museum Mystery Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Museum Mystery Adventures collection"
+    },
+    {
+      "name": "Books Come Alive",
+      "url_path": "books-come-alive",
+      "description": "Books Come Alive collection",
+      "category": "adventure",
+      "connectionReason": "Part of Books Come Alive collection"
+    },
+    {
+      "name": "Egyptian Mythology Adventures",
+      "url_path": "egyptian-mythology-adventures",
+      "description": "Egyptian Mythology Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Egyptian Mythology Adventures collection"
+    },
+    {
+      "name": "Cross-Border Quest Films [OVERSIZED]",
+      "url_path": "cross-border-quest-films-oversized-",
+      "description": "Cross-Border Quest Films [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Cross-Border Quest Films [OVERSIZED] collection"
+    },
+    {
+      "name": "Global Adventure Comedies",
+      "url_path": "global-adventure-comedies",
+      "description": "Global Adventure Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Global Adventure Comedies collection"
+    },
+    {
+      "name": "Museum Adventure Comedy",
+      "url_path": "museum-adventure-comedy",
+      "description": "Museum Adventure Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Museum Adventure Comedy collection"
+    },
+    {
+      "name": "Magical Self-Discovery Stories (Part 2)",
+      "url_path": "magical-self-discovery-stories-part-2-",
+      "description": "Magical Self-Discovery Stories (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Magical Self-Discovery Stories (Part 2) collection"
+    }
+  ],
+  "totalLists": 7
+}

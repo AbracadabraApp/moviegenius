@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Horror Anthology Collections",
+      "url_path": "horror-anthology-collections",
+      "description": "Horror Anthology Collections collection",
+      "category": "horror",
+      "connectionReason": "Part of Horror Anthology Collections collection"
+    },
+    {
+      "name": "Cursed Object Horror",
+      "url_path": "cursed-object-horror",
+      "description": "Cursed Object Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Cursed Object Horror collection"
+    },
+    {
+      "name": "Art House Horror (Part 3)",
+      "url_path": "art-house-horror-part-3-",
+      "description": "Art House Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Art House Horror (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

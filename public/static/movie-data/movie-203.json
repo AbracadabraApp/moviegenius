@@ -1,0 +1,140 @@
+{
+  "movieId": "31499898-1f5a-4154-a3a5-39e386c6bd80",
+  "tmdbId": 203,
+  "title": "Mean Streets",
+  "year": 1973,
+  "analysis": {
+    "keyElements": {
+      "director": "Martin Scorsese",
+      "writers": [
+        "Martin Scorsese",
+        "Mardik Martin"
+      ],
+      "stars": [
+        "Robert De Niro",
+        "Harvey Keitel",
+        "David Proval"
+      ],
+      "genre": "Crime Drama",
+      "releaseYear": 1973,
+      "cinematographer": "Kent L. Wakeford",
+      "composer": "Various Artists",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking portrayal of Italian-American street life that defined a new era of crime films",
+        "Career-defining early performances from De Niro and Keitel that showcase their raw talent",
+        "Scorsese's innovative direction combining documentary-style realism with stylized sequences"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Taxi Driver",
+        "year": 1976,
+        "description": "Scorsese and De Niro's next collaboration, expanding on Mean Streets' themes of urban alienation"
+      },
+      {
+        "title": "Who's That Knocking at My Door",
+        "year": 1967,
+        "description": "Scorsese's debut feature, exploring similar themes of Catholic guilt and Little Italy life"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "New Hollywood Movement",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Italian-American Cinema",
+        "category": "Cultural Studies",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Martin Scorsese",
+      "personId": 24623,
+      "slug": "/person/24623",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Martin Scorsese",
+        "personId": 24623,
+        "slug": "/person/24623",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Mardik Martin",
+        "personId": 23868,
+        "slug": "/person/23868",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Robert De Niro",
+        "personId": 31532,
+        "slug": "/person/31532",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Harvey Keitel",
+        "personId": 13874,
+        "slug": "/person/13874",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "David Proval",
+        "personId": 8090,
+        "slug": "/person/8090",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Amy Robinson",
+        "personId": 1484,
+        "slug": "/person/1484",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Kent Wakeford",
+      "personId": 20803,
+      "slug": "/person/20803",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Various Artists",
+      "personId": 37403,
+      "slug": "/person/37403",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:06.545Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

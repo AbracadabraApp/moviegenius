@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Family Tech Comedy",
+      "url_path": "family-tech-comedy",
+      "description": "Family Tech Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Family Tech Comedy collection"
+    },
+    {
+      "name": "Criminal Mishap Comedies (Part 2)",
+      "url_path": "criminal-mishap-comedies-part-2-",
+      "description": "Criminal Mishap Comedies (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Criminal Mishap Comedies (Part 2) collection"
+    },
+    {
+      "name": "Found Family Comedies (Part 1)",
+      "url_path": "found-family-comedies-part-1-",
+      "description": "Found Family Comedies (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Found Family Comedies (Part 1) collection"
+    },
+    {
+      "name": "Science Hero Origins",
+      "url_path": "science-hero-origins",
+      "description": "Science Hero Origins collection",
+      "category": "superhero",
+      "connectionReason": "Part of Science Hero Origins collection"
+    },
+    {
+      "name": "Comedy-Forward Superhero Films",
+      "url_path": "comedy-forward-superhero-films",
+      "description": "Comedy-Forward Superhero Films collection",
+      "category": "superhero",
+      "connectionReason": "Part of Comedy-Forward Superhero Films collection"
+    }
+  ],
+  "totalLists": 5
+}

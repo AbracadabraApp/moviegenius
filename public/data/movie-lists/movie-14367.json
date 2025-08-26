@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Urban Night Adventures",
+      "url_path": "urban-night-adventures",
+      "description": "Urban Night Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Urban Night Adventures collection"
+    },
+    {
+      "name": "Suburban Kids in Danger",
+      "url_path": "suburban-kids-in-danger",
+      "description": "Suburban Kids in Danger collection",
+      "category": "adventure",
+      "connectionReason": "Part of Suburban Kids in Danger collection"
+    },
+    {
+      "name": "High School & Teen Comedy",
+      "url_path": "high-school-teen-comedy",
+      "description": "High School & Teen Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of High School & Teen Comedy collection"
+    },
+    {
+      "name": "Criminal Mishap Comedies (Part 1)",
+      "url_path": "criminal-mishap-comedies-part-1-",
+      "description": "Criminal Mishap Comedies (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Criminal Mishap Comedies (Part 1) collection"
+    },
+    {
+      "name": "Urban Wanderer Stories (Part 1)",
+      "url_path": "urban-wanderer-stories-part-1-",
+      "description": "Urban Wanderer Stories (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Urban Wanderer Stories (Part 1) collection"
+    }
+  ],
+  "totalLists": 5
+}

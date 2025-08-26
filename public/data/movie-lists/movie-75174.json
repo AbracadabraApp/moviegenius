@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Deadly Animal Survival",
+      "url_path": "deadly-animal-survival",
+      "description": "Deadly Animal Survival collection",
+      "category": "thriller",
+      "connectionReason": "Part of Deadly Animal Survival collection"
+    },
+    {
+      "name": "Natural Disaster Survival",
+      "url_path": "natural-disaster-survival",
+      "description": "Natural Disaster Survival collection",
+      "category": "thriller",
+      "connectionReason": "Part of Natural Disaster Survival collection"
+    },
+    {
+      "name": "Winter Survival Thrillers",
+      "url_path": "winter-survival-thrillers",
+      "description": "Winter Survival Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Winter Survival Thrillers collection"
+    },
+    {
+      "name": "Single Location Survival (Part 5)",
+      "url_path": "single-location-survival-part-5-",
+      "description": "Single Location Survival (Part 5) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Single Location Survival (Part 5) collection"
+    }
+  ],
+  "totalLists": 4
+}

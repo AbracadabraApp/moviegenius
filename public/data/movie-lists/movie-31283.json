@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Revenge Mission Westerns",
+      "url_path": "revenge-mission-westerns",
+      "description": "Revenge Mission Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Revenge Mission Westerns collection"
+    },
+    {
+      "name": "Female Outlaw Westerns",
+      "url_path": "female-outlaw-westerns",
+      "description": "Female Outlaw Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Female Outlaw Westerns collection"
+    },
+    {
+      "name": "Mentor-Student Westerns",
+      "url_path": "mentor-student-westerns",
+      "description": "Mentor-Student Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Mentor-Student Westerns collection"
+    }
+  ],
+  "totalLists": 3
+}

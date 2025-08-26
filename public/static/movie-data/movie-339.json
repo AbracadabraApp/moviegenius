@@ -1,0 +1,140 @@
+{
+  "movieId": "28ffe935-7d79-4034-ac4b-d1ce69525ac1",
+  "tmdbId": 339,
+  "title": "Night on Earth",
+  "year": 1991,
+  "analysis": {
+    "keyElements": {
+      "director": "Jim Jarmusch",
+      "writers": [
+        "Jim Jarmusch"
+      ],
+      "stars": [
+        "Winona Ryder",
+        "Gena Rowlands",
+        "Giancarlo Esposito",
+        "Roberto Benigni"
+      ],
+      "genre": "Comedy-Drama",
+      "releaseYear": 1991,
+      "cinematographer": "Frederick Elmes",
+      "composer": "Tom Waits",
+      "studio": "Fine Line Features"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful interconnected storytelling across five global cities in one night",
+        "Outstanding ensemble cast delivering authentic, culturally-specific performances",
+        "Tom Waits' haunting score perfectly captures urban nighttime isolation"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Mystery Train",
+        "year": 1989,
+        "description": "Another Jarmusch exploration of interconnected stories in a single night"
+      },
+      {
+        "title": "Coffee and Cigarettes",
+        "year": 2003,
+        "description": "Jarmusch's later anthology film examining human connection through conversation"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Anthology Film Structure",
+        "category": "Narrative",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Cross-Cultural Communication",
+        "category": "Themes",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Jim Jarmusch",
+      "personId": 17421,
+      "slug": "/person/17421",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Jim Jarmusch",
+        "personId": 17421,
+        "slug": "/person/17421",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Winona Ryder",
+        "personId": 38743,
+        "slug": "/person/38743",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Gena Rowlands",
+        "personId": 12088,
+        "slug": "/person/12088",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Giancarlo Esposito",
+        "personId": 12631,
+        "slug": "/person/12631",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Armin Mueller-Stahl",
+        "personId": 2539,
+        "slug": "/person/2539",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Roberto Benigni",
+        "personId": 31786,
+        "slug": "/person/31786",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Frederick Elmes",
+      "personId": 11609,
+      "slug": "/person/11609",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Tom Waits",
+      "personId": 36726,
+      "slug": "/person/36726",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:27.393Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

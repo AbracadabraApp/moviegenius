@@ -1,0 +1,61 @@
+{
+  "lists": [
+    {
+      "name": "Retro Science Fiction",
+      "url_path": "retro-science-fiction",
+      "description": "Retro Science Fiction collection",
+      "category": "adventure",
+      "connectionReason": "Part of Retro Science Fiction collection"
+    },
+    {
+      "name": "Character-Driven Stories",
+      "url_path": "character-driven-stories",
+      "description": "Character-Driven Stories collection",
+      "category": "adventure",
+      "connectionReason": "Part of Character-Driven Stories collection"
+    },
+    {
+      "name": "CGI Spectacle Adventures [OVERSIZED]",
+      "url_path": "cgi-spectacle-adventures-oversized-",
+      "description": "CGI Spectacle Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of CGI Spectacle Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Classic Literary Adventures [OVERSIZED]",
+      "url_path": "classic-literary-adventures-oversized-",
+      "description": "Classic Literary Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Classic Literary Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "90s Science Thrillers",
+      "url_path": "90s-science-thrillers",
+      "description": "90s Science Thrillers collection",
+      "category": "science fiction",
+      "connectionReason": "Part of 90s Science Thrillers collection"
+    },
+    {
+      "name": "Cold War Dystopias",
+      "url_path": "cold-war-dystopias",
+      "description": "Cold War Dystopias collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Cold War Dystopias collection"
+    },
+    {
+      "name": "Medical Exploration SciFi",
+      "url_path": "medical-exploration-scifi",
+      "description": "Medical Exploration SciFi collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Medical Exploration SciFi collection"
+    },
+    {
+      "name": "Military Enhancement Programs (Part 1)",
+      "url_path": "military-enhancement-programs-part-1-",
+      "description": "Military Enhancement Programs (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Military Enhancement Programs (Part 1) collection"
+    }
+  ],
+  "totalLists": 8
+}

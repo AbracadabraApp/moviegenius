@@ -1,0 +1,125 @@
+{
+  "movieId": "a38230cc-09de-47cd-9a71-1d6e6ab6dc55",
+  "tmdbId": 410,
+  "title": "Summer in Berlin",
+  "year": 2005,
+  "analysis": {
+    "keyElements": {
+      "director": "Andreas Dresen",
+      "writers": [
+        "Wolfgang Kohlhaase"
+      ],
+      "stars": [
+        "Inka Friedrich",
+        "Nadja Uhl",
+        "Andreas Schmidt"
+      ],
+      "genre": "Drama",
+      "releaseYear": 2005,
+      "cinematographer": "Andreas Höfer",
+      "composer": "Pascal Comelade",
+      "studio": "X Filme Creative Pool"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Authentic portrayal of female friendship and urban life in contemporary Berlin",
+        "Naturalistic performances that capture genuine human moments",
+        "Sensitive exploration of middle-age challenges and personal reinvention"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Good Bye, Lenin!",
+        "year": 2003,
+        "description": "Another key film exploring post-reunification Berlin life"
+      },
+      {
+        "title": "Wings of Desire",
+        "year": 1987,
+        "description": "Classic Berlin-set film examining urban life and connection"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "German New Wave Cinema",
+        "category": "Film Movement",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Post-Reunification German Society",
+        "category": "Historical Context",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Andreas Dresen",
+      "personId": 1595,
+      "slug": "/person/1595",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Wolfgang Kohlhaase",
+        "personId": 38785,
+        "slug": "/person/38785",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Andreas Schmidt",
+        "personId": 1603,
+        "slug": "/person/1603",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Inka Friedrich",
+        "personId": 15003,
+        "slug": "/person/15003",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Nadja Uhl",
+        "personId": 26989,
+        "slug": "/person/26989",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Andreas Höfer",
+      "personId": 1597,
+      "slug": "/person/1597",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Pascal Comelade",
+      "personId": 28455,
+      "slug": "/person/28455",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:34.542Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

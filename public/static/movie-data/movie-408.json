@@ -1,0 +1,149 @@
+{
+  "movieId": "d575da28-ff04-4b9f-868c-4f02dc903256",
+  "tmdbId": 408,
+  "title": "Snow White and the Seven Dwarfs",
+  "year": 1938,
+  "analysis": {
+    "keyElements": {
+      "director": "David Hand",
+      "writers": [
+        "Ted Sears",
+        "Richard Creedon",
+        "Otto Englander",
+        "Dick Rickard"
+      ],
+      "stars": [
+        "Adriana Caselotti",
+        "Harry Stockwell",
+        "Lucille La Verne"
+      ],
+      "genre": "Animation/Fantasy",
+      "releaseYear": 1938,
+      "cinematographer": "Max Morgan",
+      "composer": "Frank Churchill",
+      "studio": "Walt Disney Productions"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Revolutionary achievement in animation that birthed the feature-length animated film industry",
+        "Timeless storytelling with enduring emotional resonance across generations",
+        "Masterful integration of music, art, and character animation that set industry standards"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Pinocchio",
+        "year": 1940,
+        "description": "Disney's immediate follow-up that built on Snow White's technical achievements"
+      },
+      {
+        "title": "Beauty and the Beast",
+        "year": 1991,
+        "description": "Modern classic that honored Snow White's legacy while advancing animation"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Animation History",
+        "category": "Technical Innovation",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Fairy Tale Adaptation",
+        "category": "Storytelling",
+        "difficulty": "Beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "David Hand",
+      "personId": 7842,
+      "slug": "/person/7842",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Jacob Grimm",
+        "personId": 15497,
+        "slug": "/person/15497",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Wilhelm Grimm",
+        "personId": 38320,
+        "slug": "/person/38320",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ted Sears",
+        "personId": 35756,
+        "slug": "/person/35756",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Richard Creedon",
+        "personId": 30940,
+        "slug": "/person/30940",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Adriana Caselotti",
+        "personId": 277,
+        "slug": "/person/277",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Harry Stockwell",
+        "personId": 13826,
+        "slug": "/person/13826",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Lucille La Verne",
+        "personId": 23116,
+        "slug": "/person/23116",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Max Morgan",
+      "personId": 25202,
+      "slug": "/person/25202",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Frank Churchill",
+      "personId": 11360,
+      "slug": "/person/11360",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:34.254Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

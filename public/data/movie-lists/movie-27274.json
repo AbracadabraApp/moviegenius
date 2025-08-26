@@ -1,0 +1,61 @@
+{
+  "lists": [
+    {
+      "name": "Classic Monster Comedies",
+      "url_path": "classic-monster-comedies",
+      "description": "Classic Monster Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Monster Comedies collection"
+    },
+    {
+      "name": "Splatter Comedy Films",
+      "url_path": "splatter-comedy-films",
+      "description": "Splatter Comedy Films collection",
+      "category": "comedy",
+      "connectionReason": "Part of Splatter Comedy Films collection"
+    },
+    {
+      "name": "Dark Comedy Accidents (Part 5)",
+      "url_path": "dark-comedy-accidents-part-5-",
+      "description": "Dark Comedy Accidents (Part 5) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Dark Comedy Accidents (Part 5) collection"
+    },
+    {
+      "name": "Body Horror Comedy (Part 1)",
+      "url_path": "body-horror-comedy-part-1-",
+      "description": "Body Horror Comedy (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Body Horror Comedy (Part 1) collection"
+    },
+    {
+      "name": "Classic Monster Comedy (Part 2)",
+      "url_path": "classic-monster-comedy-part-2-",
+      "description": "Classic Monster Comedy (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Monster Comedy (Part 2) collection"
+    },
+    {
+      "name": "Scientific Experiment Horror (Part 3)",
+      "url_path": "scientific-experiment-horror-part-3-",
+      "description": "Scientific Experiment Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Scientific Experiment Horror (Part 3) collection"
+    },
+    {
+      "name": "Body Horror (Part 3)",
+      "url_path": "body-horror-part-3-",
+      "description": "Body Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Body Horror (Part 3) collection"
+    },
+    {
+      "name": "Literary Horror Adaptations (Part 2)",
+      "url_path": "literary-horror-adaptations-part-2-",
+      "description": "Literary Horror Adaptations (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Literary Horror Adaptations (Part 2) collection"
+    }
+  ],
+  "totalLists": 8
+}

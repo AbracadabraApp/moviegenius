@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Early Cinema History",
+      "url_path": "early-cinema-history",
+      "description": "Early Cinema History collection",
+      "category": "adventure",
+      "connectionReason": "Part of Early Cinema History collection"
+    },
+    {
+      "name": "Lost Treasure Recovery",
+      "url_path": "lost-treasure-recovery",
+      "description": "Lost Treasure Recovery collection",
+      "category": "adventure",
+      "connectionReason": "Part of Lost Treasure Recovery collection"
+    },
+    {
+      "name": "International Thief Capers",
+      "url_path": "international-thief-capers",
+      "description": "International Thief Capers collection",
+      "category": "adventure",
+      "connectionReason": "Part of International Thief Capers collection"
+    }
+  ],
+  "totalLists": 3
+}

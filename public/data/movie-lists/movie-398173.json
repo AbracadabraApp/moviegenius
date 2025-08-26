@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "True Crime Horror",
+      "url_path": "true-crime-horror",
+      "description": "True Crime Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of True Crime Horror collection"
+    },
+    {
+      "name": "Art House Horror (Part 5)",
+      "url_path": "art-house-horror-part-5-",
+      "description": "Art House Horror (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Art House Horror (Part 5) collection"
+    },
+    {
+      "name": "Psychological Horror (Part 5)",
+      "url_path": "psychological-horror-part-5-",
+      "description": "Psychological Horror (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Psychological Horror (Part 5) collection"
+    },
+    {
+      "name": "Social Commentary Horror (Part 2)",
+      "url_path": "social-commentary-horror-part-2-",
+      "description": "Social Commentary Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Social Commentary Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Early Aviation Adventures",
+      "url_path": "early-aviation-adventures",
+      "description": "Early Aviation Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Early Aviation Adventures collection"
+    },
+    {
+      "name": "Interwar Period Adventures",
+      "url_path": "interwar-period-adventures",
+      "description": "Interwar Period Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Interwar Period Adventures collection"
+    },
+    {
+      "name": "War Panic Comedies",
+      "url_path": "war-panic-comedies",
+      "description": "War Panic Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of War Panic Comedies collection"
+    },
+    {
+      "name": "WWII Aviation Adventures",
+      "url_path": "wwii-aviation-adventures",
+      "description": "WWII Aviation Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of WWII Aviation Adventures collection"
+    },
+    {
+      "name": "Military Training Comedy",
+      "url_path": "military-training-comedy",
+      "description": "Military Training Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Military Training Comedy collection"
+    }
+  ],
+  "totalLists": 5
+}

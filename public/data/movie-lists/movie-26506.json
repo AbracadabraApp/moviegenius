@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Merchant Ivory Classics",
+      "url_path": "merchant-ivory-classics",
+      "description": "Merchant Ivory Classics collection",
+      "category": "period",
+      "connectionReason": "Part of Merchant Ivory Classics collection"
+    },
+    {
+      "name": "British Literary Adaptations",
+      "url_path": "british-literary-adaptations",
+      "description": "British Literary Adaptations collection",
+      "category": "period",
+      "connectionReason": "Part of British Literary Adaptations collection"
+    },
+    {
+      "name": "Colonial & Cultural Identity",
+      "url_path": "colonial-cultural-identity",
+      "description": "Colonial & Cultural Identity collection",
+      "category": "period",
+      "connectionReason": "Part of Colonial & Cultural Identity collection"
+    },
+    {
+      "name": "Cross-Cultural Romance Conflicts (Part 1)",
+      "url_path": "cross-cultural-romance-conflicts-part-1-",
+      "description": "Cross-Cultural Romance Conflicts (Part 1) collection",
+      "category": "romance",
+      "connectionReason": "Part of Cross-Cultural Romance Conflicts (Part 1) collection"
+    },
+    {
+      "name": "Class-Crossing Period Romance (Part 1)",
+      "url_path": "class-crossing-period-romance-part-1-",
+      "description": "Class-Crossing Period Romance (Part 1) collection",
+      "category": "romance",
+      "connectionReason": "Part of Class-Crossing Period Romance (Part 1) collection"
+    },
+    {
+      "name": "Societal Pressure Tragedies (Part 1)",
+      "url_path": "societal-pressure-tragedies-part-1-",
+      "description": "Societal Pressure Tragedies (Part 1) collection",
+      "category": "romance",
+      "connectionReason": "Part of Societal Pressure Tragedies (Part 1) collection"
+    }
+  ],
+  "totalLists": 6
+}

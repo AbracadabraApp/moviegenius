@@ -1,0 +1,141 @@
+{
+  "movieId": "2f2b0943-8691-442d-9e79-2df26791f065",
+  "tmdbId": 180,
+  "title": "Minority Report",
+  "year": 2002,
+  "analysis": {
+    "keyElements": {
+      "director": "Steven Spielberg",
+      "writers": [
+        "Scott Frank",
+        "Jon Cohen",
+        "Philip K. Dick"
+      ],
+      "stars": [
+        "Tom Cruise",
+        "Colin Farrell",
+        "Samantha Morton"
+      ],
+      "genre": "Science Fiction Thriller",
+      "releaseYear": 2002,
+      "cinematographer": "Janusz Kamiński",
+      "composer": "John Williams",
+      "studio": "20th Century Fox"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of noir detective story with prescient tech commentary",
+        "Spielberg's innovative visual style creates a believable future world",
+        "Complex moral questions about free will and surveillance remain relevant"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Blade Runner",
+        "year": 1982,
+        "description": "Similar neo-noir sci-fi aesthetic and questions about humanity"
+      },
+      {
+        "title": "A.I. Artificial Intelligence",
+        "year": 2001,
+        "description": "Another Spielberg sci-fi exploring human-technology relationships"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Predictive Policing Ethics",
+        "category": "Philosophy",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Neo-Noir in Science Fiction",
+        "category": "Film Studies",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Steven Spielberg",
+      "personId": 35037,
+      "slug": "/person/35037",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Scott Frank",
+        "personId": 33371,
+        "slug": "/person/33371",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jon Cohen",
+        "personId": 18952,
+        "slug": "/person/18952",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Philip K. Dick",
+        "personId": 29678,
+        "slug": "/person/29678",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Tom Cruise",
+        "personId": 36534,
+        "slug": "/person/36534",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Colin Farrell",
+        "personId": 6679,
+        "slug": "/person/6679",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Samantha Morton",
+        "personId": 32967,
+        "slug": "/person/32967",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Janusz Kamiński",
+      "personId": 16223,
+      "slug": "/person/16223",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "John Williams",
+      "personId": 18796,
+      "slug": "/person/18796",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:02.219Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

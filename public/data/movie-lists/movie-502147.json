@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Historical Comic Adaptations",
+      "url_path": "historical-comic-adaptations",
+      "description": "Historical Comic Adaptations collection",
+      "category": "comedy",
+      "connectionReason": "Part of Historical Comic Adaptations collection"
+    },
+    {
+      "name": "LGBTQ+ Identity Comedies",
+      "url_path": "lgbtq-identity-comedies",
+      "description": "LGBTQ+ Identity Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of LGBTQ+ Identity Comedies collection"
+    },
+    {
+      "name": "Literary Ego Satires",
+      "url_path": "literary-ego-satires",
+      "description": "Literary Ego Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Literary Ego Satires collection"
+    }
+  ],
+  "totalLists": 3
+}

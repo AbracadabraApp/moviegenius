@@ -1,0 +1,156 @@
+{
+  "movieId": "ad9e9324-ebe6-447d-b6e3-1c49f748c137",
+  "tmdbId": 245,
+  "title": "About a Boy",
+  "year": 2002,
+  "analysis": {
+    "keyElements": {
+      "director": "Chris Weitz, Paul Weitz",
+      "writers": [
+        "Nick Hornby",
+        "Peter Hedges",
+        "Chris Weitz",
+        "Paul Weitz"
+      ],
+      "stars": [
+        "Hugh Grant",
+        "Nicholas Hoult",
+        "Toni Collette"
+      ],
+      "genre": "Comedy-Drama",
+      "releaseYear": 2002,
+      "cinematographer": "Remi Adefarasin",
+      "composer": "Badly Drawn Boy",
+      "studio": "Universal Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Hugh Grant's career-best performance subverting his romantic lead persona",
+        "Authentic, unsentimental portrayal of modern relationships and chosen family",
+        "Perfect balance of British humor and genuine emotional depth"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "High Fidelity",
+        "year": 2000,
+        "description": "Another Nick Hornby adaptation exploring male emotional growth"
+      },
+      {
+        "title": "The Way Way Back",
+        "year": 2013,
+        "description": "Similar themes of mentorship and coming-of-age"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "British Comedy Evolution",
+        "category": "Genre Studies",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Literary Adaptations",
+        "category": "Screenwriting",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Chris Weitz, Paul Weitz",
+      "personId": 6323,
+      "slug": "/person/6323",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Nick Hornby",
+        "personId": 27481,
+        "slug": "/person/27481",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Peter Hedges",
+        "personId": 29348,
+        "slug": "/person/29348",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Chris Weitz",
+        "personId": 6322,
+        "slug": "/person/6322",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Paul Weitz",
+        "personId": 29028,
+        "slug": "/person/29028",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Hugh Grant",
+        "personId": 14680,
+        "slug": "/person/14680",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Nicholas Hoult",
+        "personId": 27424,
+        "slug": "/person/27424",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Toni Collette",
+        "personId": 36740,
+        "slug": "/person/36740",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Rachel Weisz",
+        "personId": 30178,
+        "slug": "/person/30178",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Remi Adefarasin",
+      "personId": 30695,
+      "slug": "/person/30695",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Badly Drawn Boy",
+      "personId": 2962,
+      "slug": "/person/2962",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:13.705Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

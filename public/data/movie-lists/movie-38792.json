@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Early Aviation Adventures",
+      "url_path": "early-aviation-adventures",
+      "description": "Early Aviation Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Early Aviation Adventures collection"
+    },
+    {
+      "name": "European Castle Heists",
+      "url_path": "european-castle-heists",
+      "description": "European Castle Heists collection",
+      "category": "adventure",
+      "connectionReason": "Part of European Castle Heists collection"
+    },
+    {
+      "name": "Car Chase Road Movies",
+      "url_path": "car-chase-road-movies",
+      "description": "Car Chase Road Movies collection",
+      "category": "adventure",
+      "connectionReason": "Part of Car Chase Road Movies collection"
+    },
+    {
+      "name": "Car Chase Capers",
+      "url_path": "car-chase-capers",
+      "description": "Car Chase Capers collection",
+      "category": "comedy",
+      "connectionReason": "Part of Car Chase Capers collection"
+    },
+    {
+      "name": "Classic Screwball Capers (Part 3)",
+      "url_path": "classic-screwball-capers-part-3-",
+      "description": "Classic Screwball Capers (Part 3) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Screwball Capers (Part 3) collection"
+    },
+    {
+      "name": "European Travel Romance (Part 2)",
+      "url_path": "european-travel-romance-part-2-",
+      "description": "European Travel Romance (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of European Travel Romance (Part 2) collection"
+    }
+  ],
+  "totalLists": 6
+}

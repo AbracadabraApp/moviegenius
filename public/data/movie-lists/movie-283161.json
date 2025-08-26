@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Cultural Heritage Celebrations",
+      "url_path": "cultural-heritage-celebrations",
+      "description": "Cultural Heritage Celebrations collection",
+      "category": "animation",
+      "connectionReason": "Part of Cultural Heritage Celebrations collection"
+    },
+    {
+      "name": "Art Movement Collaborations",
+      "url_path": "art-movement-collaborations",
+      "description": "Art Movement Collaborations collection",
+      "category": "animation",
+      "connectionReason": "Part of Art Movement Collaborations collection"
+    },
+    {
+      "name": "Folk Poetry Adaptations",
+      "url_path": "folk-poetry-adaptations",
+      "description": "Folk Poetry Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Folk Poetry Adaptations collection"
+    },
+    {
+      "name": "Literary Adaptations",
+      "url_path": "literary-adaptations",
+      "description": "Literary Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Literary Adaptations collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "1980s Nostalgia Films",
+      "url_path": "1980s-nostalgia-films",
+      "description": "1980s Nostalgia Films collection",
+      "category": "comedy",
+      "connectionReason": "Part of 1980s Nostalgia Films collection"
+    },
+    {
+      "name": "Political Activism Comedies",
+      "url_path": "political-activism-comedies",
+      "description": "Political Activism Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Political Activism Comedies collection"
+    },
+    {
+      "name": "LGBTQ+ Identity Comedies",
+      "url_path": "lgbtq-identity-comedies",
+      "description": "LGBTQ+ Identity Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of LGBTQ+ Identity Comedies collection"
+    },
+    {
+      "name": "British Culture Comedy",
+      "url_path": "british-culture-comedy",
+      "description": "British Culture Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of British Culture Comedy collection"
+    }
+  ],
+  "totalLists": 4
+}

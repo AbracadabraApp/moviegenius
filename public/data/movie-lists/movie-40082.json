@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Musical Expatriate Stories",
+      "url_path": "musical-expatriate-stories",
+      "description": "Musical Expatriate Stories collection",
+      "category": "music",
+      "connectionReason": "Part of Musical Expatriate Stories collection"
+    },
+    {
+      "name": "Sibling Musician Dramas",
+      "url_path": "sibling-musician-dramas",
+      "description": "Sibling Musician Dramas collection",
+      "category": "music",
+      "connectionReason": "Part of Sibling Musician Dramas collection"
+    },
+    {
+      "name": "World Music Cultures",
+      "url_path": "world-music-cultures",
+      "description": "World Music Cultures collection",
+      "category": "music",
+      "connectionReason": "Part of World Music Cultures collection"
+    }
+  ],
+  "totalLists": 3
+}

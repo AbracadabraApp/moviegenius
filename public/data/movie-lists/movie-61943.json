@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Spaghetti Western Classics",
+      "url_path": "spaghetti-western-classics",
+      "description": "Spaghetti Western Classics collection",
+      "category": "western",
+      "connectionReason": "Part of Spaghetti Western Classics collection"
+    },
+    {
+      "name": "Revenge Mission Westerns",
+      "url_path": "revenge-mission-westerns",
+      "description": "Revenge Mission Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Revenge Mission Westerns collection"
+    },
+    {
+      "name": "Ultra-Violent Western Noir",
+      "url_path": "ultra-violent-western-noir",
+      "description": "Ultra-Violent Western Noir collection",
+      "category": "western",
+      "connectionReason": "Part of Ultra-Violent Western Noir collection"
+    }
+  ],
+  "totalLists": 3
+}

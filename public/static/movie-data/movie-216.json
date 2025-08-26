@@ -1,0 +1,130 @@
+{
+  "movieId": "e85e916b-3b28-4550-a2bb-b3b1343e3f59",
+  "tmdbId": 216,
+  "title": "Ali: Fear Eats the Soul",
+  "year": 1974,
+  "analysis": {
+    "keyElements": {
+      "director": "Rainer Werner Fassbinder",
+      "writers": [
+        "Rainer Werner Fassbinder"
+      ],
+      "stars": [
+        "Brigitte Mira",
+        "El Hedi ben Salem",
+        "Barbara Valentin"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1974,
+      "cinematographer": "Jürgen Jürges",
+      "composer": "Peer Raben",
+      "studio": "Tango Film"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful exploration of social prejudice through an unlikely love story",
+        "Groundbreaking commentary on post-war German society that remains relevant",
+        "Exceptional performances that bring raw emotional authenticity to every scene"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "All That Heaven Allows",
+        "year": 1955,
+        "description": "Direct inspiration for Fassbinder's social commentary through forbidden love"
+      },
+      {
+        "title": "Far From Heaven",
+        "year": 2002,
+        "description": "Modern homage to both Sirk and Fassbinder's examination of social prejudice"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "New German Cinema",
+        "category": "Film Movement",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Social Issue Films",
+        "category": "Genre Study",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "Melodrama Evolution",
+        "category": "Film History",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Rainer Werner Fassbinder",
+      "personId": 30237,
+      "slug": "/person/30237",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Rainer Werner Fassbinder",
+        "personId": 30237,
+        "slug": "/person/30237",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Brigitte Mira",
+        "personId": 4476,
+        "slug": "/person/4476",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "El Hedi ben Salem",
+        "personId": 9915,
+        "slug": "/person/9915",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Barbara Valentin",
+        "personId": 3068,
+        "slug": "/person/3068",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Jürgen Jürges",
+      "personId": 19853,
+      "slug": "/person/19853",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Peer Raben",
+      "personId": 29095,
+      "slug": "/person/29095",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:08.078Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

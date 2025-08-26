@@ -1,0 +1,125 @@
+{
+  "movieId": "c66a5392-5a0f-46bb-881c-59242417633d",
+  "tmdbId": 401,
+  "title": "Garden State",
+  "year": 2004,
+  "analysis": {
+    "keyElements": {
+      "director": "Zach Braff",
+      "writers": [
+        "Zach Braff"
+      ],
+      "stars": [
+        "Zach Braff",
+        "Natalie Portman",
+        "Peter Sarsgaard"
+      ],
+      "genre": "Comedy-Drama",
+      "releaseYear": 2004,
+      "cinematographer": "Lawrence Sher",
+      "composer": "Chad Fischer",
+      "studio": "Fox Searchlight Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Perfectly captures millennial quarter-life crisis and emotional disconnection",
+        "Features career-defining performances from both Braff and Portman",
+        "Masterful indie soundtrack that defined mid-2000s music culture"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Lost in Translation",
+        "year": 2003,
+        "description": "Similar exploration of isolation and unexpected connection"
+      },
+      {
+        "title": "The Graduate",
+        "year": 1967,
+        "description": "Influential predecessor in young adult alienation narrative"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Millennial Cinema",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Music in Independent Film",
+        "category": "Sound Design",
+        "difficulty": "beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Zach Braff",
+      "personId": 39416,
+      "slug": "/person/39416",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Zach Braff",
+        "personId": 39416,
+        "slug": "/person/39416",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Zach Braff",
+        "personId": 39416,
+        "slug": "/person/39416",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Natalie Portman",
+        "personId": 27142,
+        "slug": "/person/27142",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Peter Sarsgaard",
+        "personId": 29490,
+        "slug": "/person/29490",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Lawrence Sher",
+      "personId": 21942,
+      "slug": "/person/21942",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Chad Fischer",
+      "personId": 5319,
+      "slug": "/person/5319",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:32.708Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

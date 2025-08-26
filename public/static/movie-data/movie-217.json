@@ -1,0 +1,152 @@
+{
+  "movieId": "c762123c-1dc6-4cdd-828f-6850357b3e99",
+  "tmdbId": 217,
+  "title": "Indiana Jones and the Kingdom of the Crystal Skull",
+  "year": 2008,
+  "analysis": {
+    "keyElements": {
+      "director": "Steven Spielberg",
+      "writers": [
+        "David Koepp",
+        "George Lucas"
+      ],
+      "stars": [
+        "Harrison Ford",
+        "Cate Blanchett",
+        "Shia LaBeouf"
+      ],
+      "genre": "Action Adventure",
+      "releaseYear": 2008,
+      "cinematographer": "Janusz Kaminski",
+      "composer": "John Williams",
+      "studio": "Paramount Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "NO",
+      "reasons": [
+        "Relies too heavily on CGI effects that age poorly compared to practical effects of original trilogy",
+        "Plot veers into unnecessary alien territory that betrays series' archaeological roots",
+        "Watch **Raiders of the Lost Ark** (1981) instead for pure Indiana Jones excellence"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Raiders of the Lost Ark",
+        "year": 1981,
+        "description": "The original and best Indiana Jones adventure, setting the gold standard for action-archaeology"
+      },
+      {
+        "title": "Indiana Jones and the Last Crusade",
+        "year": 1989,
+        "description": "The last great Indy adventure, perfecting the formula with father-son dynamics"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "1950s Cold War Cinema",
+        "category": "Historical Context",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Practical vs CGI Effects",
+        "category": "Film Technology",
+        "difficulty": "beginner"
+      },
+      {
+        "topic": "Legacy Sequel Challenges",
+        "category": "Film Industry",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Steven Spielberg",
+      "personId": 35037,
+      "slug": "/person/35037",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "David Koepp",
+        "personId": 7937,
+        "slug": "/person/7937",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "George Lucas",
+        "personId": 12307,
+        "slug": "/person/12307",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jeff Nathanson",
+        "personId": 16846,
+        "slug": "/person/16846",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Harrison Ford",
+        "personId": 13731,
+        "slug": "/person/13731",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Cate Blanchett",
+        "personId": 5187,
+        "slug": "/person/5187",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Shia LaBeouf",
+        "personId": 33936,
+        "slug": "/person/33936",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Karen Allen",
+        "personId": 20056,
+        "slug": "/person/20056",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Janusz Kaminski",
+      "personId": 16222,
+      "slug": "/person/16222",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "John Williams",
+      "personId": 18796,
+      "slug": "/person/18796",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:08.229Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

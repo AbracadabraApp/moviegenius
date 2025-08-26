@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Tour Documentary Films",
+      "url_path": "tour-documentary-films",
+      "description": "Tour Documentary Films collection",
+      "category": "music",
+      "connectionReason": "Part of Tour Documentary Films collection"
+    },
+    {
+      "name": "Experimental Music Films",
+      "url_path": "experimental-music-films",
+      "description": "Experimental Music Films collection",
+      "category": "music",
+      "connectionReason": "Part of Experimental Music Films collection"
+    },
+    {
+      "name": "Concert Hall Dramas",
+      "url_path": "concert-hall-dramas",
+      "description": "Concert Hall Dramas collection",
+      "category": "music",
+      "connectionReason": "Part of Concert Hall Dramas collection"
+    },
+    {
+      "name": "Breaking Fourth Wall Musicals",
+      "url_path": "breaking-fourth-wall-musicals",
+      "description": "Breaking Fourth Wall Musicals collection",
+      "category": "musical",
+      "connectionReason": "Part of Breaking Fourth Wall Musicals collection"
+    },
+    {
+      "name": "Surrealist Musical Productions",
+      "url_path": "surrealist-musical-productions",
+      "description": "Surrealist Musical Productions collection",
+      "category": "musical",
+      "connectionReason": "Part of Surrealist Musical Productions collection"
+    },
+    {
+      "name": "Art House Music Films",
+      "url_path": "art-house-music-films",
+      "description": "Art House Music Films collection",
+      "category": "musical",
+      "connectionReason": "Part of Art House Music Films collection"
+    }
+  ],
+  "totalLists": 6
+}

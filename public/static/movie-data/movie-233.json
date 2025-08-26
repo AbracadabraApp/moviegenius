@@ -1,0 +1,140 @@
+{
+  "movieId": "76c44a39-266f-46fc-8876-a41755c941b3",
+  "tmdbId": 233,
+  "title": "The Wanderers",
+  "year": 1979,
+  "analysis": {
+    "keyElements": {
+      "director": "Philip Kaufman",
+      "writers": [
+        "Philip Kaufman",
+        "Rose Kaufman"
+      ],
+      "stars": [
+        "Ken Wahl",
+        "John Friedrich",
+        "Karen Allen"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1979,
+      "cinematographer": "Michael Chapman",
+      "composer": "John Cale",
+      "studio": "Orion Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Authentic portrayal of 1960s Bronx gang culture with both grit and heart",
+        "Perfectly captures the end of an era as teen street culture transitions into the counterculture movement",
+        "Blend of coming-of-age drama, gang warfare, and social commentary that feels both nostalgic and relevant"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Warriors",
+        "year": 1979,
+        "description": "Contemporary gang film offering more stylized take on NYC street culture"
+      },
+      {
+        "title": "American Graffiti",
+        "year": 1973,
+        "description": "Similar nostalgic examination of youth culture on the cusp of change"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "1960s Urban Youth Culture",
+        "category": "social_history",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Gang Film Evolution",
+        "category": "film_history",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Philip Kaufman",
+      "personId": 29677,
+      "slug": "/person/29677",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Philip Kaufman",
+        "personId": 29677,
+        "slug": "/person/29677",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Rose Kaufman",
+        "personId": 32461,
+        "slug": "/person/32461",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Richard Price",
+        "personId": 31136,
+        "slug": "/person/31136",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Ken Wahl",
+        "personId": 20805,
+        "slug": "/person/20805",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "John Friedrich",
+        "personId": 18212,
+        "slug": "/person/18212",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Karen Allen",
+        "personId": 20056,
+        "slug": "/person/20056",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Michael Chapman",
+      "personId": 25561,
+      "slug": "/person/25561",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Jimmie Haskell",
+      "personId": 17450,
+      "slug": "/person/17450",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:11.575Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

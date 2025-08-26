@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Dark Fantasy Animation",
+      "url_path": "dark-fantasy-animation",
+      "description": "Dark Fantasy Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Dark Fantasy Animation collection"
+    },
+    {
+      "name": "Political Animation Films",
+      "url_path": "political-animation-films",
+      "description": "Political Animation Films collection",
+      "category": "animation",
+      "connectionReason": "Part of Political Animation Films collection"
+    },
+    {
+      "name": "Graphic Novel Adaptations",
+      "url_path": "graphic-novel-adaptations",
+      "description": "Graphic Novel Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Graphic Novel Adaptations collection"
+    }
+  ],
+  "totalLists": 3
+}

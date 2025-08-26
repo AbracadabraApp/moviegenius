@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Military Training Comedy",
+      "url_path": "military-training-comedy",
+      "description": "Military Training Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Military Training Comedy collection"
+    },
+    {
+      "name": "Military Base Satires",
+      "url_path": "military-base-satires",
+      "description": "Military Base Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Military Base Satires collection"
+    },
+    {
+      "name": "Political Satires",
+      "url_path": "political-satires",
+      "description": "Political Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Political Satires collection"
+    }
+  ],
+  "totalLists": 3
+}

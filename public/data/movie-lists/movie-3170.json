@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Coming-of-Age Animation",
+      "url_path": "coming-of-age-animation",
+      "description": "Coming-of-Age Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Coming-of-Age Animation collection"
+    },
+    {
+      "name": "Unlikely Hero Stories",
+      "url_path": "unlikely-hero-stories",
+      "description": "Unlikely Hero Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Unlikely Hero Stories collection"
+    },
+    {
+      "name": "Grief and Loss Stories",
+      "url_path": "grief-and-loss-stories",
+      "description": "Grief and Loss Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Grief and Loss Stories collection"
+    },
+    {
+      "name": "Environmental Conservation Animation",
+      "url_path": "environmental-conservation-animation",
+      "description": "Environmental Conservation Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Environmental Conservation Animation collection"
+    }
+  ],
+  "totalLists": 4
+}

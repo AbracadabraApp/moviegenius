@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Police Detective Stories",
+      "url_path": "police-detective-stories",
+      "description": "Police Detective Stories collection",
+      "category": "crime",
+      "connectionReason": "Part of Police Detective Stories collection"
+    },
+    {
+      "name": "Female Journalist Investigations",
+      "url_path": "female-journalist-investigations",
+      "description": "Female Journalist Investigations collection",
+      "category": "crime",
+      "connectionReason": "Part of Female Journalist Investigations collection"
+    },
+    {
+      "name": "Hidden Identity Thrillers (Part 1)",
+      "url_path": "hidden-identity-thrillers-part-1-",
+      "description": "Hidden Identity Thrillers (Part 1) collection",
+      "category": "crime",
+      "connectionReason": "Part of Hidden Identity Thrillers (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

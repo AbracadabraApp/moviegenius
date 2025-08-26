@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Modern Western Remakes",
+      "url_path": "modern-western-remakes",
+      "description": "Modern Western Remakes collection",
+      "category": "western",
+      "connectionReason": "Part of Modern Western Remakes collection"
+    },
+    {
+      "name": "Moral Redemption Westerns",
+      "url_path": "moral-redemption-westerns",
+      "description": "Moral Redemption Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Moral Redemption Westerns collection"
+    },
+    {
+      "name": "Criminal Transport Stories",
+      "url_path": "criminal-transport-stories",
+      "description": "Criminal Transport Stories collection",
+      "category": "western",
+      "connectionReason": "Part of Criminal Transport Stories collection"
+    }
+  ],
+  "totalLists": 3
+}

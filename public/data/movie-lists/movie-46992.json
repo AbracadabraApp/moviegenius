@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Fame and Tragedy Musicals",
+      "url_path": "fame-and-tragedy-musicals",
+      "description": "Fame and Tragedy Musicals collection",
+      "category": "music",
+      "connectionReason": "Part of Fame and Tragedy Musicals collection"
+    },
+    {
+      "name": "Musical Prodigy Stories",
+      "url_path": "musical-prodigy-stories",
+      "description": "Musical Prodigy Stories collection",
+      "category": "music",
+      "connectionReason": "Part of Musical Prodigy Stories collection"
+    },
+    {
+      "name": "Classical Performance Biopics",
+      "url_path": "classical-performance-biopics",
+      "description": "Classical Performance Biopics collection",
+      "category": "music",
+      "connectionReason": "Part of Classical Performance Biopics collection"
+    },
+    {
+      "name": "Sibling Musician Dramas",
+      "url_path": "sibling-musician-dramas",
+      "description": "Sibling Musician Dramas collection",
+      "category": "music",
+      "connectionReason": "Part of Sibling Musician Dramas collection"
+    }
+  ],
+  "totalLists": 4
+}

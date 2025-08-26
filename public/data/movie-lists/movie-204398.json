@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Outback Frontier Epics",
+      "url_path": "outback-frontier-epics",
+      "description": "Outback Frontier Epics collection",
+      "category": "adventure",
+      "connectionReason": "Part of Outback Frontier Epics collection"
+    },
+    {
+      "name": "Wildlife Capture Adventures",
+      "url_path": "wildlife-capture-adventures",
+      "description": "Wildlife Capture Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Wildlife Capture Adventures collection"
+    },
+    {
+      "name": "Animal Journey Adventures [OVERSIZED]",
+      "url_path": "animal-journey-adventures-oversized-",
+      "description": "Animal Journey Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Animal Journey Adventures [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Deadly Creature Features",
+      "url_path": "deadly-creature-features",
+      "description": "Deadly Creature Features collection",
+      "category": "adventure",
+      "connectionReason": "Part of Deadly Creature Features collection"
+    },
+    {
+      "name": "Gothic Adventure Horror",
+      "url_path": "gothic-adventure-horror",
+      "description": "Gothic Adventure Horror collection",
+      "category": "adventure",
+      "connectionReason": "Part of Gothic Adventure Horror collection"
+    },
+    {
+      "name": "Underground World Exploration",
+      "url_path": "underground-world-exploration",
+      "description": "Underground World Exploration collection",
+      "category": "adventure",
+      "connectionReason": "Part of Underground World Exploration collection"
+    },
+    {
+      "name": "Cave Horror Films",
+      "url_path": "cave-horror-films",
+      "description": "Cave Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Cave Horror Films collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 6)",
+      "url_path": "confined-space-thrillers-part-6-",
+      "description": "Confined Space Thrillers (Part 6) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 6) collection"
+    },
+    {
+      "name": "Mutant Creature Features (Part 6)",
+      "url_path": "mutant-creature-features-part-6-",
+      "description": "Mutant Creature Features (Part 6) collection",
+      "category": "horror",
+      "connectionReason": "Part of Mutant Creature Features (Part 6) collection"
+    },
+    {
+      "name": "Scientific Expedition Horror (Part 2)",
+      "url_path": "scientific-expedition-horror-part-2-",
+      "description": "Scientific Expedition Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Scientific Expedition Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 7
+}

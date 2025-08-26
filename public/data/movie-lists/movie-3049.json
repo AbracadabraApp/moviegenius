@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Sports Fan Adventures",
+      "url_path": "sports-fan-adventures",
+      "description": "Sports Fan Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Sports Fan Adventures collection"
+    },
+    {
+      "name": "Eccentric Detective Stories",
+      "url_path": "eccentric-detective-stories",
+      "description": "Eccentric Detective Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Eccentric Detective Stories collection"
+    },
+    {
+      "name": "Pet Adventure Comedies (Part 1)",
+      "url_path": "pet-adventure-comedies-part-1-",
+      "description": "Pet Adventure Comedies (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Pet Adventure Comedies (Part 1) collection"
+    },
+    {
+      "name": "Criminal Mishap Comedies (Part 1)",
+      "url_path": "criminal-mishap-comedies-part-1-",
+      "description": "Criminal Mishap Comedies (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Criminal Mishap Comedies (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Modern Santa Stories",
+      "url_path": "modern-santa-stories",
+      "description": "Modern Santa Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Modern Santa Stories collection"
+    },
+    {
+      "name": "Female Ensemble Mysteries",
+      "url_path": "female-ensemble-mysteries",
+      "description": "Female Ensemble Mysteries collection",
+      "category": "comedy",
+      "connectionReason": "Part of Female Ensemble Mysteries collection"
+    },
+    {
+      "name": "Multi-Generational Holiday Comedy",
+      "url_path": "multi-generational-holiday-comedy",
+      "description": "Multi-Generational Holiday Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Multi-Generational Holiday Comedy collection"
+    },
+    {
+      "name": "Cross-Cultural Family Comedies (Part 1)",
+      "url_path": "cross-cultural-family-comedies-part-1-",
+      "description": "Cross-Cultural Family Comedies (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Cultural Family Comedies (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

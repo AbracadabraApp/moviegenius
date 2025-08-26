@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Stop Motion Classics",
+      "url_path": "stop-motion-classics",
+      "description": "Stop Motion Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Stop Motion Classics collection"
+    },
+    {
+      "name": "Surrealist Animation Classics",
+      "url_path": "surrealist-animation-classics",
+      "description": "Surrealist Animation Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Surrealist Animation Classics collection"
+    },
+    {
+      "name": "Art Movement Collaborations",
+      "url_path": "art-movement-collaborations",
+      "description": "Art Movement Collaborations collection",
+      "category": "animation",
+      "connectionReason": "Part of Art Movement Collaborations collection"
+    },
+    {
+      "name": "Literary Adaptations",
+      "url_path": "literary-adaptations",
+      "description": "Literary Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Literary Adaptations collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "African Wilderness Survival",
+      "url_path": "african-wilderness-survival",
+      "description": "African Wilderness Survival collection",
+      "category": "adventure",
+      "connectionReason": "Part of African Wilderness Survival collection"
+    },
+    {
+      "name": "Magical Creature Conservation",
+      "url_path": "magical-creature-conservation",
+      "description": "Magical Creature Conservation collection",
+      "category": "adventure",
+      "connectionReason": "Part of Magical Creature Conservation collection"
+    },
+    {
+      "name": "Monster Sympathy Stories",
+      "url_path": "monster-sympathy-stories",
+      "description": "Monster Sympathy Stories collection",
+      "category": "adventure",
+      "connectionReason": "Part of Monster Sympathy Stories collection"
+    }
+  ],
+  "totalLists": 3
+}

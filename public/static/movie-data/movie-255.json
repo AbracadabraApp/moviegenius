@@ -1,0 +1,141 @@
+{
+  "movieId": "e30939ad-1f5c-418f-ab70-f061c53dc78e",
+  "tmdbId": 255,
+  "title": "Stolen Kisses",
+  "year": 1968,
+  "analysis": {
+    "keyElements": {
+      "director": "François Truffaut",
+      "writers": [
+        "François Truffaut",
+        "Claude de Givray",
+        "Bernard Revon"
+      ],
+      "stars": [
+        "Jean-Pierre Léaud",
+        "Delphine Seyrig",
+        "Claude Jade"
+      ],
+      "genre": "Comedy-Drama",
+      "releaseYear": 1968,
+      "cinematographer": "Denys Clerval",
+      "composer": "Antoine Duhamel",
+      "studio": "Les Films du Carrosse"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Essential chapter in Truffaut's autobiographical Antoine Doinel series",
+        "Perfect blend of French New Wave style with accessible romantic comedy",
+        "Jean-Pierre Léaud's charming performance captures young adult uncertainty"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The 400 Blows",
+        "year": 1959,
+        "description": "First film in the Antoine Doinel series, establishing the character"
+      },
+      {
+        "title": "Love on the Run",
+        "year": 1979,
+        "description": "Final chapter in the Doinel series"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "French New Wave",
+        "category": "Film Movement",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Character Development Across Series",
+        "category": "Narrative",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "François Truffaut",
+      "personId": 11321,
+      "slug": "/person/11321",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "François Truffaut",
+        "personId": 11321,
+        "slug": "/person/11321",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Claude de Givray",
+        "personId": 6483,
+        "slug": "/person/6483",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Bernard Revon",
+        "personId": 3502,
+        "slug": "/person/3502",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Jean-Pierre Léaud",
+        "personId": 16701,
+        "slug": "/person/16701",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Delphine Seyrig",
+        "personId": 8393,
+        "slug": "/person/8393",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Claude Jade",
+        "personId": 6489,
+        "slug": "/person/6489",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Denys Clerval",
+      "personId": 8511,
+      "slug": "/person/8511",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Antoine Duhamel",
+      "personId": 2315,
+      "slug": "/person/2315",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:15.712Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Psychedelic Horror Films",
+      "url_path": "psychedelic-horror-films",
+      "description": "Psychedelic Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Psychedelic Horror Films collection"
+    },
+    {
+      "name": "Death Limbo Horror",
+      "url_path": "death-limbo-horror",
+      "description": "Death Limbo Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Death Limbo Horror collection"
+    },
+    {
+      "name": "Art House Horror (Part 1)",
+      "url_path": "art-house-horror-part-1-",
+      "description": "Art House Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Art House Horror (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

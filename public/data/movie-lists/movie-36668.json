@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Superhero Last Chapters",
+      "url_path": "superhero-last-chapters",
+      "description": "Superhero Last Chapters collection",
+      "category": "superhero",
+      "connectionReason": "Part of Superhero Last Chapters collection"
+    },
+    {
+      "name": "Philosophical Superhero Stories",
+      "url_path": "philosophical-superhero-stories",
+      "description": "Philosophical Superhero Stories collection",
+      "category": "superhero",
+      "connectionReason": "Part of Philosophical Superhero Stories collection"
+    },
+    {
+      "name": "Hero Versus Hero",
+      "url_path": "hero-versus-hero",
+      "description": "Hero Versus Hero collection",
+      "category": "superhero",
+      "connectionReason": "Part of Hero Versus Hero collection"
+    },
+    {
+      "name": "Legacy and Succession",
+      "url_path": "legacy-and-succession",
+      "description": "Legacy and Succession collection",
+      "category": "superhero",
+      "connectionReason": "Part of Legacy and Succession collection"
+    }
+  ],
+  "totalLists": 4
+}

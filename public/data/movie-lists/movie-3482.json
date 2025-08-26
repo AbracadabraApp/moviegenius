@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "WWII Espionage Thrillers",
+      "url_path": "wwii-espionage-thrillers",
+      "description": "WWII Espionage Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of WWII Espionage Thrillers collection"
+    },
+    {
+      "name": "Transportation Disaster Thrillers",
+      "url_path": "transportation-disaster-thrillers",
+      "description": "Transportation Disaster Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Transportation Disaster Thrillers collection"
+    },
+    {
+      "name": "Wartime Resistance Films [OVERSIZED]",
+      "url_path": "wartime-resistance-films-oversized-",
+      "description": "Wartime Resistance Films [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of Wartime Resistance Films [OVERSIZED] collection"
+    },
+    {
+      "name": "Military Deception Operations [OVERSIZED]",
+      "url_path": "military-deception-operations-oversized-",
+      "description": "Military Deception Operations [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of Military Deception Operations [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

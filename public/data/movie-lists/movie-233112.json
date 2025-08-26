@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Hong Kong Action Crime",
+      "url_path": "hong-kong-action-crime",
+      "description": "Hong Kong Action Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Hong Kong Action Crime collection"
+    },
+    {
+      "name": "Childhood Friends Crime",
+      "url_path": "childhood-friends-crime",
+      "description": "Childhood Friends Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Childhood Friends Crime collection"
+    },
+    {
+      "name": "Undercover Detective Operations",
+      "url_path": "undercover-detective-operations",
+      "description": "Undercover Detective Operations collection",
+      "category": "crime",
+      "connectionReason": "Part of Undercover Detective Operations collection"
+    },
+    {
+      "name": "Drug Cartel Warfare",
+      "url_path": "drug-cartel-warfare",
+      "description": "Drug Cartel Warfare collection",
+      "category": "thriller",
+      "connectionReason": "Part of Drug Cartel Warfare collection"
+    },
+    {
+      "name": "Hong Kong Police Action",
+      "url_path": "hong-kong-police-action",
+      "description": "Hong Kong Police Action collection",
+      "category": "thriller",
+      "connectionReason": "Part of Hong Kong Police Action collection"
+    },
+    {
+      "name": "Professional Code Thrillers",
+      "url_path": "professional-code-thrillers",
+      "description": "Professional Code Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Professional Code Thrillers collection"
+    }
+  ],
+  "totalLists": 6
+}

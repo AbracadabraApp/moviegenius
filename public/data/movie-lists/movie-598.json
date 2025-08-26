@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Latino Crime Stories",
+      "url_path": "latino-crime-stories",
+      "description": "Latino Crime Stories collection",
+      "category": "crime",
+      "connectionReason": "Part of Latino Crime Stories collection"
+    },
+    {
+      "name": "Youth Gang Dramas (Part 1)",
+      "url_path": "youth-gang-dramas-part-1-",
+      "description": "Youth Gang Dramas (Part 1) collection",
+      "category": "crime",
+      "connectionReason": "Part of Youth Gang Dramas (Part 1) collection"
+    },
+    {
+      "name": "Social Inequality Crime (Part 1)",
+      "url_path": "social-inequality-crime-part-1-",
+      "description": "Social Inequality Crime (Part 1) collection",
+      "category": "crime",
+      "connectionReason": "Part of Social Inequality Crime (Part 1) collection"
+    },
+    {
+      "name": "Criminal Origin Stories (Part 2)",
+      "url_path": "criminal-origin-stories-part-2-",
+      "description": "Criminal Origin Stories (Part 2) collection",
+      "category": "crime",
+      "connectionReason": "Part of Criminal Origin Stories (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

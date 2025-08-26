@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Sci-Fi Western Hybrids",
+      "url_path": "sci-fi-western-hybrids",
+      "description": "Sci-Fi Western Hybrids collection",
+      "category": "western",
+      "connectionReason": "Part of Sci-Fi Western Hybrids collection"
+    },
+    {
+      "name": "Mentor-Student Westerns",
+      "url_path": "mentor-student-westerns",
+      "description": "Mentor-Student Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Mentor-Student Westerns collection"
+    },
+    {
+      "name": "Classic Frontier Towns",
+      "url_path": "classic-frontier-towns",
+      "description": "Classic Frontier Towns collection",
+      "category": "western",
+      "connectionReason": "Part of Classic Frontier Towns collection"
+    }
+  ],
+  "totalLists": 3
+}

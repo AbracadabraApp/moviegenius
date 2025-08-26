@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "French Bandit Romances",
+      "url_path": "french-bandit-romances",
+      "description": "French Bandit Romances collection",
+      "category": "adventure",
+      "connectionReason": "Part of French Bandit Romances collection"
+    },
+    {
+      "name": "Renaissance Court Adventures",
+      "url_path": "renaissance-court-adventures",
+      "description": "Renaissance Court Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Renaissance Court Adventures collection"
+    },
+    {
+      "name": "Classic Literary Adventures [OVERSIZED]",
+      "url_path": "classic-literary-adventures-oversized-",
+      "description": "Classic Literary Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Classic Literary Adventures [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 3
+}

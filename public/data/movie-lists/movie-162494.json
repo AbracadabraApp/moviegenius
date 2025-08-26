@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Higher Education Chronicles",
+      "url_path": "higher-education-chronicles",
+      "description": "Higher Education Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Higher Education Chronicles collection"
+    },
+    {
+      "name": "Civil Rights Movement",
+      "url_path": "civil-rights-movement",
+      "description": "Civil Rights Movement collection",
+      "category": "documentary",
+      "connectionReason": "Part of Civil Rights Movement collection"
+    },
+    {
+      "name": "Cinéma Vérité Classics",
+      "url_path": "cin-ma-v-rit-classics",
+      "description": "Cinéma Vérité Classics collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cinéma Vérité Classics collection"
+    },
+    {
+      "name": "Political Movement Documentaries (Part 2)",
+      "url_path": "political-movement-documentaries-part-2-",
+      "description": "Political Movement Documentaries (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Political Movement Documentaries (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

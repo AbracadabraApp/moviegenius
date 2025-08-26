@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Jazz Musician Dramas",
+      "url_path": "jazz-musician-dramas",
+      "description": "Jazz Musician Dramas collection",
+      "category": "music",
+      "connectionReason": "Part of Jazz Musician Dramas collection"
+    },
+    {
+      "name": "Musical Rediscovery Stories",
+      "url_path": "musical-rediscovery-stories",
+      "description": "Musical Rediscovery Stories collection",
+      "category": "music",
+      "connectionReason": "Part of Musical Rediscovery Stories collection"
+    },
+    {
+      "name": "Family Business Musicals",
+      "url_path": "family-business-musicals",
+      "description": "Family Business Musicals collection",
+      "category": "music",
+      "connectionReason": "Part of Family Business Musicals collection"
+    },
+    {
+      "name": "Big Band Era Films",
+      "url_path": "big-band-era-films",
+      "description": "Big Band Era Films collection",
+      "category": "music",
+      "connectionReason": "Part of Big Band Era Films collection"
+    }
+  ],
+  "totalLists": 4
+}

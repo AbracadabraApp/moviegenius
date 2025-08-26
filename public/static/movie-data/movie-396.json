@@ -1,0 +1,136 @@
+{
+  "movieId": "78d2563f-97a4-41d5-b88e-9f2bbcb6d9aa",
+  "tmdbId": 396,
+  "title": "Who's Afraid of Virginia Woolf?",
+  "year": 1966,
+  "analysis": {
+    "keyElements": {
+      "director": "Mike Nichols",
+      "writers": [
+        "Edward Albee",
+        "Ernest Lehman"
+      ],
+      "stars": [
+        "Elizabeth Taylor",
+        "Richard Burton",
+        "George Segal",
+        "Sandy Dennis"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1966,
+      "cinematographer": "Haskell Wexler",
+      "composer": "Alex North",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Elizabeth Taylor and Richard Burton deliver career-defining performances of raw emotional intensity",
+        "The screenplay masterfully adapts Albee's play while maintaining its psychological complexity",
+        "It revolutionized what was permissible in Hollywood regarding adult themes and dialogue"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Graduate",
+        "year": 1967,
+        "description": "Nichols' follow-up film, showing his mastery of social commentary and character psychology"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Method Acting in American Cinema",
+        "category": "Performance",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Theatre to Film Adaptation",
+        "category": "Screenwriting",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Mike Nichols",
+      "personId": 26313,
+      "slug": "/person/26313",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Edward Albee (play)",
+        "personId": 9647,
+        "slug": "/person/9647",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ernest Lehman (screenplay)",
+        "personId": 10551,
+        "slug": "/person/10551",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Elizabeth Taylor",
+        "personId": 10023,
+        "slug": "/person/10023",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Richard Burton",
+        "personId": 30910,
+        "slug": "/person/30910",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "George Segal",
+        "personId": 12394,
+        "slug": "/person/12394",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sandy Dennis",
+        "personId": 33161,
+        "slug": "/person/33161",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Haskell Wexler",
+      "personId": 13894,
+      "slug": "/person/13894",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Alex North",
+      "personId": 1051,
+      "slug": "/person/1051",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:32.110Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "LGBTQ Pioneer Portraits",
+      "url_path": "lgbtq-pioneer-portraits",
+      "description": "LGBTQ Pioneer Portraits collection",
+      "category": "documentary",
+      "connectionReason": "Part of LGBTQ Pioneer Portraits collection"
+    },
+    {
+      "name": "Cultural Identity Studies",
+      "url_path": "cultural-identity-studies",
+      "description": "Cultural Identity Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cultural Identity Studies collection"
+    },
+    {
+      "name": "Performance Preparation Studies",
+      "url_path": "performance-preparation-studies",
+      "description": "Performance Preparation Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Performance Preparation Studies collection"
+    }
+  ],
+  "totalLists": 3
+}

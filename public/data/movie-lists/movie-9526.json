@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Experimental Musical Comedies",
+      "url_path": "experimental-musical-comedies",
+      "description": "Experimental Musical Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Experimental Musical Comedies collection"
+    },
+    {
+      "name": "TV Show Reunion Specials",
+      "url_path": "tv-show-reunion-specials",
+      "description": "TV Show Reunion Specials collection",
+      "category": "comedy",
+      "connectionReason": "Part of TV Show Reunion Specials collection"
+    },
+    {
+      "name": "Radio Show Nostalgia",
+      "url_path": "radio-show-nostalgia",
+      "description": "Radio Show Nostalgia collection",
+      "category": "comedy",
+      "connectionReason": "Part of Radio Show Nostalgia collection"
+    }
+  ],
+  "totalLists": 3
+}

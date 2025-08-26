@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "WWII Archival Documentaries",
+      "url_path": "wwii-archival-documentaries",
+      "description": "WWII Archival Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of WWII Archival Documentaries collection"
+    },
+    {
+      "name": "Women's Rights Documentaries",
+      "url_path": "women-s-rights-documentaries",
+      "description": "Women's Rights Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Women's Rights Documentaries collection"
+    },
+    {
+      "name": "Industrial Work Documentation (Part 2)",
+      "url_path": "industrial-work-documentation-part-2-",
+      "description": "Industrial Work Documentation (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Industrial Work Documentation (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

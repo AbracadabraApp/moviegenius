@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Japanese Period Dramas",
+      "url_path": "japanese-period-dramas",
+      "description": "Japanese Period Dramas collection",
+      "category": "period",
+      "connectionReason": "Part of Japanese Period Dramas collection"
+    },
+    {
+      "name": "Samurai Honor Stories",
+      "url_path": "samurai-honor-stories",
+      "description": "Samurai Honor Stories collection",
+      "category": "period",
+      "connectionReason": "Part of Samurai Honor Stories collection"
+    },
+    {
+      "name": "Arts & Cultural Movements",
+      "url_path": "arts-cultural-movements",
+      "description": "Arts & Cultural Movements collection",
+      "category": "period",
+      "connectionReason": "Part of Arts & Cultural Movements collection"
+    }
+  ],
+  "totalLists": 3
+}

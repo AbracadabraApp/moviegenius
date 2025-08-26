@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Nuclear Crisis Thrillers",
+      "url_path": "nuclear-crisis-thrillers",
+      "description": "Nuclear Crisis Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Nuclear Crisis Thrillers collection"
+    },
+    {
+      "name": "Submarine Command Thrillers",
+      "url_path": "submarine-command-thrillers",
+      "description": "Submarine Command Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Submarine Command Thrillers collection"
+    },
+    {
+      "name": "Military Justice Conspiracy",
+      "url_path": "military-justice-conspiracy",
+      "description": "Military Justice Conspiracy collection",
+      "category": "thriller",
+      "connectionReason": "Part of Military Justice Conspiracy collection"
+    }
+  ],
+  "totalLists": 3
+}

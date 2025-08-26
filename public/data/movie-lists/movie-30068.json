@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Teen Life Chronicles",
+      "url_path": "teen-life-chronicles",
+      "description": "Teen Life Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Teen Life Chronicles collection"
+    },
+    {
+      "name": "Religious Folklore Studies",
+      "url_path": "religious-folklore-studies",
+      "description": "Religious Folklore Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Religious Folklore Studies collection"
+    },
+    {
+      "name": "Global Cultural Meditations (Part 2)",
+      "url_path": "global-cultural-meditations-part-2-",
+      "description": "Global Cultural Meditations (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Cultural Meditations (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,146 @@
+{
+  "movieId": "0218e4cf-9bb4-4818-baf2-ed265440dd92",
+  "tmdbId": 475,
+  "title": "Bonnie and Clyde",
+  "year": 1967,
+  "analysis": {
+    "keyElements": {
+      "director": "Arthur Penn",
+      "writers": [
+        "David Newman",
+        "Robert Benton"
+      ],
+      "stars": [
+        "Warren Beatty",
+        "Faye Dunaway",
+        "Gene Hackman",
+        "Estelle Parsons"
+      ],
+      "genre": "Crime Drama",
+      "releaseYear": 1967,
+      "cinematographer": "Burnett Guffey",
+      "composer": "Charles Strouse",
+      "studio": "Warner Bros.-Seven Arts"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Revolutionary portrayal of violence and sexuality that changed Hollywood forever",
+        "Career-defining performances from Warren Beatty and Faye Dunaway that redefined antihero protagonists",
+        "Masterful blend of romance, comedy, and brutal realism that influenced generations of filmmakers"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Badlands",
+        "year": 1973,
+        "description": "Direct spiritual successor that builds on the outlaw couple template"
+      },
+      {
+        "title": "Natural Born Killers",
+        "year": 1994,
+        "description": "Modern reinterpretation of criminal lovers as media sensations"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "New Hollywood Movement",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Violence in Cinema",
+        "category": "Film Theory",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "French New Wave Influence",
+        "category": "Film Movements",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Arthur Penn",
+      "personId": 2665,
+      "slug": "/person/2665",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "David Newman",
+        "personId": 8043,
+        "slug": "/person/8043",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Robert Benton",
+        "personId": 31464,
+        "slug": "/person/31464",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Warren Beatty",
+        "personId": 38148,
+        "slug": "/person/38148",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Faye Dunaway",
+        "personId": 10937,
+        "slug": "/person/10937",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Gene Hackman",
+        "personId": 12103,
+        "slug": "/person/12103",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Michael J. Pollard",
+        "personId": 25743,
+        "slug": "/person/25743",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Burnett Guffey",
+      "personId": 4718,
+      "slug": "/person/4718",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Charles Strouse",
+      "personId": 5572,
+      "slug": "/person/5572",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:41.339Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

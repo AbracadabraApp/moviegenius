@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Historical Genre Mashup",
+      "url_path": "historical-genre-mashup",
+      "description": "Historical Genre Mashup collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Historical Genre Mashup collection"
+    },
+    {
+      "name": "Ancient Alien Guardians",
+      "url_path": "ancient-alien-guardians",
+      "description": "Ancient Alien Guardians collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Ancient Alien Guardians collection"
+    },
+    {
+      "name": "Giant Robot Defense",
+      "url_path": "giant-robot-defense",
+      "description": "Giant Robot Defense collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Giant Robot Defense collection"
+    },
+    {
+      "name": "Fantasy SciFi Hybrids",
+      "url_path": "fantasy-scifi-hybrids",
+      "description": "Fantasy SciFi Hybrids collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Fantasy SciFi Hybrids collection"
+    }
+  ],
+  "totalLists": 4
+}

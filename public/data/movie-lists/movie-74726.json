@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Political Satires",
+      "url_path": "political-satires",
+      "description": "Political Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Political Satires collection"
+    },
+    {
+      "name": "Horror Movie Parodies (Part 3)",
+      "url_path": "horror-movie-parodies-part-3-",
+      "description": "Horror Movie Parodies (Part 3) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Horror Movie Parodies (Part 3) collection"
+    },
+    {
+      "name": "Cross-Cultural Social Commentary (Part 5)",
+      "url_path": "cross-cultural-social-commentary-part-5-",
+      "description": "Cross-Cultural Social Commentary (Part 5) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Cultural Social Commentary (Part 5) collection"
+    },
+    {
+      "name": "Post-Apocalyptic Survival Horror",
+      "url_path": "post-apocalyptic-survival-horror",
+      "description": "Post-Apocalyptic Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Post-Apocalyptic Survival Horror collection"
+    },
+    {
+      "name": "Classic Monster Comedy (Part 3)",
+      "url_path": "classic-monster-comedy-part-3-",
+      "description": "Classic Monster Comedy (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Monster Comedy (Part 3) collection"
+    },
+    {
+      "name": "Social Commentary Horror (Part 1)",
+      "url_path": "social-commentary-horror-part-1-",
+      "description": "Social Commentary Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Social Commentary Horror (Part 1) collection"
+    }
+  ],
+  "totalLists": 6
+}

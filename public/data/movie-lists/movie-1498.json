@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Urban Night Adventures",
+      "url_path": "urban-night-adventures",
+      "description": "Urban Night Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Urban Night Adventures collection"
+    },
+    {
+      "name": "Supernatural Animal Tales",
+      "url_path": "supernatural-animal-tales",
+      "description": "Supernatural Animal Tales collection",
+      "category": "adventure",
+      "connectionReason": "Part of Supernatural Animal Tales collection"
+    },
+    {
+      "name": "Martial Arts Quest Adventures",
+      "url_path": "martial-arts-quest-adventures",
+      "description": "Martial Arts Quest Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Martial Arts Quest Adventures collection"
+    }
+  ],
+  "totalLists": 3
+}

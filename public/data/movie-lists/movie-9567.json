@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Special Forces Operations",
+      "url_path": "special-forces-operations",
+      "description": "Special Forces Operations collection",
+      "category": "war",
+      "connectionReason": "Part of Special Forces Operations collection"
+    },
+    {
+      "name": "Humanitarian Aid Wars",
+      "url_path": "humanitarian-aid-wars",
+      "description": "Humanitarian Aid Wars collection",
+      "category": "war",
+      "connectionReason": "Part of Humanitarian Aid Wars collection"
+    },
+    {
+      "name": "African Mercenary Wars",
+      "url_path": "african-mercenary-wars",
+      "description": "African Mercenary Wars collection",
+      "category": "war",
+      "connectionReason": "Part of African Mercenary Wars collection"
+    },
+    {
+      "name": "Jungle Warfare Films",
+      "url_path": "jungle-warfare-films",
+      "description": "Jungle Warfare Films collection",
+      "category": "war",
+      "connectionReason": "Part of Jungle Warfare Films collection"
+    }
+  ],
+  "totalLists": 4
+}

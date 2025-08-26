@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Senior Life Comedies",
+      "url_path": "senior-life-comedies",
+      "description": "Senior Life Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Senior Life Comedies collection"
+    },
+    {
+      "name": "Classic Screwball Capers (Part 1)",
+      "url_path": "classic-screwball-capers-part-1-",
+      "description": "Classic Screwball Capers (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Screwball Capers (Part 1) collection"
+    },
+    {
+      "name": "Dark Comedy Accidents (Part 2)",
+      "url_path": "dark-comedy-accidents-part-2-",
+      "description": "Dark Comedy Accidents (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Dark Comedy Accidents (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

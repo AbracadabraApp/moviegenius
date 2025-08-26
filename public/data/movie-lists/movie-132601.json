@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Unlikely Hero Stories",
+      "url_path": "unlikely-hero-stories",
+      "description": "Unlikely Hero Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Unlikely Hero Stories collection"
+    },
+    {
+      "name": "Animal Rescue Adventures",
+      "url_path": "animal-rescue-adventures",
+      "description": "Animal Rescue Adventures collection",
+      "category": "animation",
+      "connectionReason": "Part of Animal Rescue Adventures collection"
+    },
+    {
+      "name": "Magical Worlds and Powers",
+      "url_path": "magical-worlds-and-powers",
+      "description": "Magical Worlds and Powers collection",
+      "category": "animation",
+      "connectionReason": "Part of Magical Worlds and Powers collection"
+    }
+  ],
+  "totalLists": 3
+}

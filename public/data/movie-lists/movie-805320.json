@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Spanish Horror Cinema",
+      "url_path": "spanish-horror-cinema",
+      "description": "Spanish Horror Cinema collection",
+      "category": "horror",
+      "connectionReason": "Part of Spanish Horror Cinema collection"
+    },
+    {
+      "name": "Post-Apocalyptic Survival Horror",
+      "url_path": "post-apocalyptic-survival-horror",
+      "description": "Post-Apocalyptic Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Post-Apocalyptic Survival Horror collection"
+    },
+    {
+      "name": "Invisible Entity Horror",
+      "url_path": "invisible-entity-horror",
+      "description": "Invisible Entity Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Invisible Entity Horror collection"
+    },
+    {
+      "name": "Modern Suburban Horror (Part 2)",
+      "url_path": "modern-suburban-horror-part-2-",
+      "description": "Modern Suburban Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Modern Suburban Horror (Part 2) collection"
+    },
+    {
+      "name": "Modern Bunker Thrillers",
+      "url_path": "modern-bunker-thrillers",
+      "description": "Modern Bunker Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Modern Bunker Thrillers collection"
+    },
+    {
+      "name": "Historical Survival Thrillers (Part 1)",
+      "url_path": "historical-survival-thrillers-part-1-",
+      "description": "Historical Survival Thrillers (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Historical Survival Thrillers (Part 1) collection"
+    },
+    {
+      "name": "Urban Chase Thrillers (Part 1)",
+      "url_path": "urban-chase-thrillers-part-1-",
+      "description": "Urban Chase Thrillers (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Urban Chase Thrillers (Part 1) collection"
+    }
+  ],
+  "totalLists": 7
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Media Control Horror",
+      "url_path": "media-control-horror",
+      "description": "Media Control Horror collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Media Control Horror collection"
+    },
+    {
+      "name": "Urban Fantasy SciFi (Part 1)",
+      "url_path": "urban-fantasy-scifi-part-1-",
+      "description": "Urban Fantasy SciFi (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Urban Fantasy SciFi (Part 1) collection"
+    },
+    {
+      "name": "Corporate Science Horror (Part 2)",
+      "url_path": "corporate-science-horror-part-2-",
+      "description": "Corporate Science Horror (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Corporate Science Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

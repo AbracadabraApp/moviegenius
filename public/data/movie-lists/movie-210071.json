@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Holiday Musical Specials",
+      "url_path": "holiday-musical-specials",
+      "description": "Holiday Musical Specials collection",
+      "category": "music",
+      "connectionReason": "Part of Holiday Musical Specials collection"
+    },
+    {
+      "name": "Literary Musical Adaptations [OVERSIZED]",
+      "url_path": "literary-musical-adaptations-oversized-",
+      "description": "Literary Musical Adaptations [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Literary Musical Adaptations [OVERSIZED] collection"
+    },
+    {
+      "name": "Seasonal Holiday Musical Stories",
+      "url_path": "seasonal-holiday-musical-stories",
+      "description": "Seasonal Holiday Musical Stories collection",
+      "category": "musical",
+      "connectionReason": "Part of Seasonal Holiday Musical Stories collection"
+    },
+    {
+      "name": "Children's Literature Adaptations",
+      "url_path": "children-s-literature-adaptations",
+      "description": "Children's Literature Adaptations collection",
+      "category": "musical",
+      "connectionReason": "Part of Children's Literature Adaptations collection"
+    },
+    {
+      "name": "Puppet Musical Productions",
+      "url_path": "puppet-musical-productions",
+      "description": "Puppet Musical Productions collection",
+      "category": "musical",
+      "connectionReason": "Part of Puppet Musical Productions collection"
+    }
+  ],
+  "totalLists": 5
+}

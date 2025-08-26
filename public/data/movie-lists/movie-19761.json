@@ -1,0 +1,61 @@
+{
+  "lists": [
+    {
+      "name": "Space Horror",
+      "url_path": "space-horror",
+      "description": "Space Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Space Horror collection"
+    },
+    {
+      "name": "AI Horror",
+      "url_path": "ai-horror",
+      "description": "AI Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of AI Horror collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 5)",
+      "url_path": "confined-space-thrillers-part-5-",
+      "description": "Confined Space Thrillers (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 5) collection"
+    },
+    {
+      "name": "Scientific Experiment Horror (Part 6)",
+      "url_path": "scientific-experiment-horror-part-6-",
+      "description": "Scientific Experiment Horror (Part 6) collection",
+      "category": "horror",
+      "connectionReason": "Part of Scientific Experiment Horror (Part 6) collection"
+    },
+    {
+      "name": "Space Horror Survival",
+      "url_path": "space-horror-survival",
+      "description": "Space Horror Survival collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Horror Survival collection"
+    },
+    {
+      "name": "AI Home Invasion",
+      "url_path": "ai-home-invasion",
+      "description": "AI Home Invasion collection",
+      "category": "science fiction",
+      "connectionReason": "Part of AI Home Invasion collection"
+    },
+    {
+      "name": "Possessed Machine Horror",
+      "url_path": "possessed-machine-horror",
+      "description": "Possessed Machine Horror collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Possessed Machine Horror collection"
+    },
+    {
+      "name": "Psychological Space Isolation (Part 2)",
+      "url_path": "psychological-space-isolation-part-2-",
+      "description": "Psychological Space Isolation (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Psychological Space Isolation (Part 2) collection"
+    }
+  ],
+  "totalLists": 8
+}

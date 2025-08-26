@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Solo Living Documentaries",
+      "url_path": "solo-living-documentaries",
+      "description": "Solo Living Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Solo Living Documentaries collection"
+    },
+    {
+      "name": "Maritime Industry Chronicles",
+      "url_path": "maritime-industry-chronicles",
+      "description": "Maritime Industry Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Maritime Industry Chronicles collection"
+    },
+    {
+      "name": "Rise and Fall Stories (Part 3)",
+      "url_path": "rise-and-fall-stories-part-3-",
+      "description": "Rise and Fall Stories (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Rise and Fall Stories (Part 3) collection"
+    },
+    {
+      "name": "Perseverance Against Odds (Part 1)",
+      "url_path": "perseverance-against-odds-part-1-",
+      "description": "Perseverance Against Odds (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Perseverance Against Odds (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

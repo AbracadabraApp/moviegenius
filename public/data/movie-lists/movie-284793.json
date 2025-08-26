@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Agricultural Life Studies",
+      "url_path": "agricultural-life-studies",
+      "description": "Agricultural Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Agricultural Life Studies collection"
+    },
+    {
+      "name": "Rural Life Studies",
+      "url_path": "rural-life-studies",
+      "description": "Rural Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Rural Life Studies collection"
+    },
+    {
+      "name": "Industrial Work Documentation (Part 2)",
+      "url_path": "industrial-work-documentation-part-2-",
+      "description": "Industrial Work Documentation (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Industrial Work Documentation (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

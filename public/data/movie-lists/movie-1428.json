@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Mexican Urban Mosaics",
+      "url_path": "mexican-urban-mosaics",
+      "description": "Mexican Urban Mosaics collection",
+      "category": "thriller",
+      "connectionReason": "Part of Mexican Urban Mosaics collection"
+    },
+    {
+      "name": "Drug Cartel Warfare",
+      "url_path": "drug-cartel-warfare",
+      "description": "Drug Cartel Warfare collection",
+      "category": "thriller",
+      "connectionReason": "Part of Drug Cartel Warfare collection"
+    },
+    {
+      "name": "Revenge Violence Descent",
+      "url_path": "revenge-violence-descent",
+      "description": "Revenge Violence Descent collection",
+      "category": "thriller",
+      "connectionReason": "Part of Revenge Violence Descent collection"
+    }
+  ],
+  "totalLists": 3
+}

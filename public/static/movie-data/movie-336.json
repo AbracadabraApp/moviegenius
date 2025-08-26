@@ -1,0 +1,140 @@
+{
+  "movieId": "9096659e-771c-4244-873d-739d3414dfba",
+  "tmdbId": 336,
+  "title": "Duck, You Sucker",
+  "year": 1971,
+  "analysis": {
+    "keyElements": {
+      "director": "Sergio Leone",
+      "writers": [
+        "Sergio Leone",
+        "Sergio Donati"
+      ],
+      "stars": [
+        "Rod Steiger",
+        "James Coburn",
+        "Romolo Valli"
+      ],
+      "genre": "Western",
+      "releaseYear": 1971,
+      "cinematographer": "Giuseppe Ruzzolini",
+      "composer": "Ennio Morricone",
+      "studio": "Euro International Film"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of political commentary with explosive action sequences",
+        "Career-best performances from Rod Steiger and James Coburn",
+        "Ennio Morricone's haunting score elevates every scene"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Good, the Bad and the Ugly",
+        "year": 1966,
+        "description": "Leone's earlier masterpiece that established his epic style"
+      },
+      {
+        "title": "The Wild Bunch",
+        "year": 1969,
+        "description": "Similarly themed exploration of violence and changing times"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Mexican Revolution in Cinema",
+        "category": "Historical Context",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Political Themes in Spaghetti Westerns",
+        "category": "Genre Studies",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Sergio Leone",
+      "personId": 33676,
+      "slug": "/person/33676",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Sergio Leone",
+        "personId": 33676,
+        "slug": "/person/33676",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sergio Donati",
+        "personId": 33671,
+        "slug": "/person/33671",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Luciano Vincenzoni",
+        "personId": 23096,
+        "slug": "/person/23096",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Rod Steiger",
+        "personId": 32114,
+        "slug": "/person/32114",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "James Coburn",
+        "personId": 15720,
+        "slug": "/person/15720",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Romolo Valli",
+        "personId": 32279,
+        "slug": "/person/32279",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Giuseppe Ruzzolini",
+      "personId": 12845,
+      "slug": "/person/12845",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Ennio Morricone",
+      "personId": 10282,
+      "slug": "/person/10282",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:26.435Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

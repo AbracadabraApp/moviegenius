@@ -1,0 +1,123 @@
+{
+  "movieId": "335202a7-d57c-4df0-b7ac-6dd5eaa9c032",
+  "tmdbId": 337,
+  "title": "Monsieur Ibrahim",
+  "year": 2003,
+  "analysis": {
+    "keyElements": {
+      "director": "François Dupeyron",
+      "writers": [
+        "François Dupeyron",
+        "Eric-Emmanuel Schmitt"
+      ],
+      "stars": [
+        "Omar Sharif",
+        "Pierre Boulanger",
+        "Gilbert Melki"
+      ],
+      "genre": "Drama",
+      "releaseYear": 2003,
+      "cinematographer": "Rémy Chevrin",
+      "composer": "Jean-Claude Petit",
+      "studio": "ARP Sélection"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Omar Sharif delivers one of his most touching late-career performances",
+        "Beautiful exploration of cross-cultural friendship and mentorship",
+        "Intimate portrayal of 1960s Paris with genuine emotional depth"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Cinema Paradiso",
+        "year": 1988,
+        "description": "Similar themes of mentorship and coming-of-age in a European setting"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "French New Wave influence",
+        "category": "film_history",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "François Dupeyron",
+      "personId": 11295,
+      "slug": "/person/11295",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "François Dupeyron",
+        "personId": 11295,
+        "slug": "/person/11295",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Eric-Emmanuel Schmitt",
+        "personId": 10375,
+        "slug": "/person/10375",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Omar Sharif",
+        "personId": 28136,
+        "slug": "/person/28136",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Pierre Boulanger",
+        "personId": 29874,
+        "slug": "/person/29874",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Gilbert Melki",
+        "personId": 12683,
+        "slug": "/person/12683",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Rémy Chevrin",
+      "personId": 30707,
+      "slug": "/person/30707",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Jean-Claude Petit",
+      "personId": 16510,
+      "slug": "/person/16510",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:26.581Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

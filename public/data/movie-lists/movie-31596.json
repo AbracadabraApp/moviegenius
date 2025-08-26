@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Romantic Vampire Films",
+      "url_path": "romantic-vampire-films",
+      "description": "Romantic Vampire Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Romantic Vampire Films collection"
+    },
+    {
+      "name": "Female Coming-of-Age Horror",
+      "url_path": "female-coming-of-age-horror",
+      "description": "Female Coming-of-Age Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Female Coming-of-Age Horror collection"
+    },
+    {
+      "name": "Religious Horror Thrillers (Part 2)",
+      "url_path": "religious-horror-thrillers-part-2-",
+      "description": "Religious Horror Thrillers (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Religious Horror Thrillers (Part 2) collection"
+    },
+    {
+      "name": "Gothic Family Curse (Part 2)",
+      "url_path": "gothic-family-curse-part-2-",
+      "description": "Gothic Family Curse (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Gothic Family Curse (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Hong Kong Action Crime",
+      "url_path": "hong-kong-action-crime",
+      "description": "Hong Kong Action Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Hong Kong Action Crime collection"
+    },
+    {
+      "name": "Post-Prison Gangster Entanglement",
+      "url_path": "post-prison-gangster-entanglement",
+      "description": "Post-Prison Gangster Entanglement collection",
+      "category": "crime",
+      "connectionReason": "Part of Post-Prison Gangster Entanglement collection"
+    },
+    {
+      "name": "Criminal Exile Stories",
+      "url_path": "criminal-exile-stories",
+      "description": "Criminal Exile Stories collection",
+      "category": "crime",
+      "connectionReason": "Part of Criminal Exile Stories collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Parody & Satire Films",
+      "url_path": "parody-satire-films",
+      "description": "Parody & Satire Films collection",
+      "category": "comedy",
+      "connectionReason": "Part of Parody & Satire Films collection"
+    },
+    {
+      "name": "Senior Life Comedies",
+      "url_path": "senior-life-comedies",
+      "description": "Senior Life Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Senior Life Comedies collection"
+    },
+    {
+      "name": "Experimental Musical Comedies",
+      "url_path": "experimental-musical-comedies",
+      "description": "Experimental Musical Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Experimental Musical Comedies collection"
+    }
+  ],
+  "totalLists": 3
+}

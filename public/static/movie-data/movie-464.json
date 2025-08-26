@@ -1,0 +1,83 @@
+{
+  "movieId": "6ea7f8f1-c4a2-4848-89bf-c4acaaa78dce",
+  "tmdbId": 464,
+  "title": "As It Is in Heaven",
+  "year": 2004,
+  "analysis": {
+    "keyElements": {
+      "director": "Kay Pollak",
+      "writers": [
+        "Kay Pollak",
+        "Anders Nyberg",
+        "Ola Olsson"
+      ],
+      "stars": [
+        "Michael Nyqvist",
+        "Frida Hallgren",
+        "Helen Sjöholm"
+      ],
+      "genre": "Drama/Music",
+      "releaseYear": 2004,
+      "cinematographer": "Harald Paalgard",
+      "composer": "Stefan Nilsson",
+      "studio": "GF Studios"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Profound exploration of music's healing power and community transformation",
+        "Michael Nyqvist's nuanced performance as the burned-out conductor finding new purpose",
+        "Beautiful integration of choral music with human connection and spiritual growth"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Chorus",
+        "year": 2004,
+        "description": "Similar exploration of music's transformative power in a community setting"
+      },
+      {
+        "title": "Babette's Feast",
+        "year": 1987,
+        "description": "Parallel themes of art transforming a rigid religious community"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Music as Therapy",
+        "category": "Psychology",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Swedish Cinema",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Community Art",
+        "category": "Sociology",
+        "difficulty": "Beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": null,
+    "writers": [],
+    "stars": [],
+    "cinematographer": null,
+    "composer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:39.959Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "analysis_fallback",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Films About Filmmaking",
+      "url_path": "films-about-filmmaking",
+      "description": "Films About Filmmaking collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Films About Filmmaking collection"
+    },
+    {
+      "name": "TV Show Meta-Commentary",
+      "url_path": "tv-show-meta-commentary",
+      "description": "TV Show Meta-Commentary collection",
+      "category": "science fiction",
+      "connectionReason": "Part of TV Show Meta-Commentary collection"
+    },
+    {
+      "name": "Retro Space Adventure (Part 2)",
+      "url_path": "retro-space-adventure-part-2-",
+      "description": "Retro Space Adventure (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro Space Adventure (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

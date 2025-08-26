@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Classic Italian Gothic",
+      "url_path": "classic-italian-gothic",
+      "description": "Classic Italian Gothic collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Italian Gothic collection"
+    },
+    {
+      "name": "Water-Based Hauntings",
+      "url_path": "water-based-hauntings",
+      "description": "Water-Based Hauntings collection",
+      "category": "horror",
+      "connectionReason": "Part of Water-Based Hauntings collection"
+    },
+    {
+      "name": "Occult Ritual Horror (Part 2)",
+      "url_path": "occult-ritual-horror-part-2-",
+      "description": "Occult Ritual Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Occult Ritual Horror (Part 2) collection"
+    },
+    {
+      "name": "Religious Horror Thrillers (Part 1)",
+      "url_path": "religious-horror-thrillers-part-1-",
+      "description": "Religious Horror Thrillers (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Religious Horror Thrillers (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

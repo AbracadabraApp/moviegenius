@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Arctic Horror Films",
+      "url_path": "arctic-horror-films",
+      "description": "Arctic Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Arctic Horror Films collection"
+    },
+    {
+      "name": "Romantic Vampire Films",
+      "url_path": "romantic-vampire-films",
+      "description": "Romantic Vampire Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Romantic Vampire Films collection"
+    },
+    {
+      "name": "Art House Horror (Part 3)",
+      "url_path": "art-house-horror-part-3-",
+      "description": "Art House Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Art House Horror (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

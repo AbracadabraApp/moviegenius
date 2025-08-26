@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Meta Sequel Comedies",
+      "url_path": "meta-sequel-comedies",
+      "description": "Meta Sequel Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Meta Sequel Comedies collection"
+    },
+    {
+      "name": "Royal Romance Comedies",
+      "url_path": "royal-romance-comedies",
+      "description": "Royal Romance Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Royal Romance Comedies collection"
+    },
+    {
+      "name": "Cross-Cultural Comedy",
+      "url_path": "cross-cultural-comedy",
+      "description": "Cross-Cultural Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Cultural Comedy collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Holiday Horror Films",
+      "url_path": "holiday-horror-films",
+      "description": "Holiday Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Holiday Horror Films collection"
+    },
+    {
+      "name": "Revenge Horror Films",
+      "url_path": "revenge-horror-films",
+      "description": "Revenge Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Revenge Horror Films collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 6)",
+      "url_path": "confined-space-thrillers-part-6-",
+      "description": "Confined Space Thrillers (Part 6) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 6) collection"
+    },
+    {
+      "name": "Teen Slasher Horror (Part 3)",
+      "url_path": "teen-slasher-horror-part-3-",
+      "description": "Teen Slasher Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Teen Slasher Horror (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

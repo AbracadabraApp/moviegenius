@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Border Smuggling Crime",
+      "url_path": "border-smuggling-crime",
+      "description": "Border Smuggling Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Border Smuggling Crime collection"
+    },
+    {
+      "name": "Police Moral Dilemmas",
+      "url_path": "police-moral-dilemmas",
+      "description": "Police Moral Dilemmas collection",
+      "category": "crime",
+      "connectionReason": "Part of Police Moral Dilemmas collection"
+    },
+    {
+      "name": "Multiple Perspective Crimes",
+      "url_path": "multiple-perspective-crimes",
+      "description": "Multiple Perspective Crimes collection",
+      "category": "crime",
+      "connectionReason": "Part of Multiple Perspective Crimes collection"
+    }
+  ],
+  "totalLists": 3
+}

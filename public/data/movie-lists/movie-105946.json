@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "name": "Border Region Documentaries",
+      "url_path": "border-region-documentaries",
+      "description": "Border Region Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Border Region Documentaries collection"
+    },
+    {
+      "name": "Rural Life Studies",
+      "url_path": "rural-life-studies",
+      "description": "Rural Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Rural Life Studies collection"
+    }
+  ],
+  "totalLists": 2
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Nature & Wildlife Films",
+      "url_path": "nature-wildlife-films",
+      "description": "Nature & Wildlife Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Nature & Wildlife Films collection"
+    },
+    {
+      "name": "Human-Animal Relationships",
+      "url_path": "human-animal-relationships",
+      "description": "Human-Animal Relationships collection",
+      "category": "documentary",
+      "connectionReason": "Part of Human-Animal Relationships collection"
+    },
+    {
+      "name": "Wildlife Conservation Heroes",
+      "url_path": "wildlife-conservation-heroes",
+      "description": "Wildlife Conservation Heroes collection",
+      "category": "documentary",
+      "connectionReason": "Part of Wildlife Conservation Heroes collection"
+    },
+    {
+      "name": "Visual Nature Symphonies (Part 3)",
+      "url_path": "visual-nature-symphonies-part-3-",
+      "description": "Visual Nature Symphonies (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Visual Nature Symphonies (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

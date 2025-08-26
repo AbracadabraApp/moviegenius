@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Post-Apocalyptic Fantasy",
+      "url_path": "post-apocalyptic-fantasy",
+      "description": "Post-Apocalyptic Fantasy collection",
+      "category": "animation",
+      "connectionReason": "Part of Post-Apocalyptic Fantasy collection"
+    },
+    {
+      "name": "Anime-Western Fusion Films",
+      "url_path": "anime-western-fusion-films",
+      "description": "Anime-Western Fusion Films collection",
+      "category": "animation",
+      "connectionReason": "Part of Anime-Western Fusion Films collection"
+    },
+    {
+      "name": "Music Industry Commentary",
+      "url_path": "music-industry-commentary",
+      "description": "Music Industry Commentary collection",
+      "category": "animation",
+      "connectionReason": "Part of Music Industry Commentary collection"
+    },
+    {
+      "name": "Experimental Music Films",
+      "url_path": "experimental-music-films",
+      "description": "Experimental Music Films collection",
+      "category": "music",
+      "connectionReason": "Part of Experimental Music Films collection"
+    },
+    {
+      "name": "Animated Music Visualizations",
+      "url_path": "animated-music-visualizations",
+      "description": "Animated Music Visualizations collection",
+      "category": "music",
+      "connectionReason": "Part of Animated Music Visualizations collection"
+    },
+    {
+      "name": "Dystopian Music Films",
+      "url_path": "dystopian-music-films",
+      "description": "Dystopian Music Films collection",
+      "category": "music",
+      "connectionReason": "Part of Dystopian Music Films collection"
+    }
+  ],
+  "totalLists": 6
+}

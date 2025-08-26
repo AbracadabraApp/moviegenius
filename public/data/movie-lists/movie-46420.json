@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Revenge Horror Films",
+      "url_path": "revenge-horror-films",
+      "description": "Revenge Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Revenge Horror Films collection"
+    },
+    {
+      "name": "Teen Horror Films",
+      "url_path": "teen-horror-films",
+      "description": "Teen Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Teen Horror Films collection"
+    },
+    {
+      "name": "Psychological Horror (Part 5)",
+      "url_path": "psychological-horror-part-5-",
+      "description": "Psychological Horror (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Psychological Horror (Part 5) collection"
+    },
+    {
+      "name": "Toxic Family Horror (Part 2)",
+      "url_path": "toxic-family-horror-part-2-",
+      "description": "Toxic Family Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Toxic Family Horror (Part 2) collection"
+    },
+    {
+      "name": "Rural Abuse Survival",
+      "url_path": "rural-abuse-survival",
+      "description": "Rural Abuse Survival collection",
+      "category": "thriller",
+      "connectionReason": "Part of Rural Abuse Survival collection"
+    },
+    {
+      "name": "Psychological Captivity Films (Part 6)",
+      "url_path": "psychological-captivity-films-part-6-",
+      "description": "Psychological Captivity Films (Part 6) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Psychological Captivity Films (Part 6) collection"
+    }
+  ],
+  "totalLists": 6
+}

@@ -1,0 +1,125 @@
+{
+  "movieId": "68c60e88-1af2-45ed-9fbe-623f55a2d081",
+  "tmdbId": 256,
+  "title": "Antoine and Colette",
+  "year": 1962,
+  "analysis": {
+    "keyElements": {
+      "director": "François Truffaut",
+      "writers": [
+        "François Truffaut"
+      ],
+      "stars": [
+        "Jean-Pierre Léaud",
+        "Marie-France Pisier",
+        "Rosy Varte"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1962,
+      "cinematographer": "Raoul Coutard",
+      "composer": "Georges Delerue",
+      "studio": "Les Films du Carrosse"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Essential continuation of Antoine Doinel's story from The 400 Blows",
+        "Perfectly captures the bittersweet nature of first love",
+        "Masterful example of French New Wave storytelling in condensed form"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The 400 Blows",
+        "year": 1959,
+        "description": "The first and most celebrated film in Truffaut's Antoine Doinel series"
+      },
+      {
+        "title": "Stolen Kisses",
+        "year": 1968,
+        "description": "The next chapter in Antoine's story, following his discharge from military service"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "French New Wave",
+        "category": "Film Movement",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Character Development Across Series",
+        "category": "Narrative",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "François Truffaut",
+      "personId": 11321,
+      "slug": "/person/11321",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "François Truffaut",
+        "personId": 11321,
+        "slug": "/person/11321",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Jean-Pierre Léaud",
+        "personId": 16701,
+        "slug": "/person/16701",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Marie-France Pisier",
+        "personId": 24049,
+        "slug": "/person/24049",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Rosy Varte",
+        "personId": 32517,
+        "slug": "/person/32517",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Raoul Coutard",
+      "personId": 30415,
+      "slug": "/person/30415",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Georges Delerue",
+      "personId": 12390,
+      "slug": "/person/12390",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:15.855Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

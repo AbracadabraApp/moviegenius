@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Splatter Comedy Films",
+      "url_path": "splatter-comedy-films",
+      "description": "Splatter Comedy Films collection",
+      "category": "comedy",
+      "connectionReason": "Part of Splatter Comedy Films collection"
+    },
+    {
+      "name": "Horror Movie Parodies (Part 4)",
+      "url_path": "horror-movie-parodies-part-4-",
+      "description": "Horror Movie Parodies (Part 4) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Horror Movie Parodies (Part 4) collection"
+    },
+    {
+      "name": "Musical Horror Films",
+      "url_path": "musical-horror-films",
+      "description": "Musical Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Musical Horror Films collection"
+    },
+    {
+      "name": "Consumer Society Horror",
+      "url_path": "consumer-society-horror",
+      "description": "Consumer Society Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Consumer Society Horror collection"
+    },
+    {
+      "name": "Classic Monster Comedy (Part 4)",
+      "url_path": "classic-monster-comedy-part-4-",
+      "description": "Classic Monster Comedy (Part 4) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Monster Comedy (Part 4) collection"
+    },
+    {
+      "name": "Extreme Gore Horror (Part 2)",
+      "url_path": "extreme-gore-horror-part-2-",
+      "description": "Extreme Gore Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Extreme Gore Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 6
+}

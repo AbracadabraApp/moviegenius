@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Exploitation Cinema Homage",
+      "url_path": "exploitation-cinema-homage",
+      "description": "Exploitation Cinema Homage collection",
+      "category": "horror",
+      "connectionReason": "Part of Exploitation Cinema Homage collection"
+    },
+    {
+      "name": "Survival Horror",
+      "url_path": "survival-horror",
+      "description": "Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Survival Horror collection"
+    },
+    {
+      "name": "Rural Isolation Horror",
+      "url_path": "rural-isolation-horror",
+      "description": "Rural Isolation Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Rural Isolation Horror collection"
+    }
+  ],
+  "totalLists": 3
+}

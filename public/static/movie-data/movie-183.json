@@ -1,0 +1,125 @@
+{
+  "movieId": "a1476710-9cdb-4856-a3ff-886383b704d3",
+  "tmdbId": 183,
+  "title": "The Wizard",
+  "year": 1989,
+  "analysis": {
+    "keyElements": {
+      "director": "Todd Holland",
+      "writers": [
+        "David Chisholm"
+      ],
+      "stars": [
+        "Fred Savage",
+        "Luke Edwards",
+        "Jenny Lewis"
+      ],
+      "genre": "Adventure/Drama",
+      "releaseYear": 1989,
+      "cinematographer": "John McPherson",
+      "composer": "J. Peter Robinson",
+      "studio": "Universal Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Perfect nostalgic time capsule of late 80s gaming culture",
+        "Surprisingly emotional family story beneath the Nintendo promotion",
+        "Genuine chemistry between young leads Fred Savage and Luke Edwards"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Ready Player One",
+        "year": 2018,
+        "description": "Modern evolution of gaming culture in cinema"
+      },
+      {
+        "title": "Rain Man",
+        "year": 1988,
+        "description": "Similar road trip narrative with family dynamics"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "1980s Gaming Culture",
+        "category": "cultural_history",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Product Placement in Cinema",
+        "category": "film_business",
+        "difficulty": "beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Todd Holland",
+      "personId": 36445,
+      "slug": "/person/36445",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "David Chisholm",
+        "personId": 7729,
+        "slug": "/person/7729",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Fred Savage",
+        "personId": 11700,
+        "slug": "/person/11700",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Luke Edwards",
+        "personId": 23243,
+        "slug": "/person/23243",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jenny Lewis",
+        "personId": 17025,
+        "slug": "/person/17025",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "John McPherson",
+      "personId": 18467,
+      "slug": "/person/18467",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "J. Peter Robinson",
+      "personId": 19478,
+      "slug": "/person/19478",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:02.636Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

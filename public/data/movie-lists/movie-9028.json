@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Spaghetti Western Classics",
+      "url_path": "spaghetti-western-classics",
+      "description": "Spaghetti Western Classics collection",
+      "category": "western",
+      "connectionReason": "Part of Spaghetti Western Classics collection"
+    },
+    {
+      "name": "Survival Against Nature",
+      "url_path": "survival-against-nature",
+      "description": "Survival Against Nature collection",
+      "category": "western",
+      "connectionReason": "Part of Survival Against Nature collection"
+    },
+    {
+      "name": "Social Justice Westerns",
+      "url_path": "social-justice-westerns",
+      "description": "Social Justice Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Social Justice Westerns collection"
+    },
+    {
+      "name": "Ultra-Violent Western Noir",
+      "url_path": "ultra-violent-western-noir",
+      "description": "Ultra-Violent Western Noir collection",
+      "category": "western",
+      "connectionReason": "Part of Ultra-Violent Western Noir collection"
+    }
+  ],
+  "totalLists": 4
+}

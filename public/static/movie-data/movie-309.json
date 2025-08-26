@@ -1,0 +1,133 @@
+{
+  "movieId": "25e4bf36-b391-4219-b183-131a9ae87e8f",
+  "tmdbId": 309,
+  "title": "The Celebration",
+  "year": 1998,
+  "analysis": {
+    "keyElements": {
+      "director": "Thomas Vinterberg",
+      "writers": [
+        "Thomas Vinterberg",
+        "Mogens Rukov"
+      ],
+      "stars": [
+        "Ulrich Thomsen",
+        "Henning Moritzen",
+        "Thomas Bo Larsen"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1998,
+      "cinematographer": "Anthony Dod Mantle",
+      "composer": "Lars Bo Jensen",
+      "studio": "Nimbus Film"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking Dogme 95 film that proves raw filmmaking can deliver profound emotional impact",
+        "Masterful handling of extremely difficult subject matter through exceptional performances",
+        "Revolutionary influence on independent filmmaking and digital cinema"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Breaking the Waves",
+        "year": 1996,
+        "description": "Another groundbreaking Danish film that challenged conventional storytelling"
+      },
+      {
+        "title": "4 Months, 3 Weeks and 2 Days",
+        "year": 2007,
+        "description": "Similarly raw approach to difficult subject matter"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Dogme 95 Movement",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Digital Cinema Revolution",
+        "category": "Technical",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Thomas Vinterberg",
+      "personId": 36171,
+      "slug": "/person/36171",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Thomas Vinterberg",
+        "personId": 36171,
+        "slug": "/person/36171",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Mogens Rukov",
+        "personId": 26651,
+        "slug": "/person/26651",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Ulrich Thomsen",
+        "personId": 37215,
+        "slug": "/person/37215",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Henning Moritzen",
+        "personId": 14092,
+        "slug": "/person/14092",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Thomas Bo Larsen",
+        "personId": 36079,
+        "slug": "/person/36079",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Anthony Dod Mantle",
+      "personId": 2241,
+      "slug": "/person/2241",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Lars Bo Jensen",
+      "personId": 21736,
+      "slug": "/person/21736",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:22.799Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

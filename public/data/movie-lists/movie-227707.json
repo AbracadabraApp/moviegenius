@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Religious Artifact Quests",
+      "url_path": "religious-artifact-quests",
+      "description": "Religious Artifact Quests collection",
+      "category": "adventure",
+      "connectionReason": "Part of Religious Artifact Quests collection"
+    },
+    {
+      "name": "Lost Treasure Recovery",
+      "url_path": "lost-treasure-recovery",
+      "description": "Lost Treasure Recovery collection",
+      "category": "adventure",
+      "connectionReason": "Part of Lost Treasure Recovery collection"
+    },
+    {
+      "name": "Cursed Artifact Horror",
+      "url_path": "cursed-artifact-horror",
+      "description": "Cursed Artifact Horror collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Cursed Artifact Horror collection"
+    },
+    {
+      "name": "Steampunk Magic Fantasy",
+      "url_path": "steampunk-magic-fantasy",
+      "description": "Steampunk Magic Fantasy collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Steampunk Magic Fantasy collection"
+    },
+    {
+      "name": "Coming-of-Age Fantasy [OVERSIZED]",
+      "url_path": "coming-of-age-fantasy-oversized-",
+      "description": "Coming-of-Age Fantasy [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Coming-of-Age Fantasy [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 5
+}

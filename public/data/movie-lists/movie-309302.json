@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Environmental Travel Films",
+      "url_path": "environmental-travel-films",
+      "description": "Environmental Travel Films collection",
+      "category": "adventure",
+      "connectionReason": "Part of Environmental Travel Films collection"
+    },
+    {
+      "name": "Wildlife Capture Adventures",
+      "url_path": "wildlife-capture-adventures",
+      "description": "Wildlife Capture Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Wildlife Capture Adventures collection"
+    },
+    {
+      "name": "True Survival Stories [OVERSIZED]",
+      "url_path": "true-survival-stories-oversized-",
+      "description": "True Survival Stories [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of True Survival Stories [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 3
+}

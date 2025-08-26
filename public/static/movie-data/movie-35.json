@@ -1,0 +1,151 @@
+{
+  "movieId": "41cd0446-e556-434c-999b-c0eb333c7742",
+  "tmdbId": 35,
+  "title": "The Simpsons Movie",
+  "year": 2007,
+  "analysis": {
+    "keyElements": {
+      "director": "David Silverman",
+      "writers": [
+        "James L. Brooks",
+        "Matt Groening",
+        "Al Jean"
+      ],
+      "stars": [
+        "Dan Castellaneta",
+        "Julie Kavner",
+        "Nancy Cartwright",
+        "Yeardley Smith"
+      ],
+      "genre": "Animation/Comedy",
+      "releaseYear": 2007,
+      "cinematographer": "N/A",
+      "composer": "Hans Zimmer",
+      "studio": "20th Century Fox"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Successfully translates the show's signature humor to feature length while raising emotional stakes",
+        "Contains some of the franchise's most memorable moments and quotable lines",
+        "Serves both as a perfect entry point for newcomers and a satisfying film for longtime fans"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "South Park: Bigger, Longer & Uncut",
+        "year": 1999,
+        "description": "Another successful animated TV-to-film adaptation that elevated its source material"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "TV-to-Film Adaptation",
+        "category": "Production",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Environmental Messaging in Animation",
+        "category": "Themes",
+        "difficulty": "Basic"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "David Silverman",
+      "personId": 8147,
+      "slug": "/person/8147",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "James L. Brooks",
+        "personId": 15849,
+        "slug": "/person/15849",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Matt Groening",
+        "personId": 24932,
+        "slug": "/person/24932",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Al Jean",
+        "personId": 1234,
+        "slug": "/person/1234",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Mike Scully",
+        "personId": 26326,
+        "slug": "/person/26326",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Dan Castellaneta",
+        "personId": 7126,
+        "slug": "/person/7126",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Julie Kavner",
+        "personId": 19710,
+        "slug": "/person/19710",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Nancy Cartwright",
+        "personId": 27033,
+        "slug": "/person/27033",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Yeardley Smith",
+        "personId": 39012,
+        "slug": "/person/39012",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Not Applicable",
+      "personId": 27953,
+      "slug": "/person/27953",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Hans Zimmer",
+      "personId": 13632,
+      "slug": "/person/13632",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:04:57.629Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

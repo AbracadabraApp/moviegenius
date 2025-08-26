@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Murder Mystery & Investigation",
+      "url_path": "murder-mystery-investigation",
+      "description": "Murder Mystery & Investigation collection",
+      "category": "crime",
+      "connectionReason": "Part of Murder Mystery & Investigation collection"
+    },
+    {
+      "name": "True Crime Period Dramas (Part 2)",
+      "url_path": "true-crime-period-dramas-part-2-",
+      "description": "True Crime Period Dramas (Part 2) collection",
+      "category": "crime",
+      "connectionReason": "Part of True Crime Period Dramas (Part 2) collection"
+    },
+    {
+      "name": "Youth Gang Dramas (Part 1)",
+      "url_path": "youth-gang-dramas-part-1-",
+      "description": "Youth Gang Dramas (Part 1) collection",
+      "category": "crime",
+      "connectionReason": "Part of Youth Gang Dramas (Part 1) collection"
+    },
+    {
+      "name": "Criminal Origin Stories (Part 1)",
+      "url_path": "criminal-origin-stories-part-1-",
+      "description": "Criminal Origin Stories (Part 1) collection",
+      "category": "crime",
+      "connectionReason": "Part of Criminal Origin Stories (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

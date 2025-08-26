@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Friendly Alien Encounters",
+      "url_path": "friendly-alien-encounters",
+      "description": "Friendly Alien Encounters collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Friendly Alien Encounters collection"
+    },
+    {
+      "name": "Kids vs Aliens",
+      "url_path": "kids-vs-aliens",
+      "description": "Kids vs Aliens collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Kids vs Aliens collection"
+    },
+    {
+      "name": "Nuclear Science Disasters",
+      "url_path": "nuclear-science-disasters",
+      "description": "Nuclear Science Disasters collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Nuclear Science Disasters collection"
+    }
+  ],
+  "totalLists": 3
+}

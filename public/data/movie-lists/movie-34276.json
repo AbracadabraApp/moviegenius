@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Retro Science Fiction",
+      "url_path": "retro-science-fiction",
+      "description": "Retro Science Fiction collection",
+      "category": "adventure",
+      "connectionReason": "Part of Retro Science Fiction collection"
+    },
+    {
+      "name": "Steampunk Alternative History",
+      "url_path": "steampunk-alternative-history",
+      "description": "Steampunk Alternative History collection",
+      "category": "adventure",
+      "connectionReason": "Part of Steampunk Alternative History collection"
+    },
+    {
+      "name": "Classic Literary Adventures [OVERSIZED]",
+      "url_path": "classic-literary-adventures-oversized-",
+      "description": "Classic Literary Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Classic Literary Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Historical Genre Mashup",
+      "url_path": "historical-genre-mashup",
+      "description": "Historical Genre Mashup collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Historical Genre Mashup collection"
+    },
+    {
+      "name": "Literary Sci-Fi Adaptations (Part 2)",
+      "url_path": "literary-sci-fi-adaptations-part-2-",
+      "description": "Literary Sci-Fi Adaptations (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Literary Sci-Fi Adaptations (Part 2) collection"
+    },
+    {
+      "name": "Early Space Pioneers (Part 1)",
+      "url_path": "early-space-pioneers-part-1-",
+      "description": "Early Space Pioneers (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Early Space Pioneers (Part 1) collection"
+    },
+    {
+      "name": "Retro Space Adventure (Part 1)",
+      "url_path": "retro-space-adventure-part-1-",
+      "description": "Retro Space Adventure (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro Space Adventure (Part 1) collection"
+    }
+  ],
+  "totalLists": 7
+}

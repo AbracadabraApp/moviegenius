@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Nature & Wildlife Films",
+      "url_path": "nature-wildlife-films",
+      "description": "Nature & Wildlife Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Nature & Wildlife Films collection"
+    },
+    {
+      "name": "Ocean Conservation Films",
+      "url_path": "ocean-conservation-films",
+      "description": "Ocean Conservation Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Ocean Conservation Films collection"
+    },
+    {
+      "name": "Visual Nature Symphonies (Part 3)",
+      "url_path": "visual-nature-symphonies-part-3-",
+      "description": "Visual Nature Symphonies (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Visual Nature Symphonies (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

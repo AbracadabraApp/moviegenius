@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Cave Horror Films",
+      "url_path": "cave-horror-films",
+      "description": "Cave Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Cave Horror Films collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 2)",
+      "url_path": "confined-space-thrillers-part-2-",
+      "description": "Confined Space Thrillers (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 2) collection"
+    },
+    {
+      "name": "Mutant Creature Features (Part 2)",
+      "url_path": "mutant-creature-features-part-2-",
+      "description": "Mutant Creature Features (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Mutant Creature Features (Part 2) collection"
+    },
+    {
+      "name": "Scientific Expedition Horror (Part 1)",
+      "url_path": "scientific-expedition-horror-part-1-",
+      "description": "Scientific Expedition Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Scientific Expedition Horror (Part 1) collection"
+    },
+    {
+      "name": "Underground Lost Worlds",
+      "url_path": "underground-lost-worlds",
+      "description": "Underground Lost Worlds collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Underground Lost Worlds collection"
+    },
+    {
+      "name": "Mutant Creature Features (Part 1)",
+      "url_path": "mutant-creature-features-part-1-",
+      "description": "Mutant Creature Features (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Mutant Creature Features (Part 1) collection"
+    },
+    {
+      "name": "Survival Against Nature (Part 1)",
+      "url_path": "survival-against-nature-part-1-",
+      "description": "Survival Against Nature (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Survival Against Nature (Part 1) collection"
+    }
+  ],
+  "totalLists": 7
+}

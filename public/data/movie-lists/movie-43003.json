@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Art Forgery Investigations",
+      "url_path": "art-forgery-investigations",
+      "description": "Art Forgery Investigations collection",
+      "category": "documentary",
+      "connectionReason": "Part of Art Forgery Investigations collection"
+    },
+    {
+      "name": "Art Market Exposés",
+      "url_path": "art-market-expos-s",
+      "description": "Art Market Exposés collection",
+      "category": "documentary",
+      "connectionReason": "Part of Art Market Exposés collection"
+    },
+    {
+      "name": "Documentary Ethics Explorations (Part 1)",
+      "url_path": "documentary-ethics-explorations-part-1-",
+      "description": "Documentary Ethics Explorations (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Documentary Ethics Explorations (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

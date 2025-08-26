@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Adult Existential Drama",
+      "url_path": "adult-existential-drama",
+      "description": "Adult Existential Drama collection",
+      "category": "animation",
+      "connectionReason": "Part of Adult Existential Drama collection"
+    },
+    {
+      "name": "Meta Animation Commentary",
+      "url_path": "meta-animation-commentary",
+      "description": "Meta Animation Commentary collection",
+      "category": "animation",
+      "connectionReason": "Part of Meta Animation Commentary collection"
+    },
+    {
+      "name": "Reality-Animation Crossover",
+      "url_path": "reality-animation-crossover",
+      "description": "Reality-Animation Crossover collection",
+      "category": "animation",
+      "connectionReason": "Part of Reality-Animation Crossover collection"
+    },
+    {
+      "name": "Documentary Animation",
+      "url_path": "documentary-animation",
+      "description": "Documentary Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Documentary Animation collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Survival Against Nature",
+      "url_path": "survival-against-nature",
+      "description": "Survival Against Nature collection",
+      "category": "western",
+      "connectionReason": "Part of Survival Against Nature collection"
+    },
+    {
+      "name": "Pioneer Trail Westerns",
+      "url_path": "pioneer-trail-westerns",
+      "description": "Pioneer Trail Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Pioneer Trail Westerns collection"
+    },
+    {
+      "name": "Post-Civil War Migration",
+      "url_path": "post-civil-war-migration",
+      "description": "Post-Civil War Migration collection",
+      "category": "western",
+      "connectionReason": "Part of Post-Civil War Migration collection"
+    }
+  ],
+  "totalLists": 3
+}

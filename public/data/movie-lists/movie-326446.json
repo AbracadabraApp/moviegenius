@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Border Region Documentaries",
+      "url_path": "border-region-documentaries",
+      "description": "Border Region Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Border Region Documentaries collection"
+    },
+    {
+      "name": "Photography Artist Portraits",
+      "url_path": "photography-artist-portraits",
+      "description": "Photography Artist Portraits collection",
+      "category": "documentary",
+      "connectionReason": "Part of Photography Artist Portraits collection"
+    },
+    {
+      "name": "Documentary Ethics Explorations (Part 3)",
+      "url_path": "documentary-ethics-explorations-part-3-",
+      "description": "Documentary Ethics Explorations (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Documentary Ethics Explorations (Part 3) collection"
+    },
+    {
+      "name": "Exploitation Documentary Horror",
+      "url_path": "exploitation-documentary-horror",
+      "description": "Exploitation Documentary Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Exploitation Documentary Horror collection"
+    },
+    {
+      "name": "Found Footage Horror (Part 2)",
+      "url_path": "found-footage-horror-part-2-",
+      "description": "Found Footage Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Found Footage Horror (Part 2) collection"
+    },
+    {
+      "name": "Social Commentary Horror (Part 2)",
+      "url_path": "social-commentary-horror-part-2-",
+      "description": "Social Commentary Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Social Commentary Horror (Part 2) collection"
+    },
+    {
+      "name": "Small Town Conspiracy (Part 1)",
+      "url_path": "small-town-conspiracy-part-1-",
+      "description": "Small Town Conspiracy (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Small Town Conspiracy (Part 1) collection"
+    }
+  ],
+  "totalLists": 7
+}

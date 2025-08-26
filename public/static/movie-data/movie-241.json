@@ -1,0 +1,148 @@
+{
+  "movieId": "4aa5fdcc-6cf2-4f8f-9535-34d42bca3b13",
+  "tmdbId": 241,
+  "title": "Natural Born Killers",
+  "year": 1994,
+  "analysis": {
+    "keyElements": {
+      "director": "Oliver Stone",
+      "writers": [
+        "Quentin Tarantino",
+        "David Veloz",
+        "Richard Rutowski"
+      ],
+      "stars": [
+        "Woody Harrelson",
+        "Juliette Lewis",
+        "Robert Downey Jr."
+      ],
+      "genre": "Crime/Satire",
+      "releaseYear": 1994,
+      "cinematographer": "Robert Richardson",
+      "composer": "Trent Reznor",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking visual style that revolutionized music video-influenced filmmaking",
+        "Savage media critique that remains frighteningly relevant today",
+        "Career-defining performances from Harrelson and Lewis as Mickey and Mallory Knox"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Badlands",
+        "year": 1973,
+        "description": "Key influence on NBK's lovers-on-the-run narrative and American violence themes"
+      },
+      {
+        "title": "Network",
+        "year": 1976,
+        "description": "Earlier masterpiece of media satire that predicted news as entertainment"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Media Violence",
+        "category": "Cultural Studies",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Experimental Narrative",
+        "category": "Film Theory",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Oliver Stone",
+      "personId": 28081,
+      "slug": "/person/28081",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Quentin Tarantino",
+        "personId": 30117,
+        "slug": "/person/30117",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "David Veloz",
+        "personId": 8192,
+        "slug": "/person/8192",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Richard Rutowski",
+        "personId": 31160,
+        "slug": "/person/31160",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Woody Harrelson",
+        "personId": 38821,
+        "slug": "/person/38821",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Juliette Lewis",
+        "personId": 19749,
+        "slug": "/person/19749",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Robert Downey Jr.",
+        "personId": 31538,
+        "slug": "/person/31538",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Tommy Lee Jones",
+        "personId": 36632,
+        "slug": "/person/36632",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Robert Richardson",
+      "personId": 31844,
+      "slug": "/person/31844",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Trent Reznor",
+      "personId": 37015,
+      "slug": "/person/37015",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:12.607Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

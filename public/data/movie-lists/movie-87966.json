@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Prehistoric Adventure Epics",
+      "url_path": "prehistoric-adventure-epics",
+      "description": "Prehistoric Adventure Epics collection",
+      "category": "adventure",
+      "connectionReason": "Part of Prehistoric Adventure Epics collection"
+    },
+    {
+      "name": "Retro Science Fiction",
+      "url_path": "retro-science-fiction",
+      "description": "Retro Science Fiction collection",
+      "category": "adventure",
+      "connectionReason": "Part of Retro Science Fiction collection"
+    },
+    {
+      "name": "Lost World Exploration",
+      "url_path": "lost-world-exploration",
+      "description": "Lost World Exploration collection",
+      "category": "adventure",
+      "connectionReason": "Part of Lost World Exploration collection"
+    },
+    {
+      "name": "Classic Literary Adventures [OVERSIZED]",
+      "url_path": "classic-literary-adventures-oversized-",
+      "description": "Classic Literary Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Classic Literary Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Prehistoric SciFi Adventure",
+      "url_path": "prehistoric-scifi-adventure",
+      "description": "Prehistoric SciFi Adventure collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Prehistoric SciFi Adventure collection"
+    },
+    {
+      "name": "Retro Science Fiction",
+      "url_path": "retro-science-fiction",
+      "description": "Retro Science Fiction collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro Science Fiction collection"
+    },
+    {
+      "name": "Literary SciFi Adaptations (Part 2)",
+      "url_path": "literary-scifi-adaptations-part-2-",
+      "description": "Literary SciFi Adaptations (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Literary SciFi Adaptations (Part 2) collection"
+    }
+  ],
+  "totalLists": 7
+}

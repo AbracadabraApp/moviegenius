@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "War Comedy Films",
+      "url_path": "war-comedy-films",
+      "description": "War Comedy Films collection",
+      "category": "war",
+      "connectionReason": "Part of War Comedy Films collection"
+    },
+    {
+      "name": "Enemy Bonding Stories",
+      "url_path": "enemy-bonding-stories",
+      "description": "Enemy Bonding Stories collection",
+      "category": "war",
+      "connectionReason": "Part of Enemy Bonding Stories collection"
+    },
+    {
+      "name": "WWII Home Front Films [OVERSIZED]",
+      "url_path": "wwii-home-front-films-oversized-",
+      "description": "WWII Home Front Films [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of WWII Home Front Films [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 3
+}

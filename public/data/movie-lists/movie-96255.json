@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Prisoner of War Stories",
+      "url_path": "prisoner-of-war-stories",
+      "description": "Prisoner of War Stories collection",
+      "category": "war",
+      "connectionReason": "Part of Prisoner of War Stories collection"
+    },
+    {
+      "name": "Civilian Survival Stories",
+      "url_path": "civilian-survival-stories",
+      "description": "Civilian Survival Stories collection",
+      "category": "war",
+      "connectionReason": "Part of Civilian Survival Stories collection"
+    },
+    {
+      "name": "True Military Stories [OVERSIZED]",
+      "url_path": "true-military-stories-oversized-",
+      "description": "True Military Stories [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of True Military Stories [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 3
+}

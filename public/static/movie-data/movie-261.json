@@ -1,0 +1,146 @@
+{
+  "movieId": "cd216872-0709-405d-a59a-5d5e23e30482",
+  "tmdbId": 261,
+  "title": "Cat on a Hot Tin Roof",
+  "year": 1958,
+  "analysis": {
+    "keyElements": {
+      "director": "Richard Brooks",
+      "writers": [
+        "Tennessee Williams",
+        "Richard Brooks",
+        "James Poe"
+      ],
+      "stars": [
+        "Elizabeth Taylor",
+        "Paul Newman",
+        "Burl Ives"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1958,
+      "cinematographer": "William Daniels",
+      "composer": "Charles Wolcott",
+      "studio": "Metro-Goldwyn-Mayer"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Electric performances from Taylor and Newman at their peak",
+        "Masterful adaptation of Tennessee Williams' complex family drama",
+        "Profound exploration of truth, lies, and family dynamics that remains relevant"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "A Streetcar Named Desire",
+        "year": 1951,
+        "description": "Earlier Tennessee Williams adaptation that set the standard for bringing his work to screen"
+      },
+      {
+        "title": "Who's Afraid of Virginia Woolf?",
+        "year": 1966,
+        "description": "Similar exploration of a troubled marriage and buried truths"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Tennessee Williams Adaptations",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "1950s Production Code Challenges",
+        "category": "Film Industry",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "Method Acting Evolution",
+        "category": "Performance",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Richard Brooks",
+      "personId": 30908,
+      "slug": "/person/30908",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Tennessee Williams",
+        "personId": 35790,
+        "slug": "/person/35790",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Richard Brooks",
+        "personId": 30908,
+        "slug": "/person/30908",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "James Poe",
+        "personId": 15922,
+        "slug": "/person/15922",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Elizabeth Taylor",
+        "personId": 10023,
+        "slug": "/person/10023",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Paul Newman",
+        "personId": 28938,
+        "slug": "/person/28938",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Burl Ives",
+        "personId": 4717,
+        "slug": "/person/4717",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "William Daniels",
+      "personId": 38416,
+      "slug": "/person/38416",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Charles Wolcott",
+      "personId": 5588,
+      "slug": "/person/5588",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:16.592Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

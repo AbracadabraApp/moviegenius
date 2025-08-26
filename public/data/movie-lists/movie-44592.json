@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Prehistoric Adventure Epics",
+      "url_path": "prehistoric-adventure-epics",
+      "description": "Prehistoric Adventure Epics collection",
+      "category": "adventure",
+      "connectionReason": "Part of Prehistoric Adventure Epics collection"
+    },
+    {
+      "name": "Underground World Exploration",
+      "url_path": "underground-world-exploration",
+      "description": "Underground World Exploration collection",
+      "category": "adventure",
+      "connectionReason": "Part of Underground World Exploration collection"
+    },
+    {
+      "name": "Prehistoric SciFi Adventure",
+      "url_path": "prehistoric-scifi-adventure",
+      "description": "Prehistoric SciFi Adventure collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Prehistoric SciFi Adventure collection"
+    },
+    {
+      "name": "Underground Lost Worlds",
+      "url_path": "underground-lost-worlds",
+      "description": "Underground Lost Worlds collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Underground Lost Worlds collection"
+    },
+    {
+      "name": "Military Containment Horror (Part 2)",
+      "url_path": "military-containment-horror-part-2-",
+      "description": "Military Containment Horror (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Military Containment Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 5
+}

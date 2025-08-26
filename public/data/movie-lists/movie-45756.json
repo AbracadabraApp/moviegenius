@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Holiday Horror Films",
+      "url_path": "holiday-horror-films",
+      "description": "Holiday Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Holiday Horror Films collection"
+    },
+    {
+      "name": "Historical Horror Mashup (Part 3)",
+      "url_path": "historical-horror-mashup-part-3-",
+      "description": "Historical Horror Mashup (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Historical Horror Mashup (Part 3) collection"
+    },
+    {
+      "name": "Folk Religion Horror (Part 3)",
+      "url_path": "folk-religion-horror-part-3-",
+      "description": "Folk Religion Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Folk Religion Horror (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

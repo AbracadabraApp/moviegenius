@@ -1,0 +1,132 @@
+{
+  "movieId": "c057a532-7677-496d-a9d7-9a5a679469f8",
+  "tmdbId": 225,
+  "title": "Man of Iron",
+  "year": 1981,
+  "analysis": {
+    "keyElements": {
+      "director": "Andrzej Wajda",
+      "writers": [
+        "Aleksander Scibor-Rylski"
+      ],
+      "stars": [
+        "Jerzy Radziwilowicz",
+        "Krystyna Janda",
+        "Marian Opania"
+      ],
+      "genre": "Political Drama",
+      "releaseYear": 1981,
+      "cinematographer": "Edward Klosinski",
+      "composer": "Andrzej Korzynski",
+      "studio": "Film Polski"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful portrayal of Poland's Solidarity movement and social change",
+        "Powerful blend of documentary footage with dramatic narrative",
+        "Historical significance as a contemporary document of pivotal political events"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Man of Marble",
+        "year": 1977,
+        "description": "Direct predecessor exploring earlier Polish political struggles"
+      },
+      {
+        "title": "Z",
+        "year": 1969,
+        "description": "Similar political thriller examining resistance against authoritarianism"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Polish Solidarity Movement",
+        "category": "Historical Context",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Documentary-Fiction Hybrid Filmmaking",
+        "category": "Film Technique",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Andrzej Wajda",
+      "personId": 1832,
+      "slug": "/person/1832",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Andrzej Wajda",
+        "personId": 1832,
+        "slug": "/person/1832",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Aleksander Scibor-Rylski",
+        "personId": 811,
+        "slug": "/person/811",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Jerzy Radziwilowicz",
+        "personId": 17226,
+        "slug": "/person/17226",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Krystyna Janda",
+        "personId": 21433,
+        "slug": "/person/21433",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Marian Opania",
+        "personId": 24007,
+        "slug": "/person/24007",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Edward Klosinski",
+      "personId": 9707,
+      "slug": "/person/9707",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Andrzej Korzynski",
+      "personId": 1824,
+      "slug": "/person/1824",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:09.893Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

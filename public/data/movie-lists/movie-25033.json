@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "True Crime Horror",
+      "url_path": "true-crime-horror",
+      "description": "True Crime Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of True Crime Horror collection"
+    },
+    {
+      "name": "Cursed Media Horror",
+      "url_path": "cursed-media-horror",
+      "description": "Cursed Media Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Cursed Media Horror collection"
+    },
+    {
+      "name": "Found Footage Horror (Part 2)",
+      "url_path": "found-footage-horror-part-2-",
+      "description": "Found Footage Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Found Footage Horror (Part 2) collection"
+    },
+    {
+      "name": "Meta Horror Films (Part 3)",
+      "url_path": "meta-horror-films-part-3-",
+      "description": "Meta Horror Films (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Meta Horror Films (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

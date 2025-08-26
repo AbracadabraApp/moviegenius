@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Science & Technology",
+      "url_path": "science-technology",
+      "description": "Science & Technology collection",
+      "category": "documentary",
+      "connectionReason": "Part of Science & Technology collection"
+    },
+    {
+      "name": "Teen Life Chronicles",
+      "url_path": "teen-life-chronicles",
+      "description": "Teen Life Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Teen Life Chronicles collection"
+    },
+    {
+      "name": "Disability Arts Stories",
+      "url_path": "disability-arts-stories",
+      "description": "Disability Arts Stories collection",
+      "category": "documentary",
+      "connectionReason": "Part of Disability Arts Stories collection"
+    },
+    {
+      "name": "Perseverance Against Odds (Part 1)",
+      "url_path": "perseverance-against-odds-part-1-",
+      "description": "Perseverance Against Odds (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Perseverance Against Odds (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

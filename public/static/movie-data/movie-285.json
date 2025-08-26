@@ -1,0 +1,141 @@
+{
+  "movieId": "867a37d0-a69b-40d1-83fc-a7daaa2c8df2",
+  "tmdbId": 285,
+  "title": "Pirates of the Caribbean: At World's End",
+  "year": 2007,
+  "analysis": {
+    "keyElements": {
+      "director": "Gore Verbinski",
+      "writers": [
+        "Ted Elliott",
+        "Terry Rossio"
+      ],
+      "stars": [
+        "Johnny Depp",
+        "Keira Knightley",
+        "Geoffrey Rush",
+        "Orlando Bloom"
+      ],
+      "genre": "Action-Adventure Fantasy",
+      "releaseYear": 2007,
+      "cinematographer": "Dariusz Wolski",
+      "composer": "Hans Zimmer",
+      "studio": "Walt Disney Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Epic scale world-building with stunning visual effects that hold up today",
+        "Johnny Depp's iconic Jack Sparrow performance reaches new heights of complexity",
+        "Satisfying conclusion to the original trilogy with ambitious mythology"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+        "year": 2003,
+        "description": "The franchise starter that established the tone and characters"
+      },
+      {
+        "title": "Master and Commander: The Far Side of the World",
+        "year": 2003,
+        "description": "Similar maritime adventure with historical accuracy"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "CGI Character Creation",
+        "category": "Visual Effects",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Maritime Mythology",
+        "category": "World Building",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Gore Verbinski",
+      "personId": 13021,
+      "slug": "/person/13021",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Ted Elliott",
+        "personId": 35736,
+        "slug": "/person/35736",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Terry Rossio",
+        "personId": 35892,
+        "slug": "/person/35892",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Johnny Depp",
+        "personId": 18527,
+        "slug": "/person/18527",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Orlando Bloom",
+        "personId": 28177,
+        "slug": "/person/28177",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Keira Knightley",
+        "personId": 20503,
+        "slug": "/person/20503",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Geoffrey Rush",
+        "personId": 12181,
+        "slug": "/person/12181",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Dariusz Wolski",
+      "personId": 7528,
+      "slug": "/person/7528",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Hans Zimmer",
+      "personId": 13632,
+      "slug": "/person/13632",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:19.667Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

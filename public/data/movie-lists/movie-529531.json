@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Art World Satires",
+      "url_path": "art-world-satires",
+      "description": "Art World Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Art World Satires collection"
+    },
+    {
+      "name": "LGBTQ+ Identity Comedies",
+      "url_path": "lgbtq-identity-comedies",
+      "description": "LGBTQ+ Identity Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of LGBTQ+ Identity Comedies collection"
+    },
+    {
+      "name": "Personal Growth Stand-Up",
+      "url_path": "personal-growth-stand-up",
+      "description": "Personal Growth Stand-Up collection",
+      "category": "comedy",
+      "connectionReason": "Part of Personal Growth Stand-Up collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Retro Science Fiction",
+      "url_path": "retro-science-fiction",
+      "description": "Retro Science Fiction collection",
+      "category": "adventure",
+      "connectionReason": "Part of Retro Science Fiction collection"
+    },
+    {
+      "name": "Time Travel Fish-Out-of-Water",
+      "url_path": "time-travel-fish-out-of-water",
+      "description": "Time Travel Fish-Out-of-Water collection",
+      "category": "adventure",
+      "connectionReason": "Part of Time Travel Fish-Out-of-Water collection"
+    },
+    {
+      "name": "Suburban Kids in Danger",
+      "url_path": "suburban-kids-in-danger",
+      "description": "Suburban Kids in Danger collection",
+      "category": "adventure",
+      "connectionReason": "Part of Suburban Kids in Danger collection"
+    },
+    {
+      "name": "Friendly Alien Encounters",
+      "url_path": "friendly-alien-encounters",
+      "description": "Friendly Alien Encounters collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Friendly Alien Encounters collection"
+    },
+    {
+      "name": "Kids vs Aliens",
+      "url_path": "kids-vs-aliens",
+      "description": "Kids vs Aliens collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Kids vs Aliens collection"
+    },
+    {
+      "name": "Memory and Time (Part 2)",
+      "url_path": "memory-and-time-part-2-",
+      "description": "Memory and Time (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Memory and Time (Part 2) collection"
+    }
+  ],
+  "totalLists": 6
+}

@@ -1,0 +1,138 @@
+{
+  "movieId": "49e0554c-995f-4c35-8fd4-fb57fa855862",
+  "tmdbId": 423,
+  "title": "The Pianist",
+  "year": 2002,
+  "analysis": {
+    "keyElements": {
+      "director": "Roman Polanski",
+      "writers": [
+        "Ronald Harwood",
+        "Władysław Szpilman"
+      ],
+      "stars": [
+        "Adrien Brody",
+        "Thomas Kretschmann",
+        "Emilia Fox"
+      ],
+      "genre": "Biography/Drama/War",
+      "releaseYear": 2002,
+      "cinematographer": "Paweł Edelman",
+      "composer": "Wojciech Kilar",
+      "studio": "Focus Features"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Adrien Brody's transformative Oscar-winning performance captures the physical and emotional toll of survival",
+        "Polanski's personal connection to the Holocaust creates an unflinching yet deeply human portrayal",
+        "The power of art and music as a lifeline amid unimaginable horror resonates universally"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Schindler's List",
+        "year": 1993,
+        "description": "Similarly powerful Holocaust narrative focusing on individual resistance against systemic evil"
+      },
+      {
+        "title": "Son of Saul",
+        "year": 2015,
+        "description": "Shares The Pianist's intimate perspective on Holocaust survival"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Holocaust Cinema",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Biographical Adaptation",
+        "category": "Screenwriting",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Visual Storytelling in War Films",
+        "category": "Cinematography",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Roman Polanski",
+      "personId": 32267,
+      "slug": "/person/32267",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Ronald Harwood",
+        "personId": 32302,
+        "slug": "/person/32302",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Władysław Szpilman",
+        "personId": 38768,
+        "slug": "/person/38768",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Adrien Brody",
+        "personId": 304,
+        "slug": "/person/304",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Thomas Kretschmann",
+        "personId": 36130,
+        "slug": "/person/36130",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Frank Finlay",
+        "personId": 11386,
+        "slug": "/person/11386",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Paweł Edelman",
+      "personId": 29066,
+      "slug": "/person/29066",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Wojciech Kilar",
+      "personId": 38774,
+      "slug": "/person/38774",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:35.949Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Indigenous Cultural Documentation",
+      "url_path": "indigenous-cultural-documentation",
+      "description": "Indigenous Cultural Documentation collection",
+      "category": "documentary",
+      "connectionReason": "Part of Indigenous Cultural Documentation collection"
+    },
+    {
+      "name": "Education System Studies",
+      "url_path": "education-system-studies",
+      "description": "Education System Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Education System Studies collection"
+    },
+    {
+      "name": "Cultural Identity Studies",
+      "url_path": "cultural-identity-studies",
+      "description": "Cultural Identity Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cultural Identity Studies collection"
+    }
+  ],
+  "totalLists": 3
+}

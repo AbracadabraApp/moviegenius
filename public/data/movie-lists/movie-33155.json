@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Sci-Fi Movie Parodies",
+      "url_path": "sci-fi-movie-parodies",
+      "description": "Sci-Fi Movie Parodies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Sci-Fi Movie Parodies collection"
+    },
+    {
+      "name": "AI Family Relationships",
+      "url_path": "ai-family-relationships",
+      "description": "AI Family Relationships collection",
+      "category": "science fiction",
+      "connectionReason": "Part of AI Family Relationships collection"
+    },
+    {
+      "name": "Retro Space Adventure (Part 1)",
+      "url_path": "retro-space-adventure-part-1-",
+      "description": "Retro Space Adventure (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro Space Adventure (Part 1) collection"
+    },
+    {
+      "name": "Retro SciFi Comedy (Part 1)",
+      "url_path": "retro-scifi-comedy-part-1-",
+      "description": "Retro SciFi Comedy (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro SciFi Comedy (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

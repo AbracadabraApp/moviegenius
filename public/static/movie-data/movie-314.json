@@ -1,0 +1,141 @@
+{
+  "movieId": "7e57fae3-63d9-4a2c-ac2d-65bf5dd21e06",
+  "tmdbId": 314,
+  "title": "Catwoman",
+  "year": 2004,
+  "analysis": {
+    "keyElements": {
+      "director": "Pitof",
+      "writers": [
+        "John Brancato",
+        "Michael Ferris",
+        "John Rogers"
+      ],
+      "stars": [
+        "Halle Berry",
+        "Sharon Stone",
+        "Benjamin Bratt"
+      ],
+      "genre": "Action/Superhero",
+      "releaseYear": 2004,
+      "cinematographer": "Thierry Arbogast",
+      "composer": "Klaus Badelt",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "NO",
+      "reasons": [
+        "Mishandles its iconic character with a nonsensical plot and poor writing",
+        "Wastes Halle Berry's talents with underdeveloped characterization",
+        "Watch **Batman Returns** (1992) instead for a superior Catwoman portrayal"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Batman Returns",
+        "year": 1992,
+        "description": "Michelle Pfeiffer's definitive portrayal of Selina Kyle/Catwoman"
+      },
+      {
+        "title": "Wonder Woman",
+        "year": 2017,
+        "description": "Successful female-led superhero film that broke barriers"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Comic Book Adaptations",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Female Representation in Superhero Films",
+        "category": "Cultural Studies",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Pitof",
+      "personId": 29975,
+      "slug": "/person/29975",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "John Brancato",
+        "personId": 18030,
+        "slug": "/person/18030",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Michael Ferris",
+        "personId": 25638,
+        "slug": "/person/25638",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "John Rogers",
+        "personId": 18643,
+        "slug": "/person/18643",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Halle Berry",
+        "personId": 13489,
+        "slug": "/person/13489",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sharon Stone",
+        "personId": 33818,
+        "slug": "/person/33818",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Benjamin Bratt",
+        "personId": 3316,
+        "slug": "/person/3316",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Thierry Arbogast",
+      "personId": 36053,
+      "slug": "/person/36053",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Klaus Badelt",
+      "personId": 21222,
+      "slug": "/person/21222",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:23.900Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

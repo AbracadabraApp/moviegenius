@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Home Invasion Horror",
+      "url_path": "home-invasion-horror",
+      "description": "Home Invasion Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Home Invasion Horror collection"
+    },
+    {
+      "name": "Stalker Horror",
+      "url_path": "stalker-horror",
+      "description": "Stalker Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Stalker Horror collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 7)",
+      "url_path": "confined-space-thrillers-part-7-",
+      "description": "Confined Space Thrillers (Part 7) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 7) collection"
+    },
+    {
+      "name": "Modern Suburban Horror (Part 6)",
+      "url_path": "modern-suburban-horror-part-6-",
+      "description": "Modern Suburban Horror (Part 6) collection",
+      "category": "horror",
+      "connectionReason": "Part of Modern Suburban Horror (Part 6) collection"
+    },
+    {
+      "name": "Voyeuristic Obsession Thrillers",
+      "url_path": "voyeuristic-obsession-thrillers",
+      "description": "Voyeuristic Obsession Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Voyeuristic Obsession Thrillers collection"
+    },
+    {
+      "name": "Tourist Attraction Danger",
+      "url_path": "tourist-attraction-danger",
+      "description": "Tourist Attraction Danger collection",
+      "category": "thriller",
+      "connectionReason": "Part of Tourist Attraction Danger collection"
+    }
+  ],
+  "totalLists": 6
+}

@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Motion Capture Animation",
+      "url_path": "motion-capture-animation",
+      "description": "Motion Capture Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Motion Capture Animation collection"
+    },
+    {
+      "name": "Found Family Stories",
+      "url_path": "found-family-stories",
+      "description": "Found Family Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Found Family Stories collection"
+    },
+    {
+      "name": "Alien-Human Friendship Stories",
+      "url_path": "alien-human-friendship-stories",
+      "description": "Alien-Human Friendship Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Alien-Human Friendship Stories collection"
+    },
+    {
+      "name": "Space Exploration Missions",
+      "url_path": "space-exploration-missions",
+      "description": "Space Exploration Missions collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Exploration Missions collection"
+    },
+    {
+      "name": "Kids vs Aliens",
+      "url_path": "kids-vs-aliens",
+      "description": "Kids vs Aliens collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Kids vs Aliens collection"
+    },
+    {
+      "name": "Domestic Alien Invasion",
+      "url_path": "domestic-alien-invasion",
+      "description": "Domestic Alien Invasion collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Domestic Alien Invasion collection"
+    }
+  ],
+  "totalLists": 6
+}

@@ -1,0 +1,165 @@
+{
+  "movieId": "f22c01dc-6029-433d-b167-ad06f07cf015",
+  "tmdbId": 411,
+  "title": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+  "year": 2005,
+  "analysis": {
+    "keyElements": {
+      "director": "Andrew Adamson",
+      "writers": [
+        "Ann Peacock",
+        "Andrew Adamson",
+        "Christopher Markus",
+        "Stephen McFeely"
+      ],
+      "stars": [
+        "Georgie Henley",
+        "Skandar Keynes",
+        "William Moseley",
+        "Anna Popplewell",
+        "Tilda Swinton"
+      ],
+      "genre": "Fantasy Adventure",
+      "releaseYear": 2005,
+      "cinematographer": "Donald McAlpine",
+      "composer": "Harry Gregson-Williams",
+      "studio": "Walt Disney Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful adaptation that captures C.S. Lewis's magical world with stunning visual effects and emotional depth",
+        "Tilda Swinton's mesmerizing performance as the White Witch sets a new standard for fantasy villains",
+        "Perfect balance of family entertainment with deeper themes of sacrifice, loyalty, and courage"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "year": 2001,
+        "description": "Set the standard for modern fantasy adaptations"
+      },
+      {
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "year": 2001,
+        "description": "Launched the era of major children's fantasy adaptations"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Literary Adaptation Techniques",
+        "category": "Filmmaking",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Religious Symbolism in Fantasy",
+        "category": "Theme Analysis",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Andrew Adamson",
+      "personId": 1691,
+      "slug": "/person/1691",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Ann Peacock",
+        "personId": 2185,
+        "slug": "/person/2185",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Andrew Adamson",
+        "personId": 1691,
+        "slug": "/person/1691",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Christopher Markus",
+        "personId": 6250,
+        "slug": "/person/6250",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Stephen McFeely",
+        "personId": 34800,
+        "slug": "/person/34800",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Tilda Swinton",
+        "personId": 36229,
+        "slug": "/person/36229",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Georgie Henley",
+        "personId": 12475,
+        "slug": "/person/12475",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "William Moseley",
+        "personId": 38567,
+        "slug": "/person/38567",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Skandar Keynes",
+        "personId": 34334,
+        "slug": "/person/34334",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Anna Popplewell",
+        "personId": 2035,
+        "slug": "/person/2035",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Donald McAlpine",
+      "personId": 8918,
+      "slug": "/person/8918",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Harry Gregson-Williams",
+      "personId": 13777,
+      "slug": "/person/13777",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:34.688Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

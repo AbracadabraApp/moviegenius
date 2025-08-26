@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Retro Science Fiction",
+      "url_path": "retro-science-fiction",
+      "description": "Retro Science Fiction collection",
+      "category": "adventure",
+      "connectionReason": "Part of Retro Science Fiction collection"
+    },
+    {
+      "name": "Time Travel Fish-Out-of-Water",
+      "url_path": "time-travel-fish-out-of-water",
+      "description": "Time Travel Fish-Out-of-Water collection",
+      "category": "adventure",
+      "connectionReason": "Part of Time Travel Fish-Out-of-Water collection"
+    },
+    {
+      "name": "Suburban Kids in Danger",
+      "url_path": "suburban-kids-in-danger",
+      "description": "Suburban Kids in Danger collection",
+      "category": "adventure",
+      "connectionReason": "Part of Suburban Kids in Danger collection"
+    },
+    {
+      "name": "Youth vs Monsters",
+      "url_path": "youth-vs-monsters",
+      "description": "Youth vs Monsters collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Youth vs Monsters collection"
+    },
+    {
+      "name": "Time Loop Paradoxes (Part 2)",
+      "url_path": "time-loop-paradoxes-part-2-",
+      "description": "Time Loop Paradoxes (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Time Loop Paradoxes (Part 2) collection"
+    },
+    {
+      "name": "Retro SciFi Comedy (Part 1)",
+      "url_path": "retro-scifi-comedy-part-1-",
+      "description": "Retro SciFi Comedy (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro SciFi Comedy (Part 1) collection"
+    }
+  ],
+  "totalLists": 6
+}

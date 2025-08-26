@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Retro Science Fiction",
+      "url_path": "retro-science-fiction",
+      "description": "Retro Science Fiction collection",
+      "category": "adventure",
+      "connectionReason": "Part of Retro Science Fiction collection"
+    },
+    {
+      "name": "Religious Artifact Quests",
+      "url_path": "religious-artifact-quests",
+      "description": "Religious Artifact Quests collection",
+      "category": "adventure",
+      "connectionReason": "Part of Religious Artifact Quests collection"
+    },
+    {
+      "name": "Legacy Hero Inheritance [OVERSIZED]",
+      "url_path": "legacy-hero-inheritance-oversized-",
+      "description": "Legacy Hero Inheritance [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Legacy Hero Inheritance [OVERSIZED] collection"
+    },
+    {
+      "name": "Tech-Colonial Resistance Films",
+      "url_path": "tech-colonial-resistance-films",
+      "description": "Tech-Colonial Resistance Films collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Tech-Colonial Resistance Films collection"
+    },
+    {
+      "name": "Space Fantasy Camp",
+      "url_path": "space-fantasy-camp",
+      "description": "Space Fantasy Camp collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Fantasy Camp collection"
+    },
+    {
+      "name": "Retro Space Adventure (Part 3)",
+      "url_path": "retro-space-adventure-part-3-",
+      "description": "Retro Space Adventure (Part 3) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro Space Adventure (Part 3) collection"
+    }
+  ],
+  "totalLists": 6
+}

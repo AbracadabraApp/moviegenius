@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Dark Fantasy Animation",
+      "url_path": "dark-fantasy-animation",
+      "description": "Dark Fantasy Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Dark Fantasy Animation collection"
+    },
+    {
+      "name": "Political Allegory Animation",
+      "url_path": "political-allegory-animation",
+      "description": "Political Allegory Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Political Allegory Animation collection"
+    },
+    {
+      "name": "Literary Adaptations",
+      "url_path": "literary-adaptations",
+      "description": "Literary Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Literary Adaptations collection"
+    },
+    {
+      "name": "Animal Rights Stories",
+      "url_path": "animal-rights-stories",
+      "description": "Animal Rights Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Animal Rights Stories collection"
+    }
+  ],
+  "totalLists": 4
+}

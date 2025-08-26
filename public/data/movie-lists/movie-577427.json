@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Holiday Magic Adventures",
+      "url_path": "holiday-magic-adventures",
+      "description": "Holiday Magic Adventures collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Holiday Magic Adventures collection"
+    },
+    {
+      "name": "Modern Magical Realism [OVERSIZED]",
+      "url_path": "modern-magical-realism-oversized-",
+      "description": "Modern Magical Realism [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Modern Magical Realism [OVERSIZED] collection"
+    },
+    {
+      "name": "Historical Genre Mashup",
+      "url_path": "historical-genre-mashup",
+      "description": "Historical Genre Mashup collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Historical Genre Mashup collection"
+    },
+    {
+      "name": "TV Show Meta-Commentary",
+      "url_path": "tv-show-meta-commentary",
+      "description": "TV Show Meta-Commentary collection",
+      "category": "science fiction",
+      "connectionReason": "Part of TV Show Meta-Commentary collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Experimental Music Films",
+      "url_path": "experimental-music-films",
+      "description": "Experimental Music Films collection",
+      "category": "music",
+      "connectionReason": "Part of Experimental Music Films collection"
+    },
+    {
+      "name": "Western Musical Adventures",
+      "url_path": "western-musical-adventures",
+      "description": "Western Musical Adventures collection",
+      "category": "music",
+      "connectionReason": "Part of Western Musical Adventures collection"
+    },
+    {
+      "name": "Western Musical Hybrids",
+      "url_path": "western-musical-hybrids",
+      "description": "Western Musical Hybrids collection",
+      "category": "musical",
+      "connectionReason": "Part of Western Musical Hybrids collection"
+    },
+    {
+      "name": "Surrealist Musical Productions",
+      "url_path": "surrealist-musical-productions",
+      "description": "Surrealist Musical Productions collection",
+      "category": "musical",
+      "connectionReason": "Part of Surrealist Musical Productions collection"
+    },
+    {
+      "name": "Musical Western Shows",
+      "url_path": "musical-western-shows",
+      "description": "Musical Western Shows collection",
+      "category": "western",
+      "connectionReason": "Part of Musical Western Shows collection"
+    },
+    {
+      "name": "Sci-Fi Western Hybrids",
+      "url_path": "sci-fi-western-hybrids",
+      "description": "Sci-Fi Western Hybrids collection",
+      "category": "western",
+      "connectionReason": "Part of Sci-Fi Western Hybrids collection"
+    },
+    {
+      "name": "Surreal Art Westerns",
+      "url_path": "surreal-art-westerns",
+      "description": "Surreal Art Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Surreal Art Westerns collection"
+    }
+  ],
+  "totalLists": 7
+}

@@ -1,0 +1,140 @@
+{
+  "movieId": "7f50274b-a08e-4f1a-b4e1-b53325cc789f",
+  "tmdbId": 350,
+  "title": "The Devil Wears Prada",
+  "year": 2006,
+  "analysis": {
+    "keyElements": {
+      "director": "David Frankel",
+      "writers": [
+        "Aline Brosh McKenna",
+        "Lauren Weisberger"
+      ],
+      "stars": [
+        "Meryl Streep",
+        "Anne Hathaway",
+        "Emily Blunt"
+      ],
+      "genre": "Comedy-Drama",
+      "releaseYear": 2006,
+      "cinematographer": "Florian Ballhaus",
+      "composer": "Theodore Shapiro",
+      "studio": "20th Century Fox"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Meryl Streep's iconic performance as Miranda Priestly redefines the 'boss from hell' archetype",
+        "Sharp, witty screenplay that elevates workplace comedy while critiquing fashion industry culture",
+        "Career woman narrative that remains relevant and inspiring while avoiding typical rom-com clichés"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Working Girl",
+        "year": 1988,
+        "description": "Earlier exploration of female ambition in corporate world"
+      },
+      {
+        "title": "The September Issue",
+        "year": 2009,
+        "description": "Documentary about Vogue's Anna Wintour, who partially inspired Miranda's character"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Fashion Industry Power Structures",
+        "category": "Industry Analysis",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Female Leadership in Media",
+        "category": "Gender Studies",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "David Frankel",
+      "personId": 7799,
+      "slug": "/person/7799",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Aline Brosh McKenna",
+        "personId": 1200,
+        "slug": "/person/1200",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Lauren Weisberger",
+        "personId": 21889,
+        "slug": "/person/21889",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Meryl Streep",
+        "personId": 25440,
+        "slug": "/person/25440",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Anne Hathaway",
+        "personId": 2094,
+        "slug": "/person/2094",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Emily Blunt",
+        "personId": 10187,
+        "slug": "/person/10187",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Stanley Tucci",
+        "personId": 34614,
+        "slug": "/person/34614",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Florian Ballhaus",
+      "personId": 11139,
+      "slug": "/person/11139",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Theodore Shapiro",
+      "personId": 36006,
+      "slug": "/person/36006",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:28.560Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

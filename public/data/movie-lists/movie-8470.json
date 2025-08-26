@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Medical Crisis Thrillers",
+      "url_path": "medical-crisis-thrillers",
+      "description": "Medical Crisis Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Medical Crisis Thrillers collection"
+    },
+    {
+      "name": "Economic Desperation Thrillers",
+      "url_path": "economic-desperation-thrillers",
+      "description": "Economic Desperation Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Economic Desperation Thrillers collection"
+    },
+    {
+      "name": "Moral Choice Thrillers (Part 3)",
+      "url_path": "moral-choice-thrillers-part-3-",
+      "description": "Moral Choice Thrillers (Part 3) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Moral Choice Thrillers (Part 3) collection"
+    },
+    {
+      "name": "Single Location Survival (Part 2)",
+      "url_path": "single-location-survival-part-2-",
+      "description": "Single Location Survival (Part 2) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Single Location Survival (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Survival Horror",
+      "url_path": "survival-horror",
+      "description": "Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Survival Horror collection"
+    },
+    {
+      "name": "Social Commentary Horror (Part 2)",
+      "url_path": "social-commentary-horror-part-2-",
+      "description": "Social Commentary Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Social Commentary Horror (Part 2) collection"
+    },
+    {
+      "name": "Small Town Conspiracy (Part 2)",
+      "url_path": "small-town-conspiracy-part-2-",
+      "description": "Small Town Conspiracy (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Small Town Conspiracy (Part 2) collection"
+    },
+    {
+      "name": "Urban Decay Horror",
+      "url_path": "urban-decay-horror",
+      "description": "Urban Decay Horror collection",
+      "category": "thriller",
+      "connectionReason": "Part of Urban Decay Horror collection"
+    },
+    {
+      "name": "Societal Breakdown Violence",
+      "url_path": "societal-breakdown-violence",
+      "description": "Societal Breakdown Violence collection",
+      "category": "thriller",
+      "connectionReason": "Part of Societal Breakdown Violence collection"
+    },
+    {
+      "name": "Government Conspiracy Thrillers",
+      "url_path": "government-conspiracy-thrillers",
+      "description": "Government Conspiracy Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Government Conspiracy Thrillers collection"
+    },
+    {
+      "name": "One Night Thrillers (Part 4)",
+      "url_path": "one-night-thrillers-part-4-",
+      "description": "One Night Thrillers (Part 4) collection",
+      "category": "thriller",
+      "connectionReason": "Part of One Night Thrillers (Part 4) collection"
+    }
+  ],
+  "totalLists": 7
+}

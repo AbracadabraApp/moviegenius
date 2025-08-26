@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Teen Digital Nightmare",
+      "url_path": "teen-digital-nightmare",
+      "description": "Teen Digital Nightmare collection",
+      "category": "horror",
+      "connectionReason": "Part of Teen Digital Nightmare collection"
+    },
+    {
+      "name": "Deadly Game Horror",
+      "url_path": "deadly-game-horror",
+      "description": "Deadly Game Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Deadly Game Horror collection"
+    },
+    {
+      "name": "AI Horror",
+      "url_path": "ai-horror",
+      "description": "AI Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of AI Horror collection"
+    },
+    {
+      "name": "90s Science Thrillers",
+      "url_path": "90s-science-thrillers",
+      "description": "90s Science Thrillers collection",
+      "category": "science fiction",
+      "connectionReason": "Part of 90s Science Thrillers collection"
+    },
+    {
+      "name": "Virtual Reality Horror",
+      "url_path": "virtual-reality-horror",
+      "description": "Virtual Reality Horror collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Virtual Reality Horror collection"
+    },
+    {
+      "name": "Corporate Science Horror (Part 1)",
+      "url_path": "corporate-science-horror-part-1-",
+      "description": "Corporate Science Horror (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Corporate Science Horror (Part 1) collection"
+    },
+    {
+      "name": "Artificial Life Evolution (Part 1)",
+      "url_path": "artificial-life-evolution-part-1-",
+      "description": "Artificial Life Evolution (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Artificial Life Evolution (Part 1) collection"
+    }
+  ],
+  "totalLists": 7
+}

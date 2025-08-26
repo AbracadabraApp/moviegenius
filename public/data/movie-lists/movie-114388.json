@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Modern Combat Experience",
+      "url_path": "modern-combat-experience",
+      "description": "Modern Combat Experience collection",
+      "category": "documentary",
+      "connectionReason": "Part of Modern Combat Experience collection"
+    },
+    {
+      "name": "Military Training Chronicles",
+      "url_path": "military-training-chronicles",
+      "description": "Military Training Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Military Training Chronicles collection"
+    },
+    {
+      "name": "1970s Cultural Retrospectives (Part 1)",
+      "url_path": "1970s-cultural-retrospectives-part-1-",
+      "description": "1970s Cultural Retrospectives (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of 1970s Cultural Retrospectives (Part 1) collection"
+    },
+    {
+      "name": "Personal Monologue Documentaries (Part 2)",
+      "url_path": "personal-monologue-documentaries-part-2-",
+      "description": "Personal Monologue Documentaries (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Personal Monologue Documentaries (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

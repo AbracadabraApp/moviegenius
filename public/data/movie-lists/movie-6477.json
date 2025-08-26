@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Found Family Stories",
+      "url_path": "found-family-stories",
+      "description": "Found Family Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Found Family Stories collection"
+    },
+    {
+      "name": "Unlikely Hero Stories",
+      "url_path": "unlikely-hero-stories",
+      "description": "Unlikely Hero Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Unlikely Hero Stories collection"
+    },
+    {
+      "name": "Musical Education Animation",
+      "url_path": "musical-education-animation",
+      "description": "Musical Education Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Musical Education Animation collection"
+    },
+    {
+      "name": "Live-Action Animal Adventures",
+      "url_path": "live-action-animal-adventures",
+      "description": "Live-Action Animal Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Live-Action Animal Adventures collection"
+    },
+    {
+      "name": "Found Family Comedies (Part 1)",
+      "url_path": "found-family-comedies-part-1-",
+      "description": "Found Family Comedies (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Found Family Comedies (Part 1) collection"
+    },
+    {
+      "name": "Music Industry Satires (Part 1)",
+      "url_path": "music-industry-satires-part-1-",
+      "description": "Music Industry Satires (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Music Industry Satires (Part 1) collection"
+    }
+  ],
+  "totalLists": 6
+}

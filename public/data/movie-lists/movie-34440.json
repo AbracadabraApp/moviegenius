@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Cross-Cultural Comedy",
+      "url_path": "cross-cultural-comedy",
+      "description": "Cross-Cultural Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Cultural Comedy collection"
+    },
+    {
+      "name": "Martial Arts Comedy",
+      "url_path": "martial-arts-comedy",
+      "description": "Martial Arts Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Martial Arts Comedy collection"
+    },
+    {
+      "name": "Fish-Out-Of-Water Comedy (Part 2)",
+      "url_path": "fish-out-of-water-comedy-part-2-",
+      "description": "Fish-Out-Of-Water Comedy (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Fish-Out-Of-Water Comedy (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

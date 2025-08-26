@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Buddhist Spiritual Journeys",
+      "url_path": "buddhist-spiritual-journeys",
+      "description": "Buddhist Spiritual Journeys collection",
+      "category": "documentary",
+      "connectionReason": "Part of Buddhist Spiritual Journeys collection"
+    },
+    {
+      "name": "Religious Folklore Studies",
+      "url_path": "religious-folklore-studies",
+      "description": "Religious Folklore Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Religious Folklore Studies collection"
+    },
+    {
+      "name": "Cultural Heritage Studies",
+      "url_path": "cultural-heritage-studies",
+      "description": "Cultural Heritage Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cultural Heritage Studies collection"
+    }
+  ],
+  "totalLists": 3
+}

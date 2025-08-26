@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Millennial NYC Thrillers",
+      "url_path": "millennial-nyc-thrillers",
+      "description": "Millennial NYC Thrillers collection",
+      "category": "crime",
+      "connectionReason": "Part of Millennial NYC Thrillers collection"
+    },
+    {
+      "name": "Casino Heist Films",
+      "url_path": "casino-heist-films",
+      "description": "Casino Heist Films collection",
+      "category": "crime",
+      "connectionReason": "Part of Casino Heist Films collection"
+    },
+    {
+      "name": "Media-Obsessed Crime Films (Part 1)",
+      "url_path": "media-obsessed-crime-films-part-1-",
+      "description": "Media-Obsessed Crime Films (Part 1) collection",
+      "category": "crime",
+      "connectionReason": "Part of Media-Obsessed Crime Films (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

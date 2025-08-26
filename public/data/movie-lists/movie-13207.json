@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Wilderness Survival Horror",
+      "url_path": "wilderness-survival-horror",
+      "description": "Wilderness Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Wilderness Survival Horror collection"
+    },
+    {
+      "name": "Summer Camp Horror",
+      "url_path": "summer-camp-horror",
+      "description": "Summer Camp Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Summer Camp Horror collection"
+    },
+    {
+      "name": "Teen Slasher Horror (Part 1)",
+      "url_path": "teen-slasher-horror-part-1-",
+      "description": "Teen Slasher Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Teen Slasher Horror (Part 1) collection"
+    },
+    {
+      "name": "Modernized Classic Monsters (Part 1)",
+      "url_path": "modernized-classic-monsters-part-1-",
+      "description": "Modernized Classic Monsters (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Modernized Classic Monsters (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

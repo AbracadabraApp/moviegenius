@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Time Travel Adventures",
+      "url_path": "time-travel-adventures",
+      "description": "Time Travel Adventures collection",
+      "category": "animation",
+      "connectionReason": "Part of Time Travel Adventures collection"
+    },
+    {
+      "name": "Surrealist Animation Classics",
+      "url_path": "surrealist-animation-classics",
+      "description": "Surrealist Animation Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Surrealist Animation Classics collection"
+    },
+    {
+      "name": "Adult Existential Drama",
+      "url_path": "adult-existential-drama",
+      "description": "Adult Existential Drama collection",
+      "category": "animation",
+      "connectionReason": "Part of Adult Existential Drama collection"
+    },
+    {
+      "name": "Human Cloning Thrillers",
+      "url_path": "human-cloning-thrillers",
+      "description": "Human Cloning Thrillers collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Human Cloning Thrillers collection"
+    },
+    {
+      "name": "Animated SciFi Anthology",
+      "url_path": "animated-scifi-anthology",
+      "description": "Animated SciFi Anthology collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Animated SciFi Anthology collection"
+    },
+    {
+      "name": "Memory and Time (Part 3)",
+      "url_path": "memory-and-time-part-3-",
+      "description": "Memory and Time (Part 3) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Memory and Time (Part 3) collection"
+    }
+  ],
+  "totalLists": 6
+}

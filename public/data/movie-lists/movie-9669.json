@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Cursed Media Horror",
+      "url_path": "cursed-media-horror",
+      "description": "Cursed Media Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Cursed Media Horror collection"
+    },
+    {
+      "name": "Scientific Investigation Horror",
+      "url_path": "scientific-investigation-horror",
+      "description": "Scientific Investigation Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Scientific Investigation Horror collection"
+    },
+    {
+      "name": "Psychic Powers Horror",
+      "url_path": "psychic-powers-horror",
+      "description": "Psychic Powers Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Psychic Powers Horror collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Unlikely Hero Stories",
+      "url_path": "unlikely-hero-stories",
+      "description": "Unlikely Hero Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Unlikely Hero Stories collection"
+    },
+    {
+      "name": "Americana Nostalgia Films",
+      "url_path": "americana-nostalgia-films",
+      "description": "Americana Nostalgia Films collection",
+      "category": "animation",
+      "connectionReason": "Part of Americana Nostalgia Films collection"
+    },
+    {
+      "name": "Holiday Special Animations",
+      "url_path": "holiday-special-animations",
+      "description": "Holiday Special Animations collection",
+      "category": "animation",
+      "connectionReason": "Part of Holiday Special Animations collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "LA Crime Mosaics",
+      "url_path": "la-crime-mosaics",
+      "description": "LA Crime Mosaics collection",
+      "category": "thriller",
+      "connectionReason": "Part of LA Crime Mosaics collection"
+    },
+    {
+      "name": "Mexican Urban Mosaics",
+      "url_path": "mexican-urban-mosaics",
+      "description": "Mexican Urban Mosaics collection",
+      "category": "thriller",
+      "connectionReason": "Part of Mexican Urban Mosaics collection"
+    },
+    {
+      "name": "Genre-Twist Endings (Part 1)",
+      "url_path": "genre-twist-endings-part-1-",
+      "description": "Genre-Twist Endings (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Genre-Twist Endings (Part 1) collection"
+    },
+    {
+      "name": "Urban Chase Thrillers (Part 1)",
+      "url_path": "urban-chase-thrillers-part-1-",
+      "description": "Urban Chase Thrillers (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Urban Chase Thrillers (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "name": "Teen Life Chronicles",
+      "url_path": "teen-life-chronicles",
+      "description": "Teen Life Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Teen Life Chronicles collection"
+    },
+    {
+      "name": "TV Production Chronicles",
+      "url_path": "tv-production-chronicles",
+      "description": "TV Production Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of TV Production Chronicles collection"
+    }
+  ],
+  "totalLists": 2
+}

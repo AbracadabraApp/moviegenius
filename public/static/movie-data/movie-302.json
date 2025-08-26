@@ -1,0 +1,132 @@
+{
+  "movieId": "9602c017-8055-4cca-aa51-705c92c7c06c",
+  "tmdbId": 302,
+  "title": "Swimming Pool",
+  "year": 2003,
+  "analysis": {
+    "keyElements": {
+      "director": "François Ozon",
+      "writers": [
+        "François Ozon",
+        "Emmanuèle Bernheim"
+      ],
+      "stars": [
+        "Charlotte Rampling",
+        "Ludivine Sagnier"
+      ],
+      "genre": "Psychological Thriller",
+      "releaseYear": 2003,
+      "cinematographer": "Yorick Le Saux",
+      "composer": "Philippe Rombi",
+      "studio": "Focus Features"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful psychological tension and ambiguity that rewards multiple viewings",
+        "Charlotte Rampling's nuanced performance as a writer unraveling reality",
+        "Brilliant exploration of creative process and artistic inspiration"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Persona",
+        "year": 1966,
+        "description": "Bergman's psychological drama about identity merger and artistic crisis"
+      },
+      {
+        "title": "Don't Look Now",
+        "year": 1973,
+        "description": "Psychological thriller using location as character and reality distortion"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Unreliable Narration",
+        "category": "Narrative Theory",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "European Art Cinema",
+        "category": "Film History",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "François Ozon",
+      "personId": 11315,
+      "slug": "/person/11315",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "François Ozon",
+        "personId": 11315,
+        "slug": "/person/11315",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Emmanuèle Bernheim",
+        "personId": 10235,
+        "slug": "/person/10235",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Charlotte Rampling",
+        "personId": 5656,
+        "slug": "/person/5656",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ludivine Sagnier",
+        "personId": 23161,
+        "slug": "/person/23161",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Charles Dance",
+        "personId": 5429,
+        "slug": "/person/5429",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Yorick Le Saux",
+      "personId": 39115,
+      "slug": "/person/39115",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Philippe Rombi",
+      "personId": 29735,
+      "slug": "/person/29735",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:22.215Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

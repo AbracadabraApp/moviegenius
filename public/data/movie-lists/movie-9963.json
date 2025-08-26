@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Nonlinear Time Thrillers",
+      "url_path": "nonlinear-time-thrillers",
+      "description": "Nonlinear Time Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Nonlinear Time Thrillers collection"
+    },
+    {
+      "name": "Dream Reality Thrillers",
+      "url_path": "dream-reality-thrillers",
+      "description": "Dream Reality Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Dream Reality Thrillers collection"
+    },
+    {
+      "name": "Grief Premonition Thrillers",
+      "url_path": "grief-premonition-thrillers",
+      "description": "Grief Premonition Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Grief Premonition Thrillers collection"
+    }
+  ],
+  "totalLists": 3
+}

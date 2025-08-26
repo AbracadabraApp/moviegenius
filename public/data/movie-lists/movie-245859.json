@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "British Music Evolution",
+      "url_path": "british-music-evolution",
+      "description": "British Music Evolution collection",
+      "category": "music",
+      "connectionReason": "Part of British Music Evolution collection"
+    },
+    {
+      "name": "Musical Rediscovery Stories",
+      "url_path": "musical-rediscovery-stories",
+      "description": "Musical Rediscovery Stories collection",
+      "category": "music",
+      "connectionReason": "Part of Musical Rediscovery Stories collection"
+    },
+    {
+      "name": "Indie Musical Originals",
+      "url_path": "indie-musical-originals",
+      "description": "Indie Musical Originals collection",
+      "category": "music",
+      "connectionReason": "Part of Indie Musical Originals collection"
+    },
+    {
+      "name": "Performance Redemption Stories",
+      "url_path": "performance-redemption-stories",
+      "description": "Performance Redemption Stories collection",
+      "category": "musical",
+      "connectionReason": "Part of Performance Redemption Stories collection"
+    },
+    {
+      "name": "Coming of Age Musical Stories",
+      "url_path": "coming-of-age-musical-stories",
+      "description": "Coming of Age Musical Stories collection",
+      "category": "musical",
+      "connectionReason": "Part of Coming of Age Musical Stories collection"
+    },
+    {
+      "name": "Band Formation Stories",
+      "url_path": "band-formation-stories",
+      "description": "Band Formation Stories collection",
+      "category": "musical",
+      "connectionReason": "Part of Band Formation Stories collection"
+    }
+  ],
+  "totalLists": 6
+}

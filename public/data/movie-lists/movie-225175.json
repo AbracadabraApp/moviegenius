@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "name": "Rodeo Sport Westerns",
+      "url_path": "rodeo-sport-westerns",
+      "description": "Rodeo Sport Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Rodeo Sport Westerns collection"
+    },
+    {
+      "name": "Horse Training Westerns",
+      "url_path": "horse-training-westerns",
+      "description": "Horse Training Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Horse Training Westerns collection"
+    }
+  ],
+  "totalLists": 2
+}

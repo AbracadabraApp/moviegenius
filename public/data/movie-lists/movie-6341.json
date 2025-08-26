@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Action Chase Thrillers",
+      "url_path": "action-chase-thrillers",
+      "description": "Action Chase Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Action Chase Thrillers collection"
+    },
+    {
+      "name": "Surveillance State Thrillers",
+      "url_path": "surveillance-state-thrillers",
+      "description": "Surveillance State Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Surveillance State Thrillers collection"
+    },
+    {
+      "name": "Urban Chase Thrillers (Part 2)",
+      "url_path": "urban-chase-thrillers-part-2-",
+      "description": "Urban Chase Thrillers (Part 2) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Urban Chase Thrillers (Part 2) collection"
+    },
+    {
+      "name": "Police Corruption Evidence (Part 1)",
+      "url_path": "police-corruption-evidence-part-1-",
+      "description": "Police Corruption Evidence (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Police Corruption Evidence (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

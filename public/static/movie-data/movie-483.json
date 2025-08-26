@@ -1,0 +1,133 @@
+{
+  "movieId": "ef8a2989-0eb8-410c-82ab-fe16874814ed",
+  "tmdbId": 483,
+  "title": "Wild at Heart",
+  "year": 1990,
+  "analysis": {
+    "keyElements": {
+      "director": "David Lynch",
+      "writers": [
+        "David Lynch",
+        "Barry Gifford"
+      ],
+      "stars": [
+        "Nicolas Cage",
+        "Laura Dern",
+        "Willem Dafoe"
+      ],
+      "genre": "Crime Romance Drama",
+      "releaseYear": 1990,
+      "cinematographer": "Frederick Elmes",
+      "composer": "Angelo Badalamenti",
+      "studio": "PolyGram Filmed Entertainment"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Lynch's surreal take on romance creates an unforgettable fever dream of love and violence",
+        "Career-defining performances from Cage and Dern capture raw, primal passion",
+        "Masterful blend of crime thriller, romance, and Southern Gothic with Wizard of Oz motifs"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Blue Velvet",
+        "year": 1986,
+        "description": "Lynch's previous exploration of darkness beneath suburban America"
+      },
+      {
+        "title": "Natural Born Killers",
+        "year": 1994,
+        "description": "Spiritual successor in violent romance genre"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Surrealism in American Cinema",
+        "category": "Film Theory",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Southern Gothic Tradition",
+        "category": "Genre Studies",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "David Lynch",
+      "personId": 7980,
+      "slug": "/person/7980",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "David Lynch",
+        "personId": 7980,
+        "slug": "/person/7980",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Barry Gifford",
+        "personId": 3116,
+        "slug": "/person/3116",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Nicolas Cage",
+        "personId": 27556,
+        "slug": "/person/27556",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Laura Dern",
+        "personId": 21789,
+        "slug": "/person/21789",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Willem Dafoe",
+        "personId": 38346,
+        "slug": "/person/38346",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Frederick Elmes",
+      "personId": 11609,
+      "slug": "/person/11609",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Angelo Badalamenti",
+      "personId": 1927,
+      "slug": "/person/1927",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:42.086Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

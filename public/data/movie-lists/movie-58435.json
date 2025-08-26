@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "WWII Archival Documentaries",
+      "url_path": "wwii-archival-documentaries",
+      "description": "WWII Archival Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of WWII Archival Documentaries collection"
+    },
+    {
+      "name": "Experimental Performance Art",
+      "url_path": "experimental-performance-art",
+      "description": "Experimental Performance Art collection",
+      "category": "documentary",
+      "connectionReason": "Part of Experimental Performance Art collection"
+    },
+    {
+      "name": "Documentary Ethics Explorations (Part 1)",
+      "url_path": "documentary-ethics-explorations-part-1-",
+      "description": "Documentary Ethics Explorations (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Documentary Ethics Explorations (Part 1) collection"
+    },
+    {
+      "name": "Historical Trauma Testimonies (Part 1)",
+      "url_path": "historical-trauma-testimonies-part-1-",
+      "description": "Historical Trauma Testimonies (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Historical Trauma Testimonies (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

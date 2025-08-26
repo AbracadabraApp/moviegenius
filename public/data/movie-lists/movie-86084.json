@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "WWII Archival Documentaries",
+      "url_path": "wwii-archival-documentaries",
+      "description": "WWII Archival Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of WWII Archival Documentaries collection"
+    },
+    {
+      "name": "War Crimes Justice",
+      "url_path": "war-crimes-justice",
+      "description": "War Crimes Justice collection",
+      "category": "documentary",
+      "connectionReason": "Part of War Crimes Justice collection"
+    },
+    {
+      "name": "Propaganda Cinema History",
+      "url_path": "propaganda-cinema-history",
+      "description": "Propaganda Cinema History collection",
+      "category": "documentary",
+      "connectionReason": "Part of Propaganda Cinema History collection"
+    }
+  ],
+  "totalLists": 3
+}

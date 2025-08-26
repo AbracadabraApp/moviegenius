@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Giallo Murder Mystery",
+      "url_path": "giallo-murder-mystery",
+      "description": "Giallo Murder Mystery collection",
+      "category": "horror",
+      "connectionReason": "Part of Giallo Murder Mystery collection"
+    },
+    {
+      "name": "Media Censorship Horror",
+      "url_path": "media-censorship-horror",
+      "description": "Media Censorship Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Media Censorship Horror collection"
+    },
+    {
+      "name": "Body Horror (Part 2)",
+      "url_path": "body-horror-part-2-",
+      "description": "Body Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Body Horror (Part 2) collection"
+    },
+    {
+      "name": "Extreme Gore Horror (Part 1)",
+      "url_path": "extreme-gore-horror-part-1-",
+      "description": "Extreme Gore Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Extreme Gore Horror (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

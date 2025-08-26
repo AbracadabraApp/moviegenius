@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Urban Night Adventures",
+      "url_path": "urban-night-adventures",
+      "description": "Urban Night Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Urban Night Adventures collection"
+    },
+    {
+      "name": "Suburban Kids in Danger",
+      "url_path": "suburban-kids-in-danger",
+      "description": "Suburban Kids in Danger collection",
+      "category": "adventure",
+      "connectionReason": "Part of Suburban Kids in Danger collection"
+    },
+    {
+      "name": "Urban Community Preservation",
+      "url_path": "urban-community-preservation",
+      "description": "Urban Community Preservation collection",
+      "category": "adventure",
+      "connectionReason": "Part of Urban Community Preservation collection"
+    },
+    {
+      "name": "Unlikely Hero Stories",
+      "url_path": "unlikely-hero-stories",
+      "description": "Unlikely Hero Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Unlikely Hero Stories collection"
+    },
+    {
+      "name": "Americana Nostalgia Films",
+      "url_path": "americana-nostalgia-films",
+      "description": "Americana Nostalgia Films collection",
+      "category": "animation",
+      "connectionReason": "Part of Americana Nostalgia Films collection"
+    },
+    {
+      "name": "Social Issues & Activism",
+      "url_path": "social-issues-activism",
+      "description": "Social Issues & Activism collection",
+      "category": "animation",
+      "connectionReason": "Part of Social Issues & Activism collection"
+    }
+  ],
+  "totalLists": 6
+}

@@ -1,0 +1,125 @@
+{
+  "movieId": "d5aa20f6-2543-4f5e-9487-29620b086610",
+  "tmdbId": 333,
+  "title": "Bollywood/Hollywood",
+  "year": 2002,
+  "analysis": {
+    "keyElements": {
+      "director": "Deepa Mehta",
+      "writers": [
+        "Deepa Mehta"
+      ],
+      "stars": [
+        "Rahul Khanna",
+        "Lisa Ray",
+        "Jessica Paré"
+      ],
+      "genre": "Romantic Comedy",
+      "releaseYear": 2002,
+      "cinematographer": "Douglas Koch",
+      "composer": "Sandeep Chowta",
+      "studio": "Different Tree Same Wood"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Clever cultural fusion that playfully deconstructs both Bollywood and Hollywood rom-com traditions",
+        "Sharp commentary on Indian diaspora identity and family expectations",
+        "Entertaining blend of musical numbers and contemporary Canadian setting"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Bride & Prejudice",
+        "year": 2004,
+        "description": "Another successful Bollywood-Hollywood hybrid that adapts Jane Austen"
+      },
+      {
+        "title": "The Big Sick",
+        "year": 2017,
+        "description": "Modern cross-cultural romance dealing with family expectations"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Diaspora Cinema",
+        "category": "Cultural Studies",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Genre Hybridization",
+        "category": "Film Theory",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Deepa Mehta",
+      "personId": 8367,
+      "slug": "/person/8367",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Deepa Mehta",
+        "personId": 8367,
+        "slug": "/person/8367",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Rahul Khanna",
+        "personId": 30230,
+        "slug": "/person/30230",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Lisa Ray",
+        "personId": 22689,
+        "slug": "/person/22689",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jessica Paré",
+        "personId": 17297,
+        "slug": "/person/17297",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Douglas Koch",
+      "personId": 9215,
+      "slug": "/person/9215",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Sandeep Chowta",
+      "personId": 33120,
+      "slug": "/person/33120",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:26.000Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

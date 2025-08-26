@@ -1,0 +1,156 @@
+{
+  "movieId": "e46bce01-bdca-459e-bda2-1c19afb268ef",
+  "tmdbId": 335,
+  "title": "Once Upon a Time in the West",
+  "year": 1968,
+  "analysis": {
+    "keyElements": {
+      "director": "Sergio Leone",
+      "writers": [
+        "Sergio Leone",
+        "Sergio Donati",
+        "Dario Argento"
+      ],
+      "stars": [
+        "Henry Fonda",
+        "Claudia Cardinale",
+        "Charles Bronson",
+        "Jason Robards"
+      ],
+      "genre": "Western",
+      "releaseYear": 1968,
+      "cinematographer": "Tonino Delli Colli",
+      "composer": "Ennio Morricone",
+      "studio": "Paramount Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful direction that redefined the Western genre with operatic style and epic scope",
+        "Henry Fonda's chilling against-type performance as the ruthless villain Frank",
+        "Ennio Morricone's iconic score that weaves character themes into the narrative fabric"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Good, the Bad and the Ugly",
+        "year": 1966,
+        "description": "Leone's previous masterpiece that established many of his signature techniques"
+      },
+      {
+        "title": "Django Unchained",
+        "year": 2012,
+        "description": "Modern Western heavily influenced by Leone's style and themes"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Spaghetti Western Movement",
+        "category": "film_history",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Visual Storytelling Techniques",
+        "category": "cinematography",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Sergio Leone",
+      "personId": 33676,
+      "slug": "/person/33676",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Sergio Leone",
+        "personId": 33676,
+        "slug": "/person/33676",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sergio Donati",
+        "personId": 33671,
+        "slug": "/person/33671",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Dario Argento",
+        "personId": 7515,
+        "slug": "/person/7515",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Bernardo Bertolucci",
+        "personId": 3497,
+        "slug": "/person/3497",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Henry Fonda",
+        "personId": 14158,
+        "slug": "/person/14158",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Claudia Cardinale",
+        "personId": 6517,
+        "slug": "/person/6517",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Charles Bronson",
+        "personId": 5409,
+        "slug": "/person/5409",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jason Robards",
+        "personId": 16330,
+        "slug": "/person/16330",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Tonino Delli Colli",
+      "personId": 36748,
+      "slug": "/person/36748",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Ennio Morricone",
+      "personId": 10282,
+      "slug": "/person/10282",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:26.292Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

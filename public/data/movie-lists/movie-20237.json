@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Western Comedy Capers",
+      "url_path": "western-comedy-capers",
+      "description": "Western Comedy Capers collection",
+      "category": "comedy",
+      "connectionReason": "Part of Western Comedy Capers collection"
+    },
+    {
+      "name": "Fish-Out-Of-Water Comedy (Part 4)",
+      "url_path": "fish-out-of-water-comedy-part-4-",
+      "description": "Fish-Out-Of-Water Comedy (Part 4) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Fish-Out-Of-Water Comedy (Part 4) collection"
+    },
+    {
+      "name": "Comedy Western Capers",
+      "url_path": "comedy-western-capers",
+      "description": "Comedy Western Capers collection",
+      "category": "western",
+      "connectionReason": "Part of Comedy Western Capers collection"
+    },
+    {
+      "name": "Fish Out Of Water",
+      "url_path": "fish-out-of-water",
+      "description": "Fish Out Of Water collection",
+      "category": "western",
+      "connectionReason": "Part of Fish Out Of Water collection"
+    },
+    {
+      "name": "Gold Rush Adventures",
+      "url_path": "gold-rush-adventures",
+      "description": "Gold Rush Adventures collection",
+      "category": "western",
+      "connectionReason": "Part of Gold Rush Adventures collection"
+    }
+  ],
+  "totalLists": 5
+}

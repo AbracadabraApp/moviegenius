@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Heist & Robbery Films",
+      "url_path": "heist-robbery-films",
+      "description": "Heist & Robbery Films collection",
+      "category": "crime",
+      "connectionReason": "Part of Heist & Robbery Films collection"
+    },
+    {
+      "name": "Criminal Exile Stories",
+      "url_path": "criminal-exile-stories",
+      "description": "Criminal Exile Stories collection",
+      "category": "crime",
+      "connectionReason": "Part of Criminal Exile Stories collection"
+    },
+    {
+      "name": "Redemptive Criminal Stories (Part 3)",
+      "url_path": "redemptive-criminal-stories-part-3-",
+      "description": "Redemptive Criminal Stories (Part 3) collection",
+      "category": "crime",
+      "connectionReason": "Part of Redemptive Criminal Stories (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

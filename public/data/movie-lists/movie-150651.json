@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Rural Life Studies",
+      "url_path": "rural-life-studies",
+      "description": "Rural Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Rural Life Studies collection"
+    },
+    {
+      "name": "Public Health Crisis Films",
+      "url_path": "public-health-crisis-films",
+      "description": "Public Health Crisis Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Public Health Crisis Films collection"
+    },
+    {
+      "name": "Cultural Identity Studies",
+      "url_path": "cultural-identity-studies",
+      "description": "Cultural Identity Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cultural Identity Studies collection"
+    }
+  ],
+  "totalLists": 3
+}

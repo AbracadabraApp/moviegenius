@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Social Media Horror",
+      "url_path": "social-media-horror",
+      "description": "Social Media Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Social Media Horror collection"
+    },
+    {
+      "name": "Artistic Obsession Horror",
+      "url_path": "artistic-obsession-horror",
+      "description": "Artistic Obsession Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Artistic Obsession Horror collection"
+    },
+    {
+      "name": "Cursed Media Horror",
+      "url_path": "cursed-media-horror",
+      "description": "Cursed Media Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Cursed Media Horror collection"
+    },
+    {
+      "name": "Meta-Cinema Thrillers",
+      "url_path": "meta-cinema-thrillers",
+      "description": "Meta-Cinema Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Meta-Cinema Thrillers collection"
+    },
+    {
+      "name": "Creative Process Madness",
+      "url_path": "creative-process-madness",
+      "description": "Creative Process Madness collection",
+      "category": "thriller",
+      "connectionReason": "Part of Creative Process Madness collection"
+    },
+    {
+      "name": "Artistic Murder Thrillers",
+      "url_path": "artistic-murder-thrillers",
+      "description": "Artistic Murder Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Artistic Murder Thrillers collection"
+    }
+  ],
+  "totalLists": 6
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Songwriter Biopics",
+      "url_path": "songwriter-biopics",
+      "description": "Songwriter Biopics collection",
+      "category": "music",
+      "connectionReason": "Part of Songwriter Biopics collection"
+    },
+    {
+      "name": "Show Business Dramas",
+      "url_path": "show-business-dramas",
+      "description": "Show Business Dramas collection",
+      "category": "music",
+      "connectionReason": "Part of Show Business Dramas collection"
+    },
+    {
+      "name": "Historical Period Musicals [OVERSIZED]",
+      "url_path": "historical-period-musicals-oversized-",
+      "description": "Historical Period Musicals [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Historical Period Musicals [OVERSIZED] collection"
+    },
+    {
+      "name": "Early Talkies Musicals [OVERSIZED]",
+      "url_path": "early-talkies-musicals-oversized-",
+      "description": "Early Talkies Musicals [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Early Talkies Musicals [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

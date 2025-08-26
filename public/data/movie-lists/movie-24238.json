@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Stop Motion Classics",
+      "url_path": "stop-motion-classics",
+      "description": "Stop Motion Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Stop Motion Classics collection"
+    },
+    {
+      "name": "Adult Existential Drama",
+      "url_path": "adult-existential-drama",
+      "description": "Adult Existential Drama collection",
+      "category": "animation",
+      "connectionReason": "Part of Adult Existential Drama collection"
+    },
+    {
+      "name": "Mental Health Animation",
+      "url_path": "mental-health-animation",
+      "description": "Mental Health Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Mental Health Animation collection"
+    },
+    {
+      "name": "Identity & Representation",
+      "url_path": "identity-representation",
+      "description": "Identity & Representation collection",
+      "category": "animation",
+      "connectionReason": "Part of Identity & Representation collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Dark Fantasy Animation",
+      "url_path": "dark-fantasy-animation",
+      "description": "Dark Fantasy Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Dark Fantasy Animation collection"
+    },
+    {
+      "name": "Unlikely Hero Stories",
+      "url_path": "unlikely-hero-stories",
+      "description": "Unlikely Hero Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Unlikely Hero Stories collection"
+    },
+    {
+      "name": "Social Satire Animation",
+      "url_path": "social-satire-animation",
+      "description": "Social Satire Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Social Satire Animation collection"
+    },
+    {
+      "name": "Pop Culture Parodies",
+      "url_path": "pop-culture-parodies",
+      "description": "Pop Culture Parodies collection",
+      "category": "animation",
+      "connectionReason": "Part of Pop Culture Parodies collection"
+    },
+    {
+      "name": "Western Genre Parodies",
+      "url_path": "western-genre-parodies",
+      "description": "Western Genre Parodies collection",
+      "category": "western",
+      "connectionReason": "Part of Western Genre Parodies collection"
+    },
+    {
+      "name": "Fish Out Of Water",
+      "url_path": "fish-out-of-water",
+      "description": "Fish Out Of Water collection",
+      "category": "western",
+      "connectionReason": "Part of Fish Out Of Water collection"
+    },
+    {
+      "name": "Frontier Town Taming",
+      "url_path": "frontier-town-taming",
+      "description": "Frontier Town Taming collection",
+      "category": "western",
+      "connectionReason": "Part of Frontier Town Taming collection"
+    }
+  ],
+  "totalLists": 7
+}

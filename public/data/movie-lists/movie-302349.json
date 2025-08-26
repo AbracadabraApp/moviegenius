@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Meta Sequel Comedies",
+      "url_path": "meta-sequel-comedies",
+      "description": "Meta Sequel Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Meta Sequel Comedies collection"
+    },
+    {
+      "name": "Political Satires",
+      "url_path": "political-satires",
+      "description": "Political Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Political Satires collection"
+    },
+    {
+      "name": "Sci-Fi Movie Parodies",
+      "url_path": "sci-fi-movie-parodies",
+      "description": "Sci-Fi Movie Parodies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Sci-Fi Movie Parodies collection"
+    },
+    {
+      "name": "Underground Lost Worlds",
+      "url_path": "underground-lost-worlds",
+      "description": "Underground Lost Worlds collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Underground Lost Worlds collection"
+    },
+    {
+      "name": "Historical Genre Mashup",
+      "url_path": "historical-genre-mashup",
+      "description": "Historical Genre Mashup collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Historical Genre Mashup collection"
+    },
+    {
+      "name": "Conspiracy Theory SciFi",
+      "url_path": "conspiracy-theory-scifi",
+      "description": "Conspiracy Theory SciFi collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Conspiracy Theory SciFi collection"
+    },
+    {
+      "name": "Retro SciFi Comedy (Part 1)",
+      "url_path": "retro-scifi-comedy-part-1-",
+      "description": "Retro SciFi Comedy (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro SciFi Comedy (Part 1) collection"
+    }
+  ],
+  "totalLists": 7
+}

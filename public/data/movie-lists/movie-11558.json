@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Cross-Country Adventure",
+      "url_path": "cross-country-adventure",
+      "description": "Cross-Country Adventure collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Country Adventure collection"
+    },
+    {
+      "name": "Criminal Mishap Comedies (Part 10)",
+      "url_path": "criminal-mishap-comedies-part-10-",
+      "description": "Criminal Mishap Comedies (Part 10) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Criminal Mishap Comedies (Part 10) collection"
+    },
+    {
+      "name": "Transportation Disaster Thrillers",
+      "url_path": "transportation-disaster-thrillers",
+      "description": "Transportation Disaster Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Transportation Disaster Thrillers collection"
+    },
+    {
+      "name": "Single Location Survival (Part 3)",
+      "url_path": "single-location-survival-part-3-",
+      "description": "Single Location Survival (Part 3) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Single Location Survival (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

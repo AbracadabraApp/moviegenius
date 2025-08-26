@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Books Come Alive",
+      "url_path": "books-come-alive",
+      "description": "Books Come Alive collection",
+      "category": "adventure",
+      "connectionReason": "Part of Books Come Alive collection"
+    },
+    {
+      "name": "Early Cinema History",
+      "url_path": "early-cinema-history",
+      "description": "Early Cinema History collection",
+      "category": "adventure",
+      "connectionReason": "Part of Early Cinema History collection"
+    },
+    {
+      "name": "Fiction Becomes Reality",
+      "url_path": "fiction-becomes-reality",
+      "description": "Fiction Becomes Reality collection",
+      "category": "adventure",
+      "connectionReason": "Part of Fiction Becomes Reality collection"
+    },
+    {
+      "name": "Fiction Becomes Reality",
+      "url_path": "fiction-becomes-reality",
+      "description": "Fiction Becomes Reality collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Fiction Becomes Reality collection"
+    },
+    {
+      "name": "Modern Magical Realism [OVERSIZED]",
+      "url_path": "modern-magical-realism-oversized-",
+      "description": "Modern Magical Realism [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Modern Magical Realism [OVERSIZED] collection"
+    },
+    {
+      "name": "Surrealist Dream Fantasy [OVERSIZED]",
+      "url_path": "surrealist-dream-fantasy-oversized-",
+      "description": "Surrealist Dream Fantasy [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Surrealist Dream Fantasy [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 6
+}

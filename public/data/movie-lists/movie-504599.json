@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Deadly Game Thrillers",
+      "url_path": "deadly-game-thrillers",
+      "description": "Deadly Game Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Deadly Game Thrillers collection"
+    },
+    {
+      "name": "Rural Abuse Survival",
+      "url_path": "rural-abuse-survival",
+      "description": "Rural Abuse Survival collection",
+      "category": "thriller",
+      "connectionReason": "Part of Rural Abuse Survival collection"
+    },
+    {
+      "name": "Economic Desperation Thrillers",
+      "url_path": "economic-desperation-thrillers",
+      "description": "Economic Desperation Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Economic Desperation Thrillers collection"
+    }
+  ],
+  "totalLists": 3
+}

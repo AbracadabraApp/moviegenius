@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Early Aviation Adventures",
+      "url_path": "early-aviation-adventures",
+      "description": "Early Aviation Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Early Aviation Adventures collection"
+    },
+    {
+      "name": "Deadly Creature Features",
+      "url_path": "deadly-creature-features",
+      "description": "Deadly Creature Features collection",
+      "category": "adventure",
+      "connectionReason": "Part of Deadly Creature Features collection"
+    },
+    {
+      "name": "Early Cinema History",
+      "url_path": "early-cinema-history",
+      "description": "Early Cinema History collection",
+      "category": "adventure",
+      "connectionReason": "Part of Early Cinema History collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,141 @@
+{
+  "movieId": "5271caf2-b6ae-4786-8f6c-f315113c908a",
+  "tmdbId": 165,
+  "title": "Back to the Future Part II",
+  "year": 1989,
+  "analysis": {
+    "keyElements": {
+      "director": "Robert Zemeckis",
+      "writers": [
+        "Robert Zemeckis",
+        "Bob Gale"
+      ],
+      "stars": [
+        "Michael J. Fox",
+        "Christopher Lloyd",
+        "Lea Thompson",
+        "Thomas F. Wilson"
+      ],
+      "genre": "Science Fiction/Adventure",
+      "releaseYear": 1989,
+      "cinematographer": "Dean Cundey",
+      "composer": "Alan Silvestri",
+      "studio": "Universal Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Innovative time travel narrative that complexly interweaves with the original film",
+        "Darker, more ambitious sequel that expands the franchise's universe",
+        "Groundbreaking special effects that still hold up remarkably well"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Back to the Future",
+        "year": 1985,
+        "description": "The original film that established the franchise's core elements"
+      },
+      {
+        "title": "Primer",
+        "year": 2004,
+        "description": "Complex time travel narrative influenced by BTTF's timeline mechanics"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Time Travel Paradoxes",
+        "category": "Narrative Theory",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Practical Effects vs CGI",
+        "category": "Film Technology",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Robert Zemeckis",
+      "personId": 31958,
+      "slug": "/person/31958",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Bob Gale",
+        "personId": 4008,
+        "slug": "/person/4008",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Robert Zemeckis",
+        "personId": 31958,
+        "slug": "/person/31958",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Michael J. Fox",
+        "personId": 25736,
+        "slug": "/person/25736",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Christopher Lloyd",
+        "personId": 6245,
+        "slug": "/person/6245",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Lea Thompson",
+        "personId": 21978,
+        "slug": "/person/21978",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Thomas F. Wilson",
+        "personId": 36102,
+        "slug": "/person/36102",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Dean Cundey",
+      "personId": 8269,
+      "slug": "/person/8269",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Alan Silvestri",
+      "personId": 634,
+      "slug": "/person/634",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:04:59.847Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Supernatural Love Stories",
+      "url_path": "supernatural-love-stories",
+      "description": "Supernatural Love Stories collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Supernatural Love Stories collection"
+    },
+    {
+      "name": "Gothic Family Curses",
+      "url_path": "gothic-family-curses",
+      "description": "Gothic Family Curses collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Gothic Family Curses collection"
+    },
+    {
+      "name": "Death Personified Tales",
+      "url_path": "death-personified-tales",
+      "description": "Death Personified Tales collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Death Personified Tales collection"
+    },
+    {
+      "name": "Supernatural Revenge Tales",
+      "url_path": "supernatural-revenge-tales",
+      "description": "Supernatural Revenge Tales collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Supernatural Revenge Tales collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Disability Arts Stories",
+      "url_path": "disability-arts-stories",
+      "description": "Disability Arts Stories collection",
+      "category": "documentary",
+      "connectionReason": "Part of Disability Arts Stories collection"
+    },
+    {
+      "name": "Indigenous Cultural Documentation",
+      "url_path": "indigenous-cultural-documentation",
+      "description": "Indigenous Cultural Documentation collection",
+      "category": "documentary",
+      "connectionReason": "Part of Indigenous Cultural Documentation collection"
+    },
+    {
+      "name": "Music Documentary Collages (Part 2)",
+      "url_path": "music-documentary-collages-part-2-",
+      "description": "Music Documentary Collages (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Music Documentary Collages (Part 2) collection"
+    },
+    {
+      "name": "Cultural Icon Biographies (Part 5)",
+      "url_path": "cultural-icon-biographies-part-5-",
+      "description": "Cultural Icon Biographies (Part 5) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cultural Icon Biographies (Part 5) collection"
+    }
+  ],
+  "totalLists": 4
+}

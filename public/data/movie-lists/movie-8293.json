@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Merchant Ivory Classics",
+      "url_path": "merchant-ivory-classics",
+      "description": "Merchant Ivory Classics collection",
+      "category": "period",
+      "connectionReason": "Part of Merchant Ivory Classics collection"
+    },
+    {
+      "name": "British Literary Adaptations",
+      "url_path": "british-literary-adaptations",
+      "description": "British Literary Adaptations collection",
+      "category": "period",
+      "connectionReason": "Part of British Literary Adaptations collection"
+    },
+    {
+      "name": "Social Climber Tragedies",
+      "url_path": "social-climber-tragedies",
+      "description": "Social Climber Tragedies collection",
+      "category": "period",
+      "connectionReason": "Part of Social Climber Tragedies collection"
+    },
+    {
+      "name": "Romance and Relationships",
+      "url_path": "romance-and-relationships",
+      "description": "Romance and Relationships collection",
+      "category": "period",
+      "connectionReason": "Part of Romance and Relationships collection"
+    }
+  ],
+  "totalLists": 4
+}

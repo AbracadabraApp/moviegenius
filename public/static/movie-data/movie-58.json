@@ -1,0 +1,77 @@
+{
+  "movieId": "26a0ae48-687c-46e4-98a0-0e09e56f6af2",
+  "tmdbId": 58,
+  "title": "Pirates of the Caribbean: Dead Man's Chest",
+  "year": 2006,
+  "analysis": {
+    "keyElements": {
+      "director": "Gore Verbinski",
+      "writers": [
+        "Ted Elliott",
+        "Terry Rossio"
+      ],
+      "stars": [
+        "Johnny Depp",
+        "Orlando Bloom",
+        "Keira Knightley"
+      ],
+      "genre": "Action-Adventure Fantasy",
+      "releaseYear": 2006,
+      "cinematographer": "Dariusz Wolski",
+      "composer": "Hans Zimmer",
+      "studio": "Walt Disney Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Johnny Depp's iconic Jack Sparrow performance reaches new heights of charm and complexity",
+        "Groundbreaking visual effects that set new standards for CGI characters, especially with Davy Jones",
+        "Perfect blend of swashbuckling adventure, supernatural elements, and humor that expands on the original"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+        "year": 2003,
+        "description": "The franchise starter that established the tone and characters"
+      },
+      {
+        "title": "The Princess Bride",
+        "year": 1987,
+        "description": "Classic swashbuckling adventure that influenced the series' humor"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Digital Character Creation",
+        "category": "Visual Effects",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Maritime Folklore in Cinema",
+        "category": "Cultural Studies",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": null,
+    "writers": [],
+    "stars": [],
+    "cinematographer": null,
+    "composer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:04:58.129Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "analysis_fallback",
+    "moreIdeas": null
+  }
+}

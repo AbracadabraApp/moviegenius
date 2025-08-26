@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "True Crime Horror",
+      "url_path": "true-crime-horror",
+      "description": "True Crime Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of True Crime Horror collection"
+    },
+    {
+      "name": "Exploitation Cinema Homage",
+      "url_path": "exploitation-cinema-homage",
+      "description": "Exploitation Cinema Homage collection",
+      "category": "horror",
+      "connectionReason": "Part of Exploitation Cinema Homage collection"
+    },
+    {
+      "name": "Extreme Gore Horror (Part 3)",
+      "url_path": "extreme-gore-horror-part-3-",
+      "description": "Extreme Gore Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Extreme Gore Horror (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

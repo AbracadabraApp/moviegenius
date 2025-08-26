@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Classic Comic Heroes",
+      "url_path": "classic-comic-heroes",
+      "description": "Classic Comic Heroes collection",
+      "category": "superhero",
+      "connectionReason": "Part of Classic Comic Heroes collection"
+    },
+    {
+      "name": "Philosophical Superhero Stories",
+      "url_path": "philosophical-superhero-stories",
+      "description": "Philosophical Superhero Stories collection",
+      "category": "superhero",
+      "connectionReason": "Part of Philosophical Superhero Stories collection"
+    },
+    {
+      "name": "Hero Versus Hero",
+      "url_path": "hero-versus-hero",
+      "description": "Hero Versus Hero collection",
+      "category": "superhero",
+      "connectionReason": "Part of Hero Versus Hero collection"
+    },
+    {
+      "name": "Political Conspiracy Thrillers",
+      "url_path": "political-conspiracy-thrillers",
+      "description": "Political Conspiracy Thrillers collection",
+      "category": "superhero",
+      "connectionReason": "Part of Political Conspiracy Thrillers collection"
+    },
+    {
+      "name": "Surveillance State Thrillers",
+      "url_path": "surveillance-state-thrillers",
+      "description": "Surveillance State Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Surveillance State Thrillers collection"
+    },
+    {
+      "name": "Urban Chase Thrillers (Part 2)",
+      "url_path": "urban-chase-thrillers-part-2-",
+      "description": "Urban Chase Thrillers (Part 2) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Urban Chase Thrillers (Part 2) collection"
+    },
+    {
+      "name": "Hidden Identity Thrillers (Part 4)",
+      "url_path": "hidden-identity-thrillers-part-4-",
+      "description": "Hidden Identity Thrillers (Part 4) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Hidden Identity Thrillers (Part 4) collection"
+    }
+  ],
+  "totalLists": 7
+}

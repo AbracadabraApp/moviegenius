@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Dark Fantasy Animation",
+      "url_path": "dark-fantasy-animation",
+      "description": "Dark Fantasy Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Dark Fantasy Animation collection"
+    },
+    {
+      "name": "Time Travel Adventures",
+      "url_path": "time-travel-adventures",
+      "description": "Time Travel Adventures collection",
+      "category": "animation",
+      "connectionReason": "Part of Time Travel Adventures collection"
+    },
+    {
+      "name": "European-Set Animations",
+      "url_path": "european-set-animations",
+      "description": "European-Set Animations collection",
+      "category": "animation",
+      "connectionReason": "Part of European-Set Animations collection"
+    }
+  ],
+  "totalLists": 3
+}

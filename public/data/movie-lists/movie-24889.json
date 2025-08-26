@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Police Detective Stories",
+      "url_path": "police-detective-stories",
+      "description": "Police Detective Stories collection",
+      "category": "crime",
+      "connectionReason": "Part of Police Detective Stories collection"
+    },
+    {
+      "name": "Hong Kong Action Crime",
+      "url_path": "hong-kong-action-crime",
+      "description": "Hong Kong Action Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Hong Kong Action Crime collection"
+    },
+    {
+      "name": "Police Corruption Dramas (Part 4)",
+      "url_path": "police-corruption-dramas-part-4-",
+      "description": "Police Corruption Dramas (Part 4) collection",
+      "category": "crime",
+      "connectionReason": "Part of Police Corruption Dramas (Part 4) collection"
+    },
+    {
+      "name": "Financial Crisis Thrillers",
+      "url_path": "financial-crisis-thrillers",
+      "description": "Financial Crisis Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Financial Crisis Thrillers collection"
+    },
+    {
+      "name": "Surveillance State Thrillers",
+      "url_path": "surveillance-state-thrillers",
+      "description": "Surveillance State Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Surveillance State Thrillers collection"
+    },
+    {
+      "name": "Hong Kong Police Action",
+      "url_path": "hong-kong-police-action",
+      "description": "Hong Kong Police Action collection",
+      "category": "thriller",
+      "connectionReason": "Part of Hong Kong Police Action collection"
+    },
+    {
+      "name": "Moral Choice Thrillers (Part 5)",
+      "url_path": "moral-choice-thrillers-part-5-",
+      "description": "Moral Choice Thrillers (Part 5) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Moral Choice Thrillers (Part 5) collection"
+    }
+  ],
+  "totalLists": 7
+}

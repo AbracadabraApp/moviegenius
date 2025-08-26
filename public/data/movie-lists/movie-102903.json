@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Secret Society Horror",
+      "url_path": "secret-society-horror",
+      "description": "Secret Society Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Secret Society Horror collection"
+    },
+    {
+      "name": "Occult Ritual Horror (Part 3)",
+      "url_path": "occult-ritual-horror-part-3-",
+      "description": "Occult Ritual Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Occult Ritual Horror (Part 3) collection"
+    },
+    {
+      "name": "Noir Detective Horror (Part 2)",
+      "url_path": "noir-detective-horror-part-2-",
+      "description": "Noir Detective Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Noir Detective Horror (Part 2) collection"
+    },
+    {
+      "name": "Religious Supernatural Thrillers",
+      "url_path": "religious-supernatural-thrillers",
+      "description": "Religious Supernatural Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Religious Supernatural Thrillers collection"
+    },
+    {
+      "name": "Single Location Survival (Part 4)",
+      "url_path": "single-location-survival-part-4-",
+      "description": "Single Location Survival (Part 4) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Single Location Survival (Part 4) collection"
+    }
+  ],
+  "totalLists": 5
+}

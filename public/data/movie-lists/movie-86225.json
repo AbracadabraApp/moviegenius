@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Bank Heist Films",
+      "url_path": "bank-heist-films",
+      "description": "Bank Heist Films collection",
+      "category": "crime",
+      "connectionReason": "Part of Bank Heist Films collection"
+    },
+    {
+      "name": "Professional Criminal Crews (Part 2)",
+      "url_path": "professional-criminal-crews-part-2-",
+      "description": "Professional Criminal Crews (Part 2) collection",
+      "category": "crime",
+      "connectionReason": "Part of Professional Criminal Crews (Part 2) collection"
+    },
+    {
+      "name": "Northern Ireland Troubles",
+      "url_path": "northern-ireland-troubles",
+      "description": "Northern Ireland Troubles collection",
+      "category": "thriller",
+      "connectionReason": "Part of Northern Ireland Troubles collection"
+    },
+    {
+      "name": "Victorian Detective Mysteries",
+      "url_path": "victorian-detective-mysteries",
+      "description": "Victorian Detective Mysteries collection",
+      "category": "thriller",
+      "connectionReason": "Part of Victorian Detective Mysteries collection"
+    },
+    {
+      "name": "Historical Survival Thrillers (Part 2)",
+      "url_path": "historical-survival-thrillers-part-2-",
+      "description": "Historical Survival Thrillers (Part 2) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Historical Survival Thrillers (Part 2) collection"
+    }
+  ],
+  "totalLists": 5
+}

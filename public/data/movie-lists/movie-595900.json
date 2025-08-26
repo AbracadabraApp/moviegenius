@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Personal Journey Stories",
+      "url_path": "personal-journey-stories",
+      "description": "Personal Journey Stories collection",
+      "category": "documentary",
+      "connectionReason": "Part of Personal Journey Stories collection"
+    },
+    {
+      "name": "Modern Chinese Society",
+      "url_path": "modern-chinese-society",
+      "description": "Modern Chinese Society collection",
+      "category": "documentary",
+      "connectionReason": "Part of Modern Chinese Society collection"
+    },
+    {
+      "name": "Urban Subculture Studies (Part 2)",
+      "url_path": "urban-subculture-studies-part-2-",
+      "description": "Urban Subculture Studies (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Urban Subculture Studies (Part 2) collection"
+    },
+    {
+      "name": "Global Cultural Meditations (Part 2)",
+      "url_path": "global-cultural-meditations-part-2-",
+      "description": "Global Cultural Meditations (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Cultural Meditations (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

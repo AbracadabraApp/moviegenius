@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Dark Fantasy Animation",
+      "url_path": "dark-fantasy-animation",
+      "description": "Dark Fantasy Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Dark Fantasy Animation collection"
+    },
+    {
+      "name": "Graphic Novel Adaptations",
+      "url_path": "graphic-novel-adaptations",
+      "description": "Graphic Novel Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Graphic Novel Adaptations collection"
+    },
+    {
+      "name": "Military Action Animation",
+      "url_path": "military-action-animation",
+      "description": "Military Action Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Military Action Animation collection"
+    },
+    {
+      "name": "Science Hero Origins",
+      "url_path": "science-hero-origins",
+      "description": "Science Hero Origins collection",
+      "category": "superhero",
+      "connectionReason": "Part of Science Hero Origins collection"
+    },
+    {
+      "name": "Hero Versus Hero",
+      "url_path": "hero-versus-hero",
+      "description": "Hero Versus Hero collection",
+      "category": "superhero",
+      "connectionReason": "Part of Hero Versus Hero collection"
+    },
+    {
+      "name": "Anti-Hero Protagonists",
+      "url_path": "anti-hero-protagonists",
+      "description": "Anti-Hero Protagonists collection",
+      "category": "superhero",
+      "connectionReason": "Part of Anti-Hero Protagonists collection"
+    }
+  ],
+  "totalLists": 6
+}

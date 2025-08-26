@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Classic Monster Comedies",
+      "url_path": "classic-monster-comedies",
+      "description": "Classic Monster Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Monster Comedies collection"
+    },
+    {
+      "name": "Classic Literature Parodies",
+      "url_path": "classic-literature-parodies",
+      "description": "Classic Literature Parodies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Literature Parodies collection"
+    },
+    {
+      "name": "Horror Movie Parodies (Part 5)",
+      "url_path": "horror-movie-parodies-part-5-",
+      "description": "Horror Movie Parodies (Part 5) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Horror Movie Parodies (Part 5) collection"
+    },
+    {
+      "name": "Occult Ritual Horror (Part 4)",
+      "url_path": "occult-ritual-horror-part-4-",
+      "description": "Occult Ritual Horror (Part 4) collection",
+      "category": "horror",
+      "connectionReason": "Part of Occult Ritual Horror (Part 4) collection"
+    },
+    {
+      "name": "Classic Monster Comedy (Part 5)",
+      "url_path": "classic-monster-comedy-part-5-",
+      "description": "Classic Monster Comedy (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Monster Comedy (Part 5) collection"
+    },
+    {
+      "name": "Literary Horror Adaptations (Part 5)",
+      "url_path": "literary-horror-adaptations-part-5-",
+      "description": "Literary Horror Adaptations (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Literary Horror Adaptations (Part 5) collection"
+    }
+  ],
+  "totalLists": 6
+}

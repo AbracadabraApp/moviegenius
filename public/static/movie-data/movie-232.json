@@ -1,0 +1,141 @@
+{
+  "movieId": "aef535aa-b018-490c-bb5e-4676f5e373bf",
+  "tmdbId": 232,
+  "title": "Rumble Fish",
+  "year": 1983,
+  "analysis": {
+    "keyElements": {
+      "director": "Francis Ford Coppola",
+      "writers": [
+        "S.E. Hinton",
+        "Francis Ford Coppola"
+      ],
+      "stars": [
+        "Matt Dillon",
+        "Mickey Rourke",
+        "Dennis Hopper",
+        "Diane Lane"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1983,
+      "cinematographer": "Stephen H. Burum",
+      "composer": "Stewart Copeland",
+      "studio": "Universal Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Stunning black-and-white experimental visuals that revolutionized teen drama aesthetics",
+        "Complex exploration of sibling dynamics and youth alienation that transcends typical coming-of-age tropes",
+        "Career-defining performances from young Matt Dillon and Mickey Rourke at their most magnetic"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Outsiders",
+        "year": 1983,
+        "description": "Coppola's other S.E. Hinton adaptation, showing his range in tackling youth-oriented material"
+      },
+      {
+        "title": "Rebel Without a Cause",
+        "year": 1955,
+        "description": "Essential predecessor in the teen rebellion genre"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "German Expressionism in American Cinema",
+        "category": "Film Style",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "Coming-of-Age in Art House Cinema",
+        "category": "Genre Studies",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Francis Ford Coppola",
+      "personId": 11242,
+      "slug": "/person/11242",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "S.E. Hinton",
+        "personId": 33552,
+        "slug": "/person/33552",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Francis Ford Coppola",
+        "personId": 11242,
+        "slug": "/person/11242",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Matt Dillon",
+        "personId": 24917,
+        "slug": "/person/24917",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Mickey Rourke",
+        "personId": 26182,
+        "slug": "/person/26182",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Diane Lane",
+        "personId": 8655,
+        "slug": "/person/8655",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Dennis Hopper",
+        "personId": 8471,
+        "slug": "/person/8471",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Stephen H. Burum",
+      "personId": 34758,
+      "slug": "/person/34758",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Stewart Copeland",
+      "personId": 35095,
+      "slug": "/person/35095",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:10.918Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

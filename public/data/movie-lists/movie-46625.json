@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Media Exploitation Thrillers",
+      "url_path": "media-exploitation-thrillers",
+      "description": "Media Exploitation Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Media Exploitation Thrillers collection"
+    },
+    {
+      "name": "Meta-Cinema Thrillers",
+      "url_path": "meta-cinema-thrillers",
+      "description": "Meta-Cinema Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Meta-Cinema Thrillers collection"
+    },
+    {
+      "name": "Surveillance State Thrillers",
+      "url_path": "surveillance-state-thrillers",
+      "description": "Surveillance State Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Surveillance State Thrillers collection"
+    }
+  ],
+  "totalLists": 3
+}

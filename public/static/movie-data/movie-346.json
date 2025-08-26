@@ -1,0 +1,141 @@
+{
+  "movieId": "d063af76-81e0-485b-b857-812fac5d71a0",
+  "tmdbId": 346,
+  "title": "Seven Samurai",
+  "year": 1954,
+  "analysis": {
+    "keyElements": {
+      "director": "Akira Kurosawa",
+      "writers": [
+        "Akira Kurosawa",
+        "Shinobu Hashimoto",
+        "Hideo Oguni"
+      ],
+      "stars": [
+        "Toshiro Mifune",
+        "Takashi Shimura",
+        "Keiko Tsushima"
+      ],
+      "genre": "Action, Drama",
+      "releaseYear": 1954,
+      "cinematographer": "Asakazu Nakai",
+      "composer": "Fumio Hayasaka",
+      "studio": "Toho Company"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful storytelling that created the template for ensemble action films",
+        "Revolutionary action sequences that still influence modern cinema",
+        "Deep exploration of honor, sacrifice, and class structure that resonates universally"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Magnificent Seven",
+        "year": 1960,
+        "description": "Direct Western remake that proved the story's universal appeal"
+      },
+      {
+        "title": "Ran",
+        "year": 1985,
+        "description": "Kurosawa's later masterpiece showing his evolved style"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Japanese Feudal System",
+        "category": "Historical Context",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Action Scene Composition",
+        "category": "Filmmaking",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Akira Kurosawa",
+      "personId": 480,
+      "slug": "/person/480",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Akira Kurosawa",
+        "personId": 480,
+        "slug": "/person/480",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Shinobu Hashimoto",
+        "personId": 34005,
+        "slug": "/person/34005",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Hideo Oguni",
+        "personId": 14319,
+        "slug": "/person/14319",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Toshiro Mifune",
+        "personId": 36934,
+        "slug": "/person/36934",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Takashi Shimura",
+        "personId": 35506,
+        "slug": "/person/35506",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Keiko Tsushima",
+        "personId": 20499,
+        "slug": "/person/20499",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Asakazu Nakai",
+      "personId": 2726,
+      "slug": "/person/2726",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Fumio Hayasaka",
+      "personId": 11779,
+      "slug": "/person/11779",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:28.117Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

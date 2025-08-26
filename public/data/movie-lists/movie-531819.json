@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Election Campaign Chronicles",
+      "url_path": "election-campaign-chronicles",
+      "description": "Election Campaign Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Election Campaign Chronicles collection"
+    },
+    {
+      "name": "Cinéma Vérité Classics",
+      "url_path": "cin-ma-v-rit-classics",
+      "description": "Cinéma Vérité Classics collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cinéma Vérité Classics collection"
+    },
+    {
+      "name": "Early Cinema Pioneers (Part 3)",
+      "url_path": "early-cinema-pioneers-part-3-",
+      "description": "Early Cinema Pioneers (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Early Cinema Pioneers (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

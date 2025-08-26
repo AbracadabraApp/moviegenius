@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "New Years Eve Stories",
+      "url_path": "new-years-eve-stories",
+      "description": "New Years Eve Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of New Years Eve Stories collection"
+    },
+    {
+      "name": "Hotel Staff Misadventures",
+      "url_path": "hotel-staff-misadventures",
+      "description": "Hotel Staff Misadventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Hotel Staff Misadventures collection"
+    },
+    {
+      "name": "Dark Comedy Accidents (Part 5)",
+      "url_path": "dark-comedy-accidents-part-5-",
+      "description": "Dark Comedy Accidents (Part 5) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Dark Comedy Accidents (Part 5) collection"
+    },
+    {
+      "name": "Single Day Misfortunes (Part 2)",
+      "url_path": "single-day-misfortunes-part-2-",
+      "description": "Single Day Misfortunes (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Single Day Misfortunes (Part 2) collection"
+    },
+    {
+      "name": "Celebrity Culture Commentary",
+      "url_path": "celebrity-culture-commentary",
+      "description": "Celebrity Culture Commentary collection",
+      "category": "crime",
+      "connectionReason": "Part of Celebrity Culture Commentary collection"
+    },
+    {
+      "name": "Luxury Lifestyle Crime",
+      "url_path": "luxury-lifestyle-crime",
+      "description": "Luxury Lifestyle Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Luxury Lifestyle Crime collection"
+    },
+    {
+      "name": "One Night Crime Thrillers",
+      "url_path": "one-night-crime-thrillers",
+      "description": "One Night Crime Thrillers collection",
+      "category": "crime",
+      "connectionReason": "Part of One Night Crime Thrillers collection"
+    }
+  ],
+  "totalLists": 7
+}

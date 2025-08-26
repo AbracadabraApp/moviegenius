@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Financial Crisis Thrillers",
+      "url_path": "financial-crisis-thrillers",
+      "description": "Financial Crisis Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Financial Crisis Thrillers collection"
+    },
+    {
+      "name": "Mentor Criminal Relationships",
+      "url_path": "mentor-criminal-relationships",
+      "description": "Mentor Criminal Relationships collection",
+      "category": "thriller",
+      "connectionReason": "Part of Mentor Criminal Relationships collection"
+    },
+    {
+      "name": "Professional Code Thrillers",
+      "url_path": "professional-code-thrillers",
+      "description": "Professional Code Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Professional Code Thrillers collection"
+    }
+  ],
+  "totalLists": 3
+}

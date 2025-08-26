@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Revenge Mission Westerns",
+      "url_path": "revenge-mission-westerns",
+      "description": "Revenge Mission Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Revenge Mission Westerns collection"
+    },
+    {
+      "name": "Lawmen Partnership Westerns",
+      "url_path": "lawmen-partnership-westerns",
+      "description": "Lawmen Partnership Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Lawmen Partnership Westerns collection"
+    },
+    {
+      "name": "Historical Figure Biopics",
+      "url_path": "historical-figure-biopics",
+      "description": "Historical Figure Biopics collection",
+      "category": "western",
+      "connectionReason": "Part of Historical Figure Biopics collection"
+    },
+    {
+      "name": "Frontier Town Taming",
+      "url_path": "frontier-town-taming",
+      "description": "Frontier Town Taming collection",
+      "category": "western",
+      "connectionReason": "Part of Frontier Town Taming collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "World Music Dramas",
+      "url_path": "world-music-dramas",
+      "description": "World Music Dramas collection",
+      "category": "music",
+      "connectionReason": "Part of World Music Dramas collection"
+    },
+    {
+      "name": "Opera Performance Films",
+      "url_path": "opera-performance-films",
+      "description": "Opera Performance Films collection",
+      "category": "music",
+      "connectionReason": "Part of Opera Performance Films collection"
+    },
+    {
+      "name": "Cultural Fusion Films [OVERSIZED]",
+      "url_path": "cultural-fusion-films-oversized-",
+      "description": "Cultural Fusion Films [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Cultural Fusion Films [OVERSIZED] collection"
+    },
+    {
+      "name": "Musical Adaptations [OVERSIZED]",
+      "url_path": "musical-adaptations-oversized-",
+      "description": "Musical Adaptations [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Musical Adaptations [OVERSIZED] collection"
+    },
+    {
+      "name": "European Opera Adaptations",
+      "url_path": "european-opera-adaptations",
+      "description": "European Opera Adaptations collection",
+      "category": "musical",
+      "connectionReason": "Part of European Opera Adaptations collection"
+    },
+    {
+      "name": "Dance-Centered Productions",
+      "url_path": "dance-centered-productions",
+      "description": "Dance-Centered Productions collection",
+      "category": "musical",
+      "connectionReason": "Part of Dance-Centered Productions collection"
+    },
+    {
+      "name": "Identity Transformation Stories",
+      "url_path": "identity-transformation-stories",
+      "description": "Identity Transformation Stories collection",
+      "category": "musical",
+      "connectionReason": "Part of Identity Transformation Stories collection"
+    }
+  ],
+  "totalLists": 7
+}

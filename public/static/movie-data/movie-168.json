@@ -1,0 +1,164 @@
+{
+  "movieId": "c553cf84-6c10-483a-aa76-4a9315588152",
+  "tmdbId": 168,
+  "title": "Star Trek IV: The Voyage Home",
+  "year": 1986,
+  "analysis": {
+    "keyElements": {
+      "director": "Leonard Nimoy",
+      "writers": [
+        "Leonard Nimoy",
+        "Harve Bennett",
+        "Steve Meerson",
+        "Peter Krikes"
+      ],
+      "stars": [
+        "William Shatner",
+        "Leonard Nimoy",
+        "DeForest Kelley",
+        "Catherine Hicks"
+      ],
+      "genre": "Science Fiction",
+      "releaseYear": 1986,
+      "cinematographer": "Don Peterman",
+      "composer": "Leonard Rosenman",
+      "studio": "Paramount Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Perfect blend of science fiction adventure and light-hearted comedy",
+        "Strong environmental message that remains relevant today",
+        "Most accessible Star Trek film for general audiences with universal appeal"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Star Trek III: The Search for Spock",
+        "year": 1984,
+        "description": "Direct predecessor establishing character dynamics"
+      },
+      {
+        "title": "Back to the Future",
+        "year": 1985,
+        "description": "Contemporary time travel narrative with similar fish-out-of-water humor"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Environmental Themes in Science Fiction",
+        "category": "Film Analysis",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Comedy in Science Fiction",
+        "category": "Genre Studies",
+        "difficulty": "Basic"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Leonard Nimoy",
+      "personId": 22227,
+      "slug": "/person/22227",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Leonard Nimoy",
+        "personId": 22227,
+        "slug": "/person/22227",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Harve Bennett",
+        "personId": 13860,
+        "slug": "/person/13860",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Steve Meerson",
+        "personId": 34957,
+        "slug": "/person/34957",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Peter Krikes",
+        "personId": 29386,
+        "slug": "/person/29386",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Nicholas Meyer",
+        "personId": 27432,
+        "slug": "/person/27432",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "William Shatner",
+        "personId": 38631,
+        "slug": "/person/38631",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Leonard Nimoy",
+        "personId": 22227,
+        "slug": "/person/22227",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "DeForest Kelley",
+        "personId": 8374,
+        "slug": "/person/8374",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Catherine Hicks",
+        "personId": 5208,
+        "slug": "/person/5208",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Don Peterman",
+      "personId": 9060,
+      "slug": "/person/9060",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Leonard Rosenman",
+      "personId": 22243,
+      "slug": "/person/22243",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:00.354Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

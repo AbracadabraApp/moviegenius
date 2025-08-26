@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Mountain Wilderness Thrillers",
+      "url_path": "mountain-wilderness-thrillers",
+      "description": "Mountain Wilderness Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Mountain Wilderness Thrillers collection"
+    },
+    {
+      "name": "Military Heist Thrillers",
+      "url_path": "military-heist-thrillers",
+      "description": "Military Heist Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Military Heist Thrillers collection"
+    },
+    {
+      "name": "One Night Thrillers (Part 2)",
+      "url_path": "one-night-thrillers-part-2-",
+      "description": "One Night Thrillers (Part 2) collection",
+      "category": "thriller",
+      "connectionReason": "Part of One Night Thrillers (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

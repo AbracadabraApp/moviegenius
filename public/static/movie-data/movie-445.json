@@ -1,0 +1,130 @@
+{
+  "movieId": "1af7c37a-3c78-478d-adb3-77b9e0312e8c",
+  "tmdbId": 445,
+  "title": "Caché",
+  "year": 2005,
+  "analysis": {
+    "keyElements": {
+      "director": "Michael Haneke",
+      "writers": [
+        "Michael Haneke"
+      ],
+      "stars": [
+        "Daniel Auteuil",
+        "Juliette Binoche",
+        "Maurice Bénichou"
+      ],
+      "genre": "Psychological Thriller",
+      "releaseYear": 2005,
+      "cinematographer": "Christian Berger",
+      "composer": "N/A",
+      "studio": "Les Films du Losange"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful exploration of guilt, surveillance, and colonial legacy",
+        "Intricate psychological mystery that demands viewer engagement",
+        "Revolutionary use of static camera shots that challenge perception"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The White Ribbon",
+        "year": 2009,
+        "description": "Another Haneke masterwork examining historical guilt and violence"
+      },
+      {
+        "title": "The Lives of Others",
+        "year": 2006,
+        "description": "Thematically linked exploration of surveillance and moral responsibility"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "French Colonial History",
+        "category": "Historical Context",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Surveillance in Cinema",
+        "category": "Film Theory",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Unreliable Narration",
+        "category": "Narrative Theory",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Michael Haneke",
+      "personId": 25692,
+      "slug": "/person/25692",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Michael Haneke",
+        "personId": 25692,
+        "slug": "/person/25692",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Daniel Auteuil",
+        "personId": 7185,
+        "slug": "/person/7185",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Juliette Binoche",
+        "personId": 19747,
+        "slug": "/person/19747",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Maurice Bénichou",
+        "personId": 25088,
+        "slug": "/person/25088",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Christian Berger",
+      "personId": 6036,
+      "slug": "/person/6036",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "None",
+      "personId": 27810,
+      "slug": "/person/27810",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:38.236Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

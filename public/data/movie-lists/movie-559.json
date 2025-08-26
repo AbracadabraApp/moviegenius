@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Classic Comic Heroes",
+      "url_path": "classic-comic-heroes",
+      "description": "Classic Comic Heroes collection",
+      "category": "superhero",
+      "connectionReason": "Part of Classic Comic Heroes collection"
+    },
+    {
+      "name": "Superhero Last Chapters",
+      "url_path": "superhero-last-chapters",
+      "description": "Superhero Last Chapters collection",
+      "category": "superhero",
+      "connectionReason": "Part of Superhero Last Chapters collection"
+    },
+    {
+      "name": "Philosophical Superhero Stories",
+      "url_path": "philosophical-superhero-stories",
+      "description": "Philosophical Superhero Stories collection",
+      "category": "superhero",
+      "connectionReason": "Part of Philosophical Superhero Stories collection"
+    },
+    {
+      "name": "Redemption Arc Heroes",
+      "url_path": "redemption-arc-heroes",
+      "description": "Redemption Arc Heroes collection",
+      "category": "superhero",
+      "connectionReason": "Part of Redemption Arc Heroes collection"
+    }
+  ],
+  "totalLists": 4
+}

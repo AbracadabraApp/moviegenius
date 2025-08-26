@@ -1,0 +1,140 @@
+{
+  "movieId": "a333ae19-3640-4cbc-ae9e-d7a467653e2d",
+  "tmdbId": 228,
+  "title": "The Blue Angel",
+  "year": 1930,
+  "analysis": {
+    "keyElements": {
+      "director": "Josef von Sternberg",
+      "writers": [
+        "Heinrich Mann",
+        "Carl Zuckmayer",
+        "Karl Vollmöller"
+      ],
+      "stars": [
+        "Emil Jannings",
+        "Marlene Dietrich"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1930,
+      "cinematographer": "Günther Rittau",
+      "composer": "Friedrich Hollaender",
+      "studio": "UFA"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Marlene Dietrich's breakthrough performance defines screen presence and femme fatale archetype",
+        "Masterful exploration of social decline and psychological deterioration",
+        "Pioneering achievement in early sound cinema that influenced film noir"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Morocco",
+        "year": 1930,
+        "description": "Dietrich's Hollywood debut, also directed by von Sternberg"
+      },
+      {
+        "title": "Sunset Boulevard",
+        "year": 1950,
+        "description": "Similar themes of performance and degradation"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Weimar Cinema",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Early Sound Film Transition",
+        "category": "Technical Evolution",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Josef von Sternberg",
+      "personId": 19143,
+      "slug": "/person/19143",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Carl Zuckmayer",
+        "personId": 5036,
+        "slug": "/person/5036",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Heinrich Mann",
+        "personId": 13990,
+        "slug": "/person/13990",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Karl Vollmöller",
+        "personId": 20165,
+        "slug": "/person/20165",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Emil Jannings",
+        "personId": 10175,
+        "slug": "/person/10175",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Marlene Dietrich",
+        "personId": 24479,
+        "slug": "/person/24479",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Kurt Gerron",
+        "personId": 21494,
+        "slug": "/person/21494",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Günther Rittau",
+      "personId": 13323,
+      "slug": "/person/13323",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Friedrich Hollaender",
+      "personId": 11740,
+      "slug": "/person/11740",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:10.484Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

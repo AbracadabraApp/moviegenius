@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Exploitation Cinema Homage",
+      "url_path": "exploitation-cinema-homage",
+      "description": "Exploitation Cinema Homage collection",
+      "category": "horror",
+      "connectionReason": "Part of Exploitation Cinema Homage collection"
+    },
+    {
+      "name": "Torture Cinema",
+      "url_path": "torture-cinema",
+      "description": "Torture Cinema collection",
+      "category": "horror",
+      "connectionReason": "Part of Torture Cinema collection"
+    },
+    {
+      "name": "Murderous Family Horror",
+      "url_path": "murderous-family-horror",
+      "description": "Murderous Family Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Murderous Family Horror collection"
+    },
+    {
+      "name": "Extreme Gore Horror (Part 2)",
+      "url_path": "extreme-gore-horror-part-2-",
+      "description": "Extreme Gore Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Extreme Gore Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

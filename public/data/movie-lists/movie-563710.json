@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Unlikely Hero Stories",
+      "url_path": "unlikely-hero-stories",
+      "description": "Unlikely Hero Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Unlikely Hero Stories collection"
+    },
+    {
+      "name": "European-Set Animations",
+      "url_path": "european-set-animations",
+      "description": "European-Set Animations collection",
+      "category": "animation",
+      "connectionReason": "Part of European-Set Animations collection"
+    },
+    {
+      "name": "Holiday Special Animations",
+      "url_path": "holiday-special-animations",
+      "description": "Holiday Special Animations collection",
+      "category": "animation",
+      "connectionReason": "Part of Holiday Special Animations collection"
+    }
+  ],
+  "totalLists": 3
+}

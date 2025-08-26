@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "AI Horror",
+      "url_path": "ai-horror",
+      "description": "AI Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of AI Horror collection"
+    },
+    {
+      "name": "Scientific Creation Horror",
+      "url_path": "scientific-creation-horror",
+      "description": "Scientific Creation Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Scientific Creation Horror collection"
+    },
+    {
+      "name": "Modern Suburban Horror (Part 2)",
+      "url_path": "modern-suburban-horror-part-2-",
+      "description": "Modern Suburban Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Modern Suburban Horror (Part 2) collection"
+    },
+    {
+      "name": "Urban Fantasy SciFi (Part 2)",
+      "url_path": "urban-fantasy-scifi-part-2-",
+      "description": "Urban Fantasy SciFi (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Urban Fantasy SciFi (Part 2) collection"
+    },
+    {
+      "name": "Corporate Science Horror (Part 2)",
+      "url_path": "corporate-science-horror-part-2-",
+      "description": "Corporate Science Horror (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Corporate Science Horror (Part 2) collection"
+    },
+    {
+      "name": "Artificial Life Evolution (Part 1)",
+      "url_path": "artificial-life-evolution-part-1-",
+      "description": "Artificial Life Evolution (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Artificial Life Evolution (Part 1) collection"
+    }
+  ],
+  "totalLists": 6
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Live-Action Animal Adventures",
+      "url_path": "live-action-animal-adventures",
+      "description": "Live-Action Animal Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Live-Action Animal Adventures collection"
+    },
+    {
+      "name": "Sports Fan Adventures",
+      "url_path": "sports-fan-adventures",
+      "description": "Sports Fan Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Sports Fan Adventures collection"
+    },
+    {
+      "name": "Pet Adventure Comedies (Part 1)",
+      "url_path": "pet-adventure-comedies-part-1-",
+      "description": "Pet Adventure Comedies (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Pet Adventure Comedies (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Modern War on Terror",
+      "url_path": "modern-war-on-terror",
+      "description": "Modern War on Terror collection",
+      "category": "war",
+      "connectionReason": "Part of Modern War on Terror collection"
+    },
+    {
+      "name": "Home Front Disconnect",
+      "url_path": "home-front-disconnect",
+      "description": "Home Front Disconnect collection",
+      "category": "war",
+      "connectionReason": "Part of Home Front Disconnect collection"
+    },
+    {
+      "name": "Strategic Command Decisions",
+      "url_path": "strategic-command-decisions",
+      "description": "Strategic Command Decisions collection",
+      "category": "war",
+      "connectionReason": "Part of Strategic Command Decisions collection"
+    },
+    {
+      "name": "Multiple Timeline Narratives",
+      "url_path": "multiple-timeline-narratives",
+      "description": "Multiple Timeline Narratives collection",
+      "category": "war",
+      "connectionReason": "Part of Multiple Timeline Narratives collection"
+    }
+  ],
+  "totalLists": 4
+}

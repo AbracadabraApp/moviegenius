@@ -1,0 +1,132 @@
+{
+  "movieId": "a96c498b-dd3e-4919-bd13-74c1956366d0",
+  "tmdbId": 480,
+  "title": "Monsoon Wedding",
+  "year": 2001,
+  "analysis": {
+    "keyElements": {
+      "director": "Mira Nair",
+      "writers": [
+        "Sabrina Dhawan"
+      ],
+      "stars": [
+        "Naseeruddin Shah",
+        "Lillete Dubey",
+        "Shefali Shah"
+      ],
+      "genre": "Comedy-Drama",
+      "releaseYear": 2001,
+      "cinematographer": "Declan Quinn",
+      "composer": "Mychael Danna",
+      "studio": "Mirabai Films"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of traditional Indian culture with modern global sensibilities",
+        "Rich, vibrant celebration of family dynamics with universal emotional resonance",
+        "Beautifully crafted ensemble storytelling that balances joy and serious themes"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Namesake",
+        "year": 2006,
+        "description": "Another Mira Nair masterpiece exploring Indian-American identity"
+      },
+      {
+        "title": "Crazy Rich Asians",
+        "year": 2018,
+        "description": "Modern exploration of tradition and love in Asian culture"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Indian Cinema in Global Context",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Wedding Films as Social Commentary",
+        "category": "Genre Studies",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Mira Nair",
+      "personId": 26517,
+      "slug": "/person/26517",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Sabrina Dhawan",
+        "personId": 32836,
+        "slug": "/person/32836",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Naseeruddin Shah",
+        "personId": 27118,
+        "slug": "/person/27118",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Lillete Dubey",
+        "personId": 22523,
+        "slug": "/person/22523",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Shefali Shah",
+        "personId": 33873,
+        "slug": "/person/33873",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Vasundhara Das",
+        "personId": 37474,
+        "slug": "/person/37474",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Declan Quinn",
+      "personId": 8356,
+      "slug": "/person/8356",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Mychael Danna",
+      "personId": 26938,
+      "slug": "/person/26938",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:41.782Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

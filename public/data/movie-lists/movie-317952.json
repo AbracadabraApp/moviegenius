@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Crime & Investigation",
+      "url_path": "crime-investigation",
+      "description": "Crime & Investigation collection",
+      "category": "documentary",
+      "connectionReason": "Part of Crime & Investigation collection"
+    },
+    {
+      "name": "Border Region Documentaries",
+      "url_path": "border-region-documentaries",
+      "description": "Border Region Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Border Region Documentaries collection"
+    },
+    {
+      "name": "True Crime Hybrid Films",
+      "url_path": "true-crime-hybrid-films",
+      "description": "True Crime Hybrid Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of True Crime Hybrid Films collection"
+    }
+  ],
+  "totalLists": 3
+}

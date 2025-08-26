@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Environmental Travel Films",
+      "url_path": "environmental-travel-films",
+      "description": "Environmental Travel Films collection",
+      "category": "adventure",
+      "connectionReason": "Part of Environmental Travel Films collection"
+    },
+    {
+      "name": "CGI Spectacle Adventures [OVERSIZED]",
+      "url_path": "cgi-spectacle-adventures-oversized-",
+      "description": "CGI Spectacle Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of CGI Spectacle Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Animal Journey Adventures [OVERSIZED]",
+      "url_path": "animal-journey-adventures-oversized-",
+      "description": "Animal Journey Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Animal Journey Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Coming-of-Age Animation",
+      "url_path": "coming-of-age-animation",
+      "description": "Coming-of-Age Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Coming-of-Age Animation collection"
+    },
+    {
+      "name": "Unlikely Hero Stories",
+      "url_path": "unlikely-hero-stories",
+      "description": "Unlikely Hero Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Unlikely Hero Stories collection"
+    },
+    {
+      "name": "Environmental Conservation Animation",
+      "url_path": "environmental-conservation-animation",
+      "description": "Environmental Conservation Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Environmental Conservation Animation collection"
+    }
+  ],
+  "totalLists": 6
+}

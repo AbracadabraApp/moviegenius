@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Stop Motion Classics",
+      "url_path": "stop-motion-classics",
+      "description": "Stop Motion Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Stop Motion Classics collection"
+    },
+    {
+      "name": "Grief and Loss Stories",
+      "url_path": "grief-and-loss-stories",
+      "description": "Grief and Loss Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Grief and Loss Stories collection"
+    },
+    {
+      "name": "Holiday Special Animations",
+      "url_path": "holiday-special-animations",
+      "description": "Holiday Special Animations collection",
+      "category": "animation",
+      "connectionReason": "Part of Holiday Special Animations collection"
+    },
+    {
+      "name": "Musical Education Animation",
+      "url_path": "musical-education-animation",
+      "description": "Musical Education Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Musical Education Animation collection"
+    }
+  ],
+  "totalLists": 4
+}

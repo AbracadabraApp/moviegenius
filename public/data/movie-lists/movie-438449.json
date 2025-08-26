@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Mental Health Care Innovation",
+      "url_path": "mental-health-care-innovation",
+      "description": "Mental Health Care Innovation collection",
+      "category": "documentary",
+      "connectionReason": "Part of Mental Health Care Innovation collection"
+    },
+    {
+      "name": "Prison Reform Documentaries",
+      "url_path": "prison-reform-documentaries",
+      "description": "Prison Reform Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Prison Reform Documentaries collection"
+    },
+    {
+      "name": "Social Experiment Documentaries",
+      "url_path": "social-experiment-documentaries",
+      "description": "Social Experiment Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Social Experiment Documentaries collection"
+    }
+  ],
+  "totalLists": 3
+}

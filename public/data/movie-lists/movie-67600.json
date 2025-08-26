@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Americana Nostalgia Films",
+      "url_path": "americana-nostalgia-films",
+      "description": "Americana Nostalgia Films collection",
+      "category": "animation",
+      "connectionReason": "Part of Americana Nostalgia Films collection"
+    },
+    {
+      "name": "Inventive Duo Adventures",
+      "url_path": "inventive-duo-adventures",
+      "description": "Inventive Duo Adventures collection",
+      "category": "animation",
+      "connectionReason": "Part of Inventive Duo Adventures collection"
+    },
+    {
+      "name": "Absurdist Comedy Animation",
+      "url_path": "absurdist-comedy-animation",
+      "description": "Absurdist Comedy Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Absurdist Comedy Animation collection"
+    }
+  ],
+  "totalLists": 3
+}

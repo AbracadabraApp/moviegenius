@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Books Come Alive",
+      "url_path": "books-come-alive",
+      "description": "Books Come Alive collection",
+      "category": "adventure",
+      "connectionReason": "Part of Books Come Alive collection"
+    },
+    {
+      "name": "Monster Sympathy Stories",
+      "url_path": "monster-sympathy-stories",
+      "description": "Monster Sympathy Stories collection",
+      "category": "adventure",
+      "connectionReason": "Part of Monster Sympathy Stories collection"
+    },
+    {
+      "name": "CGI Spectacle Adventures [OVERSIZED]",
+      "url_path": "cgi-spectacle-adventures-oversized-",
+      "description": "CGI Spectacle Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of CGI Spectacle Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Magical Coming-of-Age Stories [OVERSIZED]",
+      "url_path": "magical-coming-of-age-stories-oversized-",
+      "description": "Magical Coming-of-Age Stories [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Magical Coming-of-Age Stories [OVERSIZED] collection"
+    },
+    {
+      "name": "Modern Magical Realism [OVERSIZED]",
+      "url_path": "modern-magical-realism-oversized-",
+      "description": "Modern Magical Realism [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Modern Magical Realism [OVERSIZED] collection"
+    },
+    {
+      "name": "Magical Creature Protection [OVERSIZED]",
+      "url_path": "magical-creature-protection-oversized-",
+      "description": "Magical Creature Protection [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Magical Creature Protection [OVERSIZED] collection"
+    },
+    {
+      "name": "Dark Fairy Tale Retellings [OVERSIZED]",
+      "url_path": "dark-fairy-tale-retellings-oversized-",
+      "description": "Dark Fairy Tale Retellings [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Dark Fairy Tale Retellings [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 7
+}

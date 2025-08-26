@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Family Tech Comedy",
+      "url_path": "family-tech-comedy",
+      "description": "Family Tech Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Family Tech Comedy collection"
+    },
+    {
+      "name": "Inventor Comedy Adventures",
+      "url_path": "inventor-comedy-adventures",
+      "description": "Inventor Comedy Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Inventor Comedy Adventures collection"
+    },
+    {
+      "name": "Scientific Facility Mayhem (Part 1)",
+      "url_path": "scientific-facility-mayhem-part-1-",
+      "description": "Scientific Facility Mayhem (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Scientific Facility Mayhem (Part 1) collection"
+    },
+    {
+      "name": "Near-Future Tech Consequences",
+      "url_path": "near-future-tech-consequences",
+      "description": "Near-Future Tech Consequences collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Near-Future Tech Consequences collection"
+    },
+    {
+      "name": "Tech Society Consequences (Part 1)",
+      "url_path": "tech-society-consequences-part-1-",
+      "description": "Tech Society Consequences (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Tech Society Consequences (Part 1) collection"
+    },
+    {
+      "name": "Retro SciFi Comedy (Part 1)",
+      "url_path": "retro-scifi-comedy-part-1-",
+      "description": "Retro SciFi Comedy (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro SciFi Comedy (Part 1) collection"
+    }
+  ],
+  "totalLists": 6
+}

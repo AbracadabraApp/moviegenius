@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Media Exploitation Thrillers",
+      "url_path": "media-exploitation-thrillers",
+      "description": "Media Exploitation Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Media Exploitation Thrillers collection"
+    },
+    {
+      "name": "French Bourgeois Thrillers",
+      "url_path": "french-bourgeois-thrillers",
+      "description": "French Bourgeois Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of French Bourgeois Thrillers collection"
+    },
+    {
+      "name": "Industrial Espionage Thrillers",
+      "url_path": "industrial-espionage-thrillers",
+      "description": "Industrial Espionage Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Industrial Espionage Thrillers collection"
+    },
+    {
+      "name": "Tech Industry Conspiracy (Part 1)",
+      "url_path": "tech-industry-conspiracy-part-1-",
+      "description": "Tech Industry Conspiracy (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Tech Industry Conspiracy (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

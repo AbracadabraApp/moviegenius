@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Celebrity & Biography",
+      "url_path": "celebrity-biography",
+      "description": "Celebrity & Biography collection",
+      "category": "documentary",
+      "connectionReason": "Part of Celebrity & Biography collection"
+    },
+    {
+      "name": "1970s Cultural Retrospectives (Part 2)",
+      "url_path": "1970s-cultural-retrospectives-part-2-",
+      "description": "1970s Cultural Retrospectives (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of 1970s Cultural Retrospectives (Part 2) collection"
+    },
+    {
+      "name": "Urban Subculture Studies (Part 1)",
+      "url_path": "urban-subculture-studies-part-1-",
+      "description": "Urban Subculture Studies (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Urban Subculture Studies (Part 1) collection"
+    },
+    {
+      "name": "Industrial Work Documentation (Part 1)",
+      "url_path": "industrial-work-documentation-part-1-",
+      "description": "Industrial Work Documentation (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Industrial Work Documentation (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

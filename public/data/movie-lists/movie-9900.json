@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Video Game Adaptations",
+      "url_path": "video-game-adaptations",
+      "description": "Video Game Adaptations collection",
+      "category": "comedy",
+      "connectionReason": "Part of Video Game Adaptations collection"
+    },
+    {
+      "name": "Tech Industry Satires",
+      "url_path": "tech-industry-satires",
+      "description": "Tech Industry Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Tech Industry Satires collection"
+    },
+    {
+      "name": "Cross-Generational Living Comedy",
+      "url_path": "cross-generational-living-comedy",
+      "description": "Cross-Generational Living Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Generational Living Comedy collection"
+    }
+  ],
+  "totalLists": 3
+}

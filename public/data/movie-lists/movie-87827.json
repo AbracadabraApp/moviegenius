@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Supernatural Animal Tales",
+      "url_path": "supernatural-animal-tales",
+      "description": "Supernatural Animal Tales collection",
+      "category": "adventure",
+      "connectionReason": "Part of Supernatural Animal Tales collection"
+    },
+    {
+      "name": "CGI Spectacle Adventures [OVERSIZED]",
+      "url_path": "cgi-spectacle-adventures-oversized-",
+      "description": "CGI Spectacle Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of CGI Spectacle Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Golden Age Sea Adventures [OVERSIZED]",
+      "url_path": "golden-age-sea-adventures-oversized-",
+      "description": "Golden Age Sea Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Golden Age Sea Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "True Survival Stories [OVERSIZED]",
+      "url_path": "true-survival-stories-oversized-",
+      "description": "True Survival Stories [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of True Survival Stories [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

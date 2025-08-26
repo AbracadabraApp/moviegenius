@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Home Invasion Horror",
+      "url_path": "home-invasion-horror",
+      "description": "Home Invasion Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Home Invasion Horror collection"
+    },
+    {
+      "name": "Survival Horror",
+      "url_path": "survival-horror",
+      "description": "Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Survival Horror collection"
+    },
+    {
+      "name": "Modern Suburban Horror (Part 6)",
+      "url_path": "modern-suburban-horror-part-6-",
+      "description": "Modern Suburban Horror (Part 6) collection",
+      "category": "horror",
+      "connectionReason": "Part of Modern Suburban Horror (Part 6) collection"
+    },
+    {
+      "name": "Social Commentary Horror (Part 3)",
+      "url_path": "social-commentary-horror-part-3-",
+      "description": "Social Commentary Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Social Commentary Horror (Part 3) collection"
+    },
+    {
+      "name": "Societal Breakdown Violence",
+      "url_path": "societal-breakdown-violence",
+      "description": "Societal Breakdown Violence collection",
+      "category": "thriller",
+      "connectionReason": "Part of Societal Breakdown Violence collection"
+    },
+    {
+      "name": "Single Location Survival (Part 5)",
+      "url_path": "single-location-survival-part-5-",
+      "description": "Single Location Survival (Part 5) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Single Location Survival (Part 5) collection"
+    }
+  ],
+  "totalLists": 6
+}

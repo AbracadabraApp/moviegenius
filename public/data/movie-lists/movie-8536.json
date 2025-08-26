@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Fish-Out-of-Water",
+      "url_path": "fish-out-of-water",
+      "description": "Fish-Out-of-Water collection",
+      "category": "adventure",
+      "connectionReason": "Part of Fish-Out-of-Water collection"
+    },
+    {
+      "name": "Legacy Hero Inheritance [OVERSIZED]",
+      "url_path": "legacy-hero-inheritance-oversized-",
+      "description": "Legacy Hero Inheritance [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Legacy Hero Inheritance [OVERSIZED] collection"
+    },
+    {
+      "name": "Classic Comic Heroes",
+      "url_path": "classic-comic-heroes",
+      "description": "Classic Comic Heroes collection",
+      "category": "superhero",
+      "connectionReason": "Part of Classic Comic Heroes collection"
+    },
+    {
+      "name": "Philosophical Superhero Stories",
+      "url_path": "philosophical-superhero-stories",
+      "description": "Philosophical Superhero Stories collection",
+      "category": "superhero",
+      "connectionReason": "Part of Philosophical Superhero Stories collection"
+    },
+    {
+      "name": "Romantic Superhero Stories",
+      "url_path": "romantic-superhero-stories",
+      "description": "Romantic Superhero Stories collection",
+      "category": "superhero",
+      "connectionReason": "Part of Romantic Superhero Stories collection"
+    }
+  ],
+  "totalLists": 5
+}

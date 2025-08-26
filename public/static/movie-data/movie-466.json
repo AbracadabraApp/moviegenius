@@ -1,0 +1,128 @@
+{
+  "movieId": "00e4f418-2737-422b-b823-926af514bc43",
+  "tmdbId": 466,
+  "title": "Klute",
+  "year": 1971,
+  "analysis": {
+    "keyElements": {
+      "director": "Alan J. Pakula",
+      "writers": [
+        "Andy Lewis",
+        "Dave Lewis"
+      ],
+      "stars": [
+        "Jane Fonda",
+        "Donald Sutherland",
+        "Charles Cioffi"
+      ],
+      "genre": "Neo-noir thriller",
+      "releaseYear": 1971,
+      "cinematographer": "Gordon Willis",
+      "composer": "Michael Small",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Jane Fonda's Oscar-winning performance as Bree Daniels remains a masterclass in complex character portrayal",
+        "Gordon Willis's innovative noir cinematography defined 1970s urban paranoia",
+        "The film masterfully blends psychological thriller elements with character study depth"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Parallax View",
+        "year": 1974,
+        "description": "Pakula's follow-up thriller exploring similar themes of paranoia and surveillance"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Neo-noir aesthetics",
+        "category": "cinematography",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "1970s paranoid thrillers",
+        "category": "film_history",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Alan J. Pakula",
+      "personId": 591,
+      "slug": "/person/591",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Andy Lewis",
+        "personId": 1861,
+        "slug": "/person/1861",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Dave Lewis",
+        "personId": 7605,
+        "slug": "/person/7605",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Jane Fonda",
+        "personId": 16080,
+        "slug": "/person/16080",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Donald Sutherland",
+        "personId": 8935,
+        "slug": "/person/8935",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Charles Cioffi",
+        "personId": 5420,
+        "slug": "/person/5420",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Gordon Willis",
+      "personId": 13018,
+      "slug": "/person/13018",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Michael Small",
+      "personId": 25951,
+      "slug": "/person/25951",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:40.102Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

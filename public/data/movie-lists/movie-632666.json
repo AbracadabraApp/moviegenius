@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Cross-Country Adventure",
+      "url_path": "cross-country-adventure",
+      "description": "Cross-Country Adventure collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Country Adventure collection"
+    },
+    {
+      "name": "Female Friendship Stories",
+      "url_path": "female-friendship-stories",
+      "description": "Female Friendship Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Female Friendship Stories collection"
+    },
+    {
+      "name": "Teen Coming-of-Age Stories",
+      "url_path": "teen-coming-of-age-stories",
+      "description": "Teen Coming-of-Age Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Teen Coming-of-Age Stories collection"
+    }
+  ],
+  "totalLists": 3
+}

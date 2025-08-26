@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Arctic Horror Films",
+      "url_path": "arctic-horror-films",
+      "description": "Arctic Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Arctic Horror Films collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 2)",
+      "url_path": "confined-space-thrillers-part-2-",
+      "description": "Confined Space Thrillers (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 2) collection"
+    },
+    {
+      "name": "Teen Slasher Horror (Part 1)",
+      "url_path": "teen-slasher-horror-part-1-",
+      "description": "Teen Slasher Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Teen Slasher Horror (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Tour Documentary Films",
+      "url_path": "tour-documentary-films",
+      "description": "Tour Documentary Films collection",
+      "category": "music",
+      "connectionReason": "Part of Tour Documentary Films collection"
+    },
+    {
+      "name": "Experimental Music Films",
+      "url_path": "experimental-music-films",
+      "description": "Experimental Music Films collection",
+      "category": "music",
+      "connectionReason": "Part of Experimental Music Films collection"
+    },
+    {
+      "name": "Music-Driven Action Films",
+      "url_path": "music-driven-action-films",
+      "description": "Music-Driven Action Films collection",
+      "category": "music",
+      "connectionReason": "Part of Music-Driven Action Films collection"
+    },
+    {
+      "name": "Performance & Concert Films",
+      "url_path": "performance-concert-films",
+      "description": "Performance & Concert Films collection",
+      "category": "music",
+      "connectionReason": "Part of Performance & Concert Films collection"
+    }
+  ],
+  "totalLists": 4
+}

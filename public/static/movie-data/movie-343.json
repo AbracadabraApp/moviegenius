@@ -1,0 +1,125 @@
+{
+  "movieId": "5318a9ca-2ce8-4509-a816-95659fa161a9",
+  "tmdbId": 343,
+  "title": "Harold and Maude",
+  "year": 1971,
+  "analysis": {
+    "keyElements": {
+      "director": "Hal Ashby",
+      "writers": [
+        "Colin Higgins"
+      ],
+      "stars": [
+        "Ruth Gordon",
+        "Bud Cort",
+        "Vivian Pickles"
+      ],
+      "genre": "Dark Comedy/Romance",
+      "releaseYear": 1971,
+      "cinematographer": "John A. Alonzo",
+      "composer": "Cat Stevens",
+      "studio": "Paramount Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of dark comedy and life-affirming philosophy that remains uniquely powerful",
+        "Career-defining performances from Ruth Gordon and Bud Cort with exceptional chemistry",
+        "Iconic Cat Stevens soundtrack that perfectly captures the film's emotional resonance"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Graduate",
+        "year": 1967,
+        "description": "Similar exploration of young adult alienation and unconventional relationships"
+      },
+      {
+        "title": "Little Miss Sunshine",
+        "year": 2006,
+        "description": "Spiritual successor in terms of dark comedy and life-affirming themes"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "New Hollywood Movement",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Dark Comedy in Cinema",
+        "category": "Genre Studies",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Hal Ashby",
+      "personId": 13470,
+      "slug": "/person/13470",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Colin Higgins",
+        "personId": 6685,
+        "slug": "/person/6685",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Ruth Gordon",
+        "personId": 32714,
+        "slug": "/person/32714",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Bud Cort",
+        "personId": 4685,
+        "slug": "/person/4685",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Vivian Pickles",
+        "personId": 37881,
+        "slug": "/person/37881",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "John A. Alonzo",
+      "personId": 17948,
+      "slug": "/person/17948",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Cat Stevens",
+      "personId": 5249,
+      "slug": "/person/5249",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:27.829Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

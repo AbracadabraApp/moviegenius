@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Media Theory Films",
+      "url_path": "media-theory-films",
+      "description": "Media Theory Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Media Theory Films collection"
+    },
+    {
+      "name": "Propaganda Cinema History",
+      "url_path": "propaganda-cinema-history",
+      "description": "Propaganda Cinema History collection",
+      "category": "documentary",
+      "connectionReason": "Part of Propaganda Cinema History collection"
+    },
+    {
+      "name": "Early Cinema Pioneers (Part 2)",
+      "url_path": "early-cinema-pioneers-part-2-",
+      "description": "Early Cinema Pioneers (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Early Cinema Pioneers (Part 2) collection"
+    },
+    {
+      "name": "Historical Trauma Testimonies (Part 1)",
+      "url_path": "historical-trauma-testimonies-part-1-",
+      "description": "Historical Trauma Testimonies (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Historical Trauma Testimonies (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

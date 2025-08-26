@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Live-Action Animal Adventures",
+      "url_path": "live-action-animal-adventures",
+      "description": "Live-Action Animal Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Live-Action Animal Adventures collection"
+    },
+    {
+      "name": "Western Life Satires",
+      "url_path": "western-life-satires",
+      "description": "Western Life Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Western Life Satires collection"
+    },
+    {
+      "name": "Fish-Out-Of-Water Comedy (Part 1)",
+      "url_path": "fish-out-of-water-comedy-part-1-",
+      "description": "Fish-Out-Of-Water Comedy (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Fish-Out-Of-Water Comedy (Part 1) collection"
+    },
+    {
+      "name": "Comedy Western Capers",
+      "url_path": "comedy-western-capers",
+      "description": "Comedy Western Capers collection",
+      "category": "western",
+      "connectionReason": "Part of Comedy Western Capers collection"
+    },
+    {
+      "name": "Fish Out Of Water",
+      "url_path": "fish-out-of-water",
+      "description": "Fish Out Of Water collection",
+      "category": "western",
+      "connectionReason": "Part of Fish Out Of Water collection"
+    }
+  ],
+  "totalLists": 5
+}

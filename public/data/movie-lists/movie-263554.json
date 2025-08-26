@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Stalker Horror",
+      "url_path": "stalker-horror",
+      "description": "Stalker Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Stalker Horror collection"
+    },
+    {
+      "name": "Noir Detective Horror (Part 2)",
+      "url_path": "noir-detective-horror-part-2-",
+      "description": "Noir Detective Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Noir Detective Horror (Part 2) collection"
+    },
+    {
+      "name": "Cursed Building Horror (Part 1)",
+      "url_path": "cursed-building-horror-part-1-",
+      "description": "Cursed Building Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Cursed Building Horror (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

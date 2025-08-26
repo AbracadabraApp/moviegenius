@@ -1,0 +1,133 @@
+{
+  "movieId": "cd604a9a-6ab1-4fad-ac90-d19ec4a4fbad",
+  "tmdbId": 319,
+  "title": "True Romance",
+  "year": 1993,
+  "analysis": {
+    "keyElements": {
+      "director": "Tony Scott",
+      "writers": [
+        "Quentin Tarantino"
+      ],
+      "stars": [
+        "Christian Slater",
+        "Patricia Arquette",
+        "Dennis Hopper",
+        "Christopher Walken"
+      ],
+      "genre": "Crime Romance",
+      "releaseYear": 1993,
+      "cinematographer": "Jeffrey L. Kimball",
+      "composer": "Hans Zimmer",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of intense violence and genuine romance with Tarantino's signature dialogue",
+        "Exceptional ensemble cast delivering unforgettable performances across multiple iconic scenes",
+        "Perfect fusion of pop culture, crime thriller elements, and sincere emotional depth"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Badlands",
+        "year": 1973,
+        "description": "Essential lovers-on-the-run predecessor that influenced True Romance's tone"
+      },
+      {
+        "title": "Wild at Heart",
+        "year": 1990,
+        "description": "Similar blend of romance, violence, and Elvis mythology"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "90s Independent Cinema",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Tarantino's Writing Style",
+        "category": "Screenwriting",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Tony Scott",
+      "personId": 36870,
+      "slug": "/person/36870",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Quentin Tarantino",
+        "personId": 30117,
+        "slug": "/person/30117",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Christian Slater",
+        "personId": 6095,
+        "slug": "/person/6095",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Patricia Arquette",
+        "personId": 28520,
+        "slug": "/person/28520",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Dennis Hopper",
+        "personId": 8471,
+        "slug": "/person/8471",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Christopher Walken",
+        "personId": 6298,
+        "slug": "/person/6298",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Jeffrey L. Kimball",
+      "personId": 16884,
+      "slug": "/person/16884",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Hans Zimmer",
+      "personId": 13632,
+      "slug": "/person/13632",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:24.483Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

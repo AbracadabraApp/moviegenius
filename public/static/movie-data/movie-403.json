@@ -1,0 +1,125 @@
+{
+  "movieId": "0d0a90e5-fdfe-487b-a433-7d294e0d9a53",
+  "tmdbId": 403,
+  "title": "Driving Miss Daisy",
+  "year": 1989,
+  "analysis": {
+    "keyElements": {
+      "director": "Bruce Beresford",
+      "writers": [
+        "Alfred Uhry"
+      ],
+      "stars": [
+        "Morgan Freeman",
+        "Jessica Tandy",
+        "Dan Aykroyd"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1989,
+      "cinematographer": "Peter James",
+      "composer": "Hans Zimmer",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Jessica Tandy and Morgan Freeman deliver masterclass performances that define character development",
+        "The film expertly chronicles changing race relations in the American South across three decades",
+        "Its intimate storytelling approach makes grand historical themes deeply personal and relatable"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "To Kill a Mockingbird",
+        "year": 1962,
+        "description": "Similar exploration of racial tensions in the American South through intimate storytelling"
+      },
+      {
+        "title": "The Help",
+        "year": 2011,
+        "description": "Influenced by Driving Miss Daisy's approach to examining race relations through personal relationships"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Civil Rights Movement in Cinema",
+        "category": "Historical Context",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Character Development Through Time",
+        "category": "Screenwriting",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Bruce Beresford",
+      "personId": 4536,
+      "slug": "/person/4536",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Alfred Uhry",
+        "personId": 1135,
+        "slug": "/person/1135",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Morgan Freeman",
+        "personId": 26765,
+        "slug": "/person/26765",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jessica Tandy",
+        "personId": 17306,
+        "slug": "/person/17306",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Dan Aykroyd",
+        "personId": 7121,
+        "slug": "/person/7121",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Peter James",
+      "personId": 29369,
+      "slug": "/person/29369",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Hans Zimmer",
+      "personId": 13632,
+      "slug": "/person/13632",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:33.502Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

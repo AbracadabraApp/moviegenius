@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Americana Nostalgia Films",
+      "url_path": "americana-nostalgia-films",
+      "description": "Americana Nostalgia Films collection",
+      "category": "animation",
+      "connectionReason": "Part of Americana Nostalgia Films collection"
+    },
+    {
+      "name": "Educational Science Animation",
+      "url_path": "educational-science-animation",
+      "description": "Educational Science Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Educational Science Animation collection"
+    },
+    {
+      "name": "Musical Education Animation",
+      "url_path": "musical-education-animation",
+      "description": "Musical Education Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Musical Education Animation collection"
+    }
+  ],
+  "totalLists": 3
+}

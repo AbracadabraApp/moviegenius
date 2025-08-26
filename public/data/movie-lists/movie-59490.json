@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Ancient Art Discovery",
+      "url_path": "ancient-art-discovery",
+      "description": "Ancient Art Discovery collection",
+      "category": "documentary",
+      "connectionReason": "Part of Ancient Art Discovery collection"
+    },
+    {
+      "name": "Early Cinema Pioneers (Part 1)",
+      "url_path": "early-cinema-pioneers-part-1-",
+      "description": "Early Cinema Pioneers (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Early Cinema Pioneers (Part 1) collection"
+    },
+    {
+      "name": "Visual Nature Symphonies (Part 1)",
+      "url_path": "visual-nature-symphonies-part-1-",
+      "description": "Visual Nature Symphonies (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Visual Nature Symphonies (Part 1) collection"
+    },
+    {
+      "name": "Global Cultural Meditations (Part 1)",
+      "url_path": "global-cultural-meditations-part-1-",
+      "description": "Global Cultural Meditations (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Cultural Meditations (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

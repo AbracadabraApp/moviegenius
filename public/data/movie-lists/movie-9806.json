@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Found Family Stories",
+      "url_path": "found-family-stories",
+      "description": "Found Family Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Found Family Stories collection"
+    },
+    {
+      "name": "Social Satire Animation",
+      "url_path": "social-satire-animation",
+      "description": "Social Satire Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Social Satire Animation collection"
+    },
+    {
+      "name": "Corporate Culture Critique",
+      "url_path": "corporate-culture-critique",
+      "description": "Corporate Culture Critique collection",
+      "category": "animation",
+      "connectionReason": "Part of Corporate Culture Critique collection"
+    },
+    {
+      "name": "Superhero Genre Subversions",
+      "url_path": "superhero-genre-subversions",
+      "description": "Superhero Genre Subversions collection",
+      "category": "animation",
+      "connectionReason": "Part of Superhero Genre Subversions collection"
+    },
+    {
+      "name": "Superhero Coming-of-Age",
+      "url_path": "superhero-coming-of-age",
+      "description": "Superhero Coming-of-Age collection",
+      "category": "superhero",
+      "connectionReason": "Part of Superhero Coming-of-Age collection"
+    },
+    {
+      "name": "Legacy and Succession",
+      "url_path": "legacy-and-succession",
+      "description": "Legacy and Succession collection",
+      "category": "superhero",
+      "connectionReason": "Part of Legacy and Succession collection"
+    },
+    {
+      "name": "Found Family Heroes",
+      "url_path": "found-family-heroes",
+      "description": "Found Family Heroes collection",
+      "category": "superhero",
+      "connectionReason": "Part of Found Family Heroes collection"
+    }
+  ],
+  "totalLists": 7
+}

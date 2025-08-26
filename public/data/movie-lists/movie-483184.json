@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Small Business Murder",
+      "url_path": "small-business-murder",
+      "description": "Small Business Murder collection",
+      "category": "crime",
+      "connectionReason": "Part of Small Business Murder collection"
+    },
+    {
+      "name": "Criminal Intimidation Stories",
+      "url_path": "criminal-intimidation-stories",
+      "description": "Criminal Intimidation Stories collection",
+      "category": "crime",
+      "connectionReason": "Part of Criminal Intimidation Stories collection"
+    },
+    {
+      "name": "Social Inequality Crime (Part 1)",
+      "url_path": "social-inequality-crime-part-1-",
+      "description": "Social Inequality Crime (Part 1) collection",
+      "category": "crime",
+      "connectionReason": "Part of Social Inequality Crime (Part 1) collection"
+    },
+    {
+      "name": "European Crime Films (Part 1)",
+      "url_path": "european-crime-films-part-1-",
+      "description": "European Crime Films (Part 1) collection",
+      "category": "crime",
+      "connectionReason": "Part of European Crime Films (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

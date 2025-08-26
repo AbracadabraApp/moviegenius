@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "name": "Ancient Art Discovery",
+      "url_path": "ancient-art-discovery",
+      "description": "Ancient Art Discovery collection",
+      "category": "documentary",
+      "connectionReason": "Part of Ancient Art Discovery collection"
+    },
+    {
+      "name": "Cultural Heritage Studies",
+      "url_path": "cultural-heritage-studies",
+      "description": "Cultural Heritage Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cultural Heritage Studies collection"
+    }
+  ],
+  "totalLists": 2
+}

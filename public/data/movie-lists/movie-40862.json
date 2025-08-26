@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Modern Combat Experience",
+      "url_path": "modern-combat-experience",
+      "description": "Modern Combat Experience collection",
+      "category": "documentary",
+      "connectionReason": "Part of Modern Combat Experience collection"
+    },
+    {
+      "name": "Underground Journalism Stories",
+      "url_path": "underground-journalism-stories",
+      "description": "Underground Journalism Stories collection",
+      "category": "documentary",
+      "connectionReason": "Part of Underground Journalism Stories collection"
+    },
+    {
+      "name": "Corporate Fraud Exposés",
+      "url_path": "corporate-fraud-expos-s",
+      "description": "Corporate Fraud Exposés collection",
+      "category": "documentary",
+      "connectionReason": "Part of Corporate Fraud Exposés collection"
+    }
+  ],
+  "totalLists": 3
+}

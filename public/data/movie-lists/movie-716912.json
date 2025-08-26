@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "True Crime Hybrid Films",
+      "url_path": "true-crime-hybrid-films",
+      "description": "True Crime Hybrid Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of True Crime Hybrid Films collection"
+    },
+    {
+      "name": "TV Production Chronicles",
+      "url_path": "tv-production-chronicles",
+      "description": "TV Production Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of TV Production Chronicles collection"
+    },
+    {
+      "name": "Urban Life Studies",
+      "url_path": "urban-life-studies",
+      "description": "Urban Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Urban Life Studies collection"
+    }
+  ],
+  "totalLists": 3
+}

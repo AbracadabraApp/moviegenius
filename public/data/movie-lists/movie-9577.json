@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Sports & Athletes",
+      "url_path": "sports-athletes",
+      "description": "Sports & Athletes collection",
+      "category": "documentary",
+      "connectionReason": "Part of Sports & Athletes collection"
+    },
+    {
+      "name": "Historic Mountain Expeditions",
+      "url_path": "historic-mountain-expeditions",
+      "description": "Historic Mountain Expeditions collection",
+      "category": "documentary",
+      "connectionReason": "Part of Historic Mountain Expeditions collection"
+    },
+    {
+      "name": "Extreme Sports Documentaries (Part 3)",
+      "url_path": "extreme-sports-documentaries-part-3-",
+      "description": "Extreme Sports Documentaries (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Extreme Sports Documentaries (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

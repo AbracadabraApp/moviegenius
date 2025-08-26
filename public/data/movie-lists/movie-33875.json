@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Animated Gadget Adventures",
+      "url_path": "animated-gadget-adventures",
+      "description": "Animated Gadget Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Animated Gadget Adventures collection"
+    },
+    {
+      "name": "Magical Creature Conservation",
+      "url_path": "magical-creature-conservation",
+      "description": "Magical Creature Conservation collection",
+      "category": "adventure",
+      "connectionReason": "Part of Magical Creature Conservation collection"
+    },
+    {
+      "name": "Urban Community Preservation",
+      "url_path": "urban-community-preservation",
+      "description": "Urban Community Preservation collection",
+      "category": "adventure",
+      "connectionReason": "Part of Urban Community Preservation collection"
+    }
+  ],
+  "totalLists": 3
+}

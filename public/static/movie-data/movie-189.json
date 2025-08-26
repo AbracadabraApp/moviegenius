@@ -1,0 +1,133 @@
+{
+  "movieId": "505087f6-705b-44b5-939e-581aab397e94",
+  "tmdbId": 189,
+  "title": "Sin City: A Dame to Kill For",
+  "year": 2014,
+  "analysis": {
+    "keyElements": {
+      "director": "Robert Rodriguez, Frank Miller",
+      "writers": [
+        "Frank Miller"
+      ],
+      "stars": [
+        "Mickey Rourke",
+        "Jessica Alba",
+        "Josh Brolin",
+        "Eva Green"
+      ],
+      "genre": "Neo-noir Crime Thriller",
+      "releaseYear": 2014,
+      "cinematographer": "Robert Rodriguez",
+      "composer": "Robert Rodriguez, Carl Thiel",
+      "studio": "Dimension Films"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "NO",
+      "reasons": [
+        "Lacks the innovative impact and cohesive storytelling of the original",
+        "Feels more like a stylistic retread than a meaningful continuation",
+        "Watch **Sin City** (2005) instead for a superior neo-noir experience"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Sin City",
+        "year": 2005,
+        "description": "The original groundbreaking neo-noir that established the visual style and tone"
+      },
+      {
+        "title": "Double Indemnity",
+        "year": 1944,
+        "description": "Classic noir that established many of the femme fatale tropes referenced here"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Neo-noir evolution",
+        "category": "film_history",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Comic book adaptation techniques",
+        "category": "production",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Robert Rodriguez, Frank Miller",
+      "personId": 31851,
+      "slug": "/person/31851",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Frank Miller",
+        "personId": 11453,
+        "slug": "/person/11453",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Mickey Rourke",
+        "personId": 26182,
+        "slug": "/person/26182",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jessica Alba",
+        "personId": 17275,
+        "slug": "/person/17275",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Josh Brolin",
+        "personId": 19359,
+        "slug": "/person/19359",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Eva Green",
+        "personId": 10755,
+        "slug": "/person/10755",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Robert Rodriguez",
+      "personId": 31849,
+      "slug": "/person/31849",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Robert Rodriguez, Carl Thiel",
+      "personId": 31850,
+      "slug": "/person/31850",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:04.284Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Retro Science Fiction",
+      "url_path": "retro-science-fiction",
+      "description": "Retro Science Fiction collection",
+      "category": "adventure",
+      "connectionReason": "Part of Retro Science Fiction collection"
+    },
+    {
+      "name": "Miniature World Adventures",
+      "url_path": "miniature-world-adventures",
+      "description": "Miniature World Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Miniature World Adventures collection"
+    },
+    {
+      "name": "Isolation & Survival Stories",
+      "url_path": "isolation-survival-stories",
+      "description": "Isolation & Survival Stories collection",
+      "category": "adventure",
+      "connectionReason": "Part of Isolation & Survival Stories collection"
+    },
+    {
+      "name": "Size Alteration Society",
+      "url_path": "size-alteration-society",
+      "description": "Size Alteration Society collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Size Alteration Society collection"
+    },
+    {
+      "name": "Survival Against Nature (Part 2)",
+      "url_path": "survival-against-nature-part-2-",
+      "description": "Survival Against Nature (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Survival Against Nature (Part 2) collection"
+    },
+    {
+      "name": "Retro Space Adventure (Part 1)",
+      "url_path": "retro-space-adventure-part-1-",
+      "description": "Retro Space Adventure (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro Space Adventure (Part 1) collection"
+    }
+  ],
+  "totalLists": 6
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Live-Action Animal Adventures",
+      "url_path": "live-action-animal-adventures",
+      "description": "Live-Action Animal Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Live-Action Animal Adventures collection"
+    },
+    {
+      "name": "Undercover Partner Comedies",
+      "url_path": "undercover-partner-comedies",
+      "description": "Undercover Partner Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Undercover Partner Comedies collection"
+    },
+    {
+      "name": "Pet Adventure Comedies (Part 2)",
+      "url_path": "pet-adventure-comedies-part-2-",
+      "description": "Pet Adventure Comedies (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Pet Adventure Comedies (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

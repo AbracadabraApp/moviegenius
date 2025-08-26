@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Secret Society Horror",
+      "url_path": "secret-society-horror",
+      "description": "Secret Society Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Secret Society Horror collection"
+    },
+    {
+      "name": "Romantic Vampire Films",
+      "url_path": "romantic-vampire-films",
+      "description": "Romantic Vampire Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Romantic Vampire Films collection"
+    },
+    {
+      "name": "European Vampire Deconstruction",
+      "url_path": "european-vampire-deconstruction",
+      "description": "European Vampire Deconstruction collection",
+      "category": "horror",
+      "connectionReason": "Part of European Vampire Deconstruction collection"
+    }
+  ],
+  "totalLists": 3
+}

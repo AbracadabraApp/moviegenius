@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Giallo Murder Mystery",
+      "url_path": "giallo-murder-mystery",
+      "description": "Giallo Murder Mystery collection",
+      "category": "horror",
+      "connectionReason": "Part of Giallo Murder Mystery collection"
+    },
+    {
+      "name": "Rural Superstition Horror",
+      "url_path": "rural-superstition-horror",
+      "description": "Rural Superstition Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Rural Superstition Horror collection"
+    },
+    {
+      "name": "Religious Horror Thrillers (Part 2)",
+      "url_path": "religious-horror-thrillers-part-2-",
+      "description": "Religious Horror Thrillers (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Religious Horror Thrillers (Part 2) collection"
+    },
+    {
+      "name": "Folk Religion Horror (Part 1)",
+      "url_path": "folk-religion-horror-part-1-",
+      "description": "Folk Religion Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Folk Religion Horror (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Classic Monster Comedies",
+      "url_path": "classic-monster-comedies",
+      "description": "Classic Monster Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Monster Comedies collection"
+    },
+    {
+      "name": "Inheritance Challenge Comedies",
+      "url_path": "inheritance-challenge-comedies",
+      "description": "Inheritance Challenge Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Inheritance Challenge Comedies collection"
+    },
+    {
+      "name": "Dark Comedy Accidents (Part 9)",
+      "url_path": "dark-comedy-accidents-part-9-",
+      "description": "Dark Comedy Accidents (Part 9) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Dark Comedy Accidents (Part 9) collection"
+    },
+    {
+      "name": "Cursed Object Horror",
+      "url_path": "cursed-object-horror",
+      "description": "Cursed Object Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Cursed Object Horror collection"
+    },
+    {
+      "name": "Classic Monster Comedy (Part 4)",
+      "url_path": "classic-monster-comedy-part-4-",
+      "description": "Classic Monster Comedy (Part 4) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Monster Comedy (Part 4) collection"
+    },
+    {
+      "name": "Literary Horror Adaptations (Part 4)",
+      "url_path": "literary-horror-adaptations-part-4-",
+      "description": "Literary Horror Adaptations (Part 4) collection",
+      "category": "horror",
+      "connectionReason": "Part of Literary Horror Adaptations (Part 4) collection"
+    }
+  ],
+  "totalLists": 6
+}

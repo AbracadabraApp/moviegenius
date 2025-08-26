@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Political Media Debates",
+      "url_path": "political-media-debates",
+      "description": "Political Media Debates collection",
+      "category": "documentary",
+      "connectionReason": "Part of Political Media Debates collection"
+    },
+    {
+      "name": "Media Theory Films",
+      "url_path": "media-theory-films",
+      "description": "Media Theory Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Media Theory Films collection"
+    },
+    {
+      "name": "Corporate Fraud Exposés",
+      "url_path": "corporate-fraud-expos-s",
+      "description": "Corporate Fraud Exposés collection",
+      "category": "documentary",
+      "connectionReason": "Part of Corporate Fraud Exposés collection"
+    }
+  ],
+  "totalLists": 3
+}

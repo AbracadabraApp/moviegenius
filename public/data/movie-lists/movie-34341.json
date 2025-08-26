@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Sports Fan Adventures",
+      "url_path": "sports-fan-adventures",
+      "description": "Sports Fan Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Sports Fan Adventures collection"
+    },
+    {
+      "name": "Canadian Culture Clash",
+      "url_path": "canadian-culture-clash",
+      "description": "Canadian Culture Clash collection",
+      "category": "comedy",
+      "connectionReason": "Part of Canadian Culture Clash collection"
+    },
+    {
+      "name": "Small Town Community Stories (Part 1)",
+      "url_path": "small-town-community-stories-part-1-",
+      "description": "Small Town Community Stories (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Small Town Community Stories (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

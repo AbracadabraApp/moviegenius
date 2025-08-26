@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Transportation Disaster Thrillers",
+      "url_path": "transportation-disaster-thrillers",
+      "description": "Transportation Disaster Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Transportation Disaster Thrillers collection"
+    },
+    {
+      "name": "Natural Disaster Survival",
+      "url_path": "natural-disaster-survival",
+      "description": "Natural Disaster Survival collection",
+      "category": "thriller",
+      "connectionReason": "Part of Natural Disaster Survival collection"
+    },
+    {
+      "name": "Single Location Survival (Part 2)",
+      "url_path": "single-location-survival-part-2-",
+      "description": "Single Location Survival (Part 2) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Single Location Survival (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

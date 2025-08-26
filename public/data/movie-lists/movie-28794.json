@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Classic Italian Gothic",
+      "url_path": "classic-italian-gothic",
+      "description": "Classic Italian Gothic collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Italian Gothic collection"
+    },
+    {
+      "name": "Classic Haunted House (Part 2)",
+      "url_path": "classic-haunted-house-part-2-",
+      "description": "Classic Haunted House (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Haunted House (Part 2) collection"
+    },
+    {
+      "name": "Scientific Experiment Horror (Part 8)",
+      "url_path": "scientific-experiment-horror-part-8-",
+      "description": "Scientific Experiment Horror (Part 8) collection",
+      "category": "horror",
+      "connectionReason": "Part of Scientific Experiment Horror (Part 8) collection"
+    },
+    {
+      "name": "Gothic Family Curse (Part 3)",
+      "url_path": "gothic-family-curse-part-3-",
+      "description": "Gothic Family Curse (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Gothic Family Curse (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,144 @@
+{
+  "movieId": "97d5034a-957d-4719-81ef-a471616fbcbd",
+  "tmdbId": 240,
+  "title": "The Godfather Part II",
+  "year": 1974,
+  "analysis": {
+    "keyElements": {
+      "director": "Francis Ford Coppola",
+      "writers": [
+        "Francis Ford Coppola",
+        "Mario Puzo"
+      ],
+      "stars": [
+        "Al Pacino",
+        "Robert De Niro",
+        "Robert Duvall",
+        "Diane Keaton"
+      ],
+      "genre": "Crime Drama",
+      "releaseYear": 1974,
+      "cinematographer": "Gordon Willis",
+      "composer": "Nino Rota",
+      "studio": "Paramount Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful parallel storytelling between Michael Corleone's descent and Vito's rise",
+        "Contains some of the finest acting performances in cinema history, particularly Pacino and De Niro",
+        "Deepens and enriches the original's themes while standing as a superior film in its own right"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Godfather",
+        "year": 1972,
+        "description": "The predecessor that established the Corleone saga"
+      },
+      {
+        "title": "Once Upon a Time in America",
+        "year": 1984,
+        "description": "Similarly epic crime drama spanning decades"
+      },
+      {
+        "title": "Goodfellas",
+        "year": 1990,
+        "description": "Modern classic influenced by Godfather II's crime family dynamics"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Parallel Narrative Structure",
+        "category": "Screenwriting",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Character Development Through Visual Storytelling",
+        "category": "Direction",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Immigration in American Cinema",
+        "category": "Film History",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Francis Ford Coppola",
+      "personId": 11242,
+      "slug": "/person/11242",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Francis Ford Coppola",
+        "personId": 11242,
+        "slug": "/person/11242",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Mario Puzo",
+        "personId": 24173,
+        "slug": "/person/24173",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Al Pacino",
+        "personId": 1326,
+        "slug": "/person/1326",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Robert Duvall",
+        "personId": 31548,
+        "slug": "/person/31548",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Robert De Niro",
+        "personId": 31532,
+        "slug": "/person/31532",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Gordon Willis",
+      "personId": 13018,
+      "slug": "/person/13018",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Nino Rota",
+      "personId": 27714,
+      "slug": "/person/27714",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:12.463Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "movieId": "8f4f1407-036c-4e3a-ab74-c5c69390c799",
+  "tmdbId": 223,
+  "title": "Rebecca",
+  "year": 1940,
+  "analysis": {
+    "keyElements": {
+      "director": "Alfred Hitchcock",
+      "writers": [
+        "Daphne du Maurier",
+        "Robert E. Sherwood",
+        "Joan Harrison"
+      ],
+      "stars": [
+        "Laurence Olivier",
+        "Joan Fontaine",
+        "Judith Anderson"
+      ],
+      "genre": "Gothic Romance Thriller",
+      "releaseYear": 1940,
+      "cinematographer": "George Barnes",
+      "composer": "Franz Waxman",
+      "studio": "Selznick International Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful psychological tension and Gothic atmosphere that influenced countless films",
+        "Career-defining performance by Joan Fontaine as the vulnerable second Mrs. de Winter",
+        "Hitchcock's first American film showcases his signature style while honoring the source material"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Vertigo",
+        "year": 1958,
+        "description": "Another Hitchcock masterpiece exploring obsession with a dead woman"
+      },
+      {
+        "title": "The Others",
+        "year": 2001,
+        "description": "Gothic horror directly influenced by Rebecca's atmosphere and themes"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Gothic Romance in Cinema",
+        "category": "Genre Studies",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Hitchcock's American Period",
+        "category": "Film History",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Alfred Hitchcock",
+      "personId": 1111,
+      "slug": "/person/1111",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Daphne du Maurier",
+        "personId": 7496,
+        "slug": "/person/7496",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Robert E. Sherwood",
+        "personId": 31574,
+        "slug": "/person/31574",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Joan Harrison",
+        "personId": 17610,
+        "slug": "/person/17610",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Laurence Olivier",
+        "personId": 21849,
+        "slug": "/person/21849",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Joan Fontaine",
+        "personId": 17602,
+        "slug": "/person/17602",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Judith Anderson",
+        "personId": 19550,
+        "slug": "/person/19550",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "George Barnes",
+      "personId": 12206,
+      "slug": "/person/12206",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Franz Waxman",
+      "personId": 11552,
+      "slug": "/person/11552",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:09.595Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

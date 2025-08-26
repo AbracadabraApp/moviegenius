@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Artistic Obsession Horror",
+      "url_path": "artistic-obsession-horror",
+      "description": "Artistic Obsession Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Artistic Obsession Horror collection"
+    },
+    {
+      "name": "Killer POV Horror",
+      "url_path": "killer-pov-horror",
+      "description": "Killer POV Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Killer POV Horror collection"
+    },
+    {
+      "name": "Giallo Murder Mystery",
+      "url_path": "giallo-murder-mystery",
+      "description": "Giallo Murder Mystery collection",
+      "category": "horror",
+      "connectionReason": "Part of Giallo Murder Mystery collection"
+    },
+    {
+      "name": "Theater Setting Horror",
+      "url_path": "theater-setting-horror",
+      "description": "Theater Setting Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Theater Setting Horror collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Survival Horror",
+      "url_path": "survival-horror",
+      "description": "Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Survival Horror collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 7)",
+      "url_path": "confined-space-thrillers-part-7-",
+      "description": "Confined Space Thrillers (Part 7) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 7) collection"
+    },
+    {
+      "name": "Toxic Family Horror (Part 2)",
+      "url_path": "toxic-family-horror-part-2-",
+      "description": "Toxic Family Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Toxic Family Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "True Crime Hybrid Films",
+      "url_path": "true-crime-hybrid-films",
+      "description": "True Crime Hybrid Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of True Crime Hybrid Films collection"
+    },
+    {
+      "name": "Wrongful Conviction Cases",
+      "url_path": "wrongful-conviction-cases",
+      "description": "Wrongful Conviction Cases collection",
+      "category": "documentary",
+      "connectionReason": "Part of Wrongful Conviction Cases collection"
+    },
+    {
+      "name": "Criminal Justice Reform",
+      "url_path": "criminal-justice-reform",
+      "description": "Criminal Justice Reform collection",
+      "category": "documentary",
+      "connectionReason": "Part of Criminal Justice Reform collection"
+    }
+  ],
+  "totalLists": 3
+}

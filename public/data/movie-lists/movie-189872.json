@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "City Symphony Films",
+      "url_path": "city-symphony-films",
+      "description": "City Symphony Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of City Symphony Films collection"
+    },
+    {
+      "name": "Early Cinema Pioneers (Part 4)",
+      "url_path": "early-cinema-pioneers-part-4-",
+      "description": "Early Cinema Pioneers (Part 4) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Early Cinema Pioneers (Part 4) collection"
+    },
+    {
+      "name": "Industrial Work Documentation (Part 2)",
+      "url_path": "industrial-work-documentation-part-2-",
+      "description": "Industrial Work Documentation (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Industrial Work Documentation (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

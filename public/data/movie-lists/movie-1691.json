@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Secret Society Horror",
+      "url_path": "secret-society-horror",
+      "description": "Secret Society Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Secret Society Horror collection"
+    },
+    {
+      "name": "Torture Cinema",
+      "url_path": "torture-cinema",
+      "description": "Torture Cinema collection",
+      "category": "horror",
+      "connectionReason": "Part of Torture Cinema collection"
+    },
+    {
+      "name": "Extreme Gore Horror (Part 2)",
+      "url_path": "extreme-gore-horror-part-2-",
+      "description": "Extreme Gore Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Extreme Gore Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

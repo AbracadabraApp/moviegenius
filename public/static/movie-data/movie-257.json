@@ -1,0 +1,133 @@
+{
+  "movieId": "5866e725-d2a2-4491-95c3-57a7c973b396",
+  "tmdbId": 257,
+  "title": "Oliver Twist",
+  "year": 2005,
+  "analysis": {
+    "keyElements": {
+      "director": "Roman Polanski",
+      "writers": [
+        "Charles Dickens (novel)",
+        "Ronald Harwood (screenplay)"
+      ],
+      "stars": [
+        "Ben Kingsley",
+        "Barney Clark",
+        "Jamie Foreman"
+      ],
+      "genre": "Drama",
+      "releaseYear": 2005,
+      "cinematographer": "Pawel Edelman",
+      "composer": "Rachel Portman",
+      "studio": "TriStar Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Ben Kingsley's masterful portrayal of Fagin brings new depth to the iconic character",
+        "Polanski's authentic recreation of Victorian London creates an immersive period atmosphere",
+        "The film maintains the social commentary of Dickens while making it accessible to modern audiences"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Oliver!",
+        "year": 1968,
+        "description": "Musical adaptation that offers an interesting contrast to Polanski's grittier take"
+      },
+      {
+        "title": "Great Expectations",
+        "year": 1998,
+        "description": "Modern Dickens adaptation that similarly updates classic themes"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Victorian Era Social Reform",
+        "category": "Historical Context",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Literary Adaptation Techniques",
+        "category": "Film Studies",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Roman Polanski",
+      "personId": 32267,
+      "slug": "/person/32267",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Charles Dickens",
+        "personId": 5436,
+        "slug": "/person/5436",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ronald Harwood",
+        "personId": 32302,
+        "slug": "/person/32302",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Barney Clark",
+        "personId": 3083,
+        "slug": "/person/3083",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ben Kingsley",
+        "personId": 3348,
+        "slug": "/person/3348",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jamie Foreman",
+        "personId": 16018,
+        "slug": "/person/16018",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Pawel Edelman",
+      "personId": 29065,
+      "slug": "/person/29065",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Rachel Portman",
+      "personId": 30169,
+      "slug": "/person/30169",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:15.999Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

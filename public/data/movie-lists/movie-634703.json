@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Retro Science Fiction",
+      "url_path": "retro-science-fiction",
+      "description": "Retro Science Fiction collection",
+      "category": "adventure",
+      "connectionReason": "Part of Retro Science Fiction collection"
+    },
+    {
+      "name": "Animated Gadget Adventures",
+      "url_path": "animated-gadget-adventures",
+      "description": "Animated Gadget Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Animated Gadget Adventures collection"
+    },
+    {
+      "name": "Found Family Stories",
+      "url_path": "found-family-stories",
+      "description": "Found Family Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Found Family Stories collection"
+    },
+    {
+      "name": "Retro-Futuristic Animation",
+      "url_path": "retro-futuristic-animation",
+      "description": "Retro-Futuristic Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Retro-Futuristic Animation collection"
+    },
+    {
+      "name": "Inventive Duo Adventures",
+      "url_path": "inventive-duo-adventures",
+      "description": "Inventive Duo Adventures collection",
+      "category": "animation",
+      "connectionReason": "Part of Inventive Duo Adventures collection"
+    }
+  ],
+  "totalLists": 5
+}

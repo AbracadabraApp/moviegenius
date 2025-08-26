@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Action Chase Thrillers",
+      "url_path": "action-chase-thrillers",
+      "description": "Action Chase Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Action Chase Thrillers collection"
+    },
+    {
+      "name": "Transportation Disaster Thrillers",
+      "url_path": "transportation-disaster-thrillers",
+      "description": "Transportation Disaster Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Transportation Disaster Thrillers collection"
+    },
+    {
+      "name": "Real-Time Action Thrillers (Part 1)",
+      "url_path": "real-time-action-thrillers-part-1-",
+      "description": "Real-Time Action Thrillers (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Real-Time Action Thrillers (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

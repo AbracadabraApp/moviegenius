@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Media Control Horror",
+      "url_path": "media-control-horror",
+      "description": "Media Control Horror collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Media Control Horror collection"
+    },
+    {
+      "name": "Totalitarian Warning Films (Part 2)",
+      "url_path": "totalitarian-warning-films-part-2-",
+      "description": "Totalitarian Warning Films (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Totalitarian Warning Films (Part 2) collection"
+    },
+    {
+      "name": "First Contact Wars (Part 3)",
+      "url_path": "first-contact-wars-part-3-",
+      "description": "First Contact Wars (Part 3) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of First Contact Wars (Part 3) collection"
+    },
+    {
+      "name": "Military Enhancement Programs (Part 3)",
+      "url_path": "military-enhancement-programs-part-3-",
+      "description": "Military Enhancement Programs (Part 3) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Military Enhancement Programs (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

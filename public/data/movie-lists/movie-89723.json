@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Classic Monster Comedies",
+      "url_path": "classic-monster-comedies",
+      "description": "Classic Monster Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Monster Comedies collection"
+    },
+    {
+      "name": "Eccentric Detective Stories",
+      "url_path": "eccentric-detective-stories",
+      "description": "Eccentric Detective Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Eccentric Detective Stories collection"
+    },
+    {
+      "name": "Haunted Inn Comedies",
+      "url_path": "haunted-inn-comedies",
+      "description": "Haunted Inn Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Haunted Inn Comedies collection"
+    },
+    {
+      "name": "Animal Friend Horror",
+      "url_path": "animal-friend-horror",
+      "description": "Animal Friend Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Animal Friend Horror collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 7)",
+      "url_path": "confined-space-thrillers-part-7-",
+      "description": "Confined Space Thrillers (Part 7) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 7) collection"
+    },
+    {
+      "name": "Classic Monster Comedy (Part 5)",
+      "url_path": "classic-monster-comedy-part-5-",
+      "description": "Classic Monster Comedy (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Monster Comedy (Part 5) collection"
+    }
+  ],
+  "totalLists": 6
+}

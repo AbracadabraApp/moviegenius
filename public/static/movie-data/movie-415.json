@@ -1,0 +1,141 @@
+{
+  "movieId": "403db9ad-3c6d-4546-a821-0df8c7c9bab5",
+  "tmdbId": 415,
+  "title": "Batman & Robin",
+  "year": 1997,
+  "analysis": {
+    "keyElements": {
+      "director": "Joel Schumacher",
+      "writers": [
+        "Akiva Goldsman"
+      ],
+      "stars": [
+        "George Clooney",
+        "Arnold Schwarzenegger",
+        "Uma Thurman",
+        "Chris O'Donnell",
+        "Alicia Silverstone"
+      ],
+      "genre": "Action/Superhero",
+      "releaseYear": 1997,
+      "cinematographer": "Stephen Goldblatt",
+      "composer": "Elliot Goldenthal",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "NO",
+      "reasons": [
+        "Over-the-top camp destroys any dramatic tension or narrative coherence",
+        "Poorly executed action sequences and cringe-worthy dialogue undermine the Batman mythology",
+        "Watch **Batman Begins** (2005) instead for a definitive Batman origin story"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Batman Begins",
+        "year": 2005,
+        "description": "The definitive Batman reboot that saved the franchise"
+      },
+      {
+        "title": "Batman",
+        "year": 1989,
+        "description": "Tim Burton's gothic interpretation that set the standard"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "The Evolution of Superhero Cinema",
+        "category": "Film History",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Camp in Comic Book Movies",
+        "category": "Film Style",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Joel Schumacher",
+      "personId": 17821,
+      "slug": "/person/17821",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Akiva Goldsman",
+        "personId": 493,
+        "slug": "/person/493",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "George Clooney",
+        "personId": 12227,
+        "slug": "/person/12227",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Chris O'Donnell",
+        "personId": 5983,
+        "slug": "/person/5983",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Arnold Schwarzenegger",
+        "personId": 2572,
+        "slug": "/person/2572",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Uma Thurman",
+        "personId": 37223,
+        "slug": "/person/37223",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Alicia Silverstone",
+        "personId": 1182,
+        "slug": "/person/1182",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Stephen Goldblatt",
+      "personId": 34750,
+      "slug": "/person/34750",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Elliot Goldenthal",
+      "personId": 10072,
+      "slug": "/person/10072",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:35.494Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

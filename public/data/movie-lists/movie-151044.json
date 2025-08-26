@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "War Correspondent Stories",
+      "url_path": "war-correspondent-stories",
+      "description": "War Correspondent Stories collection",
+      "category": "documentary",
+      "connectionReason": "Part of War Correspondent Stories collection"
+    },
+    {
+      "name": "Photography Artist Portraits",
+      "url_path": "photography-artist-portraits",
+      "description": "Photography Artist Portraits collection",
+      "category": "documentary",
+      "connectionReason": "Part of Photography Artist Portraits collection"
+    },
+    {
+      "name": "Photography War Analysis",
+      "url_path": "photography-war-analysis",
+      "description": "Photography War Analysis collection",
+      "category": "documentary",
+      "connectionReason": "Part of Photography War Analysis collection"
+    },
+    {
+      "name": "Cultural Icon Biographies (Part 8)",
+      "url_path": "cultural-icon-biographies-part-8-",
+      "description": "Cultural Icon Biographies (Part 8) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cultural Icon Biographies (Part 8) collection"
+    }
+  ],
+  "totalLists": 4
+}

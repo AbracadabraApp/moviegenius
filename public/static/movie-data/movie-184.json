@@ -1,0 +1,148 @@
+{
+  "movieId": "2394109d-1bc2-4552-9b75-70e2f0ab3757",
+  "tmdbId": 184,
+  "title": "Jackie Brown",
+  "year": 1997,
+  "analysis": {
+    "keyElements": {
+      "director": "Quentin Tarantino",
+      "writers": [
+        "Quentin Tarantino",
+        "Elmore Leonard"
+      ],
+      "stars": [
+        "Pam Grier",
+        "Samuel L. Jackson",
+        "Robert Forster",
+        "Robert De Niro"
+      ],
+      "genre": "Crime Drama",
+      "releaseYear": 1997,
+      "cinematographer": "Guillermo Navarro",
+      "composer": "Various Artists",
+      "studio": "Miramax Films"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Pam Grier delivers a career-defining performance as a complex, mature female protagonist",
+        "Masterful slow-burn storytelling that prioritizes character development over shock value",
+        "Perfect blend of 1970s blaxploitation homage with sophisticated crime drama"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Coffy",
+        "year": 1973,
+        "description": "Pam Grier's breakthrough role that established her as the queen of blaxploitation cinema"
+      },
+      {
+        "title": "Out of Sight",
+        "year": 1998,
+        "description": "Similar sophisticated crime drama featuring a strong female lead and complex character relationships"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Blaxploitation Cinema Evolution",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Character-Driven Crime Drama",
+        "category": "Screenwriting",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Quentin Tarantino",
+      "personId": 30117,
+      "slug": "/person/30117",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Quentin Tarantino",
+        "personId": 30117,
+        "slug": "/person/30117",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Elmore Leonard",
+        "personId": 10099,
+        "slug": "/person/10099",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Pam Grier",
+        "personId": 28367,
+        "slug": "/person/28367",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Samuel L. Jackson",
+        "personId": 33088,
+        "slug": "/person/33088",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Robert De Niro",
+        "personId": 31532,
+        "slug": "/person/31532",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Bridget Fonda",
+        "personId": 4456,
+        "slug": "/person/4456",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Michael Keaton",
+        "personId": 25754,
+        "slug": "/person/25754",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Guillermo Navarro",
+      "personId": 13296,
+      "slug": "/person/13296",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Various Artists",
+      "personId": 37403,
+      "slug": "/person/37403",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:03.298Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

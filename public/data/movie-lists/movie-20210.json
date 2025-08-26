@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Sports Fan Adventures",
+      "url_path": "sports-fan-adventures",
+      "description": "Sports Fan Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Sports Fan Adventures collection"
+    },
+    {
+      "name": "College Coming-of-Age Adventures (Part 2)",
+      "url_path": "college-coming-of-age-adventures-part-2-",
+      "description": "College Coming-of-Age Adventures (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of College Coming-of-Age Adventures (Part 2) collection"
+    },
+    {
+      "name": "Vacation Adventure Mishaps (Part 1)",
+      "url_path": "vacation-adventure-mishaps-part-1-",
+      "description": "Vacation Adventure Mishaps (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Vacation Adventure Mishaps (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Political & Social Issues",
+      "url_path": "political-social-issues",
+      "description": "Political & Social Issues collection",
+      "category": "documentary",
+      "connectionReason": "Part of Political & Social Issues collection"
+    },
+    {
+      "name": "Military Reality Exposés",
+      "url_path": "military-reality-expos-s",
+      "description": "Military Reality Exposés collection",
+      "category": "documentary",
+      "connectionReason": "Part of Military Reality Exposés collection"
+    },
+    {
+      "name": "War Crimes Justice",
+      "url_path": "war-crimes-justice",
+      "description": "War Crimes Justice collection",
+      "category": "documentary",
+      "connectionReason": "Part of War Crimes Justice collection"
+    },
+    {
+      "name": "Historical Trauma Testimonies (Part 5)",
+      "url_path": "historical-trauma-testimonies-part-5-",
+      "description": "Historical Trauma Testimonies (Part 5) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Historical Trauma Testimonies (Part 5) collection"
+    }
+  ],
+  "totalLists": 4
+}

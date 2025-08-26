@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "1980s Nostalgia Films",
+      "url_path": "1980s-nostalgia-films",
+      "description": "1980s Nostalgia Films collection",
+      "category": "comedy",
+      "connectionReason": "Part of 1980s Nostalgia Films collection"
+    },
+    {
+      "name": "Time Travel Fish-Out-Of-Water",
+      "url_path": "time-travel-fish-out-of-water",
+      "description": "Time Travel Fish-Out-Of-Water collection",
+      "category": "comedy",
+      "connectionReason": "Part of Time Travel Fish-Out-Of-Water collection"
+    },
+    {
+      "name": "Martial Arts Comedy",
+      "url_path": "martial-arts-comedy",
+      "description": "Martial Arts Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Martial Arts Comedy collection"
+    }
+  ],
+  "totalLists": 3
+}

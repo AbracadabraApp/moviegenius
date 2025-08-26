@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "name": "WWII Archival Documentaries",
+      "url_path": "wwii-archival-documentaries",
+      "description": "WWII Archival Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of WWII Archival Documentaries collection"
+    },
+    {
+      "name": "Military Training Chronicles",
+      "url_path": "military-training-chronicles",
+      "description": "Military Training Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Military Training Chronicles collection"
+    }
+  ],
+  "totalLists": 2
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "War Panic Comedies",
+      "url_path": "war-panic-comedies",
+      "description": "War Panic Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of War Panic Comedies collection"
+    },
+    {
+      "name": "TV Show Reunion Specials",
+      "url_path": "tv-show-reunion-specials",
+      "description": "TV Show Reunion Specials collection",
+      "category": "comedy",
+      "connectionReason": "Part of TV Show Reunion Specials collection"
+    },
+    {
+      "name": "Military Training Comedy",
+      "url_path": "military-training-comedy",
+      "description": "Military Training Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Military Training Comedy collection"
+    }
+  ],
+  "totalLists": 3
+}

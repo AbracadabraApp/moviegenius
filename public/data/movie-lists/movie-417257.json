@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Crime & Investigation",
+      "url_path": "crime-investigation",
+      "description": "Crime & Investigation collection",
+      "category": "documentary",
+      "connectionReason": "Part of Crime & Investigation collection"
+    },
+    {
+      "name": "Religious Folklore Studies",
+      "url_path": "religious-folklore-studies",
+      "description": "Religious Folklore Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Religious Folklore Studies collection"
+    },
+    {
+      "name": "Family Crisis Investigations",
+      "url_path": "family-crisis-investigations",
+      "description": "Family Crisis Investigations collection",
+      "category": "documentary",
+      "connectionReason": "Part of Family Crisis Investigations collection"
+    },
+    {
+      "name": "Personal Monologue Documentaries (Part 3)",
+      "url_path": "personal-monologue-documentaries-part-3-",
+      "description": "Personal Monologue Documentaries (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Personal Monologue Documentaries (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

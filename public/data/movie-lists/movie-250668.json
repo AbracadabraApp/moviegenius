@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Teen Life Chronicles",
+      "url_path": "teen-life-chronicles",
+      "description": "Teen Life Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Teen Life Chronicles collection"
+    },
+    {
+      "name": "Economic Crisis Impact",
+      "url_path": "economic-crisis-impact",
+      "description": "Economic Crisis Impact collection",
+      "category": "documentary",
+      "connectionReason": "Part of Economic Crisis Impact collection"
+    },
+    {
+      "name": "Rural Life Studies",
+      "url_path": "rural-life-studies",
+      "description": "Rural Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Rural Life Studies collection"
+    },
+    {
+      "name": "Family Crisis Investigations",
+      "url_path": "family-crisis-investigations",
+      "description": "Family Crisis Investigations collection",
+      "category": "documentary",
+      "connectionReason": "Part of Family Crisis Investigations collection"
+    }
+  ],
+  "totalLists": 4
+}

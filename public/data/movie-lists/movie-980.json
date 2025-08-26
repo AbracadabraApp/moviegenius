@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Classic Psychological Westerns",
+      "url_path": "classic-psychological-westerns",
+      "description": "Classic Psychological Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Classic Psychological Westerns collection"
+    },
+    {
+      "name": "Social Justice Westerns",
+      "url_path": "social-justice-westerns",
+      "description": "Social Justice Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Social Justice Westerns collection"
+    },
+    {
+      "name": "Moral Choice Dramas [OVERSIZED]",
+      "url_path": "moral-choice-dramas-oversized-",
+      "description": "Moral Choice Dramas [OVERSIZED] collection",
+      "category": "western",
+      "connectionReason": "Part of Moral Choice Dramas [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 3
+}

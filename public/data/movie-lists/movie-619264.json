@@ -1,0 +1,61 @@
+{
+  "lists": [
+    {
+      "name": "Survival Horror",
+      "url_path": "survival-horror",
+      "description": "Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Survival Horror collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 7)",
+      "url_path": "confined-space-thrillers-part-7-",
+      "description": "Confined Space Thrillers (Part 7) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 7) collection"
+    },
+    {
+      "name": "Social Commentary Horror (Part 3)",
+      "url_path": "social-commentary-horror-part-3-",
+      "description": "Social Commentary Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Social Commentary Horror (Part 3) collection"
+    },
+    {
+      "name": "Dystopian Society Control",
+      "url_path": "dystopian-society-control",
+      "description": "Dystopian Society Control collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Dystopian Society Control collection"
+    },
+    {
+      "name": "Resource Scarcity Horror",
+      "url_path": "resource-scarcity-horror",
+      "description": "Resource Scarcity Horror collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Resource Scarcity Horror collection"
+    },
+    {
+      "name": "Prison State Dystopias",
+      "url_path": "prison-state-dystopias",
+      "description": "Prison State Dystopias collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Prison State Dystopias collection"
+    },
+    {
+      "name": "Class Warfare Architecture",
+      "url_path": "class-warfare-architecture",
+      "description": "Class Warfare Architecture collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Class Warfare Architecture collection"
+    },
+    {
+      "name": "Social Class Satire",
+      "url_path": "social-class-satire",
+      "description": "Social Class Satire collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Social Class Satire collection"
+    }
+  ],
+  "totalLists": 8
+}

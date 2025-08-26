@@ -1,0 +1,133 @@
+{
+  "movieId": "195d15f4-add0-458f-b11d-4062de7d8723",
+  "tmdbId": 318,
+  "title": "The Million Dollar Hotel",
+  "year": 2000,
+  "analysis": {
+    "keyElements": {
+      "director": "Wim Wenders",
+      "writers": [
+        "Bono",
+        "Nicholas Klein"
+      ],
+      "stars": [
+        "Jeremy Davies",
+        "Milla Jovovich",
+        "Mel Gibson"
+      ],
+      "genre": "Drama/Mystery",
+      "releaseYear": 2000,
+      "cinematographer": "Phedon Papamichael",
+      "composer": "Bono, Daniel Lanois",
+      "studio": "Lions Gate Films"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "NO",
+      "reasons": [
+        "Unnecessarily convoluted narrative that sacrifices coherence for style",
+        "Uneven performances despite talented cast",
+        "Watch **Paris, Texas** (1984) instead for superior Wenders storytelling"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Paris, Texas",
+        "year": 1984,
+        "description": "Wenders' masterpiece of alienation and redemption"
+      },
+      {
+        "title": "Wings of Desire",
+        "year": 1987,
+        "description": "Superior example of Wenders' poetic style"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "European Directors in Hollywood",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Neo-Noir Evolution",
+        "category": "Genre Studies",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Wim Wenders",
+      "personId": 38730,
+      "slug": "/person/38730",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Nicholas Klein",
+        "personId": 27430,
+        "slug": "/person/27430",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Bono",
+        "personId": 4107,
+        "slug": "/person/4107",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Jeremy Davies",
+        "personId": 17077,
+        "slug": "/person/17077",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Milla Jovovich",
+        "personId": 26433,
+        "slug": "/person/26433",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Mel Gibson",
+        "personId": 25332,
+        "slug": "/person/25332",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Phedon Papamichael",
+      "personId": 29612,
+      "slug": "/person/29612",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Bono, Daniel Lanois",
+      "personId": 4108,
+      "slug": "/person/4108",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:24.339Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

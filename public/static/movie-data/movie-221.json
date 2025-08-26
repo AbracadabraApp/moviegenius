@@ -1,0 +1,143 @@
+{
+  "movieId": "b4aecbc8-826d-48ef-b15d-7e7d9561752f",
+  "tmdbId": 221,
+  "title": "Rebel Without a Cause",
+  "year": 1955,
+  "analysis": {
+    "keyElements": {
+      "director": "Nicholas Ray",
+      "writers": [
+        "Stewart Stern",
+        "Irving Shulman"
+      ],
+      "stars": [
+        "James Dean",
+        "Natalie Wood",
+        "Sal Mineo"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1955,
+      "cinematographer": "Ernest Haller",
+      "composer": "Leonard Rosenman",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "James Dean's definitive, electrifying performance that influenced generations of actors",
+        "Groundbreaking portrayal of teenage alienation that remains relevant today",
+        "Masterful direction by Nicholas Ray capturing post-war American anxiety"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "East of Eden",
+        "year": 1955,
+        "description": "Dean's other masterpiece from the same year, showing his revolutionary acting style"
+      },
+      {
+        "title": "The Wild One",
+        "year": 1953,
+        "description": "Key predecessor in the juvenile delinquent film genre"
+      },
+      {
+        "title": "The Breakfast Club",
+        "year": 1985,
+        "description": "Spiritual successor examining teenage alienation in a different era"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Method Acting Revolution",
+        "category": "Performance",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "1950s American Social Change",
+        "category": "Historical Context",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "Teen Film Genre Evolution",
+        "category": "Genre Studies",
+        "difficulty": "beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Nicholas Ray",
+      "personId": 27439,
+      "slug": "/person/27439",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Stewart Stern",
+        "personId": 35101,
+        "slug": "/person/35101",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Irving Shulman",
+        "personId": 15095,
+        "slug": "/person/15095",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "James Dean",
+        "personId": 15741,
+        "slug": "/person/15741",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Natalie Wood",
+        "personId": 27145,
+        "slug": "/person/27145",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sal Mineo",
+        "personId": 32945,
+        "slug": "/person/32945",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Ernest Haller",
+      "personId": 10541,
+      "slug": "/person/10541",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Leonard Rosenman",
+      "personId": 22243,
+      "slug": "/person/22243",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:08.805Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

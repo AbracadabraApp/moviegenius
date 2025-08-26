@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Anti-Romance Films",
+      "url_path": "anti-romance-films",
+      "description": "Anti-Romance Films collection",
+      "category": "romance",
+      "connectionReason": "Part of Anti-Romance Films collection"
+    },
+    {
+      "name": "Mental Health Romance",
+      "url_path": "mental-health-romance",
+      "description": "Mental Health Romance collection",
+      "category": "romance",
+      "connectionReason": "Part of Mental Health Romance collection"
+    },
+    {
+      "name": "Societal Pressure Tragedies (Part 1)",
+      "url_path": "societal-pressure-tragedies-part-1-",
+      "description": "Societal Pressure Tragedies (Part 1) collection",
+      "category": "romance",
+      "connectionReason": "Part of Societal Pressure Tragedies (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "John Ford Westerns",
+      "url_path": "john-ford-westerns",
+      "description": "John Ford Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of John Ford Westerns collection"
+    },
+    {
+      "name": "Native Cultural Immersion",
+      "url_path": "native-cultural-immersion",
+      "description": "Native Cultural Immersion collection",
+      "category": "western",
+      "connectionReason": "Part of Native Cultural Immersion collection"
+    },
+    {
+      "name": "Survival Against Nature",
+      "url_path": "survival-against-nature",
+      "description": "Survival Against Nature collection",
+      "category": "western",
+      "connectionReason": "Part of Survival Against Nature collection"
+    },
+    {
+      "name": "Social Justice Westerns",
+      "url_path": "social-justice-westerns",
+      "description": "Social Justice Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Social Justice Westerns collection"
+    }
+  ],
+  "totalLists": 4
+}

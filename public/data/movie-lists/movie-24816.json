@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Environmental Travel Films",
+      "url_path": "environmental-travel-films",
+      "description": "Environmental Travel Films collection",
+      "category": "adventure",
+      "connectionReason": "Part of Environmental Travel Films collection"
+    },
+    {
+      "name": "Miniature World Adventures",
+      "url_path": "miniature-world-adventures",
+      "description": "Miniature World Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Miniature World Adventures collection"
+    },
+    {
+      "name": "Car Chase Road Movies",
+      "url_path": "car-chase-road-movies",
+      "description": "Car Chase Road Movies collection",
+      "category": "adventure",
+      "connectionReason": "Part of Car Chase Road Movies collection"
+    },
+    {
+      "name": "Lost World Stories",
+      "url_path": "lost-world-stories",
+      "description": "Lost World Stories collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Lost World Stories collection"
+    },
+    {
+      "name": "Environmental Magic Fantasy",
+      "url_path": "environmental-magic-fantasy",
+      "description": "Environmental Magic Fantasy collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Environmental Magic Fantasy collection"
+    },
+    {
+      "name": "Magical Creature Protection [OVERSIZED]",
+      "url_path": "magical-creature-protection-oversized-",
+      "description": "Magical Creature Protection [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Magical Creature Protection [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 6
+}

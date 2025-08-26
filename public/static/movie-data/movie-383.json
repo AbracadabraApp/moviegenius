@@ -1,0 +1,138 @@
+{
+  "movieId": "2789aac6-52d9-4a55-b909-b78d63ef5301",
+  "tmdbId": 383,
+  "title": "Mala Noche",
+  "year": 1988,
+  "analysis": {
+    "keyElements": {
+      "director": "Gus Van Sant",
+      "writers": [
+        "Gus Van Sant",
+        "Walt Curtis"
+      ],
+      "stars": [
+        "Tim Streeter",
+        "Doug Cooeyate",
+        "Ray Monge"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1988,
+      "cinematographer": "John Campbell",
+      "composer": "Peter Dammann",
+      "studio": "Janus Films"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking debut that launched Gus Van Sant's distinctive indie filmmaking style",
+        "Raw, poetic exploration of unrequited desire and cultural barriers",
+        "Influential black-and-white cinematography that inspired a generation of indie filmmakers"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "My Own Private Idaho",
+        "year": 1991,
+        "description": "Van Sant's spiritual successor that further explores themes of desire and marginalization"
+      },
+      {
+        "title": "Moonlight",
+        "year": 2016,
+        "description": "Similarly poetic exploration of sexuality and identity on the margins"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "New Queer Cinema",
+        "category": "Film Movement",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "American Independent Cinema",
+        "category": "Film History",
+        "difficulty": "beginner"
+      },
+      {
+        "topic": "16mm Black and White Photography",
+        "category": "Technical",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Gus Van Sant",
+      "personId": 13356,
+      "slug": "/person/13356",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Gus Van Sant",
+        "personId": 13356,
+        "slug": "/person/13356",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Walt Curtis",
+        "personId": 38010,
+        "slug": "/person/38010",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Tim Streeter",
+        "personId": 36335,
+        "slug": "/person/36335",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Doug Cooeyate",
+        "personId": 9177,
+        "slug": "/person/9177",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ray Monge",
+        "personId": 30559,
+        "slug": "/person/30559",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "John Campbell",
+      "personId": 18063,
+      "slug": "/person/18063",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Unknown",
+      "personId": 37240,
+      "slug": "/person/37240",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:30.258Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

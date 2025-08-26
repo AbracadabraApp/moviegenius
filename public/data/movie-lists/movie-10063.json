@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Animal Friend Horror",
+      "url_path": "animal-friend-horror",
+      "description": "Animal Friend Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Animal Friend Horror collection"
+    },
+    {
+      "name": "Survival Horror",
+      "url_path": "survival-horror",
+      "description": "Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Survival Horror collection"
+    },
+    {
+      "name": "Island Isolation Horror",
+      "url_path": "island-isolation-horror",
+      "description": "Island Isolation Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Island Isolation Horror collection"
+    },
+    {
+      "name": "Scientific Experiment Horror (Part 7)",
+      "url_path": "scientific-experiment-horror-part-7-",
+      "description": "Scientific Experiment Horror (Part 7) collection",
+      "category": "horror",
+      "connectionReason": "Part of Scientific Experiment Horror (Part 7) collection"
+    },
+    {
+      "name": "Experimental Treatment Horror",
+      "url_path": "experimental-treatment-horror",
+      "description": "Experimental Treatment Horror collection",
+      "category": "thriller",
+      "connectionReason": "Part of Experimental Treatment Horror collection"
+    },
+    {
+      "name": "Deadly Animal Survival",
+      "url_path": "deadly-animal-survival",
+      "description": "Deadly Animal Survival collection",
+      "category": "thriller",
+      "connectionReason": "Part of Deadly Animal Survival collection"
+    },
+    {
+      "name": "Single Location Survival (Part 4)",
+      "url_path": "single-location-survival-part-4-",
+      "description": "Single Location Survival (Part 4) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Single Location Survival (Part 4) collection"
+    }
+  ],
+  "totalLists": 7
+}

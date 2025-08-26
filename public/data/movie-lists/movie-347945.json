@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Noir Science Fiction",
+      "url_path": "noir-science-fiction",
+      "description": "Noir Science Fiction collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Noir Science Fiction collection"
+    },
+    {
+      "name": "Scientific Love Stories",
+      "url_path": "scientific-love-stories",
+      "description": "Scientific Love Stories collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Scientific Love Stories collection"
+    },
+    {
+      "name": "Time Loop Paradoxes (Part 3)",
+      "url_path": "time-loop-paradoxes-part-3-",
+      "description": "Time Loop Paradoxes (Part 3) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Time Loop Paradoxes (Part 3) collection"
+    },
+    {
+      "name": "Corporate Science Horror (Part 6)",
+      "url_path": "corporate-science-horror-part-6-",
+      "description": "Corporate Science Horror (Part 6) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Corporate Science Horror (Part 6) collection"
+    }
+  ],
+  "totalLists": 4
+}

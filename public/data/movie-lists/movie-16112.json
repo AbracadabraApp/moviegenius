@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Fantasy Time-Travel Musicals",
+      "url_path": "fantasy-time-travel-musicals",
+      "description": "Fantasy Time-Travel Musicals collection",
+      "category": "music",
+      "connectionReason": "Part of Fantasy Time-Travel Musicals collection"
+    },
+    {
+      "name": "Youth Cast Musicals [OVERSIZED]",
+      "url_path": "youth-cast-musicals-oversized-",
+      "description": "Youth Cast Musicals [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Youth Cast Musicals [OVERSIZED] collection"
+    },
+    {
+      "name": "Children's Literature Adaptations",
+      "url_path": "children-s-literature-adaptations",
+      "description": "Children's Literature Adaptations collection",
+      "category": "musical",
+      "connectionReason": "Part of Children's Literature Adaptations collection"
+    },
+    {
+      "name": "Puppet Musical Productions",
+      "url_path": "puppet-musical-productions",
+      "description": "Puppet Musical Productions collection",
+      "category": "musical",
+      "connectionReason": "Part of Puppet Musical Productions collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Stop Motion Classics",
+      "url_path": "stop-motion-classics",
+      "description": "Stop Motion Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Stop Motion Classics collection"
+    },
+    {
+      "name": "Holiday Special Animations",
+      "url_path": "holiday-special-animations",
+      "description": "Holiday Special Animations collection",
+      "category": "animation",
+      "connectionReason": "Part of Holiday Special Animations collection"
+    },
+    {
+      "name": "Moral Choice Stories",
+      "url_path": "moral-choice-stories",
+      "description": "Moral Choice Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Moral Choice Stories collection"
+    }
+  ],
+  "totalLists": 3
+}

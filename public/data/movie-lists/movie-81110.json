@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "WWI Combat Films",
+      "url_path": "wwi-combat-films",
+      "description": "WWI Combat Films collection",
+      "category": "war",
+      "connectionReason": "Part of WWI Combat Films collection"
+    },
+    {
+      "name": "Early Aviation Combat",
+      "url_path": "early-aviation-combat",
+      "description": "Early Aviation Combat collection",
+      "category": "war",
+      "connectionReason": "Part of Early Aviation Combat collection"
+    },
+    {
+      "name": "War Disillusionment Films [OVERSIZED]",
+      "url_path": "war-disillusionment-films-oversized-",
+      "description": "War Disillusionment Films [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of War Disillusionment Films [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 3
+}

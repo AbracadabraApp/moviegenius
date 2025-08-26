@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Political & Social Issues",
+      "url_path": "political-social-issues",
+      "description": "Political & Social Issues collection",
+      "category": "documentary",
+      "connectionReason": "Part of Political & Social Issues collection"
+    },
+    {
+      "name": "Economic Crisis Impact",
+      "url_path": "economic-crisis-impact",
+      "description": "Economic Crisis Impact collection",
+      "category": "documentary",
+      "connectionReason": "Part of Economic Crisis Impact collection"
+    },
+    {
+      "name": "Urban Architecture Transformation",
+      "url_path": "urban-architecture-transformation",
+      "description": "Urban Architecture Transformation collection",
+      "category": "documentary",
+      "connectionReason": "Part of Urban Architecture Transformation collection"
+    },
+    {
+      "name": "Global Industry Transitions (Part 2)",
+      "url_path": "global-industry-transitions-part-2-",
+      "description": "Global Industry Transitions (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Industry Transitions (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

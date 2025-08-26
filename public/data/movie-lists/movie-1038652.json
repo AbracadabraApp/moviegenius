@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "World Music Dramas",
+      "url_path": "world-music-dramas",
+      "description": "World Music Dramas collection",
+      "category": "music",
+      "connectionReason": "Part of World Music Dramas collection"
+    },
+    {
+      "name": "Rock History Documentaries",
+      "url_path": "rock-history-documentaries",
+      "description": "Rock History Documentaries collection",
+      "category": "music",
+      "connectionReason": "Part of Rock History Documentaries collection"
+    },
+    {
+      "name": "Cultural Fusion Films [OVERSIZED]",
+      "url_path": "cultural-fusion-films-oversized-",
+      "description": "Cultural Fusion Films [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Cultural Fusion Films [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Historical Mystery Thrillers",
+      "url_path": "historical-mystery-thrillers",
+      "description": "Historical Mystery Thrillers collection",
+      "category": "period",
+      "connectionReason": "Part of Historical Mystery Thrillers collection"
+    },
+    {
+      "name": "Victorian Rural Dramas",
+      "url_path": "victorian-rural-dramas",
+      "description": "Victorian Rural Dramas collection",
+      "category": "period",
+      "connectionReason": "Part of Victorian Rural Dramas collection"
+    },
+    {
+      "name": "Religious & Moral Conflicts",
+      "url_path": "religious-moral-conflicts",
+      "description": "Religious & Moral Conflicts collection",
+      "category": "period",
+      "connectionReason": "Part of Religious & Moral Conflicts collection"
+    }
+  ],
+  "totalLists": 3
+}

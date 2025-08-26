@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Political Media Debates",
+      "url_path": "political-media-debates",
+      "description": "Political Media Debates collection",
+      "category": "documentary",
+      "connectionReason": "Part of Political Media Debates collection"
+    },
+    {
+      "name": "Underground Journalism Stories",
+      "url_path": "underground-journalism-stories",
+      "description": "Underground Journalism Stories collection",
+      "category": "documentary",
+      "connectionReason": "Part of Underground Journalism Stories collection"
+    },
+    {
+      "name": "Media Theory Films",
+      "url_path": "media-theory-films",
+      "description": "Media Theory Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Media Theory Films collection"
+    }
+  ],
+  "totalLists": 3
+}

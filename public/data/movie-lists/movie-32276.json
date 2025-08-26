@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Independent Cinema History",
+      "url_path": "independent-cinema-history",
+      "description": "Independent Cinema History collection",
+      "category": "documentary",
+      "connectionReason": "Part of Independent Cinema History collection"
+    },
+    {
+      "name": "1970s Cultural Retrospectives (Part 2)",
+      "url_path": "1970s-cultural-retrospectives-part-2-",
+      "description": "1970s Cultural Retrospectives (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of 1970s Cultural Retrospectives (Part 2) collection"
+    },
+    {
+      "name": "Rise and Fall Stories (Part 3)",
+      "url_path": "rise-and-fall-stories-part-3-",
+      "description": "Rise and Fall Stories (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Rise and Fall Stories (Part 3) collection"
+    },
+    {
+      "name": "Cultural Icon Biographies (Part 3)",
+      "url_path": "cultural-icon-biographies-part-3-",
+      "description": "Cultural Icon Biographies (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cultural Icon Biographies (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Americana Nostalgia Films",
+      "url_path": "americana-nostalgia-films",
+      "description": "Americana Nostalgia Films collection",
+      "category": "animation",
+      "connectionReason": "Part of Americana Nostalgia Films collection"
+    },
+    {
+      "name": "Environmental Conservation Animation",
+      "url_path": "environmental-conservation-animation",
+      "description": "Environmental Conservation Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Environmental Conservation Animation collection"
+    },
+    {
+      "name": "Cultural Bridge Stories",
+      "url_path": "cultural-bridge-stories",
+      "description": "Cultural Bridge Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Cultural Bridge Stories collection"
+    },
+    {
+      "name": "Native Cultural Immersion",
+      "url_path": "native-cultural-immersion",
+      "description": "Native Cultural Immersion collection",
+      "category": "western",
+      "connectionReason": "Part of Native Cultural Immersion collection"
+    },
+    {
+      "name": "Survival Against Nature",
+      "url_path": "survival-against-nature",
+      "description": "Survival Against Nature collection",
+      "category": "western",
+      "connectionReason": "Part of Survival Against Nature collection"
+    },
+    {
+      "name": "Horse Training Westerns",
+      "url_path": "horse-training-westerns",
+      "description": "Horse Training Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Horse Training Westerns collection"
+    }
+  ],
+  "totalLists": 6
+}

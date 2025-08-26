@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Modern Santa Stories",
+      "url_path": "modern-santa-stories",
+      "description": "Modern Santa Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Modern Santa Stories collection"
+    },
+    {
+      "name": "Home Invasion Comedies",
+      "url_path": "home-invasion-comedies",
+      "description": "Home Invasion Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Home Invasion Comedies collection"
+    },
+    {
+      "name": "Action Comedy Sequels",
+      "url_path": "action-comedy-sequels",
+      "description": "Action Comedy Sequels collection",
+      "category": "comedy",
+      "connectionReason": "Part of Action Comedy Sequels collection"
+    },
+    {
+      "name": "Modern Christmas Classics (Part 2)",
+      "url_path": "modern-christmas-classics-part-2-",
+      "description": "Modern Christmas Classics (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Modern Christmas Classics (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

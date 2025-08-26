@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Ancient Temple Horror",
+      "url_path": "ancient-temple-horror",
+      "description": "Ancient Temple Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Ancient Temple Horror collection"
+    },
+    {
+      "name": "Cursed Object Horror",
+      "url_path": "cursed-object-horror",
+      "description": "Cursed Object Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Cursed Object Horror collection"
+    },
+    {
+      "name": "Psychic Powers Evolution",
+      "url_path": "psychic-powers-evolution",
+      "description": "Psychic Powers Evolution collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Psychic Powers Evolution collection"
+    },
+    {
+      "name": "Ancient Tech Ritual Horror",
+      "url_path": "ancient-tech-ritual-horror",
+      "description": "Ancient Tech Ritual Horror collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Ancient Tech Ritual Horror collection"
+    },
+    {
+      "name": "Fantasy SciFi Hybrids",
+      "url_path": "fantasy-scifi-hybrids",
+      "description": "Fantasy SciFi Hybrids collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Fantasy SciFi Hybrids collection"
+    }
+  ],
+  "totalLists": 5
+}

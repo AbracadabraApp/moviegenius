@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Demonic & Occult Horror",
+      "url_path": "demonic-occult-horror",
+      "description": "Demonic & Occult Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Demonic & Occult Horror collection"
+    },
+    {
+      "name": "Historical Trauma Horror",
+      "url_path": "historical-trauma-horror",
+      "description": "Historical Trauma Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Historical Trauma Horror collection"
+    },
+    {
+      "name": "True Crime Horror",
+      "url_path": "true-crime-horror",
+      "description": "True Crime Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of True Crime Horror collection"
+    }
+  ],
+  "totalLists": 3
+}

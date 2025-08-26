@@ -1,0 +1,158 @@
+{
+  "movieId": "d1ed685f-b9c5-452f-8a51-427fc335d660",
+  "tmdbId": 277,
+  "title": "Underworld",
+  "year": 2003,
+  "analysis": {
+    "keyElements": {
+      "director": "Len Wiseman",
+      "writers": [
+        "Kevin Grevioux",
+        "Len Wiseman",
+        "Danny McBride"
+      ],
+      "stars": [
+        "Kate Beckinsale",
+        "Scott Speedman",
+        "Michael Sheen"
+      ],
+      "genre": "Action Horror",
+      "releaseYear": 2003,
+      "cinematographer": "Tony Pierce-Roberts",
+      "composer": "Paul Haslinger",
+      "studio": "Screen Gems"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Pioneering blend of Gothic vampire aesthetics with modern action choreography",
+        "Kate Beckinsale's commanding performance as Selene defines a new type of female action hero",
+        "Rich world-building that spawned a successful franchise and influenced urban fantasy"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Blade",
+        "year": 1998,
+        "description": "Direct influence on Underworld's modern vampire-action fusion"
+      },
+      {
+        "title": "The Matrix",
+        "year": 1999,
+        "description": "Stylistic and action choreography inspiration"
+      },
+      {
+        "title": "Van Helsing",
+        "year": 2004,
+        "description": "Similar Gothic-action hybrid following Underworld's success"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Gothic Horror Modernization",
+        "category": "Genre Studies",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Action Choreography in Supernatural Films",
+        "category": "Film Technique",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "Vampire Cinema Evolution",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Len Wiseman",
+      "personId": 22180,
+      "slug": "/person/22180",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Kevin Grevioux",
+        "personId": 20874,
+        "slug": "/person/20874",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Len Wiseman",
+        "personId": 22180,
+        "slug": "/person/22180",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Danny McBride",
+        "personId": 7438,
+        "slug": "/person/7438",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Kate Beckinsale",
+        "personId": 20201,
+        "slug": "/person/20201",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Scott Speedman",
+        "personId": 33417,
+        "slug": "/person/33417",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Michael Sheen",
+        "personId": 25941,
+        "slug": "/person/25941",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Bill Nighy",
+        "personId": 3782,
+        "slug": "/person/3782",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Tony Pierce-Roberts",
+      "personId": 36856,
+      "slug": "/person/36856",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Paul Haslinger",
+      "personId": 28835,
+      "slug": "/person/28835",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:18.400Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

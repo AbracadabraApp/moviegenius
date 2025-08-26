@@ -1,0 +1,143 @@
+{
+  "movieId": "9ff92daa-6690-48f5-914f-9b1a5168d00b",
+  "tmdbId": 378,
+  "title": "Raising Arizona",
+  "year": 1987,
+  "analysis": {
+    "keyElements": {
+      "director": "Joel and Ethan Coen",
+      "writers": [
+        "Joel Coen",
+        "Ethan Coen"
+      ],
+      "stars": [
+        "Nicolas Cage",
+        "Holly Hunter",
+        "John Goodman"
+      ],
+      "genre": "Crime Comedy",
+      "releaseYear": 1987,
+      "cinematographer": "Barry Sonnenfeld",
+      "composer": "Carter Burwell",
+      "studio": "20th Century Fox"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Perfectly balanced mix of screwball comedy and heartfelt emotion",
+        "Career-defining performances from Nicolas Cage and Holly Hunter",
+        "Showcases the Coen Brothers' distinctive visual and narrative style at its most accessible"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Blood Simple",
+        "year": 1984,
+        "description": "The Coens' debut film, establishing their noir influences"
+      },
+      {
+        "title": "Bringing Up Baby",
+        "year": 1938,
+        "description": "Classic screwball comedy that influenced Raising Arizona's tone"
+      },
+      {
+        "title": "The Royal Tenenbaums",
+        "year": 2001,
+        "description": "Similarly combines quirky humor with family dynamics"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Screwball Comedy Techniques",
+        "category": "Genre Studies",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Visual Comedy in Cinema",
+        "category": "Directing",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "1980s American Society",
+        "category": "Cultural Context",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Joel Coen, Ethan Coen",
+      "personId": 17788,
+      "slug": "/person/17788",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Joel Coen",
+        "personId": 17787,
+        "slug": "/person/17787",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ethan Coen",
+        "personId": 10667,
+        "slug": "/person/10667",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Nicolas Cage",
+        "personId": 27556,
+        "slug": "/person/27556",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Holly Hunter",
+        "personId": 14488,
+        "slug": "/person/14488",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "John Goodman",
+        "personId": 18244,
+        "slug": "/person/18244",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Barry Sonnenfeld",
+      "personId": 3155,
+      "slug": "/person/3155",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Carter Burwell",
+      "personId": 5145,
+      "slug": "/person/5145",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:29.662Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "lists": [
+    {
+      "name": "Dark Fantasy Animation",
+      "url_path": "dark-fantasy-animation",
+      "description": "Dark Fantasy Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Dark Fantasy Animation collection"
+    },
+    {
+      "name": "Coming-of-Age Animation",
+      "url_path": "coming-of-age-animation",
+      "description": "Coming-of-Age Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Coming-of-Age Animation collection"
+    },
+    {
+      "name": "Graphic Novel Adaptations",
+      "url_path": "graphic-novel-adaptations",
+      "description": "Graphic Novel Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Graphic Novel Adaptations collection"
+    },
+    {
+      "name": "Unlikely Hero Stories",
+      "url_path": "unlikely-hero-stories",
+      "description": "Unlikely Hero Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Unlikely Hero Stories collection"
+    },
+    {
+      "name": "Superhero Coming-of-Age",
+      "url_path": "superhero-coming-of-age",
+      "description": "Superhero Coming-of-Age collection",
+      "category": "superhero",
+      "connectionReason": "Part of Superhero Coming-of-Age collection"
+    },
+    {
+      "name": "Philosophical Superhero Stories",
+      "url_path": "philosophical-superhero-stories",
+      "description": "Philosophical Superhero Stories collection",
+      "category": "superhero",
+      "connectionReason": "Part of Philosophical Superhero Stories collection"
+    },
+    {
+      "name": "Science Hero Origins",
+      "url_path": "science-hero-origins",
+      "description": "Science Hero Origins collection",
+      "category": "superhero",
+      "connectionReason": "Part of Science Hero Origins collection"
+    },
+    {
+      "name": "Legacy and Succession",
+      "url_path": "legacy-and-succession",
+      "description": "Legacy and Succession collection",
+      "category": "superhero",
+      "connectionReason": "Part of Legacy and Succession collection"
+    }
+  ],
+  "totalLists": 8
+}

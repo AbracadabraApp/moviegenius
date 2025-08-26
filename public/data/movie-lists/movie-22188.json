@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Retro-Futuristic Animation",
+      "url_path": "retro-futuristic-animation",
+      "description": "Retro-Futuristic Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Retro-Futuristic Animation collection"
+    },
+    {
+      "name": "Musical Education Animation",
+      "url_path": "musical-education-animation",
+      "description": "Musical Education Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Musical Education Animation collection"
+    },
+    {
+      "name": "Surrealist Animation Classics",
+      "url_path": "surrealist-animation-classics",
+      "description": "Surrealist Animation Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Surrealist Animation Classics collection"
+    },
+    {
+      "name": "Experimental Music Films",
+      "url_path": "experimental-music-films",
+      "description": "Experimental Music Films collection",
+      "category": "music",
+      "connectionReason": "Part of Experimental Music Films collection"
+    },
+    {
+      "name": "Animated Music Visualizations",
+      "url_path": "animated-music-visualizations",
+      "description": "Animated Music Visualizations collection",
+      "category": "music",
+      "connectionReason": "Part of Animated Music Visualizations collection"
+    }
+  ],
+  "totalLists": 5
+}

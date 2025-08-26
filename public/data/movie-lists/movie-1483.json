@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Psychedelic Horror Films",
+      "url_path": "psychedelic-horror-films",
+      "description": "Psychedelic Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Psychedelic Horror Films collection"
+    },
+    {
+      "name": "Religious Horror Thrillers (Part 1)",
+      "url_path": "religious-horror-thrillers-part-1-",
+      "description": "Religious Horror Thrillers (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Religious Horror Thrillers (Part 1) collection"
+    },
+    {
+      "name": "Art House Horror (Part 1)",
+      "url_path": "art-house-horror-part-1-",
+      "description": "Art House Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Art House Horror (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

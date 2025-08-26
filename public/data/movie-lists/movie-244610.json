@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Social Media Horror",
+      "url_path": "social-media-horror",
+      "description": "Social Media Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Social Media Horror collection"
+    },
+    {
+      "name": "Cursed Technology Horror",
+      "url_path": "cursed-technology-horror",
+      "description": "Cursed Technology Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Cursed Technology Horror collection"
+    },
+    {
+      "name": "Stalker Horror",
+      "url_path": "stalker-horror",
+      "description": "Stalker Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Stalker Horror collection"
+    },
+    {
+      "name": "Found Footage Horror (Part 2)",
+      "url_path": "found-footage-horror-part-2-",
+      "description": "Found Footage Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Found Footage Horror (Part 2) collection"
+    },
+    {
+      "name": "Social Media Horror",
+      "url_path": "social-media-horror",
+      "description": "Social Media Horror collection",
+      "category": "thriller",
+      "connectionReason": "Part of Social Media Horror collection"
+    },
+    {
+      "name": "Digital Age Slashers",
+      "url_path": "digital-age-slashers",
+      "description": "Digital Age Slashers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Digital Age Slashers collection"
+    }
+  ],
+  "totalLists": 6
+}

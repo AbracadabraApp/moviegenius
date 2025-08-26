@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Child Spy Thrillers",
+      "url_path": "child-spy-thrillers",
+      "description": "Child Spy Thrillers collection",
+      "category": "adventure",
+      "connectionReason": "Part of Child Spy Thrillers collection"
+    },
+    {
+      "name": "Animated Gadget Adventures",
+      "url_path": "animated-gadget-adventures",
+      "description": "Animated Gadget Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Animated Gadget Adventures collection"
+    },
+    {
+      "name": "Legacy Hero Inheritance [OVERSIZED]",
+      "url_path": "legacy-hero-inheritance-oversized-",
+      "description": "Legacy Hero Inheritance [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Legacy Hero Inheritance [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 3
+}

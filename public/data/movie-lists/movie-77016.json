@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Latino Crime Stories",
+      "url_path": "latino-crime-stories",
+      "description": "Latino Crime Stories collection",
+      "category": "crime",
+      "connectionReason": "Part of Latino Crime Stories collection"
+    },
+    {
+      "name": "Police Partner Brotherhood",
+      "url_path": "police-partner-brotherhood",
+      "description": "Police Partner Brotherhood collection",
+      "category": "crime",
+      "connectionReason": "Part of Police Partner Brotherhood collection"
+    },
+    {
+      "name": "Media-Obsessed Crime Films (Part 1)",
+      "url_path": "media-obsessed-crime-films-part-1-",
+      "description": "Media-Obsessed Crime Films (Part 1) collection",
+      "category": "crime",
+      "connectionReason": "Part of Media-Obsessed Crime Films (Part 1) collection"
+    },
+    {
+      "name": "LA Crime Stories (Part 1)",
+      "url_path": "la-crime-stories-part-1-",
+      "description": "LA Crime Stories (Part 1) collection",
+      "category": "crime",
+      "connectionReason": "Part of LA Crime Stories (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

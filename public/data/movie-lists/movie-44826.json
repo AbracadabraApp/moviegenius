@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Urban Night Adventures",
+      "url_path": "urban-night-adventures",
+      "description": "Urban Night Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Urban Night Adventures collection"
+    },
+    {
+      "name": "Animated Gadget Adventures",
+      "url_path": "animated-gadget-adventures",
+      "description": "Animated Gadget Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Animated Gadget Adventures collection"
+    },
+    {
+      "name": "Early Cinema History",
+      "url_path": "early-cinema-history",
+      "description": "Early Cinema History collection",
+      "category": "adventure",
+      "connectionReason": "Part of Early Cinema History collection"
+    },
+    {
+      "name": "Classic Literary Adventures [OVERSIZED]",
+      "url_path": "classic-literary-adventures-oversized-",
+      "description": "Classic Literary Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Classic Literary Adventures [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

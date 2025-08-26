@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Action Chase Thrillers",
+      "url_path": "action-chase-thrillers",
+      "description": "Action Chase Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Action Chase Thrillers collection"
+    },
+    {
+      "name": "Law Enforcement Pursuit",
+      "url_path": "law-enforcement-pursuit",
+      "description": "Law Enforcement Pursuit collection",
+      "category": "thriller",
+      "connectionReason": "Part of Law Enforcement Pursuit collection"
+    },
+    {
+      "name": "Urban Chase Thrillers (Part 3)",
+      "url_path": "urban-chase-thrillers-part-3-",
+      "description": "Urban Chase Thrillers (Part 3) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Urban Chase Thrillers (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Historic Mountain Expeditions",
+      "url_path": "historic-mountain-expeditions",
+      "description": "Historic Mountain Expeditions collection",
+      "category": "adventure",
+      "connectionReason": "Part of Historic Mountain Expeditions collection"
+    },
+    {
+      "name": "European Castle Heists",
+      "url_path": "european-castle-heists",
+      "description": "European Castle Heists collection",
+      "category": "adventure",
+      "connectionReason": "Part of European Castle Heists collection"
+    },
+    {
+      "name": "WWII Escape Adventures",
+      "url_path": "wwii-escape-adventures",
+      "description": "WWII Escape Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of WWII Escape Adventures collection"
+    },
+    {
+      "name": "Special Forces Operations",
+      "url_path": "special-forces-operations",
+      "description": "Special Forces Operations collection",
+      "category": "war",
+      "connectionReason": "Part of Special Forces Operations collection"
+    },
+    {
+      "name": "Military Deception Operations [OVERSIZED]",
+      "url_path": "military-deception-operations-oversized-",
+      "description": "Military Deception Operations [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of Military Deception Operations [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 5
+}

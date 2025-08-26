@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Unlikely Hero Stories",
+      "url_path": "unlikely-hero-stories",
+      "description": "Unlikely Hero Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Unlikely Hero Stories collection"
+    },
+    {
+      "name": "Musical Education Animation",
+      "url_path": "musical-education-animation",
+      "description": "Musical Education Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Musical Education Animation collection"
+    },
+    {
+      "name": "Classical Music Animation",
+      "url_path": "classical-music-animation",
+      "description": "Classical Music Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Classical Music Animation collection"
+    }
+  ],
+  "totalLists": 3
+}

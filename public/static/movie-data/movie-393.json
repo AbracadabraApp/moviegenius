@@ -1,0 +1,140 @@
+{
+  "movieId": "1593d006-8569-444e-9993-48add290d3a6",
+  "tmdbId": 393,
+  "title": "Kill Bill: Vol. 2",
+  "year": 2004,
+  "analysis": {
+    "keyElements": {
+      "director": "Quentin Tarantino",
+      "writers": [
+        "Quentin Tarantino"
+      ],
+      "stars": [
+        "Uma Thurman",
+        "David Carradine",
+        "Michael Madsen",
+        "Daryl Hannah"
+      ],
+      "genre": "Action/Drama",
+      "releaseYear": 2004,
+      "cinematographer": "Robert Richardson",
+      "composer": "Robert Rodriguez",
+      "studio": "Miramax Films"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful character development that deepens and humanizes the revenge story",
+        "Perfect blend of martial arts homage and original storytelling",
+        "Uma Thurman's career-defining performance as The Bride"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Lady Snowblood",
+        "year": 1973,
+        "description": "Direct influence on Kill Bill's revenge narrative and female warrior protagonist"
+      },
+      {
+        "title": "John Wick",
+        "year": 2014,
+        "description": "Spiritual successor in terms of world-building and action choreography"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Genre Hybridization",
+        "category": "Film Theory",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Martial Arts Cinema History",
+        "category": "Film History",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Quentin Tarantino",
+      "personId": 30117,
+      "slug": "/person/30117",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Quentin Tarantino",
+        "personId": 30117,
+        "slug": "/person/30117",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Uma Thurman",
+        "personId": 37223,
+        "slug": "/person/37223",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Uma Thurman",
+        "personId": 37223,
+        "slug": "/person/37223",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "David Carradine",
+        "personId": 7712,
+        "slug": "/person/7712",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Michael Madsen",
+        "personId": 25787,
+        "slug": "/person/25787",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Daryl Hannah",
+        "personId": 7568,
+        "slug": "/person/7568",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Robert Richardson",
+      "personId": 31844,
+      "slug": "/person/31844",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Robert Rodriguez",
+      "personId": 31849,
+      "slug": "/person/31849",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:31.803Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

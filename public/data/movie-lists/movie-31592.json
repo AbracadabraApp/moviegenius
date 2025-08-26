@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Classic Monster Comedies",
+      "url_path": "classic-monster-comedies",
+      "description": "Classic Monster Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Monster Comedies collection"
+    },
+    {
+      "name": "Haunted Inn Comedies",
+      "url_path": "haunted-inn-comedies",
+      "description": "Haunted Inn Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Haunted Inn Comedies collection"
+    },
+    {
+      "name": "Dark Comedy Accidents (Part 11)",
+      "url_path": "dark-comedy-accidents-part-11-",
+      "description": "Dark Comedy Accidents (Part 11) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Dark Comedy Accidents (Part 11) collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 7)",
+      "url_path": "confined-space-thrillers-part-7-",
+      "description": "Confined Space Thrillers (Part 7) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 7) collection"
+    },
+    {
+      "name": "Classic Haunted House (Part 2)",
+      "url_path": "classic-haunted-house-part-2-",
+      "description": "Classic Haunted House (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Haunted House (Part 2) collection"
+    },
+    {
+      "name": "Gothic Family Curse (Part 4)",
+      "url_path": "gothic-family-curse-part-4-",
+      "description": "Gothic Family Curse (Part 4) collection",
+      "category": "horror",
+      "connectionReason": "Part of Gothic Family Curse (Part 4) collection"
+    }
+  ],
+  "totalLists": 6
+}

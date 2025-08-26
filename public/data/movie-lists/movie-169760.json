@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Teen Life Chronicles",
+      "url_path": "teen-life-chronicles",
+      "description": "Teen Life Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Teen Life Chronicles collection"
+    },
+    {
+      "name": "Maritime Industry Chronicles",
+      "url_path": "maritime-industry-chronicles",
+      "description": "Maritime Industry Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Maritime Industry Chronicles collection"
+    },
+    {
+      "name": "Perseverance Against Odds (Part 3)",
+      "url_path": "perseverance-against-odds-part-3-",
+      "description": "Perseverance Against Odds (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Perseverance Against Odds (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

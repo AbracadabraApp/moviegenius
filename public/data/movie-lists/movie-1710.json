@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Murder Mystery Investigation",
+      "url_path": "murder-mystery-investigation",
+      "description": "Murder Mystery Investigation collection",
+      "category": "thriller",
+      "connectionReason": "Part of Murder Mystery Investigation collection"
+    },
+    {
+      "name": "True Crime Psychopath Studies",
+      "url_path": "true-crime-psychopath-studies",
+      "description": "True Crime Psychopath Studies collection",
+      "category": "thriller",
+      "connectionReason": "Part of True Crime Psychopath Studies collection"
+    },
+    {
+      "name": "Psychological Captivity Films (Part 3)",
+      "url_path": "psychological-captivity-films-part-3-",
+      "description": "Psychological Captivity Films (Part 3) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Psychological Captivity Films (Part 3) collection"
+    },
+    {
+      "name": "Underground Investigation Thrillers (Part 2)",
+      "url_path": "underground-investigation-thrillers-part-2-",
+      "description": "Underground Investigation Thrillers (Part 2) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Underground Investigation Thrillers (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

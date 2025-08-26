@@ -1,0 +1,133 @@
+{
+  "movieId": "e5c210bd-3c5f-4d39-b1da-9cbfd595e369",
+  "tmdbId": 291,
+  "title": "Riding Giants",
+  "year": 2004,
+  "analysis": {
+    "keyElements": {
+      "director": "Stacy Peralta",
+      "writers": [
+        "Stacy Peralta",
+        "Sam George"
+      ],
+      "stars": [
+        "Laird Hamilton",
+        "Greg Noll",
+        "Jeff Clark"
+      ],
+      "genre": "Documentary",
+      "releaseYear": 2004,
+      "cinematographer": "Paul Crowder",
+      "composer": "Matter",
+      "studio": "Sony Pictures Classics"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking surfing footage that captures the raw power and beauty of big wave riding",
+        "Compelling personal stories of surfing pioneers that transcend the sport itself",
+        "Masterful documentary storytelling that makes the subject accessible to non-surfers"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Dogtown and Z-Boys",
+        "year": 2001,
+        "description": "Peralta's previous documentary about skateboarding pioneers"
+      },
+      {
+        "title": "The Endless Summer",
+        "year": 1966,
+        "description": "Classic surfing documentary that established the genre"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Evolution of Surf Photography",
+        "category": "technical",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Environmental Impact on Big Wave Surfing",
+        "category": "science",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Stacy Peralta",
+      "personId": 34558,
+      "slug": "/person/34558",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Stacy Peralta",
+        "personId": 34558,
+        "slug": "/person/34558",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sam George",
+        "personId": 32999,
+        "slug": "/person/32999",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Laird Hamilton",
+        "personId": 21590,
+        "slug": "/person/21590",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Darrick Doerner",
+        "personId": 7554,
+        "slug": "/person/7554",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Greg Noll",
+        "personId": 13161,
+        "slug": "/person/13161",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Paul Crowder",
+      "personId": 28753,
+      "slug": "/person/28753",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Matter",
+      "personId": 24925,
+      "slug": "/person/24925",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:20.403Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

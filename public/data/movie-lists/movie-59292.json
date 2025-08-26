@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Casino Heist Films",
+      "url_path": "casino-heist-films",
+      "description": "Casino Heist Films collection",
+      "category": "crime",
+      "connectionReason": "Part of Casino Heist Films collection"
+    },
+    {
+      "name": "Hong Kong Action Crime",
+      "url_path": "hong-kong-action-crime",
+      "description": "Hong Kong Action Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Hong Kong Action Crime collection"
+    },
+    {
+      "name": "Asian Crime Sagas (Part 2)",
+      "url_path": "asian-crime-sagas-part-2-",
+      "description": "Asian Crime Sagas (Part 2) collection",
+      "category": "crime",
+      "connectionReason": "Part of Asian Crime Sagas (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

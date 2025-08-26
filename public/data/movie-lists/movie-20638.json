@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Moral Redemption Westerns",
+      "url_path": "moral-redemption-westerns",
+      "description": "Moral Redemption Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Moral Redemption Westerns collection"
+    },
+    {
+      "name": "Classic Psychological Westerns",
+      "url_path": "classic-psychological-westerns",
+      "description": "Classic Psychological Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Classic Psychological Westerns collection"
+    },
+    {
+      "name": "Survival Against Nature",
+      "url_path": "survival-against-nature",
+      "description": "Survival Against Nature collection",
+      "category": "western",
+      "connectionReason": "Part of Survival Against Nature collection"
+    },
+    {
+      "name": "Gold Rush Adventures",
+      "url_path": "gold-rush-adventures",
+      "description": "Gold Rush Adventures collection",
+      "category": "western",
+      "connectionReason": "Part of Gold Rush Adventures collection"
+    }
+  ],
+  "totalLists": 4
+}

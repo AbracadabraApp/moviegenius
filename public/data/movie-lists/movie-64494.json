@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Urban Night Adventures",
+      "url_path": "urban-night-adventures",
+      "description": "Urban Night Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Urban Night Adventures collection"
+    },
+    {
+      "name": "Car Chase Road Movies",
+      "url_path": "car-chase-road-movies",
+      "description": "Car Chase Road Movies collection",
+      "category": "adventure",
+      "connectionReason": "Part of Car Chase Road Movies collection"
+    },
+    {
+      "name": "Cross-Border Quest Films [OVERSIZED]",
+      "url_path": "cross-border-quest-films-oversized-",
+      "description": "Cross-Border Quest Films [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Cross-Border Quest Films [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 3
+}

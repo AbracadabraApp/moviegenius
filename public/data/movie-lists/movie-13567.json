@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Summer Camp Horror",
+      "url_path": "summer-camp-horror",
+      "description": "Summer Camp Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Summer Camp Horror collection"
+    },
+    {
+      "name": "Identity Horror",
+      "url_path": "identity-horror",
+      "description": "Identity Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Identity Horror collection"
+    },
+    {
+      "name": "Teen Slasher Horror (Part 3)",
+      "url_path": "teen-slasher-horror-part-3-",
+      "description": "Teen Slasher Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Teen Slasher Horror (Part 3) collection"
+    },
+    {
+      "name": "Psychological Horror (Part 3)",
+      "url_path": "psychological-horror-part-3-",
+      "description": "Psychological Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Psychological Horror (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

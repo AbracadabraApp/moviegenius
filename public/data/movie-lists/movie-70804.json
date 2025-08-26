@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "WWI Combat Films",
+      "url_path": "wwi-combat-films",
+      "description": "WWI Combat Films collection",
+      "category": "war",
+      "connectionReason": "Part of WWI Combat Films collection"
+    },
+    {
+      "name": "Supernatural War Films",
+      "url_path": "supernatural-war-films",
+      "description": "Supernatural War Films collection",
+      "category": "war",
+      "connectionReason": "Part of Supernatural War Films collection"
+    },
+    {
+      "name": "Experimental War Films",
+      "url_path": "experimental-war-films",
+      "description": "Experimental War Films collection",
+      "category": "war",
+      "connectionReason": "Part of Experimental War Films collection"
+    },
+    {
+      "name": "War Disillusionment Films [OVERSIZED]",
+      "url_path": "war-disillusionment-films-oversized-",
+      "description": "War Disillusionment Films [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of War Disillusionment Films [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

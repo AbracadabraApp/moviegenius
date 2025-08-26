@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Classical Youth Ensembles",
+      "url_path": "classical-youth-ensembles",
+      "description": "Classical Youth Ensembles collection",
+      "category": "music",
+      "connectionReason": "Part of Classical Youth Ensembles collection"
+    },
+    {
+      "name": "Musical Prodigy Stories",
+      "url_path": "musical-prodigy-stories",
+      "description": "Musical Prodigy Stories collection",
+      "category": "music",
+      "connectionReason": "Part of Musical Prodigy Stories collection"
+    },
+    {
+      "name": "Concert Hall Dramas",
+      "url_path": "concert-hall-dramas",
+      "description": "Concert Hall Dramas collection",
+      "category": "music",
+      "connectionReason": "Part of Concert Hall Dramas collection"
+    },
+    {
+      "name": "Historical Period Musicals [OVERSIZED]",
+      "url_path": "historical-period-musicals-oversized-",
+      "description": "Historical Period Musicals [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Historical Period Musicals [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

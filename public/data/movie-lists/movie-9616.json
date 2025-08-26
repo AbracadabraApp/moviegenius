@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Secret Society Horror",
+      "url_path": "secret-society-horror",
+      "description": "Secret Society Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Secret Society Horror collection"
+    },
+    {
+      "name": "Skeptic Investigation Horror",
+      "url_path": "skeptic-investigation-horror",
+      "description": "Skeptic Investigation Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Skeptic Investigation Horror collection"
+    },
+    {
+      "name": "Religious Horror Thrillers (Part 5)",
+      "url_path": "religious-horror-thrillers-part-5-",
+      "description": "Religious Horror Thrillers (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Religious Horror Thrillers (Part 5) collection"
+    },
+    {
+      "name": "Religious Supernatural Thrillers",
+      "url_path": "religious-supernatural-thrillers",
+      "description": "Religious Supernatural Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Religious Supernatural Thrillers collection"
+    },
+    {
+      "name": "Secret Society Rituals",
+      "url_path": "secret-society-rituals",
+      "description": "Secret Society Rituals collection",
+      "category": "thriller",
+      "connectionReason": "Part of Secret Society Rituals collection"
+    }
+  ],
+  "totalLists": 5
+}

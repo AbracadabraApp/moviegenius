@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Academic Pressure Comedies",
+      "url_path": "academic-pressure-comedies",
+      "description": "Academic Pressure Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Academic Pressure Comedies collection"
+    },
+    {
+      "name": "Comic Industry Adaptations",
+      "url_path": "comic-industry-adaptations",
+      "description": "Comic Industry Adaptations collection",
+      "category": "comedy",
+      "connectionReason": "Part of Comic Industry Adaptations collection"
+    },
+    {
+      "name": "Mentorship Gone Wrong",
+      "url_path": "mentorship-gone-wrong",
+      "description": "Mentorship Gone Wrong collection",
+      "category": "comedy",
+      "connectionReason": "Part of Mentorship Gone Wrong collection"
+    },
+    {
+      "name": "High School Social Commentary (Part 4)",
+      "url_path": "high-school-social-commentary-part-4-",
+      "description": "High School Social Commentary (Part 4) collection",
+      "category": "comedy",
+      "connectionReason": "Part of High School Social Commentary (Part 4) collection"
+    },
+    {
+      "name": "Superhero Coming-of-Age",
+      "url_path": "superhero-coming-of-age",
+      "description": "Superhero Coming-of-Age collection",
+      "category": "superhero",
+      "connectionReason": "Part of Superhero Coming-of-Age collection"
+    },
+    {
+      "name": "Classic Comic Heroes",
+      "url_path": "classic-comic-heroes",
+      "description": "Classic Comic Heroes collection",
+      "category": "superhero",
+      "connectionReason": "Part of Classic Comic Heroes collection"
+    },
+    {
+      "name": "Legacy and Succession",
+      "url_path": "legacy-and-succession",
+      "description": "Legacy and Succession collection",
+      "category": "superhero",
+      "connectionReason": "Part of Legacy and Succession collection"
+    }
+  ],
+  "totalLists": 7
+}

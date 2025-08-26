@@ -1,0 +1,133 @@
+{
+  "movieId": "40b2d6ad-5921-44dc-8f1a-4ef6fcb1a8ed",
+  "tmdbId": 293,
+  "title": "A River Runs Through It",
+  "year": 1992,
+  "analysis": {
+    "keyElements": {
+      "director": "Robert Redford",
+      "writers": [
+        "Richard Friedenberg",
+        "Norman Maclean"
+      ],
+      "stars": [
+        "Craig Sheffer",
+        "Brad Pitt",
+        "Tom Skerritt"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1992,
+      "cinematographer": "Philippe Rousselot",
+      "composer": "Mark Isham",
+      "studio": "Columbia Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Breathtaking cinematography that turns fly fishing into visual poetry",
+        "Brad Pitt's breakthrough performance as the charismatic but troubled Paul",
+        "Masterful storytelling that weaves family, nature, and spirituality into a profound meditation on life"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Natural",
+        "year": 1984,
+        "description": "Similar themes of talent, destiny, and American mythology"
+      },
+      {
+        "title": "Days of Heaven",
+        "year": 1978,
+        "description": "Comparable visual poetry and American pastoral beauty"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "American West in Cinema",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Nature as Character",
+        "category": "Film Analysis",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Robert Redford",
+      "personId": 31840,
+      "slug": "/person/31840",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Norman Maclean",
+        "personId": 27918,
+        "slug": "/person/27918",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Richard Friedenberg",
+        "personId": 30998,
+        "slug": "/person/30998",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Craig Sheffer",
+        "personId": 6883,
+        "slug": "/person/6883",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Brad Pitt",
+        "personId": 4195,
+        "slug": "/person/4195",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Tom Skerritt",
+        "personId": 36710,
+        "slug": "/person/36710",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Philippe Rousselot",
+      "personId": 29736,
+      "slug": "/person/29736",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Mark Isham",
+      "personId": 24328,
+      "slug": "/person/24328",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:20.694Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

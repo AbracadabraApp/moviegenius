@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Celebrity & Biography",
+      "url_path": "celebrity-biography",
+      "description": "Celebrity & Biography collection",
+      "category": "documentary",
+      "connectionReason": "Part of Celebrity & Biography collection"
+    },
+    {
+      "name": "Personal Journey Stories",
+      "url_path": "personal-journey-stories",
+      "description": "Personal Journey Stories collection",
+      "category": "documentary",
+      "connectionReason": "Part of Personal Journey Stories collection"
+    },
+    {
+      "name": "Family Crisis Investigations",
+      "url_path": "family-crisis-investigations",
+      "description": "Family Crisis Investigations collection",
+      "category": "documentary",
+      "connectionReason": "Part of Family Crisis Investigations collection"
+    },
+    {
+      "name": "Rise and Fall Stories (Part 3)",
+      "url_path": "rise-and-fall-stories-part-3-",
+      "description": "Rise and Fall Stories (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Rise and Fall Stories (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

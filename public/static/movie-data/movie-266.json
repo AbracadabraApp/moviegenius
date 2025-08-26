@@ -1,0 +1,146 @@
+{
+  "movieId": "6f3b187c-927e-41a3-b154-da8a8c7c1c7f",
+  "tmdbId": 266,
+  "title": "Contempt",
+  "year": 1963,
+  "analysis": {
+    "keyElements": {
+      "director": "Jean-Luc Godard",
+      "writers": [
+        "Jean-Luc Godard",
+        "Alberto Moravia"
+      ],
+      "stars": [
+        "Brigitte Bardot",
+        "Michel Piccoli",
+        "Jack Palance",
+        "Fritz Lang"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1963,
+      "cinematographer": "Raoul Coutard",
+      "composer": "Georges Delerue",
+      "studio": "Rome Paris Films"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful deconstruction of cinema, marriage, and artistic compromise",
+        "Stunning Mediterranean cinematography and Georges Delerue's haunting score",
+        "Essential viewing for understanding the French New Wave and meta-cinema"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "8½",
+        "year": 1963,
+        "description": "Fellini's contemporaneous masterpiece about creative crisis"
+      },
+      {
+        "title": "The Player",
+        "year": 1992,
+        "description": "Hollywood satire influenced by Contempt's industry critique"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "French New Wave",
+        "category": "Film Movement",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Meta-Cinema",
+        "category": "Film Theory",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Classical vs Modern Cinema",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Jean-Luc Godard",
+      "personId": 16603,
+      "slug": "/person/16603",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Jean-Luc Godard",
+        "personId": 16603,
+        "slug": "/person/16603",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Alberto Moravia",
+        "personId": 718,
+        "slug": "/person/718",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Brigitte Bardot",
+        "personId": 4468,
+        "slug": "/person/4468",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Michel Piccoli",
+        "personId": 26142,
+        "slug": "/person/26142",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jack Palance",
+        "personId": 15425,
+        "slug": "/person/15425",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Fritz Lang",
+        "personId": 11750,
+        "slug": "/person/11750",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Raoul Coutard",
+      "personId": 30415,
+      "slug": "/person/30415",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Georges Delerue",
+      "personId": 12390,
+      "slug": "/person/12390",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:16.891Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

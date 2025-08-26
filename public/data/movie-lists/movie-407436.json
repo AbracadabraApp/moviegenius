@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Supernatural Animal Tales",
+      "url_path": "supernatural-animal-tales",
+      "description": "Supernatural Animal Tales collection",
+      "category": "adventure",
+      "connectionReason": "Part of Supernatural Animal Tales collection"
+    },
+    {
+      "name": "British Raj Adventures",
+      "url_path": "british-raj-adventures",
+      "description": "British Raj Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of British Raj Adventures collection"
+    },
+    {
+      "name": "Classic Literary Adventures [OVERSIZED]",
+      "url_path": "classic-literary-adventures-oversized-",
+      "description": "Classic Literary Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Classic Literary Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Magical Coming-of-Age Stories [OVERSIZED]",
+      "url_path": "magical-coming-of-age-stories-oversized-",
+      "description": "Magical Coming-of-Age Stories [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Magical Coming-of-Age Stories [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "New Years Eve Stories",
+      "url_path": "new-years-eve-stories",
+      "description": "New Years Eve Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of New Years Eve Stories collection"
+    },
+    {
+      "name": "Midlife Crisis Comedies (Part 1)",
+      "url_path": "midlife-crisis-comedies-part-1-",
+      "description": "Midlife Crisis Comedies (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Midlife Crisis Comedies (Part 1) collection"
+    },
+    {
+      "name": "Dark Comedy Accidents (Part 1)",
+      "url_path": "dark-comedy-accidents-part-1-",
+      "description": "Dark Comedy Accidents (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Dark Comedy Accidents (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

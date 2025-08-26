@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Early Cinema Horror",
+      "url_path": "early-cinema-horror",
+      "description": "Early Cinema Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Early Cinema Horror collection"
+    },
+    {
+      "name": "Literary Horror Adaptations (Part 5)",
+      "url_path": "literary-horror-adaptations-part-5-",
+      "description": "Literary Horror Adaptations (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Literary Horror Adaptations (Part 5) collection"
+    },
+    {
+      "name": "Psychological Horror (Part 5)",
+      "url_path": "psychological-horror-part-5-",
+      "description": "Psychological Horror (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Psychological Horror (Part 5) collection"
+    },
+    {
+      "name": "Mental Illness Perspective",
+      "url_path": "mental-illness-perspective",
+      "description": "Mental Illness Perspective collection",
+      "category": "thriller",
+      "connectionReason": "Part of Mental Illness Perspective collection"
+    }
+  ],
+  "totalLists": 4
+}

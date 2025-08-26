@@ -1,0 +1,138 @@
+{
+  "movieId": "a42e88e8-ebb3-4622-b13f-ac5e6277e494",
+  "tmdbId": 281,
+  "title": "Strange Days",
+  "year": 1995,
+  "analysis": {
+    "keyElements": {
+      "director": "Kathryn Bigelow",
+      "writers": [
+        "James Cameron",
+        "Jay Cocks"
+      ],
+      "stars": [
+        "Ralph Fiennes",
+        "Angela Bassett",
+        "Juliette Lewis"
+      ],
+      "genre": "Science Fiction Thriller",
+      "releaseYear": 1995,
+      "cinematographer": "Matthew F. Leonetti",
+      "composer": "Graeme Revell",
+      "studio": "20th Century Fox"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Prescient exploration of virtual reality and surveillance culture that feels more relevant today than in 1995",
+        "Masterful direction by Kathryn Bigelow blending noir elements with cyberpunk aesthetics",
+        "Powerful performances from Ralph Fiennes and Angela Bassett in complex, morally ambiguous roles"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Blade Runner",
+        "year": 1982,
+        "description": "Key influence on Strange Days' cyberpunk aesthetic and noir elements"
+      },
+      {
+        "title": "The Matrix",
+        "year": 1999,
+        "description": "Later exploration of similar themes about virtual reality and technological control"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Cyberpunk Cinema",
+        "category": "Genre Studies",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "POV Cinematography",
+        "category": "Technical",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "Social Commentary in Sci-Fi",
+        "category": "Themes",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Kathryn Bigelow",
+      "personId": 20294,
+      "slug": "/person/20294",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "James Cameron",
+        "personId": 15711,
+        "slug": "/person/15711",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jay Cocks",
+        "personId": 16389,
+        "slug": "/person/16389",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Ralph Fiennes",
+        "personId": 30294,
+        "slug": "/person/30294",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Angela Bassett",
+        "personId": 1891,
+        "slug": "/person/1891",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Juliette Lewis",
+        "personId": 19749,
+        "slug": "/person/19749",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Matthew F. Leonetti",
+      "personId": 24957,
+      "slug": "/person/24957",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Graeme Revell",
+      "personId": 13072,
+      "slug": "/person/13072",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:18.848Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Latino Crime Stories",
+      "url_path": "latino-crime-stories",
+      "description": "Latino Crime Stories collection",
+      "category": "crime",
+      "connectionReason": "Part of Latino Crime Stories collection"
+    },
+    {
+      "name": "Luxury Lifestyle Crime",
+      "url_path": "luxury-lifestyle-crime",
+      "description": "Luxury Lifestyle Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Luxury Lifestyle Crime collection"
+    },
+    {
+      "name": "Urban Drug Trade (Part 3)",
+      "url_path": "urban-drug-trade-part-3-",
+      "description": "Urban Drug Trade (Part 3) collection",
+      "category": "crime",
+      "connectionReason": "Part of Urban Drug Trade (Part 3) collection"
+    },
+    {
+      "name": "Criminal Origin Stories (Part 5)",
+      "url_path": "criminal-origin-stories-part-5-",
+      "description": "Criminal Origin Stories (Part 5) collection",
+      "category": "crime",
+      "connectionReason": "Part of Criminal Origin Stories (Part 5) collection"
+    }
+  ],
+  "totalLists": 4
+}

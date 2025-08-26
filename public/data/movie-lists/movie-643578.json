@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Space Exploration History",
+      "url_path": "space-exploration-history",
+      "description": "Space Exploration History collection",
+      "category": "documentary",
+      "connectionReason": "Part of Space Exploration History collection"
+    },
+    {
+      "name": "1970s Cultural Retrospectives (Part 1)",
+      "url_path": "1970s-cultural-retrospectives-part-1-",
+      "description": "1970s Cultural Retrospectives (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of 1970s Cultural Retrospectives (Part 1) collection"
+    },
+    {
+      "name": "Rise and Fall Stories (Part 1)",
+      "url_path": "rise-and-fall-stories-part-1-",
+      "description": "Rise and Fall Stories (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Rise and Fall Stories (Part 1) collection"
+    },
+    {
+      "name": "Personal Monologue Documentaries (Part 1)",
+      "url_path": "personal-monologue-documentaries-part-1-",
+      "description": "Personal Monologue Documentaries (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Personal Monologue Documentaries (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

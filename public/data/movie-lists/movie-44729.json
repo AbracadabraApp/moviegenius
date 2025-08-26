@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Pacific Islands Romance",
+      "url_path": "pacific-islands-romance",
+      "description": "Pacific Islands Romance collection",
+      "category": "adventure",
+      "connectionReason": "Part of Pacific Islands Romance collection"
+    },
+    {
+      "name": "Gothic Adventure Horror",
+      "url_path": "gothic-adventure-horror",
+      "description": "Gothic Adventure Horror collection",
+      "category": "adventure",
+      "connectionReason": "Part of Gothic Adventure Horror collection"
+    },
+    {
+      "name": "Hidden Utopia Discoveries",
+      "url_path": "hidden-utopia-discoveries",
+      "description": "Hidden Utopia Discoveries collection",
+      "category": "adventure",
+      "connectionReason": "Part of Hidden Utopia Discoveries collection"
+    },
+    {
+      "name": "Tropical Island Horror",
+      "url_path": "tropical-island-horror",
+      "description": "Tropical Island Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Tropical Island Horror collection"
+    },
+    {
+      "name": "Animated Adult Horror",
+      "url_path": "animated-adult-horror",
+      "description": "Animated Adult Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Animated Adult Horror collection"
+    },
+    {
+      "name": "Psychological Horror (Part 2)",
+      "url_path": "psychological-horror-part-2-",
+      "description": "Psychological Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Psychological Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 6
+}

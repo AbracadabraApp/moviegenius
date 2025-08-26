@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Post-Apocalyptic Survival Horror",
+      "url_path": "post-apocalyptic-survival-horror",
+      "description": "Post-Apocalyptic Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Post-Apocalyptic Survival Horror collection"
+    },
+    {
+      "name": "Vampire Hunter Action",
+      "url_path": "vampire-hunter-action",
+      "description": "Vampire Hunter Action collection",
+      "category": "horror",
+      "connectionReason": "Part of Vampire Hunter Action collection"
+    },
+    {
+      "name": "Western Frontier Horror",
+      "url_path": "western-frontier-horror",
+      "description": "Western Frontier Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Western Frontier Horror collection"
+    },
+    {
+      "name": "Religious Horror Thrillers (Part 3)",
+      "url_path": "religious-horror-thrillers-part-3-",
+      "description": "Religious Horror Thrillers (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Religious Horror Thrillers (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

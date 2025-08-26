@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Media Exploitation Thrillers",
+      "url_path": "media-exploitation-thrillers",
+      "description": "Media Exploitation Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Media Exploitation Thrillers collection"
+    },
+    {
+      "name": "Civilian Vigilante Justice",
+      "url_path": "civilian-vigilante-justice",
+      "description": "Civilian Vigilante Justice collection",
+      "category": "thriller",
+      "connectionReason": "Part of Civilian Vigilante Justice collection"
+    },
+    {
+      "name": "Revenge Violence Descent",
+      "url_path": "revenge-violence-descent",
+      "description": "Revenge Violence Descent collection",
+      "category": "thriller",
+      "connectionReason": "Part of Revenge Violence Descent collection"
+    }
+  ],
+  "totalLists": 3
+}

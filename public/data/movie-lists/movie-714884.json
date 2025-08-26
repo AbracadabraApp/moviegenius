@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Indigenous Rights Documentaries",
+      "url_path": "indigenous-rights-documentaries",
+      "description": "Indigenous Rights Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Indigenous Rights Documentaries collection"
+    },
+    {
+      "name": "Indigenous Cultural Documentation",
+      "url_path": "indigenous-cultural-documentation",
+      "description": "Indigenous Cultural Documentation collection",
+      "category": "documentary",
+      "connectionReason": "Part of Indigenous Cultural Documentation collection"
+    },
+    {
+      "name": "Cultural Identity Studies",
+      "url_path": "cultural-identity-studies",
+      "description": "Cultural Identity Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cultural Identity Studies collection"
+    }
+  ],
+  "totalLists": 3
+}

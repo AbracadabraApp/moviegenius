@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Post-Apocalyptic Survival Horror",
+      "url_path": "post-apocalyptic-survival-horror",
+      "description": "Post-Apocalyptic Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Post-Apocalyptic Survival Horror collection"
+    },
+    {
+      "name": "Mutant Creature Features (Part 4)",
+      "url_path": "mutant-creature-features-part-4-",
+      "description": "Mutant Creature Features (Part 4) collection",
+      "category": "horror",
+      "connectionReason": "Part of Mutant Creature Features (Part 4) collection"
+    },
+    {
+      "name": "Virtual Reality Horror",
+      "url_path": "virtual-reality-horror",
+      "description": "Virtual Reality Horror collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Virtual Reality Horror collection"
+    },
+    {
+      "name": "Mutant Creature Features (Part 3)",
+      "url_path": "mutant-creature-features-part-3-",
+      "description": "Mutant Creature Features (Part 3) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Mutant Creature Features (Part 3) collection"
+    },
+    {
+      "name": "Post-Nuclear Survival Films (Part 1)",
+      "url_path": "post-nuclear-survival-films-part-1-",
+      "description": "Post-Nuclear Survival Films (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Post-Nuclear Survival Films (Part 1) collection"
+    }
+  ],
+  "totalLists": 5
+}

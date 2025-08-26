@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "True Crime Horror",
+      "url_path": "true-crime-horror",
+      "description": "True Crime Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of True Crime Horror collection"
+    },
+    {
+      "name": "Skeptic Investigation Horror",
+      "url_path": "skeptic-investigation-horror",
+      "description": "Skeptic Investigation Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Skeptic Investigation Horror collection"
+    },
+    {
+      "name": "Found Footage Horror (Part 2)",
+      "url_path": "found-footage-horror-part-2-",
+      "description": "Found Footage Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Found Footage Horror (Part 2) collection"
+    },
+    {
+      "name": "Domestic Alien Invasion",
+      "url_path": "domestic-alien-invasion",
+      "description": "Domestic Alien Invasion collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Domestic Alien Invasion collection"
+    },
+    {
+      "name": "UFO Investigation Thrillers",
+      "url_path": "ufo-investigation-thrillers",
+      "description": "UFO Investigation Thrillers collection",
+      "category": "science fiction",
+      "connectionReason": "Part of UFO Investigation Thrillers collection"
+    }
+  ],
+  "totalLists": 5
+}

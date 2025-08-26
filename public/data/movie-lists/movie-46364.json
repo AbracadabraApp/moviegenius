@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Space Horror",
+      "url_path": "space-horror",
+      "description": "Space Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Space Horror collection"
+    },
+    {
+      "name": "Body Horror (Part 3)",
+      "url_path": "body-horror-part-3-",
+      "description": "Body Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Body Horror (Part 3) collection"
+    },
+    {
+      "name": "Scientific Expedition Horror (Part 1)",
+      "url_path": "scientific-expedition-horror-part-1-",
+      "description": "Scientific Expedition Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Scientific Expedition Horror (Part 1) collection"
+    },
+    {
+      "name": "Space Horror Survival",
+      "url_path": "space-horror-survival",
+      "description": "Space Horror Survival collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Horror Survival collection"
+    },
+    {
+      "name": "Body Horror SciFi",
+      "url_path": "body-horror-scifi",
+      "description": "Body Horror SciFi collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Body Horror SciFi collection"
+    },
+    {
+      "name": "Psychological Space Isolation (Part 1)",
+      "url_path": "psychological-space-isolation-part-1-",
+      "description": "Psychological Space Isolation (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Psychological Space Isolation (Part 1) collection"
+    }
+  ],
+  "totalLists": 6
+}

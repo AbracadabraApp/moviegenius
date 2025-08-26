@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Animal Friend Horror",
+      "url_path": "animal-friend-horror",
+      "description": "Animal Friend Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Animal Friend Horror collection"
+    },
+    {
+      "name": "Academic Pressure Horror",
+      "url_path": "academic-pressure-horror",
+      "description": "Academic Pressure Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Academic Pressure Horror collection"
+    },
+    {
+      "name": "Female Coming-of-Age Horror",
+      "url_path": "female-coming-of-age-horror",
+      "description": "Female Coming-of-Age Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Female Coming-of-Age Horror collection"
+    },
+    {
+      "name": "Revenge Horror Films",
+      "url_path": "revenge-horror-films",
+      "description": "Revenge Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Revenge Horror Films collection"
+    }
+  ],
+  "totalLists": 4
+}

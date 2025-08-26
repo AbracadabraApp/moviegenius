@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Fantasy Martial Arts Comedy",
+      "url_path": "fantasy-martial-arts-comedy",
+      "description": "Fantasy Martial Arts Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Fantasy Martial Arts Comedy collection"
+    },
+    {
+      "name": "Sailor Comedy Adventures",
+      "url_path": "sailor-comedy-adventures",
+      "description": "Sailor Comedy Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Sailor Comedy Adventures collection"
+    },
+    {
+      "name": "Historical Comic Adaptations",
+      "url_path": "historical-comic-adaptations",
+      "description": "Historical Comic Adaptations collection",
+      "category": "comedy",
+      "connectionReason": "Part of Historical Comic Adaptations collection"
+    }
+  ],
+  "totalLists": 3
+}

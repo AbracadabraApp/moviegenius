@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Pacifist to Warrior",
+      "url_path": "pacifist-to-warrior",
+      "description": "Pacifist to Warrior collection",
+      "category": "war",
+      "connectionReason": "Part of Pacifist to Warrior collection"
+    },
+    {
+      "name": "North African Campaign",
+      "url_path": "north-african-campaign",
+      "description": "North African Campaign collection",
+      "category": "war",
+      "connectionReason": "Part of North African Campaign collection"
+    },
+    {
+      "name": "Basic Training Films",
+      "url_path": "basic-training-films",
+      "description": "Basic Training Films collection",
+      "category": "war",
+      "connectionReason": "Part of Basic Training Films collection"
+    },
+    {
+      "name": "Military Training Films",
+      "url_path": "military-training-films",
+      "description": "Military Training Films collection",
+      "category": "war",
+      "connectionReason": "Part of Military Training Films collection"
+    }
+  ],
+  "totalLists": 4
+}

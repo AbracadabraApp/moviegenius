@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Supernatural Animal Tales",
+      "url_path": "supernatural-animal-tales",
+      "description": "Supernatural Animal Tales collection",
+      "category": "adventure",
+      "connectionReason": "Part of Supernatural Animal Tales collection"
+    },
+    {
+      "name": "Animal Detective Stories",
+      "url_path": "animal-detective-stories",
+      "description": "Animal Detective Stories collection",
+      "category": "adventure",
+      "connectionReason": "Part of Animal Detective Stories collection"
+    },
+    {
+      "name": "Classic Literary Adventures [OVERSIZED]",
+      "url_path": "classic-literary-adventures-oversized-",
+      "description": "Classic Literary Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Classic Literary Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Pet Adventure Comedies (Part 1)",
+      "url_path": "pet-adventure-comedies-part-1-",
+      "description": "Pet Adventure Comedies (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Pet Adventure Comedies (Part 1) collection"
+    },
+    {
+      "name": "Found Family Comedies (Part 4)",
+      "url_path": "found-family-comedies-part-4-",
+      "description": "Found Family Comedies (Part 4) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Found Family Comedies (Part 4) collection"
+    },
+    {
+      "name": "Magical Self-Discovery Stories (Part 1)",
+      "url_path": "magical-self-discovery-stories-part-1-",
+      "description": "Magical Self-Discovery Stories (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Magical Self-Discovery Stories (Part 1) collection"
+    }
+  ],
+  "totalLists": 6
+}

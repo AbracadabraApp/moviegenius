@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Stop Motion Classics",
+      "url_path": "stop-motion-classics",
+      "description": "Stop Motion Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Stop Motion Classics collection"
+    },
+    {
+      "name": "Surrealist Animation Classics",
+      "url_path": "surrealist-animation-classics",
+      "description": "Surrealist Animation Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Surrealist Animation Classics collection"
+    },
+    {
+      "name": "Documentary Animation",
+      "url_path": "documentary-animation",
+      "description": "Documentary Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Documentary Animation collection"
+    },
+    {
+      "name": "Experimental Performance Art",
+      "url_path": "experimental-performance-art",
+      "description": "Experimental Performance Art collection",
+      "category": "documentary",
+      "connectionReason": "Part of Experimental Performance Art collection"
+    },
+    {
+      "name": "Animation Documentary Innovation",
+      "url_path": "animation-documentary-innovation",
+      "description": "Animation Documentary Innovation collection",
+      "category": "documentary",
+      "connectionReason": "Part of Animation Documentary Innovation collection"
+    },
+    {
+      "name": "Cultural Icon Biographies (Part 10)",
+      "url_path": "cultural-icon-biographies-part-10-",
+      "description": "Cultural Icon Biographies (Part 10) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cultural Icon Biographies (Part 10) collection"
+    }
+  ],
+  "totalLists": 6
+}

@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "name": "Royal Court Dramas",
+      "url_path": "royal-court-dramas",
+      "description": "Royal Court Dramas collection",
+      "category": "period",
+      "connectionReason": "Part of Royal Court Dramas collection"
+    },
+    {
+      "name": "British Literary Adaptations",
+      "url_path": "british-literary-adaptations",
+      "description": "British Literary Adaptations collection",
+      "category": "period",
+      "connectionReason": "Part of British Literary Adaptations collection"
+    }
+  ],
+  "totalLists": 2
+}

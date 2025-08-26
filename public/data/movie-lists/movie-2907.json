@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Classic Monster Comedies",
+      "url_path": "classic-monster-comedies",
+      "description": "Classic Monster Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Monster Comedies collection"
+    },
+    {
+      "name": "Nonconformist Family Stories (Part 6)",
+      "url_path": "nonconformist-family-stories-part-6-",
+      "description": "Nonconformist Family Stories (Part 6) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Nonconformist Family Stories (Part 6) collection"
+    },
+    {
+      "name": "Gothic Family Curses",
+      "url_path": "gothic-family-curses",
+      "description": "Gothic Family Curses collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Gothic Family Curses collection"
+    },
+    {
+      "name": "Outsider Transformation Stories",
+      "url_path": "outsider-transformation-stories",
+      "description": "Outsider Transformation Stories collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Outsider Transformation Stories collection"
+    },
+    {
+      "name": "Modern Magical Realism [OVERSIZED]",
+      "url_path": "modern-magical-realism-oversized-",
+      "description": "Modern Magical Realism [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Modern Magical Realism [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 5
+}

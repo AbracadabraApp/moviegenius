@@ -1,0 +1,141 @@
+{
+  "movieId": "d77d6c9b-e6a9-4893-ad41-fc6b37d72835",
+  "tmdbId": 425,
+  "title": "Ice Age",
+  "year": 2002,
+  "analysis": {
+    "keyElements": {
+      "director": "Chris Wedge",
+      "writers": [
+        "Michael Berg",
+        "Michael J. Wilson",
+        "Peter Ackerman"
+      ],
+      "stars": [
+        "Ray Romano",
+        "John Leguizamo",
+        "Denis Leary"
+      ],
+      "genre": "Animation/Adventure/Comedy",
+      "releaseYear": 2002,
+      "cinematographer": "N/A",
+      "composer": "David Newman",
+      "studio": "Blue Sky Studios"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Perfectly balanced blend of humor and heart that appeals to all ages",
+        "Innovative character dynamics that subvert typical animated film tropes",
+        "Groundbreaking animation that still holds up remarkably well today"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Shrek",
+        "year": 2001,
+        "description": "Fellow pioneer in non-Disney animation success"
+      },
+      {
+        "title": "The Land Before Time",
+        "year": 1988,
+        "description": "Earlier prehistoric animation dealing with similar themes"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Character Animation Evolution",
+        "category": "Technical",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Found Family Narratives",
+        "category": "Themes",
+        "difficulty": "Beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Chris Wedge",
+      "personId": 6321,
+      "slug": "/person/6321",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Michael Berg",
+        "personId": 25508,
+        "slug": "/person/25508",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Michael J. Wilson",
+        "personId": 25744,
+        "slug": "/person/25744",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Peter Ackerman",
+        "personId": 29203,
+        "slug": "/person/29203",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Ray Romano",
+        "personId": 30569,
+        "slug": "/person/30569",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "John Leguizamo",
+        "personId": 18391,
+        "slug": "/person/18391",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Denis Leary",
+        "personId": 8430,
+        "slug": "/person/8430",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "N/A",
+      "personId": 26959,
+      "slug": "/person/26959",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "David Newman",
+      "personId": 8043,
+      "slug": "/person/8043",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:36.096Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Wartime Journey Films",
+      "url_path": "wartime-journey-films",
+      "description": "Wartime Journey Films collection",
+      "category": "war",
+      "connectionReason": "Part of Wartime Journey Films collection"
+    },
+    {
+      "name": "War Atrocity Films",
+      "url_path": "war-atrocity-films",
+      "description": "War Atrocity Films collection",
+      "category": "war",
+      "connectionReason": "Part of War Atrocity Films collection"
+    },
+    {
+      "name": "Jewish Wartime Experience",
+      "url_path": "jewish-wartime-experience",
+      "description": "Jewish Wartime Experience collection",
+      "category": "war",
+      "connectionReason": "Part of Jewish Wartime Experience collection"
+    },
+    {
+      "name": "Civilian Survival Stories",
+      "url_path": "civilian-survival-stories",
+      "description": "Civilian Survival Stories collection",
+      "category": "war",
+      "connectionReason": "Part of Civilian Survival Stories collection"
+    }
+  ],
+  "totalLists": 4
+}

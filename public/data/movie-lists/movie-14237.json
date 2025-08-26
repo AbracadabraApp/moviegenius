@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Teen Digital Nightmare",
+      "url_path": "teen-digital-nightmare",
+      "description": "Teen Digital Nightmare collection",
+      "category": "horror",
+      "connectionReason": "Part of Teen Digital Nightmare collection"
+    },
+    {
+      "name": "Modern Suburban Horror (Part 2)",
+      "url_path": "modern-suburban-horror-part-2-",
+      "description": "Modern Suburban Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Modern Suburban Horror (Part 2) collection"
+    },
+    {
+      "name": "90s Science Thrillers",
+      "url_path": "90s-science-thrillers",
+      "description": "90s Science Thrillers collection",
+      "category": "science fiction",
+      "connectionReason": "Part of 90s Science Thrillers collection"
+    },
+    {
+      "name": "Virtual Reality Horror",
+      "url_path": "virtual-reality-horror",
+      "description": "Virtual Reality Horror collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Virtual Reality Horror collection"
+    }
+  ],
+  "totalLists": 4
+}

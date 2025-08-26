@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Giallo Murder Mystery",
+      "url_path": "giallo-murder-mystery",
+      "description": "Giallo Murder Mystery collection",
+      "category": "horror",
+      "connectionReason": "Part of Giallo Murder Mystery collection"
+    },
+    {
+      "name": "Urban Decay Horror",
+      "url_path": "urban-decay-horror",
+      "description": "Urban Decay Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Urban Decay Horror collection"
+    },
+    {
+      "name": "Noir Detective Horror (Part 2)",
+      "url_path": "noir-detective-horror-part-2-",
+      "description": "Noir Detective Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Noir Detective Horror (Part 2) collection"
+    },
+    {
+      "name": "Extreme Gore Horror (Part 3)",
+      "url_path": "extreme-gore-horror-part-3-",
+      "description": "Extreme Gore Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Extreme Gore Horror (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

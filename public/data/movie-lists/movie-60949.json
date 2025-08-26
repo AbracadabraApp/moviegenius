@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Dark Fantasy Animation",
+      "url_path": "dark-fantasy-animation",
+      "description": "Dark Fantasy Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Dark Fantasy Animation collection"
+    },
+    {
+      "name": "European-Set Animations",
+      "url_path": "european-set-animations",
+      "description": "European-Set Animations collection",
+      "category": "animation",
+      "connectionReason": "Part of European-Set Animations collection"
+    },
+    {
+      "name": "Stop Motion Classics",
+      "url_path": "stop-motion-classics",
+      "description": "Stop Motion Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Stop Motion Classics collection"
+    },
+    {
+      "name": "Inanimate Object Adventures",
+      "url_path": "inanimate-object-adventures",
+      "description": "Inanimate Object Adventures collection",
+      "category": "animation",
+      "connectionReason": "Part of Inanimate Object Adventures collection"
+    },
+    {
+      "name": "Inanimate Objects Alive",
+      "url_path": "inanimate-objects-alive",
+      "description": "Inanimate Objects Alive collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Inanimate Objects Alive collection"
+    },
+    {
+      "name": "Dark Fantasy Anthology",
+      "url_path": "dark-fantasy-anthology",
+      "description": "Dark Fantasy Anthology collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Dark Fantasy Anthology collection"
+    }
+  ],
+  "totalLists": 6
+}

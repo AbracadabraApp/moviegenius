@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Friendly Alien Encounters",
+      "url_path": "friendly-alien-encounters",
+      "description": "Friendly Alien Encounters collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Friendly Alien Encounters collection"
+    },
+    {
+      "name": "Cold War Dystopias",
+      "url_path": "cold-war-dystopias",
+      "description": "Cold War Dystopias collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Cold War Dystopias collection"
+    },
+    {
+      "name": "Space Evolution Philosophy",
+      "url_path": "space-evolution-philosophy",
+      "description": "Space Evolution Philosophy collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Evolution Philosophy collection"
+    }
+  ],
+  "totalLists": 3
+}

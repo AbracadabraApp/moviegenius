@@ -1,0 +1,133 @@
+{
+  "movieId": "6f063d9f-69e2-40b5-8e06-aa12cda2dc59",
+  "tmdbId": 237,
+  "title": "Young Adam",
+  "year": 2003,
+  "analysis": {
+    "keyElements": {
+      "director": "David Mackenzie",
+      "writers": [
+        "David Mackenzie",
+        "Alexander Trocchi"
+      ],
+      "stars": [
+        "Ewan McGregor",
+        "Tilda Swinton",
+        "Peter Mullan"
+      ],
+      "genre": "Drama/Neo-noir",
+      "releaseYear": 2003,
+      "cinematographer": "Giles Nuttgens",
+      "composer": "David Byrne",
+      "studio": "Sony Pictures Classics"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Haunting performances from McGregor and Swinton that dig deep into moral ambiguity",
+        "Masterful adaptation of Trocchi's controversial novel with rich atmospheric tension",
+        "Bold exploration of sexuality and guilt that recalls classic film noir while feeling thoroughly modern"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "L'Avventura",
+        "year": 1960,
+        "description": "Similar exploration of moral emptiness and sexual desire"
+      },
+      {
+        "title": "Chinatown",
+        "year": 1974,
+        "description": "Neo-noir influence with complex moral ambiguity"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Neo-noir in British Cinema",
+        "category": "Genre Studies",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Sexual Politics in Post-War Britain",
+        "category": "Cultural Studies",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "David Mackenzie",
+      "personId": 7984,
+      "slug": "/person/7984",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Alexander Trocchi",
+        "personId": 932,
+        "slug": "/person/932",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "David Mackenzie",
+        "personId": 7984,
+        "slug": "/person/7984",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Ewan McGregor",
+        "personId": 10829,
+        "slug": "/person/10829",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Tilda Swinton",
+        "personId": 36229,
+        "slug": "/person/36229",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Peter Mullan",
+        "personId": 29450,
+        "slug": "/person/29450",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Giles Nuttgens",
+      "personId": 12697,
+      "slug": "/person/12697",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "David Byrne",
+      "personId": 7706,
+      "slug": "/person/7706",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:12.170Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Experimental Musical Comedies",
+      "url_path": "experimental-musical-comedies",
+      "description": "Experimental Musical Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Experimental Musical Comedies collection"
+    },
+    {
+      "name": "Victorian Society Satires",
+      "url_path": "victorian-society-satires",
+      "description": "Victorian Society Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Victorian Society Satires collection"
+    },
+    {
+      "name": "Detective Series Parodies",
+      "url_path": "detective-series-parodies",
+      "description": "Detective Series Parodies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Detective Series Parodies collection"
+    }
+  ],
+  "totalLists": 3
+}

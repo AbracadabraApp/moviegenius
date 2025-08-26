@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Musical Western Shows",
+      "url_path": "musical-western-shows",
+      "description": "Musical Western Shows collection",
+      "category": "western",
+      "connectionReason": "Part of Musical Western Shows collection"
+    },
+    {
+      "name": "Historical Figure Biopics",
+      "url_path": "historical-figure-biopics",
+      "description": "Historical Figure Biopics collection",
+      "category": "western",
+      "connectionReason": "Part of Historical Figure Biopics collection"
+    },
+    {
+      "name": "Outlaw Buddy Stories",
+      "url_path": "outlaw-buddy-stories",
+      "description": "Outlaw Buddy Stories collection",
+      "category": "western",
+      "connectionReason": "Part of Outlaw Buddy Stories collection"
+    }
+  ],
+  "totalLists": 3
+}

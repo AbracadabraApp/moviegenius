@@ -1,0 +1,125 @@
+{
+  "movieId": "0abf0cfb-6ec2-4bcb-a458-06e966d51dc6",
+  "tmdbId": 452,
+  "title": "The Idiots",
+  "year": 1998,
+  "analysis": {
+    "keyElements": {
+      "director": "Lars von Trier",
+      "writers": [
+        "Lars von Trier"
+      ],
+      "stars": [
+        "Bodil Jørgensen",
+        "Jens Albinus",
+        "Anne Louise Hassing"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1998,
+      "cinematographer": "Jesper Jargil",
+      "composer": "Kim Kristensen",
+      "studio": "Zentropa"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking exploration of social taboos and conformity through provocative storytelling",
+        "Masterful execution of Dogme 95 principles creating raw authenticity",
+        "Complex examination of group dynamics and individual identity"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Breaking the Waves",
+        "year": 1996,
+        "description": "Von Trier's earlier exploration of faith, sacrifice, and social boundaries"
+      },
+      {
+        "title": "The Celebration",
+        "year": 1998,
+        "description": "Fellow Dogme 95 film examining family secrets and social facades"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Dogme 95 Movement",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Social Provocation in Cinema",
+        "category": "Film Theory",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Lars von Trier",
+      "personId": 21751,
+      "slug": "/person/21751",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Lars von Trier",
+        "personId": 21751,
+        "slug": "/person/21751",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Bodil Jørgensen",
+        "personId": 4064,
+        "slug": "/person/4064",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jens Albinus",
+        "personId": 17038,
+        "slug": "/person/17038",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Anne Louise Hassing",
+        "personId": 2103,
+        "slug": "/person/2103",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Jesper Jargil",
+      "personId": 17237,
+      "slug": "/person/17237",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Kim Kristensen",
+      "personId": 21078,
+      "slug": "/person/21078",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:38.525Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

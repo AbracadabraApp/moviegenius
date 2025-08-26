@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "name": "Science Education Films",
+      "url_path": "science-education-films",
+      "description": "Science Education Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Science Education Films collection"
+    },
+    {
+      "name": "Food Industry Exposés",
+      "url_path": "food-industry-expos-s",
+      "description": "Food Industry Exposés collection",
+      "category": "documentary",
+      "connectionReason": "Part of Food Industry Exposés collection"
+    }
+  ],
+  "totalLists": 2
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "1980s Nostalgia Films",
+      "url_path": "1980s-nostalgia-films",
+      "description": "1980s Nostalgia Films collection",
+      "category": "comedy",
+      "connectionReason": "Part of 1980s Nostalgia Films collection"
+    },
+    {
+      "name": "DIY Filmmaking Adventures",
+      "url_path": "diy-filmmaking-adventures",
+      "description": "DIY Filmmaking Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of DIY Filmmaking Adventures collection"
+    },
+    {
+      "name": "Religious Identity Crisis",
+      "url_path": "religious-identity-crisis",
+      "description": "Religious Identity Crisis collection",
+      "category": "comedy",
+      "connectionReason": "Part of Religious Identity Crisis collection"
+    }
+  ],
+  "totalLists": 3
+}

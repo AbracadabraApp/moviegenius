@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Deadly Game Thrillers",
+      "url_path": "deadly-game-thrillers",
+      "description": "Deadly Game Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Deadly Game Thrillers collection"
+    },
+    {
+      "name": "Underground Investigation Thrillers (Part 2)",
+      "url_path": "underground-investigation-thrillers-part-2-",
+      "description": "Underground Investigation Thrillers (Part 2) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Underground Investigation Thrillers (Part 2) collection"
+    },
+    {
+      "name": "Tech Industry Conspiracy (Part 1)",
+      "url_path": "tech-industry-conspiracy-part-1-",
+      "description": "Tech Industry Conspiracy (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Tech Industry Conspiracy (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

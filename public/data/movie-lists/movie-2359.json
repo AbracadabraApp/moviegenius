@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Global Healthcare Innovation",
+      "url_path": "global-healthcare-innovation",
+      "description": "Global Healthcare Innovation collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Healthcare Innovation collection"
+    },
+    {
+      "name": "Healthcare Corruption Exposés",
+      "url_path": "healthcare-corruption-expos-s",
+      "description": "Healthcare Corruption Exposés collection",
+      "category": "documentary",
+      "connectionReason": "Part of Healthcare Corruption Exposés collection"
+    },
+    {
+      "name": "Corporate Fraud Exposés",
+      "url_path": "corporate-fraud-expos-s",
+      "description": "Corporate Fraud Exposés collection",
+      "category": "documentary",
+      "connectionReason": "Part of Corporate Fraud Exposés collection"
+    }
+  ],
+  "totalLists": 3
+}

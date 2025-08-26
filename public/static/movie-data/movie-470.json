@@ -1,0 +1,125 @@
+{
+  "movieId": "21669e60-c1af-4821-93f0-b419d5b801df",
+  "tmdbId": 470,
+  "title": "21 Grams",
+  "year": 2003,
+  "analysis": {
+    "keyElements": {
+      "director": "Alejandro González Iñárritu",
+      "writers": [
+        "Guillermo Arriaga"
+      ],
+      "stars": [
+        "Sean Penn",
+        "Naomi Watts",
+        "Benicio Del Toro"
+      ],
+      "genre": "Drama/Psychological Thriller",
+      "releaseYear": 2003,
+      "cinematographer": "Rodrigo Prieto",
+      "composer": "Gustavo Santaolalla",
+      "studio": "Focus Features"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful non-linear storytelling that rewards attentive viewing",
+        "Career-defining performances from all three lead actors",
+        "Deep exploration of grief, redemption, and human interconnectedness"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Amores Perros",
+        "year": 2000,
+        "description": "Iñárritu's debut feature establishing his multi-narrative style"
+      },
+      {
+        "title": "Babel",
+        "year": 2006,
+        "description": "Third part of Iñárritu's death trilogy"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Non-linear Narrative Structure",
+        "category": "Screenwriting",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Character-Driven Drama",
+        "category": "Performance",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Alejandro González Iñárritu",
+      "personId": 783,
+      "slug": "/person/783",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Guillermo Arriaga",
+        "personId": 13290,
+        "slug": "/person/13290",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Sean Penn",
+        "personId": 33497,
+        "slug": "/person/33497",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Naomi Watts",
+        "personId": 27098,
+        "slug": "/person/27098",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Benicio Del Toro",
+        "personId": 3310,
+        "slug": "/person/3310",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Rodrigo Prieto",
+      "personId": 32107,
+      "slug": "/person/32107",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Gustavo Santaolalla",
+      "personId": 13350,
+      "slug": "/person/13350",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:40.547Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

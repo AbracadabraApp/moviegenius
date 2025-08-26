@@ -1,0 +1,165 @@
+{
+  "movieId": "e8c60e4b-3758-4656-85b0-148cf10d186e",
+  "tmdbId": 243,
+  "title": "High Fidelity",
+  "year": 2000,
+  "analysis": {
+    "keyElements": {
+      "director": "Stephen Frears",
+      "writers": [
+        "Nick Hornby",
+        "D.V. DeVincentis",
+        "Steve Pink",
+        "John Cusack",
+        "Scott Rosenberg"
+      ],
+      "stars": [
+        "John Cusack",
+        "Jack Black",
+        "Iben Hjejle",
+        "Todd Louiso"
+      ],
+      "genre": "Comedy-Drama",
+      "releaseYear": 2000,
+      "cinematographer": "Seamus McGarvey",
+      "composer": "Howard Shore",
+      "studio": "Touchstone Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "John Cusack's career-defining performance as the emotionally stunted but endearing Rob Gordon",
+        "Brilliant exploration of music culture and romantic relationships through top-five lists",
+        "Jack Black's breakthrough role as the hilariously judgmental record store clerk Barry"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "High Fidelity",
+        "year": 2000,
+        "description": "A record store owner recounts his top five breakups while trying to understand why his relationships always fail"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Fourth Wall Breaking in Cinema",
+        "category": "Narrative Techniques",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Music in Film",
+        "category": "Sound Design",
+        "difficulty": "beginner"
+      },
+      {
+        "topic": "Adaptation from Literature",
+        "category": "Screenwriting",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Stephen Frears",
+      "personId": 34738,
+      "slug": "/person/34738",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Nick Hornby",
+        "personId": 27481,
+        "slug": "/person/27481",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "D.V. DeVincentis",
+        "personId": 9361,
+        "slug": "/person/9361",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Steve Pink",
+        "personId": 35053,
+        "slug": "/person/35053",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "John Cusack",
+        "personId": 18123,
+        "slug": "/person/18123",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Scott Rosenberg",
+        "personId": 33411,
+        "slug": "/person/33411",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "John Cusack",
+        "personId": 18123,
+        "slug": "/person/18123",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jack Black",
+        "personId": 15298,
+        "slug": "/person/15298",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Iben Hjejle",
+        "personId": 14859,
+        "slug": "/person/14859",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Todd Louiso",
+        "personId": 36448,
+        "slug": "/person/36448",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Seamus McGarvey",
+      "personId": 33451,
+      "slug": "/person/33451",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Howard Shore",
+      "personId": 14607,
+      "slug": "/person/14607",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:12.896Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

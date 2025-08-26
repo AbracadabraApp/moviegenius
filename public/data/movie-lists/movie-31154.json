@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Scientific Creation Horror",
+      "url_path": "scientific-creation-horror",
+      "description": "Scientific Creation Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Scientific Creation Horror collection"
+    },
+    {
+      "name": "Revenge Horror Films",
+      "url_path": "revenge-horror-films",
+      "description": "Revenge Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Revenge Horror Films collection"
+    },
+    {
+      "name": "Body Transformation Horror (Part 2)",
+      "url_path": "body-transformation-horror-part-2-",
+      "description": "Body Transformation Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Body Transformation Horror (Part 2) collection"
+    },
+    {
+      "name": "Cybernetic Resurrection Stories",
+      "url_path": "cybernetic-resurrection-stories",
+      "description": "Cybernetic Resurrection Stories collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Cybernetic Resurrection Stories collection"
+    },
+    {
+      "name": "Body Modification Horror",
+      "url_path": "body-modification-horror",
+      "description": "Body Modification Horror collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Body Modification Horror collection"
+    }
+  ],
+  "totalLists": 5
+}

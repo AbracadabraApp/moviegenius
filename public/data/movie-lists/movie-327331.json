@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Rock History Documentaries",
+      "url_path": "rock-history-documentaries",
+      "description": "Rock History Documentaries collection",
+      "category": "music",
+      "connectionReason": "Part of Rock History Documentaries collection"
+    },
+    {
+      "name": "Fame and Tragedy Musicals",
+      "url_path": "fame-and-tragedy-musicals",
+      "description": "Fame and Tragedy Musicals collection",
+      "category": "music",
+      "connectionReason": "Part of Fame and Tragedy Musicals collection"
+    },
+    {
+      "name": "Music Industry Rise-Fall [OVERSIZED]",
+      "url_path": "music-industry-rise-fall-oversized-",
+      "description": "Music Industry Rise-Fall [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Music Industry Rise-Fall [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 3
+}

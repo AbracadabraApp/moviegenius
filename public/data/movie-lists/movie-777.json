@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "WWI Combat Films",
+      "url_path": "wwi-combat-films",
+      "description": "WWI Combat Films collection",
+      "category": "war",
+      "connectionReason": "Part of WWI Combat Films collection"
+    },
+    {
+      "name": "POW Escape Films",
+      "url_path": "pow-escape-films",
+      "description": "POW Escape Films collection",
+      "category": "war",
+      "connectionReason": "Part of POW Escape Films collection"
+    },
+    {
+      "name": "Enemy Bonding Stories",
+      "url_path": "enemy-bonding-stories",
+      "description": "Enemy Bonding Stories collection",
+      "category": "war",
+      "connectionReason": "Part of Enemy Bonding Stories collection"
+    },
+    {
+      "name": "War Disillusionment Films [OVERSIZED]",
+      "url_path": "war-disillusionment-films-oversized-",
+      "description": "War Disillusionment Films [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of War Disillusionment Films [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

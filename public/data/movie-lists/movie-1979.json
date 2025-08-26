@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Classic Comic Heroes",
+      "url_path": "classic-comic-heroes",
+      "description": "Classic Comic Heroes collection",
+      "category": "superhero",
+      "connectionReason": "Part of Classic Comic Heroes collection"
+    },
+    {
+      "name": "Science Hero Origins",
+      "url_path": "science-hero-origins",
+      "description": "Science Hero Origins collection",
+      "category": "superhero",
+      "connectionReason": "Part of Science Hero Origins collection"
+    },
+    {
+      "name": "Cosmic Scale Conflicts",
+      "url_path": "cosmic-scale-conflicts",
+      "description": "Cosmic Scale Conflicts collection",
+      "category": "superhero",
+      "connectionReason": "Part of Cosmic Scale Conflicts collection"
+    }
+  ],
+  "totalLists": 3
+}

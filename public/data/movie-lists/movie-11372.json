@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "WWII Escape Adventures",
+      "url_path": "wwii-escape-adventures",
+      "description": "WWII Escape Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of WWII Escape Adventures collection"
+    },
+    {
+      "name": "Historical Conspiracy Adventures",
+      "url_path": "historical-conspiracy-adventures",
+      "description": "Historical Conspiracy Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Historical Conspiracy Adventures collection"
+    },
+    {
+      "name": "Cross-Border Quest Films [OVERSIZED]",
+      "url_path": "cross-border-quest-films-oversized-",
+      "description": "Cross-Border Quest Films [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Cross-Border Quest Films [OVERSIZED] collection"
+    },
+    {
+      "name": "Special Forces Operations",
+      "url_path": "special-forces-operations",
+      "description": "Special Forces Operations collection",
+      "category": "war",
+      "connectionReason": "Part of Special Forces Operations collection"
+    },
+    {
+      "name": "Enemy Perspective Wars",
+      "url_path": "enemy-perspective-wars",
+      "description": "Enemy Perspective Wars collection",
+      "category": "war",
+      "connectionReason": "Part of Enemy Perspective Wars collection"
+    },
+    {
+      "name": "Military Deception Operations [OVERSIZED]",
+      "url_path": "military-deception-operations-oversized-",
+      "description": "Military Deception Operations [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of Military Deception Operations [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 6
+}

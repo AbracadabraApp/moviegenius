@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Highway Pursuit Thrillers",
+      "url_path": "highway-pursuit-thrillers",
+      "description": "Highway Pursuit Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Highway Pursuit Thrillers collection"
+    },
+    {
+      "name": "Drug Cartel Warfare",
+      "url_path": "drug-cartel-warfare",
+      "description": "Drug Cartel Warfare collection",
+      "category": "thriller",
+      "connectionReason": "Part of Drug Cartel Warfare collection"
+    },
+    {
+      "name": "Civilian Vigilante Justice",
+      "url_path": "civilian-vigilante-justice",
+      "description": "Civilian Vigilante Justice collection",
+      "category": "thriller",
+      "connectionReason": "Part of Civilian Vigilante Justice collection"
+    },
+    {
+      "name": "Border Crossing Thrillers",
+      "url_path": "border-crossing-thrillers",
+      "description": "Border Crossing Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Border Crossing Thrillers collection"
+    }
+  ],
+  "totalLists": 4
+}

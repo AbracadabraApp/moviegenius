@@ -1,0 +1,68 @@
+{
+  "lists": [
+    {
+      "name": "Urban Night Adventures",
+      "url_path": "urban-night-adventures",
+      "description": "Urban Night Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Urban Night Adventures collection"
+    },
+    {
+      "name": "Animated Gadget Adventures",
+      "url_path": "animated-gadget-adventures",
+      "description": "Animated Gadget Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Animated Gadget Adventures collection"
+    },
+    {
+      "name": "City Scavenger Hunts",
+      "url_path": "city-scavenger-hunts",
+      "description": "City Scavenger Hunts collection",
+      "category": "adventure",
+      "connectionReason": "Part of City Scavenger Hunts collection"
+    },
+    {
+      "name": "Inventive Duo Adventures",
+      "url_path": "inventive-duo-adventures",
+      "description": "Inventive Duo Adventures collection",
+      "category": "animation",
+      "connectionReason": "Part of Inventive Duo Adventures collection"
+    },
+    {
+      "name": "Mystery Detective Animation",
+      "url_path": "mystery-detective-animation",
+      "description": "Mystery Detective Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Mystery Detective Animation collection"
+    },
+    {
+      "name": "Pop Culture Parodies",
+      "url_path": "pop-culture-parodies",
+      "description": "Pop Culture Parodies collection",
+      "category": "animation",
+      "connectionReason": "Part of Pop Culture Parodies collection"
+    },
+    {
+      "name": "Detective Series Parodies",
+      "url_path": "detective-series-parodies",
+      "description": "Detective Series Parodies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Detective Series Parodies collection"
+    },
+    {
+      "name": "Comic Industry Adaptations",
+      "url_path": "comic-industry-adaptations",
+      "description": "Comic Industry Adaptations collection",
+      "category": "comedy",
+      "connectionReason": "Part of Comic Industry Adaptations collection"
+    },
+    {
+      "name": "Superhero Movie Parodies",
+      "url_path": "superhero-movie-parodies",
+      "description": "Superhero Movie Parodies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Superhero Movie Parodies collection"
+    }
+  ],
+  "totalLists": 9
+}

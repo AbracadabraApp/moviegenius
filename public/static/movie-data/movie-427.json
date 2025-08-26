@@ -1,0 +1,135 @@
+{
+  "movieId": "dadc1081-afe9-4b9f-8ec4-af353feed805",
+  "tmdbId": 427,
+  "title": "Mon Oncle",
+  "year": 1958,
+  "analysis": {
+    "keyElements": {
+      "director": "Jacques Tati",
+      "writers": [
+        "Jacques Tati",
+        "Jacques Lagrange"
+      ],
+      "stars": [
+        "Jacques Tati",
+        "Jean-Pierre Zola",
+        "Adrienne Servantie"
+      ],
+      "genre": "Comedy",
+      "releaseYear": 1958,
+      "cinematographer": "Jean Bourgoin",
+      "composer": "Franck Barcellini",
+      "studio": "Gaumont Film Company"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful physical comedy that transcends language barriers",
+        "Brilliant satirical commentary on modernization and technology",
+        "Visually stunning contrast between old and new France"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Playtime",
+        "year": 1967,
+        "description": "Tati's masterful follow-up exploring similar themes on a grander scale"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Physical Comedy",
+        "category": "Performance",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Post-War Modernization",
+        "category": "Historical Context",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Jacques Tati",
+      "personId": 15584,
+      "slug": "/person/15584",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Jacques Tati",
+        "personId": 15584,
+        "slug": "/person/15584",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jacques Lagrange",
+        "personId": 15557,
+        "slug": "/person/15557",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jean L'Hote",
+        "personId": 16583,
+        "slug": "/person/16583",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Jacques Tati",
+        "personId": 15584,
+        "slug": "/person/15584",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jean-Pierre Zola",
+        "personId": 16714,
+        "slug": "/person/16714",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Adrienne Servantie",
+        "personId": 312,
+        "slug": "/person/312",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Jean Bourgoin",
+      "personId": 16478,
+      "slug": "/person/16478",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Franck Barcellini",
+      "personId": 11271,
+      "slug": "/person/11271",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:36.390Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

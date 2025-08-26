@@ -1,0 +1,124 @@
+{
+  "movieId": "f731c131-2601-47aa-9937-373b6f3761c6",
+  "tmdbId": 363,
+  "title": "Head-On",
+  "year": 2004,
+  "analysis": {
+    "keyElements": {
+      "director": "Fatih Akin",
+      "writers": [
+        "Fatih Akin"
+      ],
+      "stars": [
+        "Birol Ünel",
+        "Sibel Kekilli"
+      ],
+      "genre": "Drama",
+      "releaseYear": 2004,
+      "cinematographer": "Rainer Klausmann",
+      "composer": "Alexander Hacke",
+      "studio": "Strand Releasing"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Raw, unflinching portrayal of cultural identity and self-destruction",
+        "Powerful lead performances that feel brutally authentic",
+        "Masterful exploration of Turkish-German immigrant experience"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Edge of Heaven",
+        "year": 2007,
+        "description": "Another Fatih Akin masterpiece exploring Turkish-German relations"
+      },
+      {
+        "title": "La Haine",
+        "year": 1995,
+        "description": "Similar raw portrayal of marginalized youth in European society"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Turkish-German Cinema",
+        "category": "Film Movement",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Cultural Identity in Cinema",
+        "category": "Theme Analysis",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Fatih Akin",
+      "personId": 10926,
+      "slug": "/person/10926",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Fatih Akin",
+        "personId": 10926,
+        "slug": "/person/10926",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Birol Ünel",
+        "personId": 3887,
+        "slug": "/person/3887",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sibel Kekilli",
+        "personId": 34132,
+        "slug": "/person/34132",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Catrin Striebeck",
+        "personId": 5246,
+        "slug": "/person/5246",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Rainer Klausmann",
+      "personId": 30235,
+      "slug": "/person/30235",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Alexander Hacke",
+      "personId": 891,
+      "slug": "/person/891",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:28.718Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

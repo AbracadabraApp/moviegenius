@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "British Music Evolution",
+      "url_path": "british-music-evolution",
+      "description": "British Music Evolution collection",
+      "category": "music",
+      "connectionReason": "Part of British Music Evolution collection"
+    },
+    {
+      "name": "Rock History Documentaries",
+      "url_path": "rock-history-documentaries",
+      "description": "Rock History Documentaries collection",
+      "category": "music",
+      "connectionReason": "Part of Rock History Documentaries collection"
+    },
+    {
+      "name": "Historic Venue Performances",
+      "url_path": "historic-venue-performances",
+      "description": "Historic Venue Performances collection",
+      "category": "music",
+      "connectionReason": "Part of Historic Venue Performances collection"
+    }
+  ],
+  "totalLists": 3
+}

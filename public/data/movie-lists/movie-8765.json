@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Virtual Reality Horror",
+      "url_path": "virtual-reality-horror",
+      "description": "Virtual Reality Horror collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Virtual Reality Horror collection"
+    },
+    {
+      "name": "Game Adaptation SciFi",
+      "url_path": "game-adaptation-scifi",
+      "description": "Game Adaptation SciFi collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Game Adaptation SciFi collection"
+    },
+    {
+      "name": "Artificial Life Evolution (Part 3)",
+      "url_path": "artificial-life-evolution-part-3-",
+      "description": "Artificial Life Evolution (Part 3) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Artificial Life Evolution (Part 3) collection"
+    },
+    {
+      "name": "Tech Society Consequences (Part 2)",
+      "url_path": "tech-society-consequences-part-2-",
+      "description": "Tech Society Consequences (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Tech Society Consequences (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

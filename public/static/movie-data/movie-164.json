@@ -1,0 +1,140 @@
+{
+  "movieId": "35f678c5-4b9e-425d-a9fe-8a95227419f5",
+  "tmdbId": 164,
+  "title": "Breakfast at Tiffany's",
+  "year": 1961,
+  "analysis": {
+    "keyElements": {
+      "director": "Blake Edwards",
+      "writers": [
+        "Truman Capote",
+        "George Axelrod"
+      ],
+      "stars": [
+        "Audrey Hepburn",
+        "George Peppard",
+        "Patricia Neal"
+      ],
+      "genre": "Romantic Comedy-Drama",
+      "releaseYear": 1961,
+      "cinematographer": "Franz Planer",
+      "composer": "Henry Mancini",
+      "studio": "Paramount Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Audrey Hepburn's iconic performance defines sophisticated romantic comedy",
+        "Henry Mancini's timeless score including 'Moon River'",
+        "Influential fashion and style that continues to inspire modern culture"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Roman Holiday",
+        "year": 1953,
+        "description": "Earlier Audrey Hepburn classic establishing her sophisticated charm"
+      },
+      {
+        "title": "Annie Hall",
+        "year": 1977,
+        "description": "Similarly revolutionary romantic comedy about complex urban relationships"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "1960s Fashion Revolution",
+        "category": "Cultural History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Literary Adaptation Changes",
+        "category": "Screenwriting",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Blake Edwards",
+      "personId": 3912,
+      "slug": "/person/3912",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Truman Capote",
+        "personId": 37088,
+        "slug": "/person/37088",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "George Axelrod",
+        "personId": 12202,
+        "slug": "/person/12202",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Audrey Hepburn",
+        "personId": 2829,
+        "slug": "/person/2829",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "George Peppard",
+        "personId": 12360,
+        "slug": "/person/12360",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Patricia Neal",
+        "personId": 28551,
+        "slug": "/person/28551",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Mickey Rooney",
+        "personId": 26180,
+        "slug": "/person/26180",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Franz Planer",
+      "personId": 11548,
+      "slug": "/person/11548",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Henry Mancini",
+      "personId": 14186,
+      "slug": "/person/14186",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:04:59.680Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

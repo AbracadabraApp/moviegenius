@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Martial Arts Comedy",
+      "url_path": "martial-arts-comedy",
+      "description": "Martial Arts Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Martial Arts Comedy collection"
+    },
+    {
+      "name": "Body Horror Comedy (Part 2)",
+      "url_path": "body-horror-comedy-part-2-",
+      "description": "Body Horror Comedy (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Body Horror Comedy (Part 2) collection"
+    },
+    {
+      "name": "Martial Arts Horror",
+      "url_path": "martial-arts-horror",
+      "description": "Martial Arts Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Martial Arts Horror collection"
+    },
+    {
+      "name": "Classic Monster Comedy (Part 5)",
+      "url_path": "classic-monster-comedy-part-5-",
+      "description": "Classic Monster Comedy (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Monster Comedy (Part 5) collection"
+    },
+    {
+      "name": "Social Commentary Horror (Part 3)",
+      "url_path": "social-commentary-horror-part-3-",
+      "description": "Social Commentary Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Social Commentary Horror (Part 3) collection"
+    }
+  ],
+  "totalLists": 5
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Blaxploitation Horror Films",
+      "url_path": "blaxploitation-horror-films",
+      "description": "Blaxploitation Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Blaxploitation Horror Films collection"
+    },
+    {
+      "name": "Horror Anthology Collections",
+      "url_path": "horror-anthology-collections",
+      "description": "Horror Anthology Collections collection",
+      "category": "horror",
+      "connectionReason": "Part of Horror Anthology Collections collection"
+    },
+    {
+      "name": "Social Commentary Horror (Part 2)",
+      "url_path": "social-commentary-horror-part-2-",
+      "description": "Social Commentary Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Social Commentary Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

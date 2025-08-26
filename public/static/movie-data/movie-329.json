@@ -1,0 +1,141 @@
+{
+  "movieId": "6d287181-9593-4a08-9998-9f2e11b32a9e",
+  "tmdbId": 329,
+  "title": "Jurassic Park",
+  "year": 1993,
+  "analysis": {
+    "keyElements": {
+      "director": "Steven Spielberg",
+      "writers": [
+        "Michael Crichton",
+        "David Koepp"
+      ],
+      "stars": [
+        "Sam Neill",
+        "Laura Dern",
+        "Jeff Goldblum",
+        "Richard Attenborough"
+      ],
+      "genre": "Science Fiction/Adventure",
+      "releaseYear": 1993,
+      "cinematographer": "Dean Cundey",
+      "composer": "John Williams",
+      "studio": "Universal Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking blend of practical effects and CGI that still holds up today",
+        "Perfect balance of wonder, terror, and thought-provoking science ethics",
+        "Masterclass in sustained tension and character-driven adventure storytelling"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Lost World: Jurassic Park",
+        "year": 1997,
+        "description": "Direct sequel exploring expanded themes of environmental conservation"
+      },
+      {
+        "title": "King Kong",
+        "year": 2005,
+        "description": "Similarly blends creature features with cutting-edge effects and human drama"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Visual Effects Evolution",
+        "category": "Technical",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Science Ethics in Fiction",
+        "category": "Thematic",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Steven Spielberg",
+      "personId": 35037,
+      "slug": "/person/35037",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Michael Crichton",
+        "personId": 25591,
+        "slug": "/person/25591",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "David Koepp",
+        "personId": 7937,
+        "slug": "/person/7937",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Sam Neill",
+        "personId": 33046,
+        "slug": "/person/33046",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Laura Dern",
+        "personId": 21789,
+        "slug": "/person/21789",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jeff Goldblum",
+        "personId": 16820,
+        "slug": "/person/16820",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Richard Attenborough",
+        "personId": 30869,
+        "slug": "/person/30869",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Dean Cundey",
+      "personId": 8269,
+      "slug": "/person/8269",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "John Williams",
+      "personId": 18796,
+      "slug": "/person/18796",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:25.565Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

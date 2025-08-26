@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Retro Science Fiction",
+      "url_path": "retro-science-fiction",
+      "description": "Retro Science Fiction collection",
+      "category": "adventure",
+      "connectionReason": "Part of Retro Science Fiction collection"
+    },
+    {
+      "name": "Underwater World Exploration",
+      "url_path": "underwater-world-exploration",
+      "description": "Underwater World Exploration collection",
+      "category": "adventure",
+      "connectionReason": "Part of Underwater World Exploration collection"
+    },
+    {
+      "name": "Scientific Theory Expeditions",
+      "url_path": "scientific-theory-expeditions",
+      "description": "Scientific Theory Expeditions collection",
+      "category": "adventure",
+      "connectionReason": "Part of Scientific Theory Expeditions collection"
+    },
+    {
+      "name": "Planetary Scale Threats",
+      "url_path": "planetary-scale-threats",
+      "description": "Planetary Scale Threats collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Planetary Scale Threats collection"
+    },
+    {
+      "name": "Underwater Lost Worlds",
+      "url_path": "underwater-lost-worlds",
+      "description": "Underwater Lost Worlds collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Underwater Lost Worlds collection"
+    },
+    {
+      "name": "Environmental Catastrophe Films (Part 2)",
+      "url_path": "environmental-catastrophe-films-part-2-",
+      "description": "Environmental Catastrophe Films (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Environmental Catastrophe Films (Part 2) collection"
+    },
+    {
+      "name": "Scientific Observer Dilemma (Part 3)",
+      "url_path": "scientific-observer-dilemma-part-3-",
+      "description": "Scientific Observer Dilemma (Part 3) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Scientific Observer Dilemma (Part 3) collection"
+    }
+  ],
+  "totalLists": 7
+}

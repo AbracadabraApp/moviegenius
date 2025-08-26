@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Latino Crime Stories",
+      "url_path": "latino-crime-stories",
+      "description": "Latino Crime Stories collection",
+      "category": "crime",
+      "connectionReason": "Part of Latino Crime Stories collection"
+    },
+    {
+      "name": "Millennial NYC Thrillers",
+      "url_path": "millennial-nyc-thrillers",
+      "description": "Millennial NYC Thrillers collection",
+      "category": "crime",
+      "connectionReason": "Part of Millennial NYC Thrillers collection"
+    },
+    {
+      "name": "Intersecting Lives Crime",
+      "url_path": "intersecting-lives-crime",
+      "description": "Intersecting Lives Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Intersecting Lives Crime collection"
+    },
+    {
+      "name": "Corporate Crime Dramas",
+      "url_path": "corporate-crime-dramas",
+      "description": "Corporate Crime Dramas collection",
+      "category": "crime",
+      "connectionReason": "Part of Corporate Crime Dramas collection"
+    }
+  ],
+  "totalLists": 4
+}

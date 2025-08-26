@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Religious Faith Comedies",
+      "url_path": "religious-faith-comedies",
+      "description": "Religious Faith Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Religious Faith Comedies collection"
+    },
+    {
+      "name": "Divine Intervention Comedies",
+      "url_path": "divine-intervention-comedies",
+      "description": "Divine Intervention Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Divine Intervention Comedies collection"
+    },
+    {
+      "name": "Political Satires",
+      "url_path": "political-satires",
+      "description": "Political Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Political Satires collection"
+    }
+  ],
+  "totalLists": 3
+}

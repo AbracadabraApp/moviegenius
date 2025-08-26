@@ -1,0 +1,146 @@
+{
+  "movieId": "d08b6524-ef8f-4d6d-9c88-810670d457f5",
+  "tmdbId": 379,
+  "title": "Miller's Crossing",
+  "year": 1990,
+  "analysis": {
+    "keyElements": {
+      "director": "Joel & Ethan Coen",
+      "writers": [
+        "Joel Coen",
+        "Ethan Coen"
+      ],
+      "stars": [
+        "Gabriel Byrne",
+        "Marcia Gay Harden",
+        "John Turturro",
+        "Albert Finney"
+      ],
+      "genre": "Crime Neo-Noir",
+      "releaseYear": 1990,
+      "cinematographer": "Barry Sonnenfeld",
+      "composer": "Carter Burwell",
+      "studio": "20th Century Fox"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful neo-noir storytelling with intricate plot twists and moral ambiguity",
+        "Stunning period atmosphere and cinematography that reinvents gangster film aesthetics",
+        "Complex character study of loyalty and betrayal in the criminal underworld"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Maltese Falcon",
+        "year": 1941,
+        "description": "Key influence on Miller's Crossing's hard-boiled detective narrative style"
+      },
+      {
+        "title": "Road to Perdition",
+        "year": 2002,
+        "description": "Similarly stylized gangster noir influenced by Miller's Crossing's visual approach"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Prohibition Era Crime",
+        "category": "Historical Context",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Neo-Noir Aesthetics",
+        "category": "Film Style",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "Character Motivation",
+        "category": "Narrative Analysis",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Joel Coen, Ethan Coen",
+      "personId": 17788,
+      "slug": "/person/17788",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Joel Coen",
+        "personId": 17787,
+        "slug": "/person/17787",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ethan Coen",
+        "personId": 10667,
+        "slug": "/person/10667",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Gabriel Byrne",
+        "personId": 11816,
+        "slug": "/person/11816",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Albert Finney",
+        "personId": 684,
+        "slug": "/person/684",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "John Turturro",
+        "personId": 18753,
+        "slug": "/person/18753",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Marcia Gay Harden",
+        "personId": 23763,
+        "slug": "/person/23763",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Barry Sonnenfeld",
+      "personId": 3155,
+      "slug": "/person/3155",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Carter Burwell",
+      "personId": 5145,
+      "slug": "/person/5145",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:29.807Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

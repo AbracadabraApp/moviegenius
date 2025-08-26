@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Social Climber Tragedies",
+      "url_path": "social-climber-tragedies",
+      "description": "Social Climber Tragedies collection",
+      "category": "period",
+      "connectionReason": "Part of Social Climber Tragedies collection"
+    },
+    {
+      "name": "Character-Driven Stories",
+      "url_path": "character-driven-stories",
+      "description": "Character-Driven Stories collection",
+      "category": "period",
+      "connectionReason": "Part of Character-Driven Stories collection"
+    },
+    {
+      "name": "Religious & Moral Conflicts",
+      "url_path": "religious-moral-conflicts",
+      "description": "Religious & Moral Conflicts collection",
+      "category": "period",
+      "connectionReason": "Part of Religious & Moral Conflicts collection"
+    }
+  ],
+  "totalLists": 3
+}

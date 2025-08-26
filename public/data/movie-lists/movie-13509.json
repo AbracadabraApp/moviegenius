@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Magical Coming-of-Age Stories",
+      "url_path": "magical-coming-of-age-stories",
+      "description": "Magical Coming-of-Age Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Magical Coming-of-Age Stories collection"
+    },
+    {
+      "name": "Classic Monster Comedies",
+      "url_path": "classic-monster-comedies",
+      "description": "Classic Monster Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Monster Comedies collection"
+    },
+    {
+      "name": "Horror Movie Parodies (Part 5)",
+      "url_path": "horror-movie-parodies-part-5-",
+      "description": "Horror Movie Parodies (Part 5) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Horror Movie Parodies (Part 5) collection"
+    },
+    {
+      "name": "Classic Monster Comedy (Part 5)",
+      "url_path": "classic-monster-comedy-part-5-",
+      "description": "Classic Monster Comedy (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Monster Comedy (Part 5) collection"
+    },
+    {
+      "name": "Modernized Classic Monsters (Part 3)",
+      "url_path": "modernized-classic-monsters-part-3-",
+      "description": "Modernized Classic Monsters (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Modernized Classic Monsters (Part 3) collection"
+    },
+    {
+      "name": "Small Town Conspiracy (Part 3)",
+      "url_path": "small-town-conspiracy-part-3-",
+      "description": "Small Town Conspiracy (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Small Town Conspiracy (Part 3) collection"
+    }
+  ],
+  "totalLists": 6
+}

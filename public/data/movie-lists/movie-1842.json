@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Rural Life Studies",
+      "url_path": "rural-life-studies",
+      "description": "Rural Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Rural Life Studies collection"
+    },
+    {
+      "name": "Exploitation Documentary Horror",
+      "url_path": "exploitation-documentary-horror",
+      "description": "Exploitation Documentary Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Exploitation Documentary Horror collection"
+    },
+    {
+      "name": "Small Town Conspiracy (Part 3)",
+      "url_path": "small-town-conspiracy-part-3-",
+      "description": "Small Town Conspiracy (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Small Town Conspiracy (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

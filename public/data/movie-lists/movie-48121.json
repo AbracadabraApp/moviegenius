@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Food Culture Chronicles",
+      "url_path": "food-culture-chronicles",
+      "description": "Food Culture Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Food Culture Chronicles collection"
+    },
+    {
+      "name": "Corporate Fraud Exposés",
+      "url_path": "corporate-fraud-expos-s",
+      "description": "Corporate Fraud Exposés collection",
+      "category": "documentary",
+      "connectionReason": "Part of Corporate Fraud Exposés collection"
+    },
+    {
+      "name": "Global Industry Transitions (Part 2)",
+      "url_path": "global-industry-transitions-part-2-",
+      "description": "Global Industry Transitions (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Industry Transitions (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

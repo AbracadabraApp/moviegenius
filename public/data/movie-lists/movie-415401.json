@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Political Satires",
+      "url_path": "political-satires",
+      "description": "Political Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Political Satires collection"
+    },
+    {
+      "name": "British Culture Comedy",
+      "url_path": "british-culture-comedy",
+      "description": "British Culture Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of British Culture Comedy collection"
+    },
+    {
+      "name": "Single Day Misfortunes (Part 6)",
+      "url_path": "single-day-misfortunes-part-6-",
+      "description": "Single Day Misfortunes (Part 6) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Single Day Misfortunes (Part 6) collection"
+    }
+  ],
+  "totalLists": 3
+}

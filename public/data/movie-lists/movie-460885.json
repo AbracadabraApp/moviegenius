@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Psychedelic Horror Films",
+      "url_path": "psychedelic-horror-films",
+      "description": "Psychedelic Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Psychedelic Horror Films collection"
+    },
+    {
+      "name": "Revenge Horror Films",
+      "url_path": "revenge-horror-films",
+      "description": "Revenge Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Revenge Horror Films collection"
+    },
+    {
+      "name": "Occult Ritual Horror (Part 2)",
+      "url_path": "occult-ritual-horror-part-2-",
+      "description": "Occult Ritual Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Occult Ritual Horror (Part 2) collection"
+    },
+    {
+      "name": "Art House Horror (Part 3)",
+      "url_path": "art-house-horror-part-3-",
+      "description": "Art House Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Art House Horror (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

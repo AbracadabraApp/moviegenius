@@ -1,0 +1,118 @@
+{
+  "tmdbId": 680,
+  "title": "Pulp Fiction",
+  "year": 1994,
+  "analysis": {
+    "keyElements": {
+      "genre": "Crime",
+      "director": "Quentin Tarantino",
+      "stars": "John Travolta, Samuel L. Jackson",
+      "year": 1994
+    },
+    "sections": [
+      {
+        "type": "overview",
+        "content": "Nonlinear narrative exploring interconnected criminal stories"
+      },
+      {
+        "type": "style",
+        "content": "Revolutionary dialogue and pop culture references"
+      }
+    ],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Innovative structure",
+        "Memorable dialogue",
+        "Cultural impact"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "tmdbId": 24,
+        "title": "Kill Bill: Vol. 1",
+        "year": 2003
+      },
+      {
+        "tmdbId": 807,
+        "title": "Se7en",
+        "year": 1995
+      }
+    ],
+    "exploreTopics": [
+      "Independent Films",
+      "Nonlinear Narrative"
+    ]
+  },
+  "browseCollections": {
+    "lists": [
+      {
+        "id": "dark-psychological-thrillers",
+        "name": "Dark Psychological Thrillers",
+        "description": "Films exploring fractured psyches and unreliable reality",
+        "genre": "thriller",
+        "size": 23
+      }
+    ],
+    "totalLists": 1
+  },
+  "contributors": {
+    "director": {
+      "name": "Quentin Tarantino",
+      "personId": 138,
+      "slug": "/person/138"
+    },
+    "writers": [
+      {
+        "name": "Quentin Tarantino",
+        "personId": 138,
+        "slug": "/person/138"
+      }
+    ],
+    "stars": [
+      {
+        "name": "John Travolta",
+        "personId": 8891,
+        "slug": "/person/8891"
+      },
+      {
+        "name": "Samuel L. Jackson",
+        "personId": 2231,
+        "slug": "/person/2231"
+      },
+      {
+        "name": "Uma Thurman",
+        "personId": 139,
+        "slug": "/person/139"
+      }
+    ],
+    "cinematographer": {
+      "name": "Andrzej Sekula",
+      "personId": 1780,
+      "slug": "/person/1780"
+    },
+    "composer": null
+  },
+  "moreIdeas": {
+    "recommendations": [
+      {
+        "title": "The Matrix",
+        "year": 1999,
+        "connection": "Similar themes of reality questioning"
+      },
+      {
+        "title": "American Beauty",
+        "year": 1999,
+        "connection": "Critique of American suburban life"
+      }
+    ],
+    "totalRecommendations": 2
+  },
+  "generatedAt": "2025-08-24T01:04:30.643Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": "static_files",
+    "contributors": "movie_contributors_table",
+    "moreIdeas": "sample_data"
+  }
+}

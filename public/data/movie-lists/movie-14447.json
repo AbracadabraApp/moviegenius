@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Inventive Duo Adventures",
+      "url_path": "inventive-duo-adventures",
+      "description": "Inventive Duo Adventures collection",
+      "category": "animation",
+      "connectionReason": "Part of Inventive Duo Adventures collection"
+    },
+    {
+      "name": "Stop Motion Classics",
+      "url_path": "stop-motion-classics",
+      "description": "Stop Motion Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Stop Motion Classics collection"
+    },
+    {
+      "name": "Family Adventure Journeys",
+      "url_path": "family-adventure-journeys",
+      "description": "Family Adventure Journeys collection",
+      "category": "animation",
+      "connectionReason": "Part of Family Adventure Journeys collection"
+    },
+    {
+      "name": "Stop-Motion Comedy Adventures",
+      "url_path": "stop-motion-comedy-adventures",
+      "description": "Stop-Motion Comedy Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Stop-Motion Comedy Adventures collection"
+    },
+    {
+      "name": "Dark Comedy Accidents (Part 1)",
+      "url_path": "dark-comedy-accidents-part-1-",
+      "description": "Dark Comedy Accidents (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Dark Comedy Accidents (Part 1) collection"
+    }
+  ],
+  "totalLists": 5
+}

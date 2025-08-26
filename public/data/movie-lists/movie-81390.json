@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Mountain Wilderness Thrillers",
+      "url_path": "mountain-wilderness-thrillers",
+      "description": "Mountain Wilderness Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Mountain Wilderness Thrillers collection"
+    },
+    {
+      "name": "Historical Survival Thrillers (Part 1)",
+      "url_path": "historical-survival-thrillers-part-1-",
+      "description": "Historical Survival Thrillers (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Historical Survival Thrillers (Part 1) collection"
+    },
+    {
+      "name": "Urban Chase Thrillers (Part 1)",
+      "url_path": "urban-chase-thrillers-part-1-",
+      "description": "Urban Chase Thrillers (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Urban Chase Thrillers (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

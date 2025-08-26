@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Experimental Music Films",
+      "url_path": "experimental-music-films",
+      "description": "Experimental Music Films collection",
+      "category": "music",
+      "connectionReason": "Part of Experimental Music Films collection"
+    },
+    {
+      "name": "Animated Music Visualizations",
+      "url_path": "animated-music-visualizations",
+      "description": "Animated Music Visualizations collection",
+      "category": "music",
+      "connectionReason": "Part of Animated Music Visualizations collection"
+    },
+    {
+      "name": "Cultural Fusion Films [OVERSIZED]",
+      "url_path": "cultural-fusion-films-oversized-",
+      "description": "Cultural Fusion Films [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Cultural Fusion Films [OVERSIZED] collection"
+    },
+    {
+      "name": "European-American Culture Clash",
+      "url_path": "european-american-culture-clash",
+      "description": "European-American Culture Clash collection",
+      "category": "musical",
+      "connectionReason": "Part of European-American Culture Clash collection"
+    },
+    {
+      "name": "Social Critique Musicals",
+      "url_path": "social-critique-musicals",
+      "description": "Social Critique Musicals collection",
+      "category": "musical",
+      "connectionReason": "Part of Social Critique Musicals collection"
+    }
+  ],
+  "totalLists": 5
+}

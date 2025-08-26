@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "WWII Escape Adventures",
+      "url_path": "wwii-escape-adventures",
+      "description": "WWII Escape Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of WWII Escape Adventures collection"
+    },
+    {
+      "name": "CGI Spectacle Adventures [OVERSIZED]",
+      "url_path": "cgi-spectacle-adventures-oversized-",
+      "description": "CGI Spectacle Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of CGI Spectacle Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Animal Journey Adventures [OVERSIZED]",
+      "url_path": "animal-journey-adventures-oversized-",
+      "description": "Animal Journey Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Animal Journey Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Unlikely Hero Stories",
+      "url_path": "unlikely-hero-stories",
+      "description": "Unlikely Hero Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Unlikely Hero Stories collection"
+    },
+    {
+      "name": "European-Set Animations",
+      "url_path": "european-set-animations",
+      "description": "European-Set Animations collection",
+      "category": "animation",
+      "connectionReason": "Part of European-Set Animations collection"
+    },
+    {
+      "name": "Military Action Animation",
+      "url_path": "military-action-animation",
+      "description": "Military Action Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Military Action Animation collection"
+    }
+  ],
+  "totalLists": 6
+}

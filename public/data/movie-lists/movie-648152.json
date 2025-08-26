@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Lost World Exploration",
+      "url_path": "lost-world-exploration",
+      "description": "Lost World Exploration collection",
+      "category": "adventure",
+      "connectionReason": "Part of Lost World Exploration collection"
+    },
+    {
+      "name": "Ancient Civilization Fantasy [OVERSIZED]",
+      "url_path": "ancient-civilization-fantasy-oversized-",
+      "description": "Ancient Civilization Fantasy [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Ancient Civilization Fantasy [OVERSIZED] collection"
+    },
+    {
+      "name": "Silent Era SciFi",
+      "url_path": "silent-era-scifi",
+      "description": "Silent Era SciFi collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Silent Era SciFi collection"
+    },
+    {
+      "name": "Underground Lost Worlds",
+      "url_path": "underground-lost-worlds",
+      "description": "Underground Lost Worlds collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Underground Lost Worlds collection"
+    },
+    {
+      "name": "Lost Civilization Technology",
+      "url_path": "lost-civilization-technology",
+      "description": "Lost Civilization Technology collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Lost Civilization Technology collection"
+    }
+  ],
+  "totalLists": 5
+}

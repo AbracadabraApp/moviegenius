@@ -1,0 +1,141 @@
+{
+  "movieId": "cef47444-769f-44f9-a888-936d53f21bf7",
+  "tmdbId": 405,
+  "title": "La Strada",
+  "year": 1954,
+  "analysis": {
+    "keyElements": {
+      "director": "Federico Fellini",
+      "writers": [
+        "Federico Fellini",
+        "Tullio Pinelli",
+        "Ennio Flaiano"
+      ],
+      "stars": [
+        "Giulietta Masina",
+        "Anthony Quinn",
+        "Richard Basehart"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1954,
+      "cinematographer": "Otello Martelli",
+      "composer": "Nino Rota",
+      "studio": "Ponti-De Laurentiis Cinematografica"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Giulietta Masina's heartbreaking performance as Gelsomina defines method acting in Italian cinema",
+        "Fellini's masterful blend of neorealism with emerging magical elements creates a unique visual poetry",
+        "The film's exploration of human connection and spiritual redemption remains powerfully relevant"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Bicycle Thieves",
+        "year": 1948,
+        "description": "Defining work of Italian Neorealism that influenced La Strada's social realism"
+      },
+      {
+        "title": "8½",
+        "year": 1963,
+        "description": "Fellini's later masterpiece showing his full evolution toward magical realism"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Italian Neorealism",
+        "category": "Film Movement",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Magical Realism in Cinema",
+        "category": "Film Theory",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Federico Fellini",
+      "personId": 10950,
+      "slug": "/person/10950",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Federico Fellini",
+        "personId": 10950,
+        "slug": "/person/10950",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Tullio Pinelli",
+        "personId": 37132,
+        "slug": "/person/37132",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ennio Flaiano",
+        "personId": 10280,
+        "slug": "/person/10280",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Giulietta Masina",
+        "personId": 12816,
+        "slug": "/person/12816",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Anthony Quinn",
+        "personId": 2286,
+        "slug": "/person/2286",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Richard Basehart",
+        "personId": 30880,
+        "slug": "/person/30880",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Otello Martelli",
+      "personId": 28248,
+      "slug": "/person/28248",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Nino Rota",
+      "personId": 27714,
+      "slug": "/person/27714",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:33.815Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

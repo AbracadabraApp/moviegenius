@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Stop Motion Classics",
+      "url_path": "stop-motion-classics",
+      "description": "Stop Motion Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Stop Motion Classics collection"
+    },
+    {
+      "name": "Absurdist Comedy Animation",
+      "url_path": "absurdist-comedy-animation",
+      "description": "Absurdist Comedy Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Absurdist Comedy Animation collection"
+    },
+    {
+      "name": "Pop Culture Parodies",
+      "url_path": "pop-culture-parodies",
+      "description": "Pop Culture Parodies collection",
+      "category": "animation",
+      "connectionReason": "Part of Pop Culture Parodies collection"
+    },
+    {
+      "name": "Stop-Motion Comedy Adventures",
+      "url_path": "stop-motion-comedy-adventures",
+      "description": "Stop-Motion Comedy Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Stop-Motion Comedy Adventures collection"
+    },
+    {
+      "name": "Classic Monster Comedies",
+      "url_path": "classic-monster-comedies",
+      "description": "Classic Monster Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Monster Comedies collection"
+    },
+    {
+      "name": "Monster Transformation Comedy",
+      "url_path": "monster-transformation-comedy",
+      "description": "Monster Transformation Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Monster Transformation Comedy collection"
+    }
+  ],
+  "totalLists": 6
+}

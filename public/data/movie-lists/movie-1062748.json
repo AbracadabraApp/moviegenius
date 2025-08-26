@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Wilderness Survival Stories",
+      "url_path": "wilderness-survival-stories",
+      "description": "Wilderness Survival Stories collection",
+      "category": "documentary",
+      "connectionReason": "Part of Wilderness Survival Stories collection"
+    },
+    {
+      "name": "Nature Living Chronicles",
+      "url_path": "nature-living-chronicles",
+      "description": "Nature Living Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Nature Living Chronicles collection"
+    },
+    {
+      "name": "Border Region Documentaries",
+      "url_path": "border-region-documentaries",
+      "description": "Border Region Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Border Region Documentaries collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Senior Life Comedies",
+      "url_path": "senior-life-comedies",
+      "description": "Senior Life Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Senior Life Comedies collection"
+    },
+    {
+      "name": "Cross-Country Adventure",
+      "url_path": "cross-country-adventure",
+      "description": "Cross-Country Adventure collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Country Adventure collection"
+    },
+    {
+      "name": "Small Town Community Stories (Part 1)",
+      "url_path": "small-town-community-stories-part-1-",
+      "description": "Small Town Community Stories (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Small Town Community Stories (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

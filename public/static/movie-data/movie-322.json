@@ -1,0 +1,156 @@
+{
+  "movieId": "506af213-54b2-40b9-9df2-6002ee2cbe3e",
+  "tmdbId": 322,
+  "title": "Mystic River",
+  "year": 2003,
+  "analysis": {
+    "keyElements": {
+      "director": "Clint Eastwood",
+      "writers": [
+        "Brian Helgeland",
+        "Dennis Lehane"
+      ],
+      "stars": [
+        "Sean Penn",
+        "Tim Robbins",
+        "Kevin Bacon",
+        "Laurence Fishburne",
+        "Marcia Gay Harden"
+      ],
+      "genre": "Crime Drama",
+      "releaseYear": 2003,
+      "cinematographer": "Tom Stern",
+      "composer": "Clint Eastwood",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful performances from the entire ensemble cast, particularly Sean Penn's Oscar-winning portrayal",
+        "Complex exploration of trauma, justice, and community bonds that resonates long after viewing",
+        "Expertly crafted noir-influenced crime drama that transcends genre conventions"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Gone Baby Gone",
+        "year": 2007,
+        "description": "Similar Boston-set crime drama exploring community justice and moral ambiguity"
+      },
+      {
+        "title": "L.A. Confidential",
+        "year": 1997,
+        "description": "Neo-noir predecessor that similarly transcends genre conventions"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Neo-noir elements in modern crime drama",
+        "category": "film_theory",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Trauma representation in cinema",
+        "category": "film_analysis",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Clint Eastwood",
+      "personId": 6608,
+      "slug": "/person/6608",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Brian Helgeland",
+        "personId": 4377,
+        "slug": "/person/4377",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Dennis Lehane",
+        "personId": 8477,
+        "slug": "/person/8477",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Sean Penn",
+        "personId": 33497,
+        "slug": "/person/33497",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Tim Robbins",
+        "personId": 36328,
+        "slug": "/person/36328",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Kevin Bacon",
+        "personId": 20842,
+        "slug": "/person/20842",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Laurence Fishburne",
+        "personId": 21844,
+        "slug": "/person/21844",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Marcia Gay Harden",
+        "personId": 23763,
+        "slug": "/person/23763",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Laura Linney",
+        "personId": 21810,
+        "slug": "/person/21810",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Tom Stern",
+      "personId": 36712,
+      "slug": "/person/36712",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Clint Eastwood",
+      "personId": 6608,
+      "slug": "/person/6608",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:24.627Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

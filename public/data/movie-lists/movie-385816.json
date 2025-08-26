@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Prison Reform Documentaries",
+      "url_path": "prison-reform-documentaries",
+      "description": "Prison Reform Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Prison Reform Documentaries collection"
+    },
+    {
+      "name": "Public Institution Studies",
+      "url_path": "public-institution-studies",
+      "description": "Public Institution Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Public Institution Studies collection"
+    },
+    {
+      "name": "Urban Life Studies",
+      "url_path": "urban-life-studies",
+      "description": "Urban Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Urban Life Studies collection"
+    },
+    {
+      "name": "Criminal Justice Reform",
+      "url_path": "criminal-justice-reform",
+      "description": "Criminal Justice Reform collection",
+      "category": "documentary",
+      "connectionReason": "Part of Criminal Justice Reform collection"
+    }
+  ],
+  "totalLists": 4
+}

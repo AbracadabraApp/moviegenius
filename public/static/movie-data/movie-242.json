@@ -1,0 +1,141 @@
+{
+  "movieId": "d82982b7-55cc-459b-9960-f8bec8cc2a35",
+  "tmdbId": 242,
+  "title": "The Godfather Part III",
+  "year": 1990,
+  "analysis": {
+    "keyElements": {
+      "director": "Francis Ford Coppola",
+      "writers": [
+        "Mario Puzo",
+        "Francis Ford Coppola"
+      ],
+      "stars": [
+        "Al Pacino",
+        "Diane Keaton",
+        "Sofia Coppola",
+        "Andy Garcia"
+      ],
+      "genre": "Crime Drama",
+      "releaseYear": 1990,
+      "cinematographer": "Gordon Willis",
+      "composer": "Carmine Coppola",
+      "studio": "Paramount Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "NO",
+      "reasons": [
+        "Significantly weaker narrative compared to its predecessors",
+        "Uneven performances, particularly Sofia Coppola's controversial casting",
+        "Watch **The Godfather** (1972) or **The Godfather Part II** (1974) instead"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Godfather",
+        "year": 1972,
+        "description": "The original masterpiece that defined the modern gangster film"
+      },
+      {
+        "title": "The Godfather Part II",
+        "year": 1974,
+        "description": "The acclaimed sequel that expanded the scope of the original"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Vatican Banking Scandals of the 1980s",
+        "category": "historical_context",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Evolution of the American Gangster Film",
+        "category": "film_history",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Francis Ford Coppola",
+      "personId": 11242,
+      "slug": "/person/11242",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Mario Puzo",
+        "personId": 24173,
+        "slug": "/person/24173",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Francis Ford Coppola",
+        "personId": 11242,
+        "slug": "/person/11242",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Al Pacino",
+        "personId": 1326,
+        "slug": "/person/1326",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Diane Keaton",
+        "personId": 8650,
+        "slug": "/person/8650",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Andy Garcia",
+        "personId": 1851,
+        "slug": "/person/1851",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sofia Coppola",
+        "personId": 34372,
+        "slug": "/person/34372",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Gordon Willis",
+      "personId": 13018,
+      "slug": "/person/13018",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Carmine Coppola",
+      "personId": 5053,
+      "slug": "/person/5053",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:12.753Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

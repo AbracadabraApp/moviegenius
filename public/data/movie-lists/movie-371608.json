@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Home Invasion Horror",
+      "url_path": "home-invasion-horror",
+      "description": "Home Invasion Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Home Invasion Horror collection"
+    },
+    {
+      "name": "Stalker Horror",
+      "url_path": "stalker-horror",
+      "description": "Stalker Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Stalker Horror collection"
+    },
+    {
+      "name": "Masked Killer Horror",
+      "url_path": "masked-killer-horror",
+      "description": "Masked Killer Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Masked Killer Horror collection"
+    }
+  ],
+  "totalLists": 3
+}

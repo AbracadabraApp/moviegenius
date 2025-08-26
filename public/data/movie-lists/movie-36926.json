@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Modern Combat Experience",
+      "url_path": "modern-combat-experience",
+      "description": "Modern Combat Experience collection",
+      "category": "documentary",
+      "connectionReason": "Part of Modern Combat Experience collection"
+    },
+    {
+      "name": "Prison Reform Documentaries",
+      "url_path": "prison-reform-documentaries",
+      "description": "Prison Reform Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Prison Reform Documentaries collection"
+    },
+    {
+      "name": "Military Reality Exposés",
+      "url_path": "military-reality-expos-s",
+      "description": "Military Reality Exposés collection",
+      "category": "documentary",
+      "connectionReason": "Part of Military Reality Exposés collection"
+    },
+    {
+      "name": "Historical Trauma Testimonies (Part 1)",
+      "url_path": "historical-trauma-testimonies-part-1-",
+      "description": "Historical Trauma Testimonies (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Historical Trauma Testimonies (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

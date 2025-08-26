@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "City Symphony Films",
+      "url_path": "city-symphony-films",
+      "description": "City Symphony Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of City Symphony Films collection"
+    },
+    {
+      "name": "Urban Life Studies",
+      "url_path": "urban-life-studies",
+      "description": "Urban Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Urban Life Studies collection"
+    },
+    {
+      "name": "Early Cinema Pioneers (Part 4)",
+      "url_path": "early-cinema-pioneers-part-4-",
+      "description": "Early Cinema Pioneers (Part 4) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Early Cinema Pioneers (Part 4) collection"
+    },
+    {
+      "name": "Documentary Ethics Explorations (Part 4)",
+      "url_path": "documentary-ethics-explorations-part-4-",
+      "description": "Documentary Ethics Explorations (Part 4) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Documentary Ethics Explorations (Part 4) collection"
+    }
+  ],
+  "totalLists": 4
+}

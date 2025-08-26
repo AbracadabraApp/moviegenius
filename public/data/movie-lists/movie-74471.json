@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "name": "Military Base Horror",
+      "url_path": "military-base-horror",
+      "description": "Military Base Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Military Base Horror collection"
+    },
+    {
+      "name": "Survival Horror",
+      "url_path": "survival-horror",
+      "description": "Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Survival Horror collection"
+    }
+  ],
+  "totalLists": 2
+}

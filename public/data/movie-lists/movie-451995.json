@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Photography Artist Portraits",
+      "url_path": "photography-artist-portraits",
+      "description": "Photography Artist Portraits collection",
+      "category": "documentary",
+      "connectionReason": "Part of Photography Artist Portraits collection"
+    },
+    {
+      "name": "Street Art Documentation",
+      "url_path": "street-art-documentation",
+      "description": "Street Art Documentation collection",
+      "category": "documentary",
+      "connectionReason": "Part of Street Art Documentation collection"
+    },
+    {
+      "name": "Rural Life Studies",
+      "url_path": "rural-life-studies",
+      "description": "Rural Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Rural Life Studies collection"
+    },
+    {
+      "name": "Global Cultural Meditations (Part 2)",
+      "url_path": "global-cultural-meditations-part-2-",
+      "description": "Global Cultural Meditations (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Cultural Meditations (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

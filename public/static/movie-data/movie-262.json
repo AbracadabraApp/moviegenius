@@ -1,0 +1,135 @@
+{
+  "movieId": "e430c7c6-d7be-4fd7-9411-44e07e1446cf",
+  "tmdbId": 262,
+  "title": "The King of Comedy",
+  "year": 1982,
+  "analysis": {
+    "keyElements": {
+      "director": "Martin Scorsese",
+      "writers": [
+        "Paul D. Zimmerman"
+      ],
+      "stars": [
+        "Robert De Niro",
+        "Jerry Lewis",
+        "Sandra Bernhard"
+      ],
+      "genre": "Dark Comedy/Drama",
+      "releaseYear": 1982,
+      "cinematographer": "Fred Schuler",
+      "composer": "Robbie Robertson",
+      "studio": "20th Century Fox"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Eerily prescient examination of celebrity culture and fame obsession",
+        "De Niro's brilliant portrayal of delusional wannabe comedian Rupert Pupkin",
+        "Masterful blend of cringe comedy and psychological thriller elements"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Taxi Driver",
+        "year": 1976,
+        "description": "Earlier Scorsese-De Niro collaboration exploring urban alienation and obsession"
+      },
+      {
+        "title": "Network",
+        "year": 1976,
+        "description": "Prescient satire of media exploitation and television's influence"
+      },
+      {
+        "title": "Joker",
+        "year": 2019,
+        "description": "Modern spiritual successor heavily influenced by King of Comedy"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Celebrity Culture Analysis",
+        "category": "Social Studies",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Dark Comedy Techniques",
+        "category": "Film Theory",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Character Study Development",
+        "category": "Screenwriting",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Martin Scorsese",
+      "personId": 24623,
+      "slug": "/person/24623",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Paul D. Zimmerman",
+        "personId": 28777,
+        "slug": "/person/28777",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Robert De Niro",
+        "personId": 31532,
+        "slug": "/person/31532",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jerry Lewis",
+        "personId": 17188,
+        "slug": "/person/17188",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sandra Bernhard",
+        "personId": 33129,
+        "slug": "/person/33129",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Fred Schuler",
+      "personId": 11702,
+      "slug": "/person/11702",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Robbie Robertson",
+      "personId": 31391,
+      "slug": "/person/31391",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:16.742Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

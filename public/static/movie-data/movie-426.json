@@ -1,0 +1,147 @@
+{
+  "movieId": "67a8e33b-a696-4f33-aa2a-23c98c03c357",
+  "tmdbId": 426,
+  "title": "Vertigo",
+  "year": 1958,
+  "analysis": {
+    "keyElements": {
+      "director": "Alfred Hitchcock",
+      "writers": [
+        "Alec Coppel",
+        "Samuel Taylor"
+      ],
+      "stars": [
+        "James Stewart",
+        "Kim Novak",
+        "Barbara Bel Geddes"
+      ],
+      "genre": "Psychological Thriller",
+      "releaseYear": 1958,
+      "cinematographer": "Robert Burks",
+      "composer": "Bernard Herrmann",
+      "studio": "Paramount Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful psychological exploration of obsession and identity that rewards multiple viewings",
+        "Revolutionary visual techniques including the famous 'vertigo effect' that influenced countless films",
+        "Career-defining performances from James Stewart and Kim Novak that subvert their typical screen personas"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Rear Window",
+        "year": 1954,
+        "description": "Another Hitchcock masterpiece exploring voyeurism and obsession"
+      },
+      {
+        "title": "Mulholland Drive",
+        "year": 2001,
+        "description": "Spiritual successor in psychological complexity and identity themes"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "The Vertigo Effect",
+        "category": "Cinematography",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Psychology in Film Noir",
+        "category": "Film Theory",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Alfred Hitchcock",
+      "personId": 1111,
+      "slug": "/person/1111",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Alec Coppel",
+        "personId": 766,
+        "slug": "/person/766",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Samuel Taylor",
+        "personId": 33100,
+        "slug": "/person/33100",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Pierre Boileau",
+        "personId": 29872,
+        "slug": "/person/29872",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Thomas Narcejac",
+        "personId": 36153,
+        "slug": "/person/36153",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "James Stewart",
+        "personId": 15963,
+        "slug": "/person/15963",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Kim Novak",
+        "personId": 21088,
+        "slug": "/person/21088",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Barbara Bel Geddes",
+        "personId": 3013,
+        "slug": "/person/3013",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Robert Burks",
+      "personId": 31484,
+      "slug": "/person/31484",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Bernard Herrmann",
+      "personId": 3474,
+      "slug": "/person/3474",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:36.245Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

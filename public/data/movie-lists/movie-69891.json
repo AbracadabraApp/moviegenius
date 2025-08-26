@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Family Comedy Adventures",
+      "url_path": "family-comedy-adventures",
+      "description": "Family Comedy Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Family Comedy Adventures collection"
+    },
+    {
+      "name": "Political Activism Comedies",
+      "url_path": "political-activism-comedies",
+      "description": "Political Activism Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Political Activism Comedies collection"
+    },
+    {
+      "name": "Pet Adventure Comedies (Part 1)",
+      "url_path": "pet-adventure-comedies-part-1-",
+      "description": "Pet Adventure Comedies (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Pet Adventure Comedies (Part 1) collection"
+    },
+    {
+      "name": "Cross-Cultural Social Commentary (Part 2)",
+      "url_path": "cross-cultural-social-commentary-part-2-",
+      "description": "Cross-Cultural Social Commentary (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Cultural Social Commentary (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

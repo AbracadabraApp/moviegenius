@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Revenge Horror Films",
+      "url_path": "revenge-horror-films",
+      "description": "Revenge Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Revenge Horror Films collection"
+    },
+    {
+      "name": "Psychic Powers Horror",
+      "url_path": "psychic-powers-horror",
+      "description": "Psychic Powers Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Psychic Powers Horror collection"
+    },
+    {
+      "name": "Teen Horror Films",
+      "url_path": "teen-horror-films",
+      "description": "Teen Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Teen Horror Films collection"
+    },
+    {
+      "name": "Modern Suburban Horror (Part 6)",
+      "url_path": "modern-suburban-horror-part-6-",
+      "description": "Modern Suburban Horror (Part 6) collection",
+      "category": "horror",
+      "connectionReason": "Part of Modern Suburban Horror (Part 6) collection"
+    }
+  ],
+  "totalLists": 4
+}

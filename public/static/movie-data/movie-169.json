@@ -1,0 +1,133 @@
+{
+  "movieId": "10b62e99-2d5e-44ef-9608-ec493808c97e",
+  "tmdbId": 169,
+  "title": "Predator 2",
+  "year": 1990,
+  "analysis": {
+    "keyElements": {
+      "director": "Stephen Hopkins",
+      "writers": [
+        "Jim Thomas",
+        "John Thomas"
+      ],
+      "stars": [
+        "Danny Glover",
+        "Gary Busey",
+        "Ruben Blades"
+      ],
+      "genre": "Science Fiction Action",
+      "releaseYear": 1990,
+      "cinematographer": "Peter Levy",
+      "composer": "Alan Silvestri",
+      "studio": "20th Century Fox"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Innovative urban setting that reimagines the franchise's hunting ground dynamics",
+        "Strong performance by Danny Glover as a different kind of action hero",
+        "Expands the Predator mythology with new weapons and cultural details"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Predator",
+        "year": 1987,
+        "description": "Original jungle-set classic that established the franchise"
+      },
+      {
+        "title": "RoboCop",
+        "year": 1987,
+        "description": "Similar blend of urban action and sci-fi social commentary"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Urban Decay in 90s Cinema",
+        "category": "film_history",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Evolution of Action Sequels",
+        "category": "genre_studies",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Stephen Hopkins",
+      "personId": 34764,
+      "slug": "/person/34764",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Jim Thomas",
+        "personId": 17512,
+        "slug": "/person/17512",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "John Thomas",
+        "personId": 18741,
+        "slug": "/person/18741",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Danny Glover",
+        "personId": 7427,
+        "slug": "/person/7427",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Gary Busey",
+        "personId": 11931,
+        "slug": "/person/11931",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Bill Paxton",
+        "personId": 3786,
+        "slug": "/person/3786",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Peter Levy",
+      "personId": 29393,
+      "slug": "/person/29393",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Alan Silvestri",
+      "personId": 634,
+      "slug": "/person/634",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:00.497Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

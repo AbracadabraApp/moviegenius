@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Insect Adventure Stories",
+      "url_path": "insect-adventure-stories",
+      "description": "Insect Adventure Stories collection",
+      "category": "adventure",
+      "connectionReason": "Part of Insect Adventure Stories collection"
+    },
+    {
+      "name": "Miniature World Adventures",
+      "url_path": "miniature-world-adventures",
+      "description": "Miniature World Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Miniature World Adventures collection"
+    },
+    {
+      "name": "Fish-Out-of-Water",
+      "url_path": "fish-out-of-water",
+      "description": "Fish-Out-of-Water collection",
+      "category": "adventure",
+      "connectionReason": "Part of Fish-Out-of-Water collection"
+    },
+    {
+      "name": "CGI Spectacle Adventures [OVERSIZED]",
+      "url_path": "cgi-spectacle-adventures-oversized-",
+      "description": "CGI Spectacle Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of CGI Spectacle Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Coming-of-Age Animation",
+      "url_path": "coming-of-age-animation",
+      "description": "Coming-of-Age Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Coming-of-Age Animation collection"
+    },
+    {
+      "name": "Moral Choice Stories",
+      "url_path": "moral-choice-stories",
+      "description": "Moral Choice Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Moral Choice Stories collection"
+    }
+  ],
+  "totalLists": 6
+}

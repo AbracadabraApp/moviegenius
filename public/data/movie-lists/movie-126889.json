@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Space Horror",
+      "url_path": "space-horror",
+      "description": "Space Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Space Horror collection"
+    },
+    {
+      "name": "AI Horror",
+      "url_path": "ai-horror",
+      "description": "AI Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of AI Horror collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 1)",
+      "url_path": "confined-space-thrillers-part-1-",
+      "description": "Confined Space Thrillers (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 1) collection"
+    },
+    {
+      "name": "Mutant Creature Features (Part 1)",
+      "url_path": "mutant-creature-features-part-1-",
+      "description": "Mutant Creature Features (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Mutant Creature Features (Part 1) collection"
+    },
+    {
+      "name": "Space Horror Survival",
+      "url_path": "space-horror-survival",
+      "description": "Space Horror Survival collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Horror Survival collection"
+    },
+    {
+      "name": "Corporate Science Horror (Part 1)",
+      "url_path": "corporate-science-horror-part-1-",
+      "description": "Corporate Science Horror (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Corporate Science Horror (Part 1) collection"
+    },
+    {
+      "name": "Artificial Life Evolution (Part 1)",
+      "url_path": "artificial-life-evolution-part-1-",
+      "description": "Artificial Life Evolution (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Artificial Life Evolution (Part 1) collection"
+    }
+  ],
+  "totalLists": 7
+}

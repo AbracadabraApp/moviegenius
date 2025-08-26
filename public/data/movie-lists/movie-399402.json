@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "International Hostage Crisis",
+      "url_path": "international-hostage-crisis",
+      "description": "International Hostage Crisis collection",
+      "category": "thriller",
+      "connectionReason": "Part of International Hostage Crisis collection"
+    },
+    {
+      "name": "Military Heist Thrillers",
+      "url_path": "military-heist-thrillers",
+      "description": "Military Heist Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Military Heist Thrillers collection"
+    },
+    {
+      "name": "Submarine Command Thrillers",
+      "url_path": "submarine-command-thrillers",
+      "description": "Submarine Command Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Submarine Command Thrillers collection"
+    }
+  ],
+  "totalLists": 3
+}

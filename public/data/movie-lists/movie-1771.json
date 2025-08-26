@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Character-Driven Stories",
+      "url_path": "character-driven-stories",
+      "description": "Character-Driven Stories collection",
+      "category": "period",
+      "connectionReason": "Part of Character-Driven Stories collection"
+    },
+    {
+      "name": "MCU Origin Stories",
+      "url_path": "mcu-origin-stories",
+      "description": "MCU Origin Stories collection",
+      "category": "superhero",
+      "connectionReason": "Part of MCU Origin Stories collection"
+    },
+    {
+      "name": "Classic Comic Heroes",
+      "url_path": "classic-comic-heroes",
+      "description": "Classic Comic Heroes collection",
+      "category": "superhero",
+      "connectionReason": "Part of Classic Comic Heroes collection"
+    },
+    {
+      "name": "Science Hero Origins",
+      "url_path": "science-hero-origins",
+      "description": "Science Hero Origins collection",
+      "category": "superhero",
+      "connectionReason": "Part of Science Hero Origins collection"
+    }
+  ],
+  "totalLists": 4
+}

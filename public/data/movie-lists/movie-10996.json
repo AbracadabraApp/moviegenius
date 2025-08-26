@@ -1,0 +1,61 @@
+{
+  "lists": [
+    {
+      "name": "Urban Night Adventures",
+      "url_path": "urban-night-adventures",
+      "description": "Urban Night Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Urban Night Adventures collection"
+    },
+    {
+      "name": "Supernatural Animal Tales",
+      "url_path": "supernatural-animal-tales",
+      "description": "Supernatural Animal Tales collection",
+      "category": "adventure",
+      "connectionReason": "Part of Supernatural Animal Tales collection"
+    },
+    {
+      "name": "Animal Detective Stories",
+      "url_path": "animal-detective-stories",
+      "description": "Animal Detective Stories collection",
+      "category": "adventure",
+      "connectionReason": "Part of Animal Detective Stories collection"
+    },
+    {
+      "name": "Miniature World Adventures",
+      "url_path": "miniature-world-adventures",
+      "description": "Miniature World Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Miniature World Adventures collection"
+    },
+    {
+      "name": "Coming-of-Age Animation",
+      "url_path": "coming-of-age-animation",
+      "description": "Coming-of-Age Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Coming-of-Age Animation collection"
+    },
+    {
+      "name": "Found Family Stories",
+      "url_path": "found-family-stories",
+      "description": "Found Family Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Found Family Stories collection"
+    },
+    {
+      "name": "Unlikely Hero Stories",
+      "url_path": "unlikely-hero-stories",
+      "description": "Unlikely Hero Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Unlikely Hero Stories collection"
+    },
+    {
+      "name": "Animal Rescue Adventures",
+      "url_path": "animal-rescue-adventures",
+      "description": "Animal Rescue Adventures collection",
+      "category": "animation",
+      "connectionReason": "Part of Animal Rescue Adventures collection"
+    }
+  ],
+  "totalLists": 8
+}

@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "name": "WWII Propaganda Films",
+      "url_path": "wwii-propaganda-films",
+      "description": "WWII Propaganda Films collection",
+      "category": "war",
+      "connectionReason": "Part of WWII Propaganda Films collection"
+    },
+    {
+      "name": "POW Escape Films",
+      "url_path": "pow-escape-films",
+      "description": "POW Escape Films collection",
+      "category": "war",
+      "connectionReason": "Part of POW Escape Films collection"
+    }
+  ],
+  "totalLists": 2
+}

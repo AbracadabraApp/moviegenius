@@ -1,0 +1,125 @@
+{
+  "movieId": "c819a2b7-5eab-4037-895d-2762a166093b",
+  "tmdbId": 317,
+  "title": "Grbavica",
+  "year": 2006,
+  "analysis": {
+    "keyElements": {
+      "director": "Jasmila Žbanić",
+      "writers": [
+        "Jasmila Žbanić"
+      ],
+      "stars": [
+        "Mirjana Karanović",
+        "Luna Mijović",
+        "Leon Lučev"
+      ],
+      "genre": "Drama",
+      "releaseYear": 2006,
+      "cinematographer": "Christine A. Maier",
+      "composer": "Enes Zlatار",
+      "studio": "Coop99"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Powerful exploration of post-war trauma through intimate family drama",
+        "Masterful lead performance by Mirjana Karanović",
+        "Essential perspective on the aftermath of the Bosnian War"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "No Man's Land",
+        "year": 2001,
+        "description": "Similar exploration of Bosnian War's impact through personal lens"
+      },
+      {
+        "title": "Quo Vadis, Aida?",
+        "year": 2020,
+        "description": "Contemporary Bosnian film addressing war trauma"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Post-War Cinema",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Trauma in Cinema",
+        "category": "Film Theory",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Jasmila Žbanić",
+      "personId": 16266,
+      "slug": "/person/16266",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Jasmila Žbanić",
+        "personId": 16266,
+        "slug": "/person/16266",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Mirjana Karanović",
+        "personId": 26548,
+        "slug": "/person/26548",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Luna Mijović",
+        "personId": 23267,
+        "slug": "/person/23267",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Leon Lučev",
+        "personId": 22280,
+        "slug": "/person/22280",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Christine A. Maier",
+      "personId": 6121,
+      "slug": "/person/6121",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Enes Zlatić",
+      "personId": 10272,
+      "slug": "/person/10272",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:24.194Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

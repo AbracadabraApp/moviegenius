@@ -1,0 +1,140 @@
+{
+  "movieId": "06f557be-bb33-41d9-a4e7-5a2c80f37e6e",
+  "tmdbId": 345,
+  "title": "Eyes Wide Shut",
+  "year": 1999,
+  "analysis": {
+    "keyElements": {
+      "director": "Stanley Kubrick",
+      "writers": [
+        "Stanley Kubrick",
+        "Frederic Raphael"
+      ],
+      "stars": [
+        "Tom Cruise",
+        "Nicole Kidman",
+        "Sydney Pollack"
+      ],
+      "genre": "Drama/Mystery/Thriller",
+      "releaseYear": 1999,
+      "cinematographer": "Larry Smith",
+      "composer": "Jocelyn Pook",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Kubrick's masterful final film explores marriage, desire, and trust with hypnotic precision",
+        "Cruise and Kidman deliver their most vulnerable and complex performances",
+        "The dreamlike atmosphere and intricate symbolism reward multiple viewings"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Mulholland Drive",
+        "year": 2001,
+        "description": "Similarly explores dreams, desire, and reality through a hypnotic lens"
+      },
+      {
+        "title": "Don't Look Now",
+        "year": 1973,
+        "description": "Psychological thriller with comparable themes of marriage and supernatural uncertainty"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Dream Logic in Cinema",
+        "category": "Film Theory",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Kubrick's Visual Symbolism",
+        "category": "Director Study",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Stanley Kubrick",
+      "personId": 34599,
+      "slug": "/person/34599",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Stanley Kubrick",
+        "personId": 34599,
+        "slug": "/person/34599",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Frederic Raphael",
+        "personId": 11636,
+        "slug": "/person/11636",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Arthur Schnitzler",
+        "personId": 2679,
+        "slug": "/person/2679",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Tom Cruise",
+        "personId": 36534,
+        "slug": "/person/36534",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Nicole Kidman",
+        "personId": 27590,
+        "slug": "/person/27590",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sydney Pollack",
+        "personId": 35389,
+        "slug": "/person/35389",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Larry Smith",
+      "personId": 21726,
+      "slug": "/person/21726",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Jocelyn Pook",
+      "personId": 17693,
+      "slug": "/person/17693",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:27.972Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

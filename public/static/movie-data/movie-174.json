@@ -1,0 +1,144 @@
+{
+  "movieId": "e23dbcc1-4f8f-4778-88b6-4bfd684ee3f0",
+  "tmdbId": 174,
+  "title": "Star Trek VI: The Undiscovered Country",
+  "year": 1991,
+  "analysis": {
+    "keyElements": {
+      "director": "Nicholas Meyer",
+      "writers": [
+        "Nicholas Meyer",
+        "Denny Martin Flinn",
+        "Leonard Nimoy"
+      ],
+      "stars": [
+        "William Shatner",
+        "Leonard Nimoy",
+        "DeForest Kelley",
+        "Christopher Plummer"
+      ],
+      "genre": "Science Fiction",
+      "releaseYear": 1991,
+      "cinematographer": "Hiro Narita",
+      "composer": "Cliff Eidelman",
+      "studio": "Paramount Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful allegory of Cold War politics through science fiction lens",
+        "The original crew's emotional and fitting farewell after 25 years",
+        "Perfect blend of political thriller and classic Star Trek idealism"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Star Trek II: The Wrath of Khan",
+        "year": 1982,
+        "description": "Nicholas Meyer's first Trek film established the serious dramatic tone that The Undiscovered Country would later perfect"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Cold War Allegory in Science Fiction",
+        "category": "film_history",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Political Thriller Elements in Sci-Fi",
+        "category": "genre_studies",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Nicholas Meyer",
+      "personId": 27432,
+      "slug": "/person/27432",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Nicholas Meyer",
+        "personId": 27432,
+        "slug": "/person/27432",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Denny Martin Flinn",
+        "personId": 8506,
+        "slug": "/person/8506",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Leonard Nimoy",
+        "personId": 22227,
+        "slug": "/person/22227",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "William Shatner",
+        "personId": 38631,
+        "slug": "/person/38631",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Leonard Nimoy",
+        "personId": 22227,
+        "slug": "/person/22227",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "DeForest Kelley",
+        "personId": 8374,
+        "slug": "/person/8374",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Christopher Plummer",
+        "personId": 6273,
+        "slug": "/person/6273",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Hiro Narita",
+      "personId": 14393,
+      "slug": "/person/14393",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Cliff Eidelman",
+      "personId": 6580,
+      "slug": "/person/6580",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:01.604Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

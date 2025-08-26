@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Environmental Travel Films",
+      "url_path": "environmental-travel-films",
+      "description": "Environmental Travel Films collection",
+      "category": "adventure",
+      "connectionReason": "Part of Environmental Travel Films collection"
+    },
+    {
+      "name": "African Wilderness Survival",
+      "url_path": "african-wilderness-survival",
+      "description": "African Wilderness Survival collection",
+      "category": "adventure",
+      "connectionReason": "Part of African Wilderness Survival collection"
+    },
+    {
+      "name": "Indigenous Wilderness Guides",
+      "url_path": "indigenous-wilderness-guides",
+      "description": "Indigenous Wilderness Guides collection",
+      "category": "adventure",
+      "connectionReason": "Part of Indigenous Wilderness Guides collection"
+    }
+  ],
+  "totalLists": 3
+}

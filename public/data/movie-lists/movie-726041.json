@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Political & Social Issues",
+      "url_path": "political-social-issues",
+      "description": "Political & Social Issues collection",
+      "category": "documentary",
+      "connectionReason": "Part of Political & Social Issues collection"
+    },
+    {
+      "name": "Urban Architecture Transformation",
+      "url_path": "urban-architecture-transformation",
+      "description": "Urban Architecture Transformation collection",
+      "category": "documentary",
+      "connectionReason": "Part of Urban Architecture Transformation collection"
+    },
+    {
+      "name": "Personal Monologue Documentaries (Part 3)",
+      "url_path": "personal-monologue-documentaries-part-3-",
+      "description": "Personal Monologue Documentaries (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Personal Monologue Documentaries (Part 3) collection"
+    },
+    {
+      "name": "Global Cultural Meditations (Part 1)",
+      "url_path": "global-cultural-meditations-part-1-",
+      "description": "Global Cultural Meditations (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Cultural Meditations (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

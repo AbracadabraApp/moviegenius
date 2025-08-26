@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Medical & Scientific Thriller",
+      "url_path": "medical-scientific-thriller",
+      "description": "Medical & Scientific Thriller collection",
+      "category": "thriller",
+      "connectionReason": "Part of Medical & Scientific Thriller collection"
+    },
+    {
+      "name": "Medical Crisis Thrillers",
+      "url_path": "medical-crisis-thrillers",
+      "description": "Medical Crisis Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Medical Crisis Thrillers collection"
+    },
+    {
+      "name": "Gothic Medical Horror",
+      "url_path": "gothic-medical-horror",
+      "description": "Gothic Medical Horror collection",
+      "category": "thriller",
+      "connectionReason": "Part of Gothic Medical Horror collection"
+    },
+    {
+      "name": "Underground Investigation Thrillers (Part 3)",
+      "url_path": "underground-investigation-thrillers-part-3-",
+      "description": "Underground Investigation Thrillers (Part 3) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Underground Investigation Thrillers (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

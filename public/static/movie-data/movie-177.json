@@ -1,0 +1,133 @@
+{
+  "movieId": "62cacf13-947a-40ba-ba4e-08c708a9f07e",
+  "tmdbId": 177,
+  "title": "The Fisher King",
+  "year": 1991,
+  "analysis": {
+    "keyElements": {
+      "director": "Terry Gilliam",
+      "writers": [
+        "Richard LaGravenese"
+      ],
+      "stars": [
+        "Jeff Bridges",
+        "Robin Williams",
+        "Mercedes Ruehl",
+        "Amanda Plummer"
+      ],
+      "genre": "Drama/Fantasy",
+      "releaseYear": 1991,
+      "cinematographer": "Roger Pratt",
+      "composer": "George Fenton",
+      "studio": "TriStar Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Robin Williams delivers one of his most nuanced dramatic performances, perfectly balancing tragedy and whimsy",
+        "Terry Gilliam's signature visual style transforms New York City into a modern fairy tale landscape",
+        "The film masterfully weaves medieval mythology with contemporary urban life while exploring themes of redemption and human connection"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Brazil",
+        "year": 1985,
+        "description": "Another Gilliam masterpiece blending fantasy and social commentary"
+      },
+      {
+        "title": "Good Will Hunting",
+        "year": 1997,
+        "description": "Similar themes of healing through human connection with Robin Williams"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Arthurian Legend in Modern Context",
+        "category": "Mythology",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Magical Realism in Cinema",
+        "category": "Film Theory",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Terry Gilliam",
+      "personId": 35873,
+      "slug": "/person/35873",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Richard LaGravenese",
+        "personId": 31055,
+        "slug": "/person/31055",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Jeff Bridges",
+        "personId": 16795,
+        "slug": "/person/16795",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Robin Williams",
+        "personId": 32006,
+        "slug": "/person/32006",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Mercedes Ruehl",
+        "personId": 25409,
+        "slug": "/person/25409",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Amanda Plummer",
+        "personId": 1381,
+        "slug": "/person/1381",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Roger Pratt",
+      "personId": 32175,
+      "slug": "/person/32175",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "George Fenton",
+      "personId": 12253,
+      "slug": "/person/12253",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:01.901Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

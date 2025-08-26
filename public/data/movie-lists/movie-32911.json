@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Grief Recovery Stories",
+      "url_path": "grief-recovery-stories",
+      "description": "Grief Recovery Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Grief Recovery Stories collection"
+    },
+    {
+      "name": "Religious Faith Comedies",
+      "url_path": "religious-faith-comedies",
+      "description": "Religious Faith Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Religious Faith Comedies collection"
+    },
+    {
+      "name": "Religious Identity Crisis",
+      "url_path": "religious-identity-crisis",
+      "description": "Religious Identity Crisis collection",
+      "category": "comedy",
+      "connectionReason": "Part of Religious Identity Crisis collection"
+    }
+  ],
+  "totalLists": 3
+}

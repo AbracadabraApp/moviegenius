@@ -1,0 +1,148 @@
+{
+  "movieId": "83acbcdc-dc6f-4605-b02c-03c7d117b085",
+  "tmdbId": 476,
+  "title": "Drugstore Cowboy",
+  "year": 1989,
+  "analysis": {
+    "keyElements": {
+      "director": "Gus Van Sant",
+      "writers": [
+        "Gus Van Sant",
+        "Daniel Yost"
+      ],
+      "stars": [
+        "Matt Dillon",
+        "Kelly Lynch",
+        "James Le Gros",
+        "William S. Burroughs"
+      ],
+      "genre": "Crime Drama",
+      "releaseYear": 1989,
+      "cinematographer": "Robert Yeoman",
+      "composer": "Elliot Goldenthal",
+      "studio": "Avenue Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Matt Dillon's career-defining performance as Bob Hughes captures the complex reality of addiction without glamorization",
+        "Gus Van Sant's innovative direction brings raw authenticity to the Pacific Northwest drug scene",
+        "The film's honest portrayal of addiction and recovery remains powerfully relevant today"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Requiem for a Dream",
+        "year": 2000,
+        "description": "Directly influenced by Drugstore Cowboy's unflinching portrayal of addiction"
+      },
+      {
+        "title": "The Panic in Needle Park",
+        "year": 1971,
+        "description": "Earlier influential addiction drama that helped pave the way"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "New American Independent Cinema",
+        "category": "Film Movement",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Addiction in Cinema",
+        "category": "Theme Study",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Gus Van Sant",
+      "personId": 13356,
+      "slug": "/person/13356",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Gus Van Sant",
+        "personId": 13356,
+        "slug": "/person/13356",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Daniel Yost",
+        "personId": 7377,
+        "slug": "/person/7377",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "James Fogle",
+        "personId": 15770,
+        "slug": "/person/15770",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Matt Dillon",
+        "personId": 24917,
+        "slug": "/person/24917",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Kelly Lynch",
+        "personId": 20581,
+        "slug": "/person/20581",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "James Le Gros",
+        "personId": 15855,
+        "slug": "/person/15855",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Heather Graham",
+        "personId": 13938,
+        "slug": "/person/13938",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Robert Yeoman",
+      "personId": 31953,
+      "slug": "/person/31953",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Elliot Goldenthal",
+      "personId": 10072,
+      "slug": "/person/10072",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:41.489Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

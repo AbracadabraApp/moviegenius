@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "name": "Animal Rights Exposés",
+      "url_path": "animal-rights-expos-s",
+      "description": "Animal Rights Exposés collection",
+      "category": "documentary",
+      "connectionReason": "Part of Animal Rights Exposés collection"
+    },
+    {
+      "name": "Food Industry Exposés",
+      "url_path": "food-industry-expos-s",
+      "description": "Food Industry Exposés collection",
+      "category": "documentary",
+      "connectionReason": "Part of Food Industry Exposés collection"
+    }
+  ],
+  "totalLists": 2
+}

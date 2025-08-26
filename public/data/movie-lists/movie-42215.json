@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Secret Society Horror",
+      "url_path": "secret-society-horror",
+      "description": "Secret Society Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Secret Society Horror collection"
+    },
+    {
+      "name": "Occult Ritual Horror (Part 4)",
+      "url_path": "occult-ritual-horror-part-4-",
+      "description": "Occult Ritual Horror (Part 4) collection",
+      "category": "horror",
+      "connectionReason": "Part of Occult Ritual Horror (Part 4) collection"
+    },
+    {
+      "name": "Gothic Family Curse (Part 4)",
+      "url_path": "gothic-family-curse-part-4-",
+      "description": "Gothic Family Curse (Part 4) collection",
+      "category": "horror",
+      "connectionReason": "Part of Gothic Family Curse (Part 4) collection"
+    },
+    {
+      "name": "Cursed Building Horror (Part 2)",
+      "url_path": "cursed-building-horror-part-2-",
+      "description": "Cursed Building Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Cursed Building Horror (Part 2) collection"
+    },
+    {
+      "name": "Isolated Manor Mysteries",
+      "url_path": "isolated-manor-mysteries",
+      "description": "Isolated Manor Mysteries collection",
+      "category": "thriller",
+      "connectionReason": "Part of Isolated Manor Mysteries collection"
+    },
+    {
+      "name": "Religious Supernatural Thrillers",
+      "url_path": "religious-supernatural-thrillers",
+      "description": "Religious Supernatural Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Religious Supernatural Thrillers collection"
+    },
+    {
+      "name": "Gothic Family Horror",
+      "url_path": "gothic-family-horror",
+      "description": "Gothic Family Horror collection",
+      "category": "thriller",
+      "connectionReason": "Part of Gothic Family Horror collection"
+    }
+  ],
+  "totalLists": 7
+}

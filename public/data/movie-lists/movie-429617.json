@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "European Castle Heists",
+      "url_path": "european-castle-heists",
+      "description": "European Castle Heists collection",
+      "category": "adventure",
+      "connectionReason": "Part of European Castle Heists collection"
+    },
+    {
+      "name": "CGI Spectacle Adventures [OVERSIZED]",
+      "url_path": "cgi-spectacle-adventures-oversized-",
+      "description": "CGI Spectacle Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of CGI Spectacle Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Legacy Hero Inheritance [OVERSIZED]",
+      "url_path": "legacy-hero-inheritance-oversized-",
+      "description": "Legacy Hero Inheritance [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Legacy Hero Inheritance [OVERSIZED] collection"
+    },
+    {
+      "name": "Superhero Coming-of-Age",
+      "url_path": "superhero-coming-of-age",
+      "description": "Superhero Coming-of-Age collection",
+      "category": "superhero",
+      "connectionReason": "Part of Superhero Coming-of-Age collection"
+    },
+    {
+      "name": "Philosophical Superhero Stories",
+      "url_path": "philosophical-superhero-stories",
+      "description": "Philosophical Superhero Stories collection",
+      "category": "superhero",
+      "connectionReason": "Part of Philosophical Superhero Stories collection"
+    },
+    {
+      "name": "Legacy and Succession",
+      "url_path": "legacy-and-succession",
+      "description": "Legacy and Succession collection",
+      "category": "superhero",
+      "connectionReason": "Part of Legacy and Succession collection"
+    }
+  ],
+  "totalLists": 6
+}

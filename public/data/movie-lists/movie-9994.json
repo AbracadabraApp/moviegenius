@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Animal Detective Stories",
+      "url_path": "animal-detective-stories",
+      "description": "Animal Detective Stories collection",
+      "category": "adventure",
+      "connectionReason": "Part of Animal Detective Stories collection"
+    },
+    {
+      "name": "Animated Gadget Adventures",
+      "url_path": "animated-gadget-adventures",
+      "description": "Animated Gadget Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Animated Gadget Adventures collection"
+    },
+    {
+      "name": "European-Set Animations",
+      "url_path": "european-set-animations",
+      "description": "European-Set Animations collection",
+      "category": "animation",
+      "connectionReason": "Part of European-Set Animations collection"
+    },
+    {
+      "name": "Mystery Detective Animation",
+      "url_path": "mystery-detective-animation",
+      "description": "Mystery Detective Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Mystery Detective Animation collection"
+    },
+    {
+      "name": "Literary Adaptations",
+      "url_path": "literary-adaptations",
+      "description": "Literary Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Literary Adaptations collection"
+    }
+  ],
+  "totalLists": 5
+}

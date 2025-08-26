@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Nature Living Chronicles",
+      "url_path": "nature-living-chronicles",
+      "description": "Nature Living Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Nature Living Chronicles collection"
+    },
+    {
+      "name": "Animal Family Leadership",
+      "url_path": "animal-family-leadership",
+      "description": "Animal Family Leadership collection",
+      "category": "documentary",
+      "connectionReason": "Part of Animal Family Leadership collection"
+    },
+    {
+      "name": "Wildlife Documentation",
+      "url_path": "wildlife-documentation",
+      "description": "Wildlife Documentation collection",
+      "category": "documentary",
+      "connectionReason": "Part of Wildlife Documentation collection"
+    }
+  ],
+  "totalLists": 3
+}

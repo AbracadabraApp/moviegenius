@@ -1,0 +1,68 @@
+{
+  "lists": [
+    {
+      "name": "Books Come Alive",
+      "url_path": "books-come-alive",
+      "description": "Books Come Alive collection",
+      "category": "adventure",
+      "connectionReason": "Part of Books Come Alive collection"
+    },
+    {
+      "name": "Classic Literary Adventures [OVERSIZED]",
+      "url_path": "classic-literary-adventures-oversized-",
+      "description": "Classic Literary Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Classic Literary Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Golden Age Sea Adventures [OVERSIZED]",
+      "url_path": "golden-age-sea-adventures-oversized-",
+      "description": "Golden Age Sea Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Golden Age Sea Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Music Comedy Films [OVERSIZED]",
+      "url_path": "music-comedy-films-oversized-",
+      "description": "Music Comedy Films [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Music Comedy Films [OVERSIZED] collection"
+    },
+    {
+      "name": "Literary Musical Adaptations [OVERSIZED]",
+      "url_path": "literary-musical-adaptations-oversized-",
+      "description": "Literary Musical Adaptations [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Literary Musical Adaptations [OVERSIZED] collection"
+    },
+    {
+      "name": "Youth Cast Musicals [OVERSIZED]",
+      "url_path": "youth-cast-musicals-oversized-",
+      "description": "Youth Cast Musicals [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Youth Cast Musicals [OVERSIZED] collection"
+    },
+    {
+      "name": "Literary Classic Reinterpretations",
+      "url_path": "literary-classic-reinterpretations",
+      "description": "Literary Classic Reinterpretations collection",
+      "category": "musical",
+      "connectionReason": "Part of Literary Classic Reinterpretations collection"
+    },
+    {
+      "name": "Family Musical Dramas",
+      "url_path": "family-musical-dramas",
+      "description": "Family Musical Dramas collection",
+      "category": "musical",
+      "connectionReason": "Part of Family Musical Dramas collection"
+    },
+    {
+      "name": "Puppet Musical Productions",
+      "url_path": "puppet-musical-productions",
+      "description": "Puppet Musical Productions collection",
+      "category": "musical",
+      "connectionReason": "Part of Puppet Musical Productions collection"
+    }
+  ],
+  "totalLists": 9
+}

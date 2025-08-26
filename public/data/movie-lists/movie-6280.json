@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Medical Comedy Dramas",
+      "url_path": "medical-comedy-dramas",
+      "description": "Medical Comedy Dramas collection",
+      "category": "comedy",
+      "connectionReason": "Part of Medical Comedy Dramas collection"
+    },
+    {
+      "name": "Gender Role Reversal Comedy",
+      "url_path": "gender-role-reversal-comedy",
+      "description": "Gender Role Reversal Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Gender Role Reversal Comedy collection"
+    },
+    {
+      "name": "Body Horror Comedy (Part 2)",
+      "url_path": "body-horror-comedy-part-2-",
+      "description": "Body Horror Comedy (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Body Horror Comedy (Part 2) collection"
+    },
+    {
+      "name": "Scientific Facility Mayhem (Part 1)",
+      "url_path": "scientific-facility-mayhem-part-1-",
+      "description": "Scientific Facility Mayhem (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Scientific Facility Mayhem (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

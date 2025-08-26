@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Teen Horror Films",
+      "url_path": "teen-horror-films",
+      "description": "Teen Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Teen Horror Films collection"
+    },
+    {
+      "name": "Aquatic Monster Horror (Part 3)",
+      "url_path": "aquatic-monster-horror-part-3-",
+      "description": "Aquatic Monster Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Aquatic Monster Horror (Part 3) collection"
+    },
+    {
+      "name": "Nature Revenge Horror (Part 3)",
+      "url_path": "nature-revenge-horror-part-3-",
+      "description": "Nature Revenge Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Nature Revenge Horror (Part 3) collection"
+    },
+    {
+      "name": "Deadly Animal Survival",
+      "url_path": "deadly-animal-survival",
+      "description": "Deadly Animal Survival collection",
+      "category": "thriller",
+      "connectionReason": "Part of Deadly Animal Survival collection"
+    },
+    {
+      "name": "Tourist Attraction Danger",
+      "url_path": "tourist-attraction-danger",
+      "description": "Tourist Attraction Danger collection",
+      "category": "thriller",
+      "connectionReason": "Part of Tourist Attraction Danger collection"
+    },
+    {
+      "name": "Single Location Survival (Part 4)",
+      "url_path": "single-location-survival-part-4-",
+      "description": "Single Location Survival (Part 4) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Single Location Survival (Part 4) collection"
+    }
+  ],
+  "totalLists": 6
+}

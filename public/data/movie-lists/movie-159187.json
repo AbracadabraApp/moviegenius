@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "World Music Dramas",
+      "url_path": "world-music-dramas",
+      "description": "World Music Dramas collection",
+      "category": "music",
+      "connectionReason": "Part of World Music Dramas collection"
+    },
+    {
+      "name": "Musical Prodigy Stories",
+      "url_path": "musical-prodigy-stories",
+      "description": "Musical Prodigy Stories collection",
+      "category": "music",
+      "connectionReason": "Part of Musical Prodigy Stories collection"
+    },
+    {
+      "name": "Classical Indian Musicals",
+      "url_path": "classical-indian-musicals",
+      "description": "Classical Indian Musicals collection",
+      "category": "music",
+      "connectionReason": "Part of Classical Indian Musicals collection"
+    },
+    {
+      "name": "Historical Period Musicals [OVERSIZED]",
+      "url_path": "historical-period-musicals-oversized-",
+      "description": "Historical Period Musicals [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Historical Period Musicals [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Con Artist & Fraud",
+      "url_path": "con-artist-fraud",
+      "description": "Con Artist & Fraud collection",
+      "category": "crime",
+      "connectionReason": "Part of Con Artist & Fraud collection"
+    },
+    {
+      "name": "Corporate Crime Dramas",
+      "url_path": "corporate-crime-dramas",
+      "description": "Corporate Crime Dramas collection",
+      "category": "crime",
+      "connectionReason": "Part of Corporate Crime Dramas collection"
+    },
+    {
+      "name": "Urban Drug Trade (Part 1)",
+      "url_path": "urban-drug-trade-part-1-",
+      "description": "Urban Drug Trade (Part 1) collection",
+      "category": "crime",
+      "connectionReason": "Part of Urban Drug Trade (Part 1) collection"
+    },
+    {
+      "name": "Social Inequality Crime (Part 1)",
+      "url_path": "social-inequality-crime-part-1-",
+      "description": "Social Inequality Crime (Part 1) collection",
+      "category": "crime",
+      "connectionReason": "Part of Social Inequality Crime (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

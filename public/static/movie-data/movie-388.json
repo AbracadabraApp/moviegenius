@@ -1,0 +1,125 @@
+{
+  "movieId": "2f3fea5e-9dd2-4e6d-adc1-edd3ee793e68",
+  "tmdbId": 388,
+  "title": "Inside Man",
+  "year": 2006,
+  "analysis": {
+    "keyElements": {
+      "director": "Spike Lee",
+      "writers": [
+        "Russell Gewirtz"
+      ],
+      "stars": [
+        "Denzel Washington",
+        "Clive Owen",
+        "Jodie Foster"
+      ],
+      "genre": "Crime Thriller",
+      "releaseYear": 2006,
+      "cinematographer": "Matthew Libatique",
+      "composer": "Terence Blanchard",
+      "studio": "Universal Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of heist thriller complexity with social commentary",
+        "Outstanding ensemble cast performances led by Washington and Owen",
+        "Clever narrative structure that rewards multiple viewings"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Dog Day Afternoon",
+        "year": 1975,
+        "description": "Classic bank heist film that similarly explores social dynamics within crisis"
+      },
+      {
+        "title": "The Usual Suspects",
+        "year": 1995,
+        "description": "Complex crime thriller with masterful misdirection"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Nonlinear Storytelling",
+        "category": "Narrative Structure",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Social Commentary in Genre Films",
+        "category": "Theme Analysis",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Spike Lee",
+      "personId": 34525,
+      "slug": "/person/34525",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Russell Gewirtz",
+        "personId": 32672,
+        "slug": "/person/32672",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Denzel Washington",
+        "personId": 8513,
+        "slug": "/person/8513",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Clive Owen",
+        "personId": 6627,
+        "slug": "/person/6627",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jodie Foster",
+        "personId": 17702,
+        "slug": "/person/17702",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Matthew Libatique",
+      "personId": 24978,
+      "slug": "/person/24978",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Terence Blanchard",
+      "personId": 35810,
+      "slug": "/person/35810",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:30.556Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

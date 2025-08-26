@@ -1,0 +1,151 @@
+{
+  "movieId": "8eb54994-9e43-4d7f-8161-b9628bc3151d",
+  "tmdbId": 334,
+  "title": "Magnolia",
+  "year": 1999,
+  "analysis": {
+    "keyElements": {
+      "director": "Paul Thomas Anderson",
+      "writers": [
+        "Paul Thomas Anderson"
+      ],
+      "stars": [
+        "Tom Cruise",
+        "Philip Seymour Hoffman",
+        "Julianne Moore",
+        "John C. Reilly",
+        "William H. Macy"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1999,
+      "cinematographer": "Robert Elswit",
+      "composer": "Aimee Mann, Jon Brion",
+      "studio": "New Line Cinema"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful interweaving of multiple storylines that culminate in an unforgettable climax",
+        "Career-defining performances from an ensemble cast, especially Tom Cruise's raw portrayal of Frank Mackey",
+        "Bold, ambitious storytelling that pushes the boundaries of conventional narrative structure"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Short Cuts",
+        "year": 1993,
+        "description": "Robert Altman's influential multi-narrative Los Angeles drama"
+      },
+      {
+        "title": "Boogie Nights",
+        "year": 1997,
+        "description": "Anderson's previous ensemble drama about the porn industry"
+      },
+      {
+        "title": "Network",
+        "year": 1976,
+        "description": "Prescient media satire with similar themes of exploitation"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Multi-Narrative Storytelling",
+        "category": "screenwriting",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "Biblical Symbolism in Modern Cinema",
+        "category": "film_theory",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Character Ensemble Direction",
+        "category": "directing",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Paul Thomas Anderson",
+      "personId": 29008,
+      "slug": "/person/29008",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Paul Thomas Anderson",
+        "personId": 29008,
+        "slug": "/person/29008",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Tom Cruise",
+        "personId": 36534,
+        "slug": "/person/36534",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Philip Seymour Hoffman",
+        "personId": 29753,
+        "slug": "/person/29753",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Julianne Moore",
+        "personId": 19666,
+        "slug": "/person/19666",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "John C. Reilly",
+        "personId": 18112,
+        "slug": "/person/18112",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "William H. Macy",
+        "personId": 38489,
+        "slug": "/person/38489",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Robert Elswit",
+      "personId": 31567,
+      "slug": "/person/31567",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Aimee Mann, Jon Brion",
+      "personId": 395,
+      "slug": "/person/395",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:26.148Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

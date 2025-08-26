@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "WWII Archival Documentaries",
+      "url_path": "wwii-archival-documentaries",
+      "description": "WWII Archival Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of WWII Archival Documentaries collection"
+    },
+    {
+      "name": "Maritime Industry Chronicles",
+      "url_path": "maritime-industry-chronicles",
+      "description": "Maritime Industry Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Maritime Industry Chronicles collection"
+    },
+    {
+      "name": "Military History Collections",
+      "url_path": "military-history-collections",
+      "description": "Military History Collections collection",
+      "category": "documentary",
+      "connectionReason": "Part of Military History Collections collection"
+    },
+    {
+      "name": "Combat Documentary Style",
+      "url_path": "combat-documentary-style",
+      "description": "Combat Documentary Style collection",
+      "category": "war",
+      "connectionReason": "Part of Combat Documentary Style collection"
+    },
+    {
+      "name": "Atlantic Convoy Defense",
+      "url_path": "atlantic-convoy-defense",
+      "description": "Atlantic Convoy Defense collection",
+      "category": "war",
+      "connectionReason": "Part of Atlantic Convoy Defense collection"
+    },
+    {
+      "name": "Naval Command Films",
+      "url_path": "naval-command-films",
+      "description": "Naval Command Films collection",
+      "category": "war",
+      "connectionReason": "Part of Naval Command Films collection"
+    },
+    {
+      "name": "True Military Stories [OVERSIZED]",
+      "url_path": "true-military-stories-oversized-",
+      "description": "True Military Stories [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of True Military Stories [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 7
+}

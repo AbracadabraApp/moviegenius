@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Time Travel Fish-Out-Of-Water",
+      "url_path": "time-travel-fish-out-of-water",
+      "description": "Time Travel Fish-Out-Of-Water collection",
+      "category": "comedy",
+      "connectionReason": "Part of Time Travel Fish-Out-Of-Water collection"
+    },
+    {
+      "name": "Medieval Fantasy Comedies",
+      "url_path": "medieval-fantasy-comedies",
+      "description": "Medieval Fantasy Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Medieval Fantasy Comedies collection"
+    },
+    {
+      "name": "Cross-Cultural Comedy",
+      "url_path": "cross-cultural-comedy",
+      "description": "Cross-Cultural Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Cultural Comedy collection"
+    }
+  ],
+  "totalLists": 3
+}

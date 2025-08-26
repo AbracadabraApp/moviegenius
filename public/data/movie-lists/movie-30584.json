@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Medieval Dragon Tales",
+      "url_path": "medieval-dragon-tales",
+      "description": "Medieval Dragon Tales collection",
+      "category": "adventure",
+      "connectionReason": "Part of Medieval Dragon Tales collection"
+    },
+    {
+      "name": "Classic Literary Adventures [OVERSIZED]",
+      "url_path": "classic-literary-adventures-oversized-",
+      "description": "Classic Literary Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Classic Literary Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Legacy Hero Inheritance [OVERSIZED]",
+      "url_path": "legacy-hero-inheritance-oversized-",
+      "description": "Legacy Hero Inheritance [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Legacy Hero Inheritance [OVERSIZED] collection"
+    },
+    {
+      "name": "Celtic Folklore Fantasy",
+      "url_path": "celtic-folklore-fantasy",
+      "description": "Celtic Folklore Fantasy collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Celtic Folklore Fantasy collection"
+    },
+    {
+      "name": "Ancient Civilization Epics [OVERSIZED]",
+      "url_path": "ancient-civilization-epics-oversized-",
+      "description": "Ancient Civilization Epics [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Ancient Civilization Epics [OVERSIZED] collection"
+    },
+    {
+      "name": "Medieval Monster Quests [OVERSIZED]",
+      "url_path": "medieval-monster-quests-oversized-",
+      "description": "Medieval Monster Quests [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Medieval Monster Quests [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 6
+}

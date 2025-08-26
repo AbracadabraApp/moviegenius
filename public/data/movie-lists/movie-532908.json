@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Political Media Debates",
+      "url_path": "political-media-debates",
+      "description": "Political Media Debates collection",
+      "category": "documentary",
+      "connectionReason": "Part of Political Media Debates collection"
+    },
+    {
+      "name": "Underground Journalism Stories",
+      "url_path": "underground-journalism-stories",
+      "description": "Underground Journalism Stories collection",
+      "category": "documentary",
+      "connectionReason": "Part of Underground Journalism Stories collection"
+    },
+    {
+      "name": "Political Movement Documentaries (Part 2)",
+      "url_path": "political-movement-documentaries-part-2-",
+      "description": "Political Movement Documentaries (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Political Movement Documentaries (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

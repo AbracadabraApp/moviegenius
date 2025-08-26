@@ -1,0 +1,68 @@
+{
+  "lists": [
+    {
+      "name": "Medieval Dragon Tales",
+      "url_path": "medieval-dragon-tales",
+      "description": "Medieval Dragon Tales collection",
+      "category": "adventure",
+      "connectionReason": "Part of Medieval Dragon Tales collection"
+    },
+    {
+      "name": "Fantasy Heist Adventures",
+      "url_path": "fantasy-heist-adventures",
+      "description": "Fantasy Heist Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Fantasy Heist Adventures collection"
+    },
+    {
+      "name": "Classic Literary Adventures [OVERSIZED]",
+      "url_path": "classic-literary-adventures-oversized-",
+      "description": "Classic Literary Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Classic Literary Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Epic Fantasy Adaptations",
+      "url_path": "epic-fantasy-adaptations",
+      "description": "Epic Fantasy Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Epic Fantasy Adaptations collection"
+    },
+    {
+      "name": "Unlikely Hero Stories",
+      "url_path": "unlikely-hero-stories",
+      "description": "Unlikely Hero Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Unlikely Hero Stories collection"
+    },
+    {
+      "name": "Literary Adaptations",
+      "url_path": "literary-adaptations",
+      "description": "Literary Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Literary Adaptations collection"
+    },
+    {
+      "name": "Literary Origin Stories",
+      "url_path": "literary-origin-stories",
+      "description": "Literary Origin Stories collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Literary Origin Stories collection"
+    },
+    {
+      "name": "Outsider Transformation Stories",
+      "url_path": "outsider-transformation-stories",
+      "description": "Outsider Transformation Stories collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Outsider Transformation Stories collection"
+    },
+    {
+      "name": "Medieval Monster Quests [OVERSIZED]",
+      "url_path": "medieval-monster-quests-oversized-",
+      "description": "Medieval Monster Quests [OVERSIZED] collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Medieval Monster Quests [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 9
+}

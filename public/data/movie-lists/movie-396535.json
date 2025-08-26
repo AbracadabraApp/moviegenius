@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Survival Horror",
+      "url_path": "survival-horror",
+      "description": "Survival Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Survival Horror collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 7)",
+      "url_path": "confined-space-thrillers-part-7-",
+      "description": "Confined Space Thrillers (Part 7) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 7) collection"
+    },
+    {
+      "name": "Social Commentary Horror (Part 3)",
+      "url_path": "social-commentary-horror-part-3-",
+      "description": "Social Commentary Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Social Commentary Horror (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,138 @@
+{
+  "movieId": "2c343650-9bdf-4c7c-b436-3f7c8c12ece5",
+  "tmdbId": 182,
+  "title": "The Good German",
+  "year": 2006,
+  "analysis": {
+    "keyElements": {
+      "director": "Steven Soderbergh",
+      "writers": [
+        "Paul Attanasio",
+        "Joseph Kanon"
+      ],
+      "stars": [
+        "George Clooney",
+        "Cate Blanchett",
+        "Tobey Maguire"
+      ],
+      "genre": "Film Noir/Drama",
+      "releaseYear": 2006,
+      "cinematographer": "Steven Soderbergh",
+      "composer": "Thomas Newman",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "NO",
+      "reasons": [
+        "Despite ambitious technical homage, the noir style feels more gimmicky than authentic",
+        "The complex plot becomes muddled and fails to engage emotionally",
+        "Watch **Casablanca** (1942) or **The Third Man** (1949) instead for superior post-war noir"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Casablanca",
+        "year": 1942,
+        "description": "The definitive wartime noir romance that The Good German explicitly references"
+      },
+      {
+        "title": "The Third Man",
+        "year": 1949,
+        "description": "Superior post-war noir exploring similar themes of moral ambiguity in occupied Europe"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Post-WWII Berlin",
+        "category": "Historical Context",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Classical Noir Techniques",
+        "category": "Film Style",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "Operation Paperclip",
+        "category": "Historical Events",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Steven Soderbergh",
+      "personId": 35035,
+      "slug": "/person/35035",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Paul Attanasio",
+        "personId": 28707,
+        "slug": "/person/28707",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Joseph Kanon",
+        "personId": 19262,
+        "slug": "/person/19262",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "George Clooney",
+        "personId": 12227,
+        "slug": "/person/12227",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Cate Blanchett",
+        "personId": 5187,
+        "slug": "/person/5187",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Tobey Maguire",
+        "personId": 36403,
+        "slug": "/person/36403",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Steven Soderbergh",
+      "personId": 35035,
+      "slug": "/person/35035",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Thomas Newman",
+      "personId": 36154,
+      "slug": "/person/36154",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:02.462Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

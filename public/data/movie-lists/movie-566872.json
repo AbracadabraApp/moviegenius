@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Art Heist Films",
+      "url_path": "art-heist-films",
+      "description": "Art Heist Films collection",
+      "category": "crime",
+      "connectionReason": "Part of Art Heist Films collection"
+    },
+    {
+      "name": "Luxury Lifestyle Crime",
+      "url_path": "luxury-lifestyle-crime",
+      "description": "Luxury Lifestyle Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Luxury Lifestyle Crime collection"
+    },
+    {
+      "name": "Con Artist Romance",
+      "url_path": "con-artist-romance",
+      "description": "Con Artist Romance collection",
+      "category": "crime",
+      "connectionReason": "Part of Con Artist Romance collection"
+    },
+    {
+      "name": "Artist Criminal Duality",
+      "url_path": "artist-criminal-duality",
+      "description": "Artist Criminal Duality collection",
+      "category": "crime",
+      "connectionReason": "Part of Artist Criminal Duality collection"
+    },
+    {
+      "name": "Creative Process Madness",
+      "url_path": "creative-process-madness",
+      "description": "Creative Process Madness collection",
+      "category": "thriller",
+      "connectionReason": "Part of Creative Process Madness collection"
+    },
+    {
+      "name": "Artistic Murder Thrillers",
+      "url_path": "artistic-murder-thrillers",
+      "description": "Artistic Murder Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Artistic Murder Thrillers collection"
+    }
+  ],
+  "totalLists": 6
+}

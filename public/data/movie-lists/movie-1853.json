@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Solo Living Documentaries",
+      "url_path": "solo-living-documentaries",
+      "description": "Solo Living Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Solo Living Documentaries collection"
+    },
+    {
+      "name": "Personal Monologue Documentaries (Part 5)",
+      "url_path": "personal-monologue-documentaries-part-5-",
+      "description": "Personal Monologue Documentaries (Part 5) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Personal Monologue Documentaries (Part 5) collection"
+    },
+    {
+      "name": "Cultural Icon Biographies (Part 6)",
+      "url_path": "cultural-icon-biographies-part-6-",
+      "description": "Cultural Icon Biographies (Part 6) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cultural Icon Biographies (Part 6) collection"
+    }
+  ],
+  "totalLists": 3
+}

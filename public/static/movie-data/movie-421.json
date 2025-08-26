@@ -1,0 +1,149 @@
+{
+  "movieId": "62a4139d-db17-4c03-b113-16ee2b8b0b36",
+  "tmdbId": 421,
+  "title": "The Life Aquatic with Steve Zissou",
+  "year": 2004,
+  "analysis": {
+    "keyElements": {
+      "director": "Wes Anderson",
+      "writers": [
+        "Wes Anderson",
+        "Noah Baumbach"
+      ],
+      "stars": [
+        "Bill Murray",
+        "Owen Wilson",
+        "Cate Blanchett",
+        "Willem Dafoe",
+        "Anjelica Huston"
+      ],
+      "genre": "Comedy-Drama",
+      "releaseYear": 2004,
+      "cinematographer": "Robert Yeoman",
+      "composer": "Mark Mothersbaugh",
+      "studio": "Touchstone Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Bill Murray delivers one of his finest melancholic performances as the complex Steve Zissou",
+        "Wes Anderson's meticulous visual style reaches new heights with stunning underwater sequences and detailed set design",
+        "The perfect blend of whimsy and emotional depth, exploring themes of legacy, family, and redemption"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Royal Tenenbaums",
+        "year": 2001,
+        "description": "Anderson's previous masterwork of family dysfunction and redemption"
+      },
+      {
+        "title": "Lost in Translation",
+        "year": 2003,
+        "description": "Similar exploration of melancholy and mid-life crisis through Bill Murray"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Wes Anderson's Visual Style",
+        "category": "Cinematography",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Character-Driven Comedy-Drama",
+        "category": "Screenwriting",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Wes Anderson",
+      "personId": 38260,
+      "slug": "/person/38260",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Wes Anderson",
+        "personId": 38260,
+        "slug": "/person/38260",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Noah Baumbach",
+        "personId": 27742,
+        "slug": "/person/27742",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Bill Murray",
+        "personId": 3780,
+        "slug": "/person/3780",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Owen Wilson",
+        "personId": 28291,
+        "slug": "/person/28291",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Cate Blanchett",
+        "personId": 5187,
+        "slug": "/person/5187",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Anjelica Huston",
+        "personId": 1983,
+        "slug": "/person/1983",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Willem Dafoe",
+        "personId": 38346,
+        "slug": "/person/38346",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Robert Yeoman",
+      "personId": 31953,
+      "slug": "/person/31953",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Mark Mothersbaugh",
+      "personId": 24379,
+      "slug": "/person/24379",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:35.641Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

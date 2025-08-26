@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Eccentric Detective Stories",
+      "url_path": "eccentric-detective-stories",
+      "description": "Eccentric Detective Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Eccentric Detective Stories collection"
+    },
+    {
+      "name": "Classic Literature Parodies",
+      "url_path": "classic-literature-parodies",
+      "description": "Classic Literature Parodies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Literature Parodies collection"
+    },
+    {
+      "name": "Detective Series Parodies",
+      "url_path": "detective-series-parodies",
+      "description": "Detective Series Parodies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Detective Series Parodies collection"
+    }
+  ],
+  "totalLists": 3
+}

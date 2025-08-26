@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Graphic Novel Adaptations",
+      "url_path": "graphic-novel-adaptations",
+      "description": "Graphic Novel Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Graphic Novel Adaptations collection"
+    },
+    {
+      "name": "Holiday Special Animations",
+      "url_path": "holiday-special-animations",
+      "description": "Holiday Special Animations collection",
+      "category": "animation",
+      "connectionReason": "Part of Holiday Special Animations collection"
+    },
+    {
+      "name": "Identity & Representation",
+      "url_path": "identity-representation",
+      "description": "Identity & Representation collection",
+      "category": "animation",
+      "connectionReason": "Part of Identity & Representation collection"
+    }
+  ],
+  "totalLists": 3
+}

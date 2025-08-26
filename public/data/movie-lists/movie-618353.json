@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Dark Fantasy Animation",
+      "url_path": "dark-fantasy-animation",
+      "description": "Dark Fantasy Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Dark Fantasy Animation collection"
+    },
+    {
+      "name": "Graphic Novel Adaptations",
+      "url_path": "graphic-novel-adaptations",
+      "description": "Graphic Novel Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Graphic Novel Adaptations collection"
+    },
+    {
+      "name": "Psychological Thriller Animation",
+      "url_path": "psychological-thriller-animation",
+      "description": "Psychological Thriller Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Psychological Thriller Animation collection"
+    },
+    {
+      "name": "Science Fiction Concepts",
+      "url_path": "science-fiction-concepts",
+      "description": "Science Fiction Concepts collection",
+      "category": "animation",
+      "connectionReason": "Part of Science Fiction Concepts collection"
+    }
+  ],
+  "totalLists": 4
+}

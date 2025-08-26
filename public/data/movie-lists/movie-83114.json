@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Graphic Novel Adaptations",
+      "url_path": "graphic-novel-adaptations",
+      "description": "Graphic Novel Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Graphic Novel Adaptations collection"
+    },
+    {
+      "name": "Adult Existential Drama",
+      "url_path": "adult-existential-drama",
+      "description": "Adult Existential Drama collection",
+      "category": "animation",
+      "connectionReason": "Part of Adult Existential Drama collection"
+    },
+    {
+      "name": "Documentary Animation",
+      "url_path": "documentary-animation",
+      "description": "Documentary Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Documentary Animation collection"
+    }
+  ],
+  "totalLists": 3
+}

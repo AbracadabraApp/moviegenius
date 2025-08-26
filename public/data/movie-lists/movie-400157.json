@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Lost Childhood Returns",
+      "url_path": "lost-childhood-returns",
+      "description": "Lost Childhood Returns collection",
+      "category": "adventure",
+      "connectionReason": "Part of Lost Childhood Returns collection"
+    },
+    {
+      "name": "CGI Spectacle Adventures [OVERSIZED]",
+      "url_path": "cgi-spectacle-adventures-oversized-",
+      "description": "CGI Spectacle Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of CGI Spectacle Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Magical Coming-of-Age Stories [OVERSIZED]",
+      "url_path": "magical-coming-of-age-stories-oversized-",
+      "description": "Magical Coming-of-Age Stories [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Magical Coming-of-Age Stories [OVERSIZED] collection"
+    },
+    {
+      "name": "Coming-of-Age Animation",
+      "url_path": "coming-of-age-animation",
+      "description": "Coming-of-Age Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Coming-of-Age Animation collection"
+    },
+    {
+      "name": "Grief and Loss Stories",
+      "url_path": "grief-and-loss-stories",
+      "description": "Grief and Loss Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Grief and Loss Stories collection"
+    }
+  ],
+  "totalLists": 5
+}

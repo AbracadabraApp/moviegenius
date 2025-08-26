@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Hong Kong Action Crime",
+      "url_path": "hong-kong-action-crime",
+      "description": "Hong Kong Action Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Hong Kong Action Crime collection"
+    },
+    {
+      "name": "Revenge Crime Dramas (Part 1)",
+      "url_path": "revenge-crime-dramas-part-1-",
+      "description": "Revenge Crime Dramas (Part 1) collection",
+      "category": "crime",
+      "connectionReason": "Part of Revenge Crime Dramas (Part 1) collection"
+    },
+    {
+      "name": "Asian Crime Sagas (Part 2)",
+      "url_path": "asian-crime-sagas-part-2-",
+      "description": "Asian Crime Sagas (Part 2) collection",
+      "category": "crime",
+      "connectionReason": "Part of Asian Crime Sagas (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

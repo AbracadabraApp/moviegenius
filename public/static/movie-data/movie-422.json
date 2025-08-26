@@ -1,0 +1,155 @@
+{
+  "movieId": "ea1d0e8f-d836-464a-976b-997f4f647a3b",
+  "tmdbId": 422,
+  "title": "8½",
+  "year": 1963,
+  "analysis": {
+    "keyElements": {
+      "director": "Federico Fellini",
+      "writers": [
+        "Federico Fellini",
+        "Ennio Flaiano",
+        "Tullio Pinelli"
+      ],
+      "stars": [
+        "Marcello Mastroianni",
+        "Claudia Cardinale",
+        "Anouk Aimée"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1963,
+      "cinematographer": "Gianni Di Venanzo",
+      "composer": "Nino Rota",
+      "studio": "Cineriz"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Revolutionary blend of reality and fantasy that influenced countless filmmakers",
+        "Masterful exploration of creative crisis and artistic identity",
+        "Marcello Mastroianni's career-defining performance as Fellini's alter ego"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "La Dolce Vita",
+        "year": 1960,
+        "description": "Fellini's previous masterwork, establishing many themes explored in 8½"
+      },
+      {
+        "title": "All That Jazz",
+        "year": 1979,
+        "description": "Bob Fosse's autobiographical musical directly influenced by 8½"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Italian Neorealism to Modernism",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Meta-Cinema",
+        "category": "Film Theory",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Federico Fellini",
+      "personId": 10950,
+      "slug": "/person/10950",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Federico Fellini",
+        "personId": 10950,
+        "slug": "/person/10950",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ennio Flaiano",
+        "personId": 10280,
+        "slug": "/person/10280",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Tullio Pinelli",
+        "personId": 37132,
+        "slug": "/person/37132",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Brunello Rondi",
+        "personId": 4615,
+        "slug": "/person/4615",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Marcello Mastroianni",
+        "personId": 23734,
+        "slug": "/person/23734",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Claudia Cardinale",
+        "personId": 6517,
+        "slug": "/person/6517",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Anouk Aimée",
+        "personId": 2208,
+        "slug": "/person/2208",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sandra Milo",
+        "personId": 33139,
+        "slug": "/person/33139",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Gianni Di Venanzo",
+      "personId": 12653,
+      "slug": "/person/12653",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Nino Rota",
+      "personId": 27714,
+      "slug": "/person/27714",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:35.797Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

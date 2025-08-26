@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Climate Change Cinema",
+      "url_path": "climate-change-cinema",
+      "description": "Climate Change Cinema collection",
+      "category": "documentary",
+      "connectionReason": "Part of Climate Change Cinema collection"
+    },
+    {
+      "name": "Political Movement Documentaries (Part 1)",
+      "url_path": "political-movement-documentaries-part-1-",
+      "description": "Political Movement Documentaries (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Political Movement Documentaries (Part 1) collection"
+    },
+    {
+      "name": "Global Industry Transitions (Part 1)",
+      "url_path": "global-industry-transitions-part-1-",
+      "description": "Global Industry Transitions (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Industry Transitions (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "TV Production Chronicles",
+      "url_path": "tv-production-chronicles",
+      "description": "TV Production Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of TV Production Chronicles collection"
+    },
+    {
+      "name": "Religious Folklore Studies",
+      "url_path": "religious-folklore-studies",
+      "description": "Religious Folklore Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Religious Folklore Studies collection"
+    },
+    {
+      "name": "Cultural Identity Studies",
+      "url_path": "cultural-identity-studies",
+      "description": "Cultural Identity Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cultural Identity Studies collection"
+    }
+  ],
+  "totalLists": 3
+}

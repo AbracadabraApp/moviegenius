@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Celebrity & Biography",
+      "url_path": "celebrity-biography",
+      "description": "Celebrity & Biography collection",
+      "category": "documentary",
+      "connectionReason": "Part of Celebrity & Biography collection"
+    },
+    {
+      "name": "Photography Artist Portraits",
+      "url_path": "photography-artist-portraits",
+      "description": "Photography Artist Portraits collection",
+      "category": "documentary",
+      "connectionReason": "Part of Photography Artist Portraits collection"
+    },
+    {
+      "name": "Cultural Icon Biographies (Part 5)",
+      "url_path": "cultural-icon-biographies-part-5-",
+      "description": "Cultural Icon Biographies (Part 5) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cultural Icon Biographies (Part 5) collection"
+    }
+  ],
+  "totalLists": 3
+}

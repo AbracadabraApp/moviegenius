@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Colonial Warfare Films",
+      "url_path": "colonial-warfare-films",
+      "description": "Colonial Warfare Films collection",
+      "category": "war",
+      "connectionReason": "Part of Colonial Warfare Films collection"
+    },
+    {
+      "name": "Guerrilla Warfare Films",
+      "url_path": "guerrilla-warfare-films",
+      "description": "Guerrilla Warfare Films collection",
+      "category": "war",
+      "connectionReason": "Part of Guerrilla Warfare Films collection"
+    },
+    {
+      "name": "True Military Stories [OVERSIZED]",
+      "url_path": "true-military-stories-oversized-",
+      "description": "True Military Stories [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of True Military Stories [OVERSIZED] collection"
+    },
+    {
+      "name": "Military Leadership [OVERSIZED]",
+      "url_path": "military-leadership-oversized-",
+      "description": "Military Leadership [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of Military Leadership [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

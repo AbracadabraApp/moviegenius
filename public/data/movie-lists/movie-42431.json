@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Historical Genre Mashup",
+      "url_path": "historical-genre-mashup",
+      "description": "Historical Genre Mashup collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Historical Genre Mashup collection"
+    },
+    {
+      "name": "Western SciFi Hybrids",
+      "url_path": "western-scifi-hybrids",
+      "description": "Western SciFi Hybrids collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Western SciFi Hybrids collection"
+    },
+    {
+      "name": "Retro Science Fiction",
+      "url_path": "retro-science-fiction",
+      "description": "Retro Science Fiction collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro Science Fiction collection"
+    },
+    {
+      "name": "Lawmen Partnership Westerns",
+      "url_path": "lawmen-partnership-westerns",
+      "description": "Lawmen Partnership Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Lawmen Partnership Westerns collection"
+    },
+    {
+      "name": "Sci-Fi Western Hybrids",
+      "url_path": "sci-fi-western-hybrids",
+      "description": "Sci-Fi Western Hybrids collection",
+      "category": "western",
+      "connectionReason": "Part of Sci-Fi Western Hybrids collection"
+    }
+  ],
+  "totalLists": 5
+}

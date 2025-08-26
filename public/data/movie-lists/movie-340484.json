@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "TV Production Chronicles",
+      "url_path": "tv-production-chronicles",
+      "description": "TV Production Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of TV Production Chronicles collection"
+    },
+    {
+      "name": "Media Representation Studies",
+      "url_path": "media-representation-studies",
+      "description": "Media Representation Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Media Representation Studies collection"
+    },
+    {
+      "name": "Performance Preparation Studies",
+      "url_path": "performance-preparation-studies",
+      "description": "Performance Preparation Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Performance Preparation Studies collection"
+    },
+    {
+      "name": "Documentary Ethics Explorations (Part 1)",
+      "url_path": "documentary-ethics-explorations-part-1-",
+      "description": "Documentary Ethics Explorations (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Documentary Ethics Explorations (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

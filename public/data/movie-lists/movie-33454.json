@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "French Bandit Romances",
+      "url_path": "french-bandit-romances",
+      "description": "French Bandit Romances collection",
+      "category": "adventure",
+      "connectionReason": "Part of French Bandit Romances collection"
+    },
+    {
+      "name": "Historical Highwayman Tales",
+      "url_path": "historical-highwayman-tales",
+      "description": "Historical Highwayman Tales collection",
+      "category": "adventure",
+      "connectionReason": "Part of Historical Highwayman Tales collection"
+    },
+    {
+      "name": "Classic Literary Adventures [OVERSIZED]",
+      "url_path": "classic-literary-adventures-oversized-",
+      "description": "Classic Literary Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Classic Literary Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Theater World Romance",
+      "url_path": "theater-world-romance",
+      "description": "Theater World Romance collection",
+      "category": "romance",
+      "connectionReason": "Part of Theater World Romance collection"
+    },
+    {
+      "name": "Revenge to Romance",
+      "url_path": "revenge-to-romance",
+      "description": "Revenge to Romance collection",
+      "category": "romance",
+      "connectionReason": "Part of Revenge to Romance collection"
+    },
+    {
+      "name": "Class-Crossing Period Romance (Part 3)",
+      "url_path": "class-crossing-period-romance-part-3-",
+      "description": "Class-Crossing Period Romance (Part 3) collection",
+      "category": "romance",
+      "connectionReason": "Part of Class-Crossing Period Romance (Part 3) collection"
+    },
+    {
+      "name": "Double Life Romance (Part 3)",
+      "url_path": "double-life-romance-part-3-",
+      "description": "Double Life Romance (Part 3) collection",
+      "category": "romance",
+      "connectionReason": "Part of Double Life Romance (Part 3) collection"
+    }
+  ],
+  "totalLists": 7
+}

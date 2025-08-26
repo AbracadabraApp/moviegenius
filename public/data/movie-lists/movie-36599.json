@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Revenge Horror Films",
+      "url_path": "revenge-horror-films",
+      "description": "Revenge Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Revenge Horror Films collection"
+    },
+    {
+      "name": "Stalker Horror",
+      "url_path": "stalker-horror",
+      "description": "Stalker Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Stalker Horror collection"
+    },
+    {
+      "name": "Teen Slasher Horror (Part 2)",
+      "url_path": "teen-slasher-horror-part-2-",
+      "description": "Teen Slasher Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Teen Slasher Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

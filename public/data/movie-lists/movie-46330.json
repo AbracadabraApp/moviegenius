@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Artistic Obsession Horror",
+      "url_path": "artistic-obsession-horror",
+      "description": "Artistic Obsession Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Artistic Obsession Horror collection"
+    },
+    {
+      "name": "Musical Horror Films",
+      "url_path": "musical-horror-films",
+      "description": "Musical Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Musical Horror Films collection"
+    },
+    {
+      "name": "Classic Italian Gothic",
+      "url_path": "classic-italian-gothic",
+      "description": "Classic Italian Gothic collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Italian Gothic collection"
+    },
+    {
+      "name": "Theater Setting Horror",
+      "url_path": "theater-setting-horror",
+      "description": "Theater Setting Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Theater Setting Horror collection"
+    }
+  ],
+  "totalLists": 4
+}

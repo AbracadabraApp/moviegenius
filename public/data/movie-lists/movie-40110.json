@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Punk Rock Documentation",
+      "url_path": "punk-rock-documentation",
+      "description": "Punk Rock Documentation collection",
+      "category": "music",
+      "connectionReason": "Part of Punk Rock Documentation collection"
+    },
+    {
+      "name": "Experimental Music Films",
+      "url_path": "experimental-music-films",
+      "description": "Experimental Music Films collection",
+      "category": "music",
+      "connectionReason": "Part of Experimental Music Films collection"
+    },
+    {
+      "name": "Music-Driven Action Films",
+      "url_path": "music-driven-action-films",
+      "description": "Music-Driven Action Films collection",
+      "category": "music",
+      "connectionReason": "Part of Music-Driven Action Films collection"
+    },
+    {
+      "name": "Dystopian Music Films",
+      "url_path": "dystopian-music-films",
+      "description": "Dystopian Music Films collection",
+      "category": "music",
+      "connectionReason": "Part of Dystopian Music Films collection"
+    }
+  ],
+  "totalLists": 4
+}

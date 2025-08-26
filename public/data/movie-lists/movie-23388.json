@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "WWII Archival Documentaries",
+      "url_path": "wwii-archival-documentaries",
+      "description": "WWII Archival Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of WWII Archival Documentaries collection"
+    },
+    {
+      "name": "Extreme Environment Communities",
+      "url_path": "extreme-environment-communities",
+      "description": "Extreme Environment Communities collection",
+      "category": "documentary",
+      "connectionReason": "Part of Extreme Environment Communities collection"
+    },
+    {
+      "name": "Modern Combat Experience",
+      "url_path": "modern-combat-experience",
+      "description": "Modern Combat Experience collection",
+      "category": "documentary",
+      "connectionReason": "Part of Modern Combat Experience collection"
+    },
+    {
+      "name": "Military Training Chronicles",
+      "url_path": "military-training-chronicles",
+      "description": "Military Training Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Military Training Chronicles collection"
+    }
+  ],
+  "totalLists": 4
+}

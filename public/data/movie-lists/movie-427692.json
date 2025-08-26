@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Science & Technology",
+      "url_path": "science-technology",
+      "description": "Science & Technology collection",
+      "category": "documentary",
+      "connectionReason": "Part of Science & Technology collection"
+    },
+    {
+      "name": "Science Education Films",
+      "url_path": "science-education-films",
+      "description": "Science Education Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Science Education Films collection"
+    },
+    {
+      "name": "Personal Monologue Documentaries (Part 2)",
+      "url_path": "personal-monologue-documentaries-part-2-",
+      "description": "Personal Monologue Documentaries (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Personal Monologue Documentaries (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

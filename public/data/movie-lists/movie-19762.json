@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Meta Sequel Comedies",
+      "url_path": "meta-sequel-comedies",
+      "description": "Meta Sequel Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Meta Sequel Comedies collection"
+    },
+    {
+      "name": "Inventor Comedy Adventures",
+      "url_path": "inventor-comedy-adventures",
+      "description": "Inventor Comedy Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Inventor Comedy Adventures collection"
+    },
+    {
+      "name": "Scientific Facility Mayhem (Part 2)",
+      "url_path": "scientific-facility-mayhem-part-2-",
+      "description": "Scientific Facility Mayhem (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Scientific Facility Mayhem (Part 2) collection"
+    },
+    {
+      "name": "Scientific Love Stories",
+      "url_path": "scientific-love-stories",
+      "description": "Scientific Love Stories collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Scientific Love Stories collection"
+    },
+    {
+      "name": "Retro SciFi Comedy (Part 2)",
+      "url_path": "retro-scifi-comedy-part-2-",
+      "description": "Retro SciFi Comedy (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro SciFi Comedy (Part 2) collection"
+    }
+  ],
+  "totalLists": 5
+}

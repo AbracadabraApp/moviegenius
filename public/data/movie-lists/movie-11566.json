@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Undercover Partner Comedies",
+      "url_path": "undercover-partner-comedies",
+      "description": "Undercover Partner Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Undercover Partner Comedies collection"
+    },
+    {
+      "name": "Identity Swap Existentialism",
+      "url_path": "identity-swap-existentialism",
+      "description": "Identity Swap Existentialism collection",
+      "category": "comedy",
+      "connectionReason": "Part of Identity Swap Existentialism collection"
+    },
+    {
+      "name": "Political Corruption Satires",
+      "url_path": "political-corruption-satires",
+      "description": "Political Corruption Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Political Corruption Satires collection"
+    }
+  ],
+  "totalLists": 3
+}

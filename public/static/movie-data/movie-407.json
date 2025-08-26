@@ -1,0 +1,125 @@
+{
+  "movieId": "fa562f53-7124-45c9-97ff-dd79c184d72f",
+  "tmdbId": 407,
+  "title": "Short Sharp Shock",
+  "year": 1998,
+  "analysis": {
+    "keyElements": {
+      "director": "Fatih Akin",
+      "writers": [
+        "Fatih Akin"
+      ],
+      "stars": [
+        "Mehmet Kurtulus",
+        "Aleksandar Jovanovic",
+        "Adam Bousdoukos"
+      ],
+      "genre": "Crime Drama",
+      "releaseYear": 1998,
+      "cinematographer": "Frank Barbian",
+      "composer": "Ulrich Kodjo Wendt",
+      "studio": "Wüste Filmproduktion"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking portrayal of multicultural youth in German cinema",
+        "Raw, energetic directing style that announced Fatih Akin as a major talent",
+        "Authentic exploration of friendship, loyalty, and identity in immigrant communities"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Head-On",
+        "year": 2004,
+        "description": "Akin's later masterpiece exploring Turkish-German identity"
+      },
+      {
+        "title": "La Haine",
+        "year": 1995,
+        "description": "Influential precursor in European urban youth cinema"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "German New Wave Cinema",
+        "category": "Film Movement",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Immigrant Narratives in European Cinema",
+        "category": "Cultural Studies",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Fatih Akin",
+      "personId": 10926,
+      "slug": "/person/10926",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Fatih Akin",
+        "personId": 10926,
+        "slug": "/person/10926",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Mehmet Kurtulus",
+        "personId": 25302,
+        "slug": "/person/25302",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Aleksandar Jovanovic",
+        "personId": 801,
+        "slug": "/person/801",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Adam Bousdoukos",
+        "personId": 136,
+        "slug": "/person/136",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Frank Barbian",
+      "personId": 11345,
+      "slug": "/person/11345",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Ulrich Kodjo Wendt",
+      "personId": 37210,
+      "slug": "/person/37210",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:34.105Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

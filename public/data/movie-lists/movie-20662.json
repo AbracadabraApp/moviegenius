@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Medieval Sports Adventures",
+      "url_path": "medieval-sports-adventures",
+      "description": "Medieval Sports Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Medieval Sports Adventures collection"
+    },
+    {
+      "name": "French Bandit Romances",
+      "url_path": "french-bandit-romances",
+      "description": "French Bandit Romances collection",
+      "category": "adventure",
+      "connectionReason": "Part of French Bandit Romances collection"
+    },
+    {
+      "name": "Historical Highwayman Tales",
+      "url_path": "historical-highwayman-tales",
+      "description": "Historical Highwayman Tales collection",
+      "category": "adventure",
+      "connectionReason": "Part of Historical Highwayman Tales collection"
+    }
+  ],
+  "totalLists": 3
+}

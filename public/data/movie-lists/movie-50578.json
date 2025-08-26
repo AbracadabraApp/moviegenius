@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Solo Living Documentaries",
+      "url_path": "solo-living-documentaries",
+      "description": "Solo Living Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Solo Living Documentaries collection"
+    },
+    {
+      "name": "Nature Living Chronicles",
+      "url_path": "nature-living-chronicles",
+      "description": "Nature Living Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Nature Living Chronicles collection"
+    },
+    {
+      "name": "Buddhist Spiritual Journeys",
+      "url_path": "buddhist-spiritual-journeys",
+      "description": "Buddhist Spiritual Journeys collection",
+      "category": "documentary",
+      "connectionReason": "Part of Buddhist Spiritual Journeys collection"
+    },
+    {
+      "name": "Personal Monologue Documentaries (Part 1)",
+      "url_path": "personal-monologue-documentaries-part-1-",
+      "description": "Personal Monologue Documentaries (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Personal Monologue Documentaries (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

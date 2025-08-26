@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Space Horror",
+      "url_path": "space-horror",
+      "description": "Space Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Space Horror collection"
+    },
+    {
+      "name": "Mutant Creature Features (Part 2)",
+      "url_path": "mutant-creature-features-part-2-",
+      "description": "Mutant Creature Features (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Mutant Creature Features (Part 2) collection"
+    },
+    {
+      "name": "Body Possession Horror (Part 1)",
+      "url_path": "body-possession-horror-part-1-",
+      "description": "Body Possession Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Body Possession Horror (Part 1) collection"
+    },
+    {
+      "name": "Scientific Expedition Horror (Part 1)",
+      "url_path": "scientific-expedition-horror-part-1-",
+      "description": "Scientific Expedition Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Scientific Expedition Horror (Part 1) collection"
+    },
+    {
+      "name": "Space Horror Survival",
+      "url_path": "space-horror-survival",
+      "description": "Space Horror Survival collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Horror Survival collection"
+    },
+    {
+      "name": "Corporate Science Horror (Part 2)",
+      "url_path": "corporate-science-horror-part-2-",
+      "description": "Corporate Science Horror (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Corporate Science Horror (Part 2) collection"
+    },
+    {
+      "name": "Mutant Creature Features (Part 1)",
+      "url_path": "mutant-creature-features-part-1-",
+      "description": "Mutant Creature Features (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Mutant Creature Features (Part 1) collection"
+    }
+  ],
+  "totalLists": 7
+}

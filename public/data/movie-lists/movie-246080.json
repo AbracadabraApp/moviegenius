@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Underwater Danger Thrillers",
+      "url_path": "underwater-danger-thrillers",
+      "description": "Underwater Danger Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Underwater Danger Thrillers collection"
+    },
+    {
+      "name": "Maritime Hostage Thrillers",
+      "url_path": "maritime-hostage-thrillers",
+      "description": "Maritime Hostage Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Maritime Hostage Thrillers collection"
+    },
+    {
+      "name": "Historical Survival Thrillers (Part 1)",
+      "url_path": "historical-survival-thrillers-part-1-",
+      "description": "Historical Survival Thrillers (Part 1) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Historical Survival Thrillers (Part 1) collection"
+    }
+  ],
+  "totalLists": 3
+}

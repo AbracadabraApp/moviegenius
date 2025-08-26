@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "name": "Film History Essays",
+      "url_path": "film-history-essays",
+      "description": "Film History Essays collection",
+      "category": "documentary",
+      "connectionReason": "Part of Film History Essays collection"
+    },
+    {
+      "name": "Art History Essays",
+      "url_path": "art-history-essays",
+      "description": "Art History Essays collection",
+      "category": "documentary",
+      "connectionReason": "Part of Art History Essays collection"
+    }
+  ],
+  "totalLists": 2
+}

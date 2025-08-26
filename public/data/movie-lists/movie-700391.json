@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Climate Disaster Films",
+      "url_path": "climate-disaster-films",
+      "description": "Climate Disaster Films collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Climate Disaster Films collection"
+    },
+    {
+      "name": "Prehistoric SciFi Adventure",
+      "url_path": "prehistoric-scifi-adventure",
+      "description": "Prehistoric SciFi Adventure collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Prehistoric SciFi Adventure collection"
+    },
+    {
+      "name": "Low Budget Disaster (Part 1)",
+      "url_path": "low-budget-disaster-part-1-",
+      "description": "Low Budget Disaster (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Low Budget Disaster (Part 1) collection"
+    },
+    {
+      "name": "Survival Against Nature (Part 1)",
+      "url_path": "survival-against-nature-part-1-",
+      "description": "Survival Against Nature (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Survival Against Nature (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Romantic Comedy Collection",
+      "url_path": "romantic-comedy-collection",
+      "description": "Romantic Comedy Collection collection",
+      "category": "comedy",
+      "connectionReason": "Part of Romantic Comedy Collection collection"
+    },
+    {
+      "name": "Anti-Romance Comedies",
+      "url_path": "anti-romance-comedies",
+      "description": "Anti-Romance Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Anti-Romance Comedies collection"
+    },
+    {
+      "name": "Wedding-Themed Romantic Comedies (Part 1)",
+      "url_path": "wedding-themed-romantic-comedies-part-1-",
+      "description": "Wedding-Themed Romantic Comedies (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Wedding-Themed Romantic Comedies (Part 1) collection"
+    },
+    {
+      "name": "Anti-Romance Films",
+      "url_path": "anti-romance-films",
+      "description": "Anti-Romance Films collection",
+      "category": "romance",
+      "connectionReason": "Part of Anti-Romance Films collection"
+    },
+    {
+      "name": "Cynical Character Romance",
+      "url_path": "cynical-character-romance",
+      "description": "Cynical Character Romance collection",
+      "category": "romance",
+      "connectionReason": "Part of Cynical Character Romance collection"
+    },
+    {
+      "name": "Modern Urban Romance (Part 4)",
+      "url_path": "modern-urban-romance-part-4-",
+      "description": "Modern Urban Romance (Part 4) collection",
+      "category": "romance",
+      "connectionReason": "Part of Modern Urban Romance (Part 4) collection"
+    },
+    {
+      "name": "Wedding Planning Conflicts (Part 1)",
+      "url_path": "wedding-planning-conflicts-part-1-",
+      "description": "Wedding Planning Conflicts (Part 1) collection",
+      "category": "romance",
+      "connectionReason": "Part of Wedding Planning Conflicts (Part 1) collection"
+    }
+  ],
+  "totalLists": 7
+}

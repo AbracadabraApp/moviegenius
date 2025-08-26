@@ -1,0 +1,142 @@
+{
+  "movieId": "060c7d52-2014-422a-a211-85cdf6495c29",
+  "tmdbId": 33,
+  "title": "Unforgiven",
+  "year": 1992,
+  "analysis": {
+    "keyElements": {
+      "director": "Clint Eastwood",
+      "writers": [
+        "David Webb Peoples"
+      ],
+      "stars": [
+        "Clint Eastwood",
+        "Gene Hackman",
+        "Morgan Freeman"
+      ],
+      "genre": "Western",
+      "releaseYear": 1992,
+      "cinematographer": "Jack N. Green",
+      "composer": "Lennie Niehaus",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful deconstruction of Western mythology and violence",
+        "Career-defining performances from Eastwood and Hackman",
+        "Perfect blend of classic Western elements with modern moral complexity"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Wild Bunch",
+        "year": 1969,
+        "description": "Key influence on revisionist Western genre"
+      },
+      {
+        "title": "The Searchers",
+        "year": 1956,
+        "description": "Classic Western whose myths Unforgiven deconstructs"
+      },
+      {
+        "title": "Hell or High Water",
+        "year": 2016,
+        "description": "Modern Western influenced by Unforgiven's moral complexity"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Revisionist Western Movement",
+        "category": "film_history",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Violence in American Cinema",
+        "category": "film_theory",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "Myth Deconstruction in Film",
+        "category": "cultural_studies",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Clint Eastwood",
+      "personId": 6608,
+      "slug": "/person/6608",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "David Webb Peoples",
+        "personId": 8205,
+        "slug": "/person/8205",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Clint Eastwood",
+        "personId": 6608,
+        "slug": "/person/6608",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Gene Hackman",
+        "personId": 12103,
+        "slug": "/person/12103",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Morgan Freeman",
+        "personId": 26765,
+        "slug": "/person/26765",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Richard Harris",
+        "personId": 31019,
+        "slug": "/person/31019",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Jack N. Green",
+      "personId": 15419,
+      "slug": "/person/15419",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Lennie Niehaus",
+      "personId": 22169,
+      "slug": "/person/22169",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:04:57.478Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

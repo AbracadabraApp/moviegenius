@@ -1,0 +1,133 @@
+{
+  "movieId": "71072a28-25d7-48e4-b508-571b47d34105",
+  "tmdbId": 193,
+  "title": "Star Trek: Generations",
+  "year": 1994,
+  "analysis": {
+    "keyElements": {
+      "director": "David Carson",
+      "writers": [
+        "Ronald D. Moore",
+        "Brannon Braga"
+      ],
+      "stars": [
+        "Patrick Stewart",
+        "William Shatner",
+        "Malcolm McDowell"
+      ],
+      "genre": "Science Fiction",
+      "releaseYear": 1994,
+      "cinematographer": "John A. Alonzo",
+      "composer": "Dennis McCarthy",
+      "studio": "Paramount Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Historic passing of the torch between Kirk and Picard generations",
+        "Strong emotional core exploring mortality and sacrifice",
+        "Effectively bridges classic and modern Star Trek eras"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Star Trek: First Contact",
+        "year": 1996,
+        "description": "The direct follow-up that fully established the Next Generation crew in cinema"
+      },
+      {
+        "title": "Star Trek VI: The Undiscovered Country",
+        "year": 1991,
+        "description": "The final pure Original Series film that set up Generations' transition"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Franchise Transitions",
+        "category": "Film History",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Special Effects Evolution",
+        "category": "Technical",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "David Carson",
+      "personId": 7713,
+      "slug": "/person/7713",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Ronald D. Moore",
+        "personId": 32295,
+        "slug": "/person/32295",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Brannon Braga",
+        "personId": 4241,
+        "slug": "/person/4241",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Patrick Stewart",
+        "personId": 28648,
+        "slug": "/person/28648",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "William Shatner",
+        "personId": 38631,
+        "slug": "/person/38631",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Malcolm McDowell",
+        "personId": 23554,
+        "slug": "/person/23554",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "John A. Alonzo",
+      "personId": 17948,
+      "slug": "/person/17948",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Dennis McCarthy",
+      "personId": 8481,
+      "slug": "/person/8481",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:04.722Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

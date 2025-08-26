@@ -1,0 +1,132 @@
+{
+  "movieId": "de86df95-a7f6-4cb9-9420-dd0809ef91c3",
+  "tmdbId": 219,
+  "title": "Volver",
+  "year": 2006,
+  "analysis": {
+    "keyElements": {
+      "director": "Pedro Almodóvar",
+      "writers": [
+        "Pedro Almodóvar"
+      ],
+      "stars": [
+        "Penélope Cruz",
+        "Carmen Maura",
+        "Lola Dueñas"
+      ],
+      "genre": "Drama",
+      "releaseYear": 2006,
+      "cinematographer": "José Luis Alcaine",
+      "composer": "Alberto Iglesias",
+      "studio": "El Deseo"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Penélope Cruz delivers her career-best performance as Raimunda",
+        "Masterful blend of comedy, drama, and magical realism",
+        "Rich exploration of mother-daughter relationships and female resilience"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "All About My Mother",
+        "year": 1999,
+        "description": "Another Almodóvar masterpiece exploring maternal bonds and female relationships"
+      },
+      {
+        "title": "Pan's Labyrinth",
+        "year": 2006,
+        "description": "Contemporary Spanish film blending reality and fantasy"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Spanish Magical Realism",
+        "category": "Film Movement",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Almodóvar's Female Characters",
+        "category": "Auteur Studies",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Pedro Almodóvar",
+      "personId": 29079,
+      "slug": "/person/29079",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Pedro Almodóvar",
+        "personId": 29079,
+        "slug": "/person/29079",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Penélope Cruz",
+        "personId": 29128,
+        "slug": "/person/29128",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Carmen Maura",
+        "personId": 5048,
+        "slug": "/person/5048",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Lola Dueñas",
+        "personId": 22821,
+        "slug": "/person/22821",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Blanca Portillo",
+        "personId": 3925,
+        "slug": "/person/3925",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "José Luis Alcaine",
+      "personId": 19155,
+      "slug": "/person/19155",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Alberto Iglesias",
+      "personId": 715,
+      "slug": "/person/715",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:08.517Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

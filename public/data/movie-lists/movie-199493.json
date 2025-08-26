@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Royal Court Dramas",
+      "url_path": "royal-court-dramas",
+      "description": "Royal Court Dramas collection",
+      "category": "period",
+      "connectionReason": "Part of Royal Court Dramas collection"
+    },
+    {
+      "name": "Japanese Period Dramas",
+      "url_path": "japanese-period-dramas",
+      "description": "Japanese Period Dramas collection",
+      "category": "period",
+      "connectionReason": "Part of Japanese Period Dramas collection"
+    },
+    {
+      "name": "Forbidden Love Stories",
+      "url_path": "forbidden-love-stories",
+      "description": "Forbidden Love Stories collection",
+      "category": "period",
+      "connectionReason": "Part of Forbidden Love Stories collection"
+    }
+  ],
+  "totalLists": 3
+}

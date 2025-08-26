@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Family Crisis Investigations",
+      "url_path": "family-crisis-investigations",
+      "description": "Family Crisis Investigations collection",
+      "category": "documentary",
+      "connectionReason": "Part of Family Crisis Investigations collection"
+    },
+    {
+      "name": "Science Ethics Investigations",
+      "url_path": "science-ethics-investigations",
+      "description": "Science Ethics Investigations collection",
+      "category": "documentary",
+      "connectionReason": "Part of Science Ethics Investigations collection"
+    },
+    {
+      "name": "Human Rights Investigators (Part 2)",
+      "url_path": "human-rights-investigators-part-2-",
+      "description": "Human Rights Investigators (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Human Rights Investigators (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

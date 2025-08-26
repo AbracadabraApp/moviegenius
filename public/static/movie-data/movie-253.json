@@ -1,0 +1,133 @@
+{
+  "movieId": "cdc24ffb-da4e-49d9-b02c-a4f12c4c25ef",
+  "tmdbId": 253,
+  "title": "Live and Let Die",
+  "year": 1973,
+  "analysis": {
+    "keyElements": {
+      "director": "Guy Hamilton",
+      "writers": [
+        "Tom Mankiewicz",
+        "Ian Fleming"
+      ],
+      "stars": [
+        "Roger Moore",
+        "Yaphet Kotto",
+        "Jane Seymour"
+      ],
+      "genre": "Action/Spy",
+      "releaseYear": 1973,
+      "cinematographer": "Ted Moore",
+      "composer": "George Martin",
+      "studio": "United Artists"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Roger Moore's charismatic debut as James Bond establishes a lighter, more playful 007",
+        "Innovative blend of blaxploitation elements with classic Bond formula",
+        "Paul McCartney's iconic title song and memorable voodoo-themed setpieces"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Shaft",
+        "year": 1971,
+        "description": "Defining blaxploitation film that influenced Live and Let Die's style"
+      },
+      {
+        "title": "Dr. No",
+        "year": 1962,
+        "description": "Original Bond film for comparison with Moore's new interpretation"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "1970s Blaxploitation Movement",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Evolution of James Bond Actors",
+        "category": "Character Analysis",
+        "difficulty": "beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Guy Hamilton",
+      "personId": 13372,
+      "slug": "/person/13372",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Tom Mankiewicz",
+        "personId": 36604,
+        "slug": "/person/36604",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ian Fleming",
+        "personId": 14812,
+        "slug": "/person/14812",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Roger Moore",
+        "personId": 32166,
+        "slug": "/person/32166",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Yaphet Kotto",
+        "personId": 38957,
+        "slug": "/person/38957",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jane Seymour",
+        "personId": 16112,
+        "slug": "/person/16112",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Ted Moore",
+      "personId": 35746,
+      "slug": "/person/35746",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "George Martin",
+      "personId": 12317,
+      "slug": "/person/12317",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:14.871Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

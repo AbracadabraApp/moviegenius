@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Vigilante Team Missions",
+      "url_path": "vigilante-team-missions",
+      "description": "Vigilante Team Missions collection",
+      "category": "thriller",
+      "connectionReason": "Part of Vigilante Team Missions collection"
+    },
+    {
+      "name": "Corporate Assassin Thrillers",
+      "url_path": "corporate-assassin-thrillers",
+      "description": "Corporate Assassin Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Corporate Assassin Thrillers collection"
+    },
+    {
+      "name": "Family Feud Revenge",
+      "url_path": "family-feud-revenge",
+      "description": "Family Feud Revenge collection",
+      "category": "thriller",
+      "connectionReason": "Part of Family Feud Revenge collection"
+    },
+    {
+      "name": "Female Assassin Sisterhood",
+      "url_path": "female-assassin-sisterhood",
+      "description": "Female Assassin Sisterhood collection",
+      "category": "thriller",
+      "connectionReason": "Part of Female Assassin Sisterhood collection"
+    }
+  ],
+  "totalLists": 4
+}

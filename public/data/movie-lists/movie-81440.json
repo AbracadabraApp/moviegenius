@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Disney Channel Christmas Movies",
+      "url_path": "disney-channel-christmas-movies",
+      "description": "Disney Channel Christmas Movies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Disney Channel Christmas Movies collection"
+    },
+    {
+      "name": "Modern Christmas Classics (Part 1)",
+      "url_path": "modern-christmas-classics-part-1-",
+      "description": "Modern Christmas Classics (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Modern Christmas Classics (Part 1) collection"
+    },
+    {
+      "name": "Single Day Misfortunes (Part 3)",
+      "url_path": "single-day-misfortunes-part-3-",
+      "description": "Single Day Misfortunes (Part 3) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Single Day Misfortunes (Part 3) collection"
+    },
+    {
+      "name": "Vacation Adventure Mishaps (Part 1)",
+      "url_path": "vacation-adventure-mishaps-part-1-",
+      "description": "Vacation Adventure Mishaps (Part 1) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Vacation Adventure Mishaps (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

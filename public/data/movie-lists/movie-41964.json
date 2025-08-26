@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "City Symphony Films",
+      "url_path": "city-symphony-films",
+      "description": "City Symphony Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of City Symphony Films collection"
+    },
+    {
+      "name": "Experimental Performance Art",
+      "url_path": "experimental-performance-art",
+      "description": "Experimental Performance Art collection",
+      "category": "documentary",
+      "connectionReason": "Part of Experimental Performance Art collection"
+    },
+    {
+      "name": "Urban Subculture Studies (Part 3)",
+      "url_path": "urban-subculture-studies-part-3-",
+      "description": "Urban Subculture Studies (Part 3) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Urban Subculture Studies (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

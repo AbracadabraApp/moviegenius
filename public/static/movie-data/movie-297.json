@@ -1,0 +1,149 @@
+{
+  "movieId": "46244f87-3467-4204-bb5b-a1db2b7df2fa",
+  "tmdbId": 297,
+  "title": "Meet Joe Black",
+  "year": 1998,
+  "analysis": {
+    "keyElements": {
+      "director": "Martin Brest",
+      "writers": [
+        "Ron Osborn",
+        "Jeff Reno",
+        "Kevin Wade",
+        "Bo Goldman"
+      ],
+      "stars": [
+        "Brad Pitt",
+        "Anthony Hopkins",
+        "Claire Forlani"
+      ],
+      "genre": "Fantasy Romance Drama",
+      "releaseYear": 1998,
+      "cinematographer": "Emmanuel Lubezki",
+      "composer": "Thomas Newman",
+      "studio": "Universal Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Anthony Hopkins delivers one of his most nuanced and touching performances as a man coming to terms with mortality",
+        "The film's unique take on death and love creates an ethereal, contemplative atmosphere rarely seen in mainstream cinema",
+        "Emmanuel Lubezki's gorgeous cinematography and Thomas Newman's score create a dreamlike quality that enhances the supernatural romance"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Death Takes a Holiday",
+        "year": 1934,
+        "description": "The original film that inspired Meet Joe Black, offering an earlier take on Death assuming human form"
+      },
+      {
+        "title": "City of Angels",
+        "year": 1998,
+        "description": "Contemporary supernatural romance exploring similar themes of immortal beings experiencing human love"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Supernatural Romance in Cinema",
+        "category": "Genre Studies",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Visual Metaphors for Death in Film",
+        "category": "Film Analysis",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Martin Brest",
+      "personId": 24558,
+      "slug": "/person/24558",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Ron Osborn",
+        "personId": 32398,
+        "slug": "/person/32398",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jeff Reno",
+        "personId": 16856,
+        "slug": "/person/16856",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Kevin Wade",
+        "personId": 20934,
+        "slug": "/person/20934",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Bo Goldman",
+        "personId": 4071,
+        "slug": "/person/4071",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Brad Pitt",
+        "personId": 4195,
+        "slug": "/person/4195",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Anthony Hopkins",
+        "personId": 2261,
+        "slug": "/person/2261",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Claire Forlani",
+        "personId": 6400,
+        "slug": "/person/6400",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Emmanuel Lubezki",
+      "personId": 10247,
+      "slug": "/person/10247",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Thomas Newman",
+      "personId": 36154,
+      "slug": "/person/36154",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:21.487Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

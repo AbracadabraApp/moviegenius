@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Senior Life Comedies",
+      "url_path": "senior-life-comedies",
+      "description": "Senior Life Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Senior Life Comedies collection"
+    },
+    {
+      "name": "Corporate Takeover Satires",
+      "url_path": "corporate-takeover-satires",
+      "description": "Corporate Takeover Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Corporate Takeover Satires collection"
+    },
+    {
+      "name": "Corporate Culture Clash",
+      "url_path": "corporate-culture-clash",
+      "description": "Corporate Culture Clash collection",
+      "category": "comedy",
+      "connectionReason": "Part of Corporate Culture Clash collection"
+    }
+  ],
+  "totalLists": 3
+}

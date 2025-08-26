@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Opera Performance Films",
+      "url_path": "opera-performance-films",
+      "description": "Opera Performance Films collection",
+      "category": "music",
+      "connectionReason": "Part of Opera Performance Films collection"
+    },
+    {
+      "name": "Early Black Cinema Musicals",
+      "url_path": "early-black-cinema-musicals",
+      "description": "Early Black Cinema Musicals collection",
+      "category": "music",
+      "connectionReason": "Part of Early Black Cinema Musicals collection"
+    },
+    {
+      "name": "Broadway to Screen [OVERSIZED]",
+      "url_path": "broadway-to-screen-oversized-",
+      "description": "Broadway to Screen [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Broadway to Screen [OVERSIZED] collection"
+    },
+    {
+      "name": "Musical Adaptations [OVERSIZED]",
+      "url_path": "musical-adaptations-oversized-",
+      "description": "Musical Adaptations [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Musical Adaptations [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

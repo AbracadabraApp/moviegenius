@@ -1,0 +1,149 @@
+{
+  "movieId": "7a42428b-da14-40d2-b8dc-d2f0575016ea",
+  "tmdbId": 212,
+  "title": "Arsenic and Old Lace",
+  "year": 1944,
+  "analysis": {
+    "keyElements": {
+      "director": "Frank Capra",
+      "writers": [
+        "Joseph Kesselring",
+        "Julius J. Epstein",
+        "Philip G. Epstein"
+      ],
+      "stars": [
+        "Cary Grant",
+        "Priscilla Lane",
+        "Josephine Hull",
+        "Jean Adair"
+      ],
+      "genre": "Dark Comedy",
+      "releaseYear": 1944,
+      "cinematographer": "Sol Polito",
+      "composer": "Max Steiner",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Cary Grant's most delightfully unhinged comedic performance",
+        "Perfect blend of macabre humor and screwball comedy timing",
+        "Masterful adaptation that improves upon the original stage play"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "His Girl Friday",
+        "year": 1940,
+        "description": "Another Cary Grant screwball masterpiece showing his comedic range"
+      },
+      {
+        "title": "The Ladykillers",
+        "year": 1955,
+        "description": "Similarly dark comedy about murder and manners"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Dark Comedy in Classical Hollywood",
+        "category": "Genre Studies",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Stage to Screen Adaptation",
+        "category": "Production",
+        "difficulty": "beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Frank Capra",
+      "personId": 11356,
+      "slug": "/person/11356",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Joseph Kesselring",
+        "personId": 19265,
+        "slug": "/person/19265",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Julius J. Epstein",
+        "personId": 19771,
+        "slug": "/person/19771",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Philip G. Epstein",
+        "personId": 29664,
+        "slug": "/person/29664",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Cary Grant",
+        "personId": 5154,
+        "slug": "/person/5154",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Priscilla Lane",
+        "personId": 30063,
+        "slug": "/person/30063",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Raymond Massey",
+        "personId": 30544,
+        "slug": "/person/30544",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Peter Lorre",
+        "personId": 29401,
+        "slug": "/person/29401",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Sol Polito",
+      "personId": 34404,
+      "slug": "/person/34404",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Max Steiner",
+      "personId": 25214,
+      "slug": "/person/25214",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:07.781Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

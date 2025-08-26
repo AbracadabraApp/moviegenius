@@ -1,0 +1,149 @@
+{
+  "movieId": "5f445696-d604-4497-b293-b2b4c1d91f43",
+  "tmdbId": 433,
+  "title": "Mary Poppins",
+  "year": 1964,
+  "analysis": {
+    "keyElements": {
+      "director": "Robert Stevenson",
+      "writers": [
+        "P.L. Travers",
+        "Bill Walsh",
+        "Don DaGradi"
+      ],
+      "stars": [
+        "Julie Andrews",
+        "Dick Van Dyke",
+        "David Tomlinson",
+        "Glynis Johns"
+      ],
+      "genre": "Musical Fantasy",
+      "releaseYear": 1964,
+      "cinematographer": "Edward Colman",
+      "composer": "Richard M. Sherman, Robert B. Sherman",
+      "studio": "Walt Disney Productions"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking blend of animation and live-action that still dazzles today",
+        "Julie Andrews' iconic performance and timeless Sherman Brothers songs",
+        "Masterful balance of whimsy, heart, and social commentary that appeals to all ages"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Saving Mr. Banks",
+        "year": 2013,
+        "description": "Reveals the challenging story behind Mary Poppins' creation and P.L. Travers' resistance to Disney's adaptation"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Special Effects History",
+        "category": "Technical",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Musical Composition",
+        "category": "Music",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Edwardian Era Society",
+        "category": "Historical",
+        "difficulty": "Beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Robert Stevenson",
+      "personId": 31901,
+      "slug": "/person/31901",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "P.L. Travers",
+        "personId": 29991,
+        "slug": "/person/29991",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Bill Walsh",
+        "personId": 3814,
+        "slug": "/person/3814",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Don DaGradi",
+        "personId": 8973,
+        "slug": "/person/8973",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Julie Andrews",
+        "personId": 19690,
+        "slug": "/person/19690",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Dick Van Dyke",
+        "personId": 8709,
+        "slug": "/person/8709",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "David Tomlinson",
+        "personId": 8181,
+        "slug": "/person/8181",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Glynis Johns",
+        "personId": 12941,
+        "slug": "/person/12941",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Edward Colman",
+      "personId": 9669,
+      "slug": "/person/9669",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Richard M. Sherman, Robert B. Sherman",
+      "personId": 31106,
+      "slug": "/person/31106",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:37.496Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

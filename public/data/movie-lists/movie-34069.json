@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Climate Disaster Films",
+      "url_path": "climate-disaster-films",
+      "description": "Climate Disaster Films collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Climate Disaster Films collection"
+    },
+    {
+      "name": "Space Fleet Exodus",
+      "url_path": "space-fleet-exodus",
+      "description": "Space Fleet Exodus collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Fleet Exodus collection"
+    },
+    {
+      "name": "Corporate Science Horror (Part 2)",
+      "url_path": "corporate-science-horror-part-2-",
+      "description": "Corporate Science Horror (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Corporate Science Horror (Part 2) collection"
+    },
+    {
+      "name": "Psychological Space Isolation (Part 1)",
+      "url_path": "psychological-space-isolation-part-1-",
+      "description": "Psychological Space Isolation (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Psychological Space Isolation (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

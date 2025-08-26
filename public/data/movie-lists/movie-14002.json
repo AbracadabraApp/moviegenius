@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Nature Living Chronicles",
+      "url_path": "nature-living-chronicles",
+      "description": "Nature Living Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Nature Living Chronicles collection"
+    },
+    {
+      "name": "Buddhist Spiritual Journeys",
+      "url_path": "buddhist-spiritual-journeys",
+      "description": "Buddhist Spiritual Journeys collection",
+      "category": "documentary",
+      "connectionReason": "Part of Buddhist Spiritual Journeys collection"
+    },
+    {
+      "name": "Visual Nature Symphonies (Part 1)",
+      "url_path": "visual-nature-symphonies-part-1-",
+      "description": "Visual Nature Symphonies (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Visual Nature Symphonies (Part 1) collection"
+    },
+    {
+      "name": "Global Cultural Meditations (Part 1)",
+      "url_path": "global-cultural-meditations-part-1-",
+      "description": "Global Cultural Meditations (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Cultural Meditations (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

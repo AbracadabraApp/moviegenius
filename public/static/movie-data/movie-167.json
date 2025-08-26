@@ -1,0 +1,133 @@
+{
+  "movieId": "b7c2a13b-bc32-4620-baf5-05ccef4f9f35",
+  "tmdbId": 167,
+  "title": "K-Pax",
+  "year": 2001,
+  "analysis": {
+    "keyElements": {
+      "director": "Iain Softley",
+      "writers": [
+        "Gene Brewer",
+        "Charles Leavitt"
+      ],
+      "stars": [
+        "Kevin Spacey",
+        "Jeff Bridges",
+        "Mary McCormack"
+      ],
+      "genre": "Drama/Science Fiction",
+      "releaseYear": 2001,
+      "cinematographer": "John Mathieson",
+      "composer": "Edward Shearmur",
+      "studio": "Universal Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Kevin Spacey and Jeff Bridges deliver masterful, nuanced performances that keep viewers guessing",
+        "The film brilliantly balances psychological drama with sci-fi elements without committing to either explanation",
+        "Explores profound questions about human nature, mental illness, and belief systems with remarkable sensitivity"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Starman",
+        "year": 1984,
+        "description": "Another thoughtful exploration of an alien visitor challenging human perspectives"
+      },
+      {
+        "title": "One Flew Over the Cuckoo's Nest",
+        "year": 1975,
+        "description": "Landmark film examining institutional mental healthcare and individual identity"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Unreliable Narrator",
+        "category": "Narrative Technique",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Mental Health in Cinema",
+        "category": "Social Themes",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Iain Softley",
+      "personId": 14797,
+      "slug": "/person/14797",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Gene Brewer",
+        "personId": 12095,
+        "slug": "/person/12095",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Charles Leavitt",
+        "personId": 5508,
+        "slug": "/person/5508",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Kevin Spacey",
+        "personId": 20925,
+        "slug": "/person/20925",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jeff Bridges",
+        "personId": 16795,
+        "slug": "/person/16795",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Mary McCormack",
+        "personId": 24724,
+        "slug": "/person/24724",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "John Mathieson",
+      "personId": 18446,
+      "slug": "/person/18446",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Edward Shearmur",
+      "personId": 9731,
+      "slug": "/person/9731",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:00.202Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

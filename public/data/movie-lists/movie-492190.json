@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Religious Faith Comedies",
+      "url_path": "religious-faith-comedies",
+      "description": "Religious Faith Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Religious Faith Comedies collection"
+    },
+    {
+      "name": "Political Satires",
+      "url_path": "political-satires",
+      "description": "Political Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Political Satires collection"
+    },
+    {
+      "name": "Law Enforcement Satires",
+      "url_path": "law-enforcement-satires",
+      "description": "Law Enforcement Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Law Enforcement Satires collection"
+    },
+    {
+      "name": "War On Terror Satires",
+      "url_path": "war-on-terror-satires",
+      "description": "War On Terror Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of War On Terror Satires collection"
+    }
+  ],
+  "totalLists": 4
+}

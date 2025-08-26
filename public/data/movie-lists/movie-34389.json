@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Cinéma Vérité Classics",
+      "url_path": "cin-ma-v-rit-classics",
+      "description": "Cinéma Vérité Classics collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cinéma Vérité Classics collection"
+    },
+    {
+      "name": "War Zone Journalism",
+      "url_path": "war-zone-journalism",
+      "description": "War Zone Journalism collection",
+      "category": "documentary",
+      "connectionReason": "Part of War Zone Journalism collection"
+    },
+    {
+      "name": "Global Cultural Meditations (Part 4)",
+      "url_path": "global-cultural-meditations-part-4-",
+      "description": "Global Cultural Meditations (Part 4) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Global Cultural Meditations (Part 4) collection"
+    }
+  ],
+  "totalLists": 3
+}

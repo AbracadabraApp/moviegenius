@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Early Aviation Adventures",
+      "url_path": "early-aviation-adventures",
+      "description": "Early Aviation Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Early Aviation Adventures collection"
+    },
+    {
+      "name": "Classic Literary Adventures [OVERSIZED]",
+      "url_path": "classic-literary-adventures-oversized-",
+      "description": "Classic Literary Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Classic Literary Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Golden Age Sea Adventures [OVERSIZED]",
+      "url_path": "golden-age-sea-adventures-oversized-",
+      "description": "Golden Age Sea Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Golden Age Sea Adventures [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 3
+}

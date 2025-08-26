@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Political Satires",
+      "url_path": "political-satires",
+      "description": "Political Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Political Satires collection"
+    },
+    {
+      "name": "Identity Swap Comedies",
+      "url_path": "identity-swap-comedies",
+      "description": "Identity Swap Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Identity Swap Comedies collection"
+    },
+    {
+      "name": "Post-War Social Satire (Part 3)",
+      "url_path": "post-war-social-satire-part-3-",
+      "description": "Post-War Social Satire (Part 3) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Post-War Social Satire (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

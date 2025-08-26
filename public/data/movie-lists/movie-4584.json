@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Merchant Ivory Classics",
+      "url_path": "merchant-ivory-classics",
+      "description": "Merchant Ivory Classics collection",
+      "category": "period",
+      "connectionReason": "Part of Merchant Ivory Classics collection"
+    },
+    {
+      "name": "British Literary Adaptations",
+      "url_path": "british-literary-adaptations",
+      "description": "British Literary Adaptations collection",
+      "category": "period",
+      "connectionReason": "Part of British Literary Adaptations collection"
+    },
+    {
+      "name": "Social Climber Tragedies",
+      "url_path": "social-climber-tragedies",
+      "description": "Social Climber Tragedies collection",
+      "category": "period",
+      "connectionReason": "Part of Social Climber Tragedies collection"
+    },
+    {
+      "name": "Ensemble Romance Stories (Part 2)",
+      "url_path": "ensemble-romance-stories-part-2-",
+      "description": "Ensemble Romance Stories (Part 2) collection",
+      "category": "romance",
+      "connectionReason": "Part of Ensemble Romance Stories (Part 2) collection"
+    },
+    {
+      "name": "Class-Crossing Period Romance (Part 3)",
+      "url_path": "class-crossing-period-romance-part-3-",
+      "description": "Class-Crossing Period Romance (Part 3) collection",
+      "category": "romance",
+      "connectionReason": "Part of Class-Crossing Period Romance (Part 3) collection"
+    },
+    {
+      "name": "Societal Pressure Tragedies (Part 4)",
+      "url_path": "societal-pressure-tragedies-part-4-",
+      "description": "Societal Pressure Tragedies (Part 4) collection",
+      "category": "romance",
+      "connectionReason": "Part of Societal Pressure Tragedies (Part 4) collection"
+    },
+    {
+      "name": "Modern Literary Adaptations (Part 2)",
+      "url_path": "modern-literary-adaptations-part-2-",
+      "description": "Modern Literary Adaptations (Part 2) collection",
+      "category": "romance",
+      "connectionReason": "Part of Modern Literary Adaptations (Part 2) collection"
+    }
+  ],
+  "totalLists": 7
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Cultural Exploration",
+      "url_path": "cultural-exploration",
+      "description": "Cultural Exploration collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cultural Exploration collection"
+    },
+    {
+      "name": "Music Documentary Collages (Part 1)",
+      "url_path": "music-documentary-collages-part-1-",
+      "description": "Music Documentary Collages (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Music Documentary Collages (Part 1) collection"
+    },
+    {
+      "name": "1970s Cultural Retrospectives (Part 1)",
+      "url_path": "1970s-cultural-retrospectives-part-1-",
+      "description": "1970s Cultural Retrospectives (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of 1970s Cultural Retrospectives (Part 1) collection"
+    },
+    {
+      "name": "Urban Subculture Studies (Part 1)",
+      "url_path": "urban-subculture-studies-part-1-",
+      "description": "Urban Subculture Studies (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Urban Subculture Studies (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

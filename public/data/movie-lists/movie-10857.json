@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Political Animation Films",
+      "url_path": "political-animation-films",
+      "description": "Political Animation Films collection",
+      "category": "animation",
+      "connectionReason": "Part of Political Animation Films collection"
+    },
+    {
+      "name": "Graphic Novel Adaptations",
+      "url_path": "graphic-novel-adaptations",
+      "description": "Graphic Novel Adaptations collection",
+      "category": "animation",
+      "connectionReason": "Part of Graphic Novel Adaptations collection"
+    },
+    {
+      "name": "Adult Existential Drama",
+      "url_path": "adult-existential-drama",
+      "description": "Adult Existential Drama collection",
+      "category": "animation",
+      "connectionReason": "Part of Adult Existential Drama collection"
+    },
+    {
+      "name": "British Social History",
+      "url_path": "british-social-history",
+      "description": "British Social History collection",
+      "category": "animation",
+      "connectionReason": "Part of British Social History collection"
+    }
+  ],
+  "totalLists": 4
+}

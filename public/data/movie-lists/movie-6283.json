@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Inheritance Challenge Comedies",
+      "url_path": "inheritance-challenge-comedies",
+      "description": "Inheritance Challenge Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Inheritance Challenge Comedies collection"
+    },
+    {
+      "name": "Pet Adventure Comedies (Part 2)",
+      "url_path": "pet-adventure-comedies-part-2-",
+      "description": "Pet Adventure Comedies (Part 2) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Pet Adventure Comedies (Part 2) collection"
+    },
+    {
+      "name": "Dark Comedy Accidents (Part 8)",
+      "url_path": "dark-comedy-accidents-part-8-",
+      "description": "Dark Comedy Accidents (Part 8) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Dark Comedy Accidents (Part 8) collection"
+    }
+  ],
+  "totalLists": 3
+}

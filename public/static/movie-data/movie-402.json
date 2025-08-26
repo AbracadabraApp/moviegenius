@@ -1,0 +1,142 @@
+{
+  "movieId": "fb64ffa3-7cfd-4246-994b-5b5fcb7bf7fa",
+  "tmdbId": 402,
+  "title": "Basic Instinct",
+  "year": 1992,
+  "analysis": {
+    "keyElements": {
+      "director": "Paul Verhoeven",
+      "writers": [
+        "Joe Eszterhas"
+      ],
+      "stars": [
+        "Michael Douglas",
+        "Sharon Stone",
+        "George Dzundza"
+      ],
+      "genre": "Neo-noir Erotic Thriller",
+      "releaseYear": 1992,
+      "cinematographer": "Jan de Bont",
+      "composer": "Jerry Goldsmith",
+      "studio": "TriStar Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Sharon Stone's career-defining performance as Catherine Tramell remains one of cinema's most compelling femme fatales",
+        "Masterful blend of noir elements with provocative 90s sexuality and psychological manipulation",
+        "Influential thriller that defined and elevated the erotic thriller genre for a decade"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Fatal Attraction",
+        "year": 1987,
+        "description": "Direct influence on Basic Instinct's exploration of dangerous attraction and psychological obsession"
+      },
+      {
+        "title": "Body Heat",
+        "year": 1981,
+        "description": "Modern noir that helped establish the erotic thriller genre"
+      },
+      {
+        "title": "Gone Girl",
+        "year": 2014,
+        "description": "Contemporary thriller influenced by Basic Instinct's psychological manipulation themes"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Neo-Noir Elements",
+        "category": "Film Style",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Gender and Power in Cinema",
+        "category": "Theme Analysis",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "1990s Erotic Thriller Movement",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Paul Verhoeven",
+      "personId": 29016,
+      "slug": "/person/29016",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Joe Eszterhas",
+        "personId": 17754,
+        "slug": "/person/17754",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Michael Douglas",
+        "personId": 25614,
+        "slug": "/person/25614",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Sharon Stone",
+        "personId": 33818,
+        "slug": "/person/33818",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "George Dzundza",
+        "personId": 12243,
+        "slug": "/person/12243",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jeanne Tripplehorn",
+        "personId": 16659,
+        "slug": "/person/16659",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Jan de Bont",
+      "personId": 16053,
+      "slug": "/person/16053",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Jerry Goldsmith",
+      "personId": 17176,
+      "slug": "/person/17176",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:33.355Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

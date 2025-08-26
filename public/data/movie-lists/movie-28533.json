@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Classic Italian Gothic",
+      "url_path": "classic-italian-gothic",
+      "description": "Classic Italian Gothic collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Italian Gothic collection"
+    },
+    {
+      "name": "Revenge Horror Films",
+      "url_path": "revenge-horror-films",
+      "description": "Revenge Horror Films collection",
+      "category": "horror",
+      "connectionReason": "Part of Revenge Horror Films collection"
+    },
+    {
+      "name": "Gothic Family Curse (Part 3)",
+      "url_path": "gothic-family-curse-part-3-",
+      "description": "Gothic Family Curse (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Gothic Family Curse (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

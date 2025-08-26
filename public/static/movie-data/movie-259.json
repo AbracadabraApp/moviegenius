@@ -1,0 +1,141 @@
+{
+  "movieId": "a1f17077-bb05-444e-8ea7-028f684fcdc0",
+  "tmdbId": 259,
+  "title": "Love on the Run",
+  "year": 1979,
+  "analysis": {
+    "keyElements": {
+      "director": "François Truffaut",
+      "writers": [
+        "François Truffaut",
+        "Jean Gruault",
+        "Suzanne Schiffman"
+      ],
+      "stars": [
+        "Jean-Pierre Léaud",
+        "Claude Jade",
+        "Marie-France Pisier"
+      ],
+      "genre": "Drama/Romance",
+      "releaseYear": 1979,
+      "cinematographer": "Néstor Almendros",
+      "composer": "Georges Delerue",
+      "studio": "Les Films du Carrosse"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Final chapter in Truffaut's iconic Antoine Doinel series",
+        "Masterful blend of new footage with clips from previous films creates a unique narrative tapestry",
+        "Perfect entry point to understand French New Wave's evolution and legacy"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The 400 Blows",
+        "year": 1959,
+        "description": "The first and most celebrated entry in the Antoine Doinel series"
+      },
+      {
+        "title": "Stolen Kisses",
+        "year": 1968,
+        "description": "Third film in the series, showing Antoine's young adult years"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "French New Wave",
+        "category": "Film Movement",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Character Development Across Series",
+        "category": "Narrative",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "François Truffaut",
+      "personId": 11321,
+      "slug": "/person/11321",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "François Truffaut",
+        "personId": 11321,
+        "slug": "/person/11321",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jean Gruault",
+        "personId": 16553,
+        "slug": "/person/16553",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Suzanne Schiffman",
+        "personId": 35345,
+        "slug": "/person/35345",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Jean-Pierre Léaud",
+        "personId": 16701,
+        "slug": "/person/16701",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Claude Jade",
+        "personId": 6489,
+        "slug": "/person/6489",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Marie-France Pisier",
+        "personId": 24049,
+        "slug": "/person/24049",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Néstor Almendros",
+      "personId": 27368,
+      "slug": "/person/27368",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Georges Delerue",
+      "personId": 12390,
+      "slug": "/person/12390",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:16.291Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

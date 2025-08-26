@@ -1,0 +1,141 @@
+{
+  "movieId": "fcb8f0e9-58b0-4a6c-90d5-b9fb03a1bf42",
+  "tmdbId": 310,
+  "title": "Bruce Almighty",
+  "year": 2003,
+  "analysis": {
+    "keyElements": {
+      "director": "Tom Shadyac",
+      "writers": [
+        "Steve Koren",
+        "Mark O'Keefe",
+        "Steve Oedekerk"
+      ],
+      "stars": [
+        "Jim Carrey",
+        "Jennifer Aniston",
+        "Morgan Freeman"
+      ],
+      "genre": "Comedy/Fantasy",
+      "releaseYear": 2003,
+      "cinematographer": "Dean Semler",
+      "composer": "John Debney",
+      "studio": "Universal Pictures"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Jim Carrey delivers one of his most balanced performances, mixing signature physical comedy with genuine emotional depth",
+        "Morgan Freeman's portrayal of God is both witty and profound, offering thoughtful commentary on faith and responsibility",
+        "The film successfully blends broad comedy with surprisingly meaningful messages about free will and personal growth"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Truman Show",
+        "year": 1998,
+        "description": "Another Jim Carrey vehicle that successfully blends comedy with deeper philosophical themes"
+      },
+      {
+        "title": "Heaven Can Wait",
+        "year": 1978,
+        "description": "Classic supernatural comedy that helped establish the genre conventions"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Religious Themes in Comedy",
+        "category": "Film Studies",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Physical Comedy Evolution",
+        "category": "Performance",
+        "difficulty": "Beginner"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Tom Shadyac",
+      "personId": 36704,
+      "slug": "/person/36704",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Steve Koren",
+        "personId": 34941,
+        "slug": "/person/34941",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Mark O'Keefe",
+        "personId": 24389,
+        "slug": "/person/24389",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Steve Oedekerk",
+        "personId": 35051,
+        "slug": "/person/35051",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Jim Carrey",
+        "personId": 17385,
+        "slug": "/person/17385",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jennifer Aniston",
+        "personId": 16958,
+        "slug": "/person/16958",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Morgan Freeman",
+        "personId": 26765,
+        "slug": "/person/26765",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Dean Semler",
+      "personId": 8296,
+      "slug": "/person/8296",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "John Debney",
+      "personId": 18134,
+      "slug": "/person/18134",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:23.447Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Gothic Adventure Horror",
+      "url_path": "gothic-adventure-horror",
+      "description": "Gothic Adventure Horror collection",
+      "category": "adventure",
+      "connectionReason": "Part of Gothic Adventure Horror collection"
+    },
+    {
+      "name": "Religious Artifact Quests",
+      "url_path": "religious-artifact-quests",
+      "description": "Religious Artifact Quests collection",
+      "category": "adventure",
+      "connectionReason": "Part of Religious Artifact Quests collection"
+    },
+    {
+      "name": "Egyptian Mythology Adventures",
+      "url_path": "egyptian-mythology-adventures",
+      "description": "Egyptian Mythology Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Egyptian Mythology Adventures collection"
+    },
+    {
+      "name": "Colonial Expedition Madness [OVERSIZED]",
+      "url_path": "colonial-expedition-madness-oversized-",
+      "description": "Colonial Expedition Madness [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Colonial Expedition Madness [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "True Crime Hybrid Films",
+      "url_path": "true-crime-hybrid-films",
+      "description": "True Crime Hybrid Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of True Crime Hybrid Films collection"
+    },
+    {
+      "name": "LGBTQ Pioneer Portraits",
+      "url_path": "lgbtq-pioneer-portraits",
+      "description": "LGBTQ Pioneer Portraits collection",
+      "category": "documentary",
+      "connectionReason": "Part of LGBTQ Pioneer Portraits collection"
+    },
+    {
+      "name": "Civil Rights Movement",
+      "url_path": "civil-rights-movement",
+      "description": "Civil Rights Movement collection",
+      "category": "documentary",
+      "connectionReason": "Part of Civil Rights Movement collection"
+    },
+    {
+      "name": "Human Rights Investigators (Part 2)",
+      "url_path": "human-rights-investigators-part-2-",
+      "description": "Human Rights Investigators (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Human Rights Investigators (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

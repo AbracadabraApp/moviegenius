@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Jazz Musician Dramas",
+      "url_path": "jazz-musician-dramas",
+      "description": "Jazz Musician Dramas collection",
+      "category": "music",
+      "connectionReason": "Part of Jazz Musician Dramas collection"
+    },
+    {
+      "name": "Paris Music Scene",
+      "url_path": "paris-music-scene",
+      "description": "Paris Music Scene collection",
+      "category": "music",
+      "connectionReason": "Part of Paris Music Scene collection"
+    },
+    {
+      "name": "Musical Expatriate Stories",
+      "url_path": "musical-expatriate-stories",
+      "description": "Musical Expatriate Stories collection",
+      "category": "music",
+      "connectionReason": "Part of Musical Expatriate Stories collection"
+    }
+  ],
+  "totalLists": 3
+}

@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "name": "City Symphony Films",
+      "url_path": "city-symphony-films",
+      "description": "City Symphony Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of City Symphony Films collection"
+    },
+    {
+      "name": "Film History Essays",
+      "url_path": "film-history-essays",
+      "description": "Film History Essays collection",
+      "category": "documentary",
+      "connectionReason": "Part of Film History Essays collection"
+    }
+  ],
+  "totalLists": 2
+}

@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Classic Monster Comedies",
+      "url_path": "classic-monster-comedies",
+      "description": "Classic Monster Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Monster Comedies collection"
+    },
+    {
+      "name": "Inheritance Challenge Comedies",
+      "url_path": "inheritance-challenge-comedies",
+      "description": "Inheritance Challenge Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Inheritance Challenge Comedies collection"
+    },
+    {
+      "name": "Haunted Inn Comedies",
+      "url_path": "haunted-inn-comedies",
+      "description": "Haunted Inn Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Haunted Inn Comedies collection"
+    },
+    {
+      "name": "Theater Setting Horror",
+      "url_path": "theater-setting-horror",
+      "description": "Theater Setting Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Theater Setting Horror collection"
+    },
+    {
+      "name": "Classic Haunted House (Part 2)",
+      "url_path": "classic-haunted-house-part-2-",
+      "description": "Classic Haunted House (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Haunted House (Part 2) collection"
+    },
+    {
+      "name": "Gothic Family Curse (Part 3)",
+      "url_path": "gothic-family-curse-part-3-",
+      "description": "Gothic Family Curse (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Gothic Family Curse (Part 3) collection"
+    }
+  ],
+  "totalLists": 6
+}

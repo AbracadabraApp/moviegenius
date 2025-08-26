@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Victorian Society Satires",
+      "url_path": "victorian-society-satires",
+      "description": "Victorian Society Satires collection",
+      "category": "comedy",
+      "connectionReason": "Part of Victorian Society Satires collection"
+    },
+    {
+      "name": "Global Adventure Comedies",
+      "url_path": "global-adventure-comedies",
+      "description": "Global Adventure Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Global Adventure Comedies collection"
+    },
+    {
+      "name": "Cross-Cultural Comedy",
+      "url_path": "cross-cultural-comedy",
+      "description": "Cross-Cultural Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Cultural Comedy collection"
+    },
+    {
+      "name": "Martial Arts Comedy",
+      "url_path": "martial-arts-comedy",
+      "description": "Martial Arts Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Martial Arts Comedy collection"
+    }
+  ],
+  "totalLists": 4
+}

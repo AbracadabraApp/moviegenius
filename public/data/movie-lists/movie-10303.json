@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Religious Artifact Quests",
+      "url_path": "religious-artifact-quests",
+      "description": "Religious Artifact Quests collection",
+      "category": "adventure",
+      "connectionReason": "Part of Religious Artifact Quests collection"
+    },
+    {
+      "name": "Lost Treasure Recovery",
+      "url_path": "lost-treasure-recovery",
+      "description": "Lost Treasure Recovery collection",
+      "category": "adventure",
+      "connectionReason": "Part of Lost Treasure Recovery collection"
+    },
+    {
+      "name": "Cross-Border Quest Films [OVERSIZED]",
+      "url_path": "cross-border-quest-films-oversized-",
+      "description": "Cross-Border Quest Films [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of Cross-Border Quest Films [OVERSIZED] collection"
+    },
+    {
+      "name": "Mediterranean Escape Romance",
+      "url_path": "mediterranean-escape-romance",
+      "description": "Mediterranean Escape Romance collection",
+      "category": "romance",
+      "connectionReason": "Part of Mediterranean Escape Romance collection"
+    },
+    {
+      "name": "Writers and Authors Romance (Part 2)",
+      "url_path": "writers-and-authors-romance-part-2-",
+      "description": "Writers and Authors Romance (Part 2) collection",
+      "category": "romance",
+      "connectionReason": "Part of Writers and Authors Romance (Part 2) collection"
+    }
+  ],
+  "totalLists": 5
+}

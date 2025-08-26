@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Sports Fan Adventures",
+      "url_path": "sports-fan-adventures",
+      "description": "Sports Fan Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Sports Fan Adventures collection"
+    },
+    {
+      "name": "Cross-Cultural Comedy",
+      "url_path": "cross-cultural-comedy",
+      "description": "Cross-Cultural Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Cross-Cultural Comedy collection"
+    },
+    {
+      "name": "Found Family Comedies (Part 3)",
+      "url_path": "found-family-comedies-part-3-",
+      "description": "Found Family Comedies (Part 3) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Found Family Comedies (Part 3) collection"
+    }
+  ],
+  "totalLists": 3
+}

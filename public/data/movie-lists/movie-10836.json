@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Spanish Horror Cinema",
+      "url_path": "spanish-horror-cinema",
+      "description": "Spanish Horror Cinema collection",
+      "category": "horror",
+      "connectionReason": "Part of Spanish Horror Cinema collection"
+    },
+    {
+      "name": "Ancient Temple Horror",
+      "url_path": "ancient-temple-horror",
+      "description": "Ancient Temple Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Ancient Temple Horror collection"
+    },
+    {
+      "name": "Literary Horror Adaptations (Part 1)",
+      "url_path": "literary-horror-adaptations-part-1-",
+      "description": "Literary Horror Adaptations (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Literary Horror Adaptations (Part 1) collection"
+    },
+    {
+      "name": "Folk Religion Horror (Part 1)",
+      "url_path": "folk-religion-horror-part-1-",
+      "description": "Folk Religion Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Folk Religion Horror (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "name": "Science Education Films",
+      "url_path": "science-education-films",
+      "description": "Science Education Films collection",
+      "category": "documentary",
+      "connectionReason": "Part of Science Education Films collection"
+    },
+    {
+      "name": "Animal Rights Exposés",
+      "url_path": "animal-rights-expos-s",
+      "description": "Animal Rights Exposés collection",
+      "category": "documentary",
+      "connectionReason": "Part of Animal Rights Exposés collection"
+    }
+  ],
+  "totalLists": 2
+}

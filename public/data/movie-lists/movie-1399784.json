@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "WWII Archival Documentaries",
+      "url_path": "wwii-archival-documentaries",
+      "description": "WWII Archival Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of WWII Archival Documentaries collection"
+    },
+    {
+      "name": "Rural Life Studies",
+      "url_path": "rural-life-studies",
+      "description": "Rural Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Rural Life Studies collection"
+    },
+    {
+      "name": "War Artifact Collections",
+      "url_path": "war-artifact-collections",
+      "description": "War Artifact Collections collection",
+      "category": "documentary",
+      "connectionReason": "Part of War Artifact Collections collection"
+    },
+    {
+      "name": "Historical Trauma Testimonies (Part 5)",
+      "url_path": "historical-trauma-testimonies-part-5-",
+      "description": "Historical Trauma Testimonies (Part 5) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Historical Trauma Testimonies (Part 5) collection"
+    }
+  ],
+  "totalLists": 4
+}

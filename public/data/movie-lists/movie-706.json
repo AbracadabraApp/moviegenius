@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "British Literary Adaptations",
+      "url_path": "british-literary-adaptations",
+      "description": "British Literary Adaptations collection",
+      "category": "period",
+      "connectionReason": "Part of British Literary Adaptations collection"
+    },
+    {
+      "name": "French Society Scandals",
+      "url_path": "french-society-scandals",
+      "description": "French Society Scandals collection",
+      "category": "period",
+      "connectionReason": "Part of French Society Scandals collection"
+    },
+    {
+      "name": "Social Climber Tragedies",
+      "url_path": "social-climber-tragedies",
+      "description": "Social Climber Tragedies collection",
+      "category": "period",
+      "connectionReason": "Part of Social Climber Tragedies collection"
+    },
+    {
+      "name": "European Society & Politics",
+      "url_path": "european-society-politics",
+      "description": "European Society & Politics collection",
+      "category": "period",
+      "connectionReason": "Part of European Society & Politics collection"
+    }
+  ],
+  "totalLists": 4
+}

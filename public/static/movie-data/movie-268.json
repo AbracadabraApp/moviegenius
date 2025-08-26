@@ -1,0 +1,133 @@
+{
+  "movieId": "07f2261f-ff06-4ab6-851c-9f1cae6fd7a3",
+  "tmdbId": 268,
+  "title": "Batman",
+  "year": 1989,
+  "analysis": {
+    "keyElements": {
+      "director": "Tim Burton",
+      "writers": [
+        "Sam Hamm",
+        "Warren Skaaren"
+      ],
+      "stars": [
+        "Michael Keaton",
+        "Jack Nicholson",
+        "Kim Basinger"
+      ],
+      "genre": "Superhero/Action",
+      "releaseYear": 1989,
+      "cinematographer": "Roger Pratt",
+      "composer": "Danny Elfman",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Tim Burton's gothic vision revolutionized superhero cinema",
+        "Jack Nicholson's iconic Joker performance set a new standard for comic book villains",
+        "The film perfectly balances dark atmosphere with comic book entertainment"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Dark Knight",
+        "year": 2008,
+        "description": "Direct spiritual successor that further developed the serious treatment of Batman mythology"
+      },
+      {
+        "title": "Metropolis",
+        "year": 1927,
+        "description": "Key visual influence on Batman's architectural and atmospheric elements"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Gothic Architecture in Film",
+        "category": "Production Design",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Hero-Villain Duality",
+        "category": "Narrative Theory",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Tim Burton",
+      "personId": 36247,
+      "slug": "/person/36247",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Sam Hamm",
+        "personId": 33007,
+        "slug": "/person/33007",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Warren Skaaren",
+        "personId": 38163,
+        "slug": "/person/38163",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Michael Keaton",
+        "personId": 25754,
+        "slug": "/person/25754",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jack Nicholson",
+        "personId": 15420,
+        "slug": "/person/15420",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Kim Basinger",
+        "personId": 21002,
+        "slug": "/person/21002",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Roger Pratt",
+      "personId": 32175,
+      "slug": "/person/32175",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Danny Elfman",
+      "personId": 7425,
+      "slug": "/person/7425",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:17.680Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

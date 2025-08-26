@@ -1,0 +1,142 @@
+{
+  "movieId": "a984d2a9-11d1-425c-9bda-eae7a0e35f74",
+  "tmdbId": 468,
+  "title": "My Own Private Idaho",
+  "year": 1991,
+  "analysis": {
+    "keyElements": {
+      "director": "Gus Van Sant",
+      "writers": [
+        "Gus Van Sant"
+      ],
+      "stars": [
+        "River Phoenix",
+        "Keanu Reeves",
+        "James Russo"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1991,
+      "cinematographer": "Eric Alan Edwards",
+      "composer": "Bill Stafford",
+      "studio": "Fine Line Features"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "River Phoenix delivers his most vulnerable and haunting performance",
+        "Bold reimagining of Shakespeare's Henry IV within street hustler culture",
+        "Groundbreaking portrayal of queerness and chosen family in American indie cinema"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Drugstore Cowboy",
+        "year": 1989,
+        "description": "Van Sant's previous film exploring Portland's underground"
+      },
+      {
+        "title": "Midnight Cowboy",
+        "year": 1969,
+        "description": "Influential predecessor in hustler narrative"
+      },
+      {
+        "title": "Weekend",
+        "year": 2011,
+        "description": "Spiritual successor in intimate queer storytelling"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "New Queer Cinema",
+        "category": "Film Movement",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Shakespeare in Modern Cinema",
+        "category": "Adaptation",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "American Independent Cinema",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Gus Van Sant",
+      "personId": 13356,
+      "slug": "/person/13356",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Gus Van Sant",
+        "personId": 13356,
+        "slug": "/person/13356",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "William Shakespeare",
+        "personId": 38626,
+        "slug": "/person/38626",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "River Phoenix",
+        "personId": 31366,
+        "slug": "/person/31366",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Keanu Reeves",
+        "personId": 20458,
+        "slug": "/person/20458",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "James Russo",
+        "personId": 15939,
+        "slug": "/person/15939",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Eric Alan Edwards",
+      "personId": 10322,
+      "slug": "/person/10322",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Bill Stafford",
+      "personId": 3810,
+      "slug": "/person/3810",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:40.255Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

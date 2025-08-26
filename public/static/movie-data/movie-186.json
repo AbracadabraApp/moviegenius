@@ -1,0 +1,141 @@
+{
+  "movieId": "7a88811b-bb4a-4bcf-919e-a47631c81458",
+  "tmdbId": 186,
+  "title": "Lucky Number Slevin",
+  "year": 2006,
+  "analysis": {
+    "keyElements": {
+      "director": "Paul McGuigan",
+      "writers": [
+        "Jason Smilovic"
+      ],
+      "stars": [
+        "Josh Hartnett",
+        "Bruce Willis",
+        "Morgan Freeman",
+        "Ben Kingsley",
+        "Lucy Liu"
+      ],
+      "genre": "Crime Thriller",
+      "releaseYear": 2006,
+      "cinematographer": "Peter Sova",
+      "composer": "Joshua Ralph",
+      "studio": "The Weinstein Company"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Ingeniously crafted plot twists that reward multiple viewings",
+        "Outstanding ensemble cast delivering sharp, witty dialogue",
+        "Clever blend of noir elements with modern storytelling techniques"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The Usual Suspects",
+        "year": 1995,
+        "description": "Similar masterful use of unreliable narrative and complex plot revelation"
+      },
+      {
+        "title": "Layer Cake",
+        "year": 2004,
+        "description": "Comparable stylish crime thriller with intricate plot mechanics"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Neo-noir storytelling techniques",
+        "category": "Film Style",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Non-linear narrative structure",
+        "category": "Screenwriting",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Paul McGuigan",
+      "personId": 28921,
+      "slug": "/person/28921",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Jason Smilovic",
+        "personId": 16337,
+        "slug": "/person/16337",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Josh Hartnett",
+        "personId": 19377,
+        "slug": "/person/19377",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Bruce Willis",
+        "personId": 4612,
+        "slug": "/person/4612",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Morgan Freeman",
+        "personId": 26765,
+        "slug": "/person/26765",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ben Kingsley",
+        "personId": 3348,
+        "slug": "/person/3348",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Lucy Liu",
+        "personId": 23152,
+        "slug": "/person/23152",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Peter Sova",
+      "personId": 29516,
+      "slug": "/person/29516",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Joshua Ralph",
+      "personId": 19422,
+      "slug": "/person/19422",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:03.969Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

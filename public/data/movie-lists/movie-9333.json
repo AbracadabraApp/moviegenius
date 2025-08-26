@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Asian Crime Remakes",
+      "url_path": "asian-crime-remakes",
+      "description": "Asian Crime Remakes collection",
+      "category": "crime",
+      "connectionReason": "Part of Asian Crime Remakes collection"
+    },
+    {
+      "name": "Depression Era Gangsters",
+      "url_path": "depression-era-gangsters",
+      "description": "Depression Era Gangsters collection",
+      "category": "crime",
+      "connectionReason": "Part of Depression Era Gangsters collection"
+    },
+    {
+      "name": "Prohibition Nightclub Crime",
+      "url_path": "prohibition-nightclub-crime",
+      "description": "Prohibition Nightclub Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Prohibition Nightclub Crime collection"
+    },
+    {
+      "name": "Border Smuggling Crime",
+      "url_path": "border-smuggling-crime",
+      "description": "Border Smuggling Crime collection",
+      "category": "crime",
+      "connectionReason": "Part of Border Smuggling Crime collection"
+    }
+  ],
+  "totalLists": 4
+}

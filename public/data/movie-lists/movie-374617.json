@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "FBI Sting Operations",
+      "url_path": "fbi-sting-operations",
+      "description": "FBI Sting Operations collection",
+      "category": "crime",
+      "connectionReason": "Part of FBI Sting Operations collection"
+    },
+    {
+      "name": "Hate Group Crime Films",
+      "url_path": "hate-group-crime-films",
+      "description": "Hate Group Crime Films collection",
+      "category": "crime",
+      "connectionReason": "Part of Hate Group Crime Films collection"
+    },
+    {
+      "name": "Undercover Detective Operations",
+      "url_path": "undercover-detective-operations",
+      "description": "Undercover Detective Operations collection",
+      "category": "crime",
+      "connectionReason": "Part of Undercover Detective Operations collection"
+    },
+    {
+      "name": "Psychological Mind Games",
+      "url_path": "psychological-mind-games",
+      "description": "Psychological Mind Games collection",
+      "category": "thriller",
+      "connectionReason": "Part of Psychological Mind Games collection"
+    },
+    {
+      "name": "Hidden Identity Thrillers (Part 8)",
+      "url_path": "hidden-identity-thrillers-part-8-",
+      "description": "Hidden Identity Thrillers (Part 8) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Hidden Identity Thrillers (Part 8) collection"
+    }
+  ],
+  "totalLists": 5
+}

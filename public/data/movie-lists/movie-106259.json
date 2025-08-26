@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "WWII Propaganda Films",
+      "url_path": "wwii-propaganda-films",
+      "description": "WWII Propaganda Films collection",
+      "category": "war",
+      "connectionReason": "Part of WWII Propaganda Films collection"
+    },
+    {
+      "name": "Last Stand Battles",
+      "url_path": "last-stand-battles",
+      "description": "Last Stand Battles collection",
+      "category": "war",
+      "connectionReason": "Part of Last Stand Battles collection"
+    },
+    {
+      "name": "Urban Combat Operations",
+      "url_path": "urban-combat-operations",
+      "description": "Urban Combat Operations collection",
+      "category": "war",
+      "connectionReason": "Part of Urban Combat Operations collection"
+    },
+    {
+      "name": "European War Drama [OVERSIZED]",
+      "url_path": "european-war-drama-oversized-",
+      "description": "European War Drama [OVERSIZED] collection",
+      "category": "war",
+      "connectionReason": "Part of European War Drama [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,120 @@
+{
+  "movieId": "6f40e12a-040d-4e92-8155-605ebcd61803",
+  "tmdbId": 390,
+  "title": "Lisbon Story",
+  "year": 1994,
+  "analysis": {
+    "keyElements": {
+      "director": "Wim Wenders",
+      "writers": [
+        "Wim Wenders"
+      ],
+      "stars": [
+        "Rüdiger Vogler",
+        "Patrick Bauchau",
+        "Teresa Salgueiro"
+      ],
+      "genre": "Drama",
+      "releaseYear": 1994,
+      "cinematographer": "Lisa Rinzler",
+      "composer": "Jürgen Knieper",
+      "studio": "Road Movies Filmproduktion"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Mesmerizing exploration of sound, cinema, and urban poetry",
+        "Beautiful portrait of Lisbon's soul through music and imagery",
+        "Thoughtful meditation on filmmaking and artistic purpose"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Wings of Desire",
+        "year": 1987,
+        "description": "Another Wenders masterpiece exploring the poetry of urban space"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Sound Design in Cinema",
+        "category": "Technical",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "City Symphony Films",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Wim Wenders",
+      "personId": 38730,
+      "slug": "/person/38730",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Wim Wenders",
+        "personId": 38730,
+        "slug": "/person/38730",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Rüdiger Vogler",
+        "personId": 32590,
+        "slug": "/person/32590",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Patrick Bauchau",
+        "personId": 28568,
+        "slug": "/person/28568",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Teresa Salgueiro",
+        "personId": 35836,
+        "slug": "/person/35836",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Lisa Rinzler",
+      "personId": 22690,
+      "slug": "/person/22690",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Jürgen Knieper",
+      "personId": 19854,
+      "slug": "/person/19854",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:31.356Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

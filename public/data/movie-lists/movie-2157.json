@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Retro Science Fiction",
+      "url_path": "retro-science-fiction",
+      "description": "Retro Science Fiction collection",
+      "category": "adventure",
+      "connectionReason": "Part of Retro Science Fiction collection"
+    },
+    {
+      "name": "Foster Family Adventures",
+      "url_path": "foster-family-adventures",
+      "description": "Foster Family Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Foster Family Adventures collection"
+    },
+    {
+      "name": "CGI Spectacle Adventures [OVERSIZED]",
+      "url_path": "cgi-spectacle-adventures-oversized-",
+      "description": "CGI Spectacle Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of CGI Spectacle Adventures [OVERSIZED] collection"
+    },
+    {
+      "name": "Space Exploration Missions",
+      "url_path": "space-exploration-missions",
+      "description": "Space Exploration Missions collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Exploration Missions collection"
+    },
+    {
+      "name": "Space Colony Disasters",
+      "url_path": "space-colony-disasters",
+      "description": "Space Colony Disasters collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Space Colony Disasters collection"
+    },
+    {
+      "name": "Retro Space Adventure (Part 1)",
+      "url_path": "retro-space-adventure-part-1-",
+      "description": "Retro Space Adventure (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Retro Space Adventure (Part 1) collection"
+    },
+    {
+      "name": "Literary SciFi Adaptations (Part 1)",
+      "url_path": "literary-scifi-adaptations-part-1-",
+      "description": "Literary SciFi Adaptations (Part 1) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Literary SciFi Adaptations (Part 1) collection"
+    }
+  ],
+  "totalLists": 7
+}

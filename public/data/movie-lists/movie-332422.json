@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Vigilante Justice",
+      "url_path": "vigilante-justice",
+      "description": "Vigilante Justice collection",
+      "category": "crime",
+      "connectionReason": "Part of Vigilante Justice collection"
+    },
+    {
+      "name": "Revenge Crime Dramas (Part 2)",
+      "url_path": "revenge-crime-dramas-part-2-",
+      "description": "Revenge Crime Dramas (Part 2) collection",
+      "category": "crime",
+      "connectionReason": "Part of Revenge Crime Dramas (Part 2) collection"
+    },
+    {
+      "name": "Criminal Family Dynamics (Part 1)",
+      "url_path": "criminal-family-dynamics-part-1-",
+      "description": "Criminal Family Dynamics (Part 1) collection",
+      "category": "crime",
+      "connectionReason": "Part of Criminal Family Dynamics (Part 1) collection"
+    },
+    {
+      "name": "Classic Comic Heroes",
+      "url_path": "classic-comic-heroes",
+      "description": "Classic Comic Heroes collection",
+      "category": "superhero",
+      "connectionReason": "Part of Classic Comic Heroes collection"
+    },
+    {
+      "name": "Philosophical Superhero Stories",
+      "url_path": "philosophical-superhero-stories",
+      "description": "Philosophical Superhero Stories collection",
+      "category": "superhero",
+      "connectionReason": "Part of Philosophical Superhero Stories collection"
+    },
+    {
+      "name": "Anti-Hero Protagonists",
+      "url_path": "anti-hero-protagonists",
+      "description": "Anti-Hero Protagonists collection",
+      "category": "superhero",
+      "connectionReason": "Part of Anti-Hero Protagonists collection"
+    },
+    {
+      "name": "Urban Crime Vigilantes",
+      "url_path": "urban-crime-vigilantes",
+      "description": "Urban Crime Vigilantes collection",
+      "category": "superhero",
+      "connectionReason": "Part of Urban Crime Vigilantes collection"
+    }
+  ],
+  "totalLists": 7
+}

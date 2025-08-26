@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Bank Heist Films",
+      "url_path": "bank-heist-films",
+      "description": "Bank Heist Films collection",
+      "category": "crime",
+      "connectionReason": "Part of Bank Heist Films collection"
+    },
+    {
+      "name": "Elderly Criminal Retirees",
+      "url_path": "elderly-criminal-retirees",
+      "description": "Elderly Criminal Retirees collection",
+      "category": "crime",
+      "connectionReason": "Part of Elderly Criminal Retirees collection"
+    },
+    {
+      "name": "True Crime Period Dramas (Part 5)",
+      "url_path": "true-crime-period-dramas-part-5-",
+      "description": "True Crime Period Dramas (Part 5) collection",
+      "category": "crime",
+      "connectionReason": "Part of True Crime Period Dramas (Part 5) collection"
+    },
+    {
+      "name": "Professional Criminal Crews (Part 3)",
+      "url_path": "professional-criminal-crews-part-3-",
+      "description": "Professional Criminal Crews (Part 3) collection",
+      "category": "crime",
+      "connectionReason": "Part of Professional Criminal Crews (Part 3) collection"
+    }
+  ],
+  "totalLists": 4
+}

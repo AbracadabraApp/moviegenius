@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Social Media Horror",
+      "url_path": "social-media-horror",
+      "description": "Social Media Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Social Media Horror collection"
+    },
+    {
+      "name": "Cursed Technology Horror",
+      "url_path": "cursed-technology-horror",
+      "description": "Cursed Technology Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Cursed Technology Horror collection"
+    },
+    {
+      "name": "Found Footage Horror (Part 1)",
+      "url_path": "found-footage-horror-part-1-",
+      "description": "Found Footage Horror (Part 1) collection",
+      "category": "horror",
+      "connectionReason": "Part of Found Footage Horror (Part 1) collection"
+    },
+    {
+      "name": "Occult Ritual Horror (Part 2)",
+      "url_path": "occult-ritual-horror-part-2-",
+      "description": "Occult Ritual Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Occult Ritual Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Millennial NYC Thrillers",
+      "url_path": "millennial-nyc-thrillers",
+      "description": "Millennial NYC Thrillers collection",
+      "category": "crime",
+      "connectionReason": "Part of Millennial NYC Thrillers collection"
+    },
+    {
+      "name": "Corporate Crime Dramas",
+      "url_path": "corporate-crime-dramas",
+      "description": "Corporate Crime Dramas collection",
+      "category": "crime",
+      "connectionReason": "Part of Corporate Crime Dramas collection"
+    },
+    {
+      "name": "Youth Gang Dramas (Part 2)",
+      "url_path": "youth-gang-dramas-part-2-",
+      "description": "Youth Gang Dramas (Part 2) collection",
+      "category": "crime",
+      "connectionReason": "Part of Youth Gang Dramas (Part 2) collection"
+    },
+    {
+      "name": "Millennial Indie Thrillers",
+      "url_path": "millennial-indie-thrillers",
+      "description": "Millennial Indie Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Millennial Indie Thrillers collection"
+    },
+    {
+      "name": "One Night Thrillers (Part 3)",
+      "url_path": "one-night-thrillers-part-3-",
+      "description": "One Night Thrillers (Part 3) collection",
+      "category": "thriller",
+      "connectionReason": "Part of One Night Thrillers (Part 3) collection"
+    },
+    {
+      "name": "Tech Industry Conspiracy (Part 2)",
+      "url_path": "tech-industry-conspiracy-part-2-",
+      "description": "Tech Industry Conspiracy (Part 2) collection",
+      "category": "thriller",
+      "connectionReason": "Part of Tech Industry Conspiracy (Part 2) collection"
+    }
+  ],
+  "totalLists": 6
+}

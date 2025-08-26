@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Classic Italian Gothic",
+      "url_path": "classic-italian-gothic",
+      "description": "Classic Italian Gothic collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Italian Gothic collection"
+    },
+    {
+      "name": "Occult Ritual Horror (Part 2)",
+      "url_path": "occult-ritual-horror-part-2-",
+      "description": "Occult Ritual Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Occult Ritual Horror (Part 2) collection"
+    },
+    {
+      "name": "Folk Religion Horror (Part 3)",
+      "url_path": "folk-religion-horror-part-3-",
+      "description": "Folk Religion Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Folk Religion Horror (Part 3) collection"
+    },
+    {
+      "name": "Extreme Gore Horror (Part 2)",
+      "url_path": "extreme-gore-horror-part-2-",
+      "description": "Extreme Gore Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Extreme Gore Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

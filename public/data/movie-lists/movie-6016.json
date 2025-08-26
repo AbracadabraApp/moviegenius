@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Casino Heist Films",
+      "url_path": "casino-heist-films",
+      "description": "Casino Heist Films collection",
+      "category": "crime",
+      "connectionReason": "Part of Casino Heist Films collection"
+    },
+    {
+      "name": "Art Heist Films",
+      "url_path": "art-heist-films",
+      "description": "Art Heist Films collection",
+      "category": "crime",
+      "connectionReason": "Part of Art Heist Films collection"
+    },
+    {
+      "name": "European Crime Films (Part 4)",
+      "url_path": "european-crime-films-part-4-",
+      "description": "European Crime Films (Part 4) collection",
+      "category": "crime",
+      "connectionReason": "Part of European Crime Films (Part 4) collection"
+    },
+    {
+      "name": "Professional Criminal Crews (Part 2)",
+      "url_path": "professional-criminal-crews-part-2-",
+      "description": "Professional Criminal Crews (Part 2) collection",
+      "category": "crime",
+      "connectionReason": "Part of Professional Criminal Crews (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Coming-of-Age Animation",
+      "url_path": "coming-of-age-animation",
+      "description": "Coming-of-Age Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Coming-of-Age Animation collection"
+    },
+    {
+      "name": "Grief and Loss Stories",
+      "url_path": "grief-and-loss-stories",
+      "description": "Grief and Loss Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Grief and Loss Stories collection"
+    },
+    {
+      "name": "Mortality and Legacy",
+      "url_path": "mortality-and-legacy",
+      "description": "Mortality and Legacy collection",
+      "category": "animation",
+      "connectionReason": "Part of Mortality and Legacy collection"
+    }
+  ],
+  "totalLists": 3
+}

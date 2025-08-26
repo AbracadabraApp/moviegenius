@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Splatter Comedy Films",
+      "url_path": "splatter-comedy-films",
+      "description": "Splatter Comedy Films collection",
+      "category": "comedy",
+      "connectionReason": "Part of Splatter Comedy Films collection"
+    },
+    {
+      "name": "DIY Filmmaking Adventures",
+      "url_path": "diy-filmmaking-adventures",
+      "description": "DIY Filmmaking Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of DIY Filmmaking Adventures collection"
+    },
+    {
+      "name": "Horror Movie Parodies (Part 4)",
+      "url_path": "horror-movie-parodies-part-4-",
+      "description": "Horror Movie Parodies (Part 4) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Horror Movie Parodies (Part 4) collection"
+    },
+    {
+      "name": "Exploitation Cinema Homage",
+      "url_path": "exploitation-cinema-homage",
+      "description": "Exploitation Cinema Homage collection",
+      "category": "horror",
+      "connectionReason": "Part of Exploitation Cinema Homage collection"
+    },
+    {
+      "name": "Meta Horror Films (Part 3)",
+      "url_path": "meta-horror-films-part-3-",
+      "description": "Meta Horror Films (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Meta Horror Films (Part 3) collection"
+    },
+    {
+      "name": "Extreme Gore Horror (Part 3)",
+      "url_path": "extreme-gore-horror-part-3-",
+      "description": "Extreme Gore Horror (Part 3) collection",
+      "category": "horror",
+      "connectionReason": "Part of Extreme Gore Horror (Part 3) collection"
+    }
+  ],
+  "totalLists": 6
+}

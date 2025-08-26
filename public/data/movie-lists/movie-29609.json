@@ -1,0 +1,47 @@
+{
+  "lists": [
+    {
+      "name": "Classic Monster Comedies",
+      "url_path": "classic-monster-comedies",
+      "description": "Classic Monster Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Classic Monster Comedies collection"
+    },
+    {
+      "name": "Haunted Inn Comedies",
+      "url_path": "haunted-inn-comedies",
+      "description": "Haunted Inn Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Haunted Inn Comedies collection"
+    },
+    {
+      "name": "Single Day Misfortunes (Part 6)",
+      "url_path": "single-day-misfortunes-part-6-",
+      "description": "Single Day Misfortunes (Part 6) collection",
+      "category": "comedy",
+      "connectionReason": "Part of Single Day Misfortunes (Part 6) collection"
+    },
+    {
+      "name": "Confined Space Thrillers (Part 6)",
+      "url_path": "confined-space-thrillers-part-6-",
+      "description": "Confined Space Thrillers (Part 6) collection",
+      "category": "horror",
+      "connectionReason": "Part of Confined Space Thrillers (Part 6) collection"
+    },
+    {
+      "name": "Classic Monster Comedy (Part 5)",
+      "url_path": "classic-monster-comedy-part-5-",
+      "description": "Classic Monster Comedy (Part 5) collection",
+      "category": "horror",
+      "connectionReason": "Part of Classic Monster Comedy (Part 5) collection"
+    },
+    {
+      "name": "Ghost Story Horror (Part 2)",
+      "url_path": "ghost-story-horror-part-2-",
+      "description": "Ghost Story Horror (Part 2) collection",
+      "category": "horror",
+      "connectionReason": "Part of Ghost Story Horror (Part 2) collection"
+    }
+  ],
+  "totalLists": 6
+}

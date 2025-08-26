@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Flying City Adventures",
+      "url_path": "flying-city-adventures",
+      "description": "Flying City Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Flying City Adventures collection"
+    },
+    {
+      "name": "Monster Sympathy Stories",
+      "url_path": "monster-sympathy-stories",
+      "description": "Monster Sympathy Stories collection",
+      "category": "adventure",
+      "connectionReason": "Part of Monster Sympathy Stories collection"
+    },
+    {
+      "name": "CGI Spectacle Adventures [OVERSIZED]",
+      "url_path": "cgi-spectacle-adventures-oversized-",
+      "description": "CGI Spectacle Adventures [OVERSIZED] collection",
+      "category": "adventure",
+      "connectionReason": "Part of CGI Spectacle Adventures [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 3
+}

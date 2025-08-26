@@ -1,0 +1,54 @@
+{
+  "lists": [
+    {
+      "name": "Flying City Adventures",
+      "url_path": "flying-city-adventures",
+      "description": "Flying City Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Flying City Adventures collection"
+    },
+    {
+      "name": "Obsessive Dream Quests",
+      "url_path": "obsessive-dream-quests",
+      "description": "Obsessive Dream Quests collection",
+      "category": "adventure",
+      "connectionReason": "Part of Obsessive Dream Quests collection"
+    },
+    {
+      "name": "Lost World Exploration",
+      "url_path": "lost-world-exploration",
+      "description": "Lost World Exploration collection",
+      "category": "adventure",
+      "connectionReason": "Part of Lost World Exploration collection"
+    },
+    {
+      "name": "Coming-of-Age Animation",
+      "url_path": "coming-of-age-animation",
+      "description": "Coming-of-Age Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Coming-of-Age Animation collection"
+    },
+    {
+      "name": "Found Family Stories",
+      "url_path": "found-family-stories",
+      "description": "Found Family Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Found Family Stories collection"
+    },
+    {
+      "name": "Pixar Golden Age",
+      "url_path": "pixar-golden-age",
+      "description": "Pixar Golden Age collection",
+      "category": "animation",
+      "connectionReason": "Part of Pixar Golden Age collection"
+    },
+    {
+      "name": "Grief and Loss Stories",
+      "url_path": "grief-and-loss-stories",
+      "description": "Grief and Loss Stories collection",
+      "category": "animation",
+      "connectionReason": "Part of Grief and Loss Stories collection"
+    }
+  ],
+  "totalLists": 7
+}

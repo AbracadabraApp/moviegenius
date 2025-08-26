@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Psychic Powers Survival",
+      "url_path": "psychic-powers-survival",
+      "description": "Psychic Powers Survival collection",
+      "category": "thriller",
+      "connectionReason": "Part of Psychic Powers Survival collection"
+    },
+    {
+      "name": "Criminal Profiler Thrillers",
+      "url_path": "criminal-profiler-thrillers",
+      "description": "Criminal Profiler Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Criminal Profiler Thrillers collection"
+    },
+    {
+      "name": "Government Cover-up Thrillers",
+      "url_path": "government-cover-up-thrillers",
+      "description": "Government Cover-up Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Government Cover-up Thrillers collection"
+    }
+  ],
+  "totalLists": 3
+}

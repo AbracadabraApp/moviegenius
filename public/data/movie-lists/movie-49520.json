@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Body Swap Comedies",
+      "url_path": "body-swap-comedies",
+      "description": "Body Swap Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Body Swap Comedies collection"
+    },
+    {
+      "name": "Identity Swap Existentialism",
+      "url_path": "identity-swap-existentialism",
+      "description": "Identity Swap Existentialism collection",
+      "category": "comedy",
+      "connectionReason": "Part of Identity Swap Existentialism collection"
+    },
+    {
+      "name": "Male Friendship Stories",
+      "url_path": "male-friendship-stories",
+      "description": "Male Friendship Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Male Friendship Stories collection"
+    }
+  ],
+  "totalLists": 3
+}

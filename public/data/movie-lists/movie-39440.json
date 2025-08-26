@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Social Experiment Documentaries",
+      "url_path": "social-experiment-documentaries",
+      "description": "Social Experiment Documentaries collection",
+      "category": "documentary",
+      "connectionReason": "Part of Social Experiment Documentaries collection"
+    },
+    {
+      "name": "Public Institution Studies",
+      "url_path": "public-institution-studies",
+      "description": "Public Institution Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Public Institution Studies collection"
+    },
+    {
+      "name": "Education System Studies",
+      "url_path": "education-system-studies",
+      "description": "Education System Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Education System Studies collection"
+    }
+  ],
+  "totalLists": 3
+}

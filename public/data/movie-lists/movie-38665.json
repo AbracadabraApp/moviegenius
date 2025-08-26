@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Modern Western Remakes",
+      "url_path": "modern-western-remakes",
+      "description": "Modern Western Remakes collection",
+      "category": "western",
+      "connectionReason": "Part of Modern Western Remakes collection"
+    },
+    {
+      "name": "Revenge Mission Westerns",
+      "url_path": "revenge-mission-westerns",
+      "description": "Revenge Mission Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Revenge Mission Westerns collection"
+    },
+    {
+      "name": "Lawmen Partnership Westerns",
+      "url_path": "lawmen-partnership-westerns",
+      "description": "Lawmen Partnership Westerns collection",
+      "category": "western",
+      "connectionReason": "Part of Lawmen Partnership Westerns collection"
+    },
+    {
+      "name": "Historical Figure Biopics",
+      "url_path": "historical-figure-biopics",
+      "description": "Historical Figure Biopics collection",
+      "category": "western",
+      "connectionReason": "Part of Historical Figure Biopics collection"
+    }
+  ],
+  "totalLists": 4
+}

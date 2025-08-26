@@ -1,0 +1,123 @@
+{
+  "movieId": "1b511883-862d-4f1c-b9a1-724a29ca94ac",
+  "tmdbId": 460,
+  "title": "Go for Zucker",
+  "year": 2004,
+  "analysis": {
+    "keyElements": {
+      "director": "Dani Levy",
+      "writers": [
+        "Dani Levy",
+        "Holger Franke"
+      ],
+      "stars": [
+        "Henry Hübchen",
+        "Hannelore Elsner",
+        "Udo Samel"
+      ],
+      "genre": "Comedy",
+      "releaseYear": 2004,
+      "cinematographer": "Carl-Friedrich Koschnick",
+      "composer": "Niki Reiser",
+      "studio": "X Filme Creative Pool"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking portrayal of contemporary Jewish life in Germany with humor and sensitivity",
+        "Masterful balance of family drama and screwball comedy elements",
+        "Important milestone in post-reunification German cinema"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Keeping the Faith",
+        "year": 2000,
+        "description": "Similar exploration of modern Jewish identity through comedy"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Post-reunification German Cinema",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Dani Levy",
+      "personId": 7381,
+      "slug": "/person/7381",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Dani Levy",
+        "personId": 7381,
+        "slug": "/person/7381",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Holger Franke",
+        "personId": 14478,
+        "slug": "/person/14478",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Henry Hübchen",
+        "personId": 14168,
+        "slug": "/person/14168",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Hannelore Elsner",
+        "personId": 13550,
+        "slug": "/person/13550",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Udo Samel",
+        "personId": 37185,
+        "slug": "/person/37185",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Carl-Friedrich Koschnick",
+      "personId": 4919,
+      "slug": "/person/4919",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Niki Reiser",
+      "personId": 27638,
+      "slug": "/person/27638",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:39.611Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

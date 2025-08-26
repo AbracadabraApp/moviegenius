@@ -1,0 +1,26 @@
+{
+  "lists": [
+    {
+      "name": "Climate Disaster Films",
+      "url_path": "climate-disaster-films",
+      "description": "Climate Disaster Films collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Climate Disaster Films collection"
+    },
+    {
+      "name": "Urban Fantasy SciFi (Part 2)",
+      "url_path": "urban-fantasy-scifi-part-2-",
+      "description": "Urban Fantasy SciFi (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Urban Fantasy SciFi (Part 2) collection"
+    },
+    {
+      "name": "Totalitarian Warning Films (Part 2)",
+      "url_path": "totalitarian-warning-films-part-2-",
+      "description": "Totalitarian Warning Films (Part 2) collection",
+      "category": "science fiction",
+      "connectionReason": "Part of Totalitarian Warning Films (Part 2) collection"
+    }
+  ],
+  "totalLists": 3
+}

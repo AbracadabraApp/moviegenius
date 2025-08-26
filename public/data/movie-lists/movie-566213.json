@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Nature Living Chronicles",
+      "url_path": "nature-living-chronicles",
+      "description": "Nature Living Chronicles collection",
+      "category": "documentary",
+      "connectionReason": "Part of Nature Living Chronicles collection"
+    },
+    {
+      "name": "Agricultural Life Studies",
+      "url_path": "agricultural-life-studies",
+      "description": "Agricultural Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Agricultural Life Studies collection"
+    },
+    {
+      "name": "Rural Life Studies",
+      "url_path": "rural-life-studies",
+      "description": "Rural Life Studies collection",
+      "category": "documentary",
+      "connectionReason": "Part of Rural Life Studies collection"
+    },
+    {
+      "name": "Environmental Impact Studies (Part 2)",
+      "url_path": "environmental-impact-studies-part-2-",
+      "description": "Environmental Impact Studies (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Environmental Impact Studies (Part 2) collection"
+    }
+  ],
+  "totalLists": 4
+}

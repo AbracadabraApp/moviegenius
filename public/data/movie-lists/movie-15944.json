@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Live-Action Animal Adventures",
+      "url_path": "live-action-animal-adventures",
+      "description": "Live-Action Animal Adventures collection",
+      "category": "comedy",
+      "connectionReason": "Part of Live-Action Animal Adventures collection"
+    },
+    {
+      "name": "Body Swap Comedies",
+      "url_path": "body-swap-comedies",
+      "description": "Body Swap Comedies collection",
+      "category": "comedy",
+      "connectionReason": "Part of Body Swap Comedies collection"
+    },
+    {
+      "name": "Monster Transformation Comedy",
+      "url_path": "monster-transformation-comedy",
+      "description": "Monster Transformation Comedy collection",
+      "category": "comedy",
+      "connectionReason": "Part of Monster Transformation Comedy collection"
+    },
+    {
+      "name": "Teen Coming-of-Age Stories",
+      "url_path": "teen-coming-of-age-stories",
+      "description": "Teen Coming-of-Age Stories collection",
+      "category": "comedy",
+      "connectionReason": "Part of Teen Coming-of-Age Stories collection"
+    }
+  ],
+  "totalLists": 4
+}

@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Sports & Athletes",
+      "url_path": "sports-athletes",
+      "description": "Sports & Athletes collection",
+      "category": "documentary",
+      "connectionReason": "Part of Sports & Athletes collection"
+    },
+    {
+      "name": "Professional Surfing History",
+      "url_path": "professional-surfing-history",
+      "description": "Professional Surfing History collection",
+      "category": "documentary",
+      "connectionReason": "Part of Professional Surfing History collection"
+    },
+    {
+      "name": "1970s Cultural Retrospectives (Part 2)",
+      "url_path": "1970s-cultural-retrospectives-part-2-",
+      "description": "1970s Cultural Retrospectives (Part 2) collection",
+      "category": "documentary",
+      "connectionReason": "Part of 1970s Cultural Retrospectives (Part 2) collection"
+    },
+    {
+      "name": "Extreme Sports Documentaries (Part 1)",
+      "url_path": "extreme-sports-documentaries-part-1-",
+      "description": "Extreme Sports Documentaries (Part 1) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Extreme Sports Documentaries (Part 1) collection"
+    }
+  ],
+  "totalLists": 4
+}

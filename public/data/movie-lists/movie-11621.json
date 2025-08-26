@@ -1,0 +1,61 @@
+{
+  "lists": [
+    {
+      "name": "Early Aviation Adventures",
+      "url_path": "early-aviation-adventures",
+      "description": "Early Aviation Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Early Aviation Adventures collection"
+    },
+    {
+      "name": "Supernatural Animal Tales",
+      "url_path": "supernatural-animal-tales",
+      "description": "Supernatural Animal Tales collection",
+      "category": "adventure",
+      "connectionReason": "Part of Supernatural Animal Tales collection"
+    },
+    {
+      "name": "European Castle Heists",
+      "url_path": "european-castle-heists",
+      "description": "European Castle Heists collection",
+      "category": "adventure",
+      "connectionReason": "Part of European Castle Heists collection"
+    },
+    {
+      "name": "Interwar Period Adventures",
+      "url_path": "interwar-period-adventures",
+      "description": "Interwar Period Adventures collection",
+      "category": "adventure",
+      "connectionReason": "Part of Interwar Period Adventures collection"
+    },
+    {
+      "name": "Political Animation Films",
+      "url_path": "political-animation-films",
+      "description": "Political Animation Films collection",
+      "category": "animation",
+      "connectionReason": "Part of Political Animation Films collection"
+    },
+    {
+      "name": "European-Set Animations",
+      "url_path": "european-set-animations",
+      "description": "European-Set Animations collection",
+      "category": "animation",
+      "connectionReason": "Part of European-Set Animations collection"
+    },
+    {
+      "name": "Adult Existential Drama",
+      "url_path": "adult-existential-drama",
+      "description": "Adult Existential Drama collection",
+      "category": "animation",
+      "connectionReason": "Part of Adult Existential Drama collection"
+    },
+    {
+      "name": "Military Action Animation",
+      "url_path": "military-action-animation",
+      "description": "Military Action Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Military Action Animation collection"
+    }
+  ],
+  "totalLists": 8
+}

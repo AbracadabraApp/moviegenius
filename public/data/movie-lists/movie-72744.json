@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Album Creation Stories",
+      "url_path": "album-creation-stories",
+      "description": "Album Creation Stories collection",
+      "category": "documentary",
+      "connectionReason": "Part of Album Creation Stories collection"
+    },
+    {
+      "name": "Rise and Fall Stories (Part 5)",
+      "url_path": "rise-and-fall-stories-part-5-",
+      "description": "Rise and Fall Stories (Part 5) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Rise and Fall Stories (Part 5) collection"
+    },
+    {
+      "name": "Cultural Icon Biographies (Part 9)",
+      "url_path": "cultural-icon-biographies-part-9-",
+      "description": "Cultural Icon Biographies (Part 9) collection",
+      "category": "documentary",
+      "connectionReason": "Part of Cultural Icon Biographies (Part 9) collection"
+    },
+    {
+      "name": "Rock History Documentaries",
+      "url_path": "rock-history-documentaries",
+      "description": "Rock History Documentaries collection",
+      "category": "music",
+      "connectionReason": "Part of Rock History Documentaries collection"
+    },
+    {
+      "name": "Music Industry Rise-Fall [OVERSIZED]",
+      "url_path": "music-industry-rise-fall-oversized-",
+      "description": "Music Industry Rise-Fall [OVERSIZED] collection",
+      "category": "music",
+      "connectionReason": "Part of Music Industry Rise-Fall [OVERSIZED] collection"
+    }
+  ],
+  "totalLists": 5
+}

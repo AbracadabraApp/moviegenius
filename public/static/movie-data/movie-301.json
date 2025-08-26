@@ -1,0 +1,151 @@
+{
+  "movieId": "48646333-da52-4eba-8e53-5246eb5304f3",
+  "tmdbId": 301,
+  "title": "Rio Bravo",
+  "year": 1959,
+  "analysis": {
+    "keyElements": {
+      "director": "Howard Hawks",
+      "writers": [
+        "Jules Furthman",
+        "Leigh Brackett"
+      ],
+      "stars": [
+        "John Wayne",
+        "Dean Martin",
+        "Ricky Nelson",
+        "Angie Dickinson"
+      ],
+      "genre": "Western",
+      "releaseYear": 1959,
+      "cinematographer": "Russell Harlan",
+      "composer": "Dimitri Tiomkin",
+      "studio": "Warner Bros."
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Masterful blend of tension, humor, and character development that redefined Western storytelling",
+        "Career-defining performances from both John Wayne and Dean Martin",
+        "Perfect example of Howard Hawks' signature themes of professional competence and group loyalty"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "High Noon",
+        "year": 1952,
+        "description": "The thematic counterpoint that inspired Rio Bravo's creation"
+      },
+      {
+        "title": "El Dorado",
+        "year": 1967,
+        "description": "Hawks' spiritual remake with many similar themes and cast"
+      },
+      {
+        "title": "Assault on Precinct 13",
+        "year": 1976,
+        "description": "Modern urban remake of Rio Bravo's siege scenario"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Howard Hawks Directing Style",
+        "category": "Filmmaking",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Western Genre Evolution",
+        "category": "Film History",
+        "difficulty": "advanced"
+      },
+      {
+        "topic": "Character Development in Action Films",
+        "category": "Screenwriting",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Howard Hawks",
+      "personId": 14580,
+      "slug": "/person/14580",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Jules Furthman",
+        "personId": 19604,
+        "slug": "/person/19604",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Leigh Brackett",
+        "personId": 22116,
+        "slug": "/person/22116",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "John Wayne",
+        "personId": 18777,
+        "slug": "/person/18777",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Dean Martin",
+        "personId": 8288,
+        "slug": "/person/8288",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Ricky Nelson",
+        "personId": 31290,
+        "slug": "/person/31290",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Angie Dickinson",
+        "personId": 1939,
+        "slug": "/person/1939",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Russell Harlan",
+      "personId": 32673,
+      "slug": "/person/32673",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Dimitri Tiomkin",
+      "personId": 8745,
+      "slug": "/person/8745",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:22.073Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

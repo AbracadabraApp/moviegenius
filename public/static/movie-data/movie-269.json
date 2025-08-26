@@ -1,0 +1,125 @@
+{
+  "movieId": "f3e6d16a-5ab2-464a-a46a-478ccfdfc4b2",
+  "tmdbId": 269,
+  "title": "Breathless",
+  "year": 1960,
+  "analysis": {
+    "keyElements": {
+      "director": "Jean-Luc Godard",
+      "writers": [
+        "Jean-Luc Godard",
+        "François Truffaut"
+      ],
+      "stars": [
+        "Jean-Paul Belmondo",
+        "Jean Seberg"
+      ],
+      "genre": "Crime Drama",
+      "releaseYear": 1960,
+      "cinematographer": "Raoul Coutard",
+      "composer": "Martial Solal",
+      "studio": "Les Films Impéria"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Revolutionary jump-cut editing technique that changed cinema forever",
+        "Defined the French New Wave movement and influenced countless filmmakers",
+        "Captures the rebellious spirit of youth culture with enduring authenticity"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "The 400 Blows",
+        "year": 1959,
+        "description": "Fellow French New Wave masterpiece that helped launch the movement"
+      },
+      {
+        "title": "Band of Outsiders",
+        "year": 1964,
+        "description": "Godard's spiritual successor to Breathless"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "French New Wave",
+        "category": "Film Movement",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Jump Cut Editing",
+        "category": "Technical Innovation",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Jean-Luc Godard",
+      "personId": 16603,
+      "slug": "/person/16603",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Jean-Luc Godard",
+        "personId": 16603,
+        "slug": "/person/16603",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "François Truffaut",
+        "personId": 11321,
+        "slug": "/person/11321",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Jean-Paul Belmondo",
+        "personId": 16670,
+        "slug": "/person/16670",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jean Seberg",
+        "personId": 16735,
+        "slug": "/person/16735",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Raoul Coutard",
+      "personId": 30415,
+      "slug": "/person/30415",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Martial Solal",
+      "personId": 24538,
+      "slug": "/person/24538",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:17.824Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

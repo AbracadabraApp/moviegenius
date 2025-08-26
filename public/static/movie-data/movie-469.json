@@ -1,0 +1,125 @@
+{
+  "movieId": "c47e60c5-41a9-4964-a9bd-ced33dff5e62",
+  "tmdbId": 469,
+  "title": "Stranger Than Paradise",
+  "year": 1984,
+  "analysis": {
+    "keyElements": {
+      "director": "Jim Jarmusch",
+      "writers": [
+        "Jim Jarmusch"
+      ],
+      "stars": [
+        "John Lurie",
+        "Eszter Balint",
+        "Richard Edson"
+      ],
+      "genre": "Independent Comedy-Drama",
+      "releaseYear": 1984,
+      "cinematographer": "Tom DiCillo",
+      "composer": "John Lurie",
+      "studio": "Samuel Goldwyn Company"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "YES",
+      "reasons": [
+        "Groundbreaking minimalist style that influenced decades of independent cinema",
+        "Perfect deadpan humor and authentic character dynamics",
+        "Masterful exploration of American identity through immigrant perspectives"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Down By Law",
+        "year": 1986,
+        "description": "Jarmusch's follow-up film, expanding his minimalist style"
+      },
+      {
+        "title": "Paris, Texas",
+        "year": 1984,
+        "description": "Contemporary road movie exploring similar themes of alienation"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "American Independent Cinema Movement",
+        "category": "Film History",
+        "difficulty": "intermediate"
+      },
+      {
+        "topic": "Minimalist Filmmaking Techniques",
+        "category": "Direction",
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [],
+    "totalLists": 0
+  },
+  "contributors": {
+    "director": {
+      "name": "Jim Jarmusch",
+      "personId": 17421,
+      "slug": "/person/17421",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Jim Jarmusch",
+        "personId": 17421,
+        "slug": "/person/17421",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "John Lurie",
+        "personId": 18419,
+        "slug": "/person/18419",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Eszter Balint",
+        "personId": 10660,
+        "slug": "/person/10660",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Richard Edson",
+        "personId": 30975,
+        "slug": "/person/30975",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Tom DiCillo",
+      "personId": 36542,
+      "slug": "/person/36542",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "John Lurie",
+      "personId": 18419,
+      "slug": "/person/18419",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T04:05:40.406Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": null,
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "name": "Financial Crisis Thrillers",
+      "url_path": "financial-crisis-thrillers",
+      "description": "Financial Crisis Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Financial Crisis Thrillers collection"
+    },
+    {
+      "name": "Corporate Conspiracy Thrillers",
+      "url_path": "corporate-conspiracy-thrillers",
+      "description": "Corporate Conspiracy Thrillers collection",
+      "category": "thriller",
+      "connectionReason": "Part of Corporate Conspiracy Thrillers collection"
+    }
+  ],
+  "totalLists": 2
+}

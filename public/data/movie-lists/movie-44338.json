@@ -1,0 +1,33 @@
+{
+  "lists": [
+    {
+      "name": "Psychological Thriller Animation",
+      "url_path": "psychological-thriller-animation",
+      "description": "Psychological Thriller Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Psychological Thriller Animation collection"
+    },
+    {
+      "name": "Surrealist Animation Classics",
+      "url_path": "surrealist-animation-classics",
+      "description": "Surrealist Animation Classics collection",
+      "category": "animation",
+      "connectionReason": "Part of Surrealist Animation Classics collection"
+    },
+    {
+      "name": "Adult Existential Drama",
+      "url_path": "adult-existential-drama",
+      "description": "Adult Existential Drama collection",
+      "category": "animation",
+      "connectionReason": "Part of Adult Existential Drama collection"
+    },
+    {
+      "name": "Political Allegory Animation",
+      "url_path": "political-allegory-animation",
+      "description": "Political Allegory Animation collection",
+      "category": "animation",
+      "connectionReason": "Part of Political Allegory Animation collection"
+    }
+  ],
+  "totalLists": 4
+}

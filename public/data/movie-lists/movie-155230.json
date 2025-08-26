@@ -1,0 +1,40 @@
+{
+  "lists": [
+    {
+      "name": "Gothic Family Curses",
+      "url_path": "gothic-family-curses",
+      "description": "Gothic Family Curses collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Gothic Family Curses collection"
+    },
+    {
+      "name": "Demonic Bargain Tales",
+      "url_path": "demonic-bargain-tales",
+      "description": "Demonic Bargain Tales collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Demonic Bargain Tales collection"
+    },
+    {
+      "name": "Identity Shifting Fantasy",
+      "url_path": "identity-shifting-fantasy",
+      "description": "Identity Shifting Fantasy collection",
+      "category": "fantasy",
+      "connectionReason": "Part of Identity Shifting Fantasy collection"
+    },
+    {
+      "name": "German Expressionist Horror",
+      "url_path": "german-expressionist-horror",
+      "description": "German Expressionist Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of German Expressionist Horror collection"
+    },
+    {
+      "name": "Identity Horror",
+      "url_path": "identity-horror",
+      "description": "Identity Horror collection",
+      "category": "horror",
+      "connectionReason": "Part of Identity Horror collection"
+    }
+  ],
+  "totalLists": 5
+}
