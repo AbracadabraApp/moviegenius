@@ -1,0 +1,141 @@
+{
+  "movieId": "d98752c2-c156-44ae-842d-2f3c68730091",
+  "tmdbId": 27,
+  "title": "9 Songs",
+  "year": 2004,
+  "analysis": {
+    "keyElements": {
+      "director": "Michael Winterbottom",
+      "writers": [
+        "Michael Winterbottom"
+      ],
+      "stars": [
+        "Kieran O'Brien",
+        "Margo Stilley"
+      ],
+      "genre": "Drama/Romance",
+      "releaseYear": 2004,
+      "cinematographer": "Marcel Zyskind",
+      "composer": "Various Artists",
+      "studio": "Revolution Films"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "NO",
+      "reasons": [
+        "The explicit sexual content overshadows any meaningful narrative development",
+        "The experimental structure fails to create emotional investment in the characters",
+        "Watch **Last Tango in Paris** (1972) instead for a more compelling exploration of sexuality and relationships"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Last Tango in Paris",
+        "year": 1972,
+        "description": "A more nuanced exploration of sexuality and emotional isolation"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Censorship in Cinema",
+        "category": "Film History",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Sex in European Art Films",
+        "category": "Film Theory",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [
+      {
+        "name": "Anti-Romance Films",
+        "url_path": "anti-romance-films",
+        "description": "Anti-Romance Films collection",
+        "category": "romance",
+        "connectionReason": "Part of Anti-Romance Films collection"
+      },
+      {
+        "name": "Nonlinear Romance Stories (Part 1)",
+        "url_path": "nonlinear-romance-stories-part-1-",
+        "description": "Nonlinear Romance Stories (Part 1) collection",
+        "category": "romance",
+        "connectionReason": "Part of Nonlinear Romance Stories (Part 1) collection"
+      },
+      {
+        "name": "Modern Urban Romance (Part 1)",
+        "url_path": "modern-urban-romance-part-1-",
+        "description": "Modern Urban Romance (Part 1) collection",
+        "category": "romance",
+        "connectionReason": "Part of Modern Urban Romance (Part 1) collection"
+      },
+      {
+        "name": "Music-Centered Love Stories (Part 1)",
+        "url_path": "music-centered-love-stories-part-1-",
+        "description": "Music-Centered Love Stories (Part 1) collection",
+        "category": "romance",
+        "connectionReason": "Part of Music-Centered Love Stories (Part 1) collection"
+      }
+    ],
+    "totalLists": 4
+  },
+  "contributors": {
+    "director": {
+      "name": "Michael Winterbottom",
+      "personId": 26016,
+      "slug": "/person/26016",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Michael Winterbottom",
+        "personId": 26016,
+        "slug": "/person/26016",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Kieran O'Brien",
+        "personId": 20977,
+        "slug": "/person/20977",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Margo Stilley",
+        "personId": 23938,
+        "slug": "/person/23938",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Marcel Zyskind",
+      "personId": 23755,
+      "slug": "/person/23755",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Various Artists",
+      "personId": 37403,
+      "slug": "/person/37403",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T19:19:11.366Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": "static_files",
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}

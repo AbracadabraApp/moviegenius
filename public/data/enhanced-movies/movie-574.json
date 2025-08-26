@@ -1,0 +1,123 @@
+{
+  "enhancedFormat": true,
+  "movieId": "5543823f-815a-4d65-8fd0-40853866d828",
+  "tmdbId": 574,
+  "title": "The Man Who Knew Too Much",
+  "year": 1956,
+  "analysis": {
+    "keyElements": {
+      "director": "Alfred Hitchcock",
+      "writers": [
+        "John Michael Hayes",
+        "Charles Bennett"
+      ],
+      "stars": [
+        "James Stewart",
+        "Doris Day",
+        "Brenda de Banzie"
+      ],
+      "genre": "Thriller",
+      "releaseYear": 1956,
+      "cinematographer": "Robert Burks",
+      "composer": "Bernard Herrmann",
+      "studio": "Paramount Pictures"
+    },
+    "sections": [
+      {
+        "type": "plotAndCharacters",
+        "content": "An American family's Moroccan vacation transforms into a nightmare when Dr. Ben McKenna (James Stewart) and his wife Jo (Doris Day) become entangled in an international assassination plot. After their son is kidnapped to ensure their silence, they must navigate foreign conspiracies and race against time to prevent both a murder and save their child. Hitchcock expertly weaves personal drama with political intrigue, creating a thriller that works both as edge-of-your-seat entertainment and an exploration of parental anxiety.",
+        "text": "An American family's Moroccan vacation transforms into a nightmare when Dr. Ben McKenna (James Stewart) and his wife Jo (Doris Day) become entangled in an international assassination plot. After their son is kidnapped to ensure their silence, they must navigate foreign conspiracies and race against time to prevent both a murder and save their child. Hitchcock expertly weaves personal drama with political intrigue, creating a thriller that works both as edge-of-your-seat entertainment and an exploration of parental anxiety."
+      },
+      {
+        "type": "performancesAndVision",
+        "content": "Stewart brings his everyman charm to the role of a desperate father, while Doris Day delivers a career-defining dramatic performance that transcends her musical comedy background. Hitchcock, remaking his own 1934 British film, demonstrates his evolution as a director, with more refined pacing and sophisticated set pieces. The famous Royal Albert Hall sequence remains a masterclass in sustained tension, using Bernard Herrmann's score and precise editing to create unbearable suspense without dialogue.",
+        "text": "Stewart brings his everyman charm to the role of a desperate father, while Doris Day delivers a career-defining dramatic performance that transcends her musical comedy background. Hitchcock, remaking his own 1934 British film, demonstrates his evolution as a director, with more refined pacing and sophisticated set pieces. The famous Royal Albert Hall sequence remains a masterclass in sustained tension, using Bernard Herrmann's score and precise editing to create unbearable suspense without dialogue."
+      },
+      {
+        "type": "socialAndCultural",
+        "content": "The film captures Cold War anxieties while exploring the vulnerability of American innocence abroad. Released when international travel was becoming more accessible to middle-class Americans, it taps into fears about foreign threats and family security. The film's treatment of marriage and parenthood reflects 1950s values while subverting them - Jo isn't just a housewife but a former professional singer whose talents prove crucial to the plot.",
+        "text": "The film captures Cold War anxieties while exploring the vulnerability of American innocence abroad. Released when international travel was becoming more accessible to middle-class Americans, it taps into fears about foreign threats and family security. The film's treatment of marriage and parenthood reflects 1950s values while subverting them - Jo isn't just a housewife but a former professional singer whose talents prove crucial to the plot."
+      },
+      {
+        "type": "genreContext",
+        "content": "This film helped establish the 'innocent bystander' thriller template that influenced films like **North by Northwest** (1959) and **Three Days of the Condor** (1975). It perfected Hitchcock's signature blend of domestic drama with international intrigue, a formula that would influence countless films from **Frantic** (1988) to **Taken** (2008).",
+        "text": "This film helped establish the 'innocent bystander' thriller template that influenced films like **North by Northwest** (1959) and **Three Days of the Condor** (1975). It perfected Hitchcock's signature blend of domestic drama with international intrigue, a formula that would influence countless films from **Frantic** (1988) to **Taken** (2008)."
+      },
+      {
+        "type": "contemporaryRelevance",
+        "content": "The themes of parental fear and ordinary people caught in extraordinary circumstances remain powerfully relevant. Modern thrillers like **Prisoners** (2013) and **Gone Girl** (2014) echo its exploration of family trauma and the lengths parents will go to protect their children. The film's technical achievements in building suspense without relying on violence continue to influence contemporary filmmakers.",
+        "text": "The themes of parental fear and ordinary people caught in extraordinary circumstances remain powerfully relevant. Modern thrillers like **Prisoners** (2013) and **Gone Girl** (2014) echo its exploration of family trauma and the lengths parents will go to protect their children. The film's technical achievements in building suspense without relying on violence continue to influence contemporary filmmakers."
+      }
+    ],
+    "whyWatch": {
+      "recommendation": "NO",
+      "reasons": []
+    },
+    "featuredMovies": [
+      {
+        "title": "The Man Who Knew Too Much",
+        "year": 1934,
+        "description": "Hitchcock's original British version, offering fascinating comparison points"
+      },
+      {
+        "title": "North by Northwest",
+        "year": 1959,
+        "description": "Hitchcock's later masterpiece in the innocent-man-in-danger genre"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "Hitchcock's Technique",
+        "category": "Directing",
+        "difficulty": "Advanced"
+      },
+      {
+        "topic": "Cold War Cinema",
+        "category": "Film History",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [
+      {
+        "name": "International Hostage Crisis",
+        "url_path": "international-hostage-crisis",
+        "description": "International Hostage Crisis collection",
+        "category": "thriller",
+        "connectionReason": "Part of International Hostage Crisis collection"
+      },
+      {
+        "name": "Civilian Vigilante Justice",
+        "url_path": "civilian-vigilante-justice",
+        "description": "Civilian Vigilante Justice collection",
+        "category": "thriller",
+        "connectionReason": "Part of Civilian Vigilante Justice collection"
+      },
+      {
+        "name": "Political Assassination Plots",
+        "url_path": "political-assassination-plots",
+        "description": "Political Assassination Plots collection",
+        "category": "thriller",
+        "connectionReason": "Part of Political Assassination Plots collection"
+      }
+    ],
+    "totalLists": 3
+  },
+  "contributors": {
+    "director": null,
+    "writers": [],
+    "stars": [],
+    "cinematographer": null,
+    "composer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T18:45:40.104Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": "static_files",
+    "whyWatch": null,
+    "contributors": "analysis_fallback",
+    "moreIdeas": null
+  }
+}

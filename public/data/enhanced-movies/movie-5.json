@@ -1,0 +1,214 @@
+{
+  "movieId": "154892df-0017-4653-9e22-bbbf4e5f6435",
+  "tmdbId": 5,
+  "title": "Four Rooms",
+  "year": 1995,
+  "analysis": {
+    "keyElements": {
+      "director": "Allison Anders, Alexandre Rockwell, Robert Rodriguez, Quentin Tarantino",
+      "writers": [
+        "Allison Anders",
+        "Alexandre Rockwell",
+        "Robert Rodriguez",
+        "Quentin Tarantino"
+      ],
+      "stars": [
+        "Tim Roth",
+        "Madonna",
+        "Antonio Banderas",
+        "Bruce Willis"
+      ],
+      "genre": "Comedy/Crime",
+      "releaseYear": 1995,
+      "cinematographer": "Guillermo Navarro, Phil Parmet",
+      "composer": "Various",
+      "studio": "Miramax Films"
+    },
+    "sections": [],
+    "whyWatch": {
+      "recommendation": "NO",
+      "reasons": [
+        "Uneven quality across segments makes for an inconsistent viewing experience",
+        "Only Rodriguez and Tarantino segments truly deliver on the premise",
+        "Watch **Pulp Fiction** (1994) instead for better anthology-style storytelling"
+      ]
+    },
+    "featuredMovies": [
+      {
+        "title": "Pulp Fiction",
+        "year": 1994,
+        "description": "Superior example of interconnected storytelling from the same era"
+      },
+      {
+        "title": "New York Stories",
+        "year": 1989,
+        "description": "More successful anthology film with multiple directors"
+      }
+    ],
+    "exploreTopics": [
+      {
+        "topic": "90s Independent Cinema",
+        "category": "Film History",
+        "difficulty": "Intermediate"
+      },
+      {
+        "topic": "Anthology Storytelling",
+        "category": "Narrative Structure",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "browseCollections": {
+    "lists": [
+      {
+        "name": "New Years Eve Stories",
+        "url_path": "new-years-eve-stories",
+        "description": "New Years Eve Stories collection",
+        "category": "comedy",
+        "connectionReason": "Part of New Years Eve Stories collection"
+      },
+      {
+        "name": "Hotel Staff Misadventures",
+        "url_path": "hotel-staff-misadventures",
+        "description": "Hotel Staff Misadventures collection",
+        "category": "comedy",
+        "connectionReason": "Part of Hotel Staff Misadventures collection"
+      },
+      {
+        "name": "Dark Comedy Accidents (Part 5)",
+        "url_path": "dark-comedy-accidents-part-5-",
+        "description": "Dark Comedy Accidents (Part 5) collection",
+        "category": "comedy",
+        "connectionReason": "Part of Dark Comedy Accidents (Part 5) collection"
+      },
+      {
+        "name": "Single Day Misfortunes (Part 2)",
+        "url_path": "single-day-misfortunes-part-2-",
+        "description": "Single Day Misfortunes (Part 2) collection",
+        "category": "comedy",
+        "connectionReason": "Part of Single Day Misfortunes (Part 2) collection"
+      },
+      {
+        "name": "Celebrity Culture Commentary",
+        "url_path": "celebrity-culture-commentary",
+        "description": "Celebrity Culture Commentary collection",
+        "category": "crime",
+        "connectionReason": "Part of Celebrity Culture Commentary collection"
+      },
+      {
+        "name": "Luxury Lifestyle Crime",
+        "url_path": "luxury-lifestyle-crime",
+        "description": "Luxury Lifestyle Crime collection",
+        "category": "crime",
+        "connectionReason": "Part of Luxury Lifestyle Crime collection"
+      },
+      {
+        "name": "One Night Crime Thrillers",
+        "url_path": "one-night-crime-thrillers",
+        "description": "One Night Crime Thrillers collection",
+        "category": "crime",
+        "connectionReason": "Part of One Night Crime Thrillers collection"
+      }
+    ],
+    "totalLists": 7
+  },
+  "contributors": {
+    "director": {
+      "name": "Allison Anders, Alexandre Rockwell, Robert Rodriguez, Quentin Tarantino",
+      "personId": 1300,
+      "slug": "/person/1300",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "writers": [
+      {
+        "name": "Allison Anders",
+        "personId": 1299,
+        "slug": "/person/1299",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Alexandre Rockwell",
+        "personId": 977,
+        "slug": "/person/977",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Robert Rodriguez",
+        "personId": 31849,
+        "slug": "/person/31849",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Quentin Tarantino",
+        "personId": 30117,
+        "slug": "/person/30117",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "stars": [
+      {
+        "name": "Tim Roth",
+        "personId": 36330,
+        "slug": "/person/36330",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Madonna",
+        "personId": 23422,
+        "slug": "/person/23422",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Antonio Banderas",
+        "personId": 2351,
+        "slug": "/person/2351",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Bruce Willis",
+        "personId": 4612,
+        "slug": "/person/4612",
+        "tmdbPersonId": null,
+        "profilePath": null
+      },
+      {
+        "name": "Jennifer Beals",
+        "personId": 16963,
+        "slug": "/person/16963",
+        "tmdbPersonId": null,
+        "profilePath": null
+      }
+    ],
+    "cinematographer": {
+      "name": "Guillermo Navarro, Phil Parmet, Rodrigo Garcia",
+      "personId": 13297,
+      "slug": "/person/13297",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "composer": {
+      "name": "Various",
+      "personId": 37395,
+      "slug": "/person/37395",
+      "tmdbPersonId": null,
+      "profilePath": null
+    },
+    "producer": null
+  },
+  "moreIdeas": null,
+  "generatedAt": "2025-08-25T19:19:11.214Z",
+  "sources": {
+    "analysis": "railway_database",
+    "browseCollections": "static_files",
+    "contributors": "movie_contributors_table",
+    "moreIdeas": null
+  }
+}
