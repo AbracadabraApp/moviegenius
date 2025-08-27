@@ -1,25 +1,25 @@
 {
   "lists": [
     {
-      "name": "LA Crime Stories (Part 1)",
-      "url_path": "la-crime-stories-part-1-",
-      "description": "LA Crime Stories (Part 1) collection",
+      "name": "Classic LA Crime Stories",
+      "url_path": "classic-la-crime-stories",
+      "description": "A collection of movies about timeless and influential stories.",
       "category": "crime",
-      "connectionReason": "Part of LA Crime Stories (Part 1) collection"
+      "connectionReason": "Part of Classic LA Crime Stories collection"
     },
     {
-      "name": "Police Corruption Dramas (Part 2)",
-      "url_path": "police-corruption-dramas-part-2-",
-      "description": "Police Corruption Dramas (Part 2) collection",
+      "name": "International Police Corruption Dramas",
+      "url_path": "international-police-corruption-dramas",
+      "description": "Crime films exploring diverse global perspectives.",
       "category": "crime",
-      "connectionReason": "Part of Police Corruption Dramas (Part 2) collection"
+      "connectionReason": "Part of International Police Corruption Dramas collection"
     },
     {
-      "name": "Youth Gang Dramas (Part 2)",
-      "url_path": "youth-gang-dramas-part-2-",
-      "description": "Youth Gang Dramas (Part 2) collection",
+      "name": "International Youth Gang Dramas",
+      "url_path": "international-youth-gang-dramas",
+      "description": "Crime films exploring diverse global perspectives.",
       "category": "crime",
-      "connectionReason": "Part of Youth Gang Dramas (Part 2) collection"
+      "connectionReason": "Part of International Youth Gang Dramas collection"
     }
   ],
   "totalLists": 3

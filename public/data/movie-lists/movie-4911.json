@@ -1,25 +1,25 @@
 {
   "lists": [
     {
-      "name": "LA Crime Stories (Part 1)",
-      "url_path": "la-crime-stories-part-1-",
-      "description": "LA Crime Stories (Part 1) collection",
+      "name": "Classic LA Crime Stories",
+      "url_path": "classic-la-crime-stories",
+      "description": "Thriller and crime films featuring timeless and influential stories.",
       "category": "crime",
-      "connectionReason": "Part of LA Crime Stories (Part 1) collection"
+      "connectionReason": "Part of Classic LA Crime Stories collection"
     },
     {
-      "name": "Police Corruption Dramas (Part 2)",
-      "url_path": "police-corruption-dramas-part-2-",
-      "description": "Police Corruption Dramas (Part 2) collection",
+      "name": "International Police Corruption Dramas",
+      "url_path": "international-police-corruption-dramas",
+      "description": "Crime films exploring diverse global perspectives.",
       "category": "crime",
-      "connectionReason": "Part of Police Corruption Dramas (Part 2) collection"
+      "connectionReason": "Part of International Police Corruption Dramas collection"
     },
     {
-      "name": "Redemptive Criminal Stories (Part 2)",
-      "url_path": "redemptive-criminal-stories-part-2-",
-      "description": "Redemptive Criminal Stories (Part 2) collection",
+      "name": "Golden Age Redemptive Criminal Stories",
+      "url_path": "golden-age-redemptive-criminal-stories",
+      "description": "Crime films exploring golden age redemptive criminal.",
       "category": "crime",
-      "connectionReason": "Part of Redemptive Criminal Stories (Part 2) collection"
+      "connectionReason": "Part of Golden Age Redemptive Criminal Stories collection"
     }
   ],
   "totalLists": 3

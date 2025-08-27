@@ -1,39 +1,39 @@
 {
   "lists": [
     {
-      "name": "Horror Movie Parodies (Part 2)",
-      "url_path": "horror-movie-parodies-part-2-",
-      "description": "Horror Movie Parodies (Part 2) collection",
+      "name": "Modern Horror Movie Parodies",
+      "url_path": "modern-horror-movie-parodies",
+      "description": "Lighthearted movies about contemporary themes and storytelling.",
       "category": "comedy",
-      "connectionReason": "Part of Horror Movie Parodies (Part 2) collection"
+      "connectionReason": "Part of Modern Horror Movie Parodies collection"
     },
     {
-      "name": "Vacation Adventure Mishaps (Part 1)",
-      "url_path": "vacation-adventure-mishaps-part-1-",
-      "description": "Vacation Adventure Mishaps (Part 1) collection",
+      "name": "Classic Vacation Adventure Mishaps",
+      "url_path": "classic-vacation-adventure-mishaps",
+      "description": "A collection of comedic films featuring timeless and influential stories.",
       "category": "comedy",
-      "connectionReason": "Part of Vacation Adventure Mishaps (Part 1) collection"
+      "connectionReason": "Part of Classic Vacation Adventure Mishaps collection"
     },
     {
       "name": "Tropical Island Horror",
       "url_path": "tropical-island-horror",
-      "description": "Tropical Island Horror collection",
+      "description": "Horror films featuring tropical island horror.",
       "category": "horror",
       "connectionReason": "Part of Tropical Island Horror collection"
     },
     {
-      "name": "Classic Monster Comedy (Part 1)",
-      "url_path": "classic-monster-comedy-part-1-",
-      "description": "Classic Monster Comedy (Part 1) collection",
+      "name": "Classic Classic Monster Comedy",
+      "url_path": "classic-classic-monster-comedy",
+      "description": "Spine-chilling movies about timeless and influential stories.",
       "category": "horror",
-      "connectionReason": "Part of Classic Monster Comedy (Part 1) collection"
+      "connectionReason": "Part of Classic Classic Monster Comedy collection"
     },
     {
-      "name": "Teen Slasher Horror (Part 1)",
-      "url_path": "teen-slasher-horror-part-1-",
-      "description": "Teen Slasher Horror (Part 1) collection",
+      "name": "Classic Teen Slasher Horror",
+      "url_path": "classic-teen-slasher-horror",
+      "description": "Horror films featuring timeless and influential stories.",
       "category": "horror",
-      "connectionReason": "Part of Teen Slasher Horror (Part 1) collection"
+      "connectionReason": "Part of Classic Teen Slasher Horror collection"
     }
   ],
   "totalLists": 5

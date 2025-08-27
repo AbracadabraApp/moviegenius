@@ -3,30 +3,30 @@
     {
       "name": "Romantic Vampire Films",
       "url_path": "romantic-vampire-films",
-      "description": "Romantic Vampire Films collection",
+      "description": "Horror films featuring vampire.",
       "category": "horror",
       "connectionReason": "Part of Romantic Vampire Films collection"
     },
     {
       "name": "European Vampire Deconstruction",
       "url_path": "european-vampire-deconstruction",
-      "description": "European Vampire Deconstruction collection",
+      "description": "Horror films featuring european vampire deconstruction.",
       "category": "horror",
       "connectionReason": "Part of European Vampire Deconstruction collection"
     },
     {
-      "name": "Gothic Family Curse (Part 1)",
-      "url_path": "gothic-family-curse-part-1-",
-      "description": "Gothic Family Curse (Part 1) collection",
+      "name": "Classic Gothic Family Curse",
+      "url_path": "classic-gothic-family-curse",
+      "description": "Frightening films exploring timeless and influential stories.",
       "category": "horror",
-      "connectionReason": "Part of Gothic Family Curse (Part 1) collection"
+      "connectionReason": "Part of Classic Gothic Family Curse collection"
     },
     {
-      "name": "Psychological Horror (Part 1)",
-      "url_path": "psychological-horror-part-1-",
-      "description": "Psychological Horror (Part 1) collection",
+      "name": "Classic Psychological Horror",
+      "url_path": "classic-psychological-horror",
+      "description": "Horror films featuring timeless and influential stories.",
       "category": "horror",
-      "connectionReason": "Part of Psychological Horror (Part 1) collection"
+      "connectionReason": "Part of Classic Psychological Horror collection"
     }
   ],
   "totalLists": 4

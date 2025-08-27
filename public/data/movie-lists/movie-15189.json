@@ -1,18 +1,18 @@
 {
   "lists": [
     {
-      "name": "Pet Adventure Comedies (Part 1)",
-      "url_path": "pet-adventure-comedies-part-1-",
-      "description": "Pet Adventure Comedies (Part 1) collection",
+      "name": "Classic Pet Adventure Comedies",
+      "url_path": "classic-pet-adventure-comedies",
+      "description": "Comedy films centered around timeless and influential stories.",
       "category": "comedy",
-      "connectionReason": "Part of Pet Adventure Comedies (Part 1) collection"
+      "connectionReason": "Part of Classic Pet Adventure Comedies collection"
     },
     {
-      "name": "Found Family Comedies (Part 5)",
-      "url_path": "found-family-comedies-part-5-",
-      "description": "Found Family Comedies (Part 5) collection",
+      "name": "Dark Found Family Comedies",
+      "url_path": "dark-found-family-comedies",
+      "description": "Comedy films centered around found family.",
       "category": "comedy",
-      "connectionReason": "Part of Found Family Comedies (Part 5) collection"
+      "connectionReason": "Part of Dark Found Family Comedies collection"
     }
   ],
   "totalLists": 2

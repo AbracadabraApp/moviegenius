@@ -1,46 +1,46 @@
 {
   "lists": [
     {
-      "name": "British Crime Films (Part 1)",
-      "url_path": "british-crime-films-part-1-",
-      "description": "British Crime Films (Part 1) collection",
+      "name": "Classic British Crime Films",
+      "url_path": "classic-british-crime-films",
+      "description": "Thriller and crime films featuring the british criminal underworld.",
       "category": "crime",
-      "connectionReason": "Part of British Crime Films (Part 1) collection"
+      "connectionReason": "Part of Classic British Crime Films collection"
     },
     {
-      "name": "Revenge Crime Dramas (Part 1)",
-      "url_path": "revenge-crime-dramas-part-1-",
-      "description": "Revenge Crime Dramas (Part 1) collection",
+      "name": "Classic Revenge Crime Dramas",
+      "url_path": "classic-revenge-crime-dramas",
+      "description": "A collection of movies about timeless and influential stories.",
       "category": "crime",
-      "connectionReason": "Part of Revenge Crime Dramas (Part 1) collection"
+      "connectionReason": "Part of Classic Revenge Crime Dramas collection"
     },
     {
-      "name": "Rural Crime Thrillers (Part 1)",
-      "url_path": "rural-crime-thrillers-part-1-",
-      "description": "Rural Crime Thrillers (Part 1) collection",
+      "name": "Classic Rural Crime Thrillers",
+      "url_path": "classic-rural-crime-thrillers",
+      "description": "Crime films exploring timeless and influential stories.",
       "category": "crime",
-      "connectionReason": "Part of Rural Crime Thrillers (Part 1) collection"
+      "connectionReason": "Part of Classic Rural Crime Thrillers collection"
     },
     {
       "name": "Northern Ireland Troubles",
       "url_path": "northern-ireland-troubles",
-      "description": "Northern Ireland Troubles collection",
+      "description": "Suspenseful films about northern ireland troubles.",
       "category": "thriller",
       "connectionReason": "Part of Northern Ireland Troubles collection"
     },
     {
       "name": "Vigilante Team Missions",
       "url_path": "vigilante-team-missions",
-      "description": "Vigilante Team Missions collection",
+      "description": "Psychological thrillers featuring vigilante team missions.",
       "category": "thriller",
       "connectionReason": "Part of Vigilante Team Missions collection"
     },
     {
-      "name": "Small Town Dark Nights (Part 1)",
-      "url_path": "small-town-dark-nights-part-1-",
-      "description": "Small Town Dark Nights (Part 1) collection",
+      "name": "Classic Small Town Dark Nights",
+      "url_path": "classic-small-town-dark-nights",
+      "description": "Suspenseful films about small-town life and community dynamics.",
       "category": "thriller",
-      "connectionReason": "Part of Small Town Dark Nights (Part 1) collection"
+      "connectionReason": "Part of Classic Small Town Dark Nights collection"
     }
   ],
   "totalLists": 6

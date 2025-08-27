@@ -1,25 +1,25 @@
 {
   "lists": [
     {
-      "name": "Buddy Cop Comedies (Part 1)",
-      "url_path": "buddy-cop-comedies-part-1-",
-      "description": "Buddy Cop Comedies (Part 1) collection",
+      "name": "Classic Buddy Cop Comedies",
+      "url_path": "classic-buddy-cop-comedies",
+      "description": "Comedy films centered around timeless and influential stories.",
       "category": "comedy",
-      "connectionReason": "Part of Buddy Cop Comedies (Part 1) collection"
+      "connectionReason": "Part of Classic Buddy Cop Comedies collection"
     },
     {
-      "name": "Criminal Mishap Comedies (Part 5)",
-      "url_path": "criminal-mishap-comedies-part-5-",
-      "description": "Criminal Mishap Comedies (Part 5) collection",
+      "name": "Dark Criminal Mishap Comedies",
+      "url_path": "dark-criminal-mishap-comedies",
+      "description": "Lighthearted movies about criminal plans gone wrong.",
       "category": "comedy",
-      "connectionReason": "Part of Criminal Mishap Comedies (Part 5) collection"
+      "connectionReason": "Part of Dark Criminal Mishap Comedies collection"
     },
     {
-      "name": "Dark Comedy Accidents (Part 5)",
-      "url_path": "dark-comedy-accidents-part-5-",
-      "description": "Dark Comedy Accidents (Part 5) collection",
+      "name": "Dark Dark Comedy Accidents",
+      "url_path": "dark-dark-comedy-accidents",
+      "description": "A collection of comedic films featuring dark humor and moral ambiguity.",
       "category": "comedy",
-      "connectionReason": "Part of Dark Comedy Accidents (Part 5) collection"
+      "connectionReason": "Part of Dark Dark Comedy Accidents collection"
     }
   ],
   "totalLists": 3

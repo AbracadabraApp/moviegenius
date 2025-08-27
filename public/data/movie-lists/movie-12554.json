@@ -3,30 +3,30 @@
     {
       "name": "Police Detective Stories",
       "url_path": "police-detective-stories",
-      "description": "Police Detective Stories collection",
+      "description": "Crime films exploring police detective.",
       "category": "crime",
       "connectionReason": "Part of Police Detective Stories collection"
     },
     {
       "name": "Serial Killer Biopics",
       "url_path": "serial-killer-biopics",
-      "description": "Serial Killer Biopics collection",
+      "description": "Stories of criminal activity involving serial killer biopics.",
       "category": "crime",
       "connectionReason": "Part of Serial Killer Biopics collection"
     },
     {
-      "name": "True Crime Period Dramas (Part 2)",
-      "url_path": "true-crime-period-dramas-part-2-",
-      "description": "True Crime Period Dramas (Part 2) collection",
+      "name": "International True Crime Period Dramas",
+      "url_path": "international-true-crime-period-dramas",
+      "description": "Stories of criminal activity involving diverse global perspectives.",
       "category": "crime",
-      "connectionReason": "Part of True Crime Period Dramas (Part 2) collection"
+      "connectionReason": "Part of International True Crime Period Dramas collection"
     },
     {
-      "name": "European Crime Films (Part 1)",
-      "url_path": "european-crime-films-part-1-",
-      "description": "European Crime Films (Part 1) collection",
+      "name": "Classic European Crime Films",
+      "url_path": "classic-european-crime-films",
+      "description": "Crime films exploring timeless and influential stories.",
       "category": "crime",
-      "connectionReason": "Part of European Crime Films (Part 1) collection"
+      "connectionReason": "Part of Classic European Crime Films collection"
     }
   ],
   "totalLists": 4

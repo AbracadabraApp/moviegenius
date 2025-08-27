@@ -1,25 +1,25 @@
 {
   "lists": [
     {
-      "name": "LA Crime Stories (Part 1)",
-      "url_path": "la-crime-stories-part-1-",
-      "description": "LA Crime Stories (Part 1) collection",
+      "name": "Classic LA Crime Stories",
+      "url_path": "classic-la-crime-stories",
+      "description": "A collection of movies about timeless and influential stories.",
       "category": "crime",
-      "connectionReason": "Part of LA Crime Stories (Part 1) collection"
+      "connectionReason": "Part of Classic LA Crime Stories collection"
     },
     {
-      "name": "Police Corruption Dramas (Part 3)",
-      "url_path": "police-corruption-dramas-part-3-",
-      "description": "Police Corruption Dramas (Part 3) collection",
+      "name": "Psychological Police Corruption Dramas",
+      "url_path": "psychological-police-corruption-dramas",
+      "description": "A collection of movies about psychological police corruption.",
       "category": "crime",
-      "connectionReason": "Part of Police Corruption Dramas (Part 3) collection"
+      "connectionReason": "Part of Psychological Police Corruption Dramas collection"
     },
     {
-      "name": "Criminal Investigation Stories (Part 1)",
-      "url_path": "criminal-investigation-stories-part-1-",
-      "description": "Criminal Investigation Stories (Part 1) collection",
+      "name": "Vintage Criminal Investigation Stories",
+      "url_path": "vintage-criminal-investigation-stories",
+      "description": "Thriller and crime films featuring vintage criminal investigation.",
       "category": "crime",
-      "connectionReason": "Part of Criminal Investigation Stories (Part 1) collection"
+      "connectionReason": "Part of Vintage Criminal Investigation Stories collection"
     }
   ],
   "totalLists": 3

@@ -3,23 +3,23 @@
     {
       "name": "Survival Horror",
       "url_path": "survival-horror",
-      "description": "Survival Horror collection",
+      "description": "Horror films featuring survival horror.",
       "category": "horror",
       "connectionReason": "Part of Survival Horror collection"
     },
     {
-      "name": "Aquatic Monster Horror (Part 3)",
-      "url_path": "aquatic-monster-horror-part-3-",
-      "description": "Aquatic Monster Horror (Part 3) collection",
+      "name": "Psychological Aquatic Monster Horror",
+      "url_path": "psychological-aquatic-monster-horror",
+      "description": "Spine-chilling movies about psychological aquatic monster horror.",
       "category": "horror",
-      "connectionReason": "Part of Aquatic Monster Horror (Part 3) collection"
+      "connectionReason": "Part of Psychological Aquatic Monster Horror collection"
     },
     {
-      "name": "Scientific Expedition Horror (Part 2)",
-      "url_path": "scientific-expedition-horror-part-2-",
-      "description": "Scientific Expedition Horror (Part 2) collection",
+      "name": "Supernatural Scientific Expedition Horror",
+      "url_path": "supernatural-scientific-expedition-horror",
+      "description": "Frightening films exploring supernatural scientific expedition horror.",
       "category": "horror",
-      "connectionReason": "Part of Scientific Expedition Horror (Part 2) collection"
+      "connectionReason": "Part of Supernatural Scientific Expedition Horror collection"
     }
   ],
   "totalLists": 3

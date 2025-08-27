@@ -3,44 +3,44 @@
     {
       "name": "Slasher Film Collection",
       "url_path": "slasher-film-collection",
-      "description": "Slasher Film Collection collection",
+      "description": "Horror films featuring slasher.",
       "category": "horror",
       "connectionReason": "Part of Slasher Film Collection collection"
     },
     {
       "name": "Supernatural Horror Stories",
       "url_path": "supernatural-horror-stories",
-      "description": "Supernatural Horror Stories collection",
+      "description": "Terrifying stories of supernatural horror.",
       "category": "horror",
       "connectionReason": "Part of Supernatural Horror Stories collection"
     },
     {
       "name": "Stalker Horror",
       "url_path": "stalker-horror",
-      "description": "Stalker Horror collection",
+      "description": "Horror films featuring stalker horror.",
       "category": "horror",
       "connectionReason": "Part of Stalker Horror collection"
     },
     {
       "name": "Highway Pursuit Thrillers",
       "url_path": "highway-pursuit-thrillers",
-      "description": "Highway Pursuit Thrillers collection",
+      "description": "Suspenseful films about highway pursuit.",
       "category": "thriller",
       "connectionReason": "Part of Highway Pursuit Thrillers collection"
     },
     {
-      "name": "Single Location Survival (Part 5)",
-      "url_path": "single-location-survival-part-5-",
-      "description": "Single Location Survival (Part 5) collection",
+      "name": "Tech Single Location Survival",
+      "url_path": "tech-single-location-survival",
+      "description": "Tense movies exploring tech single location survival.",
       "category": "thriller",
-      "connectionReason": "Part of Single Location Survival (Part 5) collection"
+      "connectionReason": "Part of Tech Single Location Survival collection"
     },
     {
-      "name": "Psychological Manipulation Thrillers (Part 7)",
-      "url_path": "psychological-manipulation-thrillers-part-7-",
-      "description": "Psychological Manipulation Thrillers (Part 7) collection",
+      "name": "Medical Psychological Manipulation Thrillers",
+      "url_path": "medical-psychological-manipulation-thrillers",
+      "description": "Suspenseful films about medical psychological manipulation.",
       "category": "thriller",
-      "connectionReason": "Part of Psychological Manipulation Thrillers (Part 7) collection"
+      "connectionReason": "Part of Medical Psychological Manipulation Thrillers collection"
     }
   ],
   "totalLists": 6
