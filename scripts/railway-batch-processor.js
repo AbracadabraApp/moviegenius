@@ -260,7 +260,16 @@ class RailwayBatchProcessor {
       return progress;
     } catch (error) {
       console.warn(`⚠️  Could not load progress: ${error.message}`);
-      return this.loadProgress(); // Return default
+      return {
+        startedAt: new Date().toISOString(),
+        completed: [],
+        failed: [],
+        totalCost: 0,
+        mode: this.mode,
+        lastSaved: new Date().toISOString(),
+        lastProcessedOffset: 0,
+        resumeStrategy: 'id-based'
+      };
     }
   }
 
@@ -298,10 +307,9 @@ class RailwayBatchProcessor {
 
   async processMovieIndividual(tmdbId) {
     const startTime = Date.now();
+    const client = await pool.connect();
     
     try {
-      const client = await pool.connect();
-      
       // Get movie details
       const movieResult = await client.query(`
         SELECT id, title, year, tmdb_id 
@@ -323,7 +331,6 @@ class RailwayBatchProcessor {
         `, [movie.id]);
         
         if (existingResult.rows.length > 0) {
-          client.release();
           return {
             tmdbId,
             title: movie.title,
@@ -374,8 +381,6 @@ class RailwayBatchProcessor {
           updated_at = NOW()
       `, [movie.id, 'general', JSON.stringify(analysisData), `Railway batch analysis for ${movie.title} (${movie.year})`]);
 
-      client.release();
-
       return {
         tmdbId,
         title: movie.title,
@@ -386,6 +391,8 @@ class RailwayBatchProcessor {
 
     } catch (error) {
       throw new Error(`Failed to process movie ${tmdbId}: ${error.message}`);
+    } finally {
+      client.release();
     }
   }
 
@@ -463,12 +470,7 @@ class RailwayBatchProcessor {
   }
 
   async processBatchAPI(movieIds) {
-    console.log(`🚀 Using Claude Batch API mode (50% cost savings)`);
-    console.log(`⚠️  Batch API mode not fully implemented yet - falling back to individual API`);
-    
-    // For now, fall back to individual API
-    // TODO: Implement full batch API support with Railway PostgreSQL
-    await this.processIndividualAPI(movieIds);
+    throw new Error('Batch API mode not implemented. Use --individual-api instead.');
   }
 }
 
