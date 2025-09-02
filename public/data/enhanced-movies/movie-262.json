@@ -24,27 +24,22 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "Rupert Pupkin is a delusional aspiring comedian who dreams of stardom while living in his mother's basement. His obsession with talk show host Jerry Langford leads to increasingly disturbing behavior as he refuses to accept rejection, believing he deserves instant fame. The film's genius lies in how it makes viewers squirm while sympathizing with Pupkin's desperate need for validation, even as his actions become more unhinged. De Niro's performance walks a razor's edge between pathetic and threatening, creating one of cinema's most memorable character studies.",
         "text": "Rupert Pupkin is a delusional aspiring comedian who dreams of stardom while living in his mother's basement. His obsession with talk show host Jerry Langford leads to increasingly disturbing behavior as he refuses to accept rejection, believing he deserves instant fame. The film's genius lies in how it makes viewers squirm while sympathizing with Pupkin's desperate need for validation, even as his actions become more unhinged. De Niro's performance walks a razor's edge between pathetic and threatening, creating one of cinema's most memorable character studies."
       },
       {
         "type": "performancesAndVision",
-        "content": "De Niro's transformation into Pupkin ranks among his finest work, capturing the character's awkward mannerisms and delusional confidence with uncomfortable precision. Jerry Lewis delivers a revelatory dramatic turn as Langford, playing against type as a jaded celebrity. Scorsese's direction eschews his typical kinetic style for a more controlled approach, making the comedy darker and more unsettling through precise framing and timing.",
         "text": "De Niro's transformation into Pupkin ranks among his finest work, capturing the character's awkward mannerisms and delusional confidence with uncomfortable precision. Jerry Lewis delivers a revelatory dramatic turn as Langford, playing against type as a jaded celebrity. Scorsese's direction eschews his typical kinetic style for a more controlled approach, making the comedy darker and more unsettling through precise framing and timing."
       },
       {
         "type": "socialAndCultural",
-        "content": "The film's exploration of celebrity worship and the desperate pursuit of fame feels more relevant today than ever. It predicted our current reality TV and social media landscape where everyone seeks their 15 minutes of fame. The way Pupkin rehearses his comedy routines alone in his basement eerily foreshadows modern YouTube culture and influencer aspirations. Its themes of parasocial relationships and celebrity stalking have only grown more pertinent in our digital age.",
         "text": "The film's exploration of celebrity worship and the desperate pursuit of fame feels more relevant today than ever. It predicted our current reality TV and social media landscape where everyone seeks their 15 minutes of fame. The way Pupkin rehearses his comedy routines alone in his basement eerily foreshadows modern YouTube culture and influencer aspirations. Its themes of parasocial relationships and celebrity stalking have only grown more pertinent in our digital age."
       },
       {
         "type": "genreContext",
-        "content": "While often categorized as a dark comedy, the film defies easy classification. It shares DNA with psychological thrillers like **Taxi Driver** (1976) while anticipating modern cringe comedies like **The Office** (2001-2003). Its influence can be seen in films like **Joker** (2019), which directly references its exploration of mental illness and celebrity obsession. The film helped establish the 'comedy of discomfort' subgenre later popularized by works like **After Hours** (1985) and **Curb Your Enthusiasm** (2000-present).",
         "text": "While often categorized as a dark comedy, the film defies easy classification. It shares DNA with psychological thrillers like **Taxi Driver** (1976) while anticipating modern cringe comedies like **The Office** (2001-2003). Its influence can be seen in films like **Joker** (2019), which directly references its exploration of mental illness and celebrity obsession. The film helped establish the 'comedy of discomfort' subgenre later popularized by works like **After Hours** (1985) and **Curb Your Enthusiasm** (2000-present)."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "In an era of viral fame, influencer culture, and parasocial relationships, The King of Comedy's insights feel prophetic. Its examination of the blurred line between fame and infamy resonates strongly with modern discussions about celebrity culture and mental health. The film's commentary on the cost of fame and the dangerous side of ambition remains deeply relevant to contemporary audiences.",
         "text": "In an era of viral fame, influencer culture, and parasocial relationships, The King of Comedy's insights feel prophetic. Its examination of the blurred line between fame and infamy resonates strongly with modern discussions about celebrity culture and mental health. The film's commentary on the cost of fame and the dangerous side of ambition remains deeply relevant to contemporary audiences."
       }
     ],
@@ -90,32 +85,32 @@
   "browseCollections": {
     "lists": [
       {
-        "name": "Dark Comedy Accidents (Part 10)",
-        "url_path": "dark-comedy-accidents-part-10-",
-        "description": "Dark Comedy Accidents (Part 10) collection",
+        "name": "Volume 10 Dark Comedy Accidents",
+        "url_path": "volume-10-dark-comedy-accidents",
+        "description": "A collection of comedic films featuring dark humor and moral ambiguity.",
         "category": "comedy",
-        "connectionReason": "Part of Dark Comedy Accidents (Part 10) collection"
+        "connectionReason": "Part of Volume 10 Dark Comedy Accidents collection"
       },
       {
-        "name": "Media Industry Satires (Part 5)",
-        "url_path": "media-industry-satires-part-5-",
-        "description": "Media Industry Satires (Part 5) collection",
+        "name": "Dark Media Industry Satires",
+        "url_path": "dark-media-industry-satires",
+        "description": "Comedy films centered around media industry satires.",
         "category": "comedy",
-        "connectionReason": "Part of Media Industry Satires (Part 5) collection"
+        "connectionReason": "Part of Dark Media Industry Satires collection"
       },
       {
-        "name": "Mental Health Redemption (Part 4)",
-        "url_path": "mental-health-redemption-part-4-",
-        "description": "Mental Health Redemption (Part 4) collection",
+        "name": "Indie Mental Health Redemption",
+        "url_path": "indie-mental-health-redemption",
+        "description": "Comedy films centered around mental health redemption.",
         "category": "comedy",
-        "connectionReason": "Part of Mental Health Redemption (Part 4) collection"
+        "connectionReason": "Part of Indie Mental Health Redemption collection"
       },
       {
-        "name": "Show Business Satires (Part 3)",
-        "url_path": "show-business-satires-part-3-",
-        "description": "Show Business Satires (Part 3) collection",
+        "name": "International Show Business Satires",
+        "url_path": "international-show-business-satires",
+        "description": "Lighthearted movies about diverse global perspectives.",
         "category": "comedy",
-        "connectionReason": "Part of Show Business Satires (Part 3) collection"
+        "connectionReason": "Part of International Show Business Satires collection"
       }
     ],
     "totalLists": 4
@@ -177,11 +172,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:52.309Z",
+  "generatedAt": "2025-08-27T00:52:58.341Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }

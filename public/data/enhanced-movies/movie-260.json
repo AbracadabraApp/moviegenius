@@ -24,27 +24,22 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "Richard Hannay's ordinary evening at a London music hall transforms into a deadly conspiracy when a mysterious woman warns him about a spy ring called 'The 39 Steps.' After she's murdered in his apartment, Hannay becomes both pursuer and pursued, racing across Scotland to uncover the truth while evading both police and assassins. The film's genius lies in how it balances breathless pursuit with witty dialogue and romantic tension, especially after Hannay becomes handcuffed to the reluctant Pamela, creating a prototype for the romantic thriller genre.",
         "text": "Richard Hannay's ordinary evening at a London music hall transforms into a deadly conspiracy when a mysterious woman warns him about a spy ring called 'The 39 Steps.' After she's murdered in his apartment, Hannay becomes both pursuer and pursued, racing across Scotland to uncover the truth while evading both police and assassins. The film's genius lies in how it balances breathless pursuit with witty dialogue and romantic tension, especially after Hannay becomes handcuffed to the reluctant Pamela, creating a prototype for the romantic thriller genre."
       },
       {
         "type": "performancesAndVision",
-        "content": "Robert Donat brings charm and sophistication to Hannay, creating the template for the wrongly-accused Hitchcock protagonist that would influence everyone from Cary Grant to James Stewart. Madeleine Carroll's sharp-witted performance established the archetype of the 'Hitchcock blonde.' The director's mastery of suspense reaches an early peak here, demonstrating his ability to craft sequences that build tension through precise visual storytelling rather than dialogue.",
         "text": "Robert Donat brings charm and sophistication to Hannay, creating the template for the wrongly-accused Hitchcock protagonist that would influence everyone from Cary Grant to James Stewart. Madeleine Carroll's sharp-witted performance established the archetype of the 'Hitchcock blonde.' The director's mastery of suspense reaches an early peak here, demonstrating his ability to craft sequences that build tension through precise visual storytelling rather than dialogue."
       },
       {
         "type": "socialAndCultural",
-        "content": "Released between world wars, the film captures Britain's growing anxiety about foreign espionage while maintaining a distinctly British sense of humor about such serious matters. Its blend of patriotism and skepticism toward authority would influence spy films for decades, from **North by Northwest** (1959) to **The Bourne Identity** (2002).",
         "text": "Released between world wars, the film captures Britain's growing anxiety about foreign espionage while maintaining a distinctly British sense of humor about such serious matters. Its blend of patriotism and skepticism toward authority would influence spy films for decades, from **North by Northwest** (1959) to **The Bourne Identity** (2002)."
       },
       {
         "type": "genreContext",
-        "content": "The 39 Steps essentially created the modern chase thriller template, combining elements of espionage, romance, and comedy in ways that would influence films like **Charade** (1963) and **Three Days of the Condor** (1975). Its 'MacGuffin' plot device and wrong-man scenario became Hitchcock signatures, perfected later in **Saboteur** (1942) and **North by Northwest** (1959).",
         "text": "The 39 Steps essentially created the modern chase thriller template, combining elements of espionage, romance, and comedy in ways that would influence films like **Charade** (1963) and **Three Days of the Condor** (1975). Its 'MacGuffin' plot device and wrong-man scenario became Hitchcock signatures, perfected later in **Saboteur** (1942) and **North by Northwest** (1959)."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "Modern thrillers still follow its blueprint of mixing action with wit and romance. Films like **Mission: Impossible** (1996) and **Casino Royale** (2006) echo its sophisticated approach to spy drama, while its influence on pacing and suspense can be seen in contemporary chase thrillers like **Inception** (2010).",
         "text": "Modern thrillers still follow its blueprint of mixing action with wit and romance. Films like **Mission: Impossible** (1996) and **Casino Royale** (2006) echo its sophisticated approach to spy drama, while its influence on pacing and suspense can be seen in contemporary chase thrillers like **Inception** (2010)."
       }
     ],
@@ -77,23 +72,23 @@
       {
         "name": "Pre-War Nazi Thrillers",
         "url_path": "pre-war-nazi-thrillers",
-        "description": "Pre-War Nazi Thrillers collection",
+        "description": "Tense movies exploring pre-war nazi.",
         "category": "thriller",
         "connectionReason": "Part of Pre-War Nazi Thrillers collection"
       },
       {
-        "name": "Urban Chase Thrillers (Part 6)",
-        "url_path": "urban-chase-thrillers-part-6-",
-        "description": "Urban Chase Thrillers (Part 6) collection",
+        "name": "Political Urban Chase Thrillers",
+        "url_path": "political-urban-chase-thrillers",
+        "description": "Suspenseful films about political urban chase.",
         "category": "thriller",
-        "connectionReason": "Part of Urban Chase Thrillers (Part 6) collection"
+        "connectionReason": "Part of Political Urban Chase Thrillers collection"
       },
       {
-        "name": "Hidden Identity Thrillers (Part 12)",
-        "url_path": "hidden-identity-thrillers-part-12-",
-        "description": "Hidden Identity Thrillers (Part 12) collection",
+        "name": "Volume 12 Hidden Identity Thrillers",
+        "url_path": "volume-12-hidden-identity-thrillers",
+        "description": "Tense movies exploring secret identities and revelations.",
         "category": "thriller",
-        "connectionReason": "Part of Hidden Identity Thrillers (Part 12) collection"
+        "connectionReason": "Part of Volume 12 Hidden Identity Thrillers collection"
       }
     ],
     "totalLists": 3
@@ -169,11 +164,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:51.921Z",
+  "generatedAt": "2025-08-27T00:52:57.939Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }

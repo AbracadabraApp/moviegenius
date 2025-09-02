@@ -25,33 +25,32 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "In a desolate South American village, four desperate men accept a suicide mission: driving two trucks loaded with unstable nitroglycerin across treacherous mountain roads. The tension builds unbearably as former Parisian Mario, aging Jo, and their companions navigate every bump and turn, knowing the slightest mistake means instant death. The genius of the film lies in how it transforms a simple premise into an existential nightmare, making viewers feel every nerve-wracking moment of the journey.",
         "text": "In a desolate South American village, four desperate men accept a suicide mission: driving two trucks loaded with unstable nitroglycerin across treacherous mountain roads. The tension builds unbearably as former Parisian Mario, aging Jo, and their companions navigate every bump and turn, knowing the slightest mistake means instant death. The genius of the film lies in how it transforms a simple premise into an existential nightmare, making viewers feel every nerve-wracking moment of the journey."
       },
       {
         "type": "performancesAndVision",
-        "content": "Yves Montand delivers a career-defining performance as Mario, while Charles Vanel's Jo presents a masterful study in deteriorating machismo. Clouzot's direction is ruthlessly precise, using extended sequences and minimal music to maximize tension. Each scene is meticulously crafted to ratchet up the psychological pressure, creating a masterclass in suspense that influenced filmmakers from Friedkin to Nolan.",
         "text": "Yves Montand delivers a career-defining performance as Mario, while Charles Vanel's Jo presents a masterful study in deteriorating machismo. Clouzot's direction is ruthlessly precise, using extended sequences and minimal music to maximize tension. Each scene is meticulously crafted to ratchet up the psychological pressure, creating a masterclass in suspense that influenced filmmakers from Friedkin to Nolan."
       },
       {
         "type": "socialAndCultural",
-        "content": "The film serves as a scathing indictment of corporate exploitation and colonialism, showing how American oil companies treat foreign workers as disposable resources. Its themes of economic desperation and human expendability remain startlingly relevant today. The movie's unflinching look at masculinity under pressure predates similar examinations in films like **The Deer Hunter** (1978) and **There Will Be Blood** (2007).",
         "text": "The film serves as a scathing indictment of corporate exploitation and colonialism, showing how American oil companies treat foreign workers as disposable resources. Its themes of economic desperation and human expendability remain startlingly relevant today. The movie's unflinching look at masculinity under pressure predates similar examinations in films like **The Deer Hunter** (1978) and **There Will Be Blood** (2007)."
       },
       {
         "type": "genreContext",
-        "content": "Released when thriller conventions were still being established, **The Wages of Fear** helped define the genre's potential for social commentary wrapped in intense action. Its influence can be seen in films like **Sorcerer** (1977), William Friedkin's direct remake, and echoes through to modern survival thrillers like **127 Hours** (2010) and **Gravity** (2013).",
         "text": "Released when thriller conventions were still being established, **The Wages of Fear** helped define the genre's potential for social commentary wrapped in intense action. Its influence can be seen in films like **Sorcerer** (1977), William Friedkin's direct remake, and echoes through to modern survival thrillers like **127 Hours** (2010) and **Gravity** (2013)."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "Modern audiences will find the film's practical effects and real-world tension more gripping than CGI spectacles. Its themes of economic inequality and corporate exploitation resonate strongly in today's gig economy. The film's influence continues in works like **Mad Max: Fury Road** (2015), proving that practical action sequences and human drama remain timeless.",
         "text": "Modern audiences will find the film's practical effects and real-world tension more gripping than CGI spectacles. Its themes of economic inequality and corporate exploitation resonate strongly in today's gig economy. The film's influence continues in works like **Mad Max: Fury Road** (2015), proving that practical action sequences and human drama remain timeless."
       }
     ],
     "whyWatch": {
-      "recommendation": "NO",
-      "reasons": []
+      "recommendation": "YES",
+      "reasons": [
+        "Unmatched white-knuckle truck sequences",
+        "Revolutionized action-suspense pacing",
+        "Raw existential dread masterclass"
+      ]
     },
     "featuredMovies": [
       {
@@ -83,28 +82,28 @@
       {
         "name": "Highway Pursuit Thrillers",
         "url_path": "highway-pursuit-thrillers",
-        "description": "Highway Pursuit Thrillers collection",
+        "description": "Tense movies exploring highway pursuit.",
         "category": "thriller",
         "connectionReason": "Part of Highway Pursuit Thrillers collection"
       },
       {
         "name": "Transportation Disaster Thrillers",
         "url_path": "transportation-disaster-thrillers",
-        "description": "Transportation Disaster Thrillers collection",
+        "description": "Suspenseful films about transportation disaster.",
         "category": "thriller",
         "connectionReason": "Part of Transportation Disaster Thrillers collection"
       },
       {
         "name": "Economic Desperation Thrillers",
         "url_path": "economic-desperation-thrillers",
-        "description": "Economic Desperation Thrillers collection",
+        "description": "Edge-of-your-seat films about economic desperation.",
         "category": "thriller",
         "connectionReason": "Part of Economic Desperation Thrillers collection"
       },
       {
         "name": "Professional Code Thrillers",
         "url_path": "professional-code-thrillers",
-        "description": "Professional Code Thrillers collection",
+        "description": "Suspenseful films about professional code.",
         "category": "thriller",
         "connectionReason": "Part of Professional Code Thrillers collection"
       }
@@ -175,11 +174,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:38.864Z",
+  "generatedAt": "2025-08-27T00:52:45.605Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }

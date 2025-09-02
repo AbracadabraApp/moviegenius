@@ -29,27 +29,22 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "High Fidelity follows Rob Gordon, a Chicago record store owner who's just been dumped by his girlfriend Laura. Through direct address to camera and an obsessive compulsion to make top-five lists of everything, Rob revisits his past relationships to understand why he's perpetually unlucky in love. The story perfectly captures the intersection of music obsession and romantic dysfunction, creating a character study that's both brutally honest and deeply relatable.",
         "text": "High Fidelity follows Rob Gordon, a Chicago record store owner who's just been dumped by his girlfriend Laura. Through direct address to camera and an obsessive compulsion to make top-five lists of everything, Rob revisits his past relationships to understand why he's perpetually unlucky in love. The story perfectly captures the intersection of music obsession and romantic dysfunction, creating a character study that's both brutally honest and deeply relatable."
       },
       {
         "type": "performancesAndVision",
-        "content": "Cusack embodies Rob with a perfect blend of charm and frustration, making his fourth-wall-breaking confessionals feel intimate rather than gimmicky. Jack Black and Todd Louiso provide brilliant comic relief as Rob's music-snob employees, while director Stephen Frears maintains the novel's British sensibilities while successfully transplanting the story to Chicago's indie music scene. The film's use of music isn't just soundtrack - it's a character itself, driving the narrative and reflecting Rob's emotional journey.",
         "text": "Cusack embodies Rob with a perfect blend of charm and frustration, making his fourth-wall-breaking confessionals feel intimate rather than gimmicky. Jack Black and Todd Louiso provide brilliant comic relief as Rob's music-snob employees, while director Stephen Frears maintains the novel's British sensibilities while successfully transplanting the story to Chicago's indie music scene. The film's use of music isn't just soundtrack - it's a character itself, driving the narrative and reflecting Rob's emotional journey."
       },
       {
         "type": "socialAndCultural",
-        "content": "Released at the turn of the millennium, High Fidelity captured a pivotal moment in music culture, as vinyl collectors and indie stores faced the dawn of digital distribution. The film celebrates analog culture while examining how people use their cultural tastes as both armor and identity. It's also a sharp critique of male emotional immaturity and the way men often use pop culture knowledge as a substitute for genuine self-awareness.",
         "text": "Released at the turn of the millennium, High Fidelity captured a pivotal moment in music culture, as vinyl collectors and indie stores faced the dawn of digital distribution. The film celebrates analog culture while examining how people use their cultural tastes as both armor and identity. It's also a sharp critique of male emotional immaturity and the way men often use pop culture knowledge as a substitute for genuine self-awareness."
       },
       {
         "type": "genreContext",
-        "content": "While it shares DNA with romantic comedies like **When Harry Met Sally** (1989) and **Annie Hall** (1977), High Fidelity subverts the genre by focusing on relationship failure rather than success. It pioneered a more realistic, self-aware approach to romance that influenced films like **500 Days of Summer** (2009) and **Garden State** (2004).",
         "text": "While it shares DNA with romantic comedies like **When Harry Met Sally** (1989) and **Annie Hall** (1977), High Fidelity subverts the genre by focusing on relationship failure rather than success. It pioneered a more realistic, self-aware approach to romance that influenced films like **500 Days of Summer** (2009) and **Garden State** (2004)."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "The film's themes of authenticity versus pretension in cultural consumption feel even more relevant in our current era of streaming and social media. Its exploration of how people use their tastes to define themselves speaks directly to modern questions about identity and connection in digital culture.",
         "text": "The film's themes of authenticity versus pretension in cultural consumption feel even more relevant in our current era of streaming and social media. Its exploration of how people use their tastes to define themselves speaks directly to modern questions about identity and connection in digital culture."
       }
     ],
@@ -87,23 +82,23 @@
       {
         "name": "Post-Breakup Revenge Comedy",
         "url_path": "post-breakup-revenge-comedy",
-        "description": "Post-Breakup Revenge Comedy collection",
+        "description": "Comedy films centered around post-breakup revenge comedy.",
         "category": "comedy",
         "connectionReason": "Part of Post-Breakup Revenge Comedy collection"
       },
       {
-        "name": "Music Industry Satires (Part 2)",
-        "url_path": "music-industry-satires-part-2-",
-        "description": "Music Industry Satires (Part 2) collection",
+        "name": "Modern Music Industry Satires",
+        "url_path": "modern-music-industry-satires",
+        "description": "Humorous movies exploring contemporary themes and storytelling.",
         "category": "comedy",
-        "connectionReason": "Part of Music Industry Satires (Part 2) collection"
+        "connectionReason": "Part of Modern Music Industry Satires collection"
       },
       {
-        "name": "Small Business Community Stories (Part 2)",
-        "url_path": "small-business-community-stories-part-2-",
-        "description": "Small Business Community Stories (Part 2) collection",
+        "name": "Golden Age Small Business Community Stories",
+        "url_path": "golden-age-small-business-community-stories",
+        "description": "Humorous movies exploring golden age small business community.",
         "category": "comedy",
-        "connectionReason": "Part of Small Business Community Stories (Part 2) collection"
+        "connectionReason": "Part of Golden Age Small Business Community Stories collection"
       }
     ],
     "totalLists": 3
@@ -200,11 +195,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:47.549Z",
+  "generatedAt": "2025-08-27T00:52:53.535Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }

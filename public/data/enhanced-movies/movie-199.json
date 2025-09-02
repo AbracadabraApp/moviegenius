@@ -26,33 +26,32 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "The Enterprise crew faces their deadliest enemy, the Borg, in a taut thriller that sends them back to 2063 to ensure humanity's first contact with alien life. Captain Picard confronts his past trauma as a former Borg captive, while Data faces temptation from the seductive Borg Queen. The film masterfully weaves multiple storylines: Picard's revenge quest, Earth's first warp flight, and humanity's pivotal first encounter with the Vulcans.",
         "text": "The Enterprise crew faces their deadliest enemy, the Borg, in a taut thriller that sends them back to 2063 to ensure humanity's first contact with alien life. Captain Picard confronts his past trauma as a former Borg captive, while Data faces temptation from the seductive Borg Queen. The film masterfully weaves multiple storylines: Picard's revenge quest, Earth's first warp flight, and humanity's pivotal first encounter with the Vulcans."
       },
       {
         "type": "performancesAndVision",
-        "content": "Patrick Stewart anchors the film with a haunting portrayal of Picard's PTSD and thirst for vengeance, drawing parallels to Ahab's obsession in **Moby Dick** (1956). First-time director Jonathan Frakes brings cinematic scale while maintaining intimate character moments. Alice Krige's Borg Queen creates an unforgettable antagonist, combining sensuality and menace in ways reminiscent of **Blade Runner** (1982).",
         "text": "Patrick Stewart anchors the film with a haunting portrayal of Picard's PTSD and thirst for vengeance, drawing parallels to Ahab's obsession in **Moby Dick** (1956). First-time director Jonathan Frakes brings cinematic scale while maintaining intimate character moments. Alice Krige's Borg Queen creates an unforgettable antagonist, combining sensuality and menace in ways reminiscent of **Blade Runner** (1982)."
       },
       {
         "type": "socialAndCultural",
-        "content": "The film explores humanity's potential for both self-destruction and transcendence, themes that echo through works like **2001: A Space Odyssey** (1968). Its optimistic vision of post-apocalyptic human unity resonates with contemporary divisions, while the Borg's collective consciousness warns against loss of individuality in an increasingly connected world.",
         "text": "The film explores humanity's potential for both self-destruction and transcendence, themes that echo through works like **2001: A Space Odyssey** (1968). Its optimistic vision of post-apocalyptic human unity resonates with contemporary divisions, while the Borg's collective consciousness warns against loss of individuality in an increasingly connected world."
       },
       {
         "type": "genreContext",
-        "content": "First Contact successfully merges horror elements reminiscent of **Alien** (1979) with classic Trek philosophy. It builds on the time travel foundations laid by **Star Trek IV: The Voyage Home** (1986) while introducing darker themes that would influence later sci-fi like **District 9** (2009).",
         "text": "First Contact successfully merges horror elements reminiscent of **Alien** (1979) with classic Trek philosophy. It builds on the time travel foundations laid by **Star Trek IV: The Voyage Home** (1986) while introducing darker themes that would influence later sci-fi like **District 9** (2009)."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "The film's themes of technological assimilation and loss of humanity feel more relevant than ever in our AI-driven age. Its message of overcoming historical adversity to achieve greatness continues to inspire, while its warnings about the price of vengeance remain timeless.",
         "text": "The film's themes of technological assimilation and loss of humanity feel more relevant than ever in our AI-driven age. Its message of overcoming historical adversity to achieve greatness continues to inspire, while its warnings about the price of vengeance remain timeless."
       }
     ],
     "whyWatch": {
-      "recommendation": "NO",
-      "reasons": []
+      "recommendation": "YES",
+      "reasons": [
+        "Electric Borg horror sequences",
+        "Patrick Stewart's vengeful intensity",
+        "Slick time-travel plot mechanics"
+      ]
     },
     "featuredMovies": [
       {
@@ -77,32 +76,32 @@
   "browseCollections": {
     "lists": [
       {
-        "name": "Time Loop Paradoxes (Part 2)",
-        "url_path": "time-loop-paradoxes-part-2-",
-        "description": "Time Loop Paradoxes (Part 2) collection",
+        "name": "Golden Age Time Loop Paradoxes",
+        "url_path": "golden-age-time-loop-paradoxes",
+        "description": "Speculative films about golden age time loop paradoxes.",
         "category": "science fiction",
-        "connectionReason": "Part of Time Loop Paradoxes (Part 2) collection"
+        "connectionReason": "Part of Golden Age Time Loop Paradoxes collection"
       },
       {
-        "name": "Artificial Life Evolution (Part 3)",
-        "url_path": "artificial-life-evolution-part-3-",
-        "description": "Artificial Life Evolution (Part 3) collection",
+        "name": "New Wave Artificial Life Evolution",
+        "url_path": "new-wave-artificial-life-evolution",
+        "description": "Futuristic movies about new wave artificial life evolution.",
         "category": "science fiction",
-        "connectionReason": "Part of Artificial Life Evolution (Part 3) collection"
+        "connectionReason": "Part of New Wave Artificial Life Evolution collection"
       },
       {
-        "name": "Early Space Pioneers (Part 2)",
-        "url_path": "early-space-pioneers-part-2-",
-        "description": "Early Space Pioneers (Part 2) collection",
+        "name": "Golden Age Early Space Pioneers",
+        "url_path": "golden-age-early-space-pioneers",
+        "description": "Sci-fi stories featuring golden age early space pioneers.",
         "category": "science fiction",
-        "connectionReason": "Part of Early Space Pioneers (Part 2) collection"
+        "connectionReason": "Part of Golden Age Early Space Pioneers collection"
       },
       {
-        "name": "First Contact Wars (Part 3)",
-        "url_path": "first-contact-wars-part-3-",
-        "description": "First Contact Wars (Part 3) collection",
+        "name": "New Wave First Contact Wars",
+        "url_path": "new-wave-first-contact-wars",
+        "description": "Speculative films about new wave first contact wars.",
         "category": "science fiction",
-        "connectionReason": "Part of First Contact Wars (Part 3) collection"
+        "connectionReason": "Part of New Wave First Contact Wars collection"
       }
     ],
     "totalLists": 4
@@ -185,11 +184,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:38.082Z",
+  "generatedAt": "2025-08-27T00:52:44.851Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }

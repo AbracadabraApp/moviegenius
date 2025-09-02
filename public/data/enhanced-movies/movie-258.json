@@ -26,27 +26,22 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "Bed and Board continues the adventures of Antoine Doinel, following his marriage to Christine and their early life together in a Parisian apartment. The film captures the sweet and sour moments of young married life as Antoine works various odd jobs, including selling flowers and operating a model boat in a courtyard. When he begins an affair with a Japanese woman he meets through his new office job, the marriage faces its first serious test. Truffaut treats these developments with his characteristic light touch, finding humor in domestic situations while never minimizing their emotional weight.",
         "text": "Bed and Board continues the adventures of Antoine Doinel, following his marriage to Christine and their early life together in a Parisian apartment. The film captures the sweet and sour moments of young married life as Antoine works various odd jobs, including selling flowers and operating a model boat in a courtyard. When he begins an affair with a Japanese woman he meets through his new office job, the marriage faces its first serious test. Truffaut treats these developments with his characteristic light touch, finding humor in domestic situations while never minimizing their emotional weight."
       },
       {
         "type": "performancesAndVision",
-        "content": "Jean-Pierre Léaud's portrayal of Antoine has matured beautifully since **The 400 Blows** (1959), maintaining the character's restless spirit while showing subtle signs of growth. Claude Jade brings warmth and intelligence to Christine, creating a fully realized character who's much more than just Antoine's wife. Truffaut's direction maintains the spontaneous energy of his earlier New Wave works while demonstrating a more refined control of tone, seamlessly blending comedy with moments of genuine pathos.",
         "text": "Jean-Pierre Léaud's portrayal of Antoine has matured beautifully since **The 400 Blows** (1959), maintaining the character's restless spirit while showing subtle signs of growth. Claude Jade brings warmth and intelligence to Christine, creating a fully realized character who's much more than just Antoine's wife. Truffaut's direction maintains the spontaneous energy of his earlier New Wave works while demonstrating a more refined control of tone, seamlessly blending comedy with moments of genuine pathos."
       },
       {
         "type": "socialAndCultural",
-        "content": "The film offers a fascinating snapshot of evolving social mores in 1970s France, particularly regarding marriage, infidelity, and gender roles. Like **Jules and Jim** (1962), it examines unconventional relationships with remarkable empathy. The film's exploration of marital dissatisfaction and urban alienation resonated with similar themes in contemporary works like **Five Easy Pieces** (1970) and would later influence films like **Annie Hall** (1977).",
         "text": "The film offers a fascinating snapshot of evolving social mores in 1970s France, particularly regarding marriage, infidelity, and gender roles. Like **Jules and Jim** (1962), it examines unconventional relationships with remarkable empathy. The film's exploration of marital dissatisfaction and urban alienation resonated with similar themes in contemporary works like **Five Easy Pieces** (1970) and would later influence films like **Annie Hall** (1977)."
       },
       {
         "type": "genreContext",
-        "content": "As part of the Antoine Doinel series, Bed and Board represents a unique achievement in cinema: a character study spanning multiple films that grows in complexity with each installment. Its influence can be seen in later relationship chronicles like **Before Sunrise** (1995) and its sequels, as well as in the sophisticated romantic comedies of the 1980s and 90s.",
         "text": "As part of the Antoine Doinel series, Bed and Board represents a unique achievement in cinema: a character study spanning multiple films that grows in complexity with each installment. Its influence can be seen in later relationship chronicles like **Before Sunrise** (1995) and its sequels, as well as in the sophisticated romantic comedies of the 1980s and 90s."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "The film's intimate portrayal of young marriage remains startlingly relevant, prefiguring contemporary relationship studies like **Marriage Story** (2019) and **Blue Valentine** (2010). Its exploration of identity and commitment within marriage continues to resonate with modern audiences, while its visual style has influenced filmmakers from Wes Anderson to Noah Baumbach.",
         "text": "The film's intimate portrayal of young marriage remains startlingly relevant, prefiguring contemporary relationship studies like **Marriage Story** (2019) and **Blue Valentine** (2010). Its exploration of identity and commitment within marriage continues to resonate with modern audiences, while its visual style has influenced filmmakers from Wes Anderson to Noah Baumbach."
       }
     ],
@@ -82,25 +77,25 @@
   "browseCollections": {
     "lists": [
       {
-        "name": "Urban Wanderer Stories (Part 2)",
-        "url_path": "urban-wanderer-stories-part-2-",
-        "description": "Urban Wanderer Stories (Part 2) collection",
+        "name": "Golden Age Urban Wanderer Stories",
+        "url_path": "golden-age-urban-wanderer-stories",
+        "description": "Lighthearted movies about golden age urban wanderer.",
         "category": "comedy",
-        "connectionReason": "Part of Urban Wanderer Stories (Part 2) collection"
+        "connectionReason": "Part of Golden Age Urban Wanderer Stories collection"
       },
       {
-        "name": "Marriage Infidelity Comedies (Part 1)",
-        "url_path": "marriage-infidelity-comedies-part-1-",
-        "description": "Marriage Infidelity Comedies (Part 1) collection",
+        "name": "Classic Marriage Infidelity Comedies",
+        "url_path": "classic-marriage-infidelity-comedies",
+        "description": "A collection of comedic films featuring timeless and influential stories.",
         "category": "comedy",
-        "connectionReason": "Part of Marriage Infidelity Comedies (Part 1) collection"
+        "connectionReason": "Part of Classic Marriage Infidelity Comedies collection"
       },
       {
-        "name": "Nonconformist Family Stories (Part 1)",
-        "url_path": "nonconformist-family-stories-part-1-",
-        "description": "Nonconformist Family Stories (Part 1) collection",
+        "name": "Vintage Nonconformist Family Stories",
+        "url_path": "vintage-nonconformist-family-stories",
+        "description": "Lighthearted movies about unconventional family dynamics.",
         "category": "comedy",
-        "connectionReason": "Part of Nonconformist Family Stories (Part 1) collection"
+        "connectionReason": "Part of Vintage Nonconformist Family Stories collection"
       }
     ],
     "totalLists": 3
@@ -176,11 +171,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:51.541Z",
+  "generatedAt": "2025-08-27T00:52:57.544Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }

@@ -26,33 +26,32 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "Two men wake up chained in a grimy bathroom, victims of the mysterious Jigsaw Killer who forces people to participate in deadly 'games' testing their will to live. Dr. Gordon and Adam must unravel their connection while facing an impossible choice - Gordon must kill Adam within eight hours, or his wife and daughter will die. The film masterfully weaves flashbacks with present tension, revealing Jigsaw's previous victims and the detective obsessed with catching him. Unlike typical slasher films, Saw forces its characters to make moral choices, turning survival horror into a twisted philosophical experiment.",
         "text": "Two men wake up chained in a grimy bathroom, victims of the mysterious Jigsaw Killer who forces people to participate in deadly 'games' testing their will to live. Dr. Gordon and Adam must unravel their connection while facing an impossible choice - Gordon must kill Adam within eight hours, or his wife and daughter will die. The film masterfully weaves flashbacks with present tension, revealing Jigsaw's previous victims and the detective obsessed with catching him. Unlike typical slasher films, Saw forces its characters to make moral choices, turning survival horror into a twisted philosophical experiment."
       },
       {
         "type": "performancesAndVision",
-        "content": "James Wan's directorial debut showcases remarkable restraint and innovation on a minimal budget. Cary Elwes delivers a haunting performance as Dr. Gordon, while Leigh Whannell brings raw desperation to Adam. The confined setting amplifies the psychological tension, while Charlie Clouser's industrial score creates unbearable anxiety. The film's grimy aesthetic and handheld camera work, reminiscent of **Se7en** (1995), established a visual template that defined horror for the next decade.",
         "text": "James Wan's directorial debut showcases remarkable restraint and innovation on a minimal budget. Cary Elwes delivers a haunting performance as Dr. Gordon, while Leigh Whannell brings raw desperation to Adam. The confined setting amplifies the psychological tension, while Charlie Clouser's industrial score creates unbearable anxiety. The film's grimy aesthetic and handheld camera work, reminiscent of **Se7en** (1995), established a visual template that defined horror for the next decade."
       },
       {
         "type": "socialAndCultural",
-        "content": "Saw emerged during a period of post-9/11 anxiety, reflecting deeper fears about moral choices under extreme duress. Like **Hostel** (2005) and **The Devil's Rejects** (2005), it pushed boundaries in depicting graphic violence, but its focus remained on psychological torment rather than gore. The film tapped into millennial fears about surveillance and manipulation, while exploring themes of redemption through suffering that resonated with audiences worldwide.",
         "text": "Saw emerged during a period of post-9/11 anxiety, reflecting deeper fears about moral choices under extreme duress. Like **Hostel** (2005) and **The Devil's Rejects** (2005), it pushed boundaries in depicting graphic violence, but its focus remained on psychological torment rather than gore. The film tapped into millennial fears about surveillance and manipulation, while exploring themes of redemption through suffering that resonated with audiences worldwide."
       },
       {
         "type": "genreContext",
-        "content": "While influenced by psychological thrillers like **The Usual Suspects** (1995) and **Memento** (2000), Saw created its own subgenre of 'torture horror' that dominated the 2000s. Its success inspired films like **Martyrs** (2008) and **The Collection** (2012), while its emphasis on moral choices influenced later works like **Would You Rather** (2012). The film proved horror could be both intellectually engaging and commercially successful.",
         "text": "While influenced by psychological thrillers like **The Usual Suspects** (1995) and **Memento** (2000), Saw created its own subgenre of 'torture horror' that dominated the 2000s. Its success inspired films like **Martyrs** (2008) and **The Collection** (2012), while its emphasis on moral choices influenced later works like **Would You Rather** (2012). The film proved horror could be both intellectually engaging and commercially successful."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "Saw's exploration of morality and survival remains relevant in an era of ethical complexity. Its influence can be seen in modern horror-thrillers like **Escape Room** (2019) and streaming series focusing on moral dilemmas. The film's examination of human nature under extreme circumstances continues to resonate, while its technical innovations in low-budget filmmaking inspire independent creators.",
         "text": "Saw's exploration of morality and survival remains relevant in an era of ethical complexity. Its influence can be seen in modern horror-thrillers like **Escape Room** (2019) and streaming series focusing on moral dilemmas. The film's examination of human nature under extreme circumstances continues to resonate, while its technical innovations in low-budget filmmaking inspire independent creators."
       }
     ],
     "whyWatch": {
-      "recommendation": "NO",
-      "reasons": []
+      "recommendation": "YES",
+      "reasons": [
+        "Revolutionized modern horror mechanics",
+        "Diabolically ingenious plot twists",
+        "Launched billion-dollar franchise empire"
+      ]
     },
     "featuredMovies": [
       {
@@ -84,58 +83,58 @@
       {
         "name": "Deadly Game Horror",
         "url_path": "deadly-game-horror",
-        "description": "Deadly Game Horror collection",
+        "description": "Frightening films exploring deadly game horror.",
         "category": "horror",
         "connectionReason": "Part of Deadly Game Horror collection"
       },
       {
-        "name": "Confined Space Thrillers (Part 5)",
-        "url_path": "confined-space-thrillers-part-5-",
-        "description": "Confined Space Thrillers (Part 5) collection",
+        "name": "Tech Confined Space Thrillers",
+        "url_path": "tech-confined-space-thrillers",
+        "description": "Horror films featuring tech confined space.",
         "category": "horror",
-        "connectionReason": "Part of Confined Space Thrillers (Part 5) collection"
+        "connectionReason": "Part of Tech Confined Space Thrillers collection"
       },
       {
-        "name": "Extreme Gore Horror (Part 2)",
-        "url_path": "extreme-gore-horror-part-2-",
-        "description": "Extreme Gore Horror (Part 2) collection",
+        "name": "Supernatural Extreme Gore Horror",
+        "url_path": "supernatural-extreme-gore-horror",
+        "description": "Horror films featuring supernatural extreme gore horror.",
         "category": "horror",
-        "connectionReason": "Part of Extreme Gore Horror (Part 2) collection"
+        "connectionReason": "Part of Supernatural Extreme Gore Horror collection"
       },
       {
-        "name": "Psychological Horror (Part 3)",
-        "url_path": "psychological-horror-part-3-",
-        "description": "Psychological Horror (Part 3) collection",
+        "name": "Psychological Psychological Horror",
+        "url_path": "psychological-psychological-horror",
+        "description": "Terrifying stories of psychological psychological horror.",
         "category": "horror",
-        "connectionReason": "Part of Psychological Horror (Part 3) collection"
+        "connectionReason": "Part of Psychological Psychological Horror collection"
       },
       {
         "name": "Deadly Game Thrillers",
         "url_path": "deadly-game-thrillers",
-        "description": "Deadly Game Thrillers collection",
+        "description": "Tense movies exploring deadly game.",
         "category": "thriller",
         "connectionReason": "Part of Deadly Game Thrillers collection"
       },
       {
-        "name": "Moral Choice Thrillers (Part 5)",
-        "url_path": "moral-choice-thrillers-part-5-",
-        "description": "Moral Choice Thrillers (Part 5) collection",
+        "name": "Tech Moral Choice Thrillers",
+        "url_path": "tech-moral-choice-thrillers",
+        "description": "Edge-of-your-seat films about tech moral choice.",
         "category": "thriller",
-        "connectionReason": "Part of Moral Choice Thrillers (Part 5) collection"
+        "connectionReason": "Part of Tech Moral Choice Thrillers collection"
       },
       {
-        "name": "Single Location Survival (Part 3)",
-        "url_path": "single-location-survival-part-3-",
-        "description": "Single Location Survival (Part 3) collection",
+        "name": "Action Single Location Survival",
+        "url_path": "action-single-location-survival",
+        "description": "Tense movies exploring action single location survival.",
         "category": "thriller",
-        "connectionReason": "Part of Single Location Survival (Part 3) collection"
+        "connectionReason": "Part of Action Single Location Survival collection"
       },
       {
-        "name": "Psychological Manipulation Thrillers (Part 4)",
-        "url_path": "psychological-manipulation-thrillers-part-4-",
-        "description": "Psychological Manipulation Thrillers (Part 4) collection",
+        "name": "Supernatural Psychological Manipulation Thrillers",
+        "url_path": "supernatural-psychological-manipulation-thrillers",
+        "description": "Edge-of-your-seat films about supernatural psychological manipulation.",
         "category": "thriller",
-        "connectionReason": "Part of Psychological Manipulation Thrillers (Part 4) collection"
+        "connectionReason": "Part of Supernatural Psychological Manipulation Thrillers collection"
       }
     ],
     "totalLists": 8
@@ -211,11 +210,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:33.264Z",
+  "generatedAt": "2025-08-27T00:52:40.107Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }

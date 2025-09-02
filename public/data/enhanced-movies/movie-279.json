@@ -24,27 +24,22 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "Amadeus tells the story of Wolfgang Amadeus Mozart through the envious eyes of his rival composer Antonio Salieri. The narrative unfolds as an aged Salieri confesses his role in Mozart's downfall, creating a spellbinding tale of jealousy, genius, and divine injustice. Tom Hulce's Mozart is portrayed not as a dignified classical composer, but as a giggling, crude manchild whose musical brilliance seems almost accidental – a choice that makes his gift all the more maddening to Salieri, who has devoted his life to music with far less natural talent.",
         "text": "Amadeus tells the story of Wolfgang Amadeus Mozart through the envious eyes of his rival composer Antonio Salieri. The narrative unfolds as an aged Salieri confesses his role in Mozart's downfall, creating a spellbinding tale of jealousy, genius, and divine injustice. Tom Hulce's Mozart is portrayed not as a dignified classical composer, but as a giggling, crude manchild whose musical brilliance seems almost accidental – a choice that makes his gift all the more maddening to Salieri, who has devoted his life to music with far less natural talent."
       },
       {
         "type": "performancesAndVision",
-        "content": "F. Murray Abraham's Salieri is a masterwork of subtle torment and calculated malice, earning him a well-deserved Oscar. Director Milos Forman, fresh from **One Flew Over the Cuckoo's Nest** (1975), brings his signature ability to balance dark themes with moments of levity. The film's greatest triumph is how it makes classical music accessible and exciting to modern audiences, presenting Mozart's compositions with the revolutionary energy they possessed in their time.",
         "text": "F. Murray Abraham's Salieri is a masterwork of subtle torment and calculated malice, earning him a well-deserved Oscar. Director Milos Forman, fresh from **One Flew Over the Cuckoo's Nest** (1975), brings his signature ability to balance dark themes with moments of levity. The film's greatest triumph is how it makes classical music accessible and exciting to modern audiences, presenting Mozart's compositions with the revolutionary energy they possessed in their time."
       },
       {
         "type": "socialAndCultural",
-        "content": "Like **Immortal Beloved** (1994) and **Bach's Fight for Freedom** (1995), Amadeus transcends the typical biopic format by focusing on the human drama behind the music. The film explores timeless themes of mediocrity versus genius, divine favor, and the crushing weight of living in someone else's shadow. Its influence can be seen in later musical biopics like **Ray** (2004) and **Walk the Line** (2005), which similarly emphasize personal struggle over mere biographical facts.",
         "text": "Like **Immortal Beloved** (1994) and **Bach's Fight for Freedom** (1995), Amadeus transcends the typical biopic format by focusing on the human drama behind the music. The film explores timeless themes of mediocrity versus genius, divine favor, and the crushing weight of living in someone else's shadow. Its influence can be seen in later musical biopics like **Ray** (2004) and **Walk the Line** (2005), which similarly emphasize personal struggle over mere biographical facts."
       },
       {
         "type": "genreContext",
-        "content": "Within the historical drama genre, Amadeus stands alongside **The Last Emperor** (1987) and **Barry Lyndon** (1975) in its meticulous period detail and grand visual scope. However, it distinguishes itself by treating historical accuracy as secondary to psychological truth, creating a compelling fiction from historical figures that speaks to universal human experiences.",
         "text": "Within the historical drama genre, Amadeus stands alongside **The Last Emperor** (1987) and **Barry Lyndon** (1975) in its meticulous period detail and grand visual scope. However, it distinguishes itself by treating historical accuracy as secondary to psychological truth, creating a compelling fiction from historical figures that speaks to universal human experiences."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "The film's themes of artistic jealousy and the arbitrary nature of talent remain startlingly relevant. Modern viewers might see parallels in stories of tech innovators or social media influencers – those who achieve seemingly effortless success while others struggle in obscurity. The film's exploration of mediocrity versus genius continues to resonate in our current culture of viral overnight success and creative competition.",
         "text": "The film's themes of artistic jealousy and the arbitrary nature of talent remain startlingly relevant. Modern viewers might see parallels in stories of tech innovators or social media influencers – those who achieve seemingly effortless success while others struggle in obscurity. The film's exploration of mediocrity versus genius continues to resonate in our current culture of viral overnight success and creative competition."
       }
     ],
@@ -82,28 +77,28 @@
       {
         "name": "Fame and Tragedy Musicals",
         "url_path": "fame-and-tragedy-musicals",
-        "description": "Fame and Tragedy Musicals collection",
+        "description": "Compelling dramas about fame and tragedy musicals.",
         "category": "music",
         "connectionReason": "Part of Fame and Tragedy Musicals collection"
       },
       {
         "name": "Classical Composer Biopics",
         "url_path": "classical-composer-biopics",
-        "description": "Classical Composer Biopics collection",
+        "description": "Dramatic films exploring timeless and influential stories.",
         "category": "music",
         "connectionReason": "Part of Classical Composer Biopics collection"
       },
       {
         "name": "Historical Period Musicals [OVERSIZED]",
         "url_path": "historical-period-musicals-oversized-",
-        "description": "Historical Period Musicals [OVERSIZED] collection",
+        "description": "Dramatic films exploring historical period musicals [oversized].",
         "category": "music",
         "connectionReason": "Part of Historical Period Musicals [OVERSIZED] collection"
       },
       {
         "name": "Literary Musical Adaptations [OVERSIZED]",
         "url_path": "literary-musical-adaptations-oversized-",
-        "description": "Literary Musical Adaptations [OVERSIZED] collection",
+        "description": "Compelling dramas about literary musical adaptations [oversized].",
         "category": "music",
         "connectionReason": "Part of Literary Musical Adaptations [OVERSIZED] collection"
       }
@@ -167,11 +162,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:54.578Z",
+  "generatedAt": "2025-08-27T00:53:00.599Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }

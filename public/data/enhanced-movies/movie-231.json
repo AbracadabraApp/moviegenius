@@ -25,27 +25,22 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "Syriana weaves together multiple storylines centered around the global oil industry, following a veteran CIA operative, an energy analyst, a corporate lawyer, and a young Pakistani migrant worker. The film's intricate narrative structure mirrors the complexity of global oil politics, with each character representing different facets of this world. George Clooney's Bob Barnes finds himself caught in a dangerous web of agency politics and assassination plots, while Matt Damon's energy analyst Bryan Woodman gets entangled with a progressive Gulf prince's ambitious plans.",
         "text": "Syriana weaves together multiple storylines centered around the global oil industry, following a veteran CIA operative, an energy analyst, a corporate lawyer, and a young Pakistani migrant worker. The film's intricate narrative structure mirrors the complexity of global oil politics, with each character representing different facets of this world. George Clooney's Bob Barnes finds himself caught in a dangerous web of agency politics and assassination plots, while Matt Damon's energy analyst Bryan Woodman gets entangled with a progressive Gulf prince's ambitious plans."
       },
       {
         "type": "performancesAndVision",
-        "content": "Director Stephen Gaghan, fresh from writing **Traffic** (2000), brings the same multi-narrative approach to the oil industry. Clooney's transformative performance, for which he gained 35 pounds and endured a serious back injury, earned him an Academy Award. The ensemble cast delivers nuanced performances that humanize the complex political machinery, with Jeffrey Wright and Alexander Siddig providing particularly memorable supporting turns. The film's documentary-style cinematography creates an immediate, visceral sense of authenticity.",
         "text": "Director Stephen Gaghan, fresh from writing **Traffic** (2000), brings the same multi-narrative approach to the oil industry. Clooney's transformative performance, for which he gained 35 pounds and endured a serious back injury, earned him an Academy Award. The ensemble cast delivers nuanced performances that humanize the complex political machinery, with Jeffrey Wright and Alexander Siddig providing particularly memorable supporting turns. The film's documentary-style cinematography creates an immediate, visceral sense of authenticity."
       },
       {
         "type": "socialAndCultural",
-        "content": "Released in the aftermath of 9/11 and during the Iraq War, Syriana captured the zeitgeist of American foreign policy uncertainty and oil dependency anxiety. The film's prescient examination of energy politics, corruption, and Middle Eastern relations anticipated many developments that would unfold in subsequent years. Like **All the President's Men** (1976) did for political corruption, Syriana exposed the intricate connections between government, industry, and global finance.",
         "text": "Released in the aftermath of 9/11 and during the Iraq War, Syriana captured the zeitgeist of American foreign policy uncertainty and oil dependency anxiety. The film's prescient examination of energy politics, corruption, and Middle Eastern relations anticipated many developments that would unfold in subsequent years. Like **All the President's Men** (1976) did for political corruption, Syriana exposed the intricate connections between government, industry, and global finance."
       },
       {
         "type": "genreContext",
-        "content": "Syriana reinvented the political thriller for the globalized age, following in the tradition of **Three Days of the Condor** (1975) and **The Parallax View** (1974), but with a broader, more international scope. Its influence can be seen in later films like **Zero Dark Thirty** (2012) and **Vice** (2018), which similarly tackle complex geopolitical subjects through multiple perspectives.",
         "text": "Syriana reinvented the political thriller for the globalized age, following in the tradition of **Three Days of the Condor** (1975) and **The Parallax View** (1974), but with a broader, more international scope. Its influence can be seen in later films like **Zero Dark Thirty** (2012) and **Vice** (2018), which similarly tackle complex geopolitical subjects through multiple perspectives."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "The film's themes of energy politics, corporate influence on foreign policy, and Middle Eastern relations remain startlingly relevant. Its exploration of the human cost of geopolitical games resonates even more strongly in today's era of climate change concerns and ongoing Middle Eastern conflicts. Like **Network** (1976) did for media manipulation, Syriana's warnings about the intersection of corporate and political power have proven prophetic.",
         "text": "The film's themes of energy politics, corporate influence on foreign policy, and Middle Eastern relations remain startlingly relevant. Its exploration of the human cost of geopolitical games resonates even more strongly in today's era of climate change concerns and ongoing Middle Eastern conflicts. Like **Network** (1976) did for media manipulation, Syriana's warnings about the intersection of corporate and political power have proven prophetic."
       }
     ],
@@ -83,23 +78,23 @@
       {
         "name": "Middle East Wartime Intrigue",
         "url_path": "middle-east-wartime-intrigue",
-        "description": "Middle East Wartime Intrigue collection",
+        "description": "Edge-of-your-seat films about middle east wartime intrigue.",
         "category": "thriller",
         "connectionReason": "Part of Middle East Wartime Intrigue collection"
       },
       {
         "name": "Corporate Conspiracy Thrillers",
         "url_path": "corporate-conspiracy-thrillers",
-        "description": "Corporate Conspiracy Thrillers collection",
+        "description": "Suspenseful films about corporate conspiracy.",
         "category": "thriller",
         "connectionReason": "Part of Corporate Conspiracy Thrillers collection"
       },
       {
-        "name": "Political Corruption Exposés (Part 2)",
-        "url_path": "political-corruption-expos-s-part-2-",
-        "description": "Political Corruption Exposés (Part 2) collection",
+        "name": "Psychological Political Corruption Exposés",
+        "url_path": "psychological-political-corruption-exposs",
+        "description": "Psychological thrillers featuring psychological political corruption exposés.",
         "category": "thriller",
-        "connectionReason": "Part of Political Corruption Exposés (Part 2) collection"
+        "connectionReason": "Part of Psychological Political Corruption Exposés collection"
       }
     ],
     "totalLists": 3
@@ -175,11 +170,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:44.904Z",
+  "generatedAt": "2025-08-27T00:52:50.875Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }

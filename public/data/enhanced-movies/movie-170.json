@@ -24,33 +24,32 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "28 Days Later jolts awake with Jim (Cillian Murphy) in an abandoned hospital, wandering through a desolate London. This haunting opening immediately establishes the film's nerve-shredding atmosphere. The story follows Jim and fellow survivors Selena (Naomie Harris) and Frank (Brendan Gleeson) as they navigate a Britain devastated by the 'Rage' virus, which transforms humans into feral, blood-crazed infected. The genius of the narrative lies in how it balances visceral horror with intimate character development, making us deeply invest in the survivors' humanity before testing it against both the infected and the darker nature of other survivors.",
         "text": "28 Days Later jolts awake with Jim (Cillian Murphy) in an abandoned hospital, wandering through a desolate London. This haunting opening immediately establishes the film's nerve-shredding atmosphere. The story follows Jim and fellow survivors Selena (Naomie Harris) and Frank (Brendan Gleeson) as they navigate a Britain devastated by the 'Rage' virus, which transforms humans into feral, blood-crazed infected. The genius of the narrative lies in how it balances visceral horror with intimate character development, making us deeply invest in the survivors' humanity before testing it against both the infected and the darker nature of other survivors."
       },
       {
         "type": "performancesAndVision",
-        "content": "Danny Boyle's direction brings an art-house sensibility to the horror genre, using digital cameras to create an immediate, documentary-like feel that was revolutionary for its time. Cillian Murphy delivers a breakthrough performance, transforming from vulnerable hospital patient to hardened survivor. The raw cinematography and John Murphy's haunting score, particularly during the iconic London abandonment sequence, create a template that influenced countless post-apocalyptic films that followed.",
         "text": "Danny Boyle's direction brings an art-house sensibility to the horror genre, using digital cameras to create an immediate, documentary-like feel that was revolutionary for its time. Cillian Murphy delivers a breakthrough performance, transforming from vulnerable hospital patient to hardened survivor. The raw cinematography and John Murphy's haunting score, particularly during the iconic London abandonment sequence, create a template that influenced countless post-apocalyptic films that followed."
       },
       {
         "type": "socialAndCultural",
-        "content": "Released in a post-9/11 world, the film tapped into growing anxieties about social collapse and biological warfare. It reinvented zombie cinema by grounding its horror in plausible scientific scenarios rather than supernatural causes, predating real-world pandemic fears. The film's exploration of how quickly civilization can crumble, and how survivors might rebuild or corrupt it, remains chillingly relevant.",
         "text": "Released in a post-9/11 world, the film tapped into growing anxieties about social collapse and biological warfare. It reinvented zombie cinema by grounding its horror in plausible scientific scenarios rather than supernatural causes, predating real-world pandemic fears. The film's exploration of how quickly civilization can crumble, and how survivors might rebuild or corrupt it, remains chillingly relevant."
       },
       {
         "type": "genreContext",
-        "content": "The film reinvigorated the zombie genre by introducing fast-moving infected, influencing works like **World War Z** (2013) and **The Walking Dead** (2010). It bridges the gap between George Romero's classical zombie commentary in **Dawn of the Dead** (1978) and modern pandemic thrillers like **Contagion** (2011). The film's success paved the way for serious dramatic directors to approach horror with artistic ambition.",
         "text": "The film reinvigorated the zombie genre by introducing fast-moving infected, influencing works like **World War Z** (2013) and **The Walking Dead** (2010). It bridges the gap between George Romero's classical zombie commentary in **Dawn of the Dead** (1978) and modern pandemic thrillers like **Contagion** (2011). The film's success paved the way for serious dramatic directors to approach horror with artistic ambition."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "Post-COVID-19, the film's depiction of empty cities and societal breakdown resonates with unsettling authenticity. Its themes of isolation, survival, and human nature under extreme pressure feel more relevant than ever. The military subplot and examination of masculine violence remain pertinent to contemporary discussions about power and institutional control during crises.",
         "text": "Post-COVID-19, the film's depiction of empty cities and societal breakdown resonates with unsettling authenticity. Its themes of isolation, survival, and human nature under extreme pressure feel more relevant than ever. The military subplot and examination of masculine violence remain pertinent to contemporary discussions about power and institutional control during crises."
       }
     ],
     "whyWatch": {
-      "recommendation": "NO",
-      "reasons": []
+      "recommendation": "YES",
+      "reasons": [
+        "Revolutionized zombie film aesthetics",
+        "Raw, electric Cillian Murphy performance",
+        "Haunting empty London sequences"
+      ]
     },
     "featuredMovies": [
       {
@@ -82,51 +81,51 @@
       {
         "name": "Viral Outbreak Horror",
         "url_path": "viral-outbreak-horror",
-        "description": "Viral Outbreak Horror collection",
+        "description": "Horror films featuring viral outbreak horror.",
         "category": "horror",
         "connectionReason": "Part of Viral Outbreak Horror collection"
       },
       {
         "name": "Post-Apocalyptic Survival Horror",
         "url_path": "post-apocalyptic-survival-horror",
-        "description": "Post-Apocalyptic Survival Horror collection",
+        "description": "Horror films featuring post-apocalyptic survival horror.",
         "category": "horror",
         "connectionReason": "Part of Post-Apocalyptic Survival Horror collection"
       },
       {
-        "name": "Confined Space Thrillers (Part 1)",
-        "url_path": "confined-space-thrillers-part-1-",
-        "description": "Confined Space Thrillers (Part 1) collection",
+        "name": "Classic Confined Space Thrillers",
+        "url_path": "classic-confined-space-thrillers",
+        "description": "Frightening films exploring timeless and influential stories.",
         "category": "horror",
-        "connectionReason": "Part of Confined Space Thrillers (Part 1) collection"
+        "connectionReason": "Part of Classic Confined Space Thrillers collection"
       },
       {
         "name": "European Catastrophe Settings",
         "url_path": "european-catastrophe-settings",
-        "description": "European Catastrophe Settings collection",
+        "description": "Science fiction films exploring european catastrophe settings.",
         "category": "science fiction",
         "connectionReason": "Part of European Catastrophe Settings collection"
       },
       {
         "name": "Viral Outbreak Apocalypse",
         "url_path": "viral-outbreak-apocalypse",
-        "description": "Viral Outbreak Apocalypse collection",
+        "description": "Speculative films about viral outbreak apocalypse.",
         "category": "science fiction",
         "connectionReason": "Part of Viral Outbreak Apocalypse collection"
       },
       {
-        "name": "Low Budget Disaster (Part 1)",
-        "url_path": "low-budget-disaster-part-1-",
-        "description": "Low Budget Disaster (Part 1) collection",
+        "name": "Vintage Low Budget Disaster",
+        "url_path": "vintage-low-budget-disaster",
+        "description": "Speculative films about vintage low budget disaster.",
         "category": "science fiction",
-        "connectionReason": "Part of Low Budget Disaster (Part 1) collection"
+        "connectionReason": "Part of Vintage Low Budget Disaster collection"
       },
       {
-        "name": "Corporate Science Horror (Part 1)",
-        "url_path": "corporate-science-horror-part-1-",
-        "description": "Corporate Science Horror (Part 1) collection",
+        "name": "Vintage Corporate Science Horror",
+        "url_path": "vintage-corporate-science-horror",
+        "description": "Science fiction films exploring vintage corporate science horror.",
         "category": "science fiction",
-        "connectionReason": "Part of Corporate Science Horror (Part 1) collection"
+        "connectionReason": "Part of Vintage Corporate Science Horror collection"
       }
     ],
     "totalLists": 7
@@ -195,11 +194,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:32.493Z",
+  "generatedAt": "2025-08-27T00:52:39.337Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }

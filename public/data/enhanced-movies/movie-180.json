@@ -26,33 +26,32 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "In 2054 Washington D.C., PreCrime unit chief John Anderton (Tom Cruise) leads a specialized police force that arrests murderers before they commit their crimes, using the psychic visions of three 'precogs.' When the system identifies Anderton himself as a future killer, he must run from his own unit while investigating whether the supposedly infallible system can be manipulated. The film masterfully weaves elements of classic noir with futuristic technology, creating a taut thriller that questions the nature of free will and predetermined destiny.",
         "text": "In 2054 Washington D.C., PreCrime unit chief John Anderton (Tom Cruise) leads a specialized police force that arrests murderers before they commit their crimes, using the psychic visions of three 'precogs.' When the system identifies Anderton himself as a future killer, he must run from his own unit while investigating whether the supposedly infallible system can be manipulated. The film masterfully weaves elements of classic noir with futuristic technology, creating a taut thriller that questions the nature of free will and predetermined destiny."
       },
       {
         "type": "performancesAndVision",
-        "content": "Cruise delivers one of his most nuanced performances as the troubled Anderton, whose personal trauma drives his faith in the PreCrime system. Samantha Morton's ethereal portrayal of Agatha, the most gifted precog, brings humanity to the film's technological core. Spielberg's direction seamlessly merges the gritty detective story with groundbreaking visual effects, while Janusz Kamiński's distinctive bleached cinematography creates a world that feels both futuristic and noir-influenced, reminiscent of **Blade Runner** (1982) but with its own unique aesthetic.",
         "text": "Cruise delivers one of his most nuanced performances as the troubled Anderton, whose personal trauma drives his faith in the PreCrime system. Samantha Morton's ethereal portrayal of Agatha, the most gifted precog, brings humanity to the film's technological core. Spielberg's direction seamlessly merges the gritty detective story with groundbreaking visual effects, while Janusz Kamiński's distinctive bleached cinematography creates a world that feels both futuristic and noir-influenced, reminiscent of **Blade Runner** (1982) but with its own unique aesthetic."
       },
       {
         "type": "socialAndCultural",
-        "content": "Released less than a year after 9/11, the film's exploration of trading civil liberties for security struck a powerful chord. Its depiction of personalized advertising, gesture-based computing, and predictive policing has proved remarkably prophetic. Like **1984** (1984) and **Brazil** (1985), it questions the price of safety in a surveillance state, but does so with more moral ambiguity and personal stakes.",
         "text": "Released less than a year after 9/11, the film's exploration of trading civil liberties for security struck a powerful chord. Its depiction of personalized advertising, gesture-based computing, and predictive policing has proved remarkably prophetic. Like **1984** (1984) and **Brazil** (1985), it questions the price of safety in a surveillance state, but does so with more moral ambiguity and personal stakes."
       },
       {
         "type": "genreContext",
-        "content": "The film represents a high point in intelligent science fiction, building on the philosophical questions of **Total Recall** (1990) and paving the way for later cerebral sci-fi like **Children of Men** (2006) and **Inception** (2010). It successfully bridges the gap between thought-provoking science fiction and mainstream entertainment, much like **The Matrix** (1999) did three years earlier.",
         "text": "The film represents a high point in intelligent science fiction, building on the philosophical questions of **Total Recall** (1990) and paving the way for later cerebral sci-fi like **Children of Men** (2006) and **Inception** (2010). It successfully bridges the gap between thought-provoking science fiction and mainstream entertainment, much like **The Matrix** (1999) did three years earlier."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "Twenty years later, Minority Report's concerns about predictive policing, privacy, and corporate surveillance have only become more relevant. Its questions about algorithmic justice and pre-emptive law enforcement parallel current debates about AI bias and predictive criminal profiling. The film's exploration of targeted advertising and personalized technology eerily foreshadowed our current digital landscape.",
         "text": "Twenty years later, Minority Report's concerns about predictive policing, privacy, and corporate surveillance have only become more relevant. Its questions about algorithmic justice and pre-emptive law enforcement parallel current debates about AI bias and predictive criminal profiling. The film's exploration of targeted advertising and personalized technology eerily foreshadowed our current digital landscape."
       }
     ],
     "whyWatch": {
-      "recommendation": "NO",
-      "reasons": []
+      "recommendation": "YES",
+      "reasons": [
+        "Ingenious future-crime premise",
+        "Electric chase sequences",
+        "Cruise's haunted detective performance"
+      ]
     },
     "featuredMovies": [
       {
@@ -84,58 +83,58 @@
       {
         "name": "Behavioral Control SciFi",
         "url_path": "behavioral-control-scifi",
-        "description": "Behavioral Control SciFi collection",
+        "description": "Speculative films about behavioral control scifi.",
         "category": "science fiction",
         "connectionReason": "Part of Behavioral Control SciFi collection"
       },
       {
         "name": "Psychic Powers Evolution",
         "url_path": "psychic-powers-evolution",
-        "description": "Psychic Powers Evolution collection",
+        "description": "Sci-fi stories featuring psychic powers evolution.",
         "category": "science fiction",
         "connectionReason": "Part of Psychic Powers Evolution collection"
       },
       {
         "name": "Digital Privacy Dystopia",
         "url_path": "digital-privacy-dystopia",
-        "description": "Digital Privacy Dystopia collection",
+        "description": "Sci-fi stories featuring digital privacy dystopia.",
         "category": "science fiction",
         "connectionReason": "Part of Digital Privacy Dystopia collection"
       },
       {
-        "name": "Literary SciFi Adaptations (Part 1)",
-        "url_path": "literary-scifi-adaptations-part-1-",
-        "description": "Literary SciFi Adaptations (Part 1) collection",
+        "name": "Vintage Literary SciFi Adaptations",
+        "url_path": "vintage-literary-scifi-adaptations",
+        "description": "Speculative films about vintage literary scifi adaptations.",
         "category": "science fiction",
-        "connectionReason": "Part of Literary SciFi Adaptations (Part 1) collection"
+        "connectionReason": "Part of Vintage Literary SciFi Adaptations collection"
       },
       {
         "name": "Surveillance State Thrillers",
         "url_path": "surveillance-state-thrillers",
-        "description": "Surveillance State Thrillers collection",
+        "description": "Edge-of-your-seat films about surveillance state.",
         "category": "thriller",
         "connectionReason": "Part of Surveillance State Thrillers collection"
       },
       {
-        "name": "Moral Choice Thrillers (Part 4)",
-        "url_path": "moral-choice-thrillers-part-4-",
-        "description": "Moral Choice Thrillers (Part 4) collection",
+        "name": "Supernatural Moral Choice Thrillers",
+        "url_path": "supernatural-moral-choice-thrillers",
+        "description": "Psychological thrillers featuring supernatural moral choice.",
         "category": "thriller",
-        "connectionReason": "Part of Moral Choice Thrillers (Part 4) collection"
+        "connectionReason": "Part of Supernatural Moral Choice Thrillers collection"
       },
       {
-        "name": "Tech Industry Conspiracy (Part 2)",
-        "url_path": "tech-industry-conspiracy-part-2-",
-        "description": "Tech Industry Conspiracy (Part 2) collection",
+        "name": "Psychological Tech Industry Conspiracy",
+        "url_path": "psychological-tech-industry-conspiracy",
+        "description": "Tense movies exploring psychological tech industry conspiracy.",
         "category": "thriller",
-        "connectionReason": "Part of Tech Industry Conspiracy (Part 2) collection"
+        "connectionReason": "Part of Psychological Tech Industry Conspiracy collection"
       },
       {
-        "name": "Police Corruption Evidence (Part 2)",
-        "url_path": "police-corruption-evidence-part-2-",
-        "description": "Police Corruption Evidence (Part 2) collection",
+        "name": "Psychological Police Corruption Evidence",
+        "url_path": "psychological-police-corruption-evidence",
+        "description": "Tense movies exploring psychological police corruption evidence.",
         "category": "thriller",
-        "connectionReason": "Part of Police Corruption Evidence (Part 2) collection"
+        "connectionReason": "Part of Psychological Police Corruption Evidence collection"
       }
     ],
     "totalLists": 8
@@ -211,11 +210,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:33.890Z",
+  "generatedAt": "2025-08-27T00:52:40.701Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }

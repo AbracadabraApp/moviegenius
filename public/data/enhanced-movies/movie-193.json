@@ -25,33 +25,32 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "Star Trek: Generations serves as a monumental bridge between two eras of the franchise, bringing together Captain James T. Kirk and Captain Jean-Luc Picard in a story about mortality, purpose, and the price of paradise. When a mysterious energy ribbon called the Nexus threatens populated worlds, Picard must confront the maniacal Dr. Soran, who will destroy entire solar systems to return to this temporal paradise. The narrative weaves between Kirk's apparent death in the 23rd century and Picard's mission in the 24th, culminating in their historic meeting and final collaboration.",
         "text": "Star Trek: Generations serves as a monumental bridge between two eras of the franchise, bringing together Captain James T. Kirk and Captain Jean-Luc Picard in a story about mortality, purpose, and the price of paradise. When a mysterious energy ribbon called the Nexus threatens populated worlds, Picard must confront the maniacal Dr. Soran, who will destroy entire solar systems to return to this temporal paradise. The narrative weaves between Kirk's apparent death in the 23rd century and Picard's mission in the 24th, culminating in their historic meeting and final collaboration."
       },
       {
         "type": "performancesAndVision",
-        "content": "Patrick Stewart and William Shatner deliver compelling performances that highlight their distinct approaches to their iconic roles. Stewart brings his characteristic gravitas to Picard's struggle with mortality, while Shatner gives Kirk a fitting farewell that honors his legacy of action and sacrifice. Malcolm McDowell's Dr. Soran provides a complex antagonist whose motivations echo themes from **One Flew Over the Cuckoo's Nest** (1975) in their exploration of institutional control versus personal freedom.",
         "text": "Patrick Stewart and William Shatner deliver compelling performances that highlight their distinct approaches to their iconic roles. Stewart brings his characteristic gravitas to Picard's struggle with mortality, while Shatner gives Kirk a fitting farewell that honors his legacy of action and sacrifice. Malcolm McDowell's Dr. Soran provides a complex antagonist whose motivations echo themes from **One Flew Over the Cuckoo's Nest** (1975) in their exploration of institutional control versus personal freedom."
       },
       {
         "type": "socialAndCultural",
-        "content": "The film wrestles with themes of aging, legacy, and the seductive nature of living in the past. Like **2001: A Space Odyssey** (1968), it uses science fiction to explore deeply human questions about time and existence. The Nexus serves as a metaphor for nostalgia and the danger of choosing fantasy over reality, resonating with similar themes in **The Matrix** (1999).",
         "text": "The film wrestles with themes of aging, legacy, and the seductive nature of living in the past. Like **2001: A Space Odyssey** (1968), it uses science fiction to explore deeply human questions about time and existence. The Nexus serves as a metaphor for nostalgia and the danger of choosing fantasy over reality, resonating with similar themes in **The Matrix** (1999)."
       },
       {
         "type": "genreContext",
-        "content": "Within science fiction cinema, Generations marked a crucial transition point similar to how **Aliens** (1986) built upon its predecessor while establishing its own identity. The film bridges the practical effects era of classic Trek with the CGI-enhanced storytelling that would define later entries like **Star Trek: First Contact** (1996). Its approach to franchise continuation influenced later torch-passing films like **TRON: Legacy** (2010).",
         "text": "Within science fiction cinema, Generations marked a crucial transition point similar to how **Aliens** (1986) built upon its predecessor while establishing its own identity. The film bridges the practical effects era of classic Trek with the CGI-enhanced storytelling that would define later entries like **Star Trek: First Contact** (1996). Its approach to franchise continuation influenced later torch-passing films like **TRON: Legacy** (2010)."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "The film's examination of sacrificing personal paradise for the greater good remains relevant in our era of increasing technological escapism. Its themes of generational transition and legacy echo in modern franchise bridges like **Creed** (2015) and **Blade Runner 2049** (2017), while its questioning of virtual versus real happiness presaged discussions central to films like **Ready Player One** (2018).",
         "text": "The film's examination of sacrificing personal paradise for the greater good remains relevant in our era of increasing technological escapism. Its themes of generational transition and legacy echo in modern franchise bridges like **Creed** (2015) and **Blade Runner 2049** (2017), while its questioning of virtual versus real happiness presaged discussions central to films like **Ready Player One** (2018)."
       }
     ],
     "whyWatch": {
       "recommendation": "NO",
-      "reasons": []
+      "reasons": [
+        "Clunky plot transitions",
+        "Wastes legendary Kirk-Picard meetup",
+        "Consider <link>First Contact</link> instead"
+      ]
     },
     "featuredMovies": [
       {
@@ -83,30 +82,30 @@
       {
         "name": "Space Evolution Philosophy",
         "url_path": "space-evolution-philosophy",
-        "description": "Space Evolution Philosophy collection",
+        "description": "Science fiction films exploring space evolution philosophy.",
         "category": "science fiction",
         "connectionReason": "Part of Space Evolution Philosophy collection"
       },
       {
         "name": "Planetary Scale Threats",
         "url_path": "planetary-scale-threats",
-        "description": "Planetary Scale Threats collection",
+        "description": "Science fiction films exploring planetary scale threats.",
         "category": "science fiction",
         "connectionReason": "Part of Planetary Scale Threats collection"
       },
       {
-        "name": "Memory and Time (Part 3)",
-        "url_path": "memory-and-time-part-3-",
-        "description": "Memory and Time (Part 3) collection",
+        "name": "New Wave Memory and Time",
+        "url_path": "new-wave-memory-and-time",
+        "description": "Speculative films about new wave memory and time.",
         "category": "science fiction",
-        "connectionReason": "Part of Memory and Time (Part 3) collection"
+        "connectionReason": "Part of New Wave Memory and Time collection"
       },
       {
-        "name": "Retro Space Adventure (Part 3)",
-        "url_path": "retro-space-adventure-part-3-",
-        "description": "Retro Space Adventure (Part 3) collection",
+        "name": "New Wave Retro Space Adventure",
+        "url_path": "new-wave-retro-space-adventure",
+        "description": "Futuristic movies about new wave retro space adventure.",
         "category": "science fiction",
-        "connectionReason": "Part of Retro Space Adventure (Part 3) collection"
+        "connectionReason": "Part of New Wave Retro Space Adventure collection"
       }
     ],
     "totalLists": 4
@@ -175,11 +174,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:36.381Z",
+  "generatedAt": "2025-08-27T00:52:43.151Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }

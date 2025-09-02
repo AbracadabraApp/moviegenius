@@ -26,33 +26,32 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "The Enterprise crew confronts Sybok, Spock's half-brother, who hijacks the ship for a quest to find God at the center of the galaxy. While the premise promises deep philosophical exploration, the execution falls flat. Kirk, Spock, and McCoy's usually reliable chemistry feels forced, despite moments of campfire camaraderie. The story attempts to tackle faith, family, and the human desire to meet our maker, but stumbles under the weight of its ambitions.",
         "text": "The Enterprise crew confronts Sybok, Spock's half-brother, who hijacks the ship for a quest to find God at the center of the galaxy. While the premise promises deep philosophical exploration, the execution falls flat. Kirk, Spock, and McCoy's usually reliable chemistry feels forced, despite moments of campfire camaraderie. The story attempts to tackle faith, family, and the human desire to meet our maker, but stumbles under the weight of its ambitions."
       },
       {
         "type": "performancesAndVision",
-        "content": "William Shatner's directorial debut shows his deep understanding of the characters but lacks the finesse of previous Trek films. The performances maintain the familiar crew dynamic, though the script gives them little substantial material. Unlike Nicholas Meyer's masterful direction in **Star Trek II: The Wrath of Khan** (1982), Shatner's vision feels unfocused, mixing serious theological questions with awkward attempts at humor.",
         "text": "William Shatner's directorial debut shows his deep understanding of the characters but lacks the finesse of previous Trek films. The performances maintain the familiar crew dynamic, though the script gives them little substantial material. Unlike Nicholas Meyer's masterful direction in **Star Trek II: The Wrath of Khan** (1982), Shatner's vision feels unfocused, mixing serious theological questions with awkward attempts at humor."
       },
       {
         "type": "socialAndCultural",
-        "content": "Released in the late 1980s, the film reflects period discussions about religious fundamentalism and the search for meaning. Like **Close Encounters of the Third Kind** (1977), it explores humanity's desire to make contact with higher powers, though with less success. The film's treatment of faith versus skepticism echoes similar themes in **Contact** (1997), but without the same philosophical depth.",
         "text": "Released in the late 1980s, the film reflects period discussions about religious fundamentalism and the search for meaning. Like **Close Encounters of the Third Kind** (1977), it explores humanity's desire to make contact with higher powers, though with less success. The film's treatment of faith versus skepticism echoes similar themes in **Contact** (1997), but without the same philosophical depth."
       },
       {
         "type": "genreContext",
-        "content": "Coming after the success of **Star Trek IV: The Voyage Home** (1986), this entry marked a significant decline in the franchise's quality. While other sci-fi films of the era like **Aliens** (1986) and **The Abyss** (1989) pushed boundaries in effects and storytelling, The Final Frontier felt dated on arrival. Its approach to religious themes pales compared to **2001: A Space Odyssey** (1968)'s cosmic spirituality.",
         "text": "Coming after the success of **Star Trek IV: The Voyage Home** (1986), this entry marked a significant decline in the franchise's quality. While other sci-fi films of the era like **Aliens** (1986) and **The Abyss** (1989) pushed boundaries in effects and storytelling, The Final Frontier felt dated on arrival. Its approach to religious themes pales compared to **2001: A Space Odyssey** (1968)'s cosmic spirituality."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "The film's exploration of blind faith versus rational skepticism remains relevant, though modern entries like **Prometheus** (2012) handle similar themes more effectively. Its warning about charismatic leaders manipulating faith for personal gain resonates with contemporary discussions, even if the execution is heavy-handed.",
         "text": "The film's exploration of blind faith versus rational skepticism remains relevant, though modern entries like **Prometheus** (2012) handle similar themes more effectively. Its warning about charismatic leaders manipulating faith for personal gain resonates with contemporary discussions, even if the execution is heavy-handed."
       }
     ],
     "whyWatch": {
       "recommendation": "NO",
-      "reasons": []
+      "reasons": [
+        "Clumsy direction kills momentum",
+        "Laughably bad special effects",
+        "Consider <link>Star Trek II: The Wrath of Khan</link> instead"
+      ]
     },
     "featuredMovies": [
       {
@@ -79,23 +78,23 @@
       {
         "name": "Religious Horror SciFi",
         "url_path": "religious-horror-scifi",
-        "description": "Religious Horror SciFi collection",
+        "description": "Science fiction films exploring religious horror scifi.",
         "category": "science fiction",
         "connectionReason": "Part of Religious Horror SciFi collection"
       },
       {
         "name": "Science Versus Spirituality",
         "url_path": "science-versus-spirituality",
-        "description": "Science Versus Spirituality collection",
+        "description": "Speculative films about science versus spirituality.",
         "category": "science fiction",
         "connectionReason": "Part of Science Versus Spirituality collection"
       },
       {
-        "name": "Retro Space Adventure (Part 3)",
-        "url_path": "retro-space-adventure-part-3-",
-        "description": "Retro Space Adventure (Part 3) collection",
+        "name": "New Wave Retro Space Adventure",
+        "url_path": "new-wave-retro-space-adventure",
+        "description": "Science fiction films exploring new wave retro space adventure.",
         "category": "science fiction",
-        "connectionReason": "Part of Retro Space Adventure (Part 3) collection"
+        "connectionReason": "Part of New Wave Retro Space Adventure collection"
       }
     ],
     "totalLists": 3
@@ -171,11 +170,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:32.677Z",
+  "generatedAt": "2025-08-27T00:52:39.533Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }

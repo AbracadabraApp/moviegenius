@@ -25,27 +25,22 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "Picking up immediately where **Frankenstein** (1931) left off, this superior sequel follows Dr. Frankenstein being coerced by the sinister Dr. Pretorius to create a mate for his monster. The Monster, now more articulate and sympathetic, wanders the countryside encountering both cruelty and brief moments of kindness. Karloff brings remarkable humanity to the creature, while Elsa Lanchester's dual role as Mary Shelley and the Bride creates an unforgettable horror icon in just a few minutes of screen time. The film masterfully balances horror with surprising moments of humor and genuine pathos.",
         "text": "Picking up immediately where **Frankenstein** (1931) left off, this superior sequel follows Dr. Frankenstein being coerced by the sinister Dr. Pretorius to create a mate for his monster. The Monster, now more articulate and sympathetic, wanders the countryside encountering both cruelty and brief moments of kindness. Karloff brings remarkable humanity to the creature, while Elsa Lanchester's dual role as Mary Shelley and the Bride creates an unforgettable horror icon in just a few minutes of screen time. The film masterfully balances horror with surprising moments of humor and genuine pathos."
       },
       {
         "type": "performancesAndVision",
-        "content": "Director James Whale's vision elevates this beyond typical horror fare, infusing the film with a unique blend of camp, horror, and social commentary. Boris Karloff's performance deepens the monster's character, allowing for moments of genuine emotion that were groundbreaking for the genre. The expressionistic cinematography and elaborate set design create a gothic atmosphere that influenced countless films, from **The Evil Dead** (1981) to **Pan's Labyrinth** (2006).",
         "text": "Director James Whale's vision elevates this beyond typical horror fare, infusing the film with a unique blend of camp, horror, and social commentary. Boris Karloff's performance deepens the monster's character, allowing for moments of genuine emotion that were groundbreaking for the genre. The expressionistic cinematography and elaborate set design create a gothic atmosphere that influenced countless films, from **The Evil Dead** (1981) to **Pan's Labyrinth** (2006)."
       },
       {
         "type": "socialAndCultural",
-        "content": "The film explores themes of creation, loneliness, and the search for companionship that resonate even today. Its subversive undertones and commentary on scientific ethics prefigure later sci-fi classics like **Blade Runner** (1982). The Bride's rejection of her intended mate carries feminist undertones that were ahead of their time, while the monster's treatment by society reflects universal themes of prejudice and isolation.",
         "text": "The film explores themes of creation, loneliness, and the search for companionship that resonate even today. Its subversive undertones and commentary on scientific ethics prefigure later sci-fi classics like **Blade Runner** (1982). The Bride's rejection of her intended mate carries feminist undertones that were ahead of their time, while the monster's treatment by society reflects universal themes of prejudice and isolation."
       },
       {
         "type": "genreContext",
-        "content": "**Bride of Frankenstein** represents the peak of Universal's classic horror cycle, influencing everything from **The Shape of Water** (2017) to **Edward Scissorhands** (1990). It established the template for horror sequels that expand upon their originals while deepening their themes. The film's blend of horror and sympathy for its monster influenced later works like **Let the Right One In** (2008).",
         "text": "**Bride of Frankenstein** represents the peak of Universal's classic horror cycle, influencing everything from **The Shape of Water** (2017) to **Edward Scissorhands** (1990). It established the template for horror sequels that expand upon their originals while deepening their themes. The film's blend of horror and sympathy for its monster influenced later works like **Let the Right One In** (2008)."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "Modern audiences continue to connect with the film's exploration of otherness and its questioning of what makes us human. Its influence can be seen in contemporary gothic romances and monster films, from **Crimson Peak** (2015) to **The Host** (2006). The ethical questions it raises about scientific responsibility and creation remain startlingly relevant in our age of genetic engineering and AI.",
         "text": "Modern audiences continue to connect with the film's exploration of otherness and its questioning of what makes us human. Its influence can be seen in contemporary gothic romances and monster films, from **Crimson Peak** (2015) to **The Host** (2006). The ethical questions it raises about scientific responsibility and creation remain startlingly relevant in our age of genetic engineering and AI."
       }
     ],
@@ -83,23 +78,23 @@
       {
         "name": "Scientific Creation Horror",
         "url_path": "scientific-creation-horror",
-        "description": "Scientific Creation Horror collection",
+        "description": "Horror films featuring scientific creation horror.",
         "category": "horror",
         "connectionReason": "Part of Scientific Creation Horror collection"
       },
       {
-        "name": "Classic Monster Comedy (Part 1)",
-        "url_path": "classic-monster-comedy-part-1-",
-        "description": "Classic Monster Comedy (Part 1) collection",
+        "name": "Classic Classic Monster Comedy",
+        "url_path": "classic-classic-monster-comedy",
+        "description": "Horror films featuring timeless and influential stories.",
         "category": "horror",
-        "connectionReason": "Part of Classic Monster Comedy (Part 1) collection"
+        "connectionReason": "Part of Classic Classic Monster Comedy collection"
       },
       {
-        "name": "Literary Horror Adaptations (Part 1)",
-        "url_path": "literary-horror-adaptations-part-1-",
-        "description": "Literary Horror Adaptations (Part 1) collection",
+        "name": "Classic Literary Horror Adaptations",
+        "url_path": "classic-literary-horror-adaptations",
+        "description": "Terrifying stories of timeless and influential stories.",
         "category": "horror",
-        "connectionReason": "Part of Literary Horror Adaptations (Part 1) collection"
+        "connectionReason": "Part of Classic Literary Horror Adaptations collection"
       }
     ],
     "totalLists": 3
@@ -182,11 +177,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:44.716Z",
+  "generatedAt": "2025-08-27T00:52:50.686Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }

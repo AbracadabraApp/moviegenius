@@ -24,27 +24,22 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "Ghost follows Sam Wheat, a banker who's murdered in what appears to be a random attack, leaving behind his devastated girlfriend Molly. As a spirit caught between worlds, Sam discovers his death was orchestrated by his trusted friend and colleague. With the help of psychic Oda Mae Brown, he must protect Molly and expose the truth. The film's genius lies in how it transforms from romantic drama to supernatural thriller while maintaining its emotional core. The iconic pottery wheel scene, set to 'Unchained Melody,' became an instant cultural touchstone, representing the physical and spiritual connection between lovers.",
         "text": "Ghost follows Sam Wheat, a banker who's murdered in what appears to be a random attack, leaving behind his devastated girlfriend Molly. As a spirit caught between worlds, Sam discovers his death was orchestrated by his trusted friend and colleague. With the help of psychic Oda Mae Brown, he must protect Molly and expose the truth. The film's genius lies in how it transforms from romantic drama to supernatural thriller while maintaining its emotional core. The iconic pottery wheel scene, set to 'Unchained Melody,' became an instant cultural touchstone, representing the physical and spiritual connection between lovers."
       },
       {
         "type": "performancesAndVision",
-        "content": "Patrick Swayze brings remarkable depth to Sam, conveying frustration and devotion even when he can't physically interact with his world. Demi Moore's raw emotional performance as Molly grounds the supernatural elements in genuine grief. But it's Whoopi Goldberg who steals every scene as Oda Mae, providing crucial comic relief while never undermining the film's serious moments. Director Jerry Zucker, known primarily for comedies like **Airplane!** (1980), demonstrates surprising versatility in balancing tones.",
         "text": "Patrick Swayze brings remarkable depth to Sam, conveying frustration and devotion even when he can't physically interact with his world. Demi Moore's raw emotional performance as Molly grounds the supernatural elements in genuine grief. But it's Whoopi Goldberg who steals every scene as Oda Mae, providing crucial comic relief while never undermining the film's serious moments. Director Jerry Zucker, known primarily for comedies like **Airplane!** (1980), demonstrates surprising versatility in balancing tones."
       },
       {
         "type": "socialAndCultural",
-        "content": "Ghost revolutionized how Hollywood approached supernatural romance, paving the way for films like **The Sixth Sense** (1999) and **The Others** (2001). It tackled themes of mortality and faith while remaining accessible to mainstream audiences, much like **Field of Dreams** (1989) did the year before. The film's exploration of grief and unfinished business resonated with audiences worldwide, proving that metaphysical themes could drive commercial success.",
         "text": "Ghost revolutionized how Hollywood approached supernatural romance, paving the way for films like **The Sixth Sense** (1999) and **The Others** (2001). It tackled themes of mortality and faith while remaining accessible to mainstream audiences, much like **Field of Dreams** (1989) did the year before. The film's exploration of grief and unfinished business resonated with audiences worldwide, proving that metaphysical themes could drive commercial success."
       },
       {
         "type": "genreContext",
-        "content": "Before Ghost, supernatural films typically fell into horror categories like **Poltergeist** (1982) or pure romance like **Heaven Can Wait** (1978). Ghost created a new template for supernatural romance that influenced films like **City of Angels** (1998) and **Just Like Heaven** (2005). Its success demonstrated that genre-blending could work when anchored by strong emotional storytelling.",
         "text": "Before Ghost, supernatural films typically fell into horror categories like **Poltergeist** (1982) or pure romance like **Heaven Can Wait** (1978). Ghost created a new template for supernatural romance that influenced films like **City of Angels** (1998) and **Just Like Heaven** (2005). Its success demonstrated that genre-blending could work when anchored by strong emotional storytelling."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "The film's themes of love transcending death and digital-age fears about financial fraud remain relevant. Its influence can be seen in modern supernatural romances like **The Time Traveler's Wife** (2009) and even horror-romances like **Warm Bodies** (2013). The integration of comedy into serious supernatural drama set a template still followed by contemporary filmmakers.",
         "text": "The film's themes of love transcending death and digital-age fears about financial fraud remain relevant. Its influence can be seen in modern supernatural romances like **The Time Traveler's Wife** (2009) and even horror-romances like **Warm Bodies** (2013). The integration of comedy into serious supernatural drama set a template still followed by contemporary filmmakers."
       }
     ],
@@ -82,21 +77,21 @@
       {
         "name": "Supernatural Love Stories",
         "url_path": "supernatural-love-stories",
-        "description": "Supernatural Love Stories collection",
+        "description": "Fantastical movies exploring supernatural love.",
         "category": "fantasy",
         "connectionReason": "Part of Supernatural Love Stories collection"
       },
       {
         "name": "Supernatural Romance Fantasy [OVERSIZED]",
         "url_path": "supernatural-romance-fantasy-oversized-",
-        "description": "Supernatural Romance Fantasy [OVERSIZED] collection",
+        "description": "Fantastical movies exploring supernatural romance fantasy [oversized].",
         "category": "fantasy",
         "connectionReason": "Part of Supernatural Romance Fantasy [OVERSIZED] collection"
       },
       {
         "name": "Ghostly Moral Lessons [OVERSIZED]",
         "url_path": "ghostly-moral-lessons-oversized-",
-        "description": "Ghostly Moral Lessons [OVERSIZED] collection",
+        "description": "Enchanting tales of ghostly moral lessons [oversized].",
         "category": "fantasy",
         "connectionReason": "Part of Ghostly Moral Lessons [OVERSIZED] collection"
       }
@@ -160,11 +155,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:49.625Z",
+  "generatedAt": "2025-08-27T00:52:55.632Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }

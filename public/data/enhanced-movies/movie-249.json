@@ -25,27 +25,22 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "The War of the Roses follows Oliver and Barbara Rose's marriage as it transforms from picture-perfect romance into a savage battle for their shared mansion. What begins as witty marital spats escalates into an increasingly violent war of attrition, with both parties refusing to leave their dream house. The film's genius lies in how it makes this descent both horrifying and darkly hilarious, with neither character emerging as purely hero or villain. Through DeVito's lawyer character's narration, we witness the complete destruction of a marriage that started with all the promise in the world.",
         "text": "The War of the Roses follows Oliver and Barbara Rose's marriage as it transforms from picture-perfect romance into a savage battle for their shared mansion. What begins as witty marital spats escalates into an increasingly violent war of attrition, with both parties refusing to leave their dream house. The film's genius lies in how it makes this descent both horrifying and darkly hilarious, with neither character emerging as purely hero or villain. Through DeVito's lawyer character's narration, we witness the complete destruction of a marriage that started with all the promise in the world."
       },
       {
         "type": "performancesAndVision",
-        "content": "Michael Douglas and Kathleen Turner, fresh from their romantic chemistry in **Romancing the Stone** (1984), subvert their previous personas brilliantly. Their transformation from loving couple to mortal enemies feels terrifyingly authentic. Danny DeVito's direction is remarkably assured, crafting a film that walks a tightrope between comedy and tragedy. The mansion becomes a character itself, transformed from a symbol of success into a battleground where the American Dream turns nightmare.",
         "text": "Michael Douglas and Kathleen Turner, fresh from their romantic chemistry in **Romancing the Stone** (1984), subvert their previous personas brilliantly. Their transformation from loving couple to mortal enemies feels terrifyingly authentic. Danny DeVito's direction is remarkably assured, crafting a film that walks a tightrope between comedy and tragedy. The mansion becomes a character itself, transformed from a symbol of success into a battleground where the American Dream turns nightmare."
       },
       {
         "type": "socialAndCultural",
-        "content": "Released as divorce rates peaked in America, the film savagely satirizes materialism and the dark side of marriage. It represents a stark departure from the romantic comedies of its era, sharing more DNA with bitter relationship dramas like **Scenes from a Marriage** (1973) and **Kramer vs. Kramer** (1979). The film's commentary on possession, ownership, and the commodification of love remains startlingly relevant.",
         "text": "Released as divorce rates peaked in America, the film savagely satirizes materialism and the dark side of marriage. It represents a stark departure from the romantic comedies of its era, sharing more DNA with bitter relationship dramas like **Scenes from a Marriage** (1973) and **Kramer vs. Kramer** (1979). The film's commentary on possession, ownership, and the commodification of love remains startlingly relevant."
       },
       {
         "type": "genreContext",
-        "content": "As a dark comedy, it pushed boundaries further than predecessors like **The First Wives Club** (1996) would later dare. It shares thematic DNA with films like **Fatal Attraction** (1987) in exploring the darker aspects of relationships, but takes the comedy-drama hybrid to new extremes. Its influence can be seen in later works like **Gone Girl** (2014) and **Marriage Story** (2019), though few match its pitch-black humor.",
         "text": "As a dark comedy, it pushed boundaries further than predecessors like **The First Wives Club** (1996) would later dare. It shares thematic DNA with films like **Fatal Attraction** (1987) in exploring the darker aspects of relationships, but takes the comedy-drama hybrid to new extremes. Its influence can be seen in later works like **Gone Girl** (2014) and **Marriage Story** (2019), though few match its pitch-black humor."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "In an era of conscious uncoupling and mediated divorce, the film's extreme take on marital warfare feels both cautionary and cathartic. Its themes of materialism, status anxiety, and the thin line between love and hate resonate even more strongly in today's society of extreme wealth inequality and social media-fueled competition.",
         "text": "In an era of conscious uncoupling and mediated divorce, the film's extreme take on marital warfare feels both cautionary and cathartic. Its themes of materialism, status anxiety, and the thin line between love and hate resonate even more strongly in today's society of extreme wealth inequality and social media-fueled competition."
       }
     ],
@@ -83,23 +78,23 @@
       {
         "name": "Post-Breakup Territory Wars",
         "url_path": "post-breakup-territory-wars",
-        "description": "Post-Breakup Territory Wars collection",
+        "description": "Comedy films centered around post-breakup territory wars.",
         "category": "comedy",
         "connectionReason": "Part of Post-Breakup Territory Wars collection"
       },
       {
-        "name": "Dark Comedy Accidents (Part 11)",
-        "url_path": "dark-comedy-accidents-part-11-",
-        "description": "Dark Comedy Accidents (Part 11) collection",
+        "name": "Volume 11 Dark Comedy Accidents",
+        "url_path": "volume-11-dark-comedy-accidents",
+        "description": "A collection of comedic films featuring dark humor and moral ambiguity.",
         "category": "comedy",
-        "connectionReason": "Part of Dark Comedy Accidents (Part 11) collection"
+        "connectionReason": "Part of Volume 11 Dark Comedy Accidents collection"
       },
       {
-        "name": "Marriage Infidelity Comedies (Part 4)",
-        "url_path": "marriage-infidelity-comedies-part-4-",
-        "description": "Marriage Infidelity Comedies (Part 4) collection",
+        "name": "Indie Marriage Infidelity Comedies",
+        "url_path": "indie-marriage-infidelity-comedies",
+        "description": "Lighthearted movies about marriage infidelity.",
         "category": "comedy",
-        "connectionReason": "Part of Marriage Infidelity Comedies (Part 4) collection"
+        "connectionReason": "Part of Indie Marriage Infidelity Comedies collection"
       }
     ],
     "totalLists": 3
@@ -168,11 +163,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:49.243Z",
+  "generatedAt": "2025-08-27T00:52:55.223Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }

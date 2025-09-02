@@ -23,33 +23,32 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "Berlin: Symphony of a Great City revolutionized documentary filmmaking by treating an entire metropolis as its protagonist. Following a day in Berlin from dawn to midnight, the film weaves together stunning images of urban life, from empty morning streets to bustling factories, from leisure activities to nightlife. The city itself becomes a living, breathing character, with its trains, machines, crowds, and architecture performing an intricate dance of modern life.",
         "text": "Berlin: Symphony of a Great City revolutionized documentary filmmaking by treating an entire metropolis as its protagonist. Following a day in Berlin from dawn to midnight, the film weaves together stunning images of urban life, from empty morning streets to bustling factories, from leisure activities to nightlife. The city itself becomes a living, breathing character, with its trains, machines, crowds, and architecture performing an intricate dance of modern life."
       },
       {
         "type": "performancesAndVision",
-        "content": "Ruttmann's visionary direction, combined with Karl Freund's innovative cinematography, creates a mesmerizing rhythm through masterful editing. The film abandons traditional narrative structure in favor of visual associations and musical timing. Edmund Meisel's original score perfectly complements the visual symphony, creating a true audiovisual experience that was decades ahead of its time.",
         "text": "Ruttmann's visionary direction, combined with Karl Freund's innovative cinematography, creates a mesmerizing rhythm through masterful editing. The film abandons traditional narrative structure in favor of visual associations and musical timing. Edmund Meisel's original score perfectly complements the visual symphony, creating a true audiovisual experience that was decades ahead of its time."
       },
       {
         "type": "socialAndCultural",
-        "content": "This film captures Berlin at its most vibrant during the Weimar Republic, documenting both the prosperity and inequality of the era. It shows the contrast between industrial progress and human conditions, luxury and poverty, work and leisure. The film serves as both a celebration of modernism and an unintentional historical document of a society on the brink of massive change.",
         "text": "This film captures Berlin at its most vibrant during the Weimar Republic, documenting both the prosperity and inequality of the era. It shows the contrast between industrial progress and human conditions, luxury and poverty, work and leisure. The film serves as both a celebration of modernism and an unintentional historical document of a society on the brink of massive change."
       },
       {
         "type": "genreContext",
-        "content": "As one of the first city symphony films, it inspired numerous similar works like **Man with a Movie Camera** (1929) and **À propos de Nice** (1930). Its influence extends to modern urban documentaries like **Koyaanisqatsi** (1982) and **Samsara** (2011), while its rhythmic editing techniques can be seen in music videos and experimental films today.",
         "text": "As one of the first city symphony films, it inspired numerous similar works like **Man with a Movie Camera** (1929) and **À propos de Nice** (1930). Its influence extends to modern urban documentaries like **Koyaanisqatsi** (1982) and **Samsara** (2011), while its rhythmic editing techniques can be seen in music videos and experimental films today."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "The film's exploration of urban life, mechanization, and the relationship between humans and their built environment remains startlingly relevant. Its techniques of visual rhythm and montage continue to influence filmmakers, while its portrait of a city in transformation speaks to contemporary urban experiences worldwide.",
         "text": "The film's exploration of urban life, mechanization, and the relationship between humans and their built environment remains startlingly relevant. Its techniques of visual rhythm and montage continue to influence filmmakers, while its portrait of a city in transformation speaks to contemporary urban experiences worldwide."
       }
     ],
     "whyWatch": {
-      "recommendation": "NO",
-      "reasons": []
+      "recommendation": "YES",
+      "reasons": [
+        "Revolutionary city symphony editing style",
+        "Pure visual poetry techniques",
+        "Birthed documentary movement worldwide"
+      ]
     },
     "featuredMovies": [
       {
@@ -86,30 +85,30 @@
       {
         "name": "City Symphony Films",
         "url_path": "city-symphony-films",
-        "description": "City Symphony Films collection",
+        "description": "Emotional movies featuring city symphony.",
         "category": "documentary",
         "connectionReason": "Part of City Symphony Films collection"
       },
       {
-        "name": "Urban Subculture Studies (Part 1)",
-        "url_path": "urban-subculture-studies-part-1-",
-        "description": "Urban Subculture Studies (Part 1) collection",
+        "name": "Vintage Urban Subculture Studies",
+        "url_path": "vintage-urban-subculture-studies",
+        "description": "Emotional movies featuring vintage urban subculture studies.",
         "category": "documentary",
-        "connectionReason": "Part of Urban Subculture Studies (Part 1) collection"
+        "connectionReason": "Part of Vintage Urban Subculture Studies collection"
       },
       {
-        "name": "Early Cinema Pioneers (Part 1)",
-        "url_path": "early-cinema-pioneers-part-1-",
-        "description": "Early Cinema Pioneers (Part 1) collection",
+        "name": "Vintage Early Cinema Pioneers",
+        "url_path": "vintage-early-cinema-pioneers",
+        "description": "Character-driven stories about vintage early cinema pioneers.",
         "category": "documentary",
-        "connectionReason": "Part of Early Cinema Pioneers (Part 1) collection"
+        "connectionReason": "Part of Vintage Early Cinema Pioneers collection"
       },
       {
-        "name": "Visual Nature Symphonies (Part 1)",
-        "url_path": "visual-nature-symphonies-part-1-",
-        "description": "Visual Nature Symphonies (Part 1) collection",
+        "name": "Vintage Visual Nature Symphonies",
+        "url_path": "vintage-visual-nature-symphonies",
+        "description": "Character-driven stories about vintage visual nature symphonies.",
         "category": "documentary",
-        "connectionReason": "Part of Visual Nature Symphonies (Part 1) collection"
+        "connectionReason": "Part of Vintage Visual Nature Symphonies collection"
       }
     ],
     "totalLists": 4
@@ -171,11 +170,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:42.666Z",
+  "generatedAt": "2025-08-27T00:52:48.642Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }

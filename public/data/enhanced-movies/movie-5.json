@@ -1,4 +1,5 @@
 {
+  "enhancedFormat": true,
   "movieId": "154892df-0017-4653-9e22-bbbf4e5f6435",
   "tmdbId": 5,
   "title": "Four Rooms",
@@ -24,13 +25,34 @@
       "composer": "Various",
       "studio": "Miramax Films"
     },
-    "sections": [],
+    "sections": [
+      {
+        "type": "plotAndCharacters",
+        "text": "Four Rooms follows Ted the bellhop (<a href=\"/person/36330\" class=\"person-name\">Tim Roth</a>) during his first night working at the surreal Mon Signor Hotel on New Year's Eve. Through four separate vignettes directed by different filmmakers, Ted encounters increasingly bizarre situations in different rooms. Roth's physical comedy performance channels silent film legends like Buster Keaton, though his manic energy sometimes feels overwrought. The anthology format allows each director to explore their signature styles, but the quality varies dramatically between segments."
+      },
+      {
+        "type": "performancesAndVision",
+        "text": "<a href=\"/person/36330\" class=\"person-name\">Tim Roth</a>'s exaggerated performance serves as the connecting thread, though his character's quirks become repetitive across segments. The standout chapters come from Rodriguez and Tarantino, who inject their signature blend of dark humor and tension. Rodriguez's 'The Misbehavers' featuring <a href=\"/person/2351\" class=\"person-name\">Antonio Banderas</a> shows the most consistent tone, while Tarantino's finale 'The Man from Hollywood' delivers sharp dialogue and mounting tension reminiscent of <a href=\"/movie/500\" class=\"movie-title\" data-tmdb-id=\"500\">Reservoir Dogs</a> (1992)."
+      },
+      {
+        "type": "socialAndCultural",
+        "text": "Released during the indie film boom of the 1990s, Four Rooms attempted to capitalize on the anthology format popularized by films like <a href=\"/movie/38939\" class=\"movie-title\" data-tmdb-id=\"38939\">Tales from the Crypt</a> (1989) and <a href=\"/movie/9686\" class=\"movie-title\" data-tmdb-id=\"9686\">New York Stories</a> (1989). The film represents the era's experimentation with narrative structure and the rising prominence of independent filmmakers, though it ultimately demonstrates the challenges of maintaining consistency across multiple directors."
+      },
+      {
+        "type": "genreContext",
+        "text": "The film's anthology structure draws from classics like <a href=\"/movie/13581\" class=\"movie-title\" data-tmdb-id=\"13581\">Dead of Night</a> (1945) while attempting to modernize the format with edgy 90s sensibilities. Each segment tackles different genres - from farce to crime thriller - though the transitions often feel jarring rather than complementary. The experiment paved the way for later anthology films like <a href=\"/movie/187\" class=\"movie-title\" data-tmdb-id=\"187\">Sin City</a> (2005) and <a href=\"/movie/285923\" class=\"movie-title\" data-tmdb-id=\"285923\">Grindhouse</a> (2007), which learned from Four Rooms' structural mistakes."
+      },
+      {
+        "type": "contemporaryRelevance",
+        "text": "While uneven, Four Rooms remains an interesting snapshot of 90s independent cinema and the creative freedom filmmakers enjoyed during that era. Its influence can be seen in modern anthology series like <a href=\"/movie/537996\" class=\"movie-title\" data-tmdb-id=\"537996\">The Ballad of Buster Scruggs</a> (2018), though these later works demonstrate more cohesive vision and quality control. The film serves better as a curiosity for fans of the directors than as a standalone entertainment."
+      }
+    ],
     "whyWatch": {
       "recommendation": "NO",
       "reasons": [
-        "Uneven quality across segments makes for an inconsistent viewing experience",
-        "Only Rodriguez and Tarantino segments truly deliver on the premise",
-        "Watch **Pulp Fiction** (1994) instead for better anthology-style storytelling"
+        "Disjointed anthology lacks cohesion",
+        "Uneven directing quality throughout",
+        "Consider <link>Pulp Fiction</link> instead"
       ]
     },
     "featuredMovies": [
@@ -63,49 +85,49 @@
       {
         "name": "New Years Eve Stories",
         "url_path": "new-years-eve-stories",
-        "description": "New Years Eve Stories collection",
+        "description": "A collection of comedic films featuring new years eve.",
         "category": "comedy",
         "connectionReason": "Part of New Years Eve Stories collection"
       },
       {
         "name": "Hotel Staff Misadventures",
         "url_path": "hotel-staff-misadventures",
-        "description": "Hotel Staff Misadventures collection",
+        "description": "Comedy films centered around hotel staff misadventures.",
         "category": "comedy",
         "connectionReason": "Part of Hotel Staff Misadventures collection"
       },
       {
-        "name": "Dark Comedy Accidents (Part 5)",
-        "url_path": "dark-comedy-accidents-part-5-",
-        "description": "Dark Comedy Accidents (Part 5) collection",
+        "name": "Dark Dark Comedy Accidents",
+        "url_path": "dark-dark-comedy-accidents",
+        "description": "Lighthearted movies about dark humor and moral ambiguity.",
         "category": "comedy",
-        "connectionReason": "Part of Dark Comedy Accidents (Part 5) collection"
+        "connectionReason": "Part of Dark Dark Comedy Accidents collection"
       },
       {
-        "name": "Single Day Misfortunes (Part 2)",
-        "url_path": "single-day-misfortunes-part-2-",
-        "description": "Single Day Misfortunes (Part 2) collection",
+        "name": "Modern Single Day Misfortunes",
+        "url_path": "modern-single-day-misfortunes",
+        "description": "Humorous movies exploring contemporary themes and storytelling.",
         "category": "comedy",
-        "connectionReason": "Part of Single Day Misfortunes (Part 2) collection"
+        "connectionReason": "Part of Modern Single Day Misfortunes collection"
       },
       {
         "name": "Celebrity Culture Commentary",
         "url_path": "celebrity-culture-commentary",
-        "description": "Celebrity Culture Commentary collection",
+        "description": "A collection of movies about celebrity culture commentary.",
         "category": "crime",
         "connectionReason": "Part of Celebrity Culture Commentary collection"
       },
       {
         "name": "Luxury Lifestyle Crime",
         "url_path": "luxury-lifestyle-crime",
-        "description": "Luxury Lifestyle Crime collection",
+        "description": "Thriller and crime films featuring luxury lifestyle crime.",
         "category": "crime",
         "connectionReason": "Part of Luxury Lifestyle Crime collection"
       },
       {
         "name": "One Night Crime Thrillers",
         "url_path": "one-night-crime-thrillers",
-        "description": "One Night Crime Thrillers collection",
+        "description": "Stories of criminal activity involving one night crime.",
         "category": "crime",
         "connectionReason": "Part of One Night Crime Thrillers collection"
       }
@@ -204,7 +226,7 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T19:19:11.214Z",
+  "generatedAt": "2025-08-27T00:52:33.770Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",

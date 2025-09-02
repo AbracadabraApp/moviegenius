@@ -26,27 +26,22 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "Love on the Run serves as the poignant finale to François Truffaut's Antoine Doinel saga, which began with **The 400 Blows** (1959). The film follows Antoine (Jean-Pierre Léaud) as he navigates his complicated romantic life, divorcing Christine (Claude Jade) while pursuing a relationship with Sabine (Dorothée). Through a clever use of flashbacks and footage from previous Doinel films, we witness Antoine confronting his past relationships and personal history, including encounters with his first love, Colette (Marie-France Pisier).",
         "text": "Love on the Run serves as the poignant finale to François Truffaut's Antoine Doinel saga, which began with **The 400 Blows** (1959). The film follows Antoine (Jean-Pierre Léaud) as he navigates his complicated romantic life, divorcing Christine (Claude Jade) while pursuing a relationship with Sabine (Dorothée). Through a clever use of flashbacks and footage from previous Doinel films, we witness Antoine confronting his past relationships and personal history, including encounters with his first love, Colette (Marie-France Pisier)."
       },
       {
         "type": "performancesAndVision",
-        "content": "Jean-Pierre Léaud's final performance as Antoine Doinel caps a remarkable 20-year collaboration with Truffaut, showing the character's growth from troubled youth to complex adult. The film's innovative structure, weaving new scenes with fragments from **Stolen Kisses** (1968) and **Bed and Board** (1970), creates a meditation on memory and personal history that feels both nostalgic and forward-looking. Truffaut's direction maintains the intimate, observational style that defined the French New Wave while adding a mature retrospective quality.",
         "text": "Jean-Pierre Léaud's final performance as Antoine Doinel caps a remarkable 20-year collaboration with Truffaut, showing the character's growth from troubled youth to complex adult. The film's innovative structure, weaving new scenes with fragments from **Stolen Kisses** (1968) and **Bed and Board** (1970), creates a meditation on memory and personal history that feels both nostalgic and forward-looking. Truffaut's direction maintains the intimate, observational style that defined the French New Wave while adding a mature retrospective quality."
       },
       {
         "type": "socialAndCultural",
-        "content": "The film reflects the evolution of French society from the rebellious 1960s to the more introspective late 1970s. Like **Annie Hall** (1977), it explores relationships with a mix of comedy and melancholy, showing how personal histories shape our present. Antoine's journey mirrors the maturation of the French New Wave itself, from youthful experimentation to sophisticated self-reflection.",
         "text": "The film reflects the evolution of French society from the rebellious 1960s to the more introspective late 1970s. Like **Annie Hall** (1977), it explores relationships with a mix of comedy and melancholy, showing how personal histories shape our present. Antoine's journey mirrors the maturation of the French New Wave itself, from youthful experimentation to sophisticated self-reflection."
       },
       {
         "type": "genreContext",
-        "content": "As the final entry in the Doinel series, Love on the Run builds on the autobiographical tradition of films like **8½** (1963), using memory and personal history as narrative devices. It anticipates later works like **The Purple Rose of Cairo** (1985) in its playful manipulation of film reality and memory, while maintaining the intimate character study approach that influenced films like **My Night at Maud's** (1969).",
         "text": "As the final entry in the Doinel series, Love on the Run builds on the autobiographical tradition of films like **8½** (1963), using memory and personal history as narrative devices. It anticipates later works like **The Purple Rose of Cairo** (1985) in its playful manipulation of film reality and memory, while maintaining the intimate character study approach that influenced films like **My Night at Maud's** (1969)."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "The film's exploration of relationships, memory, and personal growth remains remarkably fresh. Its influence can be seen in contemporary works like **The French Dispatch** (2021) and **Portrait of a Lady on Fire** (2019), which similarly blend personal narrative with cultural commentary. The innovative use of previous footage to construct new meaning presages modern remix culture and narrative complexity.",
         "text": "The film's exploration of relationships, memory, and personal growth remains remarkably fresh. Its influence can be seen in contemporary works like **The French Dispatch** (2021) and **Portrait of a Lady on Fire** (2019), which similarly blend personal narrative with cultural commentary. The innovative use of previous footage to construct new meaning presages modern remix culture and narrative complexity."
       }
     ],
@@ -84,23 +79,23 @@
       {
         "name": "Long Distance Letters Romance",
         "url_path": "long-distance-letters-romance",
-        "description": "Long Distance Letters Romance collection",
+        "description": "Romantic movies exploring long distance letters romance.",
         "category": "romance",
         "connectionReason": "Part of Long Distance Letters Romance collection"
       },
       {
-        "name": "Nonlinear Romance Stories (Part 2)",
-        "url_path": "nonlinear-romance-stories-part-2-",
-        "description": "Nonlinear Romance Stories (Part 2) collection",
+        "name": "Golden Age Nonlinear Romance Stories",
+        "url_path": "golden-age-nonlinear-romance-stories",
+        "description": "Romantic films featuring golden age nonlinear romance.",
         "category": "romance",
-        "connectionReason": "Part of Nonlinear Romance Stories (Part 2) collection"
+        "connectionReason": "Part of Golden Age Nonlinear Romance Stories collection"
       },
       {
-        "name": "Romantic Self-Discovery Journeys (Part 4)",
-        "url_path": "romantic-self-discovery-journeys-part-4-",
-        "description": "Romantic Self-Discovery Journeys (Part 4) collection",
+        "name": "International Romantic Self-Discovery Journeys",
+        "url_path": "international-romantic-self-discovery-journeys",
+        "description": "Romantic movies exploring diverse global perspectives.",
         "category": "romance",
-        "connectionReason": "Part of Romantic Self-Discovery Journeys (Part 4) collection"
+        "connectionReason": "Part of International Romantic Self-Discovery Journeys collection"
       }
     ],
     "totalLists": 3
@@ -176,11 +171,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:51.729Z",
+  "generatedAt": "2025-08-27T00:52:57.742Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }

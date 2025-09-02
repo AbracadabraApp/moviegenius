@@ -25,27 +25,22 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "Live Flesh weaves a complex tale of desire and redemption in post-Franco Spain. The story follows Victor, born during Franco's regime, who becomes entangled in a passionate confrontation that leaves a police officer paralyzed. After serving his prison sentence, Victor emerges into a transformed Madrid, where his path crosses again with Elena, the woman he desired, and David, the wheelchair-bound cop he accidentally shot. The narrative masterfully intertwines their lives through themes of obsession, sexuality, and redemption.",
         "text": "Live Flesh weaves a complex tale of desire and redemption in post-Franco Spain. The story follows Victor, born during Franco's regime, who becomes entangled in a passionate confrontation that leaves a police officer paralyzed. After serving his prison sentence, Victor emerges into a transformed Madrid, where his path crosses again with Elena, the woman he desired, and David, the wheelchair-bound cop he accidentally shot. The narrative masterfully intertwines their lives through themes of obsession, sexuality, and redemption."
       },
       {
         "type": "performancesAndVision",
-        "content": "Almodóvar directs with his signature blend of heightened emotion and visual flair, but with a more restrained noir sensibility than films like **Women on the Verge of a Nervous Breakdown** (1988). Javier Bardem delivers a nuanced performance as David, bringing dignity and complexity to a character who could have been merely sympathetic. The entire ensemble navigates the moral ambiguities of their characters with remarkable depth, while Almodóvar's direction maintains a perfect balance between thriller elements and emotional drama.",
         "text": "Almodóvar directs with his signature blend of heightened emotion and visual flair, but with a more restrained noir sensibility than films like **Women on the Verge of a Nervous Breakdown** (1988). Javier Bardem delivers a nuanced performance as David, bringing dignity and complexity to a character who could have been merely sympathetic. The entire ensemble navigates the moral ambiguities of their characters with remarkable depth, while Almodóvar's direction maintains a perfect balance between thriller elements and emotional drama."
       },
       {
         "type": "socialAndCultural",
-        "content": "The film serves as a powerful metaphor for Spain's transition from dictatorship to democracy. Through its characters' transformations, it explores how personal and political liberation intertwine. Like **Talk to Her** (2002), Almodóvar uses complex relationships to examine broader social themes, while the film's treatment of disability and sexuality recalls the progressive humanism of **The Sea Inside** (2004).",
         "text": "The film serves as a powerful metaphor for Spain's transition from dictatorship to democracy. Through its characters' transformations, it explores how personal and political liberation intertwine. Like **Talk to Her** (2002), Almodóvar uses complex relationships to examine broader social themes, while the film's treatment of disability and sexuality recalls the progressive humanism of **The Sea Inside** (2004)."
       },
       {
         "type": "genreContext",
-        "content": "Within the erotic thriller genre, Live Flesh stands apart by elevating its pulpy source material into a sophisticated meditation on desire and redemption. It shares DNA with noir classics like **Double Indemnity** (1944) while anticipating the psychological complexity of later Spanish thrillers like **Open Your Eyes** (1997) and **The Skin I Live In** (2011).",
         "text": "Within the erotic thriller genre, Live Flesh stands apart by elevating its pulpy source material into a sophisticated meditation on desire and redemption. It shares DNA with noir classics like **Double Indemnity** (1944) while anticipating the psychological complexity of later Spanish thrillers like **Open Your Eyes** (1997) and **The Skin I Live In** (2011)."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "The film's exploration of personal transformation against a backdrop of social change remains deeply relevant. Its treatment of trauma, redemption, and the possibility of reinvention speaks to contemporary audiences, while its political subtext offers insights into how societies process historical trauma and transition toward democracy.",
         "text": "The film's exploration of personal transformation against a backdrop of social change remains deeply relevant. Its treatment of trauma, redemption, and the possibility of reinvention speaks to contemporary audiences, while its political subtext offers insights into how societies process historical trauma and transition toward democracy."
       }
     ],
@@ -78,23 +73,23 @@
       {
         "name": "Revenge Marriage Thrillers",
         "url_path": "revenge-marriage-thrillers",
-        "description": "Revenge Marriage Thrillers collection",
+        "description": "Psychological thrillers featuring revenge marriage.",
         "category": "thriller",
         "connectionReason": "Part of Revenge Marriage Thrillers collection"
       },
       {
-        "name": "Moral Choice Thrillers (Part 4)",
-        "url_path": "moral-choice-thrillers-part-4-",
-        "description": "Moral Choice Thrillers (Part 4) collection",
+        "name": "Supernatural Moral Choice Thrillers",
+        "url_path": "supernatural-moral-choice-thrillers",
+        "description": "Suspenseful films about supernatural moral choice.",
         "category": "thriller",
-        "connectionReason": "Part of Moral Choice Thrillers (Part 4) collection"
+        "connectionReason": "Part of Supernatural Moral Choice Thrillers collection"
       },
       {
-        "name": "Psychological Manipulation Thrillers (Part 1)",
-        "url_path": "psychological-manipulation-thrillers-part-1-",
-        "description": "Psychological Manipulation Thrillers (Part 1) collection",
+        "name": "Classic Psychological Manipulation Thrillers",
+        "url_path": "classic-psychological-manipulation-thrillers",
+        "description": "Suspenseful films about timeless and influential stories.",
         "category": "thriller",
-        "connectionReason": "Part of Psychological Manipulation Thrillers (Part 1) collection"
+        "connectionReason": "Part of Classic Psychological Manipulation Thrillers collection"
       }
     ],
     "totalLists": 3
@@ -177,11 +172,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:53.184Z",
+  "generatedAt": "2025-08-27T00:52:59.237Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }

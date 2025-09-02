@@ -26,27 +26,22 @@
     "sections": [
       {
         "type": "plotAndCharacters",
-        "content": "Following Antoine Doinel's discharge from military service, 'Stolen Kisses' charts his stumbling journey through various jobs and romantic encounters in Paris. The film continues Truffaut's semi-autobiographical series that began with **The 400 Blows** (1959), following Antoine as he works as a hotel clerk, private detective, and TV repairman while pursuing Christine Darbon and becoming infatuated with an older woman, Fabienne Tabard. The charm lies in Antoine's earnest awkwardness and the film's light touch with serious themes of identity and maturity.",
         "text": "Following Antoine Doinel's discharge from military service, 'Stolen Kisses' charts his stumbling journey through various jobs and romantic encounters in Paris. The film continues Truffaut's semi-autobiographical series that began with **The 400 Blows** (1959), following Antoine as he works as a hotel clerk, private detective, and TV repairman while pursuing Christine Darbon and becoming infatuated with an older woman, Fabienne Tabard. The charm lies in Antoine's earnest awkwardness and the film's light touch with serious themes of identity and maturity."
       },
       {
         "type": "performancesAndVision",
-        "content": "Jean-Pierre Léaud embodies Antoine with the perfect mix of vulnerability and determination, building on his iconic role that began in childhood. Truffaut's direction maintains the spontaneity of the French New Wave while embracing a warmer, more romantic tone than his earlier works. The chemistry between Léaud and Claude Jade (as Christine) feels genuinely sweet and uncertain, while Delphine Seyrig brings sophisticated allure to Fabienne, echoing her mysterious presence in **Last Year at Marienbad** (1961).",
         "text": "Jean-Pierre Léaud embodies Antoine with the perfect mix of vulnerability and determination, building on his iconic role that began in childhood. Truffaut's direction maintains the spontaneity of the French New Wave while embracing a warmer, more romantic tone than his earlier works. The chemistry between Léaud and Claude Jade (as Christine) feels genuinely sweet and uncertain, while Delphine Seyrig brings sophisticated allure to Fabienne, echoing her mysterious presence in **Last Year at Marienbad** (1961)."
       },
       {
         "type": "socialAndCultural",
-        "content": "Released amid the social upheaval of 1968, the film captures a changing Paris where traditional values meet youthful restlessness. Unlike more politically charged contemporaries like **Weekend** (1967), Truffaut opts for a gentler exploration of generational shift. The film's treatment of work, love, and identity resonated with young audiences navigating similar transitions, while its humor made it more accessible than typical New Wave fare.",
         "text": "Released amid the social upheaval of 1968, the film captures a changing Paris where traditional values meet youthful restlessness. Unlike more politically charged contemporaries like **Weekend** (1967), Truffaut opts for a gentler exploration of generational shift. The film's treatment of work, love, and identity resonated with young audiences navigating similar transitions, while its humor made it more accessible than typical New Wave fare."
       },
       {
         "type": "genreContext",
-        "content": "Within the French New Wave, 'Stolen Kisses' represents a mature evolution from the movement's earlier experimental edge toward a more classical romantic comedy structure, while maintaining its innovative spirit. It bridges the gap between the radical style of **Breathless** (1960) and the romantic whimsy of later films like **Day for Night** (1973). The film influenced later coming-of-age romances like **Manhattan** (1979) and **The Graduate** (1967) in its treatment of young adult uncertainty.",
         "text": "Within the French New Wave, 'Stolen Kisses' represents a mature evolution from the movement's earlier experimental edge toward a more classical romantic comedy structure, while maintaining its innovative spirit. It bridges the gap between the radical style of **Breathless** (1960) and the romantic whimsy of later films like **Day for Night** (1973). The film influenced later coming-of-age romances like **Manhattan** (1979) and **The Graduate** (1967) in its treatment of young adult uncertainty."
       },
       {
         "type": "contemporaryRelevance",
-        "content": "The film's exploration of quarter-life crisis and romantic confusion remains startlingly relevant. Modern films like **Frances Ha** (2012) and **The Worst Person in the World** (2021) echo its blend of comedy and quarter-life melancholy. Antoine's job-hopping and romantic misadventures feel particularly resonant in today's gig economy and dating culture.",
         "text": "The film's exploration of quarter-life crisis and romantic confusion remains startlingly relevant. Modern films like **Frances Ha** (2012) and **The Worst Person in the World** (2021) echo its blend of comedy and quarter-life melancholy. Antoine's job-hopping and romantic misadventures feel particularly resonant in today's gig economy and dating culture."
       }
     ],
@@ -84,23 +79,23 @@
       {
         "name": "Post-Graduate Uncertainty",
         "url_path": "post-graduate-uncertainty",
-        "description": "Post-Graduate Uncertainty collection",
+        "description": "Lighthearted movies about post-graduate uncertainty.",
         "category": "comedy",
         "connectionReason": "Part of Post-Graduate Uncertainty collection"
       },
       {
-        "name": "Urban Wanderer Stories (Part 5)",
-        "url_path": "urban-wanderer-stories-part-5-",
-        "description": "Urban Wanderer Stories (Part 5) collection",
+        "name": "Modern Urban Wanderer Stories",
+        "url_path": "modern-urban-wanderer-stories",
+        "description": "A collection of comedic films featuring contemporary themes and storytelling.",
         "category": "comedy",
-        "connectionReason": "Part of Urban Wanderer Stories (Part 5) collection"
+        "connectionReason": "Part of Modern Urban Wanderer Stories collection"
       },
       {
-        "name": "Career Reinvention Stories (Part 2)",
-        "url_path": "career-reinvention-stories-part-2-",
-        "description": "Career Reinvention Stories (Part 2) collection",
+        "name": "Golden Age Career Reinvention Stories",
+        "url_path": "golden-age-career-reinvention-stories",
+        "description": "A collection of comedic films featuring golden age career reinvention.",
         "category": "comedy",
-        "connectionReason": "Part of Career Reinvention Stories (Part 2) collection"
+        "connectionReason": "Part of Golden Age Career Reinvention Stories collection"
       }
     ],
     "totalLists": 3
@@ -176,11 +171,10 @@
     "producer": null
   },
   "moreIdeas": null,
-  "generatedAt": "2025-08-25T18:44:50.962Z",
+  "generatedAt": "2025-08-27T00:52:56.946Z",
   "sources": {
     "analysis": "railway_database",
     "browseCollections": "static_files",
-    "whyWatch": null,
     "contributors": "movie_contributors_table",
     "moreIdeas": null
   }
