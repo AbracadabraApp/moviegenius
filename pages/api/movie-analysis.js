@@ -285,7 +285,15 @@ export default async function movieAnalysisHandler(req, res) {
       // Return analysis content based on what's available in the database
       let analysisContent = '';
       
-      if (analysis.claude_response) {
+      // NEW: Handle enhanced format first (6,566+ analyses)
+      if (analysis.enhanced_sections && Array.isArray(analysis.enhanced_sections)) {
+        // Convert enhanced sections to readable format
+        analysisContent = analysis.enhanced_sections
+          .map(section => `**${section.subhead}**\n\n${section.text}`)
+          .join('\n\n');
+      }
+      // LEGACY: Handle old formats
+      else if (analysis.claude_response) {
         if (typeof analysis.claude_response === 'string') {
           // Legacy string format
           analysisContent = analysis.claude_response;

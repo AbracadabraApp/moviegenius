@@ -94,16 +94,16 @@ export default function MovieDetailPage() {
                 
                 // Enhanced format has pre-resolved data - convert to expected format  
                 const processedSections = enhancedData.analysis.sections.map(section => ({
-                  type: section.type,
+                  subhead: section.subhead, // Preserve subhead for component
                   text: section.text // Component expects 'text' field, enhanced file has 'text'
                 }));
                 
                 const componentCompatibleFormat = {
-                  content: processedSections, // Component expects 'content' array with 'text' fields
-                  featuredMovies: enhancedData.analysis.featuredMovies,
-                  whyWatch: enhancedData.analysis.whyWatch,
-                  moreIdeas: enhancedData.analysis.moreIdeas,
-                  exploreTopics: enhancedData.analysis.exploreTopics
+                  content: processedSections, // Component expects 'content' array with subhead + text
+                  featuredMovies: enhancedData.analysis.featuredMovies || [],
+                  whyWatch: enhancedData.analysis.whyWatch || null,
+                  moreIdeas: enhancedData.moreIdeas?.recommendations || [], // Extract recommendations array
+                  exploreTopics: enhancedData.analysis.exploreTopics || []
                 };
                 
                 const formattedAnalysis = {
@@ -134,18 +134,8 @@ export default function MovieDetailPage() {
                 setAnalysis(formattedAnalysis);
                 analysisData = formattedAnalysis;
                 
-                // Simple browse collections fetch for enhanced static
-                console.log('🔍 Fetching browse collections for movie:', finalMovieId);
-                fetch(`/data/movie-lists/movie-${finalMovieId}.json`)
-                  .then(res => {
-                    console.log('📦 Browse fetch response:', res.status);
-                    return res.ok ? res.json() : null;
-                  })
-                  .then(data => {
-                    console.log('📋 Browse data loaded:', data?.lists?.length, 'collections');
-                    setBrowseCollections(data);
-                  })
-                  .catch(() => setBrowseCollections(null));
+                // Use browse collections from enhanced static file
+                setBrowseCollections(enhancedData.browseCollections);
               }
             }
           } catch (enhancedError) {

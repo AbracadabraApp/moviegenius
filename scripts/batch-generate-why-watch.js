@@ -10,6 +10,14 @@
  * - Progress tracking with resume capability
  */
 
+import { config } from 'dotenv';
+import { resolve, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+config({ path: resolve(__dirname, '../.env.local') });
+
 import { Anthropic } from '@anthropic-ai/sdk';
 import { Pool } from 'pg';
 import { buildWhyWatchPrompt, validateWhyWatchResponse } from '../lib/prompts/why-watch-generator.js';
@@ -72,13 +80,15 @@ async function getMoviesForProcessing(progress) {
         ma.id as analysis_id,
         ma.movie_id,
         ma.claude_response,
+        ma.enhanced_sections,
+        ma.enhanced_key_elements,
         m.title,
         m.year,
         m.tmdb_id
       FROM movie_analyses ma
       JOIN movies m ON ma.movie_id = m.id
-      WHERE ma.claude_response IS NOT NULL
-        AND ma.claude_response->>'raw_content' IS NOT NULL
+      WHERE (ma.claude_response IS NOT NULL AND ma.claude_response->>'raw_content' IS NOT NULL)
+        OR (ma.enhanced_sections IS NOT NULL AND jsonb_array_length(ma.enhanced_sections) > 0)
     `;
     
     // Resume from last processed if needed
@@ -109,15 +119,34 @@ async function generateWhyWatch(movie) {
   const movieTitle = `${movie.title} (${movie.year})`;
   
   try {
-    // Extract existing analysis for context
-    const existingAnalysis = JSON.parse(movie.claude_response.raw_content);
-    const movieData = {
+    // Extract existing analysis for context - handle both formats
+    let existingAnalysis;
+    let movieData = {
       title: movie.title,
       year: movie.year,
       tmdb_id: movie.tmdb_id,
-      genre: existingAnalysis.keyElements?.genre || 'Unknown',
-      director: existingAnalysis.keyElements?.director || 'Unknown'
+      genre: 'Unknown',
+      director: 'Unknown'
     };
+
+    // Handle enhanced format first
+    if (movie.enhanced_sections && Array.isArray(movie.enhanced_sections)) {
+      existingAnalysis = {
+        sections: movie.enhanced_sections,
+        keyElements: movie.enhanced_key_elements || {}
+      };
+      movieData.genre = existingAnalysis.keyElements?.genre || 'Unknown';
+      movieData.director = existingAnalysis.keyElements?.director || 'Unknown';
+    }
+    // Handle legacy format
+    else if (movie.claude_response && movie.claude_response.raw_content) {
+      existingAnalysis = JSON.parse(movie.claude_response.raw_content);
+      movieData.genre = existingAnalysis.keyElements?.genre || 'Unknown';
+      movieData.director = existingAnalysis.keyElements?.director || 'Unknown';
+    }
+    else {
+      throw new Error('No valid analysis content found');
+    }
     
     const prompt = buildWhyWatchPrompt(movieTitle, movieData);
     
@@ -233,20 +262,74 @@ async function saveWhyWatchResult(result) {
 }
 
 /**
- * Process movies in batches with rate limiting
+ * Process movies in batches with gentler rate limiting
  */
 async function processBatch(movies, progress, batchSize = 10) {
   const results = [];
   
-  for (let i = 0; i < movies.length; i += batchSize) {
-    const batch = movies.slice(i, i + batchSize);
+  // Gentler rate limiting configuration
+  const RATE_LIMITS = {
+    batchSize: 10,           // Reduced from 50 to 10 movies per batch
+    batchDelay: 8000,        // Increased from 2000ms to 8000ms between batches
+    requestDelay: 1500,      // New: 1.5s delay between individual requests
+    retryDelay: 30000,       // 30s delay on rate limit errors
+    maxRetries: 3            // Retry failed requests up to 3 times
+  };
+  
+  for (let i = 0; i < movies.length; i += RATE_LIMITS.batchSize) {
+    const batch = movies.slice(i, i + RATE_LIMITS.batchSize);
     
-    console.log(`\n🔄 Processing batch ${Math.floor(i/batchSize) + 1}/${Math.ceil(movies.length/batchSize)}`);
-    console.log(`   Movies ${i + 1}-${Math.min(i + batchSize, movies.length)} of ${movies.length}`);
+    console.log(`\n🔄 Processing batch ${Math.floor(i/RATE_LIMITS.batchSize) + 1}/${Math.ceil(movies.length/RATE_LIMITS.batchSize)}`);
+    console.log(`   Movies ${i + 1}-${Math.min(i + RATE_LIMITS.batchSize, movies.length)} of ${movies.length}`);
+    console.log(`   🐌 Gentle rate limiting: ${RATE_LIMITS.batchSize} movies, ${RATE_LIMITS.requestDelay}ms delays`);
     
-    // Process batch in parallel
-    const batchPromises = batch.map(movie => generateWhyWatch(movie));
-    const batchResults = await Promise.all(batchPromises);
+    // Process batch sequentially with delays (not parallel) to avoid rate limits
+    const batchResults = [];
+    for (const movie of batch) {
+      let attempts = 0;
+      let result = null;
+      
+      while (attempts <= RATE_LIMITS.maxRetries) {
+        try {
+          result = await generateWhyWatch(movie);
+          
+          // If rate limited, wait and retry
+          if (result && !result.success && result.error?.includes('rate_limit_error')) {
+            attempts++;
+            if (attempts <= RATE_LIMITS.maxRetries) {
+              console.log(`   ⏳ Rate limit hit for ${movie.title}, waiting ${RATE_LIMITS.retryDelay/1000}s... (attempt ${attempts}/${RATE_LIMITS.maxRetries})`);
+              await new Promise(resolve => setTimeout(resolve, RATE_LIMITS.retryDelay));
+              continue;
+            }
+          }
+          break;
+        } catch (error) {
+          attempts++;
+          if (attempts <= RATE_LIMITS.maxRetries) {
+            console.log(`   ❌ Error for ${movie.title}, retrying in ${RATE_LIMITS.retryDelay/1000}s... (attempt ${attempts}/${RATE_LIMITS.maxRetries})`);
+            await new Promise(resolve => setTimeout(resolve, RATE_LIMITS.retryDelay));
+          } else {
+            result = {
+              success: false,
+              movie: `${movie.title} (${movie.year})`,
+              analysisId: movie.analysis_id,
+              movieId: movie.movie_id,
+              tmdbId: movie.tmdb_id,
+              error: error.message,
+              timestamp: new Date().toISOString()
+            };
+            break;
+          }
+        }
+      }
+      
+      batchResults.push(result);
+      
+      // Delay between individual requests within batch
+      if (batch.indexOf(movie) < batch.length - 1) {
+        await new Promise(resolve => setTimeout(resolve, RATE_LIMITS.requestDelay));
+      }
+    }
     
     // Save results to database
     for (const result of batchResults) {
@@ -254,11 +337,13 @@ async function processBatch(movies, progress, batchSize = 10) {
         const saved = await saveWhyWatchResult(result);
         if (saved) {
           progress.successful++;
+          progress.processedIds.add(result.analysisId); // Only mark as processed if saved to DB
           console.log(`✅ ${result.whyWatch.recommendation}: ${result.movie}`);
           console.log(`   ${result.whyWatch.reasons.join(' | ')}`);
         } else {
           progress.failed++;
           console.log(`❌ DB Save Failed: ${result.movie}`);
+          // Don't add to processedIds - allow retry
         }
       } else {
         progress.failed++;
@@ -268,11 +353,11 @@ async function processBatch(movies, progress, batchSize = 10) {
           timestamp: result.timestamp
         });
         console.log(`❌ Generation Failed: ${result.movie} - ${result.error}`);
+        // Don't add to processedIds - allow retry
       }
       
       progress.processed++;
       progress.totalCost += result.metadata?.cost || 0;
-      progress.processedIds.add(result.analysisId);
     }
     
     results.push(...batchResults);
@@ -280,10 +365,10 @@ async function processBatch(movies, progress, batchSize = 10) {
     // Save progress after each batch
     await saveProgress(progress);
     
-    // Rate limiting - wait between batches
-    if (i + batchSize < movies.length) {
-      console.log('   ⏳ Rate limiting delay...');
-      await new Promise(resolve => setTimeout(resolve, 2000));
+    // Longer delay between batches
+    if (i + RATE_LIMITS.batchSize < movies.length) {
+      console.log(`   ⏳ Extended rate limiting delay (${RATE_LIMITS.batchDelay/1000}s)...`);
+      await new Promise(resolve => setTimeout(resolve, RATE_LIMITS.batchDelay));
     }
   }
   

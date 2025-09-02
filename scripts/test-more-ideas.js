@@ -39,11 +39,16 @@ async function generateMoreIdeas(movieTitle) {
             }
           ]
         },
+        {
+          role: 'assistant',
+          content: '{\n  "moreIdeas": [\n    {'
+        }
       ],
     });
 
     const processingTime = Date.now() - startTime;
-    const rawResponse = message.content[0].text;
+    const prefill = '{\n  "moreIdeas": [\n    {';
+    const rawResponse = prefill + message.content[0].text;
     
     // Parse and validate JSON response
     let response;

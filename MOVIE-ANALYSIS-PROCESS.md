@@ -125,9 +125,37 @@ WHERE id IN (
 - **Batch Candidates**: Movies with `has_analysis = FALSE`
 - **Processing Rate**: Optimized for bulk operations via Batch API
 
+## Railway PostgreSQL Batch Processing Script
+
+**Location**: `scripts/railway-batch-processor.js`
+
+### Usage Examples:
+```bash
+# Production processing with Railway database
+node scripts/railway-batch-processor.js --production --individual-api --count 1000
+
+# Test with essential movies
+node scripts/railway-batch-processor.js --test --individual-api
+
+# Resume previous processing
+node scripts/railway-batch-processor.js --resume --individual-api
+```
+
+### Key Arguments:
+- `--production`: Process all movies needing analysis from Railway database  
+- `--individual-api`: Fast iteration with immediate feedback
+- `--batch-api`: 50% cost savings using Claude Batch API (fallback to individual)
+- `--count N`: Limit to N movies
+- `--test`: Process essential movies list for testing
+
+### Database Schema:
+- Uses Railway PostgreSQL via `DATABASE_URL` environment variable
+- Saves analyses to `movie_analyses` table with `analysis_type = 'general'`
+- Checks for existing analyses to avoid reprocessing
+
 ## Next Steps
 
-1. **Batch Script Development**: Create automated bulk processing script
-2. **Flag Synchronization**: Ensure `has_analysis` accurately reflects analysis state
-3. **Monitoring**: Track processing progress and success rates
-4. **Optimization**: Fine-tune batch sizes and processing intervals
+1. **✅ Batch Script Completed**: Railway PostgreSQL batch processor created
+2. **Flag Synchronization**: Update `has_analysis` flag logic for Railway database
+3. **Monitoring**: Track processing progress and success rates  
+4. **Batch API Enhancement**: Complete full Batch API implementation for Railway

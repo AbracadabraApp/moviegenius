@@ -45,12 +45,20 @@ const args = process.argv.slice(2);
 if (args.includes('--all')) CONFIG.maxMovies = null;
 if (args.includes('--no-skip')) CONFIG.skipExisting = false;
 if (args.includes('--more-ideas')) CONFIG.generateMoreIdeas = true;
-if (args.includes('--batch')) CONFIG.batchSize = parseInt(args.find(a => a.startsWith('--batch=')).split('=')[1]);
+
+const batchArg = args.find(a => a.startsWith('--batch='));
+if (batchArg) {
+  const value = parseInt(batchArg.split('=')[1], 10);
+  if (!isNaN(value)) CONFIG.batchSize = value;
+}
 
 // Add specific movie support
 CONFIG.specificMovie = null;
 const movieArg = args.find(a => a.startsWith('--movie='));
-if (movieArg) CONFIG.specificMovie = parseInt(movieArg.split('=')[1]);
+if (movieArg) {
+  const value = parseInt(movieArg.split('=')[1], 10);
+  if (!isNaN(value)) CONFIG.specificMovie = value;
+}
 
 /**
  * Get movies that need enhanced static files
@@ -73,13 +81,16 @@ async function getMoviesToProcess() {
         AND ma.claude_response->>'raw_content' IS NOT NULL
     `;
     
+    const params = [];
     if (CONFIG.specificMovie) {
-      query += ` AND m.tmdb_id = ${CONFIG.specificMovie}`;
+      query += ` AND m.tmdb_id = $1`;
+      params.push(CONFIG.specificMovie);
     } else if (CONFIG.maxMovies) {
-      query += ` LIMIT ${CONFIG.maxMovies}`;
+      query += ` LIMIT $1`;
+      params.push(CONFIG.maxMovies);
     }
     
-    const result = await client.query(query);
+    const result = await client.query(query, params);
     
     if (CONFIG.verbose) {
       console.log(`📊 Found ${result.rows.length} movies with analyses`);
@@ -164,8 +175,16 @@ async function generateEnhancedMovieFile(movie) {
   }
   
   try {
-    // 1. Parse Analysis (base data)
-    const analysis = JSON.parse(movie.claude_response.raw_content);
+    // 1. Parse Analysis (use processed_content with links, fallback to raw_content)
+    let analysis;
+    try {
+      const analysisContent = movie.claude_response.processed_content || 
+                             movie.claude_response.raw_content;
+      analysis = JSON.parse(analysisContent);
+    } catch (parseError) {
+      console.error(`❌ JSON parse error for ${movie.title}: ${parseError.message}`);
+      return { error: `Invalid analysis JSON: ${parseError.message}` };
+    }
     
     // 2. Load Why Watch Data
     const whyWatchData = await loadWhyWatchData(movie.id, movie.tmdb_id);
@@ -183,9 +202,33 @@ async function generateEnhancedMovieFile(movie) {
       }
     }
     
-    // 4. Generate More Ideas (disabled for now - requires separate implementation)
+    // 4. Load More Ideas from database
     let moreIdeas = null;
-    // TODO: Implement More Ideas generation integration
+    if (CONFIG.generateMoreIdeas) {
+      try {
+        const moreIdeasClient = await pool.connect();
+        const moreIdeasResult = await moreIdeasClient.query(`
+          SELECT ideas 
+          FROM more_ideas 
+          WHERE movie_id = $1 OR tmdb_id = $2
+          ORDER BY created_at DESC
+          LIMIT 1
+        `, [movie.id, movie.tmdb_id]);
+        
+        if (moreIdeasResult.rows.length > 0) {
+          const ideas = moreIdeasResult.rows[0].ideas;
+          moreIdeas = {
+            recommendations: Array.isArray(ideas) ? ideas : JSON.parse(ideas),
+            totalRecommendations: Array.isArray(ideas) ? ideas.length : JSON.parse(ideas).length
+          };
+        }
+        moreIdeasClient.release();
+      } catch (error) {
+        if (CONFIG.verbose) {
+          console.log(`    ⚠️  No More Ideas data for ${movie.title}: ${error.message}`);
+        }
+      }
+    }
     
     // 5. Compose Enhanced Static File
     const enhancedData = {
@@ -232,7 +275,7 @@ async function generateEnhancedMovieFile(movie) {
         analysis: 'railway_database',
         browseCollections: browseCollections.totalLists > 0 ? 'static_files' : null,
         contributors: contributors ? 'movie_contributors_table' : 'analysis_fallback',
-        moreIdeas: moreIdeas ? 'ai_generated' : null
+        moreIdeas: moreIdeas ? 'more_ideas_table' : null
       }
     };
     

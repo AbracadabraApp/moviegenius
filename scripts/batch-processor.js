@@ -30,16 +30,15 @@ config({ path: resolve(__dirname, '../.env.local') });
 
 import { Anthropic } from '@anthropic-ai/sdk';
 import { buildPrompt } from '../lib/prompts/builder.js';
-import { createClient } from '@supabase/supabase-js';
+import { Pool } from 'pg';
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL
+});
 
 // Configuration
 // Simple logging helper
