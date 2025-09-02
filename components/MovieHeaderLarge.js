@@ -326,7 +326,6 @@ export default function MovieHeaderLarge({
         {/* </div>
       )} */}
       
-      
       {/* YouTube Trailer Modal */}
       {showTrailer && trailerVideoId && (
         <div style={styles.trailerOverlay} onClick={handleCloseTrailer}>

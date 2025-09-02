@@ -1,0 +1,553 @@
+{
+  "metadata": {
+    "title": "Curated Platform Movie Groups",
+    "description": "Carefully selected 5-8 films per major platform for homepage carousel",
+    "selectionCriteria": [
+      "Highest scoring films within each platform",
+      "Diversity across decades (1950s-1980s focus)",
+      "Mix of sources (Criterion, Genius Episodes, AFI)",
+      "Quality over quantity approach"
+    ],
+    "totalPlatforms": 7,
+    "totalSelectedFilms": 41,
+    "createdDate": "2025-08-25T00:19:58.840Z",
+    "lastUpdated": "2025-08-25T00:21:29.881Z",
+    "changes": "Removed TCM, expanded Amazon Prime to 9 films, added Peacock (2 films)",
+    "platformStandardization": {
+      "applied": "2025-08-25T00:37:24.445Z",
+      "rules": {
+        "Prime Video": "Amazon Prime",
+        "The Criterion Channel": "Criterion",
+        "Criterion": "Criterion",
+        "Available on YouTube": "YouTube",
+        "Apple TV Channel": "Apple TV+",
+        "AMC Plus": "AMC+",
+        "Universal": "Universal Pictures"
+      },
+      "filmsUpdated": 0
+    }
+  },
+  "platformGroups": {
+    "HBO Max": [
+      {
+        "title": "Yojimbo",
+        "year": 1961,
+        "tmdb_id": 11878,
+        "slug": "Influential samurai film about a crafty ronin playing rival gangs against each other",
+        "streaming": "HBO Max",
+        "poster_url": "https://image.tmdb.org/t/p/w500/tN7kYPjRhDolpui9sc9Eq9n5b2O.jpg",
+        "source_episode": "genius-2-2-1.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "sources": [
+          "Genius Episodes 1950s-1980s",
+          "Criterion Collection"
+        ],
+        "score": 88
+      },
+      {
+        "title": "Seven Samurai",
+        "year": 1954,
+        "tmdb_id": 346,
+        "slug": "Epic masterpiece about samurai defending a village, revolutionizing action cinema and storytelling",
+        "streaming": "HBO Max",
+        "poster_url": "https://image.tmdb.org/t/p/w500/8OKmBV5BUFzmozIC3pPWKHy17kx.jpg",
+        "source_episode": "genius-2-2-1.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "sources": [
+          "Genius Episodes 1950s-1980s",
+          "Criterion Collection"
+        ],
+        "score": 88
+      },
+      {
+        "title": "Network",
+        "year": 1976,
+        "tmdb_id": 10774,
+        "slug": "Prescient satire of television and corporate media",
+        "streaming": "HBO Max",
+        "poster_url": "https://image.tmdb.org/t/p/w500/gZ8hhuVEQ78CLND09trZJ45Eiy8.jpg",
+        "source_episode": "genius-5-1-1.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "sources": [
+          "Genius Episodes 1950s-1980s",
+          "AFI 30-70"
+        ],
+        "score": 82
+      },
+      {
+        "title": "Roger & Me",
+        "year": 1989,
+        "tmdb_id": 1779,
+        "slug": "Moore's debut film examining GM plant closures in Flint",
+        "streaming": "HBO Max",
+        "poster_url": "https://image.tmdb.org/t/p/w500/nsLrWqKnyOKgtBMD6OYLk6fAyTG.jpg",
+        "source_episode": "genius-2-3-3.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "North by Northwest",
+        "year": 1959,
+        "tmdb_id": 213,
+        "slug": "Spy thriller showcasing architectural suspense",
+        "streaming": "HBO Max",
+        "poster_url": "https://image.tmdb.org/t/p/w500/kNOFPQrel9YFCVzI0DF8FnCEpCw.jpg",
+        "source_episode": "genius-4-1-1.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "sources": [
+          "Genius Episodes 1950s-1980s",
+          "AFI 30-70"
+        ],
+        "score": 82
+      },
+      {
+        "title": "sex, lies, and videotape",
+        "year": 1989,
+        "tmdb_id": 1412,
+        "slug": "Soderbergh's groundbreaking drama about relationships and sexuality",
+        "streaming": "HBO Max",
+        "poster_url": "https://image.tmdb.org/t/p/w500/pj1uKm07svgXZDHbYE8AzRfNHcu.jpg",
+        "source_episode": "genius-5-2-2.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "Die Hard",
+        "year": 1988,
+        "tmdb_id": 562,
+        "slug": "Revolutionary action thriller that redefined the genre",
+        "streaming": "HBO Max",
+        "poster_url": "https://image.tmdb.org/t/p/w500/aJCpHDC6RoGz7d1Fzayl019xnxX.jpg",
+        "source_episode": "genius-5-1-2.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      }
+    ],
+    "Amazon Prime": [
+      {
+        "title": "Rear Window",
+        "year": 1954,
+        "tmdb_id": 567,
+        "slug": "Masterclass in confined space tension",
+        "streaming": "Amazon Prime",
+        "poster_url": "https://image.tmdb.org/t/p/w500/ILVF0eJxHMddjxeQhswFtpMtqx.jpg",
+        "source_episode": "genius-4-1-1.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "sources": [
+          "Genius Episodes 1950s-1980s",
+          "AFI 30-70"
+        ],
+        "score": 82
+      },
+      {
+        "title": "Blue Steel",
+        "year": 1989,
+        "tmdb_id": null,
+        "slug": "Psychological thriller about a rookie cop framed for murder",
+        "streaming": "Amazon Prime",
+        "poster_url": null,
+        "source_episode": "genius-2-1-5.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "A Fish Called Wanda",
+        "year": 1988,
+        "tmdb_id": 623,
+        "slug": "Anglo-American heist comedy",
+        "streaming": "Amazon Prime",
+        "poster_url": "https://image.tmdb.org/t/p/w500/hkSGFNVfEEUXFCxRZDITFHVhUlu.jpg",
+        "source_episode": "genius-1-3-3.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "Fahrenheit 451",
+        "year": 1966,
+        "tmdb_id": 1714,
+        "slug": "Truffaut's adaptation of Ray Bradbury's dystopian novel",
+        "streaming": "Amazon Prime",
+        "poster_url": "https://image.tmdb.org/t/p/w500/k2CTpexoS9MO9lKVFfnzwVdJuM.jpg",
+        "source_episode": "genius-3-1-1.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "RoboCop",
+        "year": 1987,
+        "tmdb_id": 5548,
+        "slug": "Paul Verhoeven's satirical action film that pushed effects boundaries",
+        "streaming": "Amazon Prime",
+        "poster_url": "https://image.tmdb.org/t/p/w500/esmAU0fCO28FbS6bUBKLAzJrohZ.jpg",
+        "source_episode": "genius-5-1-2.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "The Fly",
+        "year": 1986,
+        "tmdb_id": 9426,
+        "slug": "Scientist's gradual transformation into insect hybrid explores decay and disease",
+        "streaming": "Amazon Prime",
+        "poster_url": "https://image.tmdb.org/t/p/w500/8gZWMhJHRvaXdXsNhERtqNHYpH3.jpg",
+        "source_episode": "genius-1-2-2.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "Blood Simple",
+        "year": 1984,
+        "tmdb_id": 11368,
+        "slug": "Neo-noir debut from the Coen Brothers",
+        "streaming": "Amazon Prime",
+        "poster_url": "https://image.tmdb.org/t/p/w500/svU6pu4lfHn0T5BVZchVxL58HB5.jpg",
+        "source_episode": "genius-5-2-2.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "The Terminator",
+        "year": 1984,
+        "tmdb_id": 218,
+        "slug": "Cameron's sci-fi thriller that launched a franchise and pioneered effects techniques",
+        "streaming": "Amazon Prime",
+        "poster_url": "https://image.tmdb.org/t/p/w500/hzXSE66v6KthZ8nPoLZmsi2G05j.jpg",
+        "source_episode": "genius-5-1-2.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "Fitzcarraldo",
+        "year": 1982,
+        "tmdb_id": 9343,
+        "slug": "Story of an obsessive opera lover in the Amazon",
+        "streaming": "Amazon Prime",
+        "poster_url": "https://image.tmdb.org/t/p/w500/oBCnYEKcg1rMhr5JjDnrRpilvDd.jpg",
+        "source_episode": "genius-3-1-6.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      }
+    ],
+    "Netflix": [
+      {
+        "title": "The Deer Hunter",
+        "year": 1978,
+        "tmdb_id": 11778,
+        "slug": "Epic examination of the Vietnam War's impact on American life",
+        "streaming": "Netflix",
+        "poster_url": "https://image.tmdb.org/t/p/w500/bbGtogDZOg09bm42KIpCXUXICkh.jpg",
+        "source_episode": "genius-5-1-1.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "sources": [
+          "Genius Episodes 1950s-1980s",
+          "AFI 30-70"
+        ],
+        "score": 82
+      },
+      {
+        "title": "Dr. Strangelove",
+        "year": 1964,
+        "tmdb_id": 935,
+        "slug": "Cold War satire with Peter Sellers in multiple roles",
+        "streaming": "Netflix",
+        "poster_url": "https://image.tmdb.org/t/p/w500/6x7MzQ6BOMlRzam1StcmPO9v61g.jpg",
+        "source_episode": "genius-1-3-3.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "sources": [
+          "Genius Episodes 1950s-1980s",
+          "AFI 30-70"
+        ],
+        "score": 82
+      },
+      {
+        "title": "Back to the Future",
+        "year": 1985,
+        "tmdb_id": 105,
+        "slug": "Time-traveling classic that perfectly balanced effects, humor, and heart",
+        "streaming": "Netflix",
+        "poster_url": "https://image.tmdb.org/t/p/w500/vN5B5WgYscRGcQpVhHl6p9DDTP0.jpg",
+        "source_episode": "genius-5-1-2.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "Beverly Hills Cop",
+        "year": 1984,
+        "tmdb_id": 90,
+        "slug": "Eddie Murphy's star-making action-comedy that perfected the genre blend",
+        "streaming": "Netflix",
+        "poster_url": "https://image.tmdb.org/t/p/w500/eBJEvKkhQ0tUt1dBAcTEYW6kCle.jpg",
+        "source_episode": "genius-5-1-2.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "Ghostbusters",
+        "year": 1984,
+        "tmdb_id": 620,
+        "slug": "Effects-driven comedy that perfectly balanced spectacle and humor",
+        "streaming": "Netflix",
+        "poster_url": "https://image.tmdb.org/t/p/w500/7E8nLijS9AwwUEPu2oFYOVKhdFA.jpg",
+        "source_episode": "genius-5-1-2.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "E.T. the Extra-Terrestrial",
+        "year": 1982,
+        "tmdb_id": 601,
+        "slug": "Spielberg's heartwarming sci-fi that became the highest-grossing film of the decade",
+        "streaming": "Netflix",
+        "poster_url": "https://image.tmdb.org/t/p/w500/an0nD6uq6byfxXCfk6lQBzdL2J1.jpg",
+        "source_episode": "genius-5-1-2.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      }
+    ],
+    "Disney+": [
+      {
+        "title": "Raiders of the Lost Ark",
+        "year": 1981,
+        "tmdb_id": 85,
+        "slug": "Harrison Ford's iconic archaeologist adventure that defined the modern action-adventure genre",
+        "streaming": "Disney+",
+        "poster_url": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
+        "source_episode": "genius-5-1-2.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "sources": [
+          "Genius Episodes 1950s-1980s",
+          "AFI 30-70"
+        ],
+        "score": 82
+      },
+      {
+        "title": "Indiana Jones and the Last Crusade",
+        "year": 1989,
+        "tmdb_id": 89,
+        "slug": "Spielberg's refined take on the adventure genre",
+        "streaming": "Disney+",
+        "poster_url": "https://image.tmdb.org/t/p/w500/sizg1AU8f8JDZX4QIgE4pjUMBvx.jpg",
+        "source_episode": "genius-5-1-2.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "The Abyss",
+        "year": 1989,
+        "tmdb_id": 2756,
+        "slug": "Cameron's underwater sci-fi that pushed effects boundaries",
+        "streaming": "Disney+",
+        "poster_url": "https://image.tmdb.org/t/p/w500/2dCit3XAtv9KWCJvRKdPkJ0FAkH.jpg",
+        "source_episode": "genius-5-1-2.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "Star Wars",
+        "year": 1977,
+        "tmdb_id": 11,
+        "slug": "George Lucas's space opera that launched modern franchise filmmaking",
+        "streaming": "Disney+",
+        "poster_url": "https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+        "source_episode": "genius-5-2-4.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "Who Framed Roger Rabbit",
+        "year": 1988,
+        "tmdb_id": 856,
+        "slug": "Revolutionary combination of animation and live action",
+        "streaming": "Disney+",
+        "poster_url": "https://image.tmdb.org/t/p/w500/lYfRc57Kx9VgLZ48iulu0HKnM15.jpg",
+        "source_episode": "genius-5-1-2.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      }
+    ],
+    "Paramount+": [
+      {
+        "title": "Top Gun",
+        "year": 1986,
+        "tmdb_id": 744,
+        "slug": "High-octane military action drama that defined the decade's visual style",
+        "streaming": "Paramount+",
+        "poster_url": "https://image.tmdb.org/t/p/w500/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg",
+        "source_episode": "genius-5-1-2.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "Chinatown",
+        "year": 1974,
+        "tmdb_id": 829,
+        "slug": "A private eye uncovers corruption in 1930s Los Angeles",
+        "streaming": "Paramount+",
+        "poster_url": "https://image.tmdb.org/t/p/w500/kZRSP3FmOcq0xnBulqpUQngJUXY.jpg",
+        "source_episode": "genius-1-1-5.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "The Twilight Zone",
+        "year": 1964,
+        "tmdb_id": null,
+        "slug": "\"The Masks\" episode directed by Lupino",
+        "streaming": "Paramount+",
+        "poster_url": null,
+        "source_episode": "genius-2-1-2.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "Sunset Boulevard",
+        "year": 1950,
+        "tmdb_id": 599,
+        "slug": "Wilder's Hollywood noir with expressionist touches",
+        "streaming": "Paramount+",
+        "poster_url": "https://image.tmdb.org/t/p/w500/sC4Dpmn87oz9AuxZ15Lmip0Ftgr.jpg",
+        "source_episode": "genius-3-2-4.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      }
+    ],
+    "Peacock": [
+      {
+        "title": "Do the Right Thing",
+        "year": 1989,
+        "tmdb_id": 925,
+        "slug": "Spike Lee's breakthrough film about racial tensions in Brooklyn",
+        "streaming": "Peacock",
+        "poster_url": "https://image.tmdb.org/t/p/w500/63rmSDPahrH7C1gEFYzRuIBAN9W.jpg",
+        "source_episode": "genius-5-2-2.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "The Birds",
+        "year": 1963,
+        "tmdb_id": 571,
+        "slug": "Nature horror with revolutionary point-of-view shots",
+        "streaming": "Peacock",
+        "poster_url": "https://image.tmdb.org/t/p/w500/eClg8QPg8mwB6INIC4pyR5pAbDr.jpg",
+        "source_episode": "genius-4-1-1.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      }
+    ],
+    "Criterion": [
+      {
+        "title": "Ali: Fear Eats the Soul",
+        "year": 1974,
+        "tmdb_id": 216,
+        "slug": "Powerful examination of prejudice and love",
+        "streaming": "Criterion Channel",
+        "poster_url": "https://image.tmdb.org/t/p/w500/5Oru4v8tRUN90JUuM6BNDJoetLt.jpg",
+        "source_episode": "genius-3-1-6.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "sources": [
+          "Genius Episodes 1950s-1980s",
+          "Criterion Collection"
+        ],
+        "score": 88
+      },
+      {
+        "title": "Amarcord",
+        "year": 1973,
+        "tmdb_id": 7857,
+        "slug": "Nostalgic remembrance of life in fascist-era Italy",
+        "streaming": "Criterion Channel",
+        "poster_url": "https://image.tmdb.org/t/p/w500/g3UKJ5LgVpycOxeusBI6IXa40kY.jpg",
+        "source_episode": "genius-2-2-3.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "sources": [
+          "Genius Episodes 1950s-1980s",
+          "Criterion Collection"
+        ],
+        "score": 88
+      },
+      {
+        "title": "Andrei Rublev",
+        "year": 1966,
+        "tmdb_id": 895,
+        "slug": "Epic historical drama about a 15th-century Russian icon painter",
+        "streaming": "Criterion Channel",
+        "poster_url": "https://image.tmdb.org/t/p/w500/910xRIUmNJrWH2hkQifBJtoPp5R.jpg",
+        "source_episode": "genius-2-2-4.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "sources": [
+          "Genius Episodes 1950s-1980s",
+          "Criterion Collection"
+        ],
+        "score": 88
+      },
+      {
+        "title": "The 400 Blows",
+        "year": 1959,
+        "tmdb_id": 147,
+        "slug": "Truffaut's semi-autobiographical masterpiece following a troubled youth in Paris",
+        "streaming": "Criterion Channel",
+        "poster_url": "https://image.tmdb.org/t/p/w500/12PuU23kkDLvTd0nb8hMlE3oShB.jpg",
+        "source_episode": "genius-3-1-1.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "sources": [
+          "Genius Episodes 1950s-1980s",
+          "Criterion Collection"
+        ],
+        "score": 88
+      },
+      {
+        "title": "Black Rain",
+        "year": 1989,
+        "tmdb_id": 4105,
+        "slug": "Imamura's powerful examination of atomic bomb survivors",
+        "streaming": "Criterion Channel",
+        "poster_url": "https://image.tmdb.org/t/p/w500/funhGWt9ee3Uwb6Ar8SGCCvbJdV.jpg",
+        "source_episode": "genius-3-1-4.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      },
+      {
+        "title": "8½",
+        "year": 1963,
+        "tmdb_id": 422,
+        "slug": "A film director's creative and personal crises told through surreal vignettes",
+        "streaming": "Criterion Channel",
+        "poster_url": "https://image.tmdb.org/t/p/w500/2cPK4xKtccKmYsCSpaFGWnfEsZX.jpg",
+        "source_episode": "genius-2-2-3.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "sources": [
+          "Genius Episodes 1950s-1980s",
+          "Criterion Collection"
+        ],
+        "score": 88
+      },
+      {
+        "title": "High and Low",
+        "year": 1963,
+        "tmdb_id": 12493,
+        "slug": "Kidnapping thriller examining class divisions in modern Japan",
+        "streaming": "Criterion Channel",
+        "poster_url": "https://image.tmdb.org/t/p/w500/tgNjemQPG96uIezpiUiXFcer5ga.jpg",
+        "source_episode": "genius-2-2-1.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "sources": [
+          "Genius Episodes 1950s-1980s",
+          "Criterion Collection"
+        ],
+        "score": 88
+      },
+      {
+        "title": "Central Park",
+        "year": 1989,
+        "tmdb_id": null,
+        "slug": "Portrait of New York's famous park and its many uses",
+        "streaming": "Criterion Channel",
+        "poster_url": null,
+        "source_episode": "genius-2-3-1.json",
+        "source": "Genius Episodes 1950s-1980s",
+        "score": 79
+      }
+    ]
+  }
+}

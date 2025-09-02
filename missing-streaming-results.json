@@ -1,0 +1,636 @@
+{
+  "summary": {
+    "totalProcessed": 50,
+    "foundStreaming": 27,
+    "noStreaming": 23,
+    "lookupDate": "2025-08-24T20:47:11.949Z"
+  },
+  "results": [
+    {
+      "title": "All We Imagine as Light",
+      "year": 2024,
+      "tmdb_id": 927547,
+      "source": "Criterion Collection",
+      "streaming": "Criterion Channel"
+    },
+    {
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "year": 2001,
+      "afi_rank": 50,
+      "source": "AFI 30-70",
+      "streaming": "HBO Max (+1)",
+      "tmdb_id": 120
+    },
+    {
+      "title": "Unforgiven",
+      "year": 1992,
+      "afi_rank": 68,
+      "source": "AFI 30-70",
+      "streaming": "No streaming services",
+      "tmdb_id": 33
+    },
+    {
+      "title": "The Silence of the Lambs",
+      "year": 1991,
+      "tmdb_id": 274,
+      "source": "Criterion Collection",
+      "streaming": "HBO Max (+1)"
+    },
+    {
+      "title": "Au Revoir, les enfants",
+      "year": 1987,
+      "tmdb_id": 1786,
+      "source": "Criterion Collection",
+      "streaming": "HBO Max (+2)"
+    },
+    {
+      "title": "Blue Velvet",
+      "year": 1986,
+      "tmdb_id": "tt0090756",
+      "slug": "Lynch's suburban darkness",
+      "streaming": "No streaming services",
+      "poster_url": null,
+      "source_episode": "genius-1-1-1-updated.json",
+      "source": "Genius Episodes 1950s-1980s"
+    },
+    {
+      "title": "Tootsie",
+      "year": 1982,
+      "afi_rank": 69,
+      "source": "AFI 30-70",
+      "streaming": "No streaming services",
+      "tmdb_id": 9576
+    },
+    {
+      "title": "Apocalypse Now",
+      "year": 1979,
+      "afi_rank": 30,
+      "source": "AFI 30-70",
+      "streaming": "No streaming services",
+      "tmdb_id": 28
+    },
+    {
+      "title": "Annie Hall",
+      "year": 1977,
+      "afi_rank": 35,
+      "source": "AFI 30-70",
+      "streaming": "fuboTV (+4)",
+      "tmdb_id": 703
+    },
+    {
+      "title": "Taxi Driver",
+      "year": 1976,
+      "tmdb_id": "tt0075314",
+      "slug": "Scorsese's urban alienation study",
+      "streaming": "No streaming services",
+      "poster_url": null,
+      "source_episode": "genius-1-1-1-updated.json",
+      "source": "Genius Episodes 1950s-1980s",
+      "sources": [
+        "Genius Episodes 1950s-1980s",
+        "AFI 30-70"
+      ]
+    },
+    {
+      "title": "Rocky",
+      "year": 1976,
+      "afi_rank": 57,
+      "source": "AFI 30-70",
+      "streaming": "Amazon Prime (+2)",
+      "tmdb_id": 1366
+    },
+    {
+      "title": "One Flew Over the Cuckoo's Nest",
+      "year": 1975,
+      "afi_rank": 33,
+      "source": "AFI 30-70",
+      "streaming": "No streaming services",
+      "tmdb_id": 510
+    },
+    {
+      "title": "Jaws",
+      "year": 1975,
+      "afi_rank": 56,
+      "source": "AFI 30-70",
+      "streaming": "Netflix (+4)",
+      "tmdb_id": 578
+    },
+    {
+      "title": "Nashville",
+      "year": 1975,
+      "afi_rank": 59,
+      "source": "AFI 30-70",
+      "streaming": "No streaming services",
+      "tmdb_id": 3121
+    },
+    {
+      "title": "The Godfather Part II",
+      "year": 1974,
+      "afi_rank": 32,
+      "source": "AFI 30-70",
+      "streaming": "fuboTV (+4)",
+      "tmdb_id": 240
+    },
+    {
+      "title": "American Graffiti",
+      "year": 1973,
+      "afi_rank": 62,
+      "source": "AFI 30-70",
+      "streaming": "Netflix (+3)",
+      "tmdb_id": 838
+    },
+    {
+      "title": "Cabaret",
+      "year": 1972,
+      "afi_rank": 63,
+      "source": "AFI 30-70",
+      "streaming": "No streaming services",
+      "tmdb_id": 10784
+    },
+    {
+      "title": "A Clockwork Orange",
+      "year": 1971,
+      "afi_rank": 70,
+      "source": "AFI 30-70",
+      "streaming": "No streaming services",
+      "tmdb_id": 185
+    },
+    {
+      "title": "M*A*S*H",
+      "year": 1970,
+      "afi_rank": 54,
+      "source": "AFI 30-70",
+      "streaming": "No streaming services",
+      "tmdb_id": 651
+    },
+    {
+      "title": "Midnight Cowboy",
+      "year": 1969,
+      "afi_rank": 43,
+      "source": "AFI 30-70",
+      "streaming": "Amazon Prime (+1)",
+      "tmdb_id": 3116
+    },
+    {
+      "title": "Army of Shadows",
+      "year": 1969,
+      "tmdb_id": 15383,
+      "source": "Criterion Collection",
+      "streaming": "No streaming services"
+    },
+    {
+      "title": "Who's Afraid of Virginia Woolf?",
+      "year": 1966,
+      "afi_rank": 67,
+      "source": "AFI 30-70",
+      "streaming": "No streaming services",
+      "tmdb_id": 396
+    },
+    {
+      "title": "Au Hasard Balthazar",
+      "year": 1966,
+      "tmdb_id": 20108,
+      "source": "Criterion Collection",
+      "streaming": "Criterion Channel"
+    },
+    {
+      "title": "The Battle of Algiers",
+      "year": 1966,
+      "tmdb_id": 17295,
+      "source": "Criterion Collection",
+      "streaming": "HBO Max (+3)"
+    },
+    {
+      "title": "The Sound of Music",
+      "year": 1965,
+      "afi_rank": 40,
+      "source": "AFI 30-70",
+      "streaming": "Disney+ (+1)",
+      "tmdb_id": 15121
+    },
+    {
+      "title": "Harakiri",
+      "year": 1962,
+      "tmdb_id": 14537,
+      "source": "Criterion Collection",
+      "streaming": "Criterion Channel"
+    },
+    {
+      "title": "West Side Story",
+      "year": 1961,
+      "afi_rank": 51,
+      "source": "AFI 30-70",
+      "streaming": "fuboTV (+4)",
+      "tmdb_id": 1725
+    },
+    {
+      "title": "Touch of Evil",
+      "year": 1958,
+      "tmdb_id": "tt0052311",
+      "slug": "Welles's border town corruption",
+      "streaming": "TCM",
+      "poster_url": null,
+      "source_episode": "genius-1-1-1-updated.json",
+      "source": "Genius Episodes 1950s-1980s"
+    },
+    {
+      "title": "The Bridge on the River Kwai",
+      "year": 1957,
+      "afi_rank": 36,
+      "source": "AFI 30-70",
+      "streaming": "No streaming services",
+      "tmdb_id": 826
+    },
+    {
+      "title": "The Night of the Hunter",
+      "year": 1955,
+      "tmdb_id": "tt0048424",
+      "slug": "Laughton's Expressionist thriller",
+      "streaming": "Amazon Prime (+2)",
+      "poster_url": null,
+      "source_episode": "genius-1-1-1-updated.json",
+      "source": "Genius Episodes 1950s-1980s",
+      "sources": [
+        "Genius Episodes 1950s-1980s",
+        "Criterion Collection"
+      ]
+    },
+    {
+      "title": "The Big Heat",
+      "year": 1953,
+      "tmdb_id": "tt0045555",
+      "slug": "Lang's American noir masterpiece",
+      "streaming": "No streaming services",
+      "poster_url": null,
+      "source_episode": "genius-1-1-1-updated.json",
+      "source": "Genius Episodes 1950s-1980s"
+    },
+    {
+      "title": "Shane",
+      "year": 1953,
+      "afi_rank": 45,
+      "source": "AFI 30-70",
+      "streaming": "fuboTV (+4)",
+      "tmdb_id": 3110
+    },
+    {
+      "title": "Ikiru",
+      "year": 1952,
+      "tmdb_id": 3782,
+      "source": "Criterion Collection",
+      "streaming": "HBO Max (+2)"
+    },
+    {
+      "title": "A Streetcar Named Desire",
+      "year": 1951,
+      "afi_rank": 47,
+      "source": "AFI 30-70",
+      "streaming": "No streaming services",
+      "tmdb_id": 702
+    },
+    {
+      "title": "The African Queen",
+      "year": 1951,
+      "afi_rank": 65,
+      "source": "AFI 30-70",
+      "streaming": "fuboTV (+4)",
+      "tmdb_id": 488
+    },
+    {
+      "title": "No Way Out",
+      "year": 1950,
+      "tmdb_id": "tt0042792",
+      "slug": "Mankiewicz's racial tension drama",
+      "streaming": "No streaming services",
+      "poster_url": null,
+      "source_episode": "genius-1-1-1-updated.json",
+      "source": "Genius Episodes 1950s-1980s"
+    },
+    {
+      "title": "The Treasure of the Sierra Madre",
+      "year": 1948,
+      "afi_rank": 38,
+      "source": "AFI 30-70",
+      "streaming": "No streaming services",
+      "tmdb_id": 3090
+    },
+    {
+      "title": "The Best Years of Our Lives",
+      "year": 1946,
+      "afi_rank": 37,
+      "source": "AFI 30-70",
+      "streaming": "Amazon Prime (+1)",
+      "tmdb_id": 887
+    },
+    {
+      "title": "Double Indemnity",
+      "year": 1944,
+      "tmdb_id": 996,
+      "source": "Criterion Collection",
+      "streaming": "No streaming services"
+    },
+    {
+      "title": "The Maltese Falcon",
+      "year": 1941,
+      "afi_rank": 31,
+      "source": "AFI 30-70",
+      "streaming": "No streaming services",
+      "tmdb_id": 963
+    },
+    {
+      "title": "Sullivan's Travels",
+      "year": 1941,
+      "afi_rank": 61,
+      "source": "AFI 30-70",
+      "streaming": "No streaming services",
+      "tmdb_id": 16305
+    },
+    {
+      "title": "The Philadelphia Story",
+      "year": 1940,
+      "afi_rank": 44,
+      "source": "AFI 30-70",
+      "streaming": "No streaming services",
+      "tmdb_id": 981
+    },
+    {
+      "title": "Snow White and the Seven Dwarfs",
+      "year": 1937,
+      "afi_rank": 34,
+      "source": "AFI 30-70",
+      "streaming": "Disney+",
+      "tmdb_id": 408
+    },
+    {
+      "title": "It Happened One Night",
+      "year": 1934,
+      "afi_rank": 46,
+      "source": "AFI 30-70",
+      "streaming": "No streaming services",
+      "tmdb_id": 3078
+    },
+    {
+      "title": "King Kong",
+      "year": 1933,
+      "afi_rank": 41,
+      "source": "AFI 30-70",
+      "streaming": "No streaming services",
+      "tmdb_id": 244
+    },
+    {
+      "title": "Duck Soup",
+      "year": 1933,
+      "afi_rank": 60,
+      "source": "AFI 30-70",
+      "streaming": "Amazon Prime (+1)",
+      "tmdb_id": 3063
+    },
+    {
+      "title": "City Lights",
+      "year": 1931,
+      "tmdb_id": 901,
+      "source": "Criterion Collection",
+      "streaming": "Amazon Prime (+4)"
+    },
+    {
+      "title": "M",
+      "year": 1931,
+      "tmdb_id": 832,
+      "source": "Criterion Collection",
+      "streaming": "HBO Max (+2)"
+    },
+    {
+      "title": "The Gold Rush",
+      "year": 1925,
+      "afi_rank": 58,
+      "source": "AFI 30-70",
+      "streaming": "Amazon Prime (+8)",
+      "tmdb_id": 962
+    },
+    {
+      "title": "Intolerance",
+      "year": 1916,
+      "afi_rank": 49,
+      "source": "AFI 30-70",
+      "streaming": "Amazon Prime (+5)",
+      "tmdb_id": 3059
+    }
+  ],
+  "newStreamingFilms": [
+    {
+      "title": "All We Imagine as Light",
+      "year": 2024,
+      "tmdb_id": 927547,
+      "source": "Criterion Collection",
+      "streaming": "Criterion Channel"
+    },
+    {
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "year": 2001,
+      "afi_rank": 50,
+      "source": "AFI 30-70",
+      "streaming": "HBO Max (+1)",
+      "tmdb_id": 120
+    },
+    {
+      "title": "The Silence of the Lambs",
+      "year": 1991,
+      "tmdb_id": 274,
+      "source": "Criterion Collection",
+      "streaming": "HBO Max (+1)"
+    },
+    {
+      "title": "Au Revoir, les enfants",
+      "year": 1987,
+      "tmdb_id": 1786,
+      "source": "Criterion Collection",
+      "streaming": "HBO Max (+2)"
+    },
+    {
+      "title": "Annie Hall",
+      "year": 1977,
+      "afi_rank": 35,
+      "source": "AFI 30-70",
+      "streaming": "fuboTV (+4)",
+      "tmdb_id": 703
+    },
+    {
+      "title": "Rocky",
+      "year": 1976,
+      "afi_rank": 57,
+      "source": "AFI 30-70",
+      "streaming": "Amazon Prime (+2)",
+      "tmdb_id": 1366
+    },
+    {
+      "title": "Jaws",
+      "year": 1975,
+      "afi_rank": 56,
+      "source": "AFI 30-70",
+      "streaming": "Netflix (+4)",
+      "tmdb_id": 578
+    },
+    {
+      "title": "The Godfather Part II",
+      "year": 1974,
+      "afi_rank": 32,
+      "source": "AFI 30-70",
+      "streaming": "fuboTV (+4)",
+      "tmdb_id": 240
+    },
+    {
+      "title": "American Graffiti",
+      "year": 1973,
+      "afi_rank": 62,
+      "source": "AFI 30-70",
+      "streaming": "Netflix (+3)",
+      "tmdb_id": 838
+    },
+    {
+      "title": "Midnight Cowboy",
+      "year": 1969,
+      "afi_rank": 43,
+      "source": "AFI 30-70",
+      "streaming": "Amazon Prime (+1)",
+      "tmdb_id": 3116
+    },
+    {
+      "title": "Au Hasard Balthazar",
+      "year": 1966,
+      "tmdb_id": 20108,
+      "source": "Criterion Collection",
+      "streaming": "Criterion Channel"
+    },
+    {
+      "title": "The Battle of Algiers",
+      "year": 1966,
+      "tmdb_id": 17295,
+      "source": "Criterion Collection",
+      "streaming": "HBO Max (+3)"
+    },
+    {
+      "title": "The Sound of Music",
+      "year": 1965,
+      "afi_rank": 40,
+      "source": "AFI 30-70",
+      "streaming": "Disney+ (+1)",
+      "tmdb_id": 15121
+    },
+    {
+      "title": "Harakiri",
+      "year": 1962,
+      "tmdb_id": 14537,
+      "source": "Criterion Collection",
+      "streaming": "Criterion Channel"
+    },
+    {
+      "title": "West Side Story",
+      "year": 1961,
+      "afi_rank": 51,
+      "source": "AFI 30-70",
+      "streaming": "fuboTV (+4)",
+      "tmdb_id": 1725
+    },
+    {
+      "title": "Touch of Evil",
+      "year": 1958,
+      "tmdb_id": "tt0052311",
+      "slug": "Welles's border town corruption",
+      "streaming": "TCM",
+      "poster_url": null,
+      "source_episode": "genius-1-1-1-updated.json",
+      "source": "Genius Episodes 1950s-1980s"
+    },
+    {
+      "title": "The Night of the Hunter",
+      "year": 1955,
+      "tmdb_id": "tt0048424",
+      "slug": "Laughton's Expressionist thriller",
+      "streaming": "Amazon Prime (+2)",
+      "poster_url": null,
+      "source_episode": "genius-1-1-1-updated.json",
+      "source": "Genius Episodes 1950s-1980s",
+      "sources": [
+        "Genius Episodes 1950s-1980s",
+        "Criterion Collection"
+      ]
+    },
+    {
+      "title": "Shane",
+      "year": 1953,
+      "afi_rank": 45,
+      "source": "AFI 30-70",
+      "streaming": "fuboTV (+4)",
+      "tmdb_id": 3110
+    },
+    {
+      "title": "Ikiru",
+      "year": 1952,
+      "tmdb_id": 3782,
+      "source": "Criterion Collection",
+      "streaming": "HBO Max (+2)"
+    },
+    {
+      "title": "The African Queen",
+      "year": 1951,
+      "afi_rank": 65,
+      "source": "AFI 30-70",
+      "streaming": "fuboTV (+4)",
+      "tmdb_id": 488
+    },
+    {
+      "title": "The Best Years of Our Lives",
+      "year": 1946,
+      "afi_rank": 37,
+      "source": "AFI 30-70",
+      "streaming": "Amazon Prime (+1)",
+      "tmdb_id": 887
+    },
+    {
+      "title": "Snow White and the Seven Dwarfs",
+      "year": 1937,
+      "afi_rank": 34,
+      "source": "AFI 30-70",
+      "streaming": "Disney+",
+      "tmdb_id": 408
+    },
+    {
+      "title": "Duck Soup",
+      "year": 1933,
+      "afi_rank": 60,
+      "source": "AFI 30-70",
+      "streaming": "Amazon Prime (+1)",
+      "tmdb_id": 3063
+    },
+    {
+      "title": "City Lights",
+      "year": 1931,
+      "tmdb_id": 901,
+      "source": "Criterion Collection",
+      "streaming": "Amazon Prime (+4)"
+    },
+    {
+      "title": "M",
+      "year": 1931,
+      "tmdb_id": 832,
+      "source": "Criterion Collection",
+      "streaming": "HBO Max (+2)"
+    },
+    {
+      "title": "The Gold Rush",
+      "year": 1925,
+      "afi_rank": 58,
+      "source": "AFI 30-70",
+      "streaming": "Amazon Prime (+8)",
+      "tmdb_id": 962
+    },
+    {
+      "title": "Intolerance",
+      "year": 1916,
+      "afi_rank": 49,
+      "source": "AFI 30-70",
+      "streaming": "Amazon Prime (+5)",
+      "tmdb_id": 3059
+    }
+  ]
+}
