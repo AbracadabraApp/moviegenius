@@ -10,6 +10,7 @@ import StreamingAvailabilityLink from '../../components/StreamingAvailabilityLin
 import ErrorBoundary from '../../components/ErrorBoundary';
 import PerformanceDashboard from '../../components/PerformanceDashboard';
 import { getPerformanceMonitor } from '../../lib/performance-monitor';
+import { loadMovieData } from '../../lib/movie-data-loader';
 
 export default function MovieDetailPage() {
   const router = useRouter();
@@ -52,7 +53,7 @@ export default function MovieDetailPage() {
       // Start performance tracking
       // const pageLoadId = `movie_page_${id}_load`;
       // performanceMonitor.trackMetric('page_load_start', performance.now(), { movieId: id });
-      
+
       try {
         // Fetch TMDB data
         const tmdbResponse = await fetch(`/api/tmdb-movie?id=${finalMovieId}`);
@@ -60,10 +61,10 @@ export default function MovieDetailPage() {
           const errorData = await tmdbResponse.json().catch(() => ({}));
           throw new Error(errorData.error || `Failed to fetch movie: ${tmdbResponse.status}`);
         }
-        
+
         const tmdbData = await tmdbResponse.json();
         setMovie(tmdbData);
-        
+
         // Fetch streaming data from database
         const streamingResponse = await fetch(`/api/movie-streaming?id=${finalMovieId}`);
         if (streamingResponse.ok) {
@@ -79,7 +80,7 @@ export default function MovieDetailPage() {
         // TIER 1: Try enhanced static file first (future enhanced format) - CLIENT-SIDE ONLY
         if (typeof window !== 'undefined') {
           try {
-            const enhancedUrl = `/data/production/movie_${finalMovieId}.json`;
+            const enhancedUrl = `/data/enhanced-movies/movie-${finalMovieId}.json`;
             console.log('🔍 Attempting enhanced static fetch (client-side):', enhancedUrl);
             const enhancedResponse = await fetch(enhancedUrl);
             if (enhancedResponse.ok) {
