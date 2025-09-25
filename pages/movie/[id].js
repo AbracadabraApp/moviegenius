@@ -88,24 +88,16 @@ export default function MovieDetailPage() {
               if (enhancedData.enhancedFormat && enhancedData.analysis) {
                 console.log('⚡ TIER 1: Using enhanced static file - zero API calls');
                 console.info(`🏆 Enhanced static serving SUCCESS for movie ${finalMovieId}`);
-                
-                // Enhanced format has pre-resolved data - convert to expected format  
-                const processedSections = enhancedData.analysis.sections.map(section => ({
-                  type: section.type,
-                  text: section.content // Component expects 'text' field, not 'content'
-                }));
-                
-                const componentCompatibleFormat = {
-                  content: processedSections, // Component expects 'content' array with 'text' fields
-                  featuredMovies: enhancedData.analysis.featuredMovies,
-                  whyWatch: enhancedData.analysis.whyWatch,
-                  moreIdeas: enhancedData.analysis.moreIdeas,
-                  exploreTopics: enhancedData.analysis.exploreTopics
-                };
-                
+
+                // Use JSON format for enhanced static data (component supports this)
                 const formattedAnalysis = {
-                  claude_response: {
-                    raw_content: JSON.stringify(componentCompatibleFormat)
+                  isJsonFormat: true,
+                  jsonData: {
+                    sections: enhancedData.analysis.sections,
+                    whyWatch: enhancedData.analysis.whyWatch,
+                    moreIdeas: enhancedData.analysis.moreIdeas,
+                    featuredMovies: enhancedData.analysis.featuredMovies || [],
+                    exploreTopics: enhancedData.analysis.exploreTopics || []
                   },
                   entity_linking_data: enhancedData.analysis.featuredMovies ? {
                     entityData: { featuredMovies: enhancedData.analysis.featuredMovies },
