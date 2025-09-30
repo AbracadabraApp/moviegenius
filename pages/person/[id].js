@@ -125,11 +125,6 @@ export default function PersonDetailPage() {
             <>
               <h1 style={styles.personName}>{person.name}</h1>
               <div style={styles.personStats}>
-                {person.roles && person.roles.length > 0 && (
-                  <span style={styles.roles}>
-                    {person.roles.join(', ')}
-                  </span>
-                )}
                 <span style={styles.movieCount}>
                   {person.movieCount} Movie{person.movieCount !== 1 ? 's' : ''}
                 </span>
@@ -157,7 +152,7 @@ export default function PersonDetailPage() {
                   key={`${movie.tmdb_id}-${index}`}
                   title={movie.title}
                   year={movie.year}
-                  initialSlug={movie.overview}
+                  initialSlug={movie.slug}
                   initialPoster={movie.poster_url}
                   tmdbId={movie.tmdb_id}
                 />
