@@ -24,103 +24,7 @@ import ErrorBoundary from '../../components/ErrorBoundary';
 import PerformanceDashboard from '../../components/PerformanceDashboard';
 import WhyWatchContainer from '../../components/WhyWatchContainer';
 import MoreIdeasContainer from '../../components/MoreIdeasContainer';
-
-// NEW: Simplified analysis component that expects clean data
-function MovieAnalysis({ sections, featuredMovies }) {
-  if (!sections || sections.length === 0) {
-    return null;
-  }
-
-  return (
-    <div style={{ padding: '0 20px', marginTop: '24px' }}>
-      {sections.map((section, index) => (
-        <div key={index} style={{ marginBottom: '20px' }}>
-          {section.subhead && (
-            <h3 style={{
-              fontSize: '18px',
-              fontWeight: '600',
-              marginBottom: '12px',
-              color: '#1f2937'
-            }}>
-              {section.subhead}
-            </h3>
-          )}
-          <div
-            style={{
-              fontSize: '15px',
-              lineHeight: '1.6',
-              color: '#374151'
-            }}
-            dangerouslySetInnerHTML={{ __html: section.text }}
-          />
-        </div>
-      ))}
-
-      {featuredMovies && featuredMovies.length > 0 && (
-        <div style={{ marginTop: '32px' }}>
-          <h3 style={{
-            fontSize: '16px',
-            fontWeight: '600',
-            marginBottom: '16px',
-            color: '#6b7280',
-            textTransform: 'uppercase',
-            letterSpacing: '0.05em'
-          }}>
-            Featured Films
-          </h3>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(120px, 1fr))',
-            gap: '16px'
-          }}>
-            {featuredMovies.map((movie, index) => (
-              <a
-                key={index}
-                href={movie.slug}
-                style={{
-                  textDecoration: 'none',
-                  color: 'inherit'
-                }}
-              >
-                <div style={{
-                  borderRadius: '8px',
-                  overflow: 'hidden',
-                  boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-                  transition: 'transform 0.2s'
-                }}>
-                  <img
-                    src={movie.posterUrl}
-                    alt={movie.title}
-                    style={{
-                      width: '100%',
-                      height: 'auto',
-                      display: 'block'
-                    }}
-                  />
-                  <div style={{ padding: '8px' }}>
-                    <div style={{
-                      fontSize: '13px',
-                      fontWeight: '500',
-                      marginBottom: '2px'
-                    }}>
-                      {movie.title}
-                    </div>
-                    <div style={{
-                      fontSize: '12px',
-                      color: '#6b7280'
-                    }}>
-                      {movie.year}
-                    </div>
-                  </div>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      )}
-    </div>
-  );
-}
+import MovieAnalysisWithEntities from '../../components/MovieAnalysisWithEntities';
 
 export default function MovieDetailPage() {
   const router = useRouter();
@@ -224,6 +128,10 @@ export default function MovieDetailPage() {
   // Destructure clean, validated data
   const { header, analysis, contributors, streaming, source } = movieData;
 
+  // Transform analysis data to format expected by MovieAnalysisWithEntities
+  // This preserves entity linking and all formatting from the database
+  const formattedAnalysis = analysis.rawData || null;
+
   return (
     <ErrorBoundary level="page">
       <PhoneFrame>
@@ -268,11 +176,11 @@ export default function MovieDetailPage() {
             </div>
           </ErrorBoundary>
 
-          {/* Movie Analysis - simplified component */}
+          {/* Movie Analysis - using existing MovieAnalysisWithEntities */}
           <ErrorBoundary level="section" fallback={null}>
-            <MovieAnalysis
-              sections={analysis.sections}
-              featuredMovies={analysis.featuredMovies}
+            <MovieAnalysisWithEntities
+              analysis={formattedAnalysis}
+              movie={{ title: header.title, year: header.year, tmdb_id: header.tmdbId }}
             />
           </ErrorBoundary>
 
