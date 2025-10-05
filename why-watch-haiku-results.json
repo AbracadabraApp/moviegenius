@@ -1,0 +1,28 @@
+{
+  "summary": {
+    "totalProcessed": 19956,
+    "successful": 19954,
+    "failed": 2,
+    "yesCount": 19135,
+    "noCount": 819,
+    "totalCost": 11.476007750000091,
+    "avgCost": 0.0005751231707928281,
+    "processingTime": 8476860,
+    "avgProcessingTime": 2459.672128683103,
+    "tokenUsage": {
+      "input": 31747226,
+      "output": 2831361,
+      "cacheWrites": 0,
+      "cacheReads": 0,
+      "total": 34578587
+    }
+  },
+  "errors": [
+    {
+      "movie": "Hayate the Combat Butler × The World God Only Knows· Joint Concert 2013 \"Today, full bloom Sakura color!\" (2013)",
+      "error": "JSON Parse Error: Expected ',' or '}' after property value in JSON at position 331 (line 11 column 88)",
+      "timestamp": "2025-09-30T03:11:58.781Z"
+    }
+  ],
+  "completedAt": "2025-09-30T03:33:08.508Z"
+}

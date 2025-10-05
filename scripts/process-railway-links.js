@@ -96,38 +96,44 @@ function createKeyContributorsString(contributors) {
  */
 function extractAnalysisText(claudeResponse) {
   if (!claudeResponse) return '';
-  
-  // Try processed_content first (this is the main analysis text)
-  if (claudeResponse.processed_content) {
-    return typeof claudeResponse.processed_content === 'string' 
-      ? claudeResponse.processed_content 
-      : JSON.stringify(claudeResponse.processed_content);
-  }
-  
-  // Fall back to raw_content content field
+
+  // Use raw_content to preserve ** markers for movie linking
   if (claudeResponse.raw_content) {
     try {
-      const rawContent = typeof claudeResponse.raw_content === 'string' 
-        ? JSON.parse(claudeResponse.raw_content) 
+      const rawContent = typeof claudeResponse.raw_content === 'string'
+        ? JSON.parse(claudeResponse.raw_content)
         : claudeResponse.raw_content;
-      
+
       // Handle new JSON format with content array
       if (rawContent.content && Array.isArray(rawContent.content)) {
         return rawContent.content
-          .map(section => section.text || '')
+          .map(section => {
+            // Preserve contextual subheads
+            if (section.subhead && section.text) {
+              return `**${section.subhead}**\n\n${section.text}`;
+            }
+            return section.text || '';
+          })
           .filter(text => text.trim().length > 0)
           .join('\n\n');
       }
-      
+
       // Handle legacy formats
       return rawContent.content || rawContent.analysis || rawContent.text || '';
     } catch (error) {
-      return typeof claudeResponse.raw_content === 'string' 
-        ? claudeResponse.raw_content 
+      return typeof claudeResponse.raw_content === 'string'
+        ? claudeResponse.raw_content
         : '';
     }
   }
-  
+
+  // Fall back to processed_content only if raw_content doesn't exist
+  if (claudeResponse.processed_content) {
+    return typeof claudeResponse.processed_content === 'string'
+      ? claudeResponse.processed_content
+      : JSON.stringify(claudeResponse.processed_content);
+  }
+
   return '';
 }
 
@@ -345,70 +351,103 @@ async function getAnalysesToProcess(client, limit = 100, options = {}) {
  * Main processing function
  */
 async function processRailwayLinks(options = {}) {
-  const { 
-    limit = 100, 
-    dryRun = false, 
-    processMovies = true, 
+  const {
+    limit = 100,
+    dryRun = false,
+    processMovies = true,
     processContributors = true,
-    force = false 
+    force = false
   } = options;
-  
+
   console.log('🚂 Railway Link Processor - Unified Movie & Contributor Linking');
   console.log('================================================================');
   console.log(`Mode: ${dryRun ? 'DRY RUN' : 'LIVE PROCESSING'}`);
   console.log(`Limit: ${limit} analyses`);
   console.log(`Movies: ${processMovies ? 'Enabled' : 'Disabled'}, Contributors: ${processContributors ? 'Enabled' : 'Disabled'}`);
   console.log(`Force reprocess: ${force ? 'Yes' : 'No'}\n`);
-  
+
   const pool = getRailwayPool();
-  
+
   try {
     console.log('✅ Connected to Railway PostgreSQL pool\n');
-    
-    const analyses = await getAnalysesToProcess(pool, limit, { force });
-    console.log(`📋 Found ${analyses.length} analyses to process\n`);
-    
-    if (analyses.length === 0) {
+
+    // Get total count instead of loading all records
+    const countResult = await pool.query(`
+      SELECT COUNT(*) as total
+      FROM movie_analyses ma
+      JOIN movies m ON ma.movie_id = m.id
+      WHERE ma.claude_response IS NOT NULL
+        ${!force ? 'AND (ma.has_links = false OR ma.has_links IS NULL OR ma.link_count = 0 OR ma.link_count IS NULL)' : ''}
+    `);
+    const total = Math.min(parseInt(countResult.rows[0].total), limit);
+
+    console.log(`📋 Found ${total.toLocaleString()} analyses to process\n`);
+
+    if (total === 0) {
       console.log('✅ No analyses need processing');
       return { totalProcessed: 0, totalSkipped: 0, totalErrors: 0 };
     }
-    
+
     let totalProcessed = 0;
     let totalSkipped = 0;
     let totalErrors = 0;
     let totalMovieLinks = 0;
     let totalContributorLinks = 0;
-    
-    // Process with higher concurrency using connection pool
-    const concurrency = 10; // Increased concurrency with pool support
-    const chunks = [];
-    for (let i = 0; i < analyses.length; i += concurrency) {
-      chunks.push(analyses.slice(i, i + concurrency));
-    }
-    
-    let processed = 0;
-    for (const chunk of chunks) {
-      const promises = chunk.map(async (analysis, index) => {
-        const globalIndex = processed + index + 1;
-        console.log(`[${globalIndex}/${analyses.length}]`);
-        
+
+    const BATCH_SIZE = 50; // Process 50 at a time like Why Watch
+    const totalBatches = Math.ceil(total / BATCH_SIZE);
+    const startTime = Date.now();
+
+    // Sequential batch processing with LIMIT/OFFSET
+    for (let offset = 0; offset < total; offset += BATCH_SIZE) {
+      const batchNum = Math.floor(offset / BATCH_SIZE) + 1;
+
+      // Fetch batch from database
+      const batchResult = await pool.query(`
+        SELECT
+          ma.id,
+          ma.movie_id,
+          ma.claude_response,
+          ma.has_links,
+          ma.link_count,
+          m.title,
+          m.year,
+          m.tmdb_id,
+          CASE
+            WHEN ma.claude_response->>'raw_content' IS NULL THEN 100
+            WHEN ma.claude_response->>'raw_content' ILIKE '%"unknown"%' THEN 50
+            ELSE 1
+          END as data_quality_score
+        FROM movie_analyses ma
+        JOIN movies m ON ma.movie_id = m.id
+        WHERE ma.claude_response IS NOT NULL
+          ${!force ? 'AND (ma.has_links = false OR ma.has_links IS NULL OR ma.link_count = 0 OR ma.link_count IS NULL)' : ''}
+        ORDER BY data_quality_score ASC, ma.created_at DESC
+        LIMIT $1 OFFSET $2
+      `, [BATCH_SIZE, offset]);
+
+      // Process all records in batch in parallel
+      const promises = batchResult.rows.map(async (analysis, index) => {
+        const globalIndex = offset + index + 1;
+        console.log(`[${globalIndex}/${total}]`);
+
         try {
-          const result = await processRailwayAnalysis(pool, analysis, { 
-            dryRun, 
-            processMovies, 
+          const result = await processRailwayAnalysis(pool, analysis, {
+            dryRun,
+            processMovies,
             processContributors,
-            force 
+            force
           });
-          
+
           return result;
         } catch (error) {
           console.error(`   ❌ Error processing analysis: ${error.message}`);
           return { error: true };
         }
       });
-      
+
       const results = await Promise.all(promises);
-      
+
       // Update counters
       for (const result of results) {
         if (result.error) {
@@ -421,8 +460,22 @@ async function processRailwayLinks(options = {}) {
           totalContributorLinks += result.contributorLinks;
         }
       }
-      
-      processed += chunk.length;
+
+      const processed = offset + batchResult.rows.length;
+
+      // Progress update every 10 batches
+      if (batchNum % 10 === 0 || batchNum === totalBatches) {
+        const elapsed = Math.round((Date.now() - startTime) / 1000);
+        const rate = processed / elapsed;
+        const remaining = total - processed;
+        const eta = Math.round(remaining / rate);
+        const pct = ((processed / total) * 100).toFixed(1);
+
+        console.log(`\n[Batch ${batchNum}/${totalBatches}] ${pct}% complete`);
+        console.log(`  Processed: ${processed.toLocaleString()}/${total.toLocaleString()}`);
+        console.log(`  Links: ${totalMovieLinks.toLocaleString()} movies, ${totalContributorLinks.toLocaleString()} contributors`);
+        console.log(`  Rate: ${rate.toFixed(1)} analyses/sec | ETA: ${Math.floor(eta/60)}m ${eta%60}s\n`);
+      }
       
       // No delay needed with connection pool management
     }

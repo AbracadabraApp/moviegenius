@@ -276,65 +276,62 @@ export default function MediaCard({
           </div>
           <div style={styles.year}>({year})</div>
           <div style={styles.slug}>{slug}</div>
-        </div>
-      </div>
-
-      {/* Row 2: Streaming + Actions */}
-      <div style={styles.bottomRow}>
-        <div style={styles.streamingInfo}>
           {initialStreaming && (
-            <span style={styles.streamingText}>Streaming on {initialStreaming}</span>
+            <div style={styles.streamingInfo}>
+              <span style={styles.streamingText}>Streaming on {initialStreaming}</span>
+            </div>
           )}
-        </div>
-        <div style={styles.iconRow}>
-          <button
-            onClick={() => {
-              const newState = FavoritesManager.toggleHeart(movieData);
-              setHearted(newState);
-            }}
-            style={styles.iconButton}
-            aria-label={hearted ? 'Mark as unseen' : 'Mark as seen'}
-            role="button"
-          >
-            <div style={styles.iconWithTextHorizontal}>
-              <Check
-                size={16}
-                color={hearted ? '#000000' : '#6b7280'}
-                strokeWidth={hearted ? 3 : 2}
-              />
-              <span
-                style={{
-                  ...styles.iconLabel,
-                  color: hearted ? '#000000' : '#6b7280',
-                  fontWeight: hearted ? '700' : '500',
-                }}
-              >
-                Seen
-              </span>
-            </div>
-          </button>
-          <button
-            onClick={() => {
-              const newState = FavoritesManager.toggleBookmark(movieData);
-              setBookmarked(newState);
-            }}
-            style={styles.iconButton}
-            aria-label={bookmarked ? 'Remove from list' : 'Add to list'}
-            role="button"
-          >
-            <div style={styles.iconWithTextHorizontal}>
-              <Plus size={16} color={bookmarked ? '#000000' : '#6b7280'} strokeWidth={bookmarked ? 3 : 2} />
-              <span
-                style={{
-                  ...styles.iconLabel,
-                  color: bookmarked ? '#000000' : '#6b7280',
-                  fontWeight: bookmarked ? '700' : '500',
-                }}
-              >
-                Add
-              </span>
-            </div>
-          </button>
+          {/* Actions row - aligned with bottom of poster */}
+          <div style={styles.actionsRow}>
+            <button
+              onClick={() => {
+                const newState = FavoritesManager.toggleHeart(movieData);
+                setHearted(newState);
+              }}
+              style={styles.iconButton}
+              aria-label={hearted ? 'Mark as unseen' : 'Mark as seen'}
+              role="button"
+            >
+              <div style={styles.iconWithTextHorizontal}>
+                <Check
+                  size={16}
+                  color={hearted ? '#000000' : '#6b7280'}
+                  strokeWidth={hearted ? 3 : 2}
+                />
+                <span
+                  style={{
+                    ...styles.iconLabel,
+                    color: hearted ? '#000000' : '#6b7280',
+                    fontWeight: hearted ? '700' : '500',
+                  }}
+                >
+                  Seen
+                </span>
+              </div>
+            </button>
+            <button
+              onClick={() => {
+                const newState = FavoritesManager.toggleBookmark(movieData);
+                setBookmarked(newState);
+              }}
+              style={styles.iconButton}
+              aria-label={bookmarked ? 'Remove from list' : 'Add to list'}
+              role="button"
+            >
+              <div style={styles.iconWithTextHorizontal}>
+                <Plus size={16} color={bookmarked ? '#000000' : '#6b7280'} strokeWidth={bookmarked ? 3 : 2} />
+                <span
+                  style={{
+                    ...styles.iconLabel,
+                    color: bookmarked ? '#000000' : '#6b7280',
+                    fontWeight: bookmarked ? '700' : '500',
+                  }}
+                >
+                  Add
+                </span>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
     </a>
@@ -366,7 +363,6 @@ const styles = {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'flex-start',
-    marginBottom: '2px',
   },
   poster: {
     width: '125px',
@@ -380,6 +376,8 @@ const styles = {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
+    justifyContent: 'space-between', // Push actions to bottom
+    minHeight: '188px', // Match poster height
     minWidth: 0, // Allow flex child to shrink below content size
     overflow: 'hidden', // Prevent text overflow
   },
@@ -408,16 +406,8 @@ const styles = {
     marginTop: '4px',
     fontFamily: 'inherit',
   },
-  bottomRow: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingTop: '2px',
-  },
   streamingInfo: {
-    flex: 1,
-    minWidth: 0, // Allow shrinking
-    marginRight: '8px', // Space before icons
+    marginTop: '4px',
   },
   streamingText: {
     fontSize: '14px',
@@ -426,6 +416,15 @@ const styles = {
     fontFamily: 'inherit',
     wordWrap: 'break-word', // Wrap long service names
     lineHeight: '1.3',
+  },
+  actionsRow: {
+    display: 'flex',
+    flexDirection: 'row',
+    gap: '8px',
+    alignItems: 'center',
+    justifyContent: 'flex-end', // Align right
+    marginTop: 'auto', // Push to bottom
+    paddingTop: '8px',
   },
   iconRow: {
     display: 'flex',

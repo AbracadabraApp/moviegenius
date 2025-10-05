@@ -185,15 +185,44 @@ export default async function movieAnalysisHandler(req, res) {
           const costEstimate =
             (message.usage.input_tokens * 3) / 1000000 + (message.usage.output_tokens * 15) / 1000000;
 
-          // Save to database
+          // 🔗 PROCESS LINKS IMMEDIATELY (one time only, at creation)
+          console.log(`🔗 Processing links for fresh analysis of "${movie.title}" (${movie.year})`);
+          const linkProcessingStart = Date.now();
+
+          let processedAnalysis = rawAnalysis;
+          try {
+            processedAnalysis = await processAnalysisContent(
+              rawAnalysis,
+              movie.title,
+              `Fresh analysis for ${movie.title}`,
+              rawAnalysis, // For KEY_CONTRIBUTORS extraction
+              {
+                processMovies: true,
+                processContributors: true
+              }
+            );
+            console.log(`✅ Links processed in ${Date.now() - linkProcessingStart}ms`);
+          } catch (linkError) {
+            console.error('⚠️ Link processing failed for fresh analysis:', linkError.message);
+            processedAnalysis = rawAnalysis; // Fallback
+          }
+
+          // Save to database WITH processed links
           const dbStartTime = Date.now();
+          const hasLinks = processedAnalysis.includes('<a href=');
+          const linkCount = (processedAnalysis.match(/<a href=/g) || []).length;
+
           const analysisData = {
-            raw_content: rawAnalysis, // Original Claude response
+            raw_content: rawAnalysis,              // Original Claude response (backup)
+            processed_content: processedAnalysis,  // With HTML links (primary)
             generated_at: new Date().toISOString(),
+            linked_at: new Date().toISOString(),   // Links added immediately
+            has_links: hasLinks,
+            link_count: linkCount,
             cost_estimate: costEstimate,
             input_tokens: message.usage.input_tokens,
             output_tokens: message.usage.output_tokens,
-            model: promptConfig.model, // Use configurable model from prompt system
+            model: promptConfig.model,
           };
 
           // Save using MovieService
@@ -204,21 +233,17 @@ export default async function movieAnalysisHandler(req, res) {
           
           if (insertResult) {
             console.log(`💾 Saved analysis to database (${dbDuration.toFixed(2)}s) - Cost: $${costEstimate.toFixed(4)}`);
-            logger.movieAnalysis(tmdbId, 'claude_analysis_saved', { 
+            logger.movieAnalysis(tmdbId, 'claude_analysis_saved', {
               cost: costEstimate,
               tokens: message.usage.input_tokens + message.usage.output_tokens,
               duration: claudeDuration
             });
-
-            // 🚀 IMMEDIATE ASYNC LINK PROCESSING - Fire and forget, no blocking
-            const { triggerAsyncLinkProcessing } = await import('../../lib/async-link-processor.js');
-            triggerAsyncLinkProcessing(insertResult.id, parseInt(tmdbId));
           } else {
             console.error(`❌ Failed to save analysis to database`);
           }
 
-          // Return fresh analysis result
-          logger.movieAnalysis(tmdbId, 'completed', { 
+          // Return fresh analysis result with links
+          logger.movieAnalysis(tmdbId, 'completed', {
             status: 'fresh_analysis',
             duration: Date.now() - startTime,
             source: 'claude_fresh',
@@ -227,7 +252,7 @@ export default async function movieAnalysisHandler(req, res) {
           apiLogger.apiResponse('GET', '/api/movie-analysis', 200, Date.now() - startTime);
           return res.status(200).json({
             success: true,
-            analysis: rawAnalysis,
+            analysis: processedAnalysis,  // Return with links
             rawAnalysis: rawAnalysis,
             movie: {
               title: movie.title,
@@ -237,6 +262,8 @@ export default async function movieAnalysisHandler(req, res) {
             cached: false,
             source: 'claude_fresh',
             cost: costEstimate,
+            hasLinks: hasLinks,
+            linkCount: linkCount,
             timing: {
               claude: claudeDuration,
               database: dbDuration,
@@ -282,19 +309,31 @@ export default async function movieAnalysisHandler(req, res) {
         return content;
       }
 
-      // Return analysis content based on what's available in the database
-      let analysisContent = '';
-      
+      // Return analysis content - prefer display_text (with links) over claude_text (original)
+      let claudeText = '';    // Original from Claude API (backup/debugging)
+      let displayText = '';   // For browser display (with HTML links)
+
       if (analysis.claude_response) {
         if (typeof analysis.claude_response === 'string') {
-          // Legacy string format
-          analysisContent = analysis.claude_response;
-        } else if (analysis.claude_response.raw_content) {
-          // Object format with raw_content
-          analysisContent = analysis.claude_response.raw_content;
+          // Legacy string format (no links)
+          claudeText = analysis.claude_response;
+          displayText = analysis.claude_response;
+        } else {
+          // Object format - use descriptive variable names
+          claudeText = analysis.claude_response.raw_content || '';           // From Claude API
+          displayText = analysis.claude_response.processed_content || claudeText;  // For browser (prefer with links)
         }
       } else {
-        analysisContent = null;
+        claudeText = null;
+        displayText = null;
+      }
+
+      // ⚡ SIMPLE READ: Just return what's in the database
+      // Links were already processed and saved when the analysis was created
+      if (analysis.has_links) {
+        console.log(`⚡ Serving pre-linked display text (${analysis.link_count || 0} links, linked_at: ${analysis.linked_at})`);
+      } else {
+        console.log(`📝 Serving legacy content without links`);
       }
 
       // Log successful analysis retrieval
@@ -302,15 +341,16 @@ export default async function movieAnalysisHandler(req, res) {
         status: 'success',
         duration: Date.now() - startTime,
         source: 'database',
-        analysisLength: analysisContent.length,
+        hasLinks: analysis.has_links || false,
+        linkCount: analysis.link_count || 0,
         analysisCreated: analysis.created_at
       });
 
-    // Return successful response - match the format expected by MovieAnalysisWithEntities
+    // Return successful response - serve pre-linked content
     const response = {
       success: true,
-      analysis: analysisContent,
-      rawAnalysis: analysisContent,
+      analysis: displayText || claudeText,  // Primary: display_text (with links) for browser
+      rawAnalysis: claudeText,              // Backup: claude_text (original from API)
       movie: {
         title: movie.title,
         year: movie.year,
@@ -318,6 +358,8 @@ export default async function movieAnalysisHandler(req, res) {
       },
       cached: true,
       source: 'railway-postgresql',
+      hasLinks: analysis.has_links || false,
+      linkCount: analysis.link_count || 0,
       performance: {
         total_time: Date.now() - startTime,
         movie_query_time: movieQueryTime,

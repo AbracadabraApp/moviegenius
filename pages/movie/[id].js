@@ -9,6 +9,8 @@ import MovieAnalysisWithEntities from '../../components/MovieAnalysisWithEntitie
 import StreamingAvailabilityLink from '../../components/StreamingAvailabilityLink';
 import ErrorBoundary from '../../components/ErrorBoundary';
 import PerformanceDashboard from '../../components/PerformanceDashboard';
+import WhyWatchContainer from '../../components/WhyWatchContainer';
+import MoreIdeasContainer from '../../components/MoreIdeasContainer';
 import { getPerformanceMonitor } from '../../lib/performance-monitor';
 import { loadMovieData } from '../../lib/movie-data-loader';
 
@@ -41,6 +43,7 @@ export default function MovieDetailPage() {
   const [movie, setMovie] = useState(null);
   const [streaming, setStreaming] = useState(null);
   const [analysis, setAnalysis] = useState(null);
+  const [analysisReady, setAnalysisReady] = useState(false);
   const [error, setError] = useState(null);
 
   // API data fetching
@@ -107,20 +110,21 @@ export default function MovieDetailPage() {
                   staticData: enhancedData, // Mark as static data for components
                   keyElements: enhancedData.keyElements // For MovieCreativeFooter
                 };
-                
+
                 // Update streaming and movie data from enhanced static
                 if (enhancedData.movieHeader.streaming) {
                   setStreaming(enhancedData.movieHeader.streaming);
                 }
-                
+
                 // Update movie object to include staticData flag and keyElements for footer
                 setMovie({
                   ...tmdbData,
                   staticData: true,
                   keyElements: enhancedData.keyElements
                 });
-                
+
                 setAnalysis(formattedAnalysis);
+                setAnalysisReady(true);
                 analysisData = formattedAnalysis;
               }
             }
@@ -150,6 +154,7 @@ export default function MovieDetailPage() {
                   entityData: staticData.props.exploreFurther || null
                 };
                 setAnalysis(formattedAnalysis);
+                setAnalysisReady(true);
                 analysisData = formattedAnalysis;
               }
             }
@@ -192,11 +197,13 @@ export default function MovieDetailPage() {
               // Also include the movie data directly for easier access
               entityData: apiData.entityData || apiData.movieData
             };
-            
+
             setAnalysis(formattedAnalysis);
+            setAnalysisReady(true);
           } else {
             console.error('❌ Analysis API failed:', analysisResponse.status, analysisResponse.statusText);
             setAnalysis(null);
+            setAnalysisReady(false);
           }
         }
         
@@ -321,13 +328,27 @@ export default function MovieDetailPage() {
             </div>
           </ErrorBoundary>
 
-          {/* Streaming Availability */}
-          <ErrorBoundary level="section">
+          {/* Streaming Availability - HIDDEN: Now shown in Why Watch section */}
+          {/* <ErrorBoundary level="section">
             <StreamingAvailabilityLink tmdbId={parseInt(finalMovieId)} />
+          </ErrorBoundary> */}
+
+          {/* Why Watch Section - Independent of analysis */}
+          <ErrorBoundary level="section">
+            <div style={{
+              padding: '0 20px',
+              backgroundColor: '#ffffff',
+              fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+            }}>
+              <WhyWatchContainer
+                tmdbId={parseInt(finalMovieId)}
+                streaming={streaming?.streaming_data}
+              />
+            </div>
           </ErrorBoundary>
 
           {/* Movie Analysis - Enhanced error boundary for analysis rendering issues */}
-          <ErrorBoundary 
+          <ErrorBoundary
             level="section"
             fallback={null}
           >
@@ -335,6 +356,20 @@ export default function MovieDetailPage() {
               analysis={analysis}
               movie={movie}
             />
+          </ErrorBoundary>
+
+          {/* More Ideas Section - Independent of analysis */}
+          <ErrorBoundary level="section">
+            <div style={{
+              padding: '0 20px',
+              backgroundColor: '#ffffff',
+              fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+            }}>
+              <MoreIdeasContainer
+                tmdbId={parseInt(finalMovieId)}
+                analysisReady={analysisReady}
+              />
+            </div>
           </ErrorBoundary>
 
           {/* Movie Creative Footer */}

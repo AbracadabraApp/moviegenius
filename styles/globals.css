@@ -6,6 +6,16 @@
 /* Import movie title styles */
 @import './movieTitle.css';
 
+/* Fade-in animation for smooth content appearance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Hide all scrollbars globally */
 * {
   scrollbar-width: none; /* Firefox */

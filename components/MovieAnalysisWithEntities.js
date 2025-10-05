@@ -598,49 +598,6 @@ export default function MovieAnalysisWithEntities({
     //   );
     // }
     
-    // Add MORE IDEAS section - filter out self-referential movies
-    if (moreIdeasMovies.length > 0) {
-      const enhancedMoreIdeas = moreIdeasMovies
-        .map(enhanceMovieData)
-        .filter(movieItem => {
-          // Remove self-referential movies (case-insensitive comparison)
-          const currentTitle = movie?.title?.toLowerCase().trim();
-          const movieTitle = movieItem.title?.toLowerCase().trim();
-          return currentTitle && movieTitle && currentTitle !== movieTitle;
-        });
-      
-      // Only render section if there are movies to show after filtering
-      if (enhancedMoreIdeas.length > 0) {
-        content.push(
-          <div key="more-ideas" style={styles.movieSection}>
-            <div style={styles.movieSectionHeader}>
-              <div style={styles.sectionDivider} />
-              <span style={styles.sectionLabel}>MORE IDEAS</span>
-              <div style={styles.sectionDivider} />
-            </div>
-            <div style={styles.movieList}>
-              {enhancedMoreIdeas.map((movieItem, movieIndex) => (
-                <ErrorBoundary 
-                  key={`more-ideas-error-${movieIndex}`} 
-                  level="section"
-                  fallback={MediaCardErrorFallback}
-                >
-                  <MediaCard
-                    key={`more-ideas-${movieIndex}`}
-                    title={movieItem.title}
-                    year={movieItem.year}
-                    initialSlug={movieItem.slug}
-                    initialPoster={movieItem.poster_url}
-                    initialStreaming={movieItem.streaming}
-                    tmdbId={movieItem.tmdb_id}
-                  />
-                </ErrorBoundary>
-              ))}
-            </div>
-          </div>
-        );
-      }
-    }
     
     return content;
   };
@@ -922,16 +879,6 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
   let movieGroupIndex = 0;
   const moviesPerGroup = 2; // Split featured movies into groups
 
-  // Add "Reasons to Watch" at the very beginning (above first paragraph)
-  if (whyWatch.length > 0) {
-    content.push(
-      <WhyWatchSection
-        key="reasons-to-watch"
-        reasons={whyWatch}
-        recommendation="YES"
-      />
-    );
-  }
   
   // Add streaming search section after Why Watch
   if (movie?.title) {
@@ -1132,39 +1079,6 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
   //   );
   // }
 
-  // Add MORE IDEAS section at the end
-  if (moreIdeas.length > 0) {
-    content.push(
-      <div key="json-more-ideas" style={styles.movieSection}>
-        <div style={styles.movieSectionHeader}>
-          <div style={styles.sectionDivider} />
-          <span style={styles.sectionLabel}>MORE IDEAS</span>
-          <div style={styles.sectionDivider} />
-        </div>
-        <div style={styles.movieList}>
-          {moreIdeas.map((movieItem, movieIndex) => (
-            <ErrorBoundary 
-              key={`json-more-error-${movieIndex}`} 
-              level="section"
-              fallback={MediaCardErrorFallback}
-            >
-              <div data-testid="more-ideas-movie-card">
-                <MediaCard
-                  key={`json-more-${movieIndex}`}
-                  title={movieItem.title}
-                  year={movieItem.year}
-                  initialSlug={movieItem.connection}
-                  initialPoster={movieItem.poster_url}
-                  initialStreaming={movieItem.streaming}
-                  tmdbId={movieItem.tmdb_id}
-                />
-              </div>
-            </ErrorBoundary>
-          ))}
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div style={styles.container} className={className}>

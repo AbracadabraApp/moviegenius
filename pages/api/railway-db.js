@@ -257,32 +257,46 @@ export const MovieService = {
     }
   },
 
-  // Store movie analysis
+  // Store movie analysis (with optional processed_content for links)
   async upsertMovieAnalysis(movieId, analysisData, client = null) {
     const shouldReleaseClient = !client;
     const dbClient = client || getPool();
-    
+
     try {
       const query = `
         INSERT INTO movie_analyses (
-          movie_id, claude_response, created_at, updated_at
+          movie_id, claude_response, has_links, linked_at, link_count, created_at, updated_at
         ) VALUES (
-          $1, $2, NOW(), NOW()
+          $1, $2, $3, $4, $5, NOW(), NOW()
         )
-        ON CONFLICT (movie_id) 
-        DO UPDATE SET 
+        ON CONFLICT (movie_id)
+        DO UPDATE SET
           claude_response = EXCLUDED.claude_response,
+          has_links = EXCLUDED.has_links,
+          linked_at = EXCLUDED.linked_at,
+          link_count = EXCLUDED.link_count,
           updated_at = NOW()
         RETURNING *;
       `;
-      
-      const claudeResponseData = typeof analysisData === 'string' 
-        ? analysisData 
+
+      const claudeResponseData = typeof analysisData === 'string'
+        ? analysisData
         : JSON.stringify(analysisData);
-      
-      const result = await dbClient.query(query, [movieId, claudeResponseData]);
+
+      // Extract link metadata from analysisData if it's an object
+      const hasLinks = typeof analysisData === 'object' ? analysisData.has_links || false : false;
+      const linkedAt = typeof analysisData === 'object' ? analysisData.linked_at : null;
+      const linkCount = typeof analysisData === 'object' ? analysisData.link_count || 0 : 0;
+
+      const result = await dbClient.query(query, [
+        movieId,
+        claudeResponseData,
+        hasLinks,
+        linkedAt,
+        linkCount
+      ]);
       return result.rows[0];
-      
+
     } finally {
       if (shouldReleaseClient && client) {
         client.release();

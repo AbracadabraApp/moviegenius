@@ -1,12 +1,14 @@
 /**
  * WhyWatchSection Component - Decoupled Why Watch recommendation section
- * 
- * Displays movie recommendation reasons in a styled format that can be easily 
+ *
+ * Displays movie recommendation reasons in a styled format that can be easily
  * updated or regenerated without affecting the main analysis component.
- * 
+ *
+ * Note: Requires movieTitle.css to be imported in _app.js for person-name and movie-title link styles
+ *
  * @component
  * @example
- * <WhyWatchSection 
+ * <WhyWatchSection
  *   reasons={['Outstanding performances', 'Groundbreaking cinematography']}
  *   recommendation="YES"
  * />
@@ -17,29 +19,47 @@
  * @param {string[]} props.reasons - Array of reasons to watch the movie
  * @param {string} [props.recommendation] - Overall recommendation (YES/NO)
  * @param {string} [props.title] - Custom title override
+ * @param {string} [props.streaming] - Streaming availability text
  * @param {Object} [props.style] - Additional styling overrides
  */
-export default function WhyWatchSection({ reasons = [], recommendation = "YES", title = null, style = {} }) {
+export default function WhyWatchSection({ reasons = [], recommendation = "YES", title = null, streaming = null, style = {} }) {
+  console.log('WhyWatchSection streaming prop:', streaming);
+
   if (!reasons || reasons.length === 0) {
     return null;
   }
 
+  // Dynamic colors based on recommendation
+  const isSkipIt = recommendation === 'NO';
+  const primaryColor = isSkipIt ? '#dc2626' : '#d4af37'; // Red for NO, Gold for YES
+
   const containerStyle = {
     marginTop: '4px',
-    borderLeft: '3px solid #d4af37',
-    paddingLeft: '16px',
+    marginBottom: '4px',
+    paddingLeft: '0px',
     ...style
   };
 
+  const headerStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '16px',
+    marginBottom: '10px',
+  };
+
+  const dividerStyle = {
+    flex: 1,
+    height: '1px',
+    background: `linear-gradient(90deg, transparent, ${primaryColor}, transparent)`,
+  };
+
   const titleStyle = {
-    fontSize: '16px',
-    lineHeight: '1.2',
-    margin: '0 0 12px 0',
-    padding: '0',
+    fontSize: '12px',
     fontWeight: '600',
     textTransform: 'uppercase',
     letterSpacing: '1px',
-    color: '#d4af37'
+    color: primaryColor,
+    whiteSpace: 'nowrap',
   };
 
   const reasonsListStyle = {
@@ -49,12 +69,12 @@ export default function WhyWatchSection({ reasons = [], recommendation = "YES", 
   const reasonItemStyle = {
     display: 'flex',
     alignItems: 'flex-start',
-    marginBottom: '8px',
+    marginBottom: '4px',
     lineHeight: '1.4'
   };
 
   const reasonBulletStyle = {
-    color: '#d4af37',
+    color: primaryColor,
     marginRight: '8px',
     fontSize: '16px',
     lineHeight: '1.4',
@@ -69,36 +89,54 @@ export default function WhyWatchSection({ reasons = [], recommendation = "YES", 
     flex: '1'
   };
 
-  const linkStyle = {
-    color: '#d4af37',
-    textDecoration: 'underline',
-    fontWeight: '500'
+  // Streaming line styles
+  const streamingContainerStyle = {
+    marginTop: '8px',
+    marginBottom: '16px',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px',
   };
 
-  // Parse reason text for <link> tags and render with proper styling
+  const streamingLabelStyle = {
+    fontSize: '13px',
+    fontWeight: '600',
+    textTransform: 'uppercase',
+    letterSpacing: '0.8px',
+    color: '#374151', // Charcoal
+    whiteSpace: 'nowrap',
+  };
+
+  const streamingPlatformsStyle = {
+    fontSize: '16px',
+    color: '#374151',
+    fontFamily: 'inherit',
+    lineHeight: '1.4',
+  };
+
+  // Render reason text as HTML (supports person and movie links)
   const renderReasonText = (reason) => {
-    const linkMatch = reason.match(/Consider <link>([^<]+)<\/link> instead/);
-    if (linkMatch) {
-      const movieTitle = linkMatch[1];
-      const beforeText = reason.substring(0, linkMatch.index);
-      return (
-        <span>
-          {beforeText}Consider <span style={linkStyle}>{movieTitle}</span> instead
-        </span>
-      );
+    // If reason contains HTML links (person or movie), render as HTML
+    if (reason.includes('<a href="/person/') || reason.includes('<a href="/movie/')) {
+      return <span dangerouslySetInnerHTML={{ __html: reason }} />;
     }
+    // Otherwise render as plain text
     return reason;
   };
 
   // Generate dynamic title based on recommendation
   const getDefaultTitle = () => {
     if (title) return title; // Use custom title if provided
-    return recommendation === 'NO' ? 'Reasons to Skip It:' : 'Reasons to Watch:';
+    return recommendation === 'NO' ? 'Save Your Time' : 'Reasons to Watch';
   };
 
   return (
     <div style={containerStyle}>
-      <h3 style={titleStyle}>{getDefaultTitle()}</h3>
+      <div style={headerStyle}>
+        <div style={dividerStyle} />
+        <span style={titleStyle}>{getDefaultTitle()}</span>
+        <div style={dividerStyle} />
+      </div>
       <div style={reasonsListStyle}>
         {reasons.slice(0, 3).map((reason, index) => (
           <div key={`reason-${index}`} style={reasonItemStyle}>
@@ -106,6 +144,13 @@ export default function WhyWatchSection({ reasons = [], recommendation = "YES", 
             <div style={reasonTextStyle}>{renderReasonText(reason)}</div>
           </div>
         ))}
+        {/* Streaming line if available */}
+        {streaming && streaming !== 'TBD' && (
+          <div style={streamingContainerStyle}>
+            <span style={streamingLabelStyle}>STREAMING ON:</span>
+            <span style={streamingPlatformsStyle}>{streaming}</span>
+          </div>
+        )}
       </div>
     </div>
   );
