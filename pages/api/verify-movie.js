@@ -20,7 +20,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { createClient } = await import('@supabase/supabase-js');
+    // TEMPORARILY DISABLED: const { createClient } = await import(@supabase/supabase-js);
     const pool = getPool();
 
     // Look for exact title and year match

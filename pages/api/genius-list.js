@@ -22,7 +22,8 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { createClient } = await import('@supabase/supabase-js');
+    // TEMPORARILY DISABLED: Supabase package not in dependencies
+    // const { createClient } = await import('@supabase/supabase-js');
     const pool = getPool();
 
     // Fetch list data

@@ -18,7 +18,7 @@ import { createClient, supabase } from './railway-adapter.js';
  */
 async function createMediaCard({ title, year }) {
   try {
-    const { createClient } = await import('@supabase/supabase-js');
+    // TEMPORARILY DISABLED: const { createClient } = await import(@supabase/supabase-js);
     const { Anthropic } = await import('@anthropic-ai/sdk');
 
     const pool = getPool();
@@ -141,7 +141,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { createClient } = await import('@supabase/supabase-js');
+    // TEMPORARILY DISABLED: const { createClient } = await import(@supabase/supabase-js);
     const pool = getPool();
 
     // Check if we already have a cached analysis (try new format first, then fallback to old)

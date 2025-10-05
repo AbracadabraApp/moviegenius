@@ -17,7 +17,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { createClient } = await import('@supabase/supabase-js');
+    // TEMPORARILY DISABLED: const { createClient } = await import(@supabase/supabase-js);
     const pool = getPool();
 
     // Get optional content_type filter from query params
