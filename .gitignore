@@ -63,3 +63,15 @@ simple-api-test.js
 *-test-*.json
 batch-test.log
 >>>>>>> clean-deployment
+
+# Backup and test files
+pages/**/*-backup.js
+pages/**/*-test.js
+pages/**/*-broken*.js
+pages/**/*-static.js
+**/[id]-backup.js
+**/[id]-test.js
+**/[id]-broken*.js
+**/[id]-static.js
+**/*.backup
+**/*.bak
