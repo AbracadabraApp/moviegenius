@@ -59,18 +59,37 @@ export default async function handler(req, res) {
           await client.connect();
           
           const tmdbIds = movies.map(m => m.tmdb_id);
-          
-          // Single fast query with contributors_json
+
+          // Single fast query with contributors_json, analysis data, and whyWatch
           const movieDataResult = await client.query(`
-            SELECT tmdb_id, contributors_json
-            FROM movies 
-            WHERE tmdb_id = ANY($1::int[])
+            SELECT
+              m.tmdb_id,
+              m.contributors_json,
+              ma.enhanced_sections,
+              ew.recommendation,
+              ew.reasons
+            FROM movies m
+            LEFT JOIN movie_analyses ma ON m.id = ma.movie_id
+            LEFT JOIN enhanced_why_watch ew ON ma.id = ew.analysis_id
+            WHERE m.tmdb_id = ANY($1::int[])
           `, [tmdbIds]);
 
-          // Create lookup map
+          // Create lookup maps
           const contributorsMap = {};
+          const analysisMap = {};
           movieDataResult.rows.forEach(row => {
             contributorsMap[row.tmdb_id] = row.contributors_json;
+
+            // Store analysis data
+            analysisMap[row.tmdb_id] = {
+              whyWatch: row.reasons && row.recommendation ? {
+                reasons: row.reasons,
+                recommendation: row.recommendation
+              } : null,
+              firstSection: row.enhanced_sections && row.enhanced_sections[0]
+                ? row.enhanced_sections[0].text
+                : null
+            };
           });
 
           // Use your template approach for contributors
@@ -93,14 +112,17 @@ export default async function handler(req, res) {
             return parts.length > 0 ? parts.join('\n') : null;
           };
 
-          // Enrich movies with contributors
+          // Enrich movies with contributors and analysis data
           movies = movies.map(movie => {
             const contributorsJson = contributorsMap[movie.tmdb_id];
             const contributorText = getDisplayContributors(contributorsJson);
+            const analysisData = analysisMap[movie.tmdb_id];
 
             return {
               ...movie,
-              contributors: contributorText
+              contributors: contributorText,
+              whyWatch: analysisData?.whyWatch || null,
+              analysisPreview: analysisData?.firstSection || null
             };
           });
 

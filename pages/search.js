@@ -266,14 +266,11 @@ export default function SearchPage() {
                     title={movie.title}
                     year={movie.year}
                     initialSlug={movie.slug}
-                    overview={movie.overview}
-                    contributors={movie.contributors}
                     initialPoster={movie.poster_url}
-                    initialStreaming={movie.streaming_data}
                     tmdbId={movie.tmdb_id}
-                    showTrailer={true}
+                    whyWatch={movie.whyWatch}
+                    analysisPreview={movie.analysisPreview}
                     onMovieClick={handleMovieClick}
-                    onTrailerPlay={handleTrailerPlay}
                   />
                 ))}
               </div>

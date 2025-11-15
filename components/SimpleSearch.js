@@ -1,4 +1,4 @@
-// components/SimpleSearch.js - Ultra-simple search component
+// components/SimpleSearch.js - Search with Google-style word wheel (predictive dropdown)
 import { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { Search } from 'lucide-react';
@@ -12,42 +12,47 @@ export default function SimpleSearch({
   const [query, setQuery] = useState(initialQuery);
   const [isLoading, setIsLoading] = useState(false);
   const [fallback, setFallback] = useState(null);
+  const [suggestions, setSuggestions] = useState([]);
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [selectedIndex, setSelectedIndex] = useState(-1);
   const router = useRouter();
   const currentSearchRef = useRef(null);
+  const debounceTimerRef = useRef(null);
+  const dropdownRef = useRef(null);
+  const inputRef = useRef(null);
 
   // Update query when initialQuery changes
   useEffect(() => {
     setQuery(initialQuery || '');
   }, [initialQuery]);
 
-  const search = async searchQuery => {
+  // Click outside to close dropdown
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target) &&
+          inputRef.current && !inputRef.current.contains(event.target)) {
+        setShowDropdown(false);
+        setSelectedIndex(-1);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  // Debounced search for word wheel
+  const debouncedSearch = async (searchQuery) => {
     const q = searchQuery.trim();
-    if (!q) {
-      if (onResults) onResults({ movies: [], people: [] });
-      setFallback(null);
-      setIsLoading(false);
+
+    if (!q || q.length < 2) {
+      setSuggestions([]);
+      setShowDropdown(false);
       return;
     }
 
-    // New UX: Redirect to unified search results page
-    if (useUnifiedSearch) {
-      router.push(`/search?q=${encodeURIComponent(q)}`);
-      return;
-    }
-
-    // Legacy inline search (kept for compatibility)
-    // Create unique search ID to prevent race conditions
+    // Create unique search ID
     const searchId = Date.now();
     currentSearchRef.current = searchId;
-
-    // Prevent multiple concurrent searches
-    if (isLoading) {
-      return;
-    }
-
-    setIsLoading(true);
-    setFallback(null);
-
 
     try {
       const response = await fetch('/api/simple-search', {
@@ -56,7 +61,83 @@ export default function SimpleSearch({
         body: JSON.stringify({ query: q }),
       });
 
-      // Check if this search was cancelled by a newer search
+      // Check if search was cancelled
+      if (currentSearchRef.current !== searchId) {
+        return;
+      }
+
+      if (response.ok) {
+        const data = await response.json();
+        const movies = data.movies || [];
+
+        // Show top 8 results in dropdown
+        setSuggestions(movies.slice(0, 8));
+        setShowDropdown(movies.length > 0);
+        setSelectedIndex(-1);
+      }
+    } catch (error) {
+      console.error('Word wheel search error:', error);
+      setSuggestions([]);
+      setShowDropdown(false);
+    }
+  };
+
+  // Handle input change with debounce
+  const handleInputChange = (e) => {
+    const value = e.target.value;
+    setQuery(value);
+
+    // Clear existing timer
+    if (debounceTimerRef.current) {
+      clearTimeout(debounceTimerRef.current);
+    }
+
+    // Set new timer for debounced search
+    debounceTimerRef.current = setTimeout(() => {
+      debouncedSearch(value);
+    }, 300);
+  };
+
+  // Full search (original behavior)
+  const search = async searchQuery => {
+    const q = searchQuery.trim();
+    if (!q) {
+      if (onResults) onResults({ movies: [], people: [] });
+      setFallback(null);
+      setIsLoading(false);
+      setSuggestions([]);
+      setShowDropdown(false);
+      return;
+    }
+
+    // Close dropdown
+    setShowDropdown(false);
+    setSuggestions([]);
+
+    // New UX: Redirect to unified search results page
+    if (useUnifiedSearch) {
+      router.push(`/search?q=${encodeURIComponent(q)}`);
+      return;
+    }
+
+    // Legacy inline search (kept for compatibility)
+    const searchId = Date.now();
+    currentSearchRef.current = searchId;
+
+    if (isLoading) {
+      return;
+    }
+
+    setIsLoading(true);
+    setFallback(null);
+
+    try {
+      const response = await fetch('/api/simple-search', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query: q }),
+      });
+
       if (currentSearchRef.current !== searchId) {
         return;
       }
@@ -73,34 +154,66 @@ export default function SimpleSearch({
           }
         }
 
-        // Simple-search only returns movies, so add empty people array for compatibility
         const results = {
           movies: data.movies || [],
-          people: [], // Simple-search doesn't return people
+          people: [],
           hasResults: data.hasResults,
           query: data.query
         };
 
         if (onResults) onResults(results);
 
-        // Handle fallback for empty results
         if (data.fallback) {
           setFallback(data.fallback);
         }
       } else {
-        // Search failed - continue gracefully
         if (onResults) onResults({ movies: [], people: [] });
         setFallback({ message: 'Search failed. Please try again.' });
       }
     } catch (error) {
-      // Search error - continue gracefully
       if (onResults) onResults({ movies: [], people: [] });
       setFallback({ message: 'Search failed. Please try again.' });
     } finally {
-      // Only set loading to false if this is still the current search
       if (currentSearchRef.current === searchId) {
         setIsLoading(false);
       }
+    }
+  };
+
+  // Handle keyboard navigation
+  const handleKeyDown = (e) => {
+    if (!showDropdown || suggestions.length === 0) {
+      return;
+    }
+
+    switch (e.key) {
+      case 'ArrowDown':
+        e.preventDefault();
+        setSelectedIndex(prev =>
+          prev < suggestions.length - 1 ? prev + 1 : prev
+        );
+        break;
+      case 'ArrowUp':
+        e.preventDefault();
+        setSelectedIndex(prev => prev > 0 ? prev - 1 : -1);
+        break;
+      case 'Enter':
+        e.preventDefault();
+        if (selectedIndex >= 0 && selectedIndex < suggestions.length) {
+          const movie = suggestions[selectedIndex];
+          if (movie.tmdb_id) {
+            router.push(`/movie/${movie.tmdb_id}`);
+          }
+        } else {
+          // No selection, do full search
+          handleSubmit(e);
+        }
+        break;
+      case 'Escape':
+        e.preventDefault();
+        setShowDropdown(false);
+        setSelectedIndex(-1);
+        break;
     }
   };
 
@@ -111,8 +224,19 @@ export default function SimpleSearch({
 
   const handleClear = () => {
     setQuery('');
-    onResults({ movies: [], people: [] });
+    setSuggestions([]);
+    setShowDropdown(false);
+    setSelectedIndex(-1);
+    if (onResults) onResults({ movies: [], people: [] });
     setFallback(null);
+  };
+
+  const handleSuggestionClick = (movie) => {
+    if (movie.tmdb_id) {
+      setShowDropdown(false);
+      setSuggestions([]);
+      router.push(`/movie/${movie.tmdb_id}`);
+    }
   };
 
   return (
@@ -121,9 +245,11 @@ export default function SimpleSearch({
         <div style={styles.searchBox}>
           <Search size={16} style={styles.searchIcon} />
           <input
+            ref={inputRef}
             type="text"
             value={query}
-            onChange={e => setQuery(e.target.value)}
+            onChange={handleInputChange}
+            onKeyDown={handleKeyDown}
             placeholder={isLoading ? 'Searching...' : placeholder}
             style={styles.input}
             className="search-input-placeholder"
@@ -136,6 +262,35 @@ export default function SimpleSearch({
             </button>
           )}
         </div>
+
+        {/* Word Wheel Dropdown */}
+        {showDropdown && suggestions.length > 0 && (
+          <div ref={dropdownRef} style={styles.dropdown}>
+            {suggestions.map((movie, index) => (
+              <div
+                key={`${movie.tmdb_id}-${index}`}
+                style={{
+                  ...styles.suggestionItem,
+                  ...(index === selectedIndex ? styles.suggestionItemSelected : {}),
+                }}
+                onClick={() => handleSuggestionClick(movie)}
+                onMouseEnter={() => setSelectedIndex(index)}
+              >
+                <img
+                  src={movie.poster_url}
+                  alt={movie.title}
+                  style={styles.suggestionPoster}
+                />
+                <div style={styles.suggestionText}>
+                  <div style={styles.suggestionTitle}>{movie.title}</div>
+                  {movie.year && (
+                    <div style={styles.suggestionYear}>{movie.year}</div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </form>
 
       {/* No results message */}
@@ -151,9 +306,11 @@ export default function SimpleSearch({
 const styles = {
   container: {
     width: '100%',
+    position: 'relative',
   },
   form: {
     width: '100%',
+    position: 'relative',
   },
   searchBox: {
     position: 'relative',
@@ -193,7 +350,61 @@ const styles = {
     justifyContent: 'center',
     flexShrink: 0,
   },
-  // V1 Feature: Fallback styles
+
+  // Word wheel dropdown
+  dropdown: {
+    position: 'absolute',
+    top: 'calc(100% + 4px)',
+    left: 0,
+    right: 0,
+    backgroundColor: '#ffffff',
+    border: '1px solid #e5e7eb',
+    borderRadius: '12px',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+    maxHeight: '400px',
+    overflowY: 'auto',
+    zIndex: 1000,
+  },
+  suggestionItem: {
+    display: 'flex',
+    alignItems: 'center',
+    padding: '12px 16px',
+    cursor: 'pointer',
+    gap: '12px',
+    borderBottom: '1px solid #f3f4f6',
+    transition: 'background-color 0.2s ease',
+  },
+  suggestionItemSelected: {
+    backgroundColor: '#f9fafb',
+  },
+  suggestionPoster: {
+    width: '40px',
+    height: '60px',
+    objectFit: 'cover',
+    borderRadius: '4px',
+    flexShrink: 0,
+  },
+  suggestionText: {
+    flex: 1,
+    minWidth: 0,
+  },
+  suggestionTitle: {
+    fontSize: '16px',
+    fontWeight: '500',
+    color: '#000000',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
+  },
+  suggestionYear: {
+    fontSize: '14px',
+    color: '#6b7280',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    marginTop: '2px',
+  },
+
+  // Fallback styles
   fallbackBox: {
     marginTop: '12px',
     padding: '12px 16px',
