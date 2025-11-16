@@ -54,7 +54,7 @@ export default function WhyWatchSection({ reasons = [], recommendation = "YES", 
   };
 
   const titleStyle = {
-    fontSize: '12px',
+    fontSize: 'var(--font-meta)', // Responsive: 12px desktop, 13px mobile
     fontWeight: '600',
     textTransform: 'uppercase',
     letterSpacing: '1px',
@@ -82,7 +82,7 @@ export default function WhyWatchSection({ reasons = [], recommendation = "YES", 
   };
 
   const reasonTextStyle = {
-    fontSize: '14px',
+    fontSize: 'var(--font-sm)', // Responsive: 14px desktop, 16px mobile
     color: '#374151',
     fontFamily: 'inherit',
     lineHeight: '1.4',
@@ -99,7 +99,7 @@ export default function WhyWatchSection({ reasons = [], recommendation = "YES", 
   };
 
   const streamingLabelStyle = {
-    fontSize: '13px',
+    fontSize: 'var(--font-meta)', // Responsive: 12px desktop, 13px mobile
     fontWeight: '600',
     textTransform: 'uppercase',
     letterSpacing: '0.8px',

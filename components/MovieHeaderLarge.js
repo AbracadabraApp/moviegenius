@@ -190,7 +190,7 @@ export default function MovieHeaderLarge({
       `}</style>
       <div style={styles.movieHeader}>
       {/* Action Bar */}
-      <div 
+      <div
         style={styles.actionBarContainer}
         onMouseEnter={(e) => {
           e.currentTarget.style.transform = 'scale(1.1)';
@@ -226,7 +226,7 @@ export default function MovieHeaderLarge({
             </span>
           </div>
         </button>
-        
+
         <button
           onClick={() => {
             try {
@@ -254,7 +254,7 @@ export default function MovieHeaderLarge({
             </span>
           </div>
         </button>
-        
+
         {/* Play Trailer Button - Only show if trailer exists */}
         {trailerVideoId && (
           <button
@@ -405,7 +405,7 @@ const styles = {
     flexDirection: 'column',
   },
   iconLabel: {
-    fontSize: '11px',
+    fontSize: 'var(--font-xs)', // Responsive: 12px desktop, 14px mobile
     lineHeight: '1',
     userSelect: 'none',
     textAlign: 'center',
@@ -444,7 +444,7 @@ const styles = {
     paddingLeft: '25px',
   },
   streamingText: {
-    fontSize: '14px',
+    fontSize: 'var(--font-sm)', // Responsive: 14px desktop, 16px mobile
     color: '#6b7280',
     fontWeight: '300',
     fontFamily: 'inherit',
@@ -457,7 +457,7 @@ const styles = {
     textDecorationColor: '#e0e0e0',
     textDecorationThickness: '1px',
     textUnderlineOffset: '2px',
-    fontSize: '14px',
+    fontSize: 'var(--font-sm)', // Responsive: 14px desktop, 16px mobile
     fontWeight: '400',
     fontFamily: 'inherit',
     transition: 'all 0.2s ease',
@@ -543,7 +543,7 @@ const styles = {
     border: '2px dashed #e2e8f0',
   },
   headerLoadingText: {
-    fontSize: '14px',
+    fontSize: 'var(--font-sm)', // Responsive: 14px desktop, 16px mobile
     color: '#94a3b8',
     fontWeight: '500',
   },
@@ -553,7 +553,7 @@ const styles = {
     marginBottom: '8px',
   },
   headerErrorSubtext: {
-    fontSize: '12px',
+    fontSize: 'var(--font-meta)', // Responsive: 12px desktop, 13px mobile
     color: '#94a3b8',
     fontWeight: '500',
   },

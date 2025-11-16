@@ -393,7 +393,7 @@ const styles = {
     color: '#000',
   },
   year: {
-    fontSize: '14px',
+    fontSize: 'var(--font-sm)', // Responsive: 14px desktop, 16px mobile
     color: '#666',
     fontWeight: 'normal',
     fontFamily: 'inherit',
@@ -401,7 +401,7 @@ const styles = {
     marginBottom: '2px',
   },
   slug: {
-    fontSize: '14px',
+    fontSize: 'var(--font-sm)', // Responsive: 14px desktop, 16px mobile
     color: '#333',
     marginTop: '4px',
     fontFamily: 'inherit',
@@ -410,7 +410,7 @@ const styles = {
     marginTop: '4px',
   },
   streamingText: {
-    fontSize: '14px',
+    fontSize: 'var(--font-sm)', // Responsive: 14px desktop, 16px mobile
     color: '#6b7280', // Mid grey
     fontWeight: '300', // 100 lighter than slug's normal (400)
     fontFamily: 'inherit',
@@ -456,7 +456,7 @@ const styles = {
     gap: '4px',
   },
   iconLabel: {
-    fontSize: '11px',
+    fontSize: 'var(--font-xs)', // Responsive: 12px desktop, 14px mobile
     fontFamily: 'inherit',
     lineHeight: '1',
   },
