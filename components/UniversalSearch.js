@@ -1,8 +1,9 @@
 // components/UniversalSearch.js
-// Universal intelligent search for Collections, Movies, and People
+// Universal intelligent search for Collections and Movies
+// V1: People search commented out - focus on thematic discovery
 
 import { useState, useEffect, useRef } from 'react';
-import { Search, Film, Users, Folder } from 'lucide-react';
+import { Search, Film, Folder } from 'lucide-react'; // Users removed for V1
 import { useRouter } from 'next/router';
 
 export default function UniversalSearch({
@@ -67,13 +68,15 @@ export default function UniversalSearch({
       router.push(`/collection/${result.id}`);
     } else if (result.type === 'movie') {
       router.push(`/movie/${result.tmdb_id}`);
-    } else if (result.type === 'person') {
-      router.push(`/person/${result.id}`);
     }
+    // V1: Person routing disabled
+    // else if (result.type === 'person') {
+    //   router.push(`/person/${result.id}`);
+    // }
   };
 
   const totalResults = results
-    ? (results.collections?.length || 0) + (results.movies?.length || 0) + (results.people?.length || 0)
+    ? (results.collections?.length || 0) + (results.movies?.length || 0) // + (results.people?.length || 0) // V1: People disabled
     : 0;
 
   return (
@@ -159,7 +162,7 @@ export default function UniversalSearch({
             </div>
           )}
 
-          {/* People Section */}
+          {/* V1: People Section - Commented out for initial release
           {results.people && results.people.length > 0 && (
             <div style={styles.section}>
               <div style={styles.sectionHeader}>
@@ -187,6 +190,7 @@ export default function UniversalSearch({
               )}
             </div>
           )}
+          */}
         </div>
       )}
 

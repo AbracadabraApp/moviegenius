@@ -25,8 +25,8 @@ export default function WhatToWatchPage() {
 
     // Load favorites from localStorage
     try {
-      const hearted = FavoritesManager.getAllHeartedMovies();
-      const bookmarked = FavoritesManager.getAllBookmarkedMovies();
+      const hearted = FavoritesManager.getHeartedMovies();
+      const bookmarked = FavoritesManager.getBookmarkedMovies();
 
       setHeartedMovies(hearted);
       setBookmarkedMovies(bookmarked);
@@ -35,14 +35,14 @@ export default function WhatToWatchPage() {
     }
   }, [mounted]);
 
-  const handleRemoveHeart = (mediaId) => {
-    FavoritesManager.removeFromHearted(mediaId);
-    setHeartedMovies(prev => prev.filter(m => m.id !== mediaId));
+  const handleRemoveHeart = (movie) => {
+    FavoritesManager.toggleHeart(movie);
+    setHeartedMovies(prev => prev.filter(m => m.id !== movie.id));
   };
 
-  const handleRemoveBookmark = (mediaId) => {
-    FavoritesManager.removeFromBookmarked(mediaId);
-    setBookmarkedMovies(prev => prev.filter(m => m.id !== mediaId));
+  const handleRemoveBookmark = (movie) => {
+    FavoritesManager.toggleBookmark(movie);
+    setBookmarkedMovies(prev => prev.filter(m => m.id !== movie.id));
   };
 
   const movies = activeTab === 'hearted' ? heartedMovies : bookmarkedMovies;
@@ -150,7 +150,7 @@ function MovieCard({ movie, onRemove, showHeart, router }) {
     e.stopPropagation();
     setIsRemoving(true);
     setTimeout(() => {
-      onRemove(movie.id);
+      onRemove(movie);
     }, 200); // Brief animation delay
   };
 

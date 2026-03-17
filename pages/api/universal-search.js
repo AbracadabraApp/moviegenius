@@ -1,5 +1,5 @@
 // API endpoint for universal search
-// Searches across Collections, Movies, and People
+// V1: Searches Collections and Movies only (People disabled - focus on thematic discovery)
 // GET /api/universal-search?q=noir
 
 export default async function universalSearchHandler(req, res) {
@@ -39,19 +39,19 @@ export default async function universalSearchHandler(req, res) {
       { tmdb_id: 13, title: 'Forrest Gump', year: 1994, slug: 'Life is like a box of chocolates', type: 'movie' },
     ].filter(m => m.title.toLowerCase().includes(query));
 
-    // Mock people search
-    const mockPeople = [
-      { id: '1', name: 'David Fincher', role: 'Director', filmCount: 12, type: 'person' },
-      { id: '2', name: 'Martin Scorsese', role: 'Director', filmCount: 28, type: 'person' },
-    ].filter(p => p.name.toLowerCase().includes(query));
+    // V1: People search disabled - focus on thematic discovery
+    // const mockPeople = [
+    //   { id: '1', name: 'David Fincher', role: 'Director', filmCount: 12, type: 'person' },
+    //   { id: '2', name: 'Martin Scorsese', role: 'Director', filmCount: 28, type: 'person' },
+    // ].filter(p => p.name.toLowerCase().includes(query));
 
     res.status(200).json({
       success: true,
       query: q,
       collections: mockCollections,
       movies: mockMovies,
-      people: mockPeople,
-      total: mockCollections.length + mockMovies.length + mockPeople.length,
+      // people: mockPeople, // V1: Disabled
+      total: mockCollections.length + mockMovies.length, // + mockPeople.length,
       query_time_ms: duration
     });
 
