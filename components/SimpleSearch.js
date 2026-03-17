@@ -4,14 +4,10 @@ import { useRouter } from 'next/router';
 import { Search } from 'lucide-react';
 
 export default function SimpleSearch({
-  onResults,
   placeholder = 'Search movies and people...',
-  useUnifiedSearch = true,
   initialQuery = '',
 }) {
   const [query, setQuery] = useState(initialQuery);
-  const [isLoading, setIsLoading] = useState(false);
-  const [fallback, setFallback] = useState(null);
   const [suggestions, setSuggestions] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
@@ -98,88 +94,6 @@ export default function SimpleSearch({
     }, 300);
   };
 
-  // Full search (original behavior)
-  const search = async searchQuery => {
-    const q = searchQuery.trim();
-    if (!q) {
-      if (onResults) onResults({ movies: [], people: [] });
-      setFallback(null);
-      setIsLoading(false);
-      setSuggestions([]);
-      setShowDropdown(false);
-      return;
-    }
-
-    // Close dropdown
-    setShowDropdown(false);
-    setSuggestions([]);
-
-    // New UX: Redirect to unified search results page
-    if (useUnifiedSearch) {
-      router.push(`/search?q=${encodeURIComponent(q)}`);
-      return;
-    }
-
-    // Legacy inline search (kept for compatibility)
-    const searchId = Date.now();
-    currentSearchRef.current = searchId;
-
-    if (isLoading) {
-      return;
-    }
-
-    setIsLoading(true);
-    setFallback(null);
-
-    try {
-      const response = await fetch('/api/simple-search', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query: q }),
-      });
-
-      if (currentSearchRef.current !== searchId) {
-        return;
-      }
-
-      if (response.ok) {
-        const data = await response.json();
-
-        // V1 Feature: Auto-navigate to single movie result
-        if (data.movies && data.movies.length === 1) {
-          const movie = data.movies[0];
-          if (movie.tmdb_id) {
-            router.push(`/movie/${movie.tmdb_id}`);
-            return;
-          }
-        }
-
-        const results = {
-          movies: data.movies || [],
-          people: [],
-          hasResults: data.hasResults,
-          query: data.query
-        };
-
-        if (onResults) onResults(results);
-
-        if (data.fallback) {
-          setFallback(data.fallback);
-        }
-      } else {
-        if (onResults) onResults({ movies: [], people: [] });
-        setFallback({ message: 'Search failed. Please try again.' });
-      }
-    } catch (error) {
-      if (onResults) onResults({ movies: [], people: [] });
-      setFallback({ message: 'Search failed. Please try again.' });
-    } finally {
-      if (currentSearchRef.current === searchId) {
-        setIsLoading(false);
-      }
-    }
-  };
-
   // Handle keyboard navigation
   const handleKeyDown = (e) => {
     if (!showDropdown || suggestions.length === 0) {
@@ -205,7 +119,7 @@ export default function SimpleSearch({
             router.push(`/movie/${movie.tmdb_id}`);
           }
         } else {
-          // No selection, do full search
+          // No selection, go to search results page
           handleSubmit(e);
         }
         break;
@@ -217,9 +131,13 @@ export default function SimpleSearch({
     }
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    search(query);
+    const q = query.trim();
+    if (q) {
+      setShowDropdown(false);
+      router.push(`/search?q=${encodeURIComponent(q)}`);
+    }
   };
 
   const handleClear = () => {
@@ -227,8 +145,6 @@ export default function SimpleSearch({
     setSuggestions([]);
     setShowDropdown(false);
     setSelectedIndex(-1);
-    if (onResults) onResults({ movies: [], people: [] });
-    setFallback(null);
   };
 
   const handleSuggestionClick = (movie) => {
@@ -250,11 +166,10 @@ export default function SimpleSearch({
             value={query}
             onChange={handleInputChange}
             onKeyDown={handleKeyDown}
-            placeholder={isLoading ? 'Searching...' : placeholder}
+            placeholder={placeholder}
             style={styles.input}
             className="search-input-placeholder"
             autoComplete="off"
-            disabled={isLoading}
           />
           {query && (
             <button type="button" onClick={handleClear} style={styles.clearButton}>
@@ -292,13 +207,6 @@ export default function SimpleSearch({
           </div>
         )}
       </form>
-
-      {/* No results message */}
-      {fallback && (
-        <div style={styles.fallbackBox}>
-          <span style={styles.fallbackText}>{fallback.message}</span>
-        </div>
-      )}
     </div>
   );
 }
@@ -402,32 +310,5 @@ const styles = {
     color: '#6b7280',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     marginTop: '2px',
-  },
-
-  // Fallback styles
-  fallbackBox: {
-    marginTop: '12px',
-    padding: '12px 16px',
-    backgroundColor: '#f8fafc',
-    border: '1px solid #e2e8f0',
-    borderRadius: '8px',
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '8px',
-    alignItems: 'center',
-    textAlign: 'center',
-  },
-  fallbackText: {
-    fontSize: '14px',
-    color: '#64748b',
-    fontFamily: 'inherit',
-  },
-  fallbackLink: {
-    fontSize: '14px',
-    color: '#3b82f6',
-    textDecoration: 'none',
-    fontWeight: '500',
-    fontFamily: 'inherit',
-    transition: 'color 0.2s ease',
   },
 };
