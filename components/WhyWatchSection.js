@@ -34,8 +34,8 @@ export default function WhyWatchSection({ reasons = [], recommendation = "YES", 
   const primaryColor = isSkipIt ? '#dc2626' : '#d4af37'; // Red for NO, Gold for YES
 
   const containerStyle = {
-    marginTop: '4px',
-    marginBottom: '4px',
+    marginTop: '20px',
+    marginBottom: '24px',
     paddingLeft: '0px',
     ...style
   };
@@ -44,7 +44,7 @@ export default function WhyWatchSection({ reasons = [], recommendation = "YES", 
     display: 'flex',
     alignItems: 'center',
     gap: '16px',
-    marginBottom: '10px',
+    marginBottom: '16px',
   };
 
   const dividerStyle = {
@@ -69,50 +69,26 @@ export default function WhyWatchSection({ reasons = [], recommendation = "YES", 
   const reasonItemStyle = {
     display: 'flex',
     alignItems: 'flex-start',
-    marginBottom: '4px',
-    lineHeight: '1.4'
+    marginBottom: '12px',
+    lineHeight: '1.5'
   };
 
   const reasonBulletStyle = {
     color: primaryColor,
-    marginRight: '8px',
-    fontSize: '16px',
-    lineHeight: '1.4',
-    minWidth: '12px'
+    marginRight: '10px',
+    fontSize: '20px',
+    lineHeight: '1.5',
+    minWidth: '16px'
   };
 
   const reasonTextStyle = {
-    fontSize: 'var(--font-sm)', // Responsive: 14px desktop, 16px mobile
+    fontSize: '16px', // Upgraded from var(--font-sm) for more prominence
     color: '#374151',
     fontFamily: 'inherit',
-    lineHeight: '1.4',
+    lineHeight: '1.5',
     flex: '1'
   };
 
-  // Streaming line styles
-  const streamingContainerStyle = {
-    marginTop: '8px',
-    marginBottom: '16px',
-    display: 'flex',
-    alignItems: 'center',
-    gap: '8px',
-  };
-
-  const streamingLabelStyle = {
-    fontSize: 'var(--font-meta)', // Responsive: 12px desktop, 13px mobile
-    fontWeight: '600',
-    textTransform: 'uppercase',
-    letterSpacing: '0.8px',
-    color: '#374151', // Charcoal
-    whiteSpace: 'nowrap',
-  };
-
-  const streamingPlatformsStyle = {
-    fontSize: '16px',
-    color: '#374151',
-    fontFamily: 'inherit',
-    lineHeight: '1.4',
-  };
 
   // Render reason text as HTML (supports person and movie links)
   const renderReasonText = (reason) => {
@@ -144,13 +120,6 @@ export default function WhyWatchSection({ reasons = [], recommendation = "YES", 
             <div style={reasonTextStyle}>{renderReasonText(reason)}</div>
           </div>
         ))}
-        {/* Streaming line if available */}
-        {streaming && streaming !== 'TBD' && (
-          <div style={streamingContainerStyle}>
-            <span style={streamingLabelStyle}>STREAMING ON:</span>
-            <span style={streamingPlatformsStyle}>{streaming}</span>
-          </div>
-        )}
       </div>
     </div>
   );

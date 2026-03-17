@@ -394,6 +394,7 @@ export default function MovieDetailPage() {
             <MovieAnalysisWithEntities
               analysis={analysis}
               movie={movie}
+              streaming={streaming?.streaming_data}
             />
           </ErrorBoundary>
 

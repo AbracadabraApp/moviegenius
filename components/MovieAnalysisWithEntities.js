@@ -13,6 +13,7 @@ import MediaCardErrorFallback from './MediaCardErrorFallback';
 import ExplorePromptErrorFallback from './ExplorePromptErrorFallback';
 import WhyWatchSection from './WhyWatchSection';
 import StreamingAvailabilityLink from './StreamingAvailabilityLink';
+import StreamingCalloutBar from './StreamingCalloutBar';
 import { getPerformanceMonitor } from '../lib/performance-monitor';
 
 // Feature flag for Explore Further functionality
@@ -24,6 +25,7 @@ const ENABLE_EXPLORE_FURTHER = typeof window !== 'undefined'
 export default function MovieAnalysisWithEntities({
   analysis,
   movie,
+  streaming = null,
   browseCollections = null,
   linkingIntensity = 'moderate',
   className = '',
@@ -393,7 +395,7 @@ export default function MovieAnalysisWithEntities({
 
   // Handle JSON format vs legacy text format
   if (processedAnalysis.isJsonFormat) {
-    return renderJsonAnalysis(processedAnalysis.jsonData, movie, linkingIntensity, className, isVisible);
+    return renderJsonAnalysis(processedAnalysis.jsonData, movie, streaming, linkingIntensity, className, isVisible);
   }
 
   // Legacy text format processing
@@ -797,7 +799,7 @@ function formatSubheadFromType(type) {
 }
 
 // Render JSON format analysis with proper alternating layout
-function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisible) {
+function renderJsonAnalysis(jsonData, movie, streaming, linkingIntensity, className, isVisible) {
   // Defensive logging to catch future rendering issues
   if (!jsonData) {
     console.warn('⚠️ renderJsonAnalysis called with null/undefined jsonData');
@@ -942,6 +944,12 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
       </div>
     );
 
+    // Add streaming callout bar after first paragraph
+    if (textIndex === 0 && streaming) {
+      content.push(
+        <StreamingCalloutBar key="streaming-callout" streaming={streaming} />
+      );
+    }
 
     // Add featured movies at strategic points (after intro and technical analysis)
     if ((textIndex === 1 || textIndex === 3) && featuredMovies.length > 0) {
