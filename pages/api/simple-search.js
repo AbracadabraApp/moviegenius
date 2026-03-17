@@ -118,12 +118,27 @@ export default async function handler(req, res) {
             const contributorText = getDisplayContributors(contributorsJson);
             const analysisData = analysisMap[movie.tmdb_id];
 
+            // Calculate content coverage score (0-100)
+            let contentScore = 0;
+            if (contributorText) contentScore += 20;
+            if (analysisData?.whyWatch) contentScore += 40;
+            if (analysisData?.firstSection) contentScore += 40;
+
             return {
               ...movie,
               contributors: contributorText,
               whyWatch: analysisData?.whyWatch || null,
-              analysisPreview: analysisData?.firstSection || null
+              analysisPreview: analysisData?.firstSection || null,
+              contentScore
             };
+          });
+
+          // Sort by content coverage first, then TMDB popularity
+          movies.sort((a, b) => {
+            if (b.contentScore !== a.contentScore) {
+              return b.contentScore - a.contentScore;
+            }
+            return b.popularity - a.popularity;
           });
 
         } catch (error) {

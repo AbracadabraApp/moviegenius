@@ -187,9 +187,48 @@ export default function MovieDetailPage() {
               return;
             }
             
+            // Fetch More Ideas from separate table
+            let moreIdeasData = null;
+            try {
+              const moreIdeasResponse = await fetch(`/api/more-ideas?tmdbId=${finalMovieId}`);
+              if (moreIdeasResponse.ok) {
+                const moreIdeasJson = await moreIdeasResponse.json();
+                if (moreIdeasJson.hasData && moreIdeasJson.moreIdeas) {
+                  moreIdeasData = moreIdeasJson.moreIdeas;
+                  console.log(`✅ Loaded ${moreIdeasData.length} More Ideas for movie ${finalMovieId}`);
+                }
+              }
+            } catch (moreIdeasError) {
+              console.warn('⚠️ Failed to fetch More Ideas:', moreIdeasError.message);
+            }
+
+            // Add moreIdeas to the analysis content if it's JSON format
+            const enrichedContent = validatedContent;
+            if (moreIdeasData && moreIdeasData.length > 0) {
+              try {
+                const parsed = typeof enrichedContent.raw_content === 'string'
+                  ? JSON.parse(enrichedContent.raw_content)
+                  : enrichedContent.raw_content;
+
+                if (parsed && typeof parsed === 'object') {
+                  parsed.moreIdeas = moreIdeasData.map(idea => ({
+                    title: idea.title,
+                    year: idea.year,
+                    tmdb_id: idea.tmdbId,
+                    description: idea.connection,
+                    poster_url: idea.posterUrl || '/images/placeholder-poster.jpg'
+                  }));
+                  enrichedContent.raw_content = parsed;
+                  console.log(`✅ Added ${moreIdeasData.length} More Ideas to analysis`);
+                }
+              } catch (e) {
+                console.warn('⚠️ Could not add More Ideas to analysis:', e.message);
+              }
+            }
+
             // Format analysis data for MovieAnalysisWithEntities component
             const formattedAnalysis = {
-              claude_response: validatedContent,
+              claude_response: enrichedContent,
               entity_linking_data: (apiData.entityData || apiData.movieData) ? {
                 entityData: apiData.entityData || apiData.movieData,
                 processedAt: new Date().toISOString()

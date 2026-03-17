@@ -1080,7 +1080,7 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
   // Browse Collections section temporarily disabled - component not integrated
   // if (browseCollections && browseCollections.lists && browseCollections.lists.length > 0) {
   //   content.push(
-  //     <BrowseCollectionsSection 
+  //     <BrowseCollectionsSection
   //       key="json-browse-collections"
   //       collections={browseCollections.lists}
   //       totalCollections={browseCollections.totalLists}
@@ -1088,6 +1088,39 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
   //   );
   // }
 
+  // Add MORE IDEAS section at the end if there are any
+  if (moreIdeas.length > 0) {
+    content.push(
+      <div key="json-more-ideas" style={styles.movieSection}>
+        <div style={styles.movieSectionHeader}>
+          <div style={styles.sectionDivider} />
+          <span style={styles.sectionLabel}>MORE IDEAS</span>
+          <div style={styles.sectionDivider} />
+        </div>
+        <div style={styles.movieList}>
+          {moreIdeas.map((movieItem, movieIndex) => (
+            <ErrorBoundary
+              key={`json-more-ideas-error-${movieIndex}`}
+              level="section"
+              fallback={MediaCardErrorFallback}
+            >
+              <div data-testid="more-ideas-movie-card">
+                <MediaCard
+                  key={`json-more-ideas-${movieIndex}`}
+                  title={movieItem.title}
+                  year={movieItem.year}
+                  initialSlug={movieItem.slug}
+                  initialPoster={movieItem.poster_url}
+                  initialStreaming={movieItem.streaming}
+                  tmdbId={movieItem.tmdb_id}
+                />
+              </div>
+            </ErrorBoundary>
+          ))}
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div style={styles.container} className={className}>

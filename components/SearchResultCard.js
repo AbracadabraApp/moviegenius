@@ -219,8 +219,8 @@ export default function SearchResultCard({
         </div>
       )}
 
-      {/* Read Full Analysis Link - Always visible if there's a tmdbId */}
-      {tmdbId && (
+      {/* Read Full Analysis Link - Only visible if there's analysis content */}
+      {tmdbId && analysisPreview && (
         <div style={styles.fullAnalysisSection}>
           <button
             onClick={(e) => {

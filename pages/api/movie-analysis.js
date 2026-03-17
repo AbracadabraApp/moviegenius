@@ -336,6 +336,47 @@ export default async function movieAnalysisHandler(req, res) {
         console.log(`📝 Serving legacy content without links`);
       }
 
+      // 🎬 ENRICH FEATURED MOVIES: Add TMDB IDs and posters for JSON format analyses
+      let enrichedContent = displayText || claudeText;
+      try {
+        const rawContent = analysis.claude_response?.raw_content || claudeText;
+        if (rawContent && typeof rawContent === 'string') {
+          const parsed = JSON.parse(rawContent);
+          if (parsed.featuredMovies && Array.isArray(parsed.featuredMovies)) {
+            console.log(`🔍 Enriching ${parsed.featuredMovies.length} featured movies with TMDB data...`);
+            const { searchTMDB } = await import('../../lib/services/tmdb-search.js');
+
+            for (const featuredMovie of parsed.featuredMovies) {
+              if (!featuredMovie.tmdb_id && featuredMovie.title && featuredMovie.year) {
+                try {
+                  const results = await searchTMDB(`${featuredMovie.title} ${featuredMovie.year}`);
+                  if (results && results.length > 0) {
+                    const match = results.find(r =>
+                      r.title.toLowerCase() === featuredMovie.title.toLowerCase() &&
+                      r.release_date && r.release_date.startsWith(String(featuredMovie.year))
+                    ) || results[0];
+
+                    featuredMovie.tmdb_id = match.id;
+                    featuredMovie.poster_url = match.poster_path
+                      ? `https://image.tmdb.org/t/p/w500${match.poster_path}`
+                      : '/images/placeholder-poster.jpg';
+                    console.log(`✅ Enriched: ${featuredMovie.title} (${featuredMovie.year}) -> TMDB ${match.id}`);
+                  }
+                } catch (enrichError) {
+                  console.error(`⚠️ Failed to enrich ${featuredMovie.title}:`, enrichError.message);
+                }
+              }
+            }
+
+            // Return enriched JSON
+            enrichedContent = JSON.stringify(parsed);
+            console.log(`✅ Returning enriched analysis with TMDB IDs`);
+          }
+        }
+      } catch (enrichError) {
+        console.log(`📝 Not JSON format or enrichment failed, using original content`);
+      }
+
       // Log successful analysis retrieval
       logger.movieAnalysis(tmdbId, 'completed', {
         status: 'success',
@@ -346,10 +387,10 @@ export default async function movieAnalysisHandler(req, res) {
         analysisCreated: analysis.created_at
       });
 
-    // Return successful response - serve pre-linked content
+    // Return successful response - serve enriched content
     const response = {
       success: true,
-      analysis: displayText || claudeText,  // Primary: display_text (with links) for browser
+      analysis: enrichedContent,             // Primary: enriched with TMDB IDs for featured movies
       rawAnalysis: claudeText,              // Backup: claude_text (original from API)
       movie: {
         title: movie.title,
