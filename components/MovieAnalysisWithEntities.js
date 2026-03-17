@@ -54,22 +54,28 @@ export default function MovieAnalysisWithEntities({
 
   const processAnalysisContent = async () => {
     const processingStart = performance.now();
-    
+
     try {
       const rawContent = analysis.claude_response.raw_content;
 
       // Check if content is JSON format (new structure)
       let analysisData;
       try {
-        // Unescape JSON content safely
-        const unescapedContent = rawContent
-          .replace(/\\\\n/g, '\\n')  // Unescape newlines
-          .replace(/\\\\"/g, '"')    // Unescape quotes
-          .replace(/\\\\t/g, '\\t')  // Unescape tabs
-          .replace(/\\\\r/g, '\\r'); // Unescape carriage returns
+        // If rawContent is already an object, use it directly
+        if (typeof rawContent === 'object' && rawContent !== null) {
+          analysisData = rawContent;
+          console.log('✅ Detected pre-parsed JSON object analysis');
+        } else {
+          // Unescape JSON content safely
+          const unescapedContent = rawContent
+            .replace(/\\\\n/g, '\\n')  // Unescape newlines
+            .replace(/\\\\"/g, '"')    // Unescape quotes
+            .replace(/\\\\t/g, '\\t')  // Unescape tabs
+            .replace(/\\\\r/g, '\\r'); // Unescape carriage returns
 
-        analysisData = JSON.parse(unescapedContent);
-        console.log('✅ Detected JSON format analysis');
+          analysisData = JSON.parse(unescapedContent);
+          console.log('✅ Detected JSON format analysis');
+        }
       } catch (e) {
         console.log('📝 Using legacy text format analysis');
         analysisData = null;
