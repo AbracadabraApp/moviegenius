@@ -909,11 +909,13 @@ function renderJsonAnalysis(jsonData, movie, streaming, linkingIntensity, classN
     if (section.subhead || (section.type && section.type !== 'text')) {
       // Use dynamic subhead if available, otherwise fall back to formatted type
       const subheadText = section.subhead || formatSubheadFromType(section.type);
-      
+
       if (subheadText) {
         content.push(
-          <div key={`subhead-${textIndex}`} style={{...styles.subheadSection, borderLeft: '3px solid #d4af37', paddingLeft: '16px'}}>
-            <h3 style={styles.subheadText}>{subheadText}</h3>
+          <div key={`subhead-${textIndex}`} style={styles.movieSectionHeader}>
+            <div style={styles.sectionDivider} />
+            <span style={styles.sectionLabel}>{subheadText.toUpperCase()}</span>
+            <div style={styles.sectionDivider} />
           </div>
         );
       }

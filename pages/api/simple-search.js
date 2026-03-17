@@ -141,6 +141,11 @@ export default async function handler(req, res) {
             return b.popularity - a.popularity;
           });
 
+          // V1: Prioritize movies with content - limit no-content results
+          const moviesWithContent = movies.filter(m => m.contentScore > 0);
+          const moviesWithoutContent = movies.filter(m => m.contentScore === 0).slice(0, 5); // Max 5 without content
+          movies = [...moviesWithContent, ...moviesWithoutContent];
+
         } catch (error) {
           console.error('Error fetching contributors for search:', error);
           // Continue with movies without contributors

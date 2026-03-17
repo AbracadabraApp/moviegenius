@@ -12,13 +12,21 @@ export default function StreamingCalloutBar({ streaming }) {
     return null;
   }
 
-  const barStyle = {
-    backgroundColor: '#f9fafb',
-    borderLeft: '3px solid #d4af37',
-    padding: '12px 16px',
+  const containerStyle = {
     marginTop: '20px',
     marginBottom: '20px',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+  };
+
+  const hairlineStyle = {
+    height: '1px',
+    backgroundColor: '#e5e7eb',
+    margin: 0,
+  };
+
+  const textContainerStyle = {
+    padding: '12px 0',
+    textAlign: 'center',
   };
 
   const labelStyle = {
@@ -32,14 +40,18 @@ export default function StreamingCalloutBar({ streaming }) {
 
   const platformsStyle = {
     fontSize: '14px',
-    color: '#111827',
+    color: '#374151',
     fontWeight: '500',
   };
 
   return (
-    <div style={barStyle}>
-      <span style={labelStyle}>AVAILABLE ON:</span>
-      <span style={platformsStyle}>{streaming}</span>
+    <div style={containerStyle}>
+      <div style={hairlineStyle} />
+      <div style={textContainerStyle}>
+        <span style={labelStyle}>AVAILABLE ON:</span>
+        <span style={platformsStyle}>{streaming}</span>
+      </div>
+      <div style={hairlineStyle} />
     </div>
   );
 }
