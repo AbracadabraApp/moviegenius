@@ -6,7 +6,7 @@
  */
 
 // Import series configuration
-import { createClient, supabase } from './railway-adapter.js';
+import { createClient, supabase } from '../../lib/railway-adapter.js';
 
 import fs from 'fs';
 import path from 'path';

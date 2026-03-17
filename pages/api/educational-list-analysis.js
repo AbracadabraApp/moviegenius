@@ -1,5 +1,5 @@
-import { getPool } from './railway-db.js';
-import { createClient, supabase } from './railway-adapter.js';
+import { getPool } from '../../lib/railway-db.js';
+import { createClient, supabase } from '../../lib/railway-adapter.js';
 
 
 // pages/api/educational-list-analysis.js

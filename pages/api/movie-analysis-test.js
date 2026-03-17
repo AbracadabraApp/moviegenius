@@ -1,5 +1,5 @@
 // MINIMAL TEST API - just database lookup and HTML return
-import { MovieService } from './railway-db.js';
+import { MovieService } from '../../lib/railway-db.js';
 
 export default async function movieAnalysisTestHandler(req, res) {
   if (req.method !== 'GET') {

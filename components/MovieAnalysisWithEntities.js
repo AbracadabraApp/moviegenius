@@ -16,7 +16,10 @@ import StreamingAvailabilityLink from './StreamingAvailabilityLink';
 import { getPerformanceMonitor } from '../lib/performance-monitor';
 
 // Feature flag for Explore Further functionality
-const ENABLE_EXPLORE_FURTHER = false; // Set to true when explore pages are ready
+// Easter egg: Access with ?film-school=true URL parameter
+const ENABLE_EXPLORE_FURTHER = typeof window !== 'undefined'
+  ? new URLSearchParams(window.location.search).get('film-school') === 'true'
+  : false;
 
 export default function MovieAnalysisWithEntities({
   analysis,
@@ -894,8 +897,8 @@ function renderJsonAnalysis(jsonData, movie, linkingIntensity, className, isVisi
 
   // Create alternating pattern: Text → Featured Films → Text → Explore Further → Repeat
   textSections.forEach((section, textIndex) => {
-    // Add section header - support both new dynamic subheads and legacy types (skip first section per user request)
-    if ((section.subhead || section.type) && section.type !== 'text' && textIndex !== 0) {
+    // Add section header - support both new dynamic subheads and legacy types
+    if (section.subhead || (section.type && section.type !== 'text')) {
       // Use dynamic subhead if available, otherwise fall back to formatted type
       const subheadText = section.subhead || formatSubheadFromType(section.type);
       

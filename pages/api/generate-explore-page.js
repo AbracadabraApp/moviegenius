@@ -13,7 +13,7 @@
  * 4. Return structured data for rendering
  */
 
-import { getPool, MovieService, EpisodeService, CacheService, PersonService } from './railway-db.js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 import {
   withErrorHandling,
   ApiErrors,

@@ -1,7 +1,7 @@
 // Railway PostgreSQL movie-analysis API endpoint - UNIFIED VERSION
 // Uses the new lib/railway-db.js for all database operations
 
-import { MovieService } from './railway-db.js';
+import { MovieService } from '../../lib/railway-db.js';
 import { logger, dbLogger, apiLogger, railwayLogger } from '../../lib/observability/logger.js';
 import { processAnalysisContent } from '../../lib/movie-analysis-linker.js';
 

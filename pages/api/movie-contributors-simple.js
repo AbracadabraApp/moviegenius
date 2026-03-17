@@ -6,7 +6,7 @@
  * Returns contributors grouped by role with person IDs for linking
  */
 
-import { getPool } from './railway-db.js';
+import { getPool } from '../../lib/railway-db.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {

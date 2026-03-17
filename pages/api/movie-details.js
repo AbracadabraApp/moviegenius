@@ -1,7 +1,7 @@
 // pages/api/movie-details.js - Combined movie details from database and TMDB
-import { createClient, supabase } from './railway-adapter.js';
+import { createClient, supabase } from '../../lib/railway-adapter.js';
 
-import { getPool, MovieService, EpisodeService, CacheService, PersonService } from './railway-db.js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'GET') {

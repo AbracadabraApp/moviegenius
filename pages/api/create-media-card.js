@@ -16,9 +16,9 @@
  * 5. Return MediaCard data
  */
 
-import { createClient, supabase } from './railway-adapter.js';
+import { createClient, supabase } from '../../lib/railway-adapter.js';
 
-import { getPool, MovieService, EpisodeService, CacheService, PersonService } from './railway-db.js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 import { getCache } from '../../lib/cache.js';
 import { Anthropic } from '@anthropic-ai/sdk';
 

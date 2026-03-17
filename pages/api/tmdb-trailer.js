@@ -6,7 +6,7 @@
 
 // Removed deprecated Supabase adapter import
 
-import { getPool, MovieService, EpisodeService, CacheService, PersonService } from './railway-db.js';
+import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
 
 const pool = getPool();
 

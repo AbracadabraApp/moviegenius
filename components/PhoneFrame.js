@@ -2,13 +2,14 @@
 import { useEffect, useState } from 'react';
 import { shouldShowPhoneFrame, getPlatformName } from '../lib/platform';
 import NavBar from './NavBar';
-import { routeValidation } from '../lib/routes';
+import { routeValidation, navItems, navItemsWithGenius } from '../lib/routes';
 import { ChevronLeft, ChevronRight, Copy, Share, RotateCcw } from 'lucide-react';
 
 export default function PhoneFrame({ children }) {
   const [isClient, setIsClient] = useState(false);
   const [showFrame, setShowFrame] = useState(true); // Always start with desktop frame
   const [platform, setPlatform] = useState('');
+  const [showGeniusTab, setShowGeniusTab] = useState(false);
 
   useEffect(() => {
     // Set client flag first to prevent hydration mismatch
@@ -16,14 +17,14 @@ export default function PhoneFrame({ children }) {
     // Update frame visibility only after client hydration
     setShowFrame(shouldShowPhoneFrame());
     setPlatform(getPlatformName());
+
+    // Check for genius easter egg in URL
+    const params = new URLSearchParams(window.location.search);
+    setShowGeniusTab(params.get('genius') === 'true');
   }, []);
 
-  // NavBar configuration - using MY clean implementation
-  const navItems = [
-    { label: 'Movies', route: '/movies', icon: 'Clapperboard' },
-    { label: 'Genius', route: '/genius', icon: 'Sparkles' },
-    { label: 'You', route: '/you', icon: 'User' }
-  ];
+  // Use navItems with or without Genius based on easter egg
+  const currentNavItems = showGeniusTab ? navItemsWithGenius : navItems;
 
   // During SSR, always render desktop layout to prevent hydration mismatch
   if (!isClient) {
@@ -80,7 +81,7 @@ export default function PhoneFrame({ children }) {
             ...styles.content,
             ...(showFrame ? {} : styles.mobileContentOverrides)
           }}>{children}</div>
-          <NavBar navItems={navItems} routeValidation={routeValidation} isMobile={!showFrame} />
+          <NavBar navItems={currentNavItems} routeValidation={routeValidation} isMobile={!showFrame} />
           {/* iPhone Safari Bottom Bar - only show in desktop phone frame */}
           {showFrame && (
             <div style={styles.safariBottomBar}>

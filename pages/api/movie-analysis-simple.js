@@ -1,5 +1,5 @@
 // TEMPORARY SIMPLE VERSION - Copy the working test approach to main API
-import { MovieService } from './railway-db.js';
+import { MovieService } from '../../lib/railway-db.js';
 
 export default async function movieAnalysisHandler(req, res) {
   if (req.method !== 'GET') {

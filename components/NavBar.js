@@ -32,8 +32,9 @@ export default function NavBar({ navItems = [], routeValidation = {}, isMobile =
         ) {
           return true;
         }
-        // You active for /you/* pages
-        if (item.route === '/you' && pathname.startsWith('/you/')) {
+        // You active for /you/* or /what-to-watch pages
+        if ((item.route === '/what-to-watch' || item.route === '/you') &&
+            (pathname.startsWith('/you/') || pathname.startsWith('/what-to-watch'))) {
           return true;
         }
         // Use centralized logic for Genius active state

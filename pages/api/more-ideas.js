@@ -63,14 +63,29 @@ export default async function handler(req, res) {
         }
       }
 
-      // Format more ideas for MediaCard compatibility
-      const formattedMoreIdeas = moreIdeas ? moreIdeas.map(idea => ({
-        title: idea.title,
-        year: idea.year,
-        connection: idea.connection || idea.reason || idea.description,
-        // Add MediaCard compatible fields
-        initialSlug: idea.connection || idea.reason || idea.description,
-        tmdbId: idea.tmdbId || null // Will be resolved by MediaCard if not provided
+      // Enrich more ideas with tmdb_id and poster from movies table
+      const formattedMoreIdeas = moreIdeas ? await Promise.all(moreIdeas.map(async (idea) => {
+        // Look up movie in database to get tmdb_id and poster
+        const movieLookup = await client.query(`
+          SELECT tmdb_id, poster_path
+          FROM movies
+          WHERE LOWER(title) = LOWER($1) AND year = $2
+          LIMIT 1
+        `, [idea.title, idea.year]);
+
+        const movieData = movieLookup.rows[0];
+        const posterUrl = movieData?.poster_path
+          ? `https://image.tmdb.org/t/p/w500${movieData.poster_path}`
+          : null;
+
+        return {
+          title: idea.title,
+          year: idea.year,
+          connection: idea.connection || idea.reason || idea.description,
+          initialSlug: idea.connection || idea.reason || idea.description,
+          tmdbId: movieData?.tmdb_id || null,
+          posterUrl: posterUrl
+        };
       })) : [];
 
       // Response format

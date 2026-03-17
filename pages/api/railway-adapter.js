@@ -2,7 +2,7 @@
 // Provides Supabase-like interface using Railway PostgreSQL backend
 // This enables gradual migration while maintaining build compatibility
 
-import { getPool } from './railway-db.js';
+import { getPool } from '../../lib/railway-db.js';
 
 // Mock Supabase createClient for build compatibility
 export function createClient(url, key, options = {}) {

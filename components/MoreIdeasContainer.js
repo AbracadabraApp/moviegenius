@@ -67,6 +67,7 @@ export default function MoreIdeasContainer({ tmdbId, title = "More Ideas", style
             title={movieItem.title}
             year={movieItem.year}
             initialSlug={movieItem.connection}
+            initialPoster={movieItem.posterUrl}
             tmdbId={movieItem.tmdbId}
           />
         ))}

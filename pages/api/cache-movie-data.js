@@ -1,6 +1,6 @@
 // pages/api/cache-movie-data.js
 // Cache enhanced movie data to Railway PostgreSQL directly (zero Supabase dependencies)
-import { getPool, MovieService } from './railway-db.js';
+import { getPool, MovieService } from '../../lib/railway-db.js';
 import { isValidPosterUrl } from '../../lib/poster-validation-utils.js';
 
 export default async function handler(req, res) {
