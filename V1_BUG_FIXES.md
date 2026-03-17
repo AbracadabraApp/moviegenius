@@ -142,7 +142,7 @@ This was a false alarm. All routing follows proper Next.js conventions. No actio
 
 ## 🔧 Bug #34: Deployment Monitoring System
 
-### Status: **Infrastructure Setup**
+### Status: **DEFERRED to Post-V1**
 
 ### Goal
 
@@ -218,21 +218,21 @@ Create `scripts/monitor-deployment.js`:
 |-------|--------|----------|----------|
 | #22 - SimpleSearch | ✅ **RESOLVED** | 🚨 Critical | ~~YES~~ |
 | #25 - camelCase URLs | ✅ **RESOLVED - Non-Issue** | ⚠️ High | ~~Maybe~~ |
-| #34 - Monitoring | Setup | 🔧 High | No |
+| #34 - Monitoring | 📌 **DEFERRED** | 🔧 High | No |
 
 ### Next Actions
 
 1. ✅ ~~Test SimpleSearch in production~~ **COMPLETE**
 2. ✅ ~~Investigate camelCase routing~~ **COMPLETE - Non-Issue**
-3. **Set up deployment monitoring** (Bug #34) - Nice-to-have
-4. **Layout & UI polish** (V1 scope) - Ready to ship
+3. 📌 ~~Set up deployment monitoring~~ **DEFERRED to Post-V1**
+4. **V1 is ready to ship** - Layout polish can be done post-launch
 
 ---
 
 ## 🎯 V1 Definition of Done
 
 ✅ **SimpleSearch works in production** - COMPLETE
-✅ **No routing errors** - COMPLETE (Bug #25 was non-issue)
-⚠️ **Deployment monitoring active** - Nice-to-have (Bug #34)
+✅ **No routing errors** - COMPLETE
+📌 **Deployment monitoring** - DEFERRED to Post-V1
 
-**All critical blockers resolved. V1 ready to ship. Monitoring can be added post-launch.**
+**All critical blockers resolved. V1 ready to ship.**
