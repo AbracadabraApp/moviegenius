@@ -11,7 +11,11 @@ import { readFileSync, readdirSync } from 'fs';
 import { join } from 'path';
 
 const BUILD_DIR = './list-analysis-output';
-const MIN_MOVIES = 6; // Production quality threshold
+
+// Configurable threshold - can be changed via environment variable or command line
+// MIN_MOVIES=3 node scripts/transform-browse-data.js
+const MIN_MOVIES = parseInt(process.env.MIN_MOVIES || process.argv[2] || '4');
+console.log(`📊 Using threshold: ≥${MIN_MOVIES} movies per collection\n`);
 
 async function transformBrowseData() {
   console.log('🔄 Transforming Browse Data for Database...\n');
@@ -40,7 +44,7 @@ async function transformBrowseData() {
 
         const movieCount = listData.movieIds?.length || 0;
 
-        // Filter: production quality (>= 6 movies)
+        // Filter: configurable threshold (MIN_MOVIES)
         if (movieCount >= MIN_MOVIES) {
           productionLists++;
 
@@ -83,8 +87,9 @@ async function transformBrowseData() {
   }
 
   console.log('\n📊 Transformation Summary:');
+  console.log(`  Threshold used: ≥${MIN_MOVIES} movies`);
   console.log(`  Total lists generated: ${totalLists}`);
-  console.log(`  Production-ready (>=${MIN_MOVIES} movies): ${productionLists}`);
+  console.log(`  Collections meeting threshold: ${productionLists} (${((productionLists/totalLists)*100).toFixed(1)}%)`);
   console.log(`  Total movie assignments: ${totalMovieAssignments}`);
   console.log(`  Genres processed: ${buildFiles.length}`);
 
