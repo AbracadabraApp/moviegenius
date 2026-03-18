@@ -21,6 +21,25 @@ export default function MovieGeniusPage() {
   const [loading, setLoading] = useState(false);
   const [currentQuery, setCurrentQuery] = useState('');
   const [trailerModal, setTrailerModal] = useState({ isOpen: false, videoId: null, title: null });
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Rotating background images - iconic movie stills
+  const backgroundImages = [
+    'https://image.tmdb.org/t/p/original/rSPw7tgCH9c6NqICZef0kZjFOQ5.jpg', // The Shawshank Redemption
+    'https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg', // The Godfather
+    'https://image.tmdb.org/t/p/original/qqHQsStV6exghCM7zbObuYBiYxw.jpg', // Pulp Fiction
+    'https://image.tmdb.org/t/p/original/7lyq8hK0MhPHpUXdnqbFvZYSfkk.jpg', // The Dark Knight
+    'https://image.tmdb.org/t/p/original/jfQC7JXfYSl0tnGSp3NaXAy0Nev.jpg', // Inception
+  ];
+
+  // Rotate images every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % backgroundImages.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   // Category to search query mapping
   const categoryQueries = {
@@ -220,11 +239,34 @@ export default function MovieGeniusPage() {
     return currentQuery ? `Search: "${currentQuery}"` : 'Search Results';
   };
 
+  // Show background when no results
+  const showBackground = !currentQuery && searchResults.length === 0 && !loading;
+
   return (
     <PhoneFrame>
       <div style={styles.container}>
+        {/* Rotating Background Images */}
+        {showBackground && (
+          <div style={styles.backgroundContainer}>
+            {backgroundImages.map((image, index) => (
+              <div
+                key={index}
+                style={{
+                  ...styles.backgroundImage,
+                  opacity: index === currentImageIndex ? 1 : 0,
+                  backgroundImage: `url(${image})`,
+                }}
+              />
+            ))}
+            <div style={styles.backgroundOverlay} />
+          </div>
+        )}
+
         {/* Search header */}
-        <div style={styles.header}>
+        <div style={{
+          ...styles.header,
+          ...(showBackground ? styles.headerWithBackground : {})
+        }}>
           <SimpleSearch
             onResults={handleSearchResults}
             placeholder="Search movies..."
@@ -234,7 +276,10 @@ export default function MovieGeniusPage() {
         </div>
 
         {/* Content */}
-        <div style={styles.content}>
+        <div style={{
+          ...styles.content,
+          backgroundColor: showBackground ? 'transparent' : '#f9fafb',
+        }}>
           {/* Results header */}
           <div style={styles.resultsHeader}>
             <h1 style={styles.resultsTitle}>{getCategoryTitle()}</h1>
@@ -283,7 +328,7 @@ export default function MovieGeniusPage() {
                 Try searching for a different movie title, actor, or director.
               </div>
             </div>
-          ) : (
+          ) : !showBackground ? (
             <div style={styles.emptyState}>
               <div style={styles.emptyIcon}>🔍</div>
               <div style={styles.emptyTitle}>Search for Movies</div>
@@ -291,7 +336,7 @@ export default function MovieGeniusPage() {
                 Find movies by title, director, actor, or browse by category.
               </div>
             </div>
-          )}
+          ) : null}
         </div>
 
         {/* Trailer Modal */}
@@ -314,16 +359,52 @@ const styles = {
     fontFamily:
       '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     backgroundColor: '#f9fafb',
+    position: 'relative',
+  },
+  backgroundContainer: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    zIndex: 0,
+  },
+  backgroundImage: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    transition: 'opacity 1s ease-in-out',
+  },
+  backgroundOverlay: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    background: 'linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%)',
   },
   header: {
     backgroundColor: '#ffffff',
     padding: '16px',
+    position: 'relative',
+    zIndex: 10,
+  },
+  headerWithBackground: {
+    backgroundColor: 'transparent',
+    backdropFilter: 'blur(10px)',
+    WebkitBackdropFilter: 'blur(10px)',
   },
   content: {
     flex: 1,
     overflowY: 'scroll',
     scrollbarWidth: 'none',
     msOverflowStyle: 'none',
+    position: 'relative',
+    zIndex: 10,
   },
 
   resultsHeader: {
