@@ -89,12 +89,12 @@ const styles = {
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.85)',
+    backgroundColor: 'rgba(0, 0, 0, 0.92)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     zIndex: 9999,
-    padding: '20px',
+    padding: '8px', // Reduced for mobile
   },
 
   modal: {
@@ -102,9 +102,8 @@ const styles = {
     backgroundColor: '#000',
     borderRadius: '12px',
     overflow: 'hidden',
-    maxWidth: '90vw',
-    maxHeight: '90vh',
-    width: '800px',
+    width: '100%',
+    maxWidth: '500px', // Fits PhoneFrame better
     boxShadow: '0 20px 60px rgba(0, 0, 0, 0.5)',
   },
 
