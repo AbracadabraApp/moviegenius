@@ -80,11 +80,11 @@ export default async function handler(req, res) {
               (
                 -- Exact match bonus (case-insensitive): +10000
                 CASE WHEN LOWER(m.title) = LOWER($1) THEN 10000 ELSE 0 END +
-                -- Starts with query bonus: +5000
-                CASE WHEN LOWER(m.title) LIKE LOWER($1) || '%' THEN 5000 ELSE 0 END +
-                -- Contains all words bonus (for multi-word): +2000
+                -- Contains all words bonus (for multi-word): +5000
                 CASE WHEN ${searchWords.map((_, i) => `LOWER(m.title) LIKE $${i + 3}`).join(' AND ')}
-                     THEN 2000 ELSE 0 END +
+                     THEN 5000 ELSE 0 END +
+                -- Starts with query bonus: +2000
+                CASE WHEN LOWER(m.title) LIKE LOWER($1) || '%' THEN 2000 ELSE 0 END +
                 -- Trigram similarity score (0-1, scaled to 0-1000): fuzzy matching
                 (similarity(LOWER(m.title), LOWER($1)) * 1000) +
                 -- Content bonus: movies with analysis ranked higher
