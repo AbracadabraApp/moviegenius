@@ -137,7 +137,7 @@ export default async function handler(req, res) {
         // Database-only search - no TMDB supplementing
         // V2 Feature: TMDB new releases can be added as separate feature
         const moviesWithContent = movies.filter(m => m.contentScore > 0);
-        console.log(`✅ ${moviesWithContent.length} movies with content in our database`);
+        console.log(`✅ ${moviesWithContent.length} movies with content, ${movies.length} total matches`);
 
       } catch (error) {
         console.error('Database search error:', error);
@@ -153,16 +153,11 @@ export default async function handler(req, res) {
       movies = [];
     }
 
-    // Step 3: Filter and sort - Database-only, content-first approach
-    // Only show movies with content (contentScore > 0)
-    movies = movies.filter(m => m.contentScore > 0);
+    // No filtering - show all search matches
+    // Content-rich movies are already prioritized by rank_score in the database query
+    // (movies with analysis, contributors, etc. get higher scores)
 
-    // Sort by content coverage (already sorted by rank_score in database query)
-    movies.sort((a, b) => {
-      return b.contentScore - a.contentScore;
-    });
-
-    console.log(`🎯 Returning ${movies.length} results with content`);
+    console.log(`🎯 Returning ${movies.length} search results`);
 
     // V1 Feature: Provide fallback info for empty results
     const hasResults = movies && movies.length > 0;
