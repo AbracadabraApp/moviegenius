@@ -275,17 +275,19 @@ export default function MovieGeniusPage() {
           ...styles.content,
           backgroundColor: showBackground ? 'transparent' : '#f9fafb',
         }}>
-          {/* Results header */}
-          <div style={styles.resultsHeader}>
-            <h1 style={styles.resultsTitle}>{getCategoryTitle()}</h1>
-            {(searchResults.length > 0 || loading) && (
-              <div style={styles.resultsCount}>
-                {loading
-                  ? 'Searching...'
-                  : `${searchResults.length} movie${searchResults.length !== 1 ? 's' : ''} found`}
-              </div>
-            )}
-          </div>
+          {/* Results header - only show when there's a query/results */}
+          {!showBackground && (
+            <div style={styles.resultsHeader}>
+              <h1 style={styles.resultsTitle}>{getCategoryTitle()}</h1>
+              {(searchResults.length > 0 || loading) && (
+                <div style={styles.resultsCount}>
+                  {loading
+                    ? 'Searching...'
+                    : `${searchResults.length} movie${searchResults.length !== 1 ? 's' : ''} found`}
+                </div>
+              )}
+            </div>
+          )}
 
           {/* Results grid */}
           {loading ? (
@@ -379,7 +381,7 @@ const styles = {
     left: 0,
     right: 0,
     bottom: 0,
-    background: 'linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%)',
+    background: 'linear-gradient(to bottom, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.3) 100%)',
   },
   header: {
     backgroundColor: '#ffffff',
