@@ -67,16 +67,14 @@ export default async function handler(req, res) {
       const formattedMoreIdeas = moreIdeas ? await Promise.all(moreIdeas.map(async (idea) => {
         // Look up movie in database to get tmdb_id and poster
         const movieLookup = await client.query(`
-          SELECT tmdb_id, poster_path
+          SELECT tmdb_id, poster_url
           FROM movies
           WHERE LOWER(title) = LOWER($1) AND year = $2
           LIMIT 1
         `, [idea.title, idea.year]);
 
         const movieData = movieLookup.rows[0];
-        const posterUrl = movieData?.poster_path
-          ? `https://image.tmdb.org/t/p/w500${movieData.poster_path}`
-          : null;
+        const posterUrl = movieData?.poster_url || null;
 
         return {
           title: idea.title,
