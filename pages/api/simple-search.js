@@ -71,12 +71,11 @@ export default async function handler(req, res) {
               m.title,
               m.year,
               m.tmdb_id,
-              m.poster_path,
+              m.poster_url,
               m.contributors_json,
               ma.enhanced_sections,
               ew.recommendation,
               ew.reasons,
-              COALESCE(m.popularity, 0) as popularity,
               -- Ranking score calculation
               (
                 -- Exact match bonus (case-insensitive): +10000
@@ -88,8 +87,6 @@ export default async function handler(req, res) {
                      THEN 2000 ELSE 0 END +
                 -- Trigram similarity score (0-1, scaled to 0-1000): fuzzy matching
                 (similarity(LOWER(m.title), LOWER($1)) * 1000) +
-                -- Normalized popularity score (0-100)
-                (COALESCE(m.popularity, 0) / 10) +
                 -- Content bonus: movies with analysis ranked higher
                 CASE WHEN ma.id IS NOT NULL THEN 500 ELSE 0 END +
                 CASE WHEN ew.id IS NOT NULL THEN 300 ELSE 0 END +
@@ -103,7 +100,7 @@ export default async function handler(req, res) {
               (m.title ILIKE $2 OR similarity(LOWER(m.title), LOWER($1)) > 0.3)
           )
           SELECT * FROM ranked_movies
-          ORDER BY rank_score DESC, popularity DESC
+          ORDER BY rank_score DESC
           LIMIT 20
         `, [searchQuery, searchPattern, ...searchWords.map(w => `%${w}%`)]);
 
@@ -124,10 +121,7 @@ export default async function handler(req, res) {
             title: row.title,
             year: row.year,
             tmdb_id: row.tmdb_id,
-            poster_url: row.poster_path
-              ? `https://image.tmdb.org/t/p/w500${row.poster_path}`
-              : '/images/placeholder-poster.jpg',
-            popularity: row.popularity || 0,
+            poster_url: row.poster_url || '/images/placeholder-poster.jpg',
             contributors: contributorText,
             whyWatch: row.reasons && row.recommendation ? {
               reasons: row.reasons,
@@ -163,12 +157,9 @@ export default async function handler(req, res) {
     // Only show movies with content (contentScore > 0)
     movies = movies.filter(m => m.contentScore > 0);
 
-    // Sort by content coverage first, then popularity
+    // Sort by content coverage (already sorted by rank_score in database query)
     movies.sort((a, b) => {
-      if (b.contentScore !== a.contentScore) {
-        return b.contentScore - a.contentScore;
-      }
-      return b.popularity - a.popularity;
+      return b.contentScore - a.contentScore;
     });
 
     console.log(`🎯 Returning ${movies.length} results with content`);
