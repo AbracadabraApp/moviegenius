@@ -122,11 +122,12 @@ export default function SimpleSearch({
             router.push(`/movie/${movie.tmdb_id}`);
           }
         }
-        // If no selection but suggestions available, select first result
-        else if (suggestions.length > 0 && suggestions[0].tmdb_id) {
-          router.push(`/movie/${suggestions[0].tmdb_id}`);
+        // If query exists but no selection, go to search results page
+        else if (query.trim().length >= 3) {
+          router.push(`/search?q=${encodeURIComponent(query.trim())}`);
+          setShowDropdown(false);
         }
-        // Close dropdown if no results
+        // Close dropdown if query too short
         else {
           setShowDropdown(false);
         }
@@ -141,9 +142,11 @@ export default function SimpleSearch({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // V1: Word wheel only - no navigation to search results page
-    // User must select from dropdown suggestions
-    setShowDropdown(false);
+    // Navigate to search results page if query is valid
+    if (query.trim().length >= 3) {
+      router.push(`/search?q=${encodeURIComponent(query.trim())}`);
+      setShowDropdown(false);
+    }
   };
 
   const handleClear = () => {
