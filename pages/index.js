@@ -36,9 +36,11 @@ export default function MovieGeniusPage() {
   ];
 
   // Pick random image on mount
-  const [currentImageIndex] = useState(() =>
-    Math.floor(Math.random() * backgroundImages.length)
-  );
+  const [currentImageIndex] = useState(() => {
+    const randomIndex = Math.floor(Math.random() * backgroundImages.length);
+    console.log('🎬 Background image selected:', randomIndex, backgroundImages[randomIndex]);
+    return randomIndex;
+  });
 
   // Category to search query mapping
   const categoryQueries = {
