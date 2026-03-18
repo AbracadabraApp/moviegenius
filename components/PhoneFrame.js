@@ -35,11 +35,10 @@ export default function PhoneFrame({ children, backgroundImage, showDarkOverlay 
             {/* Background Image */}
             {backgroundImage && (
               <>
-                <div
-                  style={{
-                    ...styles.backgroundImage,
-                    backgroundImage: `url(${backgroundImage})`,
-                  }}
+                <img
+                  src={backgroundImage}
+                  alt="Background"
+                  style={styles.backgroundImage}
                 />
                 {showDarkOverlay && <div style={styles.backgroundOverlay} />}
               </>
@@ -92,11 +91,10 @@ export default function PhoneFrame({ children, backgroundImage, showDarkOverlay 
           {/* Background Image */}
           {backgroundImage && (
             <>
-              <div
-                style={{
-                  ...styles.backgroundImage,
-                  backgroundImage: `url(${backgroundImage})`,
-                }}
+              <img
+                src={backgroundImage}
+                alt="Background"
+                style={styles.backgroundImage}
               />
               {showDarkOverlay && <div style={styles.backgroundOverlay} />}
             </>
@@ -164,7 +162,7 @@ const styles = {
     height: '100%',
     backgroundColor: '#ffffff',
     borderRadius: '16px',
-    overflow: 'hidden',
+    overflow: 'hidden', // Clips any content that extends beyond bounds
     display: 'flex',
     flexDirection: 'column',
     position: 'relative',
@@ -277,15 +275,15 @@ const styles = {
     width: '100%',
   },
 
-  // Background image styles
+  // Background image styles - using img tag approach from hero images
   backgroundImage: {
     position: 'absolute',
-    top: '-50px',
-    left: '-50px',
-    width: 'calc(100% + 100px)',
-    height: 'calc(100% + 100px)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    objectPosition: 'center',
     zIndex: 0,
   },
   backgroundOverlay: {
