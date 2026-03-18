@@ -274,7 +274,13 @@ export default function MovieDetailPage() {
       <PhoneFrame>
         <div style={{ backgroundColor: '#ffffff', minHeight: '100%', padding: '20px', textAlign: 'center' }}>
           {/* Simple Search Bar */}
-          <div style={{ padding: '16px 20px 16px 20px' }}>
+          <div style={{
+            position: 'sticky',
+            top: 0,
+            zIndex: 100,
+            backgroundColor: '#ffffff',
+            padding: '16px 20px 16px 20px'
+          }}>
             <SimpleSearch
               onResults={() => {}}
               placeholder="Search Movies . . ."
@@ -315,7 +321,13 @@ export default function MovieDetailPage() {
       <PhoneFrame>
         <div style={{ backgroundColor: '#ffffff', minHeight: '100%' }}>
           {/* Simple Search Bar */}
-          <div style={{ padding: '16px 20px 16px 20px' }}>
+          <div style={{
+            position: 'sticky',
+            top: 0,
+            zIndex: 100,
+            backgroundColor: '#ffffff',
+            padding: '16px 20px 16px 20px'
+          }}>
             <SimpleSearch
               onResults={() => {}}
               placeholder="Search Movies . . ."
@@ -344,7 +356,13 @@ export default function MovieDetailPage() {
         <div style={{ backgroundColor: '#ffffff', minHeight: '100%' }}>
           {/* Simple Search Bar */}
           <ErrorBoundary level="section">
-            <div style={{ padding: '16px 20px 16px 20px' }}>
+            <div style={{
+              position: 'sticky',
+              top: 0,
+              zIndex: 100,
+              backgroundColor: '#ffffff',
+              padding: '16px 20px 16px 20px'
+            }}>
               <SimpleSearch
                 onResults={handleSearchResults}
                 placeholder="Search Movies . . ."

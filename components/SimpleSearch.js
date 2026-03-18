@@ -40,7 +40,8 @@ export default function SimpleSearch({
   const debouncedSearch = async (searchQuery) => {
     const q = searchQuery.trim();
 
-    if (!q || q.length < 2) {
+    // Require 3+ characters to reduce API calls and improve relevance
+    if (!q || q.length < 3) {
       setSuggestions([]);
       setShowDropdown(false);
       return;
@@ -89,9 +90,10 @@ export default function SimpleSearch({
     }
 
     // Set new timer for debounced search
+    // Faster debounce (200ms) for better UX, fewer API calls due to 3-char minimum
     debounceTimerRef.current = setTimeout(() => {
       debouncedSearch(value);
-    }, 300);
+    }, 200);
   };
 
   // Handle keyboard navigation
@@ -113,14 +115,20 @@ export default function SimpleSearch({
         break;
       case 'Enter':
         e.preventDefault();
+        // If user selected a suggestion, navigate to it
         if (selectedIndex >= 0 && selectedIndex < suggestions.length) {
           const movie = suggestions[selectedIndex];
           if (movie.tmdb_id) {
             router.push(`/movie/${movie.tmdb_id}`);
           }
-        } else {
-          // No selection, go to search results page
-          handleSubmit(e);
+        }
+        // If no selection but suggestions available, select first result
+        else if (suggestions.length > 0 && suggestions[0].tmdb_id) {
+          router.push(`/movie/${suggestions[0].tmdb_id}`);
+        }
+        // Close dropdown if no results
+        else {
+          setShowDropdown(false);
         }
         break;
       case 'Escape':
@@ -133,11 +141,9 @@ export default function SimpleSearch({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const q = query.trim();
-    if (q) {
-      setShowDropdown(false);
-      router.push(`/search?q=${encodeURIComponent(q)}`);
-    }
+    // V1: Word wheel only - no navigation to search results page
+    // User must select from dropdown suggestions
+    setShowDropdown(false);
   };
 
   const handleClear = () => {
