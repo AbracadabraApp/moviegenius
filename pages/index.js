@@ -55,12 +55,15 @@ export default function MovieGeniusPage() {
     '/images/backgrounds/29.jpg',
   ];
 
-  // Pick random image on mount
-  const [currentImageIndex] = useState(() => {
+  // Pick random image on each page load
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    // Select new random image on each page load/mount
     const randomIndex = Math.floor(Math.random() * backgroundImages.length);
     console.log('🎬 Background image selected:', randomIndex, backgroundImages[randomIndex]);
-    return randomIndex;
-  });
+    setCurrentImageIndex(randomIndex);
+  }, [router.asPath]); // Re-run when route changes
 
   // Category to search query mapping
   const categoryQueries = {
