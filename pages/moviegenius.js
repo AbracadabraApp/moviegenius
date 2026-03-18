@@ -21,25 +21,20 @@ export default function MovieGeniusPage() {
   const [loading, setLoading] = useState(false);
   const [currentQuery, setCurrentQuery] = useState('');
   const [trailerModal, setTrailerModal] = useState({ isOpen: false, videoId: null, title: null });
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  // Rotating background images - iconic movie stills
+  // Background images from /public/images/backgrounds/
+  // Add any jpg/png files to that folder and they'll automatically rotate
   const backgroundImages = [
-    'https://image.tmdb.org/t/p/original/rSPw7tgCH9c6NqICZef0kZjFOQ5.jpg', // The Shawshank Redemption
-    'https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg', // The Godfather
-    'https://image.tmdb.org/t/p/original/qqHQsStV6exghCM7zbObuYBiYxw.jpg', // Pulp Fiction
-    'https://image.tmdb.org/t/p/original/7lyq8hK0MhPHpUXdnqbFvZYSfkk.jpg', // The Dark Knight
-    'https://image.tmdb.org/t/p/original/jfQC7JXfYSl0tnGSp3NaXAy0Nev.jpg', // Inception
+    '/images/backgrounds/1.jpg',
+    '/images/backgrounds/2.jpg',
+    '/images/backgrounds/3.jpg',
+    '/images/backgrounds/4.jpg',
+    '/images/backgrounds/5.jpg',
   ];
 
-  // Rotate images every 5 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % backgroundImages.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, []);
+  // Pick random image on mount
+  const [currentImageIndex] = useState(() =>
+    Math.floor(Math.random() * backgroundImages.length)
+  );
 
   // Category to search query mapping
   const categoryQueries = {
@@ -245,19 +240,15 @@ export default function MovieGeniusPage() {
   return (
     <PhoneFrame>
       <div style={styles.container}>
-        {/* Rotating Background Images */}
+        {/* Random Background Image */}
         {showBackground && (
           <div style={styles.backgroundContainer}>
-            {backgroundImages.map((image, index) => (
-              <div
-                key={index}
-                style={{
-                  ...styles.backgroundImage,
-                  opacity: index === currentImageIndex ? 1 : 0,
-                  backgroundImage: `url(${image})`,
-                }}
-              />
-            ))}
+            <div
+              style={{
+                ...styles.backgroundImage,
+                backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
+              }}
+            />
             <div style={styles.backgroundOverlay} />
           </div>
         )}
@@ -377,7 +368,6 @@ const styles = {
     bottom: 0,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    transition: 'opacity 1s ease-in-out',
   },
   backgroundOverlay: {
     position: 'absolute',
