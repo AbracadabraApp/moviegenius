@@ -260,28 +260,20 @@ export default function MovieGeniusPage() {
     return currentQuery ? `Search: "${currentQuery}"` : 'Search Results';
   };
 
-  // Show background when no results
-  const showBackground = !currentQuery && searchResults.length === 0 && !loading;
+  // Always show background, but add dark overlay when there are results
+  const showDarkOverlay = (currentQuery && currentQuery.length > 0) || searchResults.length > 0 || loading;
 
   return (
-    <PhoneFrame>
+    <PhoneFrame
+      backgroundImage={backgroundImages[currentImageIndex]}
+      showDarkOverlay={showDarkOverlay}
+    >
       <div style={styles.container}>
-        {/* Random Background Image */}
-        {showBackground && (
-          <div style={styles.backgroundContainer}>
-            <div
-              style={{
-                ...styles.backgroundImage,
-                backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
-              }}
-            />
-          </div>
-        )}
 
         {/* Search header */}
         <div style={{
           ...styles.header,
-          ...(showBackground ? styles.headerWithBackground : {})
+          ...styles.headerWithBackground
         }}>
           <SimpleSearch
             onResults={handleSearchResults}
@@ -376,36 +368,19 @@ const styles = {
     height: '100%',
     fontFamily:
       '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-    backgroundColor: '#f9fafb',
+    backgroundColor: 'transparent',
     position: 'relative',
   },
-  backgroundContainer: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    zIndex: 0,
-  },
-  backgroundImage: {
-    position: 'absolute',
-    top: '-20%',
-    left: '-20%',
-    width: '150%',
-    height: '150%',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  },
   header: {
-    backgroundColor: '#ffffff',
+    backgroundColor: 'rgba(255, 255, 255, 0.9)',
     padding: '16px',
     position: 'relative',
     zIndex: 10,
-  },
-  headerWithBackground: {
-    backgroundColor: 'transparent',
     backdropFilter: 'blur(10px)',
     WebkitBackdropFilter: 'blur(10px)',
+  },
+  headerWithBackground: {
+    // Legacy style, kept for compatibility
   },
   content: {
     flex: 1,

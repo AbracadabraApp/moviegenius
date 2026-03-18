@@ -5,7 +5,7 @@ import NavBar from './NavBar';
 import { routeValidation, navItems, navItemsWithGenius } from '../lib/routes';
 import { ChevronLeft, ChevronRight, Copy, Share, RotateCcw } from 'lucide-react';
 
-export default function PhoneFrame({ children }) {
+export default function PhoneFrame({ children, backgroundImage, showDarkOverlay = false }) {
   const [isClient, setIsClient] = useState(false);
   const [showFrame, setShowFrame] = useState(true); // Always start with desktop frame
   const [platform, setPlatform] = useState('');
@@ -32,6 +32,18 @@ export default function PhoneFrame({ children }) {
       <div style={styles.pageContainer}>
         <div style={styles.phoneFrame}>
           <div style={styles.screen}>
+            {/* Background Image */}
+            {backgroundImage && (
+              <>
+                <div
+                  style={{
+                    ...styles.backgroundImage,
+                    backgroundImage: `url(${backgroundImage})`,
+                  }}
+                />
+                {showDarkOverlay && <div style={styles.backgroundOverlay} />}
+              </>
+            )}
             <div style={styles.content}>{children}</div>
             <NavBar navItems={navItems} routeValidation={routeValidation} isMobile={false} />
             {/* iPhone Safari Bottom Bar */}
@@ -77,6 +89,18 @@ export default function PhoneFrame({ children }) {
           ...styles.screen,
           ...(showFrame ? {} : styles.mobileScreenOverrides)
         }}>
+          {/* Background Image */}
+          {backgroundImage && (
+            <>
+              <div
+                style={{
+                  ...styles.backgroundImage,
+                  backgroundImage: `url(${backgroundImage})`,
+                }}
+              />
+              {showDarkOverlay && <div style={styles.backgroundOverlay} />}
+            </>
+          )}
           <div style={{
             ...styles.content,
             ...(showFrame ? {} : styles.mobileContentOverrides)
@@ -154,6 +178,8 @@ const styles = {
     paddingBottom: '120px', // Space for sticky navbar and content
     width: '100%',
     boxSizing: 'border-box',
+    position: 'relative',
+    zIndex: 10,
   },
   
   // iPhone Safari Bottom Bar - Light grey placeholder frame like in screenshot
@@ -249,5 +275,26 @@ const styles = {
   },
   mobileContentOverrides: {
     width: '100%',
+  },
+
+  // Background image styles
+  backgroundImage: {
+    position: 'absolute',
+    top: '-50px',
+    left: '-50px',
+    width: 'calc(100% + 100px)',
+    height: 'calc(100% + 100px)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    zIndex: 0,
+  },
+  backgroundOverlay: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    background: 'linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.8) 100%)',
+    zIndex: 1,
   },
 };
