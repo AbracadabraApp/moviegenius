@@ -67,8 +67,8 @@ export default function SimpleSearch({
         const data = await response.json();
         const movies = data.movies || [];
 
-        // Show top 8 results in dropdown
-        setSuggestions(movies.slice(0, 8));
+        // Show all results in scrollable dropdown (API returns up to 20)
+        setSuggestions(movies);
         setShowDropdown(movies.length > 0);
         setSelectedIndex(-1);
       }
