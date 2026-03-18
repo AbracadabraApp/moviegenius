@@ -255,7 +255,6 @@ export default function MovieGeniusPage() {
                 backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
               }}
             />
-            <div style={styles.backgroundOverlay} />
           </div>
         )}
 
@@ -370,20 +369,12 @@ const styles = {
   },
   backgroundImage: {
     position: 'absolute',
-    top: '-10%',
-    left: '-10%',
-    right: '-10%',
-    bottom: '-10%',
+    top: '-20%',
+    left: '-20%',
+    width: '150%',
+    height: '150%',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-  },
-  backgroundOverlay: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    background: 'linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.8) 100%)',
   },
   header: {
     backgroundColor: '#ffffff',
