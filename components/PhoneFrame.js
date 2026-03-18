@@ -109,17 +109,17 @@ export default function PhoneFrame({ children, backgroundImage, showDarkOverlay 
             <div style={styles.safariBottomBar}>
               <div style={styles.safariControls}>
                 <button style={styles.safariButton} disabled>
-                  <ChevronLeft size={20} color="rgba(0, 0, 0, 0.3)" strokeWidth={2.5} />
+                  <ChevronLeft size={20} color="rgba(255, 255, 255, 0.3)" strokeWidth={2.5} />
                 </button>
                 <button style={styles.safariButton} disabled>
-                  <ChevronRight size={20} color="rgba(0, 0, 0, 0.3)" strokeWidth={2.5} />
+                  <ChevronRight size={20} color="rgba(255, 255, 255, 0.3)" strokeWidth={2.5} />
                 </button>
                 <button style={styles.safariButton}>
-                  <Share size={18} color="rgba(0, 0, 0, 0.7)" strokeWidth={2} />
+                  <Share size={18} color="rgba(255, 255, 255, 0.9)" strokeWidth={2} />
                 </button>
                 <button style={styles.safariButton}>
-                  <div style={styles.tabsIcon}>
-                    <div style={styles.tabsIconInner}>1</div>
+                  <div style={{...styles.tabsIcon, borderColor: 'rgba(255, 255, 255, 0.6)'}}>
+                    <div style={{...styles.tabsIconInner, color: 'rgba(255, 255, 255, 0.9)'}}>1</div>
                   </div>
                 </button>
               </div>
@@ -160,7 +160,7 @@ const styles = {
   screen: {
     width: '100%',
     height: '100%',
-    backgroundColor: '#ffffff',
+    backgroundColor: '#222', // Match MovieGenius nav bar
     borderRadius: '16px',
     overflow: 'hidden', // Clips any content that extends beyond bounds
     display: 'flex',
@@ -187,7 +187,7 @@ const styles = {
     left: 0,
     right: 0,
     height: '49px',
-    backgroundColor: 'rgba(248, 248, 248, 0.94)',
+    backgroundColor: 'rgba(34, 34, 34, 0.94)', // Match nav bar #222
     borderBottomLeftRadius: '16px',
     borderBottomRightRadius: '16px',
     display: 'flex',
@@ -196,7 +196,7 @@ const styles = {
     paddingTop: '6px',
     paddingBottom: '8px',
     backdropFilter: 'blur(20px)',
-    borderTop: '0.5px solid rgba(0, 0, 0, 0.08)',
+    borderTop: '0.5px solid rgba(255, 255, 255, 0.1)', // Light border on dark
     zIndex: 1001, // Above navbar
   },
   
@@ -243,7 +243,7 @@ const styles = {
   homeIndicator: {
     width: '134px',
     height: '5px',
-    backgroundColor: 'rgba(0, 0, 0, 0.3)',
+    backgroundColor: 'rgba(255, 255, 255, 0.3)',
     borderRadius: '2.5px',
     alignSelf: 'center',
   },
@@ -275,15 +275,15 @@ const styles = {
     width: '100%',
   },
 
-  // Background image styles - using img tag approach from hero images
+  // Background image styles - full width with letterboxing on height
   backgroundImage: {
     position: 'absolute',
     top: 0,
     left: 0,
     width: '100%',
-    height: '100%',
-    objectFit: 'cover',
-    objectPosition: 'center',
+    height: 'auto', // Let height be determined by aspect ratio
+    objectFit: 'contain', // Show full image width, letterbox height
+    objectPosition: '50% 50%', // Center the image
     zIndex: 0,
   },
   backgroundOverlay: {

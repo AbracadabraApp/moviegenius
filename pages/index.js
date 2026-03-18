@@ -265,6 +265,7 @@ export default function MovieGeniusPage() {
 
   // Always show background, but add dark overlay when there are results
   const showDarkOverlay = (currentQuery && currentQuery.length > 0) || searchResults.length > 0 || loading;
+  const showBackground = !showDarkOverlay; // Show clean background when no search/results
 
   return (
     <PhoneFrame
@@ -289,7 +290,7 @@ export default function MovieGeniusPage() {
         {/* Content */}
         <div style={{
           ...styles.content,
-          backgroundColor: showBackground ? 'transparent' : '#f9fafb',
+          backgroundColor: showBackground ? 'transparent' : '#222',
         }}>
           {/* Results header - only show when there's a query/results */}
           {!showBackground && (
@@ -375,7 +376,7 @@ const styles = {
     position: 'relative',
   },
   header: {
-    backgroundColor: 'rgba(255, 255, 255, 0.9)',
+    backgroundColor: 'rgba(34, 34, 34, 0.9)', // Match nav bar #222
     padding: '16px',
     position: 'relative',
     zIndex: 10,
@@ -397,19 +398,19 @@ const styles = {
   resultsHeader: {
     marginBottom: '24px',
     padding: '20px 16px 0 16px',
-    borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
+    borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
     paddingBottom: '16px',
   },
   resultsTitle: {
     fontSize: '28px',
     fontWeight: '700',
-    color: '#111827',
+    color: '#ffffff',
     margin: '0 0 12px 0',
     letterSpacing: '-0.02em',
   },
   resultsCount: {
     fontSize: '18px',
-    color: '#6b7280',
+    color: '#999999',
     fontWeight: '500',
   },
 
@@ -417,7 +418,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     gap: '1px',
-    backgroundColor: '#f3f4f6',
+    backgroundColor: '#1a1a1a',
   },
   movieGridItem: {
     cursor: 'pointer',
@@ -431,7 +432,7 @@ const styles = {
   },
   loadingText: {
     fontSize: '16px',
-    color: '#6b7280',
+    color: '#999999',
   },
 
   noResults: {
@@ -445,12 +446,12 @@ const styles = {
   noResultsTitle: {
     fontSize: '20px',
     fontWeight: '600',
-    color: '#374151',
+    color: '#ffffff',
     marginBottom: '8px',
   },
   noResultsText: {
     fontSize: '16px',
-    color: '#6b7280',
+    color: '#999999',
     lineHeight: '1.5',
   },
 
@@ -465,12 +466,12 @@ const styles = {
   emptyTitle: {
     fontSize: '24px',
     fontWeight: '600',
-    color: '#374151',
+    color: '#ffffff',
     marginBottom: '12px',
   },
   emptyText: {
     fontSize: '16px',
-    color: '#6b7280',
+    color: '#999999',
     lineHeight: '1.5',
   },
 };
