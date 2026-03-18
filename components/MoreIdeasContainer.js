@@ -7,7 +7,7 @@
 import { useState, useEffect } from 'react';
 import MediaCard from './MediaCard';
 
-export default function MoreIdeasContainer({ tmdbId, title = "More Ideas", style, analysisReady = true }) {
+export default function MoreIdeasContainer({ tmdbId, title = "More Ideas", style }) {
   const [moreIdeas, setMoreIdeas] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -44,8 +44,8 @@ export default function MoreIdeasContainer({ tmdbId, title = "More Ideas", style
     fetchMoreIdeas();
   }, [tmdbId]);
 
-  // Don't render until analysis is ready AND data is loaded
-  if (!analysisReady || loading) {
+  // Don't render while data is loading
+  if (loading) {
     return null;
   }
 

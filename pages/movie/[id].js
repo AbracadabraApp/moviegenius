@@ -425,7 +425,6 @@ export default function MovieDetailPage() {
             }}>
               <MoreIdeasContainer
                 tmdbId={parseInt(finalMovieId)}
-                analysisReady={analysisReady}
               />
             </div>
           </ErrorBoundary>
