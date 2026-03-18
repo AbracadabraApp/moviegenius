@@ -440,11 +440,11 @@ export default function MovieAnalysisWithEntities({
         if (firstLine && firstLine.toUpperCase() === firstLine && firstLine.length < 100) {
           content.push(
             <div key={`text-${sectionIndex}`}>
-              {/* Subhead styling */}
-              <div style={{...styles.subheadSection, borderLeft: '3px solid #d4af37', paddingLeft: '16px'}}>
-                <h3 style={styles.subheadText}>
-                  {firstLine.toUpperCase()}
-                </h3>
+              {/* Subhead styling - matches FEATURED FILMS / MORE IDEAS style */}
+              <div style={styles.movieSectionHeader}>
+                <div style={styles.sectionDivider} />
+                <span style={styles.sectionLabel}>{firstLine.toUpperCase()}</span>
+                <div style={styles.sectionDivider} />
               </div>
               {/* Regular text content */}
               {restOfContent && (
@@ -487,10 +487,10 @@ export default function MovieAnalysisWithEntities({
       } else if (section.type === 'subhead') {
         // Legacy standalone subhead handling (should not occur with new parsing)
         content.push(
-          <div key={`subhead-${sectionIndex}`} style={{...styles.subheadSection, borderLeft: '3px solid #d4af37', paddingLeft: '16px'}}>
-            <h3 style={styles.subheadText}>
-              {section.content.toUpperCase()}
-            </h3>
+          <div key={`subhead-${sectionIndex}`} style={styles.movieSectionHeader}>
+            <div style={styles.sectionDivider} />
+            <span style={styles.sectionLabel}>{section.content.toUpperCase()}</span>
+            <div style={styles.sectionDivider} />
           </div>
         );
       } else if (section.type === 'movies') {
@@ -675,16 +675,7 @@ const styles = {
     border: '2px solid #9ca3af',
     boxShadow: '0 8px 24px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(217, 119, 6, 0.2)',
   },
-  subheadSection: {
-    marginTop: '32px',
-    marginBottom: '16px',
-  },
-  subheadText: {
-    fontSize: '18px',
-    fontWeight: '600',
-    color: '#111827',
-    margin: 0,
-  },
+  // Removed subheadSection and subheadText - now using movieSectionHeader style for consistency
   movieReferencesSection: {
     marginTop: '32px',
     marginBottom: '24px',
