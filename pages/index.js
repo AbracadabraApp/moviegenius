@@ -130,6 +130,7 @@ export default function MovieGeniusPage() {
                   movies={collection.movies}
                   collectionId={collection.id}
                   showViewAll={true}
+                  totalMovies={collection.totalMovies}
                 />
               ))}
 

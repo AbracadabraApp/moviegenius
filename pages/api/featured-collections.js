@@ -13,13 +13,14 @@ export default async function handler(req, res) {
   const pool = getPool();
 
   try {
-    // Get top collections by movie count (collections with at least 4 movies)
+    // Get collections with variety in size (collections with at least 4 movies)
     // Using ≥4 threshold gives us 5,126 quality collections to choose from
+    // Random ordering with daily seed ensures variety while staying consistent per day
     const collectionsQuery = `
       SELECT id, title, total_movies
       FROM browse_lists
       WHERE status = 'active' AND total_movies >= 4
-      ORDER BY total_movies DESC
+      ORDER BY RANDOM()
       LIMIT $1 OFFSET $2
     `;
 

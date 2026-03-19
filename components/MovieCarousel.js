@@ -5,12 +5,14 @@
  */
 
 import { useRouter } from 'next/router';
+import { useTapDetection } from '../hooks/useTapDetection';
 
 export default function MovieCarousel({
   title,
   movies = [],
   collectionId = null,
-  showViewAll = true
+  showViewAll = true,
+  totalMovies = null
 }) {
   const router = useRouter();
 
@@ -31,11 +33,11 @@ export default function MovieCarousel({
   return (
     <section style={styles.section}>
       {/* Section Header */}
-      <div style={styles.header}>
+      <div style={styles.headerContainer}>
         <h2 style={styles.title}>{title}</h2>
-        {showViewAll && collectionId && (
+        {showViewAll && collectionId && totalMovies && (
           <button onClick={handleViewAll} style={styles.viewAllButton}>
-            View All →
+            view {totalMovies} more
           </button>
         )}
       </div>
@@ -43,12 +45,19 @@ export default function MovieCarousel({
       {/* Horizontal Scrolling Carousel */}
       <div style={styles.carouselWrapper}>
         <div style={styles.carousel}>
-          {movies.map((movie, index) => (
-            <div
-              key={`${movie.tmdb_id}-${index}`}
-              style={styles.movieCard}
-              onClick={() => handleMovieClick(movie.tmdb_id)}
-            >
+          {movies.map((movie, index) => {
+            // Use tap detection hook for each movie card
+            const tapHandlers = useTapDetection(() => handleMovieClick(movie.tmdb_id));
+
+            return (
+              <div
+                key={`${movie.tmdb_id}-${index}`}
+                style={styles.movieCard}
+                onTouchStart={tapHandlers.handleTouchStart}
+                onTouchMove={tapHandlers.handleTouchMove}
+                onTouchEnd={tapHandlers.handleTouchEnd}
+                onClick={() => handleMovieClick(movie.tmdb_id)}
+              >
               <img
                 src={movie.poster_url || '/images/placeholder-poster.jpg'}
                 alt={movie.title}
@@ -61,7 +70,8 @@ export default function MovieCarousel({
                 )}
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
@@ -73,10 +83,10 @@ const styles = {
     marginBottom: '32px',
   },
 
-  header: {
+  headerContainer: {
     display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
     padding: '0 16px 12px 16px',
   },
 
@@ -92,10 +102,13 @@ const styles = {
     background: 'none',
     border: 'none',
     color: '#d4af37',
-    fontSize: '14px',
+    fontSize: '12px',
     fontWeight: '500',
     cursor: 'pointer',
-    padding: 0,
+    padding: '4px 0 0 0',
+    alignSelf: 'flex-end',
+    width: '100%',
+    textAlign: 'right',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 
@@ -147,8 +160,12 @@ const styles = {
     color: '#ffffff',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    whiteSpace: 'nowrap',
+    display: '-webkit-box',
+    WebkitLineClamp: 2,
+    WebkitBoxOrient: 'vertical',
     marginBottom: '2px',
+    lineHeight: '1.3',
+    minHeight: '34px',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 
