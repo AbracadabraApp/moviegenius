@@ -1,16 +1,16 @@
 /**
- * MovieGenius Homepage - V2 Browse Discovery
+ * Netflix-Style Carousel Demo Page
  *
- * Netflix-style carousel homepage with featured collections
+ * Demonstrates the enhanced Netflix-style carousels with real MovieGenius data
  */
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
-import MovieCarousel from '../components/MovieCarousel';
+import NetflixCarousel from '../components/NetflixCarousel';
 
-export default function MovieGeniusPage() {
+export default function NetflixDemoPage() {
   const router = useRouter();
   const [collections, setCollections] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -61,7 +61,7 @@ export default function MovieGeniusPage() {
     const fetchCollections = async () => {
       try {
         setLoading(true);
-        const response = await fetch('/api/featured-collections?limit=5&moviesPerCollection=10');
+        const response = await fetch('/api/featured-collections?limit=8&moviesPerCollection=12');
 
         if (response.ok) {
           const data = await response.json();
@@ -77,6 +77,18 @@ export default function MovieGeniusPage() {
     fetchCollections();
   }, []);
 
+  // Category labels for variety
+  const categoryLabels = [
+    'Trending Now',
+    'Popular on MovieGenius',
+    'New Releases',
+    'Award Winners',
+    'Classic Cinema',
+    'Hidden Gems',
+    'Critics\' Choice',
+    'Fan Favorites'
+  ];
+
   return (
     <PhoneFrame
       backgroundImage={backgroundImages[currentImageIndex]}
@@ -85,6 +97,7 @@ export default function MovieGeniusPage() {
       <div style={styles.container}>
         {/* Sticky Search Header */}
         <div style={styles.header}>
+          <h1 style={styles.logo}>MovieGenius</h1>
           <SimpleSearch placeholder="Search movies..." />
         </div>
 
@@ -105,22 +118,23 @@ export default function MovieGeniusPage() {
 
           {!loading && collections.length > 0 && (
             <>
-              {/* Welcome Message */}
-              <div style={styles.welcomeSection}>
-                <h1 style={styles.welcomeTitle}>Discover Movies</h1>
-                <p style={styles.welcomeText}>
-                  Explore {collections.length} curated collections
+              {/* Hero Section */}
+              <div style={styles.heroSection}>
+                <h1 style={styles.heroTitle}>Discover Cinema</h1>
+                <p style={styles.heroText}>
+                  Curated collections of the best films ever made
                 </p>
               </div>
 
-              {/* Featured Collection Carousels */}
+              {/* Netflix-Style Carousels */}
               {collections.map((collection, index) => (
-                <MovieCarousel
+                <NetflixCarousel
                   key={collection.id}
                   title={collection.title}
                   movies={collection.movies}
                   collectionId={collection.id}
                   showViewAll={true}
+                  categoryLabel={categoryLabels[index % categoryLabels.length]}
                 />
               ))}
 
@@ -129,8 +143,16 @@ export default function MovieGeniusPage() {
                 <button
                   onClick={() => router.push('/browse')}
                   style={styles.browseAllButton}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = 'rgba(212, 175, 55, 0.25)';
+                    e.currentTarget.style.borderColor = '#d4af37';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = 'rgba(212, 175, 55, 0.15)';
+                    e.currentTarget.style.borderColor = '#d4af37';
+                  }}
                 >
-                  Browse All 5,126 Collections →
+                  Browse All Collections →
                 </button>
               </div>
             </>
@@ -156,11 +178,19 @@ const styles = {
     position: 'sticky',
     top: 0,
     zIndex: 100,
-    backgroundColor: 'rgba(34, 34, 34, 0.95)',
+    background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.8))',
     padding: '16px',
     backdropFilter: 'blur(10px)',
     WebkitBackdropFilter: 'blur(10px)',
     borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+  },
+
+  logo: {
+    fontSize: '24px',
+    fontWeight: '700',
+    color: '#d4af37',
+    margin: '0 0 12px 0',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 
   content: {
@@ -203,23 +233,24 @@ const styles = {
     opacity: 0.7,
   },
 
-  // Welcome section
-  welcomeSection: {
-    padding: '32px 16px 24px 16px',
+  // Hero section
+  heroSection: {
+    padding: '40px 16px 32px 16px',
   },
 
-  welcomeTitle: {
-    fontSize: '28px',
+  heroTitle: {
+    fontSize: '32px',
     fontWeight: '700',
     color: '#ffffff',
     margin: '0 0 8px 0',
-    textShadow: '0 2px 4px rgba(0, 0, 0, 0.5)',
+    textShadow: '0 2px 8px rgba(0, 0, 0, 0.7)',
   },
 
-  welcomeText: {
-    fontSize: '14px',
-    color: '#d4af37',
+  heroText: {
+    fontSize: '16px',
+    color: 'rgba(255, 255, 255, 0.8)',
     margin: 0,
+    lineHeight: '1.5',
   },
 
   // Browse all section
