@@ -14,7 +14,7 @@ const BUILD_DIR = './list-analysis-output';
 
 // Configurable threshold - can be changed via environment variable or command line
 // MIN_MOVIES=3 node scripts/transform-browse-data.js
-const MIN_MOVIES = parseInt(process.env.MIN_MOVIES || process.argv[2] || '4');
+const MIN_MOVIES = parseInt(process.env.MIN_MOVIES || process.argv[2] || '1');
 console.log(`📊 Using threshold: ≥${MIN_MOVIES} movies per collection\n`);
 
 async function transformBrowseData() {
