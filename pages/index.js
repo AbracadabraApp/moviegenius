@@ -1,20 +1,21 @@
 /**
- * MovieGenius Homepage - V1 Word Wheel Only
+ * MovieGenius Homepage - V2 Browse Discovery
  *
- * Simple landing page with background images and word wheel search
- * All search results handled via SimpleSearch dropdown
+ * Netflix-style carousel homepage with featured collections
  */
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
+import MovieCarousel from '../components/MovieCarousel';
 
 export default function MovieGeniusPage() {
   const router = useRouter();
+  const [collections, setCollections] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   // Background images from /public/images/backgrounds/
-  // Add any jpg/png files to that folder and they'll automatically rotate
   const backgroundImages = [
     '/images/backgrounds/1.jpg',
     '/images/backgrounds/2.jpg',
@@ -51,27 +52,89 @@ export default function MovieGeniusPage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
-    // Select new random image on each page load/mount
     const randomIndex = Math.floor(Math.random() * backgroundImages.length);
-    console.log('🎬 Background image selected:', randomIndex, backgroundImages[randomIndex]);
     setCurrentImageIndex(randomIndex);
-  }, [router.asPath]); // Re-run when route changes
+  }, [router.asPath]);
+
+  // Fetch featured collections on mount
+  useEffect(() => {
+    const fetchCollections = async () => {
+      try {
+        setLoading(true);
+        const response = await fetch('/api/featured-collections?limit=5&moviesPerCollection=10');
+
+        if (response.ok) {
+          const data = await response.json();
+          setCollections(data.collections || []);
+        }
+      } catch (error) {
+        console.error('Failed to fetch featured collections:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchCollections();
+  }, []);
 
   return (
     <PhoneFrame
       backgroundImage={backgroundImages[currentImageIndex]}
-      showDarkOverlay={false}
+      showDarkOverlay={true}
     >
       <div style={styles.container}>
-        {/* Search header */}
+        {/* Sticky Search Header */}
         <div style={styles.header}>
           <SimpleSearch placeholder="Search movies..." />
         </div>
 
-        {/* Content area - background shows through */}
+        {/* Browse Content */}
         <div style={styles.content}>
-          {/* V1: Word wheel only - no search results page */}
-          {/* SimpleSearch component handles all search via dropdown */}
+          {loading && (
+            <div style={styles.loadingContainer}>
+              <div style={styles.loadingText}>Loading collections...</div>
+            </div>
+          )}
+
+          {!loading && collections.length === 0 && (
+            <div style={styles.emptyContainer}>
+              <div style={styles.emptyIcon}>🎬</div>
+              <div style={styles.emptyText}>No collections available</div>
+            </div>
+          )}
+
+          {!loading && collections.length > 0 && (
+            <>
+              {/* Welcome Message */}
+              <div style={styles.welcomeSection}>
+                <h1 style={styles.welcomeTitle}>Discover Movies</h1>
+                <p style={styles.welcomeText}>
+                  Explore {collections.length} curated collections
+                </p>
+              </div>
+
+              {/* Featured Collection Carousels */}
+              {collections.map((collection, index) => (
+                <MovieCarousel
+                  key={collection.id}
+                  title={collection.title}
+                  movies={collection.movies}
+                  collectionId={collection.id}
+                  showViewAll={true}
+                />
+              ))}
+
+              {/* Browse All Link */}
+              <div style={styles.browseAllSection}>
+                <button
+                  onClick={() => router.push('/browse')}
+                  style={styles.browseAllButton}
+                >
+                  Browse All 3,365 Collections →
+                </button>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </PhoneFrame>
@@ -88,20 +151,93 @@ const styles = {
     backgroundColor: 'transparent',
     position: 'relative',
   },
+
   header: {
-    backgroundColor: 'rgba(34, 34, 34, 0.9)', // Match nav bar #222
+    position: 'sticky',
+    top: 0,
+    zIndex: 100,
+    backgroundColor: 'rgba(34, 34, 34, 0.95)',
     padding: '16px',
-    position: 'relative',
-    zIndex: 10,
     backdropFilter: 'blur(10px)',
     WebkitBackdropFilter: 'blur(10px)',
+    borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
   },
+
   content: {
     flex: 1,
-    overflowY: 'scroll',
+    overflowY: 'auto',
     scrollbarWidth: 'none',
     msOverflowStyle: 'none',
     position: 'relative',
-    zIndex: 10,
+    paddingBottom: '40px',
+  },
+
+  // Loading state
+  loadingContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '60px 20px',
+  },
+
+  loadingText: {
+    fontSize: '16px',
+    color: '#ffffff',
+    opacity: 0.7,
+  },
+
+  // Empty state
+  emptyContainer: {
+    textAlign: 'center',
+    padding: '60px 20px',
+  },
+
+  emptyIcon: {
+    fontSize: '64px',
+    marginBottom: '16px',
+  },
+
+  emptyText: {
+    fontSize: '16px',
+    color: '#ffffff',
+    opacity: 0.7,
+  },
+
+  // Welcome section
+  welcomeSection: {
+    padding: '32px 16px 24px 16px',
+  },
+
+  welcomeTitle: {
+    fontSize: '28px',
+    fontWeight: '700',
+    color: '#ffffff',
+    margin: '0 0 8px 0',
+    textShadow: '0 2px 4px rgba(0, 0, 0, 0.5)',
+  },
+
+  welcomeText: {
+    fontSize: '14px',
+    color: '#d4af37',
+    margin: 0,
+  },
+
+  // Browse all section
+  browseAllSection: {
+    padding: '32px 16px',
+    textAlign: 'center',
+  },
+
+  browseAllButton: {
+    backgroundColor: 'rgba(212, 175, 55, 0.15)',
+    border: '1px solid #d4af37',
+    borderRadius: '8px',
+    padding: '16px 24px',
+    fontSize: '16px',
+    fontWeight: '600',
+    color: '#d4af37',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 };
