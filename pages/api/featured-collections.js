@@ -8,22 +8,22 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { limit = 5, moviesPerCollection = 10 } = req.query;
+  const { limit = 5, offset = 0, moviesPerCollection = 10 } = req.query;
 
   const pool = getPool();
 
   try {
     // Get top collections by movie count (collections with at least 4 movies)
-    // Using ≥4 threshold gives us 2,045 quality collections to choose from
+    // Using ≥4 threshold gives us 5,126 quality collections to choose from
     const collectionsQuery = `
       SELECT id, title, total_movies
       FROM browse_lists
       WHERE status = 'active' AND total_movies >= 4
       ORDER BY total_movies DESC
-      LIMIT $1
+      LIMIT $1 OFFSET $2
     `;
 
-    const collectionsResult = await pool.query(collectionsQuery, [parseInt(limit)]);
+    const collectionsResult = await pool.query(collectionsQuery, [parseInt(limit), parseInt(offset)]);
 
     if (collectionsResult.rows.length === 0) {
       return res.status(200).json({

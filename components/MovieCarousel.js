@@ -81,8 +81,8 @@ const styles = {
   },
 
   title: {
-    fontSize: '18px',
-    fontWeight: '600',
+    fontSize: '15px',
+    fontWeight: '500',
     color: '#ffffff',
     margin: 0,
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',

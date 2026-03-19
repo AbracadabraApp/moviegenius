@@ -14,73 +14,83 @@ export default function MovieGeniusPage() {
   const router = useRouter();
   const [collections, setCollections] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [loadingMore, setLoadingMore] = useState(false);
+  const [hasMore, setHasMore] = useState(true);
+  const [page, setPage] = useState(0);
+  const COLLECTIONS_PER_PAGE = 10;
+  const MAX_COLLECTIONS = 100;
 
-  // Background images from /public/images/backgrounds/
-  const backgroundImages = [
-    '/images/backgrounds/1.jpg',
-    '/images/backgrounds/2.jpg',
-    '/images/backgrounds/3.jpg',
-    '/images/backgrounds/4.jpg',
-    '/images/backgrounds/5.jpg',
-    '/images/backgrounds/6.jpg',
-    '/images/backgrounds/7.jpg',
-    '/images/backgrounds/8.jpg',
-    '/images/backgrounds/9.jpg',
-    '/images/backgrounds/10.jpg',
-    '/images/backgrounds/11.jpg',
-    '/images/backgrounds/12.jpg',
-    '/images/backgrounds/13.jpg',
-    '/images/backgrounds/14.jpg',
-    '/images/backgrounds/15.jpg',
-    '/images/backgrounds/16.jpg',
-    '/images/backgrounds/17.jpg',
-    '/images/backgrounds/18.jpg',
-    '/images/backgrounds/19.jpg',
-    '/images/backgrounds/20.jpg',
-    '/images/backgrounds/21.jpg',
-    '/images/backgrounds/22.jpg',
-    '/images/backgrounds/23.jpg',
-    '/images/backgrounds/24.jpg',
-    '/images/backgrounds/25.jpg',
-    '/images/backgrounds/26.jpg',
-    '/images/backgrounds/27.jpg',
-    '/images/backgrounds/28.jpg',
-    '/images/backgrounds/29.jpg',
-  ];
-
-  // Pick random image on each page load
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const randomIndex = Math.floor(Math.random() * backgroundImages.length);
-    setCurrentImageIndex(randomIndex);
-  }, [router.asPath]);
-
-  // Fetch featured collections on mount
+  // Fetch collections on mount and when page changes
   useEffect(() => {
     const fetchCollections = async () => {
       try {
-        setLoading(true);
-        const response = await fetch('/api/featured-collections?limit=5&moviesPerCollection=10');
+        if (page === 0) {
+          setLoading(true);
+        } else {
+          setLoadingMore(true);
+        }
+
+        const offset = page * COLLECTIONS_PER_PAGE;
+        const response = await fetch(
+          `/api/featured-collections?limit=${COLLECTIONS_PER_PAGE}&offset=${offset}&moviesPerCollection=10`
+        );
 
         if (response.ok) {
           const data = await response.json();
-          setCollections(data.collections || []);
+          const newCollections = data.collections || [];
+
+          if (page === 0) {
+            setCollections(newCollections);
+          } else {
+            setCollections(prev => [...prev, ...newCollections]);
+          }
+
+          // Check if we should stop loading more
+          if (
+            newCollections.length < COLLECTIONS_PER_PAGE ||
+            collections.length + newCollections.length >= MAX_COLLECTIONS
+          ) {
+            setHasMore(false);
+          }
         }
       } catch (error) {
         console.error('Failed to fetch featured collections:', error);
       } finally {
         setLoading(false);
+        setLoadingMore(false);
       }
     };
 
     fetchCollections();
-  }, []);
+  }, [page]);
+
+  // Infinite scroll handler
+  useEffect(() => {
+    const handleScroll = (e) => {
+      const { scrollTop, scrollHeight, clientHeight } = e.target;
+
+      // Load more when user scrolls to bottom 500px
+      if (
+        scrollHeight - scrollTop - clientHeight < 500 &&
+        !loadingMore &&
+        !loading &&
+        hasMore
+      ) {
+        setPage(prev => prev + 1);
+      }
+    };
+
+    const contentElement = document.getElementById('browse-content');
+    if (contentElement) {
+      contentElement.addEventListener('scroll', handleScroll);
+      return () => contentElement.removeEventListener('scroll', handleScroll);
+    }
+  }, [loadingMore, loading, hasMore]);
 
   return (
     <PhoneFrame
-      backgroundImage={backgroundImages[currentImageIndex]}
-      showDarkOverlay={true}
+      backgroundImage={null}
+      showDarkOverlay={false}
     >
       <div style={styles.container}>
         {/* Sticky Search Header */}
@@ -89,7 +99,7 @@ export default function MovieGeniusPage() {
         </div>
 
         {/* Browse Content */}
-        <div style={styles.content}>
+        <div id="browse-content" style={styles.content}>
           {loading && (
             <div style={styles.loadingContainer}>
               <div style={styles.loadingText}>Loading collections...</div>
@@ -107,9 +117,8 @@ export default function MovieGeniusPage() {
             <>
               {/* Welcome Message */}
               <div style={styles.welcomeSection}>
-                <h1 style={styles.welcomeTitle}>Discover Movies</h1>
                 <p style={styles.welcomeText}>
-                  Explore {collections.length} curated collections
+                  Explore more than 5,000 curated collections
                 </p>
               </div>
 
@@ -124,15 +133,24 @@ export default function MovieGeniusPage() {
                 />
               ))}
 
-              {/* Browse All Link */}
-              <div style={styles.browseAllSection}>
-                <button
-                  onClick={() => router.push('/browse')}
-                  style={styles.browseAllButton}
-                >
-                  Browse All 5,126 Collections →
-                </button>
-              </div>
+              {/* Loading More Indicator */}
+              {loadingMore && (
+                <div style={styles.loadingContainer}>
+                  <div style={styles.loadingText}>Loading more collections...</div>
+                </div>
+              )}
+
+              {/* Browse All Link - Only show when we've reached the end */}
+              {!hasMore && (
+                <div style={styles.browseAllSection}>
+                  <button
+                    onClick={() => router.push('/browse')}
+                    style={styles.browseAllButton}
+                  >
+                    Browse All 5,126 Collections →
+                  </button>
+                </div>
+              )}
             </>
           )}
         </div>
@@ -148,7 +166,7 @@ const styles = {
     height: '100%',
     fontFamily:
       '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-    backgroundColor: 'transparent',
+    background: 'linear-gradient(180deg, #2a2a2a 0%, #1a1a1a 50%, #0a0a0a 100%)',
     position: 'relative',
   },
 
@@ -213,13 +231,15 @@ const styles = {
     fontWeight: '700',
     color: '#ffffff',
     margin: '0 0 8px 0',
-    textShadow: '0 2px 4px rgba(0, 0, 0, 0.5)',
+    textShadow: '0 2px 8px rgba(0, 0, 0, 0.8)',
   },
 
   welcomeText: {
-    fontSize: '14px',
-    color: '#d4af37',
+    fontSize: '18px',
+    color: '#f5d76e',
     margin: 0,
+    fontWeight: '600',
+    textShadow: '0 1px 3px rgba(0, 0, 0, 0.6)',
   },
 
   // Browse all section
