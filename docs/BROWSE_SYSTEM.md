@@ -11,10 +11,17 @@ The Browse System is a curated collection-based movie discovery feature with **3
 ## Current State (V1)
 
 ### Database Statistics
-- **Total Collections**: 3,365 active browse collections
-- **Movie Assignments**: 101,718 total
+- **Total Collections**: 3,365 browse collections in database
+- **Collections by Quality**:
+  - ≥1 movie: 3,365 collections (100%)
+  - ≥2 movies: 2,957 collections (88%)
+  - ≥3 movies: 2,428 collections (72%)
+  - ≥4 movies: 2,045 collections (61%) ← **Current default threshold**
+  - ≥5 movies: 1,631 collections (48%)
+  - ≥10 movies: 798 collections (24%)
+  - ≥20 movies: 281 collections (8%)
+- **Movie Assignments**: ~100,000+ total
 - **Coverage**: 35 genres processed
-- **Quality Threshold**: ≥4 movies per collection
 - **Database Tables**: `browse_lists`, `list_movies`
 
 ### Largest Collections (by movie count)

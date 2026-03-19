@@ -13,11 +13,12 @@ export default async function handler(req, res) {
   const pool = getPool();
 
   try {
-    // Get top collections by movie count (most substantial collections)
+    // Get top collections by movie count (collections with at least 4 movies)
+    // Using ≥4 threshold gives us 2,045 quality collections to choose from
     const collectionsQuery = `
       SELECT id, title, total_movies
       FROM browse_lists
-      WHERE status = 'active' AND total_movies >= 20
+      WHERE status = 'active' AND total_movies >= 4
       ORDER BY total_movies DESC
       LIMIT $1
     `;
