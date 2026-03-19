@@ -199,9 +199,6 @@ const styles = {
   },
 
   header: {
-    position: 'sticky',
-    top: 0,
-    zIndex: 100,
     background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.8))',
     padding: '16px',
     backdropFilter: 'blur(10px)',
@@ -244,9 +241,9 @@ const styles = {
 
   searchSection: {
     position: 'sticky',
-    top: '72px',
+    top: 0,
     zIndex: 99,
-    background: 'rgba(0, 0, 0, 0.9)',
+    background: 'rgba(0, 0, 0, 0.95)',
     padding: '12px 16px',
     backdropFilter: 'blur(10px)',
     WebkitBackdropFilter: 'blur(10px)',
