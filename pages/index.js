@@ -118,7 +118,7 @@ export default function MovieGeniusPage() {
               {/* Welcome Message */}
               <div style={styles.welcomeSection}>
                 <p style={styles.welcomeText}>
-                  Explore more than<br />5,000 curated collections
+                  MovieGenius.AI - Discover great films in more than 5,000 curated collections
                 </p>
               </div>
 
