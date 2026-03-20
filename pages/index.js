@@ -123,16 +123,32 @@ export default function MovieGeniusPage() {
               </div>
 
               {/* Featured Collection Carousels */}
-              {collections.map((collection, index) => (
-                <MovieCarousel
-                  key={collection.id}
-                  title={collection.title}
-                  movies={collection.movies}
-                  collectionId={collection.id}
-                  showViewAll={true}
-                  totalMovies={collection.totalMovies}
-                />
-              ))}
+              {collections.map((collection, index) => {
+                // Assign rotating category labels for variety
+                const categoryLabels = [
+                  'Trending Now',
+                  'Popular',
+                  'Recommended',
+                  'Curated',
+                  'Staff Picks',
+                  'Hidden Gems',
+                  'Fan Favorites',
+                  'Must Watch'
+                ];
+                const categoryLabel = categoryLabels[index % categoryLabels.length];
+
+                return (
+                  <MovieCarousel
+                    key={collection.id}
+                    title={collection.title}
+                    movies={collection.movies}
+                    collectionId={collection.id}
+                    showViewAll={true}
+                    totalMovies={collection.totalMovies}
+                    categoryLabel={categoryLabel}
+                  />
+                );
+              })}
 
               {/* Loading More Indicator */}
               {loadingMore && (

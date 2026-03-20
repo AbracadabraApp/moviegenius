@@ -12,7 +12,8 @@ export default function MovieCarousel({
   movies = [],
   collectionId = null,
   showViewAll = true,
-  totalMovies = null
+  totalMovies = null,
+  categoryLabel = null
 }) {
   const router = useRouter();
 
@@ -32,6 +33,15 @@ export default function MovieCarousel({
 
   return (
     <section style={styles.section}>
+      {/* Category Label */}
+      {categoryLabel && (
+        <div style={styles.categoryContainer}>
+          <span style={styles.categoryLabel}>
+            {categoryLabel}
+          </span>
+        </div>
+      )}
+
       {/* Section Header */}
       <div style={styles.headerContainer}>
         <h2 style={styles.title}>{title}</h2>
@@ -79,6 +89,22 @@ export default function MovieCarousel({
 const styles = {
   section: {
     marginBottom: '32px',
+  },
+
+  categoryContainer: {
+    padding: '0 16px 4px 16px',
+  },
+
+  categoryLabel: {
+    display: 'inline-block',
+    padding: '4px 12px',
+    fontSize: '11px',
+    fontWeight: '600',
+    borderRadius: '4px',
+    backgroundColor: '#eab308',
+    color: '#000000',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px',
   },
 
   headerContainer: {
