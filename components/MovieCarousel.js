@@ -5,7 +5,6 @@
  */
 
 import { useRouter } from 'next/router';
-import { useTapDetection } from '../hooks/useTapDetection';
 
 export default function MovieCarousel({
   title,
@@ -50,27 +49,19 @@ export default function MovieCarousel({
       {/* Horizontal Scrolling Carousel */}
       <div style={styles.carouselWrapper}>
         <div style={styles.carousel}>
-          {movies.map((movie, index) => {
-            // Use tap detection hook for each movie card
-            const tapHandlers = useTapDetection(() => handleMovieClick(movie.tmdb_id));
-
-            return (
-              <div
-                key={`${movie.tmdb_id}-${index}`}
-                style={styles.movieCard}
-                onTouchStart={tapHandlers.handleTouchStart}
-                onTouchMove={tapHandlers.handleTouchMove}
-                onTouchEnd={tapHandlers.handleTouchEnd}
-                onClick={() => handleMovieClick(movie.tmdb_id)}
-              >
-                <img
-                  src={movie.poster_url || '/images/placeholder-poster.jpg'}
-                  alt={movie.title}
-                  style={styles.poster}
-                />
-              </div>
-            );
-          })}
+          {movies.map((movie, index) => (
+            <div
+              key={`${movie.tmdb_id}-${index}`}
+              style={styles.movieCard}
+              onClick={() => handleMovieClick(movie.tmdb_id)}
+            >
+              <img
+                src={movie.poster_url || '/images/placeholder-poster.jpg'}
+                alt={movie.title}
+                style={styles.poster}
+              />
+            </div>
+          ))}
         </div>
       </div>
 
