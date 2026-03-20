@@ -97,23 +97,11 @@ export default function BrowseCollectionPage() {
       showDarkOverlay={false}
     >
       <div style={styles.container}>
-        {/* Header */}
-        <div style={styles.header}>
-          <button onClick={handleBack} style={styles.backButton}>
+        {/* Search Bar - Sticky at top */}
+        <div style={styles.searchSection}>
+          <button onClick={handleBack} style={styles.backButtonInSearch}>
             <ChevronLeft size={24} color="#111827" />
           </button>
-          <div style={styles.headerContent}>
-            <h1 style={styles.title}>
-              {loading ? 'Loading...' : collection?.title || 'Collection'}
-            </h1>
-            <p style={styles.subtitle}>
-              {loading ? '' : `${movies.length} ${movies.length === 1 ? 'movie' : 'movies'}`}
-            </p>
-          </div>
-        </div>
-
-        {/* Search Bar */}
-        <div style={styles.searchSection}>
           <div style={styles.searchContainer}>
             <Search size={20} color="#9ca3af" style={styles.searchIcon} />
             <input
@@ -132,15 +120,24 @@ export default function BrowseCollectionPage() {
               </button>
             )}
           </div>
-          {searchQuery && (
-            <p style={styles.resultCount}>
-              {filteredMovies.length} {filteredMovies.length === 1 ? 'result' : 'results'}
-            </p>
-          )}
         </div>
 
-        {/* Movies Grid */}
+        {/* Movies Grid - Scrolls under search */}
         <div style={styles.content}>
+          {/* Collection Header */}
+          <div style={styles.collectionHeader}>
+            <h1 style={styles.title}>
+              {loading ? 'Loading...' : collection?.title || 'Collection'}
+            </h1>
+            <p style={styles.subtitle}>
+              {loading ? '' : `${movies.length} ${movies.length === 1 ? 'movie' : 'movies'}`}
+            </p>
+            {searchQuery && (
+              <p style={styles.resultCount}>
+                {filteredMovies.length} {filteredMovies.length === 1 ? 'result' : 'results'}
+              </p>
+            )}
+          </div>
           {loading && (
             <div style={styles.loadingContainer}>
               <div style={styles.loadingText}>Loading movies...</div>
@@ -199,47 +196,6 @@ const styles = {
     background: '#ffffff',
   },
 
-  header: {
-    background: '#ffffff',
-    padding: '16px',
-    backdropFilter: 'blur(10px)',
-    WebkitBackdropFilter: 'blur(10px)',
-    borderBottom: '1px solid #e5e7eb',
-    display: 'flex',
-    alignItems: 'center',
-    gap: '12px',
-  },
-
-  backButton: {
-    background: 'none',
-    border: 'none',
-    cursor: 'pointer',
-    padding: '4px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: '8px',
-    transition: 'background 0.2s ease',
-  },
-
-  headerContent: {
-    flex: 1,
-  },
-
-  title: {
-    fontSize: '20px',
-    fontWeight: '700',
-    color: '#111827',
-    margin: '0 0 4px 0',
-    lineHeight: '1.2',
-  },
-
-  subtitle: {
-    fontSize: '13px',
-    color: '#d97706',
-    margin: 0,
-  },
-
   searchSection: {
     position: 'sticky',
     top: 0,
@@ -249,12 +205,29 @@ const styles = {
     backdropFilter: 'blur(10px)',
     WebkitBackdropFilter: 'blur(10px)',
     borderBottom: '1px solid #e5e7eb',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+  },
+
+  backButtonInSearch: {
+    background: 'none',
+    border: 'none',
+    cursor: 'pointer',
+    padding: '4px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: '8px',
+    transition: 'background 0.2s ease',
+    flexShrink: 0,
   },
 
   searchContainer: {
     position: 'relative',
     display: 'flex',
     alignItems: 'center',
+    flex: 1,
   },
 
   searchIcon: {
@@ -293,7 +266,28 @@ const styles = {
   resultCount: {
     fontSize: '12px',
     color: '#6b7280',
-    margin: '8px 0 0 0',
+    margin: '4px 0 0 0',
+  },
+
+  collectionHeader: {
+    padding: '20px 16px 16px 16px',
+    borderBottom: '1px solid #f0f0f0',
+    marginBottom: '16px',
+  },
+
+  title: {
+    fontSize: '24px',
+    fontWeight: '700',
+    color: '#111827',
+    margin: '0 0 4px 0',
+    lineHeight: '1.2',
+  },
+
+  subtitle: {
+    fontSize: '14px',
+    color: '#d97706',
+    margin: 0,
+    fontWeight: '500',
   },
 
   content: {
