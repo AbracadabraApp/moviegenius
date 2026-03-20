@@ -100,10 +100,11 @@ const styles = {
     position: 'sticky',
     right: 0,
     display: 'flex',
-    alignItems: 'flex-end',
+    alignItems: 'flex-start',
     justifyContent: 'flex-end',
     height: '165px',
     paddingRight: '16px',
+    paddingTop: '173px',
     pointerEvents: 'none',
   },
 
