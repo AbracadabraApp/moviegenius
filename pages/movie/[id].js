@@ -10,7 +10,6 @@ import StreamingAvailabilityLink from '../../components/StreamingAvailabilityLin
 import ErrorBoundary from '../../components/ErrorBoundary';
 import PerformanceDashboard from '../../components/PerformanceDashboard';
 import WhyWatchContainer from '../../components/WhyWatchContainer';
-import MoreIdeasContainer from '../../components/MoreIdeasContainer';
 import { getPerformanceMonitor } from '../../lib/performance-monitor';
 import { loadMovieData } from '../../lib/movie-data-loader';
 
@@ -414,19 +413,6 @@ export default function MovieDetailPage() {
               movie={movie}
               streaming={streaming?.streaming_data}
             />
-          </ErrorBoundary>
-
-          {/* More Ideas Section - Independent of analysis */}
-          <ErrorBoundary level="section">
-            <div style={{
-              padding: '0 20px',
-              backgroundColor: '#ffffff',
-              fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
-            }}>
-              <MoreIdeasContainer
-                tmdbId={parseInt(finalMovieId)}
-              />
-            </div>
           </ErrorBoundary>
 
           {/* Movie Creative Footer */}
