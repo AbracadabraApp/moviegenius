@@ -42,23 +42,33 @@ export default async function handler(req, res) {
     const person = personResult.rows[0];
 
     // Get person's movies from movie_contributors table
+    // Use GROUP BY to aggregate roles per movie, avoiding duplicates
     const moviesQuery = `
-      SELECT DISTINCT
+      SELECT
         m.tmdb_id,
         m.title,
         m.year,
         m.slug,
         m.poster_url,
-        mc.role
+        array_agg(DISTINCT mc.role) as roles
       FROM movie_contributors mc
       JOIN movies m ON mc.movie_tmdb_id = m.tmdb_id
       WHERE mc.person_id = $1
+      GROUP BY m.tmdb_id, m.title, m.year, m.slug, m.poster_url
       ORDER BY m.year DESC, m.title
     `;
     const moviesResult = await pool.query(moviesQuery, [personId]);
 
-    // Aggregate roles
-    const roles = [...new Set(moviesResult.rows.map(r => r.role).filter(Boolean))];
+    // Aggregate all roles across all movies
+    const allRoles = new Set();
+    moviesResult.rows.forEach(row => {
+      if (row.roles && Array.isArray(row.roles)) {
+        row.roles.forEach(role => {
+          if (role) allRoles.add(role);
+        });
+      }
+    });
+    const roles = Array.from(allRoles);
 
     // Format movies for MediaCard (same pattern as featuredMovies)
     const movies = moviesResult.rows.map(row => ({
