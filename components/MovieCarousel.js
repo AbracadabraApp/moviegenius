@@ -35,11 +35,6 @@ export default function MovieCarousel({
       {/* Section Header */}
       <div style={styles.headerContainer}>
         <h2 style={styles.title}>{title}</h2>
-        {showViewAll && collectionId && totalMovies && (
-          <button onClick={handleViewAll} style={styles.viewAllButton}>
-            view {totalMovies} more
-          </button>
-        )}
       </div>
 
       {/* Horizontal Scrolling Carousel */}
@@ -58,20 +53,23 @@ export default function MovieCarousel({
                 onTouchEnd={tapHandlers.handleTouchEnd}
                 onClick={() => handleMovieClick(movie.tmdb_id)}
               >
-              <img
-                src={movie.poster_url || '/images/placeholder-poster.jpg'}
-                alt={movie.title}
-                style={styles.poster}
-              />
-              <div style={styles.movieInfo}>
-                <div style={styles.movieTitle}>{movie.title}</div>
-                {movie.year && (
-                  <div style={styles.movieYear}>{movie.year}</div>
-                )}
+                <img
+                  src={movie.poster_url || '/images/placeholder-poster.jpg'}
+                  alt={movie.title}
+                  style={styles.poster}
+                />
               </div>
-            </div>
             );
           })}
+
+          {/* View More Button - positioned after 3rd movie */}
+          {showViewAll && collectionId && totalMovies && (
+            <div style={styles.viewMoreContainer}>
+              <button onClick={handleViewAll} style={styles.viewAllButton}>
+                view {totalMovies} more
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </section>
@@ -91,24 +89,33 @@ const styles = {
   },
 
   title: {
-    fontSize: '15px',
+    fontSize: '19px',
     fontWeight: '500',
     color: '#ffffff',
     margin: 0,
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 
+  viewMoreContainer: {
+    position: 'sticky',
+    right: 0,
+    display: 'flex',
+    alignItems: 'flex-end',
+    justifyContent: 'flex-end',
+    height: '165px',
+    paddingRight: '16px',
+    pointerEvents: 'none',
+  },
+
   viewAllButton: {
     background: 'none',
     border: 'none',
     color: '#d4af37',
-    fontSize: '12px',
+    fontSize: '14px',
     fontWeight: '500',
     cursor: 'pointer',
-    padding: '4px 0 0 0',
-    alignSelf: 'flex-end',
-    width: '100%',
-    textAlign: 'right',
+    padding: '0',
+    pointerEvents: 'auto',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 
@@ -145,34 +152,8 @@ const styles = {
     height: '165px',
     objectFit: 'cover',
     borderRadius: '8px',
-    marginBottom: '8px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
     transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-  },
-
-  movieInfo: {
-    marginTop: '8px',
-  },
-
-  movieTitle: {
-    fontSize: '13px',
-    fontWeight: '500',
-    color: '#ffffff',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    display: '-webkit-box',
-    WebkitLineClamp: 2,
-    WebkitBoxOrient: 'vertical',
-    marginBottom: '2px',
-    lineHeight: '1.3',
-    minHeight: '34px',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-  },
-
-  movieYear: {
-    fontSize: '11px',
-    color: '#9ca3af',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 };
 
