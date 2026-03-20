@@ -93,14 +93,14 @@ export default function BrowseCollectionPage() {
 
   return (
     <PhoneFrame
-      backgroundImage={backgroundImages[currentImageIndex]}
-      showDarkOverlay={true}
+      backgroundImage={null}
+      showDarkOverlay={false}
     >
       <div style={styles.container}>
         {/* Header */}
         <div style={styles.header}>
           <button onClick={handleBack} style={styles.backButton}>
-            <ChevronLeft size={24} color="#ffffff" />
+            <ChevronLeft size={24} color="#111827" />
           </button>
           <div style={styles.headerContent}>
             <h1 style={styles.title}>
@@ -196,14 +196,15 @@ const styles = {
     flexDirection: 'column',
     height: '100%',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    background: '#ffffff',
   },
 
   header: {
-    background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.8))',
+    background: '#ffffff',
     padding: '16px',
     backdropFilter: 'blur(10px)',
     WebkitBackdropFilter: 'blur(10px)',
-    borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+    borderBottom: '1px solid #e5e7eb',
     display: 'flex',
     alignItems: 'center',
     gap: '12px',
@@ -228,14 +229,14 @@ const styles = {
   title: {
     fontSize: '20px',
     fontWeight: '700',
-    color: '#ffffff',
+    color: '#111827',
     margin: '0 0 4px 0',
     lineHeight: '1.2',
   },
 
   subtitle: {
     fontSize: '13px',
-    color: '#d4af37',
+    color: '#d97706',
     margin: 0,
   },
 
@@ -243,11 +244,11 @@ const styles = {
     position: 'sticky',
     top: 0,
     zIndex: 99,
-    background: 'rgba(0, 0, 0, 0.95)',
+    background: 'rgba(255, 255, 255, 0.98)',
     padding: '12px 16px',
     backdropFilter: 'blur(10px)',
     WebkitBackdropFilter: 'blur(10px)',
-    borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+    borderBottom: '1px solid #e5e7eb',
   },
 
   searchContainer: {
@@ -264,12 +265,12 @@ const styles = {
 
   searchInput: {
     width: '100%',
-    background: 'rgba(255, 255, 255, 0.1)',
-    border: '1px solid rgba(255, 255, 255, 0.2)',
+    background: '#f9fafb',
+    border: '1px solid #e5e7eb',
     borderRadius: '8px',
     padding: '10px 40px 10px 44px',
     fontSize: '15px',
-    color: '#ffffff',
+    color: '#111827',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     outline: 'none',
     transition: 'all 0.2s ease',
@@ -280,7 +281,7 @@ const styles = {
     right: '12px',
     background: 'none',
     border: 'none',
-    color: '#9ca3af',
+    color: '#6b7280',
     fontSize: '18px',
     cursor: 'pointer',
     padding: '4px',
@@ -291,7 +292,7 @@ const styles = {
 
   resultCount: {
     fontSize: '12px',
-    color: '#9ca3af',
+    color: '#6b7280',
     margin: '8px 0 0 0',
   },
 
@@ -301,6 +302,7 @@ const styles = {
     scrollbarWidth: 'none',
     msOverflowStyle: 'none',
     paddingBottom: '32px',
+    background: '#ffffff',
   },
 
   loadingContainer: {
@@ -312,8 +314,8 @@ const styles = {
 
   loadingText: {
     fontSize: '16px',
-    color: '#ffffff',
-    opacity: 0.7,
+    color: '#6b7280',
+    opacity: 0.8,
   },
 
   emptyContainer: {
@@ -328,8 +330,8 @@ const styles = {
 
   emptyText: {
     fontSize: '16px',
-    color: '#ffffff',
-    opacity: 0.7,
+    color: '#6b7280',
+    opacity: 0.8,
   },
 
   grid: {
@@ -348,7 +350,7 @@ const styles = {
     aspectRatio: '2/3',
     borderRadius: '8px',
     overflow: 'hidden',
-    backgroundColor: '#1a1a1a',
+    backgroundColor: '#f3f4f6',
     marginBottom: '8px',
     transition: 'transform 0.2s ease',
   },
@@ -366,7 +368,7 @@ const styles = {
   movieTitle: {
     fontSize: '13px',
     fontWeight: '500',
-    color: '#ffffff',
+    color: '#111827',
     lineHeight: '1.2',
     marginBottom: '2px',
     overflow: 'hidden',
@@ -378,6 +380,6 @@ const styles = {
 
   movieYear: {
     fontSize: '11px',
-    color: '#9ca3af',
+    color: '#6b7280',
   },
 };
