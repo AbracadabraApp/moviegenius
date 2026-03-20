@@ -167,7 +167,7 @@ const styles = {
     height: '100%',
     fontFamily:
       '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-    background: 'linear-gradient(180deg, #2a2a2a 0%, #1a1a1a 50%, #0a0a0a 100%)',
+    background: '#ffffff',
     position: 'relative',
   },
 
@@ -175,11 +175,11 @@ const styles = {
     position: 'sticky',
     top: 0,
     zIndex: 100,
-    backgroundColor: 'rgba(34, 34, 34, 0.95)',
+    backgroundColor: 'rgba(255, 255, 255, 0.98)',
     padding: '16px',
     backdropFilter: 'blur(10px)',
     WebkitBackdropFilter: 'blur(10px)',
-    borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+    borderBottom: '1px solid #e5e7eb',
   },
 
   content: {
@@ -201,8 +201,8 @@ const styles = {
 
   loadingText: {
     fontSize: '16px',
-    color: '#ffffff',
-    opacity: 0.7,
+    color: '#6b7280',
+    opacity: 0.8,
   },
 
   // Empty state
@@ -218,8 +218,8 @@ const styles = {
 
   emptyText: {
     fontSize: '16px',
-    color: '#ffffff',
-    opacity: 0.7,
+    color: '#6b7280',
+    opacity: 0.8,
   },
 
   // Welcome section
@@ -230,17 +230,15 @@ const styles = {
   welcomeTitle: {
     fontSize: '28px',
     fontWeight: '700',
-    color: '#ffffff',
+    color: '#111827',
     margin: '0 0 8px 0',
-    textShadow: '0 2px 8px rgba(0, 0, 0, 0.8)',
   },
 
   welcomeText: {
     fontSize: '18px',
-    color: '#f5d76e',
+    color: '#d97706',
     margin: 0,
     fontWeight: '600',
-    textShadow: '0 1px 3px rgba(0, 0, 0, 0.6)',
   },
 
   // Browse all section

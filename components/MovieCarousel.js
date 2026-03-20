@@ -61,16 +61,16 @@ export default function MovieCarousel({
               </div>
             );
           })}
-
-          {/* View More Button - positioned after 3rd movie */}
-          {showViewAll && collectionId && totalMovies && (
-            <div style={styles.viewMoreContainer}>
-              <button onClick={handleViewAll} style={styles.viewAllButton}>
-                view {totalMovies} more
-              </button>
-            </div>
-          )}
         </div>
+
+        {/* View More Button - positioned outside carousel */}
+        {showViewAll && collectionId && totalMovies && (
+          <div style={styles.viewMoreContainer}>
+            <button onClick={handleViewAll} style={styles.viewAllButton}>
+              view {totalMovies} more
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
@@ -90,30 +90,29 @@ const styles = {
 
   title: {
     fontSize: '19px',
-    fontWeight: '500',
-    color: '#ffffff',
+    fontWeight: '600',
+    color: '#111827',
     margin: 0,
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 
   viewMoreContainer: {
-    position: 'sticky',
-    right: 0,
+    position: 'absolute',
+    right: '16px',
+    bottom: '8px',
     display: 'flex',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     justifyContent: 'flex-end',
-    height: '165px',
-    paddingRight: '16px',
-    paddingTop: '173px',
     pointerEvents: 'none',
+    zIndex: 10,
   },
 
   viewAllButton: {
     background: 'none',
     border: 'none',
-    color: '#d4af37',
+    color: '#d97706',
     fontSize: '14px',
-    fontWeight: '500',
+    fontWeight: '600',
     cursor: 'pointer',
     padding: '0',
     pointerEvents: 'auto',
@@ -123,6 +122,7 @@ const styles = {
   carouselWrapper: {
     width: '100%',
     overflow: 'hidden',
+    position: 'relative',
   },
 
   carousel: {
