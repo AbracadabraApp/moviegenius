@@ -62,16 +62,16 @@ export default function MovieCarousel({
             );
           })}
         </div>
-
-        {/* View More Button - positioned outside carousel */}
-        {showViewAll && collectionId && totalMovies && (
-          <div style={styles.viewMoreContainer}>
-            <button onClick={handleViewAll} style={styles.viewAllButton}>
-              view {totalMovies} more
-            </button>
-          </div>
-        )}
       </div>
+
+      {/* View More Button - positioned below carousel */}
+      {showViewAll && collectionId && totalMovies && (
+        <div style={styles.viewMoreContainer}>
+          <button onClick={handleViewAll} style={styles.viewAllButton}>
+            view {totalMovies} more
+          </button>
+        </div>
+      )}
     </section>
   );
 }
@@ -97,14 +97,10 @@ const styles = {
   },
 
   viewMoreContainer: {
-    position: 'absolute',
-    right: '16px',
-    bottom: '8px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-end',
-    pointerEvents: 'none',
-    zIndex: 10,
+    padding: '8px 16px 0 16px',
   },
 
   viewAllButton: {
@@ -115,14 +111,12 @@ const styles = {
     fontWeight: '600',
     cursor: 'pointer',
     padding: '0',
-    pointerEvents: 'auto',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 
   carouselWrapper: {
     width: '100%',
     overflow: 'hidden',
-    position: 'relative',
   },
 
   carousel: {
