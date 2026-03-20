@@ -155,20 +155,13 @@ function MovieCard({ movie, onRemove, showHeart, router }) {
   };
 
   const handleWatch = () => {
-    // Navigate to movie detail page - extract tmdbId from various possible formats
-    let tmdbId = movie.tmdbId;
-
-    // If no tmdbId, try to extract from id field
-    if (!tmdbId && movie.id) {
-      // id might be like "fight-club-1999" or contain tmdbId
-      const idMatch = movie.id.match(/\d+/);
-      if (idMatch) {
-        tmdbId = idMatch[0];
-      }
-    }
+    // Navigate to movie detail page - use tmdbId or tmdb_id field
+    const tmdbId = movie.tmdbId || movie.tmdb_id;
 
     if (tmdbId) {
       router.push(`/movie/${tmdbId}`);
+    } else {
+      console.warn('Movie has no TMDB ID:', movie);
     }
   };
 

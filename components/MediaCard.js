@@ -115,7 +115,7 @@ export default function MediaCard({
   const mediaId = `${title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${year}`;
 
   // Movie data object for FavoritesManager
-  const movieData = { title, year, slug, poster, id: mediaId };
+  const movieData = { title, year, slug, poster, id: mediaId, tmdbId: movieTmdbId };
 
   // 🔒 PROTECTED: Enhanced data fetching for missing poster only
   // Claude-only slug approach: No fallback slug fetching, only show Claude-provided slugs

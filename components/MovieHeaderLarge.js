@@ -68,9 +68,9 @@ export default function MovieHeaderLarge({
 
   // Generate media ID from title and year
   const mediaId = `${title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${year}`;
-  
+
   // Movie data object for FavoritesManager
-  const movieData = { title, year, slug, poster, id: mediaId };
+  const movieData = { title, year, slug, poster, id: mediaId, tmdbId };
 
   // Update state when props change (navigation between movies)
   useEffect(() => {
