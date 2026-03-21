@@ -64,10 +64,24 @@ export default function MovieGeniusPage() {
     fetchCollections();
   }, [page]);
 
-  // Infinite scroll handler
+  // Restore scroll position when navigating back
+  useEffect(() => {
+    const contentElement = document.getElementById('browse-content');
+    if (contentElement) {
+      const savedPosition = sessionStorage.getItem('homepage-scroll');
+      if (savedPosition) {
+        contentElement.scrollTop = parseInt(savedPosition, 10);
+      }
+    }
+  }, [loading]);
+
+  // Infinite scroll handler and scroll position saver
   useEffect(() => {
     const handleScroll = (e) => {
       const { scrollTop, scrollHeight, clientHeight } = e.target;
+
+      // Save scroll position
+      sessionStorage.setItem('homepage-scroll', scrollTop.toString());
 
       // Load more when user scrolls to bottom 500px
       if (

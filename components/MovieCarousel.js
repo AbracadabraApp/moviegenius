@@ -2,9 +2,11 @@
  * MovieCarousel Component - Horizontal scrolling movie poster carousel
  *
  * Mobile-first design with touch scrolling support
+ * Preserves scroll position when navigating back from movie pages
  */
 
 import { useRouter } from 'next/router';
+import { useRef, useEffect } from 'react';
 
 export default function MovieCarousel({
   title,
@@ -15,12 +17,35 @@ export default function MovieCarousel({
   categoryLabel = null
 }) {
   const router = useRouter();
+  const carouselRef = useRef(null);
+  const scrollPositionKey = `carousel-scroll-${collectionId || title}`;
 
   if (!movies || movies.length === 0) {
     return null;
   }
 
+  // Restore scroll position when component mounts
+  useEffect(() => {
+    if (carouselRef.current) {
+      const savedPosition = sessionStorage.getItem(scrollPositionKey);
+      if (savedPosition) {
+        carouselRef.current.scrollLeft = parseInt(savedPosition, 10);
+      }
+    }
+  }, [scrollPositionKey]);
+
+  // Save scroll position when scrolling
+  const handleScroll = () => {
+    if (carouselRef.current) {
+      sessionStorage.setItem(scrollPositionKey, carouselRef.current.scrollLeft.toString());
+    }
+  };
+
   const handleMovieClick = (tmdbId) => {
+    // Save current scroll position before navigating
+    if (carouselRef.current) {
+      sessionStorage.setItem(scrollPositionKey, carouselRef.current.scrollLeft.toString());
+    }
     router.push(`/movie/${tmdbId}`);
   };
 
@@ -48,7 +73,11 @@ export default function MovieCarousel({
 
       {/* Horizontal Scrolling Carousel */}
       <div style={styles.carouselWrapper}>
-        <div style={styles.carousel}>
+        <div
+          ref={carouselRef}
+          style={styles.carousel}
+          onScroll={handleScroll}
+        >
           {movies.map((movie, index) => (
             <div
               key={`${movie.tmdb_id}-${index}`}
