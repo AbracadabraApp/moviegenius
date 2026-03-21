@@ -69,7 +69,7 @@ export default function MovieCarousel({
       {showViewAll && collectionId && totalMovies && (
         <div style={styles.viewMoreContainer}>
           <button onClick={handleViewAll} style={styles.viewAllButton}>
-            view {totalMovies} more
+            {totalMovies} movies
           </button>
         </div>
       )}
