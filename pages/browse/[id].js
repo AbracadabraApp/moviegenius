@@ -5,7 +5,7 @@
  * Accessed via "View All" links from homepage carousels
  */
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
 import PhoneFrame from '../../components/PhoneFrame';
 import { ChevronLeft, Search } from 'lucide-react';
@@ -13,6 +13,7 @@ import { ChevronLeft, Search } from 'lucide-react';
 export default function BrowseCollectionPage() {
   const router = useRouter();
   const { id } = router.query;
+  const contentRef = useRef(null);
 
   const [collection, setCollection] = useState(null);
   const [movies, setMovies] = useState([]);
@@ -83,7 +84,36 @@ export default function BrowseCollectionPage() {
     setFilteredMovies(filtered);
   }, [searchQuery, movies]);
 
+  // Restore scroll position when returning from movie page
+  useEffect(() => {
+    if (!loading && contentRef.current && id) {
+      const scrollPositionKey = `browse-scroll-${id}`;
+      const savedPosition = sessionStorage.getItem(scrollPositionKey);
+      if (savedPosition) {
+        // Use setTimeout to ensure content is rendered
+        setTimeout(() => {
+          if (contentRef.current) {
+            contentRef.current.scrollTop = parseInt(savedPosition, 10);
+          }
+        }, 0);
+      }
+    }
+  }, [loading, id]);
+
+  // Save scroll position when scrolling
+  const handleScroll = () => {
+    if (contentRef.current && id) {
+      const scrollPositionKey = `browse-scroll-${id}`;
+      sessionStorage.setItem(scrollPositionKey, contentRef.current.scrollTop.toString());
+    }
+  };
+
   const handleMovieClick = (tmdbId) => {
+    // Save scroll position before navigating
+    if (contentRef.current && id) {
+      const scrollPositionKey = `browse-scroll-${id}`;
+      sessionStorage.setItem(scrollPositionKey, contentRef.current.scrollTop.toString());
+    }
     router.push(`/movie/${tmdbId}`);
   };
 
@@ -123,7 +153,11 @@ export default function BrowseCollectionPage() {
         </div>
 
         {/* Movies Grid - Scrolls under search */}
-        <div style={styles.content}>
+        <div
+          ref={contentRef}
+          style={styles.content}
+          onScroll={handleScroll}
+        >
           {/* Collection Header */}
           <div style={styles.collectionHeader}>
             <h1 style={styles.title}>
