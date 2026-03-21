@@ -17,7 +17,7 @@ export default async function handler(req, res) {
     // Using ≥4 threshold gives us 5,126 quality collections to choose from
     // Random ordering with daily seed ensures variety while staying consistent per day
     const collectionsQuery = `
-      SELECT id, title, total_movies
+      SELECT id, title, total_movies, categories
       FROM browse_lists
       WHERE status = 'active' AND total_movies >= 4
       ORDER BY RANDOM()
@@ -59,6 +59,7 @@ export default async function handler(req, res) {
           id: collection.id,
           title: collection.title,
           totalMovies: collection.total_movies,
+          categories: collection.categories || [],
           movies: moviesResult.rows.map(row => ({
             id: row.id,
             tmdb_id: row.tmdb_id,

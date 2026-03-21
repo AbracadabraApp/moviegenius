@@ -137,19 +137,12 @@ export default function MovieGeniusPage() {
               </div>
 
               {/* Featured Collection Carousels */}
-              {collections.map((collection, index) => {
-                // Assign rotating category labels for variety
-                const categoryLabels = [
-                  'Trending Now',
-                  'Popular',
-                  'Recommended',
-                  'Curated',
-                  'Staff Picks',
-                  'Hidden Gems',
-                  'Fan Favorites',
-                  'Must Watch'
-                ];
-                const categoryLabel = categoryLabels[index % categoryLabels.length];
+              {collections.map((collection) => {
+                // Use the first category from the collection's categories array
+                // Categories are already sorted by percentage (highest first)
+                const categoryLabel = collection.categories && collection.categories.length > 0
+                  ? collection.categories[0]
+                  : null;
 
                 return (
                   <MovieCarousel

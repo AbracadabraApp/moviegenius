@@ -169,7 +169,8 @@ const styles = {
     display: 'flex',
     overflowX: 'auto',
     gap: '12px',
-    padding: '0 16px',
+    paddingLeft: '16px',
+    paddingRight: '40px', // Reduced padding to show partial poster on right
     scrollSnapType: 'x mandatory',
     scrollBehavior: 'smooth',
     WebkitOverflowScrolling: 'touch',
