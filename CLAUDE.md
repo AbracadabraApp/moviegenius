@@ -1,226 +1,443 @@
-- series/episode list: Tracking and managing TV series and episode information
+# MovieGenius Project Instructions
 
-## You Page Creative Elements (Legacy/Archive)
+**Last Updated:** 2025-03-22
+**Version:** 3.0 (Aligned with Anthropic Claude Code Guidelines)
 
-### Cinematic Profile Analysis Types (keep these playful elements)
+---
 
-- 🔬 Scientific - Data-driven analysis of viewing patterns
-- 🧠 Psychological - Deep dive into user motivations
-- 🌟 Mystical - Ethereal, cosmic approach to taste
-- 🥠 Fortune - Fortune cookie style insights
-- 🧬 Cinematic DNA - Genetic metaphor for film taste
-- 🎭 Personality - Character-based analysis
-- 📝 Report Card - Academic scoring approach
-- 💭 Philosophical - Existential film perspective
+## Quick Reference
 
-### Learning Progress Language Options
+- **Master Architecture:** `/docs/MOVIEGENIUS_V3_ARCHITECTURE.md`
+- **Production Status:** `/docs/strategies/RELEASE_TODO.md`
+- **API Reference:** `/docs/API_REFERENCE.md`
+- **Database:** Railway PostgreSQL (21,275 movie analyses)
 
-- "Deep dive complete" / "Getting into it" / "Just getting started"
-- "Mastered" / "Learning" / "Exploring"
-- Collection progress tracking with Essential Films
-- Episode discovery suggestions
+---
 
-### Creative Haiku/Fortune Elements (preserve these)
+## Plan Mode Default
 
-- Fortune cookie style taste analysis
-- Haiku-like short film insights
-- Personality-based film recommendations
-- Mystical/cosmic film connection language
+**For tasks with 3+ steps, ALWAYS enter Plan Mode first.**
 
-### Design Philosophy
+### When to Plan
 
-- Keep playful analysis elements (DNA, fortune, mystical)
-- Make container/layout sophisticated and adult
-- Use Lucide icons over emojis where possible
-- Maintain educational value through natural discovery language
+✅ **Require planning:**
+- Multi-file changes across components
+- Database migrations or schema changes
+- API redesigns or new endpoints
+- Feature implementations (MVF, V3, Browse enhancements)
+- Debugging multi-layered issues (build errors, deployment failures)
 
-## Principal Engineer Guidelines
+❌ **Skip planning for:**
+- Single file edits
+- Documentation updates
+- Simple bug fixes (typos, imports)
+- Reading/analyzing code
 
-### Critical Debugging Protocol
-- **NEVER declare "root cause found" without verification**
-- **NEVER claim "this should fix it" before testing**
-- Principal Engineer mistake pattern: Premature root cause declarations followed by failed deployments
-- Date: 2025-07-25 - Environment variable "fix" deployed to production, didn't resolve 404s
-- Lesson: Evidence-based diagnosis required before any "fix" claims
+### Planning Template
 
-### Debugging Requirements
-1. Test hypothesis with actual data before declaring solutions
-2. Compare working vs broken environments systematically
-3. Verify fixes on staging before production deployment
-4. Document failed hypotheses to avoid repetition
+```markdown
+## Plan: [Task Name]
 
-### Professional Commit Message Standards
+**Goal:** [What we're trying to achieve]
 
-**NEVER use these words/phrases in commit messages:**
-- "FIX" / "FIXED" (until verified)
-- "PRODUCTION FIX" (claim before testing)
+**Steps:**
+1. [Research/Investigation step]
+2. [Implementation step]
+3. [Testing/Verification step]
+4. [Deployment/Documentation step]
+
+**Files to modify:**
+- file1.js (why)
+- file2.js (why)
+
+**Risk assessment:**
+- [Potential issues]
+- [Rollback strategy]
+
+**Success criteria:**
+- [ ] Build passes
+- [ ] Tests pass
+- [ ] Verified in production
+```
+
+---
+
+## Subagent Strategy
+
+**Keep main context clean by offloading research to subagents.**
+
+### When to Use Task Tool
+
+✅ **Delegate to subagents:**
+- Exploring codebase structure ("How does Browse system work?")
+- Finding files/patterns ("Where are streaming APIs called?")
+- Multi-file searches ("Find all uses of MediaCard component")
+- Architectural analysis ("Analyze database migration strategy")
+
+❌ **Handle directly:**
+- Reading specific files you know exist
+- Making edits to files already in context
+- Answering from existing conversation context
+
+### Example Usage
+
+```javascript
+// ❌ DON'T: Search directly, cluttering main context
+grep -r "MovieAnalysis" src/
+
+// ✅ DO: Delegate to Explore subagent
+Task(
+  subagent_type: "Explore",
+  prompt: "Find all MovieAnalysis component usage patterns,
+           focusing on props passed and data fetching strategy",
+  description: "Analyze MovieAnalysis usage"
+)
+```
+
+---
+
+## Self-Improvement Loop
+
+**Learn from mistakes. Update lessons after corrections.**
+
+### Lessons File Pattern
+
+When you make a mistake that gets corrected, create/update `/tasks/lessons.md`:
+
+```markdown
+## Lesson: [Date] - [What Went Wrong]
+
+**Mistake:** [What I did wrong]
+**Correction:** [What user/system corrected]
+**Root Cause:** [Why it happened]
+**Prevention:** [How to avoid next time]
+
+---
+```
+
+### Example Lesson
+
+```markdown
+## Lesson: 2025-03-22 - Declared Fix Without Testing
+
+**Mistake:** Committed with message "PRODUCTION FIX: Remove API calls causing 404s"
+**Correction:** Build still failed, 404s persisted, had to revert
+**Root Cause:** Assumed root cause without testing hypothesis
+**Prevention:**
+- Always run `npm run build` before claiming fix
+- Test on staging before production deployment
+- Use factual commit messages ("Remove X") not predictive ("Fix Y")
+```
+
+---
+
+## Task Management Protocol
+
+**Use TodoWrite for all multi-step tasks.**
+
+### Requirements
+
+- ✅ Create todo list for tasks with 3+ steps
+- ✅ Mark exactly ONE task as `in_progress` at a time
+- ✅ Complete tasks IMMEDIATELY after finishing (no batching)
+- ✅ Use both forms:
+  - `content`: "Run build" (imperative)
+  - `activeForm`: "Running build" (present continuous)
+
+### Example
+
+```javascript
+TodoWrite({
+  todos: [
+    { content: "Read MOVIEGENIUS_V3_ARCHITECTURE.md",
+      activeForm: "Reading V3 architecture",
+      status: "completed" },
+    { content: "Generate WhyWatch for 35K movies",
+      activeForm: "Generating WhyWatch data",
+      status: "in_progress" },  // ← Only ONE in_progress
+    { content: "Test movie page loading speed",
+      activeForm: "Testing page performance",
+      status: "pending" }
+  ]
+})
+```
+
+---
+
+## Verification Before Done
+
+**NEVER claim "fixed" without proof.**
+
+### Debugging Protocol
+
+1. **Reproduce the issue** - Confirm it exists
+2. **Form hypothesis** - What might cause it
+3. **Test hypothesis** - Verify with actual data
+4. **Implement fix** - Make the change
+5. **Verify fix** - Run build, check production
+6. **Document** - Factual commit message
+
+### Required Verification Steps
+
+**Before marking any task complete:**
+
+✅ **For code changes:**
+- Run `npm run build` (must pass)
+- Check for TypeScript errors
+- Test locally if possible
+- Review Railway logs if deployment-related
+
+✅ **For documentation:**
+- Verify no broken internal links
+- Check markdown renders correctly
+- Ensure references are accurate
+
+✅ **For database changes:**
+- Test migration on staging first
+- Verify data integrity
+- Document rollback procedure
+
+### Commit Message Standards
+
+❌ **NEVER use:**
+- "FIX" / "FIXED" (until verified in production)
+- "PRODUCTION FIX" (premature claim)
 - "This should work" / "This will fix"
-- "Now working" / "Now fast"
-- Assumptions about causation without evidence
+- Assumptions about causation
 
-**Required format for reverts:**
-```
-Revert "original commit title"
-
-This reverts commit [hash].
-
-[Factual reason for revert - no assumptions about what it will accomplish]
-```
-
-**Required format for changes:**
+✅ **ALWAYS use:**
 ```
 [type]: [factual description of change]
 
-[Optional: Context about why change was made]
+[Optional context about why]
 [No predictions about outcomes]
 ```
 
 **Examples:**
 - ❌ "PRODUCTION FIX: Remove API calls causing 404s"
-- ✅ "Revert automatic slug generation from movie creation"
-- ❌ "Fix hydration issues - should resolve 404s"  
+- ✅ "Remove automatic slug generation from movie creation"
+- ❌ "Fix hydration issues - should resolve 404s"
 - ✅ "Remove console.log statements from JSX components"
 
-### Coding Philosophy
-- slow down and think about what you are doing - respect the code.
+---
 
-### MovieAnalysisWithEntities Component Structure
+## Demand Elegance (Balanced)
 
-- Comprehensive component layout for movie analysis page
-- Key sections include:
-  1. Simple Search Bar at the top
-  2. MovieHeaderLarge component with:
-    - Movie title
-    - Year
-    - Movie overview (as initialSlug)
-    - Poster image
-    - Streaming data
-    - TMDB ID
-  3. MovieAnalysisWithEntities main content structure:
-    - Alternating pattern of content:
-      * Text paragraphs
-      * FEATURED FILMS + MediaCards
-      * EXPLORE FURTHER + single card
-      * Repeating pattern
-      * Final EXPLORE FURTHER + remaining cards
-      * MORE IDEAS + related films
-  4. DiscoveryFooter at the bottom
+**Simplest possible solution that works.**
 
-## Database and Static Page Status
+### Core Principles
 
-### Railway Database (Primary Production Database)
-- **Total Analyses**: 21,275 complete movie analyses
-- **Structure**: All analyses contain structured content sections, featuredMovies, whyWatch (YES/NO format), keyElements
-- **Why Watch Status**: ✅ Already exists in database (implemented enhanced binary YES/NO system)
-- **Connection**: Use `DATABASE_URL` from .env.local with pg.Pool
-- **Access Command**: `node -e "const { Pool } = require('pg'); /* query */" --env-file=.env.local`
+1. **Simplicity First**
+   - Fewest lines of code
+   - Minimal dependencies
+   - Obvious logic flow
 
-### Enhanced Static Generation Status
-Based on STATIC_GENERATION_STRATEGY.md and ENHANCED_WHYWATCH_IMPLEMENTATION.md:
-- **Goal**: Convert 21,275 database analyses into enhanced static JSON files
-- **Current**: ~6 enhanced static files exist (like movie_550.json)
-- **Cost**: $0 for Why Watch (already exists) + $43 for enhanced static file generation (21,275 × $0.002)
-- **Why Watch System**: Binary YES/NO with 3 reasons implemented and tested
+2. **No Laziness**
+   - Never leave TODOs for users
+   - Complete implementations
+   - No placeholder comments
 
-### Production Optimization Roadmap
+3. **Respect Existing Code**
+   - Read before changing
+   - Follow established patterns
+   - Check LOCKED_COMPONENTS.md before modifying
 
-#### V1: Enhanced Static File Generation (Ready to Execute)
-1. **Database to Static**: Convert Railway database analyses to enhanced static JSON format
-2. **Pre-resolved Data**: Include poster URLs, streaming data, trailer IDs in static files
-3. **2-Tier Architecture**: Static files (Tier 1) + dynamic fallback (Tier 2)
-4. **Why Watch Integration**: Use existing YES/NO recommendations from database
-5. **Performance Target**: <100ms load time for static pages
+### MovieGenius-Specific Guidelines
 
-Goal: Transform 21K+ database analyses into lightning-fast static pages
+**Locked Components (Do NOT modify without explicit permission):**
+- `MediaCard.js` - Standardized movie card display (125×188px posters)
+- `PhoneFrame.js` - Mobile viewport container
+- Database schema (movies, movie_analyses, enhanced_why_watch)
 
-### V2: User Experience & Educational Enhancement (Future Growth)
+**See:** `/docs/architecture/LOCKED_COMPONENTS.md` for complete list
 
-Aligned with You Page Vision:
-1. Progressive Analysis Depth - Create analysis variants based on user engagement levels (5 films vs 20+ films)
-2. Cinematic Profile Integration - Add analysis style variants (Scientific, Mystical, DNA, Fortune Cookie)
-3. Educational Progression - Align exploreTopics with progressive revelation system
-4. User Demographics Targeting - Tailor contemporary relevance for 25-45 curious explorer audience
-5. Smart Recommendations - Enhance movie suggestion system to feed "Films You Love/Watch" lists
+### Code Philosophy
 
-Goal: Transform from generic analysis to personalized cinematic education
+> "Slow down and think about what you are doing - respect the code."
 
-### Sunset Boulevard Educational Analysis Notes
+**Before any change:**
+1. Read the existing implementation
+2. Understand why it works that way
+3. Check if locked/protected
+4. Consider impact on other components
+5. Test hypothesis before implementing
 
-- Comprehensive educational breakdown for Billy Wilder's 1950 masterpiece
-- Key educational approach highlighting:
-  * Unique narrative device (dead narrator)
-  * Hollywood self-critique
-  * Technical cinematography analysis
-  * Cultural and historical context
-  * Themes of celebrity, delusion, and media manipulation
+---
 
-#### Key Learning Objectives
-- Understand meta-cinema techniques
-- Explore Hollywood's transition from silent to sound era
-- Analyze expressionist cinematography
-- Examine power dynamics in entertainment industry
-- Connect historical film to contemporary media culture
+## Autonomous Bug Fixing
 
-#### Technical Elements to Study
-- John Seitz's expressionist lighting techniques
-- Franz Waxman's psychological score integration
-- Production design as narrative storytelling
-- Narrative structure with retrospective voiceover
-- Visual metaphors and symbolic staging
+**Fix it without hand-holding.**
 
-#### Recommended Companion Films
-- Mulholland Drive (2001)
-- All About Eve (1950)
-- Birdman (2014)
-- La La Land (2016)
+### When a Build Fails
 
-#### Contemporary Relevance Connections
-- Social media celebrity culture
-- Manufactured fame
-- Industry treatment of aging performers
-- Parasitic media relationships
+1. **Read the error** - Exact line, file, message
+2. **Check React Hook rules** - Common MovieGenius issue:
+   ```javascript
+   // ❌ BAD: Hook called after conditional return
+   if (!data) return null;
+   useEffect(() => { ... });
 
-#### Thematic Deep Dive
-- Delusion vs. reality
-- Cost of fame
-- Identity and performance
-- Hollywood's self-examination
+   // ✅ GOOD: Hooks before any returns
+   useEffect(() => { ... });
+   if (!data) return null;
+   ```
+3. **Verify dependencies** - Check package.json, node_modules
+4. **Test fix locally** - Run `npm run build`
+5. **Commit with factual message** - No "FIX" claims
 
-### Sunset Boulevard Critical Analysis Memory
+### When Deployment Fails
 
-#### Movie Analysis Overview
-- Critical film noir exploring Hollywood's dark underbelly
-- Directed by Billy Wilder, released in 1950
-- Starring Gloria Swanson and William Holden
-- Groundbreaking meta-commentary on film industry
-- AFI-ranked masterpiece of American cinema
+1. **Check Railway logs** - `/docs/operations/DEPLOYMENT_COMPLETE_GUIDE.md`
+2. **Compare environments** - Staging vs production
+3. **Verify environment variables** - `/docs/guides/RAILWAY_ENV_CHECKLIST.md`
+4. **Test on branch first** - Never deploy unverified fixes
+5. **Document rollback** - Always have exit strategy
 
-#### Key Analytical Components
-- Unique narrative technique with dead narrator
-- Exploration of Hollywood's transition from silent to sound era
-- Psychological depth of characters trapped in media mythology
-- Cinematographic brilliance by John F. Seitz
-- Haunting score by Franz Waxman
+---
 
-#### Comparative Context
-- Companion piece to "All About Eve" (1950)
-- Predecessor to films like "Mulholland Drive" (2001)
-- Influential in Hollywood self-critique genre
+## MovieGenius-Specific Context
 
-#### Contemporary Relevance
-- Prescient analysis of celebrity culture
-- Examination of power dynamics in entertainment
-- Critique of media's treatment of aging performers
-- Parallels with modern social media fame dynamics
+### Database Status
 
-#### Technical Innovation
-- Expressionist cinematography
-- Non-traditional narrative structure
-- Use of real silent film actors in meta-commentary
-- Psychological depth through visual metaphors
+**Railway PostgreSQL (Production):**
+- **Total Analyses:** 21,275 complete movie analyses
+- **Connection:** Use `DATABASE_URL` from `.env.local` with `pg.Pool`
+- **Access Command:**
+  ```bash
+  node --env-file=.env.local -e "const { Pool } = require('pg'); /* query */"
+  ```
 
-#### Thematic Exploration
-- Delusion versus reality
-- Parasitic nature of fame
-- Identity as performance
-- Technological disruption in creative industries
+**Schema:**
+- `movies` - TMDB metadata (35K+ movies)
+- `movie_analyses` - Legacy analysis format
+- `analysis_data_v3` - New MVF/V3 format (200-word concise)
+- `enhanced_why_watch` - Binary YES/NO recommendations with 3 reasons
+- `browse_lists` - Collection system
+- `persons` - 39,606 cast/crew entries
+
+**See:** `/docs/DATABASE_SCHEMA.md` (when created)
+
+### Current Architecture Status
+
+**Production (V2):**
+- ✅ 21,275 movie analyses in database
+- ✅ SimpleSearch with TMDB popularity ranking
+- ✅ Browse system (827 lists, ~2,000 movies)
+- ✅ WhyWatch system (YES/NO binary recommendations)
+- ⚠️ Long 500-word analyses (being replaced)
+
+**Planned (V3):**
+- New 200-word concise analysis format
+- WhyWatch-first page hierarchy
+- Unified `/api/v1/*` endpoints (iOS-ready)
+- Simplified components (1,900 → 400 lines)
+- Client-side **Movie (Year)** linking (no post-processing)
+
+**See:** `/docs/MOVIEGENIUS_V3_ARCHITECTURE.md` for complete details
+
+### Key Design Decisions
+
+1. **WhyWatch is the hero feature** - Binary YES/NO recommendation with 3 specific reasons
+2. **Analysis is supporting context** - 200 words (not 500) with inline **Movie (Year)** links
+3. **Mobile-first** - All designs use PhoneFrame, 390px width
+4. **Locked MediaCard specs** - 125×188px posters (industry standard 2:3 ratio)
+5. **No episodes** - Feature cancelled, docs archived
+
+### Terminology Standards
+
+**Correct terms:**
+- "movie" (not "film" in code/UI)
+- "collection" (not "list" - except browse_lists table)
+- "analysis" (not "review" or "critique")
+- "streaming" (not "platforms" or "services")
+
+**See:** `/docs/TERMINOLOGY_STANDARD.md`
+
+---
+
+## Git Safety
+
+**Professional branch workflow required.**
+
+### Branch Strategy
+
+- `main` - Production (protected)
+- `feature/*` - New features
+- `docs/*` - Documentation changes
+- `fix/*` - Bug fixes
+
+### Commit Requirements
+
+1. **Feature branch** - Never commit directly to main
+2. **Descriptive commits** - What changed (not why it "fixes" something)
+3. **Test before commit** - Build must pass
+4. **Push for review** - Create PR, don't merge directly
+
+**See:** `/docs/GIT-SAFETY-GUIDE.md`
+
+---
+
+## Common Pitfalls
+
+**Avoid these MovieGenius-specific errors:**
+
+1. ❌ Calling React Hooks after conditional returns
+2. ❌ Modifying locked components (MediaCard, PhoneFrame)
+3. ❌ Using "film" instead of "movie" in UI
+4. ❌ Deploying without testing build locally
+5. ❌ Claiming "fixed" before verification
+6. ❌ Changing database schema without migration plan
+
+**See:** `/docs/PREVENTING_BUILD_ERRORS.md`
+
+---
+
+## Essential Documentation
+
+**Read these before starting work:**
+
+**Tier 1 (Critical):**
+1. `/docs/MOVIEGENIUS_V3_ARCHITECTURE.md` - Master plan
+2. `/docs/strategies/RELEASE_TODO.md` - Production status
+3. `/docs/API_REFERENCE.md` - API documentation
+4. This file (CLAUDE.md) - Project instructions
+
+**Tier 2 (Important):**
+5. `/docs/architecture/LOCKED_COMPONENTS.md` - What NOT to change
+6. `/docs/CODE_LOCKING_STRATEGY.md` - Component protection
+7. `/docs/testing/ENGINEERING-DECISION-RULES.md` - Decision framework
+8. `/docs/TERMINOLOGY_STANDARD.md` - Naming conventions
+9. `/docs/GIT-SAFETY-GUIDE.md` - Git workflow
+10. `/docs/PREVENTING_BUILD_ERRORS.md` - Common issues
+
+**Tier 3 (Reference):**
+11. `/docs/features/YOU_PAGE_VISION.md` - Future UX enhancements
+12. `/docs/V2_SEARCH_FEATURES.md` - Deferred features
+13. `/docs/TROUBLESHOOTING.md` - Debug strategies
+14. `/docs/guides/DEVELOPMENT_SETUP.md` - Environment setup
+
+---
+
+## Summary
+
+**Core Workflow:**
+1. ✅ Plan for 3+ step tasks
+2. ✅ Delegate research to subagents
+3. ✅ Update lessons.md when corrected
+4. ✅ Use TodoWrite for progress tracking
+5. ✅ Verify before claiming "done"
+6. ✅ Simplest solution that works
+7. ✅ Fix autonomously without hand-holding
+
+**MovieGenius-Specific:**
+- Respect locked components
+- Test build before commit
+- Factual commit messages only
+- WhyWatch-first architecture (V3)
+- Mobile-first design (PhoneFrame)
+- Use correct terminology
+
+**When in doubt:**
+- Read `/docs/MOVIEGENIUS_V3_ARCHITECTURE.md`
+- Check `/docs/architecture/LOCKED_COMPONENTS.md`
+- Follow Anthropic Claude Code Guidelines above
