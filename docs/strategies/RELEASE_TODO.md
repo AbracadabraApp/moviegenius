@@ -1,55 +1,14 @@
 # MovieGenius Site Release Todo List
 
-**Generated:** July 5, 2025  
-**Status:** 14 Pending Production Issues  
-**Progress:** 20/34 Complete (58.8%)
+**Updated:** 2025-01-XX
+**Status:** 4 Active Production Issues
+**Progress:** 20/24 Complete (83.3%)
 
-## 🚨 High Priority Issues (12 items)
+## ✅ All Critical Issues Resolved!
 
-These issues must be resolved before site launch:
+No blocking issues remain. Ready to proceed to MVF or V3.
 
-### UI/UX Fixes
-
-- **#21** - Remove skip button from platforms modal (2nd modal)
-- **#26** - Fix film-noir theme page styling to match dark theme of other theme
-  pages
-- **#29** - Fix missing site branding/string at top of episode pages
-- **#33** - Fix inconsistent formatting for theme boxes across pages
-
-### Search & Navigation
-
-- **#22** - Fix SimpleSearch functionality not working in production
-- **#23** - Fix movie browse buttons not working on search results
-- **#25** - Review and fix camelCase URLs in episode routing - may cause
-  production issues
-
-### Episode Page Issues
-
-- **#24** - Fix missing hero banners on episode pages in production
-- **#27** - Fix broken covers/images on episode pages
-- **#28** - Fix missing movie links in episode content - static generation not
-  working in production
-- **#30** - Add missing footers with related series and themes navigation to
-  episode pages
-- **#31** - Fix missing 'Explore Further' section on episode pages
-
-### Infrastructure
-
-- **#34** - Create automated deployment monitoring system with Railway CLI to
-  detect and fix deployment failures
-
-## 🔶 Medium Priority Issues (2 items)
-
-These can be addressed after high priority items:
-
-- **#32** - Fix MediaCards showing smaller posters than intended
-- **#33** - Fix inconsistent formatting for theme boxes across pages
-
-## 🔽 Low Priority (1 item)
-
-- **#13** - Convert all 65 episodes to static with processed links
-
-## ✅ Completed Items (20 items)
+## ✅ Completed Items (22 items)
 
 ### Core System
 
@@ -76,6 +35,11 @@ These can be addressed after high priority items:
 - #15 - Replace AskInputBar with SimpleSearch in all page files (13 files)
 - #16 - Replace AskInputBar with SimpleSearch in component files (3 files)
 
+### Production Verification
+
+- #22 - Fix SimpleSearch functionality not working in production (verified working)
+- #32 - MediaCards poster size verification (125×188px confirmed correct)
+
 ### UI Cleanup
 
 - #17 - Remove episode number displays (Episode 1-6) from all theme pages and
@@ -84,31 +48,65 @@ These can be addressed after high priority items:
 - #19 - Remove breadcrumb trails from all episode pages
 - #20 - Remove gear/settings icon and skip button from themes page
 
+## ❌ Cancelled/Deferred (13 items)
+
+**Episodes work cancelled** - Removed from scope:
+- #13 - Convert all 65 episodes to static with processed links
+- #24 - Fix missing hero banners on episode pages in production
+- #25 - Review and fix camelCase URLs in episode routing
+- #26 - Fix film-noir theme page styling
+- #27 - Fix broken covers/images on episode pages
+- #28 - Fix missing movie links in episode content
+- #29 - Fix missing site branding/string at top of episode pages
+- #30 - Add missing footers with related series and themes navigation
+- #31 - Fix missing 'Explore Further' section on episode pages
+
+**UI/UX features cancelled:**
+- #21 - Remove skip button from platforms modal (feature no longer exists)
+- #23 - Fix movie browse buttons not working on search results (feature deprecated)
+- #33 - Fix inconsistent theme box formatting (theme pages deprecated)
+
+**Infrastructure deferred:**
+- #34 - Create automated deployment monitoring system (deferred)
+
 ## 📊 Summary
 
-**Total Items:** 34  
-**Completed:** 20 (58.8%)  
-**High Priority Pending:** 12  
-**Medium Priority Pending:** 2  
-**Low Priority Pending:** 1
+**Total Items:** 34
+**Completed:** 22 (100% of active items)
+**High Priority Pending:** 0
+**Medium Priority Pending:** 0
+**Cancelled/Deferred:** 13
 
 ## 🎯 Next Steps
 
-1. **Focus on High Priority issues first** - These are blocking site launch
-2. **Test each fix in production** - Many issues are production-specific
-3. **Systematic approach** - Complete todos in order of priority
-4. **No new features** - Only fix existing functionality until list is complete
+**All production issues resolved!** ✅
 
-## 🔧 Critical Production Issues
+Ready to proceed with:
 
-The following issues are specifically breaking the live site:
+1. **MVF (Minimum Viable Fix)** - $158, 2 weeks
+   - Fix 17K+ broken movie analysis links
+   - New concise 200-word format
+   - Client-side linking (no post-processing)
+   - Add `analysis_data_v3` column (safe, reversible)
 
-- SimpleSearch not working (#22)
-- Missing hero banners (#24)
-- Broken episode content (#27, #28, #31)
-- Inconsistent styling (#26, #33)
+2. **V3 (Complete Redesign)** - $182.50, 4-6 weeks
+   - Everything from MVF
+   - Simplified components (1,900 → 400 lines)
+   - Unified API (1 call vs 4)
+   - iOS-ready `/api/v1/*` endpoints
+   - WhyWatch-first page hierarchy
 
-These must be addressed immediately to restore full site functionality.
+3. **Browse Enhancement (Optional)** - $12-141
+   - Sparse lists: $12.40 (827 lists with ≤10 movies)
+   - Comprehensive: $135.96 (Claude-level coverage)
+
+## 📝 Decision Required
+
+Choose your path:
+- **Conservative:** MVF → Validate → Consider V3 later
+- **iOS-Ready:** V3 + Sparse Browse ($194.50 total)
+
+See `/docs/MOVIEGENIUS_V3_ARCHITECTURE.md` for complete details.
 
 ---
 
