@@ -85,8 +85,14 @@ async function curateBatch(batch) {
   return { results, cost };
 }
 
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
 async function saveBatch(client, results) {
   for (const r of results) {
+    if (!UUID_RE.test(r.id)) {
+      process.stderr.write(`\nSkipping malformed id: ${r.id}\n`);
+      continue;
+    }
     const revisedTitle = r.action === 'improve' ? r.revised : r.original;
     await client.query(`
       UPDATE browse_lists

@@ -418,6 +418,21 @@ TodoWrite({
 
 ---
 
+## Collaboration Rules (Non-Negotiable)
+
+**Implement ONLY what was explicitly agreed. Nothing more.**
+
+1. ❌ Do NOT add parameters, options, or logic not in the agreed plan
+2. ❌ Do NOT expand lists (stopwords, configs, features) beyond what was specified
+3. ❌ Do NOT "improve" things while implementing something else
+4. ✅ If you see something worth changing, ASK first — don't just do it
+5. ✅ Show the user output/results and WAIT for direction before next step
+6. ✅ When unsure whether something was agreed, stop and ask
+
+**Why this matters:** Unrequested changes cause false positives, rework, and eroded trust. The user's ideas are consistently better than unilateral additions. Slowing down to align is faster overall.
+
+---
+
 ## Summary
 
 **Core Workflow:**
@@ -427,7 +442,7 @@ TodoWrite({
 4. ✅ Use TodoWrite for progress tracking
 5. ✅ Verify before claiming "done"
 6. ✅ Simplest solution that works
-7. ✅ Fix autonomously without hand-holding
+7. ✅ Collaborate — don't run ahead
 
 **MovieGenius-Specific:**
 - Respect locked components
