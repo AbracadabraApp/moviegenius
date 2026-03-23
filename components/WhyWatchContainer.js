@@ -65,6 +65,7 @@ export default function WhyWatchContainer({ tmdbId, streaming, style }) {
       <WhyWatchSection
         reasons={recommendation.reasons}
         recommendation={recommendation.recommendation}
+        context={recommendation.context}
         streaming={streaming}
       />
     </div>

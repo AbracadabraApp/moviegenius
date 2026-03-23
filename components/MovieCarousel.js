@@ -20,10 +20,6 @@ export default function MovieCarousel({
   const carouselRef = useRef(null);
   const scrollPositionKey = `carousel-scroll-${collectionId || title}`;
 
-  if (!movies || movies.length === 0) {
-    return null;
-  }
-
   // Restore scroll position when component mounts
   useEffect(() => {
     if (carouselRef.current) {
@@ -33,6 +29,10 @@ export default function MovieCarousel({
       }
     }
   }, [scrollPositionKey]);
+
+  if (!movies || movies.length === 0) {
+    return null;
+  }
 
   // Save scroll position when scrolling
   const handleScroll = () => {

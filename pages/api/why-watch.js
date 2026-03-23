@@ -22,82 +22,35 @@ export default async function handler(req, res) {
     const client = await pool.connect();
 
     try {
-      // TIER 1: Try enhanced_why_watch table first (preferred clean data)
-      const enhancedQuery = `
+      const result = await client.query(`
         SELECT
           m.title,
           m.year,
           m.tmdb_id,
-          eww.recommendation,
-          eww.reasons
+          v3.recommendation,
+          v3.reasons,
+          v3.context
         FROM movies m
-        LEFT JOIN enhanced_why_watch eww ON m.tmdb_id = eww.tmdb_id
+        LEFT JOIN enhanced_why_watch_v3 v3 ON m.tmdb_id = v3.tmdb_id
         WHERE m.tmdb_id = $1
         LIMIT 1
-      `;
+      `, [parseInt(tmdbId)]);
 
-      const enhancedResult = await client.query(enhancedQuery, [parseInt(tmdbId)]);
-
-      if (enhancedResult.rows.length === 0) {
+      if (result.rows.length === 0) {
         return res.status(404).json({
           error: 'Movie not found',
           tmdbId: parseInt(tmdbId)
         });
       }
 
-      const movie = enhancedResult.rows[0];
-      let whyWatch = null;
+      const movie = result.rows[0];
+      const hasData = !!(movie.recommendation && movie.reasons);
 
-      // Try enhanced table first
-      if (movie.recommendation && movie.reasons) {
-        try {
-          const reasons = Array.isArray(movie.reasons) ? movie.reasons :
-                         (movie.reasons.reasons && Array.isArray(movie.reasons.reasons)) ? movie.reasons.reasons : [];
-
-          whyWatch = {
-            recommendation: movie.recommendation,
-            reasons: reasons
-          };
-        } catch (parseError) {
-          console.warn(`Failed to parse enhanced Why Watch for movie ${tmdbId}:`, parseError.message);
-        }
-      }
-
-      // TIER 2: Fallback to movie_analyses if no enhanced data
-      if (!whyWatch) {
-        const fallbackQuery = `
-          SELECT ma.claude_response
-          FROM movies m
-          LEFT JOIN movie_analyses ma ON m.id = ma.movie_id
-          WHERE m.tmdb_id = $1
-          LIMIT 1
-        `;
-
-        const fallbackResult = await client.query(fallbackQuery, [parseInt(tmdbId)]);
-
-        if (fallbackResult.rows.length > 0 && fallbackResult.rows[0].claude_response) {
-          try {
-            const response = fallbackResult.rows[0].claude_response;
-
-            // Check if it's the new structured format
-            if (typeof response === 'object' && response.raw_content) {
-              const rawContent = typeof response.raw_content === 'string'
-                ? JSON.parse(response.raw_content)
-                : response.raw_content;
-
-              if (rawContent && rawContent.whyWatch) {
-                whyWatch = rawContent.whyWatch;
-              }
-            }
-            // Check if claude_response itself contains whyWatch
-            else if (response.whyWatch) {
-              whyWatch = response.whyWatch;
-            }
-          } catch (parseError) {
-            console.warn(`Failed to parse fallback Why Watch for movie ${tmdbId}:`, parseError.message);
-          }
-        }
-      }
+      const whyWatch = hasData ? {
+        recommendation: movie.recommendation,
+        reasons: Array.isArray(movie.reasons) ? movie.reasons : [],
+        context: movie.context || null
+      } : null;
 
       // Response format
       const response = {
@@ -110,8 +63,8 @@ export default async function handler(req, res) {
           recommendation: "UNKNOWN",
           reasons: ["Analysis not yet available for this movie."]
         },
-        hasData: !!whyWatch,
-        source: whyWatch ? (movie.recommendation ? 'enhanced_why_watch_table' : 'movie_analyses_fallback') : 'no_data'
+        hasData,
+        source: hasData ? 'enhanced_why_watch_v3' : 'no_data'
       };
 
       return res.status(200).json(response);

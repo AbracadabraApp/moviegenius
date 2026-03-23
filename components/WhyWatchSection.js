@@ -19,10 +19,11 @@
  * @param {string[]} props.reasons - Array of reasons to watch the movie
  * @param {string} [props.recommendation] - Overall recommendation (YES/NO)
  * @param {string} [props.title] - Custom title override
+ * @param {string} [props.context] - 30-word context paragraph (V3)
  * @param {string} [props.streaming] - Streaming availability text
  * @param {Object} [props.style] - Additional styling overrides
  */
-export default function WhyWatchSection({ reasons = [], recommendation = "YES", title = null, streaming = null, style = {} }) {
+export default function WhyWatchSection({ reasons = [], recommendation = "YES", title = null, context = null, streaming = null, style = {} }) {
   console.log('WhyWatchSection streaming prop:', streaming);
 
   if (!reasons || reasons.length === 0) {
@@ -31,7 +32,7 @@ export default function WhyWatchSection({ reasons = [], recommendation = "YES", 
 
   // Dynamic colors based on recommendation
   const isSkipIt = recommendation === 'NO';
-  const primaryColor = isSkipIt ? '#dc2626' : '#d4af37'; // Red for NO, Gold for YES
+  const primaryColor = '#d4af37'; // Gold for header only
 
   const containerStyle = {
     marginTop: '20px',
@@ -74,7 +75,7 @@ export default function WhyWatchSection({ reasons = [], recommendation = "YES", 
   };
 
   const reasonBulletStyle = {
-    color: primaryColor,
+    color: '#374151', // Neutral gray for better readability
     marginRight: '10px',
     fontSize: '20px',
     lineHeight: '1.5',
@@ -87,6 +88,16 @@ export default function WhyWatchSection({ reasons = [], recommendation = "YES", 
     fontFamily: 'inherit',
     lineHeight: '1.5',
     flex: '1'
+  };
+
+  const contextStyle = {
+    fontSize: '15px',
+    lineHeight: '1.6',
+    color: '#4b5563',
+    padding: '16px',
+    background: '#f9fafb',
+    borderRadius: '4px',
+    marginTop: '16px',
   };
 
 
@@ -103,7 +114,7 @@ export default function WhyWatchSection({ reasons = [], recommendation = "YES", 
   // Generate dynamic title based on recommendation
   const getDefaultTitle = () => {
     if (title) return title; // Use custom title if provided
-    return recommendation === 'NO' ? 'Save Your Time' : 'Reasons to Watch';
+    return recommendation === 'NO' ? '⏭️ Skip This One' : 'Reasons to Watch';
   };
 
   return (
@@ -121,6 +132,11 @@ export default function WhyWatchSection({ reasons = [], recommendation = "YES", 
           </div>
         ))}
       </div>
+      {context && (
+        <div style={contextStyle}>
+          {context}
+        </div>
+      )}
     </div>
   );
 }
