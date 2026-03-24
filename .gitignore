@@ -39,9 +39,6 @@ server.log
 dev.log
 
 # Cache
-<<<<<<< HEAD
-.cache/analyses-backup-*.json
-=======
 .cache/
 
 # Backup files
@@ -62,7 +59,9 @@ simple-api-test.js
 *-test-data.json
 *-test-*.json
 batch-test.log
->>>>>>> clean-deployment
+
+# Logs directory
+logs/
 
 # Backup and test files
 pages/**/*-backup.js

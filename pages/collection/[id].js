@@ -1,18 +1,10 @@
-/**
- * Editorial Collection Page
- *
- * Sophisticated, magazine-style presentation of movie collections
- * with subcategories, annotations, and editorial context
- */
-
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import PhoneFrame from '../../../components/PhoneFrame';
-import EditorialCollection from '../../../components/EditorialCollection';
-import SimpleSearch from '../../../components/SimpleSearch';
-import { ChevronLeft } from 'lucide-react';
+import PhoneFrame from '../../components/PhoneFrame';
+import CollectionPage from '../../components/CollectionPage';
+import SimpleSearch from '../../components/SimpleSearch';
 
-export default function EditorialCollectionPage() {
+export default function Collection() {
   const router = useRouter();
   const { id } = router.query;
 
@@ -24,10 +16,10 @@ export default function EditorialCollectionPage() {
   useEffect(() => {
     if (!router.isReady || !id) return;
 
-    const fetchEditorialData = async () => {
+    const fetchData = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`/api/browse-editorial?id=${id}`);
+        const response = await fetch(`/api/collection?id=${id}`);
 
         if (response.ok) {
           const data = await response.json();
@@ -37,14 +29,14 @@ export default function EditorialCollectionPage() {
           setError('Collection not found');
         }
       } catch (err) {
-        console.error('Failed to fetch editorial collection:', err);
+        console.error('Failed to fetch collection:', err);
         setError('Failed to load collection');
       } finally {
         setLoading(false);
       }
     };
 
-    fetchEditorialData();
+    fetchData();
   }, [router.isReady, id]);
 
   const handleBack = () => {
@@ -54,10 +46,7 @@ export default function EditorialCollectionPage() {
   return (
     <PhoneFrame backgroundImage={null} showDarkOverlay={false}>
       <div style={styles.container}>
-        {/* Gold background layer (scrolls with content) */}
-        <div style={styles.goldBackground}></div>
-
-        {/* Sticky Search Header (floats above) */}
+        {/* Sticky Search Header */}
         <div style={styles.stickyHeader}>
           <div style={styles.searchRow}>
             <SimpleSearch placeholder="Search movies..." />
@@ -80,7 +69,7 @@ export default function EditorialCollectionPage() {
           )}
 
           {!loading && !error && collection && (
-            <EditorialCollection collection={collection} movies={movies} onBack={handleBack} />
+            <CollectionPage collection={collection} movies={movies} onBack={handleBack} />
           )}
         </div>
       </div>
@@ -97,25 +86,14 @@ const styles = {
     position: 'relative',
   },
 
-  goldBackground: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    height: '600px', // Tall enough to cover header + first section
-    background: 'linear-gradient(180deg, #d4af37 0%, #f4e4b8 8%, #fef8e7 20%, #fffcf5 45%, #ffffff 75%)',
-    zIndex: 0,
-    pointerEvents: 'none',
-  },
-
   stickyHeader: {
     position: 'sticky',
     top: 0,
     zIndex: 100,
-    backgroundColor: 'rgba(255, 255, 255, 0.75)',
-    backdropFilter: 'blur(12px)',
-    WebkitBackdropFilter: 'blur(12px)',
-    borderBottom: '1px solid rgba(212, 175, 55, 0.2)',
+    backgroundColor: 'rgba(255, 255, 255, 0.98)',
+    backdropFilter: 'blur(10px)',
+    WebkitBackdropFilter: 'blur(10px)',
+    borderBottom: 'none',
   },
 
   searchRow: {
@@ -127,8 +105,6 @@ const styles = {
     overflowY: 'auto',
     scrollbarWidth: 'none',
     msOverflowStyle: 'none',
-    position: 'relative',
-    zIndex: 1,
   },
 
   loadingContainer: {

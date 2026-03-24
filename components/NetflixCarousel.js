@@ -50,20 +50,20 @@ export default function NetflixCarousel({
 
   const handleViewAll = () => {
     if (collectionId) {
-      router.push(`/browse/${collectionId}`);
+      router.push(`/collection/${collectionId}`);
     }
   };
 
   return (
     <section style={styles.section}>
       {/* Section Header */}
-      <div style={styles.header}>
-        <div>
-          {categoryLabel && (
-            <p style={styles.categoryLabel}>{categoryLabel}</p>
-          )}
-          <h2 style={styles.title}>{title}</h2>
+      {categoryLabel && (
+        <div style={styles.categoryContainer}>
+          <span style={styles.categoryLabel}>{categoryLabel}</span>
         </div>
+      )}
+      <div style={styles.header}>
+        <h2 style={styles.title}>{title}</h2>
         {showViewAll && collectionId && (
           <button onClick={handleViewAll} style={styles.viewAllButton}>
             View All →
@@ -126,32 +126,39 @@ export default function NetflixCarousel({
 
 const styles = {
   section: {
-    marginBottom: '32px',
+    marginBottom: '4px',
     position: 'relative',
+  },
+
+  categoryContainer: {
+    padding: '0 16px 4px 16px',
   },
 
   header: {
     display: 'flex',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     justifyContent: 'space-between',
     padding: '0 16px 8px 16px',
   },
 
   categoryLabel: {
+    display: 'inline-block',
+    padding: '3px 10px',
+    marginBottom: '6px',
     fontSize: '11px',
-    fontWeight: '400',
-    color: '#ffffff',
-    opacity: 0.7,
-    margin: '0 0 2px 0',
+    fontWeight: '600',
+    borderRadius: '4px',
+    backgroundColor: '#eab308',
+    color: '#000000',
     textTransform: 'uppercase',
     letterSpacing: '0.5px',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 
   title: {
-    fontSize: '18px',
+    fontSize: '19px',
     fontWeight: '600',
-    color: '#ffffff',
+    color: '#111827',
     margin: 0,
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
@@ -179,6 +186,7 @@ const styles = {
     overflowX: 'auto',
     gap: '8px',
     padding: '0 16px 16px 16px',
+    scrollPaddingLeft: '16px',
     scrollSnapType: 'x mandatory',
     scrollBehavior: 'smooth',
     WebkitOverflowScrolling: 'touch',

@@ -107,43 +107,66 @@ export default async function handler(req, res) {
         console.log(`No updates needed for: ${title} (${year})`);
       }
     } else {
-      // Create new movie entry (rare since we pre-populate via migration)
-      let validatedPoster = null;
-      
-      // Validate poster URL for new movies too
-      if (poster && poster !== '/images/placeholder-poster.jpg') {
-        if (isValidPosterUrl(poster, `${title} (${year})`)) {
-          validatedPoster = poster;
-        } else {
-          console.warn(`🚫 Cache API: Blocked invalid poster for new movie "${title}" (${year}): ${poster}`);
-          // Don't include the poster_url, leave as null
-        }
+      // Movie not found in DB — look up via TMDB before inserting
+      const tmdbKey = process.env.NEXT_PUBLIC_TMDB_API_KEY || process.env.TMDB_API_KEY;
+      let tmdbId = null;
+      let tmdbPoster = null;
+
+      if (tmdbKey) {
+        try {
+          const r = await fetch(
+            `https://api.themoviedb.org/3/search/movie?api_key=${tmdbKey}&query=${encodeURIComponent(title)}`
+          );
+          const d = await r.json();
+          const results = (d.results || []).filter(m => m.id && m.release_date);
+          if (results.length) {
+            results.sort((a, b) =>
+              Math.abs(parseInt(a.release_date) - year) - Math.abs(parseInt(b.release_date) - year)
+            );
+            tmdbId = results[0].id;
+            if (results[0].poster_path) {
+              tmdbPoster = `https://image.tmdb.org/t/p/w500${results[0].poster_path}`;
+            }
+          }
+        } catch (e) { console.warn('TMDB lookup failed:', e.message); }
       }
-      
-      // Use Railway PostgreSQL directly for inserts
+
+      if (!tmdbId) {
+        console.warn(`⚠️ Cache API: No TMDB match for "${title}" (${year}) — skipping insert`);
+        return res.status(200).json({
+          success: true,
+          cached: false,
+          updated: { slug: false, poster: false, streaming: false },
+          movie: null,
+        });
+      }
+
+      // Check if this tmdb_id already exists (race condition / case mismatch)
       const pool = getPool();
       const client = await pool.connect();
-      
       try {
-        const query = `
-          INSERT INTO movies (title, year, slug, poster_url, streaming_data, created_at, updated_at)
-          VALUES ($1, $2, $3, $4, $5, NOW(), NOW())
-          RETURNING *
-        `;
-        
-        const values = [
-          title,
-          year,
-          slug || null,
-          validatedPoster,
-          streaming ? JSON.stringify(streaming) : null
-        ];
-        
-        const insertResult = await client.query(query, values);
-        result = insertResult.rows[0];
-        updated = true;
-        console.log(`✅ Created new Railway record for: ${title} (${year})`);
-        
+        const existing = await client.query('SELECT * FROM movies WHERE tmdb_id = $1', [tmdbId]);
+        if (existing.rows.length > 0) {
+          // Already exists under different title casing — just update it
+          result = existing.rows[0];
+          console.log(`✅ Found existing record via TMDB ID for: ${title} (${year})`);
+        } else {
+          let validatedPoster = tmdbPoster;
+          if (poster && poster !== '/images/placeholder-poster.jpg' && isValidPosterUrl(poster, `${title} (${year})`)) {
+            validatedPoster = poster;
+          }
+
+          const insertResult = await client.query(
+            `INSERT INTO movies (tmdb_id, title, year, slug, poster_url, streaming_data, created_at, updated_at)
+             VALUES ($1, $2, $3, $4, $5, $6, NOW(), NOW())
+             ON CONFLICT (tmdb_id) DO UPDATE SET updated_at = NOW()
+             RETURNING *`,
+            [tmdbId, title, year, slug || null, validatedPoster, streaming ? JSON.stringify(streaming) : null]
+          );
+          result = insertResult.rows[0];
+          updated = true;
+          console.log(`✅ Created new Railway record for: ${title} (${year}) tmdb_id=${tmdbId}`);
+        }
       } finally {
         client.release();
       }

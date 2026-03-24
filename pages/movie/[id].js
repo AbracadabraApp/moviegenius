@@ -1,63 +1,38 @@
-// pages/movie/[id].js - Movie detail page using exact legacy MovieHeaderLarge
+// pages/movie/[id].js - Movie detail page
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import PhoneFrame from '../../components/PhoneFrame';
 import MovieHeaderLarge from '../../components/MovieHeaderLarge';
 import SimpleSearch from '../../components/SimpleSearch';
 import MovieCreativeFooter from '../../components/MovieCreativeFooter';
-import MovieAnalysisWithEntities from '../../components/MovieAnalysisWithEntities';
-import StreamingAvailabilityLink from '../../components/StreamingAvailabilityLink';
 import ErrorBoundary from '../../components/ErrorBoundary';
-import PerformanceDashboard from '../../components/PerformanceDashboard';
 import WhyWatchContainer from '../../components/WhyWatchContainer';
-import { getPerformanceMonitor } from '../../lib/performance-monitor';
-import { loadMovieData } from '../../lib/movie-data-loader';
+import MoreIdeasContainer from '../../components/MoreIdeasContainer';
 
 export default function MovieDetailPage() {
   const router = useRouter();
   const { id } = router.query;
-  
-  // Add fallback ID extraction from URL path for SSR compatibility
-  // During SSR, asPath is '/movie/[id]', so we need to wait for client-side hydration
+
   const movieId = id || (typeof window !== 'undefined' && window.location.pathname.match(/\/movie\/(\d+)/)?.[1]);
-  
-  // Final movie ID for rendering components
   const [finalMovieId, setFinalMovieId] = useState(movieId);
-  
-  // Update finalMovieId when router is ready
+
   useEffect(() => {
     if (router.isReady) {
       const extractedId = id || (typeof window !== 'undefined' && window.location.pathname.match(/\/movie\/(\d+)/)?.[1]);
       setFinalMovieId(extractedId);
     }
   }, [router.isReady, id]);
-  
-  // Performance monitoring
-  const performanceMonitor = getPerformanceMonitor();
-  
-  // Feature flag for page-level loading (can be enabled later if needed)
-  const ENABLE_PAGE_LOADING = false;
-  
-  // API data state
+
   const [movie, setMovie] = useState(null);
   const [streaming, setStreaming] = useState(null);
-  const [analysis, setAnalysis] = useState(null);
-  const [analysisReady, setAnalysisReady] = useState(false);
   const [error, setError] = useState(null);
 
-  // API data fetching
   useEffect(() => {
-    if (!router.isReady || !finalMovieId) {
-      return;
-    }
+    if (!router.isReady || !finalMovieId) return;
 
     const fetchMovie = async () => {
-      // Start performance tracking
-      // const pageLoadId = `movie_page_${id}_load`;
-      // performanceMonitor.trackMetric('page_load_start', performance.now(), { movieId: id });
-
       try {
-        // Fetch movie data - try TMDB API but don't fail if it's unavailable
+        // Fetch movie metadata from TMDB
         let tmdbData = null;
         try {
           const tmdbResponse = await fetch(`/api/tmdb-movie?id=${finalMovieId}`);
@@ -65,25 +40,14 @@ export default function MovieDetailPage() {
             tmdbData = await tmdbResponse.json();
           }
         } catch (tmdbError) {
-          console.warn('TMDB API unavailable, will use database data:', tmdbError.message);
-        }
-
-        // For movie 154, use mock data to show V3 changes
-        if (finalMovieId === '154' && !tmdbData) {
-          tmdbData = {
-            id: 154,
-            title: 'Star Trek II: The Wrath of Khan',
-            release_date: '1982-06-04',
-            overview: 'Admiral Kirk faces his greatest enemy, Khan Noonien Singh, in a battle of wits and revenge.',
-            poster_path: '/kNRMUZf3svyWpoySeKf1s2njgBz.jpg'
-          };
+          console.warn('TMDB API unavailable:', tmdbError.message);
         }
 
         if (tmdbData) {
           setMovie(tmdbData);
         }
 
-        // Fetch streaming data from database
+        // Fetch streaming availability
         const streamingResponse = await fetch(`/api/movie-streaming?id=${finalMovieId}`);
         if (streamingResponse.ok) {
           const streamingData = await streamingResponse.json();
@@ -91,189 +55,7 @@ export default function MovieDetailPage() {
         } else {
           setStreaming({ streaming_data: null });
         }
-
-        // ENHANCED 2-TIER SERVING: Try enhanced static file first, then fallback
-        let analysisData = null;
-        
-        // TIER 1: Try enhanced static file first (future enhanced format) - CLIENT-SIDE ONLY
-        if (typeof window !== 'undefined') {
-          try {
-            const enhancedUrl = `/data/enhanced-movies/movie-${finalMovieId}.json`;
-            console.log('🔍 Attempting enhanced static fetch (client-side):', enhancedUrl);
-            const enhancedResponse = await fetch(enhancedUrl);
-            if (enhancedResponse.ok) {
-              const enhancedData = await enhancedResponse.json();
-              if (enhancedData.enhancedFormat && enhancedData.analysis) {
-                console.log('⚡ TIER 1: Using enhanced static file - zero API calls');
-                console.info(`🏆 Enhanced static serving SUCCESS for movie ${finalMovieId}`);
-
-                // Use JSON format for enhanced static data (component supports this)
-                const formattedAnalysis = {
-                  isJsonFormat: true,
-                  jsonData: {
-                    sections: enhancedData.analysis.sections,
-                    whyWatch: enhancedData.analysis.whyWatch,
-                    moreIdeas: enhancedData.analysis.moreIdeas,
-                    featuredMovies: enhancedData.analysis.featuredMovies || [],
-                    exploreTopics: enhancedData.analysis.exploreTopics || []
-                  },
-                  entity_linking_data: enhancedData.analysis.featuredMovies ? {
-                    entityData: { featuredMovies: enhancedData.analysis.featuredMovies },
-                    processedAt: enhancedData.lastUpdated
-                  } : null,
-                  entityData: enhancedData.analysis.featuredMovies || null,
-                  staticData: enhancedData, // Mark as static data for components
-                  keyElements: enhancedData.keyElements // For MovieCreativeFooter
-                };
-
-                // Update streaming and movie data from enhanced static
-                if (enhancedData.movieHeader.streaming) {
-                  setStreaming(enhancedData.movieHeader.streaming);
-                }
-
-                // Update movie object to include staticData flag and keyElements for footer
-                setMovie({
-                  ...tmdbData,
-                  staticData: true,
-                  keyElements: enhancedData.keyElements
-                });
-
-                setAnalysis(formattedAnalysis);
-                setAnalysisReady(true);
-                analysisData = formattedAnalysis;
-              }
-            }
-          } catch (enhancedError) {
-            console.log('📝 No enhanced static file, trying current nuclear static');
-            console.error('Enhanced static fetch error:', enhancedError.message);
-            console.error('Fetch URL was:', `/data/production/movie_${finalMovieId}.json`);
-          }
-        }
-
-        // TIER 2A: Fallback to current nuclear static (existing format)
-        if (!analysisData) {
-          try {
-            const staticResponse = await fetch(`/nuclear-static/${finalMovieId}.json`);
-            if (staticResponse.ok) {
-              const staticData = await staticResponse.json();
-              if (staticData.props && staticData.props.sections) {
-                console.log('🔄 TIER 2A: Using current nuclear static file');
-                const formattedAnalysis = {
-                  claude_response: {
-                    raw_content: staticData.props.sections.map(s => s.content).join('\n\n')
-                  },
-                  entity_linking_data: staticData.props.exploreFurther ? {
-                    entityData: { featuredMovies: staticData.props.exploreFurther },
-                    processedAt: staticData.props.nuclearTimestamp
-                  } : null,
-                  entityData: staticData.props.exploreFurther || null
-                };
-                setAnalysis(formattedAnalysis);
-                setAnalysisReady(true);
-                analysisData = formattedAnalysis;
-              }
-            }
-          } catch (staticError) {
-            console.log('📝 No nuclear static file, trying database');
-          }
-        }
-
-        // TIER 2B: Final fallback to dynamic database generation
-        if (!analysisData) {
-          console.log('🔄 TIER 2B: Generating dynamic analysis from database');
-          const analysisResponse = await fetch(`/api/movie-analysis?tmdbId=${finalMovieId}`);
-          if (analysisResponse.ok) {
-            const apiData = await analysisResponse.json();
-            
-            // Defensive data validator - prevents future developer breaks
-            function validateAnalysisData(data) {
-              if (!data?.analysis && !data?.rawAnalysis) return null;
-              const content = data.analysis || data.rawAnalysis;
-              return {
-                processed_content: content, // Primary field for JSON rendering
-                raw_content: content // Fallback for compatibility
-              };
-            }
-            
-            const validatedContent = validateAnalysisData(apiData);
-            if (!validatedContent) {
-              console.error('❌ Invalid analysis data structure:', apiData);
-              setAnalysis(null);
-              return;
-            }
-            
-            // Fetch More Ideas from separate table
-            let moreIdeasData = null;
-            try {
-              const moreIdeasResponse = await fetch(`/api/more-ideas?tmdbId=${finalMovieId}`);
-              if (moreIdeasResponse.ok) {
-                const moreIdeasJson = await moreIdeasResponse.json();
-                if (moreIdeasJson.hasData && moreIdeasJson.moreIdeas) {
-                  moreIdeasData = moreIdeasJson.moreIdeas;
-                  console.log(`✅ Loaded ${moreIdeasData.length} More Ideas for movie ${finalMovieId}`);
-                }
-              }
-            } catch (moreIdeasError) {
-              console.warn('⚠️ Failed to fetch More Ideas:', moreIdeasError.message);
-            }
-
-            // Add moreIdeas to the analysis content if it's JSON format
-            const enrichedContent = validatedContent;
-            if (moreIdeasData && moreIdeasData.length > 0) {
-              try {
-                const parsed = typeof enrichedContent.raw_content === 'string'
-                  ? JSON.parse(enrichedContent.raw_content)
-                  : enrichedContent.raw_content;
-
-                if (parsed && typeof parsed === 'object') {
-                  parsed.moreIdeas = moreIdeasData.map(idea => ({
-                    title: idea.title,
-                    year: idea.year,
-                    tmdb_id: idea.tmdbId,
-                    description: idea.connection,
-                    poster_url: idea.posterUrl || '/images/placeholder-poster.jpg'
-                  }));
-                  enrichedContent.raw_content = parsed;
-                  console.log(`✅ Added ${moreIdeasData.length} More Ideas to analysis`);
-                }
-              } catch (e) {
-                console.warn('⚠️ Could not add More Ideas to analysis:', e.message);
-              }
-            }
-
-            // Format analysis data for MovieAnalysisWithEntities component
-            const formattedAnalysis = {
-              claude_response: enrichedContent,
-              entity_linking_data: (apiData.entityData || apiData.movieData) ? {
-                entityData: apiData.entityData || apiData.movieData,
-                processedAt: new Date().toISOString()
-              } : null,
-              // Also include the movie data directly for easier access
-              entityData: apiData.entityData || apiData.movieData
-            };
-
-            setAnalysis(formattedAnalysis);
-            setAnalysisReady(true);
-          } else {
-            console.error('❌ Analysis API failed:', analysisResponse.status, analysisResponse.statusText);
-            setAnalysis(null);
-            setAnalysisReady(false);
-          }
-        }
-        
-        // Track successful page load completion
-        // performanceMonitor.trackMetric('page_load_complete', performance.now(), { 
-        //   movieId: id,
-        //   hasAnalysis: !!analysisData,
-        //   hasStreaming: !!streamingData
-        // });
-        
       } catch (err) {
-        // Track failed page load
-        // performanceMonitor.trackMetric('page_load_error', performance.now(), { 
-        //   movieId: id,
-        //   error: err.message
-        // });
         setError(err.message);
       }
     };
@@ -282,72 +64,36 @@ export default function MovieDetailPage() {
   }, [router.isReady, finalMovieId]);
 
   if (error) {
-    // Handle TMDB "not found" errors gracefully
     const isNotFound = error.includes('could not be found') || error.includes('404');
-    
     return (
       <PhoneFrame>
         <div style={{ backgroundColor: '#ffffff', minHeight: '100%', padding: '20px', textAlign: 'center' }}>
-          {/* Simple Search Bar */}
-          <div style={{
-            position: 'sticky',
-            top: 0,
-            zIndex: 100,
-            backgroundColor: '#ffffff',
-            padding: '16px 20px 16px 20px'
-          }}>
-            <SimpleSearch
-              onResults={() => {}}
-              placeholder="Search Movies . . ."
-              useUnifiedSearch={true}
-            />
+          <div style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: '#ffffff', padding: '16px 20px' }}>
+            <SimpleSearch onResults={() => {}} placeholder="Search Movies . . ." useUnifiedSearch={true} />
           </div>
-          
-          {isNotFound ? (
-            <div style={{ marginTop: '60px' }}>
-              <h2 style={{ fontSize: '24px', color: '#374151', marginBottom: '12px' }}>
-                Movie Not Found
-              </h2>
-              <p style={{ fontSize: '16px', color: '#6b7280', marginBottom: '24px' }}>
-                Movie ID {finalMovieId} doesn't exist in our database.
-              </p>
-              <p style={{ fontSize: '14px', color: '#9ca3af' }}>
-                Try searching for a movie above or visit our homepage.
-              </p>
-            </div>
-          ) : (
-            <div style={{ marginTop: '60px' }}>
-              <h2 style={{ fontSize: '24px', color: '#374151', marginBottom: '12px' }}>
-                404 - Page Not Found
-              </h2>
-              <p style={{ fontSize: '14px', color: '#9ca3af' }}>
-                The page you're looking for doesn't exist.
-              </p>
-            </div>
-          )}
+          <div style={{ marginTop: '60px' }}>
+            {isNotFound ? (
+              <>
+                <h2 style={{ fontSize: '24px', color: '#374151', marginBottom: '12px' }}>Movie Not Found</h2>
+                <p style={{ fontSize: '16px', color: '#6b7280', marginBottom: '24px' }}>
+                  Movie ID {finalMovieId} doesn't exist in our database.
+                </p>
+              </>
+            ) : (
+              <h2 style={{ fontSize: '24px', color: '#374151', marginBottom: '12px' }}>404 - Page Not Found</h2>
+            )}
+          </div>
         </div>
       </PhoneFrame>
     );
   }
 
-  // Always render the frame - let components handle their own loading
   if (!movie && !error) {
     return (
       <PhoneFrame>
         <div style={{ backgroundColor: '#ffffff', minHeight: '100%' }}>
-          {/* Simple Search Bar */}
-          <div style={{
-            position: 'sticky',
-            top: 0,
-            zIndex: 100,
-            backgroundColor: '#ffffff',
-            padding: '16px 20px 16px 20px'
-          }}>
-            <SimpleSearch
-              onResults={() => {}}
-              placeholder="Search Movies . . ."
-              useUnifiedSearch={true}
-            />
+          <div style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: '#ffffff', padding: '16px 20px' }}>
+            <SimpleSearch onResults={() => {}} placeholder="Search Movies . . ." useUnifiedSearch={true} />
           </div>
         </div>
       </PhoneFrame>
@@ -355,57 +101,35 @@ export default function MovieDetailPage() {
   }
 
   const year = movie?.release_date ? new Date(movie.release_date).getFullYear() : '';
-  const posterUrl = movie?.poster_path 
+  const posterUrl = movie?.poster_path
     ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
     : '/images/placeholder-poster.jpg';
-
-  // Simple search handler (SimpleSearch handles navigation automatically)
-  const handleSearchResults = (results) => {
-    // SimpleSearch component handles navigation automatically
-    // This is just for any additional result processing if needed
-  };
 
   return (
     <ErrorBoundary level="page">
       <PhoneFrame>
         <div style={{ backgroundColor: '#ffffff', minHeight: '100%' }}>
-          {/* Simple Search Bar */}
+
+          {/* Search */}
           <ErrorBoundary level="section">
-            <div style={{
-              position: 'sticky',
-              top: 0,
-              zIndex: 100,
-              backgroundColor: '#ffffff',
-              padding: '16px 20px 16px 20px'
-            }}>
-              <SimpleSearch
-                onResults={handleSearchResults}
-                placeholder="Search Movies . . ."
-                useUnifiedSearch={true}
-              />
+            <div style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: '#ffffff', padding: '16px 20px' }}>
+              <SimpleSearch onResults={() => {}} placeholder="Search Movies . . ." useUnifiedSearch={true} />
             </div>
           </ErrorBoundary>
 
-          {/* Movie Header */}
+          {/* Header */}
           <ErrorBoundary level="section">
-            <div style={{ paddingLeft: '0px' }}>
-              <MovieHeaderLarge
-                title={movie?.title}
-                year={year}
-                initialSlug={movie?.overview}
-                initialPoster={posterUrl}
-                initialStreaming={streaming?.streaming_data}
-                tmdbId={parseInt(finalMovieId)}
-              />
-            </div>
+            <MovieHeaderLarge
+              title={movie?.title}
+              year={year}
+              initialSlug={movie?.overview}
+              initialPoster={posterUrl}
+              initialStreaming={streaming?.streaming_data}
+              tmdbId={parseInt(finalMovieId)}
+            />
           </ErrorBoundary>
 
-          {/* Streaming Availability - HIDDEN: Now shown in Why Watch section */}
-          {/* <ErrorBoundary level="section">
-            <StreamingAvailabilityLink tmdbId={parseInt(finalMovieId)} />
-          </ErrorBoundary> */}
-
-          {/* Why Watch Section - Independent of analysis */}
+          {/* Why Watch */}
           <ErrorBoundary level="section">
             <div style={{
               padding: '0 20px',
@@ -419,110 +143,67 @@ export default function MovieDetailPage() {
             </div>
           </ErrorBoundary>
 
-          {/* Movie Analysis - Enhanced error boundary for analysis rendering issues */}
-          <ErrorBoundary
-            level="section"
-            fallback={null}
-          >
-            <MovieAnalysisWithEntities
-              analysis={analysis}
-              movie={movie}
-              streaming={streaming?.streaming_data}
-            />
+          {/* More Ideas */}
+          <ErrorBoundary level="section">
+            <MoreIdeasContainer tmdbId={parseInt(finalMovieId)} />
           </ErrorBoundary>
 
-          {/* Movie Creative Footer */}
+          {/* Footer */}
           <ErrorBoundary level="section">
-            <MovieCreativeFooter 
-              analysis={analysis}
-              movie={movie}
-            />
+            <MovieCreativeFooter movie={movie} />
           </ErrorBoundary>
+
         </div>
       </PhoneFrame>
-      
-      {/* Performance Dashboard (dev only) */}
-      <PerformanceDashboard />
     </ErrorBoundary>
   );
 }
 
-// Static generation for production
 export async function getStaticPaths() {
-  // In development, use minimal static generation to avoid infinite loops
   if (process.env.NODE_ENV === 'development') {
     return {
       paths: [
-        { params: { id: '153' } }, // Test movie
-        { params: { id: '550' } }, // Fight Club
-        { params: { id: '996' } }  // Double Indemnity
+        { params: { id: '153' } },
+        { params: { id: '550' } },
+        { params: { id: '996' } }
       ],
-      fallback: 'blocking' // Allow dynamic generation in development
+      fallback: 'blocking'
     };
   }
-  
-  // Production: Get TMDB IDs dynamically from database (DISTINCT query to avoid duplicates)
+
   try {
     const { Pool } = require('pg');
-    const pool = new Pool({
-      connectionString: process.env.DATABASE_URL
-    });
-    
+    const pool = new Pool({ connectionString: process.env.DATABASE_URL });
     const client = await pool.connect();
-    
     try {
       const result = await client.query(`
         SELECT DISTINCT m.tmdb_id
-        FROM movies m 
-        JOIN movie_analyses ma ON m.id = ma.movie_id 
-        WHERE ma.claude_response IS NOT NULL 
+        FROM movies m
+        JOIN movie_analyses ma ON m.id = ma.movie_id
+        WHERE ma.claude_response IS NOT NULL
           AND m.tmdb_id IS NOT NULL
         ORDER BY m.tmdb_id
       `);
-      
-      const movieIds = result.rows.map(row => row.tmdb_id.toString());
-      const paths = movieIds.map(id => ({ params: { id } }));
-      
-      console.log(`🚀 Pre-generating ${paths.length} movie paths from database (DISTINCT query)`);
-      console.log(`   Range: ${movieIds[0]} to ${movieIds[movieIds.length - 1]}`);
-      
-      return {
-        paths,
-        fallback: 'blocking'  // Enable discovery - new movies generate on demand
-      };
-      
+      const paths = result.rows.map(row => ({ params: { id: row.tmdb_id.toString() } }));
+      console.log(`🎬 Pre-generating ${paths.length} movie paths from database (DISTINCT query)`);
+      console.log(`   Range: ${result.rows[0]?.tmdb_id} to ${result.rows[result.rows.length - 1]?.tmdb_id}`);
+      return { paths, fallback: 'blocking' };
     } finally {
       client.release();
       await pool.end();
     }
-    
   } catch (error) {
     console.error('❌ Database error in getStaticPaths:', error);
-    
-    // Fallback to a minimal set if database fails
-    const fallbackIds = ['153', '550', '996', '2', '3', '5'];
-    const fallbackPaths = fallbackIds.map(id => ({ params: { id } }));
-    
-    console.log(`⚠️  Using fallback paths (${fallbackPaths.length} movies) due to database error`);
-    
     return {
-      paths: fallbackPaths,
-      fallback: 'blocking'  // Enable discovery even in fallback mode
+      paths: ['153', '550', '996', '2', '3', '5'].map(id => ({ params: { id } })),
+      fallback: 'blocking'
     };
   }
 }
 
 export async function getStaticProps({ params }) {
-  const { id } = params;
-  
-  // For static generation, we don't pre-fetch data
-  // The client-side code will handle all data fetching
-  // This keeps the static generation simple and fast
-  
   return {
-    props: {
-      movieId: id
-    },
-    revalidate: 86400 // Revalidate once per day
+    props: { movieId: params.id },
+    revalidate: 86400
   };
 }

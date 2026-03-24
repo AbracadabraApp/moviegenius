@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
-import MovieCarousel from '../components/MovieCarousel';
+import NetflixCarousel from '../components/NetflixCarousel';
 
 export default function MovieGeniusPage() {
   const router = useRouter();
@@ -132,7 +132,7 @@ export default function MovieGeniusPage() {
               {/* Welcome Message */}
               <div style={styles.welcomeSection}>
                 <p style={styles.welcomeText}>
-                  MovieGenius.AI - Discover great films in more than 5,000 curated collections
+                  Discover great films in more than 5,000 curated collections
                 </p>
               </div>
 
@@ -145,13 +145,12 @@ export default function MovieGeniusPage() {
                   : null;
 
                 return (
-                  <MovieCarousel
+                  <NetflixCarousel
                     key={collection.id}
                     title={collection.title}
                     movies={collection.movies}
                     collectionId={collection.id}
                     showViewAll={true}
-                    totalMovies={collection.totalMovies}
                     categoryLabel={categoryLabel}
                   />
                 );
@@ -202,7 +201,7 @@ const styles = {
     padding: '16px',
     backdropFilter: 'blur(10px)',
     WebkitBackdropFilter: 'blur(10px)',
-    borderBottom: '1px solid #e5e7eb',
+    borderBottom: 'none',
   },
 
   content: {
@@ -247,7 +246,7 @@ const styles = {
 
   // Welcome section
   welcomeSection: {
-    padding: '32px 16px 24px 16px',
+    padding: '12px 16px 8px 16px',
   },
 
   welcomeTitle: {

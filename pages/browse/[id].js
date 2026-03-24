@@ -238,7 +238,7 @@ const styles = {
     padding: '12px 16px',
     backdropFilter: 'blur(10px)',
     WebkitBackdropFilter: 'blur(10px)',
-    borderBottom: '1px solid #e5e7eb',
+    borderBottom: 'none',
     display: 'flex',
     alignItems: 'center',
     gap: '12px',
