@@ -68,8 +68,8 @@ export default function MovieDetailPage() {
     return (
       <PhoneFrame>
         <div style={{ backgroundColor: '#ffffff', minHeight: '100%', padding: '20px', textAlign: 'center' }}>
-          <div style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: '#ffffff', padding: '16px 20px' }}>
-            <SimpleSearch onResults={() => {}} placeholder="Search Movies . . ." useUnifiedSearch={true} />
+          <div style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: '#ffffff', padding: '10px 16px' }}>
+            <SimpleSearch onResults={() => {}} placeholder="Search movies..." compact={true} />
           </div>
           <div style={{ marginTop: '60px' }}>
             {isNotFound ? (
@@ -92,8 +92,8 @@ export default function MovieDetailPage() {
     return (
       <PhoneFrame>
         <div style={{ backgroundColor: '#ffffff', minHeight: '100%' }}>
-          <div style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: '#ffffff', padding: '16px 20px' }}>
-            <SimpleSearch onResults={() => {}} placeholder="Search Movies . . ." useUnifiedSearch={true} />
+          <div style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: '#ffffff', padding: '10px 16px' }}>
+            <SimpleSearch onResults={() => {}} placeholder="Search movies..." compact={true} />
           </div>
         </div>
       </PhoneFrame>
@@ -112,8 +112,8 @@ export default function MovieDetailPage() {
 
           {/* Search */}
           <ErrorBoundary level="section">
-            <div style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: '#ffffff', padding: '16px 20px' }}>
-              <SimpleSearch onResults={() => {}} placeholder="Search Movies . . ." useUnifiedSearch={true} />
+            <div style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: '#ffffff', padding: '10px 16px' }}>
+              <SimpleSearch onResults={() => {}} placeholder="Search movies..." compact={true} />
             </div>
           </ErrorBoundary>
 
@@ -131,16 +131,10 @@ export default function MovieDetailPage() {
 
           {/* Why Watch */}
           <ErrorBoundary level="section">
-            <div style={{
-              padding: '0 20px',
-              backgroundColor: '#ffffff',
-              fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
-            }}>
-              <WhyWatchContainer
-                tmdbId={parseInt(finalMovieId)}
-                streaming={streaming?.streaming_data}
-              />
-            </div>
+            <WhyWatchContainer
+              tmdbId={parseInt(finalMovieId)}
+              streaming={streaming?.streaming_data}
+            />
           </ErrorBoundary>
 
           {/* More Ideas */}

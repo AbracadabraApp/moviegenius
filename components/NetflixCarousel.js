@@ -148,7 +148,7 @@ const styles = {
     fontSize: '11px',
     fontWeight: '600',
     borderRadius: '4px',
-    backgroundColor: '#eab308',
+    backgroundColor: '#d4af37',
     color: '#000000',
     textTransform: 'uppercase',
     letterSpacing: '0.5px',

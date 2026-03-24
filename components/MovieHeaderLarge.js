@@ -189,130 +189,93 @@ export default function MovieHeaderLarge({
         }
       `}</style>
       <div style={styles.movieHeader}>
-      {/* Action Bar */}
-      <div
-        style={styles.actionBarContainer}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.transform = 'scale(1.1)';
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.transform = 'scale(1)';
-        }}
-      >
-        <button
-          onClick={() => {
-            try {
-              const newState = FavoritesManager.toggleBookmark(movieData);
-              setBookmarked(newState);
-            } catch (error) {
-              console.error('Failed to toggle bookmark state:', error);
-            }
-          }}
-          style={styles.actionButton}
-          aria-label={bookmarked ? 'Remove from list' : 'Add to list'}
-        >
-          <div style={styles.iconWithText}>
-            <Plus
-              size={20}
-              color={bookmarked ? '#000000' : '#6b7280'}
-              strokeWidth={bookmarked ? 3 : 2}
-            />
-            <span style={{
-              ...styles.iconLabel,
-              color: bookmarked ? '#000000' : '#6b7280',
-              fontWeight: bookmarked ? '700' : '500'
-            }}>
-              Add
-            </span>
-          </div>
-        </button>
 
-        <button
-          onClick={() => {
-            try {
-              const newState = FavoritesManager.toggleHeart(movieData);
-              setHearted(newState);
-            } catch (error) {
-              console.error('Failed to toggle heart state:', error);
-            }
-          }}
-          style={styles.actionButton}
-          aria-label={hearted ? 'Mark as unseen' : 'Mark as seen'}
-        >
-          <div style={styles.iconWithText}>
-            <Check
-              size={20}
-              color={hearted ? '#000000' : '#6b7280'}
-              strokeWidth={hearted ? 3 : 2}
-            />
-            <span style={{
-              ...styles.iconLabel,
-              color: hearted ? '#000000' : '#6b7280',
-              fontWeight: hearted ? '700' : '500'
-            }}>
-              Seen
-            </span>
-          </div>
-        </button>
-
-        {/* Play Trailer Button - Only show if trailer exists */}
-        {trailerVideoId && (
-          <button
-            onClick={handlePlayTrailer}
-            style={styles.actionButton}
-            aria-label="Play trailer"
-          >
-            <div style={styles.iconWithText}>
-              <PlayCircle
-                size={20}
-                color="#6b7280"
-                fill="none"
-              />
-              <span style={{
-                ...styles.iconLabel,
-                color: "#1f2937",
-                fontWeight: "400"
-              }}>
-                Play
-              </span>
-            </div>
-          </button>
-        )}
-      </div>
-      
-      {/* Large poster at top, left-aligned */}
+      {/* Poster with trailer overlay */}
       <div style={styles.posterContainer}>
-        <img 
-          src={poster} 
-          alt={`Poster for ${title}`} 
-          style={{
-            ...styles.largePoster,
-            opacity: 1 // Always show image immediately
-          }}
-          onError={() => {
-            setIsImageError(true);
-          }}
-          onDoubleClick={() => {
-            setAddedToList(!addedToList);
-            setShowAddedAnimation(true);
-            setTimeout(() => setShowAddedAnimation(false), 1500);
-          }}
-        />
-        
-        {/* Error fallback only - no loading placeholder */}
-        {isImageError && (
-          <div style={styles.headerPlaceholder}>
-            <div style={styles.headerErrorText}>📷</div>
-            <div style={styles.headerErrorSubtext}>Poster unavailable</div>
+        {/* Inner wrapper sized to the image so overlay aligns to poster edges */}
+        <div style={styles.posterInner}>
+          <img
+            src={poster}
+            alt={`Poster for ${title}`}
+            style={{ ...styles.largePoster, opacity: 1 }}
+            onError={() => setIsImageError(true)}
+            onDoubleClick={() => {
+              setAddedToList(!addedToList);
+              setShowAddedAnimation(true);
+              setTimeout(() => setShowAddedAnimation(false), 1500);
+            }}
+          />
+
+          {/* Error fallback */}
+          {isImageError && (
+            <div style={styles.headerPlaceholder}>
+              <div style={styles.headerErrorText}>📷</div>
+              <div style={styles.headerErrorSubtext}>Poster unavailable</div>
+            </div>
+          )}
+
+          {/* Poster footer strip — trailer left, Add/Seen right */}
+          <div style={styles.posterFooter}>
+            {trailerVideoId ? (
+              <button
+                onClick={handlePlayTrailer}
+                style={styles.posterFooterTrailer}
+                aria-label="Play trailer"
+              >
+                <PlayCircle size={28} color="#ffffff" fill="rgba(255,255,255,0.2)" strokeWidth={1.2} />
+                <span style={styles.trailerOverlayLabel}>Trailer</span>
+              </button>
+            ) : (
+              <div />
+            )}
+            <div style={styles.posterFooterActions}>
+              <button
+                onClick={() => {
+                  try {
+                    const newState = FavoritesManager.toggleHeart(movieData);
+                    setHearted(newState);
+                  } catch (error) {
+                    console.error('Failed to toggle heart state:', error);
+                  }
+                }}
+                style={styles.utilityButton}
+                aria-label={hearted ? 'Mark as unseen' : 'Mark as seen'}
+              >
+                <div style={styles.iconWithTextHorizontal}>
+                  <Check size={15} color={hearted ? '#ffffff' : 'rgba(255,255,255,0.75)'} strokeWidth={hearted ? 3 : 2} />
+                  <span style={{ ...styles.iconLabel, color: hearted ? '#ffffff' : 'rgba(255,255,255,0.75)', fontWeight: hearted ? '700' : '500' }}>
+                    Seen
+                  </span>
+                </div>
+              </button>
+              <button
+                onClick={() => {
+                  try {
+                    const newState = FavoritesManager.toggleBookmark(movieData);
+                    setBookmarked(newState);
+                  } catch (error) {
+                    console.error('Failed to toggle bookmark state:', error);
+                  }
+                }}
+                style={styles.utilityButton}
+                aria-label={bookmarked ? 'Remove from list' : 'Add to list'}
+              >
+                <div style={styles.iconWithTextHorizontal}>
+                  <Plus size={15} color={bookmarked ? '#ffffff' : 'rgba(255,255,255,0.75)'} strokeWidth={bookmarked ? 3 : 2} />
+                  <span style={{ ...styles.iconLabel, color: bookmarked ? '#ffffff' : 'rgba(255,255,255,0.75)', fontWeight: bookmarked ? '700' : '500' }}>
+                    Add
+                  </span>
+                </div>
+              </button>
+            </div>
           </div>
-        )}
-        
-        {showAddedAnimation && (
-          <div style={styles.addedAnimation}>
-            + added
-          </div>
-        )}
+
+          {showAddedAnimation && (
+            <div style={styles.addedAnimation}>+ added</div>
+          )}
+        </div>
       </div>
+
       
       
       {/* Streaming availability - commented out due to often incorrect data 
@@ -369,35 +332,83 @@ const styles = {
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     position: 'relative', // For positioning the action bar
   },
-  actionBarContainer: {
-    position: 'absolute',
-    right: '16px',
-    bottom: '100px',
+  posterContainer: {
     display: 'flex',
-    flexDirection: 'column',
-    gap: '8px',
-    padding: '13px 4.5px',
-    backgroundColor: 'rgba(255, 255, 255, 0.75)',
-    backdropFilter: 'blur(12px)',
-    borderRadius: '12px',
-    border: '1px solid rgba(255, 255, 255, 0.8)',
-    boxShadow: '0 12px 32px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.2), 0 1px 4px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6)',
-    zIndex: 1000,
-    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-    transformOrigin: 'center',
+    justifyContent: 'center',
+    marginBottom: '0',
   },
-  actionButton: {
+
+  posterInner: {
+    position: 'relative',
+    width: '267px',
+    height: '400px',
+    borderRadius: '12px',
+    overflow: 'hidden',
+  },
+
+  posterFooter: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    background: 'linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.4) 55%, transparent 100%)',
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'flex-end',
+    justifyContent: 'space-between',
+    padding: '40px 12px 14px',
+  },
+
+  posterFooterTrailer: {
     background: 'none',
     border: 'none',
     cursor: 'pointer',
-    padding: '6px 8px',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px',
+    padding: '4px 0',
+  },
+
+  posterFooterActions: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: '4px',
+  },
+
+  trailerOverlayLabel: {
+    fontSize: '16px',
+    fontWeight: '600',
+    color: '#ffffff',
+    letterSpacing: '0.01em',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+  },
+
+  utilityButton: {
+    background: 'none',
+    border: 'none',
+    cursor: 'pointer',
+    padding: '4px 6px',
+    borderRadius: '4px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: '8px',
-    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-    transform: 'scale(1)',
+    flexShrink: 0,
   },
+
+  iconWithTextHorizontal: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: '4px',
+  },
+
+  iconLabel: {
+    fontSize: 'var(--font-xs)',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    lineHeight: '1',
+  },
+
   iconWithText: {
     display: 'flex',
     alignItems: 'center',
@@ -405,27 +416,16 @@ const styles = {
     flexDirection: 'column',
   },
   iconLabel: {
-    fontSize: 'var(--font-xs)', // Responsive: 12px desktop, 14px mobile
+    fontSize: 'var(--font-xs)',
     lineHeight: '1',
     userSelect: 'none',
     textAlign: 'center',
   },
-  posterContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-    marginBottom: '5px',
-    paddingLeft: '0px',
-    paddingRight: '0px',
-    paddingTop: '0px',
-    paddingBottom: '5px',
-  },
   largePoster: {
-    maxWidth: '267px',  // Width for 2:3 aspect ratio at 400px height
-    width: 'auto',      // Let width be determined by aspect ratio
-    height: '400px',    // Fixed height for consistent layout
-    objectFit: 'contain', // Show full poster, no cropping
-    borderRadius: '12px',
-    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)', // Add some shadow for depth
+    width: '267px',
+    height: '400px',
+    objectFit: 'contain',
+    display: 'block',
   },
   slug: {
     fontSize: '16px',

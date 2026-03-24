@@ -37,6 +37,7 @@ export default async function handler(req, res) {
              jsonb_array_elements(bl.editorial_data->'subcategories') sub,
              jsonb_array_elements(sub->'movies') mv
         WHERE bl.status = 'active'
+          AND bl.is_suppressed IS NOT TRUE
           AND bl.editorial_data IS NOT NULL
           AND bl.editorial_data->'subcategories' IS NOT NULL
           AND (mv->>'tmdb_id') IS NOT NULL

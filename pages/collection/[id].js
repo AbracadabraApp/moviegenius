@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import PhoneFrame from '../../components/PhoneFrame';
 import CollectionPage from '../../components/CollectionPage';
+import { ChevronLeft } from 'lucide-react';
 import SimpleSearch from '../../components/SimpleSearch';
 
 export default function Collection() {
@@ -39,17 +40,16 @@ export default function Collection() {
     fetchData();
   }, [router.isReady, id]);
 
-  const handleBack = () => {
-    router.back();
-  };
-
   return (
     <PhoneFrame backgroundImage={null} showDarkOverlay={false}>
       <div style={styles.container}>
-        {/* Sticky Search Header */}
+        {/* Sticky nav: back + search */}
         <div style={styles.stickyHeader}>
-          <div style={styles.searchRow}>
-            <SimpleSearch placeholder="Search movies..." />
+          <button onClick={() => router.back()} style={styles.backButton} aria-label="Go back">
+            <ChevronLeft size={22} color="#111827" strokeWidth={2.5} />
+          </button>
+          <div style={styles.searchWrapper}>
+            <SimpleSearch placeholder="Search movies..." compact={true} />
           </div>
         </div>
 
@@ -69,7 +69,7 @@ export default function Collection() {
           )}
 
           {!loading && !error && collection && (
-            <CollectionPage collection={collection} movies={movies} onBack={handleBack} />
+            <CollectionPage collection={collection} movies={movies} />
           )}
         </div>
       </div>
@@ -94,14 +94,31 @@ const styles = {
     backdropFilter: 'blur(10px)',
     WebkitBackdropFilter: 'blur(10px)',
     borderBottom: 'none',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '4px',
+    padding: '10px 16px 10px 10px',
   },
 
-  searchRow: {
-    padding: '12px 16px',
+  backButton: {
+    background: 'none',
+    border: 'none',
+    cursor: 'pointer',
+    padding: '6px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: '8px',
+    flexShrink: 0,
+  },
+
+  searchWrapper: {
+    flex: 1,
   },
 
   content: {
     flex: 1,
+    minHeight: 0,
     overflowY: 'auto',
     scrollbarWidth: 'none',
     msOverflowStyle: 'none',

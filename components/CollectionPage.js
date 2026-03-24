@@ -2,12 +2,12 @@
  * CollectionPage Component
  *
  * Displays a movie collection with subcategories and a 3-column poster grid.
- * Plain white background throughout.
+ * Section headers are designed as aisle markers — dominant landmarks, not labels.
  */
 
 import { useRouter } from 'next/router';
 
-export default function CollectionPage({ collection, movies, onBack }) {
+export default function CollectionPage({ collection, movies }) {
   const router = useRouter();
 
   if (!collection || !movies) {
@@ -16,26 +16,14 @@ export default function CollectionPage({ collection, movies, onBack }) {
 
   return (
     <div style={styles.container}>
-      {/* Header */}
+      {/* Collection Header */}
       <div style={styles.header}>
-        <div style={styles.titleRow}>
-          {onBack && (
-            <button onClick={onBack} style={styles.backButton} aria-label="Go back">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111827" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="m15 18-6-6 6-6"></path>
-              </svg>
-            </button>
-          )}
-          <h1 style={styles.title}>{collection.title}</h1>
-        </div>
-
+        <h1 style={styles.title}>{collection.title}</h1>
         {collection.subtitle && (
           <p style={styles.subtitle}>{collection.subtitle}</p>
         )}
-
         <p style={styles.tally}>
           {movies.length} {movies.length === 1 ? 'film' : 'films'}
-          {collection.subcategories && ` · ${collection.subcategories.length} ${collection.subcategories.length === 1 ? 'category' : 'categories'}`}
         </p>
       </div>
 
@@ -44,22 +32,29 @@ export default function CollectionPage({ collection, movies, onBack }) {
         const subcategoryMovies = movies.filter(m =>
           subcategory.movie_ids?.includes(m.tmdb_id) ||
           subcategory.movies?.some(sm => sm.tmdb_id === m.tmdb_id)
-        );
+        ).filter(m => m.poster_url);
 
         if (subcategoryMovies.length === 0) return null;
 
         return (
-          <div key={index} style={styles.section}>
-            <div style={styles.secHead}>
-              <span style={styles.secLabel}>{subcategory.name}</span>
-              <div style={styles.secRule}></div>
-              <span style={styles.secNum}>
-                {subcategoryMovies.length} {subcategoryMovies.length === 1 ? 'film' : 'films'}
-              </span>
+          <div key={index} style={{...styles.section, ...(index === 0 ? styles.sectionFirst : {})}}>
+            {/* Aisle marker */}
+            <div style={styles.aisleMarker}>
+              <div style={styles.aisleAccent} />
+              <div style={styles.aisleText}>
+                <span style={styles.aisleLabel}>{subcategory.name}</span>
+                <span style={styles.aisleCount}>
+                  {subcategoryMovies.length} {subcategoryMovies.length === 1 ? 'film' : 'films'}
+                </span>
+              </div>
             </div>
 
+            {subcategory.description && (
+              <p style={styles.sectionDesc}>{subcategory.description}</p>
+            )}
+
             <div style={styles.movieGrid}>
-              {subcategoryMovies.filter(movie => movie.poster_url).map((movie, movieIndex) => (
+              {subcategoryMovies.map((movie, movieIndex) => (
                 <div
                   key={movieIndex}
                   style={styles.posterWrapper}
@@ -73,7 +68,7 @@ export default function CollectionPage({ collection, movies, onBack }) {
                     />
                   </div>
                   <div style={styles.movieTitle}>{movie.title}</div>
-                  <div style={styles.movieYear}>{movie.year}</div>
+                  {movie.year && <div style={styles.movieYear}>{movie.year}</div>}
                 </div>
               ))}
             </div>
@@ -83,7 +78,7 @@ export default function CollectionPage({ collection, movies, onBack }) {
 
       {/* Footer */}
       <footer style={styles.footer}>
-        {movies.length} films — a curated collection exploring {collection.title.toLowerCase()}
+        {movies.length} films&ensp;·&ensp;{collection.title}
       </footer>
     </div>
   );
@@ -94,94 +89,109 @@ const styles = {
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     background: '#ffffff',
     color: '#111827',
-    paddingBottom: '40px',
+    paddingBottom: '48px',
   },
 
+  // Collection-level header
   header: {
-    padding: '20px 16px 16px',
+    padding: '20px 16px 20px',
     borderBottom: '1px solid #f0f0f0',
-    marginBottom: '8px',
-  },
-
-  titleRow: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '8px',
-    marginBottom: '8px',
-  },
-
-  backButton: {
-    background: 'none',
-    border: 'none',
-    cursor: 'pointer',
-    padding: '4px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: '8px',
-    flexShrink: 0,
-    marginLeft: '-4px',
+    marginBottom: '4px',
   },
 
   title: {
     fontWeight: '700',
-    fontSize: '24px',
+    fontSize: '26px',
     lineHeight: '1.2',
     color: '#111827',
-    margin: 0,
+    margin: '0 0 6px 0',
   },
 
   subtitle: {
-    fontSize: '13px',
+    fontSize: '14px',
     color: '#6b7280',
     lineHeight: '1.5',
-    margin: '0 0 8px 0',
+    margin: '0 0 10px 0',
   },
 
   tally: {
     fontSize: '13px',
-    color: '#d97706',
-    fontWeight: '500',
-    margin: 0,
-  },
-
-  section: {
-    padding: '20px 16px 0',
-  },
-
-  secHead: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '12px',
-    marginBottom: '14px',
-  },
-
-  secLabel: {
-    fontSize: '15px',
+    color: '#d4af37',
     fontWeight: '600',
+    margin: 0,
+    letterSpacing: '0.02em',
+  },
+
+  // Section = one subcategory
+  section: {
+    paddingTop: '32px',
+    paddingBottom: '8px',
+  },
+
+  sectionFirst: {
+    paddingTop: '16px',
+  },
+
+  // Aisle marker: gold left border + label stacked above count
+  aisleMarker: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'stretch',
+    gap: '12px',
+    paddingLeft: '16px',
+    paddingRight: '16px',
+    marginBottom: '6px',
+  },
+
+  aisleAccent: {
+    width: '3px',
+    borderRadius: '2px',
+    background: '#d4af37',
+    flexShrink: 0,
+    alignSelf: 'stretch',
+  },
+
+  aisleText: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '2px',
+  },
+
+  aisleLabel: {
+    fontSize: '17px',
+    fontWeight: '700',
     color: '#111827',
-    whiteSpace: 'nowrap',
+    lineHeight: '1.2',
+    letterSpacing: '-0.01em',
   },
 
-  secRule: {
-    flex: 1,
-    height: '1px',
-    background: '#e5e7eb',
-  },
-
-  secNum: {
-    fontSize: '11px',
-    color: '#6b7280',
+  aisleCount: {
+    fontSize: '12px',
+    color: '#9ca3af',
     fontWeight: '500',
-    letterSpacing: '0.04em',
-    whiteSpace: 'nowrap',
+    letterSpacing: '0.02em',
+  },
+
+  sectionDesc: {
+    fontSize: '13px',
+    color: '#6b7280',
+    lineHeight: '1.5',
+    margin: '0 0 14px 0',
+    padding: '0 16px',
+  },
+
+  // Rule under the aisle marker
+  rule: {
+    height: '1px',
+    background: '#f0f0f0',
+    margin: '12px 16px 16px',
   },
 
   movieGrid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
     gap: '12px',
-    marginBottom: '8px',
+    padding: '14px 16px 0',
   },
 
   posterWrapper: {
@@ -195,6 +205,7 @@ const styles = {
     overflow: 'hidden',
     backgroundColor: '#f3f4f6',
     marginBottom: '6px',
+    boxShadow: 'var(--shadow-sm)',
   },
 
   poster: {
@@ -218,15 +229,15 @@ const styles = {
 
   movieYear: {
     fontSize: '11px',
-    color: '#6b7280',
+    color: '#9ca3af',
   },
 
   footer: {
-    padding: '20px 16px 0',
+    padding: '24px 16px 0',
     borderTop: '1px solid #f0f0f0',
     fontSize: '11px',
     color: '#9ca3af',
     letterSpacing: '0.03em',
-    marginTop: '24px',
+    marginTop: '32px',
   },
 };

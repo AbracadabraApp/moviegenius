@@ -258,7 +258,7 @@ const styles = {
 
   welcomeText: {
     fontSize: '18px',
-    color: '#d97706',
+    color: '#d4af37',
     margin: 0,
     fontWeight: '600',
   },

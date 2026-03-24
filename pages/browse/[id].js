@@ -319,7 +319,7 @@ const styles = {
 
   subtitle: {
     fontSize: '14px',
-    color: '#d97706',
+    color: '#d4af37',
     margin: 0,
     fontWeight: '500',
   },

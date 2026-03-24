@@ -27,6 +27,17 @@
   --line-height-tight: 1.2;
   --line-height-normal: 1.5;
   --line-height-relaxed: 1.75;
+
+  /* Shadow system */
+  --shadow-sm:  0 2px 8px rgba(0, 0, 0, 0.10);
+  --shadow-md:  0 4px 12px rgba(0, 0, 0, 0.20);
+  --shadow-lg:  0 8px 24px rgba(0, 0, 0, 0.30);
+
+  /* Transition system */
+  --transition-fast:   0.1s ease;
+  --transition-base:   0.2s ease;
+  --transition-slow:   0.3s ease;
+  --transition-card:   box-shadow 0.15s ease, transform 0.1s ease;
 }
 
 /* Mobile devices - increase all sizes for better readability */

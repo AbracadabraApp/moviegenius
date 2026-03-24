@@ -121,7 +121,7 @@ const styles = {
     fontSize: '11px',
     fontWeight: '600',
     borderRadius: '4px',
-    backgroundColor: '#eab308',
+    backgroundColor: '#d4af37',
     color: '#000000',
     textTransform: 'uppercase',
     letterSpacing: '0.5px',
@@ -152,7 +152,7 @@ const styles = {
   viewAllButton: {
     background: 'none',
     border: 'none',
-    color: '#d97706',
+    color: '#d4af37',
     fontSize: '14px',
     fontWeight: '600',
     cursor: 'pointer',

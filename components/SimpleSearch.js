@@ -6,6 +6,7 @@ import { Search } from 'lucide-react';
 export default function SimpleSearch({
   placeholder = 'Search movies and people...',
   initialQuery = '',
+  compact = false,
 }) {
   const [query, setQuery] = useState(initialQuery);
   const [suggestions, setSuggestions] = useState([]);
@@ -167,8 +168,8 @@ export default function SimpleSearch({
   return (
     <div style={styles.container}>
       <form onSubmit={handleSubmit} style={styles.form}>
-        <div style={styles.searchBox}>
-          <Search size={20} style={styles.searchIcon} />
+        <div style={{...styles.searchBox, ...(compact ? styles.searchBoxCompact : {})}}>
+          <Search size={compact ? 16 : 20} style={styles.searchIcon} />
           <input
             ref={inputRef}
             type="text"
@@ -176,7 +177,7 @@ export default function SimpleSearch({
             onChange={handleInputChange}
             onKeyDown={handleKeyDown}
             placeholder={placeholder}
-            style={styles.input}
+            style={{...styles.input, ...(compact ? styles.inputCompact : {})}}
             className="search-input-placeholder"
             autoComplete="off"
           />
@@ -253,6 +254,16 @@ const styles = {
     color: '#000000',
     backgroundColor: 'transparent',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+  },
+  searchBoxCompact: {
+    padding: '9px 12px',
+    borderRadius: '8px',
+    boxShadow: 'none',
+    border: '1px solid #e5e7eb',
+    background: '#f9fafb',
+  },
+  inputCompact: {
+    fontSize: '14px',
   },
   clearButton: {
     background: 'none',
