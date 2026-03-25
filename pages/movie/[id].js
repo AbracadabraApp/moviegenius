@@ -149,13 +149,13 @@ export default function MovieDetailPage() {
     ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
     : '/images/placeholder-poster.jpg';
 
-  const movieData = movie ? { title: movie.title, year, poster: posterUrl, id: mediaId, tmdbId: parseInt(finalMovieId) } : null;
+  const movieData = movie ? { title: movie.title, year, poster: posterUrl, id: mediaId, tmdbId: parseInt(finalMovieId), slug: streaming?.slug } : null;
 
   const seenAddSlot = movieData ? (
     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
       <button
         onClick={() => { try { setHearted(FavoritesManager.toggleHeart(movieData)); } catch(e){ /* ignore */ } }}
-        style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '4px 6px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}
+        style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '4px 2px 4px 9px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}
       >
         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '4px' }}>
           <Check size={16} color={hearted ? '#000000' : '#6b7280'} strokeWidth={hearted ? 3 : 2} />

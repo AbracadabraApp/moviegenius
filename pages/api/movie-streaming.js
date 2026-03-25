@@ -29,7 +29,7 @@ export default async function handler(req, res) {
     await client.connect();
 
     // Get movie from Railway PostgreSQL database - only what we need for streaming display
-    const query = 'SELECT tmdb_id, title, year, streaming_data FROM movies WHERE tmdb_id = $1';
+    const query = 'SELECT tmdb_id, title, year, slug, streaming_data FROM movies WHERE tmdb_id = $1';
     const result = await client.query(query, [parseInt(id)]);
 
     if (result.rows.length === 0) {
@@ -46,6 +46,7 @@ export default async function handler(req, res) {
       tmdb_id: movie.tmdb_id,
       title: movie.title,
       year: movie.year,
+      slug: movie.slug || null,
       streaming_data: movie.streaming_data
     };
 

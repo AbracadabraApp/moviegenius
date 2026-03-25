@@ -64,11 +64,6 @@ export default function NetflixCarousel({
       )}
       <div style={styles.header}>
         <h2 style={styles.title}>{title}</h2>
-        {showViewAll && collectionId && (
-          <button onClick={handleViewAll} style={styles.viewAllButton}>
-            View All →
-          </button>
-        )}
       </div>
 
       {/* Horizontal Scrolling Carousel with Navigation */}
@@ -120,6 +115,15 @@ export default function NetflixCarousel({
           </button>
         )}
       </div>
+
+      {/* View All — below carousel */}
+      {showViewAll && collectionId && (
+        <div style={styles.viewAllRow}>
+          <button onClick={handleViewAll} style={styles.viewAllButton}>
+            View All →
+          </button>
+        </div>
+      )}
     </section>
   );
 }
@@ -163,6 +167,12 @@ const styles = {
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 
+  viewAllRow: {
+    display: 'flex',
+    justifyContent: 'flex-end',
+    padding: '4px 16px 8px',
+  },
+
   viewAllButton: {
     background: 'none',
     border: 'none',
@@ -172,7 +182,6 @@ const styles = {
     cursor: 'pointer',
     padding: 0,
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-    flexShrink: 0,
   },
 
   carouselWrapper: {

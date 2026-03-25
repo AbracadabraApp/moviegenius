@@ -5,6 +5,8 @@
  * The verdict leads. Context is the voice. Reasons are supporting evidence.
  */
 
+import { Sparkles } from 'lucide-react';
+
 export default function WhyWatchSection({ reasons = [], recommendation = "YES", title = null, context = null, streaming = null, style = {}, rightSlot = null }) {
   if (!reasons || reasons.length === 0) {
     return null;
@@ -31,7 +33,10 @@ export default function WhyWatchSection({ reasons = [], recommendation = "YES", 
 
       {/* Verdict */}
       <div style={styles.verdictRow}>
-        <span style={{ ...styles.verdict, color: verdictColor }}>{verdictText}</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+          {!isSkip && <Sparkles size={16} color="#d4af37" style={{ flexShrink: 0 }} />}
+          <span style={{ ...styles.verdict, color: verdictColor }}>{verdictText}</span>
+        </div>
         <div style={{ ...styles.verdictLine, background: `linear-gradient(90deg, ${verdictColor}40, transparent)` }} />
         {rightSlot && <div style={styles.verdictRightSlot}>{rightSlot}</div>}
       </div>

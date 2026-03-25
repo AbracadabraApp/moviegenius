@@ -9,22 +9,15 @@ export default function PhoneFrame({ children, backgroundImage, showDarkOverlay 
   const [isClient, setIsClient] = useState(false);
   const [showFrame, setShowFrame] = useState(true); // Always start with desktop frame
   const [platform, setPlatform] = useState('');
-  const [showGeniusTab, setShowGeniusTab] = useState(false);
-
   useEffect(() => {
     // Set client flag first to prevent hydration mismatch
     setIsClient(true);
     // Update frame visibility only after client hydration
     setShowFrame(shouldShowPhoneFrame());
     setPlatform(getPlatformName());
-
-    // Check for genius easter egg in URL
-    const params = new URLSearchParams(window.location.search);
-    setShowGeniusTab(params.get('genius') === 'true');
   }, []);
 
-  // Use navItems with or without Genius based on easter egg
-  const currentNavItems = showGeniusTab ? navItemsWithGenius : navItems;
+  const currentNavItems = navItemsWithGenius;
 
   // During SSR, always render desktop layout to prevent hydration mismatch
   if (!isClient) {
@@ -44,7 +37,7 @@ export default function PhoneFrame({ children, backgroundImage, showDarkOverlay 
               </>
             )}
             <div style={styles.content}>{children}</div>
-            <NavBar navItems={navItems} routeValidation={routeValidation} isMobile={false} />
+            <NavBar navItems={navItemsWithGenius} routeValidation={routeValidation} isMobile={false} />
             {/* iPhone Safari Bottom Bar */}
             <div style={styles.safariBottomBar}>
               <div style={styles.safariControls}>

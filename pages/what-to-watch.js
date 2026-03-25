@@ -49,14 +49,6 @@ export default function WhatToWatchPage() {
           />
         </div>
 
-        {/* Page Header */}
-        <div style={styles.header}>
-          <h1 style={styles.title}>What to Watch</h1>
-          <p style={styles.subtitle}>
-            Your curated collection of must-watch films
-          </p>
-        </div>
-
         {/* Tab Navigation */}
         <div style={styles.tabs}>
           <button
@@ -159,7 +151,7 @@ const styles = {
     marginBottom: '20px',
     borderBottom: '1px solid #e5e7eb',
     paddingBottom: '0',
-    padding: '0 20px',
+    padding: '20px 20px 0',
   },
   tab: {
     display: 'flex',
