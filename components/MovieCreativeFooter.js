@@ -6,6 +6,7 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
   const [contributors, setContributors] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [expanded, setExpanded] = useState(false);
   
   // Get movie ID from movie prop or router - handle both tmdb_id and id fields
   const movieId = movie?.tmdb_id || movie?.id || router.query.id;
@@ -115,111 +116,48 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
     composer: contributors.composer?.[0] || null
   } : keyElements;
 
+  const renderNames = (people) => {
+    if (!people) return null;
+    const arr = Array.isArray(people) ? people : [people];
+    return arr.map((person, index) => {
+      const displayName = typeof person === 'string' ? person : person.name || person.legacyName;
+      const hasPersonId = typeof person === 'object' && person.personId;
+      return (
+        <span key={index}>
+          <span
+            className={hasPersonId ? 'person-name' : 'person-name-no-link'}
+            onClick={hasPersonId ? () => handlePersonClick(person) : undefined}
+            style={hasPersonId ? { cursor: 'pointer' } : { cursor: 'default' }}
+          >
+            {displayName}
+          </span>
+          {index < arr.length - 1 && ', '}
+        </span>
+      );
+    });
+  };
+
+  const rows = [
+    { label: 'Starring', value: displayData.stars?.length > 0 ? displayData.stars : null },
+    { label: 'Director', value: displayData.director || null },
+    { label: 'Written by', value: displayData.writers?.length > 0 ? displayData.writers : null },
+    { label: 'Cinematographer', value: displayData.cinematographer || null },
+    { label: 'Composer', value: displayData.composer || null },
+  ].filter(r => r.value);
+
   return (
     <div style={styles.container}>
-      {/* Starring */}
-      {displayData.stars && displayData.stars.length > 0 && (
-        <div style={styles.row}>
-          <span style={styles.label}>Starring: </span>
-          {displayData.stars.map((star, index) => {
-            const displayName = typeof star === 'string' ? star : star.name || star.legacyName;
-            const hasPersonId = typeof star === 'object' && star.personId;
-            return (
-              <span key={index}>
-                <span 
-                  className={hasPersonId ? "person-name" : "person-name-no-link"}
-                  onClick={hasPersonId ? () => handlePersonClick(star) : undefined}
-                  style={hasPersonId ? { cursor: 'pointer' } : { cursor: 'default' }}
-                >
-                  {displayName}
-                </span>
-                {index < displayData.stars.length - 1 && ', '}
-              </span>
-            );
-          })}
-        </div>
-      )}
-
-      {/* Director */}
-      {displayData.director && (
-        <div style={styles.row}>
-          <span style={styles.label}>Director: </span>
-          {(() => {
-            const hasPersonId = typeof displayData.director === 'object' && displayData.director.personId;
-            const displayName = typeof displayData.director === 'string' ? displayData.director : displayData.director.name || displayData.director.legacyName;
-            return (
-              <span 
-                className={hasPersonId ? "person-name" : "person-name-no-link"}
-                onClick={hasPersonId ? () => handlePersonClick(displayData.director) : undefined}
-                style={hasPersonId ? { cursor: 'pointer' } : { cursor: 'default' }}
-              >
-                {displayName}
-              </span>
-            );
-          })()}
-        </div>
-      )}
-
-      {/* Writers */}
-      {displayData.writers && displayData.writers.length > 0 && (
-        <div style={styles.row}>
-          <span style={styles.label}>Written by: </span>
-          {displayData.writers.map((writer, index) => {
-            const displayName = typeof writer === 'string' ? writer : writer.name || writer.legacyName;
-            const hasPersonId = typeof writer === 'object' && writer.personId;
-            return (
-              <span key={index}>
-                <span 
-                  className={hasPersonId ? "person-name" : "person-name-no-link"}
-                  onClick={hasPersonId ? () => handlePersonClick(writer) : undefined}
-                  style={hasPersonId ? { cursor: 'pointer' } : { cursor: 'default' }}
-                >
-                  {displayName}
-                </span>
-                {index < displayData.writers.length - 1 && ', '}
-              </span>
-            );
-          })}
-        </div>
-      )}
-
-      {/* Cinematographer */}
-      {displayData.cinematographer && (
-        <div style={styles.row}>
-          <span style={styles.label}>Cinematographer: </span>
-          {(() => {
-            const hasPersonId = typeof displayData.cinematographer === 'object' && displayData.cinematographer.personId;
-            const displayName = typeof displayData.cinematographer === 'string' ? displayData.cinematographer : displayData.cinematographer.name || displayData.cinematographer.legacyName;
-            return (
-              <span 
-                className={hasPersonId ? "person-name" : "person-name-no-link"}
-                onClick={hasPersonId ? () => handlePersonClick(displayData.cinematographer) : undefined}
-                style={hasPersonId ? { cursor: 'pointer' } : { cursor: 'default' }}
-              >
-                {displayName}
-              </span>
-            );
-          })()}
-        </div>
-      )}
-
-      {/* Composer */}
-      {displayData.composer && (
-        <div style={styles.row}>
-          <span style={styles.label}>Composer: </span>
-          {(() => {
-            const hasPersonId = typeof displayData.composer === 'object' && displayData.composer.personId;
-            const displayName = typeof displayData.composer === 'string' ? displayData.composer : displayData.composer.name || displayData.composer.legacyName;
-            return (
-              <span 
-                className={hasPersonId ? "person-name" : "person-name-no-link"}
-                onClick={hasPersonId ? () => handlePersonClick(displayData.composer) : undefined}
-                style={hasPersonId ? { cursor: 'pointer' } : { cursor: 'default' }}
-              >
-                {displayName}
-              </span>
-            );
-          })()}
+      <button style={styles.revealButton} onClick={() => setExpanded(e => !e)}>
+        Cast & Crew {expanded ? '↑' : '↓'}
+      </button>
+      {expanded && (
+        <div style={styles.grid}>
+          {rows.map(({ label, value }) => (
+            <div key={label} style={styles.gridRow}>
+              <span style={styles.label}>{label}</span>
+              <span style={styles.names}>{renderNames(value)}</span>
+            </div>
+          ))}
         </div>
       )}
     </div>
@@ -228,26 +166,51 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
 
 const styles = {
   container: {
-    marginTop: '20px',
-    padding: '16px 20px',
-    fontSize: '16px',
-    lineHeight: '1.5',
-    color: '#000',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
+    marginTop: '4px',
+    padding: '4px 20px 8px',
+    fontSize: 'var(--font-sm)',
+    lineHeight: '1.6',
+    color: '#374151',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 
-  row: {
-    marginBottom: '8px',
+  revealButton: {
+    background: 'none',
+    border: 'none',
+    cursor: 'pointer',
+    fontSize: 'var(--font-sm)',
+    color: '#6b7280',
+    fontWeight: '500',
+    padding: '0',
+    marginBottom: '12px',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+  },
+
+  grid: {
+    display: 'grid',
+    gridTemplateColumns: '100px 1fr',
+    gap: '6px 12px',
+  },
+
+  gridRow: {
+    display: 'contents',
   },
 
   label: {
-    color: '#000',
-    fontWeight: 'normal',
+    color: '#9ca3af',
+    fontWeight: '400',
+    fontSize: 'var(--font-sm)',
+    alignSelf: 'baseline',
+  },
+
+  names: {
+    color: '#374151',
+    fontWeight: '500',
   },
 
   loadingText: {
-    color: '#666',
-    fontSize: '14px',
+    color: '#6b7280',
+    fontSize: 'var(--font-sm)',
     textAlign: 'center',
   },
 };

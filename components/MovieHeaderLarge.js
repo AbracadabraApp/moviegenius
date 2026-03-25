@@ -222,7 +222,7 @@ export default function MovieHeaderLarge({
                 style={styles.posterFooterTrailer}
                 aria-label="Play trailer"
               >
-                <PlayCircle size={24} color="#ffffff" fill="rgba(255,255,255,0.2)" strokeWidth={1.2} />
+                <PlayCircle size={36} color="#ffffff" fill="rgba(255,255,255,0.2)" strokeWidth={1.2} />
                 <span style={styles.trailerOverlayLabel}>Trailer</span>
               </button>
             </div>
@@ -326,7 +326,7 @@ const styles = {
   },
 
   trailerOverlayLabel: {
-    fontSize: '14px',
+    fontSize: '18px',
     fontWeight: '600',
     color: '#ffffff',
     letterSpacing: '0.01em',

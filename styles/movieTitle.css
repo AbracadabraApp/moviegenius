@@ -108,6 +108,7 @@
 /* Person names - same styling as movie titles for consistency */
 .person-name {
   color: inherit;
+  font-family: inherit;
   text-decoration: underline;
   text-decoration-color: #d4af37;
   text-decoration-thickness: 1px;

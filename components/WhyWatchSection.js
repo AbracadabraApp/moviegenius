@@ -57,7 +57,7 @@ export default function WhyWatchSection({ reasons = [], recommendation = "YES", 
 
 const styles = {
   container: {
-    padding: '20px 20px 8px',
+    padding: '10px 20px 8px',
   },
 
   verdictRow: {
@@ -88,11 +88,14 @@ const styles = {
   },
 
   context: {
-    fontSize: '14px',
+    fontSize: 'var(--font-sm)',
     lineHeight: '1.6',
-    color: '#6b7280',
-    fontStyle: 'italic',
+    color: '#000000',
+    fontStyle: 'normal',
     margin: '16px 0 0 0',
+    marginLeft: '4px',
+    borderLeft: '3px solid #e5e7eb',
+    paddingLeft: '10px',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 
@@ -117,7 +120,7 @@ const styles = {
   },
 
   reasonText: {
-    fontSize: '15px',
+    fontSize: 'var(--font-sm)',
     color: '#374151',
     lineHeight: '1.5',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',

@@ -207,14 +207,14 @@ export default function MovieDetailPage() {
             />
           </ErrorBoundary>
 
-          {/* More Ideas */}
-          <ErrorBoundary level="section">
-            <MoreIdeasContainer tmdbId={parseInt(finalMovieId)} />
-          </ErrorBoundary>
-
           {/* Footer */}
           <ErrorBoundary level="section">
             <MovieCreativeFooter movie={movie} />
+          </ErrorBoundary>
+
+          {/* More Ideas */}
+          <ErrorBoundary level="section">
+            <MoreIdeasContainer tmdbId={parseInt(finalMovieId)} />
           </ErrorBoundary>
 
         </div>
