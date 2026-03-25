@@ -1,107 +1,138 @@
 /**
- * Genius Page - 🔒 LOCKED COMPONENT 🔒
- * @locked true
+ * Genius Page — Collection Recommendations
  *
- * Main entry point with personal brand manifesto and theme navigation.
- * Contains owner's personal statement about product vision.
- *
- * PROTECTED: Manifesto text, hero messaging, theme navigation
- * See genius.js.LOCK for detailed protection rules
+ * Shows collections derived from the user's seen history and watchlist.
+ * "Because you watched X..." sections, each with 1-3 matching collections.
+ * Zero Claude cost — pure SQL overlap matching.
  */
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
-import Link from 'next/link';
-import { themeLinks } from '../lib/routes';
+import { FavoritesManager } from '../components/FavoritesManager';
 
 export default function GeniusPage() {
   const router = useRouter();
-  const [showModal, setShowModal] = useState(false);
+  const [sections, setSections] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [isEmpty, setIsEmpty] = useState(false);
 
-  // Check if user has seen the modal before
   useEffect(() => {
-    const hasSeenModal = localStorage.getItem('moviegenius-modal-seen');
-    if (!hasSeenModal) {
-      setShowModal(true);
+    const seenMovies = FavoritesManager.getHeartedMovies();
+    const savedMovies = FavoritesManager.getBookmarkedMovies();
+
+    const seenIds = seenMovies.map(m => m.tmdbId).filter(Boolean);
+    const savedIds = savedMovies.map(m => m.tmdbId).filter(Boolean);
+
+    if (seenIds.length === 0 && savedIds.length === 0) {
+      setLoading(false);
+      setIsEmpty(true);
+      return;
     }
+
+    fetch('/api/genius-recommendations', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ seenIds, savedIds }),
+    })
+      .then(r => r.json())
+      .then(data => {
+        setSections(data.sections || []);
+        setIsEmpty(data.empty || data.sections?.length === 0);
+      })
+      .catch(err => {
+        console.error('Genius recs error:', err);
+        setIsEmpty(true);
+      })
+      .finally(() => setLoading(false));
   }, []);
-
-  // Theme navigation now uses centralized themeLinks from lib/routes
-
-  // Handle search results - unified search redirects to /search page
-  const handleSearchResults = () => {
-    // With unified search, this won't be called since search redirects to /search page
-    // Kept for compatibility if useUnifiedSearch is disabled
-  };
-
-  // Handle "Enjoy the Show" button click
-  const handleEnjoyTheShow = () => {
-    setShowModal(false);
-    localStorage.setItem('moviegenius-modal-seen', 'true');
-  };
 
   return (
     <PhoneFrame>
       <div style={styles.container}>
-        {/* Search Section at Top */}
-        <div style={styles.searchSection}>
-          <SimpleSearch onResults={handleSearchResults} placeholder="Search movies..." />
+        {/* Search */}
+        <div style={styles.searchBar}>
+          <SimpleSearch placeholder="Search movies..." />
         </div>
 
-        {/* Hero Section with Black Background */}
-        <div style={styles.heroSection}>
-          {/* Hero Text */}
-          <div style={styles.heroText}>
-            <div style={styles.heroMainText}>DON'T BINGE WATCH TV</div>
-            <div style={styles.heroSubText}>FEAST ON GREAT FILMS INSTEAD</div>
-          </div>
-
-          {/* Hero Image */}
-          <div style={styles.heroImageContainer}>
-            <img
-              src="/images/hero-rotation/hero-8.jpg"
-              alt="Film Education Hero"
-              style={styles.heroImage}
-            />
-          </div>
-        </div>
-
-        {/* Theme Selection */}
-        <div style={styles.contentSection}>
-          <div style={styles.questionSection}>
-            <h2 style={styles.sectionQuestion}>Which film topics interest you most?</h2>
-          </div>
-
-          <div style={styles.themeGrid}>
-            {themeLinks.map(themeLink => (
-              <Link key={themeLink.slug} href={themeLink.href} style={{ textDecoration: 'none' }}>
-                <div style={{ ...styles.themeButton, cursor: 'pointer' }}>{themeLink.label}</div>
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* Modal with Manifesto */}
-        {showModal && (
-          <div style={styles.modalOverlay}>
-            <div style={styles.modalContent}>
-              <h2 style={styles.modalTitle}>Welcome to MovieGenius</h2>
-              {/* 🔒 LOCKED: Personal manifesto text - DO NOT MODIFY */}
-              <div style={styles.manifestoText}>
-                <p>
-                  Streaming platforms put great films at our fingertips, then hid them under
-                  time-wasting junk. MovieGenius is your intelligence filter—no more mindless
-                  scrolling through endless mediocre "shows". Discover quality cinema and make
-                  deliberate choices again.
-                </p>
-              </div>
-              <button onClick={handleEnjoyTheShow} style={styles.enjoyButton}>
-                Enjoy the Show
-              </button>
+        <div style={styles.content}>
+          {loading && (
+            <div style={styles.skeletonWrapper}>
+              <style>{`
+                @keyframes shimmer {
+                  0% { background-position: -600px 0; }
+                  100% { background-position: 600px 0; }
+                }
+                .sk {
+                  background: linear-gradient(90deg, #f0f0f0 25%, #e8e8e8 50%, #f0f0f0 75%);
+                  background-size: 600px 100%;
+                  animation: shimmer 1.4s infinite linear;
+                  border-radius: 6px;
+                }
+              `}</style>
+              {[0, 1, 2].map(i => (
+                <div key={i} style={styles.skeletonSection}>
+                  <div className="sk" style={{ height: '14px', width: '220px', marginBottom: '12px' }} />
+                  {[0, 1].map(j => (
+                    <div className="sk" key={j} style={{ height: '72px', borderRadius: '10px', marginBottom: '10px' }} />
+                  ))}
+                </div>
+              ))}
             </div>
-          </div>
-        )}
+          )}
+
+          {!loading && isEmpty && (
+            <div style={styles.emptyState}>
+              <div style={styles.emptyIcon}>🎬</div>
+              <div style={styles.emptyTitle}>Nothing yet</div>
+              <div style={styles.emptyText}>
+                Mark films as Seen or Add them to your list — Genius will find collections that match your taste.
+              </div>
+            </div>
+          )}
+
+          {!loading && !isEmpty && sections.map((section, i) => (
+            <div key={i} style={styles.section}>
+              {/* Section label */}
+              <div style={styles.sectionLabel}>
+                <span style={styles.because}>
+                  {section.seedType === 'seen' ? 'Because you watched' : 'Because you saved'}
+                </span>
+                <span style={styles.seedTitle}> {section.seedMovie.title}</span>
+              </div>
+
+              {/* Collection cards */}
+              {section.collections.map(collection => (
+                <div
+                  key={collection.id}
+                  style={styles.card}
+                  onClick={() => router.push(`/collection/${collection.id}`)}
+                >
+                  {/* Poster strip */}
+                  <div style={styles.posterStrip}>
+                    {collection.previewMovies.slice(0, 4).map((m, idx) => (
+                      <img
+                        key={idx}
+                        src={m.poster_url}
+                        alt={m.title}
+                        style={styles.poster}
+                      />
+                    ))}
+                  </div>
+
+                  {/* Info */}
+                  <div style={styles.cardInfo}>
+                    <div style={styles.cardTitle}>{collection.title}</div>
+                    <div style={styles.cardMeta}>
+                      {collection.overlapCount} of your films
+                      {collection.categories[0] ? ` · ${collection.categories[0]}` : ''}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
     </PhoneFrame>
   );
@@ -112,142 +143,125 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
-    fontFamily:
-      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     backgroundColor: '#ffffff',
-    overflow: 'hidden',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
-  searchSection: {
-    padding: '16px 20px',
-    backgroundColor: '#000000',
-  },
-  heroSection: {
-    backgroundColor: '#000000',
-    minHeight: '180px',
-  },
-  heroText: {
-    backgroundColor: '#000000',
-    padding: '0px 20px 14px 20px',
-    textAlign: 'center',
-  },
-  heroImageContainer: {
-    height: '120px',
-    overflow: 'hidden',
-  },
-  heroImage: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
-  },
-  heroMainText: {
-    fontSize: '22px',
-    fontWeight: '900',
-    color: '#ffffff',
-    letterSpacing: '1px',
-    lineHeight: '1.1',
-    marginBottom: '4px',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
-    whiteSpace: 'nowrap',
-  },
-  heroSubText: {
-    fontSize: '15px',
-    fontWeight: '600',
-    color: '#d4af37',
-    letterSpacing: '0.5px',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
-    whiteSpace: 'nowrap',
-  },
-  contentSection: {
-    flex: 1,
-    padding: '20px 20px',
-    backgroundColor: '#000000',
-    overflowY: 'auto',
-  },
-  questionSection: {
-    textAlign: 'center',
-    marginBottom: '24px',
-  },
-  sectionQuestion: {
-    fontSize: '18px',
-    fontWeight: '600',
-    color: '#ffffff',
-    margin: 0,
-    lineHeight: '1.3',
-    whiteSpace: 'nowrap',
-  },
-  themeGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(2, 1fr)',
-    gap: '16px',
-    marginBottom: '32px',
-  },
-  themeButton: {
-    padding: '12px 8px',
-    backgroundColor: '#ffffff',
-    border: '2px solid #e5e7eb',
-    borderRadius: '8px',
-    fontSize: '13px',
-    fontWeight: '600',
-    color: '#374151',
-    cursor: 'pointer',
-    transition: 'all 0.2s ease',
-    textAlign: 'center',
-    lineHeight: '1.2',
-    minHeight: '50px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    wordBreak: 'normal',
-    hyphens: 'none',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
-    textDecoration: 'none',
-  },
-  modalOverlay: {
-    position: 'fixed',
+
+  searchBar: {
+    position: 'sticky',
     top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+    zIndex: 100,
+    backgroundColor: 'rgba(255,255,255,0.98)',
+    backdropFilter: 'blur(10px)',
+    WebkitBackdropFilter: 'blur(10px)',
+    padding: '16px',
+  },
+
+  content: {
+    flex: 1,
+    overflowY: 'auto',
+    scrollbarWidth: 'none',
+    msOverflowStyle: 'none',
+    padding: '8px 0 40px',
+  },
+
+  skeletonWrapper: {
+    padding: '16px',
+  },
+
+  skeletonSection: {
+    marginBottom: '28px',
+  },
+
+  // Empty state
+  emptyState: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: '80px 32px',
+    textAlign: 'center',
+  },
+
+  emptyIcon: {
+    fontSize: '56px',
+    marginBottom: '16px',
+  },
+
+  emptyTitle: {
+    fontSize: '20px',
+    fontWeight: '600',
+    color: '#111827',
+    marginBottom: '10px',
+  },
+
+  emptyText: {
+    fontSize: '15px',
+    color: '#6b7280',
+    lineHeight: '1.5',
+  },
+
+  // Sections
+  section: {
+    padding: '16px 16px 8px',
+    borderBottom: '1px solid #f3f4f6',
+  },
+
+  sectionLabel: {
+    fontSize: '13px',
+    marginBottom: '12px',
+    lineHeight: '1.4',
+  },
+
+  because: {
+    color: '#6b7280',
+    fontWeight: '400',
+  },
+
+  seedTitle: {
+    color: '#111827',
+    fontWeight: '600',
+  },
+
+  // Collection card
+  card: {
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center',
-    zIndex: 1000,
-  },
-  modalContent: {
-    backgroundColor: '#ffffff',
-    borderRadius: '16px',
-    padding: '32px 24px',
-    margin: '20px',
-    maxWidth: '350px',
-    textAlign: 'center',
-    boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3)',
-  },
-  modalTitle: {
-    fontSize: '24px',
-    fontWeight: '700',
-    color: '#000000',
-    marginBottom: '20px',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
-  },
-  manifestoText: {
-    fontSize: '15px',
-    lineHeight: '1.6',
-    color: '#374151',
-    marginBottom: '24px',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
-    textAlign: 'left',
-  },
-  enjoyButton: {
-    backgroundColor: '#d4af37',
-    color: '#000000',
-    border: 'none',
-    borderRadius: '12px',
-    padding: '14px 24px',
-    fontSize: '16px',
-    fontWeight: '600',
+    gap: '12px',
+    padding: '10px 0',
     cursor: 'pointer',
-    transition: 'all 0.2s ease',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
+    borderTop: '1px solid #f9fafb',
+  },
+
+  posterStrip: {
+    display: 'flex',
+    gap: '3px',
+    flexShrink: 0,
+  },
+
+  poster: {
+    width: '36px',
+    height: '54px',
+    objectFit: 'cover',
+    borderRadius: '4px',
+    display: 'block',
+  },
+
+  cardInfo: {
+    flex: 1,
+    minWidth: 0,
+  },
+
+  cardTitle: {
+    fontSize: '15px',
+    fontWeight: '600',
+    color: '#111827',
+    marginBottom: '3px',
+    lineHeight: '1.3',
+  },
+
+  cardMeta: {
+    fontSize: '12px',
+    color: '#6b7280',
+    fontWeight: '400',
   },
 };
