@@ -4,43 +4,40 @@ import { useState, useEffect } from 'react';
 const MovieCreativeFooter = ({ analysis, movie }) => {
   const router = useRouter();
   const [contributors, setContributors] = useState({});
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [expanded, setExpanded] = useState(false);
-  
+
   // Get movie ID from movie prop or router - handle both tmdb_id and id fields
   const movieId = movie?.tmdb_id || movie?.id || router.query.id;
-  
-  // Fetch contributors using fast contributors_json approach
+
+  // Fetch contributors only when expanded — no point loading until user asks
   useEffect(() => {
-    if (!movieId) {
-      setLoading(false);
-      return;
-    }
-    
+    if (!expanded || !movieId) return;
+    if (Object.keys(contributors).length > 0) return; // already fetched
+
     // Skip API calls if we have static data with keyElements
     if (movie?.staticData && (movie?.keyElements || analysis?.keyElements)) {
       setLoading(false);
       return;
     }
-    
+
     const fetchContributors = async () => {
       try {
         setLoading(true);
-        // Use simple contributors API (reliable core tables)
         const response = await fetch('/api/movie-contributors-simple', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ movieId })
         });
-        
+
         if (!response.ok) {
           throw new Error(`Failed to fetch contributors: ${response.status}`);
         }
-        
+
         const data = await response.json();
         setContributors(data.contributors || {});
-        
+
       } catch (err) {
         console.error('Error fetching contributors:', err);
         setError(err.message);
@@ -48,9 +45,9 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
         setLoading(false);
       }
     };
-    
+
     fetchContributors();
-  }, [movieId, movie, analysis]);
+  }, [expanded, movieId]);
   
   // Also try to extract keyElements from legacy analysis format as fallback
   let legacyKeyElements = {};
@@ -86,14 +83,8 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
     // If no person ID, do nothing (names won't be clickable)
   };
 
-  // Show loading state while fetching contributors
-  if (loading) {
-    return (
-      <div style={styles.container}>
-        <div style={styles.loadingText}>Loading contributors...</div>
-      </div>
-    );
-  }
+  // Render nothing while loading — contributors appear when ready
+  if (loading) return null;
   
   // Don't show footer if no contributors and no legacy keyElements
   const hasContributors = contributors && Object.keys(contributors).length > 0;

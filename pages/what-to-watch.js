@@ -2,18 +2,17 @@
  * What to Watch Page
  * Simple watchlist page showing user's favorited and bookmarked movies
  */
-import { Heart, Bookmark, Play, X } from 'lucide-react';
+import { Check, Bookmark } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { FavoritesManager } from '../components/FavoritesManager';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
-import { useRouter } from 'next/router';
+import MediaCard from '../components/MediaCard';
 
 export default function WhatToWatchPage() {
-  const router = useRouter();
   const [heartedMovies, setHeartedMovies] = useState([]);
   const [bookmarkedMovies, setBookmarkedMovies] = useState([]);
-  const [activeTab, setActiveTab] = useState('hearted'); // 'hearted' or 'bookmarked'
+  const [activeTab, setActiveTab] = useState('bookmarked'); // 'hearted' or 'bookmarked'
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -34,16 +33,6 @@ export default function WhatToWatchPage() {
       console.error('Failed to load favorites:', error);
     }
   }, [mounted]);
-
-  const handleRemoveHeart = (movie) => {
-    FavoritesManager.toggleHeart(movie);
-    setHeartedMovies(prev => prev.filter(m => m.id !== movie.id));
-  };
-
-  const handleRemoveBookmark = (movie) => {
-    FavoritesManager.toggleBookmark(movie);
-    setBookmarkedMovies(prev => prev.filter(m => m.id !== movie.id));
-  };
 
   const movies = activeTab === 'hearted' ? heartedMovies : bookmarkedMovies;
   const isEmpty = movies.length === 0;
@@ -71,21 +60,6 @@ export default function WhatToWatchPage() {
         {/* Tab Navigation */}
         <div style={styles.tabs}>
           <button
-            onClick={() => setActiveTab('hearted')}
-            style={{
-              ...styles.tab,
-              ...(activeTab === 'hearted' ? styles.tabActive : {}),
-            }}
-          >
-            <Heart
-              size={16}
-              fill={activeTab === 'hearted' ? '#d4af37' : 'none'}
-              color={activeTab === 'hearted' ? '#d4af37' : '#6b7280'}
-            />
-            <span>Favorites ({heartedMovies.length})</span>
-          </button>
-
-          <button
             onClick={() => setActiveTab('bookmarked')}
             style={{
               ...styles.tab,
@@ -99,6 +73,20 @@ export default function WhatToWatchPage() {
             />
             <span>Watch Later ({bookmarkedMovies.length})</span>
           </button>
+
+          <button
+            onClick={() => setActiveTab('hearted')}
+            style={{
+              ...styles.tab,
+              ...(activeTab === 'hearted' ? styles.tabActive : {}),
+            }}
+          >
+            <Check
+              size={16}
+              color={activeTab === 'hearted' ? '#d4af37' : '#6b7280'}
+            />
+            <span>Seen ({heartedMovies.length})</span>
+          </button>
         </div>
 
         {/* Movie List */}
@@ -107,10 +95,10 @@ export default function WhatToWatchPage() {
             <div style={styles.emptyState}>
               {activeTab === 'hearted' ? (
                 <>
-                  <Heart size={48} color="#d1d5db" strokeWidth={1.5} />
-                  <h3 style={styles.emptyTitle}>No favorites yet</h3>
+                  <Check size={48} color="#d1d5db" strokeWidth={1.5} />
+                  <h3 style={styles.emptyTitle}>No movies marked seen yet</h3>
                   <p style={styles.emptyText}>
-                    Tap the <Heart size={14} style={{display: 'inline', verticalAlign: 'middle'}} /> on movies you love
+                    Tap <Check size={14} style={{display: 'inline', verticalAlign: 'middle'}} /> Seen on any movie page
                   </p>
                 </>
               ) : (
@@ -125,96 +113,19 @@ export default function WhatToWatchPage() {
             </div>
           ) : (
             movies.map((movie, index) => (
-              <MovieCard
+              <MediaCard
                 key={movie.id || index}
-                movie={movie}
-                onRemove={activeTab === 'hearted' ? handleRemoveHeart : handleRemoveBookmark}
-                showHeart={activeTab === 'hearted'}
-                router={router}
+                title={movie.title}
+                year={movie.year}
+                initialSlug={movie.slug}
+                initialPoster={movie.poster}
+                tmdbId={movie.tmdbId || movie.tmdb_id}
               />
             ))
           )}
         </div>
       </div>
     </PhoneFrame>
-  );
-}
-
-/**
- * Individual Movie Card in Watchlist
- */
-function MovieCard({ movie, onRemove, showHeart, router }) {
-  const [isRemoving, setIsRemoving] = useState(false);
-
-  const handleRemove = (e) => {
-    e.stopPropagation();
-    setIsRemoving(true);
-    setTimeout(() => {
-      onRemove(movie);
-    }, 200); // Brief animation delay
-  };
-
-  const handleWatch = () => {
-    // Navigate to movie detail page - use tmdbId or tmdb_id field
-    const tmdbId = movie.tmdbId || movie.tmdb_id;
-
-    if (tmdbId) {
-      router.push(`/movie/${tmdbId}`);
-    } else {
-      console.warn('Movie has no TMDB ID:', movie);
-    }
-  };
-
-  return (
-    <div
-      onClick={handleWatch}
-      style={{
-        ...styles.movieCard,
-        opacity: isRemoving ? 0.3 : 1,
-        transform: isRemoving ? 'scale(0.95)' : 'scale(1)',
-      }}
-    >
-      {/* Poster */}
-      <div style={styles.posterContainer}>
-        <img
-          src={movie.poster || '/images/placeholder-poster.jpg'}
-          alt={movie.title}
-          style={styles.poster}
-          onError={(e) => {
-            e.target.src = '/images/placeholder-poster.jpg';
-          }}
-        />
-      </div>
-
-      {/* Movie Info */}
-      <div style={styles.movieInfo}>
-        <h3 style={styles.movieTitle}>
-          {movie.title} {movie.year && `(${movie.year})`}
-        </h3>
-        {movie.slug && (
-          <p style={styles.movieSlug}>{movie.slug}</p>
-        )}
-      </div>
-
-      {/* Actions */}
-      <div style={styles.actions}>
-        <button
-          onClick={handleWatch}
-          style={styles.watchButton}
-          title="View details"
-        >
-          <Play size={18} fill="#ffffff" color="#ffffff" />
-        </button>
-
-        <button
-          onClick={handleRemove}
-          style={styles.removeButton}
-          title={showHeart ? "Remove from favorites" : "Remove from watch later"}
-        >
-          <X size={18} color="#6b7280" />
-        </button>
-      </div>
-    </div>
   );
 }
 
@@ -274,83 +185,6 @@ const styles = {
     flexDirection: 'column',
     gap: '12px',
     padding: '0 20px',
-  },
-  movieCard: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '12px',
-    padding: '12px',
-    backgroundColor: '#f9fafb',
-    borderRadius: '12px',
-    border: '1px solid #e5e7eb',
-    transition: 'all 0.2s ease',
-    cursor: 'pointer',
-  },
-  posterContainer: {
-    flexShrink: 0,
-    width: '60px',
-    height: '90px',
-    borderRadius: '8px',
-    overflow: 'hidden',
-    backgroundColor: '#e5e7eb',
-  },
-  poster: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
-  },
-  movieInfo: {
-    flex: 1,
-    minWidth: 0, // Allow text truncation
-  },
-  movieTitle: {
-    fontSize: '15px',
-    fontWeight: '600',
-    color: '#111827',
-    marginBottom: '4px',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    whiteSpace: 'nowrap',
-  },
-  movieSlug: {
-    fontSize: '13px',
-    color: '#6b7280',
-    lineHeight: '1.4',
-    display: '-webkit-box',
-    WebkitLineClamp: 2,
-    WebkitBoxOrient: 'vertical',
-    overflow: 'hidden',
-  },
-  actions: {
-    display: 'flex',
-    gap: '8px',
-    flexShrink: 0,
-  },
-  watchButton: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: '40px',
-    height: '40px',
-    borderRadius: '8px',
-    backgroundColor: '#d4af37',
-    border: 'none',
-    cursor: 'pointer',
-    transition: 'all 0.2s ease',
-    outline: 'none',
-  },
-  removeButton: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: '40px',
-    height: '40px',
-    borderRadius: '8px',
-    backgroundColor: '#f3f4f6',
-    border: 'none',
-    cursor: 'pointer',
-    transition: 'all 0.2s ease',
-    outline: 'none',
   },
   emptyState: {
     display: 'flex',
