@@ -5,13 +5,11 @@
  */
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
 import NetflixCarousel from '../components/NetflixCarousel';
 
 export default function MovieGeniusPage() {
-  const router = useRouter();
   const [collections, setCollections] = useState([]);
   const [loading, setLoading] = useState(true);
   const [loadingMore, setLoadingMore] = useState(false);
@@ -168,13 +166,6 @@ export default function MovieGeniusPage() {
 
           {collections.length > 0 && (
             <>
-              {/* Welcome Message */}
-              <div style={styles.welcomeSection}>
-                <p style={styles.welcomeText}>
-                  Discover great films in more than 5,000 curated collections
-                </p>
-              </div>
-
               {/* Featured Collection Carousels */}
               {collections.map((collection) => {
                 // Use the first category from the collection's categories array
@@ -202,17 +193,6 @@ export default function MovieGeniusPage() {
                 </div>
               )}
 
-              {/* Browse All Link - Only show when we've reached the end */}
-              {!hasMore && (
-                <div style={styles.browseAllSection}>
-                  <button
-                    onClick={() => router.push('/browse')}
-                    style={styles.browseAllButton}
-                  >
-                    Browse All 5,126 Collections →
-                  </button>
-                </div>
-              )}
             </>
           )}
         </div>
@@ -308,41 +288,4 @@ const styles = {
     opacity: 0.8,
   },
 
-  // Welcome section
-  welcomeSection: {
-    padding: '12px 16px 8px 16px',
-  },
-
-  welcomeTitle: {
-    fontSize: '28px',
-    fontWeight: '700',
-    color: '#111827',
-    margin: '0 0 8px 0',
-  },
-
-  welcomeText: {
-    fontSize: '18px',
-    color: '#d4af37',
-    margin: 0,
-    fontWeight: '600',
-  },
-
-  // Browse all section
-  browseAllSection: {
-    padding: '32px 16px',
-    textAlign: 'center',
-  },
-
-  browseAllButton: {
-    backgroundColor: 'rgba(212, 175, 55, 0.15)',
-    border: '1px solid #d4af37',
-    borderRadius: '8px',
-    padding: '16px 24px',
-    fontSize: '16px',
-    fontWeight: '600',
-    color: '#d4af37',
-    cursor: 'pointer',
-    transition: 'all 0.2s ease',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-  },
 };
