@@ -12,7 +12,6 @@ export default function ThemePage({ themeId, customStyles = {} }) {
   const router = useRouter();
   const [searchResults, setSearchResults] = useState([]);
   const [showSearchResults, setShowSearchResults] = useState(false);
-  const [loading, setLoading] = useState(true);
   const [currentThemeId, setCurrentThemeId] = useState(themeId);
 
   // Extract theme from URL when route changes
@@ -24,7 +23,6 @@ export default function ThemePage({ themeId, customStyles = {} }) {
 
       if (slugFromUrl && slugFromUrl !== currentThemeId) {
         setCurrentThemeId(slugFromUrl);
-        setLoading(true);
       }
     }
   }, [router.isReady, router.asPath, currentThemeId]);
@@ -71,11 +69,6 @@ export default function ThemePage({ themeId, customStyles = {} }) {
 
   // Episode navigation now uses direct HTML links
 
-  useEffect(() => {
-    if (finalThemeData) {
-      setLoading(false);
-    }
-  }, [finalThemeData, currentThemeId]);
 
   if (!finalThemeData) {
     return (
@@ -302,12 +295,6 @@ const styles = {
     color: '#6b7280',
     lineHeight: '1.5',
     margin: 0,
-  },
-  loadingText: {
-    fontSize: '16px',
-    color: '#6b7280',
-    textAlign: 'center',
-    padding: '40px',
   },
   errorText: {
     fontSize: '16px',
