@@ -214,61 +214,19 @@ export default function MovieHeaderLarge({
             </div>
           )}
 
-          {/* Poster footer strip — trailer left, Add/Seen right */}
-          <div style={styles.posterFooter}>
-            {trailerVideoId ? (
+          {/* Trailer overlay — only shown when trailer exists */}
+          {trailerVideoId && (
+            <div style={styles.posterFooter}>
               <button
                 onClick={handlePlayTrailer}
                 style={styles.posterFooterTrailer}
                 aria-label="Play trailer"
               >
-                <PlayCircle size={28} color="#ffffff" fill="rgba(255,255,255,0.2)" strokeWidth={1.2} />
+                <PlayCircle size={24} color="#ffffff" fill="rgba(255,255,255,0.2)" strokeWidth={1.2} />
                 <span style={styles.trailerOverlayLabel}>Trailer</span>
               </button>
-            ) : (
-              <div />
-            )}
-            <div style={styles.posterFooterActions}>
-              <button
-                onClick={() => {
-                  try {
-                    const newState = FavoritesManager.toggleHeart(movieData);
-                    setHearted(newState);
-                  } catch (error) {
-                    console.error('Failed to toggle heart state:', error);
-                  }
-                }}
-                style={styles.utilityButton}
-                aria-label={hearted ? 'Mark as unseen' : 'Mark as seen'}
-              >
-                <div style={styles.iconWithTextHorizontal}>
-                  <Check size={15} color={hearted ? '#ffffff' : 'rgba(255,255,255,0.75)'} strokeWidth={hearted ? 3 : 2} />
-                  <span style={{ ...styles.iconLabel, color: hearted ? '#ffffff' : 'rgba(255,255,255,0.75)', fontWeight: hearted ? '700' : '500' }}>
-                    Seen
-                  </span>
-                </div>
-              </button>
-              <button
-                onClick={() => {
-                  try {
-                    const newState = FavoritesManager.toggleBookmark(movieData);
-                    setBookmarked(newState);
-                  } catch (error) {
-                    console.error('Failed to toggle bookmark state:', error);
-                  }
-                }}
-                style={styles.utilityButton}
-                aria-label={bookmarked ? 'Remove from list' : 'Add to list'}
-              >
-                <div style={styles.iconWithTextHorizontal}>
-                  <Plus size={15} color={bookmarked ? '#ffffff' : 'rgba(255,255,255,0.75)'} strokeWidth={bookmarked ? 3 : 2} />
-                  <span style={{ ...styles.iconLabel, color: bookmarked ? '#ffffff' : 'rgba(255,255,255,0.75)', fontWeight: bookmarked ? '700' : '500' }}>
-                    Add
-                  </span>
-                </div>
-              </button>
             </div>
-          </div>
+          )}
 
           {showAddedAnimation && (
             <div style={styles.addedAnimation}>+ added</div>
@@ -276,8 +234,6 @@ export default function MovieHeaderLarge({
         </div>
       </div>
 
-      
-      
       {/* Streaming availability - commented out due to often incorrect data 
           TBD = placeholder when TMDB/Claude APIs haven't provided streaming data yet */}
       {/* {initialStreaming && initialStreaming.length > 0 && initialStreaming !== 'TBD' && (
@@ -355,7 +311,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'flex-end',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-end',
     padding: '40px 12px 14px',
   },
 
@@ -365,23 +321,26 @@ const styles = {
     cursor: 'pointer',
     display: 'flex',
     alignItems: 'center',
-    gap: '8px',
+    gap: '6px',
     padding: '4px 0',
   },
 
-  posterFooterActions: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: '4px',
-  },
-
   trailerOverlayLabel: {
-    fontSize: '16px',
+    fontSize: '14px',
     fontWeight: '600',
     color: '#ffffff',
     letterSpacing: '0.01em',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+  },
+
+  utilityRow: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    gap: '4px',
+    width: '267px',
+    padding: '8px 0 0',
   },
 
   utilityButton: {
@@ -415,17 +374,34 @@ const styles = {
     gap: '6px',
     flexDirection: 'column',
   },
-  iconLabel: {
-    fontSize: 'var(--font-xs)',
-    lineHeight: '1',
-    userSelect: 'none',
-    textAlign: 'center',
-  },
   largePoster: {
     width: '267px',
     height: '400px',
     objectFit: 'contain',
     display: 'block',
+  },
+  titleBlock: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '2px',
+    padding: '12px 20px 0',
+  },
+  movieTitle: {
+    fontSize: '22px',
+    fontWeight: '700',
+    color: '#111827',
+    letterSpacing: '-0.02em',
+    lineHeight: '1.2',
+    margin: 0,
+    textAlign: 'center',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+  },
+  movieYear: {
+    fontSize: '14px',
+    fontWeight: '400',
+    color: '#6b7280',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
   slug: {
     fontSize: '16px',

@@ -10,7 +10,6 @@ import MediaCard from './MediaCard';
 export default function MoreIdeasContainer({ tmdbId, title = "More Ideas", style }) {
   const [moreIdeas, setMoreIdeas] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     if (!tmdbId) {
@@ -26,16 +25,13 @@ export default function MoreIdeasContainer({ tmdbId, title = "More Ideas", style
         if (response.ok) {
           const data = await response.json();
           setMoreIdeas(data);
-          setError(null);
         } else {
           console.warn(`More Ideas API failed for movie ${tmdbId}:`, response.status);
           setMoreIdeas(null);
-          setError('Failed to load related movies');
         }
       } catch (err) {
         console.error('More Ideas fetch error:', err);
         setMoreIdeas(null);
-        setError('Failed to load related movies');
       } finally {
         setLoading(false);
       }
@@ -49,7 +45,7 @@ export default function MoreIdeasContainer({ tmdbId, title = "More Ideas", style
     return null;
   }
 
-  if (error || !moreIdeas || !moreIdeas.hasData || moreIdeas.moreIdeas.length === 0) {
+  if (!moreIdeas || !moreIdeas.hasData || moreIdeas.moreIdeas.length === 0) {
     return null; // Fail silently - don't show broken or empty states
   }
 

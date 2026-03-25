@@ -52,7 +52,7 @@ export default function WhatToWatchPage() {
     <PhoneFrame>
       <div style={styles.container}>
         {/* Simple Search Bar */}
-        <div style={{ padding: '16px 20px 16px 20px' }}>
+        <div style={{ position: 'sticky', top: 0, zIndex: 100, padding: '16px' }}>
           <SimpleSearch
             onResults={() => {}}
             placeholder="Search Movies . . ."

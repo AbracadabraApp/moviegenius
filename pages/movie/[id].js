@@ -8,6 +8,8 @@ import MovieCreativeFooter from '../../components/MovieCreativeFooter';
 import ErrorBoundary from '../../components/ErrorBoundary';
 import WhyWatchContainer from '../../components/WhyWatchContainer';
 import MoreIdeasContainer from '../../components/MoreIdeasContainer';
+import { FavoritesManager } from '../../components/FavoritesManager';
+import { Check, Plus } from 'lucide-react';
 
 export default function MovieDetailPage() {
   const router = useRouter();
@@ -26,6 +28,8 @@ export default function MovieDetailPage() {
   const [movie, setMovie] = useState(null);
   const [streaming, setStreaming] = useState(null);
   const [error, setError] = useState(null);
+  const [hearted, setHearted] = useState(false);
+  const [bookmarked, setBookmarked] = useState(false);
 
   useEffect(() => {
     if (!router.isReady || !finalMovieId) return;
@@ -63,13 +67,23 @@ export default function MovieDetailPage() {
     fetchMovie();
   }, [router.isReady, finalMovieId]);
 
+  // Must be before early returns — hooks cannot be conditional
+  const mediaId = movie ? `${movie.title?.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.release_date ? new Date(movie.release_date).getFullYear() : ''}` : null;
+  useEffect(() => {
+    if (!mediaId) return;
+    try {
+      setHearted(FavoritesManager.isMovieHearted(mediaId));
+      setBookmarked(FavoritesManager.isMovieBookmarked(mediaId));
+    } catch (e) {}
+  }, [mediaId]);
+
   if (error) {
     const isNotFound = error.includes('could not be found') || error.includes('404');
     return (
       <PhoneFrame>
         <div style={{ backgroundColor: '#ffffff', minHeight: '100%', padding: '20px', textAlign: 'center' }}>
-          <div style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: '#ffffff', padding: '10px 16px' }}>
-            <SimpleSearch onResults={() => {}} placeholder="Search movies..." compact={true} />
+          <div style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: 'rgba(255,255,255,0.98)', padding: '16px', backdropFilter: 'blur(10px)' }}>
+            <SimpleSearch placeholder="Search movies..." />
           </div>
           <div style={{ marginTop: '60px' }}>
             {isNotFound ? (
@@ -92,8 +106,38 @@ export default function MovieDetailPage() {
     return (
       <PhoneFrame>
         <div style={{ backgroundColor: '#ffffff', minHeight: '100%' }}>
-          <div style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: '#ffffff', padding: '10px 16px' }}>
-            <SimpleSearch onResults={() => {}} placeholder="Search movies..." compact={true} />
+          <style>{`
+            @keyframes shimmer {
+              0% { background-position: -600px 0; }
+              100% { background-position: 600px 0; }
+            }
+            .sk {
+              background: linear-gradient(90deg, #f0f0f0 25%, #e8e8e8 50%, #f0f0f0 75%);
+              background-size: 600px 100%;
+              animation: shimmer 1.4s infinite linear;
+              border-radius: 6px;
+            }
+          `}</style>
+          {/* Search bar */}
+          <div style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: 'rgba(255,255,255,0.98)', padding: '10px 16px', display: 'flex', justifyContent: 'center', backdropFilter: 'blur(10px)' }}>
+            <div style={{ width: '267px' }}>
+              <SimpleSearch onResults={() => {}} placeholder="Search movies..." compact={true} />
+            </div>
+          </div>
+          {/* Poster skeleton */}
+          <div style={{ display: 'flex', justifyContent: 'center', padding: '0 0 12px 0' }}>
+            <div className="sk" style={{ width: '267px', height: '400px', borderRadius: '12px' }} />
+          </div>
+          {/* Title + year */}
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px', padding: '0 32px' }}>
+            <div className="sk" style={{ width: '200px', height: '22px' }} />
+            <div className="sk" style={{ width: '80px', height: '16px' }} />
+          </div>
+          {/* Content bars */}
+          <div style={{ padding: '20px 24px 0 24px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <div className="sk" style={{ width: '100%', height: '14px' }} />
+            <div className="sk" style={{ width: '85%', height: '14px' }} />
+            <div className="sk" style={{ width: '92%', height: '14px' }} />
           </div>
         </div>
       </PhoneFrame>
@@ -105,6 +149,31 @@ export default function MovieDetailPage() {
     ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
     : '/images/placeholder-poster.jpg';
 
+  const movieData = movie ? { title: movie.title, year, poster: posterUrl, id: mediaId, tmdbId: parseInt(finalMovieId) } : null;
+
+  const seenAddSlot = movieData ? (
+    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+      <button
+        onClick={() => { try { setHearted(FavoritesManager.toggleHeart(movieData)); } catch(e){} }}
+        style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '4px 6px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}
+      >
+        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '4px' }}>
+          <Check size={16} color={hearted ? '#000000' : '#6b7280'} strokeWidth={hearted ? 3 : 2} />
+          <span style={{ fontSize: 'var(--font-xs)', color: hearted ? '#000000' : '#6b7280', fontWeight: hearted ? '700' : '500', fontFamily: 'inherit', lineHeight: '1' }}>Seen</span>
+        </div>
+      </button>
+      <button
+        onClick={() => { try { setBookmarked(FavoritesManager.toggleBookmark(movieData)); } catch(e){} }}
+        style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '4px 6px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}
+      >
+        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '4px' }}>
+          <Plus size={16} color={bookmarked ? '#000000' : '#6b7280'} strokeWidth={bookmarked ? 3 : 2} />
+          <span style={{ fontSize: 'var(--font-xs)', color: bookmarked ? '#000000' : '#6b7280', fontWeight: bookmarked ? '700' : '500', fontFamily: 'inherit', lineHeight: '1' }}>Add</span>
+        </div>
+      </button>
+    </div>
+  ) : null;
+
   return (
     <ErrorBoundary level="page">
       <PhoneFrame>
@@ -112,8 +181,8 @@ export default function MovieDetailPage() {
 
           {/* Search */}
           <ErrorBoundary level="section">
-            <div style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: '#ffffff', padding: '10px 16px' }}>
-              <SimpleSearch onResults={() => {}} placeholder="Search movies..." compact={true} />
+            <div style={{ position: 'sticky', top: 0, zIndex: 100, padding: '10px 16px' }}>
+              <SimpleSearch placeholder="Search movies..." />
             </div>
           </ErrorBoundary>
 
@@ -134,6 +203,7 @@ export default function MovieDetailPage() {
             <WhyWatchContainer
               tmdbId={parseInt(finalMovieId)}
               streaming={streaming?.streaming_data}
+              rightSlot={seenAddSlot}
             />
           </ErrorBoundary>
 

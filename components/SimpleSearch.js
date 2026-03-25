@@ -7,6 +7,7 @@ export default function SimpleSearch({
   placeholder = 'Search movies and people...',
   initialQuery = '',
   compact = false,
+  transparent = false,
 }) {
   const [query, setQuery] = useState(initialQuery);
   const [suggestions, setSuggestions] = useState([]);
@@ -168,7 +169,7 @@ export default function SimpleSearch({
   return (
     <div style={styles.container}>
       <form onSubmit={handleSubmit} style={styles.form}>
-        <div style={{...styles.searchBox, ...(compact ? styles.searchBoxCompact : {})}}>
+        <div style={{...styles.searchBox, ...(compact ? styles.searchBoxCompact : {}), ...(transparent ? styles.searchBoxTransparent : {})}}>
           <Search size={compact ? 16 : 20} style={styles.searchIcon} />
           <input
             ref={inputRef}
@@ -237,7 +238,7 @@ const styles = {
     background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)',
     border: '1px solid #e2e8f0',
     borderRadius: '12px',
-    padding: '18px 16px',
+    padding: '14px 16px',
     gap: '8px',
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.1)',
     transition: 'all 0.2s ease',
@@ -261,6 +262,11 @@ const styles = {
     boxShadow: 'none',
     border: '1px solid #e5e7eb',
     background: '#f9fafb',
+  },
+  searchBoxTransparent: {
+    background: 'rgba(255,255,255,0.15)',
+    boxShadow: 'none',
+    border: '1px solid rgba(255,255,255,0.3)',
   },
   inputCompact: {
     fontSize: '14px',

@@ -17,6 +17,7 @@ export default function MovieGeniusPage() {
   const [loadingMore, setLoadingMore] = useState(false);
   const [hasMore, setHasMore] = useState(true);
   const [page, setPage] = useState(0);
+  const FIRST_BATCH = 5;
   const COLLECTIONS_PER_PAGE = 10;
   const MAX_COLLECTIONS = 100;
 
@@ -26,36 +27,51 @@ export default function MovieGeniusPage() {
       try {
         if (page === 0) {
           setLoading(true);
+
+          // Fetch first 5 immediately to render fast
+          const firstResponse = await fetch(
+            `/api/featured-collections?limit=${FIRST_BATCH}&offset=0&moviesPerCollection=10`
+          );
+          if (firstResponse.ok) {
+            const firstData = await firstResponse.json();
+            const firstBatch = firstData.collections || [];
+            setCollections(firstBatch);
+            setLoading(false);
+
+            // Immediately fetch the next 5 in the background
+            const secondResponse = await fetch(
+              `/api/featured-collections?limit=${FIRST_BATCH}&offset=${FIRST_BATCH}&moviesPerCollection=10`
+            );
+            if (secondResponse.ok) {
+              const secondData = await secondResponse.json();
+              const secondBatch = secondData.collections || [];
+              setCollections(prev => [...prev, ...secondBatch]);
+              if (secondBatch.length < FIRST_BATCH) setHasMore(false);
+            }
+          } else {
+            setLoading(false);
+          }
         } else {
           setLoadingMore(true);
-        }
-
-        const offset = page * COLLECTIONS_PER_PAGE;
-        const response = await fetch(
-          `/api/featured-collections?limit=${COLLECTIONS_PER_PAGE}&offset=${offset}&moviesPerCollection=10`
-        );
-
-        if (response.ok) {
-          const data = await response.json();
-          const newCollections = data.collections || [];
-
-          if (page === 0) {
-            setCollections(newCollections);
-          } else {
+          const offset = page * COLLECTIONS_PER_PAGE;
+          const response = await fetch(
+            `/api/featured-collections?limit=${COLLECTIONS_PER_PAGE}&offset=${offset}&moviesPerCollection=10`
+          );
+          if (response.ok) {
+            const data = await response.json();
+            const newCollections = data.collections || [];
             setCollections(prev => [...prev, ...newCollections]);
+            if (
+              newCollections.length < COLLECTIONS_PER_PAGE ||
+              collections.length + newCollections.length >= MAX_COLLECTIONS
+            ) {
+              setHasMore(false);
+            }
           }
-
-          // Check if we should stop loading more
-          if (
-            newCollections.length < COLLECTIONS_PER_PAGE ||
-            collections.length + newCollections.length >= MAX_COLLECTIONS
-          ) {
-            setHasMore(false);
-          }
+          setLoadingMore(false);
         }
       } catch (error) {
         console.error('Failed to fetch featured collections:', error);
-      } finally {
         setLoading(false);
         setLoadingMore(false);
       }
@@ -115,8 +131,31 @@ export default function MovieGeniusPage() {
         {/* Browse Content */}
         <div id="browse-content" style={styles.content}>
           {loading && (
-            <div style={styles.loadingContainer}>
-              <div style={styles.loadingText}>Loading collections...</div>
+            <div style={styles.skeletonWrapper}>
+              <style>{`
+                @keyframes shimmer {
+                  0% { background-position: -600px 0; }
+                  100% { background-position: 600px 0; }
+                }
+                .skeleton-pulse {
+                  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+                  background-size: 600px 100%;
+                  animation: shimmer 1.4s infinite linear;
+                }
+              `}</style>
+              {[0, 1, 2].map(i => (
+                <div key={i} style={styles.skeletonSection}>
+                  <div style={styles.skeletonHeader}>
+                    <div className="skeleton-pulse" style={styles.skeletonTitle} />
+                    <div className="skeleton-pulse" style={styles.skeletonViewAll} />
+                  </div>
+                  <div style={styles.skeletonRow}>
+                    {[0, 1, 2, 3, 4].map(j => (
+                      <div className="skeleton-pulse" key={j} style={styles.skeletonCard} />
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           )}
 
@@ -127,7 +166,7 @@ export default function MovieGeniusPage() {
             </div>
           )}
 
-          {!loading && collections.length > 0 && (
+          {collections.length > 0 && (
             <>
               {/* Welcome Message */}
               <div style={styles.welcomeSection}>
@@ -197,10 +236,7 @@ const styles = {
     position: 'sticky',
     top: 0,
     zIndex: 100,
-    backgroundColor: 'rgba(255, 255, 255, 0.98)',
     padding: '16px',
-    backdropFilter: 'blur(10px)',
-    WebkitBackdropFilter: 'blur(10px)',
     borderBottom: 'none',
   },
 
@@ -213,18 +249,46 @@ const styles = {
     paddingBottom: '40px',
   },
 
-  // Loading state
-  loadingContainer: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '60px 20px',
+  // Skeleton loading
+  skeletonWrapper: {
+    padding: '8px 0',
   },
 
-  loadingText: {
-    fontSize: '16px',
-    color: '#6b7280',
-    opacity: 0.8,
+  skeletonSection: {
+    marginBottom: '4px',
+  },
+
+  skeletonHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: '8px 16px 8px 16px',
+  },
+
+  skeletonTitle: {
+    height: '19px',
+    width: '160px',
+    borderRadius: '4px',
+  },
+
+  skeletonViewAll: {
+    height: '14px',
+    width: '52px',
+    borderRadius: '4px',
+  },
+
+  skeletonRow: {
+    display: 'flex',
+    gap: '8px',
+    padding: '0 16px 16px 16px',
+    overflowX: 'hidden',
+  },
+
+  skeletonCard: {
+    flex: '0 0 auto',
+    width: '140px',
+    height: '188px',
+    borderRadius: '6px',
   },
 
   // Empty state

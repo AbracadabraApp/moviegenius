@@ -5,7 +5,7 @@
  * The verdict leads. Context is the voice. Reasons are supporting evidence.
  */
 
-export default function WhyWatchSection({ reasons = [], recommendation = "YES", title = null, context = null, streaming = null, style = {} }) {
+export default function WhyWatchSection({ reasons = [], recommendation = "YES", title = null, context = null, streaming = null, style = {}, rightSlot = null }) {
   if (!reasons || reasons.length === 0) {
     return null;
   }
@@ -33,6 +33,7 @@ export default function WhyWatchSection({ reasons = [], recommendation = "YES", 
       <div style={styles.verdictRow}>
         <span style={{ ...styles.verdict, color: verdictColor }}>{verdictText}</span>
         <div style={{ ...styles.verdictLine, background: `linear-gradient(90deg, ${verdictColor}40, transparent)` }} />
+        {rightSlot && <div style={styles.verdictRightSlot}>{rightSlot}</div>}
       </div>
 
       {/* Reasons — supporting evidence */}
@@ -80,12 +81,18 @@ const styles = {
     height: '1px',
   },
 
+  verdictRightSlot: {
+    flexShrink: 0,
+    display: 'flex',
+    alignItems: 'center',
+  },
+
   context: {
     fontSize: '14px',
     lineHeight: '1.6',
     color: '#6b7280',
     fontStyle: 'italic',
-    margin: '12px 0 0 0',
+    margin: '16px 0 0 0',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
 
@@ -102,10 +109,11 @@ const styles = {
   },
 
   reasonDot: {
-    fontSize: '20px',
-    lineHeight: '1.4',
+    fontSize: '18px',
+    lineHeight: '1.5',
     flexShrink: 0,
     fontWeight: '700',
+    marginTop: '1px',
   },
 
   reasonText: {
