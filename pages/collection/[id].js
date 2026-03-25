@@ -1,44 +1,12 @@
-import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import { Pool } from 'pg';
 import PhoneFrame from '../../components/PhoneFrame';
 import CollectionPage from '../../components/CollectionPage';
 import { ChevronLeft } from 'lucide-react';
 import SimpleSearch from '../../components/SimpleSearch';
 
-export default function Collection() {
+export default function Collection({ collection, movies, error }) {
   const router = useRouter();
-  const { id } = router.query;
-
-  const [collection, setCollection] = useState(null);
-  const [movies, setMovies] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    if (!router.isReady || !id) return;
-
-    const fetchData = async () => {
-      try {
-        setLoading(true);
-        const response = await fetch(`/api/collection?id=${id}`);
-
-        if (response.ok) {
-          const data = await response.json();
-          setCollection(data.collection);
-          setMovies(data.movies || []);
-        } else {
-          setError('Collection not found');
-        }
-      } catch (err) {
-        console.error('Failed to fetch collection:', err);
-        setError('Failed to load collection');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchData();
-  }, [router.isReady, id]);
 
   return (
     <PhoneFrame backgroundImage={null} showDarkOverlay={false}>
@@ -55,12 +23,6 @@ export default function Collection() {
 
         {/* Content */}
         <div style={styles.content}>
-          {loading && (
-            <div style={styles.loadingContainer}>
-              <div style={styles.loadingText}>Loading collection...</div>
-            </div>
-          )}
-
           {error && (
             <div style={styles.errorContainer}>
               <div style={styles.errorIcon}>📚</div>
@@ -68,13 +30,107 @@ export default function Collection() {
             </div>
           )}
 
-          {!loading && !error && collection && (
+          {!error && collection && (
             <CollectionPage collection={collection} movies={movies} />
           )}
         </div>
       </div>
     </PhoneFrame>
   );
+}
+
+export async function getStaticPaths() {
+  // Pre-generate top 500 collections by movie count — rest served via blocking fallback
+  try {
+    const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+    const client = await pool.connect();
+    try {
+      const result = await client.query(`
+        SELECT bl.id
+        FROM browse_lists bl,
+             jsonb_array_elements(bl.editorial_data->'subcategories') sub,
+             jsonb_array_elements(sub->'movies') mv
+        WHERE bl.status = 'active'
+          AND bl.editorial_data IS NOT NULL
+          AND (mv->>'tmdb_id') IS NOT NULL
+          AND (mv->>'tmdb_id') != 'null'
+        GROUP BY bl.id
+        ORDER BY COUNT(*) DESC
+        LIMIT 500
+      `);
+      const paths = result.rows.map(row => ({ params: { id: row.id.toString() } }));
+      return { paths, fallback: 'blocking' };
+    } finally {
+      client.release();
+      await pool.end();
+    }
+  } catch (error) {
+    console.error('getStaticPaths error for collections:', error);
+    return { paths: [], fallback: 'blocking' };
+  }
+}
+
+export async function getStaticProps({ params }) {
+  const { id } = params;
+
+  try {
+    const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+    const client = await pool.connect();
+    try {
+      const collectionResult = await client.query(
+        `SELECT id, revised_title, editorial_data
+         FROM browse_lists
+         WHERE id = $1 AND editorial_data IS NOT NULL`,
+        [id]
+      );
+
+      if (collectionResult.rows.length === 0) {
+        return { notFound: true };
+      }
+
+      const row = collectionResult.rows[0];
+      const editorial = row.editorial_data;
+
+      // Extract all tmdb_ids from subcategories
+      const tmdbIds = [];
+      for (const sub of (editorial.subcategories || [])) {
+        for (const m of (sub.movies || [])) {
+          if (m.tmdb_id) tmdbIds.push(m.tmdb_id);
+        }
+      }
+
+      const moviesResult = tmdbIds.length > 0
+        ? await client.query(
+            `SELECT tmdb_id, title, year, poster_url FROM movies WHERE tmdb_id = ANY($1)`,
+            [tmdbIds]
+          )
+        : { rows: [] };
+
+      const collection = {
+        id: row.id,
+        title: row.revised_title,
+        ...editorial,
+      };
+
+      return {
+        props: {
+          collection,
+          movies: moviesResult.rows,
+          error: null,
+        },
+        revalidate: 86400, // 24 hours
+      };
+    } finally {
+      client.release();
+      await pool.end();
+    }
+  } catch (error) {
+    console.error('getStaticProps error for collection:', id, error);
+    return {
+      props: { collection: null, movies: [], error: 'Failed to load collection' },
+      revalidate: 60,
+    };
+  }
 }
 
 const styles = {
@@ -122,19 +178,6 @@ const styles = {
     overflowY: 'auto',
     scrollbarWidth: 'none',
     msOverflowStyle: 'none',
-  },
-
-  loadingContainer: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '80px 20px',
-  },
-
-  loadingText: {
-    fontSize: '16px',
-    color: '#7A7870',
-    opacity: 0.8,
   },
 
   errorContainer: {

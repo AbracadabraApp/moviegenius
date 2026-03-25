@@ -74,7 +74,7 @@ export default function MovieDetailPage() {
     try {
       setHearted(FavoritesManager.isMovieHearted(mediaId));
       setBookmarked(FavoritesManager.isMovieBookmarked(mediaId));
-    } catch (e) {}
+    } catch (e) { /* localStorage unavailable */ }
   }, [mediaId]);
 
   if (error) {
@@ -154,7 +154,7 @@ export default function MovieDetailPage() {
   const seenAddSlot = movieData ? (
     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
       <button
-        onClick={() => { try { setHearted(FavoritesManager.toggleHeart(movieData)); } catch(e){} }}
+        onClick={() => { try { setHearted(FavoritesManager.toggleHeart(movieData)); } catch(e){ /* ignore */ } }}
         style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '4px 6px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}
       >
         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '4px' }}>
@@ -163,7 +163,7 @@ export default function MovieDetailPage() {
         </div>
       </button>
       <button
-        onClick={() => { try { setBookmarked(FavoritesManager.toggleBookmark(movieData)); } catch(e){} }}
+        onClick={() => { try { setBookmarked(FavoritesManager.toggleBookmark(movieData)); } catch(e){ /* ignore */ } }}
         style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '4px 6px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}
       >
         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '4px' }}>
