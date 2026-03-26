@@ -58,7 +58,7 @@ export default async function handler(req, res) {
           collection_id, collection_title, sub_name, sub_idx, overlap_count, sub_json
         FROM sub_matches
         ORDER BY overlap_count DESC, collection_id, sub_idx
-        LIMIT 25
+        LIMIT 100
       )
       SELECT
         ts.collection_id,
@@ -91,27 +91,58 @@ export default async function handler(req, res) {
       movieMap[m.tmdb_id] = m;
     }
 
-    const subcategories = result.rows.map(row => {
-      // All movies in the subcategory, with poster data, matched ones first
+    // Build all candidates with movie data
+    const candidates = result.rows.map(row => {
       const matchedSet = new Set(row.matched_tmdb_ids);
       const movies = row.all_tmdb_ids
         .map(id => movieMap[id])
         .filter(m => m && m.poster_url)
-        .sort((a, b) => {
-          // Matched movies first
-          const aMatch = matchedSet.has(a.tmdb_id) ? 0 : 1;
-          const bMatch = matchedSet.has(b.tmdb_id) ? 0 : 1;
-          return aMatch - bMatch;
-        });
+        .sort((a, b) => (matchedSet.has(a.tmdb_id) ? 0 : 1) - (matchedSet.has(b.tmdb_id) ? 0 : 1));
 
       return {
         name: row.sub_name,
         collectionId: row.collection_id,
         collectionTitle: row.collection_title,
         overlapCount: parseInt(row.overlap_count),
+        matchedTmdbIds: row.matched_tmdb_ids,
         movies,
       };
     });
+
+    // Dedup pass 1: each seed movie can only be the primary driver of 1 subcategory.
+    // "Primary driver" = the matched movie that appears in fewest other candidates
+    // (most distinctive). If a movie drives 10 subcategories, only the best one shows.
+    const usedSeeds = new Set();
+    const usedCollections = {};  // collectionId -> count
+    const MAX_PER_COLLECTION = 2;
+    const subcategories = [];
+
+    for (const candidate of candidates) {
+      // Find the most distinctive seed for this subcategory
+      // (the matched movie that has been used the least so far)
+      const unusedSeeds = candidate.matchedTmdbIds.filter(id => !usedSeeds.has(id));
+
+      // Require at least one fresh seed movie
+      if (unusedSeeds.length === 0) continue;
+
+      // Enforce max per parent collection
+      const collectionCount = usedCollections[candidate.collectionId] || 0;
+      if (collectionCount >= MAX_PER_COLLECTION) continue;
+
+      // Accept this subcategory — mark its seeds as used
+      candidate.matchedTmdbIds.forEach(id => usedSeeds.add(id));
+      usedCollections[candidate.collectionId] = collectionCount + 1;
+
+      subcategories.push({
+        name: candidate.name,
+        collectionId: candidate.collectionId,
+        collectionTitle: candidate.collectionTitle,
+        overlapCount: candidate.overlapCount,
+        movies: candidate.movies,
+      });
+
+      if (subcategories.length >= 20) break;
+    }
 
     return res.status(200).json({ subcategories });
 
