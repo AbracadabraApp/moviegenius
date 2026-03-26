@@ -22,9 +22,6 @@ export default function CollectionPage({ collection, movies }) {
         {collection.subtitle && (
           <p style={styles.subtitle}>{collection.subtitle}</p>
         )}
-        <p style={styles.tally}>
-          {movies.length} {movies.length === 1 ? 'film' : 'films'}
-        </p>
       </div>
 
       {/* Subcategory Sections */}
@@ -43,9 +40,6 @@ export default function CollectionPage({ collection, movies }) {
               <div style={styles.aisleAccent} />
               <div style={styles.aisleText}>
                 <span style={styles.aisleLabel}>{subcategory.name}</span>
-                <span style={styles.aisleCount}>
-                  {subcategoryMovies.length} {subcategoryMovies.length === 1 ? 'film' : 'films'}
-                </span>
               </div>
             </div>
 
@@ -114,13 +108,6 @@ const styles = {
     margin: '0 0 10px 0',
   },
 
-  tally: {
-    fontSize: '13px',
-    color: '#d4af37',
-    fontWeight: '600',
-    margin: 0,
-    letterSpacing: '0.02em',
-  },
 
   // Section = one subcategory
   section: {
@@ -165,12 +152,6 @@ const styles = {
     letterSpacing: '-0.01em',
   },
 
-  aisleCount: {
-    fontSize: '12px',
-    color: '#9ca3af',
-    fontWeight: '500',
-    letterSpacing: '0.02em',
-  },
 
   sectionDesc: {
     fontSize: '13px',
@@ -220,11 +201,9 @@ const styles = {
     color: '#111827',
     lineHeight: '1.3',
     marginBottom: '2px',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    display: '-webkit-box',
-    WebkitLineClamp: 2,
-    WebkitBoxOrient: 'vertical',
+    overflowWrap: 'break-word',
+    wordBreak: 'break-word',
+    hyphens: 'none',
   },
 
   movieYear: {

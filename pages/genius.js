@@ -647,11 +647,9 @@ const styles = {
     color: '#111827',
     lineHeight: '1.3',
     marginBottom: '2px',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    display: '-webkit-box',
-    WebkitLineClamp: 2,
-    WebkitBoxOrient: 'vertical',
+    overflowWrap: 'break-word',
+    wordBreak: 'break-word',
+    hyphens: 'none',
   },
 
   movieYear: {

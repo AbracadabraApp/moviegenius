@@ -15,12 +15,45 @@ export default function MovieGeniusPage() {
   const [loadingMore, setLoadingMore] = useState(false);
   const [hasMore, setHasMore] = useState(true);
   const [page, setPage] = useState(0);
+  const [seed, setSeed] = useState(null);
   const FIRST_BATCH = 5;
   const COLLECTIONS_PER_PAGE = 10;
   const MAX_COLLECTIONS = 100;
 
-  // Fetch collections on mount and when page changes
+  // On mount: restore session (back nav) or generate new seed (fresh load)
   useEffect(() => {
+    const existingSeed = sessionStorage.getItem('homepage-seed');
+    const existingCollections = sessionStorage.getItem('homepage-collections');
+
+    if (existingSeed && existingCollections) {
+      // Back navigation — restore previous state instantly
+      try {
+        setSeed(parseInt(existingSeed));
+        setCollections(JSON.parse(existingCollections));
+        setLoading(false);
+      } catch {
+        sessionStorage.removeItem('homepage-seed');
+        sessionStorage.removeItem('homepage-collections');
+        const newSeed = Math.floor(Math.random() * 1000000);
+        sessionStorage.setItem('homepage-seed', newSeed.toString());
+        setSeed(newSeed);
+      }
+    } else {
+      // Fresh load — new random seed
+      const newSeed = Math.floor(Math.random() * 1000000);
+      sessionStorage.setItem('homepage-seed', newSeed.toString());
+      setSeed(newSeed);
+    }
+  }, []);
+
+  // Fetch collections when seed is ready or page changes
+  useEffect(() => {
+    if (seed === null) return;
+
+    // If seed was restored from session, skip the initial fetch
+    const existingCollections = sessionStorage.getItem('homepage-collections');
+    if (page === 0 && existingCollections) return;
+
     const fetchCollections = async () => {
       try {
         if (page === 0) {
@@ -28,7 +61,7 @@ export default function MovieGeniusPage() {
 
           // Fetch first 5 immediately to render fast
           const firstResponse = await fetch(
-            `/api/featured-collections?limit=${FIRST_BATCH}&offset=0&moviesPerCollection=10`
+            `/api/featured-collections?limit=${FIRST_BATCH}&offset=0&moviesPerCollection=10&seed=${seed}`
           );
           if (firstResponse.ok) {
             const firstData = await firstResponse.json();
@@ -38,12 +71,16 @@ export default function MovieGeniusPage() {
 
             // Immediately fetch the next 5 in the background
             const secondResponse = await fetch(
-              `/api/featured-collections?limit=${FIRST_BATCH}&offset=${FIRST_BATCH}&moviesPerCollection=10`
+              `/api/featured-collections?limit=${FIRST_BATCH}&offset=${FIRST_BATCH}&moviesPerCollection=10&seed=${seed}`
             );
             if (secondResponse.ok) {
               const secondData = await secondResponse.json();
               const secondBatch = secondData.collections || [];
-              setCollections(prev => [...prev, ...secondBatch]);
+              setCollections(prev => {
+                const combined = [...prev, ...secondBatch];
+                sessionStorage.setItem('homepage-collections', JSON.stringify(combined));
+                return combined;
+              });
               if (secondBatch.length < FIRST_BATCH) setHasMore(false);
             }
           } else {
@@ -53,12 +90,16 @@ export default function MovieGeniusPage() {
           setLoadingMore(true);
           const offset = page * COLLECTIONS_PER_PAGE;
           const response = await fetch(
-            `/api/featured-collections?limit=${COLLECTIONS_PER_PAGE}&offset=${offset}&moviesPerCollection=10`
+            `/api/featured-collections?limit=${COLLECTIONS_PER_PAGE}&offset=${offset}&moviesPerCollection=10&seed=${seed}`
           );
           if (response.ok) {
             const data = await response.json();
             const newCollections = data.collections || [];
-            setCollections(prev => [...prev, ...newCollections]);
+            setCollections(prev => {
+              const combined = [...prev, ...newCollections];
+              sessionStorage.setItem('homepage-collections', JSON.stringify(combined));
+              return combined;
+            });
             if (
               newCollections.length < COLLECTIONS_PER_PAGE ||
               collections.length + newCollections.length >= MAX_COLLECTIONS
@@ -76,7 +117,7 @@ export default function MovieGeniusPage() {
     };
 
     fetchCollections();
-  }, [page]);
+  }, [seed, page]);
 
   // Restore scroll position when navigating back
   useEffect(() => {

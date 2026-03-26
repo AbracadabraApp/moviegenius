@@ -15,14 +15,16 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { limit = 10, offset = 0, moviesPerCollection = 10 } = req.query;
+  const { limit = 10, offset = 0, moviesPerCollection = 10, seed } = req.query;
   const pool = getPool();
 
   try {
-    const today = new Date();
-    const dailySeed = today.getFullYear() * 10000 +
-                      (today.getMonth() + 1) * 100 +
-                      today.getDate();
+    const dailySeed = seed ? parseInt(seed) : (
+      (() => {
+        const today = new Date();
+        return today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+      })()
+    );
 
     // Select collections from editorial_data
     // Count resolved movies (tmdb_id not null) directly from JSONB
@@ -45,9 +47,10 @@ export default async function handler(req, res) {
         GROUP BY bl.id, bl.revised_title, bl.title, bl.categories
         HAVING COUNT(*) >= 15
       )
-      SELECT id, title, categories, movie_count
-      FROM editorial_counts
-      ORDER BY md5(id::text || $1::text)
+      SELECT ec.id, ec.title, ec.categories, ec.movie_count, bl.quality_score
+      FROM editorial_counts ec
+      JOIN browse_lists bl ON bl.id = ec.id
+      ORDER BY (bl.quality_score * 2 + (('x' || substr(md5(ec.id::text || $1::text), 1, 8))::bit(32)::int::float / 2147483647.0)) DESC
       LIMIT 100
     `;
 
@@ -60,7 +63,8 @@ export default async function handler(req, res) {
     // Category balancing
     const requestedLimit = parseInt(limit);
     const requestedOffset = parseInt(offset);
-    const maxPerCategory = Math.ceil(requestedLimit * 0.25);
+    const totalNeeded = requestedLimit + requestedOffset;
+    const maxPerCategory = Math.ceil(totalNeeded * 0.25);
 
     const selectedCollections = [];
     const categoryCounts = {};
