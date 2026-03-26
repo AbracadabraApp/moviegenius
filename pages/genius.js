@@ -12,7 +12,6 @@ import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
-import NetflixCarousel from '../components/NetflixCarousel';
 import { FavoritesManager } from '../components/FavoritesManager';
 
 // ─── Cold start movie catalog ────────────────────────────────────────────────
@@ -403,11 +402,11 @@ export default function GeniusPage() {
     })
       .then(r => r.json())
       .then(data => {
-        const cols = data.collections || [];
-        if (cols.length === 0) {
+        const subs = data.subcategories || [];
+        if (subs.length === 0) {
           setShowColdStart(true);
         } else {
-          setSections(cols);
+          setSections(subs);
         }
       })
       .catch(err => {
@@ -460,15 +459,32 @@ export default function GeniusPage() {
           )}
 
           {!loading && !showColdStart && (
-            <div>
-              {sections.map((collection) => (
-                <NetflixCarousel
-                  key={collection.id}
-                  title={collection.title}
-                  movies={collection.previewMovies}
-                  collectionId={collection.id}
-                  showViewAll={true}
-                />
+            <div style={styles.collectionList}>
+              {sections.map((sub, i) => (
+                <div key={i} style={styles.section}>
+                  <div
+                    style={styles.sectionHeader}
+                    onClick={() => router.push(`/collection/${sub.collectionId}`)}
+                  >
+                    <span style={styles.sectionTitle}>{sub.name}</span>
+                    <span style={styles.sectionParent}>{sub.collectionTitle}</span>
+                  </div>
+                  <div style={styles.movieGrid}>
+                    {sub.movies.slice(0, 6).map((m, idx) => (
+                      <div
+                        key={idx}
+                        style={styles.posterWrapper}
+                        onClick={() => router.push(`/movie/${m.tmdb_id}`)}
+                      >
+                        <div style={styles.posterContainer}>
+                          <img src={m.poster_url} alt={m.title} style={styles.poster} />
+                        </div>
+                        <div style={styles.movieTitle}>{m.title}</div>
+                        {m.year && <div style={styles.movieYear}>{m.year}</div>}
+                      </div>
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
           )}
@@ -511,6 +527,79 @@ const styles = {
 
   skeletonSection: {
     marginBottom: '28px',
+  },
+
+  collectionList: {
+    padding: '8px 0 40px',
+  },
+
+  section: {
+    marginBottom: '32px',
+  },
+
+  sectionHeader: {
+    padding: '0 16px 10px',
+    cursor: 'pointer',
+  },
+
+  sectionTitle: {
+    fontSize: '16px',
+    fontWeight: '700',
+    color: '#111827',
+    letterSpacing: '-0.01em',
+    display: 'block',
+    lineHeight: '1.3',
+  },
+
+  sectionParent: {
+    fontSize: '12px',
+    color: '#9ca3af',
+    fontWeight: '400',
+    display: 'block',
+    marginTop: '2px',
+  },
+
+  movieGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, 1fr)',
+    gap: '8px',
+    padding: '0 16px',
+  },
+
+  posterWrapper: {
+    cursor: 'pointer',
+  },
+
+  posterContainer: {
+    aspectRatio: '2/3',
+    borderRadius: '8px',
+    overflow: 'hidden',
+    backgroundColor: '#f3f4f6',
+    marginBottom: '6px',
+  },
+
+  poster: {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+  },
+
+  movieTitle: {
+    fontSize: '12px',
+    fontWeight: '500',
+    color: '#111827',
+    lineHeight: '1.3',
+    marginBottom: '2px',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    display: '-webkit-box',
+    WebkitLineClamp: 2,
+    WebkitBoxOrient: 'vertical',
+  },
+
+  movieYear: {
+    fontSize: '11px',
+    color: '#9ca3af',
   },
 
 };
