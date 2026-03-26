@@ -21,8 +21,8 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { seenIds = [], savedIds = [] } = req.body;
-  const allIds = [...new Set([...seenIds, ...savedIds])].filter(id => Number.isInteger(id));
+  const { savedIds = [] } = req.body;
+  const allIds = [...new Set(savedIds)].filter(id => Number.isInteger(id));
 
   if (allIds.length === 0) {
     return res.status(200).json({ subcategories: [], empty: true });
@@ -113,25 +113,20 @@ export default async function handler(req, res) {
     // "Primary driver" = the matched movie that appears in fewest other candidates
     // (most distinctive). If a movie drives 10 subcategories, only the best one shows.
     const usedSeeds = new Set();
-    const usedCollections = {};  // collectionId -> count
-    const MAX_PER_COLLECTION = 2;
+    const usedCollections = new Set();
     const subcategories = [];
 
     for (const candidate of candidates) {
-      // Find the most distinctive seed for this subcategory
-      // (the matched movie that has been used the least so far)
-      const unusedSeeds = candidate.matchedTmdbIds.filter(id => !usedSeeds.has(id));
+      // Each parent collection can only appear once
+      if (usedCollections.has(candidate.collectionId)) continue;
 
-      // Require at least one fresh seed movie
+      // Each seed movie can only drive one result
+      const unusedSeeds = candidate.matchedTmdbIds.filter(id => !usedSeeds.has(id));
       if (unusedSeeds.length === 0) continue;
 
-      // Enforce max per parent collection
-      const collectionCount = usedCollections[candidate.collectionId] || 0;
-      if (collectionCount >= MAX_PER_COLLECTION) continue;
-
-      // Accept this subcategory — mark its seeds as used
+      // Accept — mark seeds and collection as used
       candidate.matchedTmdbIds.forEach(id => usedSeeds.add(id));
-      usedCollections[candidate.collectionId] = collectionCount + 1;
+      usedCollections.add(candidate.collectionId);
 
       subcategories.push({
         name: candidate.name,

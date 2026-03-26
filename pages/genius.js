@@ -125,12 +125,13 @@ const COLD_START_MOVIES = [
 const GENRES = ['Animation', 'Fantasy', 'Gangster', 'Sci-Fi', 'Western', 'Sports', 'Mystery', 'Rom-Com', 'Courtroom', 'Epic'];
 
 // ─── Cold start picker ───────────────────────────────────────────────────────
-function ColdStart({ onDone }) {
+function ColdStart({ onDone, miniMode = false }) {
   const [activeGenre, setActiveGenre] = useState('Animation');
   const [marked, setMarked] = useState({}); // { tmdbId: 'seen' | 'saved' }
 
   const movies = COLD_START_MOVIES.filter(m => m.genre === activeGenre);
   const totalMarked = Object.keys(marked).length;
+  const savedCount = Object.values(marked).filter(v => v === 'saved').length;
 
   const handleMark = (movie, type) => {
     const key = String(movie.tmdbId);
@@ -161,8 +162,15 @@ function ColdStart({ onDone }) {
   return (
     <div style={cs.container}>
       <div style={cs.header}>
-        <div style={cs.heading}>What have you seen?</div>
-        <div style={cs.subheading}>Mark films to get personalized collection picks</div>
+        <div style={cs.heading}>{miniMode ? 'Add more films' : 'What do you want to watch?'}</div>
+        {!miniMode && (
+          <div style={cs.subheading}>
+            Add {MIN_SAVES} films to your Watch list for new Genius suggestions
+            {savedCount > 0 && (
+              <span style={cs.progress}> · {savedCount} of {MIN_SAVES} saved</span>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Genre tabs */}
@@ -194,19 +202,21 @@ function ColdStart({ onDone }) {
                   style={{ ...cs.moviePoster, ...(state ? cs.moviePosterMarked : {}) }}
                   onError={e => { e.target.style.backgroundColor = '#e5e7eb'; e.target.src = ''; }}
                 />
-                {/* Seen button */}
-                <button
-                  style={{ ...cs.btn, ...cs.btnSeen, ...(state === 'seen' ? cs.btnSeenActive : {}) }}
-                  onClick={() => handleMark(movie, 'seen')}
-                  title="Seen"
-                >
-                  ✓
-                </button>
+                {/* Seen button — hidden in mini mode */}
+                {!miniMode && (
+                  <button
+                    style={{ ...cs.btn, ...cs.btnSeen, ...(state === 'seen' ? cs.btnSeenActive : {}) }}
+                    onClick={() => handleMark(movie, 'seen')}
+                    title="Seen"
+                  >
+                    ✓
+                  </button>
+                )}
                 {/* Save button */}
                 <button
-                  style={{ ...cs.btn, ...cs.btnSave, ...(state === 'saved' ? cs.btnSaveActive : {}) }}
+                  style={{ ...cs.btn, ...(miniMode ? cs.btnSaveMini : cs.btnSave), ...(state === 'saved' ? cs.btnSaveActive : {}) }}
                   onClick={() => handleMark(movie, 'saved')}
-                  title="Want to see"
+                  title="Want to watch"
                 >
                   +
                 </button>
@@ -219,12 +229,22 @@ function ColdStart({ onDone }) {
       </div>
 
       {/* CTA */}
-      {totalMarked > 0 && (
-        <div style={cs.ctaBar}>
-          <button style={cs.ctaBtn} onClick={onDone}>
-            Find my collections ({totalMarked} film{totalMarked !== 1 ? 's' : ''}) →
-          </button>
-        </div>
+      {miniMode ? (
+        savedCount > 0 && (
+          <div style={cs.ctaBar}>
+            <button style={cs.ctaBtn} onClick={onDone}>
+              Refresh picks ({savedCount} added) →
+            </button>
+          </div>
+        )
+      ) : (
+        savedCount >= MIN_SAVES && (
+          <div style={cs.ctaBar}>
+            <button style={cs.ctaBtn} onClick={onDone}>
+              Find my collections →
+            </button>
+          </div>
+        )
       )}
     </div>
   );
@@ -248,6 +268,10 @@ const cs = {
   subheading: {
     fontSize: '13px',
     color: '#6b7280',
+  },
+  progress: {
+    color: '#2563eb',
+    fontWeight: '600',
   },
   tabsWrapper: {
     overflowX: 'auto',
@@ -343,6 +367,14 @@ const cs = {
     backgroundColor: 'rgba(0,0,0,0.45)',
     color: '#ffffff',
   },
+  btnSaveMini: {
+    // In mini mode, only save button — center bottom
+    bottom: '4px',
+    left: '50%',
+    transform: 'translateX(-50%)',
+    backgroundColor: 'rgba(0,0,0,0.45)',
+    color: '#ffffff',
+  },
   btnSaveActive: {
     backgroundColor: '#2563eb',
     color: '#ffffff',
@@ -369,24 +401,28 @@ const cs = {
 };
 
 // ─── Main page ───────────────────────────────────────────────────────────────
+const MIN_SAVES = 5;
+
 export default function GeniusPage() {
   const router = useRouter();
   const [sections, setSections] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showColdStart, setShowColdStart] = useState(false);
+  const [showMiniColdStart, setShowMiniColdStart] = useState(false);
+  const [savedCount, setSavedCount] = useState(0);
 
   const loadRecs = useCallback(() => {
     // Invalidate FavoritesManager cache so we read fresh localStorage
     FavoritesManager._cache.hearted = null;
     FavoritesManager._cache.bookmarked = null;
 
-    const seenMovies = FavoritesManager.getHeartedMovies();
     const savedMovies = FavoritesManager.getBookmarkedMovies();
-
-    const seenIds = seenMovies.map(m => m.tmdbId).filter(Boolean);
     const savedIds = savedMovies.map(m => m.tmdbId).filter(Boolean);
 
-    if (seenIds.length === 0 && savedIds.length === 0) {
+    setSavedCount(savedIds.length);
+
+    // Need at least MIN_SAVES before showing recommendations
+    if (savedIds.length < MIN_SAVES) {
       setLoading(false);
       setShowColdStart(true);
       return;
@@ -394,11 +430,12 @@ export default function GeniusPage() {
 
     setLoading(true);
     setShowColdStart(false);
+    setShowMiniColdStart(false);
 
     fetch('/api/genius-recommendations', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ seenIds, savedIds }),
+      body: JSON.stringify({ savedIds }),
     })
       .then(r => r.json())
       .then(data => {
@@ -486,6 +523,26 @@ export default function GeniusPage() {
                   </div>
                 </div>
               ))}
+
+              {/* Mini cold start toggle */}
+              <div style={styles.miniToggleRow}>
+                <button
+                  style={styles.miniToggleBtn}
+                  onClick={() => setShowMiniColdStart(v => !v)}
+                >
+                  {showMiniColdStart ? 'Done adding films ↑' : '+ Add more films'}
+                </button>
+              </div>
+
+              {showMiniColdStart && (
+                <ColdStart
+                  miniMode
+                  onDone={() => {
+                    setShowMiniColdStart(false);
+                    loadRecs();
+                  }}
+                />
+              )}
             </div>
           )}
         </div>
@@ -600,6 +657,24 @@ const styles = {
   movieYear: {
     fontSize: '11px',
     color: '#9ca3af',
+  },
+
+  miniToggleRow: {
+    padding: '8px 16px 24px',
+    display: 'flex',
+    justifyContent: 'center',
+  },
+
+  miniToggleBtn: {
+    background: 'none',
+    border: '1px solid #e5e7eb',
+    borderRadius: '20px',
+    padding: '8px 20px',
+    fontSize: '13px',
+    fontWeight: '500',
+    color: '#374151',
+    cursor: 'pointer',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
   },
 
 };
