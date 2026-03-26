@@ -2,11 +2,15 @@
  * Genius Recommendations API
  *
  * Given a list of tmdb_ids (seen + saved movies), returns collections
- * ranked by overlap count. Groups results by the seed movie that drove
- * each match so the UI can show "Because you watched X...".
+ * ranked by overlap count (how many of the user's movies appear in each).
+ *
+ * Each collection includes:
+ *   - overlapCount: how many user movies matched
+ *   - matchedMovies: the actual overlapping movies (for display)
+ *   - previewMovies: 4 representative movies sampled from the full collection
  *
  * POST body: { seenIds: [int], savedIds: [int] }
- * Returns: { sections: [{ seedMovie, collections: [...] }] }
+ * Returns: { collections: [{ id, title, categories, overlapCount, matchedMovies, previewMovies }] }
  */
 
 import { getPool } from '../../lib/database';
@@ -20,13 +24,13 @@ export default async function handler(req, res) {
   const allIds = [...new Set([...seenIds, ...savedIds])].filter(id => Number.isInteger(id));
 
   if (allIds.length === 0) {
-    return res.status(200).json({ sections: [], empty: true });
+    return res.status(200).json({ collections: [], empty: true });
   }
 
   const pool = getPool();
 
   try {
-    // Find collections with highest overlap, along with which seed movies matched
+    // Find top collections by overlap count, plus which movies matched
     const result = await pool.query(`
       WITH matches AS (
         SELECT
@@ -49,7 +53,7 @@ export default async function handler(req, res) {
         SELECT DISTINCT id, title, categories, overlap_count
         FROM matches
         ORDER BY overlap_count DESC
-        LIMIT 40
+        LIMIT 30
       )
       SELECT
         tc.id,
@@ -64,10 +68,10 @@ export default async function handler(req, res) {
     `, [allIds]);
 
     if (result.rows.length === 0) {
-      return res.status(200).json({ sections: [], empty: true });
+      return res.status(200).json({ collections: [], empty: true });
     }
 
-    // Fetch seed movie titles for display
+    // Fetch movie metadata for all matched IDs
     const allMatchedIds = [...new Set(result.rows.flatMap(r => r.matched_tmdb_ids))];
     const moviesResult = await pool.query(
       `SELECT tmdb_id, title, year, poster_url FROM movies WHERE tmdb_id = ANY($1)`,
@@ -78,59 +82,72 @@ export default async function handler(req, res) {
       movieMap[m.tmdb_id] = m;
     }
 
-    // Fetch preview posters for each collection (first 5 matched movies)
-    const collectionsWithPosters = await Promise.all(
-      result.rows.map(async (row) => {
-        const previewMovies = row.matched_tmdb_ids
-          .map(id => movieMap[id])
-          .filter(Boolean)
-          .slice(0, 5);
+    // For each collection, fetch 4 representative movies from the full editorial_data
+    // Sample evenly across subcategories so the preview is diverse
+    const collectionIds = result.rows.map(r => r.id);
+    const previewResult = await pool.query(`
+      SELECT
+        bl.id,
+        (mv->>'tmdb_id')::int AS tmdb_id,
+        row_number() OVER (PARTITION BY bl.id ORDER BY sub_idx, mv_idx) AS rn
+      FROM browse_lists bl,
+           jsonb_array_elements(bl.editorial_data->'subcategories') WITH ORDINALITY AS s(sub, sub_idx),
+           jsonb_array_elements(s.sub->'movies') WITH ORDINALITY AS m(mv, mv_idx)
+      WHERE bl.id = ANY($1)
+        AND (mv->>'tmdb_id') IS NOT NULL
+        AND (mv->>'tmdb_id') != 'null'
+    `, [collectionIds]);
 
-        return {
-          id: row.id,
-          title: row.title,
-          categories: row.categories || [],
-          overlapCount: parseInt(row.overlap_count),
-          matchedTmdbIds: row.matched_tmdb_ids,
-          previewMovies,
-        };
-      })
-    );
-
-    // Group into sections by primary seed movie
-    // Each seed movie gets its own "Because you watched X" section
-    // Seen movies take priority over saved movies
-    const usedCollectionIds = new Set();
-    const sections = [];
-
-    const seedIds = [
-      ...seenIds.filter(id => allIds.includes(id)),
-      ...savedIds.filter(id => !seenIds.includes(id) && allIds.includes(id)),
-    ];
-
-    for (const seedId of seedIds) {
-      const seedMovie = movieMap[seedId];
-      if (!seedMovie) continue;
-
-      const matching = collectionsWithPosters.filter(
-        c => c.matchedTmdbIds.includes(seedId) && !usedCollectionIds.has(c.id)
-      ).slice(0, 3);
-
-      if (matching.length === 0) continue;
-
-      matching.forEach(c => usedCollectionIds.add(c.id));
-
-      const isSeen = seenIds.includes(seedId);
-      sections.push({
-        seedMovie,
-        seedType: isSeen ? 'seen' : 'saved',
-        collections: matching,
-      });
-
-      if (sections.length >= 8) break;
+    // Build a map: collectionId -> first 4 tmdb_ids spread across subcategories
+    // We sample: row 1,2,3,4 from the ordered list (sub_idx asc, then mv_idx asc)
+    // This naturally picks the first movie from each subcategory before cycling back
+    const previewIdMap = {};
+    for (const row of previewResult.rows) {
+      if (row.rn <= 4) {
+        if (!previewIdMap[row.id]) previewIdMap[row.id] = [];
+        previewIdMap[row.id].push(row.tmdb_id);
+      }
     }
 
-    return res.status(200).json({ sections });
+    // Fetch poster_url for all preview movie IDs we don't already have
+    const allPreviewIds = [...new Set(Object.values(previewIdMap).flat())].filter(
+      id => !movieMap[id]
+    );
+    if (allPreviewIds.length > 0) {
+      const extraMovies = await pool.query(
+        `SELECT tmdb_id, title, year, poster_url FROM movies WHERE tmdb_id = ANY($1)`,
+        [allPreviewIds]
+      );
+      for (const m of extraMovies.rows) {
+        movieMap[m.tmdb_id] = m;
+      }
+    }
+
+    // Assemble final collections
+    const collections = result.rows.map(row => {
+      const matchedMovies = row.matched_tmdb_ids
+        .map(id => movieMap[id])
+        .filter(Boolean);
+
+      const previewIds = previewIdMap[row.id] || [];
+      const previewMovies = previewIds
+        .map(id => movieMap[id])
+        .filter(m => m && m.poster_url);
+
+      // If we couldn't get full collection previews, fall back to matched movies
+      const finalPreview = previewMovies.length >= 2 ? previewMovies : matchedMovies;
+
+      return {
+        id: row.id,
+        title: row.title,
+        categories: row.categories || [],
+        overlapCount: parseInt(row.overlap_count),
+        matchedMovies,
+        previewMovies: finalPreview.slice(0, 4),
+      };
+    });
+
+    return res.status(200).json({ collections });
 
   } catch (error) {
     console.error('Genius recommendations error:', error);

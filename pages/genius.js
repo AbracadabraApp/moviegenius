@@ -12,6 +12,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
+import NetflixCarousel from '../components/NetflixCarousel';
 import { FavoritesManager } from '../components/FavoritesManager';
 
 // ─── Cold start movie catalog ────────────────────────────────────────────────
@@ -402,11 +403,11 @@ export default function GeniusPage() {
     })
       .then(r => r.json())
       .then(data => {
-        const secs = data.sections || [];
-        if (secs.length === 0) {
+        const cols = data.collections || [];
+        if (cols.length === 0) {
           setShowColdStart(true);
         } else {
-          setSections(secs);
+          setSections(cols);
         }
       })
       .catch(err => {
@@ -458,47 +459,19 @@ export default function GeniusPage() {
             <ColdStart onDone={loadRecs} />
           )}
 
-          {!loading && !showColdStart && sections.map((section, i) => (
-            <div key={i} style={styles.section}>
-              {/* Section label */}
-              <div style={styles.sectionLabel}>
-                <span style={styles.because}>
-                  {section.seedType === 'seen' ? 'Because you watched' : 'Because you saved'}
-                </span>
-                <span style={styles.seedTitle}> {section.seedMovie.title}</span>
-              </div>
-
-              {/* Collection cards */}
-              {section.collections.map(collection => (
-                <div
+          {!loading && !showColdStart && (
+            <div>
+              {sections.map((collection) => (
+                <NetflixCarousel
                   key={collection.id}
-                  style={styles.card}
-                  onClick={() => router.push(`/collection/${collection.id}`)}
-                >
-                  {/* Poster strip */}
-                  <div style={styles.posterStrip}>
-                    {collection.previewMovies.slice(0, 4).map((m, idx) => (
-                      <img
-                        key={idx}
-                        src={m.poster_url}
-                        alt={m.title}
-                        style={styles.poster}
-                      />
-                    ))}
-                  </div>
-
-                  {/* Info */}
-                  <div style={styles.cardInfo}>
-                    <div style={styles.cardTitle}>{collection.title}</div>
-                    <div style={styles.cardMeta}>
-                      {collection.overlapCount} of your films
-                      {collection.categories[0] ? ` · ${collection.categories[0]}` : ''}
-                    </div>
-                  </div>
-                </div>
+                  title={collection.title}
+                  movies={collection.previewMovies}
+                  collectionId={collection.id}
+                  showViewAll={true}
+                />
               ))}
             </div>
-          ))}
+          )}
         </div>
       </div>
     </PhoneFrame>
@@ -540,68 +513,4 @@ const styles = {
     marginBottom: '28px',
   },
 
-  // Sections
-  section: {
-    padding: '16px 16px 8px',
-    borderBottom: '1px solid #f3f4f6',
-  },
-
-  sectionLabel: {
-    fontSize: '13px',
-    marginBottom: '12px',
-    lineHeight: '1.4',
-  },
-
-  because: {
-    color: '#6b7280',
-    fontWeight: '400',
-  },
-
-  seedTitle: {
-    color: '#111827',
-    fontWeight: '600',
-  },
-
-  // Collection card
-  card: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '12px',
-    padding: '10px 0',
-    cursor: 'pointer',
-    borderTop: '1px solid #f9fafb',
-  },
-
-  posterStrip: {
-    display: 'flex',
-    gap: '3px',
-    flexShrink: 0,
-  },
-
-  poster: {
-    width: '36px',
-    height: '54px',
-    objectFit: 'cover',
-    borderRadius: '4px',
-    display: 'block',
-  },
-
-  cardInfo: {
-    flex: 1,
-    minWidth: 0,
-  },
-
-  cardTitle: {
-    fontSize: '15px',
-    fontWeight: '600',
-    color: '#111827',
-    marginBottom: '3px',
-    lineHeight: '1.3',
-  },
-
-  cardMeta: {
-    fontSize: '12px',
-    color: '#6b7280',
-    fontWeight: '400',
-  },
 };
