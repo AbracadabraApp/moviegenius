@@ -125,7 +125,7 @@ BAD Examples to AVOID:
 Return ONLY the tagline, nothing else.`;
 
         const message = await anthropic.messages.create({
-          model: 'claude-3-5-sonnet-20241022',
+          model: 'claude-sonnet-4-5-20250929',
           max_tokens: 100,
           temperature: 0.7, // Slightly more creative
           messages: [

@@ -273,7 +273,7 @@ async function fetchClaudeStreamingFallback(title, year, performanceMonitor) {
   const prompt = `Where can someone stream the movie "${title}" (${year}) right now in the US? Only list subscription streaming services (Netflix, Hulu, Amazon Prime Video, Disney+, etc.) or free services with ads (Tubi, Crackle, etc.). Do NOT include rental or purchase options. Keep response under 50 words and factual.`;
 
   const message = await anthropic.messages.create({
-    model: 'claude-3-5-sonnet-20241022',
+    model: 'claude-sonnet-4-5-20250929',
     max_tokens: 100,
     messages: [{ role: 'user', content: prompt }],
   });

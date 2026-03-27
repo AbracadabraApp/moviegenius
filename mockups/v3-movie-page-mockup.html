@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V3 Movie Page Mockup</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #f3f4f6;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .mockup-container {
+      max-width: 500px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .phone-frame {
+      width: 390px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+    }
+
+    /* Movie Header (simplified for mockup) */
+    .movie-header {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .poster {
+      width: 125px;
+      height: 188px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 12px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .movie-info {
+      flex: 1;
+    }
+
+    .movie-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #111827;
+    }
+
+    .movie-meta {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 12px;
+    }
+
+    /* Why Watch Section */
+    .why-watch {
+      margin-top: 20px;
+      margin-bottom: 24px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .divider {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #d4af37, transparent);
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #d4af37;
+      white-space: nowrap;
+    }
+
+    .section-title .emoji {
+      margin-right: 6px;
+      font-size: 14px;
+    }
+
+    .reasons-list {
+      padding: 0;
+      margin: 0 0 20px 0;
+    }
+
+    .reason-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+
+    .reason-bullet {
+      color: #374151;
+      margin-right: 10px;
+      font-size: 20px;
+      min-width: 16px;
+    }
+
+    .reason-text {
+      font-size: 16px;
+      color: #374151;
+      line-height: 1.5;
+    }
+
+    /* NEW: Context paragraph */
+    .context-paragraph {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #4b5563;
+      padding: 16px;
+      background: #f9fafb;
+      border-left: 3px solid #d4af37;
+      border-radius: 4px;
+      margin-top: 16px;
+    }
+
+    .mockup-label {
+      text-align: center;
+      padding: 12px;
+      background: #111827;
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .annotation {
+      position: relative;
+      margin: 20px 0;
+    }
+
+    .annotation::after {
+      content: attr(data-note);
+      display: block;
+      font-size: 12px;
+      color: #6b7280;
+      font-style: italic;
+      margin-top: 8px;
+      padding-left: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- YES Example -->
+  <div class="mockup-container">
+    <div class="mockup-label">V3 Format - YES Recommendation</div>
+    <div class="phone-frame">
+      <div class="movie-header">
+        <div class="poster">125×188px<br>Poster</div>
+        <div class="movie-info">
+          <div class="movie-title">Star Trek II</div>
+          <div class="movie-meta">1982 · 113 min · PG</div>
+        </div>
+      </div>
+
+      <div class="why-watch">
+        <div class="section-header">
+          <div class="divider"></div>
+          <span class="section-title">Reasons to Watch</span>
+          <div class="divider"></div>
+        </div>
+
+        <div class="reasons-list annotation" data-note="✓ 5-7 words per reason">
+          <div class="reason-item">
+            <div class="reason-bullet">•</div>
+            <div class="reason-text">Khan's revenge obsession drives compelling villain</div>
+          </div>
+          <div class="reason-item">
+            <div class="reason-bullet">•</div>
+            <div class="reason-text">Spock's sacrifice provides genuine emotional weight</div>
+          </div>
+          <div class="reason-item">
+            <div class="reason-bullet">•</div>
+            <div class="reason-text">Space submarine warfare creates tense battles</div>
+          </div>
+        </div>
+
+        <div class="context-paragraph annotation" data-note="✓ ~30 words: plot + performances + comparisons">
+          Admiral Kirk faces genetically enhanced nemesis Khan in starship combat resembling naval warfare. Shatner and Nimoy deliver career-best performances. Superior to disappointing first film, launching successful Trek movie franchise.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+
+  <!-- NO Example -->
+  <div class="mockup-container">
+    <div class="mockup-label">V3 Format - NO Recommendation (Less Dramatic)</div>
+    <div class="phone-frame">
+      <div class="movie-header">
+        <div class="poster">125×188px<br>Poster</div>
+        <div class="movie-info">
+          <div class="movie-title">Star Trek V</div>
+          <div class="movie-meta">1989 · 107 min · PG</div>
+        </div>
+      </div>
+
+      <div class="why-watch">
+        <div class="section-header">
+          <div class="divider"></div>
+          <span class="section-title"><span class="emoji">⏭️</span>Skip This One</span>
+          <div class="divider"></div>
+        </div>
+
+        <div class="reasons-list annotation" data-note="✓ Same styling as YES - not error colors">
+          <div class="reason-item">
+            <div class="reason-bullet">•</div>
+            <div class="reason-text">Shatner's direction feels amateurish and unfocused</div>
+          </div>
+          <div class="reason-item">
+            <div class="reason-bullet">•</div>
+            <div class="reason-text">God subplot becomes unintentionally ridiculous and preachy</div>
+          </div>
+          <div class="reason-item">
+            <div class="reason-bullet">•</div>
+            <div class="reason-text">Special effects look embarrassingly cheap throughout</div>
+          </div>
+        </div>
+
+        <div class="context-paragraph annotation" data-note="✓ Still provides film buff context">
+          Kirk's half-brother leads religious fanatics seeking God beyond the galactic barrier. Shatner's directorial debut suffers from budget cuts and weak storytelling. Widely considered the worst Trek film, lacking the charm of previous entries.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+
+  <!-- Quality Analysis -->
+  <div class="mockup-container" style="max-width: 600px;">
+    <div class="mockup-label">30-Word Context Quality Analysis</div>
+    <div style="padding: 20px; font-size: 14px; line-height: 1.8;">
+      <h3 style="margin-top: 0;">✅ What works:</h3>
+      <ul style="color: #374151;">
+        <li><strong>Plot context:</strong> "Admiral Kirk faces genetically enhanced nemesis Khan"</li>
+        <li><strong>Performances:</strong> "Shatner and Nimoy deliver career-best performances"</li>
+        <li><strong>Comparisons:</strong> "Superior to disappointing first film, launching successful Trek movie franchise"</li>
+        <li><strong>Film buff tone:</strong> Not academic, conversational</li>
+      </ul>
+
+      <h3>⚠️ Minor issues:</h3>
+      <ul style="color: #6b7280;">
+        <li>Some contexts running 34-37 words (target: 30)</li>
+        <li>Occasional stopword slips ("masterfully")</li>
+        <li>Overall acceptable for V3 launch</li>
+      </ul>
+
+      <h3>📊 Test Results:</h3>
+      <ul style="color: #059669;">
+        <li><strong>29% NO rate</strong> (target: 15-30%) ✅</li>
+        <li><strong>Zero validation errors</strong> on reason word counts ✅</li>
+        <li><strong>Good differentiation</strong> within franchises ✅</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

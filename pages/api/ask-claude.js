@@ -370,7 +370,7 @@ async function generateClaudeResponse(question, conversationContext = null) {
   // Try Redis cache first for Claude responses
   const cachePromise = cache.cacheClaudeResponse(
     question,
-    'claude-3-5-sonnet-20241022',
+    'claude-sonnet-4-5-20250929',
     async () => {
       // Cache miss - generating fresh Claude response
 

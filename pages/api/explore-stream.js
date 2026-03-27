@@ -48,7 +48,7 @@ Make it educational but accessible, with concrete examples and specific film ref
 
     // Create streaming request
     const stream = await anthropic.messages.create({
-      model: 'claude-3-5-sonnet-20241022',
+      model: 'claude-sonnet-4-5-20250929',
       max_tokens: 2000,
       temperature: 0.7,
       messages: [{

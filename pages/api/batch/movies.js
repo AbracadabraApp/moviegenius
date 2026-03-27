@@ -84,7 +84,7 @@ MORE_IDEAS: title5|year5|description5|streaming5`;
     const requests = movies.map(movie => ({
       custom_id: movie.id,
       params: {
-        model: 'claude-3-5-sonnet-20241022',
+        model: 'claude-sonnet-4-5-20250929',
         max_tokens: 4000,
         temperature: 0.7,
         system: [

@@ -10,7 +10,7 @@
  *   - movies: all movies in the subcategory (6-7 with poster_url)
  *   - overlapCount: how many of the user's movies appear in it
  *
- * POST body: { seenIds: [int], savedIds: [int] }
+ * POST body: { savedIds: [int] }
  * Returns: { subcategories: [{ name, collectionId, collectionTitle, movies, overlapCount }] }
  */
 

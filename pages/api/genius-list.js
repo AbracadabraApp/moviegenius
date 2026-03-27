@@ -90,7 +90,7 @@ Use:
 - Natural, conversational tone`;
 
         const message = await anthropic.messages.create({
-          model: 'claude-3-5-sonnet-20241022',
+          model: 'claude-sonnet-4-5-20250929',
           max_tokens: 300,
           temperature: 0.3,
           system: [
@@ -121,7 +121,7 @@ Use:
           cost_estimate: costEstimate,
           input_tokens: message.usage.input_tokens,
           output_tokens: message.usage.output_tokens,
-          model: 'claude-3-5-sonnet-20241022',
+          model: 'claude-sonnet-4-5-20250929',
         };
 
         const { error: saveError } = await supabase.from('list_analyses').insert({

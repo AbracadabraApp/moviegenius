@@ -124,7 +124,7 @@ async function fetchStreamingInfoFromClaude(title, year, performanceMonitor) {
     const prompt = `Where can someone stream the movie "${title}" (${year}) right now? List the current streaming services where it's available. Be specific about platform names like Netflix, Hulu, Amazon Prime Video, Disney+, etc. If it's available for rent/purchase, mention that too. Keep your response concise and factual.`;
 
     const message = await anthropic.messages.create({
-      model: 'claude-3-5-sonnet-20241022',
+      model: 'claude-sonnet-4-5-20250929',
       max_tokens: 150,
       messages: [
         {

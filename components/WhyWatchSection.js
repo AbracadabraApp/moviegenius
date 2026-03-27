@@ -37,7 +37,6 @@ export default function WhyWatchSection({ reasons = [], recommendation = "YES", 
           {!isSkip && <Sparkles size={16} color="#d4af37" style={{ flexShrink: 0 }} />}
           <span style={{ ...styles.verdict, color: verdictColor }}>{verdictText}</span>
         </div>
-        <div style={{ ...styles.verdictLine, background: `linear-gradient(90deg, ${verdictColor}40, transparent)` }} />
         {rightSlot && <div style={styles.verdictRightSlot}>{rightSlot}</div>}
       </div>
 
@@ -79,11 +78,6 @@ const styles = {
     lineHeight: '1',
     whiteSpace: 'nowrap',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-  },
-
-  verdictLine: {
-    flex: 1,
-    height: '1px',
   },
 
   verdictRightSlot: {

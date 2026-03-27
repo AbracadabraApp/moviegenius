@@ -130,7 +130,7 @@ EXPLORE_FURTHER
 - Topic 4 related to this collection (8-12 words)`;
 
       const response = await anthropic.messages.create({
-        model: 'claude-3-5-sonnet-20241022',
+        model: 'claude-sonnet-4-5-20250929',
         max_tokens: 1000,
         system: this.systemPrompt,
         messages: [
@@ -155,7 +155,7 @@ EXPLORE_FURTHER
         analysis_type: 'comprehensive',
         claude_response: {
           content: analysis,
-          model: 'claude-3-5-sonnet-20241022',
+          model: 'claude-sonnet-4-5-20250929',
           timestamp: new Date().toISOString(),
         },
         created_at: new Date().toISOString(),

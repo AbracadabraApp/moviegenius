@@ -17,7 +17,7 @@ export default async function handler(req, res) {
     };
     
     const failingConfig = {
-      model: "claude-3-5-sonnet-20241022",
+      model: "claude-sonnet-4-5-20250929",
       max_tokens: 50,
       messages: [{ role: 'user', content: 'Say hello' }],
     };

@@ -207,7 +207,7 @@ async function generateExplorePageDirect(topic, context = '') {
 
     return await cache.cacheClaudeResponse(
       cacheKey,
-      'claude-3-5-sonnet-20241022',
+      'claude-sonnet-4-5-20250929',
       async () => {
         const fullTopic = context ? `${topic} (in relation to ${context})` : topic;
         const prompt = `Create comprehensive educational content about "${fullTopic}" for film enthusiasts.
@@ -227,7 +227,7 @@ MOVIES: title|year|description|streaming (6-8 films)
 NEXT_STEPS: step1|step2|step3`;
 
         const message = await anthropic.messages.create({
-          model: 'claude-3-5-sonnet-20241022',
+          model: 'claude-sonnet-4-5-20250929',
           max_tokens: 3000,
           temperature: 0.7,
           messages: [{ role: 'user', content: prompt }],

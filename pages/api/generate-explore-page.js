@@ -48,7 +48,7 @@ async function generateExplorePage(topic, context = '') {
 
   return await cache.cacheClaudeResponse(
     cacheKey,
-    'claude-3-5-sonnet-20241022',
+    'claude-sonnet-4-5-20250929',
     async () => {
       console.log(`🔄 Generating static Explore Further page: "${topic}" (context: "${context}")`);
 
@@ -83,7 +83,7 @@ NEXT_STEPS: specific suggestion 1|specific suggestion 2|specific suggestion 3`;
 
       try {
         const message = await anthropic.messages.create({
-          model: 'claude-3-5-sonnet-20241022',
+          model: 'claude-sonnet-4-5-20250929',
           max_tokens: 4000,
           temperature: 0.7,
           messages: [
