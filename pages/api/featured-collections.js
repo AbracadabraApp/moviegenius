@@ -44,6 +44,8 @@ export default async function handler(req, res) {
           AND bl.editorial_data->'subcategories' IS NOT NULL
           AND (mv->>'tmdb_id') IS NOT NULL
           AND (mv->>'tmdb_id') != 'null'
+          AND COALESCE(bl.revised_title, bl.title) NOT LIKE '[%'
+          AND COALESCE(bl.revised_title, bl.title) NOT ILIKE '%NEEDS TITLE%'
         GROUP BY bl.id, bl.revised_title, bl.title, bl.categories
         HAVING COUNT(*) >= 15
       )
