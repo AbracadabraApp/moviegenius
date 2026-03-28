@@ -412,27 +412,11 @@ export async function getStaticProps({ params }) {
 
 // Generate paths for common explore topics
 export async function getStaticPaths() {
-  // Pre-generate some common explore topics
-  const commonTopics = [
-    'film-noir-lighting',
-    'german-expressionism',
-    'cyberpunk-aesthetics',
-    'french-new-wave',
-    'italian-neorealism',
-    'silent-film-techniques',
-    'color-in-cinema',
-    'sound-design',
-    'montage-theory',
-    'deep-focus-photography',
-  ];
-
-  const paths = commonTopics.map(topic => ({
-    params: { slug: [topic] },
-  }));
-
+  // Skip pre-generating at build time — pages generate on first request via ISR
+  // (avoids blocking Claude API calls during build when Redis cache is unavailable)
   return {
-    paths,
-    fallback: 'blocking', // Generate other topics on demand
+    paths: [],
+    fallback: 'blocking',
   };
 }
 
