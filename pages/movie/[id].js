@@ -188,10 +188,11 @@ export default function MovieDetailPage() {
 
           {/* Header */}
           <ErrorBoundary level="section">
+            {/* LOCKED: initialSlug must use streaming?.slug (DB), not movie?.overview (TMDB) — see LOCKED_COMPONENTS.md */}
             <MovieHeaderLarge
               title={movie?.title}
               year={year}
-              initialSlug={streaming?.slug || movie?.overview} {/* LOCKED: must use streaming?.slug (DB), not movie?.overview (TMDB) — see LOCKED_COMPONENTS.md */}
+              initialSlug={streaming?.slug || movie?.overview}
               initialPoster={posterUrl}
               initialStreaming={streaming?.streaming_data}
               tmdbId={parseInt(finalMovieId)}
