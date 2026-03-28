@@ -3,7 +3,7 @@
  * Simple watchlist page showing user's favorited and bookmarked movies
  */
 import { Check, Bookmark, ChevronRight } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
 import { FavoritesManager } from '../components/FavoritesManager';
 import PhoneFrame from '../components/PhoneFrame';
@@ -16,7 +16,10 @@ export default function WhatToWatchPage() {
   const [bookmarkedMovies, setBookmarkedMovies] = useState([]);
   const [savedSubcategories, setSavedSubcategories] = useState([]);
   const [activeTab, setActiveTab] = useState('bookmarked'); // 'hearted' or 'bookmarked'
+  const [showAll, setShowAll] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const sentinelRef = useRef(null);
+  const INITIAL_COUNT = 20;
 
   useEffect(() => {
     setMounted(true);
@@ -39,7 +42,23 @@ export default function WhatToWatchPage() {
     }
   }, [mounted]);
 
+  // Reset expansion when tab changes
+  useEffect(() => { setShowAll(false); }, [activeTab]);
+
+  // Auto-expand when sentinel scrolls into view
+  useEffect(() => {
+    if (showAll || !sentinelRef.current) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) setShowAll(true); },
+      { rootMargin: '100px' }
+    );
+    observer.observe(sentinelRef.current);
+    return () => observer.disconnect();
+  }, [showAll, activeTab, mounted]);
+
   const movies = activeTab === 'hearted' ? heartedMovies : bookmarkedMovies;
+  const visibleMovies = showAll ? movies : movies.slice(0, INITIAL_COUNT);
+  const hasMore = movies.length > INITIAL_COUNT && !showAll;
   const isEmpty = movies.length === 0;
 
   return (
@@ -144,16 +163,19 @@ export default function WhatToWatchPage() {
               )}
             </div>
           ) : (
-            movies.map((movie, index) => (
-              <MediaCard
-                key={movie.id || index}
-                title={movie.title}
-                year={movie.year}
-                initialSlug={movie.slug}
-                initialPoster={movie.poster}
-                tmdbId={movie.tmdbId || movie.tmdb_id}
-              />
-            ))
+            <>
+              {visibleMovies.map((movie, index) => (
+                <MediaCard
+                  key={movie.id || index}
+                  title={movie.title}
+                  year={movie.year}
+                  initialSlug={movie.slug}
+                  initialPoster={movie.poster}
+                  tmdbId={movie.tmdbId || movie.tmdb_id}
+                />
+              ))}
+              {hasMore && <div ref={sentinelRef} style={{ height: '1px' }} />}
+            </>
           )}
         </div>
       </div>
