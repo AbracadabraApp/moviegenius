@@ -193,13 +193,11 @@ const styles = {
     boxSizing: 'border-box',
   },
   navMobile: {
-    position: 'fixed',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    width: '100vw',
+    position: 'relative',
+    width: '100%',
     zIndex: 1000,
     margin: 0,
+    flexShrink: 0,
   },
   navDesktop: {
     position: 'absolute',
