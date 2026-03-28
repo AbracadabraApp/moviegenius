@@ -52,7 +52,7 @@ export default function MovieDetailPage() {
         }
 
         // Fetch streaming availability
-        const streamingResponse = await fetch(`/api/movie-streaming?id=${finalMovieId}`);
+        const streamingResponse = await fetch(`/api/movie-data?id=${finalMovieId}`);
         if (streamingResponse.ok) {
           const streamingData = await streamingResponse.json();
           setStreaming(streamingData);

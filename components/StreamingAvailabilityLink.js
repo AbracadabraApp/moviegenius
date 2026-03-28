@@ -14,7 +14,7 @@ export default function StreamingAvailabilityLink({ tmdbId }) {
 
     const fetchStreamingData = async () => {
       try {
-        const response = await fetch(`/api/movie-streaming?id=${tmdbId}`);
+        const response = await fetch(`/api/movie-data?id=${tmdbId}`);
         
         if (!response.ok) {
           if (response.status === 404) {
