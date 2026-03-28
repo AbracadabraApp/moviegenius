@@ -72,18 +72,23 @@ export default function CollectionPage({ collection, movies }) {
                 <span style={styles.aisleLabel}>{subcategory.name}</span>
               </div>
               <button
-                style={styles.bookmarkBtn}
+                style={{
+                  ...styles.bookmarkBtn,
+                  background: bookmarked[subcategory.name] ? '#374151' : 'none',
+                  borderRadius: '6px',
+                  padding: '4px 8px',
+                }}
                 onClick={e => handleBookmark(e, subcategory, subcategoryMovies)}
                 aria-label={bookmarked[subcategory.name] ? 'Remove bookmark' : 'Bookmark subcategory'}
               >
                 {bookmarked[subcategory.name]
-                  ? <BookmarkCheck size={18} color="#d4af37" />
+                  ? <BookmarkCheck size={18} color="#ffffff" />
                   : <Bookmark size={18} color="#9ca3af" />
                 }
                 <span style={{
                   fontSize: '13px',
                   fontWeight: '500',
-                  color: bookmarked[subcategory.name] ? '#d4af37' : '#9ca3af',
+                  color: bookmarked[subcategory.name] ? '#ffffff' : '#9ca3af',
                   marginLeft: '4px',
                 }}>Save</span>
               </button>
