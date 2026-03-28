@@ -61,6 +61,24 @@ export default function WhatToWatchPage() {
   const hasMore = movies.length > INITIAL_COUNT && !showAll;
   const isEmpty = movies.length === 0;
 
+  // Decade grouping for Seen tab
+  const decadeGroups = (() => {
+    if (activeTab !== 'hearted' || visibleMovies.length === 0) return null;
+    const groups = {};
+    for (const m of visibleMovies) {
+      const decade = m.year ? Math.floor(m.year / 10) * 10 : 0;
+      const label = decade ? `${decade}s` : 'Unknown';
+      if (!groups[label]) groups[label] = [];
+      groups[label].push(m);
+    }
+    // Sort decades descending
+    return Object.entries(groups).sort((a, b) => {
+      const da = parseInt(a[0]) || 0;
+      const db = parseInt(b[0]) || 0;
+      return db - da;
+    });
+  })();
+
   return (
     <PhoneFrame>
       <div style={styles.container}>
@@ -162,6 +180,25 @@ export default function WhatToWatchPage() {
                 </>
               )}
             </div>
+          ) : decadeGroups ? (
+            <>
+              {decadeGroups.map(([decade, group]) => (
+                <div key={decade}>
+                  <div style={styles.decadeHeader}>{decade}</div>
+                  {group.map((movie, index) => (
+                    <MediaCard
+                      key={movie.id || index}
+                      title={movie.title}
+                      year={movie.year}
+                      initialSlug={movie.slug}
+                      initialPoster={movie.poster}
+                      tmdbId={movie.tmdbId || movie.tmdb_id}
+                    />
+                  ))}
+                </div>
+              ))}
+              {hasMore && <div ref={sentinelRef} style={{ height: '1px' }} />}
+            </>
           ) : (
             <>
               {visibleMovies.map((movie, index) => (
@@ -323,5 +360,13 @@ const styles = {
     height: '100%',
     objectFit: 'cover',
     display: 'block',
+  },
+  decadeHeader: {
+    fontSize: '11px',
+    fontWeight: '600',
+    color: '#9ca3af',
+    letterSpacing: '0.06em',
+    textTransform: 'uppercase',
+    padding: '16px 0 8px',
   },
 };
