@@ -80,6 +80,12 @@ export default function CollectionPage({ collection, movies }) {
                   ? <BookmarkCheck size={18} color="#d4af37" />
                   : <Bookmark size={18} color="#9ca3af" />
                 }
+                <span style={{
+                  fontSize: '13px',
+                  fontWeight: '500',
+                  color: bookmarked[subcategory.name] ? '#d4af37' : '#9ca3af',
+                  marginLeft: '4px',
+                }}>Save</span>
               </button>
             </div>
 
