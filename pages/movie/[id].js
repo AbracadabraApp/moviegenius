@@ -191,7 +191,7 @@ export default function MovieDetailPage() {
             <MovieHeaderLarge
               title={movie?.title}
               year={year}
-              initialSlug={movie?.overview}
+              initialSlug={streaming?.slug || movie?.overview}
               initialPoster={posterUrl}
               initialStreaming={streaming?.streaming_data}
               tmdbId={parseInt(finalMovieId)}
