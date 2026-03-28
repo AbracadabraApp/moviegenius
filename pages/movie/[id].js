@@ -151,7 +151,7 @@ export default function MovieDetailPage() {
 
   const movieData = movie ? { title: movie.title, year, poster: posterUrl, id: mediaId, tmdbId: parseInt(finalMovieId), slug: streaming?.slug } : null;
 
-  const seenAddSlot = movieData ? (
+  const seenAddSlot = (movieData && streaming) ? (
     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
       <button
         onClick={() => { try { setHearted(FavoritesManager.toggleHeart(movieData)); } catch(e){ /* ignore */ } }}
