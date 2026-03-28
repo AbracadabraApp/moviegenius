@@ -191,7 +191,7 @@ export default function MovieDetailPage() {
             <MovieHeaderLarge
               title={movie?.title}
               year={year}
-              initialSlug={streaming?.slug || movie?.overview}
+              initialSlug={streaming?.slug || movie?.overview} {/* LOCKED: must use streaming?.slug (DB), not movie?.overview (TMDB) — see LOCKED_COMPONENTS.md */}
               initialPoster={posterUrl}
               initialStreaming={streaming?.streaming_data}
               tmdbId={parseInt(finalMovieId)}

@@ -14,6 +14,14 @@ architectural reversions.
 - **Features**: ISR, TMDB discovery, analysis integration
 - **DO NOT MODIFY**: Core routing, getStaticProps, getStaticPaths
 
+**CRITICAL — Line 194:**
+```jsx
+initialSlug={streaming?.slug || movie?.overview}
+```
+`streaming?.slug` is the app's own database slug (curated description).
+`movie?.overview` is the TMDB plot summary — **fallback only**.
+Do NOT revert this to `movie?.overview` alone. Doing so causes the You page to display TMDB summaries instead of app slugs for all hearted/bookmarked movies. This regression has occurred before (2025-03-28).
+
 #### 2. `/components/MovieHeaderLarge.js`
 
 - **Lock Date**: 2025-07-02
