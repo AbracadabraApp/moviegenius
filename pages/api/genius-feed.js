@@ -50,7 +50,7 @@ export default async function handler(req, res) {
       return res.status(200).json({ items: [], empty: true });
     }
 
-    // Step 2: Count how many seeds point to each related movie
+    // Step 2: Count how many seeds point to each related movie, keyed by tmdbId
     const scores = {};
     for (const row of ideasResult.rows) {
       let ideas = row.ideas;
@@ -60,10 +60,10 @@ export default async function handler(req, res) {
         else continue;
       }
       for (const idea of ideas) {
-        if (!idea.title || !idea.year) continue;
-        const key = `${idea.title.toLowerCase()}|||${idea.year}`;
-        if (!scores[key]) scores[key] = { title: idea.title, year: idea.year, count: 0 };
-        scores[key].count++;
+        const tmdbId = idea.tmdbId || idea.tmdb_id;
+        if (!tmdbId || !Number.isInteger(tmdbId)) continue;
+        if (!scores[tmdbId]) scores[tmdbId] = { tmdbId, count: 0 };
+        scores[tmdbId].count++;
       }
     }
 
@@ -81,27 +81,21 @@ export default async function handler(req, res) {
       return res.status(200).json({ items: [], empty: true });
     }
 
-    // Step 4: Look up tmdb_ids and posters for candidates
-    const candidateTitles = [...new Set(candidates.map(c => c.title.toLowerCase()))];
+    // Step 4: Fetch posters directly by tmdb_id — no title matching needed
+    const candidateIds = candidates.map(c => c.tmdbId);
     const movieRows = await pool.query(
-      `SELECT tmdb_id, title, year, poster_url
-       FROM movies
-       WHERE LOWER(title) = ANY($1)`,
-      [candidateTitles]
+      `SELECT tmdb_id, title, year, poster_url FROM movies WHERE tmdb_id = ANY($1)`,
+      [candidateIds]
     );
 
     const movieLookup = {};
-    for (const m of movieRows.rows) {
-      const key = `${m.title.toLowerCase()}|||${m.year}`;
-      movieLookup[key] = m;
-    }
+    for (const m of movieRows.rows) movieLookup[m.tmdb_id] = m;
 
     // Enrich candidates — skip already-saved movies, require poster
     const seenTmdbIds = new Set(allIds);
     const enriched = [];
     for (const c of candidates) {
-      const key = `${c.title.toLowerCase()}|||${c.year}`;
-      const m = movieLookup[key];
+      const m = movieLookup[c.tmdbId];
       if (!m || !m.poster_url || seenTmdbIds.has(m.tmdb_id)) continue;
       seenTmdbIds.add(m.tmdb_id);
       enriched.push({ tmdbId: m.tmdb_id, title: m.title, year: m.year, posterUrl: m.poster_url });
