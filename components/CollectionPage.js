@@ -6,9 +6,39 @@
  */
 
 import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
+import { Bookmark, BookmarkCheck } from 'lucide-react';
+import { FavoritesManager } from './FavoritesManager';
 
 export default function CollectionPage({ collection, movies }) {
   const router = useRouter();
+  const [bookmarked, setBookmarked] = useState({});
+
+  // Load bookmarked state from localStorage on mount
+  useEffect(() => {
+    const refresh = () => {
+      if (!collection?.subcategories) return;
+      const state = {};
+      collection.subcategories.forEach(sub => {
+        state[sub.name] = FavoritesManager.isSubcategoryBookmarked(collection.id, sub.name);
+      });
+      setBookmarked(state);
+    };
+    refresh();
+    window.addEventListener('subcategoriesUpdated', refresh);
+    return () => window.removeEventListener('subcategoriesUpdated', refresh);
+  }, [collection]);
+
+  const handleBookmark = (e, subcategory, subcategoryMovies) => {
+    e.stopPropagation();
+    FavoritesManager.toggleSubcategoryBookmark(
+      collection.id,
+      collection.title,
+      subcategory.name,
+      subcategoryMovies,
+    );
+    setBookmarked(prev => ({ ...prev, [subcategory.name]: !prev[subcategory.name] }));
+  };
 
   if (!collection || !movies) {
     return null;
@@ -41,6 +71,16 @@ export default function CollectionPage({ collection, movies }) {
               <div style={styles.aisleText}>
                 <span style={styles.aisleLabel}>{subcategory.name}</span>
               </div>
+              <button
+                style={styles.bookmarkBtn}
+                onClick={e => handleBookmark(e, subcategory, subcategoryMovies)}
+                aria-label={bookmarked[subcategory.name] ? 'Remove bookmark' : 'Bookmark subcategory'}
+              >
+                {bookmarked[subcategory.name]
+                  ? <BookmarkCheck size={18} color="#d4af37" />
+                  : <Bookmark size={18} color="#9ca3af" />
+                }
+              </button>
             </div>
 
             {subcategory.description && (
@@ -123,7 +163,7 @@ const styles = {
   aisleMarker: {
     display: 'flex',
     flexDirection: 'row',
-    alignItems: 'stretch',
+    alignItems: 'center',
     gap: '12px',
     paddingLeft: '16px',
     paddingRight: '16px',
@@ -132,6 +172,7 @@ const styles = {
 
   aisleAccent: {
     width: '3px',
+    minHeight: '22px',
     borderRadius: '2px',
     background: '#d4af37',
     flexShrink: 0,
@@ -142,6 +183,17 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     gap: '2px',
+    flex: 1,
+  },
+
+  bookmarkBtn: {
+    background: 'none',
+    border: 'none',
+    cursor: 'pointer',
+    padding: '4px',
+    display: 'flex',
+    alignItems: 'center',
+    flexShrink: 0,
   },
 
   aisleLabel: {

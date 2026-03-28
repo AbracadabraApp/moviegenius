@@ -13,6 +13,7 @@ import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
 import { FavoritesManager } from '../components/FavoritesManager';
+import { Bookmark } from 'lucide-react';
 
 // ─── Cold start movie catalog ────────────────────────────────────────────────
 const COLD_START_MOVIES = [
@@ -406,6 +407,7 @@ const MIN_SAVES = 5;
 export default function GeniusPage() {
   const router = useRouter();
   const [sections, setSections] = useState([]);
+  const [bookmarkedSubs, setBookmarkedSubs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showColdStart, setShowColdStart] = useState(false);
   const [showMiniColdStart, setShowMiniColdStart] = useState(false);
@@ -457,6 +459,13 @@ export default function GeniusPage() {
     loadRecs();
   }, [loadRecs]);
 
+  useEffect(() => {
+    const refresh = () => setBookmarkedSubs(FavoritesManager.getBookmarkedSubcategories());
+    refresh();
+    window.addEventListener('subcategoriesUpdated', refresh);
+    return () => window.removeEventListener('subcategoriesUpdated', refresh);
+  }, []);
+
   return (
     <PhoneFrame>
       <div style={styles.container}>
@@ -497,32 +506,111 @@ export default function GeniusPage() {
 
           {!loading && !showColdStart && (
             <div style={styles.collectionList}>
-              {sections.map((sub, i) => (
-                <div key={i} style={styles.section}>
-                  <div
-                    style={styles.sectionHeader}
-                    onClick={() => router.push(`/collection/${sub.collectionId}`)}
-                  >
-                    <span style={styles.sectionTitle}>{sub.name}</span>
-                    <span style={styles.sectionParent}>{sub.collectionTitle}</span>
-                  </div>
-                  <div style={styles.movieGrid}>
-                    {sub.movies.slice(0, 6).map((m, idx) => (
-                      <div
-                        key={idx}
-                        style={styles.posterWrapper}
-                        onClick={() => router.push(`/movie/${m.tmdb_id}`)}
-                      >
-                        <div style={styles.posterContainer}>
-                          <img src={m.poster_url} alt={m.title} style={styles.poster} />
+              {(() => {
+                // Build interleaved feed: inject bookmarked subcategory blocks every 3 sections
+                const feed = [];
+                let bookmarkIdx = 0;
+
+                sections.forEach((sub, i) => {
+                  // Inject bookmarked subcategory before every 3rd item (or at start if no sections yet)
+                  if (i % 3 === 0 && bookmarkIdx < bookmarkedSubs.length) {
+                    const bsub = bookmarkedSubs[bookmarkIdx++];
+                    feed.push(
+                      <div key={`bsub-${bsub.collectionId}-${bsub.subcategoryName}`} style={styles.bookmarkedSection}>
+                        <div
+                          style={styles.bookmarkedHeader}
+                          onClick={() => router.push(`/collection/${bsub.collectionId}`)}
+                        >
+                          <Bookmark size={14} color="#d4af37" style={{ flexShrink: 0, marginTop: '1px' }} />
+                          <div>
+                            <span style={styles.bookmarkedTitle}>{bsub.subcategoryName}</span>
+                            <span style={styles.bookmarkedParent}>{bsub.collectionTitle}</span>
+                          </div>
                         </div>
-                        <div style={styles.movieTitle}>{m.title}</div>
-                        {m.year && <div style={styles.movieYear}>{m.year}</div>}
+                        <div style={styles.movieGrid}>
+                          {bsub.movies.slice(0, 6).map((m, idx) => (
+                            <div
+                              key={idx}
+                              style={styles.posterWrapper}
+                              onClick={() => router.push(`/movie/${m.tmdb_id}`)}
+                            >
+                              <div style={styles.posterContainer}>
+                                <img src={m.poster_url} alt={m.title} style={styles.poster} />
+                              </div>
+                              <div style={styles.movieTitle}>{m.title}</div>
+                              {m.year && <div style={styles.movieYear}>{m.year}</div>}
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
+                    );
+                  }
+
+                  // Regular genius section
+                  feed.push(
+                    <div key={i} style={styles.section}>
+                      <div
+                        style={styles.sectionHeader}
+                        onClick={() => router.push(`/collection/${sub.collectionId}`)}
+                      >
+                        <span style={styles.sectionTitle}>{sub.name}</span>
+                        <span style={styles.sectionParent}>{sub.collectionTitle}</span>
+                      </div>
+                      <div style={styles.movieGrid}>
+                        {sub.movies.slice(0, 6).map((m, idx) => (
+                          <div
+                            key={idx}
+                            style={styles.posterWrapper}
+                            onClick={() => router.push(`/movie/${m.tmdb_id}`)}
+                          >
+                            <div style={styles.posterContainer}>
+                              <img src={m.poster_url} alt={m.title} style={styles.poster} />
+                            </div>
+                            <div style={styles.movieTitle}>{m.title}</div>
+                            {m.year && <div style={styles.movieYear}>{m.year}</div>}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                });
+
+                // Append any remaining bookmarked subs after all sections
+                while (bookmarkIdx < bookmarkedSubs.length) {
+                  const bsub = bookmarkedSubs[bookmarkIdx++];
+                  feed.push(
+                    <div key={`bsub-tail-${bsub.collectionId}-${bsub.subcategoryName}`} style={styles.bookmarkedSection}>
+                      <div
+                        style={styles.bookmarkedHeader}
+                        onClick={() => router.push(`/collection/${bsub.collectionId}`)}
+                      >
+                        <Bookmark size={14} color="#d4af37" style={{ flexShrink: 0, marginTop: '1px' }} />
+                        <div>
+                          <span style={styles.bookmarkedTitle}>{bsub.subcategoryName}</span>
+                          <span style={styles.bookmarkedParent}>{bsub.collectionTitle}</span>
+                        </div>
+                      </div>
+                      <div style={styles.movieGrid}>
+                        {bsub.movies.slice(0, 6).map((m, idx) => (
+                          <div
+                            key={idx}
+                            style={styles.posterWrapper}
+                            onClick={() => router.push(`/movie/${m.tmdb_id}`)}
+                          >
+                            <div style={styles.posterContainer}>
+                              <img src={m.poster_url} alt={m.title} style={styles.poster} />
+                            </div>
+                            <div style={styles.movieTitle}>{m.title}</div>
+                            {m.year && <div style={styles.movieYear}>{m.year}</div>}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                }
+
+                return feed;
+              })()}
 
               {/* Mini cold start toggle */}
               <div style={styles.miniToggleRow}>
@@ -655,6 +743,38 @@ const styles = {
   movieYear: {
     fontSize: '11px',
     color: '#9ca3af',
+  },
+
+  bookmarkedSection: {
+    marginBottom: '32px',
+    borderLeft: '3px solid #d4af37',
+    marginLeft: '16px',
+    paddingLeft: '0',
+  },
+
+  bookmarkedHeader: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    gap: '8px',
+    padding: '0 16px 10px 12px',
+    cursor: 'pointer',
+  },
+
+  bookmarkedTitle: {
+    fontSize: '16px',
+    fontWeight: '700',
+    color: '#111827',
+    letterSpacing: '-0.01em',
+    display: 'block',
+    lineHeight: '1.3',
+  },
+
+  bookmarkedParent: {
+    fontSize: '12px',
+    color: '#9ca3af',
+    fontWeight: '400',
+    display: 'block',
+    marginTop: '2px',
   },
 
   miniToggleRow: {

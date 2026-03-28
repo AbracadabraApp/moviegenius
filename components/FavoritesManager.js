@@ -370,6 +370,60 @@ export const FavoritesManager = {
     FavoritesManager._cache.peopleBookmarked = [];
     window.dispatchEvent(new CustomEvent('peopleUpdated'));
   },
+
+  // ============ SUBCATEGORY BOOKMARK METHODS ============
+
+  // Get all bookmarked subcategories
+  getBookmarkedSubcategories: () => {
+    if (typeof window === 'undefined') return [];
+    try {
+      const saved = localStorage.getItem('bookmarkedCollections');
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  },
+
+  // Check if a subcategory is bookmarked
+  isSubcategoryBookmarked: (collectionId, subcategoryName) => {
+    const all = FavoritesManager.getBookmarkedSubcategories();
+    return all.some(b => b.collectionId === collectionId && b.subcategoryName === subcategoryName);
+  },
+
+  // Toggle bookmark for a subcategory — pass subcategory movies for snapshot
+  toggleSubcategoryBookmark: (collectionId, collectionTitle, subcategoryName, movies) => {
+    if (typeof window === 'undefined') return false;
+    try {
+      const all = FavoritesManager.getBookmarkedSubcategories();
+      const idx = all.findIndex(b => b.collectionId === collectionId && b.subcategoryName === subcategoryName);
+
+      if (idx >= 0) {
+        all.splice(idx, 1);
+        localStorage.setItem('bookmarkedCollections', JSON.stringify(all));
+        window.dispatchEvent(new CustomEvent('subcategoriesUpdated'));
+        return false; // now unbookmarked
+      } else {
+        const snapshot = (movies || []).slice(0, 6).map(m => ({
+          tmdb_id: m.tmdb_id,
+          title: m.title,
+          year: m.year,
+          poster_url: m.poster_url,
+        }));
+        all.push({
+          collectionId,
+          collectionTitle,
+          subcategoryName,
+          movies: snapshot,
+          savedAt: new Date().toISOString(),
+        });
+        localStorage.setItem('bookmarkedCollections', JSON.stringify(all));
+        window.dispatchEvent(new CustomEvent('subcategoriesUpdated'));
+        return true; // now bookmarked
+      }
+    } catch {
+      return false;
+    }
+  },
 };
 
 export default FavoritesManager;
