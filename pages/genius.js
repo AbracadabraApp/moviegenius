@@ -13,7 +13,6 @@ import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
 import { FavoritesManager } from '../components/FavoritesManager';
-import { Bookmark } from 'lucide-react';
 
 // ─── Cold start movie catalog (AFI Top 100 + Criterion) ──────────────────────
 const COLD_START_MOVIES_RAW = [
@@ -314,23 +313,17 @@ const MIN_SAVES = 3;
 
 export default function GeniusPage() {
   const router = useRouter();
-  const [sections, setSections] = useState([]);
-  const [bookmarkedSubs, setBookmarkedSubs] = useState([]);
+  const [feedItems, setFeedItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showColdStart, setShowColdStart] = useState(false);
-  const [savedCount, setSavedCount] = useState(0);
 
-  const loadRecs = useCallback(() => {
-    // Invalidate FavoritesManager cache so we read fresh localStorage
+  const loadFeed = useCallback(() => {
     FavoritesManager._cache.hearted = null;
     FavoritesManager._cache.bookmarked = null;
 
     const savedMovies = FavoritesManager.getBookmarkedMovies();
     const savedIds = savedMovies.map(m => m.tmdbId).filter(Boolean);
 
-    setSavedCount(savedIds.length);
-
-    // Need at least MIN_SAVES before showing recommendations
     if (savedIds.length < MIN_SAVES) {
       setLoading(false);
       setShowColdStart(true);
@@ -340,37 +333,27 @@ export default function GeniusPage() {
     setLoading(true);
     setShowColdStart(false);
 
-    fetch('/api/genius-recommendations', {
+    fetch('/api/genius-feed', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ savedIds }),
     })
       .then(r => r.json())
       .then(data => {
-        const subs = data.subcategories || [];
-        if (subs.length === 0) {
+        const items = data.items || [];
+        if (items.length === 0) {
           setShowColdStart(true);
         } else {
-          setSections(subs);
+          setFeedItems(items);
         }
       })
-      .catch(err => {
-        console.error('Genius recs error:', err);
-        setShowColdStart(true);
-      })
+      .catch(() => setShowColdStart(true))
       .finally(() => setLoading(false));
   }, []);
 
   useEffect(() => {
-    loadRecs();
-  }, [loadRecs]);
-
-  useEffect(() => {
-    const refresh = () => setBookmarkedSubs(FavoritesManager.getBookmarkedSubcategories());
-    refresh();
-    window.addEventListener('subcategoriesUpdated', refresh);
-    return () => window.removeEventListener('subcategoriesUpdated', refresh);
-  }, []);
+    loadFeed();
+  }, [loadFeed]);
 
   return (
     <PhoneFrame>
@@ -407,97 +390,42 @@ export default function GeniusPage() {
           )}
 
           {!loading && showColdStart && (
-            <ColdStart onDone={loadRecs} />
+            <ColdStart onDone={loadFeed} />
           )}
 
           {!loading && !showColdStart && (
             <div style={styles.collectionList}>
-              {(() => {
-                // Build interleaved feed: inject bookmarked subcategory blocks every 3 sections
-                const feed = [];
-                let bookmarkIdx = 0;
-
-                sections.forEach((sub, i) => {
-                  // Inject bookmarked subcategory before every 3rd item (or at start if no sections yet)
-                  if (i % 3 === 0 && bookmarkIdx < bookmarkedSubs.length) {
-                    const bsub = bookmarkedSubs[bookmarkIdx++];
-                    feed.push(
-                      <div key={`bsub-${bsub.collectionId}-${bsub.subcategoryName}`} style={styles.bookmarkedSection}>
-                        <div
-                          style={styles.bookmarkedHeader}
-                          onClick={() => router.push(`/collection/${bsub.collectionId}`)}
-                        >
-                          <Bookmark size={14} color="#d4af37" style={{ flexShrink: 0, marginTop: '1px' }} />
-                          <div>
-                            <span style={styles.bookmarkedTitle}>{bsub.subcategoryName}</span>
-                            <span style={styles.bookmarkedParent}>{bsub.collectionTitle}</span>
-                          </div>
-                        </div>
-                        <div style={styles.movieGrid}>
-                          {bsub.movies.slice(0, 6).map((m, idx) => (
-                            <div
-                              key={idx}
-                              style={styles.posterWrapper}
-                              onClick={() => router.push(`/movie/${m.tmdb_id}`)}
-                            >
-                              <div style={styles.posterContainer}>
-                                <img src={m.poster_url} alt={m.title} style={styles.poster} />
-                              </div>
-                              <div style={styles.movieTitle}>{m.title}</div>
-                              {m.year && <div style={styles.movieYear}>{m.year}</div>}
-                            </div>
-                          ))}
-                        </div>
+              {feedItems.map((item, i) => {
+                if (item.type === 'movie') {
+                  return (
+                    <div
+                      key={`movie-${item.tmdbId}-${i}`}
+                      style={styles.mediaCard}
+                      onClick={() => router.push(`/movie/${item.tmdbId}`)}
+                    >
+                      <div style={styles.mediaCardPoster}>
+                        <img src={item.posterUrl} alt={item.title} style={styles.mediaCardImg} />
                       </div>
-                    );
-                  }
-
-                  // Regular genius section
-                  feed.push(
-                    <div key={i} style={styles.section}>
-                      <div
-                        style={styles.sectionHeader}
-                        onClick={() => router.push(`/collection/${sub.collectionId}`)}
-                      >
-                        <span style={styles.sectionTitle}>{sub.name}</span>
-                        <span style={styles.sectionParent}>{sub.collectionTitle}</span>
-                      </div>
-                      <div style={styles.movieGrid}>
-                        {sub.movies.slice(0, 6).map((m, idx) => (
-                          <div
-                            key={idx}
-                            style={styles.posterWrapper}
-                            onClick={() => router.push(`/movie/${m.tmdb_id}`)}
-                          >
-                            <div style={styles.posterContainer}>
-                              <img src={m.poster_url} alt={m.title} style={styles.poster} />
-                            </div>
-                            <div style={styles.movieTitle}>{m.title}</div>
-                            {m.year && <div style={styles.movieYear}>{m.year}</div>}
-                          </div>
-                        ))}
+                      <div style={styles.mediaCardInfo}>
+                        <div style={styles.mediaCardTitle}>{item.title}</div>
+                        {item.year && <div style={styles.mediaCardYear}>{item.year}</div>}
                       </div>
                     </div>
                   );
-                });
+                }
 
-                // Append any remaining bookmarked subs after all sections
-                while (bookmarkIdx < bookmarkedSubs.length) {
-                  const bsub = bookmarkedSubs[bookmarkIdx++];
-                  feed.push(
-                    <div key={`bsub-tail-${bsub.collectionId}-${bsub.subcategoryName}`} style={styles.bookmarkedSection}>
+                if (item.type === 'collection') {
+                  return (
+                    <div key={`col-${item.collectionId}-${i}`} style={styles.section}>
                       <div
-                        style={styles.bookmarkedHeader}
-                        onClick={() => router.push(`/collection/${bsub.collectionId}`)}
+                        style={styles.sectionHeader}
+                        onClick={() => router.push(`/collection/${item.collectionId}`)}
                       >
-                        <Bookmark size={14} color="#d4af37" style={{ flexShrink: 0, marginTop: '1px' }} />
-                        <div>
-                          <span style={styles.bookmarkedTitle}>{bsub.subcategoryName}</span>
-                          <span style={styles.bookmarkedParent}>{bsub.collectionTitle}</span>
-                        </div>
+                        <span style={styles.sectionTitle}>{item.name}</span>
+                        <span style={styles.sectionParent}>{item.collectionTitle}</span>
                       </div>
                       <div style={styles.movieGrid}>
-                        {bsub.movies.slice(0, 6).map((m, idx) => (
+                        {item.movies.slice(0, 6).map((m, idx) => (
                           <div
                             key={idx}
                             style={styles.posterWrapper}
@@ -515,8 +443,8 @@ export default function GeniusPage() {
                   );
                 }
 
-                return feed;
-              })()}
+                return null;
+              })}
 
               {/* Add more films link */}
               <div style={styles.miniToggleRow}>
@@ -536,6 +464,43 @@ export default function GeniusPage() {
 }
 
 const styles = {
+  mediaCard: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+    padding: '10px 16px',
+    cursor: 'pointer',
+  },
+  mediaCardPoster: {
+    width: '48px',
+    height: '72px',
+    borderRadius: '6px',
+    overflow: 'hidden',
+    backgroundColor: '#f3f4f6',
+    flexShrink: 0,
+  },
+  mediaCardImg: {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    display: 'block',
+  },
+  mediaCardInfo: {
+    flex: 1,
+    minWidth: 0,
+  },
+  mediaCardTitle: {
+    fontSize: '15px',
+    fontWeight: '600',
+    color: '#111827',
+    lineHeight: '1.3',
+    marginBottom: '2px',
+  },
+  mediaCardYear: {
+    fontSize: '13px',
+    color: '#9ca3af',
+  },
+
   container: {
     display: 'flex',
     flexDirection: 'column',
@@ -639,38 +604,6 @@ const styles = {
   movieYear: {
     fontSize: '11px',
     color: '#9ca3af',
-  },
-
-  bookmarkedSection: {
-    marginBottom: '32px',
-    borderLeft: '3px solid #d4af37',
-    marginLeft: '16px',
-    paddingLeft: '0',
-  },
-
-  bookmarkedHeader: {
-    display: 'flex',
-    alignItems: 'flex-start',
-    gap: '8px',
-    padding: '0 16px 10px 12px',
-    cursor: 'pointer',
-  },
-
-  bookmarkedTitle: {
-    fontSize: '16px',
-    fontWeight: '700',
-    color: '#111827',
-    letterSpacing: '-0.01em',
-    display: 'block',
-    lineHeight: '1.3',
-  },
-
-  bookmarkedParent: {
-    fontSize: '12px',
-    color: '#9ca3af',
-    fontWeight: '400',
-    display: 'block',
-    marginTop: '2px',
   },
 
   miniToggleRow: {
