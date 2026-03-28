@@ -2,16 +2,19 @@
  * What to Watch Page
  * Simple watchlist page showing user's favorited and bookmarked movies
  */
-import { Check, Bookmark } from 'lucide-react';
+import { Check, Bookmark, ChevronRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import { FavoritesManager } from '../components/FavoritesManager';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
 import MediaCard from '../components/MediaCard';
 
 export default function WhatToWatchPage() {
+  const router = useRouter();
   const [heartedMovies, setHeartedMovies] = useState([]);
   const [bookmarkedMovies, setBookmarkedMovies] = useState([]);
+  const [savedSubcategories, setSavedSubcategories] = useState([]);
   const [activeTab, setActiveTab] = useState('bookmarked'); // 'hearted' or 'bookmarked'
   const [mounted, setMounted] = useState(false);
 
@@ -26,9 +29,11 @@ export default function WhatToWatchPage() {
     try {
       const hearted = FavoritesManager.getHeartedMovies();
       const bookmarked = FavoritesManager.getBookmarkedMovies();
+      const subs = FavoritesManager.getBookmarkedSubcategories();
 
       setHeartedMovies(hearted);
       setBookmarkedMovies(bookmarked);
+      setSavedSubcategories(subs || []);
     } catch (error) {
       console.error('Failed to load favorites:', error);
     }
@@ -80,6 +85,41 @@ export default function WhatToWatchPage() {
             <span>Seen ({heartedMovies.length})</span>
           </button>
         </div>
+
+        {/* Saved Collections — Watch Later tab only */}
+        {activeTab === 'bookmarked' && savedSubcategories.length > 0 && (
+          <div style={styles.collectionsBlock}>
+            <div style={styles.collectionsHeader}>Saved Collections</div>
+            {savedSubcategories.map((sub, i) => (
+              <div key={i} style={styles.collectionRow}>
+                <button
+                  style={styles.collectionRowTitle}
+                  onClick={() => router.push(`/collection/${sub.collectionId}`)}
+                >
+                  <span style={styles.collectionRowName}>{sub.subcategoryName}</span>
+                  <span style={styles.collectionRowParent}>{sub.collectionTitle}</span>
+                  <ChevronRight size={14} color="#9ca3af" style={{ flexShrink: 0 }} />
+                </button>
+                <div style={styles.posterStrip}>
+                  {(sub.movies || []).map((m, mi) => (
+                    <div
+                      key={mi}
+                      style={styles.stripPosterWrap}
+                      onClick={() => router.push(`/movie/${m.tmdb_id}`)}
+                    >
+                      <img
+                        src={m.poster_url}
+                        alt={m.title}
+                        style={styles.stripPoster}
+                        onError={e => { e.target.style.backgroundColor = '#e5e7eb'; e.target.src = ''; }}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
 
         {/* Movie List */}
         <div style={styles.movieList}>
@@ -197,5 +237,69 @@ const styles = {
     fontSize: '14px',
     color: '#6b7280',
     lineHeight: '1.5',
+  },
+
+  // Saved Collections block
+  collectionsBlock: {
+    padding: '0 0 8px 0',
+    borderBottom: '1px solid #f0f0f0',
+    marginBottom: '16px',
+  },
+  collectionsHeader: {
+    fontSize: '11px',
+    fontWeight: '600',
+    color: '#9ca3af',
+    letterSpacing: '0.06em',
+    textTransform: 'uppercase',
+    padding: '12px 20px 8px',
+  },
+  collectionRow: {
+    marginBottom: '20px',
+  },
+  collectionRowTitle: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '6px',
+    background: 'none',
+    border: 'none',
+    cursor: 'pointer',
+    padding: '0 20px 8px',
+    width: '100%',
+    textAlign: 'left',
+  },
+  collectionRowName: {
+    fontSize: '14px',
+    fontWeight: '600',
+    color: '#111827',
+    flex: 1,
+  },
+  collectionRowParent: {
+    fontSize: '12px',
+    color: '#9ca3af',
+    fontWeight: '400',
+  },
+  posterStrip: {
+    display: 'flex',
+    flexDirection: 'row',
+    gap: '8px',
+    overflowX: 'auto',
+    padding: '0 20px 4px',
+    scrollbarWidth: 'none',
+    WebkitOverflowScrolling: 'touch',
+  },
+  stripPosterWrap: {
+    flexShrink: 0,
+    width: '72px',
+    aspectRatio: '2/3',
+    borderRadius: '6px',
+    overflow: 'hidden',
+    backgroundColor: '#f3f4f6',
+    cursor: 'pointer',
+  },
+  stripPoster: {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    display: 'block',
   },
 };
