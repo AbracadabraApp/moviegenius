@@ -4,9 +4,7 @@
  * Check database first, fetch from TMDB if needed, cache result
  */
 
-// Removed deprecated Supabase adapter import
-
-import { getPool, MovieService, EpisodeService, CacheService, PersonService } from '../../lib/railway-db.js';
+import { getPool } from '../../lib/railway-db.js';
 
 const pool = getPool();
 
@@ -62,19 +60,17 @@ export default async function handler(req, res) {
       return res.status(200).json({ videoId: null, error: 'No suitable trailer found' });
     }
 
-    // Cache the result using Railway Pool directly (bypass Supabase adapter)
-    if (movie) {
-      try {
-        const client = await pool.connect();
-        await client.query(
-          'UPDATE movies SET trailer_url = $1 WHERE tmdb_id = $2',
-          [trailer.key, parseInt(tmdbId)]
-        );
-        client.release();
-      } catch (updateError) {
-        console.warn('Failed to cache trailer:', updateError.message);
-        // Continue anyway - caching is optional
-      }
+    // Cache the result — UPDATE is a no-op if movie row doesn't exist yet
+    try {
+      const updateClient = await pool.connect();
+      await updateClient.query(
+        'UPDATE movies SET trailer_url = $1 WHERE tmdb_id = $2',
+        [trailer.key, parseInt(tmdbId)]
+      );
+      updateClient.release();
+    } catch (updateError) {
+      console.warn('Failed to cache trailer:', updateError.message);
+      // Continue anyway - caching is optional
     }
 
     // Set aggressive cache headers for fresh data too
