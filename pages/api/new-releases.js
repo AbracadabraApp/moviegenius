@@ -1,4 +1,6 @@
 // pages/api/new-releases.js - TMDB New Releases API
+import { ensureMovieInDb } from '../../lib/services/tmdb-persist';
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -73,6 +75,9 @@ export default async function handler(req, res) {
     }
 
     const data = await response.json();
+
+    // Persist all results to DB — fire-and-forget
+    (data.results || []).forEach(movie => ensureMovieInDb(movie).catch(() => {}));
 
     // Transform results to match our format
     const movies = (data.results || [])

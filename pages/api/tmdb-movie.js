@@ -1,4 +1,6 @@
 // pages/api/tmdb-movie.js - TMDB movie details API endpoint
+import { ensureMovieInDb } from '../../lib/services/tmdb-persist';
+
 export default async function handler(req, res) {
   if (req.method !== 'GET') {
     return res.status(405).json({ error: 'Only GET method allowed' });
@@ -93,6 +95,9 @@ export default async function handler(req, res) {
     const data = await response.json();
 
     console.log(`✅ TMDB movie data fetched: ${data.title} (${data.release_date?.substring(0, 4)})`);
+
+    // Persist to movies table before responding — guarantees row exists for downstream enrichment
+    await ensureMovieInDb(data).catch(() => {});
 
     return res.status(200).json(data);
   } catch (error) {

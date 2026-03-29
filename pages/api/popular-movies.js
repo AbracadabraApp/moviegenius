@@ -1,4 +1,5 @@
 // pages/api/popular-movies.js - TMDB Popular & Top Rated Movies API
+import { ensureMovieInDb } from '../../lib/services/tmdb-persist';
 import { Client } from 'pg';
 
 // Railway PostgreSQL connection helper
@@ -65,6 +66,9 @@ export default async function handler(req, res) {
     }
 
     const data = await response.json();
+
+    // Persist all results to DB — fire-and-forget
+    (data.results || []).forEach(movie => ensureMovieInDb(movie).catch(() => {}));
 
     // Transform results to match our format
     const movies = (data.results || [])
