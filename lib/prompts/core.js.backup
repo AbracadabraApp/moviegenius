@@ -91,7 +91,7 @@ export const CLAUDE_MODELS = {
   BALANCED: 'claude-3-5-haiku-20241022',
 
   // High quality for comprehensive analysis (current default)
-  QUALITY: 'claude-3-5-sonnet-20241022',
+  QUALITY: 'claude-sonnet-4-5-20250929',
 };
 
 // Model selection strategy based on context
@@ -113,7 +113,7 @@ export function selectOptimalModel(context, isFirstResponse = true) {
 
 // Standard Claude parameters with dynamic model selection
 export const STANDARD_PARAMS = {
-  model: process.env.CLAUDE_MODEL || 'claude-3-5-sonnet-20241022',
+  model: process.env.CLAUDE_MODEL || 'claude-sonnet-4-5-20250929',
   temperature: 0.7,
   // max_tokens set per context in contextual configs
 };

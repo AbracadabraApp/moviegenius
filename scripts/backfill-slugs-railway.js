@@ -16,7 +16,7 @@ const anthropic = new Anthropic({
 
 const PROGRESS_FILE = 'slug-backfill-progress.json';
 const CONCURRENCY = 20; // Process 20 movies at once
-const MODEL = 'claude-3-5-haiku-20241022';
+const MODEL = 'claude-haiku-4-5-20251001';
 
 // Load or initialize progress
 function loadProgress() {
@@ -55,20 +55,19 @@ async function generateSlug(title, year) {
   const prompt = `Create a powerful movie poster tagline for "${title}" (${year}).
 
 RULES:
-- Maximum 50 characters
+- Between 30 and 100 characters
 - NO plot details or story descriptions
 - NO actor names or character names
 - Focus on EMOTION, STAKES, or MYSTERY
 - Think movie poster marketing copy
 
-GOOD Examples:
-- "Fear has a new address"
-- "Some secrets should stay buried"
-- "The hunt begins"
-- "Trust no one"
-- "Love is the ultimate sacrifice"
-- "Revenge never felt so good"
-- "The game changes everything"
+GOOD Examples (all between 30-100 chars):
+- "Some secrets are better left buried"
+- "Love is the ultimate sacrifice worth making"
+- "Revenge never felt so dangerously good"
+- "The game changes everything you thought you knew"
+- "Fear has found a new and terrifying address"
+- "Not all who wander are lost — some are hunted"
 
 BAD Examples to AVOID:
 - "A man discovers his wife's secret" (plot detail)
@@ -97,8 +96,11 @@ Return ONLY the tagline, nothing else.`;
     }
 
     // Validate slug quality
-    if (slug.length > 50) {
+    if (slug.length > 100) {
       throw new Error(`Slug too long (${slug.length} chars): "${slug}"`);
+    }
+    if (slug.length < 30) {
+      throw new Error(`Slug too short (${slug.length} chars): "${slug}"`);
     }
 
     // Check for banned content
