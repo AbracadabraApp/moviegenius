@@ -132,6 +132,8 @@ async function triggerEnrichment(tmdbId) {
 
 Each job checks whether its output already exists before calling Claude — safe to call redundantly.
 
+> **Railway vs Vercel:** MovieGenius runs on Railway, which keeps the Node.js process alive after the response is sent. Fire-and-forget background jobs will complete. This pattern would be unreliable on Vercel (process freezes on response). No job queue or worker service is needed.
+
 ### Step 4 — Wire into search and detail endpoints
 
 In the consolidated search endpoint and in `tmdb-movie.js`:
