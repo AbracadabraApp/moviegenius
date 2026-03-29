@@ -396,20 +396,27 @@ export default function GeniusPage() {
           {!loading && !showColdStart && (
             <div style={styles.collectionList}>
               {feedItems.map((item, i) => {
-                if (item.type === 'movie') {
+                if (item.type === 'more_ideas') {
                   return (
-                    <div
-                      key={`movie-${item.tmdbId}-${i}`}
-                      style={styles.mediaCard}
-                      onClick={() => router.push(`/movie/${item.tmdbId}`)}
-                    >
-                      <div style={styles.mediaCardPoster}>
-                        <img src={item.posterUrl} alt={item.title} style={styles.mediaCardImg} />
+                    <div key={`mi-${item.seedTmdbId}-${i}`} style={styles.section}>
+                      <div style={styles.sectionHeader}>
+                        <span style={styles.sectionTitle}>Films like {item.seedTitle}</span>
                       </div>
-                      <div style={styles.mediaCardInfo}>
-                        <div style={styles.mediaCardTitle}>{item.title}</div>
-                        {item.year && <div style={styles.mediaCardYear}>{item.year}</div>}
-                      </div>
+                      {item.movies.map((m, idx) => (
+                        <div
+                          key={idx}
+                          style={styles.mediaCard}
+                          onClick={() => router.push(`/movie/${m.tmdb_id}`)}
+                        >
+                          <div style={styles.mediaCardPoster}>
+                            <img src={m.poster_url} alt={m.title} style={styles.mediaCardImg} />
+                          </div>
+                          <div style={styles.mediaCardInfo}>
+                            <div style={styles.mediaCardTitle}>{m.title}</div>
+                            {m.year && <div style={styles.mediaCardYear}>{m.year}</div>}
+                          </div>
+                        </div>
+                      ))}
                     </div>
                   );
                 }
@@ -424,18 +431,16 @@ export default function GeniusPage() {
                         <span style={styles.sectionTitle}>{item.name}</span>
                         <span style={styles.sectionParent}>{item.collectionTitle}</span>
                       </div>
-                      <div style={styles.movieGrid}>
-                        {item.movies.slice(0, 6).map((m, idx) => (
+                      <div style={styles.carouselStrip}>
+                        {item.movies.map((m, idx) => (
                           <div
                             key={idx}
-                            style={styles.posterWrapper}
+                            style={styles.carouselItem}
                             onClick={() => router.push(`/movie/${m.tmdb_id}`)}
                           >
                             <div style={styles.posterContainer}>
                               <img src={m.poster_url} alt={m.title} style={styles.poster} />
                             </div>
-                            <div style={styles.movieTitle}>{m.title}</div>
-                            {m.year && <div style={styles.movieYear}>{m.year}</div>}
                           </div>
                         ))}
                       </div>
@@ -565,14 +570,19 @@ const styles = {
     marginTop: '2px',
   },
 
-  movieGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)',
+  carouselStrip: {
+    display: 'flex',
+    flexDirection: 'row',
     gap: '8px',
-    padding: '0 16px',
+    overflowX: 'auto',
+    padding: '0 16px 4px',
+    scrollbarWidth: 'none',
+    WebkitOverflowScrolling: 'touch',
   },
 
-  posterWrapper: {
+  carouselItem: {
+    flexShrink: 0,
+    width: '80px',
     cursor: 'pointer',
   },
 
@@ -581,7 +591,6 @@ const styles = {
     borderRadius: '8px',
     overflow: 'hidden',
     backgroundColor: '#f3f4f6',
-    marginBottom: '6px',
   },
 
   poster: {

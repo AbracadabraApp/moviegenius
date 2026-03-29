@@ -1,18 +1,17 @@
 /**
  * Genius Feed API
  *
- * Uses the More Ideas graph to build a personalized feed.
+ * Builds a personalized feed using More Ideas + browse_list collections.
  *
  * Algorithm:
- *   1. Random sample up to 15 from the user's Want to Watch movies as seeds
- *   2. Fetch more_ideas for those seeds
- *   3. Count how many seeds point to each related movie (score)
- *   4. Skip singletons (score=1) and the top cluster (obvious)
- *   5. Use those related movies to find browse_list collections
- *   6. Interleave: movie, movie, collection, movie, movie, collection...
+ *   1. Random sample up to 5 seeds from savedIds that have a more_ideas row
+ *   2. Fetch all ideas for all seeds in one query
+ *   3. Build one 'more_ideas' item per seed (top 2 movies)
+ *   4. Find browse_list collections that overlap with all More Ideas candidates
+ *   5. Interleave: more_ideas, collection, more_ideas, collection...
  *
  * POST body: { savedIds: [int] }
- * Returns: { items: [ {type:'movie', ...} | {type:'collection', ...} ] }
+ * Returns: { items: [ {type:'more_ideas', ...} | {type:'collection', ...} ] }
  */
 
 import { getPool } from '../../lib/database';
@@ -34,75 +33,80 @@ export default async function handler(req, res) {
     return res.status(200).json({ items: [], empty: true });
   }
 
-  // Random sample of up to 15 seeds
-  const seedIds = randomSample(allIds, 15);
-
   const pool = getPool();
 
   try {
-    // Step 1: Fetch more_ideas for the seed movies
+    // Step 1: Find saved movies that have more_ideas rows, sample up to 5
     const ideasResult = await pool.query(
       `SELECT tmdb_id, ideas FROM more_ideas WHERE tmdb_id = ANY($1)`,
-      [seedIds]
+      [allIds]
     );
 
     if (ideasResult.rows.length === 0) {
       return res.status(200).json({ items: [], empty: true });
     }
 
-    // Step 2: Count how many seeds point to each related movie, keyed by tmdbId
-    const scores = {};
-    for (const row of ideasResult.rows) {
+    const seedRows = randomSample(ideasResult.rows, 5);
+
+    // Step 2: Parse ideas per seed, collect all candidate tmdb_ids
+    const seedData = []; // { tmdbId, seedTitle (filled later), ideas: [{tmdbId},...] }
+    const allCandidateIds = new Set();
+
+    for (const row of seedRows) {
       let ideas = row.ideas;
       if (!Array.isArray(ideas)) {
         if (ideas?.moreIdeas) ideas = ideas.moreIdeas;
         else if (ideas?.ideas) ideas = ideas.ideas;
         else continue;
       }
-      for (const idea of ideas) {
-        const tmdbId = idea.tmdbId || idea.tmdb_id;
-        if (!tmdbId || !Number.isInteger(tmdbId)) continue;
-        if (!scores[tmdbId]) scores[tmdbId] = { tmdbId, count: 0 };
-        scores[tmdbId].count++;
-      }
+      const tmdbIds = ideas
+        .map(idea => idea.tmdbId || idea.tmdb_id)
+        .filter(id => id && Number.isInteger(id));
+
+      tmdbIds.forEach(id => allCandidateIds.add(id));
+      seedData.push({ seedTmdbId: row.tmdb_id, ideaTmdbIds: tmdbIds });
     }
 
-    // Step 3: Sort by count, skip singletons and the top cluster
-    const sorted = Object.values(scores)
-      .filter(s => s.count >= 2)
-      .sort((a, b) => b.count - a.count);
-
-    const maxCount = sorted[0]?.count ?? 0;
-    const candidates = maxCount > 2
-      ? sorted.filter(s => s.count < maxCount)
-      : sorted;
-
-    if (candidates.length === 0) {
+    if (seedData.length === 0) {
       return res.status(200).json({ items: [], empty: true });
     }
 
-    // Step 4: Fetch posters directly by tmdb_id — no title matching needed
-    const candidateIds = candidates.map(c => c.tmdbId);
+    // Step 3: Fetch movie data for all seeds + all candidates in one query
+    const allLookupIds = [...new Set([
+      ...seedData.map(s => s.seedTmdbId),
+      ...allCandidateIds
+    ])];
+
     const movieRows = await pool.query(
       `SELECT tmdb_id, title, year, poster_url FROM movies WHERE tmdb_id = ANY($1)`,
-      [candidateIds]
+      [allLookupIds]
     );
-
     const movieLookup = {};
     for (const m of movieRows.rows) movieLookup[m.tmdb_id] = m;
 
-    // Enrich candidates — skip already-saved movies, require poster
-    const seenTmdbIds = new Set(allIds);
-    const enriched = [];
-    for (const c of candidates) {
-      const m = movieLookup[c.tmdbId];
-      if (!m || !m.poster_url || seenTmdbIds.has(m.tmdb_id)) continue;
-      seenTmdbIds.add(m.tmdb_id);
-      enriched.push({ tmdbId: m.tmdb_id, title: m.title, year: m.year, posterUrl: m.poster_url });
+    // Step 4: Build more_ideas items — top 2 movies per seed
+    const moreIdeasItems = [];
+    for (const seed of seedData) {
+      const seedMovie = movieLookup[seed.seedTmdbId];
+      const seedTitle = seedMovie?.title || `Movie ${seed.seedTmdbId}`;
+
+      const movies = seed.ideaTmdbIds
+        .slice(0, 2)
+        .map(id => movieLookup[id])
+        .filter(Boolean);
+
+      if (movies.length === 0) continue;
+
+      moreIdeasItems.push({
+        type: 'more_ideas',
+        seedTitle,
+        seedTmdbId: seed.seedTmdbId,
+        movies,
+      });
     }
 
-    // Step 5: Find collections containing these related movies
-    const relatedTmdbIds = enriched.map(e => e.tmdbId);
+    // Step 5: Find collections overlapping with all More Ideas candidates
+    const relatedTmdbIds = [...allCandidateIds];
     let collections = [];
 
     if (relatedTmdbIds.length > 0) {
@@ -161,7 +165,7 @@ export default async function handler(req, res) {
         const movies = row.all_tmdb_ids
           .map(id => colMovieMap[id])
           .filter(m => m && m.poster_url)
-          .slice(0, 6);
+          .slice(0, 8);
 
         if (movies.length < 3) continue;
 
@@ -177,14 +181,14 @@ export default async function handler(req, res) {
       }
     }
 
-    // Step 6: Interleave — movie, movie, collection, repeating
+    // Step 6: Interleave — more_ideas, collection, more_ideas, collection...
     const items = [];
-    let movieIdx = 0;
+    let moreIdeasIdx = 0;
     let collectionIdx = 0;
 
-    while (movieIdx < enriched.length || collectionIdx < collections.length) {
-      for (let i = 0; i < 2 && movieIdx < enriched.length; i++) {
-        items.push({ type: 'movie', ...enriched[movieIdx++] });
+    while (moreIdeasIdx < moreIdeasItems.length || collectionIdx < collections.length) {
+      if (moreIdeasIdx < moreIdeasItems.length) {
+        items.push(moreIdeasItems[moreIdeasIdx++]);
       }
       if (collectionIdx < collections.length) {
         items.push(collections[collectionIdx++]);
