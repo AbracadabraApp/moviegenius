@@ -105,6 +105,11 @@ export default async function handler(req, res) {
       });
     }
 
+    // Track every movie already committed to the feed — used to strip duplicates from collections
+    const usedMovieIds = new Set(
+      moreIdeasItems.flatMap(item => item.movies.map(m => m.tmdb_id))
+    );
+
     // Step 5: Find collections overlapping with all More Ideas candidates
     const relatedTmdbIds = [...allCandidateIds];
     let collections = [];
@@ -164,10 +169,13 @@ export default async function handler(req, res) {
 
         const movies = row.all_tmdb_ids
           .map(id => colMovieMap[id])
-          .filter(m => m && m.poster_url)
+          .filter(m => m && m.poster_url && !usedMovieIds.has(m.tmdb_id))
           .slice(0, 8);
 
         if (movies.length < 3) continue;
+
+        // Mark these movies as used so later collections don't repeat them
+        movies.forEach(m => usedMovieIds.add(m.tmdb_id));
 
         collections.push({
           type: 'collection',
