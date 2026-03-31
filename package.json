@@ -118,6 +118,7 @@
     "ioredis": "^5.4.1",
     "lucide-react": "^0.511.0",
     "next": "15.4.10",
+    "next-auth": "^4.24.13",
     "pg": "^8.16.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
@@ -135,13 +136,13 @@
     "eslint-config-next": "15.4.10",
     "jest": "^30.0.3",
     "jest-environment-jsdom": "^30.0.2",
+    "natural": "^8.1.1",
     "node-fetch": "^3.3.2",
     "node-mocks-http": "^1.17.2",
     "puppeteer": "^24.16.0",
     "supertest": "^7.1.1",
     "ts-jest": "^29.4.0",
     "typescript": "^5.8.3",
-    "natural": "^8.1.1",
     "webpack-bundle-analyzer": "^4.10.2"
   },
   "description": "**AI-Powered Movie Discovery Platform**",

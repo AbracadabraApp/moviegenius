@@ -4,11 +4,12 @@ import '../styles/globals.css';
 import '../styles/movieTitle.css';
 import ErrorBoundary from '../components/ErrorBoundary';
 import { FavoritesProvider } from '../contexts/FavoritesContext';
+import { SessionProvider } from 'next-auth/react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
-export default function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   const router = useRouter();
   const [navigationStats, setNavigationStats] = useState({
     totalNavigations: 0,
@@ -162,11 +163,13 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
-      <ErrorBoundary>
-        <FavoritesProvider>
-          <Component {...pageProps} />
-        </FavoritesProvider>
-      </ErrorBoundary>
+      <SessionProvider session={session}>
+        <ErrorBoundary>
+          <FavoritesProvider>
+            <Component {...pageProps} />
+          </FavoritesProvider>
+        </ErrorBoundary>
+      </SessionProvider>
     </>
   );
 }

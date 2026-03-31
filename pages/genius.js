@@ -13,6 +13,8 @@ import { useRouter } from 'next/router';
 import PhoneFrame from '../components/PhoneFrame';
 import SimpleSearch from '../components/SimpleSearch';
 import { FavoritesManager } from '../components/FavoritesManager';
+import MediaCard from '../components/MediaCard';
+import { Plus, Check } from 'lucide-react';
 
 // ─── Cold start movie catalog (AFI Top 100 + Criterion) ──────────────────────
 const COLD_START_MOVIES_RAW = [
@@ -164,53 +166,74 @@ function shuffleArray(arr) {
 const COLD_START_MOVIES = shuffleArray(COLD_START_MOVIES_RAW);
 
 // ─── Cold start picker ───────────────────────────────────────────────────────
+// States: 0 = neutral, 1 = seen, 2 = add
+const SEEN_POINTS = 1;
+const ADD_POINTS = 3;
+
 function ColdStart({ onDone }) {
-  const [saved, setSaved] = useState(new Set());
+  const [states, setStates] = useState({}); // { [tmdbId]: 0|1|2 }
 
   const handleTap = (movie) => {
     const key = String(movie.tmdbId);
-    const movieObj = { title: movie.title, year: movie.year, tmdbId: movie.tmdbId, poster: movie.poster };
-    FavoritesManager.toggleBookmark(movieObj);
-    setSaved(prev => {
-      const next = new Set(prev);
-      if (next.has(key)) next.delete(key);
-      else next.add(key);
-      return next;
+    setStates(prev => {
+      const current = prev[key] || 0;
+      const next = (current + 1) % 3;
+      const movieObj = { title: movie.title, year: movie.year, tmdbId: movie.tmdbId, poster: movie.poster };
+      if (next === 2) FavoritesManager.toggleBookmark(movieObj);       // neutral→seen→add: bookmark on add
+      if (current === 2) FavoritesManager.toggleBookmark(movieObj);    // add→neutral: unbookmark
+      return { ...prev, [key]: next };
     });
   };
+
+  const score = Object.values(states).reduce((sum, s) => {
+    if (s === 1) return sum + SEEN_POINTS;
+    if (s === 2) return sum + ADD_POINTS;
+    return sum;
+  }, 0);
 
   return (
     <div style={cs.container}>
       <div style={cs.header}>
-        <div style={cs.heading}>Are any of these great movies on your Want to Watch list?</div>
-        {saved.size > 0 && saved.size < MIN_SAVES && (
-          <div style={cs.progress}>{saved.size} of {MIN_SAVES} to unlock Genius</div>
+        <div style={cs.heading}>Let's get you some recommendations: click on movies you want to watch.</div>
+        {score > 0 && score < MIN_SAVES && (
+          <div style={cs.progress}>{score} of {MIN_SAVES} to unlock Genius</div>
         )}
       </div>
 
       <div style={cs.grid}>
         {COLD_START_MOVIES.map(movie => {
-          const isSaved = saved.has(String(movie.tmdbId));
+          const key = String(movie.tmdbId);
+          const state = states[key] || 0;
+          const seenActive = state >= 1;
+          const addActive = state === 2;
           return (
             <div key={movie.tmdbId} style={cs.movieItem} onClick={() => handleTap(movie)}>
               <div style={cs.posterWrap}>
                 <img
                   src={movie.poster}
                   alt={movie.title}
-                  style={{ ...cs.poster, ...(isSaved ? cs.posterSaved : {}) }}
+                  style={{ ...cs.poster, ...(state > 0 ? cs.posterSaved : {}) }}
                   onError={e => { e.target.style.backgroundColor = '#e5e7eb'; e.target.src = ''; }}
                 />
               </div>
               <div style={cs.movieTitle}>{movie.title}</div>
-              <div style={{ ...cs.movieLabel, ...(isSaved ? cs.movieLabelSaved : {}) }}>
-                {isSaved ? 'Added \u2713' : 'Want to Watch?'}
+              <div style={cs.movieYear}>{movie.year}</div>
+              <div style={cs.actionsRow}>
+                <button style={cs.favBtn} onClick={e => e.stopPropagation()}>
+                  <Check size={16} color={seenActive ? '#000000' : '#6b7280'} strokeWidth={seenActive ? 3 : 2} />
+                  <span style={{ ...cs.favBtnLabel, color: seenActive ? '#000000' : '#6b7280', fontWeight: seenActive ? '700' : '500' }}>Seen</span>
+                </button>
+                <button style={cs.favBtn} onClick={e => e.stopPropagation()}>
+                  <Plus size={16} color={addActive ? '#000000' : '#6b7280'} strokeWidth={addActive ? 3 : 2} />
+                  <span style={{ ...cs.favBtnLabel, color: addActive ? '#000000' : '#6b7280', fontWeight: addActive ? '700' : '500' }}>Add</span>
+                </button>
               </div>
             </div>
           );
         })}
       </div>
 
-      {saved.size >= MIN_SAVES && (
+      {score >= MIN_SAVES && (
         <div style={cs.ctaBar}>
           <button style={cs.ctaBtn} onClick={onDone}>Find my collections →</button>
         </div>
@@ -242,7 +265,7 @@ const cs = {
   grid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
-    gap: '12px',
+    gap: '24px 12px',
     padding: '8px 16px 16px',
   },
   movieItem: {
@@ -268,7 +291,7 @@ const cs = {
     opacity: 0.6,
   },
   movieTitle: {
-    fontSize: '11px',
+    fontSize: 'var(--font-xs, 14px)',
     fontWeight: '500',
     color: '#111827',
     lineHeight: '1.3',
@@ -278,6 +301,23 @@ const cs = {
     WebkitLineClamp: 2,
     WebkitBoxOrient: 'vertical',
   },
+  movieMeta: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  actionsRow: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    gap: '8px',
+  },
+  movieYear: {
+    fontSize: '11px',
+    color: '#9ca3af',
+    fontWeight: '400',
+    marginBottom: '2px',
+  },
   movieLabel: {
     fontSize: '11px',
     color: '#9ca3af',
@@ -286,6 +326,22 @@ const cs = {
   movieLabelSaved: {
     color: '#111827',
     fontWeight: '600',
+  },
+  favBtn: {
+    background: 'none',
+    border: 'none',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '2px',
+    cursor: 'pointer',
+    padding: 0,
+    flexShrink: 0,
+  },
+  favBtnLabel: {
+    fontSize: 'var(--font-xs, 14px)',
+    color: '#6b7280',
+    fontWeight: '500',
+    lineHeight: '1',
   },
   ctaBar: {
     padding: '12px 16px 20px',
@@ -403,19 +459,14 @@ export default function GeniusPage() {
                         <span style={styles.sectionTitle}>Films like {item.seedTitle}</span>
                       </div>
                       {item.movies.map((m, idx) => (
-                        <div
+                        <MediaCard
                           key={idx}
-                          style={styles.mediaCard}
-                          onClick={() => router.push(`/movie/${m.tmdb_id}`)}
-                        >
-                          <div style={styles.mediaCardPoster}>
-                            <img src={m.poster_url} alt={m.title} style={styles.mediaCardImg} />
-                          </div>
-                          <div style={styles.mediaCardInfo}>
-                            <div style={styles.mediaCardTitle}>{m.title}</div>
-                            {m.year && <div style={styles.mediaCardYear}>{m.year}</div>}
-                          </div>
-                        </div>
+                          title={m.title}
+                          year={m.year}
+                          initialPoster={m.poster_url}
+                          initialSlug={m.slug}
+                          tmdbId={m.tmdb_id}
+                        />
                       ))}
                     </div>
                   );

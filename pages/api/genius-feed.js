@@ -78,7 +78,7 @@ export default async function handler(req, res) {
     ])];
 
     const movieRows = await pool.query(
-      `SELECT tmdb_id, title, year, poster_url FROM movies WHERE tmdb_id = ANY($1)`,
+      `SELECT tmdb_id, title, year, poster_url, slug FROM movies WHERE tmdb_id = ANY($1)`,
       [allLookupIds]
     );
     const movieLookup = {};
@@ -151,7 +151,7 @@ export default async function handler(req, res) {
 
       const allColIds = [...new Set(colResult.rows.flatMap(r => r.all_tmdb_ids))];
       const colMoviesResult = await pool.query(
-        `SELECT tmdb_id, title, year, poster_url FROM movies WHERE tmdb_id = ANY($1)`,
+        `SELECT tmdb_id, title, year, poster_url, slug FROM movies WHERE tmdb_id = ANY($1)`,
         [allColIds]
       );
       const colMovieMap = {};
