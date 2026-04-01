@@ -1,6 +1,7 @@
-import NextAuth from 'next-auth';
-import GoogleProvider from 'next-auth/providers/google';
 import { Pool } from 'pg';
+
+const NextAuth = require('next-auth').default;
+const GoogleProvider = require('next-auth/providers/google').default;
 
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 

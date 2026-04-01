@@ -1,19 +1,7 @@
-/**
- * Genius Page — Collection Recommendations
- *
- * Shows collections derived from the user's seen history and watchlist.
- * "Because you watched X..." sections, each with 1-3 matching collections.
- * Zero Claude cost — pure SQL overlap matching.
- *
- * Cold start: when user has no history, shows a genre-tabbed movie picker
- * so they can mark films as seen/saved to seed recommendations.
- */
-import { useState, useEffect, useCallback } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/router';
-import PhoneFrame from '../components/PhoneFrame';
-import SimpleSearch from '../components/SimpleSearch';
-import { FavoritesManager } from '../components/FavoritesManager';
-import MediaCard from '../components/MediaCard';
+import PhoneFrame from '../../components/PhoneFrame';
+import { FavoritesManager } from '../../components/FavoritesManager';
 import { Plus, Check } from 'lucide-react';
 
 // ─── Cold start movie catalog (AFI Top 100 + Criterion) ──────────────────────
@@ -45,7 +33,7 @@ const COLD_START_MOVIES_RAW = [
   { tmdbId: 851,  title: 'Brief Encounter',                           year: 1945, poster: 'https://image.tmdb.org/t/p/w185/jC9EwLJcGhYMSQAHu2LxkKN5v7O.jpg' },
   { tmdbId: 287,  title: 'Bull Durham',                               year: 1988, poster: 'https://image.tmdb.org/t/p/w185/q3T9bO6p74NcTxWOhdUA6fASQ5T.jpg' },
   { tmdbId: 642,  title: 'Butch Cassidy and the Sundance Kid',        year: 1969, poster: 'https://image.tmdb.org/t/p/w185/gFmmykF1Ym3OGzENo50nZQaD1dx.jpg' },
-  { tmdbId: 11977,title: 'Caddyshack',                                year: 1980, poster: 'https://image.tmdb.org/t/p/w185/lXnNz7zOXCsftMDVoU3VSo0Eioi.jpg' },
+  { tmdbId: 11977,title: 'Caddyshack',                                year: 1980, poster: 'https://image.tmdb.org/t/p/w185/lXnNz7zOXCsftMDVoU3USo0Eioi.jpg' },
   { tmdbId: 829,  title: 'Chinatown',                                 year: 1974, poster: 'https://image.tmdb.org/t/p/w185/kZRSP3FmOcq0xnBulqpUQngJUXY.jpg' },
   { tmdbId: 11104,title: 'Chungking Express',                         year: 1994, poster: 'https://image.tmdb.org/t/p/w185/43I9DcNoCzpyzK8JCkJYpHqHqGG.jpg' },
   { tmdbId: 11224,title: 'Cinderella',                                year: 1950, poster: 'https://image.tmdb.org/t/p/w185/4nssBcQUBadCTBjrAkX46mVEKts.jpg' },
@@ -154,7 +142,6 @@ const COLD_START_MOVIES_RAW = [
   { tmdbId: 2721, title: 'Z',                                         year: 1969, poster: 'https://image.tmdb.org/t/p/w185/dFAJyFNgvOv24f2RQyI9KDxjGr3.jpg' },
 ];
 
-// Shuffle once per session
 function shuffleArray(arr) {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -165,82 +152,84 @@ function shuffleArray(arr) {
 }
 const COLD_START_MOVIES = shuffleArray(COLD_START_MOVIES_RAW);
 
-// ─── Cold start picker ───────────────────────────────────────────────────────
-// States: 0 = neutral, 1 = seen, 2 = add
+const MIN_SAVES = 3;
 const SEEN_POINTS = 1;
 const ADD_POINTS = 3;
 
-function ColdStart({ onDone }) {
-  const [states, setStates] = useState({}); // { [tmdbId]: 0|1|2 }
+export default function GeniusStartPage() {
+  const router = useRouter();
+  const [states, setStates] = useState({});
 
-  const handleTap = (movie) => {
-    const key = String(movie.tmdbId);
-    setStates(prev => {
-      const current = prev[key] || 0;
-      const next = (current + 1) % 3;
-      const movieObj = { title: movie.title, year: movie.year, tmdbId: movie.tmdbId, poster: movie.poster };
-      if (next === 2) FavoritesManager.toggleBookmark(movieObj);       // neutral→seen→add: bookmark on add
-      if (current === 2) FavoritesManager.toggleBookmark(movieObj);    // add→neutral: unbookmark
-      return { ...prev, [key]: next };
-    });
-  };
-
-  const score = Object.values(states).reduce((sum, s) => {
-    if (s === 1) return sum + SEEN_POINTS;
-    if (s === 2) return sum + ADD_POINTS;
-    return sum;
-  }, 0);
+  // TODO: cycle behavior (Neutral → Seen → Add → Neutral) commented out
+  // const handleTap = (movie) => {
+  //   const key = String(movie.tmdbId);
+  //   setStates(prev => {
+  //     const current = prev[key] || 0;
+  //     const next = (current + 1) % 3;
+  //     const movieObj = { title: movie.title, year: movie.year, tmdbId: movie.tmdbId, poster: movie.poster };
+  //     if (next === 2) FavoritesManager.toggleBookmark(movieObj);
+  //     if (current === 2) FavoritesManager.toggleBookmark(movieObj);
+  //     return { ...prev, [key]: next };
+  //   });
+  // };
+  // const score = Object.values(states).reduce((sum, s) => {
+  //   if (s === 1) return sum + SEEN_POINTS;
+  //   if (s === 2) return sum + ADD_POINTS;
+  //   return sum;
+  // }, 0);
+  const score = 0;
 
   return (
-    <div style={cs.container}>
-      <div style={cs.header}>
-        <div style={cs.heading}>Let's get you some recommendations: click on movies you want to watch.</div>
-        {score > 0 && score < MIN_SAVES && (
-          <div style={cs.progress}>{score} of {MIN_SAVES} to unlock Genius</div>
+    <PhoneFrame>
+      <div style={cs.container}>
+        <div style={cs.header}>
+          <div style={cs.heading}>Let's get you some recommendations: click on movies you want to watch.</div>
+          {score > 0 && score < MIN_SAVES && (
+            <div style={cs.progress}>{score} of {MIN_SAVES} to unlock Genius</div>
+          )}
+        </div>
+
+        <div style={cs.grid}>
+          {COLD_START_MOVIES.map(movie => {
+            const key = String(movie.tmdbId);
+            const state = states[key] || 0;
+            const seenActive = state >= 1;
+            const addActive = state === 2;
+            return (
+              <div key={movie.tmdbId} style={cs.movieItem} onClick={() => router.push(`/movie/${movie.tmdbId}`)}>
+                <div style={cs.posterWrap}>
+                  <img
+                    src={movie.poster}
+                    alt={movie.title}
+                    style={{ ...cs.poster, ...(state > 0 ? cs.posterSaved : {}) }}
+                    onError={e => { e.target.style.backgroundColor = '#e5e7eb'; e.target.src = ''; }}
+                  />
+                </div>
+                <div style={cs.actionsRow}>
+                  <button style={cs.favBtn} onClick={e => e.stopPropagation()}>
+                    <Check size={20} color={seenActive ? '#000000' : '#6b7280'} strokeWidth={seenActive ? 3 : 2} />
+                    <span style={{ ...cs.favBtnLabel, color: seenActive ? '#000000' : '#6b7280', fontWeight: seenActive ? '700' : '500' }}>Seen</span>
+                  </button>
+                  <button style={cs.favBtn} onClick={e => e.stopPropagation()}>
+                    <Plus size={20} color={addActive ? '#000000' : '#6b7280'} strokeWidth={addActive ? 3 : 2} />
+                    <span style={{ ...cs.favBtnLabel, color: addActive ? '#000000' : '#6b7280', fontWeight: addActive ? '700' : '500' }}>Add</span>
+                  </button>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {score >= MIN_SAVES && (
+          <div style={cs.ctaBar}>
+            <button style={cs.ctaBtn} onClick={() => router.push('/genius')}>Find my collections →</button>
+          </div>
         )}
       </div>
-
-      <div style={cs.grid}>
-        {COLD_START_MOVIES.map(movie => {
-          const key = String(movie.tmdbId);
-          const state = states[key] || 0;
-          const seenActive = state >= 1;
-          const addActive = state === 2;
-          return (
-            <div key={movie.tmdbId} style={cs.movieItem} onClick={() => handleTap(movie)}>
-              <div style={cs.posterWrap}>
-                <img
-                  src={movie.poster}
-                  alt={movie.title}
-                  style={{ ...cs.poster, ...(state > 0 ? cs.posterSaved : {}) }}
-                  onError={e => { e.target.style.backgroundColor = '#e5e7eb'; e.target.src = ''; }}
-                />
-              </div>
-              <div style={cs.movieTitle}>{movie.title}</div>
-              <div style={cs.movieYear}>{movie.year}</div>
-              <div style={cs.actionsRow}>
-                <button style={cs.favBtn} onClick={e => e.stopPropagation()}>
-                  <Check size={16} color={seenActive ? '#000000' : '#6b7280'} strokeWidth={seenActive ? 3 : 2} />
-                  <span style={{ ...cs.favBtnLabel, color: seenActive ? '#000000' : '#6b7280', fontWeight: seenActive ? '700' : '500' }}>Seen</span>
-                </button>
-                <button style={cs.favBtn} onClick={e => e.stopPropagation()}>
-                  <Plus size={16} color={addActive ? '#000000' : '#6b7280'} strokeWidth={addActive ? 3 : 2} />
-                  <span style={{ ...cs.favBtnLabel, color: addActive ? '#000000' : '#6b7280', fontWeight: addActive ? '700' : '500' }}>Add</span>
-                </button>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-
-      {score >= MIN_SAVES && (
-        <div style={cs.ctaBar}>
-          <button style={cs.ctaBtn} onClick={onDone}>Find my collections →</button>
-        </div>
-      )}
-    </div>
+    </PhoneFrame>
   );
 }
+
 const cs = {
   container: {
     display: 'flex',
@@ -301,31 +290,17 @@ const cs = {
     WebkitLineClamp: 2,
     WebkitBoxOrient: 'vertical',
   },
-  movieMeta: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  actionsRow: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
-    gap: '8px',
-  },
   movieYear: {
     fontSize: '11px',
     color: '#9ca3af',
     fontWeight: '400',
     marginBottom: '2px',
   },
-  movieLabel: {
-    fontSize: '11px',
-    color: '#9ca3af',
-    fontWeight: '400',
-  },
-  movieLabelSaved: {
-    color: '#111827',
-    fontWeight: '600',
+  actionsRow: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    gap: '8px',
   },
   favBtn: {
     background: 'none',
@@ -352,7 +327,7 @@ const cs = {
   },
   ctaBtn: {
     width: '100%',
-    padding: '12px',
+    padding: '14px',
     backgroundColor: '#111827',
     color: '#ffffff',
     border: 'none',
@@ -362,326 +337,4 @@ const cs = {
     cursor: 'pointer',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
   },
-};
-
-// ─── Main page ───────────────────────────────────────────────────────────────
-const MIN_SAVES = 3;
-
-export default function GeniusPage() {
-  const router = useRouter();
-  const [feedItems, setFeedItems] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [showColdStart, setShowColdStart] = useState(false);
-
-  const loadFeed = useCallback(() => {
-    FavoritesManager._cache.hearted = null;
-    FavoritesManager._cache.bookmarked = null;
-
-    const savedMovies = FavoritesManager.getBookmarkedMovies();
-    const savedIds = savedMovies.map(m => m.tmdbId).filter(Boolean);
-
-    if (savedIds.length < MIN_SAVES) {
-      setLoading(false);
-      setShowColdStart(true);
-      return;
-    }
-
-    setLoading(true);
-    setShowColdStart(false);
-
-    fetch('/api/genius-feed', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ savedIds }),
-    })
-      .then(r => r.json())
-      .then(data => {
-        const items = data.items || [];
-        if (items.length === 0) {
-          setShowColdStart(true);
-        } else {
-          setFeedItems(items);
-        }
-      })
-      .catch(() => setShowColdStart(true))
-      .finally(() => setLoading(false));
-  }, []);
-
-  useEffect(() => {
-    loadFeed();
-  }, [loadFeed]);
-
-  return (
-    <PhoneFrame>
-      <div style={styles.container}>
-        {/* Search */}
-        <div style={styles.searchBar}>
-          <SimpleSearch placeholder="Search movies..." />
-        </div>
-
-        <div style={styles.content}>
-          {loading && (
-            <div style={styles.skeletonWrapper}>
-              <style>{`
-                @keyframes shimmer {
-                  0% { background-position: -600px 0; }
-                  100% { background-position: 600px 0; }
-                }
-                .sk {
-                  background: linear-gradient(90deg, #f0f0f0 25%, #e8e8e8 50%, #f0f0f0 75%);
-                  background-size: 600px 100%;
-                  animation: shimmer 1.4s infinite linear;
-                  border-radius: 6px;
-                }
-              `}</style>
-              {[0, 1, 2].map(i => (
-                <div key={i} style={styles.skeletonSection}>
-                  <div className="sk" style={{ height: '14px', width: '220px', marginBottom: '12px' }} />
-                  {[0, 1].map(j => (
-                    <div className="sk" key={j} style={{ height: '72px', borderRadius: '10px', marginBottom: '10px' }} />
-                  ))}
-                </div>
-              ))}
-            </div>
-          )}
-
-          {!loading && showColdStart && (
-            <ColdStart onDone={loadFeed} />
-          )}
-
-          {!loading && !showColdStart && (
-            <div style={styles.collectionList}>
-              {feedItems.map((item, i) => {
-                if (item.type === 'more_ideas') {
-                  return (
-                    <div key={`mi-${item.seedTmdbId}-${i}`} style={styles.section}>
-                      <div style={styles.sectionHeader}>
-                        <span style={styles.sectionTitle}>Films like {item.seedTitle}</span>
-                      </div>
-                      {item.movies.map((m, idx) => (
-                        <MediaCard
-                          key={idx}
-                          title={m.title}
-                          year={m.year}
-                          initialPoster={m.poster_url}
-                          initialSlug={m.slug}
-                          tmdbId={m.tmdb_id}
-                        />
-                      ))}
-                    </div>
-                  );
-                }
-
-                if (item.type === 'collection') {
-                  return (
-                    <div key={`col-${item.collectionId}-${i}`} style={styles.section}>
-                      <div
-                        style={styles.sectionHeader}
-                        onClick={() => router.push(`/collection/${item.collectionId}`)}
-                      >
-                        <span style={styles.sectionTitle}>{item.name}</span>
-                        <span style={styles.sectionParent}>{item.collectionTitle}</span>
-                      </div>
-                      <div style={styles.carouselStrip}>
-                        {item.movies.map((m, idx) => (
-                          <div
-                            key={idx}
-                            style={styles.carouselItem}
-                            onClick={() => router.push(`/movie/${m.tmdb_id}`)}
-                          >
-                            <div style={styles.posterContainer}>
-                              <img src={m.poster_url} alt={m.title} style={styles.poster} />
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  );
-                }
-
-                return null;
-              })}
-
-              {/* Add more films link */}
-              <div style={styles.miniToggleRow}>
-                <button
-                  style={styles.miniToggleBtn}
-                  onClick={() => setShowColdStart(true)}
-                >
-                  Add more films →
-                </button>
-              </div>
-            </div>
-          )}
-        </div>
-      </div>
-    </PhoneFrame>
-  );
-}
-
-const styles = {
-  mediaCard: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '12px',
-    padding: '10px 16px',
-    cursor: 'pointer',
-  },
-  mediaCardPoster: {
-    width: '48px',
-    height: '72px',
-    borderRadius: '6px',
-    overflow: 'hidden',
-    backgroundColor: '#f3f4f6',
-    flexShrink: 0,
-  },
-  mediaCardImg: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
-    display: 'block',
-  },
-  mediaCardInfo: {
-    flex: 1,
-    minWidth: 0,
-  },
-  mediaCardTitle: {
-    fontSize: '15px',
-    fontWeight: '600',
-    color: '#111827',
-    lineHeight: '1.3',
-    marginBottom: '2px',
-  },
-  mediaCardYear: {
-    fontSize: '13px',
-    color: '#9ca3af',
-  },
-
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    height: '100%',
-    backgroundColor: '#ffffff',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-  },
-
-  searchBar: {
-    position: 'sticky',
-    top: 0,
-    zIndex: 100,
-    backgroundColor: 'rgba(255,255,255,0.98)',
-    backdropFilter: 'blur(10px)',
-    WebkitBackdropFilter: 'blur(10px)',
-    padding: '16px',
-  },
-
-  content: {
-    flex: 1,
-    overflowY: 'auto',
-    scrollbarWidth: 'none',
-    msOverflowStyle: 'none',
-    padding: '8px 0 40px',
-  },
-
-  skeletonWrapper: {
-    padding: '16px',
-  },
-
-  skeletonSection: {
-    marginBottom: '28px',
-  },
-
-  collectionList: {
-    padding: '8px 0 40px',
-  },
-
-  section: {
-    marginBottom: '32px',
-  },
-
-  sectionHeader: {
-    padding: '0 16px 10px',
-    cursor: 'pointer',
-  },
-
-  sectionTitle: {
-    fontSize: '16px',
-    fontWeight: '700',
-    color: '#111827',
-    letterSpacing: '-0.01em',
-    display: 'block',
-    lineHeight: '1.3',
-  },
-
-  sectionParent: {
-    fontSize: '12px',
-    color: '#9ca3af',
-    fontWeight: '400',
-    display: 'block',
-    marginTop: '2px',
-  },
-
-  carouselStrip: {
-    display: 'flex',
-    flexDirection: 'row',
-    gap: '8px',
-    overflowX: 'auto',
-    padding: '0 16px 4px',
-    scrollbarWidth: 'none',
-    WebkitOverflowScrolling: 'touch',
-  },
-
-  carouselItem: {
-    flexShrink: 0,
-    width: '80px',
-    cursor: 'pointer',
-  },
-
-  posterContainer: {
-    aspectRatio: '2/3',
-    borderRadius: '8px',
-    overflow: 'hidden',
-    backgroundColor: '#f3f4f6',
-  },
-
-  poster: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
-  },
-
-  movieTitle: {
-    fontSize: '12px',
-    fontWeight: '500',
-    color: '#111827',
-    lineHeight: '1.3',
-    marginBottom: '2px',
-    overflowWrap: 'break-word',
-    wordBreak: 'break-word',
-    hyphens: 'none',
-  },
-
-  movieYear: {
-    fontSize: '11px',
-    color: '#9ca3af',
-  },
-
-  miniToggleRow: {
-    padding: '8px 16px 24px',
-    display: 'flex',
-    justifyContent: 'center',
-  },
-
-  miniToggleBtn: {
-    background: 'none',
-    border: '1px solid #e5e7eb',
-    borderRadius: '20px',
-    padding: '8px 20px',
-    fontSize: '13px',
-    fontWeight: '500',
-    color: '#374151',
-    cursor: 'pointer',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-  },
-
 };

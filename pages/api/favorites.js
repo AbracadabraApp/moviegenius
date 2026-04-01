@@ -4,7 +4,7 @@
  * POST - bulk upsert favorites (used on first login to migrate localStorage)
  * DELETE - remove a single favorite
  */
-import { getServerSession } from 'next-auth/next';
+const { getServerSession } = require('next-auth/next');
 import { authOptions } from './auth/[...nextauth]';
 import { Pool } from 'pg';
 
@@ -19,8 +19,11 @@ export default async function handler(req, res) {
 
   if (req.method === 'GET') {
     const result = await pool.query(
-      `SELECT tmdb_id, type, title, year, poster, slug, added_at
-       FROM user_favorites WHERE user_id = $1 ORDER BY added_at DESC`,
+      `SELECT uf.tmdb_id, uf.type, uf.title, uf.year, uf.poster,
+              COALESCE(m.slug, uf.slug) AS slug, uf.added_at
+       FROM user_favorites uf
+       LEFT JOIN movies m ON m.tmdb_id = uf.tmdb_id::int
+       WHERE uf.user_id = $1 ORDER BY uf.added_at DESC`,
       [userId]
     );
     return res.status(200).json({ favorites: result.rows });
