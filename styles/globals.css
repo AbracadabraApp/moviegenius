@@ -215,7 +215,7 @@ div::first-letter {
   padding-top: env(safe-area-inset-top);
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
-  padding-bottom: env(safe-area-inset-bottom); /* Nav sits above home indicator */
+  /* No bottom padding here — nav sits flush at the very bottom */
 }
 
 .app-shell-content {

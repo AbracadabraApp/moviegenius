@@ -123,11 +123,6 @@ export default function WhatToWatchPage() {
       <PhoneFrame>
         <div style={styles.centeredPage}>
           <div style={styles.signInCard}>
-            <div style={styles.signInIcon}>🎬</div>
-            <h2 style={styles.signInTitle}>Your movies, everywhere</h2>
-            <p style={styles.signInSubtitle}>
-              Sign in to save your Watch Later list and Seen movies across all your devices.
-            </p>
             <button
               onClick={() => signIn('google')}
               style={styles.googleButton}
@@ -140,6 +135,11 @@ export default function WhatToWatchPage() {
               </svg>
               Continue with Google
             </button>
+            <div style={styles.signInIcon}>🎬</div>
+            <h2 style={styles.signInTitle}>Your movies, everywhere</h2>
+            <p style={styles.signInSubtitle}>
+              Sign in to save your Watch Later list and Seen movies across all your devices.
+            </p>
           </div>
         </div>
       </PhoneFrame>
@@ -325,6 +325,7 @@ const styles = {
   signInIcon: {
     fontSize: '48px',
     marginBottom: '20px',
+    marginTop: '8px',
   },
   signInTitle: {
     fontSize: '22px',
@@ -336,7 +337,6 @@ const styles = {
     fontSize: '15px',
     color: '#6b7280',
     lineHeight: '1.5',
-    marginBottom: '32px',
   },
   googleButton: {
     display: 'flex',
@@ -353,6 +353,7 @@ const styles = {
     color: '#111827',
     cursor: 'pointer',
     boxShadow: '0 1px 3px rgba(0,0,0,0.08)',
+    marginBottom: '32px',
   },
   userRow: {
     display: 'flex',

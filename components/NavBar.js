@@ -186,10 +186,10 @@ const styles = {
     justifyContent: 'space-around',
     alignItems: 'center',
     backgroundColor: '#222',
-    borderTopLeftRadius: '0', // Flat design - no rounded corners
+    borderTopLeftRadius: '0',
     borderTopRightRadius: '0',
-    padding: '0', // Remove nav padding so touch targets can fill full height
-    boxShadow: 'none', // Flat design - no shadow
+    paddingBottom: 'env(safe-area-inset-bottom)', // Push content above home indicator
+    boxShadow: 'none',
     boxSizing: 'border-box',
   },
   navMobile: {
