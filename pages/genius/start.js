@@ -161,6 +161,7 @@ export default function GeniusStartPage() {
   const [seen, setSeen] = useState({});
   const [added, setAdded] = useState({});
   const [hasExisting, setHasExisting] = useState(false);
+  const [transitioning, setTransitioning] = useState(false);
 
   useEffect(() => {
     const hearted = FavoritesManager.getHeartedMovies();
@@ -181,7 +182,7 @@ export default function GeniusStartPage() {
       const next = { ...prev, [movie.tmdbId]: !prev[movie.tmdbId] };
       const newScore = Object.keys(next).filter(k => next[k]).length * SEEN_POINTS
                      + Object.keys(added).filter(k => added[k]).length * ADD_POINTS;
-      if (newScore >= MIN_SAVES) router.replace('/genius');
+      if (newScore >= MIN_SAVES) { setTransitioning(true); setTimeout(() => router.replace('/genius'), 1200); }
       return next;
     });
   };
@@ -193,7 +194,7 @@ export default function GeniusStartPage() {
       const next = { ...prev, [movie.tmdbId]: !prev[movie.tmdbId] };
       const newScore = Object.keys(seen).filter(k => seen[k]).length * SEEN_POINTS
                      + Object.keys(next).filter(k => next[k]).length * ADD_POINTS;
-      if (newScore >= MIN_SAVES) router.replace('/genius');
+      if (newScore >= MIN_SAVES) { setTransitioning(true); setTimeout(() => router.replace('/genius'), 1200); }
       return next;
     });
   };
@@ -203,6 +204,12 @@ export default function GeniusStartPage() {
 
   return (
     <PhoneFrame>
+      {transitioning && (
+        <div style={cs.transitionOverlay}>
+          <Sparkles size={28} color="#d4af37" />
+          <div style={cs.transitionText}>Finding your recommendations…</div>
+        </div>
+      )}
       <div style={cs.container}>
         {hasExisting && (
           <button style={cs.recsBanner} onClick={() => router.push('/genius')}>
@@ -377,6 +384,23 @@ const cs = {
     fontSize: '15px',
     fontWeight: '600',
     cursor: 'pointer',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+  },
+  transitionOverlay: {
+    position: 'absolute',
+    inset: 0,
+    zIndex: 200,
+    backgroundColor: '#ffffff',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '14px',
+  },
+  transitionText: {
+    fontSize: '16px',
+    fontWeight: '600',
+    color: '#111827',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
   },
 };
