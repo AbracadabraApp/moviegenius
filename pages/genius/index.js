@@ -127,6 +127,7 @@ export default function GeniusPage() {
                 }
 
                 if (item.type === 'collection') {
+                  const covers = item.movies.slice(0, 6);
                   return (
                     <div key={`col-${item.collectionId}-${i}`} style={styles.section}>
                       <div
@@ -136,16 +137,16 @@ export default function GeniusPage() {
                         <span style={styles.sectionTitle}>{item.name}</span>
                         <span style={styles.sectionParent}>{item.collectionTitle}</span>
                       </div>
-                      {item.movies.slice(0, 2).map((m, idx) => (
-                        <MediaCard
-                          key={idx}
-                          title={m.title}
-                          year={m.year}
-                          initialPoster={m.poster_url}
-                          initialSlug={m.slug}
-                          tmdbId={m.tmdb_id}
-                        />
-                      ))}
+                      <div
+                        style={styles.posterGrid}
+                        onClick={() => router.push(`/collection/${item.collectionId}`)}
+                      >
+                        {covers.map((m, idx) => (
+                          <div key={idx} style={styles.posterGridItem}>
+                            <img src={m.poster_url} alt={m.title} style={styles.posterGridImg} />
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   );
                 }
@@ -223,6 +224,25 @@ const styles = {
     fontWeight: '400',
     display: 'block',
     marginTop: '2px',
+  },
+  posterGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, 1fr)',
+    gap: '4px',
+    padding: '0 16px',
+    cursor: 'pointer',
+  },
+  posterGridItem: {
+    aspectRatio: '2/3',
+    borderRadius: '6px',
+    overflow: 'hidden',
+    backgroundColor: '#f3f4f6',
+  },
+  posterGridImg: {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    display: 'block',
   },
   miniToggleRow: {
     padding: '8px 16px 24px',
