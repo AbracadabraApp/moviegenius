@@ -26,8 +26,9 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { savedIds = [] } = req.body;
+  const { savedIds = [], seenIds = [] } = req.body;
   const allIds = [...new Set(savedIds)].filter(id => Number.isInteger(id));
+  const seenSet = new Set(seenIds.filter(id => Number.isInteger(id)));
 
   if (allIds.length === 0) {
     return res.status(200).json({ items: [], empty: true });
@@ -91,6 +92,7 @@ export default async function handler(req, res) {
       const seedTitle = seedMovie?.title || `Movie ${seed.seedTmdbId}`;
 
       const movies = seed.ideaTmdbIds
+        .filter(id => !seenSet.has(id))
         .slice(0, 2)
         .map(id => movieLookup[id])
         .filter(Boolean);
@@ -105,10 +107,11 @@ export default async function handler(req, res) {
       });
     }
 
-    // Track every movie already committed to the feed — used to strip duplicates from collections
-    const usedMovieIds = new Set(
-      moreIdeasItems.flatMap(item => item.movies.map(m => m.tmdb_id))
-    );
+    // Track every movie already committed to the feed (or already seen) — strip from collections
+    const usedMovieIds = new Set([
+      ...seenSet,
+      ...moreIdeasItems.flatMap(item => item.movies.map(m => m.tmdb_id)),
+    ]);
 
     // Step 5: Find collections overlapping with all More Ideas candidates
     const relatedTmdbIds = [...allCandidateIds];

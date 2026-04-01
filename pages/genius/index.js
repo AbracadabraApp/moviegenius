@@ -33,12 +33,15 @@ export default function GeniusPage() {
       return;
     }
 
+    const heartedMovies = FavoritesManager.getHeartedMovies();
+    const seenIds = heartedMovies.map(m => m.id).filter(Boolean);
+
     setLoading(true);
 
     fetch('/api/genius-feed', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ savedIds }),
+      body: JSON.stringify({ savedIds, seenIds }),
     })
       .then(r => r.json())
       .then(data => {
