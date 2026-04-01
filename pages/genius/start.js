@@ -152,9 +152,9 @@ function shuffleArray(arr) {
 }
 const COLD_START_MOVIES = shuffleArray(COLD_START_MOVIES_RAW);
 
-const MIN_SAVES = 3;
+const MIN_SAVES = 1;
 const SEEN_POINTS = 1;
-const ADD_POINTS = 3;
+const ADD_POINTS = 1;
 
 export default function GeniusStartPage() {
   const router = useRouter();
@@ -170,13 +170,25 @@ export default function GeniusStartPage() {
   const handleSeen = (e, movie) => {
     e.stopPropagation();
     FavoritesManager.toggleHeart(toMovieObj(movie));
-    setSeen(prev => ({ ...prev, [movie.tmdbId]: !prev[movie.tmdbId] }));
+    setSeen(prev => {
+      const next = { ...prev, [movie.tmdbId]: !prev[movie.tmdbId] };
+      const newScore = Object.keys(next).filter(k => next[k]).length * SEEN_POINTS
+                     + Object.keys(added).filter(k => added[k]).length * ADD_POINTS;
+      if (newScore >= MIN_SAVES) router.replace('/genius');
+      return next;
+    });
   };
 
   const handleAdd = (e, movie) => {
     e.stopPropagation();
     FavoritesManager.toggleBookmark(toMovieObj(movie));
-    setAdded(prev => ({ ...prev, [movie.tmdbId]: !prev[movie.tmdbId] }));
+    setAdded(prev => {
+      const next = { ...prev, [movie.tmdbId]: !prev[movie.tmdbId] };
+      const newScore = Object.keys(seen).filter(k => seen[k]).length * SEEN_POINTS
+                     + Object.keys(next).filter(k => next[k]).length * ADD_POINTS;
+      if (newScore >= MIN_SAVES) router.replace('/genius');
+      return next;
+    });
   };
 
   const score = Object.keys(seen).filter(k => seen[k]).length * SEEN_POINTS
