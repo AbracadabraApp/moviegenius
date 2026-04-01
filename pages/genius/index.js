@@ -63,11 +63,6 @@ export default function GeniusPage() {
     loadFeed();
   }, [loadFeed]);
 
-  // Reload feed when user marks a movie as seen or adds to list
-  useEffect(() => {
-    window.addEventListener('moviesUpdated', loadFeed);
-    return () => window.removeEventListener('moviesUpdated', loadFeed);
-  }, [loadFeed]);
 
   return (
     <PhoneFrame>
