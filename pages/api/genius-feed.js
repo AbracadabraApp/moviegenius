@@ -91,7 +91,8 @@ export default async function handler(req, res) {
       const seedMovie = movieLookup[seed.seedTmdbId];
       const seedTitle = seedMovie?.title || `Movie ${seed.seedTmdbId}`;
 
-      const movies = seed.ideaTmdbIds
+      const shuffledIdeas = [...seed.ideaTmdbIds].sort(() => Math.random() - 0.5);
+      const movies = shuffledIdeas
         .filter(id => !seenSet.has(id))
         .slice(0, 2)
         .map(id => movieLookup[id])
@@ -165,10 +166,16 @@ export default async function handler(req, res) {
       const colMovieMap = {};
       for (const m of colMoviesResult.rows) colMovieMap[m.tmdb_id] = m;
 
+      // Shuffle candidates so high-overlap doesn't always mean same genre cluster wins
+      // Keep minimum overlap=1 (already filtered by query) but randomize within relevance tiers
+      const shuffled = [...colResult.rows].sort(() => Math.random() - 0.5);
+
       const usedCollections = new Set();
-      for (const row of colResult.rows) {
+      const usedParentTitles = new Set(); // cap 1 subcategory per parent collection
+
+      for (const row of shuffled) {
         if (usedCollections.has(row.collection_id)) continue;
-        usedCollections.add(row.collection_id);
+        if (usedParentTitles.has(row.collection_title)) continue;
 
         const movies = row.all_tmdb_ids
           .map(id => colMovieMap[id])
@@ -176,6 +183,9 @@ export default async function handler(req, res) {
           .slice(0, 8);
 
         if (movies.length < 3) continue;
+
+        usedCollections.add(row.collection_id);
+        usedParentTitles.add(row.collection_title);
 
         // Mark these movies as used so later collections don't repeat them
         movies.forEach(m => usedMovieIds.add(m.tmdb_id));
