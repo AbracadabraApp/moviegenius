@@ -75,3 +75,4 @@ pages/**/*-static.js
 **/*.backup
 **/*.bak
 pages/movie/[id]-original.js
+.claude/worktrees/
