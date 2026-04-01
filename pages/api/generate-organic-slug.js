@@ -109,11 +109,8 @@ Return ONLY the tagline, nothing else.`;
       'features',
       'follows',
       'story of',
-      'about',
-      'when ',
-      'after ',
-      'before ',
-      'during ',
+      'when a ',
+      'when an ',
       'chronicles',
       'depicts',
     ];

@@ -14,7 +14,7 @@ import SimpleSearch from '../../components/SimpleSearch';
 import { FavoritesManager } from '../../components/FavoritesManager';
 import MediaCard from '../../components/MediaCard';
 
-const MIN_SAVES = 3;
+const MIN_SAVES = 1;
 
 export default function GeniusPage() {
   const router = useRouter();
@@ -61,6 +61,12 @@ export default function GeniusPage() {
 
   useEffect(() => {
     loadFeed();
+  }, [loadFeed]);
+
+  // Reload feed when user marks a movie as seen or adds to list
+  useEffect(() => {
+    window.addEventListener('moviesUpdated', loadFeed);
+    return () => window.removeEventListener('moviesUpdated', loadFeed);
   }, [loadFeed]);
 
   return (
