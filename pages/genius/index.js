@@ -137,12 +137,13 @@ export default function GeniusPage() {
                         <span style={styles.sectionTitle}>{item.name}</span>
                         <span style={styles.sectionParent}>{item.collectionTitle}</span>
                       </div>
-                      <div
-                        style={styles.posterGrid}
-                        onClick={() => router.push(`/collection/${item.collectionId}`)}
-                      >
+                      <div style={styles.posterGrid}>
                         {covers.map((m, idx) => (
-                          <div key={idx} style={styles.posterGridItem}>
+                          <div
+                            key={idx}
+                            style={styles.posterGridItem}
+                            onClick={() => router.push(`/movie/${m.tmdb_id}`)}
+                          >
                             <img src={m.poster_url} alt={m.title} style={styles.posterGridImg} />
                           </div>
                         ))}
@@ -237,6 +238,7 @@ const styles = {
     borderRadius: '6px',
     overflow: 'hidden',
     backgroundColor: '#f3f4f6',
+    cursor: 'pointer',
   },
   posterGridImg: {
     width: '100%',
