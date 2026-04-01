@@ -159,7 +159,7 @@ export default function GeniusPage() {
                   style={styles.miniToggleBtn}
                   onClick={() => router.push('/genius/start')}
                 >
-                  Add more films →
+                  Improve your recommendations →
                 </button>
               </div>
             </div>

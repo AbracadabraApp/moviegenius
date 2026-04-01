@@ -188,7 +188,6 @@ const styles = {
     backgroundColor: '#222',
     borderTopLeftRadius: '0',
     borderTopRightRadius: '0',
-    paddingBottom: 'env(safe-area-inset-bottom)', // Push content above home indicator
     boxShadow: 'none',
     boxSizing: 'border-box',
   },

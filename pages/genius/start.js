@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import PhoneFrame from '../../components/PhoneFrame';
 import { FavoritesManager } from '../../components/FavoritesManager';
-import { Plus, Check } from 'lucide-react';
+import { Plus, Check, Sparkles } from 'lucide-react';
 
 // ─── Cold start movie catalog (AFI Top 100 + Criterion) ──────────────────────
 const COLD_START_MOVIES_RAW = [
@@ -160,6 +160,13 @@ export default function GeniusStartPage() {
   const router = useRouter();
   const [seen, setSeen] = useState({});
   const [added, setAdded] = useState({});
+  const [hasExisting, setHasExisting] = useState(false);
+
+  useEffect(() => {
+    const hearted = FavoritesManager.getHeartedMovies();
+    const bookmarked = FavoritesManager.getBookmarkedMovies();
+    setHasExisting(hearted.length + bookmarked.length > 0);
+  }, []);
 
   const toMovieObj = (movie) => ({
     title: movie.title, year: movie.year, tmdbId: movie.tmdbId,
@@ -197,8 +204,15 @@ export default function GeniusStartPage() {
   return (
     <PhoneFrame>
       <div style={cs.container}>
+        {hasExisting && (
+          <button style={cs.recsBanner} onClick={() => router.push('/genius')}>
+            <Sparkles size={15} color="#d4af37" />
+            <span style={cs.recsBannerText}>You have recommendations</span>
+            <span style={cs.recsBannerArrow}>→</span>
+          </button>
+        )}
         <div style={cs.header}>
-          <div style={cs.heading}>Let's get you some recommendations: click on movies you want to watch.</div>
+          <div style={cs.heading}>Add movies to improve your recommendations.</div>
         </div>
 
         <div style={cs.grid}>
@@ -241,6 +255,28 @@ const cs = {
     display: 'flex',
     flexDirection: 'column',
     backgroundColor: '#ffffff',
+  },
+  recsBanner: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px',
+    width: '100%',
+    padding: '13px 16px',
+    backgroundColor: '#fffbeb',
+    border: 'none',
+    borderBottom: '1px solid #fde68a',
+    cursor: 'pointer',
+    textAlign: 'left',
+  },
+  recsBannerText: {
+    flex: 1,
+    fontSize: '14px',
+    fontWeight: '600',
+    color: '#92400e',
+  },
+  recsBannerArrow: {
+    fontSize: '14px',
+    color: '#92400e',
   },
   header: {
     padding: '20px 16px 12px',
