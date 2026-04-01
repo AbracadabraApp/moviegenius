@@ -166,6 +166,25 @@ export default async function handler(req, res) {
       const colMovieMap = {};
       for (const m of colMoviesResult.rows) colMovieMap[m.tmdb_id] = m;
 
+      // Compute subcategory appearance count per movie — high count = mainstream, penalize
+      const listCountResult = await pool.query(`
+        SELECT (mv->>'tmdb_id')::int AS tmdb_id, COUNT(*) AS list_count
+        FROM browse_lists bl,
+             jsonb_array_elements(bl.editorial_data->'subcategories') sub,
+             jsonb_array_elements(sub->'movies') mv
+        WHERE bl.status = 'active'
+          AND bl.is_suppressed IS NOT TRUE
+          AND bl.editorial_data IS NOT NULL
+          AND (mv->>'tmdb_id') IS NOT NULL
+          AND (mv->>'tmdb_id') != 'null'
+          AND (mv->>'tmdb_id')::int = ANY($1)
+        GROUP BY 1
+      `, [allColIds]);
+      const listCountMap = {};
+      for (const r of listCountResult.rows) listCountMap[r.tmdb_id] = parseInt(r.list_count);
+
+      const MAINSTREAM_THRESHOLD = 50;
+
       // Shuffle candidates so high-overlap doesn't always mean same genre cluster wins
       // Keep minimum overlap=1 (already filtered by query) but randomize within relevance tiers
       const shuffled = [...colResult.rows].sort(() => Math.random() - 0.5);
@@ -179,7 +198,7 @@ export default async function handler(req, res) {
 
         const movies = row.all_tmdb_ids
           .map(id => colMovieMap[id])
-          .filter(m => m && m.poster_url && !usedMovieIds.has(m.tmdb_id))
+          .filter(m => m && m.poster_url && !usedMovieIds.has(m.tmdb_id) && (listCountMap[m.tmdb_id] || 0) < MAINSTREAM_THRESHOLD)
           .slice(0, 8);
 
         if (movies.length < 3) continue;
