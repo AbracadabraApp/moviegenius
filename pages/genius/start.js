@@ -158,26 +158,29 @@ const ADD_POINTS = 3;
 
 export default function GeniusStartPage() {
   const router = useRouter();
-  const [states, setStates] = useState({});
+  const [seen, setSeen] = useState({});
+  const [added, setAdded] = useState({});
 
-  // TODO: cycle behavior (Neutral → Seen → Add → Neutral) commented out
-  // const handleTap = (movie) => {
-  //   const key = String(movie.tmdbId);
-  //   setStates(prev => {
-  //     const current = prev[key] || 0;
-  //     const next = (current + 1) % 3;
-  //     const movieObj = { title: movie.title, year: movie.year, tmdbId: movie.tmdbId, poster: movie.poster };
-  //     if (next === 2) FavoritesManager.toggleBookmark(movieObj);
-  //     if (current === 2) FavoritesManager.toggleBookmark(movieObj);
-  //     return { ...prev, [key]: next };
-  //   });
-  // };
-  // const score = Object.values(states).reduce((sum, s) => {
-  //   if (s === 1) return sum + SEEN_POINTS;
-  //   if (s === 2) return sum + ADD_POINTS;
-  //   return sum;
-  // }, 0);
-  const score = 0;
+  const toMovieObj = (movie) => ({
+    title: movie.title, year: movie.year, tmdbId: movie.tmdbId,
+    id: `${movie.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.year}`,
+    poster: movie.poster,
+  });
+
+  const handleSeen = (e, movie) => {
+    e.stopPropagation();
+    FavoritesManager.toggleHeart(toMovieObj(movie));
+    setSeen(prev => ({ ...prev, [movie.tmdbId]: !prev[movie.tmdbId] }));
+  };
+
+  const handleAdd = (e, movie) => {
+    e.stopPropagation();
+    FavoritesManager.toggleBookmark(toMovieObj(movie));
+    setAdded(prev => ({ ...prev, [movie.tmdbId]: !prev[movie.tmdbId] }));
+  };
+
+  const score = Object.keys(seen).filter(k => seen[k]).length * SEEN_POINTS
+              + Object.keys(added).filter(k => added[k]).length * ADD_POINTS;
 
   return (
     <PhoneFrame>
@@ -191,26 +194,25 @@ export default function GeniusStartPage() {
 
         <div style={cs.grid}>
           {COLD_START_MOVIES.map(movie => {
-            const key = String(movie.tmdbId);
-            const state = states[key] || 0;
-            const seenActive = state >= 1;
-            const addActive = state === 2;
+            const seenActive = !!seen[movie.tmdbId];
+            const addActive = !!added[movie.tmdbId];
+            const isActive = seenActive || addActive;
             return (
               <div key={movie.tmdbId} style={cs.movieItem} onClick={() => router.push(`/movie/${movie.tmdbId}`)}>
                 <div style={cs.posterWrap}>
                   <img
                     src={movie.poster}
                     alt={movie.title}
-                    style={{ ...cs.poster, ...(state > 0 ? cs.posterSaved : {}) }}
+                    style={{ ...cs.poster, ...(isActive ? cs.posterSaved : {}) }}
                     onError={e => { e.target.style.backgroundColor = '#e5e7eb'; e.target.src = ''; }}
                   />
                 </div>
                 <div style={cs.actionsRow}>
-                  <button style={cs.favBtn} onClick={e => e.stopPropagation()}>
+                  <button style={cs.favBtn} onClick={e => handleSeen(e, movie)}>
                     <Check size={20} color={seenActive ? '#000000' : '#6b7280'} strokeWidth={seenActive ? 3 : 2} />
                     <span style={{ ...cs.favBtnLabel, color: seenActive ? '#000000' : '#6b7280', fontWeight: seenActive ? '700' : '500' }}>Seen</span>
                   </button>
-                  <button style={cs.favBtn} onClick={e => e.stopPropagation()}>
+                  <button style={cs.favBtn} onClick={e => handleAdd(e, movie)}>
                     <Plus size={20} color={addActive ? '#000000' : '#6b7280'} strokeWidth={addActive ? 3 : 2} />
                     <span style={{ ...cs.favBtnLabel, color: addActive ? '#000000' : '#6b7280', fontWeight: addActive ? '700' : '500' }}>Add</span>
                   </button>
