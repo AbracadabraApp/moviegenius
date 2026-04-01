@@ -20,40 +20,31 @@ export default function MovieGeniusPage() {
   const COLLECTIONS_PER_PAGE = 10;
   const MAX_COLLECTIONS = 100;
 
-  // On mount: restore session (back nav) or generate new seed (fresh load)
-  // Session cache expires after 15 minutes to keep homepage feeling fresh
-  const SESSION_TTL_MS = 15 * 60 * 1000;
-
+  // On mount: restore state for back-navigation, generate new seed for fresh loads
   useEffect(() => {
+    const navType = performance.getEntriesByType('navigation')[0]?.type;
+    const isBackNav = navType === 'back_forward';
+
     const existingSeed = sessionStorage.getItem('homepage-seed');
     const existingCollections = sessionStorage.getItem('homepage-collections');
-    const existingTimestamp = sessionStorage.getItem('homepage-timestamp');
 
-    const isStale = !existingTimestamp || (Date.now() - parseInt(existingTimestamp)) > SESSION_TTL_MS;
-
-    if (existingSeed && existingCollections && !isStale) {
-      // Back navigation within 15 min — restore previous state instantly
+    if (isBackNav && existingSeed && existingCollections) {
+      // Back navigation — restore previous state instantly
       try {
         setSeed(parseInt(existingSeed));
         setCollections(JSON.parse(existingCollections));
         setLoading(false);
+        return;
       } catch {
-        sessionStorage.removeItem('homepage-seed');
-        sessionStorage.removeItem('homepage-collections');
-        sessionStorage.removeItem('homepage-timestamp');
-        const newSeed = Math.floor(Math.random() * 1000000);
-        sessionStorage.setItem('homepage-seed', newSeed.toString());
-        sessionStorage.setItem('homepage-timestamp', Date.now().toString());
-        setSeed(newSeed);
+        // Fall through to fresh load
       }
-    } else {
-      // Fresh load or stale cache — new random seed
-      sessionStorage.removeItem('homepage-collections');
-      const newSeed = Math.floor(Math.random() * 1000000);
-      sessionStorage.setItem('homepage-seed', newSeed.toString());
-      sessionStorage.setItem('homepage-timestamp', Date.now().toString());
-      setSeed(newSeed);
     }
+
+    // Fresh load — always generate a new seed
+    sessionStorage.removeItem('homepage-collections');
+    const newSeed = Math.floor(Math.random() * 1000000);
+    sessionStorage.setItem('homepage-seed', newSeed.toString());
+    setSeed(newSeed);
   }, []);
 
   // Fetch collections when seed is ready or page changes
