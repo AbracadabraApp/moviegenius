@@ -25,16 +25,19 @@ export default function GeniusPage() {
     FavoritesManager._cache.hearted = null;
     FavoritesManager._cache.bookmarked = null;
 
+    const heartedMovies = FavoritesManager.getHeartedMovies();
+    const seenIds = heartedMovies.map(m => m.id).filter(Boolean);
+
     const savedMovies = FavoritesManager.getBookmarkedMovies();
-    const savedIds = savedMovies.map(m => m.tmdbId).filter(Boolean);
+    const bookmarkedIds = savedMovies.map(m => m.tmdbId).filter(Boolean);
+
+    // Use both hearted and bookmarked as seeds; dedupe
+    const savedIds = [...new Set([...seenIds, ...bookmarkedIds])];
 
     if (savedIds.length < MIN_SAVES) {
       router.replace('/genius/start');
       return;
     }
-
-    const heartedMovies = FavoritesManager.getHeartedMovies();
-    const seenIds = heartedMovies.map(m => m.id).filter(Boolean);
 
     setLoading(true);
 
