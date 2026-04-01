@@ -199,9 +199,6 @@ export default function GeniusStartPage() {
       <div style={cs.container}>
         <div style={cs.header}>
           <div style={cs.heading}>Let's get you some recommendations: click on movies you want to watch.</div>
-          {score > 0 && score < MIN_SAVES && (
-            <div style={cs.progress}>{score} of {MIN_SAVES} to unlock Genius</div>
-          )}
         </div>
 
         <div style={cs.grid}>
@@ -234,11 +231,6 @@ export default function GeniusStartPage() {
           })}
         </div>
 
-        {score >= MIN_SAVES && (
-          <div style={cs.ctaBar}>
-            <button style={cs.ctaBtn} onClick={() => router.push('/genius')}>Find my collections →</button>
-          </div>
-        )}
       </div>
     </PhoneFrame>
   );
