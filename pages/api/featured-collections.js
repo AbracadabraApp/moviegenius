@@ -52,7 +52,10 @@ export default async function handler(req, res) {
       SELECT ec.id, ec.title, ec.categories, ec.movie_count, bl.quality_score
       FROM editorial_counts ec
       JOIN browse_lists bl ON bl.id = ec.id
-      ORDER BY (bl.quality_score * 2 + (('x' || substr(md5(ec.id::text || $1::text), 1, 8))::bit(32)::int::float / 2147483647.0)) DESC
+      ORDER BY (
+        (bl.quality_score / NULLIF(MAX(bl.quality_score) OVER (), 0)) +
+        (('x' || substr(md5(ec.id::text || $1::text), 1, 8))::bit(32)::int::float / 2147483647.0)
+      ) DESC
       LIMIT 100
     `;
 
