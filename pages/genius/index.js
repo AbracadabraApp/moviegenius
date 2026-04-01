@@ -26,7 +26,7 @@ export default function GeniusPage() {
     FavoritesManager._cache.bookmarked = null;
 
     const heartedMovies = FavoritesManager.getHeartedMovies();
-    const seenIds = heartedMovies.map(m => m.id).filter(Boolean);
+    const seenIds = heartedMovies.map(m => m.tmdbId || m.tmdb_id).filter(Boolean);
 
     const savedMovies = FavoritesManager.getBookmarkedMovies();
     const bookmarkedIds = savedMovies.map(m => m.tmdbId).filter(Boolean);

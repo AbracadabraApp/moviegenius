@@ -27,7 +27,7 @@ export default async function handler(req, res) {
   }
 
   const { savedIds = [], seenIds = [] } = req.body;
-  const allIds = [...new Set(savedIds)].filter(id => Number.isInteger(id));
+  const allIds = [...new Set(savedIds)].map(id => parseInt(id)).filter(id => Number.isInteger(id) && id > 0);
   const seenSet = new Set(seenIds.filter(id => Number.isInteger(id)));
 
   if (allIds.length === 0) {
