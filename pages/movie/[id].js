@@ -27,6 +27,7 @@ export default function MovieDetailPage() {
 
   const [movie, setMovie] = useState(null);
   const [streaming, setStreaming] = useState(null);
+  const [unifiedData, setUnifiedData] = useState(null);
   const [error, setError] = useState(null);
   const [hearted, setHearted] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
@@ -36,29 +37,35 @@ export default function MovieDetailPage() {
 
     const fetchMovie = async () => {
       try {
-        // Fetch movie metadata from TMDB
-        let tmdbData = null;
-        try {
-          const tmdbResponse = await fetch(`/api/tmdb-movie?id=${finalMovieId}`);
-          if (tmdbResponse.ok) {
-            tmdbData = await tmdbResponse.json();
+        // Use unified API endpoint - replaces 4 separate calls
+        const response = await fetch(`/api/v1/movie/${finalMovieId}`);
+
+        if (!response.ok) {
+          if (response.status === 404) {
+            throw new Error('Movie could not be found');
           }
-        } catch (tmdbError) {
-          console.warn('TMDB API unavailable:', tmdbError.message);
+          throw new Error(`Failed to fetch movie: ${response.status}`);
         }
 
-        if (tmdbData) {
-          setMovie(tmdbData);
-        }
+        const data = await response.json();
+        setUnifiedData(data);
 
-        // Fetch streaming availability
-        const streamingResponse = await fetch(`/api/movie-data?id=${finalMovieId}`);
-        if (streamingResponse.ok) {
-          const streamingData = await streamingResponse.json();
-          setStreaming(streamingData);
-        } else {
-          setStreaming({ streaming_data: null });
-        }
+        // Map unified response to existing state structure for compatibility
+        setMovie({
+          tmdb_id: data.movie.tmdb_id,
+          title: data.movie.title,
+          year: data.movie.year,
+          release_date: data.movie.release_date,
+          poster_path: data.movie.poster_url?.replace('https://image.tmdb.org/t/p/w500', ''),
+          overview: data.movie.slug || ''
+        });
+
+        setStreaming({
+          slug: data.movie.slug,
+          streaming_data: data.movie.streaming_data,
+          contributors_json: data.contributors
+        });
+
       } catch (err) {
         setError(err.message);
       }
@@ -210,7 +217,7 @@ export default function MovieDetailPage() {
 
           {/* Footer */}
           <ErrorBoundary level="section">
-            <MovieCreativeFooter movie={movie} />
+            <MovieCreativeFooter movie={movie} contributors={streaming?.contributors_json} />
           </ErrorBoundary>
 
           {/* More Ideas */}

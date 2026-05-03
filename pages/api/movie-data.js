@@ -24,7 +24,7 @@ export default async function handler(req, res) {
     await client.connect();
 
     const result = await client.query(
-      'SELECT tmdb_id, title, year, slug, streaming_data FROM movies WHERE tmdb_id = $1',
+      'SELECT tmdb_id, title, year, slug, streaming_data, contributors_json FROM movies WHERE tmdb_id = $1',
       [parseInt(id)]
     );
 
@@ -42,7 +42,8 @@ export default async function handler(req, res) {
       title: movie.title,
       year: movie.year,
       slug: movie.slug || null,
-      streaming_data: movie.streaming_data
+      streaming_data: movie.streaming_data,
+      contributors_json: movie.contributors_json || null
     });
   } catch (error) {
     console.error('❌ movie-data fetch failed:', error);

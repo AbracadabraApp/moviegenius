@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 
-const MovieCreativeFooter = ({ analysis, movie }) => {
+const MovieCreativeFooter = ({ analysis, movie, contributors: contributorsProp }) => {
   const router = useRouter();
-  const [contributors, setContributors] = useState({});
+  const [contributors, setContributors] = useState(contributorsProp || {});
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [expanded, setExpanded] = useState(false);
@@ -11,10 +11,18 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
   // Get movie ID from movie prop or router - handle both tmdb_id and id fields
   const movieId = movie?.tmdb_id || movie?.id || router.query.id;
 
-  // Fetch contributors only when expanded — no point loading until user asks
+  // Set contributors from prop when it changes
+  useEffect(() => {
+    if (contributorsProp && Object.keys(contributorsProp).length > 0) {
+      setContributors(contributorsProp);
+    }
+  }, [contributorsProp]);
+
+  // Fetch contributors only when expanded AND no contributorsProp — no point loading until user asks
   useEffect(() => {
     if (!expanded || !movieId) return;
-    if (Object.keys(contributors).length > 0) return; // already fetched
+    if (Object.keys(contributors).length > 0) return; // already have data from prop or previous fetch
+    if (contributorsProp) return; // have prop data, skip fetch
 
     // Skip API calls if we have static data with keyElements
     if (movie?.staticData && (movie?.keyElements || analysis?.keyElements)) {
@@ -47,7 +55,7 @@ const MovieCreativeFooter = ({ analysis, movie }) => {
     };
 
     fetchContributors();
-  }, [expanded, movieId]);
+  }, [expanded, movieId, contributorsProp]);
   
   // Also try to extract keyElements from legacy analysis format as fallback
   let legacyKeyElements = {};
