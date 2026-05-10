@@ -35,14 +35,17 @@
 2. **Poster** - 267×400px with trailer overlay button
 3. **WhyWatch** - Verdict (YES/NO) + 3 bullet reasons + context paragraph
 4. **Seen/Add buttons** - User interaction controls
-5. **Cast/Crew** - MovieCreativeFooter with contributors
-6. **MoreIdeas** - 15 related movies (hide section if null)
+5. **MoreIdeas** - 15 related movies (hide section if null)
+
+**Deferred to Later Version:**
+6. ~~**Cast/Crew**~~ - Contributors deferred (only 41% coverage, Phase 3+)
 
 **Key Details:**
 - Mobile-first design (390px width target)
 - No separate title/year display (poster is the header)
 - WhyWatch context paragraph is part of WhyWatch data (not separate slug field)
 - MoreIdeas should gracefully hide when null (don't show empty state)
+- Contributors deferred to later version (Phase 3+) due to 41% coverage
 
 ---
 
@@ -74,8 +77,8 @@ struct MovieResponse: Codable {
     let movie: Movie
     let whyWatch: WhyWatch?
     let moreIdeas: [MoreIdea]?
-    let contributors: Contributors?
-    let analysis: Analysis?
+    // let contributors: Contributors?  // Deferred to Phase 3+
+    // let analysis: Analysis?          // Legacy, not used
 }
 
 struct Movie: Codable, Identifiable {
@@ -118,25 +121,26 @@ struct MoreIdea: Codable, Identifiable {
     }
 }
 
-struct Contributors: Codable {
-    let cast: [CastMember]?
-    let crew: [CrewMember]?
-}
-
-struct CastMember: Codable, Identifiable {
-    let id: Int
-    let name: String
-    let character: String?
-    let profilePath: String?
-}
-
-struct CrewMember: Codable, Identifiable {
-    let id: Int
-    let name: String
-    let job: String?
-    let department: String?
-    let profilePath: String?
-}
+// Contributors deferred to Phase 3+
+// struct Contributors: Codable {
+//     let cast: [CastMember]?
+//     let crew: [CrewMember]?
+// }
+//
+// struct CastMember: Codable, Identifiable {
+//     let id: Int
+//     let name: String
+//     let character: String?
+//     let profilePath: String?
+// }
+//
+// struct CrewMember: Codable, Identifiable {
+//     let id: Int
+//     let name: String
+//     let job: String?
+//     let department: String?
+//     let profilePath: String?
+// }
 ```
 
 #### 1.3 API Client Service
@@ -173,7 +177,7 @@ enum APIError: Error {
 
 #### 1.4 Movie Detail View
 
-Build the 6-component structure:
+Build the 5-component MVP structure (contributors deferred):
 
 ```swift
 // Views/MovieDetailView.swift
@@ -207,15 +211,15 @@ struct MovieDetailView: View {
                     // 4. Seen/Add buttons (placeholder for Phase 3)
                     ActionButtonsPlaceholder()
 
-                    // 5. Cast/Crew
-                    if let contributors = movie.contributors {
-                        ContributorsView(contributors: contributors)
-                    }
-
-                    // 6. MoreIdeas (hide if null)
+                    // 5. MoreIdeas (hide if null)
                     if let moreIdeas = movie.moreIdeas, !moreIdeas.isEmpty {
                         MoreIdeasView(moreIdeas: moreIdeas)
                     }
+
+                    // Cast/Crew deferred to Phase 3+
+                    // if let contributors = movie.contributors {
+                    //     ContributorsView(contributors: contributors)
+                    // }
                 } else if viewModel.isLoading {
                     ProgressView("Loading...")
                 } else if let error = viewModel.error {
@@ -389,54 +393,10 @@ struct MoreIdeaCard: View {
 }
 ```
 
-**ContributorsView:**
+**ContributorsView (Deferred to Phase 3+):**
 ```swift
-struct ContributorsView: View {
-    let contributors: Contributors
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            if let cast = contributors.cast, !cast.isEmpty {
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("Cast")
-                        .font(.headline)
-
-                    ForEach(cast.prefix(5)) { member in
-                        HStack {
-                            Text(member.name)
-                            Spacer()
-                            if let character = member.character {
-                                Text(character)
-                                    .foregroundColor(.secondary)
-                                    .font(.caption)
-                            }
-                        }
-                    }
-                }
-            }
-
-            if let crew = contributors.crew, !crew.isEmpty {
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("Crew")
-                        .font(.headline)
-
-                    ForEach(crew.prefix(5)) { member in
-                        HStack {
-                            Text(member.name)
-                            Spacer()
-                            if let job = member.job {
-                                Text(job)
-                                    .foregroundColor(.secondary)
-                                    .font(.caption)
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .padding()
-    }
-}
+// Deferred - only 41% coverage, not MVP critical
+// Will implement when coverage improves or Phase 3 features added
 ```
 
 #### 1.6 Testing
@@ -447,11 +407,11 @@ struct ContributorsView: View {
 - [ ] Confirm 390px width constraint
 
 **Success Criteria:**
-- ✅ Movie detail screen renders all 6 components correctly
+- ✅ Movie detail screen renders all 5 MVP components correctly
 - ✅ Unified API call returns complete data
 - ✅ MoreIdeas hidden when null
 - ✅ Build compiles without errors
-- ✅ UI matches web production design
+- ✅ UI matches web production design (excluding contributors)
 
 ---
 
@@ -502,22 +462,28 @@ struct ContributorsView: View {
 
 **Goal:** Polish and additional features
 
-#### 4.1 Trailer Playback
+#### 4.1 Contributors (Cast/Crew)
+- [ ] Implement ContributorsView
+- [ ] Handle 41% coverage gracefully
+- [ ] Show placeholder when missing
+- [ ] Link to person detail pages (future)
+
+#### 4.2 Trailer Playback
 - [ ] AVPlayer integration for trailer URLs
 - [ ] Full-screen video player
 - [ ] Play/pause controls
 
-#### 4.2 Image Caching
+#### 4.3 Image Caching
 - [ ] Implement poster image caching
 - [ ] Optimize memory usage
 - [ ] Pre-load nearby movies
 
-#### 4.3 Offline Support
+#### 4.4 Offline Support
 - [ ] Cache movie data locally
 - [ ] Offline browsing of previously viewed movies
 - [ ] Sync when connection restored
 
-#### 4.4 Accessibility
+#### 4.5 Accessibility
 - [ ] VoiceOver support
 - [ ] Dynamic Type
 - [ ] Color contrast compliance
