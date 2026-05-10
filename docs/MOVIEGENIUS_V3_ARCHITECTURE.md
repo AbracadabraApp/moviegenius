@@ -33,7 +33,9 @@ MovieGenius currently has **broken movie linking** (17K+ analyses claim links bu
 
 ## Current State Analysis
 
-### Movie Analysis System (BROKEN)
+### Movie Analysis System (DEPRECATED)
+
+**Status:** Legacy 500-word analysis format deprecated. Current movie pages use WhyWatch content instead.
 
 **Database:**
 ```sql

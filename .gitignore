@@ -76,3 +76,15 @@ pages/**/*-static.js
 **/*.bak
 pages/movie/[id]-original.js
 .claude/worktrees/
+
+# iOS / Xcode
+ios/**/build/
+ios/**/DerivedData/
+ios/**/*.xcworkspace/xcuserdata/
+ios/**/*.xcodeproj/xcuserdata/
+ios/**/*.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+*.swp
+*~.nib
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
