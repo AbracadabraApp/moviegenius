@@ -2,71 +2,88 @@
 //  TrailerPlayerView.swift
 //  moviegenius
 //
-//  Full-screen trailer player with WebKit (YouTube embed)
+//  Opens YouTube trailer in YouTube app or Safari
 //
 
 import SwiftUI
-import WebKit
 
 struct TrailerPlayerView: View {
     let youtubeId: String
     @Environment(\.dismiss) var dismiss
+    @Environment(\.openURL) var openURL
+    @State private var isOpening = true
 
     var body: some View {
-        NavigationView {
-            YouTubePlayerView(videoId: youtubeId)
-                .navigationTitle("Trailer")
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .cancellationAction) {
-                        Button("Done") {
-                            dismiss()
-                        }
-                    }
-                }
+        VStack(spacing: 20) {
+            if isOpening {
+                Image(systemName: "play.rectangle.fill")
+                    .font(.system(size: 64))
+                    .foregroundColor(.red)
+
+                Text("Opening trailer...")
+                    .font(.headline)
+
+                ProgressView()
+                    .padding(.top, 8)
+            } else {
+                Image(systemName: "exclamationmark.triangle.fill")
+                    .font(.system(size: 64))
+                    .foregroundColor(.orange)
+
+                Text("Unable to open YouTube")
+                    .font(.headline)
+
+                Text("Please check your internet connection")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
+            }
+
+            Button("Close") {
+                dismiss()
+            }
+            .buttonStyle(.bordered)
+            .padding(.top)
+        }
+        .padding()
+        .task {
+            await openTrailer()
         }
     }
-}
 
-struct YouTubePlayerView: UIViewRepresentable {
-    let videoId: String
+    private func openTrailer() async {
+        // YouTube app deep link (vnd.youtube:// is more reliable than youtube://)
+        let youtubeAppURL = URL(string: "vnd.youtube://\(youtubeId)")!
+        // Fallback to YouTube web URL
+        let webURL = URL(string: "https://www.youtube.com/watch?v=\(youtubeId)")!
 
-    func makeUIView(context: Context) -> WKWebView {
-        let webView = WKWebView()
-        webView.scrollView.isScrollEnabled = false
-        return webView
+        // Try YouTube app first if installed
+        if await UIApplication.shared.canOpenURL(youtubeAppURL) {
+            let opened = await openURL(youtubeAppURL)
+            if opened {
+                // Give the app time to switch before dismissing
+                try? await Task.sleep(for: .milliseconds(500))
+                dismiss()
+            } else {
+                // YouTube app failed, try web URL
+                await openWebURL(webURL)
+            }
+        } else {
+            // YouTube app not installed, use web URL
+            await openWebURL(webURL)
+        }
     }
 
-    func updateUIView(_ webView: WKWebView, context: Context) {
-        // YouTube embed URL with autoplay
-        let embedHTML = """
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <style>
-                body { margin: 0; padding: 0; background: black; }
-                iframe {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    border: none;
-                }
-            </style>
-        </head>
-        <body>
-            <iframe
-                src="https://www.youtube.com/embed/\(videoId)?autoplay=1&playsinline=1"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </body>
-        </html>
-        """
-        webView.loadHTMLString(embedHTML, baseURL: nil)
+    private func openWebURL(_ url: URL) async {
+        let opened = await openURL(url)
+        if opened {
+            try? await Task.sleep(for: .milliseconds(500))
+            dismiss()
+        } else {
+            // Failed to open - show error state
+            isOpening = false
+        }
     }
 }
 
