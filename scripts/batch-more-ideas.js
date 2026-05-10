@@ -36,7 +36,11 @@ const CONFIG = {
   batchSize: 25,
   pollInterval: 30000,
   maxWaitMinutes: null,  // Remove timeout - process continuously until complete
-  progressFile: 'batch-progress.json'
+  progressFile: 'batch-progress.json',
+  models: {
+    sonnet: 'claude-3-5-sonnet-20240620',  // Batch API compatible Sonnet
+    haiku: 'claude-3-haiku-20240307'        // Batch API compatible Haiku
+  }
 };
 
 /**
@@ -236,14 +240,14 @@ async function getMoviesNeedingMoreIdeas(limit, offset = 0) {
 }
 
 /**
- * Create batch requests
+ * Create batch requests (Batch API doesn't support system parameter or caching)
  */
-function createBatchRequests(movies) {
-  console.log(`\n📝 Creating batch requests for ${movies.length} movies...`);
-  
+function createBatchRequests(movies, model) {
+  console.log(`\n📝 Creating batch requests for ${movies.length} movies using ${model}...`);
+
   return movies.map(movie => {
     const movieTitle = `${movie.title} (${movie.year})`;
-    
+
     const prompt = `You are a passionate film expert who gets straight to the point. Skip the fluff and dive into great movies.
 
 Generate 15 movie recommendations for: ${movieTitle}
@@ -263,7 +267,7 @@ Return ONLY valid JSON in this exact format:
     return {
       custom_id: `movie-${movie.tmdb_id}`,
       params: {
-        model: "claude-3-5-sonnet-20241022",
+        model: model,
         max_tokens: 1500,
         temperature: 0.4,
         messages: [
@@ -280,25 +284,26 @@ Return ONLY valid JSON in this exact format:
 /**
  * Submit a batch
  */
-async function submitBatch(movies, batchNumber) {
+async function submitBatch(movies, batchNumber, model) {
   if (!movies || movies.length === 0) {
     throw new Error(`Batch ${batchNumber} has no movies`);
   }
 
   console.log(`\n📤 Submitting batch ${batchNumber} with ${movies.length} movies...`);
-  
-  const requests = createBatchRequests(movies);
-  
+
+  const requests = createBatchRequests(movies, model);
+
   try {
     const batch = await anthropic.beta.messages.batches.create({
       requests: requests
     });
-    
+
     console.log(`✓ Batch ${batchNumber} submitted successfully`);
     console.log(`  Batch ID: ${batch.id}`);
+    console.log(`  Model: ${model}`);
     console.log(`  Status: ${batch.processing_status}`);
     console.log(`  Requests: ${batch.request_counts?.processing || 0} processing, ${batch.request_counts?.pending || 0} pending`);
-    
+
     return batch;
   } catch (error) {
     console.error(`❌ Failed to submit batch ${batchNumber}:`, error.message);
@@ -479,10 +484,21 @@ async function processResult(result, movieMap, batchNumber) {
       console.log(`       ✓ Verification: ${verifyResult.rows[0].count} record(s) found`);
       
       // Calculate cost (batch API gets 50% discount)
+      // Note: cache_creation_input_tokens and cache_read_input_tokens track caching
       const inputTokens = usage?.input_tokens || 0;
       const outputTokens = usage?.output_tokens || 0;
-      const cost = ((inputTokens * 3) + (outputTokens * 15)) / 1000000 * 0.5; // 50% batch discount
-      
+      const cacheCreationTokens = usage?.cache_creation_input_tokens || 0;
+      const cacheReadTokens = usage?.cache_read_input_tokens || 0;
+
+      // Pricing: Input $3/M, Cache write $3.75/M, Cache read $0.30/M, Output $15/M
+      // All with 50% batch discount
+      const cost = (
+        (inputTokens * 3) +
+        (cacheCreationTokens * 3.75) +
+        (cacheReadTokens * 0.30) +
+        (outputTokens * 15)
+      ) / 1000000 * 0.5; // 50% batch discount
+
       return {
         success: true,
         tmdbId,
@@ -490,7 +506,12 @@ async function processResult(result, movieMap, batchNumber) {
         recommendations: response.moreIdeas.length,
         dbId: insertResult.rows[0].id,
         cost,
-        tokens: { input: inputTokens, output: outputTokens }
+        tokens: {
+          input: inputTokens,
+          output: outputTokens,
+          cacheCreation: cacheCreationTokens,
+          cacheRead: cacheReadTokens
+        }
       };
       
     } catch (dbError) {
@@ -597,11 +618,21 @@ async function main() {
     const limitArg = args.find(arg => arg.startsWith('--limit='));
     const batchSizeArg = args.find(arg => arg.startsWith('--batch-size='));
     const offsetArg = args.find(arg => arg.startsWith('--offset='));
-    
+    const modelArg = args.find(arg => arg.startsWith('--model='));
+
     const limit = limitArg ? parseInt(limitArg.split('=')[1]) : null;
     const customBatchSize = batchSizeArg ? parseInt(batchSizeArg.split('=')[1]) : null;
     const offset = offsetArg ? parseInt(offsetArg.split('=')[1]) : 0;
     const dryRun = args.includes('--dry-run');
+
+    // Parse model argument (sonnet or haiku)
+    const modelChoice = modelArg ? modelArg.split('=')[1] : 'sonnet';
+    const model = CONFIG.models[modelChoice] || CONFIG.models.sonnet;
+
+    if (modelArg && !CONFIG.models[modelChoice]) {
+      console.log(`⚠️  Unknown model '${modelChoice}', using 'sonnet' as default`);
+      console.log(`   Available models: ${Object.keys(CONFIG.models).join(', ')}`);
+    }
 
     // Apply custom batch size
     if (customBatchSize && customBatchSize > 0 && customBatchSize <= 100) {
@@ -609,9 +640,11 @@ async function main() {
     }
 
     console.log(`\n⚙️  Configuration:`);
+    console.log(`   Model: ${modelChoice} (${model})`);
     console.log(`   Limit: ${limit || 'No limit'}`);
     console.log(`   Offset: ${offset}`);
     console.log(`   Batch size: ${CONFIG.batchSize}`);
+    console.log(`   Prompt caching: NOT SUPPORTED by Batch API`);
     console.log(`   Mode: ${dryRun ? 'DRY RUN' : 'PRODUCTION'}`);
 
     const tracker = new ProgressTracker();
@@ -649,8 +682,8 @@ async function main() {
       const batchNumber = Math.floor(i / CONFIG.batchSize) + 1;
       
       try {
-        const batch = await submitBatch(batchMovies, batchNumber);
-        
+        const batch = await submitBatch(batchMovies, batchNumber, model);
+
         // Add to processing list regardless of progress tracking
         allBatches.push({
           batch,
