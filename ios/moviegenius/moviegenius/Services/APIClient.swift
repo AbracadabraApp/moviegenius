@@ -63,9 +63,9 @@ enum APIError: Error, LocalizedError {
             return "Server error. Please try again."
         case .httpError(let code):
             return "Request failed (error \(code))"
-        case .networkError(.notConnectedToInternet), .networkError(.networkConnectionLost):
+        case .networkError(let error) where error.code == .notConnectedToInternet || error.code == .networkConnectionLost:
             return "No internet connection"
-        case .networkError(.timedOut):
+        case .networkError(let error) where error.code == .timedOut:
             return "Request timed out. Please try again."
         case .networkError:
             return "Network error. Please check your connection."

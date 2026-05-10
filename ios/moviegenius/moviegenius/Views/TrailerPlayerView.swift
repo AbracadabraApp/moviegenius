@@ -63,30 +63,15 @@ struct TrailerPlayerView: View {
 
         // Try YouTube app first if installed
         if UIApplication.shared.canOpenURL(youtubeAppURL) {
-            let opened = await openURL(youtubeAppURL)
-            if opened {
-                // Give the app time to switch before dismissing
-                try? await Task.sleep(for: .milliseconds(500))
-                dismiss()
-            } else {
-                // YouTube app failed, try web URL
-                await openWebURL(webURL)
-            }
-        } else {
-            // YouTube app not installed, use web URL
-            await openWebURL(webURL)
-        }
-    }
-
-    @MainActor
-    private func openWebURL(_ url: URL) async {
-        let opened = await openURL(url)
-        if opened {
+            openURL(youtubeAppURL)
+            // Give the app time to switch before dismissing
             try? await Task.sleep(for: .milliseconds(500))
             dismiss()
         } else {
-            // Failed to open - show error state
-            isOpening = false
+            // YouTube app not installed, use web URL
+            openURL(webURL)
+            try? await Task.sleep(for: .milliseconds(500))
+            dismiss()
         }
     }
 }
