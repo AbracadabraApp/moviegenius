@@ -9,13 +9,120 @@ This document provides a comprehensive reference for all MovieGenius API endpoin
 
 ## 📡 Core API Endpoints
 
-### Movie Analysis
+### Unified Movie Endpoint (v1) ⭐ **PRIMARY**
+
+#### GET `/api/v1/movie/{tmdbId}`
+**Recommended for all new integrations** - Replaces 4 waterfall API calls with a single optimized query. Returns complete movie data including metadata, WhyWatch recommendations, MoreIdeas, and contributors.
+
+**Performance:**
+- 67% faster than legacy endpoints (1,800ms → 600ms)
+- Single database query with optimized JOINs
+- Returns all data needed for movie detail pages
+
+**Parameters:**
+- `tmdbId` (required, path parameter): TMDB movie ID
+
+**Response:**
+```json
+{
+  "movie": {
+    "tmdb_id": 153,
+    "title": "Lost in Translation",
+    "year": 2003,
+    "official_title": "Lost in Translation",
+    "release_date": "2003-09-18",
+    "slug": "tagline-text-30-100-chars",
+    "poster_url": "https://image.tmdb.org/t/p/w500/...",
+    "trailer_url": "https://www.youtube.com/watch?v=...",
+    "streaming_data": { /* JustWatch data */ },
+    "has_analysis": true,
+    "has_linked_analysis": true,
+    "created_at": "2024-01-15T10:30:00.000Z",
+    "updated_at": "2024-01-15T10:30:00.000Z"
+  },
+  "whyWatch": {
+    "id": "uuid",
+    "recommendation": "YES",
+    "reasons": [
+      "Murray's restrained performance carries every quiet scene",
+      "Dialogue feels genuinely overheard, not written",
+      "Redefined American indie romance for the 2000s"
+    ],
+    "context": "Coppola shot guerrilla-style in real Tokyo locations without permits...",
+    "model": "claude-sonnet-4-6",
+    "created_at": "2024-01-15T10:30:00.000Z"
+  },
+  "moreIdeas": [
+    {
+      "tmdbId": 152601,
+      "title": "Her",
+      "year": 2013,
+      "connection": "Spike Jonze's film about loneliness in modern Tokyo..."
+    }
+    // ... 14 more related movies
+  ],
+  "contributors": {
+    "cast": [
+      {
+        "id": 1234,
+        "name": "Bill Murray",
+        "character": "Bob Harris",
+        "profile_path": "/path.jpg"
+      }
+    ],
+    "crew": [
+      {
+        "id": 5678,
+        "name": "Sofia Coppola",
+        "job": "Director",
+        "department": "Directing",
+        "profile_path": "/path.jpg"
+      }
+    ]
+  },
+  "analysis": {
+    "id": "uuid",
+    "query_text": "Analyze Lost in Translation",
+    "claude_response": "Full analysis text...",
+    "analysis_type": "standard",
+    "created_at": "2024-01-15T10:30:00.000Z"
+  }
+}
+```
+
+**Field Notes:**
+- `whyWatch` can be `null` if movie hasn't been analyzed (15% of catalog)
+- `moreIdeas` can be `null` for ~40% of movies - hide section when null
+- `analysis` is legacy data (deprecated 400-word format) - not used on production pages
+- `contributors` contains full cast/crew from TMDB
+- `streaming_data` is JustWatch format (where to watch)
+
+**Coverage (32,950 movies total):**
+- WhyWatch: 28,156 (85%)
+- MoreIdeas: 19,915 (60%)
+- Contributors: 13,645 (41%)
+
+**Example:**
+```bash
+curl "https://moviegenius.ai/api/v1/movie/153"
+```
+
+**Changelog:**
+- **2026-05-08**: Upgraded to `enhanced_why_watch_v3` table (adds `context` field, +8,208 movies)
+- **2026-05-08**: Fixed MoreIdeas JOIN bug (now returns for 19,915 movies)
+- **2026-05-03**: Initial release (Week 1)
+
+---
+
+### Movie Analysis (Legacy)
 
 #### GET `/api/movie-analysis`
 Get or generate AI analysis for a specific movie.
 
 **Parameters:**
 - `tmdbId` (required): TMDB movie ID
+
+**DEPRECATION NOTE:** Legacy 500-word analysis format is deprecated. Current movie pages use WhyWatch content instead (binary YES/NO recommendations with 3 reasons). This endpoint remains for backward compatibility only.
 
 **Response:**
 ```json
@@ -308,4 +415,4 @@ curl -X POST "https://moviegenius.ai/api/cache-warming" \
 
 *This API reference covers all public endpoints. For additional technical details, see the [Nuclear Static Generation Process](architecture/NUCLEAR_STATIC_GENERATION_PROCESS.md) and [Performance Analysis](architecture/PERFORMANCE-ANALYSIS.md) documentation.*
 
-*Last updated: July 24, 2025*
+*Last updated: May 8, 2026*

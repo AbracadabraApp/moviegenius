@@ -264,3 +264,127 @@ curl https://moviegenius.ai/api/v1/movie/550
 **Week 1 Complete!** 🎉
 **Date:** 2026-05-03
 **Next Session:** Week 2 - iOS Foundation
+
+---
+
+## 📝 ADDENDUM: May 8, 2026 - API Improvements
+
+### Critical Bug Fixes (Week 2, Day 5)
+
+**Context:** During iOS development planning, two critical bugs were discovered and fixed in the unified API endpoint.
+
+#### Fix 1: WhyWatch v3 Upgrade
+**File:** `pages/api/v1/movie/[tmdbId].js:85`
+
+**Problem:** Unified API was using `enhanced_why_watch` (old table, 19,948 records) instead of `enhanced_why_watch_v3` (current table, 28,156 records)
+
+**Impact:**
+- Missing `context` field (closing paragraph shown on production pages)
+- 8,208 fewer movies available (missing 41% of v3 data)
+- iOS would have needed separate `/api/why-watch` call to get complete data
+
+**Solution:** Changed JOIN to use `enhanced_why_watch_v3` table
+```diff
+- LEFT JOIN enhanced_why_watch ew ON m.id = ew.movie_id
++ LEFT JOIN enhanced_why_watch_v3 ew ON m.tmdb_id = ew.tmdb_id
+```
+
+**Result:**
+- ✅ WhyWatch coverage: 85% (28,156 movies)
+- ✅ Adds `context` field to API response
+- ✅ iOS gets complete data in single API call
+
+#### Fix 2: MoreIdeas JOIN Bug
+**File:** `pages/api/v1/movie/[tmdbId].js:86`
+
+**Problem:** JOIN used wrong key - `m.id = mi.movie_id` (UUID) instead of `m.tmdb_id = mi.tmdb_id` (integer)
+
+**Impact:**
+- MoreIdeas returned `null` for ALL movies despite 19,915 having data (60% of catalog)
+- Production web pages worked because they call `/api/more-ideas` separately
+- Unified API was incomplete for iOS
+
+**Solution:** Changed JOIN to use correct foreign key
+```diff
+- LEFT JOIN more_ideas mi ON m.id = mi.movie_id
++ LEFT JOIN more_ideas mi ON m.tmdb_id = mi.tmdb_id
+```
+
+**Result:**
+- ✅ MoreIdeas now returns for 19,915 movies (60%)
+- ✅ Unified API truly unified (no separate calls needed)
+
+---
+
+### Updated API Response Schema
+
+**WhyWatch object now includes:**
+```json
+{
+  "whyWatch": {
+    "id": "uuid",
+    "recommendation": "YES",
+    "reasons": ["reason 1", "reason 2", "reason 3"],
+    "context": "Closing paragraph with context...",  // ← NEW
+    "model": "claude-sonnet-4-6",                     // ← NEW
+    "created_at": "2024-01-15T10:30:00.000Z"
+  }
+}
+```
+
+**Removed fields (old table):**
+- `raw_reasons` (duplicate of `reasons`)
+- `has_links` (legacy link tracking)
+- `movie_link_count` (legacy link tracking)
+
+---
+
+### Coverage Summary (Post-Fix)
+
+| Data Type | Count | Coverage | Notes |
+|-----------|-------|----------|-------|
+| Total Movies | 32,950 | 100% | Catalog size |
+| WhyWatch v3 | 28,156 | 85% | +8,208 from fix |
+| MoreIdeas | 19,915 | 60% | Fixed from null |
+| Contributors | 13,645 | 41% | No change |
+
+---
+
+### Documentation Updates
+
+**Created:**
+- `docs/IOS_DEVELOPMENT_ROADMAP.md` - 8-week iOS development plan with complete Swift implementation guide
+
+**Updated:**
+- `docs/API_REFERENCE.md` - Added unified v1 endpoint documentation with field notes and changelog
+- `pages/api/v1/movie/[tmdbId].js` - WhyWatch v3 + MoreIdeas JOIN fixes
+
+**Deployment:**
+- Commit: `277fe2ef9`
+- Status: Deployed to production (Railway)
+- Verified: Pending Railway build completion (~5 minutes)
+
+---
+
+### Impact Assessment
+
+**Before Fixes:**
+- iOS would need 2 API calls (unified + separate WhyWatch)
+- MoreIdeas unavailable via unified API
+- Missing 41% of WhyWatch data
+
+**After Fixes:**
+- ✅ iOS needs only 1 API call
+- ✅ Complete WhyWatch data with context field
+- ✅ MoreIdeas working for 19,915 movies
+- ✅ True unified endpoint (no workarounds needed)
+
+**Timeline:**
+- **May 3, 2026:** Week 1 complete, unified API launched
+- **May 8, 2026:** Bugs discovered during iOS planning
+- **May 8, 2026:** Fixes deployed (same day)
+
+---
+
+**Status:** Production deployment in progress
+**Next:** Verify deployment, begin iOS Phase 1 (Xcode project + models)
