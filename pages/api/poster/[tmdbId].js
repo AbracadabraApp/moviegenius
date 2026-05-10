@@ -1,12 +1,7 @@
 // Simple poster URL endpoint for iOS app
-// Returns poster URL for a given TMDB ID
+// Returns poster URL redirect for a given TMDB ID
 
-import { Pool } from 'pg';
-
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false
-});
+import { Client } from 'pg';
 
 export default async function handler(req, res) {
   const { tmdbId } = req.query;
@@ -15,10 +10,22 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'tmdbId required' });
   }
 
+  const parsedId = parseInt(tmdbId);
+  if (isNaN(parsedId)) {
+    return res.status(400).json({ error: 'tmdbId must be a number' });
+  }
+
+  const client = new Client({
+    connectionString: process.env.RAILWAY_DATABASE_URL || process.env.DATABASE_URL,
+    ssl: { rejectUnauthorized: false }
+  });
+
   try {
-    const result = await pool.query(
+    await client.connect();
+
+    const result = await client.query(
       'SELECT poster_url FROM movies WHERE tmdb_id = $1',
-      [parseInt(tmdbId)]
+      [parsedId]
     );
 
     if (result.rows.length === 0) {
@@ -36,5 +43,7 @@ export default async function handler(req, res) {
   } catch (error) {
     console.error('Poster fetch error:', error);
     res.status(500).json({ error: 'Internal server error' });
+  } finally {
+    await client.end();
   }
 }
