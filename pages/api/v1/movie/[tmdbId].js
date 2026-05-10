@@ -67,13 +67,12 @@ export default async function handler(req, res) {
         ma.link_count,
         ma.created_at as analysis_created_at,
 
-        -- WhyWatch data
+        -- WhyWatch data (v3)
         ew.id as whywatch_uuid,
         ew.recommendation,
         ew.reasons as whywatch_reasons,
-        ew.raw_reasons,
-        ew.has_links as whywatch_has_links,
-        ew.movie_link_count,
+        ew.context as whywatch_context,
+        ew.model as whywatch_model,
         ew.created_at as whywatch_created_at,
 
         -- MoreIdeas data
@@ -82,8 +81,8 @@ export default async function handler(req, res) {
 
       FROM movies m
       LEFT JOIN movie_analyses ma ON m.id = ma.movie_id
-      LEFT JOIN enhanced_why_watch ew ON m.id = ew.movie_id
-      LEFT JOIN more_ideas mi ON m.id = mi.movie_id
+      LEFT JOIN enhanced_why_watch_v3 ew ON m.tmdb_id = ew.tmdb_id
+      LEFT JOIN more_ideas mi ON m.tmdb_id = mi.tmdb_id
       WHERE m.tmdb_id = $1
       LIMIT 1
       `,
@@ -137,9 +136,8 @@ export default async function handler(req, res) {
         id: row.whywatch_uuid,
         recommendation: row.recommendation,
         reasons: row.whywatch_reasons || [],
-        raw_reasons: row.raw_reasons || null,
-        has_links: row.whywatch_has_links || false,
-        movie_link_count: row.movie_link_count || 0,
+        context: row.whywatch_context || null,
+        model: row.whywatch_model || null,
         created_at: row.whywatch_created_at
       } : null,
 
