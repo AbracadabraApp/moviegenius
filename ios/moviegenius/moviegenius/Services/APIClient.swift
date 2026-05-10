@@ -10,60 +10,67 @@ import Foundation
 actor APIClient {
     static let shared = APIClient()
     private let baseURL = "https://moviegenius.ai/api/v1"
+    private let session: URLSession
 
-    private init() {}
+    private init() {
+        let config = URLSessionConfiguration.default
+        config.timeoutIntervalForRequest = 15
+        config.waitsForConnectivity = false
+        self.session = URLSession(configuration: config)
+    }
 
     func fetchMovie(tmdbId: Int) async throws -> MovieResponse {
-        let url = URL(string: "\(baseURL)/movie/\(tmdbId)")!
-
-        let (data, response) = try await URLSession.shared.data(from: url)
-
-        guard let httpResponse = response as? HTTPURLResponse,
-              (200...299).contains(httpResponse.statusCode) else {
-            throw APIError.invalidResponse
+        guard let url = URL(string: "\(baseURL)/movie/\(tmdbId)") else {
+            throw APIError.invalidURL
         }
 
-        let decoder = JSONDecoder()
-        // Don't use .convertFromSnakeCase - API uses snake_case keys
-        // but we handle them with CodingKeys
-
         do {
-            return try decoder.decode(MovieResponse.self, from: data)
-        } catch {
-            // Print decoding error for debugging
-            print("Decoding error: \(error)")
-            if let decodingError = error as? DecodingError {
-                switch decodingError {
-                case .keyNotFound(let key, let context):
-                    print("Missing key: \(key.stringValue) - \(context.debugDescription)")
-                case .typeMismatch(let type, let context):
-                    print("Type mismatch for type: \(type) - \(context.debugDescription)")
-                case .valueNotFound(let type, let context):
-                    print("Value not found for type: \(type) - \(context.debugDescription)")
-                case .dataCorrupted(let context):
-                    print("Data corrupted: \(context.debugDescription)")
-                @unknown default:
-                    print("Unknown decoding error")
-                }
+            let (data, response) = try await session.data(from: url)
+
+            guard let httpResponse = response as? HTTPURLResponse else {
+                throw APIError.invalidResponse
             }
-            throw error
+
+            guard (200...299).contains(httpResponse.statusCode) else {
+                throw APIError.httpError(statusCode: httpResponse.statusCode)
+            }
+
+            return try JSONDecoder().decode(MovieResponse.self, from: data)
+        } catch let error as URLError {
+            throw APIError.networkError(underlying: error)
+        } catch let error as DecodingError {
+            throw APIError.decodingError(underlying: error)
         }
     }
 }
 
 enum APIError: Error, LocalizedError {
+    case invalidURL
     case invalidResponse
-    case networkError
-    case decodingError
+    case httpError(statusCode: Int)
+    case networkError(underlying: URLError)
+    case decodingError(underlying: DecodingError)
 
     var errorDescription: String? {
         switch self {
+        case .invalidURL:
+            return "Invalid movie ID"
         case .invalidResponse:
-            return "Invalid response from server"
+            return "Invalid server response"
+        case .httpError(let code) where code == 404:
+            return "Movie not found"
+        case .httpError(let code) where (500...599).contains(code):
+            return "Server error. Please try again."
+        case .httpError(let code):
+            return "Request failed (error \(code))"
+        case .networkError(.notConnectedToInternet), .networkError(.networkConnectionLost):
+            return "No internet connection"
+        case .networkError(.timedOut):
+            return "Request timed out. Please try again."
         case .networkError:
-            return "Network connection failed"
+            return "Network error. Please check your connection."
         case .decodingError:
-            return "Failed to decode response"
+            return "Unable to parse movie data"
         }
     }
 }

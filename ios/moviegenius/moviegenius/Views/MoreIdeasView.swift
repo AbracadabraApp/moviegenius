@@ -17,7 +17,7 @@ struct MoreIdeasView: View {
                 .padding(.horizontal)
 
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 12) {
+                LazyHStack(spacing: 12) {
                     ForEach(moreIdeas) { idea in
                         MoreIdeaCard(idea: idea)
                     }

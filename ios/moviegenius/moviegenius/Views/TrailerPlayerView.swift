@@ -52,14 +52,17 @@ struct TrailerPlayerView: View {
         }
     }
 
+    @MainActor
     private func openTrailer() async {
         // YouTube app deep link (vnd.youtube:// is more reliable than youtube://)
-        let youtubeAppURL = URL(string: "vnd.youtube://\(youtubeId)")!
-        // Fallback to YouTube web URL
-        let webURL = URL(string: "https://www.youtube.com/watch?v=\(youtubeId)")!
+        guard let youtubeAppURL = URL(string: "vnd.youtube://\(youtubeId)"),
+              let webURL = URL(string: "https://www.youtube.com/watch?v=\(youtubeId)") else {
+            isOpening = false
+            return
+        }
 
         // Try YouTube app first if installed
-        if await UIApplication.shared.canOpenURL(youtubeAppURL) {
+        if UIApplication.shared.canOpenURL(youtubeAppURL) {
             let opened = await openURL(youtubeAppURL)
             if opened {
                 // Give the app time to switch before dismissing
@@ -75,6 +78,7 @@ struct TrailerPlayerView: View {
         }
     }
 
+    @MainActor
     private func openWebURL(_ url: URL) async {
         let opened = await openURL(url)
         if opened {

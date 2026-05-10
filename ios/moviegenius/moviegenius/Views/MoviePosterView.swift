@@ -14,16 +14,24 @@ struct MoviePosterView: View {
 
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
-            AsyncImage(url: posterURL) { image in
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-            } placeholder: {
-                Rectangle()
-                    .fill(Color.gray.opacity(0.3))
-                    .overlay(
-                        ProgressView()
-                    )
+            AsyncImage(url: posterURL) { phase in
+                switch phase {
+                case .empty:
+                    placeholderView
+                case .success(let image):
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                case .failure:
+                    placeholderView
+                        .overlay(
+                            Image(systemName: "photo.fill")
+                                .font(.system(size: 32))
+                                .foregroundColor(.red.opacity(0.5))
+                        )
+                @unknown default:
+                    placeholderView
+                }
             }
             .frame(width: 125, height: 188)
             .clipped()
@@ -49,6 +57,12 @@ struct MoviePosterView: View {
     private var posterURL: URL? {
         guard let posterUrl = posterUrl else { return nil }
         return URL(string: posterUrl)
+    }
+
+    private var placeholderView: some View {
+        Rectangle()
+            .fill(Color.gray.opacity(0.3))
+            .overlay(ProgressView())
     }
 }
 
