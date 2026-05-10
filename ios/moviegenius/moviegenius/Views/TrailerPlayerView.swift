@@ -2,77 +2,88 @@
 //  TrailerPlayerView.swift
 //  moviegenius
 //
-//  Opens YouTube trailer in YouTube app or Safari
+//  Embedded YouTube trailer player using WKWebView
 //
 
 import SwiftUI
+import WebKit
 
 struct TrailerPlayerView: View {
     let youtubeId: String
     @Environment(\.dismiss) var dismiss
-    @Environment(\.openURL) var openURL
-    @State private var isOpening = true
 
     var body: some View {
-        VStack(spacing: 20) {
-            if isOpening {
-                Image(systemName: "play.rectangle.fill")
-                    .font(.system(size: 64))
-                    .foregroundColor(.red)
+        ZStack(alignment: .topTrailing) {
+            // YouTube embedded player
+            YouTubePlayerView(videoId: youtubeId)
+                .edgesIgnoringSafeArea(.all)
 
-                Text("Opening trailer...")
-                    .font(.headline)
-
-                ProgressView()
-                    .padding(.top, 8)
-            } else {
-                Image(systemName: "exclamationmark.triangle.fill")
-                    .font(.system(size: 64))
-                    .foregroundColor(.orange)
-
-                Text("Unable to open YouTube")
-                    .font(.headline)
-
-                Text("Please check your internet connection")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal)
-            }
-
-            Button("Close") {
+            // Close button
+            Button {
                 dismiss()
+            } label: {
+                Image(systemName: "xmark.circle.fill")
+                    .font(.system(size: 30))
+                    .foregroundColor(.white)
+                    .shadow(radius: 4)
             }
-            .buttonStyle(.bordered)
-            .padding(.top)
+            .padding()
         }
-        .padding()
-        .task {
-            await openTrailer()
-        }
+        .background(Color.black)
+    }
+}
+
+struct YouTubePlayerView: UIViewRepresentable {
+    let videoId: String
+
+    func makeUIView(context: Context) -> WKWebView {
+        let configuration = WKWebViewConfiguration()
+        configuration.allowsInlineMediaPlayback = true
+        configuration.mediaTypesRequiringUserActionForPlayback = []
+
+        let webView = WKWebView(frame: .zero, configuration: configuration)
+        webView.scrollView.isScrollEnabled = false
+        return webView
     }
 
-    @MainActor
-    private func openTrailer() async {
-        // YouTube app deep link (vnd.youtube:// is more reliable than youtube://)
-        guard let youtubeAppURL = URL(string: "vnd.youtube://\(youtubeId)"),
-              let webURL = URL(string: "https://www.youtube.com/watch?v=\(youtubeId)") else {
-            isOpening = false
-            return
-        }
+    func updateUIView(_ webView: WKWebView, context: Context) {
+        // YouTube embed URL with autoplay
+        let embedHTML = """
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+            <style>
+                * { margin: 0; padding: 0; }
+                body { background: #000; }
+                .video-container {
+                    position: relative;
+                    width: 100vw;
+                    height: 100vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/\(videoId)?autoplay=1&playsinline=1&rel=0&modestbranding=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </body>
+        </html>
+        """
 
-        // Try YouTube app first if installed
-        if UIApplication.shared.canOpenURL(youtubeAppURL) {
-            openURL(youtubeAppURL)
-            // Give the app time to switch before dismissing
-            try? await Task.sleep(for: .milliseconds(500))
-            dismiss()
-        } else {
-            // YouTube app not installed, use web URL
-            openURL(webURL)
-            try? await Task.sleep(for: .milliseconds(500))
-            dismiss()
-        }
+        webView.loadHTMLString(embedHTML, baseURL: nil)
     }
 }
 
