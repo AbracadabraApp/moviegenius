@@ -2,7 +2,7 @@
 //  MoviePosterView.swift
 //  moviegenius
 //
-//  Movie poster with trailer overlay button
+//  HERO movie poster - largest, most prominent element
 //
 
 import SwiftUI
@@ -18,40 +18,64 @@ struct MoviePosterView: View {
                 switch phase {
                 case .empty:
                     placeholderView
+                        .overlay(
+                            ProgressView()
+                                .scaleEffect(1.5)
+                        )
                 case .success(let image):
                     image
                         .resizable()
-                        .aspectRatio(contentMode: .fill)
+                        .aspectRatio(2/3, contentMode: .fill)
+                        .transition(.opacity.combined(with: .scale(scale: 1.05)))
                 case .failure:
                     placeholderView
                         .overlay(
-                            Image(systemName: "photo.fill")
-                                .font(.system(size: 32))
-                                .foregroundColor(.red.opacity(0.5))
+                            VStack(spacing: 8) {
+                                Image(systemName: "film.stack")
+                                    .font(.system(size: 48))
+                                    .foregroundStyle(.tertiary)
+                                Text("Poster unavailable")
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                            }
                         )
                 @unknown default:
                     placeholderView
                 }
             }
-            .frame(width: 125, height: 188)
-            .clipped()
+            .frame(width: 280, height: 420)  // Larger hero size, maintain 2:3 ratio
+            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))  // Rounded corners
+            .shadow(
+                color: .black.opacity(0.15),
+                radius: 12,
+                x: 0,
+                y: 6
+            )  // Elevation for prominence
 
+            // Trailer play button (bottom-right corner)
             if let trailerUrl = trailerUrl, !trailerUrl.isEmpty {
                 Button {
                     showingTrailer = true
                 } label: {
-                    Image(systemName: "play.circle.fill")
-                        .font(.system(size: 44))
-                        .foregroundColor(.white)
-                        .shadow(radius: 4)
+                    ZStack {
+                        Circle()
+                            .fill(.ultraThinMaterial)
+                            .frame(width: 56, height: 56)
+
+                        Image(systemName: "play.circle.fill")
+                            .font(.system(size: 44))
+                            .foregroundStyle(.white)
+                            .shadow(radius: 4)
+                    }
                 }
-                .padding()
+                .padding(16)
                 .sheet(isPresented: $showingTrailer) {
                     TrailerPlayerView(youtubeId: trailerUrl)
                 }
             }
         }
-        .padding(.vertical)
+        .padding(.horizontal, 20)  // Side margins, but poster uses most of width
+        .padding(.vertical, 16)
     }
 
     private var posterURL: URL? {
@@ -60,9 +84,13 @@ struct MoviePosterView: View {
     }
 
     private var placeholderView: some View {
-        Rectangle()
-            .fill(Color.gray.opacity(0.3))
-            .overlay(ProgressView())
+        RoundedRectangle(cornerRadius: 16, style: .continuous)
+            .fill(.quaternary)
+            .overlay(
+                RoundedRectangle(cornerRadius: 16, style: .continuous)
+                    .strokeBorder(style: StrokeStyle(lineWidth: 2, dash: [8, 4]))
+                    .foregroundStyle(.tertiary.opacity(0.3))
+            )
     }
 }
 
