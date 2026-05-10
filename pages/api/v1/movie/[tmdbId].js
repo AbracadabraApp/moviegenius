@@ -7,6 +7,40 @@
 
 import { Client } from 'pg';
 
+// Enrich moreIdeas array with poster URLs from movies table
+async function enrichMoreIdeasWithPosters(client, moreIdeas) {
+  if (!moreIdeas || !Array.isArray(moreIdeas) || moreIdeas.length === 0) {
+    return moreIdeas;
+  }
+
+  // Get all tmdbIds from the ideas array
+  const tmdbIds = moreIdeas
+    .map(idea => idea.tmdbId)
+    .filter(id => id != null);
+
+  if (tmdbIds.length === 0) {
+    return moreIdeas;
+  }
+
+  // Fetch poster URLs in one query
+  const posterResult = await client.query(
+    `SELECT tmdb_id, poster_url FROM movies WHERE tmdb_id = ANY($1::int[])`,
+    [tmdbIds]
+  );
+
+  // Create lookup map
+  const posterMap = {};
+  posterResult.rows.forEach(row => {
+    posterMap[row.tmdb_id] = row.poster_url;
+  });
+
+  // Enrich ideas with poster URLs
+  return moreIdeas.map(idea => ({
+    ...idea,
+    poster_url: idea.tmdbId ? posterMap[idea.tmdbId] || null : null
+  }));
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'GET') {
     return res.status(405).json({ error: 'Only GET method allowed' });
@@ -141,8 +175,8 @@ export default async function handler(req, res) {
         created_at: row.whywatch_created_at
       } : null,
 
-      // MoreIdeas (if exists)
-      moreIdeas: row.more_ideas || null,
+      // MoreIdeas (if exists) - enrich with poster URLs
+      moreIdeas: row.more_ideas ? await enrichMoreIdeasWithPosters(client, row.more_ideas) : null,
       moreIdeasCreatedAt: row.more_ideas_created_at || null,
 
       // Contributors (cast/crew)
