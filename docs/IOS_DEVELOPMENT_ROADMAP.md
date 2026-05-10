@@ -269,6 +269,7 @@ class MovieDetailViewModel: ObservableObject {
 struct MoviePosterView: View {
     let posterUrl: String?
     let trailerUrl: String?
+    @State private var showingTrailer = false
 
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
@@ -283,9 +284,9 @@ struct MoviePosterView: View {
             }
             .frame(maxWidth: 267, maxHeight: 400)
 
-            if trailerUrl != nil {
+            if let trailerUrl = trailerUrl, let url = URL(string: trailerUrl) {
                 Button {
-                    // TODO: Play trailer
+                    showingTrailer = true
                 } label: {
                     Image(systemName: "play.circle.fill")
                         .font(.system(size: 44))
@@ -293,6 +294,9 @@ struct MoviePosterView: View {
                         .shadow(radius: 4)
                 }
                 .padding()
+                .sheet(isPresented: $showingTrailer) {
+                    TrailerPlayerView(url: url)
+                }
             }
         }
     }
@@ -300,6 +304,36 @@ struct MoviePosterView: View {
     private var posterURL: URL? {
         guard let posterUrl = posterUrl else { return nil }
         return URL(string: posterUrl)
+    }
+}
+```
+
+**TrailerPlayerView:**
+```swift
+import AVKit
+
+struct TrailerPlayerView: View {
+    let url: URL
+    @Environment(\.dismiss) var dismiss
+
+    var body: some View {
+        NavigationView {
+            VideoPlayer(player: AVPlayer(url: url))
+                .navigationTitle("Trailer")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .cancellationAction) {
+                        Button("Done") {
+                            dismiss()
+                        }
+                    }
+                }
+        }
+        .onAppear {
+            // Auto-play when view appears
+            let player = AVPlayer(url: url)
+            player.play()
+        }
     }
 }
 ```
@@ -399,15 +433,31 @@ struct MoreIdeaCard: View {
 // Will implement when coverage improves or Phase 3 features added
 ```
 
-#### 1.6 Testing
+#### 1.6 Trailer Playback (Phase 1 Critical)
+- [ ] TrailerPlayerView with AVKit VideoPlayer
+- [ ] Full-screen modal presentation
+- [ ] Done button to dismiss
+- [ ] Auto-play on open
+- [ ] Handle YouTube URLs correctly
+
+**Implementation Notes:**
+- Uses native AVPlayer for trailer URLs
+- Modal sheet presentation (.sheet modifier)
+- Simple VideoPlayer wrapper (no custom controls needed)
+- YouTube URLs work directly with AVPlayer on iOS 14+
+
+#### 1.7 Testing
 - [ ] Test with tmdbId=153 (Lost in Translation) - Has full data
+- [ ] Test trailer playback (tap play button, video loads, dismiss works)
 - [ ] Test with movie without MoreIdeas - Verify section hidden
+- [ ] Test with movie without trailer - Verify button hidden
 - [ ] Test error handling (invalid tmdbId, network failure)
 - [ ] Verify poster aspect ratio (2:3)
 - [ ] Confirm 390px width constraint
 
 **Success Criteria:**
 - ✅ Movie detail screen renders all 5 MVP components correctly
+- ✅ Trailer plays in full-screen modal
 - ✅ Unified API call returns complete data
 - ✅ MoreIdeas hidden when null
 - ✅ Build compiles without errors
@@ -468,12 +518,7 @@ struct MoreIdeaCard: View {
 - [ ] Show placeholder when missing
 - [ ] Link to person detail pages (future)
 
-#### 4.2 Trailer Playback
-- [ ] AVPlayer integration for trailer URLs
-- [ ] Full-screen video player
-- [ ] Play/pause controls
-
-#### 4.3 Image Caching
+#### 4.2 Image Caching
 - [ ] Implement poster image caching
 - [ ] Optimize memory usage
 - [ ] Pre-load nearby movies
