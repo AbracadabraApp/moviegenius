@@ -17,18 +17,18 @@ struct MoviePosterView: View {
             AsyncImage(url: posterURL) { image in
                 image
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
+                    .aspectRatio(contentMode: .fill)
             } placeholder: {
                 Rectangle()
                     .fill(Color.gray.opacity(0.3))
-                    .aspectRatio(2/3, contentMode: .fit)
                     .overlay(
                         ProgressView()
                     )
             }
-            .frame(maxWidth: 267, maxHeight: 400)
+            .frame(width: 125, height: 188)
+            .clipped()
 
-            if let trailerUrl = trailerUrl, let url = URL(string: trailerUrl) {
+            if let trailerUrl = trailerUrl, !trailerUrl.isEmpty {
                 Button {
                     showingTrailer = true
                 } label: {
@@ -39,7 +39,7 @@ struct MoviePosterView: View {
                 }
                 .padding()
                 .sheet(isPresented: $showingTrailer) {
-                    TrailerPlayerView(url: url)
+                    TrailerPlayerView(youtubeId: trailerUrl)
                 }
             }
         }

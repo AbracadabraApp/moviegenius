@@ -33,25 +33,29 @@ struct MoreIdeaCard: View {
     let idea: MoreIdea
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 4) {
+        VStack(alignment: .leading, spacing: 8) {
+            // Poster placeholder (will add real posters in Phase 2)
+            Rectangle()
+                .fill(Color.gray.opacity(0.2))
+                .frame(width: 100, height: 150)
+                .cornerRadius(4)
+                .overlay(
+                    VStack(spacing: 4) {
+                        Image(systemName: "film")
+                            .font(.system(size: 32))
+                            .foregroundColor(.gray)
+                        Text(String(idea.year))
+                            .font(.caption2)
+                            .foregroundColor(.gray)
+                    }
+                )
+
             Text(idea.title)
-                .font(.subheadline)
-                .fontWeight(.semibold)
-                .lineLimit(2)
-
-            Text(String(idea.year))
                 .font(.caption)
-                .foregroundColor(.secondary)
-
-            Text(idea.connection)
-                .font(.caption2)
-                .foregroundColor(.secondary)
-                .lineLimit(3)
+                .fontWeight(.medium)
+                .lineLimit(2)
+                .frame(width: 100, alignment: .leading)
         }
-        .frame(width: 125)
-        .padding(8)
-        .background(Color.secondary.opacity(0.1))
-        .cornerRadius(8)
     }
 }
 
