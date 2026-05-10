@@ -12,8 +12,14 @@ struct MovieResponse: Codable {
     let movie: Movie
     let whyWatch: WhyWatch?
     let moreIdeas: [MoreIdea]?
-    // Contributors deferred to Phase 4 (only 41% coverage)
-    // Analysis legacy field not used in UI
+
+    enum CodingKeys: String, CodingKey {
+        case movie
+        case whyWatch
+        case moreIdeas
+    }
+
+    // Ignore extra fields: analysis, contributors, moreIdeasCreatedAt
 }
 
 // MARK: - Movie

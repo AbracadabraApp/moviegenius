@@ -16,9 +16,12 @@ struct ContentView: View {
     }
 
     var body: some View {
+        let _ = print("🎬 [ContentView] Rendering - hasData: \(viewModel.movieResponse != nil), isLoading: \(viewModel.isLoading), hasError: \(viewModel.error != nil)")
+
         ScrollView {
             VStack(spacing: 0) {
                 if let movieResponse = viewModel.movieResponse {
+                    let _ = print("🎬 [ContentView] Showing movie data for: \(movieResponse.movie.title)")
                     // Search bar placeholder
                     SearchBarPlaceholder()
 
@@ -44,6 +47,7 @@ struct ContentView: View {
                     ProgressView("Loading...")
                         .padding()
                 } else if let error = viewModel.error {
+                    let _ = print("🎬 [ContentView] Showing error: \(error.localizedDescription)")
                     VStack(spacing: 16) {
                         Image(systemName: "exclamationmark.triangle")
                             .font(.system(size: 48))
