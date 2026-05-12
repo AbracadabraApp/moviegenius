@@ -10,10 +10,29 @@ import SwiftUI
 struct MoviePosterView: View {
     let posterUrl: String?
     let trailerUrl: String?
+    let tmdbId: Int
+    let title: String
+    let year: Int?
+    let slug: String?
     @State private var showingTrailer = false
 
+    init(posterUrl: String?, trailerUrl: String?, tmdbId: Int, title: String, year: Int?, slug: String?) {
+        self.posterUrl = posterUrl
+        self.trailerUrl = trailerUrl
+        self.tmdbId = tmdbId
+        self.title = title
+        self.year = year
+        self.slug = slug
+
+        #if DEBUG
+        print("🎬 [MoviePosterView] Init - \(title)")
+        print("   Trailer URL: \(trailerUrl ?? "nil")")
+        print("   Will show play button: \(trailerUrl != nil && !trailerUrl!.isEmpty)")
+        #endif
+    }
+
     var body: some View {
-        ZStack(alignment: .bottomTrailing) {
+        ZStack {
             AsyncImage(url: posterURL) { phase in
                 switch phase {
                 case .empty:
@@ -52,27 +71,54 @@ struct MoviePosterView: View {
                 y: 6
             )
 
-            // Trailer play button overlay (bottom-right corner)
-            if let trailerUrl = trailerUrl, !trailerUrl.isEmpty {
-                Button {
-                    showingTrailer = true
-                } label: {
-                    ZStack {
-                        Circle()
-                            .fill(.ultraThinMaterial)
-                            .frame(width: 56, height: 56)
+            // Favorite buttons overlay (bottom-center)
+            VStack {
+                Spacer()
 
-                        Image(systemName: "play.circle.fill")
-                            .font(.system(size: 44))
-                            .foregroundStyle(.white)
-                            .shadow(radius: 4)
-                    }
+                HStack(spacing: .mgSpacing8) {
+                    FavoriteButtons(
+                        tmdbId: tmdbId,
+                        title: title,
+                        year: year,
+                        posterUrl: posterUrl,
+                        slug: slug,
+                        compact: true
+                    )
                 }
-                .accessibilityLabel("Play trailer")
-                .accessibilityHint("Opens trailer video")
-                .padding(.mgSpacing16)
-                .sheet(isPresented: $showingTrailer) {
-                    TrailerPlayerView(youtubeId: trailerUrl)
+                .padding(.mgSpacing12)
+            }
+
+            // Trailer play button overlay (bottom-right corner)
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    if let trailerUrl = trailerUrl, !trailerUrl.isEmpty {
+                        Button {
+                            #if DEBUG
+                            print("🎬 [MoviePosterView] Play button tapped")
+                            print("   Opening trailer: \(trailerUrl)")
+                            #endif
+                            showingTrailer = true
+                        } label: {
+                            ZStack {
+                                Circle()
+                                    .fill(.ultraThinMaterial)
+                                    .frame(width: 56, height: 56)
+
+                                Image(systemName: "play.circle.fill")
+                                    .font(.system(size: 44))
+                                    .foregroundStyle(.white)
+                                    .shadow(radius: 4)
+                            }
+                        }
+                        .accessibilityLabel("Play trailer")
+                        .accessibilityHint("Opens trailer video")
+                        .padding(.mgSpacing16)
+                        .sheet(isPresented: $showingTrailer) {
+                            TrailerPlayerView(youtubeId: trailerUrl)
+                        }
+                    }
                 }
             }
         }
@@ -99,6 +145,10 @@ struct MoviePosterView: View {
 #Preview {
     MoviePosterView(
         posterUrl: "https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
-        trailerUrl: "SUXWAEX2jlg"  // YouTube video ID, not full URL
+        trailerUrl: "SUXWAEX2jlg",  // YouTube video ID, not full URL
+        tmdbId: 153,
+        title: "Lost in Translation",
+        year: 2003,
+        slug: "lost-in-translation-2003"
     )
 }
