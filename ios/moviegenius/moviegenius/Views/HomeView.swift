@@ -116,7 +116,7 @@ struct SkeletonCarousel: View {
                     ForEach(0..<5, id: \.self) { _ in
                         RoundedRectangle(cornerRadius: .mgCornerSmall)
                             .fill(Color.mgSecondary.opacity(0.15))
-                            .frame(width: 140, height: 188)
+                            .frame(width: 170, height: 227)
                     }
                 }
                 .padding(.horizontal, .mgSpacing16)

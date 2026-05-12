@@ -105,7 +105,7 @@ struct MoviePosterCard: View {
                         posterPlaceholder
                     }
                 }
-                .frame(width: 140, height: 188)
+                .frame(width: 170, height: 227)
                 .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
                 .shadow(color: .black.opacity(0.15), radius: 6, x: 0, y: 3)
 
@@ -126,11 +126,11 @@ struct MoviePosterCard: View {
                         .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
                         .padding(.mgSpacing8)
                     }
-                    .frame(width: 140, height: 188)
+                    .frame(width: 170, height: 227)
                     .transition(.opacity)
                 }
             }
-            .onTapGesture {
+            .onLongPressGesture(minimumDuration: 0.5) {
                 withAnimation(.easeInOut(duration: 0.2)) {
                     showButtons.toggle()
                 }
@@ -142,7 +142,7 @@ struct MoviePosterCard: View {
                 .fontWeight(.medium)
                 .foregroundStyle(Color.mgPrimary)
                 .lineLimit(2)
-                .frame(width: 140, alignment: .leading)
+                .frame(width: 170, alignment: .leading)
         }
     }
 

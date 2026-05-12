@@ -65,7 +65,7 @@ struct MoreIdeaCard: View {
                     posterPlaceholder
                 }
             }
-            .frame(width: 100, height: 150)
+            .frame(width: 140, height: 210)
             .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
 
             // Content (right side)
@@ -86,9 +86,9 @@ struct MoreIdeaCard: View {
                 Text(idea.connection)
                     .font(.mgSubheadline)
                     .foregroundStyle(Color.mgSecondary)
-                    .lineLimit(3)
+                    .lineLimit(4)
             }
-            .frame(maxWidth: .infinity, maxHeight: 150, alignment: .topLeading)
+            .frame(maxWidth: .infinity, maxHeight: 210, alignment: .topLeading)
         }
         .padding(.mgSpacing12)
         .background {
