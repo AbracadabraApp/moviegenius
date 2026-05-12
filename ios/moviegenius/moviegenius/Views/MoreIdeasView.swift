@@ -40,7 +40,6 @@ struct MoreIdeasView: View {
 
 struct MoreIdeaCard: View {
     let idea: MoreIdea
-    @State private var isPressed = false
 
     var body: some View {
         HStack(alignment: .top, spacing: .mgSpacing16) {
@@ -96,18 +95,11 @@ struct MoreIdeaCard: View {
                 .fill(Color.mgBackground)
                 .shadow(
                     color: .black.opacity(0.08),
-                    radius: isPressed ? 4 : 8,
+                    radius: 8,
                     x: 0,
-                    y: isPressed ? 2 : 4
+                    y: 4
                 )
         }
-        .scaleEffect(isPressed ? 0.98 : 1.0)
-        .animation(.easeInOut(duration: 0.15), value: isPressed)
-        .simultaneousGesture(
-            DragGesture(minimumDistance: 0)
-                .onChanged { _ in isPressed = true }
-                .onEnded { _ in isPressed = false }
-        )
     }
 
     private var posterURL: URL? {
