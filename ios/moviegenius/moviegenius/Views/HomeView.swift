@@ -84,7 +84,7 @@ struct HomeView: View {
         }
         .scrollIndicators(.hidden)
         .background(Color.mgBackground)
-        .navigationTitle("Browse")
+        .navigationTitle("Movies")
         .navigationBarTitleDisplayMode(.large)
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search movies")
         .task {
