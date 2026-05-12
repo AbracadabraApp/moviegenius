@@ -52,7 +52,7 @@ struct MoviePosterView: View {
                 y: 6
             )
 
-            // Trailer play button (bottom-right corner)
+            // Trailer play button overlay (bottom-right corner)
             if let trailerUrl = trailerUrl, !trailerUrl.isEmpty {
                 Button {
                     showingTrailer = true
