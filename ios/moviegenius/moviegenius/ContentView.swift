@@ -19,22 +19,30 @@ struct ContentView: View {
         ScrollView {
             VStack(spacing: 0) {
                 if let movieResponse = viewModel.movieResponse {
-                    // Search bar placeholder
-                    SearchBarPlaceholder()
+                    // Search bar
+                    SearchBarView()
 
-                    // Poster with trailer button
+                    // Poster with trailer and favorite buttons overlay
                     MoviePosterView(
                         posterUrl: movieResponse.movie.posterUrl,
-                        trailerUrl: movieResponse.movie.trailerUrl
+                        trailerUrl: movieResponse.movie.trailerUrl,
+                        tmdbId: movieResponse.movie.tmdbId,
+                        title: movieResponse.movie.title,
+                        year: movieResponse.movie.year,
+                        slug: movieResponse.movie.slug
                     )
 
                     // WhyWatch section
                     if let whyWatch = movieResponse.whyWatch {
-                        WhyWatchView(whyWatch: whyWatch)
+                        WhyWatchView(
+                            whyWatch: whyWatch,
+                            tmdbId: movieResponse.movie.tmdbId,
+                            title: movieResponse.movie.title,
+                            year: movieResponse.movie.year,
+                            posterUrl: movieResponse.movie.posterUrl,
+                            slug: movieResponse.movie.slug
+                        )
                     }
-
-                    // Action buttons placeholder
-                    ActionButtonsPlaceholder()
 
                     // More Ideas section
                     if let moreIdeas = movieResponse.moreIdeas, !moreIdeas.isEmpty {
@@ -67,37 +75,6 @@ struct ContentView: View {
         .task {
             await viewModel.loadMovie()
         }
-    }
-}
-
-// Placeholder components
-struct SearchBarPlaceholder: View {
-    var body: some View {
-        Rectangle()
-            .fill(Color.gray.opacity(0.2))
-            .frame(height: 44)
-    }
-}
-
-struct ActionButtonsPlaceholder: View {
-    var body: some View {
-        HStack(spacing: 20) {
-            Button(action: {}) {
-                VStack {
-                    Image(systemName: "checkmark.circle")
-                    Text("Seen")
-                        .font(.caption)
-                }
-            }
-            Button(action: {}) {
-                VStack {
-                    Image(systemName: "plus.circle")
-                    Text("Add")
-                        .font(.caption)
-                }
-            }
-        }
-        .padding()
     }
 }
 

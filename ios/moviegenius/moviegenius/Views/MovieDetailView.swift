@@ -20,33 +20,38 @@ struct MovieDetailView: View {
         ScrollView {
             VStack(spacing: 0) {
                 if let movieResponse = viewModel.movieResponse {
-                    // Poster with trailer overlay
+                    // Search bar at top
+                    SearchBarView()
+
+                    // Poster with trailer and favorite buttons overlay
                     MoviePosterView(
                         posterUrl: movieResponse.movie.posterUrl,
-                        trailerUrl: movieResponse.movie.trailerUrl
+                        trailerUrl: movieResponse.movie.trailerUrl,
+                        tmdbId: movieResponse.movie.tmdbId,
+                        title: movieResponse.movie.title,
+                        year: movieResponse.movie.year,
+                        slug: movieResponse.movie.slug
                     )
 
                     // WhyWatch section
                     if let whyWatch = movieResponse.whyWatch {
-                        WhyWatchView(whyWatch: whyWatch)
+                        WhyWatchView(
+                            whyWatch: whyWatch,
+                            tmdbId: movieResponse.movie.tmdbId,
+                            title: movieResponse.movie.title,
+                            year: movieResponse.movie.year,
+                            posterUrl: movieResponse.movie.posterUrl,
+                            slug: movieResponse.movie.slug
+                        )
                     }
-
-                    // Favorite action buttons
-                    FavoriteButtons(
-                        tmdbId: movieResponse.movie.tmdbId,
-                        title: movieResponse.movie.title,
-                        year: movieResponse.movie.year,
-                        posterUrl: movieResponse.movie.posterUrl,
-                        slug: movieResponse.movie.slug,
-                        compact: false
-                    )
-                    .padding(.horizontal, .mgSpacing20)
-                    .padding(.vertical, .mgSpacing16)
 
                     // More Ideas section
                     if let moreIdeas = movieResponse.moreIdeas, !moreIdeas.isEmpty {
                         MoreIdeasView(moreIdeas: moreIdeas)
                     }
+
+                    // TMDB Attribution
+                    TMDBAttributionView()
                 } else if viewModel.isLoading {
                     VStack(spacing: .mgSpacing16) {
                         ProgressView()
@@ -84,9 +89,71 @@ struct MovieDetailView: View {
         .scrollIndicators(.hidden)
         .background(Color.mgBackground)
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
         .task {
             await viewModel.loadMovie()
         }
+    }
+}
+
+// MARK: - Search Bar
+
+struct SearchBarView: View {
+    @State private var searchText = ""
+
+    var body: some View {
+        HStack(spacing: .mgSpacing8) {
+            Image(systemName: "magnifyingglass")
+                .foregroundStyle(Color.mgSecondary)
+                .font(.system(size: 16))
+
+            Text("Search movies...")
+                .font(.mgBody)
+                .foregroundStyle(Color.mgSecondary)
+
+            Spacer()
+        }
+        .padding(.horizontal, .mgSpacing12)
+        .padding(.vertical, .mgSpacing8)
+        .background(.ultraThinMaterial)
+        .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous)
+                .strokeBorder(Color.mgSecondary.opacity(0.2), lineWidth: 1)
+        )
+        .padding(.horizontal, .mgSpacing16)
+        .padding(.top, .mgSpacing8)
+        .padding(.bottom, .mgSpacing8)
+        .onTapGesture {
+            // TODO: Navigate to search view
+        }
+    }
+}
+
+// MARK: - TMDB Attribution
+
+struct TMDBAttributionView: View {
+    var body: some View {
+        VStack(spacing: .mgSpacing12) {
+            AsyncImage(url: URL(string: "https://www.themoviedb.org/assets/2/v4/logos/v2/blue_long_1-8ba2ac31f354005783fab473602c34c3f4fd207150182061e425d366e4f34596.svg")) { phase in
+                switch phase {
+                case .success(let image):
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: 20)
+                case .empty, .failure, _:
+                    Color.clear.frame(height: 20)
+                }
+            }
+
+            Text("This product uses the TMDB API but is not endorsed or certified by TMDB")
+                .font(.mgCaption)
+                .foregroundStyle(Color.mgSecondary)
+                .multilineTextAlignment(.center)
+        }
+        .padding(.horizontal, .mgSpacing20)
+        .padding(.vertical, .mgSpacing24)
     }
 }
 
