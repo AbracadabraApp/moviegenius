@@ -3,6 +3,7 @@
 import '../styles/globals.css';
 import '../styles/movieTitle.css';
 import ErrorBoundary from '../components/ErrorBoundary';
+import Footer from '../components/Footer';
 import { FavoritesProvider } from '../contexts/FavoritesContext';
 import { SessionProvider } from 'next-auth/react';
 import Head from 'next/head';
@@ -167,6 +168,7 @@ export default function MyApp({ Component, pageProps: { session, ...pageProps } 
         <ErrorBoundary>
           <FavoritesProvider>
             <Component {...pageProps} />
+            <Footer />
           </FavoritesProvider>
         </ErrorBoundary>
       </SessionProvider>
