@@ -11,21 +11,22 @@ struct WhyWatchView: View {
     let whyWatch: WhyWatch
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
+        VStack(alignment: .leading, spacing: .mgSpacing16) {
             // Verdict line
             HStack {
                 Image(systemName: whyWatch.isRecommended ? "sparkles" : "hand.raised")
-                    .foregroundColor(whyWatch.isRecommended ? .yellow : .red)
+                    .foregroundStyle(whyWatch.isRecommended ? Color.mgGold : Color.mgDestructive)
                 Text(whyWatch.isRecommended ? "Worth Watching" : "Skip It")
-                    .font(.headline)
+                    .font(.mgHeadline)
             }
 
             // 3 reasons
-            VStack(alignment: .leading, spacing: 8) {
+            VStack(alignment: .leading, spacing: .mgSpacing8) {
                 ForEach(whyWatch.reasons, id: \.self) { reason in
-                    HStack(alignment: .top, spacing: 8) {
+                    HStack(alignment: .top, spacing: .mgSpacing8) {
                         Text("•")
                         Text(reason)
+                            .font(.mgBody)
                     }
                 }
             }
@@ -33,12 +34,14 @@ struct WhyWatchView: View {
             // Context paragraph
             if let context = whyWatch.context {
                 Text(context)
-                    .font(.body)
-                    .foregroundColor(.secondary)
-                    .padding(.top, 8)
+                    .font(.mgBody)
+                    .foregroundStyle(Color.mgSecondary)
+                    .padding(.top, .mgSpacing8)
             }
         }
-        .padding()
+        .padding(.mgSpacing16)
+        .mgProminentCard()
+        .padding(.horizontal, .mgSpacing20)
     }
 }
 

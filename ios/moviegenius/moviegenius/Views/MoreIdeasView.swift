@@ -1,8 +1,8 @@
 //
-//  MoreIdeasView_V2.swift
+//  MoreIdeasView.swift
 //  moviegenius
 //
-//  Vertical feed with rich cards (matches web quality)
+//  Vertical feed with rich cards showing posters and connection slugs
 //
 
 import SwiftUI
@@ -11,23 +11,30 @@ struct MoreIdeasView: View {
     let moreIdeas: [MoreIdea]
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
+        VStack(alignment: .leading, spacing: .mgSpacing16) {
             // Section header
             Text("More Ideas")
-                .font(.title2)
-                .fontWeight(.bold)
-                .padding(.horizontal, 20)
-                .padding(.top, 8)
+                .font(.mgTitle2)
+                .padding(.horizontal, .mgSpacing20)
+                .padding(.top, .mgSpacing8)
 
-            // Vertical scrolling cards
-            VStack(spacing: 16) {
+            // Vertical scrolling cards - use LazyVStack for proper height calculation
+            LazyVStack(spacing: .mgSpacing16) {
                 ForEach(moreIdeas) { idea in
-                    MoreIdeaCard(idea: idea)
-                        .padding(.horizontal, 20)
+                    if let tmdbId = idea.tmdbId {
+                        NavigationLink(destination: MovieDetailView(tmdbId: tmdbId)) {
+                            MoreIdeaCard(idea: idea)
+                        }
+                        .buttonStyle(.plain)
+                        .padding(.horizontal, .mgSpacing20)
+                    } else {
+                        MoreIdeaCard(idea: idea)
+                            .padding(.horizontal, .mgSpacing20)
+                    }
                 }
             }
         }
-        .padding(.vertical, 12)
+        .padding(.vertical, .mgSpacing12)
     }
 }
 
@@ -36,60 +43,57 @@ struct MoreIdeaCard: View {
     @State private var isPressed = false
 
     var body: some View {
-        HStack(alignment: .top, spacing: 16) {
+        HStack(alignment: .top, spacing: .mgSpacing16) {
             // Poster (left side)
-            AsyncImage(url: posterURL) { phase in
-                switch phase {
-                case .empty:
-                    posterPlaceholder
-                        .overlay(ProgressView())
-                case .success(let image):
-                    image
-                        .resizable()
-                        .aspectRatio(2/3, contentMode: .fill)
-                case .failure:
-                    posterPlaceholder
-                        .overlay(
-                            Image(systemName: "film.stack")
-                                .font(.title2)
-                                .foregroundStyle(.tertiary)
-                        )
-                @unknown default:
+            Group {
+                if let posterURL = posterURL {
+                    AsyncImage(url: posterURL) { phase in
+                        switch phase {
+                        case .empty:
+                            posterPlaceholder
+                        case .success(let image):
+                            image
+                                .resizable()
+                                .aspectRatio(2/3, contentMode: .fill)
+                        case .failure:
+                            posterPlaceholder
+                        @unknown default:
+                            posterPlaceholder
+                        }
+                    }
+                } else {
                     posterPlaceholder
                 }
             }
-            .frame(width: 90, height: 135)
-            .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+            .frame(width: 100, height: 150)
+            .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
 
             // Content (right side)
-            VStack(alignment: .leading, spacing: 8) {
+            VStack(alignment: .leading, spacing: .mgSpacing8) {
                 // Title + Year
-                VStack(alignment: .leading, spacing: 2) {
+                VStack(alignment: .leading, spacing: .mgSpacing2) {
                     Text(idea.title)
-                        .font(.headline)
-                        .foregroundStyle(.primary)
+                        .font(.mgHeadline)
+                        .foregroundStyle(Color.mgPrimary)
                         .lineLimit(2)
 
                     Text(String(idea.year))
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                        .font(.mgSubheadline)
+                        .foregroundStyle(Color.mgSecondary)
                 }
 
-                // Connection (the "why" slug)
+                // Connection slug
                 Text(idea.connection)
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
+                    .font(.mgSubheadline)
+                    .foregroundStyle(Color.mgSecondary)
                     .lineLimit(3)
-                    .fixedSize(horizontal: false, vertical: true)
-
-                Spacer()
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
+            .frame(maxWidth: .infinity, maxHeight: 150, alignment: .topLeading)
         }
-        .padding(12)
+        .padding(.mgSpacing12)
         .background {
-            RoundedRectangle(cornerRadius: 12, style: .continuous)
-                .fill(.background)
+            RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous)
+                .fill(Color.mgBackground)
                 .shadow(
                     color: .black.opacity(0.08),
                     radius: isPressed ? 4 : 8,
@@ -99,12 +103,6 @@ struct MoreIdeaCard: View {
         }
         .scaleEffect(isPressed ? 0.98 : 1.0)
         .animation(.easeInOut(duration: 0.15), value: isPressed)
-        .onTapGesture {
-            // Navigate to movie detail
-            if let tmdbId = idea.tmdbId {
-                print("Navigate to movie: \(tmdbId)")
-            }
-        }
         .simultaneousGesture(
             DragGesture(minimumDistance: 0)
                 .onChanged { _ in isPressed = true }
@@ -113,13 +111,29 @@ struct MoreIdeaCard: View {
     }
 
     private var posterURL: URL? {
-        guard let posterUrl = idea.posterUrl else { return nil }
-        return URL(string: posterUrl)
+        // If API provides poster_url, use it
+        if let posterUrl = idea.posterUrl {
+            return URL(string: posterUrl)
+        }
+
+        // Otherwise, fetch from TMDB using movie ID
+        guard let tmdbId = idea.tmdbId else { return nil }
+        return URL(string: "https://moviegenius.ai/api/poster/\(tmdbId)")
     }
 
     private var posterPlaceholder: some View {
-        RoundedRectangle(cornerRadius: 8, style: .continuous)
-            .fill(Color.gray.opacity(0.15))
+        RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous)
+            .fill(Color.mgSecondary.opacity(0.15))
+            .overlay(
+                VStack(spacing: .mgSpacing4) {
+                    Image(systemName: "film")
+                        .font(.system(size: 32))
+                        .foregroundStyle(Color.mgSecondary)
+                    Text(String(idea.year))
+                        .font(.mgCaption2)
+                        .foregroundStyle(Color.mgSecondary)
+                }
+            )
     }
 }
 

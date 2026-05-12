@@ -30,27 +30,27 @@ struct MoviePosterView: View {
                 case .failure:
                     placeholderView
                         .overlay(
-                            VStack(spacing: 8) {
+                            VStack(spacing: .mgSpacing8) {
                                 Image(systemName: "film.stack")
                                     .font(.system(size: 48))
                                     .foregroundStyle(.tertiary)
                                 Text("Poster unavailable")
-                                    .font(.caption)
-                                    .foregroundStyle(.secondary)
+                                    .font(.mgCaption)
+                                    .foregroundStyle(Color.mgSecondary)
                             }
                         )
                 @unknown default:
                     placeholderView
                 }
             }
-            .frame(width: 280, height: 420)  // Larger hero size, maintain 2:3 ratio
-            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))  // Rounded corners
+            .frame(width: 350, height: 525)  // Nearly full-width hero poster (2:3 ratio)
+            .clipShape(RoundedRectangle(cornerRadius: .mgCornerLarge, style: .continuous))
             .shadow(
                 color: .black.opacity(0.15),
                 radius: 12,
                 x: 0,
                 y: 6
-            )  // Elevation for prominence
+            )
 
             // Trailer play button (bottom-right corner)
             if let trailerUrl = trailerUrl, !trailerUrl.isEmpty {
@@ -68,14 +68,16 @@ struct MoviePosterView: View {
                             .shadow(radius: 4)
                     }
                 }
-                .padding(16)
+                .accessibilityLabel("Play trailer")
+                .accessibilityHint("Opens trailer video")
+                .padding(.mgSpacing16)
                 .sheet(isPresented: $showingTrailer) {
                     TrailerPlayerView(youtubeId: trailerUrl)
                 }
             }
         }
-        .padding(.horizontal, 20)  // Side margins, but poster uses most of width
-        .padding(.vertical, 16)
+        .padding(.horizontal, .mgSpacing20)
+        .padding(.vertical, .mgSpacing16)
     }
 
     private var posterURL: URL? {
@@ -84,10 +86,10 @@ struct MoviePosterView: View {
     }
 
     private var placeholderView: some View {
-        RoundedRectangle(cornerRadius: 16, style: .continuous)
-            .fill(.quaternary)
+        RoundedRectangle(cornerRadius: .mgCornerLarge, style: .continuous)
+            .fill(Color.mgSecondary.opacity(0.15))
             .overlay(
-                RoundedRectangle(cornerRadius: 16, style: .continuous)
+                RoundedRectangle(cornerRadius: .mgCornerLarge, style: .continuous)
                     .strokeBorder(style: StrokeStyle(lineWidth: 2, dash: [8, 4]))
                     .foregroundStyle(.tertiary.opacity(0.3))
             )
