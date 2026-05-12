@@ -69,23 +69,15 @@ struct MoreIdeaCard: View {
 
             // Content (right side)
             VStack(alignment: .leading, spacing: .mgSpacing8) {
-                // Title + Year
-                VStack(alignment: .leading, spacing: .mgSpacing2) {
-                    Text(idea.title)
-                        .font(.mgHeadline)
-                        .foregroundStyle(Color.mgPrimary)
-                        .lineLimit(2)
+                // Title
+                Text(idea.title)
+                    .font(.mgHeadline)
+                    .foregroundStyle(Color.mgPrimary)
 
-                    Text(String(idea.year))
-                        .font(.mgSubheadline)
-                        .foregroundStyle(Color.mgSecondary)
-                }
-
-                // Connection slug
+                // Connection slug (full text, no truncation)
                 Text(idea.connection)
                     .font(.mgSubheadline)
                     .foregroundStyle(Color.mgSecondary)
-                    .lineLimit(4)
             }
             .frame(maxWidth: .infinity, maxHeight: 210, alignment: .topLeading)
         }
@@ -117,14 +109,9 @@ struct MoreIdeaCard: View {
         RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous)
             .fill(Color.mgSecondary.opacity(0.15))
             .overlay(
-                VStack(spacing: .mgSpacing4) {
-                    Image(systemName: "film")
-                        .font(.system(size: 32))
-                        .foregroundStyle(Color.mgSecondary)
-                    Text(String(idea.year))
-                        .font(.mgCaption2)
-                        .foregroundStyle(Color.mgSecondary)
-                }
+                Image(systemName: "film")
+                    .font(.system(size: 32))
+                    .foregroundStyle(Color.mgSecondary)
             )
     }
 }

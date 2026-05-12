@@ -75,75 +75,36 @@ struct CollectionCarousel: View {
 struct MoviePosterCard: View {
     let movie: CollectionMovie
     @State private var imageLoaded = false
-    @State private var showButtons = false
 
     var body: some View {
-        VStack(alignment: .leading, spacing: .mgSpacing4) {
-            // Poster with overlay buttons
-            ZStack(alignment: .bottom) {
-                AsyncImage(url: posterURL) { phase in
-                    switch phase {
-                    case .empty:
-                        posterPlaceholder
-                            .overlay {
-                                ProgressView()
-                                    .tint(Color.mgGold)
-                            }
-                    case .success(let image):
-                        image
-                            .resizable()
-                            .aspectRatio(2/3, contentMode: .fill)
-                            .opacity(imageLoaded ? 1 : 0)
-                            .onAppear {
-                                withAnimation(.easeIn(duration: 0.3)) {
-                                    imageLoaded = true
-                                }
-                            }
-                    case .failure:
-                        posterPlaceholder
-                    @unknown default:
-                        posterPlaceholder
+        // Poster only - title visible in poster art
+        AsyncImage(url: posterURL) { phase in
+            switch phase {
+            case .empty:
+                posterPlaceholder
+                    .overlay {
+                        ProgressView()
+                            .tint(Color.mgGold)
                     }
-                }
-                .frame(width: 170, height: 227)
-                .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
-                .shadow(color: .black.opacity(0.15), radius: 6, x: 0, y: 3)
-
-                // Favorite buttons overlay
-                if showButtons {
-                    VStack {
-                        Spacer()
-                        FavoriteButtons(
-                            tmdbId: movie.tmdbId,
-                            title: movie.title,
-                            year: movie.year,
-                            posterUrl: movie.posterUrl,
-                            slug: nil,
-                            compact: true
-                        )
-                        .padding(.mgSpacing8)
-                        .background(.ultraThinMaterial)
-                        .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
-                        .padding(.mgSpacing8)
+            case .success(let image):
+                image
+                    .resizable()
+                    .aspectRatio(2/3, contentMode: .fill)
+                    .opacity(imageLoaded ? 1 : 0)
+                    .onAppear {
+                        withAnimation(.easeIn(duration: 0.3)) {
+                            imageLoaded = true
+                        }
                     }
-                    .frame(width: 170, height: 227)
-                    .transition(.opacity)
-                }
+            case .failure:
+                posterPlaceholder
+            @unknown default:
+                posterPlaceholder
             }
-            .onLongPressGesture(minimumDuration: 0.5) {
-                withAnimation(.easeInOut(duration: 0.2)) {
-                    showButtons.toggle()
-                }
-            }
-
-            // Title
-            Text(movie.title)
-                .font(.mgCaption)
-                .fontWeight(.medium)
-                .foregroundStyle(Color.mgPrimary)
-                .lineLimit(2)
-                .frame(width: 170, alignment: .leading)
         }
+        .frame(width: 170, height: 227)
+        .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
+        .shadow(color: .black.opacity(0.15), radius: 6, x: 0, y: 3)
     }
 
     private var posterURL: URL? {
@@ -155,14 +116,9 @@ struct MoviePosterCard: View {
         RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous)
             .fill(Color.mgSecondary.opacity(0.15))
             .overlay(
-                VStack(spacing: .mgSpacing4) {
-                    Image(systemName: "film")
-                        .font(.system(size: 32))
-                        .foregroundStyle(Color.mgTertiary)
-                    Text(String(movie.year))
-                        .font(.mgCaption2)
-                        .foregroundStyle(Color.mgTertiary)
-                }
+                Image(systemName: "film")
+                    .font(.system(size: 32))
+                    .foregroundStyle(Color.mgTertiary)
             )
     }
 }

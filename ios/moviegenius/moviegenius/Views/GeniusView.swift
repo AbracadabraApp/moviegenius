@@ -458,13 +458,6 @@ struct MovieRowCard: View {
                     Text(movie.title)
                         .font(.mgHeadline)
                         .foregroundStyle(Color.mgPrimary)
-                        .lineLimit(2)
-
-                    if let year = movie.year {
-                        Text(String(year))
-                            .font(.mgCaption)
-                            .foregroundStyle(Color.mgSecondary)
-                    }
                 }
 
                 Spacer()
