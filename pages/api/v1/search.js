@@ -7,7 +7,8 @@
  * {
  *   query: string,           // Search query (min 2 characters)
  *   type?: 'movie' | 'person' | 'multi',  // Search type (default: 'movie')
- *   includeExternal?: boolean  // Include TMDB results (default: false)
+ *   includeExternal?: boolean,  // Include TMDB results (default: false)
+ *   saveToCatalog?: boolean   // Save TMDB results to catalog (default: false)
  * }
  *
  * Response:
@@ -31,6 +32,7 @@
  *     known_for_department?: string
  *   }],
  *   hasResults: boolean,
+ *   saved?: number,  // Number of new movies saved to catalog
  *   fallback?: {
  *     message: string,
  *     askUrl: string
@@ -39,6 +41,7 @@
  */
 
 import { Client } from 'pg';
+import { ensureMovieInDb } from '../../../lib/services/tmdb-persist.js';
 
 function getRailwayClient() {
   const dbUrl = process.env.RAILWAY_DATABASE_URL || process.env.DATABASE_URL;
@@ -117,17 +120,18 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { query, type = 'movie', includeExternal = false } = req.body;
+    const { query, type = 'movie', includeExternal = false, saveToCatalog = false } = req.body;
 
     if (!query || typeof query !== 'string' || query.trim().length < 2) {
       return res.status(400).json({ error: 'Query must be at least 2 characters' });
     }
 
     const searchQuery = query.trim();
-    console.log(`[v1] Search: "${searchQuery}" (type: ${type}, external: ${includeExternal})`);
+    console.log(`[v1] Search: "${searchQuery}" (type: ${type}, external: ${includeExternal}, save: ${saveToCatalog})`);
 
     let movies = [];
     let people = [];
+    let savedCount = 0;
 
     // Database-first search
     const dbUrl = process.env.RAILWAY_DATABASE_URL || process.env.DATABASE_URL;
@@ -223,12 +227,28 @@ export default async function handler(req, res) {
           };
 
           if (type === 'movie' || type === 'multi') {
-            const tmdbUrl = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(searchQuery)}`;
+            // Use /search/multi to get both movies and TV shows, then filter
+            const tmdbUrl = `https://api.themoviedb.org/3/search/multi?query=${encodeURIComponent(searchQuery)}`;
             const response = await fetch(tmdbUrl, { headers });
 
             if (response.ok) {
               const data = await response.json();
-              const tmdbMovies = (data.results || []).slice(0, 10).map(m => ({
+
+              // Filter to movies only (exclude TV shows)
+              const movieResults = (data.results || [])
+                .filter(item => item.media_type === 'movie')
+                .slice(0, 10);
+
+              const tvResults = (data.results || [])
+                .filter(item => item.media_type === 'tv')
+                .slice(0, 5);
+
+              // Log TV shows found (so we know they're not movies)
+              if (tvResults.length > 0) {
+                console.log(`[v1] TMDB: Found ${tvResults.length} TV shows (filtered out): ${tvResults.map(tv => tv.name).join(', ')}`);
+              }
+
+              const tmdbMovies = movieResults.map(m => ({
                 tmdb_id: m.id,
                 title: m.title,
                 year: m.release_date ? parseInt(m.release_date.split('-')[0]) : null,
@@ -239,6 +259,26 @@ export default async function handler(req, res) {
 
               movies = tmdbMovies;
               console.log(`[v1] TMDB: ${movies.length} movies found`);
+
+              // Save TMDB results to catalog if requested
+              if (saveToCatalog && movies.length > 0) {
+                try {
+                  const saveResults = await Promise.all(
+                    movies.map(m => ensureMovieInDb({
+                      id: m.tmdb_id,
+                      title: m.title,
+                      release_date: m.year ? `${m.year}-01-01` : null,
+                      poster_path: m.poster_url ? m.poster_url.replace('https://image.tmdb.org/t/p/w500', '') : null
+                    }))
+                  );
+
+                  savedCount = saveResults.filter(r => r.isNew).length;
+                  console.log(`[v1] Saved ${savedCount} new movies to catalog (${saveResults.length - savedCount} already existed)`);
+                } catch (saveError) {
+                  console.error('[v1] Error saving to catalog:', saveError);
+                  // Continue even if save fails
+                }
+              }
             }
           }
 
@@ -271,6 +311,7 @@ export default async function handler(req, res) {
       movies,
       ...(type === 'person' || type === 'multi' ? { people } : {}),
       hasResults,
+      ...(saveToCatalog && savedCount > 0 ? { saved: savedCount } : {}),
       fallback: !hasResults
         ? {
             message: "We didn't find a result, but would you like to pass it on to our Movie Genius?",
