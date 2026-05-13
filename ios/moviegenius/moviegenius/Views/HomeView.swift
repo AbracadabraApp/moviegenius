@@ -11,8 +11,11 @@ struct HomeView: View {
     @StateObject private var viewModel = HomeViewModel()
 
     var body: some View {
-        ScrollView {
-            LazyVStack(spacing: 0) {
+        ZStack(alignment: .top) {
+            ScrollView {
+                LazyVStack(spacing: 0) {
+                    // Spacer for header
+                    Color.clear.frame(height: 60)
                 if let error = viewModel.error {
                     // Error state - SHOW THE ERROR!
                     VStack(spacing: .mgSpacing20) {
@@ -79,15 +82,22 @@ struct HomeView: View {
                             }
                         }
                 }
+                }
             }
-        }
-        .scrollIndicators(.hidden)
-        .background(Color.mgBackground)
-        .refreshable {
-            await viewModel.loadInitialCollections()
-        }
-        .task {
-            await viewModel.loadInitialCollections()
+            .scrollIndicators(.hidden)
+            .background(Color.mgBackground)
+            .refreshable {
+                await viewModel.loadInitialCollections()
+            }
+            .task {
+                await viewModel.loadInitialCollections()
+            }
+
+            // AppHeader overlay
+            VStack {
+                AppHeader()
+                Spacer()
+            }
         }
     }
 }
