@@ -12,7 +12,24 @@ import FirebaseCrashlytics
 @main
 struct moviegeniusApp: App {
     init() {
+        #if DEBUG
+        print("🔥 [Firebase] Starting configuration...")
+
+        // Check if GoogleService-Info.plist exists
+        if let path = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist") {
+            print("✅ [Firebase] Found GoogleService-Info.plist at: \(path)")
+        } else {
+            print("❌ [Firebase] GoogleService-Info.plist NOT FOUND")
+        }
+        #endif
+
         FirebaseApp.configure()
+
+        #if DEBUG
+        print("✅ [Firebase] Configuration completed")
+        print("📊 [Crashlytics] Crashlytics enabled")
+        #endif
+
         configureURLCache()
     }
 

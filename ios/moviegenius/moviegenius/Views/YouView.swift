@@ -88,7 +88,6 @@ struct YouView: View {
             }
             .scrollIndicators(.hidden)
             .background(Color.mgGroupedBackground)
-            .navigationBarTitleDisplayMode(.large)
         }
         .onAppear {
             favorites.loadFavorites()
