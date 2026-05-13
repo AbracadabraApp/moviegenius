@@ -9,17 +9,18 @@ import SwiftUI
 
 struct GeniusView: View {
     @ObservedObject var favorites = FavoritesManager.shared
+    @StateObject private var viewModel = GeniusViewModel()
     @State private var activeTab: GeniusTab = .journey
     @State private var searchText = ""
 
     enum GeniusTab: String, CaseIterable {
         case journey = "Journey"
-        case loved = "Loved"
+        case loved = "Seen"
         case queue = "Queue"
 
         var icon: String {
             switch self {
-            case .journey: return "eye"
+            case .journey: return "wand.and.stars"
             case .loved: return "heart.fill"
             case .queue: return "bookmark.fill"
             }
@@ -32,7 +33,7 @@ struct GeniusView: View {
         if totalFilms == 0 {
             return ("🎬", "Your Cinematic Journey Begins", "Start building your film collection", nil)
         } else if totalFilms <= 5 {
-            return ("🌱", "Building Your Foundation", "\(totalFilms) \(totalFilms == 1 ? "film" : "films") loved", "Every film you love teaches us about your taste")
+            return ("🌱", "Building Your Foundation", "\(totalFilms) \(totalFilms == 1 ? "film" : "films") seen", "Every film you watch teaches us about your taste")
         } else if totalFilms <= 15 {
             return ("🔍", "Patterns Emerging", "\(totalFilms) films • Taste developing", "Your collection reveals emerging patterns in your cinematic preferences")
         } else {
@@ -75,6 +76,8 @@ struct GeniusView: View {
                         stage: journeyStage,
                         lovedCount: favorites.lovedMovies.count,
                         queueCount: favorites.queueMovies.count,
+                        genres: viewModel.genres,
+                        isLoadingGenres: viewModel.isLoading,
                         onTabSwitch: { tab in
                             withAnimation {
                                 activeTab = tab
@@ -82,7 +85,7 @@ struct GeniusView: View {
                         }
                     )
                 case .loved:
-                    LovedTabContent(movies: favorites.lovedMovies)
+                    SeenTabContent(movies: favorites.lovedMovies)
                 case .queue:
                     QueueTabContent(movies: favorites.queueMovies)
                 }
@@ -90,12 +93,14 @@ struct GeniusView: View {
             .scrollIndicators(.hidden)
             .refreshable {
                 favorites.loadFavorites()
+                await viewModel.loadGenreExpertise()
             }
         }
         .background(Color.mgGroupedBackground)
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search movies")
-        .onAppear {
+        .task {
             favorites.loadFavorites()
+            await viewModel.loadGenreExpertise()
         }
     }
 
@@ -149,6 +154,8 @@ struct JourneyTabContent: View {
     let stage: (icon: String, title: String, description: String, insight: String?)
     let lovedCount: Int
     let queueCount: Int
+    let genres: [GenreExpertise]
+    let isLoadingGenres: Bool
     let onTabSwitch: (GeniusView.GeniusTab) -> Void
 
     var body: some View {
@@ -191,9 +198,47 @@ struct JourneyTabContent: View {
             .padding(.horizontal, .mgSpacing16)
             .padding(.top, .mgSpacing16)
 
+            // Genre Mastery Section
+            if lovedCount > 0 {
+                VStack(alignment: .leading, spacing: .mgSpacing12) {
+                    Text("Your Genre Expertise")
+                        .font(.mgTitle3)
+                        .foregroundStyle(Color.mgPrimary)
+                        .padding(.horizontal, .mgSpacing16)
+
+                    if isLoadingGenres {
+                        VStack(spacing: .mgSpacing12) {
+                            ProgressView()
+                                .tint(Color.mgGold)
+                            Text("Analyzing your taste...")
+                                .font(.mgCaption)
+                                .foregroundStyle(Color.mgSecondary)
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, .mgSpacing32)
+                    } else if !genres.isEmpty {
+                        LazyVStack(spacing: .mgSpacing12) {
+                            ForEach(genresInProgress) { genre in
+                                NavigationLink(destination: CollectionDetailView(collectionId: genre.id)) {
+                                    GenreMasteryCard(genre: genre)
+                                }
+                                .buttonStyle(.plain)
+                            }
+                        }
+                        .padding(.horizontal, .mgSpacing16)
+                    } else {
+                        Text("Mark more films as seen to unlock genre expertise tracking")
+                            .font(.mgSubheadline)
+                            .foregroundStyle(Color.mgSecondary)
+                            .padding(.horizontal, .mgSpacing16)
+                            .padding(.vertical, .mgSpacing12)
+                    }
+                }
+            }
+
             // Stats Grid
             HStack(spacing: .mgSpacing12) {
-                StatsCard(icon: "heart.fill", color: .red, count: lovedCount, label: "Films Loved")
+                StatsCard(icon: "heart.fill", color: .red, count: lovedCount, label: "Films Seen")
                 StatsCard(icon: "bookmark.fill", color: .blue, count: queueCount, label: "In Queue")
                 StatsCard(icon: "eye", color: .gray, count: lovedCount + queueCount, label: "Total")
             }
@@ -260,7 +305,7 @@ struct JourneyTabContent: View {
 
     private var learningText: String {
         if lovedCount <= 5 {
-            return "Based on your early selections, we're starting to see patterns in your taste. Keep exploring to help us understand what resonates with you."
+            return "Based on your early selections, we're starting to see patterns in your taste. Keep watching to help us understand what resonates with you."
         } else if lovedCount <= 15 {
             return "With your viewing history, we can identify themes you gravitate toward. Your collection shows developing sophistication and range."
         } else {
@@ -270,12 +315,17 @@ struct JourneyTabContent: View {
 
     private var learningNote: String {
         if lovedCount <= 5 {
-            return "Love more films for deeper insights"
+            return "Mark more films as seen for deeper insights"
         } else if lovedCount <= 15 {
             return "Pattern recognition developing"
         } else {
             return "Strong taste profile established"
         }
+    }
+
+    private var genresInProgress: [GenreExpertise] {
+        // Show top 5 genres with most progress
+        Array(genres.prefix(5))
     }
 }
 
@@ -353,17 +403,17 @@ struct LearningCard: View {
     }
 }
 
-// MARK: - Loved Tab
+// MARK: - Seen Tab
 
-struct LovedTabContent: View {
+struct SeenTabContent: View {
     let movies: [SavedMovie]
 
     var body: some View {
         if movies.isEmpty {
             EmptyStateView(
                 icon: "heart",
-                title: "No Loved Films Yet",
-                description: "Search for films and tap the heart ❤️ to mark films you love"
+                title: "No Films Seen Yet",
+                description: "Search for films and mark the ones you've watched"
             )
             .padding(.top, 100)
         } else {
@@ -387,7 +437,7 @@ struct QueueTabContent: View {
             EmptyStateView(
                 icon: "bookmark",
                 title: "Your Queue is Empty",
-                description: "Search for films and tap the bookmark 🔖 to save films to watch later"
+                description: "Search for films and save ones you want to watch"
             )
             .padding(.top, 100)
         } else {
