@@ -59,12 +59,13 @@ struct CollectionCarousel: View {
                 Spacer()
                 NavigationLink(destination: CollectionDetailView(collectionId: collection.id)) {
                     Text("View All →")
-                        .font(.mgSubheadline)
-                        .fontWeight(.medium)
+                        .font(.mgCallout)
+                        .fontWeight(.semibold)
                         .foregroundStyle(Color.mgGold)
                 }
                 .sensoryFeedback(.selection, trigger: collection.id)
             }
+            .padding(.top, .mgSpacing2)
             .padding(.horizontal, .mgSpacing16)
             .padding(.bottom, .mgSpacing8)
         }
@@ -120,5 +121,6 @@ struct MoviePosterCard: View {
                     .font(.system(size: 32))
                     .foregroundStyle(Color.mgTertiary)
             )
+            .contentShape(Rectangle())
     }
 }

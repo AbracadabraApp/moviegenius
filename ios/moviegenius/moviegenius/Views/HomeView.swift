@@ -9,7 +9,6 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject private var viewModel = HomeViewModel()
-    @State private var searchText = ""
 
     var body: some View {
         ScrollView {
@@ -84,9 +83,6 @@ struct HomeView: View {
         }
         .scrollIndicators(.hidden)
         .background(Color.mgBackground)
-        .navigationTitle("Movies")
-        .navigationBarTitleDisplayMode(.large)
-        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search movies")
         .task {
             await viewModel.loadInitialCollections()
         }

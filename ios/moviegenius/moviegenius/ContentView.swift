@@ -20,7 +20,7 @@ struct ContentView: View {
             VStack(spacing: 0) {
                 if let movieResponse = viewModel.movieResponse {
                     // Search bar
-                    SearchBarView()
+                    SearchBarCompact()
 
                     // Poster with trailer and favorite buttons overlay
                     MoviePosterView(
