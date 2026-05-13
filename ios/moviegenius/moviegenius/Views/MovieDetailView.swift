@@ -141,7 +141,7 @@ struct MovieDetailView: View {
 // MARK: - Compact Search Bar
 
 struct SearchBarCompact: View {
-    @State private var searchText = ""
+    @State private var showingSearch = false
 
     var body: some View {
         HStack(spacing: .mgSpacing8) {
@@ -164,7 +164,20 @@ struct SearchBarCompact: View {
                 .strokeBorder(Color.mgSecondary.opacity(0.2), lineWidth: 1)
         )
         .onTapGesture {
-            // TODO: Navigate to search view
+            showingSearch = true
+        }
+        .fullScreenCover(isPresented: $showingSearch) {
+            NavigationStack {
+                SearchView()
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Done") {
+                                showingSearch = false
+                            }
+                            .foregroundStyle(Color.mgGold)
+                        }
+                    }
+            }
         }
     }
 }

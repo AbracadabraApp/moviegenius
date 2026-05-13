@@ -52,11 +52,10 @@ struct SearchView: View {
                         .clipShape(RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous))
                         .shadow(color: .black.opacity(0.1), radius: 12, x: 0, y: 4)
 
-                        if viewModel.searchText.count > 0 && viewModel.searchText.count < 3 {
-                            Text("Type 3+ characters to search")
-                                .font(.mgSubheadline)
-                                .foregroundStyle(.black.opacity(0.7))
-                        }
+                        // Always show hint when not searching (empty or <3 chars)
+                        Text(viewModel.searchText.isEmpty ? "Type 3+ characters to search" : "Type \(3 - viewModel.searchText.count) more character\(3 - viewModel.searchText.count == 1 ? "" : "s")")
+                            .font(.mgSubheadline)
+                            .foregroundStyle(.black.opacity(0.7))
                     }
                     .padding(.horizontal, .mgSpacing32)
 

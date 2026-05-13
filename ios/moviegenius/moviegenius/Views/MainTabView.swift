@@ -2,7 +2,7 @@
 //  MainTabView.swift
 //  moviegenius
 //
-//  Main app navigation with 3 tabs: Browse, Genius, You
+//  Main app navigation with 3 tabs: Movies, Search, Genius
 //
 
 import SwiftUI
@@ -28,11 +28,26 @@ class NavigationStateManager: ObservableObject {
 struct MainTabView: View {
     @SceneStorage("selectedTab") private var selectedTab = 0
     @StateObject private var browseNavigation = NavigationStateManager()
+    @StateObject private var searchNavigation = NavigationStateManager()
     @StateObject private var geniusNavigation = NavigationStateManager()
 
+    // Track tab selection to detect re-taps
+    private var selectedTabBinding: Binding<Int> {
+        Binding(
+            get: { selectedTab },
+            set: { newValue in
+                if newValue == selectedTab {
+                    // Same tab tapped - pop to root
+                    popToRoot(for: newValue)
+                }
+                selectedTab = newValue
+            }
+        )
+    }
+
     var body: some View {
-        TabView(selection: $selectedTab) {
-            // Browse tab
+        TabView(selection: selectedTabBinding) {
+            // Movies tab
             NavigationStack(path: $browseNavigation.path) {
                 HomeView()
                     .navigationDestination(for: MovieDestination.self) { destination in
@@ -44,6 +59,19 @@ struct MainTabView: View {
             }
             .tag(0)
 
+            // Search tab
+            NavigationStack(path: $searchNavigation.path) {
+                SearchView()
+                    .navigationDestination(for: MovieDestination.self) { destination in
+                        destinationView(for: destination)
+                    }
+            }
+            .tabItem {
+                Image(systemName: "magnifyingglass")
+                Text("Search")
+            }
+            .tag(1)
+
             // Genius tab
             NavigationStack(path: $geniusNavigation.path) {
                 GeniusView()
@@ -54,16 +82,24 @@ struct MainTabView: View {
             .tabItem {
                 Label("Genius", systemImage: "wand.and.stars")
             }
-            .tag(1)
-
-            // You tab - already has its own NavigationStack internally
-            YouView()
-                .tabItem {
-                    Label("You", systemImage: "person.fill")
-                }
-                .tag(2)
+            .tag(2)
         }
         .tint(Color.mgGold)
+    }
+
+    // MARK: - Helper Methods
+
+    private func popToRoot(for tab: Int) {
+        switch tab {
+        case 0:
+            browseNavigation.path = NavigationPath()
+        case 1:
+            searchNavigation.path = NavigationPath()
+        case 2:
+            geniusNavigation.path = NavigationPath()
+        default:
+            break
+        }
     }
 
     @ViewBuilder

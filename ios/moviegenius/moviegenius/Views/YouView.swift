@@ -25,70 +25,68 @@ struct YouView: View {
     }
 
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                VStack(spacing: .mgSpacing32) {
-                    // Journey Progress
-                    VStack(spacing: .mgSpacing16) {
-                        Text(journeyStage.icon)
-                            .font(.system(size: 80))
+        ScrollView {
+            VStack(spacing: .mgSpacing32) {
+                // Journey Progress
+                VStack(spacing: .mgSpacing16) {
+                    Text(journeyStage.icon)
+                        .font(.system(size: 80))
 
-                        Text(journeyStage.title)
-                            .font(.mgTitle2)
+                    Text(journeyStage.title)
+                        .font(.mgTitle2)
 
-                        Text(journeyStage.description)
-                            .font(.mgBody)
-                            .foregroundStyle(Color.mgSecondary)
-                    }
-                    .padding(.top, .mgSpacing40)
-
-                    // Quick stats
-                    HStack(spacing: .mgSpacing24) {
-                        StatCard(number: "\(favorites.lovedMovies.count)", label: "Loved")
-                        StatCard(number: "\(favorites.queueMovies.count)", label: "Queue")
-                        StatCard(number: "\(favorites.lovedMovies.count + favorites.queueMovies.count)", label: "Total")
-                    }
-                    .padding(.horizontal, .mgSpacing20)
-
-                    // Menu sections
-                    VStack(spacing: 0) {
-                        MenuRow(icon: "heart.fill", title: "Films You Love", color: .red, count: favorites.lovedMovies.count)
-                        Divider().padding(.leading, 56)
-                        MenuRow(icon: "bookmark.fill", title: "Your Queue", color: .blue, count: favorites.queueMovies.count)
-                    }
-                    .mgCard()
-                    .padding(.horizontal, .mgSpacing16)
-
-                    VStack(spacing: 0) {
-                        MenuRow(icon: "gearshape.fill", title: "Settings", color: .gray)
-                        Divider().padding(.leading, 56)
-                        MenuRow(icon: "questionmark.circle.fill", title: "Help & Support", color: .gray)
-                    }
-                    .mgCard()
-                    .padding(.horizontal, .mgSpacing16)
-
-                    // Educational message
-                    if favorites.lovedMovies.isEmpty && favorites.queueMovies.isEmpty {
-                        VStack(spacing: .mgSpacing12) {
-                            Text("Start Your Film Journey")
-                                .font(.mgHeadline)
-                            Text("Search for films, then tap the heart ❤️ to mark films you love or the bookmark 🔖 to save films to watch later")
-                                .font(.mgCaption)
-                                .foregroundStyle(Color.mgSecondary)
-                                .multilineTextAlignment(.center)
-                        }
-                        .padding(.mgSpacing24)
-                        .mgCard()
-                        .padding(.horizontal, .mgSpacing16)
-                    }
-
-                    Spacer(minLength: .mgSpacing40)
+                    Text(journeyStage.description)
+                        .font(.mgBody)
+                        .foregroundStyle(Color.mgSecondary)
                 }
-                .padding(.bottom, .mgSpacing40)
+                .padding(.top, .mgSpacing40)
+
+                // Quick stats
+                HStack(spacing: .mgSpacing24) {
+                    StatCard(number: "\(favorites.lovedMovies.count)", label: "Loved")
+                    StatCard(number: "\(favorites.queueMovies.count)", label: "Queue")
+                    StatCard(number: "\(favorites.lovedMovies.count + favorites.queueMovies.count)", label: "Total")
+                }
+                .padding(.horizontal, .mgSpacing20)
+
+                // Menu sections
+                VStack(spacing: 0) {
+                    MenuRow(icon: "heart.fill", title: "Films You Love", color: .red, count: favorites.lovedMovies.count)
+                    Divider().padding(.leading, 56)
+                    MenuRow(icon: "bookmark.fill", title: "Your Queue", color: .blue, count: favorites.queueMovies.count)
+                }
+                .mgCard()
+                .padding(.horizontal, .mgSpacing16)
+
+                VStack(spacing: 0) {
+                    MenuRow(icon: "gearshape.fill", title: "Settings", color: .gray)
+                    Divider().padding(.leading, 56)
+                    MenuRow(icon: "questionmark.circle.fill", title: "Help & Support", color: .gray)
+                }
+                .mgCard()
+                .padding(.horizontal, .mgSpacing16)
+
+                // Educational message
+                if favorites.lovedMovies.isEmpty && favorites.queueMovies.isEmpty {
+                    VStack(spacing: .mgSpacing12) {
+                        Text("Start Your Film Journey")
+                            .font(.mgHeadline)
+                        Text("Search for films, then tap the heart ❤️ to mark films you love or the bookmark 🔖 to save films to watch later")
+                            .font(.mgCaption)
+                            .foregroundStyle(Color.mgSecondary)
+                            .multilineTextAlignment(.center)
+                    }
+                    .padding(.mgSpacing24)
+                    .mgCard()
+                    .padding(.horizontal, .mgSpacing16)
+                }
+
+                Spacer(minLength: .mgSpacing40)
             }
-            .scrollIndicators(.hidden)
-            .background(Color.mgGroupedBackground)
+            .padding(.bottom, .mgSpacing40)
         }
+        .scrollIndicators(.hidden)
+        .background(Color.mgGroupedBackground)
         .onAppear {
             favorites.loadFavorites()
         }

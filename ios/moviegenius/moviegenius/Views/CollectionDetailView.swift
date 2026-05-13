@@ -18,99 +18,128 @@ struct CollectionDetailView: View {
     }
 
     var body: some View {
-        ScrollView {
-            if let collection = viewModel.collection {
+        ZStack(alignment: .top) {
+            // Main content
+            ScrollView {
                 VStack(alignment: .leading, spacing: 0) {
-                    // Collection header
-                    VStack(alignment: .leading, spacing: .mgSpacing6) {
-                        Text(collection.title)
-                            .font(.mgLargeTitle)
-                            .foregroundStyle(Color.mgPrimary)
+                    // Top spacer for overlaid search bar and back button
+                    Color.clear.frame(height: 60)
 
-                        if let subtitle = collection.subtitle {
-                            Text(subtitle)
-                                .font(.mgSubheadline)
-                                .foregroundStyle(Color.mgSecondary)
-                                .lineSpacing(2)
-                        }
-                    }
-                    .padding(.mgSpacing20)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .background(Color.mgBackground)
-                    .overlay(
-                        Rectangle()
-                            .fill(Color.mgSecondary.opacity(0.2))
-                            .frame(height: 1),
-                        alignment: .bottom
-                    )
-
-                    // Subcategories
-                    if let subcategories = collection.subcategories {
-                        ForEach(Array(subcategories.enumerated()), id: \.element.id) { index, subcategory in
-                            SubcategorySection(
-                                subcategory: subcategory,
-                                movies: viewModel.moviesForSubcategory(subcategory),
-                                isFirst: index == 0
-                            )
-                        }
-                    }
-
-                    // Footer
-                    if !viewModel.movies.isEmpty {
-                        HStack {
-                            Text("\(viewModel.movies.count) films")
-                            Text("·")
+                    if let collection = viewModel.collection {
+                        // Collection header
+                        VStack(alignment: .leading, spacing: .mgSpacing6) {
                             Text(collection.title)
+                                .font(.mgLargeTitle)
+                                .foregroundStyle(Color.mgPrimary)
+
+                            if let subtitle = collection.subtitle {
+                                Text(subtitle)
+                                    .font(.mgSubheadline)
+                                    .foregroundStyle(Color.mgSecondary)
+                                    .lineSpacing(2)
+                            }
                         }
-                        .font(.mgCaption)
-                        .foregroundStyle(Color.mgSecondary)
-                        .kerning(0.3)
-                        .padding(.horizontal, .mgSpacing16)
-                        .padding(.top, .mgSpacing32)
-                        .padding(.bottom, .mgSpacing48)
+                        .padding(.mgSpacing20)
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .background(Color.mgBackground)
                         .overlay(
                             Rectangle()
                                 .fill(Color.mgSecondary.opacity(0.2))
                                 .frame(height: 1),
-                            alignment: .top
+                            alignment: .bottom
                         )
-                    }
-                }
-            } else if viewModel.isLoading {
-                VStack(spacing: .mgSpacing16) {
-                    ProgressView()
-                        .tint(Color.mgGold)
-                    Text("Loading collection...")
-                        .font(.mgCallout)
-                        .foregroundStyle(Color.mgSecondary)
-                }
-                .padding(.top, 100)
-            } else if let error = viewModel.error {
-                VStack(spacing: .mgSpacing16) {
-                    Text("📚")
-                        .font(.system(size: 64))
-                    Text("Failed to load collection")
-                        .font(.mgHeadline)
-                    Text(error.localizedDescription)
-                        .font(.mgCaption)
-                        .foregroundStyle(Color.mgSecondary)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, .mgSpacing32)
-                    Button("Retry") {
-                        Task {
-                            await viewModel.loadCollection()
+
+                        // Subcategories
+                        if let subcategories = collection.subcategories {
+                            ForEach(Array(subcategories.enumerated()), id: \.element.id) { index, subcategory in
+                                SubcategorySection(
+                                    subcategory: subcategory,
+                                    movies: viewModel.moviesForSubcategory(subcategory),
+                                    isFirst: index == 0
+                                )
+                            }
                         }
+
+                        // Footer
+                        if !viewModel.movies.isEmpty {
+                            HStack {
+                                Text("\(viewModel.movies.count) films")
+                                Text("·")
+                                Text(collection.title)
+                            }
+                            .font(.mgCaption)
+                            .foregroundStyle(Color.mgSecondary)
+                            .kerning(0.3)
+                            .padding(.horizontal, .mgSpacing16)
+                            .padding(.top, .mgSpacing32)
+                            .padding(.bottom, .mgSpacing48)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .overlay(
+                                Rectangle()
+                                    .fill(Color.mgSecondary.opacity(0.2))
+                                    .frame(height: 1),
+                                alignment: .top
+                            )
+                        }
+                    } else if viewModel.isLoading {
+                        VStack(spacing: .mgSpacing16) {
+                            ProgressView()
+                                .tint(Color.mgGold)
+                            Text("Loading collection...")
+                                .font(.mgCallout)
+                                .foregroundStyle(Color.mgSecondary)
+                        }
+                        .padding(.top, 100)
+                    } else if let error = viewModel.error {
+                        VStack(spacing: .mgSpacing16) {
+                            Text("📚")
+                                .font(.system(size: 64))
+                            Text("Failed to load collection")
+                                .font(.mgHeadline)
+                            Text(error.localizedDescription)
+                                .font(.mgCaption)
+                                .foregroundStyle(Color.mgSecondary)
+                                .multilineTextAlignment(.center)
+                                .padding(.horizontal, .mgSpacing32)
+                            Button("Retry") {
+                                Task {
+                                    await viewModel.loadCollection()
+                                }
+                            }
+                            .buttonStyle(MGPrimaryButtonStyle())
+                        }
+                        .padding()
+                        .padding(.top, 80)
                     }
-                    .buttonStyle(MGPrimaryButtonStyle())
                 }
-                .padding()
-                .padding(.top, 80)
+            }
+            .scrollIndicators(.hidden)
+
+            // Overlaid back button and search bar
+            VStack(spacing: 0) {
+                HStack(spacing: .mgSpacing12) {
+                    // Back button
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "chevron.left")
+                            .font(.system(size: 18, weight: .medium))
+                            .foregroundStyle(Color.mgGold)
+                    }
+
+                    // Search bar
+                    SearchBarCompact()
+                }
+                .padding(.horizontal, .mgSpacing16)
+                .padding(.top, .mgSpacing8)
+                .padding(.bottom, .mgSpacing8)
+                .background(Color.mgBackground.opacity(0.95))
+
+                Spacer()
             }
         }
-        .scrollIndicators(.hidden)
         .background(Color.mgBackground)
-        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarHidden(true)
         .task {
             await viewModel.loadCollection()
         }

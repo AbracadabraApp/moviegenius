@@ -88,10 +88,11 @@ struct GeniusView: View {
                 }
             }
             .scrollIndicators(.hidden)
+            .refreshable {
+                favorites.loadFavorites()
+            }
         }
         .background(Color.mgGroupedBackground)
-        .navigationTitle("Genius")
-        .navigationBarTitleDisplayMode(.large)
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search movies")
         .onAppear {
             favorites.loadFavorites()

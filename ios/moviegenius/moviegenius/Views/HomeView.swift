@@ -83,6 +83,9 @@ struct HomeView: View {
         }
         .scrollIndicators(.hidden)
         .background(Color.mgBackground)
+        .refreshable {
+            await viewModel.loadInitialCollections()
+        }
         .task {
             await viewModel.loadInitialCollections()
         }
