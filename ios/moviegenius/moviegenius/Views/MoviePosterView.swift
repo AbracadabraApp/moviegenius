@@ -9,25 +9,22 @@ import SwiftUI
 
 struct MoviePosterView: View {
     let posterUrl: String?
-    let trailerUrl: String?
     let tmdbId: Int
     let title: String
     let year: Int?
-    let slug: String?
+    let hasTrailers: Bool
     @State private var showingTrailer = false
 
-    init(posterUrl: String?, trailerUrl: String?, tmdbId: Int, title: String, year: Int?, slug: String?) {
+    init(posterUrl: String?, tmdbId: Int, title: String, year: Int?, hasTrailers: Bool) {
         self.posterUrl = posterUrl
-        self.trailerUrl = trailerUrl
         self.tmdbId = tmdbId
         self.title = title
         self.year = year
-        self.slug = slug
+        self.hasTrailers = hasTrailers
 
         #if DEBUG
         print("🎬 [MoviePosterView] Init - \(title)")
-        print("   Trailer URL: \(trailerUrl ?? "nil")")
-        print("   Will show play button: \(trailerUrl != nil && !trailerUrl!.isEmpty)")
+        print("   Has trailers: \(hasTrailers)")
         #endif
     }
 
@@ -72,15 +69,15 @@ struct MoviePosterView: View {
             )
 
             // Trailer play button overlay (bottom-right corner)
-            VStack {
-                Spacer()
-                HStack {
+            if hasTrailers {
+                VStack {
                     Spacer()
-                    if let trailerUrl = trailerUrl, !trailerUrl.isEmpty {
+                    HStack {
+                        Spacer()
                         Button {
                             #if DEBUG
                             print("🎬 [MoviePosterView] Play button tapped")
-                            print("   Opening trailer: \(trailerUrl)")
+                            print("   Opening TrailerView for tmdbId: \(tmdbId)")
                             #endif
                             showingTrailer = true
                         } label: {
@@ -98,8 +95,12 @@ struct MoviePosterView: View {
                         .accessibilityLabel("Play trailer")
                         .accessibilityHint("Opens trailer video")
                         .padding(.mgSpacing16)
-                        .sheet(isPresented: $showingTrailer) {
-                            TrailerPlayerView(youtubeId: trailerUrl)
+                        .fullScreenCover(isPresented: $showingTrailer) {
+                            TrailerView(
+                                tmdbId: tmdbId,
+                                movieTitle: title,
+                                movieYear: year
+                            )
                         }
                     }
                 }
@@ -128,10 +129,9 @@ struct MoviePosterView: View {
 #Preview {
     MoviePosterView(
         posterUrl: "https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
-        trailerUrl: "SUXWAEX2jlg",  // YouTube video ID, not full URL
         tmdbId: 153,
         title: "Lost in Translation",
         year: 2003,
-        slug: "lost-in-translation-2003"
+        hasTrailers: true
     )
 }

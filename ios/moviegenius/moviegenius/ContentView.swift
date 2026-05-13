@@ -22,14 +22,17 @@ struct ContentView: View {
                     // Search bar
                     SearchBarCompact()
 
+                    // Spacer to push poster down
+                    Spacer()
+                        .frame(height: 220)
+
                     // Poster with trailer and favorite buttons overlay
                     MoviePosterView(
                         posterUrl: movieResponse.movie.posterUrl,
-                        trailerUrl: movieResponse.movie.trailerUrl,
                         tmdbId: movieResponse.movie.tmdbId,
                         title: movieResponse.movie.title,
                         year: movieResponse.movie.year,
-                        slug: movieResponse.movie.slug
+                        hasTrailers: movieResponse.movie.trailerUrl != nil && !movieResponse.movie.trailerUrl!.isEmpty
                     )
 
                     // WhyWatch section

@@ -29,11 +29,10 @@ struct MovieDetailView: View {
                         // Poster with trailer overlay
                         MoviePosterView(
                             posterUrl: movieResponse.movie.posterUrl,
-                            trailerUrl: movieResponse.movie.trailerUrl,
                             tmdbId: movieResponse.movie.tmdbId,
                             title: movieResponse.movie.title,
                             year: movieResponse.movie.year,
-                            slug: movieResponse.movie.slug
+                            hasTrailers: viewModel.hasTrailers
                         )
 
                         // Favorite buttons (below poster, right-aligned)

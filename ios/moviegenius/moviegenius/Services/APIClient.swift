@@ -222,6 +222,48 @@ actor APIClient {
 
         return try JSONDecoder().decode(PersonResponse.self, from: data)
     }
+
+    // MARK: - TMDB Videos (Trailers)
+
+    func fetchVideos(tmdbId: Int) async throws -> TMDBVideosResponse {
+        // Use TMDB API directly for video data (not in our backend yet)
+        let tmdbAPIKey = "15d2ea6d0dc1d476efbca3eba2b9bbfb"
+        guard let url = URL(string: "https://api.themoviedb.org/3/movie/\(tmdbId)/videos?api_key=\(tmdbAPIKey)") else {
+            throw APIError.invalidURL
+        }
+
+        var request = URLRequest(url: url)
+        request.cachePolicy = .returnCacheDataElseLoad
+        request.timeoutInterval = 15
+
+        // Cache video data for 1 hour (videos rarely change)
+        request.setValue("public, max-age=3600", forHTTPHeaderField: "Cache-Control")
+
+        do {
+            let (data, response) = try await session.data(for: request)
+
+            guard let httpResponse = response as? HTTPURLResponse else {
+                throw APIError.invalidResponse
+            }
+
+            guard (200...299).contains(httpResponse.statusCode) else {
+                throw APIError.httpError(statusCode: httpResponse.statusCode)
+            }
+
+            let decoded = try JSONDecoder().decode(TMDBVideosResponse.self, from: data)
+
+            #if DEBUG
+            print("✅ [APIClient] Fetched \(decoded.results.count) videos for movie \(tmdbId)")
+            print("   Primary trailer: \(decoded.primaryTrailer?.name ?? "none")")
+            #endif
+
+            return decoded
+        } catch let error as URLError {
+            throw APIError.networkError(underlying: error)
+        } catch let error as DecodingError {
+            throw APIError.decodingError(underlying: error)
+        }
+    }
 }
 
 enum APIError: Error, LocalizedError {
