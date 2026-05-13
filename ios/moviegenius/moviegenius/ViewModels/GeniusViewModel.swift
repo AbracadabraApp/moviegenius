@@ -83,7 +83,7 @@ class GeniusViewModel: ObservableObject {
     }
 
     func genresInProgress() -> [GenreExpertise] {
-        genres.filter { $0.watchedCount > 0 && $0.rank != .master }
+        genres.filter { $0.seenCount > 0 && $0.rank != .master }
     }
 
     func masteredGenres() -> [GenreExpertise] {
