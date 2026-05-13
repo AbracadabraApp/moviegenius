@@ -2,7 +2,7 @@
 //  TrailerPlayerView.swift
 //  moviegenius
 //
-//  YouTube trailer player using WKWebView (same approach as web and Letterboxd)
+//  YouTube trailer player using YouTube iframe Player API (fixes error 152-4)
 //
 
 import SwiftUI
@@ -85,13 +85,13 @@ struct TrailerPlayerView: View {
             #if DEBUG
             print("🎥 [TrailerPlayer] Opening trailer view")
             print("   YouTube ID: \(youtubeId)")
-            print("   Embed URL: https://www.youtube.com/embed/\(youtubeId)")
+            print("   Using YouTube iframe Player API")
             #endif
         }
     }
 }
 
-// MARK: - YouTube Player (WKWebView)
+// MARK: - YouTube Player (iframe Player API)
 
 struct YouTubePlayerView: UIViewRepresentable {
     let youtubeId: String
@@ -118,10 +118,11 @@ struct YouTubePlayerView: UIViewRepresentable {
 
     func updateUIView(_ webView: WKWebView, context: Context) {
         #if DEBUG
-        print("🎥 [YouTubePlayerView] Loading YouTube embed")
+        print("🎥 [YouTubePlayerView] Loading YouTube iframe Player API")
         print("   YouTube ID: \(youtubeId)")
         #endif
-        // YouTube embed URL with autoplay (same as web implementation)
+
+        // YouTube iframe Player API implementation (fixes error 152-4)
         let embedHTML = """
         <!DOCTYPE html>
         <html>
@@ -138,15 +139,7 @@ struct YouTubePlayerView: UIViewRepresentable {
                     background-color: #000;
                     overflow: hidden;
                 }
-                .video-container {
-                    position: relative;
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                iframe {
+                #player {
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -154,21 +147,50 @@ struct YouTubePlayerView: UIViewRepresentable {
                     width: 100%;
                     height: 56.25vw; /* 16:9 aspect ratio */
                     max-height: 100%;
-                    max-width: 177.78vh; /* 16:9 aspect ratio */
-                    border: none;
+                    max-width: 177.78vh;
                 }
             </style>
         </head>
         <body>
-            <div class="video-container">
-                <iframe
-                    src="https://www.youtube.com/embed/\(youtubeId)?autoplay=1&playsinline=1&rel=0&modestbranding=1&fs=1"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                    playsinline>
-                </iframe>
-            </div>
+            <div id="player"></div>
+
+            <script>
+                // Load YouTube iframe Player API
+                var tag = document.createElement('script');
+                tag.src = "https://www.youtube.com/iframe_api";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                var player;
+
+                // API ready callback
+                function onYouTubeIframeAPIReady() {
+                    player = new YT.Player('player', {
+                        videoId: '\(youtubeId)',
+                        playerVars: {
+                            'playsinline': 1,
+                            'autoplay': 1,
+                            'rel': 0,
+                            'modestbranding': 1,
+                            'fs': 1,
+                            'origin': 'https://www.youtube.com'
+                        },
+                        events: {
+                            'onReady': onPlayerReady,
+                            'onError': onPlayerError
+                        }
+                    });
+                }
+
+                function onPlayerReady(event) {
+                    console.log('YouTube player ready');
+                    event.target.playVideo();
+                }
+
+                function onPlayerError(event) {
+                    console.error('YouTube player error:', event.data);
+                }
+            </script>
         </body>
         </html>
         """

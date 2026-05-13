@@ -22,19 +22,19 @@ export default function GeniusPage() {
   const [loading, setLoading] = useState(true);
 
   const loadFeed = useCallback(() => {
-    FavoritesManager._cache.hearted = null;
-    FavoritesManager._cache.bookmarked = null;
+    FavoritesManager._cache.watched = null;
+    FavoritesManager._cache.liked = null;
 
-    const heartedMovies = FavoritesManager.getHeartedMovies();
-    const seenIds = heartedMovies.map(m => m.tmdbId || m.tmdb_id).filter(Boolean);
+    const watchedMovies = FavoritesManager.getWatchedMovies();
+    const watchedIds = watchedMovies.map(m => m.tmdbId || m.tmdb_id).filter(Boolean);
 
-    const savedMovies = FavoritesManager.getBookmarkedMovies();
-    const bookmarkedIds = savedMovies.map(m => m.tmdbId).filter(Boolean);
+    const likedMovies = FavoritesManager.getLikedMovies();
+    const likedIds = likedMovies.map(m => m.tmdbId || m.tmdb_id).filter(Boolean);
 
-    // Use both hearted and bookmarked as seeds; dedupe
-    const savedIds = [...new Set([...seenIds, ...bookmarkedIds])];
+    // Genius uses ONLY watched + liked (not bookmarked - those are unwatched!)
+    const seedIds = [...new Set([...watchedIds, ...likedIds])];
 
-    if (savedIds.length < MIN_SAVES) {
+    if (seedIds.length < MIN_SAVES) {
       router.replace('/genius/start');
       return;
     }
@@ -44,7 +44,7 @@ export default function GeniusPage() {
     fetch('/api/genius-feed', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ savedIds, seenIds }),
+      body: JSON.stringify({ seedIds, watchedIds, likedIds }),
     })
       .then(r => r.json())
       .then(data => {

@@ -71,23 +71,6 @@ struct MoviePosterView: View {
                 y: 6
             )
 
-            // Favorite buttons overlay (bottom-center)
-            VStack {
-                Spacer()
-
-                HStack(spacing: .mgSpacing8) {
-                    FavoriteButtons(
-                        tmdbId: tmdbId,
-                        title: title,
-                        year: year,
-                        posterUrl: posterUrl,
-                        slug: slug,
-                        compact: true
-                    )
-                }
-                .padding(.mgSpacing12)
-            }
-
             // Trailer play button overlay (bottom-right corner)
             VStack {
                 Spacer()

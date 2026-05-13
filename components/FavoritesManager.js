@@ -6,7 +6,8 @@
 export const FavoritesManager = {
   // Debounced save mechanism to prevent excessive localStorage writes
   _saveTimeouts: {
-    hearted: null,
+    watched: null,
+    liked: null,
     bookmarked: null,
     peopleHearted: null,
     peopleBookmarked: null,
@@ -14,7 +15,8 @@ export const FavoritesManager = {
 
   // In-memory cache for current state
   _cache: {
-    hearted: null,
+    watched: null,
+    liked: null,
     bookmarked: null,
     peopleHearted: null,
     peopleBookmarked: null,
@@ -36,8 +38,11 @@ export const FavoritesManager = {
     FavoritesManager._saveTimeouts[type] = setTimeout(() => {
       try {
         let key, eventName;
-        if (type === 'hearted') {
-          key = 'heartedMovies';
+        if (type === 'watched') {
+          key = 'watchedMovies';
+          eventName = 'moviesUpdated';
+        } else if (type === 'liked') {
+          key = 'likedMovies';
           eventName = 'moviesUpdated';
         } else if (type === 'bookmarked') {
           key = 'bookmarkedMovies';
@@ -61,19 +66,38 @@ export const FavoritesManager = {
       }
     }, 500); // 500ms debounce
   },
-  // Get hearted movies from cache or localStorage
-  getHeartedMovies: () => {
-    if (FavoritesManager._cache.hearted !== null) {
-      return FavoritesManager._cache.hearted;
+  // Get watched movies from cache or localStorage
+  getWatchedMovies: () => {
+    if (FavoritesManager._cache.watched !== null) {
+      return FavoritesManager._cache.watched;
     }
     // SSR guard - return empty array on server
     if (typeof window === 'undefined') {
       return [];
     }
     try {
-      const saved = localStorage.getItem('heartedMovies');
+      const saved = localStorage.getItem('watchedMovies');
       const movies = saved ? JSON.parse(saved) : [];
-      FavoritesManager._cache.hearted = movies;
+      FavoritesManager._cache.watched = movies;
+      return movies;
+    } catch (error) {
+      return [];
+    }
+  },
+
+  // Get liked movies from cache or localStorage
+  getLikedMovies: () => {
+    if (FavoritesManager._cache.liked !== null) {
+      return FavoritesManager._cache.liked;
+    }
+    // SSR guard - return empty array on server
+    if (typeof window === 'undefined') {
+      return [];
+    }
+    try {
+      const saved = localStorage.getItem('likedMovies');
+      const movies = saved ? JSON.parse(saved) : [];
+      FavoritesManager._cache.liked = movies;
       return movies;
     } catch (error) {
       return [];
@@ -99,10 +123,16 @@ export const FavoritesManager = {
     }
   },
 
-  // Check if a movie is hearted
-  isMovieHearted: movieId => {
-    const hearted = FavoritesManager.getHeartedMovies();
-    return hearted.some(movie => movie.id === movieId);
+  // Check if a movie is watched
+  isMovieWatched: movieId => {
+    const watched = FavoritesManager.getWatchedMovies();
+    return watched.some(movie => movie.id === movieId);
+  },
+
+  // Check if a movie is liked
+  isMovieLiked: movieId => {
+    const liked = FavoritesManager.getLikedMovies();
+    return liked.some(movie => movie.id === movieId);
   },
 
   // Check if a movie is bookmarked
@@ -111,37 +141,73 @@ export const FavoritesManager = {
     return bookmarked.some(movie => movie.id === movieId);
   },
 
-  // Add/remove heart for a movie
-  toggleHeart: movie => {
+  // Add/remove watched for a movie
+  toggleWatched: movie => {
     try {
 
       if (!movie || !movie.title) {
         return false;
       }
 
-      const hearted = FavoritesManager.getHeartedMovies();
+      const watched = FavoritesManager.getWatchedMovies();
       const movieId =
         movie.id || `${movie.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.year}`;
       const movieData = { ...movie, id: movieId };
 
 
-      const existingIndex = hearted.findIndex(m => m.id === movieId);
+      const existingIndex = watched.findIndex(m => m.id === movieId);
 
       if (existingIndex >= 0) {
-        // Remove from hearts
-        hearted.splice(existingIndex, 1);
+        // Remove from watched
+        watched.splice(existingIndex, 1);
       } else {
-        // Add to hearts
-        hearted.push(movieData);
+        // Add to watched
+        watched.push(movieData);
       }
 
       // Update cache immediately for instant UI feedback
-      FavoritesManager._cache.hearted = [...hearted];
+      FavoritesManager._cache.watched = [...watched];
 
       // Schedule debounced save to localStorage
-      FavoritesManager._debouncedSave('hearted', hearted);
+      FavoritesManager._debouncedSave('watched', watched);
 
-      return existingIndex < 0; // Return new state (true if now hearted)
+      return existingIndex < 0; // Return new state (true if now watched)
+    } catch (error) {
+      return false;
+    }
+  },
+
+  // Add/remove like for a movie
+  toggleLiked: movie => {
+    try {
+
+      if (!movie || !movie.title) {
+        return false;
+      }
+
+      const liked = FavoritesManager.getLikedMovies();
+      const movieId =
+        movie.id || `${movie.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${movie.year}`;
+      const movieData = { ...movie, id: movieId };
+
+
+      const existingIndex = liked.findIndex(m => m.id === movieId);
+
+      if (existingIndex >= 0) {
+        // Remove from liked
+        liked.splice(existingIndex, 1);
+      } else {
+        // Add to liked
+        liked.push(movieData);
+      }
+
+      // Update cache immediately for instant UI feedback
+      FavoritesManager._cache.liked = [...liked];
+
+      // Schedule debounced save to localStorage
+      FavoritesManager._debouncedSave('liked', liked);
+
+      return existingIndex < 0; // Return new state (true if now liked)
     } catch (error) {
       return false;
     }
@@ -183,14 +249,25 @@ export const FavoritesManager = {
     }
   },
 
-  // Clear all hearted movies
-  clearHeartedMovies: () => {
+  // Clear all watched movies
+  clearWatchedMovies: () => {
     // SSR guard - skip on server
     if (typeof window === 'undefined') {
       return;
     }
-    localStorage.removeItem('heartedMovies');
-    FavoritesManager._cache.hearted = [];
+    localStorage.removeItem('watchedMovies');
+    FavoritesManager._cache.watched = [];
+    window.dispatchEvent(new CustomEvent('moviesUpdated'));
+  },
+
+  // Clear all liked movies
+  clearLikedMovies: () => {
+    // SSR guard - skip on server
+    if (typeof window === 'undefined') {
+      return;
+    }
+    localStorage.removeItem('likedMovies');
+    FavoritesManager._cache.liked = [];
     window.dispatchEvent(new CustomEvent('moviesUpdated'));
   },
 
@@ -211,11 +288,13 @@ export const FavoritesManager = {
     if (typeof window === 'undefined') {
       return;
     }
-    localStorage.removeItem('heartedMovies');
+    localStorage.removeItem('watchedMovies');
+    localStorage.removeItem('likedMovies');
     localStorage.removeItem('bookmarkedMovies');
     localStorage.removeItem('heartedPeople');
     localStorage.removeItem('bookmarkedPeople');
-    FavoritesManager._cache.hearted = [];
+    FavoritesManager._cache.watched = [];
+    FavoritesManager._cache.liked = [];
     FavoritesManager._cache.bookmarked = [];
     FavoritesManager._cache.peopleHearted = [];
     FavoritesManager._cache.peopleBookmarked = [];
