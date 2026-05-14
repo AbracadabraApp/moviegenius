@@ -170,7 +170,7 @@ struct JourneyTabContent: View {
 
     // Two-tier categories require subcategory navigation
     private func isTwoTierCategory(_ category: String) -> Bool {
-        ["Academy Awards", "AFI Awards", "Actors", "Actresses", "Directors"].contains(category)
+        ["Academy Awards", "AFI Awards", "Actors", "Actresses", "Directors", "Mystery"].contains(category)
     }
 
     // Calculate progress for a category (0.0 to 1.0)
@@ -495,7 +495,7 @@ struct CategorySubcategoriesView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: .mgSpacing16) {
                 // Header
-                Text("Select a category")
+                Text(category)
                     .font(.mgTitle2)
                     .foregroundStyle(Color.mgSecondary)
                     .padding(.horizontal, .mgSpacing20)
@@ -569,21 +569,6 @@ struct CategoryEssentialsView: View {
                     .padding(.horizontal, .mgSpacing20)
                     .padding(.top, .mgSpacing8)
                 }
-
-                // Section header
-                VStack(alignment: .leading, spacing: .mgSpacing4) {
-                    Text("\(subcategory ?? category) Classics")
-                        .font(.mgTitle2)
-
-                    // Show availability count if some films are missing
-                    if !viewModel.isLoading && viewModel.availableFilms < viewModel.totalFilms {
-                        Text("\(viewModel.availableFilms) of \(viewModel.totalFilms) available")
-                            .font(.mgCaption)
-                            .foregroundStyle(Color.mgSecondary)
-                    }
-                }
-                .padding(.horizontal, .mgSpacing20)
-                .padding(.top, viewModel.movies.isEmpty ? .mgSpacing8 : 0)
 
                 if viewModel.isLoading {
                     VStack(spacing: .mgSpacing12) {
@@ -869,13 +854,18 @@ class CategoryEssentialsViewModel: ObservableObject {
         do {
             var loadedMovies: [EssentialMovie] = []
 
-            for film in filmList {
-                // Try to find tmdbId for this film
-                if let movie = try await searchMovie(title: film.title, year: film.year) {
-                    loadedMovies.append(movie)
-                } else {
-                    // Film exists in our list but not in TMDB - skip it
-                    print("⚠️ Couldn't find TMDB match for: \(film.title) (\(film.year))")
+            // Load all films in parallel for faster performance
+            await withTaskGroup(of: EssentialMovie?.self) { group in
+                for film in filmList {
+                    group.addTask {
+                        try? await self.searchMovie(title: film.title, year: film.year)
+                    }
+                }
+
+                for await movie in group {
+                    if let movie = movie {
+                        loadedMovies.append(movie)
+                    }
                 }
             }
 
@@ -1052,6 +1042,19 @@ struct CategoryEssentials {
                 "Terrence Malick",
                 "Wong Kar-wai",
                 "Yasujirō Ozu"
+            ]
+        case "Mystery":
+            return [
+                "Essential",
+                "Foundational",
+                "Classics",
+                "Well-Versed",
+                "Devotee",
+                "Connoisseur",
+                "Deep Cuts",
+                "Specialist",
+                "Archivist",
+                "Master"
             ]
         default:
             return []
@@ -3163,7 +3166,188 @@ case ("Actresses", "Bette Davis"):
                 ("Okja", 2017),
                 ("Parasite", 2019),
                 ("Mickey 17", 2025),
-            ]        default:
+            ]
+        case ("Mystery", "Essential"):
+            return [
+                ("Chinatown", 1974),
+                ("Vertigo", 1958),
+                ("Rear Window", 1954),
+                ("The Third Man", 1949),
+                ("The Maltese Falcon", 1941),
+                ("Memento", 2000),
+                ("Mulholland Drive", 2001),
+                ("Zodiac", 2007),
+                ("Knives Out", 2019),
+                ("The Big Sleep", 1946),
+            ]
+        case ("Mystery", "Foundational"):
+            return [
+                ("Laura", 1944),
+                ("The Long Goodbye", 1973),
+                ("L.A. Confidential", 1997),
+                ("Blue Velvet", 1986),
+                ("The Usual Suspects", 1995),
+                ("Se7en", 1995),
+                ("Gone Girl", 2014),
+                ("Prisoners", 2013),
+                ("Murder on the Orient Express", 1974),
+                ("Witness for the Prosecution", 1957),
+                ("The Lady Vanishes", 1938),
+                ("Strangers on a Train", 1951),
+                ("Dial M for Murder", 1954),
+                ("Klute", 1971),
+                ("The Conversation", 1974),
+            ]
+        case ("Mystery", "Classics"):
+            return [
+                ("Mystic River", 2003),
+                ("Insomnia", 2002),
+                ("The Silence of the Lambs", 1991),
+                ("Blow-Up", 1966),
+                ("Sleuth", 1972),
+                ("Murder, My Sweet", 1944),
+                ("The Big Heat", 1953),
+                ("Kiss Me Deadly", 1955),
+                ("Touch of Evil", 1958),
+                ("The Spiral Staircase", 1946),
+                ("Gaslight", 1944),
+                ("Shadow of a Doubt", 1943),
+                ("Anatomy of a Murder", 1959),
+                ("Body Heat", 1981),
+                ("The Name of the Rose", 1986),
+            ]
+        case ("Mystery", "Well-Versed"):
+            return [
+                ("Brick", 2005),
+                ("Inherent Vice", 2014),
+                ("Nightcrawler", 2014),
+                ("Wind River", 2017),
+                ("The Girl with the Dragon Tattoo", 2011),
+                ("Shutter Island", 2010),
+                ("The Prestige", 2006),
+                ("Identity", 2003),
+                ("Devil in a Blue Dress", 1995),
+                ("Mulholland Falls", 1996),
+                ("Hollywoodland", 2006),
+                ("The Black Dahlia", 2006),
+                ("True Confessions", 1981),
+                ("The Two Jakes", 1990),
+                ("Twin Peaks: Fire Walk with Me", 1992),
+                ("Lost Highway", 1997),
+                ("The Pledge", 2001),
+                ("Capote", 2005),
+                ("Foxcatcher", 2014),
+                ("Spotlight", 2015),
+            ]
+        case ("Mystery", "Devotee"):
+            return [
+                ("Memories of Murder", 2003),
+                ("Oldboy", 2003),
+                ("The Chaser", 2008),
+                ("The Wailing", 2016),
+                ("Burning", 2018),
+                ("Decision to Leave", 2022),
+                ("The Vanishing", 1988),
+                ("Diabolique", 1955),
+                ("Caché", 2005),
+                ("The White Ribbon", 2009),
+                ("The Secret in Their Eyes", 2009),
+                ("Headhunters", 2011),
+                ("Tell No One", 2006),
+                ("The Girl on the Train", 2016),
+                ("A Most Violent Year", 2014),
+                ("Mystery Road", 2013),
+                ("Animal Kingdom", 2010),
+                ("The Dry", 2020),
+                ("Snowtown", 2011),
+                ("Goodnight Mommy", 2014),
+            ]
+        case ("Mystery", "Connoisseur"):
+            return [
+                ("Charade", 1963),
+                ("Wait Until Dark", 1967),
+                ("The Manchurian Candidate", 1962),
+                ("Klute", 1971),
+                ("The Parallax View", 1974),
+                ("Three Days of the Condor", 1975),
+                ("Marathon Man", 1976),
+                ("All the President's Men", 1976),
+                ("The Onion Field", 1979),
+                ("Cutter's Way", 1981),
+                ("Body Double", 1984),
+                ("Blow Out", 1981),
+                ("House of Games", 1987),
+                ("The Vanishing", 1993),
+                ("Jagged Edge", 1985),
+                ("No Way Out", 1987),
+                ("The Morning After", 1986),
+                ("Frantic", 1988),
+                ("Presumed Innocent", 1990),
+                ("Final Analysis", 1992),
+            ]
+        case ("Mystery", "Deep Cuts"):
+            return [
+                ("The Browning Version", 1951),
+                ("Niagara", 1953),
+                ("Sudden Fear", 1952),
+                ("The Big Clock", 1948),
+                ("The Window", 1949),
+                ("Crime of Passion", 1957),
+                ("Pushover", 1954),
+                ("Slightly Scarlet", 1956),
+                ("Black Angel", 1946),
+                ("Phantom Lady", 1944),
+                ("The Stranger", 1946),
+                ("So Dark the Night", 1946),
+                ("The Locket", 1946),
+                ("The Dark Mirror", 1946),
+                ("Whirlpool", 1949),
+            ]
+        case ("Mystery", "Specialist"):
+            return [
+                ("The Reckless Moment", 1949),
+                ("The Sniper", 1952),
+                ("While the City Sleeps", 1956),
+                ("Beyond a Reasonable Doubt", 1956),
+                ("The Tattered Dress", 1957),
+                ("The Brothers Rico", 1957),
+                ("Murder by Contract", 1958),
+                ("Odds Against Tomorrow", 1959),
+                ("Blast of Silence", 1961),
+                ("The Naked Kiss", 1964),
+            ]
+        case ("Mystery", "Archivist"):
+            return [
+                ("Investigation of a Citizen Above Suspicion", 1970),
+                ("The Conformist", 1970),
+                ("The Bird with the Crystal Plumage", 1970),
+                ("Deep Red", 1975),
+                ("Don't Look Now", 1973),
+                ("The Wicker Man", 1973),
+                ("Get Carter", 1971),
+                ("The Offence", 1973),
+                ("Hickey & Boggs", 1972),
+                ("Night Moves", 1975),
+                ("The Drowning Pool", 1975),
+                ("Farewell, My Lovely", 1975),
+                ("The Late Show", 1977),
+            ]
+        case ("Mystery", "Master"):
+            return [
+                ("Cop", 1988),
+                ("Stormy Monday", 1988),
+                ("Mortal Thoughts", 1991),
+                ("Deceived", 1991),
+                ("Shattered", 1991),
+                ("Whispers in the Dark", 1992),
+                ("Malice", 1993),
+                ("Dolores Claiborne", 1995),
+                ("Mute Witness", 1995),
+                ("Twilight", 1998),
+                ("Croupier", 1998),
+                ("The Limey", 1999),
+            ]
+        default:
             return []
         }
     }
@@ -3183,6 +3367,46 @@ class CategoryProgressManager: ObservableObject {
 
     private init() {
         loadFromStorage()
+        migrateTierKeys()
+    }
+
+    // Migrate old "Tier X:" format keys to new format
+    private func migrateTierKeys() {
+        let migrationKey = "tierKeysMigrated"
+        guard !defaults.bool(forKey: migrationKey) else { return }
+
+        var updated = false
+        var newCache: [String: Set<Int>] = categoryCache
+
+        for (key, value) in categoryCache {
+            // Check if key contains "Tier X:" pattern
+            if key.contains("Tier ") && key.contains(":") {
+                let components = key.split(separator: ":", maxSplits: 2)
+                if components.count == 2 {
+                    let category = String(components[0])
+                    let oldTier = String(components[1])
+
+                    // Extract tier name after "Tier X: "
+                    if let tierNameStart = oldTier.range(of: ": ")?.upperBound {
+                        let tierName = String(oldTier[tierNameStart...])
+                        let newKey = "\(category):\(tierName)"
+
+                        // Migrate to new key
+                        newCache[newKey] = value
+                        newCache.removeValue(forKey: key)
+                        updated = true
+                        print("✅ Migrated progress key: \(key) → \(newKey)")
+                    }
+                }
+            }
+        }
+
+        if updated {
+            categoryCache = newCache
+            saveToStorage()
+        }
+
+        defaults.set(true, forKey: migrationKey)
     }
 
     // MARK: - Storage
