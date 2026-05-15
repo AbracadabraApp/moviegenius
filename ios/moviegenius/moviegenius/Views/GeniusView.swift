@@ -513,7 +513,7 @@ struct TierNavigationChips: View {
 
     var body: some View {
         FlowLayout(spacing: .mgSpacing12) {
-            ForEach(shuffledTiers.isEmpty ? allTiers : shuffledTiers, id: \.self) { tier in
+            ForEach(allTiers, id: \.self) { tier in
                 NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: tier)) {
                     TierChip(
                         tier: tier,
@@ -526,9 +526,6 @@ struct TierNavigationChips: View {
         }
         .padding(.horizontal, .mgSpacing16)
         .onAppear {
-            if shuffledTiers.isEmpty {
-                shuffledTiers = allTiers.shuffled()
-            }
             // Calculate all tier completions for this category
             tierProgress.refreshCategory(category, seenIds: Set(favorites.lovedMovies.map { $0.id }))
         }
@@ -600,8 +597,8 @@ struct TierChip: View {
             .overlay(
                 RoundedRectangle(cornerRadius: 7, style: .continuous)
                     .strokeBorder(
-                        isSelected ? Color.white : Color.clear,
-                        lineWidth: 1
+                        isSelected ? Color.mgGold : Color.clear,
+                        lineWidth: 2
                     )
             )
             .kerning(0.3)
@@ -702,6 +699,13 @@ struct CategoryEssentialsView: View {
                 )
                 .padding(.top, .mgSpacing8)
 
+                // Category > Level indicator
+                Text("\(category) › \(subcategory ?? "Essential")")
+                    .font(.system(size: 14, weight: .medium))
+                    .foregroundStyle(Color.mgSecondary)
+                    .padding(.horizontal, .mgSpacing20)
+                    .padding(.top, .mgSpacing8)
+
                 if viewModel.isLoadingInitial || viewModel.isLoading {
                     VStack(spacing: .mgSpacing12) {
                         ProgressView()
@@ -782,8 +786,7 @@ struct EssentialFilmCard: View {
                 Text(movie.title)
                     .font(.mgHeadline)
                     .foregroundStyle(Color.mgPrimary)
-                    .lineLimit(1)
-                    .truncationMode(.tail)
+                    .fixedSize(horizontal: false, vertical: true)
 
                 // Year
                 if let year = movie.year {

@@ -301,7 +301,7 @@ struct SearchResultRow: View {
                     .font(.mgCallout)
                     .fontWeight(.medium)
                     .foregroundStyle(Color.mgPrimary)
-                    .lineLimit(1)
+                    .fixedSize(horizontal: false, vertical: true)
 
                 if let year = movie.year {
                     Text(String(year))

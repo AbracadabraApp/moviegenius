@@ -252,7 +252,7 @@ struct MovieGridCard: View {
                 .font(.mgCaption)
                 .fontWeight(.medium)
                 .foregroundStyle(Color.mgPrimary)
-                .lineLimit(2)
+                .fixedSize(horizontal: false, vertical: true)
                 .lineSpacing(1)
                 .frame(maxWidth: .infinity, alignment: .leading)
 
