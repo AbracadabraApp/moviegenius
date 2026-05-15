@@ -78,7 +78,7 @@ struct MoreIdeaCard: View {
                     // Connection slug (full text, no truncation)
                     Text(idea.connection)
                         .font(.mgSubheadline)
-                        .foregroundStyle(Color.mgSecondary)
+                        .foregroundStyle(Color.mgPrimary)
                         .lineLimit(nil)
                         .fixedSize(horizontal: false, vertical: true)
 
@@ -100,16 +100,17 @@ struct MoreIdeaCard: View {
                         compact: false,
                         onDarkBackground: false
                     )
+                    .withSignInPrompt
                 }
-                .padding(.top, .mgSpacing8)
+                .padding(.top, .mgSpacing12)
             }
         }
-        .padding(.mgSpacing12)
+        .padding(.mgSpacing16)
         .background {
             RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous)
-                .fill(Color.mgBackground)
+                .fill(.regularMaterial)
                 .shadow(
-                    color: .black.opacity(0.08),
+                    color: .black.opacity(0.1),
                     radius: 8,
                     x: 0,
                     y: 4

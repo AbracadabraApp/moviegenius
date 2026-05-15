@@ -117,23 +117,7 @@ struct CollectionDetailView: View {
 
             // Overlaid back button and search bar
             VStack(spacing: 0) {
-                HStack(spacing: .mgSpacing12) {
-                    // Back button
-                    Button {
-                        dismiss()
-                    } label: {
-                        Image(systemName: "chevron.left")
-                            .font(.system(size: 18, weight: .medium))
-                            .foregroundStyle(Color.mgGold)
-                    }
-
-                    // Search bar
-                    SearchBarCompact()
-                }
-                .padding(.horizontal, .mgSpacing16)
-                .padding(.top, .mgSpacing8)
-                .padding(.bottom, .mgSpacing8)
-                .background(Color.mgBackground.opacity(0.95))
+                AppHeader(showBackButton: true)
 
                 Spacer()
             }

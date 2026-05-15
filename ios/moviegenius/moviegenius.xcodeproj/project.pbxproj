@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20FB7346CB2EE3764F3EAA17 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 2A2CC7615E6ED127A06BEBF6 /* YouTubeiOSPlayerHelper */; };
+		A5155F5DE2AF3CEFB6435617 /* TierTmdbLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A74D9BBD983975D87C377A /* TierTmdbLookup.swift */; };
 		C9029B202FB3FA00006205FF /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = C9029B1F2FB3FA00006205FF /* FirebaseAnalyticsCore */; };
 		C9029B222FB3FA00006205FF /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = C9029B212FB3FA00006205FF /* FirebaseCrashlytics */; };
-		20FB7346CB2EE3764F3EAA17 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 2A2CC7615E6ED127A06BEBF6 /* YouTubeiOSPlayerHelper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15A74D9BBD983975D87C377A /* TierTmdbLookup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TierTmdbLookup.swift; path = moviegenius/Data/TierTmdbLookup.swift; sourceTree = "<group>"; };
 		C902999C2FB10FE3006205FF /* moviegenius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moviegenius.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90299A92FB10FE7006205FF /* moviegeniusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moviegeniusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90299B32FB10FE7006205FF /* moviegeniusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moviegeniusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,16 +40,22 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C902999E2FB10FE3006205FF /* moviegenius */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = moviegenius;
 			sourceTree = "<group>";
 		};
 		C90299AC2FB10FE7006205FF /* moviegeniusTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = moviegeniusTests;
 			sourceTree = "<group>";
 		};
 		C90299B62FB10FE7006205FF /* moviegeniusUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = moviegeniusUITests;
 			sourceTree = "<group>";
 		};
@@ -88,6 +96,7 @@
 				C90299AC2FB10FE7006205FF /* moviegeniusTests */,
 				C90299B62FB10FE7006205FF /* moviegeniusUITests */,
 				C902999D2FB10FE3006205FF /* Products */,
+				15A74D9BBD983975D87C377A /* TierTmdbLookup.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,8 +155,6 @@
 				C90299AC2FB10FE7006205FF /* moviegeniusTests */,
 			);
 			name = moviegeniusTests;
-			packageProductDependencies = (
-			);
 			productName = moviegeniusTests;
 			productReference = C90299A92FB10FE7006205FF /* moviegeniusTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -169,8 +176,6 @@
 				C90299B62FB10FE7006205FF /* moviegeniusUITests */,
 			);
 			name = moviegeniusUITests;
-			packageProductDependencies = (
-			);
 			productName = moviegeniusUITests;
 			productReference = C90299B32FB10FE7006205FF /* moviegeniusUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -252,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5155F5DE2AF3CEFB6435617 /* TierTmdbLookup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,14 +604,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C9029B1E2FB3F9FF006205FF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 12.13.0;
-			};
-		};
 		58663393AFE75A41458917BE /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper.git";
@@ -614,9 +612,22 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		C9029B1E2FB3F9FF006205FF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.13.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2A2CC7615E6ED127A06BEBF6 /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58663393AFE75A41458917BE /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
+		};
 		C9029B1F2FB3FA00006205FF /* FirebaseAnalyticsCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C9029B1E2FB3F9FF006205FF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -626,11 +637,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C9029B1E2FB3F9FF006205FF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
-		};
-		2A2CC7615E6ED127A06BEBF6 /* YouTubeiOSPlayerHelper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 58663393AFE75A41458917BE /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
-			productName = YouTubeiOSPlayerHelper;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

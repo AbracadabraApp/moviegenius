@@ -30,6 +30,13 @@ struct PersonDetailView: View {
         .background(Color.mgBackground)
         .navigationTitle("Person")
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                SearchBarCompactSmaller()
+            }
+        }
+        .toolbarBackground(.visible, for: .navigationBar)
+        .toolbarBackground(Color.mgBackground.opacity(0.95), for: .navigationBar)
     }
 }
 

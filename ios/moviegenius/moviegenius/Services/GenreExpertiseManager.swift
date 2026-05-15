@@ -40,11 +40,11 @@ enum GenreRank: Int, Comparable {
 
     var color: Color {
         switch self {
-        case .beginner: return .gray
-        case .student: return .blue
-        case .scholar: return .purple
+        case .beginner: return Color.mgSecondary
+        case .student: return Color.mgGold.opacity(0.6)
+        case .scholar: return Color.mgGold.opacity(0.8)
         case .expert: return Color.mgGold
-        case .master: return .red
+        case .master: return Color.mgGold
         }
     }
 

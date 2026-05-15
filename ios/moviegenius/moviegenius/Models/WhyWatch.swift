@@ -8,12 +8,12 @@
 import Foundation
 
 struct WhyWatch: Codable {
-    let id: String
+    let id: String?
     let recommendation: String  // "YES" or "NO"
     let reasons: [String]       // Always 3 reasons
     let context: String?        // Closing paragraph
     let model: String?
-    let createdAt: String
+    let createdAt: String?
 
     var isRecommended: Bool {
         recommendation == "YES"

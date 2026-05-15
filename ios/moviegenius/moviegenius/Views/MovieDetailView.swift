@@ -18,151 +18,100 @@ struct MovieDetailView: View {
     }
 
     var body: some View {
-        ZStack(alignment: .top) {
-            // Main content
-            ScrollView {
-                VStack(spacing: 0) {
-                    // Top spacer for overlaid search bar and back button
-                    Color.clear.frame(height: 60)
+        ScrollView {
+            VStack(spacing: 0) {
+                if let movieResponse = viewModel.movieResponse {
+                    // Poster with trailer overlay
+                    MoviePosterView(
+                        posterUrl: movieResponse.movie.posterUrl,
+                        tmdbId: movieResponse.movie.tmdbId,
+                        title: movieResponse.movie.title,
+                        year: movieResponse.movie.year,
+                        hasTrailers: viewModel.hasTrailers
+                    )
 
-                    if let movieResponse = viewModel.movieResponse {
-                        // Poster with trailer overlay
-                        MoviePosterView(
-                            posterUrl: movieResponse.movie.posterUrl,
+                    // Favorite buttons (below poster, right-aligned)
+                    HStack {
+                        Spacer()
+                        FavoriteButtons(
                             tmdbId: movieResponse.movie.tmdbId,
                             title: movieResponse.movie.title,
                             year: movieResponse.movie.year,
-                            hasTrailers: viewModel.hasTrailers
+                            posterUrl: movieResponse.movie.posterUrl,
+                            slug: movieResponse.movie.slug,
+                            compact: false,
+                            onDarkBackground: false
                         )
-
-                        // Favorite buttons (below poster, right-aligned)
-                        HStack {
-                            Spacer()
-                            FavoriteButtons(
-                                tmdbId: movieResponse.movie.tmdbId,
-                                title: movieResponse.movie.title,
-                                year: movieResponse.movie.year,
-                                posterUrl: movieResponse.movie.posterUrl,
-                                slug: movieResponse.movie.slug,
-                                compact: false,
-                                onDarkBackground: false
-                            )
-                        }
-                        .padding(.horizontal, .mgSpacing20)
-                        .padding(.top, .mgSpacing4)
-
-                        // WhyWatch section
-                        if let whyWatch = movieResponse.whyWatch {
-                            WhyWatchView(
-                                whyWatch: whyWatch,
-                                tmdbId: movieResponse.movie.tmdbId,
-                                title: movieResponse.movie.title,
-                                year: movieResponse.movie.year,
-                                posterUrl: movieResponse.movie.posterUrl,
-                                slug: movieResponse.movie.slug
-                            )
-                        }
-
-                        // More Ideas section
-                        if let moreIdeas = movieResponse.moreIdeas, !moreIdeas.isEmpty {
-                            MoreIdeasView(moreIdeas: moreIdeas)
-                        }
-
-                        // TMDB Attribution
-                        TMDBAttributionView()
-                    } else if viewModel.isLoading {
-                        VStack(spacing: .mgSpacing16) {
-                            ProgressView()
-                                .tint(Color.mgGold)
-                            Text("Loading...")
-                                .font(.mgCallout)
-                                .foregroundStyle(Color.mgSecondary)
-                        }
-                        .padding()
-                        .padding(.top, 100)
-                    } else if let error = viewModel.error {
-                        VStack(spacing: .mgSpacing16) {
-                            Image(systemName: "exclamationmark.triangle")
-                                .font(.system(size: 48))
-                                .foregroundStyle(.red)
-                            Text("Failed to load movie")
-                                .font(.mgHeadline)
-                            Text(error.localizedDescription)
-                                .font(.mgCaption)
-                                .foregroundStyle(Color.mgSecondary)
-                                .multilineTextAlignment(.center)
-                                .padding(.horizontal, .mgSpacing32)
-                            Button("Retry") {
-                                Task {
-                                    await viewModel.loadMovie()
-                                }
-                            }
-                            .buttonStyle(MGPrimaryButtonStyle())
-                        }
-                        .padding()
-                        .padding(.top, 100)
+                        .withSignInPrompt
                     }
+                    .padding(.horizontal, .mgSpacing20)
+                    .padding(.top, .mgSpacing4)
+
+                    // WhyWatch section
+                    if let whyWatch = movieResponse.whyWatch {
+                        WhyWatchView(
+                            whyWatch: whyWatch,
+                            tmdbId: movieResponse.movie.tmdbId,
+                            title: movieResponse.movie.title,
+                            year: movieResponse.movie.year,
+                            posterUrl: movieResponse.movie.posterUrl,
+                            slug: movieResponse.movie.slug
+                        )
+                    }
+
+                    // More Ideas section
+                    if let moreIdeas = movieResponse.moreIdeas, !moreIdeas.isEmpty {
+                        MoreIdeasView(moreIdeas: moreIdeas)
+                    }
+
+                    // TMDB Attribution
+                    // TMDBAttributionView()
+                } else if viewModel.isLoading {
+                    VStack(spacing: .mgSpacing16) {
+                        ProgressView()
+                            .tint(Color.mgGold)
+                        Text("Loading...")
+                            .font(.mgCallout)
+                            .foregroundStyle(Color.mgSecondary)
+                    }
+                    .padding()
+                    .padding(.top, 100)
+                } else if let error = viewModel.error {
+                    VStack(spacing: .mgSpacing16) {
+                        Image(systemName: "exclamationmark.triangle")
+                            .font(.system(size: 48))
+                            .foregroundStyle(.red)
+                        Text("Failed to load movie")
+                            .font(.mgHeadline)
+                        Text(error.localizedDescription)
+                            .font(.mgCaption)
+                            .foregroundStyle(Color.mgSecondary)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, .mgSpacing32)
+                        Button("Retry") {
+                            Task {
+                                await viewModel.loadMovie()
+                            }
+                        }
+                        .buttonStyle(MGPrimaryButtonStyle())
+                    }
+                    .padding()
+                    .padding(.top, 100)
                 }
             }
-            .scrollIndicators(.hidden)
-
-            // Overlaid back button and search bar
-            VStack(spacing: 0) {
-                // Reusable header with automatic back button detection
-                AppHeader()
-
-                Spacer()
+        }
+        .scrollIndicators(.hidden)
+        .background(Color.mgBackground)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                SearchBarCompactSmaller()
             }
         }
-        .background(Color.mgBackground)
-        .navigationBarHidden(true)
+        .toolbarBackground(.visible, for: .navigationBar)
+        .toolbarBackground(Color.mgBackground.opacity(0.95), for: .navigationBar)
         .task {
             await viewModel.loadMovie()
-        }
-    }
-}
-
-// MARK: - Compact Search Bar
-
-struct SearchBarCompact: View {
-    @State private var showingSearch = false
-
-    var body: some View {
-        HStack(spacing: .mgSpacing8) {
-            Image(systemName: "magnifyingglass")
-                .foregroundStyle(Color.mgSecondary)
-                .font(.system(size: 16))
-
-            Text("Search movies...")
-                .font(.mgBody)
-                .foregroundStyle(Color.mgSecondary)
-
-            Spacer()
-        }
-        .padding(.horizontal, .mgSpacing12)
-        .padding(.vertical, .mgSpacing8)
-        .background(.ultraThinMaterial)
-        .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
-        .overlay(
-            RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous)
-                .strokeBorder(Color.mgSecondary.opacity(0.2), lineWidth: 1)
-        )
-        .frame(width: 330)
-        .onTapGesture {
-            showingSearch = true
-        }
-        .fullScreenCover(isPresented: $showingSearch) {
-            NavigationStack {
-                SearchView()
-                    .toolbar {
-                        ToolbarItem(placement: .cancellationAction) {
-                            Button("Done") {
-                                showingSearch = false
-                            }
-                            .foregroundStyle(Color.mgGold)
-                        }
-                    }
-            }
         }
     }
 }

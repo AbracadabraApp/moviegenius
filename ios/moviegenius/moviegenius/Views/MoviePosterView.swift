@@ -29,7 +29,7 @@ struct MoviePosterView: View {
     }
 
     var body: some View {
-        ZStack {
+        ZStack(alignment: .bottomTrailing) {
             AsyncImage(url: posterURL) { phase in
                 switch phase {
                 case .empty:
@@ -70,39 +70,33 @@ struct MoviePosterView: View {
 
             // Trailer play button overlay (bottom-right corner)
             if hasTrailers {
-                VStack {
-                    Spacer()
-                    HStack {
-                        Spacer()
-                        Button {
-                            #if DEBUG
-                            print("🎬 [MoviePosterView] Play button tapped")
-                            print("   Opening TrailerView for tmdbId: \(tmdbId)")
-                            #endif
-                            showingTrailer = true
-                        } label: {
-                            ZStack {
-                                Circle()
-                                    .fill(.ultraThinMaterial)
-                                    .frame(width: 56, height: 56)
+                Button {
+                    #if DEBUG
+                    print("🎬 [MoviePosterView] Play button tapped")
+                    print("   Opening TrailerView for tmdbId: \(tmdbId)")
+                    #endif
+                    showingTrailer = true
+                } label: {
+                    ZStack {
+                        Circle()
+                            .fill(.ultraThinMaterial)
+                            .frame(width: 56, height: 56)
 
-                                Image(systemName: "play.circle.fill")
-                                    .font(.system(size: 44))
-                                    .foregroundStyle(.white)
-                                    .shadow(radius: 4)
-                            }
-                        }
-                        .accessibilityLabel("Play trailer")
-                        .accessibilityHint("Opens trailer video")
-                        .padding(.mgSpacing16)
-                        .fullScreenCover(isPresented: $showingTrailer) {
-                            TrailerView(
-                                tmdbId: tmdbId,
-                                movieTitle: title,
-                                movieYear: year
-                            )
-                        }
+                        Image(systemName: "play.circle.fill")
+                            .font(.system(size: 44))
+                            .foregroundStyle(.white)
+                            .shadow(radius: 4)
                     }
+                }
+                .accessibilityLabel("Play trailer")
+                .accessibilityHint("Opens trailer video")
+                .padding(.mgSpacing16)
+                .fullScreenCover(isPresented: $showingTrailer) {
+                    TrailerView(
+                        tmdbId: tmdbId,
+                        movieTitle: title,
+                        movieYear: year
+                    )
                 }
             }
         }

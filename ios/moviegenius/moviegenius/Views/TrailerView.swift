@@ -29,37 +29,38 @@ struct TrailerView: View {
                 } else if let error = error {
                     errorView(error)
                 } else if let videos = videos, !videos.results.isEmpty {
-                    VStack(spacing: 0) {
-                        // Player
-                        if let selectedVideo = selectedVideo {
-                            ZStack {
-                                YouTubePlayerView(
-                                    videoId: selectedVideo.youtubeId,
-                                    onReady: {
-                                        playerReady = true
-                                    },
-                                    onError: { errorMessage in
-                                        self.error = TrailerError.playerError(errorMessage)
-                                    }
-                                )
-                                .aspectRatio(16/9, contentMode: .fit)
-                                .background(Color.black)
+                    ScrollView {
+                        VStack(spacing: 0) {
+                            // Player
+                            if let selectedVideo = selectedVideo {
+                                ZStack {
+                                    YouTubePlayerView(
+                                        videoId: selectedVideo.youtubeId,
+                                        onReady: {
+                                            playerReady = true
+                                        },
+                                        onError: { errorMessage in
+                                            self.error = TrailerError.playerError(errorMessage)
+                                        }
+                                    )
+                                    .aspectRatio(16/9, contentMode: .fit)
+                                    .background(Color.black)
 
-                                if !playerReady {
-                                    ProgressView()
-                                        .tint(.white)
-                                        .scaleEffect(1.5)
+                                    if !playerReady {
+                                        ProgressView()
+                                            .tint(.white)
+                                            .scaleEffect(1.5)
+                                    }
                                 }
                             }
-                        }
 
-                        // Video list (if multiple trailers)
-                        if videos.results.count > 1 {
-                            videoListView
+                            // Video list (if multiple trailers)
+                            if videos.results.count > 1 {
+                                videoListView
+                            }
                         }
-
-                        Spacer()
                     }
+                    .scrollIndicators(.hidden)
                 } else {
                     noTrailersView
                 }
@@ -149,67 +150,65 @@ struct TrailerView: View {
     }
 
     private var videoListView: some View {
-        ScrollView {
-            VStack(spacing: .mgSpacing12) {
-                Text("Available Trailers")
-                    .font(.mgCallout.weight(.semibold))
-                    .foregroundStyle(.white.opacity(0.9))
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.horizontal, .mgSpacing16)
-                    .padding(.top, .mgSpacing12)
+        VStack(spacing: .mgSpacing12) {
+            Text("Available Trailers")
+                .font(.mgCallout.weight(.semibold))
+                .foregroundStyle(.white.opacity(0.9))
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.horizontal, .mgSpacing16)
+                .padding(.top, .mgSpacing12)
 
-                ForEach(videos?.allTrailers ?? []) { video in
-                    Button {
-                        selectedVideo = video
-                        playerReady = false
-                    } label: {
-                        HStack(spacing: .mgSpacing12) {
-                            Image(systemName: video.id == selectedVideo?.id ? "play.circle.fill" : "play.circle")
-                                .font(.system(size: 24))
-                                .foregroundStyle(video.id == selectedVideo?.id ? Color.mgGold : .white.opacity(0.8))
+            ForEach(videos?.allTrailers ?? []) { video in
+                Button {
+                    selectedVideo = video
+                    playerReady = false
+                } label: {
+                    HStack(spacing: .mgSpacing12) {
+                        Image(systemName: video.id == selectedVideo?.id ? "play.circle.fill" : "play.circle")
+                            .font(.system(size: 24))
+                            .foregroundStyle(video.id == selectedVideo?.id ? Color.mgGold : .white.opacity(0.8))
 
-                            VStack(alignment: .leading, spacing: 4) {
-                                Text(video.name)
-                                    .font(.mgCallout)
-                                    .foregroundStyle(.white)
-                                    .lineLimit(2)
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(video.name)
+                                .font(.mgCallout)
+                                .foregroundStyle(.white)
+                                .lineLimit(2)
 
-                                HStack(spacing: .mgSpacing8) {
-                                    if video.official {
-                                        Text("Official")
-                                            .font(.mgCaption2)
-                                            .foregroundStyle(Color.mgGold)
-                                    }
-                                    Text(video.type)
+                            HStack(spacing: .mgSpacing8) {
+                                if video.official {
+                                    Text("Official")
                                         .font(.mgCaption2)
-                                        .foregroundStyle(.white.opacity(0.6))
+                                        .foregroundStyle(Color.mgGold)
                                 }
+                                Text(video.type)
+                                    .font(.mgCaption2)
+                                    .foregroundStyle(.white.opacity(0.6))
                             }
-
-                            Spacer()
                         }
-                        .padding(.mgSpacing12)
-                        .background(
-                            RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous)
-                                .fill(video.id == selectedVideo?.id ? Color.mgGold.opacity(0.2) : Color.white.opacity(0.1))
-                        )
-                        .overlay(
-                            RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous)
-                                .strokeBorder(
-                                    video.id == selectedVideo?.id ? Color.mgGold : Color.clear,
-                                    lineWidth: 2
-                                )
-                        )
+
+                        Spacer()
                     }
-                    .buttonStyle(.plain)
+                    .padding(.mgSpacing12)
+                    .background(
+                        RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous)
+                            .fill(video.id == selectedVideo?.id ? Color.mgGold.opacity(0.2) : Color.white.opacity(0.1))
+                    )
+                    .overlay(
+                        RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous)
+                            .strokeBorder(
+                                video.id == selectedVideo?.id ? Color.mgGold : Color.clear,
+                                lineWidth: 2
+                            )
+                    )
                 }
+                .buttonStyle(.plain)
             }
-            .padding(.horizontal, .mgSpacing16)
-            .padding(.bottom, .mgSpacing16)
         }
-        .frame(maxHeight: 240)
+        .padding(.horizontal, .mgSpacing16)
+        .padding(.bottom, .mgSpacing16)
         .background(Color.black.opacity(0.3))
     }
+
 
     // MARK: - Data Loading
 
@@ -256,5 +255,9 @@ enum TrailerError: LocalizedError {
 // MARK: - Preview
 
 #Preview {
-    TrailerView(tmdbId: 153, movieTitle: "Lost in Translation", movieYear: 2003)
+    TrailerView(
+        tmdbId: 153,
+        movieTitle: "Lost in Translation",
+        movieYear: 2003
+    )
 }

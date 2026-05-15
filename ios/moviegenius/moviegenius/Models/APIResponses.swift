@@ -25,7 +25,7 @@ struct SearchResponse: Codable {
 }
 
 struct SearchMovie: Codable, Identifiable {
-    let id: Int?
+    let id: String?
     let tmdbId: Int
     let title: String
     let year: Int?

@@ -10,44 +10,38 @@ import SwiftUI
 
 struct AppHeader: View {
     @Environment(\.dismiss) private var dismiss
-    @Environment(\.presentationMode) private var presentationMode
+    let showBackButton: Bool
 
-    // Automatically detect if back button should show
-    private var canGoBack: Bool {
-        presentationMode.wrappedValue.isPresented
+    init(showBackButton: Bool = false) {
+        self.showBackButton = showBackButton
     }
 
     var body: some View {
         HStack(spacing: .mgSpacing8) {
-            // Back button (only shown when navigation can go back)
-            if canGoBack {
+            // Back button or spacer (keeps search centered consistently)
+            if showBackButton {
                 Button {
                     dismiss()
                 } label: {
                     Image(systemName: "chevron.left")
                         .font(.system(size: 20, weight: .semibold))
                         .foregroundStyle(Color.mgGold)
-                        .frame(width: 44, height: 44) // Standard iOS touch target
+                        .frame(width: 44, height: 44)
+                        .contentShape(Rectangle())
                 }
             } else {
-                // Spacer when no back button to keep search centered
-                Spacer()
-                    .frame(width: 8)
+                Color.clear
+                    .frame(width: 44, height: 44)
             }
 
-            // Search bar (centered, smaller to accommodate back button)
+            // Search bar (centered)
             Spacer()
             SearchBarCompactSmaller()
             Spacer()
 
-            // Invisible spacer on right to balance back button (keeps search centered)
-            if canGoBack {
-                Color.clear
-                    .frame(width: 44, height: 44)
-            } else {
-                Spacer()
-                    .frame(width: 8)
-            }
+            // Invisible spacer on right to balance left side
+            Color.clear
+                .frame(width: 44, height: 44)
         }
         .padding(.horizontal, .mgSpacing16)
         .padding(.vertical, .mgSpacing8)
@@ -70,8 +64,9 @@ struct SearchBarCompactSmaller: View {
                 .font(.mgBody)
                 .foregroundStyle(Color.mgSecondary)
 
-            Spacer()
+            Spacer(minLength: 0)
         }
+        .frame(width: 240) // Apply width constraint BEFORE padding to ensure it takes effect
         .padding(.horizontal, .mgSpacing12)
         .padding(.vertical, .mgSpacing8)
         .background(.ultraThinMaterial)
@@ -80,7 +75,6 @@ struct SearchBarCompactSmaller: View {
             RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous)
                 .strokeBorder(Color.mgSecondary.opacity(0.2), lineWidth: 1)
         )
-        .frame(width: 280) // Smaller to fit with back button
         .onTapGesture {
             showingSearch = true
         }

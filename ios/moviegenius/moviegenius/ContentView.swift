@@ -19,12 +19,18 @@ struct ContentView: View {
         ScrollView {
             VStack(spacing: 0) {
                 if let movieResponse = viewModel.movieResponse {
-                    // Search bar
-                    SearchBarCompact()
-
-                    // Spacer to push poster down
-                    Spacer()
-                        .frame(height: 220)
+//                    // Search bar centered at top
+//                    HStack {
+//                        Spacer(minLength: 0)
+//                        SearchBarCompact()
+//                        Spacer(minLength: 0)
+//                    }
+//                    .frame(width: 390)
+//                    .padding(.top, .mgSpacing16)
+//
+//                    // Spacer to push poster down
+//                    Spacer()
+//                        .frame(height: 220)
 
                     // Poster with trailer and favorite buttons overlay
                     MoviePosterView(

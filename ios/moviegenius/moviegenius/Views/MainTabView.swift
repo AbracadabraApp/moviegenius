@@ -28,8 +28,8 @@ class NavigationStateManager: ObservableObject {
 struct MainTabView: View {
     @SceneStorage("selectedTab") private var selectedTab = 0
     @StateObject private var browseNavigation = NavigationStateManager()
-    @StateObject private var searchNavigation = NavigationStateManager()
     @StateObject private var geniusNavigation = NavigationStateManager()
+    @StateObject private var watchNavigation = NavigationStateManager()
 
     // Track tab selection to detect re-taps
     private var selectedTabBinding: Binding<Int> {
@@ -59,19 +59,6 @@ struct MainTabView: View {
             }
             .tag(0)
 
-            // Search tab
-            NavigationStack(path: $searchNavigation.path) {
-                SearchView()
-                    .navigationDestination(for: MovieDestination.self) { destination in
-                        destinationView(for: destination)
-                    }
-            }
-            .tabItem {
-                Image(systemName: "magnifyingglass")
-                Text("Search")
-            }
-            .tag(1)
-
             // Genius tab
             NavigationStack(path: $geniusNavigation.path) {
                 GeniusView()
@@ -82,9 +69,27 @@ struct MainTabView: View {
             .tabItem {
                 Label("Genius", systemImage: "wand.and.stars")
             }
+            .tag(1)
+
+            // Watch tab
+            NavigationStack(path: $watchNavigation.path) {
+                WatchQueueView()
+                    .navigationDestination(for: MovieDestination.self) { destination in
+                        destinationView(for: destination)
+                    }
+            }
+            .tabItem {
+                Label("Watch", systemImage: "play.rectangle")
+            }
             .tag(2)
         }
         .tint(Color.mgGold)
+        .onAppear {
+            // Increase tab bar item spacing by 20%
+            if let tabBar = UIApplication.shared.windows.first?.rootViewController?.view.subviews.first(where: { $0 is UITabBar }) as? UITabBar {
+                tabBar.itemSpacing = tabBar.itemSpacing * 1.2
+            }
+        }
     }
 
     // MARK: - Helper Methods
@@ -94,9 +99,9 @@ struct MainTabView: View {
         case 0:
             browseNavigation.path = NavigationPath()
         case 1:
-            searchNavigation.path = NavigationPath()
-        case 2:
             geniusNavigation.path = NavigationPath()
+        case 2:
+            watchNavigation.path = NavigationPath()
         default:
             break
         }
