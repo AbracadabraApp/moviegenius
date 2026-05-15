@@ -25,6 +25,8 @@
 		<string>youtube</string>
 		<string>vnd.youtube</string>
 	</array>
+	<key>NSFaceIDUsageDescription</key>
+	<string>MovieGenius uses Face ID to securely sign you in and sync your favorites across devices.</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>
