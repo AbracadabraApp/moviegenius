@@ -42,7 +42,6 @@ struct MovieDetailView: View {
                             compact: false,
                             onDarkBackground: false
                         )
-                        .withSignInPrompt
                     }
                     .padding(.horizontal, .mgSpacing20)
                     .padding(.top, .mgSpacing4)

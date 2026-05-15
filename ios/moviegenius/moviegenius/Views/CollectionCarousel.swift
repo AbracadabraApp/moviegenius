@@ -25,20 +25,24 @@ struct CollectionCarousel: View {
                         .clipShape(RoundedRectangle(cornerRadius: .mgCornerTiny, style: .continuous))
                         .kerning(0.5)
                 }
-                .padding(.horizontal, .mgSpacing16)
+                .padding(.horizontal, .mgSpacing20)
                 .padding(.bottom, .mgSpacing4)
             }
 
-            // Title
-            Text(collection.title)
-                .font(.mgHeadline)
-                .padding(.horizontal, .mgSpacing16)
-                .padding(.bottom, .mgSpacing8)
+            // Title (tappable - links to collection detail)
+            NavigationLink(destination: CollectionDetailView(collectionId: collection.id)) {
+                Text(collection.title)
+                    .font(.mgHeadline)
+                    .foregroundStyle(Color.mgPrimary)
+            }
+            .padding(.horizontal, .mgSpacing20)
+            .padding(.bottom, .mgSpacing8)
 
             // Horizontal scrolling movies
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack(spacing: .mgSpacing8) {
-                    ForEach(collection.movies) { movie in
+                    ForEach(collection.movies.indices, id: \.self) { index in
+                        let movie = collection.movies[index]
                         NavigationLink(destination: MovieDetailView(tmdbId: movie.tmdbId)) {
                             MoviePosterCard(movie: movie)
                         }
@@ -47,9 +51,10 @@ struct CollectionCarousel: View {
                         .accessibilityElement(children: .combine)
                         .accessibilityLabel("\(movie.title), \(movie.year ?? 0)")
                         .accessibilityHint("View movie details")
+                        .padding(.leading, index == 0 ? .mgSpacing20 : 0)
+                        .padding(.trailing, index == collection.movies.count - 1 ? .mgSpacing20 : 0)
                     }
                 }
-                .padding(.horizontal, .mgSpacing16)
             }
             .scrollClipDisabled()
             .padding(.bottom, .mgSpacing4)
@@ -65,8 +70,8 @@ struct CollectionCarousel: View {
                 }
                 .sensoryFeedback(.selection, trigger: collection.id)
             }
+            .padding(.horizontal, .mgSpacing20)
             .padding(.top, .mgSpacing2)
-            .padding(.horizontal, .mgSpacing16)
             .padding(.bottom, .mgSpacing8)
         }
         .padding(.bottom, .mgSpacing4)

@@ -12,6 +12,9 @@ struct HomeView: View {
 
     var body: some View {
         ZStack(alignment: .top) {
+            // Atmospheric background
+            MGAtmosphericBackground()
+
             ScrollView {
                 LazyVStack(spacing: 0) {
                     // Spacer for header
@@ -85,7 +88,6 @@ struct HomeView: View {
                 }
             }
             .scrollIndicators(.hidden)
-            .background(Color.mgBackground)
             .refreshable {
                 await viewModel.loadInitialCollections()
             }
@@ -99,39 +101,6 @@ struct HomeView: View {
                 Spacer()
             }
         }
-    }
-}
-
-struct SkeletonCarousel: View {
-    var body: some View {
-        VStack(alignment: .leading, spacing: .mgSpacing8) {
-            // Header skeleton
-            HStack {
-                RoundedRectangle(cornerRadius: .mgCornerTiny)
-                    .fill(Color.mgSecondary.opacity(0.15))
-                    .frame(width: 160, height: 19)
-
-                Spacer()
-
-                RoundedRectangle(cornerRadius: .mgCornerTiny)
-                    .fill(Color.mgSecondary.opacity(0.15))
-                    .frame(width: 52, height: 14)
-            }
-            .padding(.horizontal, .mgSpacing16)
-
-            // Cards skeleton
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: .mgSpacing8) {
-                    ForEach(0..<5, id: \.self) { _ in
-                        RoundedRectangle(cornerRadius: .mgCornerSmall)
-                            .fill(Color.mgSecondary.opacity(0.15))
-                            .frame(width: 170, height: 227)
-                    }
-                }
-                .padding(.horizontal, .mgSpacing16)
-            }
-        }
-        .padding(.vertical, .mgSpacing4)
     }
 }
 

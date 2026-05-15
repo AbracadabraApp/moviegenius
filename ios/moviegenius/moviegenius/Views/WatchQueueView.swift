@@ -22,6 +22,9 @@ struct WatchQueueView: View {
                             movie: movie,
                             onPlayTrailer: {
                                 selectedTrailer = (movie.id, movie.title, movie.year)
+                            },
+                            onRemove: {
+                                viewModel.removeFromQueue(movie)
                             }
                         )
                         .padding(.horizontal, .mgSpacing20)
@@ -71,12 +74,13 @@ struct WatchQueueView: View {
 struct WatchQueueCard: View {
     let movie: SavedMovie
     let onPlayTrailer: () -> Void
+    let onRemove: () -> Void
     @ObservedObject private var favorites = FavoritesManager.shared
 
     var body: some View {
         VStack(spacing: 0) {
             HStack(alignment: .top, spacing: .mgSpacing16) {
-                // Poster (left side)
+                // Poster (left side) - More Ideas size
                 NavigationLink(destination: MovieDetailView(tmdbId: movie.id)) {
                     Group {
                         if let posterUrl = movie.posterUrl, let url = URL(string: posterUrl) {
@@ -98,60 +102,65 @@ struct WatchQueueCard: View {
                             posterPlaceholder
                         }
                     }
-                    .frame(width: 100, height: 150)
+                    .frame(width: 140, height: 210)
                     .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
                     .mgCinematicGlow()
-                    .mgElevationMedium()
+                    .mgElevationLow()
                 }
 
-                // Movie info (middle)
+                // Content (right side)
                 VStack(alignment: .leading, spacing: .mgSpacing8) {
-                    Text(movie.title)
-                        .font(.mgHeadline)
-                        .foregroundStyle(Color.mgPrimary)
-                        .lineLimit(2)
+                    HStack(alignment: .top) {
+                        VStack(alignment: .leading, spacing: .mgSpacing8) {
+                            // Title
+                            Text(movie.title)
+                                .font(.mgHeadline)
+                                .foregroundStyle(Color.mgPrimary)
 
-                    if let year = movie.year {
-                        Text("(\(year))")
-                            .font(.mgBody)
-                            .foregroundStyle(Color.mgSecondary)
-                    }
+                            // Slug (full text, no truncation)
+                            if let slug = movie.slug {
+                                Text(slug)
+                                    .font(.mgSubheadline)
+                                    .foregroundStyle(Color.mgPrimary)
+                                    .lineLimit(nil)
+                                    .fixedSize(horizontal: false, vertical: true)
+                            }
+                        }
 
-                    if let slug = movie.slug {
-                        Text(slug)
-                            .font(.mgCaption)
-                            .foregroundStyle(Color.mgTertiary)
-                            .lineLimit(1)
+                        Spacer()
+
+                        // Delete button (top-right)
+                        Button {
+                            onRemove()
+                            HapticManager.light()
+                        } label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .font(.system(size: 24))
+                                .foregroundStyle(Color.mgSecondary)
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel("Remove from queue")
                     }
 
                     Spacer()
-
-                    // Action buttons
-                    FavoriteButtons(
-                        tmdbId: movie.id,
-                        title: movie.title,
-                        year: movie.year,
-                        posterUrl: movie.posterUrl,
-                        slug: movie.slug,
-                        compact: false,
-                        onDarkBackground: false
-                    )
                 }
-
-                Spacer()
-
-                // Remove button (top right corner)
-                Button {
-                    favorites.toggleQueue(movie)
-                    HapticManager.light()
-                } label: {
-                    Image(systemName: "xmark.circle.fill")
-                        .font(.system(size: 24))
-                        .foregroundStyle(Color.mgSecondary)
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("Remove from queue")
+                .frame(maxWidth: .infinity, maxHeight: 210, alignment: .topLeading)
             }
+
+            // Favorite buttons (bottom-right of card)
+            HStack {
+                Spacer()
+                FavoriteButtons(
+                    tmdbId: movie.id,
+                    title: movie.title,
+                    year: movie.year,
+                    posterUrl: movie.posterUrl,
+                    slug: movie.slug,
+                    compact: false,
+                    onDarkBackground: false
+                )
+            }
+            .padding(.top, .mgSpacing12)
         }
         .padding(.mgSpacing16)
         .background {

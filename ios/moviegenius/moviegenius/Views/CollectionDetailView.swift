@@ -154,7 +154,6 @@ struct SubcategorySection: View {
     let subcategory: Subcategory
     let movies: [CollectionDetailMovie]
     let isFirst: Bool
-    @State private var isBookmarked = false
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -173,27 +172,6 @@ struct SubcategorySection: View {
                     .lineLimit(2)
 
                 Spacer()
-
-                // Save button with animation
-                Button(action: {
-                    HapticManager.selection()
-                    withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
-                        isBookmarked.toggle()
-                    }
-                }) {
-                    HStack(spacing: .mgSpacing4) {
-                        Image(systemName: isBookmarked ? "bookmark.fill" : "bookmark")
-                            .font(.mgFootnote)
-                        Text("Save")
-                            .font(.mgFootnote.weight(.medium))
-                    }
-                    .foregroundStyle(isBookmarked ? Color.mgGold : Color.mgSecondary)
-                    .padding(.horizontal, .mgSpacing8)
-                    .padding(.vertical, .mgSpacing4)
-                    .background(isBookmarked ? Color.mgGold.opacity(0.15) : Color.clear)
-                    .clipShape(RoundedRectangle(cornerRadius: .mgCornerTiny, style: .continuous))
-                }
-                .sensoryFeedback(.selection, trigger: isBookmarked)
             }
             .padding(.horizontal, .mgSpacing16)
             .padding(.top, isFirst ? .mgSpacing16 : .mgSpacing32)

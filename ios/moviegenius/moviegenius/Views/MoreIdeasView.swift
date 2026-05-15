@@ -102,7 +102,6 @@ struct MoreIdeaCard: View {
                         compact: false,
                         onDarkBackground: false
                     )
-                    .withSignInPrompt
                 }
                 .padding(.top, .mgSpacing12)
             }

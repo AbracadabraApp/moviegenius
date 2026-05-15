@@ -5,6 +5,84 @@
 //  Reusable header with back button and centered search bar
 //  Used on all pages for consistent navigation
 //
+//  USAGE POLICY:
+//  ============
+//
+//  ## When to Use AppHeader
+//
+//  ✅ Use AppHeader for ALL full-screen views that need:
+//     - Search functionality (centered search bar)
+//     - Optional back button navigation
+//     - Consistent 60pt header height across the app
+//
+//  ## Parameters
+//
+//  - `showBackButton: Bool` (default: false)
+//    - `false`: Root views (HomeView, GeniusView, etc.)
+//    - `true`: Detail views (CollectionDetailView, MovieDetailView, etc.)
+//
+//  ## Implementation Pattern
+//
+//  ALL views using AppHeader must follow this structure:
+//
+//  ```swift
+//  var body: some View {
+//      ZStack(alignment: .top) {
+//          // 1. Main scrolling content
+//          ScrollView {
+//              VStack(spacing: 0) {
+//                  // REQUIRED: Top spacer for header
+//                  Color.clear.frame(height: 60)
+//
+//                  // Your content here...
+//              }
+//          }
+//
+//          // 2. Overlaid AppHeader (stays on top while scrolling)
+//          VStack {
+//              AppHeader(showBackButton: true) // or false
+//              Spacer()
+//          }
+//      }
+//      .background(Color.mgBackground)
+//      .navigationBarHidden(true) // REQUIRED
+//  }
+//  ```
+//
+//  ## Key Requirements
+//
+//  1. **ZStack Layout**: AppHeader overlays content using ZStack
+//  2. **60pt Spacer**: Add `Color.clear.frame(height: 60)` at top of ScrollView content
+//  3. **Hide Nav Bar**: Always use `.navigationBarHidden(true)`
+//  4. **VStack Wrapper**: Wrap AppHeader in VStack with Spacer() to keep it at top
+//
+//  ## Examples
+//
+//  Root view (no back button):
+//  ```swift
+//  AppHeader() // or AppHeader(showBackButton: false)
+//  ```
+//
+//  Detail view (with back button):
+//  ```swift
+//  AppHeader(showBackButton: true)
+//  ```
+//
+//  ## Component Features
+//
+//  - **Height**: 60pt total (8pt vertical padding + 44pt content)
+//  - **Search bar width**: 240pt fixed (centered)
+//  - **Back button**: 44x44pt tap target (left side when enabled)
+//  - **Background**: Semi-transparent (0.95 opacity) for subtle scroll-under effect
+//  - **Search**: Tapping opens full-screen SearchView modal
+//
+//  ## DO NOT
+//
+//  ❌ DO NOT modify AppHeader spacing/sizing without updating all views
+//  ❌ DO NOT use custom headers - always use AppHeader for consistency
+//  ❌ DO NOT forget the 60pt spacer - content will appear under the header
+//  ❌ DO NOT use NavigationBar alongside AppHeader - they conflict
+//
 
 import SwiftUI
 
