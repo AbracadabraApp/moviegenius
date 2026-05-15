@@ -176,6 +176,11 @@ struct JourneyTabContent: View {
                 }
             }
 
+            // Save your progress prompt
+            SaveProgressPrompt()
+                .padding(.horizontal, .mgSpacing16)
+                .padding(.top, .mgSpacing24)
+
             Spacer(minLength: .mgSpacing40)
         }
         .padding(.bottom, .mgSpacing40)
@@ -227,7 +232,7 @@ struct CategoryBadge: View {
                     .font(.system(size: 10))
                     .foregroundStyle(Color.mgGold)
                     .padding(3)
-                    .background(.black)
+                    .background(Color.mgPrimary.opacity(0.9))
                     .clipShape(Circle())
                     .offset(x: 4, y: -4)
             }
@@ -372,41 +377,41 @@ struct MovieRowCard: View {
 
     var body: some View {
         NavigationLink(destination: MovieDetailView(tmdbId: movie.id)) {
-            HStack(spacing: .mgSpacing12) {
-                // Poster
-                AsyncImage(url: posterURL) { phase in
-                    switch phase {
-                    case .success(let image):
-                        image
-                            .resizable()
-                            .aspectRatio(2/3, contentMode: .fill)
-                    case .empty, .failure, _:
-                        RoundedRectangle(cornerRadius: .mgCornerSmall)
-                            .fill(Color.mgSecondary.opacity(0.15))
-                            .overlay(
-                                Image(systemName: "film")
-                                    .foregroundStyle(Color.mgSecondary)
-                            )
+            LayeredGlassCard(elevation: .low) {
+                HStack(spacing: .mgSpacing12) {
+                    // Poster
+                    AsyncImage(url: posterURL) { phase in
+                        switch phase {
+                        case .success(let image):
+                            image
+                                .resizable()
+                                .aspectRatio(2/3, contentMode: .fill)
+                        case .empty, .failure, _:
+                            RoundedRectangle(cornerRadius: .mgCornerSmall)
+                                .fill(Color.mgSecondary.opacity(0.15))
+                                .overlay(
+                                    Image(systemName: "film")
+                                        .foregroundStyle(Color.mgSecondary)
+                                )
+                        }
                     }
+                    .frame(width: 60, height: 90)
+                    .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall))
+
+                    // Info
+                    VStack(alignment: .leading, spacing: .mgSpacing4) {
+                        Text(movie.title)
+                            .font(.mgHeadline)
+                            .foregroundStyle(Color.mgPrimary)
+                    }
+
+                    Spacer()
+
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundStyle(Color.mgSecondary)
                 }
-                .frame(width: 60, height: 90)
-                .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall))
-
-                // Info
-                VStack(alignment: .leading, spacing: .mgSpacing4) {
-                    Text(movie.title)
-                        .font(.mgHeadline)
-                        .foregroundStyle(Color.mgPrimary)
-                }
-
-                Spacer()
-
-                Image(systemName: "chevron.right")
-                    .font(.system(size: 14, weight: .semibold))
-                    .foregroundStyle(Color.mgSecondary)
             }
-            .padding(.mgSpacing12)
-            .mgCard()
         }
         .buttonStyle(MGCardButtonStyle())
     }
@@ -6241,6 +6246,63 @@ class CategoryProgressManager: ObservableObject {
     func clearCache() {
         categoryCache.removeAll()
         defaults.removeObject(forKey: cacheKey)
+    }
+}
+
+// MARK: - Save Progress Prompt
+
+struct SaveProgressPrompt: View {
+    @ObservedObject private var authManager = AuthManager.shared
+    @ObservedObject private var favorites = FavoritesManager.shared
+    @State private var showingSignIn = false
+
+    var body: some View {
+        if !authManager.isAuthenticated && favorites.lovedMovies.count >= 3 {
+            Button {
+                showingSignIn = true
+            } label: {
+                HStack(spacing: .mgSpacing12) {
+                    Image(systemName: "icloud.and.arrow.up")
+                        .font(.system(size: 24))
+                        .foregroundStyle(Color.mgGold)
+
+                    VStack(alignment: .leading, spacing: .mgSpacing4) {
+                        Text("Save your progress")
+                            .font(.mgHeadline)
+                            .foregroundStyle(Color.mgPrimary)
+
+                        Text("Sign in to sync \(favorites.lovedMovies.count) \(favorites.lovedMovies.count == 1 ? "movie" : "movies") across devices")
+                            .font(.mgSubheadline)
+                            .foregroundStyle(Color.mgSecondary)
+                            .lineLimit(2)
+                    }
+
+                    Spacer()
+
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundStyle(Color.mgSecondary)
+                }
+                .padding(.mgSpacing16)
+                .background {
+                    RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous)
+                        .fill(.regularMaterial)
+                }
+                .mgElevationLow()
+            }
+            .buttonStyle(.plain)
+            .sheet(isPresented: $showingSignIn) {
+                SignInPromptView()
+                    .onDisappear {
+                        // Sync favorites after successful sign-in
+                        if authManager.isAuthenticated {
+                            Task {
+                                await favorites.syncWithCloud()
+                            }
+                        }
+                    }
+            }
+        }
     }
 }
 

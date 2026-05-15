@@ -98,56 +98,60 @@ struct WatchQueueCard: View {
                             posterPlaceholder
                         }
                     }
-                    .frame(width: 140, height: 210)
+                    .frame(width: 100, height: 150)
                     .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
                     .mgCinematicGlow()
                     .mgElevationMedium()
                 }
 
-                // Play button (right side) - darker with label
-                VStack {
-                    Spacer()
-                    Button(action: onPlayTrailer) {
-                        VStack(spacing: .mgSpacing8) {
-                            ZStack {
-                                Circle()
-                                    .fill(.ultraThinMaterial)
-                                    .frame(width: 56, height: 56)
+                // Movie info (middle)
+                VStack(alignment: .leading, spacing: .mgSpacing8) {
+                    Text(movie.title)
+                        .font(.mgHeadline)
+                        .foregroundStyle(Color.mgPrimary)
+                        .lineLimit(2)
 
-                                Image(systemName: "play.circle.fill")
-                                    .font(.system(size: 44))
-                                    .foregroundStyle(Color.mgGold)
-                                    .mgShadowSubtle()
-                            }
-
-                            Text("Trailer")
-                                .font(.mgCaption2)
-                                .foregroundStyle(Color.mgSecondary)
-                        }
+                    if let year = movie.year {
+                        Text("(\(year))")
+                            .font(.mgBody)
+                            .foregroundStyle(Color.mgSecondary)
                     }
-                    .buttonStyle(.plain)
-                    .accessibilityLabel("Play trailer")
-                    .accessibilityHint("Opens trailer video")
-                    Spacer()
-                }
-                .frame(maxWidth: .infinity)
-            }
 
-            // Favorite buttons (bottom of card)
-            HStack {
+                    if let slug = movie.slug {
+                        Text(slug)
+                            .font(.mgCaption)
+                            .foregroundStyle(Color.mgTertiary)
+                            .lineLimit(1)
+                    }
+
+                    Spacer()
+
+                    // Action buttons
+                    FavoriteButtons(
+                        tmdbId: movie.id,
+                        title: movie.title,
+                        year: movie.year,
+                        posterUrl: movie.posterUrl,
+                        slug: movie.slug,
+                        compact: false,
+                        onDarkBackground: false
+                    )
+                }
+
                 Spacer()
-                FavoriteButtons(
-                    tmdbId: movie.id,
-                    title: movie.title,
-                    year: movie.year,
-                    posterUrl: movie.posterUrl,
-                    slug: movie.slug,
-                    compact: false,
-                    onDarkBackground: false
-                )
-                .withSignInPrompt
+
+                // Remove button (top right corner)
+                Button {
+                    favorites.toggleQueue(movie)
+                    HapticManager.light()
+                } label: {
+                    Image(systemName: "xmark.circle.fill")
+                        .font(.system(size: 24))
+                        .foregroundStyle(Color.mgSecondary)
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Remove from queue")
             }
-            .padding(.top, .mgSpacing12)
         }
         .padding(.mgSpacing16)
         .background {

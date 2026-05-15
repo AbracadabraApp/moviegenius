@@ -12,8 +12,6 @@ struct FavoriteButtons: View {
     let compact: Bool
     let onDarkBackground: Bool
     @ObservedObject var favorites = FavoritesManager.shared
-    @ObservedObject var authManager = AuthManager.shared
-    @State private var showSignInPrompt = false
 
     init(tmdbId: Int, title: String, year: Int?, posterUrl: String?, slug: String? = nil, compact: Bool = false, onDarkBackground: Bool = false) {
         self.movie = SavedMovie(
@@ -108,17 +106,6 @@ struct FavoriteButtons: View {
             .accessibilityHint("Add movies to your watch list")
             .accessibilityValue(isInQueue ? "Queued" : "Not queued")
         }
-        .sheet(isPresented: $showSignInPrompt) {
-            SignInPromptView()
-                .onDisappear {
-                    // Sync favorites after successful sign-in
-                    if authManager.isAuthenticated {
-                        Task {
-                            await favorites.syncWithCloud()
-                        }
-                    }
-                }
-        }
     }
 
     private var isLoved: Bool {
@@ -129,29 +116,14 @@ struct FavoriteButtons: View {
         favorites.isInQueue(movie.id)
     }
 
-    // MARK: - Authentication Handlers
+    // MARK: - Action Handlers
 
     private func handleLovedTap() {
-        if authManager.isAuthenticated {
-            favorites.toggleLoved(movie)
-        } else {
-            showSignInPrompt = true
-        }
+        favorites.toggleLoved(movie)
     }
 
     private func handleQueueTap() {
-        if authManager.isAuthenticated {
-            favorites.toggleQueue(movie)
-        } else {
-            showSignInPrompt = true
-        }
-    }
-}
-
-// Extension for backwards compatibility with existing .withSignInPrompt calls
-extension View {
-    var withSignInPrompt: some View {
-        self // Sheet is now built into FavoriteButtons body
+        favorites.toggleQueue(movie)
     }
 }
 
