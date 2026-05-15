@@ -73,7 +73,7 @@ struct TrailerView: View {
                             .font(.mgHeadline)
                             .foregroundStyle(.white)
                         if let year = movieYear {
-                            Text("(\(year))")
+                            Text("(\(String(year)))")
                                 .font(.mgCaption)
                                 .foregroundStyle(.white.opacity(0.7))
                         }
