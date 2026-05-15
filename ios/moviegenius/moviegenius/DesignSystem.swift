@@ -12,6 +12,31 @@ extension Color {
     // Brand
     static let mgGold = Color(red: 212/255, green: 175/255, blue: 55/255)
 
+    // Progress badge gradients (adaptive to light/dark mode)
+    static let mgProgressStart = Color(uiColor: UIColor { traitCollection in
+        traitCollection.userInterfaceStyle == .dark
+            ? UIColor(red: 0.40, green: 0.40, blue: 0.40, alpha: 1.0)  // Darker gray for dark mode
+            : UIColor(red: 0.62, green: 0.62, blue: 0.62, alpha: 1.0)  // Light gray for light mode
+    })
+
+    static let mgProgressBronze = Color(uiColor: UIColor { traitCollection in
+        traitCollection.userInterfaceStyle == .dark
+            ? UIColor(red: 0.60, green: 0.54, blue: 0.45, alpha: 1.0)  // Muted bronze for dark mode
+            : UIColor(red: 0.75, green: 0.68, blue: 0.56, alpha: 1.0)  // Light bronze for light mode
+    })
+
+    static let mgProgressCopper = Color(uiColor: UIColor { traitCollection in
+        traitCollection.userInterfaceStyle == .dark
+            ? UIColor(red: 0.68, green: 0.58, blue: 0.40, alpha: 1.0)  // Muted copper for dark mode
+            : UIColor(red: 0.82, green: 0.71, blue: 0.50, alpha: 1.0)  // Copper for light mode
+    })
+
+    static let mgProgressRoseGold = Color(uiColor: UIColor { traitCollection in
+        traitCollection.userInterfaceStyle == .dark
+            ? UIColor(red: 0.80, green: 0.68, blue: 0.45, alpha: 1.0)  // Muted rose gold for dark mode
+            : UIColor(red: 0.92, green: 0.78, blue: 0.52, alpha: 1.0)  // Rose gold for light mode
+    })
+
     // Backgrounds (adaptive to light/dark mode)
     static let mgBackground = Color(.systemBackground)
     static let mgSecondaryBackground = Color(.secondarySystemBackground)

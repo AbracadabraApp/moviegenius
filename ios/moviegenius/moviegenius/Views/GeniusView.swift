@@ -189,33 +189,13 @@ struct CategoryBadge: View {
     let progress: Double  // 0.0 to 1.0
     @ObservedObject private var favorites = FavoritesManager.shared
 
-    // Gradient color based on completion % (matches tier chip gradient)
+    // Gradient color based on completion % (5 gradations with dark mode support)
     private var badgeColor: Color {
-        switch progress {
-        case 0..<0.10:
-            return Color(red: 0.60, green: 0.60, blue: 0.60) // Light gray
-        case 0.10..<0.20:
-            return Color(red: 0.65, green: 0.62, blue: 0.60) // Medium gray
-        case 0.20..<0.30:
-            return Color(red: 0.70, green: 0.65, blue: 0.58) // Warm gray
-        case 0.30..<0.40:
-            return Color(red: 0.75, green: 0.68, blue: 0.56) // Light bronze
-        case 0.40..<0.50:
-            return Color(red: 0.80, green: 0.70, blue: 0.52) // Bronze
-        case 0.50..<0.60:
-            return Color(red: 0.85, green: 0.72, blue: 0.48) // Copper
-        case 0.60..<0.70:
-            return Color(red: 0.90, green: 0.75, blue: 0.50) // Rose gold
-        case 0.70..<0.80:
-            return Color(red: 0.95, green: 0.82, blue: 0.55) // Light gold
-        default:
-            return Color.mgGold // Pure gold (80%+)
-        }
+        CategoryBadgeColors.badgeColor(for: progress)
     }
 
     private var textColor: Color {
-        // Use white text on darker gradient colors for contrast
-        return progress >= 0.40 ? .white : .black
+        CategoryBadgeColors.textColor(for: progress)
     }
 
     private var isComplete: Bool {
@@ -541,28 +521,9 @@ struct TierChip: View {
     let isSelected: Bool
     let completionPercent: Double
 
-    // Gradient color based on completion % (0-80%+ = gray to gold)
+    // Gradient color based on completion % (5 gradations with dark mode support)
     private var gradientColor: Color {
-        switch completionPercent {
-        case 0..<0.10:
-            return Color(red: 0.60, green: 0.60, blue: 0.60) // Light gray
-        case 0.10..<0.20:
-            return Color(red: 0.65, green: 0.62, blue: 0.60) // Medium gray
-        case 0.20..<0.30:
-            return Color(red: 0.70, green: 0.65, blue: 0.58) // Warm gray
-        case 0.30..<0.40:
-            return Color(red: 0.75, green: 0.68, blue: 0.56) // Light bronze
-        case 0.40..<0.50:
-            return Color(red: 0.80, green: 0.70, blue: 0.52) // Bronze
-        case 0.50..<0.60:
-            return Color(red: 0.85, green: 0.72, blue: 0.48) // Copper
-        case 0.60..<0.70:
-            return Color(red: 0.90, green: 0.75, blue: 0.50) // Rose gold
-        case 0.70..<0.80:
-            return Color(red: 0.95, green: 0.82, blue: 0.55) // Light gold
-        default:
-            return Color.mgGold // Pure gold (80%+)
-        }
+        CategoryBadgeColors.badgeColor(for: completionPercent)
     }
 
     private var backgroundColor: Color {
@@ -912,27 +873,11 @@ struct CategoryProgressHeader: View {
     }
 
     private var progressColor: Color {
-        let percentage = progress * 100
-        switch percentage {
-        case 0:
-            return Color.mgSecondary  // Untouched grey — 0%
-        case 0.01..<12:
-            return Color(red: 0.70, green: 0.70, blue: 0.70)  // Warm grey — ~10%
-        case 12..<25:
-            return Color(red: 0.96, green: 0.94, blue: 0.88)  // Cream — ~20%
-        case 25..<40:
-            return Color(red: 0.98, green: 0.96, blue: 0.90)  // Pale champagne — ~35%
-        case 40..<55:
-            return Color(red: 0.98, green: 0.95, blue: 0.82)  // Champagne — ~50%
-        case 55..<70:
-            return Color(red: 0.95, green: 0.87, blue: 0.57)  // Light gold — ~65%
-        case 70..<85:
-            return Color.mgGold  // MovieGenius Gold — ~80%
-        case 85..<96:
-            return Color(red: 0.85, green: 0.65, blue: 0.13)  // Rich gold — ~95%
-        default:
-            return Color(red: 0.72, green: 0.53, blue: 0.04)  // Deep gold — 100%
+        // Use semantic colors with dark mode support (5 gradations)
+        if progress == 0 {
+            return Color.mgSecondary  // Untouched state
         }
+        return CategoryBadgeColors.badgeColor(for: progress)
     }
 
     private var isComplete: Bool {

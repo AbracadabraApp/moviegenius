@@ -40,22 +40,16 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C902999E2FB10FE3006205FF /* moviegenius */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = moviegenius;
 			sourceTree = "<group>";
 		};
 		C90299AC2FB10FE7006205FF /* moviegeniusTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = moviegeniusTests;
 			sourceTree = "<group>";
 		};
 		C90299B62FB10FE7006205FF /* moviegeniusUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = moviegeniusUITests;
 			sourceTree = "<group>";
 		};
