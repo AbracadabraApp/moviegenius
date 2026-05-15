@@ -42,13 +42,20 @@ struct SignInPromptView: View {
                                 .progressViewStyle(CircularProgressViewStyle())
                         } else if isReady {
                             SignInWithAppleButton(.signIn) { request in
+                                #if DEBUG
+                                print("🍎 [SignInPromptView] SignInWithAppleButton tapped - preparing request")
+                                #endif
                                 request.requestedScopes = [.fullName, .email]
                             } onCompletion: { result in
+                                #if DEBUG
+                                print("🍎 [SignInPromptView] Sign-in completion called")
+                                #endif
                                 handleSignInResult(result)
                             }
                             .signInWithAppleButtonStyle(colorScheme == .dark ? .white : .black)
                             .frame(height: 50)
-                            .cornerRadius(.mgCornerSmall)
+                            .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
+                            .contentShape(Rectangle()) // Ensure entire frame is tappable
                         } else {
                             // Placeholder while initializing
                             RoundedRectangle(cornerRadius: .mgCornerSmall)
@@ -93,8 +100,14 @@ struct SignInPromptView: View {
             }
             .task {
                 // Warm up the authorization system
-                // Small delay ensures the view is fully rendered before showing the button
-                try? await Task.sleep(nanoseconds: 200_000_000) // 200ms
+                // Delay ensures the view is fully rendered before showing the button
+                #if DEBUG
+                print("🍎 [SignInPromptView] Sheet appeared, warming up auth system...")
+                #endif
+                try? await Task.sleep(nanoseconds: 500_000_000) // 500ms
+                #if DEBUG
+                print("🍎 [SignInPromptView] Auth system ready, showing button")
+                #endif
                 isReady = true
             }
         }
