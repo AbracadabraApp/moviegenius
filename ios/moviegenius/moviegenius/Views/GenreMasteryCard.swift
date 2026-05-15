@@ -36,7 +36,7 @@ struct GenreMasteryCard: View {
                             .padding(.horizontal, 6)
                             .padding(.vertical, 2)
                             .background(Color.mgGold)
-                            .clipShape(RoundedRectangle(cornerRadius: 3))
+                            .clipShape(RoundedRectangle(cornerRadius: .mgCornerTiny))
                             .kerning(0.3)
                     }
                 }

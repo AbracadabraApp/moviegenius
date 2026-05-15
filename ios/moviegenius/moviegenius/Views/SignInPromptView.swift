@@ -23,12 +23,11 @@ struct SignInPromptView: View {
                     // Text
                     VStack(spacing: 12) {
                         Text("Sign in to MovieGenius")
-                            .font(.title3)
-                            .fontWeight(.semibold)
+                            .font(.mgTitle3)
 
                         Text("Save your favorites and watchlist across all your devices with Face ID")
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
+                            .font(.mgSubheadline)
+                            .foregroundStyle(Color.mgSecondary)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 32)
                     }
@@ -48,14 +47,14 @@ struct SignInPromptView: View {
                             }
                             .signInWithAppleButtonStyle(colorScheme == .dark ? .white : .black)
                             .frame(height: 50)
-                            .cornerRadius(8)
+                            .cornerRadius(.mgCornerSmall)
                         }
 
                         // Error message
                         if let errorMessage = authManager.errorMessage {
                             Text(errorMessage)
-                                .font(.caption)
-                                .foregroundColor(.red)
+                                .font(.mgCaption)
+                                .foregroundStyle(Color.mgDestructive)
                                 .multilineTextAlignment(.center)
                         }
                     }
@@ -68,8 +67,8 @@ struct SignInPromptView: View {
                     Divider()
 
                     Text("Your data is encrypted and private")
-                        .font(.caption)
-                        .foregroundColor(.secondary)
+                        .font(.mgCaption)
+                        .foregroundStyle(Color.mgSecondary)
                         .padding(.vertical, 12)
                 }
             }
@@ -79,7 +78,7 @@ struct SignInPromptView: View {
                     Button("Not Now") {
                         dismiss()
                     }
-                    .font(.body)
+                    .font(.mgBody)
                 }
             }
         }

@@ -55,6 +55,7 @@ extension Color {
     // Video player (intentionally absolute - video standard)
     static let mgVideoPlayerBackground = Color.black
     static let mgVideoPlayerText = Color.white
+    static let mgVideoPlayerSecondaryText = Color(white: 1, opacity: 0.7)
     static let mgVideoPlayerOverlay = Color(white: 0, opacity: 0.3)
 }
 

@@ -554,9 +554,9 @@ struct TierChip: View {
             .padding(.horizontal, 10)
             .padding(.vertical, 6)
             .background(backgroundColor)
-            .clipShape(RoundedRectangle(cornerRadius: 7, style: .continuous))
+            .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
             .overlay(
-                RoundedRectangle(cornerRadius: 7, style: .continuous)
+                RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous)
                     .strokeBorder(
                         isSelected ? Color.mgGold : Color.clear,
                         lineWidth: 2
@@ -778,9 +778,9 @@ struct EssentialFilmCard: View {
                     .padding(.horizontal, 16)
                     .padding(.vertical, 12)
                     .background(isSeen ? Color.mgGold : Color.clear)
-                    .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                    .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
                     .overlay(
-                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous)
                             .strokeBorder(isSeen ? Color.clear : Color.mgPrimary.opacity(0.3), lineWidth: 2)
                     )
                 }
@@ -800,7 +800,7 @@ struct EssentialFilmCard: View {
                             .padding(.horizontal, 12)
                             .padding(.vertical, 8)
                             .background(isQueued ? Color.mgGold.opacity(0.15) : Color.clear)
-                            .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+                            .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
                     }
                     .buttonStyle(.plain)
                 }
