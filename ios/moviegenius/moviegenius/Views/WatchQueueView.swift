@@ -100,6 +100,8 @@ struct WatchQueueCard: View {
                     }
                     .frame(width: 140, height: 210)
                     .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
+                    .mgCinematicGlow()
+                    .mgElevationMedium()
                 }
 
                 // Play button (right side) - darker with label

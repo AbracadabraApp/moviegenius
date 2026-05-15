@@ -105,7 +105,8 @@ struct MoviePosterCard: View {
         }
         .frame(width: 170, height: 227)
         .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
-        .mgShadowMedium()
+        .mgCinematicGlow()
+        .mgElevationMedium()
     }
 
     private var posterURL: URL? {

@@ -129,7 +129,7 @@ struct TrailerView: View {
                     await loadTrailers()
                 }
             }
-            .buttonStyle(MGPrimaryButtonStyle())
+            .buttonStyle(MGGlassButtonStyle())
         }
     }
 

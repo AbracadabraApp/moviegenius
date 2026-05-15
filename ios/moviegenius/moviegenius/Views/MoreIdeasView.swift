@@ -67,6 +67,8 @@ struct MoreIdeaCard: View {
                 }
                 .frame(width: 140, height: 210)
                 .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
+                .mgCinematicGlow()
+                .mgElevationLow()
 
                 // Content (right side)
                 VStack(alignment: .leading, spacing: .mgSpacing8) {

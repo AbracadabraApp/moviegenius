@@ -93,7 +93,7 @@ struct MovieDetailView: View {
                                 await viewModel.loadMovie()
                             }
                         }
-                        .buttonStyle(MGPrimaryButtonStyle())
+                        .buttonStyle(MGGlassButtonStyle())
                     }
                     .padding()
                     .padding(.top, 100)

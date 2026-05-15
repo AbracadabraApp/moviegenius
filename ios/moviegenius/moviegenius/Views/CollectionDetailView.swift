@@ -49,14 +49,34 @@ struct CollectionDetailView: View {
                             alignment: .bottom
                         )
 
-                        // Subcategories
-                        if let subcategories = collection.subcategories {
-                            ForEach(Array(subcategories.enumerated()), id: \.element.id) { index, subcategory in
-                                SubcategorySection(
-                                    subcategory: subcategory,
-                                    movies: viewModel.moviesForSubcategory(subcategory),
-                                    isFirst: index == 0
-                                )
+                        // Empty state (collection loaded but no movies)
+                        if viewModel.movies.isEmpty {
+                            VStack(spacing: .mgSpacing16) {
+                                Text("📚")
+                                    .font(.system(size: 64))
+                                    .padding(.top, 60)
+
+                                Text("No movies in this collection")
+                                    .font(.mgHeadline)
+                                    .foregroundStyle(Color.mgPrimary)
+
+                                Text("This collection is currently empty")
+                                    .font(.mgCallout)
+                                    .foregroundStyle(Color.mgSecondary)
+                                    .multilineTextAlignment(.center)
+                            }
+                            .frame(maxWidth: .infinity)
+                            .padding(.horizontal, .mgSpacing32)
+                        } else {
+                            // Subcategories
+                            if let subcategories = collection.subcategories {
+                                ForEach(Array(subcategories.enumerated()), id: \.element.id) { index, subcategory in
+                                    SubcategorySection(
+                                        subcategory: subcategory,
+                                        movies: viewModel.moviesForSubcategory(subcategory),
+                                        isFirst: index == 0
+                                    )
+                                }
                             }
                         }
 
@@ -106,7 +126,7 @@ struct CollectionDetailView: View {
                                     await viewModel.loadCollection()
                                 }
                             }
-                            .buttonStyle(MGPrimaryButtonStyle())
+                            .buttonStyle(MGGlassButtonStyle())
                         }
                         .padding()
                         .padding(.top, 80)
@@ -245,7 +265,8 @@ struct MovieGridCard: View {
             }
             .aspectRatio(2/3, contentMode: .fit)
             .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
-            .mgShadowSubtle()
+            .mgCinematicGlow()
+            .mgElevationLow()
 
             // Title
             Text(movie.title)
