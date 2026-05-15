@@ -50,7 +50,7 @@ struct WatchQueueView: View {
 
             Image(systemName: "play.rectangle")
                 .font(.system(size: 64))
-                .foregroundStyle(Color.mgSecondary)
+                .foregroundStyle(Color(.darkGray))
 
             Text("No movies in queue")
                 .font(.mgTitle2)

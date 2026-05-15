@@ -1,0 +1,184 @@
+# Matching 175 Missing Films
+
+✅ Action > Essential: "The Raid" (2011) → "The Raid" (2012) [year_fuzzy]
+✅ Action > Essential: "Mission: Impossible — Fallout" (2018) → "Mission: Impossible - Fallout" (2018) [trigram]
+✅ Action > Foundational: "RoboCop" (1987) → "Robocop" (1987) [contains]
+✅ Action > Classics: "Drunken Master II" (1994) → "Drunken Master III" (1994) [contains]
+✅ Action > Well-Versed: "Die Hard with a Vengeance" (1995) → "Die Hard: With a Vengeance" (1995) [trigram]
+❌ Action > Devotee: "Ong-Bak: Muay Thai Warrior" (2003) - NOT FOUND
+✅ Action > Devotee: "The Five Deadly Venoms" (1978) → "The Five Venoms" (1978) [trigram]
+✅ Action > Devotee: "A Touch of Zen" (1971) → "A Touch of Zen" (1970) [year_fuzzy]
+✅ Action > Connoisseur: "Audition" (1999) → "Audition" (2000) [year_fuzzy]
+✅ Action > Deep Cuts: "The Story of Ricky" (1991) → "Riki-Oh: The Story of Ricky" (1991) [contains]
+✅ Action > Specialist: "Companeros" (1970) → "Compañeros" (1970) [trigram]
+✅ Action > Specialist: "The Big Gundown" (1967) → "The Big Job" (1965) [trigram]
+✅ Action > Specialist: "Banlieue 13: Ultimatum" (2009) → "District 13: Ultimatum" (2009) [trigram]
+✅ Action > Archivist: "Bodyguard Kiba" (1973) → "The Bodyguard" (1973) [trigram]
+❌ Action > Archivist: "Wolf Guy" (1975) - NOT FOUND
+✅ Action > Archivist: "Female Convict Scorpion: Jailhouse 41" (1972) → "Female Prisoner Scorpion: Jailhouse 41" (1972) [trigram]
+✅ Action > Master: "Vigilante" (1982) → "Vigilante" (1983) [year_fuzzy]
+✅ Adventure > Essential: "The African Queen" (1951) → "The African Queen" (1952) [year_fuzzy]
+✅ Adventure > Foundational: "Star Wars: A New Hope" (1977) → "Star Wars: A New Hope (Harmy's Despecialized Edition)" (1977) [contains]
+✅ Adventure > Connoisseur: "The Grey" (2011) → "The Grey" (2012) [year_fuzzy]
+✅ Comedy > Essential: "Dr. Strangelove" (1964) → "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb" (1964) [contains]
+✅ Comedy > Foundational: "Anchorman" (2004) → "Anchorman: The Legend of Ron Burgundy" (2004) [contains]
+✅ Comedy > Classics: "Steamboat Bill, Jr." (1928) → "Steamboat Bill Jr." (1928) [trigram]
+✅ Comedy > Well-Versed: "The Producers" (1967) → "The Producers" (1968) [year_fuzzy]
+✅ Comedy > Well-Versed: "Withnail and I" (1987) → "Withnail & I" (1987) [trigram]
+✅ Comedy > Devotee: "Waiting for Guffman" (1996) → "Waiting for Guffman" (1997) [year_fuzzy]
+✅ Comedy > Connoisseur: "Playtime" (1967) → "PlayTime" (1967) [contains]
+✅ Comedy > Connoisseur: "Mr. Hulot's Holiday" (1953) → "Monsieur Hulot's Holiday" (1953) [trigram]
+✅ Comedy > Specialist: "King of Comedy" (1982) → "The King of Comedy" (1982) [contains]
+✅ Crime > Essential: "Goodfellas" (1990) → "GoodFellas" (1990) [contains]
+✅ Crime > Foundational: "Blood Simple" (1984) → "Blood Simple" (1985) [year_fuzzy]
+✅ Crime > Well-Versed: "Sexy Beast" (2000) → "Sexy Beast" (2001) [year_fuzzy]
+✅ Crime > Devotee: "The Place Beyond the Pines" (2012) → "The Place Beyond the Pines" (2013) [year_fuzzy]
+❌ Crime > Connoisseur: "Hana-bi" (1997) - NOT FOUND
+❌ Crime > Specialist: "$ (Dollars)" (1971) - NOT FOUND
+✅ Crime > Archivist: "He Walked by Night" (1948) → "He Walked by Night" (1949) [year_fuzzy]
+✅ Crime > Master: "Crime Wave" (1954) → "Crime Wave" (1953) [year_fuzzy]
+✅ Crime > Master: "Force of Evil" (1948) → "Force of Evil" (1950) [year_fuzzy]
+✅ Documentary > Essential: "Grey Gardens" (1975) → "Grey Gardens" (1976) [year_fuzzy]
+✅ Documentary > Essential: "Harlan County, USA" (1976) → "Harlan County U.S.A." (1977) [trigram]
+✅ Documentary > Foundational: "Don't Look Back" (1967) → "Dont Look Back" (1967) [trigram]
+✅ Documentary > Foundational: "High School" (1968) → "High School" (1969) [year_fuzzy]
+✅ Documentary > Foundational: "Crumb" (1994) → "Crumb" (1995) [year_fuzzy]
+✅ Documentary > Foundational: "Tabloid" (2010) → "Tabloid" (2011) [year_fuzzy]
+✅ Documentary > Classics: "Olympia" (1938) → "Olympia Part One: Festival of the Nations" (1938) [contains]
+✅ Documentary > Well-Versed: "Koyaanisqatsi" (1982) → "Koyaanisqatsi" (1983) [year_fuzzy]
+✅ Documentary > Devotee: "Twenty Feet from Stardom" (2013) → "20 Feet from Stardom" (2013) [trigram]
+✅ Documentary > Devotee: "Sign 'o' the Times" (1987) → "Prince: Sign 'o' the Times" (1987) [contains]
+✅ Documentary > Devotee: "Some Kind of Monster" (2004) → "Metallica: Some Kind of Monster" (2004) [contains]
+❌ Documentary > Connoisseur: "A Married Couple" (1969) - NOT FOUND
+❌ Documentary > Connoisseur: "An American Family" (1973) - NOT FOUND
+✅ Documentary > Connoisseur: "Sherman's March" (1986) → "Sherman's March" (1985) [year_fuzzy]
+✅ Documentary > Connoisseur: "Roger Ebert: Life Itself" (2014) → "Life Itself" (2014) [trigram]
+❌ Documentary > Connoisseur: "51 Birch Street" (2005) - NOT FOUND
+✅ Documentary > Deep Cuts: "No Lies" (1973) → "...No Lies" (1973) [contains]
+✅ Documentary > Deep Cuts: "The Falls" (1980) → "The Falls" (1982) [year_fuzzy]
+✅ Documentary > Deep Cuts: "Reassemblage" (1982) → "Reassemblage: From the Firelight to the Screen" (1983) [contains]
+❌ Documentary > Archivist: "Hôtel des Invalides" (1952) - NOT FOUND
+❌ Documentary > Archivist: "Le Sang des bêtes" (1949) - NOT FOUND
+❌ Documentary > Archivist: "Le Joli Mai" (1963) - NOT FOUND
+✅ Documentary > Master: "Spanish Earth" (1937) → "The Spanish Earth" (1937) [contains]
+❌ Documentary > Master: "The 400 Million" (1939) - NOT FOUND
+✅ Drama > Essential: "The Bicycle Thieves" (1948) → "Bicycle Thieves" (1948) [trigram]
+✅ Drama > Foundational: "Casablanca" (1942) → "Casablanca" (1943) [year_fuzzy]
+✅ Drama > Devotee: "Scenes from a Marriage" (1973) → "Scenes from a Marriage" (1974) [year_fuzzy]
+❌ Drama > Connoisseur: "Eclipse" (1962) - NOT FOUND
+✅ Drama > Deep Cuts: "Bless Their Little Hearts" (1983) → "Bless Their Little Hearts" (1984) [year_fuzzy]
+✅ Espionage > Essential: "The Spy Who Came in from the Cold" (1965) → "The Spy Who Came In from the Cold" (1965) [contains]
+✅ Espionage > Essential: "The Conformist" (1970) → "The Conformist" (1971) [year_fuzzy]
+✅ Espionage > Classics: "Five Fingers" (1952) → "5 Fingers" (1952) [trigram]
+✅ Espionage > Classics: "The Looking Glass War" (1969) → "The Looking Glass War" (1970) [year_fuzzy]
+✅ Espionage > Devotee: "Persian Lessons" (2020) → "Lesson Plan" (2022) [trigram]
+✅ Espionage > Connoisseur: "The Black Windmill" (1974) → "The Black Tavern" (1972) [trigram]
+✅ Espionage > Connoisseur: "The Mackintosh Man" (1973) → "The Mack" (1973) [trigram]
+❌ Espionage > Specialist: "Pickup Alley" (1957) - NOT FOUND
+✅ Espionage > Archivist: "Sabotage" (1936) → "Sabotage" (1937) [year_fuzzy]
+✅ Espionage > Master: "British Intelligence" (1940) → "British Intelligence" (1939) [year_fuzzy]
+✅ Espionage > Master: "OSS" (1946) → "Operation Crossroads" (1946) [contains]
+✅ Fantasy > Well-Versed: "The Tale of the Princess Kaguya" (2013) → "The Tale of The Princess Kaguya" (2013) [contains]
+✅ Fantasy > Devotee: "Mirrormask" (2005) → "MirrorMask" (2005) [contains]
+✅ Fantasy > Connoisseur: "The Saragossa Manuscript" (1965) → "The Saragossa Manuscript" (1966) [year_fuzzy]
+❌ Fantasy > Connoisseur: "Cría Cuervos" (1976) - NOT FOUND
+✅ Fantasy > Deep Cuts: "Beastmaster" (1982) → "The Beastmaster" (1982) [contains]
+✅ Fantasy > Archivist: "The Golem" (1920) → "The Golem: How He Came Into the World" (1920) [contains]
+❌ Fantasy > Archivist: "The Nibelungen: Siegfried" (1924) - NOT FOUND
+✅ Fantasy > Archivist: "The Nibelungen: Kriemhild's Revenge" (1924) → "Die Nibelungen: Kriemhild's Revenge" (1924) [trigram]
+❌ Fantasy > Archivist: "The Bluebird" (1918) - NOT FOUND
+❌ Fantasy > Master: "The Beautiful Sufferings of the Blonde-Haired Lady" (1909) - NOT FOUND
+✅ History > Classics: "A Lion in Winter" (1968) → "The Lion in Winter" (1968) [trigram]
+✅ History > Connoisseur: "The Rise of Louis XIV" (1966) → "The Taking of Power by Louis XIV" (1966) [trigram]
+❌ History > Connoisseur: "Socrates" (1971) - NOT FOUND
+❌ History > Connoisseur: "Augustine of Hippo" (1972) - NOT FOUND
+❌ History > Connoisseur: "The Age of the Medici" (1973) - NOT FOUND
+✅ History > Connoisseur: "Allonsanfàn" (1974) → "Allonsanfan" (1974) [trigram]
+✅ History > Deep Cuts: "Fellini's Casanova" (1976) → "Casanova" (1976) [trigram]
+✅ History > Specialist: "Ivan the Terrible, Part II" (1958) → "Ivan the Terrible, Part II: The Boyars' Plot" (1958) [contains]
+❌ History > Specialist: "Que Viva Mexico!" (1932) - NOT FOUND
+✅ History > Specialist: "October: Ten Days That Shook the World" (1928) → "October (Ten Days that Shook the World)" (1928) [trigram]
+❌ History > Master: "The Assassination of the Duke of Guise" (1908) - NOT FOUND
+✅ History > Master: "Quo Vadis" (1913) → "Quo Vadis?" (1913) [contains]
+❌ History > Master: "Mothers of Men" (1917) - NOT FOUND
+❌ History > Master: "Atlantis" (1913) - NOT FOUND
+✅ Horror > Foundational: "The Witch" (2015) → "The Witch" (2016) [year_fuzzy]
+✅ Horror > Foundational: "It Follows" (2014) → "It Follows" (2015) [year_fuzzy]
+✅ Horror > Classics: "Kwaidan" (1964) → "Kwaidan" (1965) [year_fuzzy]
+✅ Horror > Well-Versed: "It Follows" (2014) → "It Follows" (2015) [year_fuzzy]
+✅ Horror > Well-Versed: "The Witch" (2015) → "The Witch" (2016) [year_fuzzy]
+✅ Horror > Well-Versed: "Saint Maud" (2019) → "Saint Maud" (2020) [year_fuzzy]
+✅ Horror > Well-Versed: "Talk to Me" (2022) → "Talk to Me" (2023) [year_fuzzy]
+✅ Horror > Well-Versed: "Pearl" (2022) → "Pearl Jam: Imola 2022" (2022) [contains]
+✅ Horror > Well-Versed: "X" (2022) → "Extremely Scary Surveillance Camera 2022: Summer Emergency Ghost Town Edition" (2022) [contains]
+✅ Horror > Devotee: "Audition" (1999) → "Audition" (2000) [year_fuzzy]
+✅ Horror > Devotee: "Ringu" (1998) → "Ringu 2" (1999) [contains]
+✅ Horror > Deep Cuts: "House by the Cemetery" (1981) → "The House by the Cemetery" (1981) [contains]
+✅ Horror > Specialist: "Alone" (2007) → "Evangelion: 1.0 You Are (Not) Alone" (2007) [contains]
+❌ Horror > Master: "Equinox" (1970) - NOT FOUND
+❌ Horror > Master: "A Bell from Hell" (1973) - NOT FOUND
+✅ Mystery > Devotee: "The Dry" (2020) → "The Dry" (2021) [year_fuzzy]
+✅ Mystery > Devotee: "Goodnight Mommy" (2014) → "Goodnight Mommy" (2015) [year_fuzzy]
+✅ Mystery > Deep Cuts: "Crime of Passion" (1957) → "Crime of Passion" (1956) [year_fuzzy]
+✅ Mystery > Deep Cuts: "Whirlpool" (1949) → "Whirlpool" (1950) [year_fuzzy]
+❌ Mystery > Specialist: "The Tattered Dress" (1957) - NOT FOUND
+✅ Mystery > Archivist: "The Conformist" (1970) → "The Conformist" (1971) [year_fuzzy]
+❌ Mystery > Archivist: "The Offence" (1973) - NOT FOUND
+❌ Mystery > Master: "Mute Witness" (1995) - NOT FOUND
+✅ Noir > Foundational: "Force of Evil" (1948) → "Force of Evil" (1950) [year_fuzzy]
+✅ Noir > Classics: "He Walked by Night" (1948) → "He Walked by Night" (1949) [year_fuzzy]
+✅ Noir > Devotee: "Blood Simple" (1984) → "Blood Simple" (1985) [year_fuzzy]
+❌ Noir > Connoisseur: "Quai des Orfèvres" (1947) - NOT FOUND
+✅ Noir > Deep Cuts: "Whirlpool" (1949) → "Whirlpool" (1950) [year_fuzzy]
+✅ Noir > Specialist: "Crime of Passion" (1957) → "Crime of Passion" (1956) [year_fuzzy]
+❌ Noir > Master: "Decoy" (1946) - NOT FOUND
+❌ Noir > Master: "Railroaded!" (1947) - NOT FOUND
+✅ Romance > Essential: "Casablanca" (1942) → "Casablanca" (1943) [year_fuzzy]
+✅ Romance > Well-Versed: "500 Days of Summer" (2009) → "(500) Days of Summer" (2009) [trigram]
+❌ Romance > Devotee: "Il Postino" (1994) - NOT FOUND
+✅ Romance > Devotee: "A Room with a View" (1985) → "A Room with a View" (1986) [year_fuzzy]
+✅ Romance > Archivist: "Borzage's Bad Girl" (1931) → "Bad Girl" (1931) [trigram]
+✅ Romance > Master: "Broken Blossoms" (1919) → "Broken Blossoms or The Yellow Man and the Girl" (1919) [contains]
+✅ Science Fiction > Essential: "Star Wars: A New Hope" (1977) → "Star Wars: A New Hope (Harmy's Despecialized Edition)" (1977) [contains]
+✅ Science Fiction > Foundational: "Ex Machina" (2014) → "Ex Machina" (2015) [year_fuzzy]
+✅ Science Fiction > Well-Versed: "Mad Max 2: The Road Warrior" (1981) → "The Warriors" (1979) [trigram]
+✅ Science Fiction > Well-Versed: "RoboCop" (1987) → "Robocop" (1987) [contains]
+✅ Science Fiction > Devotee: "Patlabor 2" (1993) → "Patlabor 2: The Movie" (1993) [contains]
+✅ Science Fiction > Devotee: "Wings of Honneamise" (1987) → "Royal Space Force - The Wings of Honneamise" (1987) [contains]
+✅ Science Fiction > Connoisseur: "Hard to Be a God" (2013) → "Hard to Be a God" (2014) [year_fuzzy]
+✅ Science Fiction > Connoisseur: "Letters from a Dead Man" (1986) → "Dead Man's Letters" (1986) [trigram]
+❌ Science Fiction > Connoisseur: "First on the Moon" (2005) - NOT FOUND
+✅ Science Fiction > Specialist: "The Damned" (1963) → "The Damned" (1962) [year_fuzzy]
+✅ Thriller > Connoisseur: "Wages of Fear" (1953) → "The Wages of Fear" (1953) [contains]
+❌ Thriller > Connoisseur: "Le Salaire de la Peur" (1953) - NOT FOUND
+❌ Thriller > Specialist: "Vikram Vedha" (2017) - NOT FOUND
+❌ Thriller > Master: "Number 17" (1932) - NOT FOUND
+✅ Thriller > Master: "Sabotage" (1936) → "Sabotage" (1937) [year_fuzzy]
+✅ War > Classics: "Casablanca" (1942) → "Casablanca" (1943) [year_fuzzy]
+✅ War > Devotee: "Harp of Burma" (1956) → "The Burmese Harp" (1956) [trigram]
+✅ War > Devotee: "Kwaidan" (1964) → "Kwaidan" (1965) [year_fuzzy]
+✅ War > Connoisseur: "Battle of Algiers" (1966) → "The Battle of Algiers" (1966) [contains]
+❌ War > Connoisseur: "Idi i Smotri" (1985) - NOT FOUND
+❌ War > Specialist: "Memphis Belle: A Story of a Flying Fortress" (1944) - NOT FOUND
+✅ War > Specialist: "The Battle of Russia" (1943) → "Why We Fight: The Battle of Russia" (1943) [contains]
+✅ War > Specialist: "San Pietro" (1945) → "The Battle of San Pietro" (1945) [contains]
+✅ War > Master: "What Price Glory?" (1926) → "What Price Glory" (1926) [trigram]
+❌ War > Master: "Two Arabian Knights" (1927) - NOT FOUND
+✅ Western > Classics: "Pat Garrett and Billy the Kid" (1973) → "Pat Garrett & Billy the Kid" (1973) [trigram]
+✅ Western > Classics: "Meek's Cutoff" (2010) → "Meek's Cutoff" (2011) [year_fuzzy]
+✅ Western > Connoisseur: "Seven Men from Now" (1956) → "7 Men from Now" (1956) [trigram]
+✅ Western > Connoisseur: "Will Penny" (1968) → "Will Penny" (1967) [year_fuzzy]
+✅ Western > Deep Cuts: "The Big Gundown" (1967) → "The Big Job" (1965) [trigram]
+✅ Western > Deep Cuts: "Companeros" (1970) → "Compañeros" (1970) [trigram]
+✅ Western > Archivist: "The Iron Horse" (1924) → "The Iron Horse" (1925) [year_fuzzy]
+❌ Western > Master: "The Bank Robbery" (1908) - NOT FOUND
+❌ Western > Master: "The Aryan" (1916) - NOT FOUND
+❌ Western > Master: "Straight Shooting" (1917) - NOT FOUND
+❌ Western > Master: "Wild and Woolly" (1917) - NOT FOUND
+
+=== RESULTS ===
+✅ New matches found: 131
+❌ Still unmatched: 44
+
+✅ New entries saved to new-tier-matches.txt (ready to append to TierTmdbLookup.swift)
+⚠️  Still unmatched films saved to still-unmatched-films.txt

@@ -1,0 +1,343 @@
+# Using lib/services/tmdb-search.js for 56 films
+
+
+🔍 "Muay Thai Warrior"
+🎬 Searching TMDB for: "Muay Thai Warrior"
+✅ TMDB search success: "Muay Thai Warrior" -> 4 results
+   📽️  Top: "Ong-Bak" (2003) [ID: 9316]
+   ⚠️  Sanity check failed: no common words
+
+🔍 "Wolf Guy"
+🎬 Searching TMDB for: "Wolf Guy"
+✅ TMDB search success: "Wolf Guy" -> 2 results
+   📽️  Top: "Wolf Guy" (1975) [ID: 165282]
+   ❌ TMDB ID 165282 NOT in our database
+
+🔍 "Bodyguard Kiba"
+🎬 Searching TMDB for: "Bodyguard Kiba"
+✅ TMDB search success: "Bodyguard Kiba" -> 5 results
+   📽️  Top: "The Bodyguard" (1973) [ID: 54860]
+   ✅ Match: "The Bodyguard" (1973)
+
+🔍 "Drunken Master II"
+🎬 Searching TMDB for: "Drunken Master II"
+✅ TMDB search success: "Drunken Master II" -> 3 results
+   📽️  Top: "The Legend of Drunken Master" (1994) [ID: 12207]
+   ✅ Match: "The Legend of Drunken Master" (1994)
+
+🔍 "The Big Gundown"
+🎬 Searching TMDB for: "The Big Gundown"
+✅ TMDB search success: "The Big Gundown" -> 2 results
+   📽️  Top: "The Big Gundown" (1967) [ID: 16662]
+   ❌ TMDB ID 16662 NOT in our database
+
+🔍 "Hana-bi"
+🎬 Searching TMDB for: "Hana-bi"
+✅ TMDB search success: "Hana-bi" -> 11 results
+   📽️  Top: "Crayon Shin-chan: Shrouded in Mystery! The Flowers of Tenkazu Academy" (2021) [ID: 795564]
+   ❌ TMDB ID 795564 NOT in our database
+
+🔍 "$ (Dollars)"
+🎬 Searching TMDB for: "$ (Dollars)"
+✅ TMDB search success: "$ (Dollars)" -> 20 results
+   📽️  Top: "A Fistful of Dollars" (1964) [ID: 391]
+   ✅ Match: "A Fistful of Dollars" (1964)
+
+🔍 "A Married Couple"
+🎬 Searching TMDB for: "A Married Couple"
+✅ TMDB search success: "A Married Couple" -> 11 results
+   📽️  Top: "Freak Married Couple Radical Love" (1988) [ID: 890625]
+   ❌ TMDB ID 890625 NOT in our database
+
+🔍 "An American Family"
+🎬 Searching TMDB for: "An American Family"
+✅ TMDB search success: "An American Family" -> 7 results
+   📽️  Top: "American Murder: The Family Next Door" (2020) [ID: 743601]
+   ✅ Match: "American Murder: The Family Next Door" (2020)
+
+🔍 "51 Birch Street"
+🎬 Searching TMDB for: "51 Birch Street"
+✅ TMDB search success: "51 Birch Street" -> 1 results
+   📽️  Top: "51 Birch Street" (2006) [ID: 79161]
+   ❌ TMDB ID 79161 NOT in our database
+
+🔍 "Hôtel des Invalides"
+🎬 Searching TMDB for: "Hôtel des Invalides"
+✅ TMDB search success: "Hôtel des Invalides" -> 1 results
+   📽️  Top: "Hôtel des Invalides" (1952) [ID: 150838]
+   ❌ TMDB ID 150838 NOT in our database
+
+🔍 "Le Sang des bêtes"
+🎬 Searching TMDB for: "Le Sang des bêtes"
+✅ TMDB search success: "Le Sang des bêtes" -> 1 results
+   📽️  Top: "Blood of the Beasts" (1949) [ID: 91262]
+   ⚠️  Sanity check failed: no common words
+
+🔍 "Le Joli Mai"
+🎬 Searching TMDB for: "Le Joli Mai"
+✅ TMDB search success: "Le Joli Mai" -> 2 results
+   📽️  Top: "The Lovely Month of May" (1963) [ID: 128779]
+   ⚠️  Sanity check failed: no common words
+
+🔍 "The 400 Million"
+🎬 Searching TMDB for: "The 400 Million"
+✅ TMDB search success: "The 400 Million" -> 3 results
+   📽️  Top: "The 400 Million" (1939) [ID: 183005]
+   ❌ TMDB ID 183005 NOT in our database
+
+🔍 "Eclipse"
+🎬 Searching TMDB for: "Eclipse"
+✅ TMDB search success: "Eclipse" -> 20 results
+   📽️  Top: "The Twilight Saga: Eclipse" (2010) [ID: 24021]
+   ✅ Match: "The Twilight Saga: Eclipse" (2010)
+
+🔍 "Pickup Alley"
+🎬 Searching TMDB for: "Pickup Alley"
+✅ TMDB search success: "Pickup Alley" -> 1 results
+   📽️  Top: "Interpol" (1957) [ID: 45235]
+   ❌ TMDB ID 45235 NOT in our database
+
+🔍 "Persian Lessons"
+🎬 Searching TMDB for: "Persian Lessons"
+✅ TMDB search success: "Persian Lessons" -> 1 results
+   📽️  Top: "Persian Lessons" (2020) [ID: 581577]
+   ❌ TMDB ID 581577 NOT in our database
+
+🔍 "The Black Windmill"
+🎬 Searching TMDB for: "The Black Windmill"
+✅ TMDB search success: "The Black Windmill" -> 1 results
+   📽️  Top: "The Black Windmill" (1974) [ID: 32050]
+   ❌ TMDB ID 32050 NOT in our database
+
+🔍 "The Mackintosh Man"
+🎬 Searching TMDB for: "The Mackintosh Man"
+✅ TMDB search success: "The Mackintosh Man" -> 1 results
+   📽️  Top: "The MacKintosh Man" (1973) [ID: 32627]
+   ❌ TMDB ID 32627 NOT in our database
+
+🔍 "OSS"
+🎬 Searching TMDB for: "OSS"
+✅ TMDB search success: "OSS" -> 20 results
+   📽️  Top: "OSS 117: Cairo, Nest of Spies" (2006) [ID: 15152]
+   ✅ Match: "OSS 117: Cairo, Nest of Spies" (2006)
+
+🔍 "Cría Cuervos"
+🎬 Searching TMDB for: "Cría Cuervos"
+✅ TMDB search success: "Cría Cuervos" -> 1 results
+   📽️  Top: "Cria!" (1976) [ID: 51857]
+   ⚠️  Sanity check failed: no common words
+
+🔍 "Siegfried"
+🎬 Searching TMDB for: "Siegfried"
+✅ TMDB search success: "Siegfried" -> 20 results
+   📽️  Top: "Siegfried" (2005) [ID: 10659]
+   ✅ Match: "Siegfried" (2005)
+
+🔍 "The Bluebird"
+🎬 Searching TMDB for: "The Bluebird"
+✅ TMDB search success: "The Bluebird" -> 9 results
+   📽️  Top: "I Am the Bluebird" (2009) [ID: 144342]
+   ❌ TMDB ID 144342 NOT in our database
+
+🔍 "The Beautiful Sufferings of the Blonde-Haired Lady"
+🎬 Searching TMDB for: "The Beautiful Sufferings of the Blonde-Haired Lady"
+❌ TMDB search failed: "The Beautiful Sufferings of the Blonde-Haired Lady" not found
+   ❌ No TMDB results
+
+🔍 "Socrates"
+🎬 Searching TMDB for: "Socrates"
+✅ TMDB search success: "Socrates" -> 20 results
+   📽️  Top: "Mr. Socrates" (2005) [ID: 32163]
+   ❌ TMDB ID 32163 NOT in our database
+
+🔍 "Augustine of Hippo"
+🎬 Searching TMDB for: "Augustine of Hippo"
+✅ TMDB search success: "Augustine of Hippo" -> 1 results
+   📽️  Top: "Augustine of Hippo" (1972) [ID: 111423]
+   ❌ TMDB ID 111423 NOT in our database
+
+🔍 "The Age of the Medici"
+🎬 Searching TMDB for: "The Age of the Medici"
+❌ TMDB search failed: "The Age of the Medici" not found
+   ❌ No TMDB results
+
+🔍 "Que Viva Mexico!"
+🎬 Searching TMDB for: "Que Viva Mexico!"
+✅ TMDB search success: "Que Viva Mexico!" -> 5 results
+   📽️  Top: "¡Que viva México!" (2023) [ID: 868985]
+   ❌ TMDB ID 868985 NOT in our database
+
+🔍 "The Assassination of the Duke of Guise"
+🎬 Searching TMDB for: "The Assassination of the Duke of Guise"
+✅ TMDB search success: "The Assassination of the Duke of Guise" -> 2 results
+   📽️  Top: "The Assassination of the Duke de Guise" (1908) [ID: 144586]
+   ❌ TMDB ID 144586 NOT in our database
+
+🔍 "Mothers of Men"
+🎬 Searching TMDB for: "Mothers of Men"
+✅ TMDB search success: "Mothers of Men" -> 3 results
+   📽️  Top: "Mothers of Men" (1920) [ID: 716413]
+   ❌ TMDB ID 716413 NOT in our database
+
+🔍 "Atlantis"
+🎬 Searching TMDB for: "Atlantis"
+✅ TMDB search success: "Atlantis" -> 20 results
+   📽️  Top: "Atlantis: The Lost Empire" (2001) [ID: 10865]
+   ✅ Match: "Atlantis: The Lost Empire" (2001)
+
+🔍 "Equinox"
+🎬 Searching TMDB for: "Equinox"
+✅ TMDB search success: "Equinox" -> 20 results
+   📽️  Top: "Equinox Flower" (1958) [ID: 28272]
+   ✅ Match: "Equinox Flower" (1958)
+
+🔍 "A Bell from Hell"
+🎬 Searching TMDB for: "A Bell from Hell"
+✅ TMDB search success: "A Bell from Hell" -> 1 results
+   📽️  Top: "Bell from Hell" (1974) [ID: 52849]
+   ❌ TMDB ID 52849 NOT in our database
+
+🔍 "Pearl"
+🎬 Searching TMDB for: "Pearl"
+✅ TMDB search success: "Pearl" -> 20 results
+   📽️  Top: "Pirates of the Caribbean: The Curse of the Black Pearl" (2003) [ID: 22]
+   ✅ Match: "Pirates of the Caribbean: The Curse of the Black Pearl" (2003)
+
+🔍 "X"
+🎬 Searching TMDB for: "X"
+✅ TMDB search success: "X" -> 20 results
+   📽️  Top: "Fast X" (2023) [ID: 385687]
+   ✅ Match: "Fast X" (2023)
+
+🔍 "Ringu"
+🎬 Searching TMDB for: "Ringu"
+✅ TMDB search success: "Ringu" -> 20 results
+   📽️  Top: "The Ring" (2002) [ID: 565]
+   ✅ Match: "The Ring" (2002)
+
+🔍 "Alone"
+🎬 Searching TMDB for: "Alone"
+✅ TMDB search success: "Alone" -> 20 results
+   📽️  Top: "Home Alone 2: Lost in New York" (1992) [ID: 772]
+   ✅ Match: "Home Alone 2: Lost in New York" (1992)
+
+🔍 "The Tattered Dress"
+🎬 Searching TMDB for: "The Tattered Dress"
+✅ TMDB search success: "The Tattered Dress" -> 1 results
+   📽️  Top: "The Tattered Dress" (1957) [ID: 77965]
+   ❌ TMDB ID 77965 NOT in our database
+
+🔍 "The Offence"
+🎬 Searching TMDB for: "The Offence"
+✅ TMDB search success: "The Offence" -> 2 results
+   📽️  Top: "The Offence" (1973) [ID: 32615]
+   ❌ TMDB ID 32615 NOT in our database
+
+🔍 "Mute Witness"
+🎬 Searching TMDB for: "Mute Witness"
+✅ TMDB search success: "Mute Witness" -> 2 results
+   📽️  Top: "Mute Witness" (1995) [ID: 48787]
+   ❌ TMDB ID 48787 NOT in our database
+
+🔍 "Quai des Orfèvres"
+🎬 Searching TMDB for: "Quai des Orfèvres"
+✅ TMDB search success: "Quai des Orfèvres" -> 3 results
+   📽️  Top: "36th Precinct" (2004) [ID: 7291]
+   ⚠️  Sanity check failed: no common words
+
+🔍 "Decoy"
+🎬 Searching TMDB for: "Decoy"
+✅ TMDB search success: "Decoy" -> 20 results
+   📽️  Top: "The Decoy Bride" (2011) [ID: 40161]
+   ✅ Match: "The Decoy Bride" (2011)
+
+🔍 "Railroaded!"
+🎬 Searching TMDB for: "Railroaded!"
+✅ TMDB search success: "Railroaded!" -> 5 results
+   📽️  Top: "Railroaded!" (1947) [ID: 43463]
+   ❌ TMDB ID 43463 NOT in our database
+
+🔍 "Il Postino"
+🎬 Searching TMDB for: "Il Postino"
+✅ TMDB search success: "Il Postino" -> 6 results
+   📽️  Top: "The Postman Always Rings Twice" (1981) [ID: 11027]
+   ⚠️  Sanity check failed: no common words
+
+🔍 "First on the Moon"
+🎬 Searching TMDB for: "First on the Moon"
+✅ TMDB search success: "First on the Moon" -> 4 results
+   📽️  Top: "Apollo 11: First Steps on the Moon" (1996) [ID: 264915]
+   ❌ TMDB ID 264915 NOT in our database
+
+🔍 "The Road Warrior"
+🎬 Searching TMDB for: "The Road Warrior"
+✅ TMDB search success: "The Road Warrior" -> 8 results
+   📽️  Top: "Mad Max 2" (1981) [ID: 8810]
+   ⚠️  Sanity check failed: no common words
+
+🔍 "Le Salaire de la Peur"
+🎬 Searching TMDB for: "Le Salaire de la Peur"
+✅ TMDB search success: "Le Salaire de la Peur" -> 3 results
+   📽️  Top: "The Wages of Fear" (1953) [ID: 204]
+   ⚠️  Sanity check failed: no common words
+
+🔍 "Vikram Vedha"
+🎬 Searching TMDB for: "Vikram Vedha"
+✅ TMDB search success: "Vikram Vedha" -> 2 results
+   📽️  Top: "Vikram Vedha" (2017) [ID: 432139]
+   ❌ TMDB ID 432139 NOT in our database
+
+🔍 "Number 17"
+🎬 Searching TMDB for: "Number 17"
+✅ TMDB search success: "Number 17" -> 8 results
+   📽️  Top: "Number Seventeen" (1932) [ID: 15007]
+   ✅ Match: "Number Seventeen" (1932)
+
+🔍 "Idi i Smotri"
+🎬 Searching TMDB for: "Idi i Smotri"
+✅ TMDB search success: "Idi i Smotri" -> 1 results
+   📽️  Top: "Come and See" (1985) [ID: 25237]
+   ⚠️  Sanity check failed: no common words
+
+🔍 "A Story of a Flying Fortress"
+🎬 Searching TMDB for: "A Story of a Flying Fortress"
+✅ TMDB search success: "A Story of a Flying Fortress" -> 1 results
+   📽️  Top: "The Memphis Belle" (1944) [ID: 41355]
+   ⚠️  Sanity check failed: no common words
+
+🔍 "Two Arabian Knights"
+🎬 Searching TMDB for: "Two Arabian Knights"
+✅ TMDB search success: "Two Arabian Knights" -> 1 results
+   📽️  Top: "Two Arabian Knights" (1927) [ID: 102384]
+   ❌ TMDB ID 102384 NOT in our database
+
+🔍 "The Bank Robbery"
+🎬 Searching TMDB for: "The Bank Robbery"
+✅ TMDB search success: "The Bank Robbery" -> 15 results
+   📽️  Top: "The Great Bank Robbery" (1969) [ID: 109468]
+   ✅ Match: "The Great Bank Robbery" (1969)
+
+🔍 "The Aryan"
+🎬 Searching TMDB for: "The Aryan"
+✅ TMDB search success: "The Aryan" -> 7 results
+   📽️  Top: "The Aryan Papers" (2026) [ID: 1555895]
+   ❌ TMDB ID 1555895 NOT in our database
+
+🔍 "Straight Shooting"
+🎬 Searching TMDB for: "Straight Shooting"
+✅ TMDB search success: "Straight Shooting" -> 3 results
+   📽️  Top: "Straight Shooting" (1917) [ID: 157903]
+   ❌ TMDB ID 157903 NOT in our database
+
+🔍 "Wild and Woolly"
+🎬 Searching TMDB for: "Wild and Woolly"
+✅ TMDB search success: "Wild and Woolly" -> 6 results
+   📽️  Top: "Wild and Woolly" (1937) [ID: 490519]
+   ❌ TMDB ID 490519 NOT in our database
+
+
+=== RESULTS ===
+✅ Matches: 16
+❌ Still missing: 40
+
+✅ Saved to lib-tmdb-matches.txt

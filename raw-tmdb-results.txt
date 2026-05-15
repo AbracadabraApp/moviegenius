@@ -1,0 +1,232 @@
+# Raw TMDB API matching for 56 films
+
+
+🔍 "Muay Thai Warrior" (2003)
+   📽️  Top: "Muay Thai Warrior" (2010) [ID: 67327]
+   ❌ TMDB ID 67327 NOT in database
+
+🔍 "Wolf Guy" (1975)
+   📽️  Top: "Wolf Guy" (1975) [ID: 165282]
+   ❌ TMDB ID 165282 NOT in database
+
+🔍 "Bodyguard Kiba" (1973)
+   📽️  Top: "Bodyguard Kiba" (1993) [ID: 104966]
+   ❌ TMDB ID 104966 NOT in database
+
+🔍 "Drunken Master II" (1994)
+   📽️  Top: "Drunken Master III" (1994) [ID: 66018]
+   ✅ Match: "Drunken Master III" (1994)
+
+🔍 "The Big Gundown" (1967)
+   📽️  Top: "The Big Gundown" (1967) [ID: 16662]
+   ❌ TMDB ID 16662 NOT in database
+
+🔍 "Hana-bi" (1997)
+   📽️  Top: "Fireworks" (1997) [ID: 5910]
+   ⚠️  Sanity check failed: "Hana-bi" vs "Fireworks"
+
+🔍 "$ (Dollars)" (1971)
+   📽️  Top: "Two Dollars" (2017) [ID: 549416]
+   ❌ TMDB ID 549416 NOT in database
+
+🔍 "A Married Couple" (1969)
+   📽️  Top: "A Married Couple" (1969) [ID: 86655]
+   ❌ TMDB ID 86655 NOT in database
+
+🔍 "An American Family" (1973)
+   📽️  Top: "An American Family at 50" (2024) [ID: 1268890]
+   ❌ TMDB ID 1268890 NOT in database
+
+🔍 "51 Birch Street" (2005)
+   📽️  Top: "51 Birch Street" (2006) [ID: 79161]
+   ❌ TMDB ID 79161 NOT in database
+
+🔍 "Hôtel des Invalides" (1952)
+   📽️  Top: "Hôtel des Invalides" (1952) [ID: 150838]
+   ❌ TMDB ID 150838 NOT in database
+
+🔍 "Le Sang des bêtes" (1949)
+   📽️  Top: "Blood of the Beasts" (1949) [ID: 91262]
+   ⚠️  Sanity check failed: "Le Sang des bêtes" vs "Blood of the Beasts"
+
+🔍 "Le Joli Mai" (1963)
+   📽️  Top: "The Lovely Month of May" (1963) [ID: 128779]
+   ✅ Match: "The Lovely Month of May" (1963)
+
+🔍 "The 400 Million" (1939)
+   📽️  Top: "The 400 Million" (1939) [ID: 183005]
+   ❌ TMDB ID 183005 NOT in database
+
+🔍 "Eclipse" (1962)
+   📽️  Top: "The Twilight Saga: Eclipse" (2010) [ID: 24021]
+   ✅ Match: "The Twilight Saga: Eclipse" (2010)
+
+🔍 "Pickup Alley" (1957)
+   📽️  Top: "Interpol" (1957) [ID: 45235]
+   ❌ TMDB ID 45235 NOT in database
+
+🔍 "Persian Lessons" (2020)
+   📽️  Top: "Persian Lessons" (2020) [ID: 581577]
+   ❌ TMDB ID 581577 NOT in database
+
+🔍 "The Black Windmill" (1974)
+   📽️  Top: "The Black Windmill" (1974) [ID: 32050]
+   ❌ TMDB ID 32050 NOT in database
+
+🔍 "The Mackintosh Man" (1973)
+   📽️  Top: "The MacKintosh Man" (1973) [ID: 32627]
+   ❌ TMDB ID 32627 NOT in database
+
+🔍 "OSS" (1946)
+   📽️  Top: "Oss" (1976) [ID: 468806]
+   ❌ TMDB ID 468806 NOT in database
+
+🔍 "Cría Cuervos" (1976)
+   📽️  Top: "Cria!" (1976) [ID: 51857]
+   ⚠️  Sanity check failed: "Cría Cuervos" vs "Cria!"
+
+🔍 "Siegfried" (1924)
+   📽️  Top: "Siegfried" (2005) [ID: 10659]
+   ✅ Match: "Siegfried" (2005)
+
+🔍 "The Bluebird" (1918)
+   📽️  Top: "Away, the Bluebird" (2025) [ID: 1598486]
+   ❌ TMDB ID 1598486 NOT in database
+
+🔍 "The Beautiful Sufferings of the Blonde-Haired Lady" (1909)
+   ❌ No TMDB results
+
+🔍 "Socrates" (1971)
+   📽️  Top: "Socrates" (1971) [ID: 74778]
+   ❌ TMDB ID 74778 NOT in database
+
+🔍 "Augustine of Hippo" (1972)
+   📽️  Top: "Augustine of Hippo" (1972) [ID: 111423]
+   ❌ TMDB ID 111423 NOT in database
+
+🔍 "The Age of the Medici" (1973)
+   ❌ No TMDB results
+
+🔍 "Que Viva Mexico!" (1932)
+   📽️  Top: "¡Qué Viva México!" (1979) [ID: 63107]
+   ❌ TMDB ID 63107 NOT in database
+
+🔍 "The Assassination of the Duke of Guise" (1908)
+   📽️  Top: "The Assassination of the Duke de Guise" (1897) [ID: 231057]
+   ❌ TMDB ID 231057 NOT in database
+
+🔍 "Mothers of Men" (1917)
+   📽️  Top: "Mothers of Men" (1920) [ID: 716413]
+   ❌ TMDB ID 716413 NOT in database
+
+🔍 "Atlantis" (1913)
+   📽️  Top: "Atlantis Rising" (2017) [ID: 447829]
+   ❌ TMDB ID 447829 NOT in database
+
+🔍 "Equinox" (1970)
+   📽️  Top: "Equinox" (1970) [ID: 28681]
+   ❌ TMDB ID 28681 NOT in database
+
+🔍 "A Bell from Hell" (1973)
+   📽️  Top: "Bell from Hell" (1974) [ID: 52849]
+   ❌ TMDB ID 52849 NOT in database
+
+🔍 "Pearl" (2022)
+   📽️  Top: "Pearl" (2022) [ID: 949423]
+   ❌ TMDB ID 949423 NOT in database
+
+🔍 "X" (2022)
+   📽️  Top: "Fast X" (2023) [ID: 385687]
+   ✅ Match: "Fast X" (2023)
+
+🔍 "Ringu" (1998)
+   📽️  Top: "Herbert v ringu" (2009) [ID: 435435]
+   ❌ TMDB ID 435435 NOT in database
+
+🔍 "Alone" (2007)
+   📽️  Top: "Lilly Lives Alone" (2025) [ID: 1367763]
+   ❌ TMDB ID 1367763 NOT in database
+
+🔍 "The Tattered Dress" (1957)
+   📽️  Top: "The Tattered Dress" (1957) [ID: 77965]
+   ❌ TMDB ID 77965 NOT in database
+
+🔍 "The Offence" (1973)
+   📽️  Top: "The Offence" (1973) [ID: 32615]
+   ❌ TMDB ID 32615 NOT in database
+
+🔍 "Mute Witness" (1995)
+   📽️  Top: "Mute Witness" (1995) [ID: 48787]
+   ❌ TMDB ID 48787 NOT in database
+
+🔍 "Quai des Orfèvres" (1947)
+   📽️  Top: "36th Precinct" (2004) [ID: 7291]
+   ⚠️  Sanity check failed: "Quai des Orfèvres" vs "36th Precinct"
+
+🔍 "Decoy" (1946)
+   📽️  Top: "Decoy" (1946) [ID: 20028]
+   ❌ TMDB ID 20028 NOT in database
+
+🔍 "Railroaded!" (1947)
+   📽️  Top: "Railroaded!" (1947) [ID: 43463]
+   ❌ TMDB ID 43463 NOT in database
+
+🔍 "Il Postino" (1994)
+   📽️  Top: "The Postman" (1994) [ID: 11010]
+   ✅ Match: "The Postman" (1994)
+
+🔍 "First on the Moon" (2005)
+   📽️  Top: "First on the Moon" (2005) [ID: 25530]
+   ❌ TMDB ID 25530 NOT in database
+
+🔍 "The Road Warrior" (1981)
+   📽️  Top: "The Road Warrior" (2013) [ID: 339133]
+   ✅ Match: "The Road Warrior" (2013)
+
+🔍 "Le Salaire de la Peur" (1953)
+   📽️  Top: "The Wages of Fear" (2024) [ID: 984324]
+   ❌ TMDB ID 984324 NOT in database
+
+🔍 "Vikram Vedha" (2017)
+   📽️  Top: "Vikram Vedha" (2017) [ID: 432139]
+   ❌ TMDB ID 432139 NOT in database
+
+🔍 "Number 17" (1932)
+   📽️  Top: "Number 17" (1921) [ID: 1329380]
+   ❌ TMDB ID 1329380 NOT in database
+
+🔍 "Idi i Smotri" (1985)
+   📽️  Top: "Come and See" (1985) [ID: 25237]
+   ⚠️  Sanity check failed: "Idi i Smotri" vs "Come and See"
+
+🔍 "A Story of a Flying Fortress" (1944)
+   📽️  Top: "The Memphis Belle" (1944) [ID: 41355]
+   ⚠️  Sanity check failed: "A Story of a Flying Fortress" vs "The Memphis Belle"
+
+🔍 "Two Arabian Knights" (1927)
+   📽️  Top: "Two Arabian Knights" (1927) [ID: 102384]
+   ❌ TMDB ID 102384 NOT in database
+
+🔍 "The Bank Robbery" (1908)
+   📽️  Top: "The Great Bank Robbery" (1969) [ID: 109468]
+   ✅ Match: "The Great Bank Robbery" (1969)
+
+🔍 "The Aryan" (1916)
+   📽️  Top: "The Aryan Papers" (2026) [ID: 1555895]
+   ❌ TMDB ID 1555895 NOT in database
+
+🔍 "Straight Shooting" (1917)
+   📽️  Top: "Shooting Straight" (1930) [ID: 275385]
+   ❌ TMDB ID 275385 NOT in database
+
+🔍 "Wild and Woolly" (1917)
+   📽️  Top: "Wild and Woolly" (1917) [ID: 135275]
+   ❌ TMDB ID 135275 NOT in database
+
+
+=== RESULTS ===
+✅ Matches: 8
+❌ Still missing: 48
+
+✅ Saved to raw-tmdb-matches.txt
+⚠️  Still missing saved to final-still-missing.txt

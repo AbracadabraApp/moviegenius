@@ -1,6 +1,6 @@
 /**
  * TrailerModal Component - Optimized for search result trailer playback
- * 
+ *
  * Lightweight modal specifically designed for quick trailer viewing
  * in search contexts without disrupting the search flow.
  */
@@ -144,6 +144,10 @@ const styles = {
     padding: '12px 20px',
     backgroundColor: 'rgba(0, 0, 0, 0.9)',
     borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: '12px',
   },
 
   movieTitle: {

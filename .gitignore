@@ -83,6 +83,7 @@ ios/**/DerivedData/
 ios/**/*.xcworkspace/xcuserdata/
 ios/**/*.xcodeproj/xcuserdata/
 ios/**/*.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ios/**/*.xcarchive
 *.swp
 *~.nib
 *.moved-aside

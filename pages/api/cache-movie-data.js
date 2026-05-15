@@ -2,6 +2,7 @@
 // Cache enhanced movie data to Railway PostgreSQL directly (zero Supabase dependencies)
 import { getPool, MovieService } from '../../lib/railway-db.js';
 import { isValidPosterUrl } from '../../lib/poster-validation-utils.js';
+import { normalizeTitle } from '../../lib/search-matching.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -156,12 +157,14 @@ export default async function handler(req, res) {
             validatedPoster = poster;
           }
 
+          const titleNormalized = normalizeTitle(title);
+
           const insertResult = await client.query(
-            `INSERT INTO movies (tmdb_id, title, year, slug, poster_url, streaming_data, created_at, updated_at)
-             VALUES ($1, $2, $3, $4, $5, $6, NOW(), NOW())
-             ON CONFLICT (tmdb_id) DO UPDATE SET updated_at = NOW()
+            `INSERT INTO movies (tmdb_id, title, year, slug, poster_url, streaming_data, title_normalized, created_at, updated_at)
+             VALUES ($1, $2, $3, $4, $5, $6, $7, NOW(), NOW())
+             ON CONFLICT (tmdb_id) DO UPDATE SET title_normalized = EXCLUDED.title_normalized, updated_at = NOW()
              RETURNING *`,
-            [tmdbId, title, year, slug || null, validatedPoster, streaming ? JSON.stringify(streaming) : null]
+            [tmdbId, title, year, slug || null, validatedPoster, streaming ? JSON.stringify(streaming) : null, titleNormalized]
           );
           result = insertResult.rows[0];
           updated = true;

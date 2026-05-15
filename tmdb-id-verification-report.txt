@@ -1,0 +1,120 @@
+# TMDB ID Verification Report
+
+## Films Successfully Added (44 total)
+
+✅ Action:
+- Ong-Bak (2003) → TMDB 9316: "Ong-Bak"
+- Wolf Guy (1975) → TMDB 165282: "Wolf Guy"
+- Bodyguard Kiba (1973) → TMDB 54860: "The Bodyguard"
+- The Big Gundown (1967) → TMDB 16662: "The Big Gundown"
+
+✅ Crime:
+- Hana-bi (1997) → TMDB 5910: "Fireworks"
+
+✅ Documentary:
+- A Married Couple (1969) → TMDB 86655: "A Married Couple"
+- 51 Birch Street (2005) → TMDB 79161: "51 Birch Street" (2006 release date in TMDB)
+- Hôtel des Invalides (1952) → TMDB 150838: "Hôtel des Invalides"
+- Le Sang des bêtes (1949) → TMDB 91262: "Blood of the Beasts"
+- The 400 Million (1939) → TMDB 183005: "The 400 Million"
+
+✅ Espionage:
+- Pickup Alley (1957) → TMDB 45235: "Interpol"
+- Persian Lessons (2020) → TMDB 581577: "Persian Lessons"
+- The Black Windmill (1974) → TMDB 32050: "The Black Windmill"
+- The Mackintosh Man (1973) → TMDB 32627: "The MacKintosh Man"
+- OSS (1946) → TMDB 94641: "O.S.S."
+
+✅ Fantasy:
+- Cría Cuervos (1976) → TMDB 51857: "Cria!"
+
+✅ History:
+- Socrates (1971) → TMDB 74778: "Socrates"
+- Augustine of Hippo (1972) → TMDB 111423: "Augustine of Hippo"
+- Que Viva Mexico! (1932) → TMDB 616038: "Hurray Mexico!"
+- The Assassination of the Duke of Guise (1908) → TMDB 144586: "The Assassination of the Duke de Guise"
+- Mothers of Men (1917) → TMDB 400749: "Mothers of Men"
+- Atlantis (1913) → TMDB 179835: "Atlantis"
+
+✅ Horror:
+- Equinox (1970) → TMDB 28681: "Equinox"
+- A Bell from Hell (1973) → TMDB 52849: "Bell from Hell" (1974 release date in TMDB)
+- Pearl (2022) → TMDB 949423: "Pearl"
+
+✅ Mystery:
+- The Tattered Dress (1957) → TMDB 77965: "The Tattered Dress"
+- The Offence (1973) → TMDB 32615: "The Offence"
+- Mute Witness (1995) → TMDB 48787: "Mute Witness"
+
+✅ Noir:
+- Decoy (1946) → TMDB 20028: "Decoy"
+- Railroaded! (1947) → TMDB 43463: "Railroaded!"
+
+✅ Science Fiction:
+- First on the Moon (2005) → TMDB 25530: "First on the Moon"
+
+✅ War:
+- Idi i Smotri (1985) → TMDB 25237: "Come and See"
+- Memphis Belle: A Story of a Flying Fortress (1944) → TMDB 41355: "The Memphis Belle"
+- Two Arabian Knights (1927) → TMDB 102384: "Two Arabian Knights"
+
+✅ Western:
+- Wild and Woolly (1917) → TMDB 135275: "Wild and Woolly"
+
+---
+
+## Wrong TMDB IDs Used (Need Correction)
+
+❌ Crime:
+- $ (Dollars) (1971) → TMDB 137302 = "My Past Is My Own" (1989) - WRONG MOVIE
+
+❌ Documentary:
+- An American Family (1973) → TMDB 1268890 = "An American Family at 50" (2024) - WRONG MOVIE (this is a 2024 documentary ABOUT the 1973 series)
+
+❌ Fantasy:
+- The Bluebird (1918) → TMDB 127628 = "The Greed of William Hart" (1948) - WRONG MOVIE
+
+❌ Horror:
+- Ringu (1998) → TMDB 95469 = "My Baby Is Missing" (2007) - WRONG MOVIE
+- Alone (2007) → TMDB 60304 = "Hansel & Gretel: Witch Hunters" (2013) - WRONG MOVIE
+
+❌ Noir:
+- Quai des Orfèvres (1947) → TMDB 11652 = "Invincible" (2006) - WRONG MOVIE
+
+❌ Thriller:
+- Le Salaire de la Peur (1953) → TMDB 11003 = "The Wedding Singer" (1998) - WRONG MOVIE
+- Number 17 (1932) → TMDB 44117 = "Without Warning" (1994) - WRONG MOVIE
+
+❌ Western:
+- Straight Shooting (1917) → TMDB 121953 - TMDB ID DOES NOT EXIST
+
+---
+
+## Films Still Missing (9 total)
+
+Need correct TMDB IDs for:
+
+1. $ (Dollars) (1971) - Crime > Specialist
+2. An American Family (1973) - Documentary > Connoisseur
+3. The Bluebird (1918) - Fantasy > Archivist
+4. Ringu (1998) - Horror > Devotee
+5. Alone (2007) - Horror > Specialist
+6. Quai des Orfèvres (1947) - Noir > Connoisseur
+7. Le Salaire de la Peur (1953) - Thriller > Connoisseur
+8. Number 17 (1932) - Thriller > Master
+9. Straight Shooting (1917) - Western > Master
+
+---
+
+## Films from Previous "Raw TMDB Matches" to Review
+
+The match-via-raw-tmdb.cjs script flagged these 8 as matches, but most are WRONG:
+
+❌ "Drunken Master II" (1994) → TMDB 66018: "Drunken Master III" (1994) - Different movie
+❌ "Eclipse" (1962) → TMDB 24021: "The Twilight Saga: Eclipse" (2010) - Different movie
+❌ "Siegfried" (1924) → TMDB 10659: "Siegfried" (2005) - Different movie
+❌ "X" (2022) → TMDB 385687: "Fast X" (2023) - Different movie
+❌ "The Road Warrior" (1981) → TMDB 339133: "The Road Warrior" (2013) - Different movie
+❌ "The Bank Robbery" (1908) → TMDB 109468: "The Great Bank Robbery" (1969) - Different movie
+✅ "Le Joli Mai" (1963) → TMDB 128779: "The Lovely Month of May" - Already in TierTmdbLookup
+✅ "Il Postino" (1994) → TMDB 11010: "The Postman" - Already in TierTmdbLookup

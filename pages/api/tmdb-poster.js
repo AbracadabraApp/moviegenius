@@ -1,13 +1,14 @@
 // pages/api/tmdb-poster.js
 /**
  * TMDB Poster API Route - Direct Implementation
- * 
+ *
  * Smart caching: Database-first lookup, TMDB fallback, safe validation
  * NO PROXY - Direct implementation to prevent state bleeding
  */
 
 import { Client } from 'pg';
 import { isValidPosterUrl } from '../../lib/poster-validation-utils.js';
+import { useOnce } from '../../lib/services/tmdb-persist.js';
 
 // Railway PostgreSQL connection
 function getRailwayClient() {
@@ -87,12 +88,17 @@ export default async function handler(req, res) {
     
     if (tmdbMovie?.poster_path) {
       const posterUrl = `https://image.tmdb.org/t/p/w500${tmdbMovie.poster_path}`;
-      
+
       // Step 3: Validate TMDB poster before using
       if (isValidPosterUrl(posterUrl, `${title} (${year})`)) {
         console.log(`📸 TMDB poster validated: "${title}" (${year})`);
-        
-        // Cache for future (smart caching pattern - but don't update here, leave to cache-movie-data API)
+
+        // Save to database (UseOnce Policy)
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        useOnce(tmdbMovie).catch(err => {
+          console.error('Failed to save movie to DB (non-fatal):', err.message);
+        });
+
         res.setHeader('Cache-Control', 'public, s-maxage=2592000, stale-while-revalidate=5184000');
         return res.status(200).json({
           poster: posterUrl,

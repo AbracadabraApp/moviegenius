@@ -1,5 +1,5 @@
 // pages/api/multi-search.js - Movies & People multi-search API
-import { ensureMovieInDb } from '../../lib/services/tmdb-persist';
+import { useOnce } from '../../lib/services/tmdb-persist';
 
 /**
  * Calculate relevance score for movie results
@@ -109,7 +109,7 @@ export default async function handler(req, res) {
     // Persist all movie results to DB — fire-and-forget, does not block response
     allResults
       .filter(r => r.media_type === 'movie')
-      .forEach(movie => ensureMovieInDb(movie).catch(() => {}));
+      .forEach(movie => useOnce(movie).catch(() => {}));
 
     // Filter and rank movies by popularity and relevance (20 results)
     const movieResults = allResults

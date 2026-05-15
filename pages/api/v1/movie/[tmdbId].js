@@ -8,19 +8,21 @@
 import { Client } from 'pg';
 
 // Enrich moreIdeas array with poster URLs from movies table
+// FILTER OUT entries without tmdbId (movies not in our catalog)
 async function enrichMoreIdeasWithPosters(client, moreIdeas) {
   if (!moreIdeas || !Array.isArray(moreIdeas) || moreIdeas.length === 0) {
     return moreIdeas;
   }
 
-  // Get all tmdbIds from the ideas array
-  const tmdbIds = moreIdeas
-    .map(idea => idea.tmdbId)
-    .filter(id => id != null);
+  // Filter to only include ideas with valid tmdbIds (catalog movies only)
+  const validIdeas = moreIdeas.filter(idea => idea.tmdbId != null);
 
-  if (tmdbIds.length === 0) {
-    return moreIdeas;
+  if (validIdeas.length === 0) {
+    return [];
   }
+
+  // Get all tmdbIds from the valid ideas
+  const tmdbIds = validIdeas.map(idea => idea.tmdbId);
 
   // Fetch poster URLs in one query
   const posterResult = await client.query(
@@ -34,10 +36,10 @@ async function enrichMoreIdeasWithPosters(client, moreIdeas) {
     posterMap[row.tmdb_id] = row.poster_url;
   });
 
-  // Enrich ideas with poster URLs
-  return moreIdeas.map(idea => ({
+  // Enrich valid ideas with poster URLs
+  return validIdeas.map(idea => ({
     ...idea,
-    poster_url: idea.tmdbId ? posterMap[idea.tmdbId] || null : null
+    poster_url: posterMap[idea.tmdbId] || null
   }));
 }
 

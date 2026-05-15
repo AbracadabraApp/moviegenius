@@ -1,0 +1,203 @@
+# Film Journey Tier Matching - Final Report
+
+## Summary
+
+**Total Films in GeniusView.swift:** 1,831
+**Films Matched in TierTmdbLookup.swift:** 1,819
+**Coverage:** 99.3%
+
+## Progress
+
+### Initial State
+- ✅ 1,656 films already matched in TierTmdbLookup.swift
+- ❌ 175 films unmatched
+
+### Fuzzy Matching Phase
+- Ran database fuzzy matching (year ±2, normalized titles, trigram similarity)
+- Found 131 potential matches
+- Manually reviewed and filtered to 118 valid matches
+- **Result:** 1,774 total entries (96.9% coverage)
+
+### Manual TMDB ID Collection Phase
+- User manually provided correct TMDB IDs for 57 films
+- Created script to fetch TMDB movie data and insert into database
+- **Batch 1:** 44 films successfully added
+- **Batch 2:** 9 films successfully added
+- **Total added to database:** 53 films
+
+### Final TierTmdbLookup.swift Update
+- 45 new entries added to TierTmdbLookup.swift (8 were duplicates)
+- **Final count:** 1,819 entries
+- **Final coverage:** 99.3%
+
+## Films Added to Database (53 total)
+
+### Action (4)
+- Ong-Bak (2003) → TMDB 9316
+- Wolf Guy (1975) → TMDB 165282
+- The Bodyguard / Bodyguard Kiba (1973) → TMDB 54860
+- The Big Gundown (1967) → TMDB 16662
+
+### Crime (2)
+- Fireworks / Hana-bi (1997) → TMDB 5910
+- $ / Dollars (1971) → TMDB 31644
+
+### Documentary (5)
+- A Married Couple (1969) → TMDB 86655
+- 51 Birch Street (2005) → TMDB 79161
+- Hôtel des Invalides (1952) → TMDB 150838
+- Blood of the Beasts / Le Sang des bêtes (1949) → TMDB 91262
+- The 400 Million (1939) → TMDB 183005
+
+### Espionage (5)
+- Interpol / Pickup Alley (1957) → TMDB 45235
+- Persian Lessons (2020) → TMDB 581577
+- The Black Windmill (1974) → TMDB 32050
+- The MacKintosh Man (1973) → TMDB 32627
+- O.S.S. / OSS (1946) → TMDB 94641
+
+### Fantasy (2)
+- Cria! / Cría Cuervos (1976) → TMDB 51857
+- The Blue Bird / The Bluebird (1918) → TMDB 71271
+
+### History (6)
+- Socrates (1971) → TMDB 74778
+- Augustine of Hippo (1972) → TMDB 111423
+- Hurray Mexico! / Que Viva Mexico! (1932) → TMDB 616038
+- The Assassination of the Duke de Guise (1908) → TMDB 144586
+- Mothers of Men (1917) → TMDB 400749
+- Atlantis (1913) → TMDB 179835
+
+### Horror (5)
+- Equinox (1970) → TMDB 28681
+- Bell from Hell / A Bell from Hell (1973) → TMDB 52849
+- Pearl (2022) → TMDB 949423
+- Ring / Ringu (1998) → TMDB 2671
+- Alone (2007) → TMDB 37973
+
+### Mystery (3)
+- The Tattered Dress (1957) → TMDB 77965
+- The Offence (1973) → TMDB 32615
+- Mute Witness (1995) → TMDB 48787
+
+### Noir (3)
+- Jenny Lamour / Quai des Orfèvres (1947) → TMDB 49842
+- Decoy (1946) → TMDB 20028
+- Railroaded! (1947) → TMDB 43463
+
+### Science Fiction (1)
+- First on the Moon (2005) → TMDB 25530
+
+### Thriller (3)
+- The Wages of Fear / Le Salaire de la Peur (1953) → TMDB 204
+- Vikram Vedha (2017) → TMDB 432139
+- Number Seventeen / Number 17 (1932) → TMDB 15007
+
+### War (3)
+- Come and See / Idi i Smotri (1985) → TMDB 25237
+- The Memphis Belle (1944) → TMDB 41355
+- Two Arabian Knights (1927) → TMDB 102384
+
+### Western (3)
+- The Aryan (1916) → TMDB 183821
+- Straight Shooting (1917) → TMDB 157903
+- Wild and Woolly (1917) → TMDB 135275
+
+## Remaining Unmatched Films (12 total)
+
+These films cannot be matched because:
+- 2 are TV series, not movies (TMDB doesn't provide movie endpoints for them)
+- 1 film not found in TMDB database
+- 6 films from "raw TMDB matches" that were actually wrong matches
+
+### TV Series (Not Movies)
+1. An American Family (1973) - Documentary > Connoisseur
+   - TMDB 12398 is a TV series, not available via movie API
+2. The Age of the Medici (1973) - History > Connoisseur
+   - TMDB 18490 is a miniseries, not available via movie API
+
+### Not Found in TMDB
+3. The Beautiful Sufferings of the Blonde-Haired Lady (1909) - Fantasy > Master
+   - No TMDB record found
+
+### Wrong Matches from Raw TMDB Script (Should NOT be added)
+These were flagged as matches by the raw TMDB script but are completely different films:
+
+4. Drunken Master II (1994) - Action > Classics
+   - Script matched to "Drunken Master III" (TMDB 66018) - WRONG MOVIE
+
+5. Eclipse (1962) - Drama > Connoisseur
+   - Script matched to "The Twilight Saga: Eclipse" (TMDB 24021) - WRONG MOVIE
+
+6. Siegfried (1924) - Fantasy > Archivist: The Nibelungen
+   - Script matched to "Siegfried" (2005) (TMDB 10659) - WRONG MOVIE
+
+7. X (2022) - Horror > Well-Versed
+   - Script matched to "Fast X" (TMDB 385687) - WRONG MOVIE
+
+8. The Road Warrior (1981) - Science Fiction > Well-Versed: Mad Max 2
+   - Script matched to "The Road Warrior" (2013) (TMDB 339133) - WRONG MOVIE
+
+9. The Bank Robbery (1908) - Western > Master
+   - Script matched to "The Great Bank Robbery" (1969) (TMDB 109468) - WRONG MOVIE
+
+### Already in TierTmdbLookup (Duplicates from Raw Script)
+10. Le Joli Mai (1963) - Documentary > Archivist
+    - Already matched as "The Lovely Month of May" (TMDB 128779) ✓
+
+11. Il Postino (1994) - Romance > Devotee
+    - Already matched as "The Postman" (TMDB 11010) ✓
+
+## Database Status
+
+**Total movies in database:** 33,668 (updated count)
+- Previous estimate was 21K - actual count is 33,668
+
+**Movies added during this task:** 53
+- All successfully inserted via `ensureMovieInDb()` from lib/services/tmdb-persist.js
+- All have TMDB metadata (title, year, release_date, poster_url, title_normalized)
+
+## Files Modified
+
+1. **ios/moviegenius/moviegenius/Data/TierTmdbLookup.swift**
+   - Added 45 new entries (53 films added to DB - 8 duplicates)
+   - Updated from 1,774 to 1,819 entries
+   - Coverage improved from 96.9% to 99.3%
+
+## Files Created
+
+1. **add-movies-by-tmdb-id.cjs** - Script to fetch TMDB data and add movies to database (first batch)
+2. **add-corrected-tmdb-ids.cjs** - Script to add corrected TMDB IDs (second batch)
+3. **generate-new-tier-entries.cjs** - Script to generate Swift dictionary entries
+4. **new-tier-lookup-entries.txt** - Generated Swift entries for appending
+5. **tmdb-id-verification-report.txt** - Detailed verification of which TMDB IDs were correct/wrong
+6. **tier-matching-final-report.txt** - This file
+
+## Technical Lessons Learned
+
+1. **TMDB popularity sorting breaks relevance** - lib/services/tmdb-search.js sorts by popularity (lines 132-134), which causes wrong matches for obscure films
+2. **Manual TMDB ID collection is most reliable** - For obscure/foreign/old films, manual TMDB ID lookup beats automated text search
+3. **TMDB movie API vs TV API** - Some documentaries/miniseries exist only as TV series in TMDB, not accessible via movie endpoints
+4. **Database fuzzy matching works well for recent films** - Year ±2 tolerance + normalized titles found 118 valid matches
+5. **Translation/alternate titles need human judgment** - "Hana-bi" → "Fireworks", "Le Sang des bêtes" → "Blood of the Beasts" are correct but fail basic text overlap checks
+
+## Next Steps (Optional)
+
+1. **Handle TV series entries** - If these 2 films are important, consider:
+   - Adding TV series support to the iOS app
+   - OR marking them as unavailable in the tier lists
+   - OR finding theatrical versions if they exist
+
+2. **Research missing 1909 film** - "The Beautiful Sufferings of the Blonde-Haired Lady" may have alternate title or may not be catalogued in TMDB
+
+3. **Find correct TMDB IDs for wrong matches** - The 6 films that got wrong matches from the raw TMDB script still need correct IDs if they're in TMDB
+
+4. **Test iOS app** - Verify that the 45 new entries work correctly in the Film Journey feature
+
+## Success Metrics
+
+✅ **99.3% coverage achieved** (1,819 / 1,831 films)
+✅ **53 films added to database**
+✅ **45 new TierTmdbLookup entries**
+✅ **All scripts created and documented**
+✅ **Only 12 films remain unmatched** (2 TV series, 1 not in TMDB, 6 wrong matches that need research, 2 duplicates already matched)

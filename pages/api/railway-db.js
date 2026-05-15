@@ -3,6 +3,7 @@
 // Works in server context (API routes, scripts, SSR) - browser context uses API endpoints
 
 import { Client, Pool } from 'pg';
+import { normalizeTitle } from '../../lib/search-matching.js';
 
 // Environment detection
 const isNode = typeof window === 'undefined';
@@ -84,17 +85,19 @@ export const MovieService = {
     const pool = getPool();
     const dbClient = client || await pool.connect();
     const shouldRelease = !client; // Only release if we created the connection
-    
+
+    const titleNormalized = normalizeTitle(movieData.title);
+
     try {
       const query = `
         INSERT INTO movies (
-          tmdb_id, official_title, release_date, title, year, slug, 
-          poster_url, streaming_data, updated_at
+          tmdb_id, official_title, release_date, title, year, slug,
+          poster_url, streaming_data, title_normalized, updated_at
         ) VALUES (
-          $1, $2, $3, $4, $5, $6, $7, $8, NOW()
+          $1, $2, $3, $4, $5, $6, $7, $8, $9, NOW()
         )
-        ON CONFLICT (tmdb_id) 
-        DO UPDATE SET 
+        ON CONFLICT (tmdb_id)
+        DO UPDATE SET
           official_title = EXCLUDED.official_title,
           release_date = EXCLUDED.release_date,
           title = EXCLUDED.title,
@@ -102,10 +105,11 @@ export const MovieService = {
           slug = EXCLUDED.slug,
           poster_url = EXCLUDED.poster_url,
           streaming_data = EXCLUDED.streaming_data,
+          title_normalized = EXCLUDED.title_normalized,
           updated_at = NOW()
         RETURNING *;
       `;
-      
+
       const values = [
         movieData.tmdb_id,
         movieData.official_title,
@@ -113,8 +117,9 @@ export const MovieService = {
         movieData.title,
         movieData.year,
         movieData.slug,
+        movieData.poster_url,
         movieData.streaming_data ? JSON.stringify(movieData.streaming_data) : null,
-        movieData.poster_url
+        titleNormalized
       ];
       
       const result = await dbClient.query(query, values);

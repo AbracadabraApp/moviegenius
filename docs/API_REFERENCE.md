@@ -413,6 +413,192 @@ curl -X POST "https://moviegenius.ai/api/cache-warming" \
 
 ---
 
+---
+
+## 🆕 v1 API Endpoints (iOS-Ready)
+
+### Collections
+
+#### GET `/api/v1/collections/featured`
+Featured homepage collections with daily rotation
+
+**Query Parameters:**
+- `limit` (optional): Number of collections (default: 10)
+- `offset` (optional): Pagination offset (default: 0)
+- `moviesPerCollection` (optional): Preview movies per collection (default: 10)
+- `seed` (optional): Deterministic rotation seed (default: today's date)
+
+**Response:**
+```json
+{
+  "collections": [{
+    "id": "uuid",
+    "title": "Collection Title",
+    "totalMovies": 30,
+    "categories": ["Genre"],
+    "movies": [{ "tmdb_id": 550, "title": "Fight Club", "year": 1999, "poster_url": "..." }]
+  }],
+  "count": 10
+}
+```
+
+**Example:**
+```bash
+curl "https://moviegenius.ai/api/v1/collections/featured?limit=5"
+```
+
+---
+
+#### GET `/api/v1/collections/[id]`
+Collection detail with subcategories and annotations
+
+**Path Parameters:**
+- `id`: Collection ID
+
+**Response:**
+```json
+{
+  "collection": {
+    "id": "uuid",
+    "title": "Collection Title",
+    "subtitle": "Description",
+    "subcategories": [{
+      "id": "subcategory-id",
+      "name": "Subcategory Name",
+      "description": "Description",
+      "movies": [{ "tmdb_id": 550, "title": "Fight Club", "year": 1999 }]
+    }]
+  },
+  "movies": [{ "tmdb_id": 550, "title": "Fight Club", "year": 1999, "poster_url": "..." }]
+}
+```
+
+**Example:**
+```bash
+curl "https://moviegenius.ai/api/v1/collections/demo"
+```
+
+---
+
+### Search
+
+#### POST `/api/v1/search`
+Unified database-first search for movies and people
+
+**Request Body:**
+```json
+{
+  "query": "fight club",
+  "type": "movie",  // or "person", "multi" (default: "movie")
+  "includeExternal": false  // Include TMDB fallback (default: false)
+}
+```
+
+**Response:**
+```json
+{
+  "query": "fight club",
+  "movies": [{
+    "id": "uuid",
+    "tmdb_id": 550,
+    "title": "Fight Club",
+    "year": 1999,
+    "poster_url": "...",
+    "contributors": "Starring: Brad Pitt...",
+    "whyWatch": { "reasons": [...], "recommendation": "YES" },
+    "analysisPreview": "...",
+    "contentScore": 80
+  }],
+  "hasResults": true
+}
+```
+
+**Example:**
+```bash
+curl -X POST "https://moviegenius.ai/api/v1/search" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "inception"}'
+```
+
+---
+
+### Genius Feed
+
+#### POST `/api/v1/genius`
+Personalized feed with More Ideas + curated collections
+
+**Request Body:**
+```json
+{
+  "savedIds": [550, 238],  // User's saved movie IDs
+  "seenIds": [155]  // Optional: already-seen movie IDs
+}
+```
+
+**Response:**
+```json
+{
+  "items": [
+    {
+      "type": "more_ideas",
+      "seedTitle": "Fight Club",
+      "seedTmdbId": 550,
+      "movies": [{ "tmdb_id": 1359, "title": "American Psycho", ... }]
+    },
+    {
+      "type": "collection",
+      "name": "Subcategory Name",
+      "collectionId": "uuid",
+      "collectionTitle": "Collection Title",
+      "movies": [{ "tmdb_id": 3594, "title": "The Number 23", ... }]
+    }
+  ]
+}
+```
+
+**Example:**
+```bash
+curl -X POST "https://moviegenius.ai/api/v1/genius" \
+  -H "Content-Type: application/json" \
+  -d '{"savedIds": [550, 238]}'
+```
+
+---
+
+### Person
+
+#### GET `/api/v1/person/[id]`
+Person details and filmography
+
+**Path Parameters:**
+- `id`: Person ID (number)
+
+**Response:**
+```json
+{
+  "person": {
+    "id": 287,
+    "name": "Brad Pitt",
+    "movieCount": 45,
+    "roles": ["Actor", "Producer"]
+  },
+  "movies": [{
+    "tmdb_id": 550,
+    "title": "Fight Club",
+    "year": 1999,
+    "poster_url": "...",
+    "roles": ["Actor"]
+  }]
+}
+```
+
+**Example:**
+```bash
+curl "https://moviegenius.ai/api/v1/person/287"
+```
+
+---
+
 *This API reference covers all public endpoints. For additional technical details, see the [Nuclear Static Generation Process](architecture/NUCLEAR_STATIC_GENERATION_PROCESS.md) and [Performance Analysis](architecture/PERFORMANCE-ANALYSIS.md) documentation.*
 
-*Last updated: May 8, 2026*
+*Last updated: May 10, 2026 - Added v1 API endpoints*

@@ -12,9 +12,16 @@
  * - Cost optimization through intelligent fallback
  */
 
+import { Pool } from 'pg';
 import { getCache } from '../../lib/cache.js';
 import { getPerformanceMonitor } from '../../lib/performance-monitor.js';
 import { withErrorHandling, successResponse, validateRequiredFields } from '../../lib/api-utils.js';
+
+// Database connection pool
+const pool = new Pool({
+  connectionString: process.env.RAILWAY_DATABASE_URL || process.env.DATABASE_URL,
+  max: 10,
+});
 
 async function tmdbStreamingHandler(req, res) {
   const performanceMonitor = getPerformanceMonitor();
@@ -111,6 +118,38 @@ async function fetchStreamingDataWithFallback(title, year, tmdb_id, performanceM
   const requestStartTime = performance.now();
 
   try {
+    // Step 0: Check database first (UseOnce Policy - Part 2)
+    if (tmdb_id) {
+      try {
+        const dbResult = await pool.query(
+          'SELECT streaming_data, updated_at FROM movies WHERE tmdb_id = $1',
+          [tmdb_id]
+        );
+
+        if (dbResult.rows[0]?.streaming_data) {
+          const updatedAt = new Date(dbResult.rows[0].updated_at);
+          const daysSinceUpdate = (Date.now() - updatedAt.getTime()) / (1000 * 60 * 60 * 24);
+
+          // Use cached DB data if less than 30 days old
+          if (daysSinceUpdate < 30) {
+            console.log(`✅ Using cached streaming data from DB for ${title} (${year}) - ${daysSinceUpdate.toFixed(0)} days old`);
+            return {
+              streamingText: dbResult.rows[0].streaming_data,
+              title,
+              year,
+              source: 'database',
+              cached: true,
+              lastUpdated: updatedAt.toISOString(),
+              requestTime: Math.round(performance.now() - requestStartTime),
+            };
+          }
+        }
+      } catch (dbError) {
+        console.error('Database check error (non-fatal):', dbError.message);
+        // Continue to TMDB fetch on DB error
+      }
+    }
+
     // Step 1: Try TMDB Watch Providers API
     if (tmdb_id) {
       console.log(`🎬 Fetching TMDB streaming data for: ${title} (${year}) - ID: ${tmdb_id}`);
@@ -121,6 +160,18 @@ async function fetchStreamingDataWithFallback(title, year, tmdb_id, performanceM
         console.log(
           `✅ TMDB streaming data found for ${title} (${year}) in ${requestTime.toFixed(0)}ms`
         );
+
+        // Save to database (UseOnce Policy - Part 1)
+        try {
+          await pool.query(
+            'UPDATE movies SET streaming_data = $1, updated_at = NOW() WHERE tmdb_id = $2',
+            [tmdbResult.streamingText, tmdb_id]
+          );
+          console.log(`💾 Saved streaming data to DB for ${title} (${year})`);
+        } catch (saveError) {
+          console.error('Failed to save streaming data to DB (non-fatal):', saveError.message);
+          // Continue even if save fails
+        }
 
         return {
           streamingText: tmdbResult.streamingText,

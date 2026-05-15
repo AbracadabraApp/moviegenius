@@ -18,31 +18,16 @@ async function backfillAllTrailers() {
   try {
     const client = await pool.connect();
 
-    // Get all movies without trailers (resume from last processed)
+    // Get all movies without trailers
     console.log('🔍 Fetching movies without trailers...');
-
-    // Find the highest tmdb_id that already has a trailer (for resume capability)
-    const lastProcessedResult = await client.query(`
-      SELECT MAX(tmdb_id) as last_processed
-      FROM movies
-      WHERE tmdb_id IS NOT NULL
-      AND trailer_url IS NOT NULL
-      AND trailer_url != ''
-    `);
-
-    const resumeFromId = lastProcessedResult.rows[0]?.last_processed || 0;
-    if (resumeFromId > 0) {
-      console.log(`🔄 Resuming from movie ID ${resumeFromId + 1}...`);
-    }
 
     const result = await client.query(`
       SELECT tmdb_id, title
       FROM movies
       WHERE tmdb_id IS NOT NULL
-      AND tmdb_id > $1
       AND (trailer_url IS NULL OR trailer_url = '')
       ORDER BY tmdb_id ASC
-    `, [resumeFromId]);
+    `);
 
     const movies = result.rows;
     console.log(`📊 Found ${movies.length} movies to process\n`);
@@ -62,8 +47,9 @@ async function backfillAllTrailers() {
         console.log(`[${processed + 1}/${movies.length}] Processing: ${movie.title} (${movie.tmdb_id})`);
 
         // Call TMDB API directly
+        const apiKey = process.env.TMDB_API_KEY || process.env.NEXT_PUBLIC_TMDB_API_KEY;
         const tmdbResponse = await fetch(
-          `https://api.themoviedb.org/3/movie/${movie.tmdb_id}/videos?api_key=${process.env.TMDB_API_KEY}`
+          `https://api.themoviedb.org/3/movie/${movie.tmdb_id}/videos?api_key=${apiKey}`
         );
 
         if (!tmdbResponse.ok) {
@@ -113,8 +99,8 @@ async function backfillAllTrailers() {
           console.log(`⚡ Rate: ${rate.toFixed(1)} movies/sec, ETA: ${(eta/60).toFixed(1)} minutes\n`);
         }
 
-        // Rate limiting - be gentle on TMDB (500ms delay = ~2 requests/sec)
-        await new Promise(resolve => setTimeout(resolve, 500));
+        // Rate limiting - TMDB allows ~40-50 req/sec, use 40 to be safe (25ms delay)
+        await new Promise(resolve => setTimeout(resolve, 25));
 
       } catch (error) {
         console.log(`   💥 Error: ${error.message}`);

@@ -2,9 +2,15 @@
  * Assign Categories to Collections
  *
  * Analyzes movie genres in each collection and assigns to categories
- * using multi-category approach with 30% threshold (90% for Documentary).
+ * using 50% threshold (90% for Documentary), max 3 categories per collection.
  *
- * Categories stored as JSONB array in browse_lists.categories
+ * DRAMA SUPPRESSION RULE:
+ * If a collection has any non-Drama category AND Drama match rate < 75%,
+ * Drama is removed from the category list. This eliminates "hedge-Drama"
+ * where Drama appears as a weak secondary tag.
+ *
+ * Categories stored as array in browse_lists.categories
+ * Sorted by match percentage (highest first = primary genre)
  */
 
 const { Pool } = require('pg');
@@ -91,20 +97,55 @@ async function assignCategories() {
 
     for (const collection of collections.rows) {
       try {
-        // Get movies with genre data
+        // Get movies with genre data from editorial_data JSONB
+        // Extract tmdb_ids from editorial_data.subcategories[].movies[]
+        const editorialQuery = await pool.query(
+          `SELECT editorial_data FROM browse_lists WHERE id = $1`,
+          [collection.id]
+        );
+
+        if (!editorialQuery.rows[0]?.editorial_data) {
+          // No editorial data - set empty categories
+          await pool.query(
+            `UPDATE browse_lists SET categories = '{}'::text[] WHERE id = $1`,
+            [collection.id]
+          );
+          stats.withoutCategories++;
+          stats.processed++;
+          continue;
+        }
+
+        const editorial = editorialQuery.rows[0].editorial_data;
+        const tmdbIds = [];
+        for (const sub of (editorial.subcategories || [])) {
+          for (const m of (sub.movies || [])) {
+            if (m.tmdb_id) tmdbIds.push(m.tmdb_id);
+          }
+        }
+
+        if (tmdbIds.length === 0) {
+          // No movies - set empty categories
+          await pool.query(
+            `UPDATE browse_lists SET categories = '{}'::text[] WHERE id = $1`,
+            [collection.id]
+          );
+          stats.withoutCategories++;
+          stats.processed++;
+          continue;
+        }
+
         const moviesQuery = `
           SELECT
-            m.id,
+            m.tmdb_id,
             ma.enhanced_key_elements::jsonb->>'genre' as genre
           FROM movies m
-          JOIN list_movies lm ON m.id = lm.movie_id
           LEFT JOIN movie_analyses ma ON m.id = ma.movie_id
-          WHERE lm.list_id = $1
+          WHERE m.tmdb_id = ANY($1)
             AND ma.enhanced_key_elements::jsonb->>'genre' IS NOT NULL
             AND ma.enhanced_key_elements::jsonb->>'genre' != ''
         `;
 
-        const movies = await pool.query(moviesQuery, [collection.id]);
+        const movies = await pool.query(moviesQuery, [tmdbIds]);
 
         if (movies.rows.length === 0) {
           // No genre data - set empty categories
@@ -143,13 +184,13 @@ async function assignCategories() {
           // Documentary needs 90%
           if (category === 'Documentary') {
             if (percentage >= 90) {
-              categoryPercentages.push({ category, percentage });
+              categoryPercentages.push({ category, percentage, count });
               stats.categoryCounts[category]++;
             }
           } else {
-            // Other categories: 30% threshold
-            if (percentage >= 30) {
-              categoryPercentages.push({ category, percentage });
+            // Other categories: 50% threshold (changed from 30%)
+            if (percentage >= 50) {
+              categoryPercentages.push({ category, percentage, count });
               stats.categoryCounts[category]++;
             }
           }
@@ -157,14 +198,29 @@ async function assignCategories() {
 
         // Sort by percentage (highest first) so categories[0] is the primary/dominant genre
         categoryPercentages.sort((a, b) => b.percentage - a.percentage);
-        const assignedCategories = categoryPercentages.map(cp => cp.category);
 
-        // Update collection with categories
+        // Limit to max 3 categories - keep only the highest-scoring ones
+        const topCategories = categoryPercentages.slice(0, 3);
+        let assignedCategories = topCategories.map(cp => cp.category);
+
+        // DRAMA SUPPRESSION RULE:
+        // If collection has ANY non-Drama category AND Drama match rate < 75%, drop Drama
+        const dramaIndex = assignedCategories.indexOf('Drama');
+        if (dramaIndex !== -1 && assignedCategories.length > 1) {
+          // Find Drama's percentage
+          const dramaData = topCategories.find(cp => cp.category === 'Drama');
+          if (dramaData && dramaData.percentage < 75) {
+            // Drama is below 75% and there are other categories - remove Drama
+            assignedCategories = assignedCategories.filter(cat => cat !== 'Drama');
+          }
+        }
+
+        // Update collection with categories (PostgreSQL array format)
         await pool.query(
           `UPDATE browse_lists
-           SET categories = $1::jsonb
+           SET categories = $1::text[]
            WHERE id = $2`,
-          [JSON.stringify(assignedCategories), collection.id]
+          [assignedCategories, collection.id]
         );
 
         if (assignedCategories.length > 0) {
