@@ -113,12 +113,12 @@ struct JourneyTabContent: View {
         "Documentary", "Drama", "Espionage", "Fantasy",
         "History", "Horror", "Mystery", "Noir",
         "Romance", "Science Fiction", "Thriller", "War", "Western",
-        "Academy Awards", "AFI Awards", "Actors", "Actresses", "Directors"
+        "Awards", "Actors", "Actresses", "Directors"
     ]
 
     // Two-tier categories require subcategory navigation
     private func isTwoTierCategory(_ category: String) -> Bool {
-        ["Academy Awards", "AFI Awards", "Actors", "Actresses", "Directors", "Action", "Adventure", "Comedy", "Crime", "Documentary", "Drama", "Espionage", "Fantasy", "History", "Horror", "Mystery", "Noir", "Romance", "Science Fiction", "Thriller", "War", "Western"].contains(category)
+        ["Awards", "Actors", "Actresses", "Directors", "Action", "Adventure", "Comedy", "Crime", "Documentary", "Drama", "Espionage", "Fantasy", "History", "Horror", "Mystery", "Noir", "Romance", "Science Fiction", "Thriller", "War", "Western"].contains(category)
     }
 
     // Calculate progress for a category (0.0 to 1.0)
@@ -160,7 +160,7 @@ struct JourneyTabContent: View {
             // Category Collage
             FlowLayout(spacing: .mgSpacing8) {
                 ForEach(shuffledCategories, id: \.self) { category in
-                    NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: "Essential")) {
+                    NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: category == "Awards" ? "Best Picture" : "Essential")) {
                         CategoryBadge(
                             category: category,
                             progress: categoryProgress(category)
@@ -1179,10 +1179,8 @@ struct CategoryEssentials {
     // Returns subcategory names for 2-tier categories
     static func subcategories(for category: String) -> [String] {
         switch category {
-        case "Academy Awards":
-            return ["Best Picture", "Best Director", "Best Actor", "Best Actress"]
-        case "AFI Awards":
-            return ["AFI 100 Greatest Films"]
+        case "Awards":
+            return ["Best Picture", "Best Director", "Best Actor", "Best Actress", "AFI 100 Greatest Films"]
         case "Actors":
             return [
                 "Adrien Brody",
@@ -1531,7 +1529,7 @@ struct CategoryEssentials {
     // Returns films for a specific subcategory within a category
     static func films(for category: String, subcategory: String) -> [(title: String, year: Int)] {
         switch (category, subcategory) {
-        case ("Academy Awards", "Best Picture"):
+        case ("Awards", "Best Picture"):
             return [
                 ("Wings", 1927),
                 ("The Broadway Melody", 1929),
@@ -1630,7 +1628,7 @@ struct CategoryEssentials {
                 ("Everything Everywhere All at Once", 2022),
                 ("Oppenheimer", 2023)
             ]
-        case ("Academy Awards", "Best Director"):
+        case ("Awards", "Best Director"):
             return [
                 ("All Quiet on the Western Front", 1930),
                 ("Bad Girl", 1931),
@@ -1726,7 +1724,7 @@ struct CategoryEssentials {
                 ("Everything Everywhere All at Once", 2022),
                 ("Oppenheimer", 2023)
             ]
-        case ("Academy Awards", "Best Actor"):
+        case ("Awards", "Best Actor"):
             return [
                 ("The Way of All Flesh", 1927),
                 ("The Last Command", 1928),
@@ -1826,7 +1824,7 @@ struct CategoryEssentials {
                 ("The Whale", 2022),
                 ("Oppenheimer", 2023)
             ]
-        case ("Academy Awards", "Best Actress"):
+        case ("Awards", "Best Actress"):
             return [
                 ("7th Heaven", 1927),
                 ("Coquette", 1929),
@@ -1927,7 +1925,7 @@ struct CategoryEssentials {
             ]
 
         // AFI Awards
-        case ("AFI Awards", "AFI 100 Greatest Films"):
+        case ("Awards", "AFI 100 Greatest Films"):
             return [
                 ("Citizen Kane", 1941),
                 ("The Godfather", 1972),
