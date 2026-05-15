@@ -51,6 +51,11 @@ extension Color {
     static let mgDestructive = Color.red
     static let mgSuccess = Color.green
     static let mgWarning = Color.orange
+
+    // Video player (intentionally absolute - video standard)
+    static let mgVideoPlayerBackground = Color.black
+    static let mgVideoPlayerText = Color.white
+    static let mgVideoPlayerOverlay = Color(white: 0, opacity: 0.3)
 }
 
 // MARK: - Typography (Dynamic Type support)
@@ -124,9 +129,50 @@ struct MGListRowButtonStyle: ButtonStyle {
     }
 }
 
+// MARK: - Adaptive Shadows
+private struct MGShadowSubtle: ViewModifier {
+    @Environment(\.colorScheme) var colorScheme
+
+    func body(content: Content) -> some View {
+        content.shadow(
+            color: .black.opacity(colorScheme == .dark ? 0.3 : 0.06),
+            radius: 4,
+            x: 0,
+            y: 2
+        )
+    }
+}
+
+private struct MGShadowMedium: ViewModifier {
+    @Environment(\.colorScheme) var colorScheme
+
+    func body(content: Content) -> some View {
+        content.shadow(
+            color: .black.opacity(colorScheme == .dark ? 0.4 : 0.1),
+            radius: 8,
+            x: 0,
+            y: 4
+        )
+    }
+}
+
+private struct MGShadowProminent: ViewModifier {
+    @Environment(\.colorScheme) var colorScheme
+
+    func body(content: Content) -> some View {
+        content.shadow(
+            color: .black.opacity(colorScheme == .dark ? 0.5 : 0.15),
+            radius: 12,
+            x: 0,
+            y: 6
+        )
+    }
+}
+
 // MARK: - View Modifiers
 struct MGCard: ViewModifier {
     var useMaterial: Bool = false
+    @Environment(\.colorScheme) var colorScheme
 
     func body(content: Content) -> some View {
         content
@@ -137,13 +183,31 @@ struct MGCard: ViewModifier {
                 } else {
                     RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous)
                         .fill(Color.mgBackground)
-                        .shadow(color: .black.opacity(0.06), radius: 8, x: 0, y: 2)
+                        .shadow(
+                            color: .black.opacity(colorScheme == .dark ? 0.3 : 0.06),
+                            radius: 8,
+                            x: 0,
+                            y: 2
+                        )
                 }
             }
     }
 }
 
 extension View {
+    // Shadow modifiers (adaptive to dark mode)
+    func mgShadowSubtle() -> some View {
+        modifier(MGShadowSubtle())
+    }
+
+    func mgShadowMedium() -> some View {
+        modifier(MGShadowMedium())
+    }
+
+    func mgShadowProminent() -> some View {
+        modifier(MGShadowProminent())
+    }
+
     // Card variants
     func mgCard(useMaterial: Bool = false) -> some View {
         modifier(MGCard(useMaterial: useMaterial))
@@ -162,8 +226,8 @@ extension View {
             .background {
                 RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous)
                     .fill(.regularMaterial)
-                    .shadow(color: .black.opacity(0.1), radius: 8, x: 0, y: 4)
             }
+            .mgShadowMedium()
     }
 
     // Typography helpers

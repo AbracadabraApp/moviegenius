@@ -61,12 +61,7 @@ struct MoviePosterView: View {
             }
             .frame(width: 350, height: 525)  // Nearly full-width hero poster (2:3 ratio)
             .clipShape(RoundedRectangle(cornerRadius: .mgCornerLarge, style: .continuous))
-            .shadow(
-                color: .black.opacity(0.15),
-                radius: 12,
-                x: 0,
-                y: 6
-            )
+            .mgShadowProminent()
 
             // Trailer play button overlay (bottom-right corner)
             if hasTrailers {
@@ -85,7 +80,7 @@ struct MoviePosterView: View {
                         Image(systemName: "play.circle.fill")
                             .font(.system(size: 44))
                             .foregroundStyle(.white)
-                            .shadow(radius: 4)
+                            .mgShadowSubtle()
                     }
                 }
                 .accessibilityLabel("Play trailer")

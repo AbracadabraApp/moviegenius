@@ -66,7 +66,7 @@ struct FavoriteButtons: View {
                             lineWidth: isLoved ? 2 : 1
                         )
                 )
-                .shadow(color: .black.opacity(0.2), radius: 4, x: 0, y: 2)
+                .mgShadowSubtle()
             }
             .buttonStyle(.plain)
             .accessibilityLabel(isLoved ? "Seen it - marked" : "Seen it")
@@ -101,7 +101,7 @@ struct FavoriteButtons: View {
                             lineWidth: isInQueue ? 2 : 1
                         )
                 )
-                .shadow(color: .black.opacity(0.2), radius: 4, x: 0, y: 2)
+                .mgShadowSubtle()
             }
             .buttonStyle(.plain)
             .accessibilityLabel(isInQueue ? "Watch it - queued" : "Watch it")

@@ -171,7 +171,7 @@ struct SubcategorySection: View {
                     .padding(.horizontal, .mgSpacing8)
                     .padding(.vertical, .mgSpacing4)
                     .background(isBookmarked ? Color.mgGold.opacity(0.15) : Color.clear)
-                    .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
+                    .clipShape(RoundedRectangle(cornerRadius: .mgCornerTiny, style: .continuous))
                 }
                 .sensoryFeedback(.selection, trigger: isBookmarked)
             }
@@ -245,7 +245,7 @@ struct MovieGridCard: View {
             }
             .aspectRatio(2/3, contentMode: .fit)
             .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
-            .shadow(color: .black.opacity(0.1), radius: 4, x: 0, y: 2)
+            .mgShadowSubtle()
 
             // Title
             Text(movie.title)

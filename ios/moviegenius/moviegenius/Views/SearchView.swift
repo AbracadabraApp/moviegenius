@@ -25,12 +25,12 @@ struct SearchView: View {
                         // Big search box
                         HStack(spacing: .mgSpacing12) {
                             Image(systemName: "magnifyingglass")
-                                .foregroundStyle(.black.opacity(0.6))
+                                .foregroundStyle(Color.mgSecondary)
                                 .font(.system(size: 24))
 
                             TextField("Search movies...", text: $viewModel.searchText)
                                 .font(.system(size: 20))
-                                .foregroundStyle(.black)
+                                .foregroundStyle(Color.mgPrimary)
                                 .autocorrectionDisabled()
                                 .textInputAutocapitalization(.never)
                                 .submitLabel(.search)
@@ -40,7 +40,7 @@ struct SearchView: View {
                                     viewModel.searchText = ""
                                 }) {
                                     Image(systemName: "xmark.circle.fill")
-                                        .foregroundStyle(.black.opacity(0.4))
+                                        .foregroundStyle(Color.mgTertiary)
                                         .font(.system(size: 20))
                                 }
                                 .buttonStyle(.plain)
@@ -48,14 +48,14 @@ struct SearchView: View {
                         }
                         .padding(.horizontal, .mgSpacing20)
                         .padding(.vertical, .mgSpacing16)
-                        .background(.white)
+                        .background(Color.mgBackground)
                         .clipShape(RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous))
-                        .shadow(color: .black.opacity(0.1), radius: 12, x: 0, y: 4)
+                        .mgShadowMedium()
 
                         // Always show hint when not searching (empty or <3 chars)
                         Text(viewModel.searchText.isEmpty ? "Type 3+ characters to search" : "Type \(3 - viewModel.searchText.count) more character\(3 - viewModel.searchText.count == 1 ? "" : "s")")
                             .font(.mgSubheadline)
-                            .foregroundStyle(.black.opacity(0.7))
+                            .foregroundStyle(Color.mgSecondary)
                     }
                     .padding(.horizontal, .mgSpacing32)
 
@@ -67,12 +67,12 @@ struct SearchView: View {
                     // Small search bar at top
                     HStack(spacing: .mgSpacing8) {
                         Image(systemName: "magnifyingglass")
-                            .foregroundStyle(.black.opacity(0.6))
+                            .foregroundStyle(Color.mgSecondary)
                             .font(.system(size: 16))
 
                         TextField("Search movies...", text: $viewModel.searchText)
                             .font(.mgBody)
-                            .foregroundStyle(.black)
+                            .foregroundStyle(Color.mgPrimary)
                             .autocorrectionDisabled()
                             .textInputAutocapitalization(.never)
                             .submitLabel(.search)
@@ -82,7 +82,7 @@ struct SearchView: View {
                                 viewModel.searchText = ""
                             }) {
                                 Image(systemName: "xmark.circle.fill")
-                                    .foregroundStyle(.black.opacity(0.4))
+                                    .foregroundStyle(Color.mgTertiary)
                                     .font(.system(size: 16))
                             }
                             .buttonStyle(.plain)
@@ -90,7 +90,7 @@ struct SearchView: View {
                     }
                     .padding(.horizontal, .mgSpacing12)
                     .padding(.vertical, .mgSpacing8)
-                    .background(.white)
+                    .background(Color.mgBackground)
                     .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
                     .padding(.horizontal, .mgSpacing16)
                     .padding(.top, .mgSpacing8)

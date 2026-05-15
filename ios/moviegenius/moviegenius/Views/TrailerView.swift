@@ -22,7 +22,7 @@ struct TrailerView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.black.ignoresSafeArea()
+                Color.mgVideoPlayerBackground.ignoresSafeArea()
 
                 if isLoading {
                     loadingView
@@ -44,11 +44,11 @@ struct TrailerView: View {
                                         }
                                     )
                                     .aspectRatio(16/9, contentMode: .fit)
-                                    .background(Color.black)
+                                    .background(Color.mgVideoPlayerBackground)
 
                                     if !playerReady {
                                         ProgressView()
-                                            .tint(.white)
+                                            .tint(Color.mgVideoPlayerText)
                                             .scaleEffect(1.5)
                                     }
                                 }
@@ -71,11 +71,11 @@ struct TrailerView: View {
                     VStack(spacing: 2) {
                         Text(movieTitle)
                             .font(.mgHeadline)
-                            .foregroundStyle(.white)
+                            .foregroundStyle(Color.mgVideoPlayerText)
                         if let year = movieYear {
                             Text("(\(String(year)))")
                                 .font(.mgCaption)
-                                .foregroundStyle(.white.opacity(0.7))
+                                .foregroundStyle(Color.mgVideoPlayerSecondaryText)
                         }
                     }
                 }
@@ -86,7 +86,7 @@ struct TrailerView: View {
                     } label: {
                         Image(systemName: "xmark.circle.fill")
                             .font(.system(size: 28))
-                            .foregroundStyle(.white.opacity(0.9))
+                            .foregroundStyle(Color.mgVideoPlayerText.opacity(0.9))
                             .symbolRenderingMode(.hierarchical)
                     }
                 }
@@ -103,11 +103,11 @@ struct TrailerView: View {
     private var loadingView: some View {
         VStack(spacing: .mgSpacing16) {
             ProgressView()
-                .tint(.white)
+                .tint(Color.mgVideoPlayerText)
                 .scaleEffect(1.5)
             Text("Loading trailers...")
                 .font(.mgCallout)
-                .foregroundStyle(.white.opacity(0.8))
+                .foregroundStyle(Color.mgVideoPlayerSecondaryText)
         }
     }
 
@@ -115,13 +115,13 @@ struct TrailerView: View {
         VStack(spacing: .mgSpacing16) {
             Image(systemName: "exclamationmark.triangle")
                 .font(.system(size: 48))
-                .foregroundStyle(.white.opacity(0.8))
+                .foregroundStyle(Color.mgVideoPlayerSecondaryText)
             Text("Unable to load trailers")
                 .font(.mgHeadline)
-                .foregroundStyle(.white)
+                .foregroundStyle(Color.mgVideoPlayerText)
             Text(error.localizedDescription)
                 .font(.mgCaption)
-                .foregroundStyle(.white.opacity(0.6))
+                .foregroundStyle(Color.mgVideoPlayerSecondaryText.opacity(0.85))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, .mgSpacing32)
             Button("Retry") {
@@ -137,13 +137,13 @@ struct TrailerView: View {
         VStack(spacing: .mgSpacing16) {
             Image(systemName: "video.slash")
                 .font(.system(size: 48))
-                .foregroundStyle(.white.opacity(0.8))
+                .foregroundStyle(Color.mgVideoPlayerSecondaryText)
             Text("No trailers available")
                 .font(.mgHeadline)
-                .foregroundStyle(.white)
+                .foregroundStyle(Color.mgVideoPlayerText)
             Text("This movie doesn't have any trailers yet")
                 .font(.mgCaption)
-                .foregroundStyle(.white.opacity(0.6))
+                .foregroundStyle(Color.mgVideoPlayerSecondaryText.opacity(0.85))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, .mgSpacing32)
         }
@@ -153,7 +153,7 @@ struct TrailerView: View {
         VStack(spacing: .mgSpacing12) {
             Text("Available Trailers")
                 .font(.mgCallout.weight(.semibold))
-                .foregroundStyle(.white.opacity(0.9))
+                .foregroundStyle(Color.mgVideoPlayerText.opacity(0.9))
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal, .mgSpacing16)
                 .padding(.top, .mgSpacing12)
@@ -166,12 +166,12 @@ struct TrailerView: View {
                     HStack(spacing: .mgSpacing12) {
                         Image(systemName: video.id == selectedVideo?.id ? "play.circle.fill" : "play.circle")
                             .font(.system(size: 24))
-                            .foregroundStyle(video.id == selectedVideo?.id ? Color.mgGold : .white.opacity(0.8))
+                            .foregroundStyle(video.id == selectedVideo?.id ? Color.mgGold : Color.mgVideoPlayerSecondaryText)
 
                         VStack(alignment: .leading, spacing: 4) {
                             Text(video.name)
                                 .font(.mgCallout)
-                                .foregroundStyle(.white)
+                                .foregroundStyle(Color.mgVideoPlayerText)
                                 .lineLimit(2)
 
                             HStack(spacing: .mgSpacing8) {
@@ -182,7 +182,7 @@ struct TrailerView: View {
                                 }
                                 Text(video.type)
                                     .font(.mgCaption2)
-                                    .foregroundStyle(.white.opacity(0.6))
+                                    .foregroundStyle(Color.mgVideoPlayerSecondaryText.opacity(0.85))
                             }
                         }
 
@@ -191,7 +191,7 @@ struct TrailerView: View {
                     .padding(.mgSpacing12)
                     .background(
                         RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous)
-                            .fill(video.id == selectedVideo?.id ? Color.mgGold.opacity(0.2) : Color.white.opacity(0.1))
+                            .fill(video.id == selectedVideo?.id ? Color.mgGold.opacity(0.2) : Color.mgVideoPlayerText.opacity(0.1))
                     )
                     .overlay(
                         RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous)
@@ -206,7 +206,7 @@ struct TrailerView: View {
         }
         .padding(.horizontal, .mgSpacing16)
         .padding(.bottom, .mgSpacing16)
-        .background(Color.black.opacity(0.3))
+        .background(Color.mgVideoPlayerOverlay)
     }
 
 

@@ -50,7 +50,7 @@ struct WatchQueueView: View {
 
             Image(systemName: "play.rectangle")
                 .font(.system(size: 64))
-                .foregroundStyle(Color(.darkGray))
+                .foregroundStyle(Color.mgSecondary)
 
             Text("No movies in queue")
                 .font(.mgTitle2)
@@ -115,7 +115,7 @@ struct WatchQueueCard: View {
                                 Image(systemName: "play.circle.fill")
                                     .font(.system(size: 44))
                                     .foregroundStyle(Color.mgGold)
-                                    .shadow(radius: 4)
+                                    .mgShadowSubtle()
                             }
 
                             Text("Trailer")
@@ -151,13 +151,8 @@ struct WatchQueueCard: View {
         .background {
             RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous)
                 .fill(.regularMaterial)
-                .shadow(
-                    color: .black.opacity(0.1),
-                    radius: 8,
-                    x: 0,
-                    y: 4
-                )
         }
+        .mgShadowMedium()
     }
 
     private var posterPlaceholder: some View {
