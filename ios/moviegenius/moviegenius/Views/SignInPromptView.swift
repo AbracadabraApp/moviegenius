@@ -8,6 +8,7 @@ struct SignInPromptView: View {
     @ObservedObject var authManager = AuthManager.shared
     @Environment(\.dismiss) var dismiss
     @Environment(\.colorScheme) var colorScheme
+    @State private var isReady = false
 
     var body: some View {
         NavigationView {
@@ -39,7 +40,7 @@ struct SignInPromptView: View {
                         if authManager.isLoading {
                             ProgressView()
                                 .progressViewStyle(CircularProgressViewStyle())
-                        } else {
+                        } else if isReady {
                             SignInWithAppleButton(.signIn) { request in
                                 request.requestedScopes = [.fullName, .email]
                             } onCompletion: { result in
@@ -48,6 +49,15 @@ struct SignInPromptView: View {
                             .signInWithAppleButtonStyle(colorScheme == .dark ? .white : .black)
                             .frame(height: 50)
                             .cornerRadius(.mgCornerSmall)
+                        } else {
+                            // Placeholder while initializing
+                            RoundedRectangle(cornerRadius: .mgCornerSmall)
+                                .fill(Color.mgSecondary.opacity(0.2))
+                                .frame(height: 50)
+                                .overlay {
+                                    ProgressView()
+                                        .tint(Color.mgGold)
+                                }
                         }
 
                         // Error message
@@ -80,6 +90,12 @@ struct SignInPromptView: View {
                     }
                     .font(.mgBody)
                 }
+            }
+            .task {
+                // Warm up the authorization system
+                // Small delay ensures the view is fully rendered before showing the button
+                try? await Task.sleep(nanoseconds: 200_000_000) // 200ms
+                isReady = true
             }
         }
     }
