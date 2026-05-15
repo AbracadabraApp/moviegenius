@@ -2,7 +2,7 @@
 //  WatchQueueView.swift
 //  moviegenius
 //
-//  Watch Queue - vertical list of movies marked "Watch it"
+//  Watch Queue - vertical list of movies marked "Add to list"
 //
 
 import SwiftUI
@@ -59,7 +59,7 @@ struct WatchQueueView: View {
                 .font(.mgTitle2)
                 .foregroundStyle(Color.mgPrimary)
 
-            Text("Tap \"Watch it\" on any movie to add it to your queue")
+            Text("Tap \"Add to list\" on any movie to add it to your queue")
                 .font(.mgBody)
                 .foregroundStyle(Color.mgSecondary)
                 .multilineTextAlignment(.center)

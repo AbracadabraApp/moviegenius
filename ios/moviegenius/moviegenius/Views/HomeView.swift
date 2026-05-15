@@ -11,14 +11,11 @@ struct HomeView: View {
     @StateObject private var viewModel = HomeViewModel()
 
     var body: some View {
-        ZStack(alignment: .top) {
-            // Atmospheric background
-            MGAtmosphericBackground()
+        ScrollView {
+            LazyVStack(spacing: 0) {
+                // Spacer for header + breathing room
+                Color.clear.frame(height: 100)
 
-            ScrollView {
-                LazyVStack(spacing: 0) {
-                    // Spacer for header
-                    Color.clear.frame(height: 60)
                 if let error = viewModel.error {
                     // Error state - SHOW THE ERROR!
                     VStack(spacing: .mgSpacing20) {
@@ -44,7 +41,7 @@ struct HomeView: View {
                             Text("Try Again")
                                 .font(.mgBody)
                                 .fontWeight(.semibold)
-                                .foregroundStyle(.white)
+                                .foregroundStyle(Color.white)
                                 .padding(.horizontal, .mgSpacing24)
                                 .padding(.vertical, .mgSpacing12)
                                 .background(Color.mgGold)
@@ -85,21 +82,23 @@ struct HomeView: View {
                             }
                         }
                 }
-                }
             }
-            .scrollIndicators(.hidden)
-            .refreshable {
-                await viewModel.loadInitialCollections()
-            }
-            .task {
-                await viewModel.loadInitialCollections()
-            }
-
-            // AppHeader overlay
+        }
+        .scrollIndicators(.hidden)
+        .background {
+            MGAtmosphericBackground()
+        }
+        .overlay(alignment: .top) {
             VStack {
                 AppHeader()
                 Spacer()
             }
+        }
+        .refreshable {
+            await viewModel.loadInitialCollections()
+        }
+        .task {
+            await viewModel.loadInitialCollections()
         }
     }
 }

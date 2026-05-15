@@ -82,7 +82,7 @@ struct FavoriteButtons: View {
                         .foregroundStyle(isInQueue ? Color.mgGold : inactiveColor)
 
                     if !compact {
-                        Text("Watch it")
+                        Text("Add to list")
                             .font(.mgCaption)
                             .fontWeight(isInQueue ? .semibold : .regular)
                             .foregroundStyle(isInQueue ? Color.mgGold : inactiveColor)
@@ -102,7 +102,7 @@ struct FavoriteButtons: View {
                 .mgShadowSubtle()
             }
             .buttonStyle(.plain)
-            .accessibilityLabel(isInQueue ? "Watch it - queued" : "Watch it")
+            .accessibilityLabel(isInQueue ? "Add to list - queued" : "Add to list")
             .accessibilityHint("Add movies to your watch list")
             .accessibilityValue(isInQueue ? "Queued" : "Not queued")
         }

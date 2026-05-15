@@ -2,7 +2,7 @@
 //  WatchQueueViewModel.swift
 //  moviegenius
 //
-//  ViewModel for Watch Queue - movies marked "Watch it"
+//  ViewModel for Watch Queue - movies marked "Add to list"
 //
 
 import Foundation

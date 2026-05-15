@@ -665,13 +665,6 @@ struct CategoryEssentialsView: View {
                 )
                 .padding(.top, .mgSpacing8)
 
-                // Category > Level indicator
-                Text("\(category) › \(subcategory ?? "Essential")")
-                    .font(.system(size: 14, weight: .medium))
-                    .foregroundStyle(Color.mgSecondary)
-                    .padding(.horizontal, .mgSpacing20)
-                    .padding(.top, .mgSpacing8)
-
                 if viewModel.isLoadingInitial || viewModel.isLoading {
                     VStack(spacing: .mgSpacing12) {
                         ProgressView()
@@ -791,26 +784,22 @@ struct EssentialFilmCard: View {
                 }
                 .buttonStyle(.plain)
 
-                Spacer()
-
                 // "Add to List" button - Secondary action, no icon
-                HStack {
-                    Spacer()
-                    Button(action: {
-                        toggleQueue()
-                    }) {
-                        Text("Add to List")
-                            .font(.system(size: 14, weight: .medium))
-                            .foregroundStyle(isQueued ? Color.mgGold : Color.mgPrimary)
-                            .padding(.horizontal, 12)
-                            .padding(.vertical, 8)
-                            .background(isQueued ? Color.mgGold.opacity(0.15) : Color.clear)
-                            .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
-                    }
-                    .buttonStyle(.plain)
+                Button(action: {
+                    toggleQueue()
+                }) {
+                    Text("Add to List")
+                        .font(.system(size: 14, weight: .medium))
+                        .foregroundStyle(isQueued ? Color.mgGold : Color.mgPrimary)
+                        .padding(.horizontal, 12)
+                        .padding(.vertical, 8)
+                        .background(isQueued ? Color.mgGold.opacity(0.15) : Color.clear)
+                        .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
                 }
+                .buttonStyle(.plain)
+                .frame(maxWidth: .infinity, alignment: .trailing)
             }
-            .frame(maxWidth: .infinity, maxHeight: 210, alignment: .topLeading)
+            .frame(maxWidth: .infinity, alignment: .topLeading)
         }
         .padding(.mgSpacing16)
         .background {
@@ -904,12 +893,12 @@ struct CategoryProgressHeader: View {
             GeometryReader { geometry in
                 ZStack(alignment: .leading) {
                     // Background
-                    RoundedRectangle(cornerRadius: 4, style: .continuous)
+                    RoundedRectangle(cornerRadius: .mgCornerTiny, style: .continuous)
                         .fill(Color.mgSecondary.opacity(0.15))
                         .frame(height: 8)
 
                     // Fill
-                    RoundedRectangle(cornerRadius: 4, style: .continuous)
+                    RoundedRectangle(cornerRadius: .mgCornerTiny, style: .continuous)
                         .fill(progressColor)
                         .frame(width: geometry.size.width * progress, height: 8)
                         .animation(.spring(response: 0.4, dampingFraction: 0.8), value: progress)
