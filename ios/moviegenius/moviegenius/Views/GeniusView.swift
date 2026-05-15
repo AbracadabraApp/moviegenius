@@ -811,13 +811,8 @@ struct EssentialFilmCard: View {
         .background {
             RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous)
                 .fill(.regularMaterial)
-                .shadow(
-                    color: .black.opacity(0.1),
-                    radius: 8,
-                    x: 0,
-                    y: 4
-                )
         }
+        .mgShadowMedium()
     }
 
     private func toggleSeen() {
