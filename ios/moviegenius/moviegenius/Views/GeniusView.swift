@@ -622,10 +622,7 @@ struct CategoryEssentialsView: View {
     private var filmListView: some View {
         LazyVStack(spacing: .mgSpacing16) {
             ForEach(viewModel.movies) { movie in
-                NavigationLink(destination: MovieDetailView(tmdbId: movie.tmdbId)) {
-                    EssentialFilmCard(movie: movie)
-                }
-                .buttonStyle(.plain)
+                EssentialFilmCard(movie: movie)
             }
         }
         .padding(.horizontal, .mgSpacing20)
@@ -721,66 +718,74 @@ struct EssentialFilmCard: View {
 
     var body: some View {
         HStack(alignment: .top, spacing: .mgSpacing16) {
-            // Poster (left side)
-            AsyncImage(url: posterURL) { phase in
-                switch phase {
-                case .empty:
-                    posterPlaceholder
-                case .success(let image):
-                    image
-                        .resizable()
-                        .aspectRatio(2/3, contentMode: .fill)
-                case .failure:
-                    posterPlaceholder
-                @unknown default:
-                    posterPlaceholder
+            // Poster (left side) - tappable to view movie detail
+            NavigationLink(destination: MovieDetailView(tmdbId: movie.tmdbId)) {
+                AsyncImage(url: posterURL) { phase in
+                    switch phase {
+                    case .empty:
+                        posterPlaceholder
+                    case .success(let image):
+                        image
+                            .resizable()
+                            .aspectRatio(2/3, contentMode: .fill)
+                    case .failure:
+                        posterPlaceholder
+                    @unknown default:
+                        posterPlaceholder
+                    }
                 }
+                .frame(width: 140, height: 210)
+                .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
             }
-            .frame(width: 140, height: 210)
-            .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
+            .buttonStyle(.plain)
 
             // Content (right side)
             VStack(alignment: .leading, spacing: .mgSpacing8) {
-                // Title
-                Text(movie.title)
-                    .font(.mgHeadline)
-                    .foregroundStyle(Color.mgPrimary)
-                    .fixedSize(horizontal: false, vertical: true)
+                // Title & Year (non-tappable header)
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(movie.title)
+                        .font(.mgHeadline)
+                        .foregroundStyle(Color.mgPrimary)
+                        .fixedSize(horizontal: false, vertical: true)
 
-                // Year
-                if let year = movie.year {
-                    Text(String(year))
-                        .font(.mgCaption)
-                        .foregroundStyle(Color.mgSecondary)
+                    if let year = movie.year {
+                        Text(String(year))
+                            .font(.mgCaption)
+                            .foregroundStyle(Color.mgSecondary)
+                    }
                 }
 
-                // Slug (full text, no truncation)
-                Text(movie.slug)
-                    .font(.mgSubheadline)
-                    .foregroundStyle(Color.mgPrimary)
-                    .lineLimit(nil)
-                    .fixedSize(horizontal: false, vertical: true)
-
-                // Prominent "Seen It" button - Primary action with outline that fills
+                // Large "Seen It" tap target - includes slug + button
                 Button(action: {
                     toggleSeen()
                 }) {
-                    HStack(spacing: 8) {
-                        Image(systemName: isSeen ? "checkmark.circle.fill" : "checkmark.circle")
-                            .font(.system(size: 18, weight: .medium))
-                        Text("Seen It")
-                            .font(.system(size: 16, weight: .semibold))
+                    VStack(alignment: .leading, spacing: .mgSpacing12) {
+                        // Slug (full text, no truncation)
+                        Text(movie.slug)
+                            .font(.mgSubheadline)
+                            .foregroundStyle(Color.mgPrimary)
+                            .lineLimit(nil)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+
+                        // "Seen It" button visual
+                        HStack(spacing: 8) {
+                            Image(systemName: isSeen ? "checkmark.circle.fill" : "checkmark.circle")
+                                .font(.system(size: 18, weight: .medium))
+                            Text("Seen It")
+                                .font(.system(size: 16, weight: .semibold))
+                        }
+                        .foregroundStyle(isSeen ? Color.white : Color.mgPrimary)
+                        .frame(maxWidth: .infinity)
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 12)
+                        .background(isSeen ? Color.mgGold : Color.clear)
+                        .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous)
+                                .strokeBorder(isSeen ? Color.clear : Color.mgPrimary.opacity(0.3), lineWidth: 2)
+                        )
                     }
-                    .foregroundStyle(isSeen ? Color.white : Color.mgPrimary)
-                    .frame(maxWidth: .infinity)
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 12)
-                    .background(isSeen ? Color.mgGold : Color.clear)
-                    .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
-                    .overlay(
-                        RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous)
-                            .strokeBorder(isSeen ? Color.clear : Color.mgPrimary.opacity(0.3), lineWidth: 2)
-                    )
                 }
                 .buttonStyle(.plain)
 
