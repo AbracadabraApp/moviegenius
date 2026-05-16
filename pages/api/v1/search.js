@@ -441,8 +441,8 @@ export default async function handler(req, res) {
             SELECT
               bl.id,
               bl.title,
-              bl.subtitle,
-              bl.category,
+              bl.description,
+              bl.categories[1] as category,
               COUNT(blm.movie_id) as movie_count,
               ARRAY_AGG(m.poster_url ORDER BY blm.sequence) as top_posters
             FROM browse_lists bl
@@ -450,16 +450,16 @@ export default async function handler(req, res) {
             LEFT JOIN movies m ON blm.movie_id = m.id
             WHERE
               (bl.title ILIKE $1 OR
-               bl.subtitle ILIKE $1 OR
-               bl.category ILIKE $1)
+               bl.description ILIKE $1 OR
+               bl.categories::text ILIKE $1)
               AND bl.status = 'published'
-            GROUP BY bl.id, bl.title, bl.subtitle, bl.category
+            GROUP BY bl.id, bl.title, bl.description, bl.categories
             HAVING COUNT(blm.movie_id) > 0
           )
           SELECT
             id,
             title,
-            subtitle,
+            description,
             category,
             movie_count,
             top_posters
@@ -473,8 +473,8 @@ export default async function handler(req, res) {
         collections = collectionSearchResult.rows.map(row => ({
           id: row.id,
           title: row.title,
-          subtitle: row.subtitle || null,
-          category: row.category,
+          subtitle: row.description || null,  // Using description as subtitle for UI
+          category: row.category || 'Collection',
           movie_count: row.movie_count,
           top_poster_urls: (row.top_posters || []).filter(url => url !== null).slice(0, 3)
         }));
