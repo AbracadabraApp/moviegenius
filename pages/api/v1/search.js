@@ -444,7 +444,7 @@ export default async function handler(req, res) {
               bl.subtitle,
               bl.category,
               COUNT(blm.movie_id) as movie_count,
-              ARRAY_AGG(m.poster_url ORDER BY blm.sequence LIMIT 3) as top_posters
+              ARRAY_AGG(m.poster_url ORDER BY blm.sequence) as top_posters
             FROM browse_lists bl
             LEFT JOIN browse_list_movies blm ON bl.id = blm.browse_list_id
             LEFT JOIN movies m ON blm.movie_id = m.id
@@ -476,7 +476,7 @@ export default async function handler(req, res) {
           subtitle: row.subtitle || null,
           category: row.category,
           movie_count: row.movie_count,
-          top_poster_urls: (row.top_posters || []).filter(url => url !== null)
+          top_poster_urls: (row.top_posters || []).filter(url => url !== null).slice(0, 3)
         }));
 
         console.log(`[v1] Collections: ${collections.length} collections found`);
