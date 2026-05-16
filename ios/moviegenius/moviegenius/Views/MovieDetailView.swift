@@ -18,9 +18,13 @@ struct MovieDetailView: View {
     }
 
     var body: some View {
-        ScrollView {
-            VStack(spacing: 0) {
-                if let movieResponse = viewModel.movieResponse {
+        ZStack(alignment: .top) {
+            ScrollView {
+                VStack(spacing: 0) {
+                    // Top spacer for overlaid header
+                    Color.clear.frame(height: 60)
+
+                    if let movieResponse = viewModel.movieResponse {
                     // Poster with trailer overlay
                     MoviePosterView(
                         posterUrl: movieResponse.movie.posterUrl,
@@ -45,6 +49,7 @@ struct MovieDetailView: View {
                     }
                     .padding(.horizontal, .mgSpacing20)
                     .padding(.top, .mgSpacing4)
+                    .padding(.bottom, .mgSpacing16)
 
                     // WhyWatch section
                     if let whyWatch = movieResponse.whyWatch {
@@ -96,22 +101,22 @@ struct MovieDetailView: View {
                     }
                     .padding()
                     .padding(.top, 100)
+                    }
                 }
             }
-        }
-        .scrollIndicators(.hidden)
-        .background(Color.mgBackground)
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .principal) {
-                SearchBarCompactSmaller()
+            .scrollIndicators(.hidden)
+            .task {
+                await viewModel.loadMovie()
+            }
+
+            // Overlaid AppHeader
+            VStack {
+                AppHeader(showBackButton: true)
+                Spacer()
             }
         }
-        .toolbarBackground(.visible, for: .navigationBar)
-        .toolbarBackground(Color.mgBackground.opacity(0.95), for: .navigationBar)
-        .task {
-            await viewModel.loadMovie()
-        }
+        .background(Color.mgBackground)
+        .navigationBarHidden(true)
     }
 }
 
