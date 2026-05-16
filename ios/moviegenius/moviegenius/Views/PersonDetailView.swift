@@ -11,32 +11,38 @@ struct PersonDetailView: View {
     let personId: Int
 
     var body: some View {
-        ScrollView {
-            VStack(spacing: .mgSpacing24) {
-                Text("Person Detail")
-                    .font(.mgTitle)
+        ZStack(alignment: .top) {
+            ScrollView {
+                VStack(spacing: 0) {
+                    // Top spacer for overlaid header
+                    Color.clear.frame(height: 60)
 
-                Text("ID: \(personId)")
-                    .font(.mgBody)
-                    .foregroundStyle(Color.mgSecondary)
+                    VStack(spacing: .mgSpacing24) {
+                        Text("Person Detail")
+                            .font(.mgTitle)
 
-                Text("Person details coming soon")
-                    .font(.mgCallout)
-                    .foregroundStyle(Color.mgSecondary)
-                    .padding(.mgSpacing16)
+                        Text("ID: \(personId)")
+                            .font(.mgBody)
+                            .foregroundStyle(Color.mgSecondary)
+
+                        Text("Person details coming soon")
+                            .font(.mgCallout)
+                            .foregroundStyle(Color.mgSecondary)
+                            .padding(.mgSpacing16)
+                    }
+                    .padding(.mgSpacing20)
+                }
             }
-            .padding(.mgSpacing20)
+
+            // Overlaid AppHeader
+            VStack {
+                AppHeader(showBackButton: true)
+                Spacer()
+            }
         }
         .background(Color.mgBackground)
-        .navigationTitle("Person")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .principal) {
-                SearchBarCompactSmaller()
-            }
-        }
-        .toolbarBackground(.visible, for: .navigationBar)
-        .toolbarBackground(Color.mgBackground.opacity(0.95), for: .navigationBar)
+        .navigationBarHidden(true)
+        .enableSwipeBack()
     }
 }
 

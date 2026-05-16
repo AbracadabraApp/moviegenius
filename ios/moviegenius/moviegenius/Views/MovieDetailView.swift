@@ -117,6 +117,7 @@ struct MovieDetailView: View {
         }
         .background(Color.mgBackground)
         .navigationBarHidden(true)
+        .enableSwipeBack()
     }
 }
 

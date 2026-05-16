@@ -12,33 +12,46 @@ struct WatchQueueView: View {
     @State private var selectedTrailer: (tmdbId: Int, title: String, year: Int?)?
 
     var body: some View {
-        ScrollView {
-            if viewModel.queuedMovies.isEmpty {
-                emptyStateView
-            } else {
-                LazyVStack(spacing: .mgSpacing16) {
-                    ForEach(viewModel.queuedMovies) { movie in
-                        WatchQueueCard(
-                            movie: movie,
-                            onPlayTrailer: {
-                                selectedTrailer = (movie.id, movie.title, movie.year)
-                            },
-                            onRemove: {
-                                viewModel.removeFromQueue(movie)
+        ZStack(alignment: .top) {
+            ScrollView {
+                VStack(spacing: 0) {
+                    // Top spacer for overlaid header
+                    Color.clear.frame(height: 60)
+
+                    if viewModel.queuedMovies.isEmpty {
+                        emptyStateView
+                    } else {
+                        LazyVStack(spacing: .mgSpacing16) {
+                            ForEach(viewModel.queuedMovies) { movie in
+                                WatchQueueCard(
+                                    movie: movie,
+                                    onPlayTrailer: {
+                                        selectedTrailer = (movie.id, movie.title, movie.year)
+                                    },
+                                    onRemove: {
+                                        viewModel.removeFromQueue(movie)
+                                    }
+                                )
+                                .padding(.horizontal, .mgSpacing20)
                             }
-                        )
-                        .padding(.horizontal, .mgSpacing20)
+                        }
+                        .padding(.vertical, .mgSpacing20)
                     }
                 }
-                .padding(.vertical, .mgSpacing20)
+            }
+            .refreshable {
+                viewModel.refresh()
+            }
+
+            // Overlaid AppHeader
+            VStack {
+                AppHeader(showBackButton: false)
+                Spacer()
             }
         }
         .background(Color(.systemGroupedBackground))
-        .navigationTitle("Watchlist")
-        .navigationBarTitleDisplayMode(.large)
-        .refreshable {
-            viewModel.refresh()
-        }
+        .navigationBarHidden(true)
+        .enableSwipeBack()
         .sheet(item: Binding(
             get: { selectedTrailer.map { TrailerIdentifier(tmdbId: $0.tmdbId, title: $0.title, year: $0.year) } },
             set: { selectedTrailer = $0.map { ($0.tmdbId, $0.title, $0.year) } }

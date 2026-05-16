@@ -106,6 +106,7 @@ struct GeniusView: View {
         }
         .background(Color.mgGroupedBackground)
         .navigationBarHidden(true)
+        .enableSwipeBack()
     }
 
 }
@@ -495,6 +496,7 @@ struct CategorySubcategoriesView: View {
         }
         .background(Color.mgBackground)
         .navigationBarHidden(true)
+        .enableSwipeBack()
     }
 }
 
@@ -724,6 +726,7 @@ struct CategoryEssentialsView: View {
         }
         .background(Color.mgBackground)
         .navigationBarHidden(true)
+        .enableSwipeBack()
     }
 }
 
