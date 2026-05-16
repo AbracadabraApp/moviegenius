@@ -53,7 +53,7 @@ struct FavoriteButtons: View {
                             .foregroundStyle(isLoved ? Color.mgGold : inactiveColor)
                     }
                 }
-                .frame(maxWidth: .infinity, minHeight: compact ? 30 : 36)
+                .frame(minHeight: compact ? 30 : 36)
                 .padding(.horizontal, compact ? 8 : 10)
                 .background(.ultraThinMaterial)
                 .clipShape(Capsule())
@@ -88,7 +88,7 @@ struct FavoriteButtons: View {
                             .foregroundStyle(isInQueue ? Color.mgGold : inactiveColor)
                     }
                 }
-                .frame(maxWidth: .infinity, minHeight: compact ? 30 : 36)
+                .frame(minHeight: compact ? 30 : 36)
                 .padding(.horizontal, compact ? 8 : 10)
                 .background(.ultraThinMaterial)
                 .clipShape(Capsule())
