@@ -29,7 +29,7 @@ struct CollectionDetailView: View {
                         // Collection header
                         VStack(alignment: .leading, spacing: .mgSpacing6) {
                             Text(collection.title)
-                                .font(.mgLargeTitle)
+                                .font(.mgTitle)
                                 .foregroundStyle(Color.mgPrimary)
 
                             if let subtitle = collection.subtitle {
@@ -144,6 +144,7 @@ struct CollectionDetailView: View {
         }
         .background(Color.mgBackground)
         .navigationBarHidden(true)
+        .enableSwipeBack()
         .task {
             await viewModel.loadCollection()
         }
@@ -184,7 +185,7 @@ struct SubcategorySection: View {
                     .foregroundStyle(Color.mgSecondary)
                     .lineSpacing(2)
                     .padding(.horizontal, .mgSpacing16)
-                    .padding(.bottom, .mgSpacing12 + 2)
+                    .padding(.bottom, .mgSpacing16)
             }
 
             // 3-column movie grid
@@ -203,7 +204,7 @@ struct SubcategorySection: View {
                     }
                 }
                 .padding(.horizontal, .mgSpacing16)
-                .padding(.top, .mgSpacing12 + 2)
+                .padding(.top, .mgSpacing16)
             }
         }
         .padding(.bottom, .mgSpacing8)
