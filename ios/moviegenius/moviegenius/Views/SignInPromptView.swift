@@ -11,7 +11,7 @@ struct SignInPromptView: View {
     @State private var isReady = false
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack(spacing: 0) {
                 // Content area
                 VStack(spacing: 32) {
