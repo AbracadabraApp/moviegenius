@@ -95,7 +95,7 @@ struct MoviePosterCard: View {
             case .success(let image):
                 image
                     .resizable()
-                    .aspectRatio(2/3, contentMode: .fill)
+                    .aspectRatio(2/3, contentMode: .fit)
                     .opacity(imageLoaded ? 1 : 0)
                     .onAppear {
                         withAnimation(.easeIn(duration: 0.3)) {
@@ -108,7 +108,8 @@ struct MoviePosterCard: View {
                 posterPlaceholder
             }
         }
-        .frame(width: 170, height: 227)
+        .aspectRatio(2/3, contentMode: .fit)
+        .frame(width: 170)
         .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
         .mgCinematicGlow()
         .mgElevationMedium()
@@ -122,6 +123,7 @@ struct MoviePosterCard: View {
     private var posterPlaceholder: some View {
         RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous)
             .fill(Color.mgSecondary.opacity(0.15))
+            .aspectRatio(2/3, contentMode: .fit)
             .overlay(
                 Image(systemName: "film")
                     .font(.system(size: 32))

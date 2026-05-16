@@ -13,8 +13,8 @@ struct HomeView: View {
     var body: some View {
         ScrollView {
             LazyVStack(spacing: 0) {
-                // Spacer for header + breathing room
-                Color.clear.frame(height: 100)
+                // Spacer for header
+                Color.clear.frame(height: 60)
 
                 if let error = viewModel.error {
                     // Error state - SHOW THE ERROR!
@@ -72,6 +72,7 @@ struct HomeView: View {
                     ForEach(viewModel.collections) { collection in
                         CollectionCarousel(collection: collection)
                     }
+                    .padding(.top, .mgSpacing24)
 
                     // Load more trigger
                     Color.clear

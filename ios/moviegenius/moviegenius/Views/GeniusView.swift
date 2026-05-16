@@ -169,7 +169,7 @@ struct JourneyTabContent: View {
                 .font(.mgTitle)
                 .foregroundStyle(Color.mgPrimary)
                 .padding(.horizontal, .mgSpacing16)
-                .padding(.top, .mgSpacing16)
+                .padding(.top, .mgSpacing24)
 
             // Category Collage
             FlowLayout(spacing: .mgSpacing8) {
