@@ -28,6 +28,6 @@ class WatchQueueViewModel: ObservableObject {
     }
 
     func removeFromQueue(_ movie: SavedMovie) {
-        favorites.toggleQueue(movie)
+        favorites.removeFromQueue(movie)
     }
 }

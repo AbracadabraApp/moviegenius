@@ -152,7 +152,7 @@ struct JourneyTabContent: View {
         VStack(alignment: .leading, spacing: .mgSpacing24) {
             // Header
             Text("Start your cinematic journey")
-                .font(.mgLargeTitle)
+                .font(.mgTitle1)
                 .foregroundStyle(Color.mgPrimary)
                 .padding(.horizontal, .mgSpacing16)
                 .padding(.top, .mgSpacing16)

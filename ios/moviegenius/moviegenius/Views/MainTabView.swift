@@ -79,7 +79,7 @@ struct MainTabView: View {
                     }
             }
             .tabItem {
-                Label("Watch", systemImage: "bookmark.fill")
+                Label("Watchlist", systemImage: "bookmark.fill")
             }
             .tag(2)
         }

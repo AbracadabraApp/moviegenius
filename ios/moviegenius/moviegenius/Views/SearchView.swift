@@ -48,7 +48,7 @@ struct SearchView: View {
                         }
                         .padding(.horizontal, .mgSpacing20)
                         .padding(.vertical, .mgSpacing16)
-                        .background(Color.mgBackground)
+                        .background(.regularMaterial)
                         .clipShape(RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous))
                         .mgShadowMedium()
 
@@ -90,7 +90,7 @@ struct SearchView: View {
                     }
                     .padding(.horizontal, .mgSpacing12)
                     .padding(.vertical, .mgSpacing8)
-                    .background(Color.mgBackground)
+                    .background(.regularMaterial)
                     .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
                     .padding(.horizontal, .mgSpacing16)
                     .padding(.top, .mgSpacing8)
@@ -264,7 +264,7 @@ struct SearchResultsList: View {
                         .buttonStyle(.plain)
                     }
                 }
-                .background(Color.mgBackground)
+                .background(.regularMaterial)
             }
         }
     }
@@ -319,7 +319,7 @@ struct SearchResultRow: View {
         }
         .padding(.horizontal, .mgSpacing16)
         .padding(.vertical, .mgSpacing12)
-        .background(Color.mgBackground)
+        .background(.regularMaterial)
         .overlay(
             Rectangle()
                 .fill(Color.mgSecondary.opacity(0.1))

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		20FB7346CB2EE3764F3EAA17 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 2A2CC7615E6ED127A06BEBF6 /* YouTubeiOSPlayerHelper */; };
-		A5155F5DE2AF3CEFB6435617 /* TierTmdbLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A74D9BBD983975D87C377A /* TierTmdbLookup.swift */; };
 		C9029B202FB3FA00006205FF /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = C9029B1F2FB3FA00006205FF /* FirebaseAnalyticsCore */; };
 		C9029B222FB3FA00006205FF /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = C9029B212FB3FA00006205FF /* FirebaseCrashlytics */; };
 /* End PBXBuildFile section */
@@ -31,7 +30,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		15A74D9BBD983975D87C377A /* TierTmdbLookup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TierTmdbLookup.swift; path = moviegenius/Data/TierTmdbLookup.swift; sourceTree = "<group>"; };
 		C902999C2FB10FE3006205FF /* moviegenius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moviegenius.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90299A92FB10FE7006205FF /* moviegeniusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moviegeniusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90299B32FB10FE7006205FF /* moviegeniusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moviegeniusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,7 +88,6 @@
 				C90299AC2FB10FE7006205FF /* moviegeniusTests */,
 				C90299B62FB10FE7006205FF /* moviegeniusUITests */,
 				C902999D2FB10FE3006205FF /* Products */,
-				15A74D9BBD983975D87C377A /* TierTmdbLookup.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -251,7 +248,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5155F5DE2AF3CEFB6435617 /* TierTmdbLookup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

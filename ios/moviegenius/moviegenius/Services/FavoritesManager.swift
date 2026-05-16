@@ -15,6 +15,7 @@ struct SavedMovie: Codable, Identifiable, Equatable {
     let year: Int?
     let posterUrl: String?
     let slug: String?
+    var isActive: Bool = true  // For queue items: true = selected, false = deselected (soft delete)
 
     static func == (lhs: SavedMovie, rhs: SavedMovie) -> Bool {
         lhs.id == rhs.id
@@ -59,6 +60,13 @@ class FavoritesManager: ObservableObject {
         queueMovies.contains(where: { $0.id == tmdbId })
     }
 
+    func isQueueActive(_ tmdbId: Int) -> Bool {
+        if let movie = queueMovies.first(where: { $0.id == tmdbId }) {
+            return movie.isActive
+        }
+        return false
+    }
+
     func toggleLoved(_ movie: SavedMovie) {
         let isAdding: Bool
         if let index = lovedMovies.firstIndex(where: { $0.id == movie.id }) {
@@ -80,13 +88,24 @@ class FavoritesManager: ObservableObject {
 
     func toggleQueue(_ movie: SavedMovie) {
         if let index = queueMovies.firstIndex(where: { $0.id == movie.id }) {
-            queueMovies.remove(at: index)
+            // Movie already in queue - toggle active state (don't remove)
+            queueMovies[index].isActive.toggle()
         } else {
-            queueMovies.append(movie)
+            // Movie not in queue - add it as active
+            var newMovie = movie
+            newMovie.isActive = true
+            queueMovies.append(newMovie)
         }
         saveQueue()
 
         // Note: Queue sync can be added later if needed
+    }
+
+    func removeFromQueue(_ movie: SavedMovie) {
+        if let index = queueMovies.firstIndex(where: { $0.id == movie.id }) {
+            queueMovies.remove(at: index)
+        }
+        saveQueue()
     }
 
     private func saveLoved() {

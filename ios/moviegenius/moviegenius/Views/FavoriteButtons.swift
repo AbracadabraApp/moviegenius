@@ -113,7 +113,7 @@ struct FavoriteButtons: View {
     }
 
     private var isInQueue: Bool {
-        favorites.isInQueue(movie.id)
+        favorites.isInQueue(movie.id) && favorites.isQueueActive(movie.id)
     }
 
     // MARK: - Action Handlers

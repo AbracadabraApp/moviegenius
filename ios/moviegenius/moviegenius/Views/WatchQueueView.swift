@@ -34,7 +34,7 @@ struct WatchQueueView: View {
             }
         }
         .background(Color(.systemGroupedBackground))
-        .navigationTitle("Watch Queue")
+        .navigationTitle("Watchlist")
         .navigationBarTitleDisplayMode(.large)
         .refreshable {
             viewModel.refresh()
@@ -51,7 +51,7 @@ struct WatchQueueView: View {
         VStack(spacing: .mgSpacing20) {
             Spacer()
 
-            Image(systemName: "play.rectangle")
+            Image(systemName: "bookmark.fill")
                 .font(.system(size: 64))
                 .foregroundStyle(Color.mgSecondary)
 
