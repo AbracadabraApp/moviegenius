@@ -88,6 +88,8 @@ import SwiftUI
 
 struct AppHeader: View {
     @Environment(\.dismiss) private var dismiss
+    @ObservedObject private var auth = AuthManager.shared
+    @State private var showSignOutConfirmation = false
     let showBackButton: Bool
 
     init(showBackButton: Bool = false) {
@@ -117,9 +119,33 @@ struct AppHeader: View {
             SearchBarCompactSmaller()
             Spacer()
 
-            // Invisible spacer on right to balance left side
-            Color.clear
-                .frame(width: 44, height: 44)
+            // Sign-in indicator / Logout button
+            if auth.isAuthenticated {
+                Button {
+                    showSignOutConfirmation = true
+                } label: {
+                    Image(systemName: "person.circle.fill")
+                        .font(.system(size: 24))
+                        .foregroundStyle(Color.mgGold)
+                        .frame(width: 44, height: 44)
+                        .contentShape(Rectangle())
+                }
+                .confirmationDialog("Sign Out", isPresented: $showSignOutConfirmation) {
+                    Button("Sign Out", role: .destructive) {
+                        auth.signOut()
+                    }
+                    Button("Cancel", role: .cancel) {}
+                } message: {
+                    if let email = auth.currentUser?.email {
+                        Text("Signed in as \(email)")
+                    } else {
+                        Text("Are you sure you want to sign out?")
+                    }
+                }
+            } else {
+                Color.clear
+                    .frame(width: 44, height: 44)
+            }
         }
         .padding(.horizontal, .mgSpacing16)
         .padding(.vertical, .mgSpacing8)
