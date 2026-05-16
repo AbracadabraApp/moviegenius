@@ -31,15 +31,13 @@ struct MainTabView: View {
     @StateObject private var geniusNavigation = NavigationStateManager()
     @StateObject private var watchNavigation = NavigationStateManager()
 
-    // Track tab selection to detect re-taps
+    // Track tab selection - always pop to root when tab is tapped
     private var selectedTabBinding: Binding<Int> {
         Binding(
             get: { selectedTab },
             set: { newValue in
-                if newValue == selectedTab {
-                    // Same tab tapped - pop to root
-                    popToRoot(for: newValue)
-                }
+                // Always pop to root when any tab is tapped
+                popToRoot(for: newValue)
                 selectedTab = newValue
             }
         )
