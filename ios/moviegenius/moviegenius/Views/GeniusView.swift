@@ -736,7 +736,7 @@ struct EssentialFilmCard: View {
     }
 
     private var isQueued: Bool {
-        favorites.queueMovies.contains { $0.id == movie.tmdbId }
+        favorites.isInQueue(movie.tmdbId) && favorites.isQueueActive(movie.tmdbId)
     }
 
     var body: some View {
