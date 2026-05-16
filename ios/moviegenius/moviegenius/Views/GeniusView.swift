@@ -73,26 +73,39 @@ struct GeniusView: View {
     }
 
     var body: some View {
-        ScrollView {
-            JourneyTabContent(
-                stage: journeyStage,
-                lovedCount: favorites.lovedMovies.count,
-                queueCount: favorites.queueMovies.count,
-                genres: viewModel.genres,
-                isLoadingGenres: viewModel.isLoading
-            )
-        }
-        .scrollIndicators(.hidden)
-        .refreshable {
-            favorites.loadFavorites()
-            await viewModel.loadGenreExpertise()
+        ZStack(alignment: .top) {
+            ScrollView {
+                VStack(spacing: 0) {
+                    // Top spacer for overlaid header
+                    Color.clear.frame(height: 60)
+
+                    JourneyTabContent(
+                        stage: journeyStage,
+                        lovedCount: favorites.lovedMovies.count,
+                        queueCount: favorites.queueMovies.count,
+                        genres: viewModel.genres,
+                        isLoadingGenres: viewModel.isLoading
+                    )
+                }
+            }
+            .scrollIndicators(.hidden)
+            .refreshable {
+                favorites.loadFavorites()
+                await viewModel.loadGenreExpertise()
+            }
+            .task {
+                favorites.loadFavorites()
+                await viewModel.loadGenreExpertise()
+            }
+
+            // Overlaid AppHeader
+            VStack {
+                AppHeader(showBackButton: false)
+                Spacer()
+            }
         }
         .background(Color.mgGroupedBackground)
-        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search movies")
-        .task {
-            favorites.loadFavorites()
-            await viewModel.loadGenreExpertise()
-        }
+        .navigationBarHidden(true)
     }
 
 }
@@ -152,7 +165,7 @@ struct JourneyTabContent: View {
         VStack(alignment: .leading, spacing: .mgSpacing24) {
             // Header
             Text("Start your cinematic journey")
-                .font(.mgTitle1)
+                .font(.mgTitle)
                 .foregroundStyle(Color.mgPrimary)
                 .padding(.horizontal, .mgSpacing16)
                 .padding(.top, .mgSpacing16)
@@ -440,43 +453,48 @@ struct CategorySubcategoriesView: View {
     }
 
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: .mgSpacing16) {
-                // Header
-                Text(category)
-                    .font(.mgTitle2)
-                    .foregroundStyle(Color.mgSecondary)
-                    .padding(.horizontal, .mgSpacing20)
-                    .padding(.top, .mgSpacing8)
+        ZStack(alignment: .top) {
+            ScrollView {
+                VStack(spacing: 0) {
+                    // Top spacer for overlaid header
+                    Color.clear.frame(height: 60)
 
-                // Subcategory badges
-                FlowLayout(spacing: .mgSpacing8) {
-                    ForEach(subcategories, id: \.self) { subcategory in
-                        NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: subcategory)) {
-                            CategoryBadge(
-                                category: subcategory,
-                                progress: subcategoryProgress(subcategory)
-                            )
+                    VStack(alignment: .leading, spacing: .mgSpacing16) {
+                        // Header
+                        Text(category)
+                            .font(.mgTitle2)
+                            .foregroundStyle(Color.mgSecondary)
+                            .padding(.horizontal, .mgSpacing20)
+                            .padding(.top, .mgSpacing8)
+
+                        // Subcategory badges
+                        FlowLayout(spacing: .mgSpacing8) {
+                            ForEach(subcategories, id: \.self) { subcategory in
+                                NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: subcategory)) {
+                                    CategoryBadge(
+                                        category: subcategory,
+                                        progress: subcategoryProgress(subcategory)
+                                    )
+                                }
+                                .buttonStyle(MGCardButtonStyle())
+                            }
                         }
-                        .buttonStyle(MGCardButtonStyle())
-                    }
-                }
-                .padding(.horizontal, .mgSpacing16)
+                        .padding(.horizontal, .mgSpacing16)
 
-                Spacer(minLength: .mgSpacing40)
+                        Spacer(minLength: .mgSpacing40)
+                    }
+                    .padding(.vertical, .mgSpacing12)
+                }
             }
-            .padding(.vertical, .mgSpacing12)
+
+            // Overlaid AppHeader
+            VStack {
+                AppHeader(showBackButton: true)
+                Spacer()
+            }
         }
         .background(Color.mgBackground)
-        .navigationTitle(category)
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .principal) {
-                SearchBarCompactSmaller()
-            }
-        }
-        .toolbarBackground(.visible, for: .navigationBar)
-        .toolbarBackground(Color.mgBackground.opacity(0.95), for: .navigationBar)
+        .navigationBarHidden(true)
     }
 }
 
@@ -652,55 +670,60 @@ struct CategoryEssentialsView: View {
     }
 
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: .mgSpacing16) {
-                // Tier navigation chips (top)
-                TierNavigationChips(
-                    category: category,
-                    currentTier: subcategory ?? "Essential",
-                    onTierSelected: { _ in }
-                )
-                .padding(.top, .mgSpacing8)
+        ZStack(alignment: .top) {
+            ScrollView {
+                VStack(spacing: 0) {
+                    // Top spacer for overlaid header
+                    Color.clear.frame(height: 60)
 
-                if viewModel.isLoadingInitial || viewModel.isLoading {
-                    VStack(spacing: .mgSpacing12) {
-                        ProgressView()
-                            .tint(Color.mgGold)
-                        Text("Loading \(viewModel.totalFilms > 0 ? "\(viewModel.totalFilms) " : "")films...")
-                            .font(.mgCaption)
-                            .foregroundStyle(Color.mgSecondary)
+                    VStack(alignment: .leading, spacing: .mgSpacing16) {
+                        // Tier navigation chips (top)
+                        TierNavigationChips(
+                            category: category,
+                            currentTier: subcategory ?? "Essential",
+                            onTierSelected: { _ in }
+                        )
+                        .padding(.top, .mgSpacing8)
+
+                        if viewModel.isLoadingInitial || viewModel.isLoading {
+                            VStack(spacing: .mgSpacing12) {
+                                ProgressView()
+                                    .tint(Color.mgGold)
+                                Text("Loading \(viewModel.totalFilms > 0 ? "\(viewModel.totalFilms) " : "")films...")
+                                    .font(.mgCaption)
+                                    .foregroundStyle(Color.mgSecondary)
+                            }
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, .mgSpacing32)
+                        } else if viewModel.error != nil {
+                            errorView
+                        } else {
+                            filmListView
+
+                            // Tier navigation chips (bottom)
+                            TierNavigationChips(
+                                category: category,
+                                currentTier: subcategory ?? "Essential",
+                                onTierSelected: { _ in }
+                            )
+                            .padding(.top, .mgSpacing24)
+                        }
                     }
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, .mgSpacing32)
-                } else if viewModel.error != nil {
-                    errorView
-                } else {
-                    filmListView
-
-                    // Tier navigation chips (bottom)
-                    TierNavigationChips(
-                        category: category,
-                        currentTier: subcategory ?? "Essential",
-                        onTierSelected: { _ in }
-                    )
-                    .padding(.top, .mgSpacing24)
+                    .padding(.vertical, .mgSpacing12)
                 }
             }
-            .padding(.vertical, .mgSpacing12)
-        }
-        .background(Color.mgBackground)
-        .navigationTitle(subcategory != nil ? "\(category): \(subcategory!)" : category)
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .principal) {
-                SearchBarCompactSmaller()
+            .task {
+                await viewModel.loadMovies()
+            }
+
+            // Overlaid AppHeader
+            VStack {
+                AppHeader(showBackButton: true)
+                Spacer()
             }
         }
-        .toolbarBackground(.visible, for: .navigationBar)
-        .toolbarBackground(Color.mgBackground.opacity(0.95), for: .navigationBar)
-        .task {
-            await viewModel.loadMovies()
-        }
+        .background(Color.mgBackground)
+        .navigationBarHidden(true)
     }
 }
 
