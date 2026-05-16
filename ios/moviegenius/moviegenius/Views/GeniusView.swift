@@ -79,6 +79,17 @@ struct GeniusView: View {
                     // Top spacer for overlaid header
                     Color.clear.frame(height: 60)
 
+                    // Page title
+                    HStack {
+                        Text("Genius")
+                            .font(.mgSubheadline)
+                            .foregroundStyle(Color.mgPrimary)
+                        Spacer()
+                    }
+                    .padding(.horizontal, .mgSpacing20)
+                    .padding(.top, .mgSpacing12)
+                    .padding(.bottom, .mgSpacing8)
+
                     JourneyTabContent(
                         stage: journeyStage,
                         lovedCount: favorites.lovedMovies.count,
@@ -553,7 +564,7 @@ struct TierChip: View {
 
     private var backgroundColor: Color {
         if isSelected {
-            return Color.white
+            return Color.mgContrastTextOnLight  // White background for selected state
         } else if completionPercent > 0 {
             return gradientColor
         } else {
@@ -563,10 +574,10 @@ struct TierChip: View {
 
     private var textColor: Color {
         if isSelected {
-            return Color.black
+            return Color.mgContrastTextOnLight  // Black text on white/light background
         } else if completionPercent >= 0.40 {
-            // Use white text on darker gradient colors for contrast
-            return Color.white
+            // White text on darker gradient colors (>40% progress) for accessibility
+            return Color.mgContrastTextOnDark
         } else {
             return Color.mgSecondary
         }
@@ -642,7 +653,14 @@ struct CategoryEssentialsView: View {
     private var filmListView: some View {
         LazyVStack(spacing: .mgSpacing16) {
             ForEach(viewModel.movies) { movie in
-                EssentialFilmCard(movie: movie)
+                StandardMovieCard(
+                    tmdbId: movie.tmdbId,
+                    title: movie.title,
+                    year: movie.year,
+                    posterUrl: movie.posterUrl,
+                    slug: movie.slug,
+                    onDarkBackground: false
+                )
             }
         }
         .padding(.horizontal, .mgSpacing20)
@@ -730,155 +748,7 @@ struct CategoryEssentialsView: View {
     }
 }
 
-struct EssentialFilmCard: View {
-    let movie: EssentialMovie
-    @ObservedObject private var favorites = FavoritesManager.shared
-
-    private var isSeen: Bool {
-        favorites.lovedMovies.contains { $0.id == movie.tmdbId }
-    }
-
-    private var isQueued: Bool {
-        favorites.isInQueue(movie.tmdbId) && favorites.isQueueActive(movie.tmdbId)
-    }
-
-    var body: some View {
-        HStack(alignment: .top, spacing: .mgSpacing16) {
-            // Poster (left side) - tappable to view movie detail
-            NavigationLink(destination: MovieDetailView(tmdbId: movie.tmdbId)) {
-                AsyncImage(url: posterURL) { phase in
-                    switch phase {
-                    case .empty:
-                        posterPlaceholder
-                    case .success(let image):
-                        image
-                            .resizable()
-                            .aspectRatio(2/3, contentMode: .fill)
-                    case .failure:
-                        posterPlaceholder
-                    @unknown default:
-                        posterPlaceholder
-                    }
-                }
-                .frame(width: 140, height: 210)
-                .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
-            }
-            .buttonStyle(.plain)
-
-            // Content (right side)
-            VStack(alignment: .leading, spacing: .mgSpacing8) {
-                // Title & Year (non-tappable header)
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(movie.title)
-                        .font(.mgHeadline)
-                        .foregroundStyle(Color.mgPrimary)
-                        .fixedSize(horizontal: false, vertical: true)
-
-                    if let year = movie.year {
-                        Text(String(year))
-                            .font(.mgCaption)
-                            .foregroundStyle(Color.mgSecondary)
-                    }
-                }
-
-                // Large "Seen It" tap target - includes slug + button
-                Button(action: {
-                    toggleSeen()
-                }) {
-                    VStack(alignment: .leading, spacing: .mgSpacing12) {
-                        // Slug (full text, no truncation)
-                        Text(movie.slug)
-                            .font(.mgSubheadline)
-                            .foregroundStyle(Color.mgPrimary)
-                            .lineLimit(nil)
-                            .fixedSize(horizontal: false, vertical: true)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-
-                        // "Seen It" button visual
-                        HStack(spacing: 8) {
-                            Image(systemName: isSeen ? "checkmark.circle.fill" : "checkmark.circle")
-                                .font(.system(size: 18, weight: .medium))
-                            Text("Seen It")
-                                .font(.system(size: 16, weight: .semibold))
-                        }
-                        .foregroundStyle(isSeen ? Color.white : Color.mgPrimary)
-                        .frame(maxWidth: .infinity)
-                        .padding(.horizontal, 16)
-                        .padding(.vertical, 12)
-                        .background(isSeen ? Color.mgGold : Color.clear)
-                        .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous)
-                                .strokeBorder(isSeen ? Color.clear : Color.mgPrimary.opacity(0.3), lineWidth: 2)
-                        )
-                    }
-                }
-                .buttonStyle(.plain)
-
-                // "Add to List" button - Secondary action, no icon
-                Button(action: {
-                    toggleQueue()
-                }) {
-                    Text("Add to List")
-                        .font(.system(size: 14, weight: .medium))
-                        .foregroundStyle(isQueued ? Color.mgGold : Color.mgPrimary)
-                        .padding(.horizontal, 12)
-                        .padding(.vertical, 8)
-                        .background(isQueued ? Color.mgGold.opacity(0.15) : Color.clear)
-                        .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
-                }
-                .buttonStyle(.plain)
-                .frame(maxWidth: .infinity, alignment: .trailing)
-            }
-            .frame(maxWidth: .infinity, alignment: .topLeading)
-        }
-        .padding(.mgSpacing16)
-        .background {
-            RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous)
-                .fill(.regularMaterial)
-        }
-        .mgShadowMedium()
-    }
-
-    private func toggleSeen() {
-        HapticManager.selection()
-        let savedMovie = SavedMovie(
-            id: movie.tmdbId,
-            title: movie.title,
-            year: movie.year,
-            posterUrl: movie.posterUrl,
-            slug: movie.slug
-        )
-        favorites.toggleLoved(savedMovie)
-    }
-
-    private func toggleQueue() {
-        HapticManager.selection()
-        let savedMovie = SavedMovie(
-            id: movie.tmdbId,
-            title: movie.title,
-            year: movie.year,
-            posterUrl: movie.posterUrl,
-            slug: movie.slug
-        )
-        favorites.toggleQueue(savedMovie)
-    }
-
-    private var posterURL: URL? {
-        guard let posterUrl = movie.posterUrl else { return nil }
-        return URL(string: posterUrl)
-    }
-
-    private var posterPlaceholder: some View {
-        RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous)
-            .fill(Color.mgSecondary.opacity(0.15))
-            .overlay(
-                Image(systemName: "film")
-                    .font(.system(size: 32))
-                    .foregroundStyle(Color.mgSecondary)
-            )
-    }
-}
+// EssentialFilmCard removed - now using StandardMovieCard
 
 // MARK: - Category Progress Header
 
@@ -6294,7 +6164,8 @@ struct SaveProgressPrompt: View {
                         Text("Sign in to sync \(favorites.lovedMovies.count) \(favorites.lovedMovies.count == 1 ? "movie" : "movies") across devices")
                             .font(.mgSubheadline)
                             .foregroundStyle(Color.mgSecondary)
-                            .lineLimit(2)
+                            .lineLimit(nil)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
 
                     Spacer()

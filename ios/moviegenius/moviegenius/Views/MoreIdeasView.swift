@@ -22,14 +22,15 @@ struct MoreIdeasView: View {
             LazyVStack(spacing: .mgSpacing16) {
                 ForEach(moreIdeas) { idea in
                     if let tmdbId = idea.tmdbId {
-                        NavigationLink(destination: MovieDetailView(tmdbId: tmdbId)) {
-                            MoreIdeaCard(idea: idea)
-                        }
-                        .buttonStyle(.plain)
+                        StandardMovieCard(
+                            tmdbId: tmdbId,
+                            title: idea.title,
+                            year: idea.year,
+                            posterUrl: idea.posterUrl,
+                            slug: idea.connection,
+                            onDarkBackground: false
+                        )
                         .padding(.horizontal, .mgSpacing20)
-                    } else {
-                        MoreIdeaCard(idea: idea)
-                            .padding(.horizontal, .mgSpacing20)
                     }
                 }
             }
@@ -38,103 +39,6 @@ struct MoreIdeasView: View {
     }
 }
 
-struct MoreIdeaCard: View {
-    let idea: MoreIdea
-
-    var body: some View {
-        VStack(spacing: 0) {
-            HStack(alignment: .top, spacing: .mgSpacing16) {
-                // Poster (left side)
-                Group {
-                    if let posterURL = posterURL {
-                        AsyncImage(url: posterURL) { phase in
-                            switch phase {
-                            case .empty:
-                                posterPlaceholder
-                            case .success(let image):
-                                image
-                                    .resizable()
-                                    .aspectRatio(2/3, contentMode: .fill)
-                            case .failure:
-                                posterPlaceholder
-                            @unknown default:
-                                posterPlaceholder
-                            }
-                        }
-                    } else {
-                        posterPlaceholder
-                    }
-                }
-                .frame(width: 140, height: 210)
-                .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
-                .mgCinematicGlow()
-                .mgElevationLow()
-
-                // Content (right side)
-                VStack(alignment: .leading, spacing: .mgSpacing8) {
-                    // Title
-                    Text(idea.title)
-                        .font(.mgHeadline)
-                        .foregroundStyle(Color.mgPrimary)
-
-                    // Connection slug (full text, no truncation)
-                    Text(idea.connection)
-                        .font(.mgSubheadline)
-                        .foregroundStyle(Color.mgPrimary)
-                        .lineLimit(nil)
-                        .fixedSize(horizontal: false, vertical: true)
-
-                    Spacer()
-                }
-                .frame(maxWidth: .infinity, maxHeight: 210, alignment: .topLeading)
-            }
-
-            // Favorite buttons (bottom-right of card)
-            if let tmdbId = idea.tmdbId {
-                HStack {
-                    Spacer()
-                    FavoriteButtons(
-                        tmdbId: tmdbId,
-                        title: idea.title,
-                        year: idea.year,
-                        posterUrl: idea.posterUrl,
-                        slug: nil,
-                        compact: false,
-                        onDarkBackground: false
-                    )
-                }
-                .padding(.top, .mgSpacing12)
-            }
-        }
-        .padding(.mgSpacing16)
-        .background {
-            RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous)
-                .fill(.regularMaterial)
-        }
-        .mgShadowMedium()
-    }
-
-    private var posterURL: URL? {
-        // If API provides poster_url, use it
-        if let posterUrl = idea.posterUrl {
-            return URL(string: posterUrl)
-        }
-
-        // Otherwise, fetch from TMDB using movie ID
-        guard let tmdbId = idea.tmdbId else { return nil }
-        return URL(string: "https://moviegenius.ai/api/poster/\(tmdbId)")
-    }
-
-    private var posterPlaceholder: some View {
-        RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous)
-            .fill(Color.mgSecondary.opacity(0.15))
-            .overlay(
-                Image(systemName: "film")
-                    .font(.system(size: 32))
-                    .foregroundStyle(Color.mgSecondary)
-            )
-    }
-}
 
 #Preview {
     ScrollView {

@@ -170,7 +170,8 @@ struct SubcategorySection: View {
                     .font(.mgTitle3)
                     .foregroundStyle(Color.mgPrimary)
                     .kerning(-0.2)
-                    .lineLimit(2)
+                    .lineLimit(nil)
+                    .fixedSize(horizontal: false, vertical: true)
 
                 Spacer()
             }

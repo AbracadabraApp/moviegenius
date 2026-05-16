@@ -18,7 +18,7 @@ struct CollectionCarousel: View {
                     Text(category.uppercased())
                         .font(.mgCaption)
                         .fontWeight(.semibold)
-                        .foregroundStyle(.black)
+                        .foregroundStyle(Color.mgBadgeTextOnGold)
                         .padding(.horizontal, .mgSpacing8 + 2)
                         .padding(.vertical, .mgSpacing4 - 1)
                         .background(Color.mgGold)

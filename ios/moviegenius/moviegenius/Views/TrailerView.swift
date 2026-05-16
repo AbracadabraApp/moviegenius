@@ -172,7 +172,8 @@ struct TrailerView: View {
                             Text(video.name)
                                 .font(.mgCallout)
                                 .foregroundStyle(Color.mgVideoPlayerText)
-                                .lineLimit(2)
+                                .lineLimit(nil)
+                                .fixedSize(horizontal: false, vertical: true)
 
                             HStack(spacing: .mgSpacing8) {
                                 if video.official {

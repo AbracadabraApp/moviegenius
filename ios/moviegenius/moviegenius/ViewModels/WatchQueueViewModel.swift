@@ -17,8 +17,11 @@ class WatchQueueViewModel: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
 
     init() {
-        // Subscribe to favorites changes
+        // Subscribe to favorites changes - filter to only show active movies
         favorites.$queueMovies
+            .map { movies in
+                movies.filter { $0.isActive }
+            }
             .receive(on: DispatchQueue.main)
             .assign(to: &$queuedMovies)
     }

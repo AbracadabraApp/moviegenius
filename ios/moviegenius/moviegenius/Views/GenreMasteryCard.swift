@@ -26,14 +26,15 @@ struct GenreMasteryCard: View {
                         Text(genre.name)
                             .font(.mgHeadline)
                             .foregroundStyle(Color.mgPrimary)
-                            .lineLimit(2)
+                            .lineLimit(nil)
+                            .fixedSize(horizontal: false, vertical: true)
 
                         // Category badge
                         if let category = genre.category {
                             Text(category.uppercased())
                                 .font(.mgCaption2)
                                 .fontWeight(.semibold)
-                                .foregroundStyle(.black)
+                                .foregroundStyle(Color.mgBadgeTextOnGold)
                                 .padding(.horizontal, 6)
                                 .padding(.vertical, 2)
                                 .background(Color.mgGold)

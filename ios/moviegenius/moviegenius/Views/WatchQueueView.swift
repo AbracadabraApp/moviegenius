@@ -18,17 +18,30 @@ struct WatchQueueView: View {
                     // Top spacer for overlaid header
                     Color.clear.frame(height: 60)
 
+                    // Page title
+                    HStack {
+                        Text("Watchlist")
+                            .font(.mgSubheadline)
+                            .foregroundStyle(Color.mgPrimary)
+                        Spacer()
+                    }
+                    .padding(.horizontal, .mgSpacing20)
+                    .padding(.top, .mgSpacing12)
+                    .padding(.bottom, .mgSpacing8)
+
                     if viewModel.queuedMovies.isEmpty {
                         emptyStateView
                     } else {
                         LazyVStack(spacing: .mgSpacing16) {
                             ForEach(viewModel.queuedMovies) { movie in
-                                WatchQueueCard(
-                                    movie: movie,
-                                    onPlayTrailer: {
-                                        selectedTrailer = (movie.id, movie.title, movie.year)
-                                    },
-                                    onRemove: {
+                                StandardMovieCard(
+                                    tmdbId: movie.id,
+                                    title: movie.title,
+                                    year: movie.year,
+                                    posterUrl: movie.posterUrl,
+                                    slug: movie.slug,
+                                    onDarkBackground: false,
+                                    onDelete: {
                                         viewModel.removeFromQueue(movie)
                                     }
                                 )
@@ -84,115 +97,7 @@ struct WatchQueueView: View {
     }
 }
 
-struct WatchQueueCard: View {
-    let movie: SavedMovie
-    let onPlayTrailer: () -> Void
-    let onRemove: () -> Void
-    @ObservedObject private var favorites = FavoritesManager.shared
-
-    var body: some View {
-        VStack(spacing: 0) {
-            HStack(alignment: .top, spacing: .mgSpacing16) {
-                // Poster (left side) - More Ideas size
-                NavigationLink(destination: MovieDetailView(tmdbId: movie.id)) {
-                    Group {
-                        if let posterUrl = movie.posterUrl, let url = URL(string: posterUrl) {
-                            AsyncImage(url: url) { phase in
-                                switch phase {
-                                case .empty:
-                                    posterPlaceholder
-                                case .success(let image):
-                                    image
-                                        .resizable()
-                                        .aspectRatio(2/3, contentMode: .fill)
-                                case .failure:
-                                    posterPlaceholder
-                                @unknown default:
-                                    posterPlaceholder
-                                }
-                            }
-                        } else {
-                            posterPlaceholder
-                        }
-                    }
-                    .frame(width: 140, height: 210)
-                    .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
-                    .mgCinematicGlow()
-                    .mgElevationLow()
-                }
-
-                // Content (right side)
-                VStack(alignment: .leading, spacing: .mgSpacing8) {
-                    HStack(alignment: .top) {
-                        VStack(alignment: .leading, spacing: .mgSpacing8) {
-                            // Title
-                            Text(movie.title)
-                                .font(.mgHeadline)
-                                .foregroundStyle(Color.mgPrimary)
-
-                            // Slug (full text, no truncation)
-                            if let slug = movie.slug {
-                                Text(slug)
-                                    .font(.mgSubheadline)
-                                    .foregroundStyle(Color.mgPrimary)
-                                    .lineLimit(nil)
-                                    .fixedSize(horizontal: false, vertical: true)
-                            }
-                        }
-
-                        Spacer()
-
-                        // Delete button (top-right)
-                        Button {
-                            onRemove()
-                            HapticManager.light()
-                        } label: {
-                            Image(systemName: "xmark.circle.fill")
-                                .font(.system(size: 24))
-                                .foregroundStyle(Color.mgSecondary)
-                        }
-                        .buttonStyle(.plain)
-                        .accessibilityLabel("Remove from queue")
-                    }
-
-                    Spacer()
-                }
-                .frame(maxWidth: .infinity, maxHeight: 210, alignment: .topLeading)
-            }
-
-            // Favorite buttons (bottom-right of card)
-            HStack {
-                Spacer()
-                FavoriteButtons(
-                    tmdbId: movie.id,
-                    title: movie.title,
-                    year: movie.year,
-                    posterUrl: movie.posterUrl,
-                    slug: movie.slug,
-                    compact: false,
-                    onDarkBackground: false
-                )
-            }
-            .padding(.top, .mgSpacing12)
-        }
-        .padding(.mgSpacing16)
-        .background {
-            RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous)
-                .fill(.regularMaterial)
-        }
-        .mgShadowMedium()
-    }
-
-    private var posterPlaceholder: some View {
-        RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous)
-            .fill(Color.mgSecondary.opacity(0.15))
-            .overlay(
-                Image(systemName: "film")
-                    .font(.system(size: 32))
-                    .foregroundStyle(Color.mgSecondary)
-            )
-    }
-}
+// WatchQueueCard removed - now using StandardMovieCard with onDelete parameter
 
 // Helper for sheet binding
 private struct TrailerIdentifier: Identifiable {

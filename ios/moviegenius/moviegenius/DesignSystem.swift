@@ -57,6 +57,13 @@ extension Color {
     static let mgVideoPlayerText = Color.white
     static let mgVideoPlayerSecondaryText = Color(white: 1, opacity: 0.7)
     static let mgVideoPlayerOverlay = Color(white: 0, opacity: 0.3)
+
+    // Contrast text colors (intentionally absolute - for accessibility on colored backgrounds)
+    // Used for text on mgGold backgrounds where color doesn't change in dark mode
+    static let mgBadgeTextOnGold = Color.black  // Small badges: black text on gold
+    static let mgButtonTextOnGold = Color.white  // Large buttons: white text on gold
+    static let mgContrastTextOnDark = Color.white  // Text on dark gradient colors (>40% progress)
+    static let mgContrastTextOnLight = Color.black  // Text on light/selected backgrounds
 }
 
 // MARK: - Typography (Dynamic Type support)
