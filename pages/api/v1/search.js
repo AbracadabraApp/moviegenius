@@ -452,7 +452,7 @@ export default async function handler(req, res) {
               (bl.title ILIKE $1 OR
                bl.description ILIKE $1 OR
                bl.categories::text ILIKE $1)
-              AND bl.status = 'published'
+              AND bl.status = 'active'
             GROUP BY bl.id, bl.title, bl.description, bl.categories
             HAVING COUNT(blm.movie_id) > 0
           )
