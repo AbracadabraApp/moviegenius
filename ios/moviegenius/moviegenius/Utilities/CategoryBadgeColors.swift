@@ -28,10 +28,10 @@ struct CategoryBadgeColors {
         }
     }
 
-    /// Returns the text color (black or white) for optimal contrast at a given progress
+    /// Returns the text color for optimal contrast at a given progress (dark mode adaptive)
     /// - Parameter progress: Completion percentage from 0.0 (0%) to 1.0 (100%)
-    /// - Returns: .black for light backgrounds (<40%), .white for dark backgrounds (≥40%)
+    /// - Returns: .mgPrimary for light backgrounds (<40%), .white for metallic backgrounds (≥40%)
     static func textColor(for progress: Double) -> Color {
-        return progress >= 0.40 ? .white : .black
+        return progress >= 0.40 ? .white : .mgPrimary
     }
 }
