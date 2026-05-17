@@ -177,6 +177,12 @@ export const FavoritesManager = {
     }
   },
 
+  // Alias for toggleWatched (for backward compatibility)
+  toggleHeart: movie => FavoritesManager.toggleWatched(movie),
+
+  // Check if a movie is hearted (alias for isMovieWatched)
+  isMovieHearted: movieId => FavoritesManager.isMovieWatched(movieId),
+
   // Add/remove like for a movie
   toggleLiked: movie => {
     try {

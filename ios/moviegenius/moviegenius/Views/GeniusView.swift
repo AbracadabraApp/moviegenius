@@ -73,45 +73,35 @@ struct GeniusView: View {
     }
 
     var body: some View {
-        ScrollView {
-            VStack(spacing: 0) {
-                // Page title
-                HStack {
-                    Text("Genius")
-                        .font(.mgSubheadline)
-                        .foregroundStyle(Color.mgPrimary)
-                    Spacer()
-                }
-                .padding(.horizontal, .mgSpacing20)
-                .padding(.top, .mgSpacing12)
-                .padding(.bottom, .mgSpacing8)
+        ZStack(alignment: .top) {
+            ScrollView {
+                VStack(spacing: 0) {
+                    // Top spacer for overlaid header
+                    Color.clear.frame(height: 60)
 
-                JourneyTabContent(
-                        stage: journeyStage,
-                        lovedCount: favorites.lovedMovies.count,
-                        queueCount: favorites.queueMovies.count,
-                        genres: viewModel.genres,
-                        isLoadingGenres: viewModel.isLoading
-                    )
+                    // Heat map chips content
+                    HeatMapChipsContent()
                 }
-        }
-        .scrollIndicators(.hidden)
-        .background(Color.mgGroupedBackground)
-        .accessibilityIdentifier("GeniusView")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .principal) {
-                SearchBarCompactSmaller()
+            }
+            .scrollIndicators(.hidden)
+            .refreshable {
+                favorites.loadFavorites()
+                await viewModel.loadGenreExpertise()
+            }
+            .task {
+                favorites.loadFavorites()
+                await viewModel.loadGenreExpertise()
+            }
+
+            // Overlaid AppHeader
+            VStack {
+                AppHeader(showBackButton: false)
+                Spacer()
             }
         }
-        .refreshable {
-            favorites.loadFavorites()
-            await viewModel.loadGenreExpertise()
-        }
-        .task {
-            favorites.loadFavorites()
-            await viewModel.loadGenreExpertise()
-        }
+        .background(Color.mgGroupedBackground)
+        .navigationBarHidden(true)
+        .enableSwipeBack()
     }
 
 }
@@ -3859,6 +3849,198 @@ struct SaveProgressPrompt: View {
                         }
                     }
             }
+        }
+    }
+}
+
+// MARK: - Heat Map Components
+
+/// Calculates heat level (0-5) for a category based on films watched
+func categoryHeatLevel(category: String, lovedMovies: [SavedMovie]) -> Int {
+    let totalFilms = GeniusDataStore.shared.totalFilmCount(category: category)
+    guard totalFilms > 0 else { return 0 }
+
+    let categoryIds = GeniusDataStore.shared.allFilmIds(category: category)
+    let lovedIds = Set(lovedMovies.map { $0.id })
+    let lovedCount = categoryIds.intersection(lovedIds).count
+
+    let percentage = Double(lovedCount) / Double(totalFilms)
+    return min(5, Int((percentage * 5).rounded(.down)))
+}
+
+struct CategoryChip: View {
+    let category: String
+    let heatLevel: Int
+
+    private var backgroundColor: Color {
+        switch heatLevel {
+        case 0: return Color("HeatLevel0")
+        case 1: return Color("HeatLevel1")
+        case 2: return Color("HeatLevel2")
+        case 3: return Color("HeatLevel3")
+        case 4: return Color("HeatLevel4")
+        case 5: return Color("HeatLevel5")
+        default: return Color("HeatLevel0")
+        }
+    }
+
+    private var textColor: Color {
+        heatLevel >= 4 ? Color("HeatTextDark") : Color("HeatTextLight")
+    }
+
+    private var borderColor: Color {
+        switch heatLevel {
+        case 0: return Color.mgTertiary.opacity(0.2)
+        case 1...3: return backgroundColor.opacity(0.3)
+        case 4...5: return backgroundColor.opacity(0.25)
+        default: return Color.clear
+        }
+    }
+
+    var body: some View {
+        Text(category)
+            .font(.system(size: 20, weight: .semibold))
+            .foregroundColor(textColor)
+            .padding(.horizontal, 21)
+            .padding(.vertical, 13)
+            .background(backgroundColor)
+            .cornerRadius(99)
+            .overlay(
+                RoundedRectangle(cornerRadius: 99)
+                    .stroke(borderColor, lineWidth: 1)
+            )
+    }
+}
+
+struct HeatLegend: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 11) {
+            Text("HOW LIT IS EACH CHIP")
+                .font(.system(size: 11, weight: .bold))
+                .tracking(0.7)
+                .foregroundColor(Color.mgTertiary)
+
+            // Gradient bar
+            HStack(spacing: 0) {
+                Rectangle().fill(Color("HeatLevel1"))
+                Rectangle().fill(Color("HeatLevel2"))
+                Rectangle().fill(Color("HeatLevel3"))
+                Rectangle().fill(Color("HeatLevel4"))
+                Rectangle().fill(Color("HeatLevel5"))
+            }
+            .frame(height: 16)
+            .cornerRadius(6)
+
+            // Labels
+            HStack {
+                Text("Essential")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                Text("Foundational")
+                    .frame(maxWidth: .infinity, alignment: .center)
+                Text("Deep Cut")
+                    .frame(maxWidth: .infinity, alignment: .center)
+                Text("Connoisseur")
+                    .frame(maxWidth: .infinity, alignment: .center)
+                Text("Master")
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+            }
+            .font(.system(size: 9.5, weight: .semibold))
+            .tracking(-0.1)
+            .foregroundColor(Color.mgTertiary)
+        }
+        .padding(.top, 14)
+        .overlay(
+            Rectangle()
+                .fill(Color.mgTertiary.opacity(0.2))
+                .frame(height: 1),
+            alignment: .top
+        )
+    }
+}
+
+struct HeatMapChipsContent: View {
+    @ObservedObject private var favorites = FavoritesManager.shared
+
+    let genreCategories = [
+        "Crime", "Noir", "Western", "Thriller", "Drama",
+        "Comedy", "Sci-fi", "Horror", "Fantasy", "Adventure",
+        "Action", "Mystery", "Espionage", "Romance", "War",
+        "History", "Documentary"
+    ]
+
+    let peopleCategories = ["Directors", "Actors", "Actresses", "Awards"]
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            // Title section
+            VStack(alignment: .leading, spacing: 5) {
+                Text("GENIUS")
+                    .font(.system(size: 12, weight: .bold))
+                    .tracking(0.8)
+                    .foregroundColor(Color.mgTertiary)
+
+                Text("Start your cinematic journey")
+                    .font(.system(size: 25, weight: .heavy))
+                    .tracking(-0.5)
+                    .foregroundColor(Color.mgPrimary)
+
+                Text("Each chip warms as you watch more of its films — from cool to gold.")
+                    .font(.system(size: 15))
+                    .foregroundColor(Color.mgSecondary)
+            }
+            .padding(.horizontal, 20)
+            .padding(.top, 0)
+            .padding(.bottom, 16)
+
+            // Genre chips
+            VStack(alignment: .leading, spacing: 10) {
+                Text("BROWSE BY GENRE")
+                    .font(.system(size: 11, weight: .bold))
+                    .tracking(0.7)
+                    .foregroundColor(Color.mgTertiary)
+
+                FlowLayout(spacing: 8) {
+                    ForEach(genreCategories, id: \.self) { category in
+                        NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: "Essential")) {
+                            CategoryChip(
+                                category: category,
+                                heatLevel: categoryHeatLevel(category: category, lovedMovies: favorites.lovedMovies)
+                            )
+                        }
+                    }
+                }
+            }
+            .padding(.horizontal, 20)
+            .padding(.bottom, 24)
+
+            // People & Awards chips
+            VStack(alignment: .leading, spacing: 10) {
+                Text("BROWSE BY PEOPLE & AWARDS")
+                    .font(.system(size: 11, weight: .bold))
+                    .tracking(0.7)
+                    .foregroundColor(Color.mgTertiary)
+
+                FlowLayout(spacing: 8) {
+                    ForEach(peopleCategories, id: \.self) { category in
+                        NavigationLink(destination: CategoryEssentialsView(
+                            category: category,
+                            subcategory: category == "Awards" ? "Best Picture" : "Essential"
+                        )) {
+                            CategoryChip(
+                                category: category,
+                                heatLevel: categoryHeatLevel(category: category, lovedMovies: favorites.lovedMovies)
+                            )
+                        }
+                    }
+                }
+            }
+            .padding(.horizontal, 20)
+            .padding(.bottom, 24)
+
+            // Heat legend
+            HeatLegend()
+                .padding(.horizontal, 20)
+                .padding(.bottom, 20)
         }
     }
 }

@@ -19,6 +19,7 @@ struct FeaturedCollectionsResponse: Codable {
 struct SearchResponse: Codable {
     let query: String
     let movies: [SearchMovie]
+    let collections: [SearchCollection]?  // COLLECTION_SEARCH: Optional for easy rollback
     let people: [SearchPerson]?
     let hasResults: Bool
     let fallback: SearchFallback?
@@ -67,6 +68,27 @@ struct SearchPerson: Codable, Identifiable {
 struct SearchFallback: Codable {
     let message: String
     let askUrl: String
+}
+
+// MARK: - COLLECTION_SEARCH: Search Collections (Easy Rollback)
+// To remove this feature: Delete this struct and remove collections array from SearchResponse
+
+struct SearchCollection: Codable, Identifiable {
+    let id: String
+    let title: String
+    let subtitle: String?
+    let category: String
+    let movieCount: Int
+    let topPosterUrls: [String]
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case title
+        case subtitle
+        case category
+        case movieCount = "movie_count"
+        case topPosterUrls = "top_poster_urls"
+    }
 }
 
 // MARK: - Genius Feed

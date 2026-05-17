@@ -41,7 +41,7 @@ struct HomeView: View {
                             Text("Try Again")
                                 .font(.mgBody)
                                 .fontWeight(.semibold)
-                                .foregroundStyle(Color.white)
+                                .foregroundStyle(Color.mgButtonTextOnGold)
                                 .padding(.horizontal, .mgSpacing24)
                                 .padding(.vertical, .mgSpacing12)
                                 .background(Color.mgGold)

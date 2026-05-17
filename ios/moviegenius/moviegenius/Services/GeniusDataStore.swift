@@ -95,6 +95,22 @@ final class GeniusDataStore {
         data?.categories.map(\.category) ?? []
     }
 
+    /// Total number of films across all tiers for a given category.
+    func totalFilmCount(category: String) -> Int {
+        guard let categoryData = data?.categories.first(where: { $0.category == category }) else {
+            return 0
+        }
+        return categoryData.tiers.reduce(0) { $0 + $1.films.count }
+    }
+
+    /// All film IDs for a category (across all tiers).
+    func allFilmIds(category: String) -> Set<Int> {
+        guard let categoryData = data?.categories.first(where: { $0.category == category }) else {
+            return []
+        }
+        return Set(categoryData.tiers.flatMap { $0.films.map(\.tmdbId) })
+    }
+
     // MARK: Key helpers
 
     private func key(_ category: String, _ tier: String) -> String {

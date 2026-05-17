@@ -43,7 +43,6 @@ struct MovieDetailView: View {
                             year: movieResponse.movie.year,
                             posterUrl: movieResponse.movie.posterUrl,
                             slug: movieResponse.movie.slug,
-                            compact: false,
                             onDarkBackground: false
                         )
                     }

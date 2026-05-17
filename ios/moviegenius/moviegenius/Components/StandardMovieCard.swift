@@ -92,7 +92,6 @@ struct StandardMovieCard: View {
                     year: year,
                     posterUrl: posterUrl,
                     slug: slug,
-                    compact: true,
                     onDarkBackground: onDarkBackground
                 )
 

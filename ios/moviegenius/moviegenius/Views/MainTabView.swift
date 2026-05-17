@@ -82,12 +82,6 @@ struct MainTabView: View {
             .tag(2)
         }
         .tint(Color.mgGold)
-        .onAppear {
-            // Increase tab bar item spacing by 20%
-            if let tabBar = UIApplication.shared.windows.first?.rootViewController?.view.subviews.first(where: { $0 is UITabBar }) as? UITabBar {
-                tabBar.itemSpacing = tabBar.itemSpacing * 1.2
-            }
-        }
     }
 
     // MARK: - Helper Methods

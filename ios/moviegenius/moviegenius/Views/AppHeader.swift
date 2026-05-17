@@ -82,9 +82,23 @@
 //  ❌ DO NOT use custom headers - always use AppHeader for consistency
 //  ❌ DO NOT forget the 60pt spacer - content will appear under the header
 //  ❌ DO NOT use NavigationBar alongside AppHeader - they conflict
+//  ❌ DO NOT replace SearchBarCompactSmaller with a real TextField - it must be decorative!
+//
+//  ## CRITICAL: Search Implementation
+//
+//  ⚠️ REGRESSION PREVENTION:
+//  - SearchBarCompactSmaller is a DECORATIVE BUTTON, not a real TextField
+//  - It opens a fullScreenCover modal with SearchView (Apple native chrome)
+//  - DO NOT replace with inline search, TextField with overlays, or custom UI
+//  - This ensures: swipe-back gestures work, keyboard auto-focus, Apple chrome
+//
+//  If search is broken (custom UI, no swipe-back), check git history:
+//  - Commit before 8990dabbe has the CORRECT implementation
+//  - Revert any changes that added TextField or inline search results
 //
 
 import SwiftUI
+import Combine
 
 struct AppHeader: View {
     @Environment(\.dismiss) private var dismiss
@@ -114,7 +128,7 @@ struct AppHeader: View {
                     .frame(width: 44, height: 44)
             }
 
-            // Search bar (centered)
+            // Search bar (centered) - opens modal SearchView
             Spacer()
             SearchBarCompactSmaller()
             Spacer()
@@ -153,7 +167,7 @@ struct AppHeader: View {
     }
 }
 
-// MARK: - Smaller Search Bar for Header
+// MARK: - Smaller Search Bar for Header (opens modal)
 
 struct SearchBarCompactSmaller: View {
     @State private var showingSearch = false
@@ -170,7 +184,7 @@ struct SearchBarCompactSmaller: View {
 
             Spacer(minLength: 0)
         }
-        .frame(width: 240) // Apply width constraint BEFORE padding to ensure it takes effect
+        .frame(width: 240)
         .padding(.horizontal, .mgSpacing12)
         .padding(.vertical, .mgSpacing8)
         .background(.ultraThinMaterial)
@@ -183,19 +197,12 @@ struct SearchBarCompactSmaller: View {
             showingSearch = true
         }
         .fullScreenCover(isPresented: $showingSearch) {
-            NavigationStack {
-                SearchView()
-                    .toolbar {
-                        ToolbarItem(placement: .topBarTrailing) {
-                            Button("Done") {
-                                showingSearch = false
-                            }
-                        }
-                    }
-            }
+            SearchView()
         }
     }
 }
+
+
 
 #Preview("App Header") {
     AppHeader()

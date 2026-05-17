@@ -2,7 +2,7 @@
 //  SearchView.swift
 //  moviegenius
 //
-//  Search movies with big centered search box
+//  Full-screen search with standard movie cards
 //
 
 import SwiftUI
@@ -10,107 +10,118 @@ import Combine
 
 struct SearchView: View {
     @StateObject private var viewModel = SearchViewModel()
+    @Environment(\.dismiss) private var dismiss
+    @FocusState private var isSearchFocused: Bool
 
     var body: some View {
-        ZStack {
-            // Gold background
-            Color.mgGold.ignoresSafeArea()
+        NavigationStack {
+            VStack(spacing: 0) {
+                // Search bar
+                HStack(spacing: .mgSpacing12) {
+                    Image(systemName: "magnifyingglass")
+                        .foregroundStyle(Color.mgSecondary)
+                        .font(.system(size: 20))
 
-            if viewModel.searchText.isEmpty || viewModel.searchText.count < 3 {
-                // Empty state: big search box in center
-                VStack {
-                    Spacer()
+                    TextField("Search movies...", text: $viewModel.searchText)
+                        .font(.mgBody)
+                        .foregroundStyle(Color.mgPrimary)
+                        .autocorrectionDisabled()
+                        .textInputAutocapitalization(.never)
+                        .submitLabel(.search)
+                        .focused($isSearchFocused)
 
-                    VStack(spacing: .mgSpacing24) {
-                        // Big search box
-                        HStack(spacing: .mgSpacing12) {
-                            Image(systemName: "magnifyingglass")
+                    if !viewModel.searchText.isEmpty {
+                        Button(action: {
+                            viewModel.searchText = ""
+                        }) {
+                            Image(systemName: "xmark.circle.fill")
                                 .foregroundStyle(Color.mgSecondary)
-                                .font(.system(size: 24))
-
-                            TextField("Search movies...", text: $viewModel.searchText)
                                 .font(.system(size: 20))
-                                .foregroundStyle(Color.mgPrimary)
-                                .autocorrectionDisabled()
-                                .textInputAutocapitalization(.never)
-                                .submitLabel(.search)
-
-                            if !viewModel.searchText.isEmpty {
-                                Button(action: {
-                                    viewModel.searchText = ""
-                                }) {
-                                    Image(systemName: "xmark.circle.fill")
-                                        .foregroundStyle(Color.mgTertiary)
-                                        .font(.system(size: 20))
-                                }
-                                .buttonStyle(.plain)
-                            }
                         }
-                        .padding(.horizontal, .mgSpacing20)
-                        .padding(.vertical, .mgSpacing16)
-                        .background(.regularMaterial)
-                        .clipShape(RoundedRectangle(cornerRadius: .mgCornerMedium, style: .continuous))
-                        .mgShadowMedium()
+                        .buttonStyle(.plain)
+                    }
+                }
+                .padding(.horizontal, .mgSpacing16)
+                .padding(.vertical, .mgSpacing12)
+                .background(Color.mgGroupedBackground)
+                .overlay(
+                    Rectangle()
+                        .fill(Color.mgSecondary.opacity(0.2))
+                        .frame(height: 1),
+                    alignment: .bottom
+                )
 
-                        // Always show hint when not searching (empty or <3 chars)
-                        Text(viewModel.searchText.isEmpty ? "Type 3+ characters to search" : "Type \(3 - viewModel.searchText.count) more character\(3 - viewModel.searchText.count == 1 ? "" : "s")")
+                // Content
+                if viewModel.searchText.isEmpty || viewModel.searchText.count < 2 {
+                    // Empty state
+                    VStack(spacing: .mgSpacing16) {
+                        Image(systemName: "magnifyingglass")
+                            .font(.system(size: 64))
+                            .foregroundStyle(Color.mgSecondary.opacity(0.3))
+                            .padding(.top, 100)
+
+                        Text("Search for movies")
+                            .font(.mgTitle2)
+                            .foregroundStyle(Color.mgPrimary)
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                } else if viewModel.isLoading {
+                    VStack(spacing: .mgSpacing16) {
+                        ProgressView()
+                            .tint(Color.mgGold)
+                            .scaleEffect(1.2)
+                        Text("Searching...")
+                            .font(.mgCallout)
+                            .foregroundStyle(Color.mgSecondary)
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .padding(.top, 100)
+                } else if let error = viewModel.error {
+                    VStack(spacing: .mgSpacing16) {
+                        Image(systemName: "exclamationmark.triangle")
+                            .font(.system(size: 48))
+                            .foregroundStyle(.red)
+                        Text("Search Error")
+                            .font(.mgHeadline)
+                        Text(error)
+                            .font(.mgSubheadline)
+                            .foregroundStyle(Color.mgSecondary)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, .mgSpacing32)
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .padding(.top, 100)
+                } else if viewModel.results.isEmpty {
+                    VStack(spacing: .mgSpacing16) {
+                        Image(systemName: "film")
+                            .font(.system(size: 48))
+                            .foregroundStyle(Color.mgSecondary.opacity(0.5))
+                        Text("No movies found")
+                            .font(.mgHeadline)
+                        Text("Try a different search term")
                             .font(.mgSubheadline)
                             .foregroundStyle(Color.mgSecondary)
                     }
-                    .padding(.horizontal, .mgSpacing32)
-
-                    Spacer()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .padding(.top, 100)
+                } else {
+                    // Results list with standard cards
+                    SearchResultsList(results: viewModel.results)
                 }
-            } else {
-                // Search results
-                VStack(spacing: 0) {
-                    // Small search bar at top
-                    HStack(spacing: .mgSpacing8) {
-                        Image(systemName: "magnifyingglass")
-                            .foregroundStyle(Color.mgSecondary)
-                            .font(.system(size: 16))
-
-                        TextField("Search movies...", text: $viewModel.searchText)
-                            .font(.mgBody)
-                            .foregroundStyle(Color.mgPrimary)
-                            .autocorrectionDisabled()
-                            .textInputAutocapitalization(.never)
-                            .submitLabel(.search)
-
-                        if !viewModel.searchText.isEmpty {
-                            Button(action: {
-                                viewModel.searchText = ""
-                            }) {
-                                Image(systemName: "xmark.circle.fill")
-                                    .foregroundStyle(Color.mgTertiary)
-                                    .font(.system(size: 16))
-                            }
-                            .buttonStyle(.plain)
-                        }
+            }
+            .background(Color.mgBackground)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Done") {
+                        dismiss()
                     }
-                    .padding(.horizontal, .mgSpacing12)
-                    .padding(.vertical, .mgSpacing8)
-                    .background(.regularMaterial)
-                    .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
-                    .padding(.horizontal, .mgSpacing16)
-                    .padding(.top, .mgSpacing8)
-                    .padding(.bottom, .mgSpacing8)
-
-                    // Results
-                    if viewModel.isLoading {
-                        LoadingState()
-                    } else if let error = viewModel.error {
-                        ErrorState(message: error)
-                    } else if viewModel.results.isEmpty {
-                        NoResultsState(query: viewModel.searchText)
-                    } else {
-                        SearchResultsList(
-                            query: viewModel.searchText,
-                            results: viewModel.results
-                        )
-                    }
+                    .font(.mgBody)
+                    .foregroundStyle(Color.mgGold)
                 }
-                .background(Color.mgGroupedBackground)
+            }
+            .onAppear {
+                isSearchFocused = true
             }
         }
     }
@@ -133,7 +144,7 @@ class SearchViewModel: ObservableObject {
             for await text in $searchText.values {
                 searchTask?.cancel()
 
-                guard text.count >= 3 else {
+                guard text.count >= 2 else {
                     results = []
                     error = nil
                     continue
@@ -171,171 +182,121 @@ class SearchViewModel: ObservableObject {
     }
 }
 
-// MARK: - State Views
-
-struct LoadingState: View {
-    var body: some View {
-        VStack(spacing: .mgSpacing16) {
-            ProgressView()
-                .tint(Color.mgGold)
-                .scaleEffect(1.5)
-
-            Text("Searching...")
-                .font(.mgCallout)
-                .foregroundStyle(Color.mgSecondary)
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .padding(.top, 100)
-    }
-}
-
-struct ErrorState: View {
-    let message: String
-
-    var body: some View {
-        VStack(spacing: .mgSpacing16) {
-            Image(systemName: "exclamationmark.triangle")
-                .font(.system(size: 48))
-                .foregroundStyle(.red)
-
-            Text("Search Error")
-                .font(.mgHeadline)
-                .foregroundStyle(Color.mgPrimary)
-
-            Text(message)
-                .font(.mgSubheadline)
-                .foregroundStyle(Color.mgSecondary)
-                .multilineTextAlignment(.center)
-                .padding(.horizontal, .mgSpacing32)
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .padding(.top, 100)
-    }
-}
-
-struct NoResultsState: View {
-    let query: String
-
-    var body: some View {
-        VStack(spacing: .mgSpacing16) {
-            Image(systemName: "film")
-                .font(.system(size: 48))
-                .foregroundStyle(Color.mgSecondary.opacity(0.5))
-
-            Text("No movies found")
-                .font(.mgHeadline)
-                .foregroundStyle(Color.mgPrimary)
-
-            Text("Try a different search term")
-                .font(.mgSubheadline)
-                .foregroundStyle(Color.mgSecondary)
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .padding(.top, 100)
-    }
-}
-
-// MARK: - Results List
+// MARK: - Results List (Netflix-style carousel)
 
 struct SearchResultsList: View {
-    let query: String
     let results: [SearchMovie]
 
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 0) {
-                // Results count header
+        VStack(alignment: .leading, spacing: 0) {
+            // Results count header
+            HStack {
                 Text("\(results.count) \(results.count == 1 ? "result" : "results")")
                     .font(.mgCaption)
                     .fontWeight(.semibold)
                     .foregroundStyle(Color.mgSecondary)
                     .textCase(.uppercase)
                     .tracking(0.5)
-                    .padding(.horizontal, .mgSpacing16)
-                    .padding(.top, .mgSpacing16)
-                    .padding(.bottom, .mgSpacing12)
+                Spacer()
+            }
+            .padding(.horizontal, .mgSpacing16)
+            .padding(.top, .mgSpacing16)
+            .padding(.bottom, .mgSpacing12)
 
-                // Movie items
-                LazyVStack(spacing: 0) {
-                    ForEach(results) { movie in
+            // Horizontal carousel
+            ScrollView(.horizontal, showsIndicators: false) {
+                LazyHStack(alignment: .top, spacing: .mgSpacing16) {
+                    ForEach(results.indices, id: \.self) { index in
+                        let movie = results[index]
                         NavigationLink(destination: MovieDetailView(tmdbId: movie.tmdbId)) {
-                            SearchResultRow(movie: movie)
+                            SearchPosterCard(movie: movie)
                         }
-                        .buttonStyle(.plain)
+                        .buttonStyle(MGCardButtonStyle())
+                        .padding(.leading, index == 0 ? .mgSpacing16 : 0)
+                        .padding(.trailing, index == results.count - 1 ? .mgSpacing16 : 0)
                     }
                 }
-                .background(.regularMaterial)
             }
+            .scrollClipDisabled()
         }
     }
 }
 
-struct SearchResultRow: View {
+// MARK: - Netflix-style Poster Card (80% cover)
+
+struct SearchPosterCard: View {
     let movie: SearchMovie
+    @State private var imageLoaded = false
+
+    private let posterWidth: CGFloat = 136 // 80% of carousel poster size (170 * 0.8)
 
     var body: some View {
-        HStack(alignment: .center, spacing: .mgSpacing12) {
-            // Poster thumbnail
+        VStack(alignment: .leading, spacing: .mgSpacing8) {
+            // Large poster
             AsyncImage(url: posterURL) { phase in
                 switch phase {
+                case .empty:
+                    posterPlaceholder
+                        .overlay {
+                            ProgressView()
+                                .tint(Color.mgGold)
+                        }
                 case .success(let image):
                     image
                         .resizable()
-                        .aspectRatio(contentMode: .fill)
-                case .empty, .failure, _:
-                    RoundedRectangle(cornerRadius: .mgCornerTiny)
-                        .fill(Color.mgSecondary.opacity(0.15))
-                        .overlay(
-                            Image(systemName: "film")
-                                .foregroundStyle(Color.mgSecondary)
-                                .font(.system(size: 16))
-                        )
+                        .aspectRatio(2/3, contentMode: .fit)
+                        .opacity(imageLoaded ? 1 : 0)
+                        .onAppear {
+                            withAnimation(.easeIn(duration: 0.3)) {
+                                imageLoaded = true
+                            }
+                        }
+                case .failure:
+                    posterPlaceholder
+                @unknown default:
+                    posterPlaceholder
                 }
             }
-            .frame(width: 40, height: 60)
-            .clipShape(RoundedRectangle(cornerRadius: .mgCornerTiny))
+            .aspectRatio(2/3, contentMode: .fit)
+            .frame(width: posterWidth)
+            .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
+            .mgCinematicGlow()
+            .mgElevationMedium()
 
-            // Movie info
-            VStack(alignment: .leading, spacing: 2) {
+            // Title and year below poster
+            VStack(alignment: .leading, spacing: .mgSpacing4) {
                 Text(movie.title)
-                    .font(.mgCallout)
-                    .fontWeight(.medium)
+                    .font(.mgBody)
                     .foregroundStyle(Color.mgPrimary)
-                    .fixedSize(horizontal: false, vertical: true)
+                    .lineLimit(2)
+                    .multilineTextAlignment(.leading)
 
-                if let year = movie.year {
-                    Text(String(year))
-                        .font(.mgCaption)
-                        .foregroundStyle(Color.mgSecondary)
-                }
+                Text(movie.year.map(String.init) ?? " ")
+                    .font(.mgSubheadline)
+                    .foregroundStyle(Color.mgSecondary)
             }
-
-            Spacer()
-
-            // Chevron
-            Image(systemName: "chevron.right")
-                .font(.system(size: 12, weight: .semibold))
-                .foregroundStyle(Color.mgSecondary)
+            .frame(width: posterWidth, height: 52, alignment: .topLeading)
         }
-        .padding(.horizontal, .mgSpacing16)
-        .padding(.vertical, .mgSpacing12)
-        .background(.regularMaterial)
-        .overlay(
-            Rectangle()
-                .fill(Color.mgSecondary.opacity(0.1))
-                .frame(height: 1),
-            alignment: .bottom
-        )
     }
 
     private var posterURL: URL? {
         guard let posterUrl = movie.posterUrl else { return nil }
         return URL(string: posterUrl)
     }
+
+    private var posterPlaceholder: some View {
+        RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous)
+            .fill(Color.mgSecondary.opacity(0.15))
+            .aspectRatio(2/3, contentMode: .fit)
+            .overlay(
+                Image(systemName: "film")
+                    .font(.system(size: 32))
+                    .foregroundStyle(Color.mgTertiary)
+            )
+            .contentShape(Rectangle())
+    }
 }
 
 #Preview {
-    NavigationStack {
-        SearchView()
-    }
+    SearchView()
 }

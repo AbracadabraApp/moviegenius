@@ -9,8 +9,12 @@ import SwiftUI
 
 // MARK: - Colors
 extension Color {
-    // Brand
-    static let mgGold = Color(red: 212/255, green: 175/255, blue: 55/255)
+    // Brand (adaptive to light/dark mode for better contrast)
+    static let mgGold = Color(uiColor: UIColor { traitCollection in
+        traitCollection.userInterfaceStyle == .dark
+            ? UIColor(red: 1.0, green: 0.84, blue: 0.0, alpha: 1.0)  // Brighter gold for dark mode (better contrast)
+            : UIColor(red: 212/255, green: 175/255, blue: 55/255, alpha: 1.0)  // Original gold for light mode
+    })
 
     // Progress badge gradients (adaptive to light/dark mode)
     static let mgProgressStart = Color(uiColor: UIColor { traitCollection in
@@ -111,7 +115,7 @@ struct MGPrimaryButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(.mgHeadline)
-            .foregroundStyle(.white)
+            .foregroundStyle(Color.mgButtonTextOnGold)
             .padding(.horizontal, .mgSpacing32)
             .padding(.vertical, .mgSpacing12)
             .background(isEnabled ? Color.mgGold : Color.mgSecondary)
