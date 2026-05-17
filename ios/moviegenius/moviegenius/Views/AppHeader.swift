@@ -196,8 +196,10 @@ struct SearchBarCompactSmaller: View {
         .onTapGesture {
             showingSearch = true
         }
-        .fullScreenCover(isPresented: $showingSearch) {
+        .sheet(isPresented: $showingSearch) {
             SearchView()
+                .presentationDragIndicator(.visible)
+                .presentationDetents([.large])
         }
     }
 }
