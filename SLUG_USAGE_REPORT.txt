@@ -1,0 +1,113 @@
+Phase 1 Pre-Flight Validation Report
+Generated: 2025-05-16
+
+================================================================================
+TASK 1.1: SLUG FIELD USAGE CHECK
+================================================================================
+
+FINDING: Slug field is extensively used but NOT part of static genius data
+
+Data Flow Architecture:
+-----------------------
+
+1. STATIC DATA (Hardcoded → JSON):
+   - Function signature: `static func films(for:subcategory:) -> [(title: String, year: Int)]`
+   - Returns bare tuples: ("The Godfather", 1972)
+   - NO slug, NO posterUrl, NO tmdbId in tuples
+   - TMDB IDs stored separately in TierTmdbLookup.swift
+
+2. VIEW MODEL (EssentialMovie):
+   struct EssentialMovie: Identifiable {
+       let id = UUID()
+       let tmdbId: Int         ← From TierTmdbLookup OR API
+       let title: String       ← From static tuples
+       let year: Int?          ← From static tuples
+       let slug: String        ← From API (movieResponse.movie.slug)
+       let posterUrl: String?  ← From API (movieResponse.movie.posterUrl)
+   }
+
+3. RUNTIME FLOW:
+   - Load static tuple: ("Network", 1976)
+   - Look up TMDB ID: tierTmdbLookup["Drama|Essential|Network|1976"] → 8392
+   - Fetch from API: /api/v1/movie/8392
+   - Build EssentialMovie with API response (including slug)
+
+Slug Usage Locations:
+---------------------
+✓ StandardMovieCard.swift:        slug parameter
+✓ MovieDetailView.swift (2x):     movieResponse.movie.slug
+✓ GeniusView.swift (3x):          movie.slug, movieResponse.movie.slug
+✓ WatchQueueView.swift:           movie.slug
+✓ ContentView.swift:              movieResponse.movie.slug
+✓ CategoryEssentialsTests.swift:  Test assertions for slug
+
+CONCLUSION: ✅ SAFE TO PROCEED
+----------------------------
+- GeniusFilm JSON schema should NOT include slug
+- EssentialMovie struct stays as-is (view model)
+- Slug continues to be populated from API at runtime
+- No migration impact
+
+================================================================================
+TASK 1.2: TIER NAME VERIFICATION
+================================================================================
+
+FINDING: All categories use identical 10-tier structure
+
+Tier Names (Verified consistent across all categories):
+--------------------------------------------------------
+1. Essential
+2. Foundational
+3. Classics
+4. Well-Versed
+5. Devotee
+6. Connoisseur
+7. Deep Cuts
+8. Specialist
+9. Archivist
+10. Master
+
+Categories Verified:
+-------------------
+✓ Action, Adventure, Animation, Biography, Comedy, Crime, Documentary
+✓ Drama, Espionage, Fantasy, Horror, Musical, Mystery, Romance
+✓ Science Fiction, Thriller, War, Western
+
+Special Categories (NOT tiers, but people):
+-------------------------------------------
+✓ Actors, Actresses, Directors
+  (These use person names instead of tier names in the second slot)
+
+Sample Case Statements:
+-----------------------
+case ("Action", "Essential"):
+case ("Documentary", "Essential"):
+case ("Drama", "Essential"):
+case ("Espionage", "Essential"):
+case ("Fantasy", "Essential"):
+
+CONCLUSION: ✅ TIER STRUCTURE CONSISTENT
+----------------------------------------
+- All genre categories use same 10 tiers
+- Tier names are identical across categories
+- Order is consistent (Essential → Master)
+- Safe to proceed with 10→5 collapse
+
+================================================================================
+PHASE 1 VERDICT: ✅ ALL CHECKS PASSED
+================================================================================
+
+Proceed to Phase 2: Create migration scripts
+
+Key Architecture Decisions Confirmed:
+--------------------------------------
+1. GeniusFilm schema: { title, year, tmdbId } (NO slug)
+2. EssentialMovie remains as view model (includes slug from API)
+3. 10→5 tier collapse safe (all categories consistent)
+4. Simple 2-tier merge pattern confirmed
+
+Next Steps:
+-----------
+1. Write extract_genius_to_json.py
+2. Update validate_genius_json.py
+3. Execute extraction and validation
