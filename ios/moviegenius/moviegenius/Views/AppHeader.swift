@@ -153,9 +153,11 @@ struct AppHeader: View {
     }
 }
 
-// MARK: - Smaller Search Bar for Header (Decorative Only)
+// MARK: - Smaller Search Bar for Header
 
 struct SearchBarCompactSmaller: View {
+    @State private var showingSearch = false
+
     var body: some View {
         HStack(spacing: .mgSpacing8) {
             Image(systemName: "magnifyingglass")
@@ -177,6 +179,21 @@ struct SearchBarCompactSmaller: View {
             RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous)
                 .strokeBorder(Color.mgSecondary.opacity(0.2), lineWidth: 1)
         )
+        .onTapGesture {
+            showingSearch = true
+        }
+        .fullScreenCover(isPresented: $showingSearch) {
+            NavigationStack {
+                SearchView()
+                    .toolbar {
+                        ToolbarItem(placement: .topBarTrailing) {
+                            Button("Done") {
+                                showingSearch = false
+                            }
+                        }
+                    }
+            }
+        }
     }
 }
 
