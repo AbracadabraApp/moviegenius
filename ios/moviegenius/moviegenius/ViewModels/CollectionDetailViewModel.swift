@@ -24,7 +24,16 @@ class CollectionDetailViewModel: ObservableObject {
     }
 
     func loadCollection() async {
-        guard !isLoading else { return }
+        #if DEBUG
+        print("[CollectionDetailVM] loadCollection called - isLoading: \(isLoading), collection: \(collection?.id ?? "nil")")
+        #endif
+
+        guard !isLoading else {
+            #if DEBUG
+            print("[CollectionDetailVM] Skipped - already loading")
+            #endif
+            return
+        }
 
         // Cancel any in-flight request
         loadTask?.cancel()
@@ -34,17 +43,31 @@ class CollectionDetailViewModel: ObservableObject {
             error = nil
 
             do {
+                #if DEBUG
+                print("[CollectionDetailVM] Starting fetch for collection: \(collectionId)")
+                #endif
+
                 let response = try await apiClient.fetchCollection(id: collectionId)
 
                 collection = response.collection
                 movies = response.movies
                 isLoading = false
+
+                #if DEBUG
+                print("[CollectionDetailVM] Successfully loaded collection: \(response.collection.title) with \(response.movies.count) movies")
+                #endif
             } catch is CancellationError {
                 // User navigated away, this is expected
+                #if DEBUG
+                print("[CollectionDetailVM] Request cancelled - user navigated away")
+                #endif
                 return
             } catch {
                 self.error = error
                 isLoading = false
+                #if DEBUG
+                print("[CollectionDetailVM] Error loading collection: \(error)")
+                #endif
             }
         }
 

@@ -136,6 +136,14 @@ struct CollectionDetailView: View {
         .task {
             await viewModel.loadCollection()
         }
+        .onAppear {
+            // Fallback: if view appears and we haven't started loading, try again
+            if viewModel.collection == nil && !viewModel.isLoading && viewModel.error == nil {
+                Task {
+                    await viewModel.loadCollection()
+                }
+            }
+        }
     }
 }
 
