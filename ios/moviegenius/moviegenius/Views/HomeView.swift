@@ -89,12 +89,8 @@ struct HomeView: View {
         .background {
             MGAtmosphericBackground()
         }
-        .overlay(alignment: .top) {
-            VStack {
-                AppHeader()
-                Spacer()
-            }
-        }
+        .navigationTitle("Movies")
+        .navigationBarTitleDisplayMode(.large)
         .refreshable {
             await viewModel.loadInitialCollections()
         }

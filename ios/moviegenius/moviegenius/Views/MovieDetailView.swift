@@ -18,13 +18,9 @@ struct MovieDetailView: View {
     }
 
     var body: some View {
-        ZStack(alignment: .top) {
-            ScrollView {
-                VStack(spacing: 0) {
-                    // Top spacer for overlaid header
-                    Color.clear.frame(height: 60)
-
-                    if let movieResponse = viewModel.movieResponse {
+        ScrollView {
+            VStack(spacing: 0) {
+                if let movieResponse = viewModel.movieResponse {
                     // Poster with trailer overlay
                     MoviePosterView(
                         posterUrl: movieResponse.movie.posterUrl,
@@ -96,27 +92,21 @@ struct MovieDetailView: View {
                                 await viewModel.loadMovie()
                             }
                         }
-                        .buttonStyle(MGGlassButtonStyle())
+                        .buttonStyle(.borderedProminent)
+                        .tint(Color.mgGold)
                     }
                     .padding()
                     .padding(.top, 100)
-                    }
                 }
             }
-            .scrollIndicators(.hidden)
-            .task {
-                await viewModel.loadMovie()
-            }
-
-            // Overlaid AppHeader
-            VStack {
-                AppHeader(showBackButton: true)
-                Spacer()
-            }
         }
+        .scrollIndicators(.hidden)
         .background(Color.mgBackground)
-        .navigationBarHidden(true)
-        .enableSwipeBack()
+        .navigationTitle(viewModel.movieResponse?.movie.title ?? "Movie")
+        .navigationBarTitleDisplayMode(.inline)
+        .task {
+            await viewModel.loadMovie()
+        }
     }
 }
 

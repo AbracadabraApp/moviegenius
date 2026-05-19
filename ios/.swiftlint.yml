@@ -1,0 +1,59 @@
+# MovieGenius SwiftLint Configuration
+# Prevents navigation regressions from being committed
+
+included:
+  - moviegenius
+
+excluded:
+  - Pods
+  - moviegenius.xcodeproj
+
+# Custom rules to prevent navigation anti-patterns
+custom_rules:
+
+  # Prevent hiding navigation bar on detail views
+  no_navigation_bar_hidden:
+    name: "No .navigationBarHidden(true)"
+    regex: '\.navigationBarHidden\(true\)'
+    match_kinds:
+      - identifier
+    message: "Don't use .navigationBarHidden(true) - breaks swipe-back gesture. Use native .navigationTitle() instead."
+    severity: error
+
+  # Prevent toolbar hiding
+  no_toolbar_hidden:
+    name: "No .toolbar(.hidden)"
+    regex: '\.toolbar\(\.hidden'
+    match_kinds:
+      - identifier
+    message: "Avoid .toolbar(.hidden) - may break navigation. Use .toolbarVisibility() with specific placement if needed."
+    severity: warning
+
+  # Prevent AppHeader usage (should be deleted)
+  no_app_header_usage:
+    name: "No AppHeader"
+    regex: 'AppHeader\('
+    match_kinds:
+      - identifier
+    message: "AppHeader is deprecated - breaks navigation. Use native .navigationTitle() instead."
+    severity: error
+
+  # Warn on enable swipe back hack
+  no_enable_swipe_back:
+    name: "No .enableSwipeBack() hack"
+    regex: '\.enableSwipeBack\('
+    match_kinds:
+      - identifier
+    message: "Don't use .enableSwipeBack() hack. Fix underlying navigation issue instead."
+    severity: error
+
+# Standard rules
+line_length: 150
+function_body_length: 60
+type_body_length: 400
+file_length: 600
+
+# Disable noisy rules
+disabled_rules:
+  - trailing_whitespace
+  - identifier_name

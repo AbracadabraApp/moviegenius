@@ -1,12 +1,10 @@
 {
-  "schemaVersion": 1,
   "categories": [
     {
       "category": "Action",
       "tiers": [
         {
           "name": "Essential",
-          "order": 0,
           "films": [
             {
               "title": "Die Hard",
@@ -57,13 +55,7 @@
               "title": "Mission: Impossible — Fallout",
               "year": 2018,
               "tmdbId": 353081
-            }
-          ]
-        },
-        {
-          "name": "Foundational",
-          "order": 1,
-          "films": [
+            },
             {
               "title": "Predator",
               "year": 1987,
@@ -142,8 +134,7 @@
           ]
         },
         {
-          "name": "Classics",
-          "order": 2,
+          "name": "Foundational",
           "films": [
             {
               "title": "Once Upon a Time in China",
@@ -214,13 +205,7 @@
               "title": "The Wild Bunch",
               "year": 1969,
               "tmdbId": 576
-            }
-          ]
-        },
-        {
-          "name": "Well-Versed",
-          "order": 3,
-          "films": [
+            },
             {
               "title": "Hard Target",
               "year": 1993,
@@ -299,8 +284,7 @@
           ]
         },
         {
-          "name": "Devotee",
-          "order": 4,
+          "name": "Connoisseur",
           "films": [
             {
               "title": "Ong-Bak: Muay Thai Warrior",
@@ -361,13 +345,7 @@
               "title": "A Touch of Zen",
               "year": 1971,
               "tmdbId": 44154
-            }
-          ]
-        },
-        {
-          "name": "Connoisseur",
-          "order": 5,
-          "films": [
+            },
             {
               "title": "Audition",
               "year": 1999,
@@ -431,8 +409,7 @@
           ]
         },
         {
-          "name": "Deep Cuts",
-          "order": 6,
+          "name": "Specialist",
           "films": [
             {
               "title": "City on Fire",
@@ -483,13 +460,7 @@
               "title": "Pedicab Driver",
               "year": 1989,
               "tmdbId": 29014
-            }
-          ]
-        },
-        {
-          "name": "Specialist",
-          "order": 7,
-          "films": [
+            },
             {
               "title": "The Mercenary",
               "year": 1968,
@@ -543,8 +514,7 @@
           ]
         },
         {
-          "name": "Archivist",
-          "order": 8,
+          "name": "Genius",
           "films": [
             {
               "title": "The Street Fighter",
@@ -590,13 +560,7 @@
               "title": "Shogun Assassin",
               "year": 1980,
               "tmdbId": 15119
-            }
-          ]
-        },
-        {
-          "name": "Master",
-          "order": 9,
-          "films": [
+            },
             {
               "title": "Vigilante",
               "year": 1982,
@@ -656,7 +620,6 @@
       "tiers": [
         {
           "name": "Essential",
-          "order": 0,
           "films": [
             {
               "title": "Raiders of the Lost Ark",
@@ -707,13 +670,7 @@
               "title": "King Kong",
               "year": 1933,
               "tmdbId": 244
-            }
-          ]
-        },
-        {
-          "name": "Foundational",
-          "order": 1,
-          "films": [
+            },
             {
               "title": "The Treasure of the Sierra Madre",
               "year": 1948,
@@ -792,8 +749,7 @@
           ]
         },
         {
-          "name": "Classics",
-          "order": 2,
+          "name": "Foundational",
           "films": [
             {
               "title": "Mutiny on the Bounty",
@@ -854,13 +810,7 @@
               "title": "The 7th Voyage of Sinbad",
               "year": 1958,
               "tmdbId": 15515
-            }
-          ]
-        },
-        {
-          "name": "Well-Versed",
-          "order": 3,
-          "films": [
+            },
             {
               "title": "The Black Stallion",
               "year": 1979,
@@ -924,8 +874,7 @@
           ]
         },
         {
-          "name": "Devotee",
-          "order": 4,
+          "name": "Connoisseur",
           "films": [
             {
               "title": "The Last of the Mohicans",
@@ -981,13 +930,7 @@
               "title": "The Way Back",
               "year": 2010,
               "tmdbId": 49009
-            }
-          ]
-        },
-        {
-          "name": "Connoisseur",
-          "order": 5,
-          "films": [
+            },
             {
               "title": "The Wages of Fear",
               "year": 1953,
@@ -1036,8 +979,7 @@
           ]
         },
         {
-          "name": "Deep Cuts",
-          "order": 6,
+          "name": "Specialist",
           "films": [
             {
               "title": "Time Bandits",
@@ -1083,13 +1025,7 @@
               "title": "The Beastmaster",
               "year": 1982,
               "tmdbId": 16441
-            }
-          ]
-        },
-        {
-          "name": "Specialist",
-          "order": 7,
-          "films": [
+            },
             {
               "title": "The Naked Prey",
               "year": 1965,
@@ -1133,8 +1069,7 @@
           ]
         },
         {
-          "name": "Archivist",
-          "order": 8,
+          "name": "Genius",
           "films": [
             {
               "title": "The Vikings",
@@ -1175,13 +1110,7 @@
               "title": "The Crusades",
               "year": 1935,
               "tmdbId": 58905
-            }
-          ]
-        },
-        {
-          "name": "Master",
-          "order": 9,
-          "films": [
+            },
             {
               "title": "She",
               "year": 1935,
@@ -1231,7 +1160,6 @@
       "tiers": [
         {
           "name": "Essential",
-          "order": 0,
           "films": [
             {
               "title": "Some Like It Hot",
@@ -1282,13 +1210,7 @@
               "title": "This Is Spinal Tap",
               "year": 1984,
               "tmdbId": 11031
-            }
-          ]
-        },
-        {
-          "name": "Foundational",
-          "order": 1,
-          "films": [
+            },
             {
               "title": "Bringing Up Baby",
               "year": 1938,
@@ -1367,8 +1289,7 @@
           ]
         },
         {
-          "name": "Classics",
-          "order": 2,
+          "name": "Foundational",
           "films": [
             {
               "title": "Sullivan's Travels",
@@ -1439,13 +1360,7 @@
               "title": "Adam's Rib",
               "year": 1949,
               "tmdbId": 25431
-            }
-          ]
-        },
-        {
-          "name": "Well-Versed",
-          "order": 3,
-          "films": [
+            },
             {
               "title": "Network",
               "year": 1976,
@@ -1524,8 +1439,7 @@
           ]
         },
         {
-          "name": "Devotee",
-          "order": 4,
+          "name": "Connoisseur",
           "films": [
             {
               "title": "Rushmore",
@@ -1586,13 +1500,7 @@
               "title": "A Mighty Wind",
               "year": 2003,
               "tmdbId": 13370
-            }
-          ]
-        },
-        {
-          "name": "Connoisseur",
-          "order": 5,
-          "films": [
+            },
             {
               "title": "Playtime",
               "year": 1967,
@@ -1646,8 +1554,7 @@
           ]
         },
         {
-          "name": "Deep Cuts",
-          "order": 6,
+          "name": "Specialist",
           "films": [
             {
               "title": "Real Life",
@@ -1693,13 +1600,7 @@
               "title": "Mystery Train",
               "year": 1989,
               "tmdbId": 11305
-            }
-          ]
-        },
-        {
-          "name": "Specialist",
-          "order": 7,
-          "films": [
+            },
             {
               "title": "King of Comedy",
               "year": 1982,
@@ -1743,8 +1644,7 @@
           ]
         },
         {
-          "name": "Archivist",
-          "order": 8,
+          "name": "Genius",
           "films": [
             {
               "title": "The Lavender Hill Mob",
@@ -1785,13 +1685,7 @@
               "title": "Whisky Galore!",
               "year": 1949,
               "tmdbId": 16665
-            }
-          ]
-        },
-        {
-          "name": "Master",
-          "order": 9,
-          "films": [
+            },
             {
               "title": "The Awful Truth",
               "year": 1937,
@@ -1841,7 +1735,6 @@
       "tiers": [
         {
           "name": "Essential",
-          "order": 0,
           "films": [
             {
               "title": "The Godfather",
@@ -1892,13 +1785,7 @@
               "title": "Scarface",
               "year": 1983,
               "tmdbId": 111
-            }
-          ]
-        },
-        {
-          "name": "Foundational",
-          "order": 1,
-          "films": [
+            },
             {
               "title": "The Untouchables",
               "year": 1987,
@@ -1977,8 +1864,7 @@
           ]
         },
         {
-          "name": "Classics",
-          "order": 2,
+          "name": "Foundational",
           "films": [
             {
               "title": "The Maltese Falcon",
@@ -2049,13 +1935,7 @@
               "title": "Body Heat",
               "year": 1981,
               "tmdbId": 14412
-            }
-          ]
-        },
-        {
-          "name": "Well-Versed",
-          "order": 3,
-          "films": [
+            },
             {
               "title": "L.A. Confidential",
               "year": 1997,
@@ -2134,8 +2014,7 @@
           ]
         },
         {
-          "name": "Devotee",
-          "order": 4,
+          "name": "Connoisseur",
           "films": [
             {
               "title": "City of God",
@@ -2196,13 +2075,7 @@
               "title": "Wind River",
               "year": 2017,
               "tmdbId": 395834
-            }
-          ]
-        },
-        {
-          "name": "Connoisseur",
-          "order": 5,
-          "films": [
+            },
             {
               "title": "Le Cercle Rouge",
               "year": 1970,
@@ -2256,8 +2129,7 @@
           ]
         },
         {
-          "name": "Deep Cuts",
-          "order": 6,
+          "name": "Specialist",
           "films": [
             {
               "title": "The Friends of Eddie Coyle",
@@ -2303,13 +2175,7 @@
               "title": "Straight Time",
               "year": 1978,
               "tmdbId": 23397
-            }
-          ]
-        },
-        {
-          "name": "Specialist",
-          "order": 7,
-          "films": [
+            },
             {
               "title": "Point Blank",
               "year": 1967,
@@ -2353,8 +2219,7 @@
           ]
         },
         {
-          "name": "Archivist",
-          "order": 8,
+          "name": "Genius",
           "films": [
             {
               "title": "He Walked by Night",
@@ -2395,13 +2260,7 @@
               "title": "Kansas City Confidential",
               "year": 1952,
               "tmdbId": 21296
-            }
-          ]
-        },
-        {
-          "name": "Master",
-          "order": 9,
-          "films": [
+            },
             {
               "title": "City of Fear",
               "year": 1959,
@@ -2451,7 +2310,6 @@
       "tiers": [
         {
           "name": "Essential",
-          "order": 0,
           "films": [
             {
               "title": "Hoop Dreams",
@@ -2502,13 +2360,7 @@
               "title": "Won't You Be My Neighbor?",
               "year": 2018,
               "tmdbId": 490003
-            }
-          ]
-        },
-        {
-          "name": "Foundational",
-          "order": 1,
-          "films": [
+            },
             {
               "title": "Night and Fog",
               "year": 1956,
@@ -2587,8 +2439,7 @@
           ]
         },
         {
-          "name": "Classics",
-          "order": 2,
+          "name": "Foundational",
           "films": [
             {
               "title": "Triumph of the Will",
@@ -2654,13 +2505,7 @@
               "title": "Into the Abyss",
               "year": 2011,
               "tmdbId": 77365
-            }
-          ]
-        },
-        {
-          "name": "Well-Versed",
-          "order": 3,
-          "films": [
+            },
             {
               "title": "March of the Penguins",
               "year": 2005,
@@ -2724,8 +2569,7 @@
           ]
         },
         {
-          "name": "Devotee",
-          "order": 4,
+          "name": "Connoisseur",
           "films": [
             {
               "title": "American Movie",
@@ -2786,13 +2630,7 @@
               "title": "20,000 Days on Earth",
               "year": 2014,
               "tmdbId": 246400
-            }
-          ]
-        },
-        {
-          "name": "Connoisseur",
-          "order": 5,
-          "films": [
+            },
             {
               "title": "Chronicle of a Summer",
               "year": 1961,
@@ -2841,8 +2679,7 @@
           ]
         },
         {
-          "name": "Deep Cuts",
-          "order": 6,
+          "name": "Specialist",
           "films": [
             {
               "title": "F for Fake",
@@ -2883,13 +2720,7 @@
               "title": "Reassemblage",
               "year": 1982,
               "tmdbId": 136055
-            }
-          ]
-        },
-        {
-          "name": "Specialist",
-          "order": 7,
-          "films": [
+            },
             {
               "title": "Night Mail",
               "year": 1936,
@@ -2933,8 +2764,7 @@
           ]
         },
         {
-          "name": "Archivist",
-          "order": 8,
+          "name": "Genius",
           "films": [
             {
               "title": "Hôtel Terminus: The Life and Times of Klaus Barbie",
@@ -2975,13 +2805,7 @@
               "title": "Le Joli Mai",
               "year": 1963,
               "tmdbId": 128779
-            }
-          ]
-        },
-        {
-          "name": "Master",
-          "order": 9,
-          "films": [
+            },
             {
               "title": "Berlin: Symphony of a Great City",
               "year": 1927,
@@ -3031,7 +2855,6 @@
       "tiers": [
         {
           "name": "Essential",
-          "order": 0,
           "films": [
             {
               "title": "Citizen Kane",
@@ -3082,13 +2905,7 @@
               "title": "A Streetcar Named Desire",
               "year": 1951,
               "tmdbId": 702
-            }
-          ]
-        },
-        {
-          "name": "Foundational",
-          "order": 1,
-          "films": [
+            },
             {
               "title": "Casablanca",
               "year": 1942,
@@ -3167,8 +2984,7 @@
           ]
         },
         {
-          "name": "Classics",
-          "order": 2,
+          "name": "Foundational",
           "films": [
             {
               "title": "The Best Years of Our Lives",
@@ -3239,13 +3055,7 @@
               "title": "Atlantic City",
               "year": 1980,
               "tmdbId": 23954
-            }
-          ]
-        },
-        {
-          "name": "Well-Versed",
-          "order": 3,
-          "films": [
+            },
             {
               "title": "Days of Heaven",
               "year": 1978,
@@ -3324,8 +3134,7 @@
           ]
         },
         {
-          "name": "Devotee",
-          "order": 4,
+          "name": "Connoisseur",
           "films": [
             {
               "title": "Ikiru",
@@ -3386,13 +3195,7 @@
               "title": "Stalker",
               "year": 1979,
               "tmdbId": 1398
-            }
-          ]
-        },
-        {
-          "name": "Connoisseur",
-          "order": 5,
-          "films": [
+            },
             {
               "title": "L'Avventura",
               "year": 1960,
@@ -3446,8 +3249,7 @@
           ]
         },
         {
-          "name": "Deep Cuts",
-          "order": 6,
+          "name": "Specialist",
           "films": [
             {
               "title": "A Woman Under the Influence",
@@ -3493,13 +3295,7 @@
               "title": "Daughters of the Dust",
               "year": 1991,
               "tmdbId": 68427
-            }
-          ]
-        },
-        {
-          "name": "Specialist",
-          "order": 7,
-          "films": [
+            },
             {
               "title": "Late Spring",
               "year": 1949,
@@ -3543,8 +3339,7 @@
           ]
         },
         {
-          "name": "Archivist",
-          "order": 8,
+          "name": "Genius",
           "films": [
             {
               "title": "Make Way for Tomorrow",
@@ -3585,13 +3380,7 @@
               "title": "Brief Encounter",
               "year": 1945,
               "tmdbId": 851
-            }
-          ]
-        },
-        {
-          "name": "Master",
-          "order": 9,
-          "films": [
+            },
             {
               "title": "The Crowd",
               "year": 1928,
@@ -3641,7 +3430,6 @@
       "tiers": [
         {
           "name": "Essential",
-          "order": 0,
           "films": [
             {
               "title": "Tinker Tailor Soldier Spy",
@@ -3692,13 +3480,7 @@
               "title": "Casino Royale",
               "year": 2006,
               "tmdbId": 36557
-            }
-          ]
-        },
-        {
-          "name": "Foundational",
-          "order": 1,
-          "films": [
+            },
             {
               "title": "The 39 Steps",
               "year": 1935,
@@ -3777,8 +3559,7 @@
           ]
         },
         {
-          "name": "Classics",
-          "order": 2,
+          "name": "Foundational",
           "films": [
             {
               "title": "Five Fingers",
@@ -3844,13 +3625,7 @@
               "title": "The Courier",
               "year": 2020,
               "tmdbId": 522241
-            }
-          ]
-        },
-        {
-          "name": "Well-Versed",
-          "order": 3,
-          "films": [
+            },
             {
               "title": "Ronin",
               "year": 1998,
@@ -3909,8 +3684,7 @@
           ]
         },
         {
-          "name": "Devotee",
-          "order": 4,
+          "name": "Connoisseur",
           "films": [
             {
               "title": "The Russia House",
@@ -3956,13 +3730,7 @@
               "title": "Persian Lessons",
               "year": 2020,
               "tmdbId": 581577
-            }
-          ]
-        },
-        {
-          "name": "Connoisseur",
-          "order": 5,
-          "films": [
+            },
             {
               "title": "Funeral in Berlin",
               "year": 1966,
@@ -4011,8 +3779,7 @@
           ]
         },
         {
-          "name": "Deep Cuts",
-          "order": 6,
+          "name": "Specialist",
           "films": [
             {
               "title": "The Defector",
@@ -4053,13 +3820,7 @@
               "title": "The Whistle Blower",
               "year": 1986,
               "tmdbId": 25720
-            }
-          ]
-        },
-        {
-          "name": "Specialist",
-          "order": 7,
-          "films": [
+            },
             {
               "title": "Cloak and Dagger",
               "year": 1946,
@@ -4103,8 +3864,7 @@
           ]
         },
         {
-          "name": "Archivist",
-          "order": 8,
+          "name": "Genius",
           "films": [
             {
               "title": "Secret Agent",
@@ -4145,13 +3905,7 @@
               "title": "Berlin Express",
               "year": 1948,
               "tmdbId": 42286
-            }
-          ]
-        },
-        {
-          "name": "Master",
-          "order": 9,
-          "films": [
+            },
             {
               "title": "Mata Hari",
               "year": 1931,
@@ -4201,7 +3955,6 @@
       "tiers": [
         {
           "name": "Essential",
-          "order": 0,
           "films": [
             {
               "title": "The Lord of the Rings: The Fellowship of the Ring",
@@ -4252,13 +4005,7 @@
               "title": "Big Fish",
               "year": 2003,
               "tmdbId": 587
-            }
-          ]
-        },
-        {
-          "name": "Foundational",
-          "order": 1,
-          "films": [
+            },
             {
               "title": "The Thief of Bagdad",
               "year": 1940,
@@ -4337,8 +4084,7 @@
           ]
         },
         {
-          "name": "Classics",
-          "order": 2,
+          "name": "Foundational",
           "films": [
             {
               "title": "King Kong",
@@ -4399,13 +4145,7 @@
               "title": "Pete's Dragon",
               "year": 1977,
               "tmdbId": 11114
-            }
-          ]
-        },
-        {
-          "name": "Well-Versed",
-          "order": 3,
-          "films": [
+            },
             {
               "title": "Princess Mononoke",
               "year": 1997,
@@ -4469,8 +4209,7 @@
           ]
         },
         {
-          "name": "Devotee",
-          "order": 4,
+          "name": "Connoisseur",
           "films": [
             {
               "title": "The Fall",
@@ -4526,13 +4265,7 @@
               "title": "Jabberwocky",
               "year": 1977,
               "tmdbId": 11834
-            }
-          ]
-        },
-        {
-          "name": "Connoisseur",
-          "order": 5,
-          "films": [
+            },
             {
               "title": "Valerie and Her Week of Wonders",
               "year": 1970,
@@ -4576,8 +4309,7 @@
           ]
         },
         {
-          "name": "Deep Cuts",
-          "order": 6,
+          "name": "Specialist",
           "films": [
             {
               "title": "Dragonslayer",
@@ -4618,13 +4350,7 @@
               "title": "Beastmaster",
               "year": 1982,
               "tmdbId": 16441
-            }
-          ]
-        },
-        {
-          "name": "Specialist",
-          "order": 7,
-          "films": [
+            },
             {
               "title": "The Singing Ringing Tree",
               "year": 1957,
@@ -4663,8 +4389,7 @@
           ]
         },
         {
-          "name": "Archivist",
-          "order": 8,
+          "name": "Genius",
           "films": [
             {
               "title": "The Cabinet of Dr. Caligari",
@@ -4705,13 +4430,7 @@
               "title": "The Lost World",
               "year": 1925,
               "tmdbId": 2981
-            }
-          ]
-        },
-        {
-          "name": "Master",
-          "order": 9,
-          "films": [
+            },
             {
               "title": "A Trip to the Moon",
               "year": 1902,
@@ -4756,7 +4475,6 @@
       "tiers": [
         {
           "name": "Essential",
-          "order": 0,
           "films": [
             {
               "title": "Lawrence of Arabia",
@@ -4807,13 +4525,7 @@
               "title": "12 Years a Slave",
               "year": 2013,
               "tmdbId": 76203
-            }
-          ]
-        },
-        {
-          "name": "Foundational",
-          "order": 1,
-          "films": [
+            },
             {
               "title": "Ben-Hur",
               "year": 1959,
@@ -4892,8 +4604,7 @@
           ]
         },
         {
-          "name": "Classics",
-          "order": 2,
+          "name": "Foundational",
           "films": [
             {
               "title": "Henry V",
@@ -4964,13 +4675,7 @@
               "title": "Anne of the Thousand Days",
               "year": 1969,
               "tmdbId": 22522
-            }
-          ]
-        },
-        {
-          "name": "Well-Versed",
-          "order": 3,
-          "films": [
+            },
             {
               "title": "Andrei Rublev",
               "year": 1966,
@@ -5034,8 +4739,7 @@
           ]
         },
         {
-          "name": "Devotee",
-          "order": 4,
+          "name": "Connoisseur",
           "films": [
             {
               "title": "Aguirre, the Wrath of God",
@@ -5091,13 +4795,7 @@
               "title": "Yeelen",
               "year": 1987,
               "tmdbId": 71329
-            }
-          ]
-        },
-        {
-          "name": "Connoisseur",
-          "order": 5,
-          "films": [
+            },
             {
               "title": "The Rise of Louis XIV",
               "year": 1966,
@@ -5136,8 +4834,7 @@
           ]
         },
         {
-          "name": "Deep Cuts",
-          "order": 6,
+          "name": "Specialist",
           "films": [
             {
               "title": "La Marseillaise",
@@ -5178,13 +4875,7 @@
               "title": "Marie Antoinette",
               "year": 2006,
               "tmdbId": 1887
-            }
-          ]
-        },
-        {
-          "name": "Specialist",
-          "order": 7,
-          "films": [
+            },
             {
               "title": "Ivan the Terrible, Part I",
               "year": 1944,
@@ -5228,8 +4919,7 @@
           ]
         },
         {
-          "name": "Archivist",
-          "order": 8,
+          "name": "Genius",
           "films": [
             {
               "title": "Cabiria",
@@ -5270,13 +4960,7 @@
               "title": "Way Down East",
               "year": 1920,
               "tmdbId": 31509
-            }
-          ]
-        },
-        {
-          "name": "Master",
-          "order": 9,
-          "films": [
+            },
             {
               "title": "The Assassination of the Duke of Guise",
               "year": 1908,
@@ -5326,7 +5010,6 @@
       "tiers": [
         {
           "name": "Essential",
-          "order": 0,
           "films": [
             {
               "title": "Psycho",
@@ -5377,13 +5060,7 @@
               "title": "Get Out",
               "year": 2017,
               "tmdbId": 419430
-            }
-          ]
-        },
-        {
-          "name": "Foundational",
-          "order": 1,
-          "films": [
+            },
             {
               "title": "Nosferatu",
               "year": 1922,
@@ -5462,8 +5139,7 @@
           ]
         },
         {
-          "name": "Classics",
-          "order": 2,
+          "name": "Foundational",
           "films": [
             {
               "title": "The Cabinet of Dr. Caligari",
@@ -5534,13 +5210,7 @@
               "title": "The Wicker Man",
               "year": 1973,
               "tmdbId": 16307
-            }
-          ]
-        },
-        {
-          "name": "Well-Versed",
-          "order": 3,
-          "films": [
+            },
             {
               "title": "The Babadook",
               "year": 2014,
@@ -5609,8 +5279,7 @@
           ]
         },
         {
-          "name": "Devotee",
-          "order": 4,
+          "name": "Connoisseur",
           "films": [
             {
               "title": "Audition",
@@ -5666,13 +5335,7 @@
               "title": "Train to Busan",
               "year": 2016,
               "tmdbId": 396535
-            }
-          ]
-        },
-        {
-          "name": "Connoisseur",
-          "order": 5,
-          "films": [
+            },
             {
               "title": "Don't Look Now",
               "year": 1973,
@@ -5726,8 +5389,7 @@
           ]
         },
         {
-          "name": "Deep Cuts",
-          "order": 6,
+          "name": "Specialist",
           "films": [
             {
               "title": "The Beyond",
@@ -5773,13 +5435,7 @@
               "title": "Blood and Black Lace",
               "year": 1964,
               "tmdbId": 28055
-            }
-          ]
-        },
-        {
-          "name": "Specialist",
-          "order": 7,
-          "films": [
+            },
             {
               "title": "Whispering Corridors",
               "year": 1998,
@@ -5818,8 +5474,7 @@
           ]
         },
         {
-          "name": "Archivist",
-          "order": 8,
+          "name": "Genius",
           "films": [
             {
               "title": "The Phantom Carriage",
@@ -5860,13 +5515,7 @@
               "title": "Nosferatu the Vampyre",
               "year": 1979,
               "tmdbId": 6404
-            }
-          ]
-        },
-        {
-          "name": "Master",
-          "order": 9,
-          "films": [
+            },
             {
               "title": "Equinox",
               "year": 1970,
@@ -5916,7 +5565,6 @@
       "tiers": [
         {
           "name": "Essential",
-          "order": 0,
           "films": [
             {
               "title": "Chinatown",
@@ -5967,13 +5615,7 @@
               "title": "The Big Sleep",
               "year": 1946,
               "tmdbId": 910
-            }
-          ]
-        },
-        {
-          "name": "Foundational",
-          "order": 1,
-          "films": [
+            },
             {
               "title": "Laura",
               "year": 1944,
@@ -6052,8 +5694,7 @@
           ]
         },
         {
-          "name": "Classics",
-          "order": 2,
+          "name": "Foundational",
           "films": [
             {
               "title": "Mystic River",
@@ -6129,13 +5770,7 @@
               "title": "The Name of the Rose",
               "year": 1986,
               "tmdbId": 192
-            }
-          ]
-        },
-        {
-          "name": "Well-Versed",
-          "order": 3,
-          "films": [
+            },
             {
               "title": "Brick",
               "year": 2005,
@@ -6239,8 +5874,7 @@
           ]
         },
         {
-          "name": "Devotee",
-          "order": 4,
+          "name": "Connoisseur",
           "films": [
             {
               "title": "Memories of Murder",
@@ -6341,13 +5975,7 @@
               "title": "Goodnight Mommy",
               "year": 2014,
               "tmdbId": 284303
-            }
-          ]
-        },
-        {
-          "name": "Connoisseur",
-          "order": 5,
-          "films": [
+            },
             {
               "title": "Charade",
               "year": 1963,
@@ -6451,8 +6079,7 @@
           ]
         },
         {
-          "name": "Deep Cuts",
-          "order": 6,
+          "name": "Specialist",
           "films": [
             {
               "title": "The Browning Version",
@@ -6528,13 +6155,7 @@
               "title": "Whirlpool",
               "year": 1949,
               "tmdbId": 29106
-            }
-          ]
-        },
-        {
-          "name": "Specialist",
-          "order": 7,
-          "films": [
+            },
             {
               "title": "The Reckless Moment",
               "year": 1949,
@@ -6588,8 +6209,7 @@
           ]
         },
         {
-          "name": "Archivist",
-          "order": 8,
+          "name": "Genius",
           "films": [
             {
               "title": "Investigation of a Citizen Above Suspicion",
@@ -6655,13 +6275,7 @@
               "title": "The Late Show",
               "year": 1977,
               "tmdbId": 42228
-            }
-          ]
-        },
-        {
-          "name": "Master",
-          "order": 9,
-          "films": [
+            },
             {
               "title": "Cop",
               "year": 1988,
@@ -6731,7 +6345,6 @@
       "tiers": [
         {
           "name": "Essential",
-          "order": 0,
           "films": [
             {
               "title": "Double Indemnity",
@@ -6782,13 +6395,7 @@
               "title": "L.A. Confidential",
               "year": 1997,
               "tmdbId": 2118
-            }
-          ]
-        },
-        {
-          "name": "Foundational",
-          "order": 1,
-          "films": [
+            },
             {
               "title": "The Killers",
               "year": 1946,
@@ -6867,8 +6474,7 @@
           ]
         },
         {
-          "name": "Classics",
-          "order": 2,
+          "name": "Foundational",
           "films": [
             {
               "title": "Detour",
@@ -6939,13 +6545,7 @@
               "title": "Gun Crazy",
               "year": 1950,
               "tmdbId": 18671
-            }
-          ]
-        },
-        {
-          "name": "Well-Versed",
-          "order": 3,
-          "films": [
+            },
             {
               "title": "Kiss Me Deadly",
               "year": 1955,
@@ -7009,8 +6609,7 @@
           ]
         },
         {
-          "name": "Devotee",
-          "order": 4,
+          "name": "Connoisseur",
           "films": [
             {
               "title": "Chinatown",
@@ -7071,13 +6670,7 @@
               "title": "Devil in a Blue Dress",
               "year": 1995,
               "tmdbId": 8512
-            }
-          ]
-        },
-        {
-          "name": "Connoisseur",
-          "order": 5,
-          "films": [
+            },
             {
               "title": "Le Samouraï",
               "year": 1967,
@@ -7131,8 +6724,7 @@
           ]
         },
         {
-          "name": "Deep Cuts",
-          "order": 6,
+          "name": "Specialist",
           "films": [
             {
               "title": "Phantom Lady",
@@ -7178,13 +6770,7 @@
               "title": "The Window",
               "year": 1949,
               "tmdbId": 32684
-            }
-          ]
-        },
-        {
-          "name": "Specialist",
-          "order": 7,
-          "films": [
+            },
             {
               "title": "Crime of Passion",
               "year": 1957,
@@ -7228,8 +6814,7 @@
           ]
         },
         {
-          "name": "Archivist",
-          "order": 8,
+          "name": "Genius",
           "films": [
             {
               "title": "Stray Dog",
@@ -7270,13 +6855,7 @@
               "title": "I Am Waiting",
               "year": 1957,
               "tmdbId": 71719
-            }
-          ]
-        },
-        {
-          "name": "Master",
-          "order": 9,
-          "films": [
+            },
             {
               "title": "So Dark the Night",
               "year": 1946,
@@ -7326,7 +6905,6 @@
       "tiers": [
         {
           "name": "Essential",
-          "order": 0,
           "films": [
             {
               "title": "Casablanca",
@@ -7377,13 +6955,7 @@
               "title": "Lost in Translation",
               "year": 2003,
               "tmdbId": 153
-            }
-          ]
-        },
-        {
-          "name": "Foundational",
-          "order": 1,
-          "films": [
+            },
             {
               "title": "It Happened One Night",
               "year": 1934,
@@ -7462,8 +7034,7 @@
           ]
         },
         {
-          "name": "Classics",
-          "order": 2,
+          "name": "Foundational",
           "films": [
             {
               "title": "Gone with the Wind",
@@ -7534,13 +7105,7 @@
               "title": "Two for the Road",
               "year": 1967,
               "tmdbId": 5767
-            }
-          ]
-        },
-        {
-          "name": "Well-Versed",
-          "order": 3,
-          "films": [
+            },
             {
               "title": "Before Sunset",
               "year": 2004,
@@ -7609,8 +7174,7 @@
           ]
         },
         {
-          "name": "Devotee",
-          "order": 4,
+          "name": "Connoisseur",
           "films": [
             {
               "title": "Amélie",
@@ -7666,13 +7230,7 @@
               "title": "Phantom Thread",
               "year": 2017,
               "tmdbId": 400617
-            }
-          ]
-        },
-        {
-          "name": "Connoisseur",
-          "order": 5,
-          "films": [
+            },
             {
               "title": "The Earrings of Madame de...",
               "year": 1953,
@@ -7726,8 +7284,7 @@
           ]
         },
         {
-          "name": "Deep Cuts",
-          "order": 6,
+          "name": "Specialist",
           "films": [
             {
               "title": "Last Tango in Paris",
@@ -7768,13 +7325,7 @@
               "title": "Sunday Bloody Sunday",
               "year": 1971,
               "tmdbId": 45938
-            }
-          ]
-        },
-        {
-          "name": "Specialist",
-          "order": 7,
-          "films": [
+            },
             {
               "title": "Beauty and the Beast",
               "year": 1946,
@@ -7818,8 +7369,7 @@
           ]
         },
         {
-          "name": "Archivist",
-          "order": 8,
+          "name": "Genius",
           "films": [
             {
               "title": "7th Heaven",
@@ -7860,13 +7410,7 @@
               "title": "Camille",
               "year": 1936,
               "tmdbId": 43874
-            }
-          ]
-        },
-        {
-          "name": "Master",
-          "order": 9,
-          "films": [
+            },
             {
               "title": "Way Down East",
               "year": 1920,
@@ -7916,7 +7460,6 @@
       "tiers": [
         {
           "name": "Essential",
-          "order": 0,
           "films": [
             {
               "title": "2001: A Space Odyssey",
@@ -7967,13 +7510,7 @@
               "title": "E.T. the Extra-Terrestrial",
               "year": 1982,
               "tmdbId": 601
-            }
-          ]
-        },
-        {
-          "name": "Foundational",
-          "order": 1,
-          "films": [
+            },
             {
               "title": "Forbidden Planet",
               "year": 1956,
@@ -8052,8 +7589,7 @@
           ]
         },
         {
-          "name": "Classics",
-          "order": 2,
+          "name": "Foundational",
           "films": [
             {
               "title": "Things to Come",
@@ -8124,13 +7660,7 @@
               "title": "Logan's Run",
               "year": 1976,
               "tmdbId": 10803
-            }
-          ]
-        },
-        {
-          "name": "Well-Versed",
-          "order": 3,
-          "films": [
+            },
             {
               "title": "Stalker",
               "year": 1979,
@@ -8199,8 +7729,7 @@
           ]
         },
         {
-          "name": "Devotee",
-          "order": 4,
+          "name": "Connoisseur",
           "films": [
             {
               "title": "Akira",
@@ -8251,13 +7780,7 @@
               "title": "Belladonna of Sadness",
               "year": 1973,
               "tmdbId": 64847
-            }
-          ]
-        },
-        {
-          "name": "Connoisseur",
-          "order": 5,
-          "films": [
+            },
             {
               "title": "Solaris",
               "year": 1972,
@@ -8306,8 +7829,7 @@
           ]
         },
         {
-          "name": "Deep Cuts",
-          "order": 6,
+          "name": "Specialist",
           "films": [
             {
               "title": "Save the Green Planet!",
@@ -8348,13 +7870,7 @@
               "title": "Kontroll",
               "year": 2003,
               "tmdbId": 5204
-            }
-          ]
-        },
-        {
-          "name": "Specialist",
-          "order": 7,
-          "films": [
+            },
             {
               "title": "Quatermass and the Pit",
               "year": 1967,
@@ -8398,8 +7914,7 @@
           ]
         },
         {
-          "name": "Archivist",
-          "order": 8,
+          "name": "Genius",
           "films": [
             {
               "title": "A Trip to the Moon",
@@ -8440,13 +7955,7 @@
               "title": "The Invisible Man",
               "year": 1933,
               "tmdbId": 10787
-            }
-          ]
-        },
-        {
-          "name": "Master",
-          "order": 9,
-          "films": [
+            },
             {
               "title": "Phase IV",
               "year": 1974,
@@ -8496,7 +8005,6 @@
       "tiers": [
         {
           "name": "Essential",
-          "order": 0,
           "films": [
             {
               "title": "Psycho",
@@ -8547,13 +8055,7 @@
               "title": "Parasite",
               "year": 2019,
               "tmdbId": 496243
-            }
-          ]
-        },
-        {
-          "name": "Foundational",
-          "order": 1,
-          "films": [
+            },
             {
               "title": "Vertigo",
               "year": 1958,
@@ -8632,8 +8134,7 @@
           ]
         },
         {
-          "name": "Classics",
-          "order": 2,
+          "name": "Foundational",
           "films": [
             {
               "title": "Wait Until Dark",
@@ -8704,13 +8205,7 @@
               "title": "Saboteur",
               "year": 1942,
               "tmdbId": 31997
-            }
-          ]
-        },
-        {
-          "name": "Well-Versed",
-          "order": 3,
-          "films": [
+            },
             {
               "title": "Misery",
               "year": 1990,
@@ -8789,8 +8284,7 @@
           ]
         },
         {
-          "name": "Devotee",
-          "order": 4,
+          "name": "Connoisseur",
           "films": [
             {
               "title": "Memories of Murder",
@@ -8846,13 +8340,7 @@
               "title": "The Secret in Their Eyes",
               "year": 2009,
               "tmdbId": 25376
-            }
-          ]
-        },
-        {
-          "name": "Connoisseur",
-          "order": 5,
-          "films": [
+            },
             {
               "title": "Wages of Fear",
               "year": 1953,
@@ -8906,8 +8394,7 @@
           ]
         },
         {
-          "name": "Deep Cuts",
-          "order": 6,
+          "name": "Specialist",
           "films": [
             {
               "title": "Cutter's Way",
@@ -8953,13 +8440,7 @@
               "title": "Hell or High Water",
               "year": 2016,
               "tmdbId": 338766
-            }
-          ]
-        },
-        {
-          "name": "Specialist",
-          "order": 7,
-          "films": [
+            },
             {
               "title": "Drishyam",
               "year": 2013,
@@ -9003,8 +8484,7 @@
           ]
         },
         {
-          "name": "Archivist",
-          "order": 8,
+          "name": "Genius",
           "films": [
             {
               "title": "The Spiral Staircase",
@@ -9045,13 +8525,7 @@
               "title": "The Hitch-Hiker",
               "year": 1953,
               "tmdbId": 41462
-            }
-          ]
-        },
-        {
-          "name": "Master",
-          "order": 9,
-          "films": [
+            },
             {
               "title": "The Lodger: A Story of the London Fog",
               "year": 1927,
@@ -9101,7 +8575,6 @@
       "tiers": [
         {
           "name": "Essential",
-          "order": 0,
           "films": [
             {
               "title": "Apocalypse Now",
@@ -9152,13 +8625,7 @@
               "title": "1917",
               "year": 2019,
               "tmdbId": 530915
-            }
-          ]
-        },
-        {
-          "name": "Foundational",
-          "order": 1,
-          "films": [
+            },
             {
               "title": "Patton",
               "year": 1970,
@@ -9237,8 +8704,7 @@
           ]
         },
         {
-          "name": "Classics",
-          "order": 2,
+          "name": "Foundational",
           "films": [
             {
               "title": "Grand Illusion",
@@ -9304,13 +8770,7 @@
               "title": "The Caine Mutiny",
               "year": 1954,
               "tmdbId": 10178
-            }
-          ]
-        },
-        {
-          "name": "Well-Versed",
-          "order": 3,
-          "films": [
+            },
             {
               "title": "Stalingrad",
               "year": 1993,
@@ -9374,8 +8834,7 @@
           ]
         },
         {
-          "name": "Devotee",
-          "order": 4,
+          "name": "Connoisseur",
           "films": [
             {
               "title": "Ran",
@@ -9426,13 +8885,7 @@
               "title": "Kwaidan",
               "year": 1964,
               "tmdbId": 30959
-            }
-          ]
-        },
-        {
-          "name": "Connoisseur",
-          "order": 5,
-          "films": [
+            },
             {
               "title": "Ivan's Childhood",
               "year": 1962,
@@ -9476,8 +8929,7 @@
           ]
         },
         {
-          "name": "Deep Cuts",
-          "order": 6,
+          "name": "Specialist",
           "films": [
             {
               "title": "Battle of Britain",
@@ -9518,13 +8970,7 @@
               "title": "Slaughterhouse-Five",
               "year": 1972,
               "tmdbId": 24559
-            }
-          ]
-        },
-        {
-          "name": "Specialist",
-          "order": 7,
-          "films": [
+            },
             {
               "title": "The Battle of San Pietro",
               "year": 1945,
@@ -9568,8 +9014,7 @@
           ]
         },
         {
-          "name": "Archivist",
-          "order": 8,
+          "name": "Genius",
           "films": [
             {
               "title": "The Big Parade",
@@ -9610,13 +9055,7 @@
               "title": "Sergeant York",
               "year": 1941,
               "tmdbId": 16442
-            }
-          ]
-        },
-        {
-          "name": "Master",
-          "order": 9,
-          "films": [
+            },
             {
               "title": "Hearts of the World",
               "year": 1918,
@@ -9666,7 +9105,6 @@
       "tiers": [
         {
           "name": "Essential",
-          "order": 0,
           "films": [
             {
               "title": "The Searchers",
@@ -9717,13 +9155,7 @@
               "title": "No Country for Old Men",
               "year": 2007,
               "tmdbId": 6977
-            }
-          ]
-        },
-        {
-          "name": "Foundational",
-          "order": 1,
-          "films": [
+            },
             {
               "title": "Shane",
               "year": 1953,
@@ -9802,8 +9234,7 @@
           ]
         },
         {
-          "name": "Classics",
-          "order": 2,
+          "name": "Foundational",
           "films": [
             {
               "title": "The Man Who Shot Liberty Valance",
@@ -9874,13 +9305,7 @@
               "title": "The Quick and the Dead",
               "year": 1995,
               "tmdbId": 12106
-            }
-          ]
-        },
-        {
-          "name": "Well-Versed",
-          "order": 3,
-          "films": [
+            },
             {
               "title": "Days of Heaven",
               "year": 1978,
@@ -9949,8 +9374,7 @@
           ]
         },
         {
-          "name": "Devotee",
-          "order": 4,
+          "name": "Connoisseur",
           "films": [
             {
               "title": "The Naked Spur",
@@ -10006,13 +9430,7 @@
               "title": "Ride Lonesome",
               "year": 1959,
               "tmdbId": 27644
-            }
-          ]
-        },
-        {
-          "name": "Connoisseur",
-          "order": 5,
-          "films": [
+            },
             {
               "title": "Seven Men from Now",
               "year": 1956,
@@ -10061,8 +9479,7 @@
           ]
         },
         {
-          "name": "Deep Cuts",
-          "order": 6,
+          "name": "Specialist",
           "films": [
             {
               "title": "The Great Silence",
@@ -10103,13 +9520,7 @@
               "title": "The Mercenary",
               "year": 1968,
               "tmdbId": 48169
-            }
-          ]
-        },
-        {
-          "name": "Specialist",
-          "order": 7,
-          "films": [
+            },
             {
               "title": "Duel in the Sun",
               "year": 1946,
@@ -10153,8 +9564,7 @@
           ]
         },
         {
-          "name": "Archivist",
-          "order": 8,
+          "name": "Genius",
           "films": [
             {
               "title": "The Iron Horse",
@@ -10195,13 +9605,7 @@
               "title": "The Virginian",
               "year": 1929,
               "tmdbId": 42616
-            }
-          ]
-        },
-        {
-          "name": "Master",
-          "order": 9,
-          "films": [
+            },
             {
               "title": "The Great Train Robbery",
               "year": 1903,

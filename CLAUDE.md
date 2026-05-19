@@ -1,16 +1,22 @@
 # MovieGenius Project Instructions
 
-**Last Updated:** 2025-03-22
-**Version:** 3.0 (Aligned with Anthropic Claude Code Guidelines)
+**Last Updated:** 2026-05-18
+**Version:** 3.1 (Added iOS documentation guidance)
 
 ---
 
 ## Quick Reference
 
+**Web/API:**
 - **Master Architecture:** `/docs/MOVIEGENIUS_V3_ARCHITECTURE.md`
 - **Production Status:** `/docs/strategies/RELEASE_TODO.md`
 - **API Reference:** `/docs/API_REFERENCE.md`
 - **Database:** Railway PostgreSQL (21,275 movie analyses)
+
+**iOS:**
+- **Navigation Guide:** `/ios/IOS_NAVIGATION_GUIDE.md` (required before View changes)
+- **Testing Strategy:** `/ios/testing/README.md` (3-hour path to TestFlight)
+- **Documentation Lessons:** `/DOCUMENTATION_LESSONS_LEARNED.md` (mistake patterns)
 
 ---
 
@@ -381,6 +387,7 @@ TodoWrite({
 
 **Avoid these MovieGenius-specific errors:**
 
+### Web/API Pitfalls
 1. ❌ Calling React Hooks after conditional returns
 2. ❌ Modifying locked components (MediaCard, PhoneFrame)
 3. ❌ Using "film" instead of "movie" in UI
@@ -388,7 +395,15 @@ TodoWrite({
 5. ❌ Claiming "fixed" before verification
 6. ❌ Changing database schema without migration plan
 
-**See:** `/docs/PREVENTING_BUILD_ERRORS.md`
+### iOS Pitfalls
+7. ❌ Fighting the platform with custom navigation (use native patterns)
+8. ❌ Using `.navigationBarHidden(true)` (breaks swipe-back gestures)
+9. ❌ Creating multiple docs for same incident (consolidate immediately)
+10. ❌ Keeping point-in-time docs active after completion (archive them)
+
+**See:**
+- Web/API: `/docs/PREVENTING_BUILD_ERRORS.md`
+- iOS: `/ios/IOS_NAVIGATION_GUIDE.md`, `/DOCUMENTATION_LESSONS_LEARNED.md`
 
 ---
 
@@ -415,6 +430,31 @@ TodoWrite({
 12. `/docs/V2_SEARCH_FEATURES.md` - Deferred features
 13. `/docs/TROUBLESHOOTING.md` - Debug strategies
 14. `/docs/guides/DEVELOPMENT_SETUP.md` - Environment setup
+
+**iOS Documentation (When working on iOS app):**
+
+**Critical:**
+- `/ios/IOS_NAVIGATION_GUIDE.md` - **REQUIRED** reading before any View changes
+- `/ios/testing/README.md` - Testing strategy and checklists
+- `/DOCUMENTATION_LESSONS_LEARNED.md` - Key mistake patterns to avoid
+
+**Setup & Features:**
+- `/ios/FIREBASE_SETUP_GUIDE.md` - Crashlytics integration (30 min)
+- `/ios/GENIUS_SYSTEM_GUIDE.md` - Genius feature architecture
+- `/ios/YOUTUBE_TRAILER_SETUP.md` - Trailer playback system
+
+**Process:**
+- `/ios/testing/MANUAL_CHECKLIST.md` - Pre-release testing (90 min)
+- `/ios/testing/SMOKE_TESTS.md` - Automated test setup (30 min)
+- `/ios/TESTFLIGHT_LAUNCH_CHECKLIST.md` - Beta distribution
+
+**iOS Key Principles:**
+1. **Use native iOS patterns** - Fight the platform = 5 docs explaining workarounds
+2. **Test gestures immediately** - Swipe-back, pull-to-refresh on physical device
+3. **Archive point-in-time docs** - Migration/fix docs expire after completion
+4. **One guide per topic** - Quick starts are sections, not separate files
+
+**When iOS docs conflict:** Use IOS_NAVIGATION_GUIDE.md as single source of truth.
 
 ---
 

@@ -12,24 +12,9 @@ struct WatchQueueView: View {
     @State private var selectedTrailer: (tmdbId: Int, title: String, year: Int?)?
 
     var body: some View {
-        ZStack(alignment: .top) {
-            ScrollView {
-                VStack(spacing: 0) {
-                    // Top spacer for overlaid header
-                    Color.clear.frame(height: 60)
-
-                    // Page title
-                    HStack {
-                        Text("Watchlist")
-                            .font(.mgSubheadline)
-                            .foregroundStyle(Color.mgPrimary)
-                        Spacer()
-                    }
-                    .padding(.horizontal, .mgSpacing20)
-                    .padding(.top, .mgSpacing12)
-                    .padding(.bottom, .mgSpacing8)
-
-                    if viewModel.queuedMovies.isEmpty {
+        ScrollView {
+            VStack(spacing: 0) {
+                if viewModel.queuedMovies.isEmpty {
                         emptyStateView
                     } else {
                         LazyVStack(spacing: .mgSpacing16) {
@@ -50,21 +35,12 @@ struct WatchQueueView: View {
                         }
                         .padding(.vertical, .mgSpacing20)
                     }
-                }
             }
             .refreshable {
                 viewModel.refresh()
             }
-
-            // Overlaid AppHeader
-            VStack {
-                AppHeader(showBackButton: false)
-                Spacer()
-            }
         }
         .background(Color(.systemGroupedBackground))
-        .navigationBarHidden(true)
-        .enableSwipeBack()
         .sheet(item: Binding(
             get: { selectedTrailer.map { TrailerIdentifier(tmdbId: $0.tmdbId, title: $0.title, year: $0.year) } },
             set: { selectedTrailer = $0.map { ($0.tmdbId, $0.title, $0.year) } }

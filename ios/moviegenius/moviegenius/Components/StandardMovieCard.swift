@@ -40,9 +40,9 @@ struct StandardMovieCard: View {
     }
 
     var body: some View {
-        VStack(spacing: 0) {
+        VStack(alignment: .leading, spacing: .mgSpacing12) {
             // Main content area - tappable for navigation
-            NavigationLink(destination: MovieDetailView(tmdbId: tmdbId)) {
+            NavigationLink(value: MovieDestination.detail(tmdbId: tmdbId)) {
                 HStack(alignment: .top, spacing: .mgSpacing16) {
                     // Poster (left side)
                     posterView
@@ -74,17 +74,16 @@ struct StandardMovieCard: View {
                                 .padding(.top, .mgSpacing8)
                         }
 
-                        Spacer(minLength: 0)
+                        Spacer()
                     }
-                    .frame(maxWidth: .infinity, maxHeight: 210, alignment: .topLeading)
+                    .frame(maxWidth: .infinity, alignment: .topLeading)
                 }
+                .frame(minHeight: 210) // Ensure content area is at least as tall as poster
             }
             .buttonStyle(.plain)
 
-            // Favorite buttons with optional delete button - separate interactive area
-            HStack {
-                Spacer()
-
+            // Favorite buttons with optional delete button - below all content
+            HStack(spacing: .mgSpacing12) {
                 // Favorite buttons
                 FavoriteButtons(
                     tmdbId: tmdbId,
@@ -95,7 +94,9 @@ struct StandardMovieCard: View {
                     onDarkBackground: onDarkBackground
                 )
 
-                // Delete button (when provided, appears in top-right)
+                Spacer()
+
+                // Delete button (when provided, appears at far right)
                 if let onDelete = onDelete {
                     Button(action: {
                         HapticManager.light()
@@ -107,10 +108,8 @@ struct StandardMovieCard: View {
                     }
                     .buttonStyle(.plain)
                     .accessibilityLabel("Remove from queue")
-                    .padding(.leading, .mgSpacing8)
                 }
             }
-            .padding(.top, .mgSpacing8)
         }
         .padding(.mgSpacing16)
         .background {

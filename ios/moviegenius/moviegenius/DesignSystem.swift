@@ -657,29 +657,3 @@ struct SkeletonCarousel: View {
 
 // MARK: - Navigation Gestures
 
-/// View modifier to enable swipe-back navigation gesture
-struct SwipeBackGesture: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .onAppear {
-                // Enable swipe-back gesture even when navigation bar is hidden
-                if let navigationController = UIApplication.shared.connectedScenes
-                    .compactMap({ $0 as? UIWindowScene })
-                    .flatMap({ $0.windows })
-                    .first(where: { $0.isKeyWindow })?
-                    .rootViewController?
-                    .children
-                    .first(where: { $0 is UINavigationController }) as? UINavigationController {
-                    navigationController.interactivePopGestureRecognizer?.isEnabled = true
-                    navigationController.interactivePopGestureRecognizer?.delegate = nil
-                }
-            }
-    }
-}
-
-extension View {
-    /// Enable swipe-back navigation gesture (for views with hidden navigation bar)
-    func enableSwipeBack() -> some View {
-        modifier(SwipeBackGesture())
-    }
-}

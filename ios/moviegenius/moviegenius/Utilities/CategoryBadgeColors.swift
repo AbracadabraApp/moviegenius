@@ -35,4 +35,31 @@ struct CategoryBadgeColors {
     static func textColor(for progress: Double) -> Color {
         return progress >= 0.40 ? .white : .mgPrimary
     }
+
+    /// Returns the semantic tier color for a given tier name
+    /// - Parameter tierName: The tier name (Essential, Foundational, Connoisseur, Specialist, Genius)
+    /// - Returns: Fixed color for the tier (gray → bronze → copper → rose gold → gold)
+    static func semanticTierColor(for tierName: String) -> Color {
+        switch tierName {
+        case "Essential":
+            return .mgProgressStart
+        case "Foundational":
+            return .mgProgressBronze
+        case "Connoisseur":
+            return .mgProgressCopper
+        case "Specialist":
+            return .mgProgressRoseGold
+        case "Genius":
+            return .mgGold
+        default:
+            return .mgSecondaryBackground
+        }
+    }
+
+    /// Returns the semantic tier text color for a given tier name
+    /// - Parameter tierName: The tier name
+    /// - Returns: .mgPrimary for gray tier, .white for metallic tiers
+    static func semanticTierTextColor(for tierName: String) -> Color {
+        return tierName == "Essential" ? .mgPrimary : .white
+    }
 }

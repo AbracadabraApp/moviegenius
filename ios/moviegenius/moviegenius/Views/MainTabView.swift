@@ -2,7 +2,7 @@
 //  MainTabView.swift
 //  moviegenius
 //
-//  Main app navigation with 3 tabs: Movies, Search, Genius
+//  Main app navigation with 4 tabs: Movies, Genius, Search, Watchlist
 //
 
 import SwiftUI
@@ -28,17 +28,31 @@ class NavigationStateManager: ObservableObject {
 struct MainTabView: View {
     @SceneStorage("selectedTab") private var selectedTab = 0
     @StateObject private var browseNavigation = NavigationStateManager()
+    @StateObject private var searchNavigation = NavigationStateManager()
     @StateObject private var geniusNavigation = NavigationStateManager()
     @StateObject private var watchNavigation = NavigationStateManager()
+    @StateObject private var searchViewModel = SearchViewModel()
+
+    // Track previous tab to detect repeated taps
+    @State private var previousTab = 0
 
     // Track tab selection - always pop to root when tab is tapped
     private var selectedTabBinding: Binding<Int> {
         Binding(
             get: { selectedTab },
             set: { newValue in
-                // Always pop to root when any tab is tapped
-                popToRoot(for: newValue)
-                selectedTab = newValue
+                // If tapping the same tab that's already selected, pop to root
+                if newValue == selectedTab {
+                    popToRoot(for: newValue)
+                    // Special case for Search tab: also clear search text
+                    if newValue == 2 {
+                        searchViewModel.clearSearch()
+                    }
+                } else {
+                    // Switching to a different tab
+                    selectedTab = newValue
+                }
+                previousTab = selectedTab
             }
         )
     }
@@ -69,9 +83,21 @@ struct MainTabView: View {
             }
             .tag(1)
 
+            // Search tab
+            NavigationStack(path: $searchNavigation.path) {
+                SearchView(viewModel: searchViewModel)
+                    .navigationDestination(for: MovieDestination.self) { destination in
+                        destinationView(for: destination)
+                    }
+            }
+            .tabItem {
+                Label("Search", systemImage: "magnifyingglass")
+            }
+            .tag(2)
+
             // Watch tab
             NavigationStack(path: $watchNavigation.path) {
-                WatchQueueView()
+                WatchContainerView()
                     .navigationDestination(for: MovieDestination.self) { destination in
                         destinationView(for: destination)
                     }
@@ -79,7 +105,7 @@ struct MainTabView: View {
             .tabItem {
                 Label("Watchlist", systemImage: "bookmark.fill")
             }
-            .tag(2)
+            .tag(3)
         }
         .tint(Color.mgGold)
     }
@@ -93,6 +119,8 @@ struct MainTabView: View {
         case 1:
             geniusNavigation.path = NavigationPath()
         case 2:
+            searchNavigation.path = NavigationPath()
+        case 3:
             watchNavigation.path = NavigationPath()
         default:
             break

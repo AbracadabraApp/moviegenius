@@ -11,13 +11,9 @@ struct PersonDetailView: View {
     let personId: Int
 
     var body: some View {
-        ZStack(alignment: .top) {
-            ScrollView {
-                VStack(spacing: 0) {
-                    // Top spacer for overlaid header
-                    Color.clear.frame(height: 60)
-
-                    VStack(spacing: .mgSpacing24) {
+        ScrollView {
+            VStack(spacing: 0) {
+                VStack(spacing: .mgSpacing24) {
                         Text("Person Detail")
                             .font(.mgTitle)
 
@@ -31,18 +27,11 @@ struct PersonDetailView: View {
                             .padding(.mgSpacing16)
                     }
                     .padding(.mgSpacing20)
-                }
-            }
-
-            // Overlaid AppHeader
-            VStack {
-                AppHeader(showBackButton: true)
-                Spacer()
             }
         }
         .background(Color.mgBackground)
-        .navigationBarHidden(true)
-        .enableSwipeBack()
+        .navigationTitle("Person Detail")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

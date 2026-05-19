@@ -39,6 +39,11 @@ actor APIClient {
         self.session = URLSession(configuration: config)
     }
 
+    // Helper to decode outside actor isolation (Swift 6 concurrency fix)
+    nonisolated private func decode<T: Decodable>(_ type: T.Type, from data: Data) throws -> T {
+        return try JSONDecoder().decode(type, from: data)
+    }
+
     // MARK: - Movie
 
     func fetchMovie(tmdbId: Int) async throws -> MovieResponse {
@@ -64,7 +69,7 @@ actor APIClient {
                 throw APIError.httpError(statusCode: httpResponse.statusCode)
             }
 
-            let decoded = try JSONDecoder().decode(MovieResponse.self, from: data)
+            let decoded = try decode(MovieResponse.self, from: data)
 
             #if DEBUG
             print("✅ [APIClient] Fetched movie: \(decoded.movie.title) (\(decoded.movie.year ?? 0))")
@@ -107,7 +112,7 @@ actor APIClient {
             throw APIError.httpError(statusCode: httpResponse.statusCode)
         }
 
-        return try JSONDecoder().decode(FeaturedCollectionsResponse.self, from: data)
+        return try decode(FeaturedCollectionsResponse.self, from: data)
     }
 
     func fetchCollection(id: String) async throws -> CollectionDetailResponse {
@@ -132,7 +137,7 @@ actor APIClient {
             throw APIError.httpError(statusCode: httpResponse.statusCode)
         }
 
-        return try JSONDecoder().decode(CollectionDetailResponse.self, from: data)
+        return try decode(CollectionDetailResponse.self, from: data)
     }
 
     // MARK: - Search
@@ -163,7 +168,7 @@ actor APIClient {
             throw APIError.httpError(statusCode: httpResponse.statusCode)
         }
 
-        return try JSONDecoder().decode(SearchResponse.self, from: data)
+        return try decode(SearchResponse.self, from: data)
     }
 
     // MARK: - Genius
@@ -193,7 +198,7 @@ actor APIClient {
             throw APIError.httpError(statusCode: httpResponse.statusCode)
         }
 
-        return try JSONDecoder().decode(GeniusFeedResponse.self, from: data)
+        return try decode(GeniusFeedResponse.self, from: data)
     }
 
     // MARK: - Person
@@ -220,7 +225,7 @@ actor APIClient {
             throw APIError.httpError(statusCode: httpResponse.statusCode)
         }
 
-        return try JSONDecoder().decode(PersonResponse.self, from: data)
+        return try decode(PersonResponse.self, from: data)
     }
 
     // MARK: - TMDB Videos (Trailers)
@@ -250,7 +255,7 @@ actor APIClient {
                 throw APIError.httpError(statusCode: httpResponse.statusCode)
             }
 
-            let decoded = try JSONDecoder().decode(TMDBVideosResponse.self, from: data)
+            let decoded = try decode(TMDBVideosResponse.self, from: data)
 
             #if DEBUG
             print("✅ [APIClient] Fetched \(decoded.results.count) videos for movie \(tmdbId)")

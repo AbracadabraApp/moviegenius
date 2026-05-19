@@ -31,7 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C3A15BC448FCA1A89EC609D3 /* genius_data.json */ = {isa = PBXFileReference; includeInIndex = 1; name = genius_data.json; path = moviegenius/Resources/genius_data.json; sourceTree = "<group>"; };
+		C3A15BC448FCA1A89EC609D3 /* genius_data.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = genius_data.json; path = moviegenius/Resources/genius_data.json; sourceTree = "<group>"; };
 		C902999C2FB10FE3006205FF /* moviegenius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moviegenius.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90299A92FB10FE7006205FF /* moviegeniusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moviegeniusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90299B32FB10FE7006205FF /* moviegeniusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moviegeniusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,22 +40,16 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C902999E2FB10FE3006205FF /* moviegenius */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = moviegenius;
 			sourceTree = "<group>";
 		};
 		C90299AC2FB10FE7006205FF /* moviegeniusTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = moviegeniusTests;
 			sourceTree = "<group>";
 		};
 		C90299B62FB10FE7006205FF /* moviegeniusUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = moviegeniusUITests;
 			sourceTree = "<group>";
 		};

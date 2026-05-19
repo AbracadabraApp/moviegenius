@@ -26,8 +26,7 @@ class TierProgressTracker: ObservableObject {
         var tierCompletions: [String: Double] = [:]
 
         let allTiers = [
-            "Essential", "Foundational", "Classics", "Well-Versed", "Devotee",
-            "Connoisseur", "Deep Cuts", "Specialist", "Archivist", "Master"
+            "Essential", "Foundational", "Connoisseur", "Specialist", "Genius"
         ]
 
         for tier in allTiers {
@@ -93,15 +92,9 @@ struct GeniusView: View {
                 await viewModel.loadGenreExpertise()
             }
 
-            // Overlaid AppHeader
-            VStack {
-                AppHeader(showBackButton: false)
-                Spacer()
-            }
         }
         .background(Color.mgGroupedBackground)
-        .navigationBarHidden(true)
-        .enableSwipeBack()
+        // .enableSwipeBack()
     }
 
 }
@@ -385,7 +378,7 @@ struct MovieRowCard: View {
     let movie: SavedMovie
 
     var body: some View {
-        NavigationLink(destination: MovieDetailView(tmdbId: movie.id)) {
+        NavigationLink(value: MovieDestination.detail(tmdbId: movie.id)) {
             LayeredGlassCard(elevation: .low) {
                 HStack(spacing: .mgSpacing12) {
                     // Poster
@@ -483,15 +476,9 @@ struct CategorySubcategoriesView: View {
                 }
             }
 
-            // Overlaid AppHeader
-            VStack {
-                AppHeader(showBackButton: true)
-                Spacer()
-            }
         }
         .background(Color.mgBackground)
-        .navigationBarHidden(true)
-        .enableSwipeBack()
+        // .enableSwipeBack()
     }
 }
 
@@ -499,89 +486,35 @@ struct CategorySubcategoriesView: View {
 
 struct TierNavigationChips: View {
     let category: String
-    let currentTier: String
-    let onTierSelected: (String) -> Void
-
-    @State private var shuffledTiers: [String] = []
-    @StateObject private var tierProgress = TierProgressTracker.shared
-    @ObservedObject private var favorites = FavoritesManager.shared
 
     private let allTiers = [
-        "Essential", "Foundational", "Classics", "Well-Versed", "Devotee",
-        "Connoisseur", "Deep Cuts", "Specialist", "Archivist", "Master"
+        "Essential", "Foundational", "Connoisseur", "Specialist", "Genius"
     ]
 
     var body: some View {
         FlowLayout(spacing: .mgSpacing12) {
             ForEach(allTiers, id: \.self) { tier in
                 NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: tier)) {
-                    TierChip(
-                        tier: tier,
-                        isSelected: tier == currentTier,
-                        completionPercent: tierProgress.getCompletion(category: category, tier: tier)
-                    )
+                    TierChip(tier: tier)
                 }
                 .buttonStyle(.plain)
             }
         }
         .padding(.horizontal, .mgSpacing16)
-        .onAppear {
-            // Calculate all tier completions for this category
-            tierProgress.refreshCategory(category, seenIds: Set(favorites.lovedMovies.map { $0.id }))
-        }
-        .onChange(of: favorites.lovedMovies.count) { _ in
-            // Recalculate when user marks movies seen
-            tierProgress.refreshCategory(category, seenIds: Set(favorites.lovedMovies.map { $0.id }))
-        }
     }
 }
 
 struct TierChip: View {
     let tier: String
-    let isSelected: Bool
-    let completionPercent: Double
-
-    // Gradient color based on completion % (5 gradations with dark mode support)
-    private var gradientColor: Color {
-        CategoryBadgeColors.badgeColor(for: completionPercent)
-    }
-
-    private var backgroundColor: Color {
-        if isSelected {
-            return Color.mgContrastTextOnLight  // White background for selected state
-        } else if completionPercent > 0 {
-            return gradientColor
-        } else {
-            return Color.mgSecondaryBackground
-        }
-    }
-
-    private var textColor: Color {
-        if isSelected {
-            return Color.mgContrastTextOnLight  // Black text on white/light background
-        } else if completionPercent >= 0.40 {
-            // White text on darker gradient colors (>40% progress) for accessibility
-            return Color.mgContrastTextOnDark
-        } else {
-            return Color.mgSecondary
-        }
-    }
 
     var body: some View {
         Text(tier.uppercased())
-            .font(.system(size: 12, weight: isSelected ? .semibold : .medium))
-            .foregroundStyle(textColor)
+            .font(.system(size: 12, weight: .medium))
+            .foregroundStyle(CategoryBadgeColors.semanticTierTextColor(for: tier))
             .padding(.horizontal, 10)
             .padding(.vertical, 6)
-            .background(backgroundColor)
+            .background(CategoryBadgeColors.semanticTierColor(for: tier))
             .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
-            .overlay(
-                RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous)
-                    .strokeBorder(
-                        isSelected ? Color.mgGold : Color.clear,
-                        lineWidth: 2
-                    )
-            )
             .kerning(0.3)
     }
 }
@@ -682,12 +615,8 @@ struct CategoryEssentialsView: View {
 
                     VStack(alignment: .leading, spacing: .mgSpacing16) {
                         // Tier navigation chips (top)
-                        TierNavigationChips(
-                            category: category,
-                            currentTier: subcategory ?? "Essential",
-                            onTierSelected: { _ in }
-                        )
-                        .padding(.top, .mgSpacing8)
+                        TierNavigationChips(category: category)
+                            .padding(.top, .mgSpacing8)
 
                         if viewModel.isLoadingInitial || viewModel.isLoading {
                             VStack(spacing: .mgSpacing12) {
@@ -705,12 +634,8 @@ struct CategoryEssentialsView: View {
                             filmListView
 
                             // Tier navigation chips (bottom)
-                            TierNavigationChips(
-                                category: category,
-                                currentTier: subcategory ?? "Essential",
-                                onTierSelected: { _ in }
-                            )
-                            .padding(.top, .mgSpacing24)
+                            TierNavigationChips(category: category)
+                                .padding(.top, .mgSpacing24)
                         }
                     }
                     .padding(.vertical, .mgSpacing12)
@@ -720,15 +645,9 @@ struct CategoryEssentialsView: View {
                 await viewModel.loadMovies()
             }
 
-            // Overlaid AppHeader
-            VStack {
-                AppHeader(showBackButton: true)
-                Spacer()
-            }
         }
         .background(Color.mgBackground)
-        .navigationBarHidden(true)
-        .enableSwipeBack()
+        // .enableSwipeBack()
     }
 }
 
@@ -996,7 +915,7 @@ struct CategoryEssentials {
     // Genre categories loaded from JSON, Awards/Actors/Actresses/Directors from tierTmdbData
     static var tmdbIdLookup: [String: Int] {
         // Build combined dictionary from JSON (genres) + tierTmdbData (Awards/People)
-        var combined: [String: Int] = tierTmdbData
+        var combined: [String: Int] = [:] // tierTmdbData not defined yet
 
         // Add all genre films from JSON
         let store = GeniusDataStore.shared

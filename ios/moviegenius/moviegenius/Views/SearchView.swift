@@ -9,48 +9,15 @@ import SwiftUI
 import Combine
 
 struct SearchView: View {
-    @StateObject private var viewModel = SearchViewModel()
-    @Environment(\.dismiss) private var dismiss
-    @FocusState private var isSearchFocused: Bool
+    @StateObject private var viewModel: SearchViewModel
+
+    init(viewModel: SearchViewModel? = nil) {
+        self._viewModel = StateObject(wrappedValue: viewModel ?? SearchViewModel())
+    }
 
     var body: some View {
         NavigationStack {
             VStack(spacing: 0) {
-                // Search bar
-                HStack(spacing: .mgSpacing12) {
-                    Image(systemName: "magnifyingglass")
-                        .foregroundStyle(Color.mgSecondary)
-                        .font(.system(size: 20))
-
-                    TextField("Search movies...", text: $viewModel.searchText)
-                        .font(.mgBody)
-                        .foregroundStyle(Color.mgPrimary)
-                        .autocorrectionDisabled()
-                        .textInputAutocapitalization(.never)
-                        .submitLabel(.search)
-                        .focused($isSearchFocused)
-
-                    if !viewModel.searchText.isEmpty {
-                        Button(action: {
-                            viewModel.searchText = ""
-                        }) {
-                            Image(systemName: "xmark.circle.fill")
-                                .foregroundStyle(Color.mgSecondary)
-                                .font(.system(size: 20))
-                        }
-                        .buttonStyle(.plain)
-                    }
-                }
-                .padding(.horizontal, .mgSpacing16)
-                .padding(.vertical, .mgSpacing12)
-                .background(Color.mgGroupedBackground)
-                .overlay(
-                    Rectangle()
-                        .fill(Color.mgSecondary.opacity(0.2))
-                        .frame(height: 1),
-                    alignment: .bottom
-                )
-
                 // Content
                 if viewModel.searchText.isEmpty || viewModel.searchText.count < 2 {
                     // Empty state
@@ -110,19 +77,9 @@ struct SearchView: View {
                 }
             }
             .background(Color.mgBackground)
+            .navigationTitle("Search")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Done") {
-                        dismiss()
-                    }
-                    .font(.mgBody)
-                    .foregroundStyle(Color.mgGold)
-                }
-            }
-            .onAppear {
-                isSearchFocused = true
-            }
+            .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search movies...")
         }
     }
 }
@@ -180,6 +137,14 @@ class SearchViewModel: ObservableObject {
             isLoading = false
         }
     }
+
+    func clearSearch() {
+        searchText = ""
+        results = []
+        error = nil
+        isLoading = false
+        searchTask?.cancel()
+    }
 }
 
 // MARK: - Results List (Netflix-style carousel)
@@ -208,7 +173,7 @@ struct SearchResultsList: View {
                 LazyHStack(alignment: .top, spacing: .mgSpacing16) {
                     ForEach(results.indices, id: \.self) { index in
                         let movie = results[index]
-                        NavigationLink(destination: MovieDetailView(tmdbId: movie.tmdbId)) {
+                        NavigationLink(value: MovieDestination.detail(tmdbId: movie.tmdbId)) {
                             SearchPosterCard(movie: movie)
                         }
                         .buttonStyle(MGCardButtonStyle())
