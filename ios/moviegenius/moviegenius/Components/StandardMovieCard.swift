@@ -40,14 +40,14 @@ struct StandardMovieCard: View {
     }
 
     var body: some View {
-        ZStack(alignment: .bottomTrailing) {
+        VStack(alignment: .leading, spacing: .mgSpacing12) {
             // Main content area - tappable for navigation
             NavigationLink(value: MovieDestination.detail(tmdbId: tmdbId)) {
                 HStack(alignment: .top, spacing: .mgSpacing16) {
                     // Poster (left side)
                     posterView
 
-                    // Content (right side) with space for buttons at bottom
+                    // Content (right side)
                     VStack(alignment: .leading, spacing: 0) {
                         // Title + Year
                         VStack(alignment: .leading, spacing: .mgSpacing4) {
@@ -74,20 +74,15 @@ struct StandardMovieCard: View {
                                 .padding(.top, .mgSpacing8)
                         }
 
-                        Spacer(minLength: .mgSpacing16)
-
-                        // Spacer to reserve space for buttons
-                        Color.clear
-                            .frame(height: 36) // Height of FavoriteButtons
-                            .padding(.top, .mgSpacing8)
+                        Spacer()
                     }
                     .frame(maxWidth: .infinity, alignment: .topLeading)
                 }
-                .frame(minHeight: 210) // Minimum height for poster
+                .frame(minHeight: 210) // Ensure content area is at least as tall as poster
             }
             .buttonStyle(.plain)
 
-            // Favorite buttons positioned in bottom right of card
+            // Favorite buttons with optional delete button - below all content
             HStack(spacing: .mgSpacing12) {
                 // Favorite buttons
                 FavoriteButtons(
@@ -99,7 +94,9 @@ struct StandardMovieCard: View {
                     onDarkBackground: onDarkBackground
                 )
 
-                // Delete button (when provided)
+                Spacer()
+
+                // Delete button (when provided, appears at far right)
                 if let onDelete = onDelete {
                     Button(action: {
                         HapticManager.light()
