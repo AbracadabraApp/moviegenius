@@ -32,6 +32,7 @@ struct PersonDetailView: View {
         .background(Color.mgBackground)
         .navigationTitle("Person Detail")
         .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(.visible, for: .navigationBar)
     }
 }
 

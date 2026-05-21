@@ -117,7 +117,8 @@ struct MoviePosterCard: View {
 
     private var posterURL: URL? {
         guard let posterUrl = movie.posterUrl else { return nil }
-        return URL(string: posterUrl)
+        // Optimize for thumbnail size (170px wide display)
+        return ImageURLOptimizer.posterURL(from: posterUrl, context: .thumbnail)
     }
 
     private var posterPlaceholder: some View {

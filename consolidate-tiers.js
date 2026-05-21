@@ -8,24 +8,26 @@ console.log(`Current structure: ${data.categories.length} categories`);
 console.log(`Current tiers per category: ${data.categories[0].tiers.length}`);
 console.log(`Total current lists: ${data.categories.length * data.categories[0].tiers.length}`);
 
-// Define tier merge mapping
+// Define tier merge mapping with order
 const tierMergeMap = [
-  { newName: 'Essential', oldIndices: [0, 1] },      // Essential + Foundational
-  { newName: 'Foundational', oldIndices: [2, 3] },   // Classics + Well-Versed
-  { newName: 'Connoisseur', oldIndices: [4, 5] },    // Devotee + Connoisseur
-  { newName: 'Specialist', oldIndices: [6, 7] },     // Deep Cuts + Specialist
-  { newName: 'Genius', oldIndices: [8, 9] }          // Archivist + Master
+  { newName: 'Essential', oldIndices: [0, 1], order: 0 },      // Essential + Foundational
+  { newName: 'Foundational', oldIndices: [2, 3], order: 1 },   // Classics + Well-Versed
+  { newName: 'Connoisseur', oldIndices: [4, 5], order: 2 },    // Devotee + Connoisseur
+  { newName: 'Specialist', oldIndices: [6, 7], order: 3 },     // Deep Cuts + Specialist
+  { newName: 'Genius', oldIndices: [8, 9], order: 4 }          // Archivist + Master
 ];
 
 // Transform data
 const newData = {
+  schemaVersion: 1,
   categories: data.categories.map(category => {
-    const newTiers = tierMergeMap.map(({ newName, oldIndices }) => {
+    const newTiers = tierMergeMap.map(({ newName, oldIndices, order }) => {
       // Concatenate films from the two old tiers
       const films = oldIndices.flatMap(idx => category.tiers[idx].films);
 
       return {
         name: newName,
+        order: order,
         films: films
       };
     });

@@ -77,8 +77,6 @@ struct SearchView: View {
                 }
             }
             .background(Color.mgBackground)
-            .navigationTitle("Search")
-            .navigationBarTitleDisplayMode(.inline)
             .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search movies...")
         }
     }

@@ -104,6 +104,7 @@ struct MovieDetailView: View {
         .background(Color.mgBackground)
         .navigationTitle(viewModel.movieResponse?.movie.title ?? "Movie")
         .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(.visible, for: .navigationBar)
         .task {
             await viewModel.loadMovie()
         }

@@ -42,36 +42,95 @@ class CollectionDetailViewModel: ObservableObject {
             isLoading = true
             error = nil
 
-            do {
-                #if DEBUG
-                print("[CollectionDetailVM] Starting fetch for collection: \(collectionId)")
-                #endif
+            // Retry configuration
+            let maxRetries = 3
+            var retryCount = 0
+            var lastError: Error?
 
-                let response = try await apiClient.fetchCollection(id: collectionId)
+            while retryCount <= maxRetries {
+                do {
+                    #if DEBUG
+                    if retryCount > 0 {
+                        print("[CollectionDetailVM] Retry attempt \(retryCount) for collection: \(collectionId)")
+                    } else {
+                        print("[CollectionDetailVM] Starting fetch for collection: \(collectionId)")
+                    }
+                    #endif
 
-                collection = response.collection
-                movies = response.movies
-                isLoading = false
+                    let response = try await apiClient.fetchCollection(id: collectionId)
 
-                #if DEBUG
-                print("[CollectionDetailVM] Successfully loaded collection: \(response.collection.title) with \(response.movies.count) movies")
-                #endif
-            } catch is CancellationError {
-                // User navigated away, this is expected
-                #if DEBUG
-                print("[CollectionDetailVM] Request cancelled - user navigated away")
-                #endif
-                return
-            } catch {
-                self.error = error
-                isLoading = false
-                #if DEBUG
-                print("[CollectionDetailVM] Error loading collection: \(error)")
-                #endif
+                    collection = response.collection
+                    movies = response.movies
+                    isLoading = false
+
+                    #if DEBUG
+                    print("[CollectionDetailVM] Successfully loaded collection: \(response.collection.title) with \(response.movies.count) movies")
+                    #endif
+
+                    // Success - break out of retry loop
+                    return
+
+                } catch is CancellationError {
+                    // User navigated away, this is expected - don't retry
+                    #if DEBUG
+                    print("[CollectionDetailVM] Request cancelled - user navigated away")
+                    #endif
+                    isLoading = false
+                    return
+                } catch {
+                    lastError = error
+
+                    // Check if we should retry
+                    if retryCount < maxRetries {
+                        // Calculate exponential backoff delay: 1s, 2s, 4s
+                        let delaySeconds = pow(2.0, Double(retryCount))
+
+                        #if DEBUG
+                        print("[CollectionDetailVM] Error on attempt \(retryCount + 1): \(error)")
+                        print("[CollectionDetailVM] Retrying in \(delaySeconds) seconds...")
+                        #endif
+
+                        // Wait with exponential backoff
+                        try? await Task.sleep(nanoseconds: UInt64(delaySeconds * 1_000_000_000))
+
+                        // Check if task was cancelled during sleep
+                        if Task.isCancelled {
+                            #if DEBUG
+                            print("[CollectionDetailVM] Task cancelled during retry delay")
+                            #endif
+                            isLoading = false
+                            return
+                        }
+
+                        retryCount += 1
+                    } else {
+                        // Max retries exceeded
+                        #if DEBUG
+                        print("[CollectionDetailVM] Max retries exceeded. Final error: \(error)")
+                        #endif
+                        break
+                    }
+                }
             }
+
+            // If we get here, all retries failed
+            self.error = lastError
+            isLoading = false
+
+            #if DEBUG
+            print("[CollectionDetailVM] Failed to load collection after \(retryCount + 1) attempts")
+            #endif
         }
 
         await loadTask?.value
+    }
+
+    // Manual retry method that can be called from UI
+    func retry() async {
+        #if DEBUG
+        print("[CollectionDetailVM] Manual retry requested for collection: \(collectionId)")
+        #endif
+        await loadCollection()
     }
 
     deinit {

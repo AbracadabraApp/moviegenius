@@ -1,7 +1,7 @@
 # MovieGenius Project Instructions
 
-**Last Updated:** 2026-05-18
-**Version:** 3.1 (Added iOS documentation guidance)
+**Last Updated:** 2026-05-20
+**Version:** 3.2 (Added Karpathy "Surgical Changes" principle)
 
 ---
 
@@ -267,6 +267,94 @@ TodoWrite({
 3. Check if locked/protected
 4. Consider impact on other components
 5. Test hypothesis before implementing
+
+---
+
+## Surgical Changes (Karpathy Principle #3)
+
+**Touch only what you must. Every changed line should trace to the user's request.**
+
+### Core Directive
+
+> "Every diff line should directly trace back to the user's request."
+
+This principle prevents scope creep, unnecessary refactoring, and "helpful" changes that introduce risk without explicit approval.
+
+### When Modifying Existing Code
+
+**DO NOT:**
+- ❌ Improve adjacent code unrelated to the task
+- ❌ Fix formatting in unrelated files or sections
+- ❌ Refactor working functionality "while you're there"
+- ❌ Remove pre-existing dead code (unless it's blocking the task)
+- ❌ Update comments or documentation outside the change scope
+- ❌ Apply style changes to code you didn't modify for the task
+
+**DO:**
+- ✅ Match existing style conventions in the code you're modifying
+- ✅ Remove only imports/variables/functions YOUR changes made obsolete
+- ✅ Keep changes minimal and focused on the stated goal
+- ✅ Preserve adjacent code, comments, and formatting
+- ✅ Flag issues you notice without fixing them (mention to user)
+
+### Validation Check
+
+Before submitting changes, ask yourself:
+
+**"Can I trace every modified line directly back to what the user requested?"**
+
+If the answer is **no**, you've gone too far. Undo the extra changes.
+
+### Examples
+
+**Request:** "Fix the contrast in CategoryBadgeColors.swift"
+
+❌ **WRONG:**
+```swift
+// Changed CategoryBadgeColors.swift (requested)
+// Also refactored GeniusView.swift formatting (NOT requested)
+// Removed unused imports across 3 files (NOT requested)
+// Updated comments in 5 other files (NOT requested)
+```
+
+✅ **CORRECT:**
+```swift
+// Changed CategoryBadgeColors.swift ONLY
+// Modified textColor() function to return black for gold backgrounds
+// No other files touched
+```
+
+**Request:** "Add bookmark toggle button to CollectionPage"
+
+❌ **WRONG:**
+```javascript
+// Added bookmark button (requested)
+// Refactored entire component to use hooks (NOT requested)
+// Renamed variables for "clarity" (NOT requested)
+// Fixed ESLint warnings in file (NOT requested)
+```
+
+✅ **CORRECT:**
+```javascript
+// Added bookmark button component
+// Added click handler
+// Added localStorage persistence for bookmarks
+// No refactoring, no style changes
+```
+
+### Why This Matters
+
+**Benefits:**
+- Smaller, reviewable diffs
+- Lower risk of introducing bugs
+- Easier to revert if needed
+- Builds trust with explicit-only changes
+- Prevents "helpful" changes that break things
+
+**MovieGenius Context:**
+This aligns with our "Collaboration Rules" (line 461) - implement ONLY what was explicitly agreed. Surgical changes are the technical manifestation of that principle.
+
+**Source:** Karpathy's CLAUDE.md guidelines (220K+ GitHub stars), distilled from AI coding agent failure patterns.
 
 ---
 

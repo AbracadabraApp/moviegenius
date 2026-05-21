@@ -13,9 +13,6 @@ struct HomeView: View {
     var body: some View {
         ScrollView {
             LazyVStack(spacing: 0) {
-                // Spacer for header
-                Color.clear.frame(height: 60)
-
                 if let error = viewModel.error {
                     // Error state - SHOW THE ERROR!
                     VStack(spacing: .mgSpacing20) {
@@ -89,8 +86,6 @@ struct HomeView: View {
         .background {
             MGAtmosphericBackground()
         }
-        .navigationTitle("Movies")
-        .navigationBarTitleDisplayMode(.large)
         .refreshable {
             await viewModel.loadInitialCollections()
         }

@@ -75,9 +75,6 @@ struct GeniusView: View {
         ZStack(alignment: .top) {
             ScrollView {
                 VStack(spacing: 0) {
-                    // Top spacer for overlaid header
-                    Color.clear.frame(height: 60)
-
                     // Heat map chips content
                     HeatMapChipsContent()
                 }
@@ -162,11 +159,43 @@ struct JourneyTabContent: View {
             // Category Collage
             FlowLayout(spacing: .mgSpacing8) {
                 ForEach(shuffledCategories, id: \.self) { category in
-                    NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: category == "Awards" ? "Best Picture" : "Essential")) {
-                        CategoryBadge(
-                            category: category,
-                            progress: categoryProgress(category)
-                        )
+                    Group {
+                        if category == "Actors" {
+                            NavigationLink(destination: PersonsGeniusView(categoryType: .actors)) {
+                                CategoryBadge(
+                                    category: category,
+                                    progress: categoryProgress(category)
+                                )
+                            }
+                        } else if category == "Actresses" {
+                            NavigationLink(destination: PersonsGeniusView(categoryType: .actresses)) {
+                                CategoryBadge(
+                                    category: category,
+                                    progress: categoryProgress(category)
+                                )
+                            }
+                        } else if category == "Directors" {
+                            NavigationLink(destination: PersonsGeniusView(categoryType: .directors)) {
+                                CategoryBadge(
+                                    category: category,
+                                    progress: categoryProgress(category)
+                                )
+                            }
+                        } else if category == "Awards" {
+                            NavigationLink(destination: AwardsGeniusView()) {
+                                CategoryBadge(
+                                    category: category,
+                                    progress: categoryProgress(category)
+                                )
+                            }
+                        } else {
+                            NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: "Essential")) {
+                                CategoryBadge(
+                                    category: category,
+                                    progress: categoryProgress(category)
+                                )
+                            }
+                        }
                     }
                     .buttonStyle(MGCardButtonStyle())
                 }
@@ -445,9 +474,6 @@ struct CategorySubcategoriesView: View {
         ZStack(alignment: .top) {
             ScrollView {
                 VStack(spacing: 0) {
-                    // Top spacer for overlaid header
-                    Color.clear.frame(height: 60)
-
                     VStack(alignment: .leading, spacing: .mgSpacing16) {
                         // Header
                         Text(category)
@@ -482,25 +508,76 @@ struct CategorySubcategoriesView: View {
     }
 }
 
-// MARK: - Tier Navigation Chips
+// MARK: - Tier Navigation Bar
 
-struct TierNavigationChips: View {
+struct TierNavigationBar: View {
     let category: String
+    let currentTier: String?
 
     private let allTiers = [
         "Essential", "Foundational", "Connoisseur", "Specialist", "Genius"
     ]
 
+    private let tierLabels: [String: String?] = [
+        "Essential": "Beginner",
+        "Foundational": nil,
+        "Connoisseur": "For Real",
+        "Specialist": nil,
+        "Genius": "Genius"
+    ]
+
     var body: some View {
-        FlowLayout(spacing: .mgSpacing12) {
-            ForEach(allTiers, id: \.self) { tier in
+        HStack(spacing: 2) {
+            ForEach(Array(allTiers.enumerated()), id: \.element) { index, tier in
                 NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: tier)) {
-                    TierChip(tier: tier)
+                    TierSection(
+                        tier: tier,
+                        label: tierLabels[tier] ?? nil,
+                        isActive: tier == currentTier,
+                        position: index
+                    )
                 }
                 .buttonStyle(.plain)
             }
         }
         .padding(.horizontal, .mgSpacing16)
+        .padding(.vertical, .mgSpacing8)
+    }
+}
+
+struct TierSection: View {
+    let tier: String
+    let label: String?
+    let isActive: Bool
+    let position: Int
+
+    var body: some View {
+        VStack(spacing: 4) {
+            // Color bar
+            RoundedRectangle(cornerRadius: 2)
+                .fill(CategoryBadgeColors.semanticTierColor(for: tier))
+                .frame(height: isActive ? 6 : 4)
+                .opacity(isActive ? 1.0 : 0.7)
+
+            // Label (only for positions 0, 2, 4)
+            if let label = label {
+                Text(label.uppercased())
+                    .font(.system(size: 10, weight: .semibold))
+                    .foregroundStyle(isActive ? CategoryBadgeColors.semanticTierColor(for: tier) : Color.mgSecondary)
+                    .kerning(0.3)
+            }
+        }
+        .frame(maxWidth: .infinity)
+        .contentShape(Rectangle())
+    }
+}
+
+// Legacy - kept for compatibility but returns empty
+struct TierNavigationChips: View {
+    let category: String
+
+    var body: some View {
+        TierNavigationBar(category: category, currentTier: nil)
     }
 }
 
@@ -508,14 +585,7 @@ struct TierChip: View {
     let tier: String
 
     var body: some View {
-        Text(tier.uppercased())
-            .font(.system(size: 12, weight: .medium))
-            .foregroundStyle(CategoryBadgeColors.semanticTierTextColor(for: tier))
-            .padding(.horizontal, 10)
-            .padding(.vertical, 6)
-            .background(CategoryBadgeColors.semanticTierColor(for: tier))
-            .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
-            .kerning(0.3)
+        EmptyView()
     }
 }
 
@@ -568,7 +638,7 @@ struct CategoryEssentialsView: View {
     }
 
     private var filmListView: some View {
-        LazyVStack(spacing: .mgSpacing16) {
+        LazyVStack(spacing: .mgSpacing16, pinnedViews: []) {
             ForEach(viewModel.movies) { movie in
                 StandardMovieCard(
                     tmdbId: movie.tmdbId,
@@ -578,6 +648,7 @@ struct CategoryEssentialsView: View {
                     slug: movie.slug,
                     onDarkBackground: false
                 )
+                .id(movie.tmdbId) // Improve view recycling
             }
         }
         .padding(.horizontal, .mgSpacing20)
@@ -607,47 +678,42 @@ struct CategoryEssentialsView: View {
     }
 
     var body: some View {
-        ZStack(alignment: .top) {
-            ScrollView {
-                VStack(spacing: 0) {
-                    // Top spacer for overlaid header
-                    Color.clear.frame(height: 60)
+        ScrollView(.vertical, showsIndicators: true) {
+            VStack(alignment: .leading, spacing: .mgSpacing16) {
+                // Tier navigation bar
+                TierNavigationBar(category: category, currentTier: subcategory)
+                    .padding(.top, .mgSpacing8)
 
-                    VStack(alignment: .leading, spacing: .mgSpacing16) {
-                        // Tier navigation chips (top)
-                        TierNavigationChips(category: category)
-                            .padding(.top, .mgSpacing8)
-
-                        if viewModel.isLoadingInitial || viewModel.isLoading {
-                            VStack(spacing: .mgSpacing12) {
-                                ProgressView()
-                                    .tint(Color.mgGold)
-                                Text("Loading \(viewModel.totalFilms > 0 ? "\(viewModel.totalFilms) " : "")films...")
-                                    .font(.mgCaption)
-                                    .foregroundStyle(Color.mgSecondary)
-                            }
-                            .frame(maxWidth: .infinity)
-                            .padding(.vertical, .mgSpacing32)
-                        } else if viewModel.error != nil {
-                            errorView
-                        } else {
-                            filmListView
-
-                            // Tier navigation chips (bottom)
-                            TierNavigationChips(category: category)
-                                .padding(.top, .mgSpacing24)
-                        }
+                if viewModel.isLoadingInitial || viewModel.isLoading {
+                    VStack(spacing: .mgSpacing12) {
+                        ProgressView()
+                            .tint(Color.mgGold)
+                        Text("Loading \(viewModel.totalFilms > 0 ? "\(viewModel.totalFilms) " : "")films...")
+                            .font(.mgCaption)
+                            .foregroundStyle(Color.mgSecondary)
                     }
-                    .padding(.vertical, .mgSpacing12)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, .mgSpacing32)
+                } else if viewModel.error != nil {
+                    errorView
+                } else {
+                    filmListView
                 }
             }
-            .task {
-                await viewModel.loadMovies()
-            }
-
+            .padding(.vertical, .mgSpacing12)
         }
         .background(Color.mgBackground)
-        // .enableSwipeBack()
+        .navigationBarBackButtonHidden(false)
+        .refreshable {
+            await viewModel.loadMovies()
+        }
+        .task {
+            await viewModel.loadMovies()
+        }
+        .onDisappear {
+            // Clear resources when navigating away to free memory
+            viewModel.clearResources()
+        }
     }
 }
 
@@ -693,7 +759,7 @@ struct CategoryProgressHeader: View {
                 }
             }
 
-            // Progress bar
+            // Progress bar v3 - with segment dividers
             GeometryReader { geometry in
                 ZStack(alignment: .leading) {
                     // Background
@@ -706,6 +772,14 @@ struct CategoryProgressHeader: View {
                         .fill(progressColor)
                         .frame(width: geometry.size.width * progress, height: 8)
                         .animation(.spring(response: 0.4, dampingFraction: 0.8), value: progress)
+
+                    // Segment dividers at tier transitions (20%, 40%, 60%, 80%)
+                    ForEach([0.20, 0.40, 0.60, 0.80], id: \.self) { position in
+                        Rectangle()
+                            .fill(Color(white: 0.3))  // Dark grey
+                            .frame(width: 5, height: 12)
+                            .offset(x: geometry.size.width * position - 2.5, y: -2)
+                    }
                 }
             }
             .frame(height: 8)
@@ -768,6 +842,15 @@ class CategoryEssentialsViewModel: ObservableObject {
     init(category: String, subcategory: String? = nil) {
         self.category = category
         self.subcategory = subcategory
+    }
+
+    func clearResources() {
+        // Clear heavy resources when view disappears to free memory
+        if movies.count > 20 {
+            let count = movies.count
+            movies = []
+            print("🧹 Cleared \(count) movies from memory for \(category)")
+        }
     }
 
     func loadMovies() async {
@@ -913,7 +996,8 @@ struct CategoryEssentials {
     // Pre-populated TMDB IDs to skip search API calls
     // Key format: "Category|Subcategory|Title|Year"
     // Genre categories loaded from JSON, Awards/Actors/Actresses/Directors from tierTmdbData
-    static var tmdbIdLookup: [String: Int] {
+    // PERFORMANCE: Changed from computed property to stored property to avoid rebuilding on every access
+    static let tmdbIdLookup: [String: Int] = {
         // Build combined dictionary from JSON (genres) + tierTmdbData (Awards/People)
         var combined: [String: Int] = [:] // tierTmdbData not defined yet
 
@@ -929,7 +1013,7 @@ struct CategoryEssentials {
         }
 
         return combined
-    }
+    }()
 
     // Returns subcategory names for 2-tier categories
     static func subcategories(for category: String) -> [String] {
@@ -3834,11 +3918,6 @@ struct CategoryChip: View {
 struct HeatLegend: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 11) {
-            Text("HOW LIT IS EACH CHIP")
-                .font(.system(size: 11, weight: .bold))
-                .tracking(0.7)
-                .foregroundColor(Color.mgTertiary)
-
             // Gradient bar
             HStack(spacing: 0) {
                 Rectangle().fill(Color("HeatLevel1"))
@@ -3852,18 +3931,13 @@ struct HeatLegend: View {
 
             // Labels
             HStack {
-                Text("Essential")
+                Text("Beginner")
                     .frame(maxWidth: .infinity, alignment: .leading)
-                Text("Foundational")
-                    .frame(maxWidth: .infinity, alignment: .center)
-                Text("Deep Cut")
-                    .frame(maxWidth: .infinity, alignment: .center)
-                Text("Connoisseur")
-                    .frame(maxWidth: .infinity, alignment: .center)
-                Text("Master")
+                Spacer()
+                Text("Genius")
                     .frame(maxWidth: .infinity, alignment: .trailing)
             }
-            .font(.system(size: 9.5, weight: .semibold))
+            .font(.system(size: 10.5, weight: .semibold))
             .tracking(-0.1)
             .foregroundColor(Color.mgTertiary)
         }
@@ -3908,11 +3982,51 @@ struct HeatMapChipsContent: View {
                     .foregroundColor(Color.mgSecondary)
             }
             .padding(.horizontal, 20)
-            .padding(.top, 0)
+            .padding(.top, 20)
             .padding(.bottom, 16)
 
             // Genre chips
             VStack(alignment: .leading, spacing: 10) {
+                // Heat legend bar
+                VStack(alignment: .leading, spacing: 11) {
+                    // Gradient bar with dividers
+                    ZStack {
+                        HStack(spacing: 0) {
+                            Rectangle().fill(Color("HeatLevel1"))
+                            Rectangle().fill(Color("HeatLevel2"))
+                            Rectangle().fill(Color("HeatLevel3"))
+                            Rectangle().fill(Color("HeatLevel4"))
+                            Rectangle().fill(Color("HeatLevel5"))
+                        }
+                        .frame(height: 16)
+                        .cornerRadius(6)
+
+                        // Dividers at 20%, 40%, 60%, 80%
+                        GeometryReader { geometry in
+                            ForEach([0.20, 0.40, 0.60, 0.80], id: \.self) { position in
+                                Rectangle()
+                                    .fill(Color(white: 0.3))
+                                    .frame(width: 5, height: 20)
+                                    .position(x: geometry.size.width * position, y: geometry.size.height / 2)
+                            }
+                        }
+                    }
+                    .frame(height: 16)
+
+                    // Labels
+                    HStack {
+                        Text("Beginner")
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        Spacer()
+                        Text("Genius")
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                    }
+                    .font(.system(size: 10.5, weight: .semibold))
+                    .tracking(-0.1)
+                    .foregroundColor(Color.mgTertiary)
+                }
+                .padding(.bottom, 6)
+
                 Text("BROWSE BY GENRE")
                     .font(.system(size: 11, weight: .bold))
                     .tracking(0.7)
@@ -3941,14 +4055,47 @@ struct HeatMapChipsContent: View {
 
                 FlowLayout(spacing: 8) {
                     ForEach(peopleCategories, id: \.self) { category in
-                        NavigationLink(destination: CategoryEssentialsView(
-                            category: category,
-                            subcategory: category == "Awards" ? "Best Picture" : "Essential"
-                        )) {
-                            CategoryChip(
-                                category: category,
-                                heatLevel: categoryHeatLevel(category: category, lovedMovies: favorites.lovedMovies)
-                            )
+                        Group {
+                            if category == "Actors" {
+                                NavigationLink(destination: PersonsGeniusView(categoryType: .actors)) {
+                                    CategoryChip(
+                                        category: category,
+                                        heatLevel: categoryHeatLevel(category: category, lovedMovies: favorites.lovedMovies)
+                                    )
+                                }
+                            } else if category == "Actresses" {
+                                NavigationLink(destination: PersonsGeniusView(categoryType: .actresses)) {
+                                    CategoryChip(
+                                        category: category,
+                                        heatLevel: categoryHeatLevel(category: category, lovedMovies: favorites.lovedMovies)
+                                    )
+                                }
+                            } else if category == "Directors" {
+                                NavigationLink(destination: PersonsGeniusView(categoryType: .directors)) {
+                                    CategoryChip(
+                                        category: category,
+                                        heatLevel: categoryHeatLevel(category: category, lovedMovies: favorites.lovedMovies)
+                                    )
+                                }
+                            } else if category == "Awards" {
+                                NavigationLink(destination: AwardsGeniusView()) {
+                                    CategoryChip(
+                                        category: category,
+                                        heatLevel: categoryHeatLevel(category: category, lovedMovies: favorites.lovedMovies)
+                                    )
+                                }
+                            } else {
+                                // Other categories
+                                NavigationLink(destination: CategoryEssentialsView(
+                                    category: category,
+                                    subcategory: "Essential"
+                                )) {
+                                    CategoryChip(
+                                        category: category,
+                                        heatLevel: categoryHeatLevel(category: category, lovedMovies: favorites.lovedMovies)
+                                    )
+                                }
+                            }
                         }
                     }
                 }

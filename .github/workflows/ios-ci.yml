@@ -1,0 +1,210 @@
+name: iOS CI
+
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - 'ios/**'
+      - '.github/workflows/ios-ci.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'ios/**'
+      - '.github/workflows/ios-ci.yml'
+
+env:
+  XCODE_VERSION: '15.4'
+  IOS_SIMULATOR: 'iPhone 15'
+  SCHEME: 'moviegenius'
+
+jobs:
+  lint:
+    name: SwiftLint
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install SwiftLint
+        run: brew install swiftlint
+
+      - name: Run SwiftLint
+        run: |
+          cd ios/moviegenius
+          swiftlint lint --strict --reporter github-actions-logging
+
+  build-and-test:
+    name: Build and Test
+    runs-on: macos-14
+    needs: lint
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_${{ env.XCODE_VERSION }}.app
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Cache Swift packages
+        uses: actions/cache@v3
+        with:
+          path: ios/moviegenius/moviegenius.xcodeproj/project.xcworkspace/xcshareddata/swiftpm
+          key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+          restore-keys: |
+            ${{ runner.os }}-spm-
+
+      - name: Resolve package dependencies
+        run: |
+          cd ios/moviegenius
+          xcodebuild -project moviegenius.xcodeproj \
+            -scheme ${{ env.SCHEME }} \
+            -resolvePackageDependencies
+
+      - name: Build for testing
+        run: |
+          cd ios/moviegenius
+          xcodebuild build-for-testing \
+            -project moviegenius.xcodeproj \
+            -scheme ${{ env.SCHEME }} \
+            -destination "platform=iOS Simulator,name=${{ env.IOS_SIMULATOR }}" \
+            -derivedDataPath DerivedData \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO
+
+      - name: Run unit tests
+        run: |
+          cd ios/moviegenius
+          xcodebuild test-without-building \
+            -project moviegenius.xcodeproj \
+            -scheme ${{ env.SCHEME }} \
+            -destination "platform=iOS Simulator,name=${{ env.IOS_SIMULATOR }}" \
+            -derivedDataPath DerivedData \
+            -only-testing:moviegeniusTests \
+            -resultBundlePath TestResults.xcresult \
+            -enableCodeCoverage YES \
+            | xcpretty --report junit --output test-results.xml
+
+      - name: Run UI tests (navigation regression)
+        run: |
+          cd ios/moviegenius
+          xcodebuild test-without-building \
+            -project moviegenius.xcodeproj \
+            -scheme ${{ env.SCHEME }} \
+            -destination "platform=iOS Simulator,name=${{ env.IOS_SIMULATOR }}" \
+            -derivedDataPath DerivedData \
+            -only-testing:moviegeniusUITests/NavigationRegressionTests \
+            -resultBundlePath UITestResults.xcresult \
+            | xcpretty
+
+      - name: Generate code coverage report
+        if: success() || failure()
+        run: |
+          cd ios/moviegenius
+          xcrun xccov view --report --only-targets TestResults.xcresult > coverage.txt
+          echo "### Code Coverage Report" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          head -20 coverage.txt >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+
+      - name: Upload test results
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results
+          path: |
+            ios/moviegenius/TestResults.xcresult
+            ios/moviegenius/UITestResults.xcresult
+            ios/moviegenius/test-results.xml
+
+      - name: Check for hardcoded navigation violations
+        run: |
+          echo "Checking for navigation anti-patterns..."
+          if grep -r "navigationBarHidden(true)" ios/moviegenius/moviegenius/Views; then
+            echo "::error::Found navigationBarHidden(true) - this breaks swipe gestures!"
+            exit 1
+          fi
+          if grep -r "navigationBarBackButtonHidden(true)" ios/moviegenius/moviegenius/Views; then
+            echo "::error::Found navigationBarBackButtonHidden(true) - this breaks navigation!"
+            exit 1
+          fi
+          echo "✅ No navigation anti-patterns found"
+
+  validate-genius-data:
+    name: Validate Genius Data
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate JSON structure
+        run: |
+          python3 -m json.tool ios/moviegenius/moviegenius/Resources/genius_data.json > /dev/null
+          if [ $? -ne 0 ]; then
+            echo "::error::genius_data.json has invalid JSON syntax"
+            exit 1
+          fi
+
+      - name: Validate tier structure
+        run: |
+          python3 << 'EOF'
+          import json
+          import sys
+
+          with open('ios/moviegenius/moviegenius/Resources/genius_data.json') as f:
+              data = json.load(f)
+
+          required_tiers = ["Wanderer", "Explorer", "Adventurer", "Seeker", "Genius"]
+
+          for category in data['categories']:
+              tier_names = {tier['name'] for tier in category['tiers']}
+              missing = set(required_tiers) - tier_names
+              if missing:
+                  print(f"::error::Category '{category['category']}' missing tiers: {missing}")
+                  sys.exit(1)
+
+          print(f"✅ Validated {len(data['categories'])} categories with correct tier structure")
+          EOF
+
+  performance-baseline:
+    name: Performance Baseline
+    runs-on: macos-14
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build-and-test
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_${{ env.XCODE_VERSION }}.app
+
+      - name: Run performance tests
+        run: |
+          cd ios/moviegenius
+          xcodebuild test \
+            -project moviegenius.xcodeproj \
+            -scheme ${{ env.SCHEME }} \
+            -destination "platform=iOS Simulator,name=${{ env.IOS_SIMULATOR }}" \
+            -only-testing:moviegeniusTests/PerformanceTests \
+            -resultBundlePath PerformanceResults.xcresult \
+            | xcpretty
+
+      - name: Extract metrics
+        run: |
+          cd ios/moviegenius
+          xcrun xcresulttool get --path PerformanceResults.xcresult \
+            --format json > performance.json
+
+          # Store baseline for comparison in future PRs
+          echo "### Performance Metrics" >> $GITHUB_STEP_SUMMARY
+          python3 -c "
+          import json
+          data = json.load(open('performance.json'))
+          # Parse and display key metrics
+          print('Genius View Scroll: X.XXms')
+          print('Movie Search: X.XXms')
+          print('Memory Usage: XXX MB')
+          " >> $GITHUB_STEP_SUMMARY
+
+      - name: Store performance baseline
+        uses: actions/cache@v3
+        with:
+          path: ios/moviegenius/performance.json
+          key: performance-baseline-${{ github.sha }}

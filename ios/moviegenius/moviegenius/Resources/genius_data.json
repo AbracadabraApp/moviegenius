@@ -1,10 +1,12 @@
 {
+  "schemaVersion": 1,
   "categories": [
     {
       "category": "Action",
       "tiers": [
         {
-          "name": "Essential",
+          "name": "Wanderer",
+          "order": 0,
           "films": [
             {
               "title": "Die Hard",
@@ -52,7 +54,7 @@
               "tmdbId": 9461
             },
             {
-              "title": "Mission: Impossible — Fallout",
+              "title": "Mission: Impossible \u2014 Fallout",
               "year": 2018,
               "tmdbId": 353081
             },
@@ -134,7 +136,8 @@
           ]
         },
         {
-          "name": "Foundational",
+          "name": "Explorer",
+          "order": 1,
           "films": [
             {
               "title": "Once Upon a Time in China",
@@ -284,7 +287,8 @@
           ]
         },
         {
-          "name": "Connoisseur",
+          "name": "Adventurer",
+          "order": 2,
           "films": [
             {
               "title": "Ong-Bak: Muay Thai Warrior",
@@ -409,7 +413,8 @@
           ]
         },
         {
-          "name": "Specialist",
+          "name": "Seeker",
+          "order": 3,
           "films": [
             {
               "title": "City on Fire",
@@ -515,6 +520,7 @@
         },
         {
           "name": "Genius",
+          "order": 4,
           "films": [
             {
               "title": "The Street Fighter",
@@ -619,7 +625,8 @@
       "category": "Adventure",
       "tiers": [
         {
-          "name": "Essential",
+          "name": "Wanderer",
+          "order": 0,
           "films": [
             {
               "title": "Raiders of the Lost Ark",
@@ -749,7 +756,8 @@
           ]
         },
         {
-          "name": "Foundational",
+          "name": "Explorer",
+          "order": 1,
           "films": [
             {
               "title": "Mutiny on the Bounty",
@@ -874,7 +882,8 @@
           ]
         },
         {
-          "name": "Connoisseur",
+          "name": "Adventurer",
+          "order": 2,
           "films": [
             {
               "title": "The Last of the Mohicans",
@@ -979,7 +988,8 @@
           ]
         },
         {
-          "name": "Specialist",
+          "name": "Seeker",
+          "order": 3,
           "films": [
             {
               "title": "Time Bandits",
@@ -1070,6 +1080,7 @@
         },
         {
           "name": "Genius",
+          "order": 4,
           "films": [
             {
               "title": "The Vikings",
@@ -1159,7 +1170,8 @@
       "category": "Comedy",
       "tiers": [
         {
-          "name": "Essential",
+          "name": "Wanderer",
+          "order": 0,
           "films": [
             {
               "title": "Some Like It Hot",
@@ -1289,7 +1301,8 @@
           ]
         },
         {
-          "name": "Foundational",
+          "name": "Explorer",
+          "order": 1,
           "films": [
             {
               "title": "Sullivan's Travels",
@@ -1439,7 +1452,8 @@
           ]
         },
         {
-          "name": "Connoisseur",
+          "name": "Adventurer",
+          "order": 2,
           "films": [
             {
               "title": "Rushmore",
@@ -1532,7 +1546,7 @@
               "tmdbId": 5558
             },
             {
-              "title": "8½",
+              "title": "8\u00bd",
               "year": 1963,
               "tmdbId": 422
             },
@@ -1554,7 +1568,8 @@
           ]
         },
         {
-          "name": "Specialist",
+          "name": "Seeker",
+          "order": 3,
           "films": [
             {
               "title": "Real Life",
@@ -1645,6 +1660,7 @@
         },
         {
           "name": "Genius",
+          "order": 4,
           "films": [
             {
               "title": "The Lavender Hill Mob",
@@ -1734,7 +1750,8 @@
       "category": "Crime",
       "tiers": [
         {
-          "name": "Essential",
+          "name": "Wanderer",
+          "order": 0,
           "films": [
             {
               "title": "The Godfather",
@@ -1864,7 +1881,8 @@
           ]
         },
         {
-          "name": "Foundational",
+          "name": "Explorer",
+          "order": 1,
           "films": [
             {
               "title": "The Maltese Falcon",
@@ -2014,7 +2032,8 @@
           ]
         },
         {
-          "name": "Connoisseur",
+          "name": "Adventurer",
+          "order": 2,
           "films": [
             {
               "title": "City of God",
@@ -2082,7 +2101,7 @@
               "tmdbId": 11657
             },
             {
-              "title": "Le Samouraï",
+              "title": "Le Samoura\u00ef",
               "year": 1967,
               "tmdbId": 5511
             },
@@ -2102,7 +2121,7 @@
               "tmdbId": 27430
             },
             {
-              "title": "Pépé le Moko",
+              "title": "P\u00e9p\u00e9 le Moko",
               "year": 1937,
               "tmdbId": 26252
             },
@@ -2129,7 +2148,8 @@
           ]
         },
         {
-          "name": "Specialist",
+          "name": "Seeker",
+          "order": 3,
           "films": [
             {
               "title": "The Friends of Eddie Coyle",
@@ -2220,6 +2240,7 @@
         },
         {
           "name": "Genius",
+          "order": 4,
           "films": [
             {
               "title": "He Walked by Night",
@@ -2309,7 +2330,8 @@
       "category": "Documentary",
       "tiers": [
         {
-          "name": "Essential",
+          "name": "Wanderer",
+          "order": 0,
           "films": [
             {
               "title": "Hoop Dreams",
@@ -2439,7 +2461,8 @@
           ]
         },
         {
-          "name": "Foundational",
+          "name": "Explorer",
+          "order": 1,
           "films": [
             {
               "title": "Triumph of the Will",
@@ -2569,7 +2592,8 @@
           ]
         },
         {
-          "name": "Connoisseur",
+          "name": "Adventurer",
+          "order": 2,
           "films": [
             {
               "title": "American Movie",
@@ -2679,7 +2703,8 @@
           ]
         },
         {
-          "name": "Specialist",
+          "name": "Seeker",
+          "order": 3,
           "films": [
             {
               "title": "F for Fake",
@@ -2765,9 +2790,10 @@
         },
         {
           "name": "Genius",
+          "order": 4,
           "films": [
             {
-              "title": "Hôtel Terminus: The Life and Times of Klaus Barbie",
+              "title": "H\u00f4tel Terminus: The Life and Times of Klaus Barbie",
               "year": 1988,
               "tmdbId": 41954
             },
@@ -2777,12 +2803,12 @@
               "tmdbId": 87041
             },
             {
-              "title": "Hôtel des Invalides",
+              "title": "H\u00f4tel des Invalides",
               "year": 1952,
               "tmdbId": 150838
             },
             {
-              "title": "Le Sang des bêtes",
+              "title": "Le Sang des b\u00eates",
               "year": 1949,
               "tmdbId": 91262
             },
@@ -2817,7 +2843,7 @@
               "tmdbId": 128284
             },
             {
-              "title": "À propos de Nice",
+              "title": "\u00c0 propos de Nice",
               "year": 1930,
               "tmdbId": 47831
             },
@@ -2854,7 +2880,8 @@
       "category": "Drama",
       "tiers": [
         {
-          "name": "Essential",
+          "name": "Wanderer",
+          "order": 0,
           "films": [
             {
               "title": "Citizen Kane",
@@ -2984,7 +3011,8 @@
           ]
         },
         {
-          "name": "Foundational",
+          "name": "Explorer",
+          "order": 1,
           "films": [
             {
               "title": "The Best Years of Our Lives",
@@ -3134,7 +3162,8 @@
           ]
         },
         {
-          "name": "Connoisseur",
+          "name": "Adventurer",
+          "order": 2,
           "films": [
             {
               "title": "Ikiru",
@@ -3222,7 +3251,7 @@
               "tmdbId": 439
             },
             {
-              "title": "8½",
+              "title": "8\u00bd",
               "year": 1963,
               "tmdbId": 422
             },
@@ -3249,7 +3278,8 @@
           ]
         },
         {
-          "name": "Specialist",
+          "name": "Seeker",
+          "order": 3,
           "films": [
             {
               "title": "A Woman Under the Influence",
@@ -3340,6 +3370,7 @@
         },
         {
           "name": "Genius",
+          "order": 4,
           "films": [
             {
               "title": "Make Way for Tomorrow",
@@ -3429,7 +3460,8 @@
       "category": "Espionage",
       "tiers": [
         {
-          "name": "Essential",
+          "name": "Wanderer",
+          "order": 0,
           "films": [
             {
               "title": "Tinker Tailor Soldier Spy",
@@ -3559,7 +3591,8 @@
           ]
         },
         {
-          "name": "Foundational",
+          "name": "Explorer",
+          "order": 1,
           "films": [
             {
               "title": "Five Fingers",
@@ -3684,7 +3717,8 @@
           ]
         },
         {
-          "name": "Connoisseur",
+          "name": "Adventurer",
+          "order": 2,
           "films": [
             {
               "title": "The Russia House",
@@ -3779,7 +3813,8 @@
           ]
         },
         {
-          "name": "Specialist",
+          "name": "Seeker",
+          "order": 3,
           "films": [
             {
               "title": "The Defector",
@@ -3865,6 +3900,7 @@
         },
         {
           "name": "Genius",
+          "order": 4,
           "films": [
             {
               "title": "Secret Agent",
@@ -3954,7 +3990,8 @@
       "category": "Fantasy",
       "tiers": [
         {
-          "name": "Essential",
+          "name": "Wanderer",
+          "order": 0,
           "films": [
             {
               "title": "The Lord of the Rings: The Fellowship of the Ring",
@@ -4084,7 +4121,8 @@
           ]
         },
         {
-          "name": "Foundational",
+          "name": "Explorer",
+          "order": 1,
           "films": [
             {
               "title": "King Kong",
@@ -4167,7 +4205,7 @@
               "tmdbId": 10515
             },
             {
-              "title": "Nausicaä of the Valley of the Wind",
+              "title": "Nausica\u00e4 of the Valley of the Wind",
               "year": 1984,
               "tmdbId": 81
             },
@@ -4209,7 +4247,8 @@
           ]
         },
         {
-          "name": "Connoisseur",
+          "name": "Adventurer",
+          "order": 2,
           "films": [
             {
               "title": "The Fall",
@@ -4287,7 +4326,7 @@
               "tmdbId": 46919
             },
             {
-              "title": "Marketa Lazarová",
+              "title": "Marketa Lazarov\u00e1",
               "year": 1967,
               "tmdbId": 25904
             },
@@ -4302,14 +4341,15 @@
               "tmdbId": 4495
             },
             {
-              "title": "Cría Cuervos",
+              "title": "Cr\u00eda Cuervos",
               "year": 1976,
               "tmdbId": 51857
             }
           ]
         },
         {
-          "name": "Specialist",
+          "name": "Seeker",
+          "order": 3,
           "films": [
             {
               "title": "Dragonslayer",
@@ -4390,6 +4430,7 @@
         },
         {
           "name": "Genius",
+          "order": 4,
           "films": [
             {
               "title": "The Cabinet of Dr. Caligari",
@@ -4402,7 +4443,7 @@
               "tmdbId": 2972
             },
             {
-              "title": "Häxan",
+              "title": "H\u00e4xan",
               "year": 1922,
               "tmdbId": 57283
             },
@@ -4474,7 +4515,8 @@
       "category": "History",
       "tiers": [
         {
-          "name": "Essential",
+          "name": "Wanderer",
+          "order": 0,
           "films": [
             {
               "title": "Lawrence of Arabia",
@@ -4604,7 +4646,8 @@
           ]
         },
         {
-          "name": "Foundational",
+          "name": "Explorer",
+          "order": 1,
           "films": [
             {
               "title": "Henry V",
@@ -4739,7 +4782,8 @@
           ]
         },
         {
-          "name": "Connoisseur",
+          "name": "Adventurer",
+          "order": 2,
           "films": [
             {
               "title": "Aguirre, the Wrath of God",
@@ -4827,14 +4871,15 @@
               "tmdbId": 42225
             },
             {
-              "title": "Allonsanfàn",
+              "title": "Allonsanf\u00e0n",
               "year": 1974,
               "tmdbId": 49125
             }
           ]
         },
         {
-          "name": "Specialist",
+          "name": "Seeker",
+          "order": 3,
           "films": [
             {
               "title": "La Marseillaise",
@@ -4920,6 +4965,7 @@
         },
         {
           "name": "Genius",
+          "order": 4,
           "films": [
             {
               "title": "Cabiria",
@@ -5009,7 +5055,8 @@
       "category": "Horror",
       "tiers": [
         {
-          "name": "Essential",
+          "name": "Wanderer",
+          "order": 0,
           "films": [
             {
               "title": "Psycho",
@@ -5139,7 +5186,8 @@
           ]
         },
         {
-          "name": "Foundational",
+          "name": "Explorer",
+          "order": 1,
           "films": [
             {
               "title": "The Cabinet of Dr. Caligari",
@@ -5279,7 +5327,8 @@
           ]
         },
         {
-          "name": "Connoisseur",
+          "name": "Adventurer",
+          "order": 2,
           "films": [
             {
               "title": "Audition",
@@ -5389,7 +5438,8 @@
           ]
         },
         {
-          "name": "Specialist",
+          "name": "Seeker",
+          "order": 3,
           "films": [
             {
               "title": "The Beyond",
@@ -5475,6 +5525,7 @@
         },
         {
           "name": "Genius",
+          "order": 4,
           "films": [
             {
               "title": "The Phantom Carriage",
@@ -5482,7 +5533,7 @@
               "tmdbId": 58129
             },
             {
-              "title": "Häxan",
+              "title": "H\u00e4xan",
               "year": 1922,
               "tmdbId": 57283
             },
@@ -5564,7 +5615,8 @@
       "category": "Mystery",
       "tiers": [
         {
-          "name": "Essential",
+          "name": "Wanderer",
+          "order": 0,
           "films": [
             {
               "title": "Chinatown",
@@ -5694,7 +5746,8 @@
           ]
         },
         {
-          "name": "Foundational",
+          "name": "Explorer",
+          "order": 1,
           "films": [
             {
               "title": "Mystic River",
@@ -5874,7 +5927,8 @@
           ]
         },
         {
-          "name": "Connoisseur",
+          "name": "Adventurer",
+          "order": 2,
           "films": [
             {
               "title": "Memories of Murder",
@@ -5917,7 +5971,7 @@
               "tmdbId": 827
             },
             {
-              "title": "Caché",
+              "title": "Cach\u00e9",
               "year": 2005,
               "tmdbId": 445
             },
@@ -6079,7 +6133,8 @@
           ]
         },
         {
-          "name": "Specialist",
+          "name": "Seeker",
+          "order": 3,
           "films": [
             {
               "title": "The Browning Version",
@@ -6210,6 +6265,7 @@
         },
         {
           "name": "Genius",
+          "order": 4,
           "films": [
             {
               "title": "Investigation of a Citizen Above Suspicion",
@@ -6344,7 +6400,8 @@
       "category": "Noir",
       "tiers": [
         {
-          "name": "Essential",
+          "name": "Wanderer",
+          "order": 0,
           "films": [
             {
               "title": "Double Indemnity",
@@ -6474,7 +6531,8 @@
           ]
         },
         {
-          "name": "Foundational",
+          "name": "Explorer",
+          "order": 1,
           "films": [
             {
               "title": "Detour",
@@ -6609,7 +6667,8 @@
           ]
         },
         {
-          "name": "Connoisseur",
+          "name": "Adventurer",
+          "order": 2,
           "films": [
             {
               "title": "Chinatown",
@@ -6672,7 +6731,7 @@
               "tmdbId": 8512
             },
             {
-              "title": "Le Samouraï",
+              "title": "Le Samoura\u00ef",
               "year": 1967,
               "tmdbId": 5511
             },
@@ -6697,12 +6756,12 @@
               "tmdbId": 27430
             },
             {
-              "title": "Pépé le Moko",
+              "title": "P\u00e9p\u00e9 le Moko",
               "year": 1937,
               "tmdbId": 26252
             },
             {
-              "title": "Quai des Orfèvres",
+              "title": "Quai des Orf\u00e8vres",
               "year": 1947,
               "tmdbId": 49842
             },
@@ -6724,7 +6783,8 @@
           ]
         },
         {
-          "name": "Specialist",
+          "name": "Seeker",
+          "order": 3,
           "films": [
             {
               "title": "Phantom Lady",
@@ -6815,6 +6875,7 @@
         },
         {
           "name": "Genius",
+          "order": 4,
           "films": [
             {
               "title": "Stray Dog",
@@ -6904,7 +6965,8 @@
       "category": "Romance",
       "tiers": [
         {
-          "name": "Essential",
+          "name": "Wanderer",
+          "order": 0,
           "films": [
             {
               "title": "Casablanca",
@@ -7034,7 +7096,8 @@
           ]
         },
         {
-          "name": "Foundational",
+          "name": "Explorer",
+          "order": 1,
           "films": [
             {
               "title": "Gone with the Wind",
@@ -7174,10 +7237,11 @@
           ]
         },
         {
-          "name": "Connoisseur",
+          "name": "Adventurer",
+          "order": 2,
           "films": [
             {
-              "title": "Amélie",
+              "title": "Am\u00e9lie",
               "year": 2001,
               "tmdbId": 194
             },
@@ -7284,7 +7348,8 @@
           ]
         },
         {
-          "name": "Specialist",
+          "name": "Seeker",
+          "order": 3,
           "films": [
             {
               "title": "Last Tango in Paris",
@@ -7370,6 +7435,7 @@
         },
         {
           "name": "Genius",
+          "order": 4,
           "films": [
             {
               "title": "7th Heaven",
@@ -7459,7 +7525,8 @@
       "category": "Science Fiction",
       "tiers": [
         {
-          "name": "Essential",
+          "name": "Wanderer",
+          "order": 0,
           "films": [
             {
               "title": "2001: A Space Odyssey",
@@ -7589,7 +7656,8 @@
           ]
         },
         {
-          "name": "Foundational",
+          "name": "Explorer",
+          "order": 1,
           "films": [
             {
               "title": "Things to Come",
@@ -7627,7 +7695,7 @@
               "tmdbId": 2134
             },
             {
-              "title": "La Jetée",
+              "title": "La Jet\u00e9e",
               "year": 1962,
               "tmdbId": 662
             },
@@ -7729,7 +7797,8 @@
           ]
         },
         {
-          "name": "Connoisseur",
+          "name": "Adventurer",
+          "order": 2,
           "films": [
             {
               "title": "Akira",
@@ -7829,7 +7898,8 @@
           ]
         },
         {
-          "name": "Specialist",
+          "name": "Seeker",
+          "order": 3,
           "films": [
             {
               "title": "Save the Green Planet!",
@@ -7915,6 +7985,7 @@
         },
         {
           "name": "Genius",
+          "order": 4,
           "films": [
             {
               "title": "A Trip to the Moon",
@@ -8004,7 +8075,8 @@
       "category": "Thriller",
       "tiers": [
         {
-          "name": "Essential",
+          "name": "Wanderer",
+          "order": 0,
           "films": [
             {
               "title": "Psycho",
@@ -8134,7 +8206,8 @@
           ]
         },
         {
-          "name": "Foundational",
+          "name": "Explorer",
+          "order": 1,
           "films": [
             {
               "title": "Wait Until Dark",
@@ -8284,7 +8357,8 @@
           ]
         },
         {
-          "name": "Connoisseur",
+          "name": "Adventurer",
+          "order": 2,
           "films": [
             {
               "title": "Memories of Murder",
@@ -8322,7 +8396,7 @@
               "tmdbId": 705996
             },
             {
-              "title": "Caché",
+              "title": "Cach\u00e9",
               "year": 2005,
               "tmdbId": 445
             },
@@ -8394,7 +8468,8 @@
           ]
         },
         {
-          "name": "Specialist",
+          "name": "Seeker",
+          "order": 3,
           "films": [
             {
               "title": "Cutter's Way",
@@ -8485,6 +8560,7 @@
         },
         {
           "name": "Genius",
+          "order": 4,
           "films": [
             {
               "title": "The Spiral Staircase",
@@ -8574,7 +8650,8 @@
       "category": "War",
       "tiers": [
         {
-          "name": "Essential",
+          "name": "Wanderer",
+          "order": 0,
           "films": [
             {
               "title": "Apocalypse Now",
@@ -8704,7 +8781,8 @@
           ]
         },
         {
-          "name": "Foundational",
+          "name": "Explorer",
+          "order": 1,
           "films": [
             {
               "title": "Grand Illusion",
@@ -8834,7 +8912,8 @@
           ]
         },
         {
-          "name": "Connoisseur",
+          "name": "Adventurer",
+          "order": 2,
           "films": [
             {
               "title": "Ran",
@@ -8929,7 +9008,8 @@
           ]
         },
         {
-          "name": "Specialist",
+          "name": "Seeker",
+          "order": 3,
           "films": [
             {
               "title": "Battle of Britain",
@@ -9015,6 +9095,7 @@
         },
         {
           "name": "Genius",
+          "order": 4,
           "films": [
             {
               "title": "The Big Parade",
@@ -9104,7 +9185,8 @@
       "category": "Western",
       "tiers": [
         {
-          "name": "Essential",
+          "name": "Wanderer",
+          "order": 0,
           "films": [
             {
               "title": "The Searchers",
@@ -9234,7 +9316,8 @@
           ]
         },
         {
-          "name": "Foundational",
+          "name": "Explorer",
+          "order": 1,
           "films": [
             {
               "title": "The Man Who Shot Liberty Valance",
@@ -9374,7 +9457,8 @@
           ]
         },
         {
-          "name": "Connoisseur",
+          "name": "Adventurer",
+          "order": 2,
           "films": [
             {
               "title": "The Naked Spur",
@@ -9479,7 +9563,8 @@
           ]
         },
         {
-          "name": "Specialist",
+          "name": "Seeker",
+          "order": 3,
           "films": [
             {
               "title": "The Great Silence",
@@ -9565,6 +9650,7 @@
         },
         {
           "name": "Genius",
+          "order": 4,
           "films": [
             {
               "title": "The Iron Horse",

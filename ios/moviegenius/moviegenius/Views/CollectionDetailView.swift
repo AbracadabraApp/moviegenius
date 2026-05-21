@@ -23,7 +23,7 @@ struct CollectionDetailView: View {
                 if let collection = viewModel.collection {
                         // Collection header
                         VStack(alignment: .leading, spacing: .mgSpacing6) {
-                            Text(collection.title)
+                            Text(collection.title ?? "Untitled Collection")
                                 .font(.mgTitle)
                                 .foregroundStyle(Color.mgPrimary)
 
@@ -80,7 +80,7 @@ struct CollectionDetailView: View {
                             HStack {
                                 Text("\(viewModel.movies.count) films")
                                 Text("·")
-                                Text(collection.title)
+                                Text(collection.title ?? "Untitled Collection")
                             }
                             .font(.mgCaption)
                             .foregroundStyle(Color.mgSecondary)
@@ -118,7 +118,7 @@ struct CollectionDetailView: View {
                                 .padding(.horizontal, .mgSpacing32)
                             Button("Retry") {
                                 Task {
-                                    await viewModel.loadCollection()
+                                    await viewModel.retry()
                                 }
                             }
                             .buttonStyle(.borderedProminent)
@@ -133,6 +133,10 @@ struct CollectionDetailView: View {
         .background(Color.mgBackground)
         .navigationTitle(viewModel.collection?.title ?? "Collection")
         .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(.visible, for: .navigationBar)
+        .refreshable {
+            await viewModel.loadCollection()
+        }
         .task {
             await viewModel.loadCollection()
         }
