@@ -13,6 +13,15 @@ struct HomeView: View {
     var body: some View {
         ScrollView {
             LazyVStack(spacing: 0) {
+                // Header - matching Genius view styling
+                VStack(alignment: .leading, spacing: .mgSpacing24) {
+                    Text("Discover movies")
+                        .font(.mgTitle)
+                        .foregroundStyle(Color.mgPrimary)
+                }
+                .padding(.horizontal, .mgSpacing16)
+                .padding(.top, .mgSpacing24)
+
                 if let error = viewModel.error {
                     // Error state - SHOW THE ERROR!
                     VStack(spacing: .mgSpacing20) {
@@ -69,7 +78,7 @@ struct HomeView: View {
                     ForEach(viewModel.collections) { collection in
                         CollectionCarousel(collection: collection)
                     }
-                    .padding(.top, .mgSpacing24)
+                    .padding(.top, .mgSpacing8)
 
                     // Load more trigger
                     Color.clear

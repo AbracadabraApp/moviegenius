@@ -14,6 +14,17 @@ struct WatchContainerView: View {
 
     var body: some View {
         VStack(spacing: 0) {
+            // Header - matching Genius view styling
+            VStack(alignment: .leading, spacing: .mgSpacing24) {
+                Text("Your movie lists")
+                    .font(.mgTitle)
+                    .foregroundStyle(Color.mgPrimary)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.horizontal, .mgSpacing16)
+            .padding(.top, .mgSpacing24)
+            .padding(.bottom, .mgSpacing8)
+
             // Segmented control + Account button
             HStack(spacing: .mgSpacing12) {
                 // Segmented control
