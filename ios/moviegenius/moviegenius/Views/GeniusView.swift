@@ -703,7 +703,6 @@ struct CategoryEssentialsView: View {
             .padding(.vertical, .mgSpacing12)
         }
         .background(Color.mgBackground)
-        .navigationBarBackButtonHidden(false)
         .refreshable {
             await viewModel.loadMovies()
         }
