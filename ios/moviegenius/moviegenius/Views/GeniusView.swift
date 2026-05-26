@@ -1162,6 +1162,7 @@ struct CategoryEssentials {
 
     // Returns films for a specific subcategory within a category
     static func films(for category: String, subcategory: String) -> [(title: String, year: Int)] {
+        print("📱 CategoryEssentials.films() called with category: '\(category)', subcategory: '\(subcategory)'")
         switch (category, subcategory) {
         case ("Awards", "Best Picture"):
             return [

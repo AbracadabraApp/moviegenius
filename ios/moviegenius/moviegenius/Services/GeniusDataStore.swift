@@ -46,6 +46,15 @@ final class GeniusDataStore {
 
             self.data = loadedData
             buildIndexes()
+
+            // Debug: Print loaded data summary
+            print("✅ GeniusDataStore loaded successfully")
+            print("  - Categories: \(loadedData.categories.count)")
+            for category in loadedData.categories.prefix(3) {
+                print("  - \(category.category): \(category.tiers.map { $0.name }.joined(separator: ", "))")
+            }
+            print("  - Total keys in index: \(filmsByCategoryTier.count)")
+            print("  - Sample keys: \(Array(filmsByCategoryTier.keys.sorted().prefix(5)))")
         } catch {
             loadError = error
             assertionFailure("Genius: failed to load genius_data.json: \(error)")
@@ -76,7 +85,17 @@ final class GeniusDataStore {
 
     /// Films for a (category, tier) pair. Empty array if none.
     func films(category: String, tier: String) -> [GeniusMovie] {
-        filmsByCategoryTier[key(category, tier)] ?? []
+        let lookupKey = key(category, tier)
+        let result = filmsByCategoryTier[lookupKey] ?? []
+
+        if result.isEmpty {
+            print("⚠️ No films found for key: '\(lookupKey)'")
+            print("   Available keys containing '\(category)': \(filmsByCategoryTier.keys.filter { $0.contains(category) }.sorted())")
+        } else {
+            print("✅ Found \(result.count) films for '\(lookupKey)'")
+        }
+
+        return result
     }
 
     /// TMDB id for a specific film, matching the old "Category|Tier|Title|Year" key.
