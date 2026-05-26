@@ -40,7 +40,7 @@ struct CollectionCarousel: View {
 
             // Horizontal scrolling movies
             ScrollView(.horizontal, showsIndicators: false) {
-                LazyHStack(spacing: .mgSpacing8) {
+                LazyHStack(alignment: .top, spacing: .mgSpacing8) {  // Top alignment prevents vertical jumping
                     ForEach(collection.movies.indices, id: \.self) { index in
                         let movie = collection.movies[index]
                         NavigationLink(value: MovieDestination.detail(tmdbId: movie.tmdbId)) {
