@@ -84,19 +84,7 @@ struct StandardMovieCard: View {
 
             // Favorite buttons with optional delete button - below all content
             HStack(spacing: .mgSpacing12) {
-                // Favorite buttons
-                FavoriteButtons(
-                    tmdbId: tmdbId,
-                    title: title,
-                    year: year,
-                    posterUrl: posterUrl,
-                    slug: slug,
-                    onDarkBackground: onDarkBackground
-                )
-
-                Spacer()
-
-                // Delete button (when provided, appears at far right)
+                // Delete button (when provided, appears at far left)
                 if let onDelete = onDelete {
                     Button(action: {
                         HapticManager.light()
@@ -109,6 +97,18 @@ struct StandardMovieCard: View {
                     .buttonStyle(.plain)
                     .accessibilityLabel("Remove from queue")
                 }
+
+                Spacer()
+
+                // Favorite buttons - aligned to the right per MOVIE_REPRESENTATION_SPEC.md
+                FavoriteButtons(
+                    tmdbId: tmdbId,
+                    title: title,
+                    year: year,
+                    posterUrl: posterUrl,
+                    slug: slug,
+                    onDarkBackground: onDarkBackground
+                )
             }
         }
         .padding(.mgSpacing16)
