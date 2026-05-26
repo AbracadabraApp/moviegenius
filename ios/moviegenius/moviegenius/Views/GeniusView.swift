@@ -1028,11 +1028,9 @@ struct CategoryEssentials {
             let dataStore = GeniusDataStore.shared
             if let geniusCategory = dataStore.data?.categories.first(where: { $0.category == category }) {
                 let tierNames = geniusCategory.orderedTiers.map { $0.name }
-                print("📱 Subcategories for '\(category)': \(tierNames)")
                 return tierNames
             }
             // Fallback to canonical 5-tier names
-            print("⚠️ Using fallback tier names for '\(category)'")
             return ["Beginner", "Fan", "Expert", "Auteur", "Genius"]
         }
 
@@ -1165,7 +1163,6 @@ struct CategoryEssentials {
 
     // Returns films for a specific subcategory within a category
     static func films(for category: String, subcategory: String) -> [(title: String, year: Int)] {
-        print("📱 CategoryEssentials.films() called with category: '\(category)', subcategory: '\(subcategory)'")
         switch (category, subcategory) {
         case ("Awards", "Best Picture"):
             return [
