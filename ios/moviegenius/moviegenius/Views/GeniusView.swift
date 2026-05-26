@@ -189,7 +189,8 @@ struct JourneyTabContent: View {
                                 )
                             }
                         } else {
-                            NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: nil)) {
+                            // Default to Beginner tier for genre categories
+                            NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: "Beginner")) {
                                 CategoryBadge(
                                     category: category,
                                     progress: categoryProgress(category)
@@ -680,6 +681,13 @@ struct CategoryEssentialsView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: true) {
             VStack(alignment: .leading, spacing: .mgSpacing16) {
+                // Category header
+                Text(category)
+                    .font(.mgTitle2)
+                    .foregroundStyle(Color.mgPrimary)
+                    .padding(.horizontal, .mgSpacing20)
+                    .padding(.top, .mgSpacing12)
+
                 // Tier navigation bar
                 TierNavigationBar(category: category, currentTier: subcategory)
                     .padding(.top, .mgSpacing8)
@@ -3838,7 +3846,7 @@ struct HeatMapChipsContent: View {
 
                 FlowLayout(spacing: 8) {
                     ForEach(genreCategories, id: \.self) { category in
-                        NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: nil)) {
+                        NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: "Beginner")) {
                             CategoryChip(
                                 category: category,
                                 heatLevel: categoryHeatLevel(category: category, lovedMovies: favorites.lovedMovies)
