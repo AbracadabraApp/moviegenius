@@ -515,14 +515,14 @@ struct TierNavigationBar: View {
     let currentTier: String?
 
     private let allTiers = [
-        "Essential", "Foundational", "Connoisseur", "Specialist", "Genius"
+        "Beginner", "Fan", "Expert", "Auteur", "Genius"
     ]
 
     private let tierLabels: [String: String?] = [
-        "Essential": "Beginner",
-        "Foundational": nil,
-        "Connoisseur": "For Real",
-        "Specialist": nil,
+        "Beginner": "Beginner",
+        "Fan": "Fan",
+        "Expert": "Expert",
+        "Auteur": "Auteur",
         "Genius": "Genius"
     ]
 
@@ -1163,6 +1163,7 @@ struct CategoryEssentials {
 
     // Returns films for a specific subcategory within a category
     static func films(for category: String, subcategory: String) -> [(title: String, year: Int)] {
+        print("🔍 CategoryEssentials.films() - category: '\(category)', subcategory: '\(subcategory)'")
         switch (category, subcategory) {
         case ("Awards", "Best Picture"):
             return [
@@ -3443,7 +3444,15 @@ case ("Actresses", "Bette Davis"):
             // Genre categories (Action, Adventure, Animation, Biography, Comedy, Crime,
             // Documentary, Drama, Espionage, Fantasy, History, Horror, Mystery, Noir,
             // Romance, Science Fiction, Thriller, War, Western) — loaded from JSON
+            print("🎬 Loading from GeniusDataStore for '\(category)' tier '\(subcategory)'")
             let geniusFilms = GeniusDataStore.shared.films(category: category, tier: subcategory)
+            print("🎬 Found \(geniusFilms.count) films")
+            if geniusFilms.isEmpty {
+                print("⚠️ No films found! Available categories: \(GeniusDataStore.shared.categoryNames)")
+                if let cat = GeniusDataStore.shared.data?.categories.first(where: { $0.category == category }) {
+                    print("⚠️ Available tiers for '\(category)': \(cat.tiers.map { $0.name })")
+                }
+            }
             return geniusFilms.map { ($0.title, $0.year ?? 0) }
         }
     }

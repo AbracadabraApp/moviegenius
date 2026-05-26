@@ -118,7 +118,7 @@ struct MoviePosterCard: View {
             .mgElevationMedium()
 
             // Title and year below poster - all tappable for navigation
-            VStack(alignment: .leading, spacing: .mgSpacing4) {
+            VStack(alignment: .leading, spacing: .mgSpacing2) {  // Tightened spacing per user request
                 Text(movie.title)
                     .font(.mgBody)
                     .foregroundStyle(Color.mgPrimary)

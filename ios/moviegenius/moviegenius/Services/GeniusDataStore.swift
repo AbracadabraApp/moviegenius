@@ -46,6 +46,16 @@ final class GeniusDataStore {
 
             self.data = loadedData
             buildIndexes()
+
+            print("📚 GeniusDataStore loaded:")
+            print("   - Categories: \(loadedData.categories.count)")
+            print("   - Total film entries: \(filmsByCategoryTier.count)")
+            if let firstCategory = loadedData.categories.first {
+                print("   - Example: \(firstCategory.category) has \(firstCategory.tiers.count) tiers")
+                if let firstTier = firstCategory.tiers.first {
+                    print("   - Example: \(firstCategory.category)|\(firstTier.name) has \(firstTier.films.count) films")
+                }
+            }
         } catch {
             loadError = error
             assertionFailure("Genius: failed to load genius_data.json: \(error)")
@@ -58,9 +68,14 @@ final class GeniusDataStore {
         filmsByCategoryTier.removeAll()
         tmdbByCompositeKey.removeAll()
 
+        var totalFilms = 0
+
         for category in data.categories {
             for tier in category.tiers {
-                filmsByCategoryTier[key(category.category, tier.name)] = tier.films
+                let indexKey = key(category.category, tier.name)
+                filmsByCategoryTier[indexKey] = tier.films
+                totalFilms += tier.films.count
+
                 for film in tier.films {
                     let composite = compositeKey(
                         category: category.category, tier: tier.name,
@@ -70,13 +85,18 @@ final class GeniusDataStore {
                 }
             }
         }
+
+        print("   📊 Indexed \(filmsByCategoryTier.count) category-tier combinations with \(totalFilms) total films")
     }
 
     // MARK: Public lookups (mirror the old API)
 
     /// Films for a (category, tier) pair. Empty array if none.
     func films(category: String, tier: String) -> [GeniusMovie] {
-        filmsByCategoryTier[key(category, tier)] ?? []
+        let lookupKey = key(category, tier)
+        let result = filmsByCategoryTier[lookupKey] ?? []
+        print("🔑 GeniusDataStore.films() - key: '\(lookupKey)' -> \(result.count) films")
+        return result
     }
 
     /// TMDB id for a specific film, matching the old "Category|Tier|Title|Year" key.
