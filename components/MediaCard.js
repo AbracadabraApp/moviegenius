@@ -379,7 +379,7 @@ const styles = {
     justifyContent: 'space-between', // Push actions to bottom
     minHeight: '188px', // Match poster height
     minWidth: 0, // Allow flex child to shrink below content size
-    overflow: 'hidden', // Prevent text overflow
+    // NO overflow: hidden - Allow text to wrap naturally per MOVIE_REPRESENTATION_SPEC.md
   },
   header: {
     fontSize: '18px',

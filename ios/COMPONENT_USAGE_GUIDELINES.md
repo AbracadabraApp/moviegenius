@@ -45,6 +45,20 @@ StandardMovieCard(movie: movie)
 
 **Why:** Multiple card variants cause inconsistency and maintenance burden.
 
+### 🚫 NEVER Truncate Movie Text
+```swift
+// ❌ NEVER DO THIS
+Text(movie.title)
+    .lineLimit(1)
+    .truncationMode(.tail)
+
+// ✅ ALWAYS DO THIS
+Text(movie.title)
+    .lineLimit(nil)  // Let text wrap naturally
+```
+
+**Why:** Truncated text is an indicator of unauthorized changes. All movie titles and descriptions must display in full. See `/MOVIE_REPRESENTATION_SPEC.md`.
+
 ### 🚫 NEVER Use Hardcoded Colors
 ```swift
 // ❌ NEVER DO THIS
@@ -354,12 +368,20 @@ Location: `ios/moviegenius/Scripts/validate-code-quality.sh`
 
 ---
 
+## Key References
+
+- **`/MOVIE_REPRESENTATION_SPEC.md`** - Master specification for all movie displays (NO TRUNCATION)
+- **`/ios/IOS_NAVIGATION_GUIDE.md`** - Navigation patterns and best practices
+- **`/ios/DESIGN_DECISIONS.md`** - Design rationale and history
+- **`/ios/GENIUS_SYSTEM_GUIDE.md`** - Genius feature technical details
+
 ## Getting Help
 
 1. **SwiftLint violations:** Check `.swiftlint.yml` for rule explanations
 2. **Navigation issues:** See `ios/IOS_NAVIGATION_GUIDE.md`
 3. **Test failures:** Run specific test for details
 4. **Build errors:** Check build phase script output
+5. **Text truncation:** See `/MOVIE_REPRESENTATION_SPEC.md`
 
 ## Version History
 

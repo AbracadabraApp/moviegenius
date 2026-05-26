@@ -210,7 +210,7 @@ struct AwardFilmRow: View {
                         .font(.mgCallout)
                         .fontWeight(.medium)
                         .foregroundStyle(Color.mgPrimary)
-                        .lineLimit(1)
+                        .lineLimit(nil)  // No truncation per MOVIE_REPRESENTATION_SPEC.md
 
                     Text(String(film.year))
                         .font(.mgCaption)

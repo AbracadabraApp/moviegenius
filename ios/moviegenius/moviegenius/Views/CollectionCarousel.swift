@@ -49,7 +49,7 @@ struct CollectionCarousel: View {
                         .buttonStyle(MGCardButtonStyle())
                         .sensoryFeedback(.selection, trigger: movie.tmdbId)
                         .accessibilityElement(children: .combine)
-                        .accessibilityLabel("\(movie.title), \(movie.year ?? 0)")
+                        .accessibilityLabel("\(movie.title), \(movie.year)")
                         .accessibilityHint("View movie details")
                         .padding(.leading, index == 0 ? .mgSpacing20 : 0)
                         .padding(.trailing, index == collection.movies.count - 1 ? .mgSpacing20 : 0)
@@ -82,37 +82,55 @@ struct MoviePosterCard: View {
     let movie: CollectionMovie
     @State private var imageLoaded = false
 
+    private let posterWidth: CGFloat = 170
+
     var body: some View {
-        // Poster only - title visible in poster art
-        AsyncImage(url: posterURL) { phase in
-            switch phase {
-            case .empty:
-                posterPlaceholder
-                    .overlay {
-                        ProgressView()
-                            .tint(Color.mgGold)
-                    }
-            case .success(let image):
-                image
-                    .resizable()
-                    .aspectRatio(2/3, contentMode: .fit)
-                    .opacity(imageLoaded ? 1 : 0)
-                    .onAppear {
-                        withAnimation(.easeIn(duration: 0.3)) {
-                            imageLoaded = true
+        VStack(alignment: .leading, spacing: .mgSpacing8) {
+            // Poster
+            AsyncImage(url: posterURL) { phase in
+                switch phase {
+                case .empty:
+                    posterPlaceholder
+                        .overlay {
+                            ProgressView()
+                                .tint(Color.mgGold)
                         }
-                    }
-            case .failure:
-                posterPlaceholder
-            @unknown default:
-                posterPlaceholder
+                case .success(let image):
+                    image
+                        .resizable()
+                        .aspectRatio(2/3, contentMode: .fit)
+                        .opacity(imageLoaded ? 1 : 0)
+                        .onAppear {
+                            withAnimation(.easeIn(duration: 0.3)) {
+                                imageLoaded = true
+                            }
+                        }
+                case .failure:
+                    posterPlaceholder
+                @unknown default:
+                    posterPlaceholder
+                }
             }
+            .aspectRatio(2/3, contentMode: .fit)
+            .frame(width: posterWidth)
+            .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
+            .mgCinematicGlow()
+            .mgElevationMedium()
+
+            // Title and year below poster - all tappable for navigation
+            VStack(alignment: .leading, spacing: .mgSpacing4) {
+                Text(movie.title)
+                    .font(.mgBody)
+                    .foregroundStyle(Color.mgPrimary)
+                    .lineLimit(nil)  // No truncation per MOVIE_REPRESENTATION_SPEC.md
+                    .multilineTextAlignment(.leading)
+
+                Text(String(movie.year))
+                    .font(.mgSubheadline)
+                    .foregroundStyle(Color.mgSecondary)
+            }
+            .frame(width: posterWidth, alignment: .topLeading)
         }
-        .aspectRatio(2/3, contentMode: .fit)
-        .frame(width: 170)
-        .clipShape(RoundedRectangle(cornerRadius: .mgCornerSmall, style: .continuous))
-        .mgCinematicGlow()
-        .mgElevationMedium()
     }
 
     private var posterURL: URL? {

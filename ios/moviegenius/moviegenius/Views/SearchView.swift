@@ -231,7 +231,7 @@ struct SearchPosterCard: View {
                 Text(movie.title)
                     .font(.mgBody)
                     .foregroundStyle(Color.mgPrimary)
-                    .lineLimit(2)
+                    .lineLimit(nil)  // No truncation per MOVIE_REPRESENTATION_SPEC.md
                     .multilineTextAlignment(.leading)
 
                 Text(movie.year.map(String.init) ?? " ")

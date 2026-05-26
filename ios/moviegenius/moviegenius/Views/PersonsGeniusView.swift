@@ -212,7 +212,7 @@ struct PersonFilmRow: View {
                         .font(.mgCallout)
                         .fontWeight(.medium)
                         .foregroundStyle(Color.mgPrimary)
-                        .lineLimit(1)
+                        .lineLimit(nil)  // No truncation per MOVIE_REPRESENTATION_SPEC.md
 
                     if let year = film.year {
                         Text(String(year))
