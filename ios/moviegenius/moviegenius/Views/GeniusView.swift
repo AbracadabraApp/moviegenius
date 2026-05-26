@@ -189,7 +189,7 @@ struct JourneyTabContent: View {
                                 )
                             }
                         } else {
-                            NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: "Essential")) {
+                            NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: nil)) {
                                 CategoryBadge(
                                     category: category,
                                     progress: categoryProgress(category)
@@ -1027,9 +1027,12 @@ struct CategoryEssentials {
             // Get the actual tier names from the data store
             let dataStore = GeniusDataStore.shared
             if let geniusCategory = dataStore.data?.categories.first(where: { $0.category == category }) {
-                return geniusCategory.orderedTiers.map { $0.name }
+                let tierNames = geniusCategory.orderedTiers.map { $0.name }
+                print("📱 Subcategories for '\(category)': \(tierNames)")
+                return tierNames
             }
             // Fallback to canonical 5-tier names
+            print("⚠️ Using fallback tier names for '\(category)'")
             return ["Beginner", "Fan", "Expert", "Auteur", "Genius"]
         }
 
@@ -3830,7 +3833,7 @@ struct HeatMapChipsContent: View {
 
                 FlowLayout(spacing: 8) {
                     ForEach(genreCategories, id: \.self) { category in
-                        NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: "Essential")) {
+                        NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: nil)) {
                             CategoryChip(
                                 category: category,
                                 heatLevel: categoryHeatLevel(category: category, lovedMovies: favorites.lovedMovies)
@@ -3884,7 +3887,7 @@ struct HeatMapChipsContent: View {
                                 // Other categories
                                 NavigationLink(destination: CategoryEssentialsView(
                                     category: category,
-                                    subcategory: "Essential"
+                                    subcategory: nil
                                 )) {
                                     CategoryChip(
                                         category: category,
