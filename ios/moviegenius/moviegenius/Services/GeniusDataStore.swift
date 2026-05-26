@@ -23,7 +23,7 @@ final class GeniusDataStore {
     private(set) var loadError: Error?
 
     // Fast indexes built once at load.
-    private var filmsByCategoryTier: [String: [GeniusFilm]] = [:]
+    private var filmsByCategoryTier: [String: [GeniusMovie]] = [:]
     private var tmdbByCompositeKey: [String: Int] = [:]
 
     private init() {
@@ -64,7 +64,7 @@ final class GeniusDataStore {
                 for film in tier.films {
                     let composite = compositeKey(
                         category: category.category, tier: tier.name,
-                        title: film.title, year: film.year
+                        title: film.title, year: film.year ?? 0
                     )
                     tmdbByCompositeKey[composite] = film.tmdbId
                 }
@@ -75,7 +75,7 @@ final class GeniusDataStore {
     // MARK: Public lookups (mirror the old API)
 
     /// Films for a (category, tier) pair. Empty array if none.
-    func films(category: String, tier: String) -> [GeniusFilm] {
+    func films(category: String, tier: String) -> [GeniusMovie] {
         filmsByCategoryTier[key(category, tier)] ?? []
     }
 

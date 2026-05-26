@@ -146,7 +146,7 @@ struct GeniusFeedItem: Codable, Identifiable {
     }
 }
 
-struct GeniusMovie: Codable, Identifiable {
+struct GeniusMovie: Codable, Identifiable, Hashable, Equatable {
     let tmdbId: Int
     let title: String
     let year: Int?
@@ -156,7 +156,7 @@ struct GeniusMovie: Codable, Identifiable {
     var id: Int { tmdbId }
 
     enum CodingKeys: String, CodingKey {
-        case tmdbId = "tmdb_id"
+        case tmdbId  // JSON has "tmdbId" in camelCase
         case title
         case year
         case posterUrl = "poster_url"

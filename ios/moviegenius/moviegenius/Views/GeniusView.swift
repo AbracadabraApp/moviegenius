@@ -3648,7 +3648,7 @@ case ("Actresses", "Bette Davis"):
             // Documentary, Drama, Espionage, Fantasy, History, Horror, Mystery, Noir,
             // Romance, Science Fiction, Thriller, War, Western) — loaded from JSON
             let geniusFilms = GeniusDataStore.shared.films(category: category, tier: subcategory)
-            return geniusFilms.map { ($0.title, $0.year) }
+            return geniusFilms.map { ($0.title, $0.year ?? 0) }
         }
     }
 }
