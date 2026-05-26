@@ -32,7 +32,7 @@ final class GeniusDataTests: XCTestCase {
             for tier in category.tiers {
                 XCTAssertFalse(tier.name.isEmpty, "Tier name required")
                 XCTAssertFalse(tier.films.isEmpty, "Tier must have films")
-                XCTAssert(["Essential", "Foundational", "Connoisseur", "Specialist", "Genius"].contains(tier.name),
+                XCTAssert(["Beginner", "Fan", "Expert", "Auteur", "Genius"].contains(tier.name),
                          "Invalid tier name: \(tier.name)")
 
                 for film in tier.films {
@@ -46,7 +46,7 @@ final class GeniusDataTests: XCTestCase {
 
     func testAllTiersPresent() {
         let store = GeniusDataStore()
-        let expectedTiers = ["Essential", "Foundational", "Connoisseur", "Specialist", "Genius"]
+        let expectedTiers = ["Beginner", "Fan", "Expert", "Auteur", "Genius"]
 
         for category in store.categories {
             let tierNames = Set(category.tiers.map { $0.name })

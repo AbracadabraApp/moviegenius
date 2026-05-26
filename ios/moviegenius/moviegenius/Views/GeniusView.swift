@@ -26,7 +26,7 @@ class TierProgressTracker: ObservableObject {
         var tierCompletions: [String: Double] = [:]
 
         let allTiers = [
-            "Essential", "Foundational", "Connoisseur", "Specialist", "Genius"
+            "Beginner", "Fan", "Expert", "Auteur", "Genius"
         ]
 
         for tier in allTiers {
@@ -1017,6 +1017,22 @@ struct CategoryEssentials {
 
     // Returns subcategory names for 2-tier categories
     static func subcategories(for category: String) -> [String] {
+        // For genre categories, get tier names from GeniusDataStore
+        let genreCategories = ["Action", "Adventure", "Comedy", "Crime", "Documentary",
+                               "Drama", "Espionage", "Fantasy", "History", "Horror",
+                               "Mystery", "Noir", "Romance", "Science Fiction",
+                               "Thriller", "War", "Western"]
+
+        if genreCategories.contains(category) {
+            // Get the actual tier names from the data store
+            let dataStore = GeniusDataStore.shared
+            if let geniusCategory = dataStore.data?.categories.first(where: { $0.category == category }) {
+                return geniusCategory.orderedTiers.map { $0.name }
+            }
+            // Fallback to canonical 5-tier names
+            return ["Beginner", "Fan", "Expert", "Auteur", "Genius"]
+        }
+
         switch category {
         case "Awards":
             return ["Best Picture", "Best Director", "Best Actor", "Best Actress", "AFI 100 Greatest Films", "Palme d'Or", "BAFTA Best Film"]
@@ -1138,227 +1154,6 @@ struct CategoryEssentials {
                 "Terrence Malick",
                 "Wong Kar-wai",
                 "Yasujirō Ozu"
-            ]
-        case "Action":
-            return [
-                "Essential",
-                "Foundational",
-                "Classics",
-                "Well-Versed",
-                "Devotee",
-                "Connoisseur",
-                "Deep Cuts",
-                "Specialist",
-                "Archivist",
-                "Master"
-            ]
-        case "Adventure":
-            return [
-                "Essential",
-                "Foundational",
-                "Classics",
-                "Well-Versed",
-                "Devotee",
-                "Connoisseur",
-                "Deep Cuts",
-                "Specialist",
-                "Archivist",
-                "Master"
-            ]
-        case "Comedy":
-            return [
-                "Essential",
-                "Foundational",
-                "Classics",
-                "Well-Versed",
-                "Devotee",
-                "Connoisseur",
-                "Deep Cuts",
-                "Specialist",
-                "Archivist",
-                "Master"
-            ]
-        case "Crime":
-            return [
-                "Essential",
-                "Foundational",
-                "Classics",
-                "Well-Versed",
-                "Devotee",
-                "Connoisseur",
-                "Deep Cuts",
-                "Specialist",
-                "Archivist",
-                "Master"
-            ]
-        case "Documentary":
-            return [
-                "Essential",
-                "Foundational",
-                "Classics",
-                "Well-Versed",
-                "Devotee",
-                "Connoisseur",
-                "Deep Cuts",
-                "Specialist",
-                "Archivist",
-                "Master"
-            ]
-        case "Drama":
-            return [
-                "Essential",
-                "Foundational",
-                "Classics",
-                "Well-Versed",
-                "Devotee",
-                "Connoisseur",
-                "Deep Cuts",
-                "Specialist",
-                "Archivist",
-                "Master"
-            ]
-        case "Espionage":
-            return [
-                "Essential",
-                "Foundational",
-                "Classics",
-                "Well-Versed",
-                "Devotee",
-                "Connoisseur",
-                "Deep Cuts",
-                "Specialist",
-                "Archivist",
-                "Master"
-            ]
-        case "Fantasy":
-            return [
-                "Essential",
-                "Foundational",
-                "Classics",
-                "Well-Versed",
-                "Devotee",
-                "Connoisseur",
-                "Deep Cuts",
-                "Specialist",
-                "Archivist",
-                "Master"
-            ]
-        case "History":
-            return [
-                "Essential",
-                "Foundational",
-                "Classics",
-                "Well-Versed",
-                "Devotee",
-                "Connoisseur",
-                "Deep Cuts",
-                "Specialist",
-                "Archivist",
-                "Master"
-            ]
-        case "Horror":
-            return [
-                "Essential",
-                "Foundational",
-                "Classics",
-                "Well-Versed",
-                "Devotee",
-                "Connoisseur",
-                "Deep Cuts",
-                "Specialist",
-                "Archivist",
-                "Master"
-            ]
-        case "Mystery":
-            return [
-                "Essential",
-                "Foundational",
-                "Classics",
-                "Well-Versed",
-                "Devotee",
-                "Connoisseur",
-                "Deep Cuts",
-                "Specialist",
-                "Archivist",
-                "Master"
-            ]
-        case "Noir":
-            return [
-                "Essential",
-                "Foundational",
-                "Classics",
-                "Well-Versed",
-                "Devotee",
-                "Connoisseur",
-                "Deep Cuts",
-                "Specialist",
-                "Archivist",
-                "Master"
-            ]
-        case "Romance":
-            return [
-                "Essential",
-                "Foundational",
-                "Classics",
-                "Well-Versed",
-                "Devotee",
-                "Connoisseur",
-                "Deep Cuts",
-                "Specialist",
-                "Archivist",
-                "Master"
-            ]
-        case "Science Fiction":
-            return [
-                "Essential",
-                "Foundational",
-                "Classics",
-                "Well-Versed",
-                "Devotee",
-                "Connoisseur",
-                "Deep Cuts",
-                "Specialist",
-                "Archivist",
-                "Master"
-            ]
-        case "Thriller":
-            return [
-                "Essential",
-                "Foundational",
-                "Classics",
-                "Well-Versed",
-                "Devotee",
-                "Connoisseur",
-                "Deep Cuts",
-                "Specialist",
-                "Archivist",
-                "Master"
-            ]
-        case "War":
-            return [
-                "Essential",
-                "Foundational",
-                "Classics",
-                "Well-Versed",
-                "Devotee",
-                "Connoisseur",
-                "Deep Cuts",
-                "Specialist",
-                "Archivist",
-                "Master"
-            ]
-        case "Western":
-            return [
-                "Essential",
-                "Foundational",
-                "Classics",
-                "Well-Versed",
-                "Devotee",
-                "Connoisseur",
-                "Deep Cuts",
-                "Specialist",
-                "Archivist",
-                "Master"
             ]
         default:
             return []

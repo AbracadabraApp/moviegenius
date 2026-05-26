@@ -161,8 +161,8 @@ done
 # 7. Check tier naming
 echo "note: Checking tier names..."
 
-VALID_TIERS="Wanderer Explorer Adventurer Seeker Genius"
-INVALID_TIERS="Archivist Connoisseur Sage Scholar Essential Foundational Specialist"
+VALID_TIERS="Beginner Fan Expert Auteur Genius"
+INVALID_TIERS="Wanderer Explorer Adventurer Seeker Archivist Connoisseur Sage Scholar Essential Foundational Specialist"
 
 find "$PROJECT_ROOT/moviegenius" -name "*.swift" -print0 | while IFS= read -r -d '' file; do
     for tier in $INVALID_TIERS; do

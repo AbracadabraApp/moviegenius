@@ -43,17 +43,17 @@ struct CategoryBadgeColors {
     }
 
     /// Returns the semantic tier color for a given tier name
-    /// - Parameter tierName: The tier name (Essential, Foundational, Connoisseur, Specialist, Genius)
+    /// - Parameter tierName: The tier name (Beginner, Fan, Expert, Auteur, Genius)
     /// - Returns: Fixed color for the tier (gray → bronze → copper → rose gold → gold)
     static func semanticTierColor(for tierName: String) -> Color {
         switch tierName {
-        case "Essential":
+        case "Beginner":
             return .mgProgressStart
-        case "Foundational":
+        case "Fan":
             return .mgProgressBronze
-        case "Connoisseur":
+        case "Expert":
             return .mgProgressCopper
-        case "Specialist":
+        case "Auteur":
             return .mgProgressRoseGold
         case "Genius":
             return .mgGold
@@ -66,7 +66,7 @@ struct CategoryBadgeColors {
     /// - Parameter tierName: The tier name
     /// - Returns: .mgPrimary for gray tier, .black for gold tier, .white for other metallic tiers
     static func semanticTierTextColor(for tierName: String) -> Color {
-        if tierName == "Essential" {
+        if tierName == "Beginner" {
             return .mgPrimary
         } else if tierName == "Genius" {
             return .black  // Gold background - needs black text for contrast
