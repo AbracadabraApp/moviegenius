@@ -717,10 +717,6 @@ struct CategoryEssentialsView: View {
         .task {
             await viewModel.loadMovies()
         }
-        .onDisappear {
-            // Clear resources when navigating away to free memory
-            viewModel.clearResources()
-        }
     }
 }
 
@@ -849,15 +845,6 @@ class CategoryEssentialsViewModel: ObservableObject {
     init(category: String, subcategory: String? = nil) {
         self.category = category
         self.subcategory = subcategory
-    }
-
-    func clearResources() {
-        // Clear heavy resources when view disappears to free memory
-        if movies.count > 20 {
-            let count = movies.count
-            movies = []
-            print("🧹 Cleared \(count) movies from memory for \(category)")
-        }
     }
 
     func loadMovies() async {
