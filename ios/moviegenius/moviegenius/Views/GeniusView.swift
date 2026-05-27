@@ -38,7 +38,7 @@ class TierProgressTracker: ObservableObject {
 
             // Count how many films in this tier have been seen
             let seenCount = films.filter { film in
-                let lookupKey = "\(category)|\(tier)|\(film.title)|\(film.year)"
+                let lookupKey = "\(category)|\(tier)|\(film.title)|\(film.year ?? 0)"
                 if let tmdbId = CategoryEssentials.tmdbIdLookup[lookupKey] {
                     return seenIds.contains(tmdbId)
                 }
@@ -135,7 +135,7 @@ struct JourneyTabContent: View {
             totalFilms += films.count
 
             seenFilms += films.filter { film in
-                let lookupKey = "\(category)|\(tier)|\(film.title)|\(film.year)"
+                let lookupKey = "\(category)|\(tier)|\(film.title)|\(film.year ?? 0)"
                 if let tmdbId = CategoryEssentials.tmdbIdLookup[lookupKey] {
                     return seenIds.contains(tmdbId)
                 }
@@ -904,7 +904,7 @@ class CategoryEssentialsViewModel: ObservableObject {
                 group.addTask {
                     do {
                         // Check if we have a pre-populated TMDB ID
-                        let lookupKey = "\(self.category)|\(self.subcategory ?? "")|\(film.title)|\(film.year)"
+                        let lookupKey = "\(self.category)|\(self.subcategory ?? "")|\(film.title)|\(film.year ?? 0)"
                         let movie: EssentialMovie?
 
                         if let tmdbId = CategoryEssentials.tmdbIdLookup[lookupKey] {
@@ -1013,7 +1013,7 @@ struct CategoryEssentials {
         for category in store.categoryNames {
             for tier in store.tierNames(category: category) {
                 for film in store.films(category: category, tier: tier) {
-                    let key = "\(category)|\(tier)|\(film.title)|\(film.year)"
+                    let key = "\(category)|\(tier)|\(film.title)|\(film.year ?? 0)"
                     combined[key] = film.tmdbId
                 }
             }
