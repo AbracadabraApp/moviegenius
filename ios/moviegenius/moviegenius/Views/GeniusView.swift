@@ -161,28 +161,28 @@ struct JourneyTabContent: View {
                 ForEach(shuffledCategories, id: \.self) { category in
                     Group {
                         if category == "Actors" {
-                            NavigationLink(destination: PersonsGeniusView(categoryType: .actors)) {
+                            NavigationLink(value: MovieDestination.personsGenius(categoryType: .actors)) {
                                 CategoryBadge(
                                     category: category,
                                     progress: categoryProgress(category)
                                 )
                             }
                         } else if category == "Actresses" {
-                            NavigationLink(destination: PersonsGeniusView(categoryType: .actresses)) {
+                            NavigationLink(value: MovieDestination.personsGenius(categoryType: .actresses)) {
                                 CategoryBadge(
                                     category: category,
                                     progress: categoryProgress(category)
                                 )
                             }
                         } else if category == "Directors" {
-                            NavigationLink(destination: PersonsGeniusView(categoryType: .directors)) {
+                            NavigationLink(value: MovieDestination.personsGenius(categoryType: .directors)) {
                                 CategoryBadge(
                                     category: category,
                                     progress: categoryProgress(category)
                                 )
                             }
                         } else if category == "Awards" {
-                            NavigationLink(destination: AwardsGeniusView()) {
+                            NavigationLink(value: MovieDestination.awardsGenius) {
                                 CategoryBadge(
                                     category: category,
                                     progress: categoryProgress(category)
@@ -190,7 +190,7 @@ struct JourneyTabContent: View {
                             }
                         } else {
                             // Default to Beginner tier for genre categories
-                            NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: "Beginner")) {
+                            NavigationLink(value: MovieDestination.categoryEssentials(category: category, subcategory: "Beginner")) {
                                 CategoryBadge(
                                     category: category,
                                     progress: categoryProgress(category)
@@ -486,7 +486,7 @@ struct CategorySubcategoriesView: View {
                         // Subcategory badges
                         FlowLayout(spacing: .mgSpacing8) {
                             ForEach(subcategories, id: \.self) { subcategory in
-                                NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: subcategory)) {
+                                NavigationLink(value: MovieDestination.categoryEssentials(category: category, subcategory: subcategory)) {
                                     CategoryBadge(
                                         category: subcategory,
                                         progress: subcategoryProgress(subcategory)
@@ -530,7 +530,7 @@ struct TierNavigationBar: View {
     var body: some View {
         HStack(spacing: 2) {
             ForEach(Array(allTiers.enumerated()), id: \.element) { index, tier in
-                NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: tier)) {
+                NavigationLink(value: MovieDestination.categoryEssentials(category: category, subcategory: tier)) {
                     TierSection(
                         tier: tier,
                         label: tierLabels[tier] ?? nil,
@@ -658,7 +658,7 @@ struct CategoryEssentialsView: View {
     @ViewBuilder
     private var bottomNextTierButton: some View {
         if let nextTier = nextTier {
-            NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: nextTier)) {
+            NavigationLink(value: MovieDestination.categoryEssentials(category: category, subcategory: nextTier)) {
                 HStack {
                     Text("\(category): \(nextTier)")
                         .font(.mgBody)
@@ -3833,7 +3833,7 @@ struct HeatMapChipsContent: View {
 
                 FlowLayout(spacing: 8) {
                     ForEach(genreCategories, id: \.self) { category in
-                        NavigationLink(destination: CategoryEssentialsView(category: category, subcategory: "Beginner")) {
+                        NavigationLink(value: MovieDestination.categoryEssentials(category: category, subcategory: "Beginner")) {
                             CategoryChip(
                                 category: category,
                                 heatLevel: categoryHeatLevel(category: category, lovedMovies: favorites.lovedMovies)
@@ -3856,28 +3856,28 @@ struct HeatMapChipsContent: View {
                     ForEach(peopleCategories, id: \.self) { category in
                         Group {
                             if category == "Actors" {
-                                NavigationLink(destination: PersonsGeniusView(categoryType: .actors)) {
+                                NavigationLink(value: MovieDestination.personsGenius(categoryType: .actors)) {
                                     CategoryChip(
                                         category: category,
                                         heatLevel: categoryHeatLevel(category: category, lovedMovies: favorites.lovedMovies)
                                     )
                                 }
                             } else if category == "Actresses" {
-                                NavigationLink(destination: PersonsGeniusView(categoryType: .actresses)) {
+                                NavigationLink(value: MovieDestination.personsGenius(categoryType: .actresses)) {
                                     CategoryChip(
                                         category: category,
                                         heatLevel: categoryHeatLevel(category: category, lovedMovies: favorites.lovedMovies)
                                     )
                                 }
                             } else if category == "Directors" {
-                                NavigationLink(destination: PersonsGeniusView(categoryType: .directors)) {
+                                NavigationLink(value: MovieDestination.personsGenius(categoryType: .directors)) {
                                     CategoryChip(
                                         category: category,
                                         heatLevel: categoryHeatLevel(category: category, lovedMovies: favorites.lovedMovies)
                                     )
                                 }
                             } else if category == "Awards" {
-                                NavigationLink(destination: AwardsGeniusView()) {
+                                NavigationLink(value: MovieDestination.awardsGenius) {
                                     CategoryChip(
                                         category: category,
                                         heatLevel: categoryHeatLevel(category: category, lovedMovies: favorites.lovedMovies)
@@ -3885,7 +3885,7 @@ struct HeatMapChipsContent: View {
                                 }
                             } else {
                                 // Other categories
-                                NavigationLink(destination: CategoryEssentialsView(
+                                NavigationLink(value: MovieDestination.categoryEssentials(
                                     category: category,
                                     subcategory: "Beginner"
                                 )) {

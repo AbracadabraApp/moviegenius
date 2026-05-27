@@ -81,7 +81,7 @@ class PersonsGeniusLoader {
     }
 }
 
-enum PersonCategoryType {
+enum PersonCategoryType: String, Codable, Hashable {
     case actors
     case actresses
     case directors

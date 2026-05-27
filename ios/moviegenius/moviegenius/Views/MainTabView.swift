@@ -14,6 +14,9 @@ enum MovieDestination: Hashable, Codable {
     case detail(tmdbId: Int)
     case collection(id: String)
     case person(id: Int)
+    case categoryEssentials(category: String, subcategory: String)
+    case personsGenius(categoryType: PersonCategoryType)
+    case awardsGenius
 }
 
 // MARK: - Navigation State Manager
@@ -136,6 +139,12 @@ struct MainTabView: View {
             CollectionDetailView(collectionId: id)
         case .person(let id):
             PersonDetailView(personId: id)
+        case .categoryEssentials(let category, let subcategory):
+            CategoryEssentialsView(category: category, subcategory: subcategory)
+        case .personsGenius(let categoryType):
+            PersonsGeniusView(categoryType: categoryType)
+        case .awardsGenius:
+            AwardsGeniusView()
         }
     }
 }

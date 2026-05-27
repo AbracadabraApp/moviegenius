@@ -16,10 +16,9 @@ struct SearchView: View {
     }
 
     var body: some View {
-        NavigationStack {
-            VStack(spacing: 0) {
-                // Content
-                if viewModel.searchText.isEmpty || viewModel.searchText.count < 2 {
+        VStack(spacing: 0) {
+            // Content
+            if viewModel.searchText.isEmpty || viewModel.searchText.count < 2 {
                     // Empty state
                     VStack(spacing: .mgSpacing16) {
                         Image(systemName: "magnifyingglass")
@@ -76,9 +75,8 @@ struct SearchView: View {
                     SearchResultsList(results: viewModel.results)
                 }
             }
-            .background(Color.mgBackground)
-            .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search movies...")
-        }
+        .background(Color.mgBackground)
+        .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search movies...")
     }
 }
 
