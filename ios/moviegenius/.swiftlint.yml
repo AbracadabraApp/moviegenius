@@ -1,6 +1,7 @@
 # SwiftLint Configuration for MovieGenius iOS
 # Purpose: Prevent common breaking changes and enforce consistency
-# Last Updated: 2026-05-20
+# Last Updated: 2026-05-26
+# Enhanced: Navigation regression prevention rules
 
 # Include/Exclude Paths
 included:
@@ -68,11 +69,29 @@ vertical_whitespace:
 
 # Custom Rules for MovieGenius-Specific Issues
 custom_rules:
-  # NAVIGATION PATTERN RULES
+  # NAVIGATION PATTERN RULES - CRITICAL FOR REGRESSION PREVENTION
   navigation_bar_hidden_banned:
     name: "Navigation Bar Hidden"
     regex: '\.navigationBar(Hidden|BackButtonHidden)\s*\(\s*true\s*\)'
-    message: "NEVER hide navigation bars - breaks swipe-back gestures. See IOS_NAVIGATION_GUIDE.md"
+    message: "❌ NEVER hide navigation bars - breaks swipe-back gestures. See IOS_NAVIGATION_GUIDE.md"
+    severity: error
+
+  toolbar_hidden_warning:
+    name: "Toolbar Hidden Pattern"
+    regex: '\.toolbar\s*\(\s*\.hidden\s*\)'
+    message: "⚠️ Consider using .toolbarVisibility with specific placement instead"
+    severity: warning
+
+  enable_swipe_back_hack:
+    name: "Swipe Back Hack Detected"
+    regex: 'enableSwipeBack|interactivePopGestureRecognizer|UIViewControllerRepresentable.*swipe'
+    message: "❌ If you need this hack, you're fighting the platform. Fix the root cause."
+    severity: error
+
+  app_header_component:
+    name: "AppHeader Component Banned"
+    regex: 'AppHeader|CustomNavigationHeader'
+    message: "❌ AppHeader component was removed in May 2026. Use native navigation."
     severity: error
 
   navigation_bar_appearance_banned:

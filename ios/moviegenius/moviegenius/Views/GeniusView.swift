@@ -3887,7 +3887,7 @@ struct HeatMapChipsContent: View {
                                 // Other categories
                                 NavigationLink(destination: CategoryEssentialsView(
                                     category: category,
-                                    subcategory: nil
+                                    subcategory: "Beginner"
                                 )) {
                                     CategoryChip(
                                         category: category,
