@@ -30,7 +30,7 @@ struct CollectionCarousel: View {
             }
 
             // Title (tappable - links to collection detail)
-            NavigationLink(destination: CollectionDetailView(collectionId: collection.id)) {
+            NavigationLink(value: MovieDestination.collection(id: collection.id)) {
                 Text(collection.title)
                     .font(.mgHeadline)
                     .foregroundStyle(Color.mgPrimary)
@@ -43,7 +43,7 @@ struct CollectionCarousel: View {
                 LazyHStack(spacing: .mgSpacing8) {
                     ForEach(collection.movies.indices, id: \.self) { index in
                         let movie = collection.movies[index]
-                        NavigationLink(destination: MovieDetailView(tmdbId: movie.tmdbId)) {
+                        NavigationLink(value: MovieDestination.detail(tmdbId: movie.tmdbId)) {
                             MoviePosterCard(movie: movie)
                         }
                         .buttonStyle(MGCardButtonStyle())
@@ -62,7 +62,7 @@ struct CollectionCarousel: View {
             // View All - below carousel, right-aligned
             HStack {
                 Spacer()
-                NavigationLink(destination: CollectionDetailView(collectionId: collection.id)) {
+                NavigationLink(value: MovieDestination.collection(id: collection.id)) {
                     Text("View All →")
                         .font(.mgCallout)
                         .fontWeight(.semibold)
@@ -117,7 +117,8 @@ struct MoviePosterCard: View {
 
     private var posterURL: URL? {
         guard let posterUrl = movie.posterUrl else { return nil }
-        return URL(string: posterUrl)
+        // Optimize for thumbnail size (170px wide display)
+        return ImageURLOptimizer.posterURL(from: posterUrl, context: .thumbnail)
     }
 
     private var posterPlaceholder: some View {

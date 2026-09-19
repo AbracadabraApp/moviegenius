@@ -1,16 +1,22 @@
 # MovieGenius Project Instructions
 
-**Last Updated:** 2025-03-22
-**Version:** 3.0 (Aligned with Anthropic Claude Code Guidelines)
+**Last Updated:** 2026-05-20
+**Version:** 3.2 (Added Karpathy "Surgical Changes" principle)
 
 ---
 
 ## Quick Reference
 
+**Web/API:**
 - **Master Architecture:** `/docs/MOVIEGENIUS_V3_ARCHITECTURE.md`
 - **Production Status:** `/docs/strategies/RELEASE_TODO.md`
 - **API Reference:** `/docs/API_REFERENCE.md`
 - **Database:** Railway PostgreSQL (21,275 movie analyses)
+
+**iOS:**
+- **Navigation Guide:** `/ios/IOS_NAVIGATION_GUIDE.md` (required before View changes)
+- **Testing Strategy:** `/ios/testing/README.md` (3-hour path to TestFlight)
+- **Documentation Lessons:** `/DOCUMENTATION_LESSONS_LEARNED.md` (mistake patterns)
 
 ---
 
@@ -264,6 +270,94 @@ TodoWrite({
 
 ---
 
+## Surgical Changes (Karpathy Principle #3)
+
+**Touch only what you must. Every changed line should trace to the user's request.**
+
+### Core Directive
+
+> "Every diff line should directly trace back to the user's request."
+
+This principle prevents scope creep, unnecessary refactoring, and "helpful" changes that introduce risk without explicit approval.
+
+### When Modifying Existing Code
+
+**DO NOT:**
+- ❌ Improve adjacent code unrelated to the task
+- ❌ Fix formatting in unrelated files or sections
+- ❌ Refactor working functionality "while you're there"
+- ❌ Remove pre-existing dead code (unless it's blocking the task)
+- ❌ Update comments or documentation outside the change scope
+- ❌ Apply style changes to code you didn't modify for the task
+
+**DO:**
+- ✅ Match existing style conventions in the code you're modifying
+- ✅ Remove only imports/variables/functions YOUR changes made obsolete
+- ✅ Keep changes minimal and focused on the stated goal
+- ✅ Preserve adjacent code, comments, and formatting
+- ✅ Flag issues you notice without fixing them (mention to user)
+
+### Validation Check
+
+Before submitting changes, ask yourself:
+
+**"Can I trace every modified line directly back to what the user requested?"**
+
+If the answer is **no**, you've gone too far. Undo the extra changes.
+
+### Examples
+
+**Request:** "Fix the contrast in CategoryBadgeColors.swift"
+
+❌ **WRONG:**
+```swift
+// Changed CategoryBadgeColors.swift (requested)
+// Also refactored GeniusView.swift formatting (NOT requested)
+// Removed unused imports across 3 files (NOT requested)
+// Updated comments in 5 other files (NOT requested)
+```
+
+✅ **CORRECT:**
+```swift
+// Changed CategoryBadgeColors.swift ONLY
+// Modified textColor() function to return black for gold backgrounds
+// No other files touched
+```
+
+**Request:** "Add bookmark toggle button to CollectionPage"
+
+❌ **WRONG:**
+```javascript
+// Added bookmark button (requested)
+// Refactored entire component to use hooks (NOT requested)
+// Renamed variables for "clarity" (NOT requested)
+// Fixed ESLint warnings in file (NOT requested)
+```
+
+✅ **CORRECT:**
+```javascript
+// Added bookmark button component
+// Added click handler
+// Added localStorage persistence for bookmarks
+// No refactoring, no style changes
+```
+
+### Why This Matters
+
+**Benefits:**
+- Smaller, reviewable diffs
+- Lower risk of introducing bugs
+- Easier to revert if needed
+- Builds trust with explicit-only changes
+- Prevents "helpful" changes that break things
+
+**MovieGenius Context:**
+This aligns with our "Collaboration Rules" (line 461) - implement ONLY what was explicitly agreed. Surgical changes are the technical manifestation of that principle.
+
+**Source:** Karpathy's CLAUDE.md guidelines (220K+ GitHub stars), distilled from AI coding agent failure patterns.
+
+---
+
 ## Autonomous Bug Fixing
 
 **Fix it without hand-holding.**
@@ -381,6 +475,7 @@ TodoWrite({
 
 **Avoid these MovieGenius-specific errors:**
 
+### Web/API Pitfalls
 1. ❌ Calling React Hooks after conditional returns
 2. ❌ Modifying locked components (MediaCard, PhoneFrame)
 3. ❌ Using "film" instead of "movie" in UI
@@ -388,7 +483,15 @@ TodoWrite({
 5. ❌ Claiming "fixed" before verification
 6. ❌ Changing database schema without migration plan
 
-**See:** `/docs/PREVENTING_BUILD_ERRORS.md`
+### iOS Pitfalls
+7. ❌ Fighting the platform with custom navigation (use native patterns)
+8. ❌ Using `.navigationBarHidden(true)` (breaks swipe-back gestures)
+9. ❌ Creating multiple docs for same incident (consolidate immediately)
+10. ❌ Keeping point-in-time docs active after completion (archive them)
+
+**See:**
+- Web/API: `/docs/PREVENTING_BUILD_ERRORS.md`
+- iOS: `/ios/IOS_NAVIGATION_GUIDE.md`, `/DOCUMENTATION_LESSONS_LEARNED.md`
 
 ---
 
@@ -415,6 +518,31 @@ TodoWrite({
 12. `/docs/V2_SEARCH_FEATURES.md` - Deferred features
 13. `/docs/TROUBLESHOOTING.md` - Debug strategies
 14. `/docs/guides/DEVELOPMENT_SETUP.md` - Environment setup
+
+**iOS Documentation (When working on iOS app):**
+
+**Critical:**
+- `/ios/IOS_NAVIGATION_GUIDE.md` - **REQUIRED** reading before any View changes
+- `/ios/testing/README.md` - Testing strategy and checklists
+- `/DOCUMENTATION_LESSONS_LEARNED.md` - Key mistake patterns to avoid
+
+**Setup & Features:**
+- `/ios/FIREBASE_SETUP_GUIDE.md` - Crashlytics integration (30 min)
+- `/ios/GENIUS_SYSTEM_GUIDE.md` - Genius feature architecture
+- `/ios/YOUTUBE_TRAILER_SETUP.md` - Trailer playback system
+
+**Process:**
+- `/ios/testing/MANUAL_CHECKLIST.md` - Pre-release testing (90 min)
+- `/ios/testing/SMOKE_TESTS.md` - Automated test setup (30 min)
+- `/ios/TESTFLIGHT_LAUNCH_CHECKLIST.md` - Beta distribution
+
+**iOS Key Principles:**
+1. **Use native iOS patterns** - Fight the platform = 5 docs explaining workarounds
+2. **Test gestures immediately** - Swipe-back, pull-to-refresh on physical device
+3. **Archive point-in-time docs** - Migration/fix docs expire after completion
+4. **One guide per topic** - Quick starts are sections, not separate files
+
+**When iOS docs conflict:** Use IOS_NAVIGATION_GUIDE.md as single source of truth.
 
 ---
 

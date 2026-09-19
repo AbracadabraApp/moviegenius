@@ -80,50 +80,88 @@ export default async function handler(req, res) {
         });
       }
 
-      // For each list, fetch preview movies from editorial_data
-      const listsWithMovies = await Promise.all(
-        listsResult.rows.map(async (list) => {
-          const moviesQuery = `
-            SELECT m.tmdb_id, m.title, m.year, m.poster_url
-            FROM browse_lists bl,
-                 jsonb_array_elements(bl.editorial_data->'subcategories') sub,
+      // OPTIMIZATION: Fetch all movies for all lists in ONE query (eliminate N+1)
+      const listIds = listsResult.rows.map(l => l.id);
+
+      // Single aggregated query with row numbering per list
+      const allMoviesQuery = `
+        WITH list_movies AS (
+          SELECT
+            bl.id as list_id,
+            m.tmdb_id,
+            m.title,
+            m.year,
+            m.poster_url,
+            ROW_NUMBER() OVER (PARTITION BY bl.id ORDER BY m.tmdb_id) as rn
+          FROM browse_lists bl
+          CROSS JOIN LATERAL (
+            SELECT DISTINCT (mv->>'tmdb_id')::int as tmdb_id
+            FROM jsonb_array_elements(bl.editorial_data->'subcategories') sub,
                  jsonb_array_elements(sub->'movies') mv
-            JOIN movies m ON m.tmdb_id = (mv->>'tmdb_id')::int
-            WHERE bl.id = $1
-              AND (mv->>'tmdb_id') IS NOT NULL
+            WHERE (mv->>'tmdb_id') IS NOT NULL
               AND (mv->>'tmdb_id') != 'null'
-              AND m.poster_url IS NOT NULL
-              AND m.poster_url != ''
-            LIMIT $2
-          `;
+            LIMIT 50  -- Cap JSONB expansion per list for safety
+          ) AS movie_ids
+          JOIN movies m ON m.tmdb_id = movie_ids.tmdb_id
+          WHERE bl.id = ANY($1::uuid[])
+            AND m.poster_url IS NOT NULL
+            AND m.poster_url != ''
+        )
+        SELECT list_id, tmdb_id, title, year, poster_url
+        FROM list_movies
+        WHERE rn <= $2
+        ORDER BY list_id, rn
+      `;
 
-          const moviesResult = await client.query(moviesQuery, [
-            list.id,
-            parseInt(moviesPerList)
-          ]);
+      // Set a timeout for the query
+      await client.query('SET statement_timeout = 10000'); // 10 seconds
 
-          return {
-            id: list.id,
-            title: list.title,
-            totalMovies: parseInt(list.movie_count),
-            categories: list.categories || [],
-            movies: moviesResult.rows.map(row => ({
-              tmdb_id: row.tmdb_id,
-              title: row.title,
-              year: row.year,
-              poster_url: row.poster_url
-            }))
-          };
-        })
-      );
+      let moviesByList = {};
+      try {
+        const moviesResult = await client.query(allMoviesQuery, [
+          listIds,
+          parseInt(moviesPerList)
+        ]);
 
-      // Filter out any that came back with no movies
-      const withMovies = listsWithMovies.filter(list => list.movies.length > 0);
+        // Group movies by list_id
+        for (const row of moviesResult.rows) {
+          if (!moviesByList[row.list_id]) {
+            moviesByList[row.list_id] = [];
+          }
+          moviesByList[row.list_id].push({
+            tmdb_id: row.tmdb_id,
+            title: row.title,
+            year: row.year,
+            poster_url: row.poster_url
+          });
+        }
+      } catch (queryError) {
+        // Handle timeout - return lists without movies
+        console.error('[v1/browse-lists] Query timeout or error:', queryError.message);
+        if (queryError.message.includes('statement timeout') || queryError.message.includes('canceling statement')) {
+          // Continue with empty movies for all lists
+          moviesByList = {};
+        } else {
+          throw queryError; // Re-throw non-timeout errors
+        }
+      }
+
+      // Build the final response with movies attached
+      const listsWithMovies = listsResult.rows
+        .map(list => ({
+          id: list.id,
+          title: list.title,
+          totalMovies: parseInt(list.movie_count),
+          categories: list.categories || [],
+          movies: moviesByList[list.id] || []
+        }))
+        .filter(list => list.movies.length > 0); // Only include lists with movies
 
       return res.status(200).json({
         category,
-        lists: withMovies,
-        count: withMovies.length
+        lists: listsWithMovies,
+        count: listsWithMovies.length,
+        ...(Object.keys(moviesByList).length === 0 ? { warning: 'Movie data could not be loaded due to timeout' } : {})
       });
 
     } finally {

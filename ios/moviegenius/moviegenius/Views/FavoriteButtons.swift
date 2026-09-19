@@ -9,11 +9,10 @@ import SwiftUI
 
 struct FavoriteButtons: View {
     let movie: SavedMovie
-    let compact: Bool
     let onDarkBackground: Bool
     @ObservedObject var favorites = FavoritesManager.shared
 
-    init(tmdbId: Int, title: String, year: Int?, posterUrl: String?, slug: String? = nil, compact: Bool = false, onDarkBackground: Bool = false) {
+    init(tmdbId: Int, title: String, year: Int?, posterUrl: String?, slug: String? = nil, onDarkBackground: Bool = false) {
         self.movie = SavedMovie(
             id: tmdbId,
             title: title,
@@ -21,11 +20,11 @@ struct FavoriteButtons: View {
             posterUrl: posterUrl,
             slug: slug
         )
-        self.compact = compact
         self.onDarkBackground = onDarkBackground
     }
 
-    // Dynamic colors based on background
+    // Dynamic colors based on background context
+    // Note: .white literals are intentional when onDarkBackground=true for guaranteed contrast
     private var inactiveColor: Color {
         onDarkBackground ? .white : Color.mgPrimary
     }
@@ -35,26 +34,24 @@ struct FavoriteButtons: View {
     }
 
     var body: some View {
-        HStack(spacing: compact ? .mgSpacing8 : .mgSpacing12) {
-            // Seen button - Glass capsule with circle icon
+        HStack(spacing: .mgSpacing12) {
+            // Seen button - Glass capsule with text label
             Button(action: {
                 HapticManager.selection()
                 handleLovedTap()
             }) {
                 HStack(spacing: 5) {
                     Image(systemName: isLoved ? "checkmark.circle.fill" : "checkmark.circle")
-                        .font(.system(size: compact ? 14 : 15))
+                        .font(.system(size: 15))
                         .foregroundStyle(isLoved ? Color.mgGold : inactiveColor)
 
-                    if !compact {
-                        Text("Seen it")
-                            .font(.mgCaption)
-                            .fontWeight(isLoved ? .semibold : .regular)
-                            .foregroundStyle(isLoved ? Color.mgGold : inactiveColor)
-                    }
+                    Text("Seen it")
+                        .font(.mgCaption)
+                        .fontWeight(isLoved ? .semibold : .regular)
+                        .foregroundStyle(isLoved ? Color.mgGold : inactiveColor)
                 }
-                .frame(minHeight: compact ? 30 : 36)
-                .padding(.horizontal, compact ? 8 : 10)
+                .frame(minHeight: 36)
+                .padding(.horizontal, 10)
                 .background(.ultraThinMaterial)
                 .clipShape(Capsule())
                 .overlay(
@@ -71,25 +68,23 @@ struct FavoriteButtons: View {
             .accessibilityHint("Mark movies you've already seen")
             .accessibilityValue(isLoved ? "Marked" : "Not marked")
 
-            // Add button - Glass capsule with circle icon
+            // Add button - Glass capsule with text label
             Button(action: {
                 HapticManager.selection()
                 handleQueueTap()
             }) {
                 HStack(spacing: 5) {
                     Image(systemName: isInQueue ? "plus.circle.fill" : "plus.circle")
-                        .font(.system(size: compact ? 14 : 15))
+                        .font(.system(size: 15))
                         .foregroundStyle(isInQueue ? Color.mgGold : inactiveColor)
 
-                    if !compact {
-                        Text("Add to list")
-                            .font(.mgCaption)
-                            .fontWeight(isInQueue ? .semibold : .regular)
-                            .foregroundStyle(isInQueue ? Color.mgGold : inactiveColor)
-                    }
+                    Text("Add to list")
+                        .font(.mgCaption)
+                        .fontWeight(isInQueue ? .semibold : .regular)
+                        .foregroundStyle(isInQueue ? Color.mgGold : inactiveColor)
                 }
-                .frame(minHeight: compact ? 30 : 36)
-                .padding(.horizontal, compact ? 8 : 10)
+                .frame(minHeight: 36)
+                .padding(.horizontal, 10)
                 .background(.ultraThinMaterial)
                 .clipShape(Capsule())
                 .overlay(
@@ -133,16 +128,7 @@ struct FavoriteButtons: View {
             tmdbId: 153,
             title: "Lost in Translation",
             year: 2003,
-            posterUrl: nil,
-            compact: false
-        )
-
-        FavoriteButtons(
-            tmdbId: 153,
-            title: "Lost in Translation",
-            year: 2003,
-            posterUrl: nil,
-            compact: true
+            posterUrl: nil
         )
     }
     .padding()

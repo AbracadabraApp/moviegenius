@@ -67,7 +67,7 @@ struct ParsedReasonText: View {
                         Text(string)
                             .foregroundStyle(Color.mgPrimary)
                     case .link(let name, let personId):
-                        NavigationLink(destination: PersonDetailView(personId: personId)) {
+                        NavigationLink(value: MovieDestination.person(id: personId)) {
                             Text(name)
                                 .foregroundStyle(Color.mgGold)
                                 .underline()

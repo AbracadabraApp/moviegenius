@@ -161,7 +161,7 @@ export default function MovieDetailPage() {
   const seenAddSlot = (movieData && streaming) ? (
     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
       <button
-        onClick={() => { try { setHearted(FavoritesManager.toggleHeart(movieData)); } catch(e){ /* ignore */ } }}
+        onClick={() => { try { setHearted(FavoritesManager.toggleWatched(movieData)); } catch(e){ /* ignore */ } }}
         style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '4px 2px 4px 9px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}
       >
         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '4px' }}>

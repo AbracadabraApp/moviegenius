@@ -1,0 +1,60 @@
+Genius JSON Extraction - 9 Error Analysis
+==========================================
+
+TITLE MISMATCHES (GeniusView title != TierTmdbLookup title):
+-------------------------------------------------------------
+1. Action|Devotee|Ong-Bak: Muay Thai Warrior|2003
+   - GeniusView: "Ong-Bak: Muay Thai Warrior"
+   - TierTmdbLookup: "Ong-Bak" (TMDB: 9316)
+   - FIX: Update TierTmdbLookup key
+
+2. Fantasy|Archivist|The Nibelungen: Siegfried|1924
+   - GeniusView: "The Nibelungen: Siegfried"
+   - TierTmdbLookup: "Archivist: The Nibelungen|Siegfried" (malformed tier)
+   - TMDB: 31506
+   - FIX: Fix malformed key format
+
+3. Science Fiction|Well-Versed|Mad Max 2: The Road Warrior|1981
+   - GeniusView: "Mad Max 2: The Road Warrior"
+   - TierTmdbLookup: "Well-Versed: Mad Max 2|The Road Warrior" (malformed tier)
+   - TMDB: 8810
+   - FIX: Fix malformed key format
+
+4. Western|Deep Cuts|The Big Gundown|1967
+   - GeniusView: Western|Deep Cuts
+   - TierTmdbLookup: Action|Specialist (TMDB: 16662)
+   - FIX: Determine correct category/tier
+
+GENUINELY MISSING TMDB IDS:
+----------------------------
+5. Documentary|Connoisseur|An American Family|1973
+   - No entry in TierTmdbLookup
+   - Need TMDB lookup
+
+6. Documentary|Archivist|Le Joli Mai|1963
+   - No entry in TierTmdbLookup
+   - Need TMDB lookup
+
+7. Fantasy|Master|The Beautiful Sufferings of the Blonde-Haired Lady|1909
+   - No entry in TierTmdbLookup
+   - Need TMDB lookup
+
+8. History|Connoisseur|The Age of the Medici|1973
+   - No entry in TierTmdbLookup
+   - Need TMDB lookup
+
+9. Romance|Devotee|Il Postino|1994
+   - No entry in TierTmdbLookup
+   - Need TMDB lookup
+
+DECISION NEEDED:
+----------------
+Option A: Fix all 9 (manual TMDB lookups + key fixes) - safest
+Option B: Proceed with 9 missing (tmdbId: 0) - violates safety model
+Option C: Exclude 9 films from JSON - loses content
+
+RECOMMENDATION: Option A
+- 4 are simple key fixes
+- 5 need TMDB lookups (~30 minutes work)
+- Maintains zero-error extraction standard
+- Proves complete parity in Step 3

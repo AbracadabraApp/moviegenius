@@ -1,0 +1,372 @@
+{
+  "actors": [
+    {
+      "name": "Marlon Brando",
+      "tmdbId": 3084
+    },
+    {
+      "name": "Humphrey Bogart",
+      "tmdbId": 4110
+    },
+    {
+      "name": "James Stewart",
+      "tmdbId": 854
+    },
+    {
+      "name": "Cary Grant",
+      "tmdbId": 2638
+    },
+    {
+      "name": "Spencer Tracy",
+      "tmdbId": 12147
+    },
+    {
+      "name": "Henry Fonda",
+      "tmdbId": 4958
+    },
+    {
+      "name": "Gregory Peck",
+      "tmdbId": 8487
+    },
+    {
+      "name": "Sidney Poitier",
+      "tmdbId": 16897
+    },
+    {
+      "name": "Laurence Olivier",
+      "tmdbId": 3359
+    },
+    {
+      "name": "Jack Nicholson",
+      "tmdbId": 514
+    },
+    {
+      "name": "Al Pacino",
+      "tmdbId": 1158
+    },
+    {
+      "name": "Robert De Niro",
+      "tmdbId": 380
+    },
+    {
+      "name": "Dustin Hoffman",
+      "tmdbId": 4483
+    },
+    {
+      "name": "Gene Hackman",
+      "tmdbId": 193
+    },
+    {
+      "name": "Paul Newman",
+      "tmdbId": 3636
+    },
+    {
+      "name": "Anthony Hopkins",
+      "tmdbId": 4173
+    },
+    {
+      "name": "Michael Caine",
+      "tmdbId": 3895
+    },
+    {
+      "name": "Morgan Freeman",
+      "tmdbId": 192
+    },
+    {
+      "name": "Daniel Day-Lewis",
+      "tmdbId": 11856
+    },
+    {
+      "name": "Denzel Washington",
+      "tmdbId": 5292
+    },
+    {
+      "name": "Tom Hanks",
+      "tmdbId": 31
+    },
+    {
+      "name": "Philip Seymour Hoffman",
+      "tmdbId": 1233
+    },
+    {
+      "name": "Gary Oldman",
+      "tmdbId": 64
+    },
+    {
+      "name": "Joaquin Phoenix",
+      "tmdbId": 73421
+    },
+    {
+      "name": "Christian Bale",
+      "tmdbId": 3894
+    },
+    {
+      "name": "Leonardo DiCaprio",
+      "tmdbId": 6193
+    },
+    {
+      "name": "Mahershala Ali",
+      "tmdbId": 932967
+    },
+    {
+      "name": "Oscar Isaac",
+      "tmdbId": 25072
+    },
+    {
+      "name": "Adam Driver",
+      "tmdbId": 1023139
+    },
+    {
+      "name": "Robert Duvall",
+      "tmdbId": 3087
+    }
+  ],
+  "actresses": [
+    {
+      "name": "Katharine Hepburn",
+      "tmdbId": 6598
+    },
+    {
+      "name": "Bette Davis",
+      "tmdbId": 3380
+    },
+    {
+      "name": "Ingrid Bergman",
+      "tmdbId": 4111
+    },
+    {
+      "name": "Audrey Hepburn",
+      "tmdbId": 1932
+    },
+    {
+      "name": "Vivien Leigh",
+      "tmdbId": 10538
+    },
+    {
+      "name": "Barbara Stanwyck",
+      "tmdbId": 14974
+    },
+    {
+      "name": "Faye Dunaway",
+      "tmdbId": 6450
+    },
+    {
+      "name": "Jane Fonda",
+      "tmdbId": 6352
+    },
+    {
+      "name": "Maggie Smith",
+      "tmdbId": 10978
+    },
+    {
+      "name": "Vanessa Redgrave",
+      "tmdbId": 13333
+    },
+    {
+      "name": "Diane Keaton",
+      "tmdbId": 3092
+    },
+    {
+      "name": "Jessica Lange",
+      "tmdbId": 4431
+    },
+    {
+      "name": "Meryl Streep",
+      "tmdbId": 5064
+    },
+    {
+      "name": "Cate Blanchett",
+      "tmdbId": 112
+    },
+    {
+      "name": "Frances McDormand",
+      "tmdbId": 3910
+    },
+    {
+      "name": "Viola Davis",
+      "tmdbId": 19492
+    },
+    {
+      "name": "Kate Winslet",
+      "tmdbId": 204
+    },
+    {
+      "name": "Julianne Moore",
+      "tmdbId": 1231
+    },
+    {
+      "name": "Tilda Swinton",
+      "tmdbId": 3063
+    },
+    {
+      "name": "Saoirse Ronan",
+      "tmdbId": 36592
+    },
+    {
+      "name": "Toni Collette",
+      "tmdbId": 3051
+    },
+    {
+      "name": "Florence Pugh",
+      "tmdbId": 1373737
+    },
+    {
+      "name": "Nicole Kidman",
+      "tmdbId": 2227
+    },
+    {
+      "name": "Judi Dench",
+      "tmdbId": 5309
+    },
+    {
+      "name": "Helen Mirren",
+      "tmdbId": 15735
+    },
+    {
+      "name": "Glenn Close",
+      "tmdbId": 515
+    },
+    {
+      "name": "Sigourney Weaver",
+      "tmdbId": 10205
+    },
+    {
+      "name": "Michelle Yeoh",
+      "tmdbId": 1620
+    },
+    {
+      "name": "Olivia Colman",
+      "tmdbId": 39187
+    },
+    {
+      "name": "Gena Rowlands",
+      "tmdbId": 4800
+    }
+  ],
+  "directors": [
+    {
+      "name": "Alfred Hitchcock",
+      "tmdbId": 2636
+    },
+    {
+      "name": "Stanley Kubrick",
+      "tmdbId": 240
+    },
+    {
+      "name": "Akira Kurosawa",
+      "tmdbId": 5026
+    },
+    {
+      "name": "Orson Welles",
+      "tmdbId": 40
+    },
+    {
+      "name": "Ingmar Bergman",
+      "tmdbId": 5100320
+    },
+    {
+      "name": "Federico Fellini",
+      "tmdbId": 4415
+    },
+    {
+      "name": "John Ford",
+      "tmdbId": 8500
+    },
+    {
+      "name": "Billy Wilder",
+      "tmdbId": 3146
+    },
+    {
+      "name": "Francis Ford Coppola",
+      "tmdbId": 1776
+    },
+    {
+      "name": "Martin Scorsese",
+      "tmdbId": 1032
+    },
+    {
+      "name": "Steven Spielberg",
+      "tmdbId": 488
+    },
+    {
+      "name": "Sidney Lumet",
+      "tmdbId": 39996
+    },
+    {
+      "name": "Roman Polanski",
+      "tmdbId": 3556
+    },
+    {
+      "name": "David Lean",
+      "tmdbId": 12238
+    },
+    {
+      "name": "Jean-Luc Godard",
+      "tmdbId": 3776
+    },
+    {
+      "name": "Andrei Tarkovsky",
+      "tmdbId": 8452
+    },
+    {
+      "name": "Yasujiro Ozu",
+      "tmdbId": 95501
+    },
+    {
+      "name": "David Lynch",
+      "tmdbId": 5602
+    },
+    {
+      "name": "Quentin Tarantino",
+      "tmdbId": 138
+    },
+    {
+      "name": "Joel Coen",
+      "tmdbId": 1223
+    },
+    {
+      "name": "Ethan Coen",
+      "tmdbId": 1224
+    },
+    {
+      "name": "Paul Thomas Anderson",
+      "tmdbId": 4762
+    },
+    {
+      "name": "David Fincher",
+      "tmdbId": 7467
+    },
+    {
+      "name": "Christopher Nolan",
+      "tmdbId": 525
+    },
+    {
+      "name": "Spike Lee",
+      "tmdbId": 5281
+    },
+    {
+      "name": "Hayao Miyazaki",
+      "tmdbId": 608
+    },
+    {
+      "name": "Wong Kar-wai",
+      "tmdbId": 12453
+    },
+    {
+      "name": "Pedro Almodovar",
+      "tmdbId": 309
+    },
+    {
+      "name": "Greta Gerwig",
+      "tmdbId": 45400
+    },
+    {
+      "name": "Bong Joon-ho",
+      "tmdbId": 21684
+    },
+    {
+      "name": "Denis Villeneuve",
+      "tmdbId": 137427
+    }
+  ]
+}

@@ -115,50 +115,106 @@ export default async function handler(req, res) {
 
     const paginatedCollections = selectedCollections.slice(requestedOffset, requestedOffset + requestedLimit);
 
-    // For each collection, pull preview movies from editorial_data joined to movies for poster_url
-    const collectionsWithMovies = await Promise.all(
-      paginatedCollections.map(async (collection) => {
-        const moviesQuery = `
-          SELECT m.tmdb_id, m.title, m.year, m.poster_url
-          FROM browse_lists bl,
-               jsonb_array_elements(bl.editorial_data->'subcategories') sub,
+    // OPTIMIZATION: Fetch all movies for all collections in ONE query (eliminate N+1)
+    const collectionIds = paginatedCollections.map(c => c.id);
+
+    // Single aggregated query with row numbering per collection
+    const allMoviesQuery = `
+      WITH collection_movies AS (
+        SELECT
+          bl.id as collection_id,
+          m.tmdb_id,
+          m.title,
+          m.year,
+          m.poster_url,
+          ROW_NUMBER() OVER (PARTITION BY bl.id ORDER BY m.tmdb_id) as rn
+        FROM browse_lists bl
+        CROSS JOIN LATERAL (
+          SELECT DISTINCT (mv->>'tmdb_id')::int as tmdb_id
+          FROM jsonb_array_elements(bl.editorial_data->'subcategories') sub,
                jsonb_array_elements(sub->'movies') mv
-          JOIN movies m ON m.tmdb_id = (mv->>'tmdb_id')::int
-          WHERE bl.id = $1
-            AND (mv->>'tmdb_id') IS NOT NULL
+          WHERE (mv->>'tmdb_id') IS NOT NULL
             AND (mv->>'tmdb_id') != 'null'
-            AND m.poster_url IS NOT NULL
-            AND m.poster_url != ''
-          LIMIT $2
-        `;
+          LIMIT 50  -- Cap JSONB expansion per collection for safety
+        ) AS movie_ids
+        JOIN movies m ON m.tmdb_id = movie_ids.tmdb_id
+        WHERE bl.id = ANY($1::int[])
+          AND m.poster_url IS NOT NULL
+          AND m.poster_url != ''
+      )
+      SELECT collection_id, tmdb_id, title, year, poster_url
+      FROM collection_movies
+      WHERE rn <= $2
+      ORDER BY collection_id, rn
+    `;
 
-        const moviesResult = await pool.query(moviesQuery, [
-          collection.id,
-          parseInt(moviesPerCollection)
-        ]);
+    // Use a dedicated client with timeout
+    const client = await pool.connect();
+    try {
+      // Set a 10-second timeout for the query
+      await client.query('SET statement_timeout = 10000');
 
-        return {
+      const moviesResult = await client.query(allMoviesQuery, [
+        collectionIds,
+        parseInt(moviesPerCollection)
+      ]);
+
+      // Group movies by collection_id
+      const moviesByCollection = {};
+      for (const row of moviesResult.rows) {
+        if (!moviesByCollection[row.collection_id]) {
+          moviesByCollection[row.collection_id] = [];
+        }
+        moviesByCollection[row.collection_id].push({
+          tmdb_id: row.tmdb_id,
+          title: row.title,
+          year: row.year,
+          poster_url: row.poster_url
+        });
+      }
+
+      // Build the final response with movies attached
+      const collectionsWithMovies = paginatedCollections
+        .map(collection => ({
           id: collection.id,
           title: collection.title,
           totalMovies: parseInt(collection.movie_count),
           categories: collection.categories || [],
-          movies: moviesResult.rows.map(row => ({
-            tmdb_id: row.tmdb_id,
-            title: row.title,
-            year: row.year,
-            poster_url: row.poster_url
-          }))
-        };
-      })
-    );
+          movies: moviesByCollection[collection.id] || []
+        }))
+        .filter(c => c.movies.length > 0); // Only include collections with movies
 
-    // Drop any that came back with no movies (shouldn't happen but be safe)
-    const withMovies = collectionsWithMovies.filter(c => c.movies.length > 0);
+      res.status(200).json({
+        collections: collectionsWithMovies,
+        count: collectionsWithMovies.length
+      });
 
-    res.status(200).json({
-      collections: withMovies,
-      count: withMovies.length
-    });
+    } catch (queryError) {
+      // Handle timeout or query errors
+      console.error('Query error in featured-collections:', queryError.message);
+
+      // If it's a timeout, try to return partial results
+      if (queryError.message.includes('statement timeout') || queryError.message.includes('canceling statement')) {
+        // Return empty collections but with metadata
+        const fallbackCollections = paginatedCollections.map(collection => ({
+          id: collection.id,
+          title: collection.title,
+          totalMovies: parseInt(collection.movie_count),
+          categories: collection.categories || [],
+          movies: [] // Empty movies on timeout
+        }));
+
+        res.status(200).json({
+          collections: fallbackCollections,
+          count: fallbackCollections.length,
+          warning: 'Some movie data could not be loaded due to timeout'
+        });
+      } else {
+        throw queryError; // Re-throw for outer catch
+      }
+    } finally {
+      client.release();
+    }
 
   } catch (error) {
     console.error('Featured collections API error:', error);

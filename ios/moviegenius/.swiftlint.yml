@@ -1,0 +1,188 @@
+# SwiftLint Configuration for MovieGenius iOS
+# Purpose: Prevent common breaking changes and enforce consistency
+# Last Updated: 2026-05-20
+
+# Include/Exclude Paths
+included:
+  - moviegenius
+excluded:
+  - Carthage
+  - Pods
+  - moviegenius/Resources
+  - moviegenius.xcodeproj
+  - moviegeniusTests
+  - moviegeniusUITests
+
+# Disabled Rules
+disabled_rules:
+  - line_length # We use descriptive names
+  - function_body_length # Some Views are complex
+  - type_body_length # ViewModels can be large
+  - identifier_name # Allow short names like id, url
+
+# Opt-in Rules
+opt_in_rules:
+  - array_init
+  - closure_end_indentation
+  - closure_spacing
+  - contains_over_filter_count
+  - contains_over_filter_is_empty
+  - empty_collection_literal
+  - empty_count
+  - empty_string
+  - first_where
+  - last_where
+  - modifier_order
+  - multiline_parameters
+  - operator_usage_whitespace
+  - overridden_super_call
+  - prefer_self_type_over_type_of_self
+  - redundant_nil_coalescing
+  - sorted_first_last
+  - unavailable_function
+  - unneeded_parentheses_in_closure_argument
+  - vertical_whitespace_closing_braces
+  - vertical_whitespace_opening_braces
+
+# Rule Configuration
+file_length:
+  warning: 600
+  error: 1200
+  ignore_comment_only_lines: true
+
+force_cast:
+  severity: error
+
+force_try:
+  severity: error
+
+force_unwrapping:
+  severity: warning
+
+trailing_whitespace:
+  ignores_empty_lines: true
+  ignores_comments: true
+
+vertical_whitespace:
+  max_empty_lines: 2
+
+# Custom Rules for MovieGenius-Specific Issues
+custom_rules:
+  # NAVIGATION PATTERN RULES
+  navigation_bar_hidden_banned:
+    name: "Navigation Bar Hidden"
+    regex: '\.navigationBar(Hidden|BackButtonHidden)\s*\(\s*true\s*\)'
+    message: "NEVER hide navigation bars - breaks swipe-back gestures. See IOS_NAVIGATION_GUIDE.md"
+    severity: error
+
+  navigation_bar_appearance_banned:
+    name: "Navigation Bar Appearance"
+    regex: 'UINavigationBar\.appearance\(\)'
+    message: "Don't modify global navigation appearance - use toolbar modifiers instead"
+    severity: error
+
+  custom_back_button_banned:
+    name: "Custom Back Button"
+    regex: '\.navigationBarItems\s*\(\s*leading:.*Button.*pop\(\)'
+    message: "Use native back button - custom buttons break swipe gesture"
+    severity: error
+
+  overlay_header_banned:
+    name: "Custom Overlay Header"
+    regex: 'ZStack\s*\{[^}]*\.overlay\s*\([^)]*alignment:\s*\.top'
+    message: "Use native toolbar/navigationBar, not custom overlay headers"
+    severity: warning
+
+  # COMPONENT CONSISTENCY RULES
+  movie_card_variant_warning:
+    name: "Movie Card Variant"
+    regex: '(struct|class)\s+\w*Card(View)?\s*:\s*View'
+    match_kinds:
+      - keyword
+    excluded_regex: 'StandardMovieCard|MediaCard'
+    message: "Consider using StandardMovieCard instead of custom card variants"
+    severity: warning
+
+  hardcoded_poster_dimensions:
+    name: "Hardcoded Poster Dimensions"
+    regex: '\.(frame|size)\s*\([^)]*width:\s*(125|188|250)'
+    message: "Use MovieDimensions constants for poster sizes (125x188 standard)"
+    severity: warning
+
+  # COLOR AND THEME RULES
+  hardcoded_colors_banned:
+    name: "Hardcoded Colors"
+    regex: 'Color\.(white|black|gray|red|blue|green|yellow|orange|purple|pink)(?!\w)'
+    message: "Use Color.mg* semantic colors for dark mode support"
+    severity: error
+    excluded_paths:
+      - moviegenius/Utilities/CategoryBadgeColors.swift
+      - moviegenius/Utilities/MovieGeniusColors.swift
+
+  hardcoded_shadows_warning:
+    name: "Hardcoded Shadows"
+    regex: '\.shadow\s*\([^)]*radius:'
+    excluded_regex: '\.mgShadow'
+    message: "Use .mgShadow* modifiers for consistent dark mode shadows"
+    severity: warning
+
+  # TERMINOLOGY CONSISTENCY RULES
+  film_terminology_banned:
+    name: "Film Terminology"
+    regex: '\b[Ff]ilm\b'
+    message: "Use 'movie' instead of 'film' for consistency"
+    severity: warning
+    excluded_paths:
+      - moviegenius/Resources
+
+  bookmark_terminology_warning:
+    name: "Bookmark Terminology"
+    regex: '\b[Bb]ookmark'
+    message: "Use 'queue' for watchlist, 'loved' for seen movies"
+    severity: warning
+
+  # STATE MANAGEMENT RULES
+  direct_userdefaults_warning:
+    name: "Direct UserDefaults Access"
+    regex: 'UserDefaults\.standard\.(set|bool|string|object|integer)'
+    excluded_regex: 'FavoritesManager|SettingsManager|AppSettings'
+    message: "Use FavoritesManager or SettingsManager instead of direct UserDefaults"
+    severity: warning
+
+  favorites_state_duplication:
+    name: "Favorites State Duplication"
+    regex: '@State\s+private\s+var\s+(isLoved|isQueued|isFavorite)'
+    message: "Use FavoritesManager.shared for favorites state, not local @State"
+    severity: warning
+
+  # ASYNC/AWAIT PATTERNS
+  task_without_id:
+    name: "Task Without ID"
+    regex: '\.task\s*\{'
+    message: "Consider using .task(id:) to properly cancel/restart async work"
+    severity: info
+
+  # GESTURE RECOGNIZER CONFLICTS
+  custom_gesture_warning:
+    name: "Custom Gesture Warning"
+    regex: '\.(gesture|onTapGesture|onLongPressGesture)\s*\{'
+    message: "Ensure custom gestures don't conflict with system gestures (swipe-back)"
+    severity: info
+
+  # API CONSISTENCY
+  hardcoded_api_urls:
+    name: "Hardcoded API URLs"
+    regex: 'https?://[^"]*tmdb|https?://[^"]*moviegenius'
+    excluded_regex: 'APIClient|Constants|TMDBService'
+    message: "Use APIClient constants for URLs"
+    severity: warning
+
+  # MEMORY MANAGEMENT
+  strong_self_capture:
+    name: "Strong Self Capture"
+    regex: '\{\s*\[self\]\s*in'
+    message: "Use [weak self] or [unowned self] to prevent retain cycles"
+    severity: warning
+
+# Reporter type (xcode, json, csv, checkstyle, codeclimate, junit, html, emoji, sonarqube, markdown, github-actions-logging)
+reporter: "xcode"

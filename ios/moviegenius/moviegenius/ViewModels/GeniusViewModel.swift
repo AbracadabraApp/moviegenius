@@ -68,7 +68,7 @@ class GeniusViewModel: ObservableObject {
     func calculateExpertise() async {
         // Recalculate without re-fetching
         if !expertiseManager.genres.isEmpty {
-            let lovedMovieIds = Set(favorites.lovedMovies.map { $0.id })
+            let _ = Set(favorites.lovedMovies.map { $0.id })  // Future use: filtering by loved movies
 
             genres = expertiseManager.genres.map { genre in
                 // This is inefficient - ideally we'd have movie IDs per genre

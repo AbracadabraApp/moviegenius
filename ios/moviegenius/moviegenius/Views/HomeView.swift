@@ -13,8 +13,14 @@ struct HomeView: View {
     var body: some View {
         ScrollView {
             LazyVStack(spacing: 0) {
-                // Spacer for header
-                Color.clear.frame(height: 60)
+                // Header - matching Genius view styling
+                VStack(alignment: .leading, spacing: .mgSpacing24) {
+                    Text("Discover movies")
+                        .font(.mgTitle)
+                        .foregroundStyle(Color.mgPrimary)
+                }
+                .padding(.horizontal, .mgSpacing16)
+                .padding(.top, .mgSpacing24)
 
                 if let error = viewModel.error {
                     // Error state - SHOW THE ERROR!
@@ -41,7 +47,7 @@ struct HomeView: View {
                             Text("Try Again")
                                 .font(.mgBody)
                                 .fontWeight(.semibold)
-                                .foregroundStyle(Color.white)
+                                .foregroundStyle(Color.mgButtonTextOnGold)
                                 .padding(.horizontal, .mgSpacing24)
                                 .padding(.vertical, .mgSpacing12)
                                 .background(Color.mgGold)
@@ -72,7 +78,7 @@ struct HomeView: View {
                     ForEach(viewModel.collections) { collection in
                         CollectionCarousel(collection: collection)
                     }
-                    .padding(.top, .mgSpacing24)
+                    .padding(.top, .mgSpacing8)
 
                     // Load more trigger
                     Color.clear
@@ -88,12 +94,6 @@ struct HomeView: View {
         .scrollIndicators(.hidden)
         .background {
             MGAtmosphericBackground()
-        }
-        .overlay(alignment: .top) {
-            VStack {
-                AppHeader()
-                Spacer()
-            }
         }
         .refreshable {
             await viewModel.loadInitialCollections()

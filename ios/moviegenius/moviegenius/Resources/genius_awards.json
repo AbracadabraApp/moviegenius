@@ -1,0 +1,505 @@
+{
+  "schemaVersion": 1,
+  "categories": [
+    {
+      "category": "Oscar Winners",
+      "tiers": [
+        {
+          "name": "Best Picture 2020s",
+          "subtitle": "Recent Academy Award champions",
+          "order": 0,
+          "films": [
+            {
+              "title": "Oppenheimer",
+              "year": 2023,
+              "tmdbId": 872585
+            },
+            {
+              "title": "Everything Everywhere All at Once",
+              "year": 2022,
+              "tmdbId": 545611
+            },
+            {
+              "title": "CODA",
+              "year": 2021,
+              "tmdbId": 776503
+            },
+            {
+              "title": "Nomadland",
+              "year": 2020,
+              "tmdbId": 581734
+            },
+            {
+              "title": "Parasite",
+              "year": 2019,
+              "tmdbId": 496243
+            }
+          ]
+        },
+        {
+          "name": "Best Picture 2010s",
+          "subtitle": "Modern classics",
+          "order": 1,
+          "films": [
+            {
+              "title": "Green Book",
+              "year": 2018,
+              "tmdbId": 490132
+            },
+            {
+              "title": "The Shape of Water",
+              "year": 2017,
+              "tmdbId": 399055
+            },
+            {
+              "title": "Moonlight",
+              "year": 2016,
+              "tmdbId": 376867
+            },
+            {
+              "title": "Spotlight",
+              "year": 2015,
+              "tmdbId": 314365
+            },
+            {
+              "title": "Birdman",
+              "year": 2014,
+              "tmdbId": 194662
+            },
+            {
+              "title": "12 Years a Slave",
+              "year": 2013,
+              "tmdbId": 76203
+            },
+            {
+              "title": "Argo",
+              "year": 2012,
+              "tmdbId": 68734
+            },
+            {
+              "title": "The Artist",
+              "year": 2011,
+              "tmdbId": 50752
+            },
+            {
+              "title": "The King's Speech",
+              "year": 2010,
+              "tmdbId": 45269
+            }
+          ]
+        },
+        {
+          "name": "Best Picture 2000s",
+          "subtitle": "Turn of the millennium",
+          "order": 2,
+          "films": [
+            {
+              "title": "The Hurt Locker",
+              "year": 2008,
+              "tmdbId": 12162
+            },
+            {
+              "title": "Slumdog Millionaire",
+              "year": 2008,
+              "tmdbId": 12405
+            },
+            {
+              "title": "No Country for Old Men",
+              "year": 2007,
+              "tmdbId": 6977
+            },
+            {
+              "title": "The Departed",
+              "year": 2006,
+              "tmdbId": 1422
+            },
+            {
+              "title": "Crash",
+              "year": 2004,
+              "tmdbId": 1640
+            },
+            {
+              "title": "Million Dollar Baby",
+              "year": 2004,
+              "tmdbId": 70
+            },
+            {
+              "title": "The Lord of the Rings: The Return of the King",
+              "year": 2003,
+              "tmdbId": 122
+            },
+            {
+              "title": "Chicago",
+              "year": 2002,
+              "tmdbId": 3783
+            },
+            {
+              "title": "A Beautiful Mind",
+              "year": 2001,
+              "tmdbId": 453
+            },
+            {
+              "title": "Gladiator",
+              "year": 2000,
+              "tmdbId": 98
+            }
+          ]
+        },
+        {
+          "name": "All-Time Classics",
+          "subtitle": "Legendary Best Picture winners",
+          "order": 3,
+          "films": [
+            {
+              "title": "The Godfather",
+              "year": 1972,
+              "tmdbId": 238
+            },
+            {
+              "title": "The Godfather Part II",
+              "year": 1974,
+              "tmdbId": 240
+            },
+            {
+              "title": "Schindler's List",
+              "year": 1993,
+              "tmdbId": 424
+            },
+            {
+              "title": "The Silence of the Lambs",
+              "year": 1991,
+              "tmdbId": 274
+            },
+            {
+              "title": "One Flew Over the Cuckoo's Nest",
+              "year": 1975,
+              "tmdbId": 510
+            },
+            {
+              "title": "Casablanca",
+              "year": 1942,
+              "tmdbId": 289
+            },
+            {
+              "title": "Gone with the Wind",
+              "year": 1939,
+              "tmdbId": 770
+            },
+            {
+              "title": "Lawrence of Arabia",
+              "year": 1962,
+              "tmdbId": 947
+            },
+            {
+              "title": "The Sound of Music",
+              "year": 1965,
+              "tmdbId": 15121
+            },
+            {
+              "title": "West Side Story",
+              "year": 1961,
+              "tmdbId": 16859
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Cannes Winners",
+      "tiers": [
+        {
+          "name": "Palme d'Or 2020s",
+          "subtitle": "Recent Cannes champions",
+          "order": 0,
+          "films": [
+            {
+              "title": "Anatomy of a Fall",
+              "year": 2023,
+              "tmdbId": 915935
+            },
+            {
+              "title": "Triangle of Sadness",
+              "year": 2022,
+              "tmdbId": 497828
+            },
+            {
+              "title": "Titane",
+              "year": 2021,
+              "tmdbId": 577922
+            },
+            {
+              "title": "Parasite",
+              "year": 2019,
+              "tmdbId": 496243
+            }
+          ]
+        },
+        {
+          "name": "Palme d'Or Classics",
+          "subtitle": "Legendary Cannes winners",
+          "order": 1,
+          "films": [
+            {
+              "title": "Pulp Fiction",
+              "year": 1994,
+              "tmdbId": 680
+            },
+            {
+              "title": "The Piano",
+              "year": 1993,
+              "tmdbId": 205
+            },
+            {
+              "title": "Apocalypse Now",
+              "year": 1979,
+              "tmdbId": 28
+            },
+            {
+              "title": "Taxi Driver",
+              "year": 1976,
+              "tmdbId": 103
+            },
+            {
+              "title": "The Conversation",
+              "year": 1974,
+              "tmdbId": 592
+            },
+            {
+              "title": "La Dolce Vita",
+              "year": 1960,
+              "tmdbId": 439
+            },
+            {
+              "title": "The Third Man",
+              "year": 1949,
+              "tmdbId": 1092
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Festival Champions",
+      "tiers": [
+        {
+          "name": "Venice Golden Lions",
+          "subtitle": "Venice Film Festival winners",
+          "order": 0,
+          "films": [
+            {
+              "title": "Poor Things",
+              "year": 2023,
+              "tmdbId": 792307
+            },
+            {
+              "title": "All the Beauty and the Bloodshed",
+              "year": 2022,
+              "tmdbId": 919918
+            },
+            {
+              "title": "Happening",
+              "year": 2021,
+              "tmdbId": 761365
+            },
+            {
+              "title": "Nomadland",
+              "year": 2020,
+              "tmdbId": 581734
+            },
+            {
+              "title": "Joker",
+              "year": 2019,
+              "tmdbId": 475557
+            },
+            {
+              "title": "Roma",
+              "year": 2018,
+              "tmdbId": 426543
+            },
+            {
+              "title": "The Shape of Water",
+              "year": 2017,
+              "tmdbId": 399055
+            }
+          ]
+        },
+        {
+          "name": "Berlin Golden Bears",
+          "subtitle": "Berlin Film Festival winners",
+          "order": 1,
+          "films": [
+            {
+              "title": "On the Adamant",
+              "year": 2023,
+              "tmdbId": 1058655
+            },
+            {
+              "title": "Alcarràs",
+              "year": 2022,
+              "tmdbId": 898110
+            },
+            {
+              "title": "Bad Luck Banging or Loony Porn",
+              "year": 2021,
+              "tmdbId": 800095
+            },
+            {
+              "title": "There Is No Evil",
+              "year": 2020,
+              "tmdbId": 669103
+            },
+            {
+              "title": "Synonyms",
+              "year": 2019,
+              "tmdbId": 570049
+            },
+            {
+              "title": "Touch Me Not",
+              "year": 2018,
+              "tmdbId": 488615
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Acting Showcases",
+      "tiers": [
+        {
+          "name": "Best Actor Winners",
+          "subtitle": "Oscar-winning performances",
+          "order": 0,
+          "films": [
+            {
+              "title": "Oppenheimer",
+              "year": 2023,
+              "tmdbId": 872585
+            },
+            {
+              "title": "The Whale",
+              "year": 2022,
+              "tmdbId": 785084
+            },
+            {
+              "title": "King Richard",
+              "year": 2021,
+              "tmdbId": 614917
+            },
+            {
+              "title": "The Father",
+              "year": 2020,
+              "tmdbId": 600354
+            },
+            {
+              "title": "Joker",
+              "year": 2019,
+              "tmdbId": 475557
+            },
+            {
+              "title": "Bohemian Rhapsody",
+              "year": 2018,
+              "tmdbId": 424694
+            },
+            {
+              "title": "Darkest Hour",
+              "year": 2017,
+              "tmdbId": 399404
+            },
+            {
+              "title": "Manchester by the Sea",
+              "year": 2016,
+              "tmdbId": 334541
+            },
+            {
+              "title": "The Revenant",
+              "year": 2015,
+              "tmdbId": 281957
+            },
+            {
+              "title": "The Theory of Everything",
+              "year": 2014,
+              "tmdbId": 266856
+            },
+            {
+              "title": "Dallas Buyers Club",
+              "year": 2013,
+              "tmdbId": 152532
+            },
+            {
+              "title": "Lincoln",
+              "year": 2012,
+              "tmdbId": 72976
+            }
+          ]
+        },
+        {
+          "name": "Best Actress Winners",
+          "subtitle": "Oscar-winning performances",
+          "order": 1,
+          "films": [
+            {
+              "title": "Poor Things",
+              "year": 2023,
+              "tmdbId": 792307
+            },
+            {
+              "title": "Everything Everywhere All at Once",
+              "year": 2022,
+              "tmdbId": 545611
+            },
+            {
+              "title": "The Eyes of Tammy Faye",
+              "year": 2021,
+              "tmdbId": 656663
+            },
+            {
+              "title": "Nomadland",
+              "year": 2020,
+              "tmdbId": 581734
+            },
+            {
+              "title": "Judy",
+              "year": 2019,
+              "tmdbId": 489985
+            },
+            {
+              "title": "The Favourite",
+              "year": 2018,
+              "tmdbId": 375262
+            },
+            {
+              "title": "Three Billboards Outside Ebbing, Missouri",
+              "year": 2017,
+              "tmdbId": 359940
+            },
+            {
+              "title": "La La Land",
+              "year": 2016,
+              "tmdbId": 313369
+            },
+            {
+              "title": "Room",
+              "year": 2015,
+              "tmdbId": 264644
+            },
+            {
+              "title": "Still Alice",
+              "year": 2014,
+              "tmdbId": 260346
+            },
+            {
+              "title": "Blue Jasmine",
+              "year": 2013,
+              "tmdbId": 152603
+            },
+            {
+              "title": "Silver Linings Playbook",
+              "year": 2012,
+              "tmdbId": 82693
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

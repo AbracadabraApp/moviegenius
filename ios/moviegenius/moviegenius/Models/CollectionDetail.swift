@@ -14,7 +14,7 @@ struct CollectionDetailResponse: Codable {
 
 struct CollectionDetail: Codable {
     let id: String
-    let title: String
+    let title: String?
     let subtitle: String?
     let subcategories: [Subcategory]?
 

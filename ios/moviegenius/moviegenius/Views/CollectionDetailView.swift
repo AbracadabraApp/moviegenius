@@ -18,17 +18,12 @@ struct CollectionDetailView: View {
     }
 
     var body: some View {
-        ZStack(alignment: .top) {
-            // Main content
-            ScrollView {
-                VStack(alignment: .leading, spacing: 0) {
-                    // Top spacer for overlaid search bar and back button
-                    Color.clear.frame(height: 60)
-
-                    if let collection = viewModel.collection {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 0) {
+                if let collection = viewModel.collection {
                         // Collection header
                         VStack(alignment: .leading, spacing: .mgSpacing6) {
-                            Text(collection.title)
+                            Text(collection.title ?? "Untitled Collection")
                                 .font(.mgTitle)
                                 .foregroundStyle(Color.mgPrimary)
 
@@ -85,7 +80,7 @@ struct CollectionDetailView: View {
                             HStack {
                                 Text("\(viewModel.movies.count) films")
                                 Text("·")
-                                Text(collection.title)
+                                Text(collection.title ?? "Untitled Collection")
                             }
                             .font(.mgCaption)
                             .foregroundStyle(Color.mgSecondary)
@@ -123,30 +118,35 @@ struct CollectionDetailView: View {
                                 .padding(.horizontal, .mgSpacing32)
                             Button("Retry") {
                                 Task {
-                                    await viewModel.loadCollection()
+                                    await viewModel.retry()
                                 }
                             }
-                            .buttonStyle(MGGlassButtonStyle())
+                            .buttonStyle(.borderedProminent)
+                            .tint(Color.mgGold)
                         }
                         .padding()
                         .padding(.top, 80)
                     }
                 }
             }
-            .scrollIndicators(.hidden)
-
-            // Overlaid back button and search bar
-            VStack(spacing: 0) {
-                AppHeader(showBackButton: true)
-
-                Spacer()
-            }
-        }
+        .scrollIndicators(.hidden)
         .background(Color.mgBackground)
-        .navigationBarHidden(true)
-        .enableSwipeBack()
+        .navigationTitle(viewModel.collection?.title ?? "Collection")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(.visible, for: .navigationBar)
+        .refreshable {
+            await viewModel.loadCollection()
+        }
         .task {
             await viewModel.loadCollection()
+        }
+        .onAppear {
+            // Fallback: if view appears and we haven't started loading, try again
+            if viewModel.collection == nil && !viewModel.isLoading && viewModel.error == nil {
+                Task {
+                    await viewModel.loadCollection()
+                }
+            }
         }
     }
 }
@@ -197,7 +197,7 @@ struct SubcategorySection: View {
                     GridItem(.flexible(), spacing: .mgSpacing12)
                 ], spacing: .mgSpacing12) {
                     ForEach(movies) { movie in
-                        NavigationLink(destination: MovieDetailView(tmdbId: movie.tmdbId)) {
+                        NavigationLink(value: MovieDestination.detail(tmdbId: movie.tmdbId)) {
                             MovieGridCard(movie: movie)
                         }
                         .buttonStyle(MGCardButtonStyle())

@@ -15,9 +15,12 @@ actor APIClient {
 
     private let session: URLSession
 
+    // Request deduplication - prevent multiple identical requests
+    private var inFlightRequests: [String: Task<Data, Error>] = [:]
+
     private init() {
         let config = URLSessionConfiguration.default
-        config.timeoutIntervalForRequest = 15
+        config.timeoutIntervalForRequest = 10  // Reduced from 15
         config.waitsForConnectivity = false
 
         // Configure aggressive disk cache for movie data and images
@@ -33,27 +36,39 @@ actor APIClient {
             directory: cacheDirectory
         )
 
-        // Cache movie data appropriately - return cache if available, otherwise load
-        config.requestCachePolicy = .returnCacheDataElseLoad
+        // Use protocol cache policy (respects server Cache-Control headers)
+        // This allows fresh data when needed but still uses cache intelligently
+        config.requestCachePolicy = .useProtocolCachePolicy
 
         self.session = URLSession(configuration: config)
+    }
+
+    // Helper to decode outside actor isolation (Swift 6 concurrency fix)
+    nonisolated private func decode<T: Decodable>(_ type: T.Type, from data: Data) throws -> T {
+        return try JSONDecoder().decode(type, from: data)
     }
 
     // MARK: - Movie
 
     func fetchMovie(tmdbId: Int) async throws -> MovieResponse {
-        guard let url = URL(string: "\(baseURL)/movie/\(tmdbId)") else {
+        let urlString = "\(baseURL)/movie/\(tmdbId)"
+        guard let url = URL(string: urlString) else {
             throw APIError.invalidURL
         }
 
+        // Check if request is already in-flight
+        if let existingTask = inFlightRequests[urlString] {
+            let data = try await existingTask.value
+            let decoded = try decode(MovieResponse.self, from: data)
+            return decoded
+        }
+
         var request = URLRequest(url: url)
-        request.cachePolicy = .returnCacheDataElseLoad
-        request.timeoutInterval = 15
+        request.cachePolicy = .useProtocolCachePolicy  // Respect server cache headers
+        request.timeoutInterval = 10  // Reduced from 15
 
-        // Cache movie data for 15 minutes
-        request.setValue("public, max-age=900", forHTTPHeaderField: "Cache-Control")
-
-        do {
+        // Create task and store it for deduplication
+        let task = Task<Data, Error> {
             let (data, response) = try await session.data(for: request)
 
             guard let httpResponse = response as? HTTPURLResponse else {
@@ -64,7 +79,16 @@ actor APIClient {
                 throw APIError.httpError(statusCode: httpResponse.statusCode)
             }
 
-            let decoded = try JSONDecoder().decode(MovieResponse.self, from: data)
+            return data
+        }
+
+        inFlightRequests[urlString] = task
+
+        do {
+            let data = try await task.value
+            inFlightRequests[urlString] = nil  // Clear from dedup cache
+
+            let decoded = try decode(MovieResponse.self, from: data)
 
             #if DEBUG
             print("✅ [APIClient] Fetched movie: \(decoded.movie.title) (\(decoded.movie.year ?? 0))")
@@ -73,10 +97,16 @@ actor APIClient {
             #endif
 
             return decoded
-        } catch let error as URLError {
-            throw APIError.networkError(underlying: error)
-        } catch let error as DecodingError {
-            throw APIError.decodingError(underlying: error)
+        } catch {
+            inFlightRequests[urlString] = nil  // Clear from dedup cache on error
+
+            if let urlError = error as? URLError {
+                throw APIError.networkError(underlying: urlError)
+            } else if let decodingError = error as? DecodingError {
+                throw APIError.decodingError(underlying: decodingError)
+            } else {
+                throw error
+            }
         }
     }
 
@@ -107,7 +137,7 @@ actor APIClient {
             throw APIError.httpError(statusCode: httpResponse.statusCode)
         }
 
-        return try JSONDecoder().decode(FeaturedCollectionsResponse.self, from: data)
+        return try decode(FeaturedCollectionsResponse.self, from: data)
     }
 
     func fetchCollection(id: String) async throws -> CollectionDetailResponse {
@@ -132,7 +162,7 @@ actor APIClient {
             throw APIError.httpError(statusCode: httpResponse.statusCode)
         }
 
-        return try JSONDecoder().decode(CollectionDetailResponse.self, from: data)
+        return try decode(CollectionDetailResponse.self, from: data)
     }
 
     // MARK: - Search
@@ -163,7 +193,7 @@ actor APIClient {
             throw APIError.httpError(statusCode: httpResponse.statusCode)
         }
 
-        return try JSONDecoder().decode(SearchResponse.self, from: data)
+        return try decode(SearchResponse.self, from: data)
     }
 
     // MARK: - Genius
@@ -193,7 +223,7 @@ actor APIClient {
             throw APIError.httpError(statusCode: httpResponse.statusCode)
         }
 
-        return try JSONDecoder().decode(GeniusFeedResponse.self, from: data)
+        return try decode(GeniusFeedResponse.self, from: data)
     }
 
     // MARK: - Person
@@ -220,7 +250,7 @@ actor APIClient {
             throw APIError.httpError(statusCode: httpResponse.statusCode)
         }
 
-        return try JSONDecoder().decode(PersonResponse.self, from: data)
+        return try decode(PersonResponse.self, from: data)
     }
 
     // MARK: - TMDB Videos (Trailers)
@@ -250,7 +280,7 @@ actor APIClient {
                 throw APIError.httpError(statusCode: httpResponse.statusCode)
             }
 
-            let decoded = try JSONDecoder().decode(TMDBVideosResponse.self, from: data)
+            let decoded = try decode(TMDBVideosResponse.self, from: data)
 
             #if DEBUG
             print("✅ [APIClient] Fetched \(decoded.results.count) videos for movie \(tmdbId)")

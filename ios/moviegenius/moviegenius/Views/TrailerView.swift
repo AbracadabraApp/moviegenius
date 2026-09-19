@@ -129,7 +129,8 @@ struct TrailerView: View {
                     await loadTrailers()
                 }
             }
-            .buttonStyle(MGGlassButtonStyle())
+            .buttonStyle(.borderedProminent)
+            .tint(Color.mgGold)
         }
     }
 

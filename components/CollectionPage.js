@@ -9,6 +9,7 @@ import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import { Bookmark, BookmarkCheck } from 'lucide-react';
 import { FavoritesManager } from './FavoritesManager';
+import ErrorBoundary from './ErrorBoundary';
 
 export default function CollectionPage({ collection, movies }) {
   const router = useRouter();
@@ -64,60 +65,62 @@ export default function CollectionPage({ collection, movies }) {
         if (subcategoryMovies.length === 0) return null;
 
         return (
-          <div key={index} style={{...styles.section, ...(index === 0 ? styles.sectionFirst : {})}}>
-            {/* Aisle marker */}
-            <div style={styles.aisleMarker}>
-              <div style={styles.aisleAccent} />
-              <div style={styles.aisleText}>
-                <span style={styles.aisleLabel}>{subcategory.name}</span>
-              </div>
-              <button
-                style={{
-                  ...styles.bookmarkBtn,
-                  background: bookmarked[subcategory.name] ? '#374151' : 'none',
-                  borderRadius: '6px',
-                  padding: '4px 8px',
-                }}
-                onClick={e => handleBookmark(e, subcategory, subcategoryMovies)}
-                aria-label={bookmarked[subcategory.name] ? 'Remove bookmark' : 'Bookmark subcategory'}
-              >
-                {bookmarked[subcategory.name]
-                  ? <BookmarkCheck size={18} color="#ffffff" />
-                  : <Bookmark size={18} color="#9ca3af" />
-                }
-                <span style={{
-                  fontSize: '13px',
-                  fontWeight: '500',
-                  color: bookmarked[subcategory.name] ? '#ffffff' : '#9ca3af',
-                  marginLeft: '4px',
-                }}>Save</span>
-              </button>
-            </div>
-
-            {subcategory.description && (
-              <p style={styles.sectionDesc}>{subcategory.description}</p>
-            )}
-
-            <div style={styles.movieGrid}>
-              {subcategoryMovies.map((movie, movieIndex) => (
-                <div
-                  key={movieIndex}
-                  style={styles.posterWrapper}
-                  onClick={() => router.push(`/movie/${movie.tmdb_id}`)}
-                >
-                  <div style={styles.posterContainer}>
-                    <img
-                      src={movie.poster_url}
-                      alt={movie.title}
-                      style={styles.poster}
-                    />
-                  </div>
-                  <div style={styles.movieTitle}>{movie.title}</div>
-                  {movie.year && <div style={styles.movieYear}>{movie.year}</div>}
+          <ErrorBoundary key={index} level="section">
+            <div style={{...styles.section, ...(index === 0 ? styles.sectionFirst : {})}}>
+              {/* Aisle marker */}
+              <div style={styles.aisleMarker}>
+                <div style={styles.aisleAccent} />
+                <div style={styles.aisleText}>
+                  <span style={styles.aisleLabel}>{subcategory.name}</span>
                 </div>
-              ))}
+                <button
+                  style={{
+                    ...styles.bookmarkBtn,
+                    background: bookmarked[subcategory.name] ? '#374151' : 'none',
+                    borderRadius: '6px',
+                    padding: '4px 8px',
+                  }}
+                  onClick={e => handleBookmark(e, subcategory, subcategoryMovies)}
+                  aria-label={bookmarked[subcategory.name] ? 'Remove bookmark' : 'Bookmark subcategory'}
+                >
+                  {bookmarked[subcategory.name]
+                    ? <BookmarkCheck size={18} color="#ffffff" />
+                    : <Bookmark size={18} color="#9ca3af" />
+                  }
+                  <span style={{
+                    fontSize: '13px',
+                    fontWeight: '500',
+                    color: bookmarked[subcategory.name] ? '#ffffff' : '#9ca3af',
+                    marginLeft: '4px',
+                  }}>Save</span>
+                </button>
+              </div>
+
+              {subcategory.description && (
+                <p style={styles.sectionDesc}>{subcategory.description}</p>
+              )}
+
+              <div style={styles.movieGrid}>
+                {subcategoryMovies.map((movie, movieIndex) => (
+                  <div
+                    key={movieIndex}
+                    style={styles.posterWrapper}
+                    onClick={() => router.push(`/movie/${movie.tmdb_id}`)}
+                  >
+                    <div style={styles.posterContainer}>
+                      <img
+                        src={movie.poster_url}
+                        alt={movie.title}
+                        style={styles.poster}
+                      />
+                    </div>
+                    <div style={styles.movieTitle}>{movie.title}</div>
+                    {movie.year && <div style={styles.movieYear}>{movie.year}</div>}
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          </ErrorBoundary>
         );
       })}
 
