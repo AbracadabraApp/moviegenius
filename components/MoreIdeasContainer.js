@@ -45,7 +45,7 @@ export default function MoreIdeasContainer({ tmdbId, title = "More Ideas", style
     return null;
   }
 
-  if (!moreIdeas || !moreIdeas.hasData || moreIdeas.moreIdeas.length === 0) {
+  if (!moreIdeas || !moreIdeas.hasData || !moreIdeas.moreIdeas || moreIdeas.moreIdeas.length === 0) {
     return null; // Fail silently - don't show broken or empty states
   }
 
